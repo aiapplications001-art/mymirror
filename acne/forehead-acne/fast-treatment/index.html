@@ -82,9 +82,15 @@
         .acne-table td:last-child { border-radius: 15px; }
 
         /* Interactive Routine */
-        .routine-step { display: flex; align-items: flex-start; gap: 20px; margin-bottom: 2rem; padding: 2rem; background: var(--secondary); border-radius: 25px; transition: transform 0.3s ease; }
+        .routine-step { display: flex; align-items: center; gap: 30px; margin-bottom: 2rem; padding: 2rem; background: var(--secondary); border-radius: 25px; transition: transform 0.3s ease; }
         .routine-step:hover { transform: scale(1.02); background: #e2e8f0; }
+        .routine-img { width: 150px; height: 150px; border-radius: 20px; object-fit: cover; box-shadow: 0 10px 20px rgba(0,0,0,0.05); flex-shrink: 0; }
         .step-number { font-size: 3rem; font-weight: 800; color: var(--primary); opacity: 0.2; line-height: 1; }
+        
+        @media (max-width: 600px) {
+            .routine-step { flex-direction: column; text-align: center; }
+            .routine-img { width: 100%; height: 200px; }
+        }
 
         /* Quiz Styling */
         .btn { background: var(--primary); color: white; border: none; padding: 15px 30px; border-radius: 50px; cursor: pointer; font-weight: 700; transition: all 0.3s var(--bouncy); font-size: 1rem; }
@@ -221,6 +227,7 @@
         <p>If you need to clear your forehead quickly, follow this clinical routine before bed.</p>
         
         <div class="routine-step reveal">
+            <img src="/acne/forehead-acne/fast-treatment/double-cleanse.webp" alt="Double Cleanse" class="routine-img">
             <div class="step-number">01</div>
             <div>
                 <h3 style="margin-top: 0;">Double Cleanse</h3>
@@ -229,6 +236,7 @@
         </div>
         
         <div class="routine-step reveal">
+            <img src="/acne/forehead-acne/fast-treatment/ice.jpg" alt="Ice Therapy" class="routine-img">
             <div class="step-number">02</div>
             <div>
                 <h3 style="margin-top: 0;">Ice the Inflammation</h3>
@@ -237,6 +245,7 @@
         </div>
 
         <div class="routine-step reveal">
+            <img src="/acne/forehead-acne/fast-treatment/active-acne.webp" alt="Targeted Spot Treatment" class="routine-img">
             <div class="step-number">03</div>
             <div>
                 <h3 style="margin-top: 0;">Targeted Spot Treatment</h3>
@@ -245,6 +254,7 @@
         </div>
 
         <div class="routine-step reveal">
+            <img src="/acne/forehead-acne/fast-treatment/acne-patch.jpg" alt="Protect & Patch" class="routine-img">
             <div class="step-number">04</div>
             <div>
                 <h3 style="margin-top: 0;">Protect & Patch</h3>
