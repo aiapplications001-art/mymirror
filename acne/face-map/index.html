@@ -133,14 +133,15 @@
         p { margin-bottom: 1.5rem; font-size: 1.05rem; }
 
         /* Interactive Map Component */
-        .map-section { background: #0a0a0c; padding: 4rem 2rem; border-radius: 40px; margin: 4rem 0; box-shadow: 0 30px 60px rgba(0,0,0,0.15); text-align: center; }
+        .map-section { background: #0a0a0c; padding: 4rem 1.5rem; border-radius: 40px; margin: 3rem auto; box-shadow: 0 30px 60px rgba(0,0,0,0.15); text-align: center; max-width: 1000px; width: 100%; box-sizing: border-box; }
         .map-section h2 { color: white; border: none; margin-top: 0; padding-bottom: 0; }
-        .map-section p { color: #a0aec0; }
+        .map-section p { color: #a0aec0; margin-bottom: 2rem; }
         .stage-wrapper {
             position: relative;
-            width: fit-content;
-            height: fit-content;
-            margin: 2rem auto 0 auto;
+            width: 100%;
+            max-width: 850px;
+            height: auto;
+            margin: 0 auto;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 0 100px rgba(0,0,0,0.8);
@@ -148,7 +149,7 @@
             cursor: url('/acne/face-map/magnifying_small.png') 16 16, auto;
             border: 4px solid #333;
         }
-        .face-img { max-width: 100%; max-height: 70vh; display: block; height: auto; }
+        .face-img { width: 100%; max-height: none; display: block; height: auto; }
         .overlay-svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; }
         .organ-zone { fill: rgba(255, 255, 255, 0); stroke: rgba(255, 255, 255, 0); stroke-width: 2; cursor: pointer; transition: fill 0.3s ease, stroke 0.3s ease; }
         .organ-zone:hover { stroke: rgba(255, 255, 255, 0.8); stroke-width: 3; }
@@ -210,17 +211,8 @@
     <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem; opacity: 0.9;">
         Have you ever noticed that your pimples seem to pop up in the exact same spot every time? The location of your breakouts isn’t always random.
     </p>
-    <div class="disclaimer-box">
-        Medical Disclaimer: This guide decodes traditional face mapping and dermatological triggers. It is for educational purposes and should not replace clinical advice.
-    </div>
-</header>
-
-<div class="container">
-
-    <p>Whether it’s stubborn chin acne or a sudden cluster on your forehead, <strong>Acne Face Mapping</strong> is an ancient practice—rooted in Traditional Chinese Medicine (TCM) and Ayurveda—that views the face as a "mirror" of your internal health. By understanding which facial zones correspond to specific organs and lifestyle habits, you can stop treating just the symptoms and start addressing the cause.</p>
-
-    <!-- INTERACTIVE MAP COMPONENT -->
-    <section class="map-section">
+    <!-- INTERACTIVE MAP COMPONENT MOVED TO HERO -->
+    <section class="map-section" style="margin-top: 2rem;">
         <h2>Interactive Acne Face Map</h2>
         <p>Hover over the regions of the face below to explore what your breakouts are signaling.</p>
         
@@ -251,6 +243,15 @@
         </div>
         <div id="tooltip">ZONE</div>
     </section>
+
+    <div class="disclaimer-box" style="margin-bottom: 0;">
+        Medical Disclaimer: This guide decodes traditional face mapping and dermatological triggers. It is for educational purposes and should not replace clinical advice.
+    </div>
+</header>
+
+<div class="container">
+
+    <p>Whether it’s stubborn chin acne or a sudden cluster on your forehead, <strong>Acne Face Mapping</strong> is an ancient practice—rooted in Traditional Chinese Medicine (TCM) and Ayurveda—that views the face as a "mirror" of your internal health. By understanding which facial zones correspond to specific organs and lifestyle habits, you can stop treating just the symptoms and start addressing the cause.</p>
 
     <h2>How to Read the Acne Face Map</h2>
     <p>Use this zone-by-zone guide to decode your skin’s signals.</p>
