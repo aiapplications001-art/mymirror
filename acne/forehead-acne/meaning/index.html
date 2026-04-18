@@ -56,24 +56,75 @@
         h1 { font-size: 3rem; font-weight: 800; letter-spacing: -1.5px; line-height: 1.1; max-width: 950px; margin: 0 auto 1.5rem auto; color: var(--primary); }
         .disclaimer-box { max-width: 800px; margin: 2rem auto; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 0.85rem; color: #64748b; text-align: center; font-style: italic; }
 
-        /* Face Map Highlighting */
-        .facemap-container { position: relative; width: 100%; border-radius: 20px; overflow: hidden; background: #fafafa; }
-        .facemap-svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 5; pointer-events: none; }
-        .face-region { fill: var(--brand-orange); opacity: 0; transition: opacity 0.3s ease; }
-        .face-region.active { opacity: 0.25; }
-        
-        .map-point { position: absolute; width: 30px; height: 30px; background: rgba(236, 97, 14, 0.9); border-radius: 50%; cursor: pointer; transform: translate(-50%, -50%); border: 3px solid white; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: all 0.3s var(--bouncy); display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 12px; z-index: 10; }
-        .map-point:hover, .map-point.active { transform: translate(-50%, -50%) scale(1.2); background: #111; }
-        
-        .map-legend { display: flex; flex-direction: column; gap: 15px; }
-        .legend-item { padding: 1.5rem; border-radius: 20px; background: #f8fafc; border: 2px solid transparent; cursor: pointer; transition: all 0.3s ease; }
-        .legend-item:hover, .legend-item.active { border-color: var(--brand-orange); background: #fffcf9; transform: translateX(10px); }
-        .legend-item h4 { margin: 0 0 5px 0; color: var(--brand-orange); font-size: 1rem; }
-        .legend-item p { margin: 0; font-size: 0.9rem; color: #4a5568; line-height: 1.4; }
+        /* Interactive Face Map */
+        .stage-wrapper {
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+            margin: 4rem auto;
+            border-radius: 40px;
+            overflow: hidden;
+            box-shadow: 0 20px 80px rgba(0,0,0,0.1);
+            line-height: 0;
+            background: #000;
+            border: 8px solid #fff;
+        }
 
-        @media (max-width: 900px) {
-            .facemap-section { grid-template-columns: 1fr; padding: 1.5rem; }
-            .facemap-container { max-width: 400px; margin: 0 auto; }
+        .face-img-interactive {
+            max-width: 100%;
+            max-height: 70vh;
+            display: block;
+            height: auto;
+        }
+
+        .overlay-svg {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: 10;
+        }
+
+        .organ-zone {
+            fill: rgba(255, 255, 255, 0.01);
+            stroke: transparent;
+            stroke-width: 2;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(0px);
+        }
+
+        .organ-zone:hover {
+            stroke: #fff;
+            stroke-width: 4;
+            backdrop-filter: blur(4px);
+            filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));
+        }
+
+        .organ-zone[data-type="intestine"]:hover { fill: rgba(254, 202, 202, 0.4); }
+        .organ-zone[data-type="bladder"]:hover { fill: rgba(196, 181, 253, 0.4); }
+        .organ-zone[data-type="heart"]:hover { fill: rgba(248, 113, 113, 0.4); }
+        .organ-zone[data-type="lung"]:hover { fill: rgba(253, 186, 116, 0.4); }
+        .organ-zone[data-type="stomach"]:hover { fill: rgba(248, 250, 252, 0.3); }
+
+        #face-tooltip {
+            position: fixed;
+            background: #111;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 0.9rem;
+            pointer-events: none;
+            display: none;
+            z-index: 2000;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            transform: translate(-50%, -140%);
+            text-transform: uppercase;
+            border: 2px solid var(--brand-orange);
+        }
+
+        @media (max-width: 768px) {
+            .stage-wrapper { border-radius: 20px; border-width: 4px; }
         }
 
         /* Container */
@@ -116,14 +167,6 @@
         .btn:hover { transform: scale(1.05); background: var(--accent); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
 
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes spin { 100% { transform: rotate(360deg); } }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; }
-            .nav-links { display: none; }
-            .myth-grid { grid-template-columns: 1fr; }
-            .diagnostic-box { padding: 2rem 1.5rem; }
-        }
     </style>
 </head>
 <body>
@@ -163,6 +206,41 @@
     <section id="intro">
         <p>If you have suddenly developed a cluster of tiny bumps or inflamed spots across your brow, you are likely staring in the mirror asking: <strong>What do pimples on my forehead mean?</strong></p>
         <p>Skin is the body's largest organ, and it rarely breaks out without a reason. <strong>Pimples on the forehead meaning</strong> usually points to internal digestive struggles, high stress, or external environmental triggers like humidity and hair products. Before you apply another layer of acne cream, let's decode exactly what your forehead is trying to tell you.</p>
+    </section>
+
+    <!-- INTERACTIVE FACE MAPPING COMPONENT -->
+    <section class="interactive-map-section">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <h2 style="border: none; margin-bottom: 0.5rem;">The Universal Face Map</h2>
+            <p style="color: #64748b; font-size: 1rem;">Hover over any area of the face to reveal the connected internal organ.</p>
+        </div>
+
+        <div class="stage-wrapper">
+            <img src="face-1.png" class="face-img-interactive" alt="Dermatological Face Mapping Model">
+            
+            <svg viewBox="0 0 2048 1586" class="overlay-svg">
+                <ellipse class="organ-zone" data-type="intestine" data-name="Small Intestine" cx="1018" cy="219" rx="191" ry="117" transform="rotate(0, 1018, 219)" />
+                <ellipse class="organ-zone" data-type="bladder" data-name="Bladder" cx="679" cy="300" rx="140" ry="60" transform="rotate(-30, 679, 300)" />
+                <ellipse class="organ-zone" data-type="bladder" data-name="Bladder" cx="1369" cy="291" rx="140" ry="60" transform="rotate(30, 1369, 291)" />
+                <ellipse class="organ-zone" data-type="heart" data-name="Heart" cx="791" cy="403" rx="100" ry="40" transform="rotate(-10, 791, 403)" />
+                <ellipse class="organ-zone" data-type="heart" data-name="Heart" cx="1273" cy="411" rx="100" ry="40" transform="rotate(10, 1273, 411)" />
+                <ellipse class="organ-zone" data-type="heart" data-name="Liver" cx="1033" cy="457" rx="90" ry="90" transform="rotate(0, 1033, 457)" />
+                <ellipse class="organ-zone" data-type="heart" data-name="Heart & Pancreas" cx="1038" cy="717" rx="93" ry="150" transform="rotate(-2, 1038, 717)" />
+                <ellipse class="organ-zone" data-type="stomach" data-name="Stomach" cx="769" cy="779" rx="142" ry="80" transform="rotate(-20, 769, 779)" />
+                <ellipse class="organ-zone" data-type="stomach" data-name="Stomach" cx="1305" cy="781" rx="150" ry="80" transform="rotate(20, 1305, 781)" />
+                <ellipse class="organ-zone" data-type="lung" data-name="Gallbladder" cx="581" cy="597" rx="36" ry="118" transform="rotate(0, 581, 597)" />
+                <ellipse class="organ-zone" data-type="lung" data-name="Gallbladder" cx="1471" cy="594" rx="36" ry="120" transform="rotate(0, 1471, 594)" />
+                <ellipse class="organ-zone" data-type="lung" data-name="Lungs" cx="703" cy="1036" rx="52" ry="141" transform="rotate(-32, 703, 1036)" />
+                <ellipse class="organ-zone" data-type="lung" data-name="Lungs" cx="1364" cy="1030" rx="49" ry="142" transform="rotate(37, 1364, 1030)" />
+                <ellipse class="organ-zone" data-type="stomach" data-name="Large Intestine" cx="827" cy="1016" rx="40" ry="120" transform="rotate(0, 827, 1016)" />
+                <ellipse class="organ-zone" data-type="stomach" data-name="Large Intestine" cx="1246" cy="1019" rx="40" ry="120" transform="rotate(0, 1246, 1019)" />
+                <ellipse class="organ-zone" data-type="intestine" data-name="Spleen" cx="1044" cy="931" rx="150" ry="40" transform="rotate(0, 1044, 931)" />
+                <ellipse class="organ-zone" data-type="stomach" data-name="Stomach (Lower)" cx="1038" cy="993" rx="120" ry="30" transform="rotate(0, 1038, 993)" />
+                <ellipse class="organ-zone" data-type="intestine" data-name="Intestines" cx="1033" cy="1063" rx="100" ry="25" transform="rotate(0, 1033, 1063)" />
+                <ellipse class="organ-zone" data-type="bladder" data-name="Pelvic Organs & Hormones" cx="1044" cy="1200" rx="180" ry="80" transform="rotate(0, 1044, 1200)" />
+            </svg>
+            <div id="face-tooltip">ZONE</div>
+        </div>
     </section>
 
     <!-- INTERACTIVE DIAGNOSTIC HOOK -->
@@ -281,33 +359,31 @@
 </footer>
 
 <script>
-    // Face Map Legend Interactions
-    function activateZone(id) {
-        document.querySelectorAll('.map-point, .legend-item, .face-region').forEach(el => el.classList.remove('active'));
-        document.getElementById('dot-' + id).classList.add('active');
-        document.getElementById('item-' + id).classList.add('active');
-        document.getElementById('region-' + id).classList.add('active');
-    }
-
-    function deactivateZone() {
-        // We can leave the last one active or clear all
-        // document.querySelectorAll('.map-point, .legend-item').forEach(el => el.classList.remove('active'));
-    }
-
     // Diagnostic Toggle Logic
     function toggleDiagnostic(id, el) {
         const reveal = document.getElementById('reveal-' + id);
         const isActive = el.classList.contains('active');
-        
-        // Hide all others
         document.querySelectorAll('.reveal-box').forEach(box => box.style.display = 'none');
         document.querySelectorAll('.diagnostic-option').forEach(opt => opt.classList.remove('active'));
-
         if (!isActive) {
             reveal.style.display = 'block';
             el.classList.add('active');
         }
     }
+
+    // Interactive Face Map Tooltip Logic
+    const faceTooltip = document.getElementById('face-tooltip');
+    document.querySelectorAll('.organ-zone').forEach(zone => {
+        zone.addEventListener('mousemove', (e) => {
+            faceTooltip.style.display = 'block';
+            faceTooltip.innerText = zone.getAttribute('data-name');
+            faceTooltip.style.left = e.clientX + 'px';
+            faceTooltip.style.top = e.clientY + 'px';
+        });
+        zone.addEventListener('mouseleave', () => {
+            faceTooltip.style.display = 'none';
+        });
+    });
 
     // Intersection Observer for Animations
     const observer = new IntersectionObserver((entries) => {
