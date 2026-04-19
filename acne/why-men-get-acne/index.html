@@ -27,6 +27,12 @@
   <meta name="twitter:description" content="Testosterone, diet, shaving, stress — discover the 7 real reasons men get acne." />
   <meta name="twitter:image" content="https://mymirror.fit/acne/bathroom-reflection-man-pimple-face-dermatology-inspection-stress-skincare-mirror-shocked-bathroom-326736310.webp" />
 
+  <style>
+  @font-face { font-family: 'Kantumruy Pro'; src: url('/fonts/KantumruyPro-VariableFont_wght.ttf') format('truetype'); font-weight: 100 700; font-style: normal; font-display: swap; }
+  @font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype'); font-weight: 200 800; font-style: normal; font-display: swap; }
+  @font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('truetype'); font-weight: 200 800; font-style: italic; font-display: swap; }
+  </style>
+
   <!-- ═══════════════════════════════════════════════
        STRUCTURED DATA — Article + FAQ + MedicalWebPage
   ═══════════════════════════════════════════════ -->
@@ -145,10 +151,6 @@
        STYLES
   ═══════════════════════════════════════════════ -->
   <style>
-    @font-face { font-family: 'Kantumruy Pro'; src: url('/fonts/KantumruyPro-VariableFont_wght.ttf') format('truetype'); font-weight: 300 700; font-style: normal; font-display: swap; }
-    @font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype'); font-weight: 200 800; font-style: normal; font-display: swap; }
-    @font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('truetype'); font-weight: 200 800; font-style: italic; font-display: swap; }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     /* ── mymirror design system CSS variables ── */
@@ -220,40 +222,6 @@
       padding: 0 24px;
     }
 
-    .trust-bar {
-      background: var(--color-bg-secondary);
-      border-bottom: 1px solid var(--color-border);
-      padding: 8px 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1.5rem;
-      font-size: 12px;
-      color: var(--color-text-secondary);
-      font-family: var(--font-ui);
-    }
-    .trust-bar .divider { color: var(--color-border); }
-    .trust-bar .verified {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      color: #059669;
-      font-weight: 600;
-    }
-    .trust-bar .verified::before {
-      content: '✓';
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 16px;
-      height: 16px;
-      background: #059669;
-      color: #fff;
-      border-radius: 50%;
-      font-size: 9px;
-      font-weight: 700;
-    }
-
     /* ── Site header ── */
     .site-header {
       background: var(--color-bg-primary);
@@ -267,23 +235,6 @@
       z-index: 100;
       min-height: 60px;
     }
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 0.25rem;
-      list-style: none;
-    }
-    .nav-links a {
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--color-text-secondary);
-      text-decoration: none;
-      padding: 6px 12px;
-      border-radius: 6px;
-      transition: all 0.2s;
-    }
-    .nav-links a:hover { background: var(--color-bg-secondary); color: var(--color-text-primary); }
-    .nav-links a.active { background: var(--color-brand-light); color: var(--color-brand); font-weight: 600; }
 
     /* mymirror wordmark — Kantumruy Pro, two-tone */
     .site-logo {
@@ -313,6 +264,46 @@
     }
     .nav-cta:hover { background: var(--color-brand-dark); color: #FFFFFF; }
     .nav-cta:active { transform: scale(0.98); }
+
+
+    /* ── Trust bar ── */
+    .trust-bar {
+      background: var(--color-bg-secondary);
+      border-bottom: 1px solid var(--color-border);
+      padding: 8px 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 12px;
+      color: var(--color-text-secondary);
+      font-family: var(--font-ui);
+    }
+    .trust-bar .divider { color: var(--color-border); }
+    .trust-bar .verified {
+      display: flex; align-items: center; gap: 5px;
+      color: #059669; font-weight: 600;
+    }
+    .trust-bar .verified::before {
+      content: '✓';
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 16px; height: 16px;
+      background: #059669; color: #fff;
+      border-radius: 50%; font-size: 9px; font-weight: 700;
+    }
+
+    /* ── Nav links ── */
+    .nav-links {
+      display: flex; align-items: center; gap: 0.25rem; list-style: none;
+    }
+    .nav-links a {
+      font-size: 13px; font-weight: 500;
+      color: var(--color-text-secondary);
+      text-decoration: none; padding: 6px 12px;
+      border-radius: 6px; transition: all 0.2s;
+    }
+    .nav-links a:hover { background: var(--color-bg-secondary); color: var(--color-text-primary); text-decoration: none; }
+    .nav-links a.active { background: var(--color-brand-light); color: var(--color-brand); font-weight: 600; }
 
     /* ── Breadcrumb ── */
     .breadcrumb {
@@ -345,13 +336,13 @@
     }
 
     h1 {
-      font-family: var(--font-ui);
-      font-size: 28px;
-      font-weight: 500;
-      line-height: 1.3;
-      letter-spacing: -0.015em;
+      font-family: var(--font-brand);
+      font-size: clamp(2rem, 4vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.18;
+      letter-spacing: -0.03em;
       color: var(--color-text-primary);
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
 
     .article-deck {
@@ -408,16 +399,38 @@
     .byline-badge svg { flex-shrink: 0; }
 
     /* ── Hero image ── */
+    .hero-img-wrap {
+      position: relative;
+      margin-bottom: 8px;
+    }
     .hero-img {
       width: 100%;
-      height: 320px;
+      height: 360px;
       background: var(--color-bg-tertiary);
       border-radius: var(--radius-xl);
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 8px;
       overflow: hidden;
+    }
+    .hero-stat-overlay {
+      position: absolute;
+      bottom: 16px; right: 16px;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(236,97,14,0.2);
+      border-radius: 12px;
+      padding: 12px 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    .hero-stat-overlay .ov-num {
+      font-family: var(--font-brand);
+      font-size: 1.5rem; font-weight: 700;
+      color: var(--color-brand); line-height: 1;
+    }
+    .hero-stat-overlay .ov-label {
+      font-size: 11px; color: var(--color-text-secondary);
+      margin-top: 3px; line-height: 1.4; max-width: 120px;
     }
     .hero-img-caption {
       font-family: var(--font-ui);
@@ -438,54 +451,90 @@
     /* ── Table of contents ── */
     .toc {
       background: var(--color-bg-secondary);
-      border: 0.5px solid var(--color-border);
-      border-left: 3px solid var(--color-brand);
+      border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
       padding: 20px 24px;
       margin-bottom: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .toc::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; bottom: 0;
+      width: 3px;
+      background: var(--color-brand);
+      border-radius: 3px 0 0 3px;
     }
     .toc-title {
-      font-family: var(--font-ui);
-      font-size: 11px;
-      font-weight: 500;
+      font-family: var(--font-brand);
+      font-size: 12px;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--color-text-tertiary);
-      margin-bottom: 12px;
-    }
-    .toc ol { padding-left: 18px; }
-    .toc li { margin: 6px 0; }
-    .toc a {
-      font-family: var(--font-ui);
-      font-size: 14px;
-      font-weight: 400;
+      letter-spacing: 0.08em;
       color: var(--color-brand);
-      text-decoration: none;
+      margin-bottom: 14px;
+      display: flex; align-items: center; gap: 6px;
     }
-    .toc a:hover { text-decoration: underline; }
+    .toc-title::after { content: '↓'; font-size: 11px; }
+    .toc ol { padding-left: 0; list-style: none; counter-reset: toc-counter; }
+    .toc li { margin: 0; counter-increment: toc-counter; }
+    .toc li a {
+      font-family: var(--font-ui);
+      font-size: 13.5px;
+      font-weight: 400;
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      display: flex; align-items: center; gap: 10px;
+      padding: 6px 0;
+      border-bottom: 1px solid var(--color-border);
+      transition: color 0.15s, padding-left 0.2s;
+    }
+    .toc li:last-child a { border-bottom: none; }
+    .toc li a::before {
+      content: counter(toc-counter, decimal-leading-zero);
+      font-size: 10px; font-weight: 700;
+      color: var(--color-brand);
+      min-width: 22px; flex-shrink: 0;
+    }
+    .toc a:hover { color: var(--color-brand); padding-left: 4px; }
+    .toc a.toc-active { color: var(--color-brand); font-weight: 600; }
 
     /* ── Body typography ── */
     .article-body p { margin-bottom: 1.4em; }
 
     h2 {
-      font-family: var(--font-ui);
-      font-size: 22px;
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      line-height: 1.35;
+      font-family: var(--font-brand);
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
       color: var(--color-text-primary);
-      margin: 48px 0 16px;
-      scroll-margin-top: 80px;
+      margin: 56px 0 16px;
+      scroll-margin-top: 90px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1.1em;
+      background: var(--color-brand);
+      border-radius: 2px;
+      flex-shrink: 0;
+      margin-top: 1px;
     }
 
     h3 {
-      font-family: var(--font-ui);
+      font-family: var(--font-brand);
       font-size: 17px;
-      font-weight: 500;
-      letter-spacing: -0.005em;
+      font-weight: 600;
+      letter-spacing: -0.01em;
       line-height: 1.4;
       color: var(--color-text-primary);
-      margin: 28px 0 10px;
+      margin: 32px 0 10px;
     }
 
     h4 {
@@ -509,30 +558,37 @@
     /* ── Cause cards ── */
     .cause-list { list-style: none; padding: 0; margin: 0; }
     .cause-card {
-      border: 0.5px solid var(--color-border);
+      border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
-      padding: 20px;
-      margin-bottom: 12px;
+      padding: 20px 22px;
+      margin-bottom: 10px;
       display: flex;
-      gap: 16px;
+      gap: 18px;
       align-items: flex-start;
       background: var(--color-bg-primary);
-      transition: border-color 250ms ease;
+      transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s cubic-bezier(0.175,0.885,0.32,1.275);
     }
-    .cause-card:hover { border-color: var(--color-border-emphasis); }
+    .cause-card:hover {
+      border-color: var(--color-brand);
+      box-shadow: 0 6px 24px rgba(236,97,14,0.08);
+      transform: translateY(-2px);
+    }
+    .cause-card:nth-child(even) { background: var(--color-bg-secondary); }
     .cause-num {
-      font-family: var(--font-ui);
-      font-size: 22px;
-      font-weight: 500;
-      letter-spacing: -0.02em;
-      color: var(--color-brand);
-      min-width: 32px;
-      line-height: 1;
-      padding-top: 2px;
-      font-variant-numeric: tabular-nums;
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      background: var(--color-brand);
+      color: #fff;
+      font-family: var(--font-brand);
+      font-size: 15px;
+      font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      box-shadow: 0 3px 10px rgba(236,97,14,0.25);
     }
-    .cause-content h3 { margin: 0 0 6px; font-size: 17px; }
-    .cause-content p { margin: 0; font-size: 14px; color: var(--color-text-secondary); line-height: 1.65; }
+    .cause-content h3 { margin: 0 0 6px; font-size: 16px; }
+    .cause-content p { margin: 0; font-size: 14px; color: var(--color-text-secondary); line-height: 1.68; }
 
     /* ── Comparison table ── */
     .compare-table {
@@ -567,25 +623,48 @@
     /* ── Stat callout ── */
     .stat-box {
       background: var(--color-brand-light);
-      border-left: 3px solid var(--color-brand);
-      border-radius: var(--radius-lg);
-      padding: 20px 24px;
-      margin: 32px 0;
+      border-radius: var(--radius-xl);
+      padding: 28px 32px;
+      margin: 36px 0;
       font-family: var(--font-ui);
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      border: 1px solid rgba(236,97,14,0.15);
     }
     @media (prefers-color-scheme: dark) {
       .stat-box { background: #2A1B12; }
     }
     .stat-num {
-      font-size: 36px;
-      font-weight: 500;
-      letter-spacing: -0.02em;
+      font-family: var(--font-brand);
+      font-size: clamp(2.5rem, 6vw, 3.5rem);
+      font-weight: 700;
+      letter-spacing: -0.04em;
       color: var(--color-brand);
-      line-height: 1.1;
-      margin-bottom: 6px;
-      font-variant-numeric: tabular-nums;
+      line-height: 1;
+      flex-shrink: 0;
     }
-    .stat-label { font-size: 13px; color: var(--color-text-secondary); line-height: 1.55; }
+    .stat-label { font-size: 14px; color: var(--color-text-secondary); line-height: 1.6; }
+
+    /* ── Reading progress bar ── */
+    #reading-progress {
+      position: fixed;
+      top: 0; left: 0;
+      height: 3px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--color-brand), #F4973A);
+      z-index: 9999;
+      transition: width 0.1s linear;
+      border-radius: 0 2px 2px 0;
+    }
+
+    /* ── Scroll reveal ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
 
     /* ── Tip box ── */
     .tip-box {
@@ -631,6 +710,14 @@
       color: var(--color-warning);
       display: block;
       margin-bottom: 6px;
+    }
+
+    /* ── Article intro lead ── */
+    .article-body > p:first-of-type {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--color-text-primary);
+      font-weight: 400;
     }
 
     /* ── CTA block — warm peach background, orange accents ── */
@@ -876,7 +963,7 @@
       h1 { font-size: 22px; }
       h2 { font-size: 19px; }
       .trust-bar .hide-mobile { display: none; }
-      .site-header { align-items: flex-start; flex-direction: column; gap: 8px; padding: 12px 16px; position: relative; }
+      .site-header { flex-wrap: wrap; padding: 10px 16px; gap: 8px; }
       .nav-links { flex-wrap: wrap; }
       .treatment-grid { grid-template-columns: 1fr; }
       .trigger-grid { grid-template-columns: 1fr; }
@@ -896,7 +983,9 @@
 </head>
 
 <body>
+  <div id="reading-progress"></div>
 
+  <!-- TRUST BAR -->
   <div class="trust-bar">
     <span>Written by <strong>mymirror editorial team</strong></span>
     <span class="divider hide-mobile">|</span>
@@ -909,7 +998,9 @@
        SITE HEADER
   ═══════════════════════════════════════════════ -->
   <header class="site-header">
-    <a href="https://mymirror.fit/acne/forehead-acne" style="display:flex;align-items:center;"><img src="/acne/forehead-acne/logo-v4.png" alt="mymirror" style="height:36px;width:auto;object-fit:contain;mix-blend-mode:multiply;"></a>
+    <a href="https://mymirror.fit/acne/forehead-acne" style="display:flex;align-items:center;">
+      <img src="/acne/forehead-acne/logo-v4.png" alt="mymirror" style="height:36px;width:auto;object-fit:contain;mix-blend-mode:multiply;">
+    </a>
     <ul class="nav-links">
       <li><a href="/acne/why-men-get-acne/" class="active">Causes</a></li>
       <li><a href="/acne/forehead-acne/fast-treatment/">Treatments</a></li>
@@ -938,7 +1029,7 @@
           ]
         }
         </script>
-        <a href="https://mymirror.fit/acne/forehead-acne">Home</a>
+        <a href="https://mymirror.fit">Home</a>
         <span>›</span>
         <a href="https://mymirror.fit/acne/forehead-acne">Forehead Acne</a>
         <span>›</span>
@@ -967,13 +1058,19 @@
         </div>
       </div>
 
-      <!-- Hero image placeholder -->
-      <div class="hero-img" role="img" aria-label="Man examining a spot on his face in a bathroom mirror">
-        <img
-          src="/acne/bathroom-reflection-man-pimple-face-dermatology-inspection-stress-skincare-mirror-shocked-bathroom-326736310.webp"
-          alt="Man examining a pimple on his nose in a bathroom mirror — dermatology skin inspection concept"
-          style="width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:24px;"
-        />
+      <!-- Hero image -->
+      <div class="hero-img-wrap">
+        <div class="hero-img" role="img" aria-label="Man examining a spot on his face in a bathroom mirror">
+          <img
+            src="/acne/bathroom-reflection-man-pimple-face-dermatology-inspection-stress-skincare-mirror-shocked-bathroom-326736310.webp"
+            alt="Man examining a pimple on his nose in a bathroom mirror — dermatology skin inspection concept"
+            style="width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:24px;"
+          />
+        </div>
+        <div class="hero-stat-overlay">
+          <div class="ov-num">4 in 10</div>
+          <div class="ov-label">adult men get acne beyond their teens</div>
+        </div>
       </div>
       <p class="hero-img-caption">Man examining a pimple on his nose while looking in a bathroom mirror.</p>
 
@@ -1011,7 +1108,7 @@
           Acne happens when a hair follicle becomes clogged with oil (sebum) and dead skin cells. Bacteria called <em>Cutibacterium acnes</em> (formerly <em>Propionibacterium acnes</em>) colonise the blocked follicle, causing the inflammation that shows up as redness, swelling, and pus. In men, several factors make this process particularly likely to occur.
         </p>
 
-        <ul class="cause-list">
+        <ul class="cause-list reveal">
 
           <li class="cause-card">
             <div class="cause-num">01</div>
@@ -1085,19 +1182,19 @@
 
         </ul>
 
-        <div class="stat-box" aria-label="Key statistic">
+        <div class="stat-box reveal" aria-label="Key statistic">
           <div class="stat-num">4 in 10</div>
           <div class="stat-label">adult men experience acne beyond their teenage years — yet most never seek treatment. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0190962299800565" target="_blank" rel="noopener noreferrer">Source: Journal of the American Academy of Dermatology</a></div>
         </div>
 
-        <div class="cta-block">
+        <div class="cta-block reveal">
           <div class="cta-icon" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
           </div>
           <div class="cta-content">
             <div class="cta-title">Not sure what's causing your breakouts?</div>
             <div class="cta-desc">mymirror analyses your skin from a single photo and identifies your acne type, sebaceous activity, and likely contributing factors — with the specificity of a dermatology observation, not a generic quiz.</div>
-            <a href="https://mymirror.fit/acne/forehead-acne" class="cta-btn">Scan my skin — free →</a>
+            <a href="https://mymirror.fit/acne/forehead-acne/" class="cta-btn">Scan my skin — free →</a>
           </div>
         </div>
 
@@ -1108,7 +1205,7 @@
           While the underlying biology of acne is similar across sexes, there are important differences in how acne behaves in men — and this matters for treatment.
         </p>
 
-        <table class="compare-table" aria-label="Comparison of acne in men vs women">
+        <table class="compare-table reveal" aria-label="Comparison of acne in men vs women">
           <thead>
             <tr>
               <th>Feature</th>
@@ -1173,7 +1270,7 @@
 
         <div class="tip-box">
           <strong>From mymirror</strong>
-          Our AI face mapping identifies where acne clusters on your face and surfaces observations about likely causes based on location patterns. <a href="https://mymirror.fit/acne/forehead-acne">Try a free scan.</a>
+          Our AI face mapping identifies where acne clusters on your face and surfaces observations about likely causes based on location patterns. <a href="https://mymirror.fit/acne/forehead-acne/">Try a free scan.</a>
         </div>
 
         <h3>Back acne (bacne)</h3>
@@ -1193,7 +1290,7 @@
           Not all acne is the same, and the type you have affects which treatments work best.
         </p>
 
-        <div class="trigger-grid">
+        <div class="trigger-grid reveal">
           <div class="trigger-item">
             <div class="trigger-icon" aria-hidden="true">
               <svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="#EC610E"/></svg>
@@ -1262,7 +1359,7 @@
         </ul>
 
         <h3>Step 2: Active OTC ingredients that work</h3>
-        <div class="treatment-grid">
+        <div class="treatment-grid reveal">
           <div class="treatment-card">
             <h4>Benzoyl peroxide (2.5–5%)</h4>
             <ul>
@@ -1342,7 +1439,7 @@
           <div class="cta-content">
             <div class="cta-title">Understand your skin before you treat it</div>
             <div class="cta-desc">mymirror gives you a detailed skin observation — acne type, severity pattern, and contributing factors identified from your photo. The kind of specific, honest assessment that's usually behind a clinic appointment.</div>
-            <a href="https://mymirror.fit/acne/forehead-acne" class="cta-btn">Start skin analysis →</a>
+            <a href="https://mymirror.fit/acne/forehead-acne/" class="cta-btn">Start skin analysis →</a>
           </div>
         </div>
 
@@ -1365,7 +1462,7 @@
 
         <div class="tip-box">
           <strong>No dermatologist access right now?</strong>
-          mymirror gives you a detailed skin observation — acne type, severity pattern, and factors identified from your photo — that you can bring to your next dermatology appointment or use to make a more informed decision about treatment. <a href="https://mymirror.fit/acne/forehead-acne">Start a free scan.</a>
+          mymirror gives you a detailed skin observation — acne type, severity pattern, and factors identified from your photo — that you can bring to your next dermatology appointment or use to make a more informed decision about treatment. <a href="https://mymirror.fit/acne/forehead-acne/">Start a free scan.</a>
         </div>
 
         <!-- ═══ SECTION 7: FAQ ═══ -->
@@ -1489,7 +1586,7 @@
   <footer class="site-footer">
     <p>
       <strong>mymirror</strong> — AI skin intelligence, on demand.<br/>
-      <a href="https://mymirror.fit/acne/forehead-acne">About</a> · <a href="https://mymirror.fit/acne/back-acne">Skin Guide</a> · <a href="https://mymirror.fit/acne/forehead-acne">Privacy</a> · <a href="https://mymirror.fit/acne/forehead-acne">Terms</a>
+      <a href="https://mymirror.fit/acne/forehead-acne/">Forehead Acne</a> · <a href="https://mymirror.fit/acne/back-acne/">Back Acne</a> · <a href="https://mymirror.fit/acne/face-map/">Face Map</a> · <a href="https://mymirror.fit/acne/men-acne-faq/">Men's Acne FAQ</a>
     </p>
     <p style="margin-top: 10px;">© 2026 mymirror. This content is for informational purposes only and is not medical advice.</p>
   </footer>
@@ -1512,6 +1609,51 @@
           e.preventDefault();
           toggleFaq(el);
         }
+      });
+    });
+  </script>
+
+
+  <script>
+    // Reading progress bar
+    const bar = document.getElementById('reading-progress');
+    window.addEventListener('scroll', () => {
+      const doc = document.documentElement;
+      const scrollTop = doc.scrollTop || document.body.scrollTop;
+      const scrollH = doc.scrollHeight - doc.clientHeight;
+      bar.style.width = scrollH > 0 ? (scrollTop / scrollH * 100) + '%' : '0%';
+    }, { passive: true });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.06 });
+    revealEls.forEach(el => revealObs.observe(el));
+
+    // TOC active state
+    const headings = document.querySelectorAll('h2[id]');
+    const tocLinks = document.querySelectorAll('.toc a');
+    const tocObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          tocLinks.forEach(l => l.classList.remove('toc-active'));
+          const active = document.querySelector('.toc a[href="#' + e.target.id + '"]');
+          if (active) active.classList.add('toc-active');
+        }
+      });
+    }, { rootMargin: '-10% 0px -70% 0px' });
+    headings.forEach(h => tocObs.observe(h));
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
       });
     });
   </script>
