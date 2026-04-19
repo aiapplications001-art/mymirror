@@ -27,11 +27,6 @@
   <meta name="twitter:description" content="Hormones, dead skin, bacteria, genetics — the real reasons teenagers get acne and what to do about it." />
   <meta name="twitter:image" content="https://mymirror.fit/acne/bathroom-reflection-man-pimple-face-dermatology-inspection-stress-skincare-mirror-shocked-bathroom-326736310.webp" />
 
-  <!-- Google Fonts — mymirror design system -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=Kantumruy+Pro:wght@600&display=swap" rel="stylesheet">
-
   <!-- ═══════════════════════════════════════════════
        STRUCTURED DATA — MedicalWebPage + FAQPage + BreadcrumbList
   ═══════════════════════════════════════════════ -->
@@ -51,8 +46,7 @@
         "reviewedBy": {
           "@type": "Person",
           "name": "Dr. Manan Mehtab",
-          "jobTitle": "Dermatologist",
-          "sameAs": "https://mymirror.fit/about/medical-team"
+          "jobTitle": "Dermatologist"
         },
         "author": {
           "@type": "Organization",
@@ -151,6 +145,10 @@
        STYLES — mymirror design system (identical to why-men-get-acne)
   ═══════════════════════════════════════════════ -->
   <style>
+    @font-face { font-family: 'Kantumruy Pro'; src: url('/fonts/KantumruyPro-VariableFont_wght.ttf') format('truetype'); font-weight: 300 700; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype'); font-weight: 200 800; font-style: normal; font-display: swap; }
+    @font-face { font-family: 'Plus Jakarta Sans'; src: url('/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('truetype'); font-weight: 200 800; font-style: italic; font-display: swap; }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -216,18 +214,70 @@
 
     .page-wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
 
+    .trust-bar {
+      background: var(--color-bg-secondary);
+      border-bottom: 1px solid var(--color-border);
+      padding: 8px 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 12px;
+      color: var(--color-text-secondary);
+      font-family: var(--font-ui);
+    }
+    .trust-bar .divider { color: var(--color-border); }
+    .trust-bar .verified {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #059669;
+      font-weight: 600;
+    }
+    .trust-bar .verified::before {
+      content: '✓';
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      background: #059669;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 9px;
+      font-weight: 700;
+    }
+
     /* ── Site header ── */
     .site-header {
       background: var(--color-bg-primary);
       border-bottom: 0.5px solid var(--color-border);
-      padding: 14px 24px;
+      padding: 0 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       position: sticky;
       top: 0;
       z-index: 100;
+      min-height: 60px;
     }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+    .nav-links a:hover { background: var(--color-bg-secondary); color: var(--color-text-primary); }
+    .nav-links a.active { background: var(--color-brand-light); color: var(--color-brand); font-weight: 600; }
     .site-logo {
       font-family: var(--font-brand);
       font-weight: 600;
@@ -829,6 +879,9 @@
     @media (max-width: 640px) {
       h1 { font-size: 22px; }
       h2 { font-size: 19px; }
+      .trust-bar .hide-mobile { display: none; }
+      .site-header { align-items: flex-start; flex-direction: column; gap: 8px; padding: 12px 16px; position: relative; }
+      .nav-links { flex-wrap: wrap; }
       .hero-banner { flex-direction: column; gap: 20px; padding: 24px; }
       .hero-stat { border-right: none; border-bottom: 0.5px solid var(--color-border); padding-right: 0; padding-bottom: 20px; }
       .hero-stat:last-child { border-bottom: none; padding-bottom: 0; }
@@ -852,10 +905,24 @@
 
 <body>
 
+  <div class="trust-bar">
+    <span>Written by <strong>mymirror editorial team</strong></span>
+    <span class="divider hide-mobile">|</span>
+    <span class="verified hide-mobile">Reviewed by Dr. Manan Mehtab, Dermatologist</span>
+    <span class="divider hide-mobile">|</span>
+    <span class="hide-mobile">Updated April 2026</span>
+  </div>
+
   <!-- ═══ HEADER ═══ -->
   <header class="site-header">
     <a href="https://mymirror.fit/acne/forehead-acne" style="display:flex;align-items:center;"><img src="/acne/forehead-acne/logo-v4.png" alt="mymirror" style="height:36px;width:auto;object-fit:contain;mix-blend-mode:multiply;"></a>
-    <a href="https://mymirror.fit/acne/forehead-acne" class="nav-cta">Scan my skin →</a>
+    <ul class="nav-links">
+      <li><a href="/acne/why-men-get-acne/">Men's Acne</a></li>
+      <li><a href="/acne/why-teenagers-get-acne/" class="active">Teen Acne</a></li>
+      <li><a href="/acne/men-acne-faq/">Men's FAQs</a></li>
+      <li><a href="/acne/face-map/">Face Map</a></li>
+      <li><a href="/acne/forehead-acne/" class="nav-cta">Free Skin Analysis</a></li>
+    </ul>
   </header>
 
   <main>
@@ -1360,6 +1427,10 @@
           <a href="https://mymirror.fit/acne/forehead-acne/fast-treatment" class="related-card">
             <div class="related-card-tag">Fast Treatment</div>
             <div class="related-card-title">Fast Acne Fixes: What Works Overnight</div>
+          </a>
+          <a href="https://mymirror.fit/acne/men-acne-faq/" class="related-card">
+            <div class="related-card-tag">Men's Acne FAQ</div>
+            <div class="related-card-title">Acne in Men: 30 Frequently Asked Questions Answered</div>
           </a>
         </div>
       </nav>
