@@ -109,6 +109,50 @@
             letter-spacing: -0.01em;
         }
 
+        /* Cinematic Scroll Reveals */
+        .cinematic-section {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            padding: 2rem;
+            margin: 10vh 0;
+        }
+        
+        .cinematic-text {
+            font-size: min(6rem, 15vw);
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            line-height: 1.1;
+            margin: 0;
+            background: linear-gradient(180deg, #fff 0%, #86868b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            transform: translateY(50px) scale(0.95);
+            transition: all 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+        
+        .cinematic-subtext {
+            font-size: min(2.5rem, 6vw);
+            font-weight: 600;
+            color: var(--accent);
+            margin-top: 1rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) 0.2s;
+        }
+
+        .cinematic-section.in-view .cinematic-text,
+        .cinematic-section.in-view .cinematic-subtext {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
         /* Glassmorphism Sections */
         .apple-container {
             max-width: 900px; 
@@ -243,6 +287,11 @@
         <p>Expert treatments, clinical solutions, and the science of body acne.</p>
     </header>
 
+    <section class="cinematic-section">
+        <h2 class="cinematic-text">Health.</h2>
+        <div class="cinematic-subtext">Know your body by heart.</div>
+    </section>
+
     <div class="apple-container">
         
         <div class="glass-card">
@@ -288,6 +337,11 @@
             </div>
         </div>
 
+        <section class="cinematic-section" style="min-height: 50vh; margin: 15vh 0;">
+            <h2 class="cinematic-text" style="font-size: min(5rem, 12vw); background: linear-gradient(180deg, #ff6b00 0%, #ffc107 100%); -webkit-background-clip: text;">Way to go!</h2>
+            <div class="cinematic-subtext" style="color: #fff; font-size: min(2rem, 5vw);">That was your fastest clear ever.</div>
+        </section>
+
         <div class="glass-card">
             <h2>Clinical & Natural Treatments</h2>
             
@@ -328,6 +382,18 @@
     <p>&copy; 2026 MyMirror Skin Health. All rights reserved.</p>
     <p style="font-style: italic;">Medical Disclaimer: The information provided on this page is for educational purposes and should not replace professional medical advice. If your back acne is painful, cystic, or leaving deep scars, consult a board-certified dermatologist for a personalized treatment plan.</p>
 </footer>
+
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+            }
+        });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.cinematic-section').forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
