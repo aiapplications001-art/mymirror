@@ -170,16 +170,22 @@
       border: 1px solid var(--color-border);
       border-radius: 12px; padding: 14px 18px;
       width: 200px;
+      min-height: 100px; /* Ensure consistent height across cards */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .hero-stat-card .stat-num {
       font-family: var(--font-brand);
-      font-size: 1.8rem; font-weight: 700;
+      font-size: 1.6rem; /* Slightly reduced for better fit */
+      font-weight: 700;
       color: var(--color-brand);
-      line-height: 1;
+      line-height: 1.1;
+      margin-bottom: 4px;
     }
     .hero-stat-card .stat-label {
       font-size: 11px; color: var(--color-text-secondary);
-      margin-top: 3px; line-height: 1.4;
+      line-height: 1.4;
     }
 
     /* ── TOC ── */
@@ -382,7 +388,7 @@
           <div class="hero-photo">
             <img src="/acne/back-acne-apple/back.jpg" alt="Person with clear back skin" />
           </div>
-          <div class="hero-stat-card" style="width: 200px;">
+          <div class="hero-stat-card">
             <div class="stat-num">50%</div>
             <div class="stat-label">of acne sufferers also experience breakouts on their back</div>
           </div>
@@ -393,9 +399,9 @@
           <div class="hero-photo">
             <img src="/acne/back-acne-natural-remedies/teatree.jpg" alt="Clinical Tea Tree Oil Extract" />
           </div>
-          <div class="hero-stat-card" style="width: 200px;">
-            <div class="stat-num" style="font-size: 1.4rem;">5% Tea Tree</div>
-            <div class="stat-label" style="font-size: 10.5px;">Research shows 5% Tea Tree Oil is as effective as Benzoyl Peroxide with fewer side effects.</div>
+          <div class="hero-stat-card">
+            <div class="stat-num">5% Tea Tree</div>
+            <div class="stat-label">Research shows 5% Tea Tree Oil is as effective as Benzoyl Peroxide with fewer side effects.</div>
           </div>
         </div>
       </div>
