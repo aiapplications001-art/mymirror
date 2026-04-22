@@ -68,7 +68,7 @@
     /* Sticky Header */
     .site-header { position: sticky; top: 0; z-index: 1000; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); height: 60px; display: flex; align-items: center; }
     .nav-inner { max-width: 1200px; width: 100%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
-    .logo { height: 36px; object-fit: contain; }
+    .logo { height: 32px; object-fit: contain; }
     .nav-links { display: flex; gap: 0.5rem; align-items: center; }
     .nav-links a { color: var(--text-2); font-weight: 600; font-size: 13px; text-decoration: none; padding: 8px 14px; border-radius: 8px; transition: all 0.2s; }
     .nav-links a:hover { background: var(--bg-2); color: var(--text); }
@@ -81,14 +81,14 @@
 
     /* Hero */
     .hero { background: var(--bg-2); padding: 5rem 2rem 4rem; border-bottom: 1px solid var(--border); }
-    .hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 450px; gap: 4rem; align-items: center; }
+    .hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 300px; gap: 4rem; align-items: center; }
     .hero-tag { display: inline-block; background: var(--brand-light); color: var(--brand); font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 5px 14px; border-radius: 9999px; margin-bottom: 1.2rem; }
-    .hero-photo { width: 100%; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); overflow: hidden; max-height: 280px; }
-    .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .hero-photo { width: 300px; border-radius: 20px; overflow: hidden; background: transparent; }
+    .hero-photo img { width: 100%; height: auto; object-fit: contain; }
 
     /* TOC TABS */
-    .toc-bar { background: #fff; border-bottom: 1px solid var(--border); padding: 12px 0; position: sticky; top: 60px; z-index: 90; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
-    .toc-inner { display: flex; align-items: center; gap: 12px; overflow-x: auto; scrollbar-width: none; }
+    .toc-bar { background: #fff; border-bottom: 1px solid var(--border); padding: 12px 2rem; position: sticky; top: 60px; z-index: 90; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+    .toc-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 12px; overflow-x: auto; scrollbar-width: none; }
     .toc-inner::-webkit-scrollbar { display: none; }
     .toc-link { white-space: nowrap; font-size: 13px; font-weight: 600; color: var(--text-2); text-decoration: none; padding: 10px 20px; border-radius: 99px; background: var(--bg-2); border: 1px solid var(--border); transition: all 0.3s var(--bouncy); display: flex; align-items: center; gap: 8px; }
     .toc-link:hover { border-color: var(--brand); color: var(--brand); transform: translateY(-2px); }
@@ -165,8 +165,9 @@
       <a href="https://mymirror.fit"><img src="/acne/forehead-acne/logo-v4.png" alt="mymirror" class="logo"></a>
       <nav class="nav-links">
         <a href="/acne/forehead-acne/">Forehead Acne</a>
-        <a href="/acne/face-map/">Face Map 🧠</a>
+        <a href="/acne/back-acne/">Bacne Guide</a>
         <a href="/acne/forehead-acne/home-remedies/">Natural Remedies 🌿</a>
+        <a href="https://mymirror.fit/scan" class="nav-cta">Free Skin Analysis</a>
       </nav>
     </div>
   </header>
@@ -184,16 +185,14 @@
     </div>
   </section>
 
-  <!-- TOC TABS -->
+  <!-- TOC BAR -->
   <div class="toc-bar">
-    <div class="container">
-      <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-3); margin-bottom: 10px;">What's in this guide:</div>
-      <div class="toc-inner">
-        <a class="toc-link active" href="#test"><span class="toc-num">1</span> Fungal Acne Test</a>
-        <a class="toc-link" href="#science"><span class="toc-num">2</span> The Science</a>
-        <a class="toc-link" href="#cure"><span class="toc-num">3</span> 4-Step Cure</a>
-        <a class="toc-link" href="#faqs"><span class="toc-num">4</span> FAQs</a>
-      </div>
+    <div style="max-width:1100px; margin: 0 auto 10px auto; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-3);">What's in this guide:</div>
+    <div class="toc-inner">
+      <a class="toc-link active" href="#test"><span class="toc-num">1</span> Fungal Acne Test</a>
+      <a class="toc-link" href="#science"><span class="toc-num">2</span> The Science</a>
+      <a class="toc-link" href="#cure"><span class="toc-num">3</span> 4-Step Cure</a>
+      <a class="toc-link" href="#faqs"><span class="toc-num">4</span> FAQs</a>
     </div>
   </div>
 
@@ -207,9 +206,8 @@
           <p>Pimples on the forehead are frequently linked to your scalp health. If you suffer from dandruff, flaky scalp, or you're a fan of leaving heavy hair oil (champi) on overnight, those bumps on your forehead aren't traditional acne. They are a direct reaction to the yeast and oils falling from your hair onto your skin.</p>
         </section>
 
-        <!-- Improved Fungal Acne Test -->
         <section id="test" class="checklist-container reveal">
-          <h2 style="margin-top: 0;">The Fungal Acne Test: Do You Have It?</h2>
+          <h2 style="margin-top: 0;">🔬 The Fungal Acne Test: Do You Have It?</h2>
           <p>Traditional acne treatments (like benzoyl peroxide) do very little for dandruff-induced breakouts because they kill bacteria, not fungus. Use this interactive checklist to spot the difference:</p>
           
           <div class="checklist-grid">
@@ -243,7 +241,7 @@
 
         <!-- The Science -->
         <section id="science" class="reveal">
-          <h2>The Science: Why Dandruff Causes Forehead Pimples</h2>
+          <h2>🛡️ The Science: Why Dandruff Causes Forehead Pimples</h2>
           <p>Dandruff is largely caused by an overgrowth of a yeast-like fungus called <strong>Malassezia</strong>. This yeast is actually completely normal — it is present as a normal part of the cutaneous flora in 75 to 98 percent of healthy individuals. It thrives on the natural oils (sebum) produced by your scalp.</p>
           <p>However, things go wrong when there is an overgrowth. When you sweat — especially under a helmet during an Indian summer commute — or when hair products melt down your forehead, this yeast travels. It invades the hair follicles on your forehead, causing inflammation.</p>
 
@@ -257,37 +255,43 @@
 
         <!-- 4 Step Cure -->
         <section id="cure" class="reveal">
-          <h2>The Fungal Acne Cure: 4 Steps to Clear Skin</h2>
+          <h2>🧪 The Fungal Acne Cure: 4 Steps</h2>
           <p>Because these bumps are caused by yeast, you need targeted anti-fungal solutions. Here is the exact clinical protocol to clear the bumps and keep them away.</p>
 
           <div class="protocol-card">
             <div class="step-num">01</div>
-            <h3>The Anti-Dandruff Wash Hack</h3>
-            <p>Buy a shampoo containing active anti-fungal ingredients like <strong>Ketoconazole (2%)</strong>, Zinc Pyrithione, or Selenium Sulfide. Wash your hair, but also apply the suds directly to your forehead like a face mask. Leave it on for 3–5 minutes before rinsing. Do this 3 times a week.</p>
+            <div>
+              <h3>🧼 The Anti-Dandruff Wash Hack</h3>
+              <p>Buy a shampoo containing active anti-fungal ingredients like <strong>Ketoconazole (2%)</strong>, Zinc Pyrithione, or Selenium Sulfide. Wash your hair, but also apply the suds directly to your forehead like a face mask. Leave it on for 3–5 minutes before rinsing. Do this 3x weekly.</p>
+            </div>
           </div>
 
           <div class="protocol-card">
             <div class="step-num">02</div>
-            <h3>Change Your Hair Oil Routine</h3>
-            <p>Yeast feeds on lipids and fatty acids found in natural oils like coconut, olive, and almond oil. If you must use hair oil, apply it only to the ends of your hair, or massage it into the scalp just 30 minutes before shampooing. <strong>Never sleep with oiled hair.</strong></p>
+            <div>
+              <h3>🧴 Change Your Hair Oil Routine</h3>
+              <p>Avoid leaving <em>champi</em> oil in overnight. Apply oil only to the ends of your hair and wash it out after 30 minutes to starve the yeast. <strong>Never sleep with oiled hair.</strong></p>
+            </div>
           </div>
 
           <div class="protocol-card">
             <div class="step-num">03</div>
-            <h3>Switch to "Fungal Acne Safe" Skincare</h3>
-            <p>Heavy moisturizers and sunscreens can trap yeast. Switch to lightweight, oil-free gel moisturizers. Avoid skincare products containing esters, polysorbates, and fatty acids (like oleic or linoleic acid) until your forehead clears.</p>
+            <div>
+              <h3>☁️ Switch to "Fungal Acne Safe" Skincare</h3>
+              <p>Heavy moisturizers and sunscreens can trap yeast. Switch to lightweight, oil-free gel moisturizers. Avoid skincare products containing esters, polysorbates, and fatty acids (like oleic or linoleic acid) until your forehead clears.</p>
+            </div>
           </div>
 
           <div class="protocol-card">
             <div class="step-num">04</div>
-            <h3>Sanitize Your Gear</h3>
-            <p>Helmets, caps, and pillowcases trap sweat, yeast, and dead skin. Wipe down your helmet's inner lining with antibacterial wipes weekly, and change your pillowcase every 2–3 days to break the reinfection cycle.</p>
-          </div>
-        </section>
+            <div>
+              <h3>🛁 Sanitize Your Gear</h3>
+              <p>Helmets, caps, and pillowcases trap sweat, yeast, and dead skin. Wipe down your helmet's inner lining weekly, and change your pillowcase every 2–3 days to break the reinfection cycle.</p>
+            </div>
+          </div>        </section>
 
-        <!-- FAQs -->
         <section id="faqs" class="reveal">
-          <h2>Frequently Asked Questions</h2>
+          <h2>📋 Frequently Asked Questions</h2>
           <div class="faq-item">
             <button class="faq-q" onclick="toggleFAQ(this)">How long does it take for fungal acne to clear? <span class="faq-icon">+</span></button>
             <div class="faq-a"><p>If you are consistently using an anti-fungal shampoo (like Ketoconazole) and strictly avoiding heavy oils on your forehead, you will typically see a drastic reduction in the itchy bumps within 2 to 3 weeks.</p></div>
