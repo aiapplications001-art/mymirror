@@ -100,18 +100,26 @@
     .page-body { display: grid; grid-template-columns: 1fr 320px; gap: 4rem; padding: 4rem 0; align-items: start; }
 
     /* Checklist Section */
-    .checklist-container { background: var(--bg-3); border-radius: 32px; padding: 3rem; margin: 3rem 0; border: 1px solid var(--border); }
-    .checklist-grid { display: grid; gap: 1rem; margin-top: 2rem; }
+    .checklist-container { background: var(--bg-2); border-radius: 32px; padding: 3rem; margin: 3rem 0; border: 1px solid var(--border); box-shadow: 0 10px 40px rgba(0,0,0,0.02); }
+    .checklist-grid { display: grid; gap: 0.75rem; margin-top: 1.5rem; }
     .checklist-item { 
-      background: #fff; padding: 1.25rem; border-radius: 16px; border: 2px solid transparent; 
+      background: #fff; padding: 1.25rem 1.5rem; border-radius: 20px; border: 2px solid transparent; 
       cursor: pointer; display: flex; align-items: center; gap: 15px; transition: all 0.3s var(--bouncy);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.02);
     }
-    .checklist-item:hover { transform: translateX(8px); border-color: var(--brand-light); }
+    .checklist-item:hover { transform: translateY(-3px); border-color: var(--brand-light); box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
     .checklist-item.active { border-color: var(--brand); background: var(--brand-light); }
-    .check-box { width: 24px; height: 24px; border: 2px solid var(--border); border-radius: 6px; flex-shrink: 0; background: #fff; position: relative; }
-    .checklist-item.active .check-box { background: var(--brand); border-color: var(--brand); }
+    .check-box { width: 24px; height: 24px; border: 2px solid var(--border); border-radius: 50%; flex-shrink: 0; background: #fff; position: relative; transition: all 0.2s; }
+    .checklist-item.active .check-box { background: var(--brand); border-color: var(--brand); transform: scale(1.1); }
     .checklist-item.active .check-box::after { content: '✓'; color: #fff; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 900; }
-    .checklist-result { display: none; margin-top: 2.5rem; padding: 2rem; background: var(--text); color: #fff; border-radius: 20px; animation: revealUp 0.5s var(--bouncy); }
+    
+    .checklist-progress-wrap { height: 8px; background: var(--bg-3); border-radius: 10px; margin: 2rem 0; overflow: hidden; }
+    #checklist-progress { height: 100%; width: 0%; background: var(--brand); transition: width 0.4s ease; }
+
+    .checklist-result { display: none; margin-top: 2rem; padding: 2rem; border-radius: 25px; animation: revealUp 0.5s var(--bouncy); }
+    .result-low { background: #f0fdf4; border: 1px solid #bbf7d0; color: #166534; }
+    .result-high { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; }
+    .result-critical { background: #fff5f5; border: 1px solid #feb2b2; color: #991b1b; }
 
     /* Protocol Steps */
     .protocol-card { background: #fff; border: 1px solid var(--border); border-radius: 24px; padding: 2.5rem; margin-bottom: 2rem; transition: transform 0.4s var(--bouncy); }
@@ -210,32 +218,36 @@
           <h2 style="margin-top: 0;">🔬 The Fungal Acne Test: Do You Have It?</h2>
           <p>Traditional acne treatments (like benzoyl peroxide) do very little for dandruff-induced breakouts because they kill bacteria, not fungus. Use this interactive checklist to spot the difference:</p>
           
+          <div class="checklist-progress-wrap">
+            <div id="checklist-progress"></div>
+          </div>
+
           <div class="checklist-grid">
             <div class="checklist-item" onclick="toggleCheck(this)">
               <div class="check-box"></div>
-              <p style="margin:0;">The bumps are all the exact same size (tiny, uniform papules).</p>
+              <p style="margin:0;"><strong>Uniform Size:</strong> The bumps are all the exact same size (tiny, uniform papules).</p>
             </div>
             <div class="checklist-item" onclick="toggleCheck(this)">
               <div class="check-box"></div>
-              <p style="margin:0;">The bumps are highly itchy (regular acne rarely itches).</p>
+              <p style="margin:0;"><strong>Intense Itching:</strong> The bumps are highly itchy (regular acne rarely itches).</p>
             </div>
             <div class="checklist-item" onclick="toggleCheck(this)">
               <div class="check-box"></div>
-              <p style="margin:0;">They are clustered tightly along your hairline or temples.</p>
+              <p style="margin:0;"><strong>T-Zone Location:</strong> They are clustered tightly along your hairline, temples, or forehead.</p>
             </div>
             <div class="checklist-item" onclick="toggleCheck(this)">
               <div class="check-box"></div>
-              <p style="margin:0;">Breakouts worsen rapidly after sweating under a helmet or cap.</p>
+              <p style="margin:0;"><strong>Sweat Trigger:</strong> Breakouts worsen rapidly after sweating under a helmet, cap, or workout.</p>
             </div>
             <div class="checklist-item" onclick="toggleCheck(this)">
               <div class="check-box"></div>
-              <p style="margin:0;">You currently have dandruff or a flaky scalp.</p>
+              <p style="margin:0;"><strong>Scalp Issues:</strong> You currently have dandruff, a flaky scalp, or itchy roots.</p>
             </div>
           </div>
 
           <div id="check-result" class="checklist-result">
-            <h3 style="color: #fff; margin-top: 0;">💡 Your Result</h3>
-            <p id="result-text" style="color: rgba(255,255,255,0.9); margin-bottom: 0;"></p>
+            <h3 style="margin-top: 0;" id="result-title">💡 Assessment Result</h3>
+            <p id="result-text" style="margin-bottom: 0;"></p>
           </div>
         </section>
 
@@ -340,16 +352,33 @@
     // Interactive Checklist
     function toggleCheck(el) {
       el.classList.toggle('active');
-      const items = document.querySelectorAll('.checklist-item.active');
+      const allItems = document.querySelectorAll('.checklist-item');
+      const activeItems = document.querySelectorAll('.checklist-item.active');
+      const count = activeItems.length;
+      const progress = (count / allItems.length) * 100;
+      
+      document.getElementById('checklist-progress').style.width = progress + '%';
+      
       const resultBox = document.getElementById('check-result');
+      const resultTitle = document.getElementById('result-title');
       const resultText = document.getElementById('result-text');
       
-      if (items.length > 0) {
+      if (count > 0) {
         resultBox.style.display = 'block';
-        if (items.length >= 3) {
-          resultText.innerHTML = "You likely have <strong>Pityrosporum Folliculitis (Fungal Acne)</strong>. Stop using normal acne spot treatments immediately — they can actually make the condition worse by disrupting your skin's microbiome. Follow the protocol below.";
+        resultBox.className = 'checklist-result'; // reset
+        
+        if (count >= 4) {
+          resultBox.classList.add('result-critical');
+          resultTitle.innerText = "🛑 High Probability: Fungal Acne";
+          resultText.innerHTML = "Your symptoms strongly suggest <strong>Malassezia Folliculitis (Fungal Acne)</strong>. Standard bacterial acne creams (like Benzoyl Peroxide) will likely fail here. Follow the clinical anti-fungal protocol below immediately.";
+        } else if (count >= 2) {
+          resultBox.classList.add('result-high');
+          resultTitle.innerText = "⚠️ Possible Fungal Acne";
+          resultText.innerText = "You have several markers of fungal acne. Since it is often misdiagnosed, we recommend trying an anti-fungal wash for 1 week to see if the bumps respond better than they do to regular creams.";
         } else {
-          resultText.innerText = "Keep checking your symptoms. Fungal acne is usually very itchy and uniform in size.";
+          resultBox.classList.add('result-low');
+          resultTitle.innerText = "🔍 Low Probability";
+          resultText.innerText = "Your symptoms are less typical for fungal acne, but the 'Uniform Size' marker is still worth watching. It could be early-stage congestion or simple sweat rash.";
         }
       } else {
         resultBox.style.display = 'none';
