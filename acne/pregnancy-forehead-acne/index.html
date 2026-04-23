@@ -121,10 +121,17 @@
     .trust-editorial { font-weight: 600; color: var(--text); }
     .trust-verify { color: #059669; font-weight: 700; }
 
-    /* Dark Hero */
-    .dark-hero { background: linear-gradient(135deg, #111, #2a1a0e); padding: 6rem 2rem; text-align: center; color: #fff; }
-    .dark-hero h1 { color: #fff; margin-bottom: 1rem; }
-    .dark-hero p { color: rgba(255,255,255,0.75); font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem; }
+    /* Hero Section */
+    .hero { background: linear-gradient(135deg, #F0F6FF 0%, #FFFFFF 100%); padding: 5rem 2rem 4rem; border-bottom: 1px solid var(--border); }
+    .hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: center; }
+    .hero-content { text-align: left; }
+    .hero h1 { margin-bottom: 1.5rem; color: var(--text); }
+    .hero p { font-size: 1.2rem; color: var(--text-2); margin-bottom: 2.5rem; line-height: 1.5; }
+    .hero-photo { width: 100%; max-width: 480px; border-radius: 24px; overflow: hidden; }
+    .hero-photo img { width: 100%; height: auto; object-fit: contain; mix-blend-mode: multiply; filter: contrast(1.05); }
+
+    .btn-cta { display: inline-block; padding: 16px 36px; border-radius: 9999px; border: none; background: var(--brand); color: #fff !important; font-weight: 700; font-size: 15px; cursor: pointer; box-shadow: 0 10px 25px rgba(236,97,14,0.25); transition: all 0.3s var(--bouncy); text-decoration: none; }
+    .btn-cta:hover { transform: translateY(-3px) scale(1.02); background: var(--brand-dark); box-shadow: 0 15px 30px rgba(236,97,14,0.3); }
 
     /* 2 Column Layout */
     .page-body { display: grid; grid-template-columns: 1fr 320px; gap: 4rem; padding: 4rem 0; align-items: start; }
@@ -210,7 +217,9 @@
 
     @media (max-width: 950px) {
       .hero-inner, .page-body { grid-template-columns: 1fr; }
-      .hero-inner { text-align: center; }
+      .hero-inner { text-align: center; gap: 2rem; }
+      .hero-content { text-align: center; }
+      .hero-photo { display: none; }
       .nav-links { display: none; }
       .bento-grid, .step-grid { grid-template-columns: 1fr; }
     }
@@ -236,11 +245,16 @@
     </div>
   </header>
 
-  <section class="dark-hero">
-    <div class="container">
-      <h1>Pimples on Forehead <span style="color: var(--brand);">During Pregnancy</span>: What They Mean & Safe Treatments</h1>
-      <p>Not the glow you expected? Here’s exactly why forehead acne happens during pregnancy — and how to treat it safely without harming your baby.</p>
-      <a href="https://mymirror.fit/scan" class="btn-cta">👉 Get Pregnancy-Safe Routine</a>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1>Pimples on Forehead <span style="color: var(--brand);">During Pregnancy</span>: What They Mean & Safe Treatments</h1>
+        <p>Not the glow you expected? Here’s exactly why forehead acne happens during pregnancy — and how to treat it safely without harming your baby.</p>
+        <a href="https://mymirror.fit/scan" class="btn-cta">👉 Get Pregnancy-Safe Routine</a>
+      </div>
+      <div class="hero-photo">
+        <img src="preg.jpg" alt="Pregnancy skin health illustration">
+      </div>
     </div>
   </section>
 
