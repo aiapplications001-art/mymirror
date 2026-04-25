@@ -1,4 +1,10 @@
 {
+  "rewrites": [
+    {
+      "source": "/scan/:path*",
+      "destination": "https://face3layerscanner.onrender.com/:path*"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*).(jpg|png|webp|avif)",
