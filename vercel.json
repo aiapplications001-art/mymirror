@@ -1,8 +1,20 @@
 {
   "rewrites": [
     {
+      "source": "/scan",
+      "destination": "https://face3layerscanner.onrender.com/"
+    },
+    {
       "source": "/scan/:path*",
       "destination": "https://face3layerscanner.onrender.com/:path*"
+    },
+    {
+      "source": "/analyze-face",
+      "destination": "https://face3layerscanner.onrender.com/analyze-face"
+    },
+    {
+      "source": "/scan-log/:path*",
+      "destination": "https://face3layerscanner.onrender.com/scan-log/:path*"
     }
   ],
   "headers": [
