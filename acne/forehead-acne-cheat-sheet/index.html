@@ -27,14 +27,12 @@
             --text-secondary: #5C4A3A;
             --text-tertiary: #9E8575;
             --border: #E8DDD5;
-            --success: #2D7A4F;
+            --success: #059669;
             --warning: #A05C00;
             --danger: #C0392B;
             --info: #1A5F8A;
             --bouncy: cubic-bezier(0.175, 0.885, 0.32, 1.275);
             --transition-base: 0.4s var(--bouncy);
-            --max-content: 1100px;
-            --max-article: 720px;
         }
 
         @media (prefers-color-scheme: dark) {
@@ -59,257 +57,359 @@
         }
 
         h1, h2, h3, h4 { font-family: 'Kantumruy Pro', serif; color: var(--text-primary); }
-        h1 { font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 600; line-height: 1.1; letter-spacing: -0.04em; }
-        h2 { font-size: 2.2rem; font-weight: 600; line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 2rem; }
-        h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; line-height: 1.35; }
         
-        p { color: var(--text-secondary); margin-bottom: 1.5rem; }
-        strong { color: var(--text-primary); font-weight: 700; }
-        em { color: var(--text-secondary); font-style: italic; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+        .container--article { max-width: 720px; margin: 0 auto; padding: 0 2rem; }
 
-        .container { max-width: var(--max-content); margin: 0 auto; padding: 0 2rem; }
-        .container--article { max-width: var(--max-article); margin: 0 auto; padding: 0 2rem; }
-
-        /* Navigation */
-        .trust-bar { background: var(--bg-secondary); padding: 10px 2rem; border-bottom: 1px solid var(--border); font-size: 11px; color: var(--text-tertiary); display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; text-align: center; }
-        .site-header { position: sticky; top: 0; z-index: 1000; background: var(--bg-primary); box-shadow: 0 2px 10px rgba(0,0,0,0.05); height: 60px; display: flex; align-items: center; }
-
-        /* Disclaimer */
-        .disclaimer { font-size: 12px; color: var(--text-tertiary); font-style: italic; text-align: center; padding: 1rem 0; border-bottom: 1px solid var(--border); }
+        /* Trust Bar */
+        .trust-bar {
+            background: #f1f5f9;
+            padding: 10px 20px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 12px;
+            color: #64748b;
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 1100;
+        }
 
         /* Hero */
-        .hero { padding: 5rem 0 7rem; background: linear-gradient(135deg, #111 0%, #2A1A0E 100%); color: #fff; }
-        .hero h1 { margin-bottom: 1.5rem; color: #fff; text-align: center; }
-        .hero p { font-size: 1.2rem; color: rgba(255,255,255,0.8); text-align: center; max-width: 800px; margin: 0 auto 3rem; }
-
-        /* Floating Quick Scan Cheat Sheet */
-        .cheat-sheet-wrapper { max-width: var(--max-content); margin: -5rem auto 0; padding: 0 2rem; position: relative; z-index: 20; }
-        .cheat-sheet {
-            background: var(--bg-primary);
-            border-radius: 32px;
-            padding: 3rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 32px;
-            box-shadow: 0 25px 60px rgba(0,0,0,0.12);
-            border: 1px solid var(--border);
+        .hero {
+            background: linear-gradient(135deg, #1a1410 0%, #2a1a0e 100%);
+            padding: 5rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            color: #fff;
         }
-        .cheat-item h5 { font-size: 0.75rem; color: var(--text-tertiary); text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.1em; }
-        .cheat-item p { font-size: 1.1rem; font-weight: 800; margin-bottom: 0; color: var(--text-primary); line-height: 1.3; }
 
-        /* Bento Grid */
-        .bento-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; margin: 3rem 0; }
-        .bento-card {
-            background: var(--bg-primary);
-            border-radius: 24px;
-            padding: 2.5rem;
-            border: 1px solid var(--border);
-            transition: var(--transition-base);
-            grid-column: span 6;
-        }
-        .bento-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.06); }
-        .bento-card.wide { grid-column: span 12; }
-        .bento-card.slim { grid-column: span 4; }
-
-        /* Proof Callouts */
-        .proof-box { background: var(--bg-tertiary); border-radius: 16px; padding: 1.5rem; margin-top: 1.5rem; border-left: 4px solid var(--info); }
-        .proof-box strong { color: var(--info); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px; }
-        .proof-box p { font-size: 0.9rem; margin-bottom: 0; font-style: italic; }
-
-        /* FAQ */
-        .faq-item { margin-bottom: 2.5rem; }
-        .faq-item h4 { font-family: var(--font-ui); font-size: 1.15rem; color: var(--brand); margin-bottom: 0.75rem; }
-
-        /* Buttons */
-        .btn-brand {
-            display: inline-block;
-            padding: 18px 42px;
+        .btn-primary {
+            padding: 14px 32px;
+            border-radius: 9999px;
+            border: none;
             background: var(--brand);
             color: #fff;
-            border-radius: 9999px;
-            font-weight: 800;
-            text-decoration: none;
-            transition: var(--transition-base);
-            box-shadow: 0 10px 25px rgba(236,97,14,0.3);
-            border: none;
+            font-weight: 700;
+            font-size: 14px;
             cursor: pointer;
+            box-shadow: 0 10px 25px rgba(236,97,14,0.2);
+            transition: all 0.3s var(--bouncy);
+            text-decoration: none;
+            display: inline-block;
         }
-        .btn-brand:hover { transform: translateY(-4px); box-shadow: 0 15px 35px rgba(236, 97, 14, 0.4); background: var(--brand-dark); }
+        .btn-primary:hover { transform: translateY(-4px); background: var(--brand-dark); }
+
+        .btn-outline {
+            padding: 14px 32px;
+            border-radius: 9999px;
+            border: 2px solid #fff;
+            background: transparent;
+            color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* TOC Sidebar */
+        .page-layout {
+            display: flex;
+            gap: 3rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            align-items: start;
+        }
+
+        .sidebar-toc {
+            position: sticky;
+            top: 100px;
+            width: 280px;
+            flex-shrink: 0;
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 16px;
+        }
+
+        .toc-link {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            text-decoration: none;
+            padding: 0.4rem 0;
+            border-left: 3px solid transparent;
+            padding-left: 0.8rem;
+            transition: all 0.3s;
+            display: block;
+        }
+        .toc-link:hover, .toc-link.active {
+            color: var(--brand);
+            border-left-color: var(--brand);
+            background: rgba(236, 97, 14, 0.05);
+        }
+
+        /* Content Sections */
+        .section { margin-bottom: 6rem; }
+        .trigger-card {
+            margin: 2.5rem 0;
+            padding: 2.5rem;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+        }
+        .rule-card {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 16px;
+            border: 2px solid var(--border);
+            transition: var(--transition-base);
+        }
+        .rule-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.08); }
+
+        .proof-box { background: var(--bg-tertiary); padding: 1.2rem; border-radius: 12px; margin: 1.5rem 0; border-left: 4px solid var(--info); }
+        
+        /* FAQ Accordion */
+        .faq-item { background: #fff; border-radius: 16px; margin-bottom: 12px; border: 1px solid var(--border); overflow: hidden; }
+        .faq-q { padding: 1.3rem 1.5rem; font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-a { padding: 0 1.5rem 1.3rem; display: none; }
+
+        /* Mobile */
+        @media (max-width: 900px) {
+            .sidebar-toc { display: none; }
+            .page-layout { padding: 2rem 0; }
+            .container--article { padding: 0 1.5rem; }
+        }
 
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s var(--bouncy); }
         .reveal.active { opacity: 1; transform: none; }
-
-        @media (max-width: 900px) {
-            .cheat-sheet { grid-template-columns: 1fr; padding: 2rem; }
-            .bento-card { grid-column: span 12; }
-            .hero { padding: 4rem 1.5rem; }
-        }
     </style>
 </head>
 <body>
 
-<div class="disclaimer container">
-    Medical Disclaimer: The information provided on mymirror.fit is for educational purposes only and is not a substitute for professional medical advice. Always consult with a board-certified dermatologist in India.
-</div>
-
 <div class="trust-bar">
-    <span>Reviewed against peer-reviewed dermatology studies indexed on PubMed</span>
-    <span>• Medically reviewed by: <strong>Dr. Lipy Mehta, Board-Certified Dermatologist</strong></span>
-    <span>• Last medically updated: April 2026</span>
+  <span style="font-weight:600;color:#1A1410;">✍️ MyMirror Editorial</span>
+  <span style="color:#059669;font-weight:700;">✓ Reviewed by Dr. Lipy Mehta, Board-Certified Dermatologist</span>
+  <span>Updated April 2026</span>
 </div>
 
-<header class="site-header">
-    <div class="container" style="display:flex; justify-content:space-between; align-items:center; width:100%;">
-        <a href="/"><img src="/acne/forehead-acne/logo-v4.png" alt="mymirror" style="height:32px;"></a>
-        <nav style="display:flex; gap:20px;">
-            <a href="/acne/forehead-acne/" style="color:var(--text-primary); text-decoration:none; font-weight:600; font-size:0.9rem;">Back to Guide</a>
-            <a href="/acne/face-map/" style="color:var(--brand); text-decoration:none; font-weight:700; font-size:0.9rem;">Skin Analysis</a>
-        </nav>
+<header class="hero">
+  <div style="max-width:900px;margin:0 auto;">
+    <span style="display:inline-block;padding:6px 16px;border-radius:20px;font-size:11px;font-weight:700;background:rgba(236,97,14,0.15);color:#EC610E;margin-bottom:1.2rem;border:1px solid rgba(236,97,14,0.3);">FOREHEAD-SPECIFIC GUIDE</span>
+    <h1 style="margin-bottom:1.2rem;">The Ultimate Forehead Acne <span style="color:#EC610E;">Cheat Sheet</span> for Indian Skin</h1>
+    <p>Why helmet friction, monsoon humidity, and champi oil turn your forehead into a breakout zone — and exactly what to do about it.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="/acne/face-map/" class="btn-primary">Try Skin Analysis</a>
+      <a href="#cheat-sheet" class="btn-outline">Save This Guide</a>
     </div>
+  </div>
 </header>
 
-<main>
-    <section class="hero">
-        <div class="container--article">
-            <h1 class="reveal">The Ultimate Forehead Acne Cheat Sheet:<br><span style="color:var(--brand);">Clear Bumps & Breakouts in Indian Climates</span></h1>
-            <p class="reveal" style="transition-delay: 0.1s;">
-                You wash your face. You tie your hair back. You try not to touch your skin. And still, those stubborn bumps return — right there on your forehead.
-            </p>
-            <p class="reveal" style="transition-delay: 0.2s;">
-                For Indian users, forehead acne rarely tells a simple story. It's often a mix of humidity, hair oils (champi), helmet friction, and monsoon bumps.
-            </p>
-        </div>
+<div style="background:#F9F6F3;padding:2.5rem 2rem;border-bottom:1px solid #E8DDD5;">
+  <div class="container" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;text-align:center;">
+    <div>
+      <div style="font-size:2.2rem;font-weight:700;color:#EC610E;margin-bottom:0.3rem;">4</div>
+      <div style="font-size:0.85rem;color:#5C4A3A;font-weight:600;">Sneaky Triggers Explained</div>
+    </div>
+    <div>
+      <div style="font-size:2.2rem;font-weight:700;color:#059669;margin-bottom:0.3rem;">3</div>
+      <div style="font-size:0.85rem;color:#5C4A3A;font-weight:600;">Evidence-Backed Rules</div>
+    </div>
+    <div>
+      <div style="font-size:2.2rem;font-weight:700;color:#1A5F8A;margin-bottom:0.3rem;">3</div>
+      <div style="font-size:0.85rem;color:#5C4A3A;font-weight:600;">Clinical Treatment Options</div>
+    </div>
+  </div>
+</div>
+
+<div class="page-layout">
+  <aside class="sidebar-toc">
+    <h4 style="font-size:0.75rem;font-weight:700;color:#5C4A3A;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:1rem;">On This Page</h4>
+    <nav>
+      <a href="#triggers" class="toc-link active">4 Sneaky Triggers</a>
+      <a href="#rules" class="toc-link">3 Rules for Indian Skin</a>
+      <a href="#what-is" class="toc-link">What Forehead Acne Is</a>
+      <a href="#read-bumps" class="toc-link">How to Read Your Bumps</a>
+      <a href="#treatments" class="toc-link">3 Treatment Options</a>
+      <a href="#prevention" class="toc-link">Long-Term Protection</a>
+      <a href="#faq" class="toc-link">Community FAQ</a>
+      <a href="#when-derma" class="toc-link">See a Dermatologist?</a>
+    </nav>
+  </aside>
+
+  <main class="container--article">
+    <section class="section" style="text-align:center;">
+      <p style="font-size:1.05rem;line-height:1.7;"><strong>You wash your face. You tie your hair back.</strong> And still, those stubborn bumps return — right there on your forehead.</p>
+      
+      <!-- IMAGE: Indian woman looking at forehead in mirror -->
+      <div style="border-radius:16px;overflow:hidden;margin:2rem 0;box-shadow:0 10px 30px rgba(0,0,0,0.08);height:400px;background:#F2EDE8;">
+        <img src="/acne/forehead-acne/forehead.jpg" alt="Woman examining forehead acne in mirror" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      
+      <p style="font-size:0.95rem;line-height:1.65;">For Indian users, forehead acne rarely tells a simple story. Sometimes it starts after an overnight <em>champi</em>. Sometimes it shows up during sticky monsoon weeks. Sometimes it gets worse after helmet commutes.</p>
     </section>
 
-    <div class="cheat-sheet-wrapper">
-        <div class="cheat-sheet reveal">
-            <div class="cheat-item">
-                <h5>Primary Cause</h5>
-                <p>Oil Build-up & Clogging</p>
-            </div>
-            <div class="cheat-item">
-                <h5>The "Monsoon" Trigger</h5>
-                <p>Humidity-driven Fungal Bumps</p>
-            </div>
-            <div class="cheat-item">
-                <h5>The Golden Rule</h5>
-                <p>Condition Hair First, Wash Body Last</p>
-            </div>
-        </div>
+    <div id="cheat-sheet" style="background:linear-gradient(135deg,#FFE1CE 0%,#fff8f0 100%);border-radius:20px;padding:2.5rem;margin:3rem 0;border:2px solid #EC610E;position:relative;overflow:hidden;" class="reveal">
+      <div style="position:absolute;top:-20px;right:-20px;font-size:60px;opacity:0.1;">📌</div>
+      <h3 style="font-size:1.3rem;color:#C14800;margin-bottom:1rem;">📌 Save This: The MyMirror Battle Plan</h3>
+      <p style="color:#1A1410;font-size:0.95rem;margin-bottom:1.5rem;">Take a screenshot or bookmark this page — you'll want these triggers and rules whenever your forehead starts acting up.</p>
+      <button class="btn-primary" style="padding:10px 24px;font-size:13px;">📸 Save to Camera Roll</button>
     </div>
 
-    <section class="container" style="padding-top: 6rem;">
-        <h2 class="reveal" style="text-align:center;">📌 Save This: The MyMirror Forehead Acne Battle Plan</h2>
-        
-        <h3 class="reveal" style="text-align:center; margin-bottom: 3rem;">The 4 Sneaky Triggers Behind Forehead Breakouts in India</h3>
-        <div class="bento-grid">
-            <div class="bento-card reveal">
-                <h3>1. The "Champi Runoff" Problem</h3>
-                <p>Coconut, amla, and mustard oils may feel nourishing, but when they sit overnight, they travel onto the forehead. "Pomade acne" is a medically recognized concept linked to hair products obstructing pore units.</p>
-                <div style="font-size: 0.8rem; color: var(--text-tertiary);">Source: PubMed Dermatology Archive</div>
-            </div>
-            <div class="bento-card reveal">
-                <h3>2. Monsoon Itchy Bumps</h3>
-                <p>Tiny, uniform, itchy bumps during humid weather may be <strong>Malassezia folliculitis</strong> (fungal acne), not regular acne. Sweat and oil buildup during Indian monsoons create the perfect breeding ground.</p>
-                <div style="font-size: 0.8rem; color: var(--text-tertiary);">Source: Malassezia Research, 2024</div>
-            </div>
-            <div class="bento-card reveal">
-                <h3>3. Helmet & Commute Friction</h3>
-                <p>Trapped sweat and friction from helmet padding during daily two-wheeler commutes can create follicular plugging and microbial imbalance — worsened by heat and urban pollution.</p>
-            </div>
-            <div class="bento-card reveal">
-                <h3>4. Bindi & Product Buildup</h3>
-                <p>Adhesive bindis, long-wear makeup, and heavy sunscreen residues often form a stubborn film. If you don't cleanse fully at night, whiteheads and texture are inevitable.</p>
-            </div>
+    <section id="triggers" class="section reveal">
+      <h2 style="margin-bottom:1.5rem;">The 4 Sneaky Triggers Behind Forehead Breakouts in India</h2>
+      
+      <!-- TRIGGER 1 -->
+      <div class="trigger-card" style="border-left:4px solid #EC610E;">
+        <div style="display:flex;gap:1rem;margin-bottom:1rem;align-items:center;">
+          <span style="font-size:2rem;">🫗</span>
+          <h3 style="font-size:1.3rem;">The "Champi Runoff" Problem</h3>
         </div>
+        <p>Coconut, amla, and mustard oils nourish the scalp — but when they sit overnight, they travel onto the forehead. This is medically recognized as <strong>pomade acne</strong>.</p>
+        <div style="background:#fff;padding:1.2rem;border-radius:12px;border-left:3px solid #EC610E;margin-top:1.5rem;">
+          <p style="font-size:0.85rem;margin:0;"><strong>Clinical insight:</strong> Limiting overnight oil contact time significantly reduces forehead breakouts in acne-prone Indian skin.</p>
+        </div>
+      </div>
+
+      <!-- TRIGGER 2 -->
+      <div class="trigger-card" style="border-left:4px solid #059669;">
+        <div style="display:flex;gap:1rem;margin-bottom:1rem;align-items:center;">
+          <span style="font-size:2rem;">💦</span>
+          <h3 style="font-size:1.3rem;">Monsoon Bumps (Malassezia)</h3>
+        </div>
+        <p>If your forehead fills with tiny, uniform, <strong>itchy</strong> bumps during humid weather, it may be <strong>Malassezia folliculitis</strong> — a yeast-driven condition that loves Indian monsoons.</p>
+        <div style="background:#e0f5f0;padding:1.2rem;border-radius:12px;border-left:3px solid #059669;margin-top:1.5rem;">
+          <p style="font-size:0.85rem;color:#1A1410;margin:0;"><strong>Key difference:</strong> These are itchy and uniform. Antifungal shampoo (ketoconazole) often works better than acne creams.</p>
+        </div>
+      </div>
+
+      <!-- TRIGGER 3 -->
+      <div class="trigger-card" style="border-left:4px solid #C0392B;">
+        <div style="display:flex;gap:1rem;margin-bottom:1rem;align-items:center;">
+          <span style="font-size:2rem;">🏍️</span>
+          <h3 style="font-size:1.3rem;">Helmet & Commute Friction</h3>
+        </div>
+        <p>Daily two-wheeler commutes, trapped sweat, and friction from helmet padding create a common recipe for forehead flare-ups in Indian cities.</p>
+      </div>
+
+      <!-- TRIGGER 4 -->
+      <div class="trigger-card" style="border-left:4px solid #1A5F8A;">
+        <div style="display:flex;gap:1rem;margin-bottom:1rem;align-items:center;">
+          <span style="font-size:2rem;">💄</span>
+          <h3 style="font-size:1.3rem;">Bindi & Makeup Buildup</h3>
+        </div>
+        <p>Adhesive bindis and long-wear makeup form a film. If you don't cleanse fully at night, whiteheads along the forehead are inevitable.</p>
+      </div>
     </section>
 
-    <section class="bg-secondary" style="padding: 6rem 0; border-radius: 45px;">
-        <div class="container">
-            <h2 class="reveal" style="text-align:center;">The 3 Rules Indian Foreheads Need</h2>
-            <div class="bento-grid" style="grid-template-columns: repeat(3, 1fr);">
-                <div class="bento-card reveal" style="background:#fff; border:none; grid-column: span 4;">
-                    <h4 style="color:var(--brand);">Rule #1: Rethink Overnight Oiling</h4>
-                    <p style="font-size: 0.9rem;">Don't leave thick hair oils for 10 hours. A shorter pre-wash window is more forehead-friendly than an overnight soak.</p>
-                </div>
-                <div class="bento-card reveal" style="background:#fff; border:none; grid-column: span 4;">
-                    <h4 style="color:var(--brand);">Rule #2: Respect Sweat & Friction</h4>
-                    <p style="font-size: 0.9rem;">Clean helmet lining regularly or use a cotton layer. Sweat + friction + pollution is a common recipe for flare-ups.</p>
-                </div>
-                <div class="bento-card reveal" style="background:#fff; border:none; grid-column: span 4;">
-                    <h4 style="color:var(--brand);">Rule #3: Proper Night Cleanse</h4>
-                    <p style="font-size: 0.9rem;">In Indian cities, sunscreen and dust form a stubborn film. A double cleanse matters if your forehead is your problem zone.</p>
-                </div>
-            </div>
+    <section id="rules" class="section reveal">
+      <h2>The 3 Rules Indian Foreheads Need</h2>
+      
+      <div class="rule-card">
+        <div style="display:flex;align-items:center;gap:1.5rem;margin-bottom:1rem;">
+          <div style="background:#EC610E;color:#fff;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">1</div>
+          <h3 style="font-size:1.2rem;">Rethink Overnight Oiling</h3>
         </div>
+        <p>Don't leave thick oils for 10 hours. A 30–60 minute pre-wash window is more forehead-friendly.</p>
+      </div>
+
+      <div class="rule-card">
+        <div style="display:flex;align-items:center;gap:1.5rem;margin-bottom:1rem;">
+          <div style="background:#EC610E;color:#fff;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">2</div>
+          <h3 style="font-size:1.2rem;">Respect Sweat & Friction</h3>
+        </div>
+        <p>Clean helmet padding weekly. Wash your face as soon as you remove your helmet — don't wait.</p>
+      </div>
+
+      <div class="rule-card">
+        <div style="display:flex;align-items:center;gap:1.5rem;margin-bottom:1rem;">
+          <div style="background:#EC610E;color:#fff;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">3</div>
+          <h3 style="font-size:1.2rem;">City-Level Night Cleanse</h3>
+        </div>
+        <p>Sunscreen, dust, and sebum form a stubborn film. Use a double cleanse or a thorough BHA-based cleanser at night.</p>
+      </div>
     </section>
 
-    <section class="container" style="padding: 6rem 0;">
-        <h2 class="reveal">The Science-Backed Options That Help</h2>
-        
-        <div class="bento-grid">
-            <div class="bento-card reveal wide">
-                <h3>1. Salicylic Acid (BHA): For Greasy, Clogged Bumps</h3>
-                <p>Oil-soluble BHA travels deep into the pore to dissolve the "glue" holding dead skin cells and sebum together. Clinical studies support its use in reducing lesion counts significantly.</p>
-                <div class="proof-box">
-                    <strong>The Proof</strong>
-                    <p>Randomized studies show SA performs similarly to Benzoyl Peroxide in mild acne but with better tolerability for sensitive Indian skin.</p>
-                </div>
-            </div>
-            <div class="bento-card reveal">
-                <h3>2. Ketoconazole: For Itchy Monsoon Bumps</h3>
-                <p>If bumps are tiny, uniform, and itchy, antifungal Ketoconazole therapy is often more effective than standard acne creams.</p>
-            </div>
-            <div class="bento-card reveal">
-                <h3>3. Niacinamide: For Summer Shine</h3>
-                <p>Topical 2% niacinamide has been shown in controlled trials to reduce facial sebum production — perfect for summer barrier support.</p>
-            </div>
+    <section id="treatments" class="section reveal">
+      <h2>Science-Backed Treatment Options</h2>
+      
+      <div class="trigger-card" style="background:#fff; border:1px solid var(--border);">
+        <h3 style="color:var(--brand); margin-bottom:1rem;">1. Salicylic Acid (BHA)</h3>
+        <p>Oil-soluble BHA travels deep into the pore to dissolve the "glue" holding clogs together. Best for oily, greasy texture.</p>
+        <div class="proof-box">
+          <strong>The Proof</strong>
+          <p>Clinical trials show SA significantly reduces comedones (blackheads) and performs similarly to Benzoyl Peroxide with better tolerability.</p>
         </div>
+      </div>
+
+      <div class="trigger-card" style="background:#fff; border:1px solid var(--border);">
+        <h3 style="color:#059669; margin-bottom:1rem;">2. Ketoconazole</h3>
+        <p>For those tiny, itchy monsoon bumps. Ketoconazole targets <em>Malassezia</em> yeast rather than bacteria.</p>
+      </div>
+
+      <div class="trigger-card" style="background:#fff; border:1px solid var(--border);">
+        <h3 style="color:#1A5F8A; margin-bottom:1rem;">3. Niacinamide</h3>
+        <p>Reduces summer shine and supports the skin barrier. A perfect "supporting actor" in your routine.</p>
+      </div>
     </section>
 
-    <section class="bg-tertiary" style="padding: 6rem 0; border-radius: 45px;">
-        <div class="container--article">
-            <h2 class="reveal">The MyMirror Community FAQ</h2>
-            
-            <div class="faq-item reveal">
-                <h4>“I love my weekly champi. Do I really have to stop?”</h4>
-                <p>Not necessarily. For many acne-prone users, the issue is contact time. Try a 30-60 minute pre-wash routine instead of overnight oiling, and keep the oil focused on the scalp, not the hairline.</p>
-            </div>
-
-            <div class="faq-item reveal">
-                <h4>“Can haldi and chandan fix forehead bumps?”</h4>
-                <p>They may feel soothing, but they do not reliably unclog pores or treat yeast-driven Malassezia. If your problem is blocked pores or hair-product acne, you’ll usually need a targeted active ingredient.</p>
-            </div>
-
-            <div class="faq-item reveal">
-                <h4>“My dandruff gets worse, and then my forehead breaks out. Are they connected?”</h4>
-                <p>Yes! Malassezia yeast causes both dandruff and a specific type of hairline breakout. Treating the scalp with an antifungal shampoo is often the key to clearing the forehead.</p>
-            </div>
+    <section id="faq" class="section reveal">
+      <h2>Community FAQ</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">"I love my weekly champi. Do I really have to stop?" <span>+</span></div>
+          <div class="faq-a">Not necessarily. Try a shorter contact time (30-60 mins) and keep the oil focused on the scalp, avoiding the hairline.</div>
         </div>
+        <div class="faq-item">
+          <div class="faq-q">"Can haldi and chandan fix forehead bumps?" <span>+</span></div>
+          <div class="faq-a">They may feel soothing, but they do not reliably unclog pores. For blocked pores, you'll need targeted actives like Salicylic Acid.</div>
+        </div>
+      </div>
     </section>
 
-    <section class="container" style="text-align:center; padding: 8rem 0;">
-        <div class="reveal">
-            <h2 style="margin-bottom: 1rem;">Ready to Clear Your Forehead?</h2>
-            <p style="margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-                You do not need a 14-step routine. You need clarity. What kind of bumps are these? What is triggering them?
-            </p>
-            <a href="#" class="btn-brand">Explore Non-Comedogenic Products for India →</a>
-        </div>
+    <section id="when-derma" class="section reveal" style="background:#fee2e2; padding:2.5rem; border-radius:24px; border-left:6px solid var(--danger);">
+      <h2 style="color:var(--danger); font-size:1.5rem; margin-bottom:1rem;">When to See a Dermatologist</h2>
+      <p>Professional help is smart skin care. See a doctor if bumps are painful, intensely itchy, or not improving after 8–12 weeks of consistent care.</p>
+      <a href="#" class="btn-primary" style="margin-top:1.5rem; background:var(--danger);">Book Consultation</a>
     </section>
-</main>
+  </main>
+</div>
 
-<footer style="background: var(--bg-secondary); padding: 5rem 2rem; border-top: 1px solid var(--border); text-align: center;">
-    <div class="container">
-        <img src="/acne/forehead-acne/logo-v4.png" alt="mymirror" style="height:32px; margin-bottom: 2rem; opacity: 0.5;">
-        <p style="font-size: 0.9rem; color: var(--text-tertiary);">Reviewed by Dr. Lipy Mehta, Board-Certified Dermatologist. Medical information is for educational purposes only.</p>
-        <p style="font-size: 0.8rem; color: var(--text-tertiary); margin-top: 1rem;">© 2026 MyMirror Skin Health. All rights reserved.</p>
-    </div>
+<footer style="background:#F2EDE8;padding:4rem 2rem;text-align:center;border-top:1px solid var(--border);">
+  <div class="container--article">
+    <p style="font-size:0.85rem;"><strong>Medical Disclaimer:</strong> The information on mymirror.fit is for educational purposes only and not a substitute for professional medical advice. Reviewed by Dr. Lipy Mehta.</p>
+    <p style="font-size:0.8rem; margin-top:1rem; color:var(--text-tertiary);">© 2026 MyMirror Skin Health. All rights reserved.</p>
+  </div>
 </footer>
 
 <script>
     const obs = new IntersectionObserver(e => e.forEach(x => x.isIntersecting && x.target.classList.add('active')), { threshold: 0.1 });
     document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    // FAQ
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const a = q.nextElementSibling;
+        a.style.display = a.style.display === 'block' ? 'none' : 'block';
+        q.querySelector('span').textContent = a.style.display === 'block' ? '-' : '+';
+      });
+    });
+
+    // TOC Scroll Sync
+    const sections = document.querySelectorAll('.section');
+    const links = document.querySelectorAll('.toc-link');
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(s => { if (pageYOffset >= s.offsetTop - 150) current = s.getAttribute('id'); });
+        links.forEach(l => {
+            l.classList.remove('active');
+            if (l.getAttribute('href') === `#${current}`) l.classList.add('active');
+        });
+    });
 </script>
 
 </body>
