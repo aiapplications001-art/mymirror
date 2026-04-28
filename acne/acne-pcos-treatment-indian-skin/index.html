@@ -54,6 +54,74 @@
       height: 60px;
     }
     .nav-logo img { height: 28px; display: block; }
+    
+    .nav-links {
+      display: flex; gap: 0.25rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-links a {
+      font-size: 13px; font-weight: 500;
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+    .nav-links a:hover { background: var(--color-bg-secondary); color: var(--color-text-primary); }
+    .nav-links a.active { background: var(--color-brand-light); color: var(--color-brand); font-weight: 600; }
+    .nav-cta {
+      background: var(--color-brand);
+      color: #fff !important;
+      padding: 8px 18px !important;
+      border-radius: 8px !important;
+      font-weight: 600 !important;
+      font-size: 13px !important;
+    }
+    .nav-cta:hover { background: var(--color-brand-dark) !important; transform: translateY(-1px); }
+
+    /* BREADCRUMB */
+    .breadcrumb {
+      max-width: 1100px; margin: 0 auto;
+      padding: 12px 2rem;
+      font-size: 12px;
+      color: var(--color-text-tertiary);
+    }
+    .breadcrumb a { color: var(--color-text-tertiary); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--color-brand); }
+    .breadcrumb span { margin: 0 6px; }
+
+    /* FAQ STYLES */
+    .faq-section {
+      margin-top: 4rem;
+      border-top: 1px solid var(--color-border);
+      padding-top: 2rem;
+    }
+    .faq-item {
+      background: var(--color-bg-primary);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%; text-align: left;
+      background: none; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 18px;
+      font-family: var(--font-ui); font-size: 15px; font-weight: 600;
+      color: var(--color-text-primary);
+    }
+    .faq-a {
+      display: none;
+      padding: 0 18px 18px;
+      font-size: 14px; color: var(--color-text-secondary);
+    }
+    .faq-item.active .faq-a {
+      display: block;
+    }
+    .faq-item.active .faq-q { color: var(--color-brand); background: var(--color-bg-secondary); }
 
     /* HERO */
     .hero {
@@ -305,8 +373,22 @@
   <nav>
     <div class="nav-inner">
       <a class="nav-logo" href="https://mymirror.fit"><img src="/acne/forehead-acne/logo-v4.png" alt="mymirror" /></a>
+      <ul class="nav-links">
+        <li><a href="/acne/why-men-get-acne/">Causes</a></li>
+        <li><a href="/acne/forehead-acne/fast-treatment/">Treatments</a></li>
+        <li><a href="/acne/men-acne-faq/">FAQs</a></li>
+        <li><a href="/acne/face-map/">Face Map</a></li>
+        <li><a href="https://face3layerscanner.onrender.com/" class="nav-cta" target="_blank" rel="noopener">Free Skin Analysis</a></li>
+      </ul>
     </div>
   </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="https://mymirror.fit">Home</a><span>›</span>
+    <a href="/acne/">Acne</a><span>›</span>
+    Acne and PCOS Treatment for Indian Skin
+  </div>
 
   <header class="hero">
     <div class="hero-inner">
@@ -407,9 +489,54 @@
     <p>Acne caused by PCOS is stubborn, but with the right blend of hormonal management, climate-appropriate skincare, and targeted hyperpigmentation treatment, clear skin is absolutely achievable.</p>
     <p>Consult with our board-certified dermatologists today to get a customized treatment plan designed specifically for your skin profile.</p>
 
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      
+      <div class="faq-item">
+        <button class="faq-q">Does PCOS acne ever go away? <span>+</span></button>
+        <div class="faq-a">
+          <p>Yes, but it requires a long-term strategy. Since the root cause is hormonal, topical treatments alone are not a cure. You need a combination of a tailored skincare routine, dietary adjustments to control insulin, and often medical treatments prescribed by a dermatologist or endocrinologist.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-q">Is Indian diet bad for PCOS acne? <span>+</span></button>
+        <div class="faq-a">
+          <p>Not entirely, but certain staples like white rice, maida (refined flour), and heavy dairy (like standard milk and paneer) can spike insulin levels. High insulin triggers androgen production, which in turn causes acne. Swapping to complex carbohydrates (like millets and brown rice) and limiting dairy can make a significant difference.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Can hard water worsen my PCOS acne? <span>+</span></button>
+        <div class="faq-a">
+          <p>Absolutely. Many Indian cities have hard water, which contains high levels of calcium and magnesium. These minerals can leave a film on your skin that clogs pores and reduces the effectiveness of your cleansers. Using a gentle toner or rinsing your face with filtered water can help prevent this.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <script>
+    // FAQ Toggle
+    document.querySelectorAll('.faq-q').forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const isActive = faqItem.classList.contains('active');
+        
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(item => {
+          item.classList.remove('active');
+          item.querySelector('.faq-q span').innerText = '+';
+        });
+
+        // Toggle current
+        if (!isActive) {
+          faqItem.classList.add('active');
+          button.querySelector('span').innerText = '−';
+        }
+      });
+    });
+
     // Fallback coordinates for Delhi, India
     const FALLBACK_LAT = 28.6139;
     const FALLBACK_LON = 77.2090;
