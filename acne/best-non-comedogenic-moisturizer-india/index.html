@@ -91,7 +91,7 @@
     /* Sidebar */
     .sidebar { display: flex; flex-direction: column; gap: 2rem; }
     .sidebar-card { background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: 20px; padding: 1.8rem; }
-    .sidebar-card h4 { font-size: 14px; font-weight: 800; margin-bottom: 12px; text-transform: uppercase; color: var(--color-text-primary); line-height: 1.2; }
+    .sidebar-card h4 { font-size: 14px; font-weight: 800; margin-bottom: 15px; text-transform: uppercase; color: var(--color-text-primary); line-height: 1.2; }
     .sidebar-card p { font-size: 13px; line-height: 1.6; margin-bottom: 0; }
     .sidebar-list { list-style: none; }
     .sidebar-list li { padding: 10px 0; font-size: 13px; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; gap: 12px; align-items: flex-start; line-height: 1.5; }
@@ -110,6 +110,16 @@
     .tip-icon { font-size: 32px; margin-bottom: 15px; display: block; line-height: 1; }
     .tip-title { font-weight: 800; font-size: 14px; margin-bottom: 8px; color: var(--color-text-primary); }
     .tip-note { font-size: 12px; color: var(--color-text-tertiary); line-height: 1.5; }
+
+    /* Reveal */
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s var(--ease-bouncy); }
+    .reveal.active { opacity: 1; transform: none; }
+
+    @media (max-width: 900px) {
+      .page-body { grid-template-columns: 1fr; }
+      .sidebar { display: none; }
+      .bento-card { grid-column: span 12; }
+    }
   </style>
 </head>
 <body>
@@ -142,8 +152,8 @@
       <a class="toc-link active" href="#methodology"><span class="toc-num">1</span> Methodology</a>
       <a class="toc-link" href="#budget"><span class="toc-num">2</span> Budget Tiers</a>
       <a class="toc-link" href="#top10"><span class="toc-num">3</span> Top 10 Picks</a>
-      <a class="toc-link" href="#comparison"><span class="toc-num">4</span> Comparison</a>
-      <a class="toc-link" href="#how-to-choose"><span class="toc-num">5</span> Choosing</a>
+      <a class="toc-link" href="#longevity"><span class="toc-num">4</span> Skin Longevity</a>
+      <a class="toc-link" href="#verification"><span class="toc-num">5</span> Verification</a>
     </div>
   </div>
 
@@ -256,147 +266,86 @@
           <div class="section-title">Top 10 Picks for Indian Skin</div>
         </div>
 
-        <!-- PRODUCT 1 -->
         <div class="product-card">
           <span class="product-badge">Fungal Acne Safe</span>
           <h3>1. Sebamed Clear Face Care Gel</h3>
-          <div class="product-meta">
-            <span>Texture: Water-light gel</span>
-            <span>Price: ~₹470</span>
-          </div>
-          <p>If you are dealing with active, painful cysts or itchy fungal bumps, this is your baseline. pH 5.5 to restore the skin's acid mantle.</p>
-          <div class="verdict-box">
-            <strong>The Verdict:</strong> Safest bet on the market for actively breaking out skin. Absorbs instantly.
-          </div>
+          <p>The baseline for active, painful cysts or itchy fungal bumps. pH 5.5 to restore the skin's acid mantle.</p>
         </div>
 
-        <!-- PRODUCT 2 -->
         <div class="product-card">
-          <span class="product-badge">Barrier Repair</span>
-          <h3>2. FormulaRx Barrier Relief Gel-Cream</h3>
-          <div class="product-meta">
-            <span>Texture: Milky gel-cream</span>
-            <span>Price: ~₹399</span>
-          </div>
-          <p>Heals red, inflamed skin overnight using a Ceramide Complex, Niacinamide, and Peptides without adding a single drop of heavy oil.</p>
+          <span class="product-badge">Barrier Relief</span>
+          <h3>2. FormulaRx Barrier Relief Lightweight Gel-Cream</h3>
+          <p>Ceramide-rich cream that is incredibly lightweight. Packed with Niacinamide and Peptides to heal red skin overnight.</p>
         </div>
 
-        <!-- PRODUCT 3 -->
         <div class="product-card">
-          <span class="product-badge">Pharmacy Staple</span>
-          <h3>3. Re'equil Oil-Free Moisturiser</h3>
-          <div class="product-meta">
-            <span>Texture: Light lotion</span>
-            <span>Price: ₹280</span>
-          </div>
-          <p>A staple in Indian prescriptions. Formulated specifically to prevent water loss without suffocating pores.</p>
+          <span class="product-badge">Pharmacy Favorite</span>
+          <h3>3. Cipla Excela</h3>
+          <p>Pharmacy-grade formulation designed specifically for oily skin. Works alongside prescription skincare without undermining it.</p>
         </div>
 
-        <!-- PRODUCT 4 -->
         <div class="product-card">
-          <span class="product-badge">Deep Hydration</span>
-          <h3>4. Minimalist 10% Vitamin B5 Gel</h3>
-          <div class="product-meta">
-            <span>Texture: Slippery gel</span>
-            <span>Price: ₹349</span>
-          </div>
-          <p>Uses high-concentration Panthenol to pull water into the skin. Excellent for pairing with strong BHA serums.</p>
+          <span class="product-badge">Clean Beauty</span>
+          <h3>4. Deyga Oil-Free Moisturiser</h3>
+          <p>Certified oil-free option that doesn't sacrifice scientific integrity. humectant-based for deep hydration.</p>
         </div>
 
-        <!-- PRODUCT 5 -->
         <div class="product-card">
-          <span class="product-badge">Sensitive Skin</span>
-          <h3>5. Simple Hydrating Light Moisturiser</h3>
-          <div class="product-meta">
-            <span>Texture: Lightweight cream</span>
-            <span>Price: ~₹300</span>
-          </div>
-          <p>No artificial perfumes or harsh chemicals. When skin is angry and breaking out, basic is exactly what you need.</p>
+          <span class="product-badge">K-Beauty Choice</span>
+          <h3>5. COSRX Oil-Free Ultra-Moisturizing Lotion</h3>
+          <p>Uses Birch Sap instead of water for natural anti-inflammatory benefits. Excellent for calming angry, red breakouts.</p>
         </div>
 
         <p style="text-align:center; margin: 3rem 0;"><a href="#comparison" class="btn-brand">View Full Top 10 Comparison Table ↓</a></p>
       </section>
 
-      <!-- SECTION 4: COMPARISON -->
-      <section class="content-section reveal" id="comparison">
+      <!-- SECTION 4: LONGEVITY -->
+      <section class="content-section reveal" id="longevity">
         <div class="section-header">
           <div class="section-num">4</div>
-          <div class="section-title">Full Comparison Table</div>
+          <div class="section-title">The Science of Skin Longevity</div>
         </div>
-        <div class="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>Attribute</th>
-                <th>Pond's Gel</th>
-                <th>Minimalist B5</th>
-                <th>Bioderma Hydra</th>
-                <th>CeraVe Gel</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Price</strong></td>
-                <td>₹262</td>
-                <td>₹349</td>
-                <td>₹1,195</td>
-                <td>₹1,140</td>
-              </tr>
-              <tr>
-                <td><strong>Best For</strong></td>
-                <td>Oily beginners</td>
-                <td>Dehydrated skin</td>
-                <td>Post-Retinol</td>
-                <td>Oil control</td>
-              </tr>
-              <tr>
-                <td><strong>Actives</strong></td>
-                <td>Hyaluronic Acid</td>
-                <td>Vitamin B5</td>
-                <td>Ceramides</td>
-                <td>Ceramides</td>
-              </tr>
-              <tr>
-                <td><strong>Humid Weather</strong></td>
-                <td>Excellent</td>
-                <td>Good</td>
-                <td>Okay</td>
-                <td>Good</td>
-              </tr>
-              <tr>
-                <td><strong>Barrier Repair</strong></td>
-                <td>Low</td>
-                <td>Moderate</td>
-                <td>High</td>
-                <td>High</td>
-              </tr>
-            </tbody>
-          </table>
+        <p>Clearing breakouts is only half the battle. The real goal in 2026 is building skin that stays consistently healthy over the long term.</p>
+        
+        <div class="bento-grid">
+          <div class="bento-card">
+            <h3>Ceramides: The Barrier's Best Friend</h3>
+            <p>Lipid molecules that hold cells together. Fortified moisturizers patch gaps in the barrier, reducing sensitivity whilst keeping skin plump.</p>
+          </div>
+          <div class="bento-card">
+            <h3>Rice Water in India</h3>
+            <p>Rich in inositol to help repair damaged cells. Naturally soothing and compatible with oily skin types common across India.</p>
+          </div>
+          <div class="bento-card full">
+            <h3>Acne Treatment + Anti-Ageing</h3>
+            <p>Moisturizers containing niacinamide or hyaluronic acid can support collagen retention while keeping pores clear. This dual approach builds long-term resilience.</p>
+          </div>
         </div>
       </section>
 
-      <!-- SECTION 5: HOW TO CHOOSE -->
-      <section class="content-section reveal" id="how-to-choose">
+      <!-- SECTION 5: VERIFICATION -->
+      <section class="content-section reveal" id="verification">
         <div class="section-header">
           <div class="section-num">5</div>
-          <div class="section-title">How to Choose Your Perfect Formula</div>
+          <div class="section-title">How to Verify Your Moisturiser</div>
         </div>
+        <p>Use this 3-step checklist before committing to any new purchase, whether pharmacy or premium.</p>
+        
         <div class="bento-grid">
-          <div class="bento-card">
-            <h3>Very Oily / Sweaty</h3>
-            <p>Stick to <strong>pure gels</strong>. Pond’s, Minimalist B5, or Sebamed are your safest bets.</p>
+          <div class="bento-card third">
+            <span class="product-badge">Step 1</span>
+            <h3>Decode the List</h3>
+            <p>Avoid heavy oils like coconut or lanolin. Look for humectants: glycerin, HA, and niacinamide.</p>
           </div>
-          <div class="bento-card">
-            <h3>Damaged Barrier</h3>
-            <p>If your skin is peeling from Retinol, you need <strong>Ceramides</strong>. Bioderma or CeraVe are essential.</p>
+          <div class="bento-card third">
+            <span class="product-badge">Step 2</span>
+            <h3>The "Dermat" Label</h3>
+            <p>"Dermatologist recommended" implies active endorsement based on clinical evidence for Indian skin.</p>
           </div>
-          <div class="bento-card full">
-            <h3>The 3-Step Verification Checklist</h3>
-            <ul style="list-style:none; padding-left:1rem;">
-              <li style="margin-bottom:1rem;"><strong>1. Decode the Ingredients:</strong> Avoid Isopropyl Myristate and Coconut derivatives.</li>
-              <li style="margin-bottom:1rem;"><strong>2. "Recommended" vs "Tested":</strong> Look for active endorsements, not just trial participation.</li>
-              <li style="margin-bottom:1rem;"><strong>3. The Humidity Patch Test:</strong> Test for 48 hours during seasonal shifts (Monsoon/Summer).</li>
-            </ul>
+          <div class="bento-card third">
+            <span class="product-badge">Step 3</span>
+            <h3>Patch Test Protocol</h3>
+            <p>Apply to jawline for 48 hours. Retest during monsoon, as humidity changes how products feel.</p>
           </div>
         </div>
       </section>
