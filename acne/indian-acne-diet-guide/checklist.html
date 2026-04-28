@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMirror Acne-Safe Grocery Checklist</title>
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥗</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --brand:      #EC610E;
+            --brand-dark: #C14800;
+            --brand-light:#FFE1CE;
+            --bg:         #FFFFFF;
+            --bg-2:       #F9F6F3;
+            --bg-3:       #F2EDE8;
+            --text:       #1A1410;
+            --text-2:     #5C4A3A;
+            --text-3:     #9E8575;
+            --border:     #E8DDD5;
+            --success:    #2D7A4F;
+            --danger:     #C0392B;
+            --info:       #1A5F8A;
+            --bouncy:     cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 13px;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            padding: 0;
+            margin: 0;
+        }
+
+        /* ----- PRINT OPTIMIZATION ----- */
+        @media print {
+            body {
+                font-size: 10px;
+                line-height: 1.4;
+                background: white;
+            }
+            @page {
+                size: A4;
+                margin: 8mm;
+            }
+            .no-print { display: none !important; }
+            .checklist-page {
+                max-width: 100%;
+                padding: 0;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            .header-card {
+                padding: 12px 8px;
+                border-radius: 12px;
+            }
+            .bento-grid {
+                gap: 8px;
+            }
+            .bento-card {
+                padding: 10px;
+                border-radius: 12px;
+                box-shadow: none;
+            }
+            h1 { font-size: 1.6rem; }
+            h2 { font-size: 1.1rem; margin: 0 0 6px 0; }
+            .category-title { font-size: 1rem; margin: 6px 0 4px; }
+            ul { padding-left: 16px; }
+            li { margin-bottom: 2px; }
+            .avoid-section { padding: 10px; border-radius: 12px; margin-top: 12px; }
+            .quick-link-btn { display: none; }
+            .print-hide { display: none; }
+        }
+
+        @media screen {
+            .checklist-page {
+                max-width: 800px;
+                margin: 2rem auto;
+                padding: 0 1rem;
+            }
+        }
+
+        /* ----- TYPOGRAPHY ----- */
+        h1, h2, h3 {
+            font-family: 'Kantumruy Pro', serif;
+            color: var(--text);
+        }
+
+        h1 {
+            font-size: clamp(1.8rem, 4vw, 2.4rem);
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 1.2rem 0 0.5rem;
+            color: var(--text);
+        }
+
+        .category-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--brand);
+            margin: 1rem 0 0.3rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .avoid-section h3 {
+            font-family: 'Kantumruy Pro', serif;
+            font-weight: 600;
+            color: var(--danger);
+            margin-bottom: 0.5rem;
+        }
+
+        /* ----- COMPONENTS ----- */
+        .checklist-page {
+            background: var(--bg);
+        }
+
+        .header-card {
+            background: linear-gradient(135deg, #fff, var(--bg-2));
+            border-radius: 28px;
+            padding: 1.8rem 1.8rem 1.4rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.03);
+            text-align: center;
+        }
+
+        .header-card .subtitle {
+            font-size: 0.85rem;
+            color: var(--text-2);
+            margin-top: 0.3rem;
+        }
+
+        .header-card .reviewer-badge {
+            display: inline-block;
+            background: var(--bg-3);
+            color: var(--text-2);
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin-top: 0.5rem;
+            border: 1px solid var(--border);
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin: 1rem 0;
+        }
+
+        .bento-card {
+            background: var(--bg);
+            border-radius: 20px;
+            padding: 1.2rem 1.2rem 0.8rem;
+            border: 1px solid var(--border);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+            transition: all 0.3s var(--bouncy);
+        }
+
+        .bento-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+            border-color: var(--brand-light);
+        }
+
+        .bento-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .bento-card li {
+            font-size: 0.82rem;
+            color: var(--text-2);
+            padding: 3px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+            line-height: 1.5;
+        }
+
+        .bento-card li input[type="checkbox"] {
+            accent-color: var(--brand);
+            width: 14px;
+            height: 14px;
+            margin-top: 3px;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+
+        .quick-link-btn {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--brand);
+            text-decoration: none;
+            background: var(--brand-light);
+            padding: 3px 12px;
+            border-radius: 20px;
+            margin-left: 6px;
+            transition: all 0.3s var(--bouncy);
+            white-space: nowrap;
+        }
+
+        .quick-link-btn:hover {
+            background: var(--brand);
+            color: white;
+            transform: scale(1.03);
+        }
+
+        .avoid-section {
+            background: #FFF5F5;
+            border: 1px solid #FECACA;
+            border-radius: 24px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .avoid-section ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px 16px;
+        }
+
+        .avoid-section li {
+            font-size: 0.8rem;
+            color: var(--danger);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.7rem;
+            color: var(--text-3);
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+            .avoid-section ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="checklist-page">
+
+        <!-- HEADER -->
+        <header class="header-card">
+            <h1>🥗 Acne-Safe Grocery Checklist</h1>
+            <p class="subtitle">Science-backed, pocket-friendly picks to calm inflammation & support clear skin</p>
+            <span class="reviewer-badge">✓ Inspired by MyMirror's dermatology-first approach</span>
+            <p style="font-size:0.75rem; color: var(--text-3); margin-top: 0.4rem;">Click any <span style="color:var(--brand); font-weight:600;">🍊 category link</span> to shop on Blinkit • Check off items as you buy</p>
+        </header>
+
+        <!-- MAIN BENTO GRID -->
+        <div class="bento-grid">
+
+            <!-- CARD 1: GRAINS & FLOURS -->
+            <div class="bento-card">
+                <div class="category-title">
+                    🥣 Grains & Flours
+                    <a href="https://blinkit.com/s/?q=whole+grain+flour+healthy" target="_blank" class="quick-link-btn" rel="noopener">Shop on Blinkit ↗</a>
+                </div>
+                <ul>
+                    <li><input type="checkbox"> Jowar (Sorghum) flour & whole</li>
+                    <li><input type="checkbox"> Bajra (Pearl Millet) flour & whole</li>
+                    <li><input type="checkbox"> Ragi (Finger Millet) flour & whole</li>
+                    <li><input type="checkbox"> Brown Rice / Hand-pounded Rice</li>
+                    <li><input type="checkbox"> Besan (Gram Flour)</li>
+                    <li><input type="checkbox"> Sattu (Roasted Gram Flour)</li>
+                    <li><input type="checkbox"> Plain Rolled Oats (no masala)</li>
+                    <li><input type="checkbox"> Daliya (Broken Wheat)</li>
+                </ul>
+            </div>
+
+            <!-- CARD 2: DAL & LEGUMES -->
+            <div class="bento-card">
+                <div class="category-title">
+                    🫘 Dal & Legumes
+                    <a href="https://blinkit.com/s/?q=dal+legumes+healthy" target="_blank" class="quick-link-btn" rel="noopener">Shop on Blinkit ↗</a>
+                </div>
+                <ul>
+                    <li><input type="checkbox"> Masoor Dal (Red Lentil) whole & split</li>
+                    <li><input type="checkbox"> Moong Dal (Green Gram) whole & split</li>
+                    <li><input type="checkbox"> Chana Dal (Bengal Gram)</li>
+                    <li><input type="checkbox"> Rajma (Kidney Beans)</li>
+                    <li><input type="checkbox"> Kala Chana (Black Chickpea)</li>
+                    <li><input type="checkbox"> Lobia (Black-eyed Peas)</li>
+                    <li><input type="checkbox"> Tofu (firm, not silken)</li>
+                    <li><input type="checkbox"> Sprouted moth beans / moong</li>
+                </ul>
+            </div>
+
+            <!-- CARD 3: LOW-GLYCEMIC VEGETABLES -->
+            <div class="bento-card">
+                <div class="category-title">
+                    🥦 Low-Glycemic Vegetables
+                    <a href="https://blinkit.com/s/?q=fresh+green+vegetables" target="_blank" class="quick-link-btn" rel="noopener">Shop on Blinkit ↗</a>
+                </div>
+                <ul>
+                    <li><input type="checkbox"> Palak (Spinach)</li>
+                    <li><input type="checkbox"> Methi (Fenugreek Leaves)</li>
+                    <li><input type="checkbox"> Lauki (Bottle Gourd)</li>
+                    <li><input type="checkbox"> Turai / Torai (Ridge Gourd)</li>
+                    <li><input type="checkbox"> Karela (Bitter Gourd) – 2x/week</li>
+                    <li><input type="checkbox"> Bhindi (Okra)</li>
+                    <li><input type="checkbox"> Baingan (Brinjal) – roasted</li>
+                    <li><input type="checkbox"> Capsicum (all colours)</li>
+                    <li><input type="checkbox"> Cabbage & Cauliflower – steamed</li>
+                    <li><input type="checkbox"> Cucumber (Kheera)</li>
+                    <li><input type="checkbox"> Broccoli (if budget allows)</li>
+                    <li><input type="checkbox"> Carrots – raw or soup, limit juice</li>
+                    <li><input type="checkbox"> Beetroot – small qty, not juice</li>
+                    <li><input type="checkbox"> Green Beans (Farasbi)</li>
+                    <li><input type="checkbox"> Onion, Garlic, Ginger, Turmeric root</li>
+                </ul>
+            </div>
+
+            <!-- CARD 4: LOW-SUGAR FRUITS -->
+            <div class="bento-card">
+                <div class="category-title">
+                    🍎 Low-Sugar Fruits
+                    <a href="https://blinkit.com/s/?q=fresh+fruits+healthy" target="_blank" class="quick-link-btn" rel="noopener">Shop on Blinkit ↗</a>
+                </div>
+                <ul>
+                    <li><input type="checkbox"> Guava (Amrood) –&nbsp;black salt</li>
+                    <li><input type="checkbox"> Papaya (Papita)</li>
+                    <li><input type="checkbox"> Apple (Seb) – with peel</li>
+                    <li><input type="checkbox"> Pear (Nashpati)</li>
+                    <li><input type="checkbox"> Jamun (seasonal)</li>
+                    <li><input type="checkbox"> Pomegranate – ½ cup</li>
+                    <li><input type="checkbox"> Orange / Mosambi – whole fruit</li>
+                    <li><input type="checkbox"> Ber (Indian Jujube)</li>
+                    <li><input type="checkbox"> Watermelon – 1 small bowl</li>
+                </ul>
+            </div>
+
+            <!-- CARD 5: HEALTHY FATS & SEEDS -->
+            <div class="bento-card">
+                <div class="category-title">
+                    🥜 Healthy Fats & Seeds
+                    <a href="https://blinkit.com/s/?q=seeds+healthy+oil+nuts" target="_blank" class="quick-link-btn" rel="noopener">Shop on Blinkit ↗</a>
+                </div>
+                <ul>
+                    <li><input type="checkbox"> Raw Coconut – fresh piece</li>
+                    <li><input type="checkbox"> White Sesame Seeds (Safed Til)</li>
+                    <li><input type="checkbox"> Flax Seeds (Alsi) – ground, 1 tsp</li>
+                    <li><input type="checkbox"> Pumpkin Seeds (Kaddu beej)</li>
+                    <li><input type="checkbox"> Sunflower Seeds (Surajmukhi)</li>
+                    <li><input type="checkbox"> Roasted Groundnut / Peanut – unsalted</li>
+                    <li><input type="checkbox"> Mustard Oil (Kachi Ghani)</li>
+                    <li><input type="checkbox"> Filtered Groundnut Oil</li>
+                    <li><input type="checkbox"> Desi Ghee (Cow) – 1 tsp/meal max</li>
+                </ul>
+            </div>
+
+            <!-- CARD 6: MASALA DABBA SPICES -->
+            <div class="bento-card">
+                <div class="category-title">
+                    🌿 Anti-inflammatory Spices
+                    <a href="https://blinkit.com/s/?q=whole+spices+kitchen" target="_blank" class="quick-link-btn" rel="noopener">Shop on Blinkit ↗</a>
+                </div>
+                <ul>
+                    <li><input type="checkbox"> Haldi (Turmeric) – + black pepper</li>
+                    <li><input type="checkbox"> Jeera (Cumin) – whole & powder</li>
+                    <li><input type="checkbox"> Dhania (Coriander) – whole & powder</li>
+                    <li><input type="checkbox"> Saunf (Fennel Seeds)</li>
+                    <li><input type="checkbox"> Methi Dana (Fenugreek Seeds)</li>
+                    <li><input type="checkbox"> Kali Mirch (Black Pepper)</li>
+                    <li><input type="checkbox"> Dalchini (Cinnamon)</li>
+                    <li><input type="checkbox"> Green Elaichi (Cardamom)</li>
+                    <li><input type="checkbox"> Curry Leaves – fresh or dried</li>
+                    <li><input type="checkbox"> Amchur (Dry Mango Powder)</li>
+                    <li><input type="checkbox"> Hing (Asafoetida)</li>
+                </ul>
+            </div>
+
+            <!-- CARD 7: DAIRY & ALTERNATIVES -->
+            <div class="bento-card">
+                <div class="category-title">
+                    🥛 Dairy & Alternatives
+                    <a href="https://blinkit.com/s/?q=dairy+alternatives+healthy" target="_blank" class="quick-link-btn" rel="noopener">Shop on Blinkit ↗</a>
+                </div>
+                <ul>
+                    <li><input type="checkbox"> Fresh Curd (Dahi) – homemade</li>
+                    <li><input type="checkbox"> Buttermilk (Chaas) – plain, no salt</li>
+                    <li><input type="checkbox"> Paneer – homemade, not fried</li>
+                    <li style="color:var(--danger);"><strong>✕</strong> Avoid milk, cheese, malai, cream</li>
+                </ul>
+            </div>
+
+            <!-- CARD 8: KITCHEN ESSENTIALS -->
+            <div class="bento-card">
+                <div class="category-title">
+                    🫙 Kitchen Essentials
+                    <a href="https://blinkit.com/s/?q=healthy+kitchen+essentials" target="_blank" class="quick-link-btn" rel="noopener">Shop on Blinkit ↗</a>
+                </div>
+                <ul>
+                    <li><input type="checkbox"> Apple Cider Vinegar (with mother)</li>
+                    <li><input type="checkbox"> Plain Green Tea</li>
+                    <li><input type="checkbox"> Triphala Powder</li>
+                    <li><input type="checkbox"> Sabja Seeds (Basil Seeds)</li>
+                    <li><input type="checkbox"> Isabgol (Psyllium Husk)</li>
+                    <li><input type="checkbox"> Black Salt (Kala Namak)</li>
+                    <li><input type="checkbox"> Rock Salt (Sendha Namak)</li>
+                    <li><input type="checkbox"> Lemons (Nimbu)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- AVOID SECTION -->
+        <div class="avoid-section">
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">❌ Avoid Buying (Acne Triggers)</h3>
+            <ul>
+                <li>✕ White Rice & Maida</li>
+                <li>✕ Bread, Biscuits, Rusk</li>
+                <li>✕ Packed Snacks (Kurkure, chips)</li>
+                <li>✕ Mithai, Sweets, Sugar</li>
+                <li>✕ Packaged Juices & Cold Drinks</li>
+                <li>✕ Milk, Cheese, Malai</li>
+                <li>✕ Maggi & Instant Noodles</li>
+                <li>✕ Pickles with excess oil & salt</li>
+                <li>✕ Deep Fried Namkeen & Samosa</li>
+            </ul>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer-note">
+            <p><strong>MyMirror</strong> Acne-Safe Checklist &nbsp;|&nbsp; This is a supportive guide, not medical advice. For persistent acne, consult a dermatologist.</p>
+            <p style="margin-top: 0.2rem;">🔗 Links open on Blinkit – availability may vary by city. Save paper? Keep this as a PDF on your phone!</p>
+        </div>
+
+    </div>
+
+    <!-- Sticky print button (screen only) -->
+    <div class="no-print" style="position: fixed; bottom: 24px; right: 24px; z-index: 1000;">
+        <button onclick="window.print()" style="padding: 12px 24px; border-radius: 9999px; border: none; background: var(--brand); color: white; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; cursor: pointer; box-shadow: 0 10px 25px rgba(236,97,14,0.3); transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);"
+            onmouseenter="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 35px rgba(236,97,14,0.4)'"
+            onmouseleave="this.style.transform=''; this.style.boxShadow='0 10px 25px rgba(236,97,14,0.3)'">
+            🖨️ Print / Save PDF
+        </button>
+    </div>
+</body>
+</html>

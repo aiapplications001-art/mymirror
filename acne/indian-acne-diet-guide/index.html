@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Indian Diet Guide: Foods That Cause & Cure Acne</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="hero">
+            <h1 class="main-title">The Ultimate Indian Diet Guide: <br><span>Foods That Cause & Cure Acne</span></h1>
+            <p class="tagline">Stop guessing. Start healing your skin from the inside out.</p>
+        </header>
+
+        <!-- 1. DIAGNOSTIC FLOW -->
+        <section class="diagnostic-section card">
+            <h2>1. The 60-Second Diagnostic</h2>
+            <p>Tell us where your acne is, and we'll tell you what you likely ate this week:</p>
+            
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showDiagnostic('jawline')">📍 Jawline & Chin</button>
+                <button class="tab-btn" onclick="showDiagnostic('forehead')">📍 Forehead & Hairline</button>
+                <button class="tab-btn" onclick="showDiagnostic('cheeks')">📍 Cheeks</button>
+            </div>
+            
+            <div id="diagnostic-content" class="tab-content">
+                <div id="jawline" class="diagnostic-result active">
+                    <h3>Trigger: Hormonal/Dairy</h3>
+                    <p>Did you have extra paneer, whey protein, or multiple cups of milk chai? These foods increase IGF-1, which mimics androgens and flares up your jawline.</p>
+                </div>
+                <div id="forehead" class="diagnostic-result">
+                    <h3>Trigger: High-GI Carbs/Gut Health</h3>
+                    <p>Have you been eating a lot of bread, biscuits, or sugary mithai lately? High-glycemic foods cause insulin spikes that trigger breakouts on the forehead.</p>
+                </div>
+                <div id="cheeks" class="diagnostic-result">
+                    <h3>Trigger: Inflammatory Fats</h3>
+                    <p>Have you been ordering in heavily fried street food or greasy curries? Oxidized vegetable oils cause systemic inflammation that often shows up on the cheeks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. TRAFFIC LIGHT GRID -->
+        <section class="prescription-section card">
+            <h2>2. The Mymirror.fit Prescription</h2>
+            <p class="subtitle">What to Eat & What to Drop</p>
+            
+            <div class="traffic-grid">
+                <div class="grid-header">Risk Level</div>
+                <div class="grid-header">The Indian Food Triggers</div>
+                <div class="grid-header">Why It Causes Breakouts</div>
+
+                <!-- AVOID -->
+                <div class="level-cell avoid">🔴 AVOID</div>
+                <div class="content-cell">Milk-based Chai, Paneer Gravies, Whey Protein, Jalebi, Cold Drinks</div>
+                <div class="reason-cell">Spikes insulin and introduces hormones that force skin to overproduce oil.</div>
+
+                <!-- LIMIT -->
+                <div class="level-cell limit">🟠 LIMIT</div>
+                <div class="content-cell">White Rice, Naan, Bhature, Potatoes, Heavy Ghee/Butter</div>
+                <div class="reason-cell">High-glycemic carbs break down into sugar quickly, causing inflammation.</div>
+
+                <!-- SAFE -->
+                <div class="level-cell safe">🟢 SAFE</div>
+                <div class="content-cell">Dal, Chickpeas, Brown Rice, Millets, Palak, Almonds, Fish</div>
+                <div class="reason-cell">Low-glycemic, rich in Zinc and Omega-3s to calm active red pimples.</div>
+            </div>
+        </section>
+
+        <!-- 3. PANTRY AUDIT -->
+        <section class="pantry-section card">
+            <h2>3. The Deep Dive: Regional Pantry Audit</h2>
+            <div class="pantry-grid">
+                <div class="pantry-item">
+                    <div class="icon">🧊</div>
+                    <h3>The Fridge</h3>
+                    <p>Standard cow's milk, leftover heavy cream (malai), and cheese cubes. Drivers of jawline cysts.</p>
+                </div>
+                <div class="pantry-item">
+                    <div class="icon">🍞</div>
+                    <h3>The Shelf</h3>
+                    <p>White bread (pav), maida, and instant noodles. These spike insulin and sebum.</p>
+                </div>
+                <div class="pantry-item">
+                    <div class="icon">🛵</div>
+                    <h3>Takeout Habits</h3>
+                    <p>Butter chicken, Naan (North), White Rice (South), and Fried Samosas (Street).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. EDUCATION HUB -->
+        <section class="education-section card">
+            <h2>4. Myths vs. Reality</h2>
+            <div class="myth-box">
+                <p class="myth">❌ <strong>Myth:</strong> "Eating spicy red chilli causes pimples."</p>
+                <p class="reality">✅ <strong>Reality:</strong> Spices don't clog pores. But the heavy, greasy oil that restaurant curries are cooked in absolutely does.</p>
+            </div>
+
+            <h3>The Breakout Timeline</h3>
+            <div class="timeline">
+                <div class="time-point">
+                    <span class="day">Day 0</span>
+                    <p>Wedding feast: Paneer, Naan, Gulab Jamun.</p>
+                </div>
+                <div class="time-point">
+                    <span class="day">Day 1</span>
+                    <p>Insulin spikes. Sebaceous glands go into overdrive. Face feels oilier.</p>
+                </div>
+                <div class="time-point">
+                    <span class="day">Day 2-3</span>
+                    <p>Pores get blocked by excess oil and dead skin.</p>
+                </div>
+                <div class="time-point">
+                    <span class="day">Day 4</span>
+                    <p>The pimple officially surfaces.</p>
+                </div>
+            </div>
+            <p class="timeline-footer"><strong>Conclusion:</strong> What you eat on Saturday ruins your skin on Wednesday.</p>
+        </section>
+
+        <!-- 5. INTERACTIVE SCORECARD -->
+        <section id="scorecard" class="scorecard-section card">
+            <h2>5. The 48-Hour Trigger Scorecard</h2>
+            <p class="subtitle">Check what you consumed in the last 48 hours to calculate your risk.</p>
+            
+            <form id="quiz-form">
+                <div class="quiz-step">
+                    <h3>Step 1: The Dairy Danger</h3>
+                    <label><input type="checkbox" name="dairy" value="4"> Whey protein shake (+4)</label>
+                    <label><input type="checkbox" name="dairy" value="4"> Condensed milk or Rabri (+4)</label>
+                    <label><input type="checkbox" name="dairy" value="3"> 2+ cups of Milk Chai/Coffee (+3)</label>
+                    <label><input type="checkbox" name="dairy" value="3"> Sweet Lassi, Cold Coffee (+3)</label>
+                    <label><input type="checkbox" name="dairy" value="3"> Milk Chocolate (+3)</label>
+                    <label><input type="checkbox" name="dairy" value="3"> Ice Cream (+3)</label>
+                    <label><input type="checkbox" name="dairy" value="2"> Heavy Paneer or Cheese (+2)</label>
+                    <label><input type="checkbox" name="dairy" value="2"> Extra Malai or Butter (+2)</label>
+                </div>
+
+                <div class="quiz-step">
+                    <h3>Step 2: Sugar & Refined Carb Spike</h3>
+                    <label><input type="checkbox" name="sugar" value="4"> Indian Sweets / Mithai (+4)</label>
+                    <label><input type="checkbox" name="sugar" value="3"> Cold Drinks or Sodas (+3)</label>
+                    <label><input type="checkbox" name="sugar" value="3"> Bakery Items (Puff, Rusks) (+3)</label>
+                    <label><input type="checkbox" name="sugar" value="3"> Maida breads (Naan, Bhatura) (+3)</label>
+                    <label><input type="checkbox" name="sugar" value="3"> Sugary Cereals (+3)</label>
+                    <label><input type="checkbox" name="sugar" value="2"> Instant Noodles or White Pasta (+2)</label>
+                    <label><input type="checkbox" name="sugar" value="2"> Massive portion of White Rice (+2)</label>
+                </div>
+
+                <div class="quiz-step">
+                    <h3>Step 3: Hidden Sugars</h3>
+                    <label><input type="checkbox" name="hidden" value="3"> Jaggery (Gur) or Honey treats (+3)</label>
+                    <label><input type="checkbox" name="hidden" value="3"> Packaged Fruit Juices (+3)</label>
+                    <label><input type="checkbox" name="hidden" value="3"> Flavored Yogurt or Shrikhand (+3)</label>
+                    <label><input type="checkbox" name="hidden" value="2"> Sweet Condiments (Ketchup) (+2)</label>
+                    <label><input type="checkbox" name="hidden" value="2"> Protein/Granola Bars (+2)</label>
+                </div>
+
+                <div class="quiz-step">
+                    <h3>Step 4: Fried & Inflammatory</h3>
+                    <label><input type="checkbox" name="fried" value="5"> Reused cooking oil (Street Food) (+5)</label>
+                    <label><input type="checkbox" name="fried" value="5"> Dalda / Vanaspati (+5)</label>
+                    <label><input type="checkbox" name="fried" value="4"> Deep-fried (Samosa, Pakora) (+4)</label>
+                    <label><input type="checkbox" name="fried" value="3"> Fast food (Pizza, Burgers) (+3)</label>
+                    <label><input type="checkbox" name="fried" value="2"> Packaged Namkeen / Chips (+2)</label>
+                </div>
+
+                <div class="quiz-step">
+                    <h3>Step 5: Dehydrators & Gut Disrupters</h3>
+                    <label><input type="checkbox" name="gut" value="4"> Sugary Cocktails / Mixers (+4)</label>
+                    <label><input type="checkbox" name="gut" value="3"> Beer or Wine (+3)</label>
+                    <label><input type="checkbox" name="gut" value="3"> Late-night junk food (>10 PM) (+3)</label>
+                    <label><input type="checkbox" name="gut" value="2"> Diet Sodas (+2)</label>
+                </div>
+
+                <div class="quiz-step">
+                    <h3>Step 6: Skin Savior Bonus (Subtract!)</h3>
+                    <label><input type="checkbox" name="savior" value="-2"> Drank 3+ Liters of water (-2)</label>
+                    <label><input type="checkbox" name="savior" value="-2"> Large bowl of Greens/Salad (-2)</label>
+                    <label><input type="checkbox" name="savior" value="-2"> Omega-3s (Walnuts, Seeds) (-2)</label>
+                    <label><input type="checkbox" name="savior" value="-2"> Green or Spearmint Tea (-2)</label>
+                    <label><input type="checkbox" name="savior" value="-2"> Unsweetened Buttermilk/Chaas (-2)</label>
+                    <label><input type="checkbox" name="savior" value="-1"> Turmeric Water or Zinc (-1)</label>
+                </div>
+
+                <button type="button" class="calculate-btn" onclick="calculateScore()">Calculate My Score</button>
+            </form>
+
+            <div id="quiz-result" class="result-box hidden">
+                <h3>Your Score: <span id="final-score">0</span></h3>
+                <div id="score-message"></div>
+                <div id="action-plan" class="action-plan"></div>
+            </div>
+        </section>
+
+        <!-- 6. CLEAR SKIN SWAP -->
+        <section class="swap-section card">
+            <h2>6. The 7-Day Clear Skin Swap</h2>
+            <table class="swap-table">
+                <thead>
+                    <tr>
+                        <th>Instead of This (Acne-Causing)</th>
+                        <th>Swap For This (Acne-Friendly)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Milk Chai / Coffee</td><td>Green Tea or Black Coffee</td></tr>
+                    <tr><td>Shahi Paneer</td><td>Chana Masala or Tofu</td></tr>
+                    <tr><td>Naan / White Bread</td><td>Whole Wheat Roti / Bhakri</td></tr>
+                    <tr><td>Whey Protein Shake</td><td>Plant-based Pea Protein</td></tr>
+                    <tr><td>Jalebi / Milk Chocolate</td><td>70% Dark Chocolate or Dates</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 7. LEAD MAGNET -->
+        <section class="lead-magnet card">
+            <div class="magnet-content">
+                <h2>Ready to shop for clear skin?</h2>
+                <p>Download our color-coded, Blinkit-friendly grocery checklist to keep in your pocket.</p>
+                <a href="checklist.html" class="cta-btn">View Grocery Checklist</a>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <p>&copy; 2026 MyMirror.fit • Dermatology-First Diet Guides</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
