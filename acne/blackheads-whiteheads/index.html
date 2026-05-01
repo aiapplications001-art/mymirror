@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The No-Nonsense Guide to Clearing Blackheads & Whiteheads | MyMirror</title>
+  <meta name="description" content="Frustrated by stubborn blackheads on your nose and tiny white pimples? Let's ditch the painful scrubs and talk about the actual science of clearing non-inflammatory acne." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mymirror.fit/acne/blackheads-whiteheads/" />
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --color-brand:        #EC610E;
+      --color-brand-dark:   #C14800;
+      --color-brand-light:  #FFE1CE;
+      --color-bg-primary:   #FFFFFF;
+      --color-bg-secondary: #F9F6F3;
+      --color-bg-tertiary:  #F2EDE8;
+      --color-text-primary:   #1A1410;
+      --color-text-secondary: #5C4A3A;
+      --color-text-tertiary:  #9E8575;
+      --color-border:          #E8DDD5;
+      --color-success: #2D7A4F;
+      --color-info:    #1A5F8A;
+      --color-danger:  #C0392B;
+      --ease-bouncy: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--color-bg-primary); color: var(--color-text-primary); font-size: 15px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+
+    /* ── TRUST BAR ── */
+    .trust-bar { background: var(--color-bg-secondary); border-bottom: 1px solid var(--color-border); padding: 8px 2rem; display: flex; align-items: center; justify-content: center; gap: 1.5rem; font-size: 12px; color: var(--color-text-secondary); }
+    .verified { display: flex; align-items: center; gap: 5px; color: #059669; font-weight: 600; }
+    .verified::before { content: '✓'; background: #059669; color: #fff; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 9px; }
+
+    /* ── NAV ── */
+    nav { background: var(--color-bg-primary); border-bottom: 1px solid var(--color-border); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; height: 60px; display: flex; align-items: center; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; width: 100%; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo img { height: 28px; }
+    .nav-links { display: flex; gap: 10px; list-style: none; }
+    .nav-links a { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-decoration: none; padding: 6px 12px; border-radius: 6px; }
+
+    /* ── HERO ── */
+    .hero { background: linear-gradient(135deg, #0a0a0c 0%, #1a1410 100%); padding: 6rem 2rem 8rem; color: #fff; text-align: center; }
+    .hero h1 { font-family: 'Kantumruy Pro', serif; font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.04em; color: #fff; }
+    .hero p { color: rgba(255,255,255,0.8); font-size: 1.25rem; max-width: 800px; margin: 0 auto 3rem; }
+
+    /* ── TOC ── */
+    .toc-bar { background: var(--color-bg-primary); border-bottom: 1px solid var(--color-border); position: sticky; top: 60px; z-index: 900; overflow-x: auto; }
+    .toc-inner { max-width: 1100px; margin: 0 auto; display: flex; padding: 0 2rem; }
+    .toc-link { white-space: nowrap; font-size: 12px; font-weight: 600; color: var(--color-text-tertiary); text-decoration: none; padding: 14px 18px; border-bottom: 2px solid transparent; display: flex; align-items: center; gap: 8px; }
+    .toc-link.active { color: var(--color-brand); border-bottom-color: var(--color-brand); }
+    .toc-num { background: var(--color-brand); color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; }
+
+    /* ── MAIN LAYOUT ── */
+    .page-body { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; display: grid; grid-template-columns: 1fr 300px; gap: 4rem; align-items: start; }
+    
+    /* ── CONTENT STYLES ── */
+    .content-section { margin-bottom: 5rem; }
+    .section-header { display: flex; align-items: center; gap: 14px; margin-bottom: 2rem; }
+    .section-num { width: 36px; height: 36px; border-radius: 50%; background: var(--color-brand); color: #fff; font-family: 'Kantumruy Pro', serif; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .section-title { font-family: 'Kantumruy Pro', serif; font-size: 1.8rem; font-weight: 700; }
+    
+    .bento-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 2rem 0; }
+    .bento-card { background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: 20px; padding: 2.5rem; transition: all 0.4s var(--ease-bouncy); }
+    .bento-card:hover { transform: translateY(-8px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+    .bento-card h3 { font-size: 1.4rem; margin-bottom: 1rem; color: var(--color-text-primary); }
+
+    .highlight-box { background: var(--color-brand-light); border-left: 4px solid var(--color-brand); padding: 1.5rem; border-radius: 0 16px 16px 0; margin: 2rem 0; }
+    
+    /* ── SIDEBAR ── */
+    .sidebar { display: flex; flex-direction: column; gap: 2rem; }
+    .sidebar-card { background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: 20px; padding: 1.5rem; }
+    .sidebar-card h4 { font-size: 14px; font-weight: 800; margin-bottom: 12px; text-transform: uppercase; color: var(--color-text-primary); }
+    .sidebar-list { list-style: none; }
+    .sidebar-list li { padding: 8px 0; font-size: 13px; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; gap: 10px; }
+    .sidebar-list li::before { content: '→'; color: var(--color-brand); font-weight: 900; }
+    .sidebar-cta { display: block; background: var(--color-brand); color: #fff; text-align: center; text-decoration: none; padding: 12px; border-radius: 10px; font-weight: 700; font-size: 13px; margin-top: 15px; }
+
+    /* ── QUICK TIPS ── */
+    .quick-tips { background: var(--color-bg-secondary); padding: 4rem 2rem; text-align: center; border-top: 1px solid var(--color-border); }
+    .tips-grid { max-width: 1100px; margin: 2rem auto 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 15px; }
+    .tip-card { background: #fff; border: 1px solid var(--color-border); padding: 20px; border-radius: 16px; }
+
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s var(--ease-bouncy); }
+    .reveal.active { opacity: 1; transform: none; }
+
+    img { max-width: 100%; border-radius: 20px; margin: 2rem 0; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+
+    @media (max-width: 900px) {
+      .page-body { grid-template-columns: 1fr; }
+      .sidebar { display: none; }
+      .bento-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="trust-bar">
+    <span>Clinical Manual: <strong>MyMirror Skin Science</strong></span>
+    <span class="verified">Reviewed by Dr. Lipy Mehta, Dermatologist</span>
+    <span>Updated April 2026</span>
+  </div>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="/"><img src="/acne/forehead-acne/logo-v4.png" alt="mymirror" /></a>
+      <ul class="nav-links">
+        <li><a href="/">Knowledge Hub</a></li>
+        <li><a href="/acne/face-map/">Face Map</a></li>
+        <li><a href="/acne/types-of-acne/">Acne Types</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-inner reveal">
+      <h1>The No-Nonsense Guide to <br /><span style="color:var(--color-brand);">Clearing Blackheads & Whiteheads</span></h1>
+      <p>Ditch the painful scrubs. Learn the actual science of clearing non-inflammatory acne and clogged pores in humid climates.</p>
+      <a href="#science" style="display:inline-block; padding:16px 42px; background:var(--color-brand); color:#fff; border-radius:9999px; text-decoration:none; font-weight:800; box-shadow: 0 10px 30px rgba(236,97,14,0.3);">Stop the Squeeze →</a>
+    </div>
+  </section>
+
+  <div class="toc-bar">
+    <div class="toc-inner">
+      <a class="toc-link active" href="#mirror"><span class="toc-num">1</span> The Close-Up</a>
+      <a class="toc-link" href="#science"><span class="toc-num">2</span> The Science</a>
+      <a class="toc-link" href="#traps"><span class="toc-num">3</span> Common Traps</a>
+      <a class="toc-link" href="#solutions"><span class="toc-num">4</span> Best Treatments</a>
+      <a class="toc-link" href="#routine"><span class="toc-num">5</span> Daily Routine</a>
+    </div>
+  </div>
+
+  <div class="page-body">
+    <main>
+      <!-- SECTION 1: MIRROR CLOSE-UP -->
+      <section class="content-section reveal" id="mirror">
+        <div class="section-header">
+          <div class="section-num">1</div>
+          <div class="section-title">The "Mirror Close-Up" Moment</div>
+        </div>
+        <p>Let’s be completely real for a second. We’ve all been there. It’s the end of a long, incredibly humid Indian summer day. You wash your face, lean entirely too close to the bathroom mirror, and sigh.</p>
+        <p>Right across your nose, there’s a whole family of stubborn <strong>black spots</strong>. You check your chin, and suddenly you notice those <strong>tiny, small white pimples</strong> that never seem to actually become a "real" pimple. You feel the urge to squeeze, but stop.</p>
+        
+        <div class="highlight-box">
+          <strong>Step away from the mirror:</strong> Your skin isn't "dirty." You are simply dealing with non-inflammatory acne (open and closed comedones). They aren't angry red zits; they are just clogged facial pores.
+        </div>
+
+        <img src="/assets/blackheads-visual.png" alt="Detailed view of blackheads and whiteheads on skin" loading="lazy" />
+      </section>
+
+      <!-- SECTION 2: THE SCIENCE -->
+      <section class="content-section reveal" id="science">
+        <div class="section-header">
+          <div class="section-num">2</div>
+          <div class="section-title">What Are We Actually Looking At?</div>
+        </div>
+        <p>Blackheads are not trapped dirt. In our sweaty Indian climate, oil glands tend to work overtime. When excess oil mixes with dead skin cells, it forms a sticky plug inside your hair follicles.</p>
+        
+        <div class="bento-grid">
+          <div class="bento-card">
+            <h3>Blackheads (Open Comedo)</h3>
+            <p>If the oil plug stays open, the air <strong>oxidizes</strong> the melanin and oil — turning it black. It’s like an apple turning brown on the counter.</p>
+          </div>
+          <div class="bento-card">
+            <h3>Whiteheads (Closed Comedo)</h3>
+            <p>If a microscopic layer of skin grows over the plug, air can't reach it, so it stays a pale, flesh color.</p>
+          </div>
+        </div>
+
+        <p>Whether it's a black head or a white head, the root cause is the same: <strong>trapped oil and dead skin.</strong></p>
+      </section>
+
+      <!-- SECTION 3: TRAPS -->
+      <section class="content-section reveal" id="traps">
+        <div class="section-header">
+          <div class="section-num">3</div>
+          <div class="section-title">The "Desi" Skincare Trap</div>
+        </div>
+        <p>Growing up in India, our first instinct is often to raid the kitchen for home remedies. We mix haldi, besan, and lemon, or try intense steam bowls.</p>
+        
+        <div class="highlight-box" style="background: #fee2e2; border-left-color: var(--color-danger);">
+          <strong>The Reality Check:</strong> DIY masks can’t dissolve oil trapped deep inside a pore. Aggressive scrubbing (like old-school walnut scrubs) causes micro-tears, making skin produce <em>more</em> oil.
+        </div>
+
+        <p>Even satisfying porestrips only rip off the very top of the plug. The root stays, which is why they return three days later.</p>
+        
+        <img src="/assets/whiteheads-visual.png" alt="Illustration of clogged pores vs clear skin" loading="lazy" />
+      </section>
+
+      <!-- SECTION 4: SOLUTIONS -->
+      <section class="content-section reveal" id="solutions">
+        <div class="section-header">
+          <div class="section-num">4</div>
+          <div class="section-title">The Best Ways to Remove Blackheads</div>
+        </div>
+        <p>To achieve true pore clearing, you must melt the "glue" holding the debris together. Here is the modern strategy:</p>
+        
+        <div class="bento-grid">
+          <div class="bento-card">
+            <h3>The Magic of BHA</h3>
+            <p><strong>Salicylic Acid</strong> is oil-soluble. It travels inside the pore to dissolve gunk. The <em>Cosrx BHA Blackhead Power Liquid</em> is a clinical favorite for Indian skin.</p>
+          </div>
+          <div class="bento-card">
+            <h3>Upgrade Your Wash</h3>
+            <p>Switch to a 1-2% Salicylic Acid face wash. For very oily skin, charcoal-based cleansers can help absorb surface grease.</p>
+          </div>
+          <div class="bento-card">
+            <h3>Safe Extractions</h3>
+            <p>Professional comedone extraction at a clinic is safest. If doing it at home, use a sterile metal loop tool — never your fingernails.</p>
+          </div>
+          <div class="bento-card">
+            <h3>Treatment Creams</h3>
+            <p>Retinoids like <strong>Adapalene</strong> train your skin cells to turn over properly, preventing the clog before it even starts.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: ROUTINE -->
+      <section class="content-section reveal" id="routine">
+        <div class="section-header">
+          <div class="section-num">5</div>
+          <div class="section-title">Your Easy, No-Stress Daily Routine</div>
+        </div>
+        
+        <div style="background: var(--color-bg-secondary); padding: 2.5rem; border-radius: 24px; border: 1px solid var(--color-border);">
+          <ul class="sidebar-list">
+            <li style="margin-bottom: 1rem;"><strong>Cleanse (AM & PM):</strong> Wash gently with a BHA cleanser. No harsh scrubbing!</li>
+            <li style="margin-bottom: 1rem;"><strong>Treat (2-3 nights/week):</strong> Apply a liquid exfoliant (like Cosrx BHA) over dry skin.</li>
+            <li style="margin-bottom: 1rem;"><strong>Target (Once a week):</strong> Use a gentle clay mask to soak up excess oil.</li>
+            <li style="margin-bottom: 1rem;"><strong>Moisturize:</strong> Use a lightweight, oil-free gel. Yes, oily skin needs moisture too!</li>
+          </ul>
+        </div>
+
+        <p style="margin-top: 2rem;">Treat your skin with grace. Swap the harsh scrubs for gentle chemical exfoliation, and you'll be well on your way to the smooth, clear skin you deserve.</p>
+      </section>
+    </main>
+
+    <aside class="sidebar reveal">
+      <div class="sidebar-card highlight">
+        <h4>💡 Oxidation Fact</h4>
+        <p>Blackheads are black because of <strong>oxidation</strong>, not dirt. It's the same chemical reaction that happens to an open apple.</p>
+      </div>
+      
+      <div class="sidebar-card info">
+        <h4>The BHA Toolkit</h4>
+        <ul class="sidebar-list">
+          <li><strong>Salicylic Acid:</strong> Deep Clean</li>
+          <li><strong>Charcoal:</strong> Oil Absorption</li>
+          <li><strong>Adapalene:</strong> Prevention</li>
+          <li><strong>Gel Moistuizer:</strong> Hydration</li>
+        </ul>
+        <a href="acne/face-map/" class="sidebar-cta">Analyze My Pores →</a>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>Clinical Tip</h4>
+        <p style="font-size: 13px; color: var(--color-text-secondary);">Avoid suction vacuums at home. They often cause broken blood vessels (telangiectasia) on the nose, which are much harder to treat than a simple blackhead.</p>
+      </div>
+    </aside>
+  </div>
+
+  <section class="quick-tips reveal">
+    <div class="container">
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div style="font-size:24px; margin-bottom:10px;">🍎</div>
+          <div style="font-weight:700; font-size:12px;">Like an Apple</div>
+          <div style="font-size:11px; color:var(--color-text-tertiary);">Black = Air + Melanin</div>
+        </div>
+        <div class="tip-card">
+          <div style="font-size:24px; margin-bottom:10px;">🧴</div>
+          <div style="font-weight:700; font-size:12px;">Oil Dissolves Oil</div>
+          <div style="font-size:11px; color:var(--color-text-tertiary);">Why BHA works better than scrubs</div>
+        </div>
+        <div class="tip-card">
+          <div style="font-size:24px; margin-bottom:10px;">🛑</div>
+          <div style="font-weight:700; font-size:12px;">Stop Squeezing</div>
+          <div style="font-weight:700; font-size:12px;">Prevents scarring & redness</div>
+        </div>
+        <div class="tip-card">
+          <div style="font-size:24px; margin-bottom:10px;">💧</div>
+          <div style="font-weight:700; font-size:12px;">Hydrate</div>
+          <div style="font-size:11px; color:var(--color-text-tertiary);">Keeps oil production balanced</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding: 4rem 2rem; background: var(--color-bg-tertiary); text-align: center; border-top: 1px solid var(--color-border);">
+    <p>© 2026 MyMirror · Reviewed by Dr. Lipy Mehta, Dermatologist</p>
+    <p style="font-size:11px; margin-top:8px; opacity:0.7;">Medical Disclaimer: This information is for educational purposes only. Persistent issues warrant professional consultation.</p>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting) { x.target.classList.add('active'); obs.unobserve(x.target); } }), { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const sections = document.querySelectorAll('.content-section');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if(pageYOffset >= s.offsetTop - 150) current = s.getAttribute('id'); });
+      tocLinks.forEach(l => {
+        l.classList.remove('active');
+        if(l.getAttribute('href') === `#${current}`) l.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
