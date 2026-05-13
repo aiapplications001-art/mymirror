@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/acne/nodule-vs-cyst",
+      "destination": "/acne/nodule-cyst",
+      "permanent": true
+    },
+    {
       "source": "/blog/pimple-vs-zit-inflammatory-papules-pustules-indian-skin",
       "destination": "/acne/pimple-zit",
       "permanent": true
