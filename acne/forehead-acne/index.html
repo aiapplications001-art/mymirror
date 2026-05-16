@@ -295,13 +295,34 @@
         .faq-item.active-faq .faq-icon { transform: rotate(45deg); color: var(--accent); }
 
         @media (max-width: 900px) {
-            .header-container { align-items: flex-start; flex-direction: column; gap: 0.5rem; }
+            .header-container { align-items: flex-start; flex-direction: column; gap: 0.5rem; padding: 1rem 1.5rem; }
             .site-header { position: relative; }
-            .nav-links { justify-content: flex-start; gap: 10px; }
-            .nav-links a { font-size: 0.82rem; }
+            .nav-links { justify-content: flex-start; gap: 10px; width: 100%; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 0.5rem; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+            .nav-links::-webkit-scrollbar { display: none; }
+            .nav-links a { font-size: 0.85rem; flex-shrink: 0; }
             .full-hero { min-height: 430px; }
+            .hero-content h1 { font-size: 2.2rem; }
             .bento-grid, .stage-grid { grid-template-columns: 1fr; }
             .bento-item[style*="grid-column"] { grid-column: auto !important; }
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 1.5rem; }
+            .hero-content { margin-top: 10vh; }
+            .hero-content h1 { font-size: 1.8rem; }
+            .hero-content p { font-size: 1rem; }
+            .acne-table, .acne-table tbody, .acne-table tr, .acne-table th, .acne-table td { display: block; width: 100%; box-sizing: border-box; }
+            .acne-table { margin: 1rem 0; border-spacing: 0; }
+            .acne-table tr { margin-bottom: 1.5rem; border-radius: 15px; overflow: hidden; border: 1px solid var(--color-border); box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+            .acne-table td { border: none; padding: 1rem; border-bottom: 1px solid var(--color-border); }
+            .acne-table td:last-child { border-bottom: none; }
+            .acne-table th { text-align: center; border-radius: 0; }
+            .acne-table td:first-child, .acne-table td:last-child { border-radius: 0; }
+            .remedy-stage { padding: 3rem 1.5rem; border-radius: 20px; }
+            .stage-image { height: 250px; border-radius: 30px; }
+            .nav-btn { padding: 10px 20px; font-size: 0.9rem; }
+            h2 { font-size: 1.8rem; margin-top: 2.5rem; }
+            .trust-container { justify-content: center; gap: 10px; }
         }
     </style>
 </head>
