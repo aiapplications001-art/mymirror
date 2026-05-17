@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/acne/ut-treatment-guide",
+      "destination": "/acne/nose-pimple-treatments-home-remedies-clinical-cures",
+      "permanent": true
+    },
+    {
       "source": "/acne/nodule-vs-cyst",
       "destination": "/acne/nodule-cyst",
       "permanent": true
