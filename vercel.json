@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/blog/adapalene-differin-adaferin-gel-comparison-india",
+      "destination": "/acne/adapalene-differin-adaferin-gel-comparison-india",
+      "permanent": true
+    },
+    {
       "source": "/acne/ut-treatment-guide",
       "destination": "/acne/nose-pimple-treatments-home-remedies-clinical-cures",
       "permanent": true
