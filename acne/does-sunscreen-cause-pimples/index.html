@@ -12,7 +12,7 @@
     <meta property="og:url" content="https://mymirror.fit/acne/does-sunscreen-cause-pimples/">
     <meta property="og:title" content="Sunscreen Acne? The Clinical Truth | MyMirror Guide">
     <meta property="og:description" content="Identify why your SPF causes breakouts. Microscopic analysis of pore-cloggers and breathable 2026 solutions.">
-    <meta property="og:image" content="https://mymirror.fit/assets/blackheads-visual.png">
+    <meta property="og:image" content="https://mymirror.fit/acne/forehead-acne/forehead-interactive-opt.jpg">
 
     <!-- JSON-LD Schema Markup -->
     <script type="application/ld+json">
@@ -77,6 +77,7 @@
         :root {
             --glass: rgba(255, 255, 255, 0.75);
             --clinical-blue: #eff6ff;
+            --sun-glow: rgba(236,97,14,0.1);
         }
 
         /* Fluid Intro Grid */
@@ -97,6 +98,23 @@
         .pill-cloud { display: flex; flex-wrap: wrap; gap: 12px; margin: 2rem 0; }
         .ingredient-pill { background: white; border: 1.5px solid var(--color-border); padding: 10px 20px; border-radius: 99px; font-weight: 700; font-size: 0.9rem; color: var(--color-text-primary); transition: all 0.3s ease; }
         .ingredient-pill:hover { border-color: var(--primary); transform: translateY(-3px); }
+
+        /* ── SUN ANIMATION STYLES ── */
+        .sun-glow-overlay {
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, var(--sun-glow) 0%, rgba(236,97,14,0) 70%);
+            border-radius: 50%;
+            animation: pulseSun 8s ease-in-out infinite;
+            z-index: 1;
+        }
+        @keyframes pulseSun {
+            0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.5; }
+            50% { transform: scale(1.4) translate(-30px, 30px); opacity: 0.8; }
+        }
 
         @media (max-width: 900px) { 
             .intro-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -128,10 +146,10 @@
     </div>
 </div>
 
-<header class="full-hero">
-    <div class="hero-video-bg" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/assets/blackheads-visual.png') center/cover no-repeat;"></div>
+<header class="full-hero" style="background: linear-gradient(135deg, #FFF9F0 0%, #FFE8D6 100%); overflow: hidden; position: relative;">
+    <div class="sun-glow-overlay"></div>
     <div class="glider-overlay"></div>
-    <div class="container hero-content">
+    <div class="container hero-content" style="z-index: 5; position: relative;">
         <h1>Does Sunscreen Cause Pimples? The Truth About Acne Cosmetica</h1>
         <p>Expert clinical analysis of pore-cloggers, sebum oxidation, and breathable protection.</p>
         
@@ -174,10 +192,6 @@
     <section id="causes" class="reveal">
         <h2 style="text-align: center; margin-bottom: 3rem;">The Clinical Reality: It’s the Vehicle, Not the Filter</h2>
         
-        <div style="display: flex; justify-content: center; margin-bottom: 3rem;">
-            <img src="/assets/subclinical-domino-effect.png" alt="Squalene Peroxide and Pore Clogging Process" style="max-width: 800px; width: 100%; border-radius: 30px; box-shadow: 0 15px 40px rgba(0,0,0,0.1);">
-        </div>
-
         <div class="flow-container">
             <div class="flow-step">
                 <h3>Acne Cosmetica Identification</h3>
