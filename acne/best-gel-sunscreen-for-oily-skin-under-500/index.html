@@ -58,19 +58,27 @@
         .sidebar-list li::before { content: "→"; position: absolute; left: 0; color: var(--primary); font-weight: 800; }
         
         /* Product Cards */
-        .budget-pick-card { background: white; border-radius: 30px; border: 1px solid var(--color-border); padding: 2.5rem; margin-bottom: 3rem; box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
-        .pick-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
-        .pick-price { background: var(--primary); color: white; padding: 8px 18px; border-radius: 99px; font-weight: 800; font-size: 1.1rem; }
+        .budget-pick-card { display: flex; align-items: center; background: white; border-radius: 30px; border: 1px solid var(--color-border); padding: 2rem; margin-bottom: 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
+        .pick-img { flex: 0 0 150px; height: 150px; margin-right: 2rem; display: flex; align-items: center; justify-content: center; background: #f9fbf9; border-radius: 20px; overflow: hidden; }
+        .pick-img img { max-width: 130px; max-height: 130px; object-fit: contain; mix-blend-mode: multiply; }
+        .pick-content { flex: 1; }
+        .pick-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
+        .pick-price { background: var(--primary); color: white; padding: 6px 16px; border-radius: 99px; font-weight: 800; font-size: 1rem; }
         
         /* Oil Control Meter */
-        .meter-container { margin: 1.5rem 0; }
-        .meter-label { display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 800; text-transform: uppercase; color: var(--color-text-secondary); margin-bottom: 8px; }
-        .meter-bar { width: 100%; height: 8px; background: #eee; border-radius: 4px; overflow: hidden; }
+        .meter-container { margin: 1rem 0; }
+        .meter-label { display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: var(--color-text-secondary); margin-bottom: 6px; }
+        .meter-bar { width: 100%; height: 6px; background: #eee; border-radius: 3px; overflow: hidden; }
         .meter-fill { height: 100%; background: var(--primary); }
+
+        .matrix-img { width: 80px; height: 80px; object-fit: contain; mix-blend-mode: multiply; display: block; margin: 0 auto 10px auto; }
+        .matrix-link { color: var(--primary); font-weight: 700; text-decoration: none; display: block; text-align: center; }
 
         @media (max-width: 900px) { 
             .intro-grid { grid-template-columns: 1fr; gap: 2rem; }
             .toc-panel { order: -1; }
+            .budget-pick-card { flex-direction: column; text-align: center; padding: 1.5rem; }
+            .pick-img { margin: 0 auto 1.5rem auto; }
         }
     </style>
 </head>
@@ -98,23 +106,6 @@
 <header class="full-hero" style="background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); overflow: hidden; position: relative;">
     <div class="sun-glow-overlay"></div>
     <div class="glider-overlay"></div>
-    <style>
-        .sun-glow-overlay {
-            position: absolute;
-            top: -100px;
-            right: -100px;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(236,97,14,0.1) 0%, rgba(236,97,14,0) 70%);
-            border-radius: 50%;
-            animation: pulseSun 8s ease-in-out infinite;
-            z-index: 1;
-        }
-        @keyframes pulseSun {
-            0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.5; }
-            50% { transform: scale(1.4) translate(-30px, 30px); opacity: 0.8; }
-        }
-    </style>
     <div class="container hero-content" style="z-index: 5; position: relative;">
         <h1>Best Gel Sunscreens Under ₹500: The 2026 Oily Skin Guide</h1>
         <p>No white cast. No "chip-chip." Just community-vetted, clinical-grade protection.</p>
@@ -157,55 +148,104 @@
     <!-- Product 1: WishCare -->
     <section class="reveal">
         <div class="budget-pick-card">
-            <div class="pick-header">
-                <div>
-                    <span class="badge" style="background: #eff6ff; color: #1e40af;">🏆 Viral Oil Controller</span>
-                    <h3>1. WishCare Niacinamide Oil Balance Fluid</h3>
+            <div class="pick-img"><img src="/acne/best-gel-sunscreen-for-oily-skin-under-500/images/wishcare.webp" alt="WishCare Niacinamide Oil Balance Fluid"></div>
+            <div class="pick-content">
+                <div class="pick-header">
+                    <div>
+                        <span class="badge" style="background: #eff6ff; color: #1e40af;">🏆 Viral Oil Controller</span>
+                        <h3>1. WishCare Niacinamide Oil Balance Fluid</h3>
+                    </div>
+                    <div class="pick-price">₹399 <small>(50ml)</small></div>
                 </div>
-                <div class="pick-price">₹399 <small>(50ml)</small></div>
+                <p><strong>The Reddit Verdict:</strong> "Finally, a milky fluid that doesn't move even in 40°C heat." Mimics the texture of premium French fluids like ISDIN.</p>
+                <div class="meter-container">
+                    <div class="meter-label">Oil Control Level <span>10/10</span></div>
+                    <div class="meter-bar"><div class="meter-fill" style="width:100%"></div></div>
+                </div>
+                <p style="font-size: 0.9rem; border-left: 3px solid var(--primary); padding-left: 1rem; font-style: italic;"><strong>Key Actives:</strong> Niacinamide + Zinc PCA for sebum regulation.</p>
+                <div style="margin-top: 1.2rem;"><a href="https://www.nykaa.com/wishcare-niacinamide-oil-balance-sunscreen-spf-50-pa/p/25163097?ptype=product&skuId=25163097&utm_content=ads&utm_source=GooglePaid&utm_medium=PLA&utm_campaign=PLA_Top20BrandsOnSite&gad_source=1&gad_campaignid=23082551898&gbraid=0AAAAADo9oc_EP99c_fTQypYsXbucr1W5a&gclid=Cj0KCQjwrZTRBhDSARIsAHidYfenvVpeHIazcT5Gu9a8148OSFZP5_q2sOIRatuDf6UvDHZOFS3EAqcaAvrMEALw_wcB" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 800; text-decoration: none;">View on Nykaa →</a></div>
             </div>
-            <p><strong>The Reddit Verdict:</strong> "Finally, a milky fluid that doesn't move even in 40°C heat." This is 2026's most viral budget pick because it mimics the texture of premium French fluids like ISDIN.</p>
-            <div class="meter-container">
-                <div class="meter-label">Oil Control Level <span>10/10</span></div>
-                <div class="meter-bar"><div class="meter-fill" style="width:100%"></div></div>
-            </div>
-            <p style="font-size: 0.9rem; border-left: 3px solid var(--primary); padding-left: 1rem; font-style: italic;"><strong>Key Actives:</strong> Niacinamide + Zinc PCA. These act as sebum regulators, making it a sunscreen that actively treats oily skin.</p>
-            <div style="margin-top: 1.5rem;"><a href="https://www.1mg.com/otc/wishcare-niacinamide-oil-balance-sunscreen-fluid-spf-50-pa-otc712835" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 800; text-decoration: none;">View on 1mg →</a></div>
         </div>
 
         <!-- Product 2: Conscious Chemist -->
         <div class="budget-pick-card">
-            <div class="pick-header">
-                <div>
-                    <span class="badge" style="background: #f0fdf4; color: #166534;">🛡️ Community Favorite</span>
-                    <h3>2. Conscious Chemist Berry Bright SPF 50</h3>
+            <div class="pick-img"><img src="/acne/best-gel-sunscreen-for-oily-skin-under-500/images/conscious-chemist.webp" alt="Conscious Chemist Berry Bright SPF 50"></div>
+            <div class="pick-content">
+                <div class="pick-header">
+                    <div>
+                        <span class="badge" style="background: #f0fdf4; color: #166534;">🛡️ Community Favorite</span>
+                        <h3>2. Conscious Chemist Berry Bright SPF 50</h3>
+                    </div>
+                    <div class="pick-price">₹389 <small>(50g)</small></div>
                 </div>
-                <div class="pick-price">₹389 <small>(50g)</small></div>
+                <p><strong>The Reddit Verdict:</strong> "Zero white cast even on deeper skin tones." Uses modern hybrid filters (Tinosorb) for a breathable, dewy finish.</p>
+                <div class="meter-container">
+                    <div class="meter-label">Oil Control Level <span>8/10</span></div>
+                    <div class="meter-bar"><div class="meter-fill" style="width:80%; background: var(--accent);"></div></div>
+                </div>
+                <p style="font-size: 0.9rem; border-left: 3px solid var(--primary); padding-left: 1rem; font-style: italic;"><strong>Key Actives:</strong> Blackberry Extract + Niacinamide for PIH fading.</p>
+                <div style="margin-top: 1.2rem;"><a href="https://amazon.in/Conscious-Chemist-Lightweight-Niacinamide-Non-Greasy/dp/B0BLW3SPQG/ref=asc_df_B0BLW3SPQG?mcid=afba433980db3c26bba672687445ff69&tag=googleshopdes-21&linkCode=df0&hvadid=709991227886&hvpos=&hvnetw=g&hvrand=1835347532177915461&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9151661&hvtargid=pla-1905099660693&psc=1&hvocijid=1835347532177915461-B0BLW3SPQG-&hvexpln=0&gad_source=1" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 800; text-decoration: none;">View on Amazon →</a></div>
             </div>
-            <p><strong>The Reddit Verdict:</strong> "Zero white cast even on NC45 skin tones." It uses modern hybrid filters (Tinosorb) and provides a dewy finish that isn't sticky—perfect for those who hate the 'matte silicone' feel.</p>
-            <div class="meter-container">
-                <div class="meter-label">Oil Control Level <span>8/10</span></div>
-                <div class="meter-bar"><div class="meter-fill" style="width:80%; background: var(--accent);"></div></div>
-            </div>
-            <p style="font-size: 0.9rem; border-left: 3px solid var(--primary); padding-left: 1rem; font-style: italic;"><strong>Key Actives:</strong> Blackberry Extract + Niacinamide. Great for fading post-acne marks (PIH).</p>
-            <div style="margin-top: 1.5rem;"><a href="https://consciouschemist.com/products/berry-bright-sunscreen" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 800; text-decoration: none;">View on Store →</a></div>
         </div>
 
         <!-- Product 3: Derma Co -->
         <div class="budget-pick-card">
-            <div class="pick-header">
-                <div>
-                    <span class="badge" style="background: #f0f9ff; color: #0369a1;">💧 Hydration King</span>
-                    <h3>3. The Derma Co 1% Hyaluronic Aqua Gel</h3>
+            <div class="pick-img"><img src="/acne/best-gel-sunscreen-for-oily-skin-under-500/images/derma-co.jpg" alt="The Derma Co 1% Hyaluronic Aqua Gel"></div>
+            <div class="pick-content">
+                <div class="pick-header">
+                    <div>
+                        <span class="badge" style="background: #f0f9ff; color: #0369a1;">💧 Hydration King</span>
+                        <h3>3. The Derma Co 1% Hyaluronic Aqua Gel</h3>
+                    </div>
+                    <div class="pick-price">₹449 <small>(50g)</small></div>
                 </div>
-                <div class="pick-price">₹449 <small>(50g)</small></div>
+                <p><strong>The Reddit Verdict:</strong> "The easiest to reapply; feels like a splash of water." Best-selling budget gel, safe for medicated routines.</p>
+                <div class="meter-container">
+                    <div class="meter-label">Oil Control Level <span>7/10</span></div>
+                    <div class="meter-bar"><div class="meter-fill" style="width:70%; background: #3b82f6;"></div></div>
+                </div>
+                <div style="margin-top: 1.2rem;"><a href="https://thedermaco.com/products/1-hyaluronic-sunscreen-aqua-gel?utm_source=google&utm_medium=cpc&utm_campaign=21160990045&utm_term=158984407405&gad_source=1&gad_campaignid=21160990045&gbraid=0AAAAACgKvnJ23lTfgwlbQyJUd98JwaFsZ&gclid=Cj0KCQjwrZTRBhDSARIsAHidYfenstzvfJK_vXRSE0EOJOne0PZLHsAhBzCZMb5eUY6_1ZXqKI_OxQ4aAlAYEALw_wcB" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 800; text-decoration: none;">View on Store →</a></div>
             </div>
-            <p><strong>The Reddit Verdict:</strong> "The easiest to reapply; feels like a splash of water." This is the best-selling budget gel in India. It's safe for those on drying acne treatments like Adapalene.</p>
-            <div class="meter-container">
-                <div class="meter-label">Oil Control Level <span>7/10</span></div>
-                <div class="meter-bar"><div class="meter-fill" style="width:70%; background: #3b82f6;"></div></div>
+        </div>
+
+        <!-- Product 4: Fixderma -->
+        <div class="budget-pick-card">
+            <div class="pick-img"><img src="/acne/best-gel-sunscreen-for-oily-skin-under-500/images/fixderma.webp" alt="Fixderma Shadow Gel SPF 50+"></div>
+            <div class="pick-content">
+                <div class="pick-header">
+                    <div>
+                        <span class="badge" style="background: #f8fafc; color: #475569;">🏃 Sweat-Resistant</span>
+                        <h3>4. Fixderma Shadow Gel SPF 50+</h3>
+                    </div>
+                    <div class="pick-price">₹425 <small>(75g)</small></div>
+                </div>
+                <p><strong>The Reddit Verdict:</strong> "College student staple. Cheap and effective." An invisible gel that is exceptionally comfortable in humid environments.</p>
+                <div class="meter-container">
+                    <div class="meter-label">Oil Control Level <span>8.5/10</span></div>
+                    <div class="meter-bar"><div class="meter-fill" style="width:85%; background: #64748b;"></div></div>
+                </div>
+                <div style="margin-top: 1.2rem;"><a href="https://amazon.in/Sunscreen-SPF-50-Protector-Protection/dp/B0C1G7JY5D/ref=asc_df_B0C1G7JY5D?mcid=971cbd1e2333300bb62bb9fc04b6fd70&tag=googleshopdes-21&linkCode=df0&hvadid=710019640045&hvpos=&hvnetw=g&hvrand=12688820961704777369&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9151661&hvtargid=pla-2196436835258&psc=1&hvocijid=12688820961704777369-B0C1G7JY5D-&hvexpln=0&gad_source=1" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 800; text-decoration: none;">View on Amazon →</a></div>
             </div>
-            <div style="margin-top: 1.5rem;"><a href="https://www.apollopharmacy.in/otc/the-derma-co-1-hyaluronic-sunscreen-gel-50g" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 800; text-decoration: none;">View on Apollo Pharmacy →</a></div>
+        </div>
+
+        <!-- Product 5: Minimalist -->
+        <div class="budget-pick-card">
+            <div class="pick-img"><img src="/acne/best-gel-sunscreen-for-oily-skin-under-500/images/minimalist.webp" alt="Minimalist Light Fluid SPF 50"></div>
+            <div class="pick-content">
+                <div class="pick-header">
+                    <div>
+                        <span class="badge" style="background: #fefce8; color: #854d0e;">🧬 Modern Filters</span>
+                        <h3>5. Minimalist Light Fluid SPF 50</h3>
+                    </div>
+                    <div class="pick-price">₹399 <small>(50g)</small></div>
+                </div>
+                <p><strong>The Reddit Verdict:</strong> "Science-backed and breathable." A very thin, milk-like consistency that is fragrance-free and highly photostable.</p>
+                <div class="meter-container">
+                    <div class="meter-label">Oil Control Level <span>9/10</span></div>
+                    <div class="meter-bar"><div class="meter-fill" style="width:90%; background: #fbbf24;"></div></div>
+                </div>
+                <div style="margin-top: 1.2rem;"><a href="https://www.nykaa.com/minimalist-light-fluid-spf-50-face-sunscreen/p/20540004?ptype=product&skuId=14573042&utm_content=ads&utm_source=GooglePaid&utm_medium=PLA&utm_campaign=PerformanceMaxSkin_P0Brands_1Day&gad_source=1&gad_campaignid=23219004447&gbraid=0AAAABBsUhjQupq3eGGAn6mGq97ae7q15l&gclid=Cj0KCQjwrZTRBhDSARIsAHidYfe4xudm-UX6NQvhJn5Ux7Fhcg6w_zqz-5ZkVKrdYJUoOjRFaD3APXAaAqv8EALw_wcB" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 800; text-decoration: none;">View on Nykaa →</a></div>
+            </div>
         </div>
     </section>
 
@@ -217,11 +257,41 @@
                     <tr><th>Sunscreen</th><th>Price (50g)</th><th>Primary Active</th><th>Finish</th><th>White Cast</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>WishCare Oil Balance</td><td><strong>₹399</strong></td><td>Zinc PCA</td><td>Soft Matte</td><td>None</td></tr>
-                    <tr><td>Conscious Chemist</td><td><strong>₹389</strong></td><td>Niacinamide</td><td>Natural Dewy</td><td>None</td></tr>
-                    <tr><td>Fixderma Shadow Gel</td><td><strong>₹425</strong></td><td>Zinc Oxide</td><td>Invisible Gel</td><td>None</td></tr>
-                    <tr><td>Minimalist Fluid</td><td><strong>₹399</strong></td><td>Tinosorb S</td><td>Breathable</td><td>None</td></tr>
-                    <tr><td>Aqualogica Glow+</td><td><strong>₹399</strong></td><td>Hyaluronic Acid</td><td>Dewy Glow</td><td>None</td></tr>
+                    <tr>
+                        <td>
+                            <img src="/acne/best-gel-sunscreen-for-oily-skin-under-500/images/wishcare.webp" alt="WishCare" class="matrix-img">
+                            <a href="https://www.nykaa.com/wishcare-niacinamide-oil-balance-sunscreen-spf-50-pa/p/25163097?ptype=product&skuId=25163097&utm_content=ads&utm_source=GooglePaid&utm_medium=PLA&utm_campaign=PLA_Top20BrandsOnSite&gad_source=1&gad_campaignid=23082551898&gbraid=0AAAAADo9oc_EP99c_fTQypYsXbucr1W5a&gclid=Cj0KCQjwrZTRBhDSARIsAHidYfenvVpeHIazcT5Gu9a8148OSFZP5_q2sOIRatuDf6UvDHZOFS3EAqcaAvrMEALw_wcB" class="matrix-link">WishCare Oil Balance</a>
+                        </td>
+                        <td><strong>₹399</strong></td><td>Zinc PCA</td><td>Soft Matte</td><td>None</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="/acne/best-gel-sunscreen-for-oily-skin-under-500/images/conscious-chemist.webp" alt="Conscious Chemist" class="matrix-img">
+                            <a href="https://amazon.in/Conscious-Chemist-Lightweight-Niacinamide-Non-Greasy/dp/B0BLW3SPQG/ref=asc_df_B0BLW3SPQG?mcid=afba433980db3c26bba672687445ff69&tag=googleshopdes-21&linkCode=df0&hvadid=709991227886&hvpos=&hvnetw=g&hvrand=1835347532177915461&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9151661&hvtargid=pla-1905099660693&psc=1&hvocijid=1835347532177915461-B0BLW3SPQG-&hvexpln=0&gad_source=1" class="matrix-link">Conscious Chemist</a>
+                        </td>
+                        <td><strong>₹389</strong></td><td>Niacinamide</td><td>Natural Dewy</td><td>None</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="/acne/best-gel-sunscreen-for-oily-skin-under-500/images/fixderma.webp" alt="Fixderma" class="matrix-img">
+                            <a href="https://amazon.in/Sunscreen-SPF-50-Protector-Protection/dp/B0C1G7JY5D/ref=asc_df_B0C1G7JY5D?mcid=971cbd1e2333300bb62bb9fc04b6fd70&tag=googleshopdes-21&linkCode=df0&hvadid=710019640045&hvpos=&hvnetw=g&hvrand=12688820961704777369&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9151661&hvtargid=pla-2196436835258&psc=1&hvocijid=12688820961704777369-B0C1G7JY5D-&hvexpln=0&gad_source=1" class="matrix-link">Fixderma Shadow Gel</a>
+                        </td>
+                        <td><strong>₹283</strong><br><small>(₹425/75g)</small></td><td>Zinc Oxide</td><td>Invisible Gel</td><td>None</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="/acne/best-gel-sunscreen-for-oily-skin-under-500/images/minimalist.webp" alt="Minimalist" class="matrix-img">
+                            <a href="https://www.nykaa.com/minimalist-light-fluid-spf-50-face-sunscreen/p/20540004?ptype=product&skuId=14573042&utm_content=ads&utm_source=GooglePaid&utm_medium=PLA&utm_campaign=PerformanceMaxSkin_P0Brands_1Day&gad_source=1&gad_campaignid=23219004447&gbraid=0AAAABBsUhjQupq3eGGAn6mGq97ae7q15l&gclid=Cj0KCQjwrZTRBhDSARIsAHidYfe4xudm-UX6NQvhJn5Ux7Fhcg6w_zqz-5ZkVKrdYJUoOjRFaD3APXAaAqv8EALw_wcB" class="matrix-link">Minimalist Fluid</a>
+                        </td>
+                        <td><strong>₹399</strong></td><td>Tinosorb S</td><td>Breathable</td><td>None</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="/acne/best-gel-sunscreen-for-oily-skin-under-500/images/aqualogica.avif" alt="Aqualogica" class="matrix-img">
+                            <a href="https://www.myntra.com/face-sunscreen/aqualogica/aqualogica-glow-dewy-sunscreen-spf-50-pa---30-g/32961487/buy?utm_source=dms_google&utm_medium=dms_pmax_cpc&utm_campaign=dms_google_pmax_cpc_Catchall_ios_SOK&keyword=&matchtype=&target=&placement=&gad_source=1&gad_campaignid=21729182585&gbraid=0AAAAADMPudAc4sVxuB2FwK9piHIiX7wAi&gclid=Cj0KCQjwrZTRBhDSARIsAHidYfdshW9V6jnwelUQvmKkudp3T0h7hrIaWmQbkOgz21RgLKcFqzfpICgaAhZnEALw_wcB" class="matrix-link">Aqualogica Glow+</a>
+                        </td>
+                        <td><strong>₹399</strong></td><td>Hyaluronic Acid</td><td>Dewy Glow</td><td>None</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
