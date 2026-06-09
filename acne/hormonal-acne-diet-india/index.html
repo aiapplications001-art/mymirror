@@ -191,31 +191,53 @@
         </div>
     </section>
 
-    <!-- Visual Recipe Library -->
+    <!-- Visual Recipe Library: Horizontal Scroll -->
     <section class="reveal" style="margin-top: 6rem;">
         <h2 style="text-align: center;">Visual Recipe Library: Low-GL Indian Meals</h2>
-        <p style="text-align: center;">Clinical step-by-step guides for acne-safe Indian breakfasts.</p>
+        <p style="text-align: center; margin-bottom: 2rem;">Swipe to explore step-by-step clinical recipes for hormonal clarity.</p>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 2rem;">
-            <!-- Jowar Idli Embed -->
-            <div style="background: #fff; padding: 1rem; border-radius: 24px; border: 1px solid var(--color-border); box-shadow: 0 5px 15px rgba(0,0,0,0.03);">
+        <div style="display: flex; overflow-x: auto; gap: 20px; padding: 1rem 0 2rem 0; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+            
+            <!-- Jowar Idli -->
+            <div style="flex: 0 0 320px; scroll-snap-align: start; background: #fff; padding: 1rem; border-radius: 24px; border: 1px solid var(--color-border); box-shadow: 0 5px 15px rgba(0,0,0,0.03);">
                 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 16px; margin-bottom: 1rem;">
-                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/SSSrKWom04U" title="The Perfect Jowar Idli" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/SSSrKWom04U" title="The Perfect Jowar Idli" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <span class="badge" style="background: #f0fdf4; color: #166534;">Insulin Safe</span>
                 <h4 style="margin: 10px 0;">The Perfect Jowar Idli</h4>
-                <p style="font-size: 0.8rem; color: var(--color-text-secondary);">How to replace white rice with low-GL ancient grains.</p>
+                <p style="font-size: 0.8rem; color: var(--color-text-secondary);">Replace white rice with ancient grains to blunt androgen spikes.</p>
             </div>
 
-            <!-- Moong Chila Embed -->
-            <div style="background: #fff; padding: 1rem; border-radius: 24px; border: 1px solid var(--color-border); box-shadow: 0 5px 15px rgba(0,0,0,0.03);">
+            <!-- Moong Chila -->
+            <div style="flex: 0 0 320px; scroll-snap-align: start; background: #fff; padding: 1rem; border-radius: 24px; border: 1px solid var(--color-border); box-shadow: 0 5px 15px rgba(0,0,0,0.03);">
                 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 16px; margin-bottom: 1rem;">
-                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/MP3DlW_z9wo" title="Moong & Besan Chilla" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/MP3DlW_z9wo" title="Moong Chilla" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <span class="badge" style="background: #eff6ff; color: #1e40af;">Protein Focus</span>
                 <h4 style="margin: 10px 0;">Healthy Moong & Besan Chilla</h4>
-                <p style="font-size: 0.8rem; color: var(--color-text-secondary);">A high-protein, zero-maida start for androgen balance.</p>
+                <p style="font-size: 0.8rem; color: var(--color-text-secondary);">High-protein, zero-maida start for hormonal balance.</p>
             </div>
+
+            <!-- Paneer Bhurji (Placeholder for future link) -->
+            <div style="flex: 0 0 320px; scroll-snap-align: start; background: #fff; padding: 1rem; border-radius: 24px; border: 1px solid var(--color-border); box-shadow: 0 5px 15px rgba(0,0,0,0.03);">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 16px; margin-bottom: 1rem; background: var(--color-bg-secondary); display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 0.8rem; opacity: 0.5;">[Video coming soon]</span>
+                </div>
+                <span class="badge" style="background: #fdf2f2; color: #9f1239;">Zero Carb</span>
+                <h4 style="margin: 10px 0;">Clinical Paneer Bhurji</h4>
+                <p style="font-size: 0.8rem; color: var(--color-text-secondary);">Androgen stabilization through high-quality protein.</p>
+            </div>
+
+            <!-- Oats Idli (Placeholder) -->
+            <div style="flex: 0 0 320px; scroll-snap-align: start; background: #fff; padding: 1rem; border-radius: 24px; border: 1px solid var(--color-border); box-shadow: 0 5px 15px rgba(0,0,0,0.03);">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 16px; margin-bottom: 1rem; background: var(--color-bg-secondary); display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 0.8rem; opacity: 0.5;">[Video coming soon]</span>
+                </div>
+                <span class="badge" style="background: #f0fdf4; color: #166534;">High Fiber</span>
+                <h4 style="margin: 10px 0;">Anti-Acne Oats Idli</h4>
+                <p style="font-size: 0.8rem; color: var(--color-text-secondary);">Slower glucose release than traditional rice idli.</p>
+            </div>
+
         </div>
     </section>
 
