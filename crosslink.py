@@ -22,6 +22,10 @@ keywords_map = {
     r"\bpimple vs zit\b": "/acne/pimple-zit/",
     r"\bnodule vs cyst\b": "/acne/nodule-cyst/",
     r"\bblackheads\b": "/acne/blackheads-whiteheads/",
+    r"\bhormonal acne diet\b": "/acne/hormonal-acne-diet-india/",
+    r"\bcycle-synced skincare\b": "/acne/cycle-synced-skincare-predicting-breakouts/",
+    r"\bspearmint tea\b": "/acne/pcos-supplements-spearmint-inositol-india/",
+    r"\binositol\b": "/acne/pcos-supplements-spearmint-inositol-india/",
 }
 
 # The inline style makes the link invisible (no underline, inherits text color)
