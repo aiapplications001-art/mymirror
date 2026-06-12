@@ -26,6 +26,12 @@ keywords_map = {
     r"\bcycle-synced skincare\b": "/acne/cycle-synced-skincare-predicting-breakouts/",
     r"\bspearmint tea\b": "/acne/pcos-supplements-spearmint-inositol-india/",
     r"\binositol\b": "/acne/pcos-supplements-spearmint-inositol-india/",
+    r"\bmen's face wash\b": "/acne/best-mens-face-wash-pimples-dark-spots/",
+    r"\bbest face wash for men\b": "/acne/best-mens-face-wash-pimples-dark-spots/",
+    r"\bteenage acne\b": "/acne/teenage-acne-india-parents-guide/",
+    r"\bteenage skincare\b": "/acne/teenage-acne-india-parents-guide/",
+    r"\bgym acne\b": "/acne/sweat-acne-school-sports-india/",
+    r"\bsweat pimples\b": "/acne/sweat-acne-school-sports-india/",
 }
 
 # The inline style makes the link invisible (no underline, inherits text color)
