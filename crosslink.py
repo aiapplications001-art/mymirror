@@ -57,10 +57,11 @@ def add_crosslinks(filepath):
     # Tokenize HTML to protect certain blocks from replacement
     # 1. <a>...</a>
     # 2. <h[1-6]>...</h[1-6]> (we don't want links in headings)
-    # 3. <script>...</script>
-    # 4. <style>...</style>
-    # 5. <...> (any other HTML tag, ensuring we don't replace inside alt="...", href="...", etc.)
-    token_pattern = re.compile(r'(<a\b[^>]*>.*?</a>|<h[1-6]\b[^>]*>.*?</h[1-6]>|<script\b[^>]*>.*?</script>|<style\b[^>]*>.*?</style>|<[^>]+>)', re.IGNORECASE | re.DOTALL)
+    # 3. <div class="faq-question">...</div> (links break the flex layout)
+    # 4. <script>...</script>
+    # 5. <style>...</style>
+    # 6. <...> (any other HTML tag, ensuring we don't replace inside alt="...", href="...", etc.)
+    token_pattern = re.compile(r'(<a\b[^>]*>.*?</a>|<h[1-6]\b[^>]*>.*?</h[1-6]>|<div\b[^>]*class=["\']faq-question["\'][^>]*>.*?</div>|<script\b[^>]*>.*?</script>|<style\b[^>]*>.*?</style>|<[^>]+>)', re.IGNORECASE | re.DOTALL)
     
     tokens = token_pattern.split(content)
     
