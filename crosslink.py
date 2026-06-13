@@ -47,6 +47,7 @@ keywords_map = {
     r"\bchest acne\b": "/acne/body-acne-india-bacne-chestne-guide/",
     r"\bmedicated body wash\b": "/acne/body-acne-india-bacne-chestne-guide/",
     r"\bclearing back acne\b": "/acne/body-acne-india-bacne-chestne-guide/",
+    r"\bgym body acne\b": "/acne/gym-body-acne-post-workout-routine/",
 }
 
 # The inline style makes the link invisible (no underline, inherits text color)
