@@ -42,6 +42,11 @@ keywords_map = {
     r"\bpimple popping scars\b": "/acne/pimple-popping-habits-teenage-skin/",
     r"\bacne excoriee\b": "/acne/pimple-popping-habits-teenage-skin/",
     r"\bstop popping pimples\b": "/acne/pimple-popping-habits-teenage-skin/",
+    r"\bbody acne\b": "/acne/body-acne-india-bacne-chestne-guide/",
+    r"\bbacne\b": "/acne/body-acne-india-bacne-chestne-guide/",
+    r"\bchest acne\b": "/acne/body-acne-india-bacne-chestne-guide/",
+    r"\bmedicated body wash\b": "/acne/body-acne-india-bacne-chestne-guide/",
+    r"\bclearing back acne\b": "/acne/body-acne-india-bacne-chestne-guide/",
 }
 
 # The inline style makes the link invisible (no underline, inherits text color)
