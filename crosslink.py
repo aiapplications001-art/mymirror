@@ -32,6 +32,9 @@ keywords_map = {
     r"\bteenage skincare\b": "/acne/teenage-acne-india-parents-guide/",
     r"\bgym acne\b": "/acne/sweat-acne-school-sports-india/",
     r"\bsweat pimples\b": "/acne/sweat-acne-school-sports-india/",
+    r"\bexam stress acne\b": "/acne/exam-stress-acne-pimple-prevention/",
+    r"\bboard exam breakouts\b": "/acne/exam-stress-acne-pimple-prevention/",
+    r"\bstress pimples\b": "/acne/exam-stress-acne-pimple-prevention/",
 }
 
 # The inline style makes the link invisible (no underline, inherits text color)
