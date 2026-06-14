@@ -379,6 +379,16 @@
     <script>
         const obs = new IntersectionObserver(e => e.forEach(x => x.isIntersecting && x.target.classList.add('active')), { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                item.classList.toggle('active');
+                const toggle = q.querySelector('.faq-toggle');
+                toggle.textContent = item.classList.contains('active') ? '×' : '+';
+            });
+        });
     </script>
 </body>
 </html>
