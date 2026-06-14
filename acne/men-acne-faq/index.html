@@ -18,6 +18,7 @@
   <meta property="og:url" content="https://mymirror.fit/acne/men-acne-faq/" />
   <meta property="og:site_name" content="mymirror" />
 
+  <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
   <style>
   @font-face { font-family: 'Kantumruy Pro'; src: url('../../fonts/KantumruyPro-VariableFont_wght.ttf') format('truetype'); font-weight: 100 700; font-style: normal; font-display: swap; }
   @font-face { font-family: 'Plus Jakarta Sans'; src: url('../../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype'); font-weight: 200 800; font-style: normal; font-display: swap; }
@@ -44,7 +45,7 @@
     }
     .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
     .face-ai-btn-text { position: relative; z-index: 12; }
-    .face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 13px; max-width: 480px; line-height: 1.5; margin: 0 auto; display: block !important; visibility: visible !important; }
+    p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     
     .face-ai-energy-rail { 
       position: absolute; 
@@ -89,7 +90,7 @@
 
     @media (max-width: 768px) {
       .face-ai-btn { padding: 16px 32px; font-size: 1rem; width: 100%; max-width: 340px; }
-      .face-ai-subtext { font-size: 12px; padding: 0 10px; }
+      p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     }
 
   </style>
@@ -525,16 +526,13 @@
     .breadcrumb span { margin: 0 6px; }
 
     /* ── HERO ── */
-    .hero {
-      background: var(--color-bg-secondary);
-      border-bottom: 1px solid var(--color-border);
-      padding:  6rem 2rem 10rem;
-    }
+    .hero { background: var(--color-bg-secondary); border-bottom: 1px solid var(--color-border); padding: 1rem 2rem 3rem; margin-bottom: 0 !important; }
     .hero-inner {
       max-width: 1100px; margin: 0 auto;
       display: grid; grid-template-columns: 1fr auto;
       gap: 3rem; align-items: center;
     }
+    .hero .hero-content { margin-top: 0 !important; text-shadow: none !important; text-align: left !important; }
     .hero-tag {
       display: inline-flex; align-items: center; gap: 6px;
       background: var(--color-brand-light);
@@ -873,6 +871,7 @@
       .page-body { grid-template-columns: 1fr; }
       .sidebar { display: none; }
       .hero-inner { grid-template-columns: 1fr; }
+    .hero .hero-content { margin-top: 0 !important; text-shadow: none !important; text-align: left !important; }
       .hero-image-stack { display: none; }
       .faq-subgroups { grid-template-columns: 1fr; }
       .tips-grid { grid-template-columns: repeat(3, 1fr); }
@@ -880,7 +879,7 @@
     @media (max-width: 600px) {
       .trust-bar .hide-mobile { display: none; }
       .tips-grid { grid-template-columns: repeat(2, 1fr); }
-      .hero { padding:  6rem 2rem 10rem; }
+      .hero { background: var(--color-bg-secondary); border-bottom: 1px solid var(--color-border); padding: 1rem 2rem 3rem; margin-bottom: 0 !important; }
       .page-body { padding: 2rem 1.5rem; }
     }
   
@@ -905,7 +904,7 @@
     }
     .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
     .face-ai-btn-text { position: relative; z-index: 12; }
-    .face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 13px; max-width: 480px; line-height: 1.5; margin: 0 auto; display: block !important; visibility: visible !important; }
+    p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     
     .face-ai-energy-rail { 
       position: absolute; 
@@ -950,13 +949,13 @@
 
     @media (max-width: 768px) {
       .face-ai-btn { padding: 16px 32px; font-size: 1rem; width: 100%; max-width: 340px; }
-      .face-ai-subtext { font-size: 12px; padding: 0 10px; }
+      p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     }
 
   </style>
   <script defer src="/assets/site-analytics.js"></script>
   <link rel="preload" as="image" href="/assets/hero-man-mirror.webp">
-    <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+    
     <meta name="twitter:title" content="Acne in Men: 30 Frequently Asked Questions Answered | mymirror">
     <meta name="twitter:description" content="Free AI Skin Analysis with 60-second results. Expert answers to the 30 most searched questions about acne in men — causes, types, treatments, and myths. Science-backed, dermatologist-reviewed.">
     <meta name="twitter:card" content="summary_large_image">

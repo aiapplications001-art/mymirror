@@ -103,6 +103,7 @@
 ]
     </script>
 
+  <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -155,8 +156,9 @@
     .trust-verify { color: #059669; font-weight: 700; }
 
     /* Hero */
-    .hero { background: var(--bg-2); padding:  6rem 2rem 10rem; border-bottom: 1px solid var(--border); }
+    .hero { background: var(--color-bg-secondary); border-bottom: 1px solid var(--color-border); padding: 1rem 2rem 3rem; margin-bottom: 0 !important; }
     .hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 300px; gap: 4rem; align-items: center; }
+    .hero .hero-content { margin-top: 0 !important; text-shadow: none !important; text-align: left !important; }
     .hero-tag { display: inline-block; background: var(--brand-light); color: var(--brand); font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 5px 14px; border-radius: 9999px; margin-bottom: 1.2rem; }
     .hero-photo { width: 280px; border-radius: 20px; overflow: hidden; background: transparent; }
     .hero-photo img { width: 100%; height: auto; object-fit: contain; mix-blend-mode: multiply; }
@@ -223,6 +225,7 @@
     @media (max-width: 950px) {
       .hero-inner, .page-body { grid-template-columns: 1fr; }
       .hero-inner { text-align: center; }
+    .hero .hero-content { margin-top: 0 !important; text-shadow: none !important; text-align: left !important; }
       .hero-photo { display: none; }
       .toc-inner { margin-left: -2rem; margin-right: -2rem; padding: 0 2rem 8px; }
     }
@@ -248,7 +251,7 @@
     }
     .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
     .face-ai-btn-text { position: relative; z-index: 12; }
-    .face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 13px; max-width: 480px; line-height: 1.5; margin: 0 auto; display: block !important; visibility: visible !important; }
+    p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     
     .face-ai-energy-rail { 
       position: absolute; 
@@ -293,13 +296,13 @@
 
     @media (max-width: 768px) {
       .face-ai-btn { padding: 16px 32px; font-size: 1rem; width: 100%; max-width: 340px; }
-      .face-ai-subtext { font-size: 12px; padding: 0 10px; }
+      p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     }
 
   </style>
   <script defer src="/assets/site-analytics.js"></script>
   <link rel="preload" as="image" href="/acne/forehead-acne/forehead.jpg">
-    <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+    
     <meta property="og:title" content="Pimples on Forehead Related to Which Organ? The Complete Face Map | MyMirror">
     <meta property="og:description" content="Free AI Skin Analysis with 60-second results. Wondering about pimples on forehead related to which organ? Learn how your bladder and digestive system cause forehead breakouts, plus expert tips to clear them fast.">
     <meta name="twitter:title" content="Pimples on Forehead Related to Which Organ? The Complete Face Map | MyMirror">

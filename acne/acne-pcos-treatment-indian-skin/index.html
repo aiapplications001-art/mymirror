@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" href="/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   
+  <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -99,15 +100,11 @@
     .breadcrumb span { margin: 0 6px; }
 
     /* HERO */
-    .hero {
-      background: var(--color-bg-secondary);
-      border-bottom: 1px solid var(--color-border);
-      padding:  6rem 2rem 10rem;
-      text-align: center;
-    }
+    .hero { background: var(--color-bg-secondary); border-bottom: 1px solid var(--color-border); padding: 1rem 2rem 3rem; margin-bottom: 0 !important; }
     .hero-inner {
       max-width: 800px; margin: 0 auto;
     }
+    .hero .hero-content { margin-top: 0 !important; text-shadow: none !important; text-align: left !important; }
     .hero-tag {
       display: inline-flex; align-items: center; gap: 6px;
       background: var(--color-brand-light);
@@ -551,7 +548,7 @@
     }
     .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
     .face-ai-btn-text { position: relative; z-index: 12; }
-    .face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 13px; max-width: 480px; line-height: 1.5; margin: 0 auto; display: block !important; visibility: visible !important; }
+    p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     
     .face-ai-energy-rail { 
       position: absolute; 
@@ -596,13 +593,13 @@
 
     @media (max-width: 768px) {
       .face-ai-btn { padding: 16px 32px; font-size: 1rem; width: 100%; max-width: 340px; }
-      .face-ai-subtext { font-size: 12px; padding: 0 10px; }
+      p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     }
 
   </style>
   <script defer src="/assets/site-analytics.js"></script>
   <link rel="preload" as="image" href="/acne/acne-pcos-treatment-indian-skin/pcos-acne.png">
-    <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+    
     <meta property="og:title" content="The Ultimate Guide to Acne and PCOS Treatment for Indian Skin | MyMirror">
     <meta property="og:description" content="Free AI Skin Analysis with 60-second results. Managing hormonal acne from PCOS? Discover dermatologist-backed treatment strategies, diet tips, and skincare routines tailored for Indian skin and PCOS-related breakouts.">
     <meta name="twitter:title" content="The Ultimate Guide to Acne and PCOS Treatment for Indian Skin | MyMirror">

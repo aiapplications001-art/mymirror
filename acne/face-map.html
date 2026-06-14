@@ -117,7 +117,8 @@
 ]
     </script>
 
-    <style>
+    <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+  <style>
         :root {
             --primary: #000000;
             --secondary: #f8fafc;
@@ -160,7 +161,7 @@
         .verify-badge { color: var(--safe-green); font-weight: 700; display: flex; align-items: center; gap: 5px; }
 
         /* Hero */
-        .hero { padding:  6rem 2rem 10rem; text-align: center; background: radial-gradient(circle at 10% 20%, rgba(255, 245, 240, 1) 0%, rgba(255, 255, 255, 1) 90%); }
+        .hero { background: var(--color-bg-secondary); border-bottom: 1px solid var(--color-border); padding: 1rem 2rem 3rem; margin-bottom: 0 !important; }
         h1 { font-size: 3rem; font-weight: 800; letter-spacing: -1.5px; line-height: 1.1; max-width: 950px; margin: 0 auto 1.5rem auto; color: var(--primary); }
         .disclaimer-box { max-width: 800px; margin: 2rem auto; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 12px; font-size: 0.85rem; color: #64748b; text-align: center; font-style: italic; }
 
@@ -240,7 +241,7 @@
     }
     .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
     .face-ai-btn-text { position: relative; z-index: 12; }
-    .face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 13px; max-width: 480px; line-height: 1.5; margin: 0 auto; display: block !important; visibility: visible !important; }
+    p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     
     .face-ai-energy-rail { 
       position: absolute; 
@@ -285,14 +286,14 @@
 
     @media (max-width: 768px) {
       .face-ai-btn { padding: 16px 32px; font-size: 1rem; width: 100%; max-width: 340px; }
-      .face-ai-subtext { font-size: 12px; padding: 0 10px; }
+      p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     }
 
   </style>
   <meta name="twitter:image" content="https://mymirror.fit/acne/face-map/face-1.png" />
   <script defer src="/assets/site-analytics.js"></script>
   <link rel="preload" as="image" href="/acne/face-map/face-1.png">
-    <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+    
 </head>
 <body>
 

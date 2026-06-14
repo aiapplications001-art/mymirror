@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -59,8 +60,9 @@
     .nav-links a.active { background: var(--color-brand-light); color: var(--color-brand); font-weight: 600; }
 
     /* ── HERO ── */
-    .hero { background: var(--color-bg-secondary); border-bottom: 1px solid var(--color-border); padding:  6rem 2rem 10rem; }
+    .hero { background: var(--color-bg-secondary); border-bottom: 1px solid var(--color-border); padding: 1rem 2rem 3rem; margin-bottom: 0 !important; }
     .hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 400px; gap: 3rem; align-items: center; }
+    .hero .hero-content { margin-top: 0 !important; text-shadow: none !important; text-align: left !important; }
     .hero-content { position: relative; }
     .hero-tag { display: inline-block; background: var(--color-brand-light); color: var(--color-brand); font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 14px; border-radius: 99px; margin-bottom: 1.2rem; }
     .hero h1 { font-family: 'Kantumruy Pro', serif; font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 1rem; }
@@ -113,6 +115,7 @@
 
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; text-align: center; }
+    .hero .hero-content { margin-top: 0 !important; text-shadow: none !important; text-align: left !important; }
       .page-body { grid-template-columns: 1fr; }
       .sidebar { display: none; }
       .bento-grid { grid-template-columns: 1fr; }
@@ -139,7 +142,7 @@
     }
     .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
     .face-ai-btn-text { position: relative; z-index: 12; }
-    .face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 13px; max-width: 480px; line-height: 1.5; margin: 0 auto; display: block !important; visibility: visible !important; }
+    p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     
     .face-ai-energy-rail { 
       position: absolute; 
@@ -184,13 +187,13 @@
 
     @media (max-width: 768px) {
       .face-ai-btn { padding: 16px 32px; font-size: 1rem; width: 100%; max-width: 340px; }
-      .face-ai-subtext { font-size: 12px; padding: 0 10px; }
+      p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     }
 
   </style>
   <script defer src="/assets/site-analytics.js"></script>
   <link rel="preload" as="image" href="https://wmeojibgfvjvinftolho.supabase.co/storage/v1/object/public/public_assets/blog-gen/banner-97237a6d-ae3b-4066-8049-07d3b8e7d8e0">
-    <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+    
     <meta name="twitter:title" content="Why Is Your Adult Acne Worsening? Causes & Fixes 2026 | MyMirror">
     <meta name="twitter:description" content="Free AI Skin Analysis with 60-second results. Breaking out in your 30s or 40s? Discover why adult acne is rising in 2026 and how new technologies like topical anti-androgens and laser can clear it.">
     <meta name="twitter:card" content="summary_large_image">

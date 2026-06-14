@@ -22,8 +22,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+  
 
+  <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -62,6 +63,7 @@
     /* ── HERO ── */
     .hero { background: var(--color-bg-secondary); border-bottom: 1px solid var(--color-border); padding: 1rem 2rem 3rem; }
     .hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 450px; gap: 3rem; align-items: flex-start; margin-top: 0; }
+    .hero .hero-content { margin-top: 0 !important; text-shadow: none !important; text-align: left !important; }
     .hero-tag { display: inline-block; background: var(--color-brand-light); color: var(--color-brand); font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 14px; border-radius: 99px; margin-bottom: 1rem; margin-top: 0; }
     .hero h1 { font-family: 'Kantumruy Pro', serif; font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 1rem; margin-top: 0; }
     .hero p { font-size: 16px; color: var(--color-text-secondary); margin-bottom: 1rem; }
@@ -118,6 +120,7 @@
 
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; text-align: center; }
+    .hero .hero-content { margin-top: 0 !important; text-shadow: none !important; text-align: left !important; }
       .page-body { grid-template-columns: 1fr; }
       .sidebar { display: none; }
       .bento-grid { grid-template-columns: 1fr; }
@@ -144,7 +147,7 @@
     }
     .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
     .face-ai-btn-text { position: relative; z-index: 12; }
-    p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
+    pp.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     
     .face-ai-energy-rail { 
       position: absolute; 
@@ -189,13 +192,13 @@
 
     @media (max-width: 768px) {
       .face-ai-btn { padding: 16px 32px; font-size: 1rem; width: 100%; max-width: 340px; }
-      .face-ai-subtext { font-size: 12px; padding: 0 10px; }
+      p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     }
 
   </style>
   <script defer src="/assets/site-analytics.js"></script>
   <link rel="preload" as="image" href="https://wmeojibgfvjvinftolho.supabase.co/storage/v1/object/public/public_assets/blog-gen/banner-0b5fe854-1e50-405b-ba0f-f758111a0a74">
-    <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+    
     <meta name="twitter:title" content="Back Acne in Your 30s and 40s: Causes & Dual-Action Fixes | MyMirror">
     <meta name="twitter:description" content="Free AI Skin Analysis with 60-second results. Struggling with sudden back acne in your 30s or 40s? Learn how dropping estrogen, fluctuating androgens, and slow cell turnover cause breakouts later in life.">
     <meta name="twitter:card" content="summary_large_image">

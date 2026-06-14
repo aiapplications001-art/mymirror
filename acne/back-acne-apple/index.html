@@ -14,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;500;700;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     
-    <style>
+    <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+  <style>
         :root {
             --primary: #ffffff;
             --accent: #ff6b00;
@@ -83,15 +84,7 @@
         }
 
         /* Hero Section */
-        .hero { 
-            height: 90vh; 
-            display: flex; 
-            flex-direction: column;
-            justify-content: center; 
-            align-items: center; 
-            text-align: center; 
-            padding:  6rem 2rem 10rem;
-        }
+        .hero { background: var(--color-bg-secondary); border-bottom: 1px solid var(--color-border); padding: 1rem 2rem 3rem; margin-bottom: 0 !important; }
         .hero h1 { 
             font-size: min(6rem, 12vw); 
             font-weight: 800; 
@@ -315,7 +308,7 @@
     }
     .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
     .face-ai-btn-text { position: relative; z-index: 12; }
-    .face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 13px; max-width: 480px; line-height: 1.5; margin: 0 auto; display: block !important; visibility: visible !important; }
+    p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     
     .face-ai-energy-rail { 
       position: absolute; 
@@ -360,13 +353,13 @@
 
     @media (max-width: 768px) {
       .face-ai-btn { padding: 16px 32px; font-size: 1rem; width: 100%; max-width: 340px; }
-      .face-ai-subtext { font-size: 12px; padding: 0 10px; }
+      p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     }
 
   </style>
   <script defer src="/assets/site-analytics.js"></script>
   <link rel="preload" as="image" href="/acne/back-acne-apple/shampoo.jpeg">
-    <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+    
     <meta property="og:title" content="The Complete Guide to Treatment for Acne on Back: Causes & Remedies | MyMirror">
     <meta property="og:description" content="Free AI Skin Analysis with 60-second results. Discover effective treatments for acne on back. From natural homemade remedies to clinical solutions, learn how to get rid of bacne fast.">
     <meta name="twitter:title" content="The Complete Guide to Treatment for Acne on Back: Causes & Remedies | MyMirror">
