@@ -10,16 +10,38 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Microneedling vs. Chemical Peels: The Scar Revision Guide">
     <meta property="og:description" content="Collagen Hero vs. Texture Refiner: Choosing the right treatment for Indian skin.">
-    <meta property="og:image" content="https://mymirror.in/acne/microneedling-vs-chemical-peels-scars/og-image.jpg">
+    <meta property="og:image" content="https://mymirror.fit/assets/pitted-acne-scars-india-guide.jpeg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Microneedling vs. Chemical Peels: Which is Best for Scars?">
-    <meta name="twitter:image" content="https://mymirror.in/acne/microneedling-vs-chemical-peels-scars/twitter-image.jpg">
+    <meta name="twitter:image" content="https://mymirror.fit/assets/pitted-acne-scars-india-guide.jpeg">
 
     <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+    <style>
+        .page-body { max-width: 1200px !important; margin: 0 auto; width: 100%; }
+        .bento-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin: 3rem 0; width: 100%; }
+        .bento-card { background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: 24px; padding: 2.5rem; transition: all 0.4s var(--ease-bouncy); display: flex; flex-direction: column; height: 100%; }
+        .bento-card.horizontal { grid-column: 1 / -1; padding: 1.5rem 2.5rem; display: grid; grid-template-columns: 180px 1fr; gap: 2rem; align-items: center; }
+        .bento-card.horizontal .diagnostic-tag { display: inline-block; padding: 4px 12px; background: var(--color-brand-light); color: var(--color-brand-dark); border-radius: 99px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .bento-card.horizontal h3 { margin-bottom: 0; font-family: 'Kantumruy Pro', serif; font-size: 1.5rem; }
+        .bento-card:hover { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(0,0,0,0.06); border-color: var(--color-brand-light); }
+        
+        .sidebar { position: sticky; top: 100px; display: flex; flex-direction: column; gap: 2rem; }
+        .sidebar-card { background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: 24px; padding: 2rem; }
+        .sidebar-card h3 { font-size: 1.1rem; margin-bottom: 1.5rem; text-align: center; }
+        .toc-card-list { display: flex; flex-direction: column; gap: 10px; }
+        .toc-card-item { padding: 12px 15px; background: #fff; border-radius: 12px; font-size: 0.95rem; font-weight: 600; box-shadow: 0 2px 5px rgba(0,0,0,0.02); display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; transition: all 0.3s; border: 1px solid transparent; }
+        .toc-card-item:hover { border-color: var(--color-brand); transform: translateX(5px); }
+
+        @media (max-width: 1000px) {
+            .page-body { grid-template-columns: 1fr !important; gap: 2rem; }
+            .sidebar { position: static; order: -1; }
+            .bento-card.horizontal { grid-template-columns: 1fr; padding: 2rem; gap: 1rem; }
+        }
+    </style>
 
     <!-- JSON-LD Schema -->
     <script type="application/ld+json">
@@ -33,7 +55,7 @@
         "name": "MyMirror",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://mymirror.in/assets/images/logo.png"
+          "url": "https://mymirror.fit/acne/forehead-acne/logo-v4.png"
         }
       },
       "mainEntity": {
@@ -58,12 +80,10 @@
     <header class="site-header">
         <div class="header-container">
             <div class="logo-wrapper">
-                <a href="/"><img src="/assets/images/logo.png" alt="MyMirror Logo" class="logo"></a>
+                <a href="/"><img src="/acne/forehead-acne/logo-v4.png" alt="MyMirror Logo" class="logo"></a>
             </div>
             <nav class="nav-links">
-                <a href="/acne/face-scan/" class="nav-topic">AI Face Scan</a>
-                <a href="/acne/pitted-acne-scars-treatment-india/" class="nav-topic">Scar Treatments</a>
-                <a href="/acne/face-scan/" class="nav-cta">Analyze My Scars</a>
+                <a href="https://face3layerscanner.onrender.com/" class="nav-cta" target="_blank" rel="noopener">Free Skin Analysis ✨</a>
             </nav>
             <button class="hamburger-btn">
                 <span></span><span></span><span></span>
@@ -78,171 +98,197 @@
         </div>
     </div>
 
-    <section class="full-hero">
-        <div class="hero-video-bg"></div>
-        <div class="glider-overlay"></div>
-        <div class="hero-content">
-            <h1>Microneedling vs. Chemical Peels</h1>
-            <p>Choosing the Right Path for Indian Skin Scar Revision</p>
-            <div class="face-ai-cta-wrapper">
-                <a href="/acne/face-scan/" class="face-ai-btn">
+    <section class="full-hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/pitted-acne-scars-india-guide.jpeg') center/cover no-repeat; min-height: 450px; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; padding: 4rem 2rem;">
+        <div class="hero-content" style="max-width: 900px; width: 100%;">
+            <h1 style="font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.02em;">Microneedling vs. Chemical Peels</h1>
+            <p style="font-size: 1.3rem; font-weight: 500; opacity: 0.95; max-width: 750px; margin: 0 auto 2.5rem;">Choosing the Right Path for Indian Skin Scar Revision</p>
+            <div class="face-ai-cta-wrapper" style="margin-top: 0;">
+                <a href="https://face3layerscanner.onrender.com/" class="face-ai-btn">
                     <span class="face-ai-btn-text">Identify Your Scar Type with AI</span>
                     <div class="face-ai-energy-rail"></div>
                 </a>
-                <span class="face-ai-subtext">Free Scan: 60 Seconds to Your Custom Clinical Plan</span>
+                <span class="face-ai-subtext" style="display: block; margin-top: 1.2rem; color: #fff; font-weight: 600; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Free Scan: 60 Seconds to Your Custom Clinical Plan</span>
             </div>
         </div>
     </section>
 
-    <div class="container">
-        <!-- Card-Based TOC -->
-        <section class="toc-section reveal">
-            <div class="bento-item item-lg">
+    <div class="container page-body" style="display: grid; grid-template-columns: 1fr 320px; gap: 4rem; padding-top: 4rem;">
+        <main>
+            <section id="surface-vs-deep" class="reveal">
+                <div class="section-header" style="display: flex; align-items: center; gap: 14px; margin-bottom: 2rem;">
+                    <div class="section-num" style="width: 36px; height: 36px; border-radius: 50%; background: var(--color-brand); color: #fff; font-family: 'Kantumruy Pro', serif; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+                    <h2 class="section-title" style="font-family: 'Kantumruy Pro', serif; font-size: 1.8rem; font-weight: 700; margin: 0;">Surface vs. Deep Dermis</h2>
+                </div>
+                <p>If you are looking at your reflection and seeing "pits," "craters," or "uneven shadows" left behind by old acne, you are likely deciding between two of the most popular clinical procedures in India: <strong>Microneedling</strong> and <strong>Chemical Peels</strong>.</p>
+                <p>While both treatments aim to "resurface" the skin, they operate on entirely different biological levels:</p>
+                <div class="highlight-box" style="background: #f8fafc; border-left: 5px solid var(--color-brand); padding: 2rem; border-radius: 0 20px 20px 0; margin: 3rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 1rem;">🎯 <strong>Chemical Peels</strong> work from the <strong>outside-in</strong>. They use specialized acids to "unglue" the top layers of dead skin.</li>
+                        <li>🎯 <strong>Microneedling</strong> works from the <strong>inside-out</strong>. It creates "micro-injuries" in the deep dermis to trigger a massive surge of new collagen.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="microneedling" class="reveal">
+                <div class="section-header" style="display: flex; align-items: center; gap: 14px; margin-bottom: 2rem;">
+                    <div class="section-num" style="width: 36px; height: 36px; border-radius: 50%; background: var(--color-brand); color: #fff; font-family: 'Kantumruy Pro', serif; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+                    <h2 class="section-title" style="font-family: 'Kantumruy Pro', serif; font-size: 1.8rem; font-weight: 700; margin: 0;">Microneedling (PRP/MNRF)</h2>
+                </div>
+                <p>Microneedling, or <strong>Collagen Induction Therapy</strong>, has become the gold standard for treating deep, pitted scars in India.</p>
+                
+                <div class="bento-grid">
+                    <div class="bento-card horizontal">
+                        <div class="card-header">
+                            <span class="diagnostic-tag">The Safety Hero</span>
+                            <h3>MNRF Technology</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Microneedling Radiofrequency</strong> delivers heat deep into the dermis. This "shrinks" the scar floor and is 40% more effective for deep Boxcar scars. <em>Safest for brown skin tones.</em></p>
+                        </div>
+                    </div>
+                    <div class="bento-card horizontal" style="background: #f0f9ff; border-color: #bae6fd;">
+                        <div class="card-header">
+                            <span class="diagnostic-tag" style="background:#e0f2fe; color:#0369a1;">Healing Booster</span>
+                            <h3>GFC / PRP</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Using your own blood’s growth factors (GFC) accelerated healing and collagen production, essential for recovery in India's humid climate.</p>
+                        </div>
+                    </div>
+                </div>
+                <p><strong>Best For:</strong> Rolling scars, deep Boxcar scars, and overall textural irregularities.</p>
+            </section>
+
+            <section id="peels" class="reveal">
+                <div class="section-header" style="display: flex; align-items: center; gap: 14px; margin-bottom: 2rem;">
+                    <div class="section-num" style="width: 36px; height: 36px; border-radius: 50%; background: var(--color-brand); color: #fff; font-family: 'Kantumruy Pro', serif; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+                    <h2 class="section-title" style="font-family: 'Kantumruy Pro', serif; font-size: 1.8rem; font-weight: 700; margin: 0;">Chemical Peels (TCA/Glycolic)</h2>
+                </div>
+                <p>Chemical peels are "controlled exfoliation." They are excellent for smoothing out shallow texture and erasing the dark marks (PIH) common in Indian skin.</p>
+                
+                <div class="bento-grid">
+                    <div class="bento-card horizontal">
+                        <div class="card-header">
+                            <span class="diagnostic-tag">The Hole Closer</span>
+                            <h3>TCA CROSS</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>High-strength acid is "dotted" directly into the pits of <strong>Ice-pick scars</strong>. This is the only topical-style treatment that can close these narrow "holes."</p>
+                        </div>
+                    </div>
+                    <div class="bento-card horizontal" style="background: #fff7ed; border-color: #fed7aa;">
+                        <div class="card-header">
+                            <span class="diagnostic-tag" style="background:#ffedd5; color:#9a3412;">Surface Polisher</span>
+                            <h3>Glycolic Peels</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Safely dissolves the "glue" of dead skin. Best for shallow boxcar scars and post-acne dark marks. Requires SPF 50+ post-care.</p>
+                        </div>
+                    </div>
+                </div>
+                <p><strong>Best For:</strong> Ice-pick scars (via TCA CROSS), shallow boxcar scars, and PIH marks.</p>
+            </section>
+
+            <section id="comparison" class="reveal">
+                <div class="section-header" style="display: flex; align-items: center; gap: 14px; margin-bottom: 2rem;">
+                    <div class="section-num" style="width: 36px; height: 36px; border-radius: 50%; background: var(--color-brand); color: #fff; font-family: 'Kantumruy Pro', serif; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+                    <h2 class="section-title" style="font-family: 'Kantumruy Pro', serif; font-size: 1.8rem; font-weight: 700; margin: 0;">Side-by-Side Comparison</h2>
+                </div>
+                <div class="acne-table-wrapper" style="overflow-x: auto; margin: 3rem 0; border: 1px solid var(--color-border); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.04);">
+                    <table class="acne-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>MNRF Microneedling</th>
+                                <th>Chemical Peels</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Target</strong></td><td>Deep Structural Scars</td><td>Surface Texture & Pigment</td></tr>
+                            <tr><td><strong>Pain Level</strong></td><td>Moderate (Numbing cream)</td><td>Mild Stinging</td></tr>
+                            <tr><td><strong>Downtime</strong></td><td>2-4 Days (Redness)</td><td>5-7 Days (Peeling)</td></tr>
+                            <tr><td><strong>Cost (Avg)</strong></td><td>₹8,000 - ₹22,000</td><td>₹2,500 - ₹6,000</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="melanin" class="reveal">
+                <div class="section-header" style="display: flex; align-items: center; gap: 14px; margin-bottom: 2rem;">
+                    <div class="section-num" style="width: 36px; height: 36px; border-radius: 50%; background: var(--color-brand); color: #fff; font-family: 'Kantumruy Pro', serif; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">5</div>
+                    <h2 class="section-title" style="font-family: 'Kantumruy Pro', serif; font-size: 1.8rem; font-weight: 700; margin: 0;">The Melanin Risk</h2>
+                </div>
+                <div class="bento-grid">
+                    <div class="bento-card">
+                        <span class="diagnostic-tag" style="background:#dcfce7; color:#166534;">Safe for Brown Skin</span>
+                        <h3>Why Microneedling Wins</h3>
+                        <p>Because the needles bypass the epidermis (where pigment lives), there is a much lower risk of causing dark spots. MNRF is the "Gold Standard" for Indian skin.</p>
+                    </div>
+                    <div class="bento-card">
+                        <span class="diagnostic-tag" style="background:#fee2e2; color:#991b1b;">Proceed with Caution</span>
+                        <h3>Peel Limitations</h3>
+                        <p>Peels must pass through the pigment layer. If the acid is too strong, it can trigger "rebound pigmentation" in melanin-rich skin.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="combination" class="reveal">
+                <div class="section-header" style="display: flex; align-items: center; gap: 14px; margin-bottom: 2rem;">
+                    <div class="section-num" style="width: 36px; height: 36px; border-radius: 50%; background: var(--color-brand); color: #fff; font-family: 'Kantumruy Pro', serif; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">6</div>
+                    <h2 class="section-title" style="font-family: 'Kantumruy Pro', serif; font-size: 1.8rem; font-weight: 700; margin: 0;">Combination Therapy</h2>
+                </div>
+                <p>The most successful journeys in 2026 combine treatments. This is the <strong>"MyMirror Multi-Layer Approach"</strong>:</p>
+                <div class="bento-grid">
+                    <div class="bento-item">
+                        <span class="badge">Step 1</span>
+                        <h3>TCA CROSS</h3>
+                        <p>Targets deep Ice-pick "holes."</p>
+                    </div>
+                    <div class="bento-item">
+                        <span class="badge">Step 2</span>
+                        <h3>MNRF + GFC</h3>
+                        <p>Lifts the floors of rolling and boxcar scars.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq" class="reveal">
+                <h2 style="text-align: center; margin-bottom: 3rem;">Expert FAQ</h2>
+                <div class="faq-item">
+                    <div class="faq-question">Can I do microneedling at home? <span class="faq-icon">+</span></div>
+                    <div class="faq-answer">
+                        <p>No. Home derma rollers often use poor-quality needles that "tear" the skin, leading to more scarring. For Indian skin, the risk of infection and PIH from DIY needling is too high.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How soon will I see results? <span class="faq-icon">+</span></div>
+                    <div class="faq-answer">
+                        <p>True structural lifting from microneedling takes 3 to 6 months to become fully visible as collagen builds. Peels show surface "glow" in 7 days.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar reveal">
+            <div class="sidebar-card">
                 <h3>Inside this guide:</h3>
-                <div class="bento-grid" style="grid-template-columns: repeat(2, 1fr); gap: 10px; box-shadow: none; border: none; padding: 0;">
-                    <a href="#surface-vs-deep" style="text-decoration:none; color:inherit;"><div class="bento-item" style="padding:1rem; text-align:center;">Surface vs. Dermis</div></a>
-                    <a href="#microneedling" style="text-decoration:none; color:inherit;"><div class="bento-item" style="padding:1rem; text-align:center;">Microneedling (MNRF)</div></a>
-                    <a href="#peels" style="text-decoration:none; color:inherit;"><div class="bento-item" style="padding:1rem; text-align:center;">Chemical Peels</div></a>
-                    <a href="#comparison" style="text-decoration:none; color:inherit;"><div class="bento-item" style="padding:1rem; text-align:center;">Side-by-Side Review</div></a>
-                    <a href="#melanin" style="text-decoration:none; color:inherit;"><div class="bento-item" style="padding:1rem; text-align:center;">The Melanin Risk</div></a>
-                    <a href="#combination" style="text-decoration:none; color:inherit;"><div class="bento-item" style="padding:1rem; text-align:center;">Combination Therapy</div></a>
+                <div class="toc-card-list">
+                    <a href="#surface-vs-deep" class="toc-card-item">🧬 Surface vs. Deep</a>
+                    <a href="#microneedling" class="toc-card-item">🦾 Microneedling</a>
+                    <a href="#peels" class="toc-card-item">🧪 Chemical Peels</a>
+                    <a href="#comparison" class="toc-card-item">📊 Side-by-Side</a>
+                    <a href="#melanin" class="toc-card-item">🎨 Melanin Risk</a>
+                    <a href="#combination" class="toc-card-item">🏗️ Combination</a>
                 </div>
             </div>
-        </section>
-
-        <section id="surface-vs-deep" class="reveal">
-            <h2>The Scar Revision Battle: Surface vs. Deep Dermis</h2>
-            <p>If you are looking at your reflection and seeing "pits," "craters," or "uneven shadows" left behind by old acne, you are likely deciding between two of the most popular clinical procedures in India: <strong>Microneedling</strong> and <strong>Chemical Peels</strong>.</p>
-            <p>While both treatments aim to "resurface" the skin, they operate on entirely different biological levels:</p>
-            <ul>
-                <li><strong>Chemical Peels</strong> work from the <strong>outside-in</strong>. They use specialized acids to "unglue" the top layers of dead skin, forcing the body to reveal smoother, brighter skin underneath.</li>
-                <li><strong>Microneedling</strong> works from the <strong>inside-out</strong>. It uses microscopic needles to bypass the surface and create "micro-injuries" in the deep dermis, triggering a massive surge of new collagen and elastin.</li>
-            </ul>
-        </section>
-
-        <section id="microneedling" class="reveal">
-            <h2>Microneedling (PRP/MNRF): Triggering Collagen from Within</h2>
-            <p>Microneedling, or <strong>Collagen Induction Therapy (CIT)</strong>, has become the gold standard for treating deep, pitted scars in India.</p>
-            <h3>The 2026 Update: MNRF & GFC</h3>
-            <p>In 2026, traditional microneedling is often bypassed for two superior upgrades:</p>
-            <ol>
-                <li><strong>MNRF (Microneedling Radiofrequency):</strong> The needles deliver heat (RF energy) deep into the dermis. This "shrinks" the scar floor and is 35-40% more effective for Boxcar scars than regular needling.</li>
-                <li><strong>GFC (Growth Factor Concentrate):</strong> A more refined version of PRP. Using your own blood’s growth factors accelerated healing, essential in India's humid climate.</li>
-            </ol>
-            <p><strong>Best For:</strong> Rolling scars, Boxcar scars, and deep textural irregularities.</p>
-        </section>
-
-        <section id="peels" class="reveal">
-            <h2>Chemical Peels (TCA/Glycolic): Resurfacing the Top Layer</h2>
-            <p>Chemical peels are best described as "controlled chemical exfoliation." They are excellent for smoothing out "shallow" texture and erasing the dark marks (PIH) that acne often leaves behind.</p>
-            <h3>The Most Common Peels for Scars</h3>
-            <ul>
-                <li><strong>Salicylic Acid:</strong> Great for active acne and surface-level congestion.</li>
-                <li><strong>Glycolic Acid:</strong> Safe for Indian skin but requires "priming" for 2 weeks prior.</li>
-                <li><strong>TCA CROSS:</strong> Where high-strength acid is "dotted" only into the pits of Ice-pick scars.</li>
-            </ul>
-            <p><strong>Best For:</strong> Ice-pick scars (via TCA CROSS), shallow boxcar scars, and post-acne dark marks.</p>
-        </section>
-
-        <section id="comparison" class="reveal">
-            <h2>Side-by-Side Comparison</h2>
-            <table class="acne-table">
-                <thead>
-                    <tr>
-                        <th>Feature</th>
-                        <th>Pain Level</th>
-                        <th>Downtime</th>
-                        <th>Cost (Per Session)</th>
-                        <th>Primary Result</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Microneedling (MNRF)</td>
-                        <td>Moderate (Numbing used)</td>
-                        <td>2-4 Days</td>
-                        <td>₹8,000 - ₹22,000</td>
-                        <td>Deep Collagen Building</td>
-                    </tr>
-                    <tr>
-                        <td>Chemical Peels</td>
-                        <td>Mild Stinging</td>
-                        <td>5-7 Days</td>
-                        <td>₹2,500 - ₹6,000</td>
-                        <td>Surface Smoothing</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="melanin" class="reveal">
-            <h2>The "Melanin Risk": Which is Safer for Indian Tones?</h2>
-            <div class="bento-grid">
-                <div class="bento-item item-lg">
-                    <h3>Why Microneedling Wins on Safety</h3>
-                    <p>Because the needles bypass the epidermis (where pigment lives) and only "fire" energy in the dermis, there is a much lower risk of causing dark spots. MNRF is now considered the "Gold Standard" for scar revision in India for this very reason.</p>
-                </div>
-                <div class="bento-item item-sm">
-                    <h3>Peels Require Caution</h3>
-                    <p>Peels must pass through the pigment layer. If the acid concentration is too high, it can trigger "rebound pigmentation" in Indian skin.</p>
-                </div>
+            
+            <div class="sidebar-card" style="background: var(--color-brand); color: #fff;">
+                <h4 style="text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.1em; margin-bottom: 1rem;">Clinical Recommendation</h4>
+                <p style="font-size: 0.95rem; line-height: 1.6; opacity: 0.9;">MNRF is generally the safest clinical option for Indian skin tones (Fitzpatrick IV-VI) to avoid hyperpigmentation risks.</p>
+                <a href="https://face3layerscanner.onrender.com/" class="nav-cta" style="background: #fff; color: var(--color-brand) !important; margin-top: 1.5rem; display: block; text-align: center;">Analyze My Scars →</a>
             </div>
-        </section>
-
-        <section id="combination" class="reveal">
-            <h2>Combination Therapy: The MyMirror Approach</h2>
-            <p>The most successful scar revision journeys in 2026 don't choose one over the other—they combine them. This is known as the <strong>"MyMirror Multi-Layer Approach."</strong></p>
-            <div class="bento-grid">
-                <div class="bento-item">
-                    <span class="badge">Step 1</span>
-                    <h3>TCA CROSS</h3>
-                    <p>Targets deep Ice-pick "holes" specifically.</p>
-                </div>
-                <div class="bento-item">
-                    <span class="badge">Step 2</span>
-                    <h3>MNRF + GFC</h3>
-                    <p>Lifts the floors of rolling and boxcar scars.</p>
-                </div>
-                <div class="bento-item">
-                    <span class="badge">Step 3</span>
-                    <h3>Mild Peel</h3>
-                    <p>Polishes the surface and blends the final texture.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="faq" class="reveal">
-            <h2>Clinical FAQ</h2>
-            <div class="faq-item">
-                <div class="faq-question">Can I do microneedling at home with a derma roller? <span class="faq-icon">+</span></div>
-                <div class="faq-answer">
-                    <p>No. Home derma rollers often use poor-quality needles that "tear" the skin, leading to more scarring. For Indian skin, the risk of infection and PIH from DIY needling is too high.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">How soon will I see results? <span class="faq-icon">+</span></div>
-                <div class="faq-answer">
-                    <p>While you will see a "glow" from a peel in 7 days, the true lifting of a scar from microneedling takes 3 to 6 months to become fully visible as collagen builds.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">Which one is better for "Ice-pick" scars? <span class="faq-icon">+</span></div>
-                <div class="faq-answer">
-                    <p>Chemical Peels (specifically TCA CROSS) are generally superior for Ice-pick scars because they can reach the very bottom of the narrow "hole."</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="reveal" style="text-align: center; margin-top: 5rem; padding: 4rem; background: var(--color-bg-secondary); border-radius: 40px;">
-            <h2>Analyze Your Scars with AI</h2>
-            <p>Don't guess which treatment you need. Our AI maps the depth and geometry of your scars to recommend the right procedure.</p>
-            <div class="face-ai-cta-wrapper">
-                <a href="/acne/face-scan/" class="face-ai-btn">
-                    <span class="face-ai-btn-text">Start My Free AI Skin Scan</span>
-                    <div class="face-ai-energy-rail"></div>
-                </a>
-            </div>
-        </section>
+        </aside>
+    </div>
 
         <footer style="margin-top: 5rem; padding: 3rem 0; border-top: 1px solid var(--color-border); color: var(--color-text-tertiary); font-size: 0.9rem;">
             <p><em>Disclaimer: This guide is for educational purposes. Always consult a board-certified dermatologist in India before undergoing clinical procedures.</em></p>
