@@ -41,39 +41,23 @@
       overflow-x: hidden;
     }
     h1, h2, h3 { font-family: 'Kantumruy Pro', serif; color: var(--text); }
-    h1 { font-size: clamp(2.5rem, 6vw, 3.5rem); font-weight: 600; line-height: 1.1; letter-spacing: -0.04em; }
-    h2 { font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-top: var(--space-16); }
-    h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; margin-top: var(--space-8); }
-    p  { color: var(--text-2); line-height: 1.65; margin-bottom: var(--space-6); }
-    a  { color: var(--brand); text-decoration: none; font-weight: 600; }
-    .container { max-width: var(--max-content); margin: 0 auto; padding: 0 2rem; }
-    .container--article { max-width: var(--max-article); margin: 0 auto; padding: 0 2rem; }
-    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s var(--bouncy); }
-    .reveal.active { opacity: 1; transform: none; }
-
-    /* Tables */
-    .acne-table { width: 100%; border-collapse: separate; border-spacing: 0; margin: var(--space-8) 0; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1px solid var(--border); }
-    .acne-table td { padding: 1.2rem; border-bottom: 1px solid var(--border); vertical-align: top; color: var(--text-2); }
-    .acne-table tr:last-child td { border-bottom: none; }
-    .acne-table td:first-child { font-weight: 800; color: var(--text); }
-
-    /* Header */
-    .site-header { position: sticky; top: 0; z-index: 1000; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); height: 64px; display: flex; align-items: center; }
+    a { color: var(--brand); text-decoration: none; transition: 0.3s var(--bouncy); }
+    a:hover { color: var(--brand-dark); }
+    
+    .site-header { position: sticky; top: 0; z-index: 1000; background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); box-shadow: 0 2px 10px rgba(0,0,0,0.05); height: 64px; display: flex; align-items: center; }
     .header-inner { max-width: 1200px; width: 100%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
     .nav-links { display: flex; gap: 28px; align-items: center; }
     .nav-links a { color: var(--text); font-weight: 600; font-size: 0.9rem; }
-    .nav-cta { padding: 12px 24px; border-radius: 9999px; background: var(--brand); color: #fff !important; font-weight: 700; box-shadow: 0 10px 25px rgba(236,97,14,0.2); }
+    .nav-cta { padding: 10px 24px; border-radius: 9999px; background: var(--brand); color: #fff !important; font-weight: 700; font-size: 0.85rem; }
 
-    /* Trust Bar */
     .trust-bar { background: #f1f5f9; padding: 10px 20px; border-bottom: 1px solid #e2e8f0; font-size: 12px; color: #64748b; display: flex; gap: 16px; align-items: center; justify-content: center; }
     
-    /* Hero */
-    .dark-hero { background: linear-gradient(135deg,#111,#2a1a0e); padding: 8rem 2rem; text-align: center; color: #fff; border-bottom-left-radius: 45px; border-bottom-right-radius: 45px; }
-    .dark-hero h1 { color: #fff; margin-bottom: 1.5rem; }
-    .dark-hero p { color: rgba(255,255,255,0.8); font-size: 1.2rem; max-width: 700px; margin: 0 auto var(--space-8); }
+    .container--article { max-width: var(--max-article); margin: 0 auto; padding: 0 2rem; }
+    
+    .reveal { opacity: 0; transform: translateY(30px); transition: 0.8s var(--bouncy); }
+    .reveal.active { opacity: 1; transform: translateY(0); }
 
-    /* Footer */
-    footer { background: var(--bg-2); padding: 4rem 2rem; margin-top: 6rem; border-top: 1px solid var(--border); text-align: center; color: var(--text-3); font-size: 0.9rem; border-top-left-radius: 45px; border-top-right-radius: 45px; }
+    footer { background: var(--bg-2); padding: 5rem 2rem; margin-top: 8rem; border-top: 1px solid var(--border); text-align: center; color: var(--text-3); border-top-left-radius: 45px; border-top-right-radius: 45px; }
   </style>
 </head>
 <body>
@@ -85,7 +69,7 @@
 
   <header class="site-header">
     <div class="header-inner">
-      <img src="/acne/forehead-acne/logo-v4.png" alt="mymirror" style="height:36px;object-fit:contain;">
+      <a href="/"><img src="/acne/forehead-acne/logo-v4.png" alt="mymirror" style="height:36px;object-fit:contain;"></a>
       <nav class="nav-links">
         <a href="/acne/forehead-acne/meaning/" style="color:#6366f1;font-weight:800;">Acne Meaning 🧠</a>
         <a href="/acne/forehead-acne/home-remedies/" style="color:#059669;font-weight:800;">Natural Remedies 🌿</a>
@@ -95,89 +79,110 @@
     </div>
   </header>
 
-  <section class="dark-hero">
-    <div class="container">
-      <h1>Acne Guide</h1>
-      <p>Acne Guide for Indian urban adults (16-40), with clear guidance, references, and one primary action path.</p>
-      <a href="https://mymirror.fit/scan" class="nav-cta">Start Free 60s Scan</a>
+  
+  <section style="background: linear-gradient(135deg,#111,#2a1a0e); padding: 7rem 2rem; text-align: center; color: #fff; border-bottom-left-radius: 45px; border-bottom-right-radius: 45px; position: relative; overflow: hidden;">
+    <div style="max-width: 800px; margin: 0 auto; position: relative; z-index: 10;">
+      <span style="display:inline-block;padding:5px 15px;border-radius:20px;font-size:11px;font-weight:700;background:#EC610E;color:#fff;margin-bottom:1rem;">Clinically Reviewed</span>
+      <h1 style="font-family: 'Kantumruy Pro', serif; font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 600; color: #fff; line-height: 1.1; letter-spacing: -0.04em; margin-bottom: 1.5rem;">
+        Acne Guide
+      </h1>
+      <p style="color: rgba(255,255,255,0.85); font-size: 1.25rem; line-height: 1.6; margin-bottom: 2.5rem;">
+        Acne Guide for Indian urban adults (16-40), with clear guidance, references, and one primary action path.
+      </p>
+      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <a href="https://mymirror.fit/scan" style="padding: 16px 36px; border-radius: 9999px; background: #EC610E; color: #fff; font-weight: 700; font-size: 16px; text-decoration: none; box-shadow: 0 10px 25px rgba(236,97,14,0.3);">Try Free Skin Analysis</a>
+        <a href="#quick-answer" style="padding: 16px 36px; border-radius: 9999px; border: 2px solid rgba(255,255,255,0.3); background: transparent; color: #fff; font-weight: 700; font-size: 16px; text-decoration: none;">Read the Guide</a>
+      </div>
     </div>
+    <!-- Decorative Glow -->
+    <div style="position: absolute; top: -10%; right: -10%; width: 40%; height: 60%; background: radial-gradient(circle, rgba(236,97,14,0.15) 0%, transparent 70%); filter: blur(60px); z-index: 1;"></div>
   </section>
+    
 
-  <article class="container--article" style="margin-top: var(--space-16);">
-    <section id="S1_hero" style="margin-bottom: var(--space-24);"><p style="margin-bottom: var(--space-6);">Hero</p>
+  <article class="container--article" style="margin-top: 4rem;">
+    <div id="quick-answer" class="reveal">
+        <p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">Quick Answer</p>
 
-<p style="margin-bottom: var(--space-6);"># How to Stop Forehead Acne from Hair Products</p>
+<p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">To stop forehead acne from hair products, follow the <strong>60-Minute Oiling Rule</strong>: Apply your hair oil (like coconut or amla), let it work for one hour max, and wash it out. Never leave hair oil in overnight if you are acne-prone. To clear existing bumps, use a lipophilic active like <strong>Sebogel (Salicylic Acid)</strong> which can cut through the migrating hair oil and dissolve the clogs in your pores. Always wash your face <em>after</em> you wash your hair to ensure no product residue remains on your skin.</p>
+    </div>
+    
+    <div style="border-radius: 30px; overflow: hidden; height: 400px; margin: 3rem 0; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+            <img src="/acne/forehead-acne/fast-treatment/double-cleanse.webp" alt="Double Cleansing" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
 
-<p style="margin-bottom: var(--space-6);">In India, a "Champi" (head massage with oil) is a ritual for both relaxation and hair health. But if you've noticed a sudden cluster of tiny, stubborn bumps along your hairline or forehead, your hair ritual might be your skin's worst enemy. Medically known as <strong>Pomade Acne</strong>, these breakouts are a physical reaction to heavy oils and styling products meeting your facial skin.</p>
+    <div class="reveal">
+        <section id="S3_context: The Migration Cycle"><p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">Context: Why "Natural" Oil Clogs Your Skin</p>
 
-<strong>Start your free skin analysis now</strong>
+<p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">Your forehead has some of the highest densities of oil glands on your body. When you apply heavy traditional oils like <strong>Coconut</strong> or <strong>Mustard oil</strong>, or styling waxes, they don't stay on your hair. They migrate. </p>
 
-<p style="margin-bottom: var(--space-6);">Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds.</p></section><section id="S2_quick_answer" style="margin-bottom: var(--space-24);"><p style="margin-bottom: var(--space-6);">Quick Answer</p>
+<li style="margin-left: 1.5rem; margin-bottom: 0.8rem; color: #5C4A3A;"><strong>The Transfer:</strong> Sweat, gravity, and even your pillowcase help hair products travel from your scalp to your forehead.</li>
+<li style="margin-left: 1.5rem; margin-bottom: 0.8rem; color: #5C4A3A;"><strong>The Blockage:</strong> These products are often "comedogenic," meaning they physically block the pore opening. This traps sebum and bacteria underneath, leading to painful, under-the-skin bumps.</li></section><section id="S4_main_content: The "Safe Champi" Protocol"><p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">Main Content: The Hairline Safety Rules</p>
 
-<p style="margin-bottom: var(--space-6);">To stop forehead acne from hair products, follow the <strong>60-Minute Oiling Rule</strong>: Apply your hair oil (like coconut or amla), let it work for one hour max, and wash it out. Never leave hair oil in overnight if you are acne-prone. To clear existing bumps, use a lipophilic active like <strong>Sebogel (Salicylic Acid)</strong> which can cut through the migrating hair oil and dissolve the clogs in your pores. Always wash your face <em>after</em> you wash your hair to ensure no product residue remains on your skin.</p></section><section id="S3_context: The Migration Cycle" style="margin-bottom: var(--space-24);"><p style="margin-bottom: var(--space-6);">Context: Why "Natural" Oil Clogs Your Skin</p>
+<p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">You don't have to choose between hair health and clear skin. It's about clinical timing and product choice.</p>
 
-<p style="margin-bottom: var(--space-6);">Your forehead has some of the highest densities of oil glands on your body. When you apply heavy traditional oils like <strong>Coconut</strong> or <strong>Mustard oil</strong>, or styling waxes, they don't stay on your hair. They migrate. </p>
+<h3 style="margin-top: 2rem; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700;">1. Identify the Offenders</h3>
+<p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">Not all hair products are equal. In the Indian market, be wary of:</p>
+<li style="margin-left: 1.5rem; margin-bottom: 0.8rem; color: #5C4A3A;"><strong>Heavy Oils:</strong> Unrefined Coconut oil, Amla oil, and Castor oil.</li>
+<li style="margin-left: 1.5rem; margin-bottom: 0.8rem; color: #5C4A3A;"><strong>Styling Waxes:</strong> Any oil-based pomade or wax that feels "sticky" on the skin.</li>
+<li style="margin-left: 1.5rem; margin-bottom: 0.8rem; color: #5C4A3A;"><strong>Switch To:</strong> Lightweight alternatives like <strong>Argan oil</strong> or <strong>Jojoba oil</strong> for your hair ends.</li>
 
-<li><strong>The Transfer:</strong> Sweat, gravity, and even your pillowcase help hair products travel from your scalp to your forehead.</li>
-<li><strong>The Blockage:</strong> These products are often "comedogenic," meaning they physically block the pore opening. This traps sebum and bacteria underneath, leading to painful, under-the-skin bumps.</li></section><section id="S4_main_content: The "Safe Champi" Protocol" style="margin-bottom: var(--space-24);"><p style="margin-bottom: var(--space-6);">Main Content: The Hairline Safety Rules</p>
+<h3 style="margin-top: 2rem; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700;">2. The 1-Inch Hairline Gap</h3>
+<p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">When applying any product to your hair, leave a one-inch gap from your actual hairline. Focus the product on the mid-lengths and ends where it is needed most.</p>
 
-<p style="margin-bottom: var(--space-6);">You don't have to choose between hair health and clear skin. It's about clinical timing and product choice.</p>
+<h3 style="margin-top: 2rem; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700;">3. The "Post-Wash" Face Cleanse</h3>
+<p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">This is the most common mistake. Many Indians wash their face <em>before</em> their hair wash. Always wash your face <strong>last</strong>. Hair conditioners and oils leave a "film" on your forehead during the rinse. Using a foaming wash like <strong>Saslic DS</strong> after your hair rinse ensures that film is completely dissolved.</p>
 
-<h3 style="margin-top: var(--space-8);"> 1. Identify the Offenders</h3>
-<p style="margin-bottom: var(--space-6);">Not all hair products are equal. In the Indian market, be wary of:</p>
-<li><strong>Heavy Oils:</strong> Unrefined Coconut oil, Amla oil, and Castor oil.</li>
-<li><strong>Styling Waxes:</strong> Any oil-based pomade or wax that feels "sticky" on the skin.</li>
-<li><strong>Switch To:</strong> Lightweight alternatives like <strong>Argan oil</strong> or <strong>Jojoba oil</strong> for your hair ends.</li>
+<h3 style="margin-top: 2rem; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700;">4. The Overnight Barrier</h3>
+<p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">If you must oil your hair overnight, wear a silk bonnet or a cotton headwrap. This prevents the oil from transferring to your pillowcase, which would otherwise act as a "delivery system" for oil back onto your face as you sleep.</p></section><section id="S5_decision_support: The Hairline Checklist"><p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">Decision Support: Is Your Routine "Acne-Safe"?</p>
 
-<h3 style="margin-top: var(--space-8);"> 2. The 1-Inch Hairline Gap</h3>
-<p style="margin-bottom: var(--space-6);">When applying any product to your hair, leave a one-inch gap from your actual hairline. Focus the product on the mid-lengths and ends where it is needed most.</p>
+<table style="width: 100%; border-collapse: separate; border-spacing: 0; margin: 2rem 0; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1px solid #E8DDD5;"><tr><td style="padding: 1.2rem; border-bottom: 1px solid #E8DDD5;">Action</td><td style="padding: 1.2rem; border-bottom: 1px solid #E8DDD5;">Is it Safe?</td><td style="padding: 1.2rem; border-bottom: 1px solid #E8DDD5;">Recommendation</td></tr></table>
 
-<h3 style="margin-top: var(--space-8);"> 3. The "Post-Wash" Face Cleanse</h3>
-<p style="margin-bottom: var(--space-6);">This is the most common mistake. Many Indians wash their face <em>before</em> their hair wash. Always wash your face <strong>last</strong>. Hair conditioners and oils leave a "film" on your forehead during the rinse. Using a foaming wash like <strong>Saslic DS</strong> after your hair rinse ensures that film is completely dissolved.</p>
+<table style="width: 100%; border-collapse: separate; border-spacing: 0; margin: 2rem 0; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1px solid #E8DDD5;"><tr><td style="padding: 1.2rem; border-bottom: 1px solid #E8DDD5;"><strong>Overnight Oiling</strong></td><td style="padding: 1.2rem; border-bottom: 1px solid #E8DDD5;"><strong>HIGH RISK</strong></td><td style="padding: 1.2rem; border-bottom: 1px solid #E8DDD5;">Stop. 60 mins max.</td></tr></table>
+<table style="width: 100%; border-collapse: separate; border-spacing: 0; margin: 2rem 0; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1px solid #E8DDD5;"><tr><td style="padding: 1.2rem; border-bottom: 1px solid #E8DDD5;"><strong>Styling Waxes</strong></td><td style="padding: 1.2rem; border-bottom: 1px solid #E8DDD5;"><strong>MEDIUM RISK</strong></td><td style="padding: 1.2rem; border-bottom: 1px solid #E8DDD5;">Switch to water-based gels.</td></tr></table>
+<table style="width: 100%; border-collapse: separate; border-spacing: 0; margin: 2rem 0; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1px solid #E8DDD5;"><tr><td style="padding: 1.2rem; border-bottom: 1px solid #E8DDD5;"><strong>Washing face last</strong></td><td style="padding: 1.2rem; border-bottom: 1px solid #E8DDD5;"><strong>SAFE</strong></td><td style="padding: 1.2rem; border-bottom: 1px solid #E8DDD5;">Makes a huge difference.</td></tr></table>
+<table style="width: 100%; border-collapse: separate; border-spacing: 0; margin: 2rem 0; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1px solid #E8DDD5;"><tr><td style="padding: 1.2rem; border-bottom: 1px solid #E8DDD5;"><strong>Using Sebogel on bumps</strong></td><td style="padding: 1.2rem; border-bottom: 1px solid #E8DDD5;"><strong>SAFE</strong></td><td style="padding: 1.2rem; border-bottom: 1px solid #E8DDD5;">Clears clogs in 48-72 hours.</td></tr></table>
 
-<h3 style="margin-top: var(--space-8);"> 4. The Overnight Barrier</h3>
-<p style="margin-bottom: var(--space-6);">If you must oil your hair overnight, wear a silk bonnet or a cotton headwrap. This prevents the oil from transferring to your pillowcase, which would otherwise act as a "delivery system" for oil back onto your face as you sleep.</p></section><section id="S5_decision_support: The Hairline Checklist" style="margin-bottom: var(--space-24);"><p style="margin-bottom: var(--space-6);">Decision Support: Is Your Routine "Acne-Safe"?</p>
+<strong>Category Manager Recommendation:</strong> If you have active hairline bumps, stop all hair oiling for 14 days. Use <strong>Sebogel</strong> nightly and see if the texture improves. If it does, your oiling habit was the primary trigger.</section><section id="S6_product_or_solution_block"><p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">Is it Product Acne or Dandruff?</p>
 
-<table class="acne-table"><tr><td>Action</td><td>Is it Safe?</td><td>Recommendation</td></tr></table>
+<p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">Tiny bumps on the forehead can often be confused with <strong>Fungal Acne</strong> (related to dandruff). Before you change your hair oil, you need a correct diagnosis. Our <strong>AI Skin Analysis</strong> uses computer vision to detect "Cluster Patterns" typical of fungal acne versus the "Random Clogs" caused by pomade.</p></section><section id="S7_trust_proof"><p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">Clinical & Cultural Integrity</p>
 
-<table class="acne-table"><tr><td><strong>Overnight Oiling</strong></td><td><strong>HIGH RISK</strong></td><td>Stop. 60 mins max.</td></tr></table>
-<table class="acne-table"><tr><td><strong>Styling Waxes</strong></td><td><strong>MEDIUM RISK</strong></td><td>Switch to water-based gels.</td></tr></table>
-<table class="acne-table"><tr><td><strong>Washing face last</strong></td><td><strong>SAFE</strong></td><td>Makes a huge difference.</td></tr></table>
-<table class="acne-table"><tr><td><strong>Using Sebogel on bumps</strong></td><td><strong>SAFE</strong></td><td>Clears clogs in 48-72 hours.</td></tr></table>
-
-<strong>Category Manager Recommendation:</strong> If you have active hairline bumps, stop all hair oiling for 14 days. Use <strong>Sebogel</strong> nightly and see if the texture improves. If it does, your oiling habit was the primary trigger.</section><section id="S6_product_or_solution_block" style="margin-bottom: var(--space-24);"><p style="margin-bottom: var(--space-6);">Is it Product Acne or Dandruff?</p>
-
-<p style="margin-bottom: var(--space-6);">Tiny bumps on the forehead can often be confused with <strong>Fungal Acne</strong> (related to dandruff). Before you change your hair oil, you need a correct diagnosis. Our <strong>AI Skin Analysis</strong> uses computer vision to detect "Cluster Patterns" typical of fungal acne versus the "Random Clogs" caused by pomade.</p></section><section id="S7_trust_proof" style="margin-bottom: var(--space-24);"><p style="margin-bottom: var(--space-6);">Clinical & Cultural Integrity</p>
-
-<p style="margin-bottom: var(--space-6);">This guide is reviewed by <strong>Dr. Lipy Mehta</strong>, who specializes in treating Indian skin concerns. We respect the cultural importance of the Champi while ensuring your skin barrier remains clear and healthy.</p></section><section id="S8_faq" style="margin-bottom: var(--space-24);"><p style="margin-bottom: var(--space-6);">FAQ</p>
+<p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">This guide is reviewed by <strong>Dr. Lipy Mehta</strong>, who specializes in treating Indian skin concerns. We respect the cultural importance of the Champi while ensuring your skin barrier remains clear and healthy.</p></section><section id="S8_faq"><p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">FAQ</p>
 
 <strong>Does onion hair oil cause acne?</strong>
-<p style="margin-bottom: var(--space-6);">Yes, if it has a coconut oil base. The base oil is usually what causes the clogging, not the onion extract itself.</p>
+<p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">Yes, if it has a coconut oil base. The base oil is usually what causes the clogging, not the onion extract itself.</p>
 
 <strong>Can I use a hair serum instead of oil?</strong>
-<p style="margin-bottom: var(--space-6);">Yes. Modern hair serums are often silicone-based and less likely to migrate to your skin and cause clogs compared to heavy traditional oils.</p>
+<p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">Yes. Modern hair serums are often silicone-based and less likely to migrate to your skin and cause clogs compared to heavy traditional oils.</p>
 
 <strong>How do I clear the 'itchy' bumps on my hairline?</strong>
-<p style="margin-bottom: var(--space-6);">If they are itchy, they might be fungal. Try using an anti-dandruff shampoo as a 5-minute forehead mask once a week.</p></section><section id="S9_final_cta" style="margin-bottom: var(--space-24);"><p style="margin-bottom: var(--space-6);">Final CTA</p>
+<p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">If they are itchy, they might be fungal. Try using an anti-dandruff shampoo as a 5-minute forehead mask once a week.</p></section><section id="S9_final_cta"><p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">Final CTA</p>
 
-<p style="margin-bottom: var(--space-6);">Ready for a clear forehead without sacrificing your hair rituals? Let the data guide your routine.</p>
+<p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">Ready for a clear forehead without sacrificing your hair rituals? Let the data guide your routine.</p>
 
-<strong>[Start Your Free AI Hairline Analysis Now](https://mymirror.fit/scan)</strong></section><section id="S10_references" style="margin-bottom: var(--space-24);"><p style="margin-bottom: var(--space-6);">References</p>
+<strong>[Start Your Free AI Hairline Analysis Now](https://mymirror.fit/scan)</strong></section><section id="S10_references"><p style="margin-bottom: 1.5rem; color: #5C4A3A; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.7;">References</p>
 
-<li>S1: <em>International Journal of Trichology</em>: Hair oils and their comedogenic potential.</li>
-<li>S2: <em>Journal of Clinical and Aesthetic Dermatology</em>: Managing Acne Cosmetica in urban populations.</li>
-<li>S3: MyMirror Analysis: Impact of traditional hair rituals on forehead acne in Indian demographics.</li></section>
+<li style="margin-left: 1.5rem; margin-bottom: 0.8rem; color: #5C4A3A;">S1: <em>International Journal of Trichology</em>: Hair oils and their comedogenic potential.</li>
+<li style="margin-left: 1.5rem; margin-bottom: 0.8rem; color: #5C4A3A;">S2: <em>Journal of Clinical and Aesthetic Dermatology</em>: Managing Acne Cosmetica in urban populations.</li>
+<li style="margin-left: 1.5rem; margin-bottom: 0.8rem; color: #5C4A3A;">S3: MyMirror Analysis: Impact of traditional hair rituals on forehead acne in Indian demographics.</li></section>
+    </div>
   </article>
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 MyMirror Skin Health. Science-backed answers for Indian skin.</p>
-      <p style="margin-top: 1rem;">Content is for informational purposes and not a substitute for professional medical advice.</p>
+      <p style="font-weight: 700; color: var(--text); margin-bottom: 1rem;">MyMirror Skin Health</p>
+      <p>Science-backed answers for the unique challenges of Indian skin.</p>
+      <p style="margin-top: 2rem; font-size: 0.8rem; opacity: 0.7;">&copy; 2026 MyMirror. All rights reserved. Content is for educational purposes.</p>
     </div>
   </footer>
 
   <script>
-    const obs = new IntersectionObserver(e => e.forEach(x => x.isIntersecting && x.target.classList.add('active')), { threshold: 0.1 });
+    const obs = new IntersectionObserver(e => e.forEach(x => {
+        if (x.isIntersecting) {
+            x.target.classList.add('active');
+            x.target.style.opacity = '1';
+            x.target.style.transform = 'none';
+        }
+    }), { threshold: 0.1 });
     document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
   </script>
 </body>
