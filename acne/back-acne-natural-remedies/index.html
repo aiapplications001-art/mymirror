@@ -10,24 +10,29 @@
   <meta name="twitter:image" content="https://mymirror.fit/acne/back-acne-apple/back.jpg" />
   <link rel="icon" type="image/png" href="https://mymirror.fit/favicon.ico">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+
   <style>
   @font-face { font-family: 'Kantumruy Pro'; src: url('../../fonts/KantumruyPro-VariableFont_wght.ttf') format('truetype'); font-weight: 100 700; font-style: normal; font-display: swap; }
   @font-face { font-family: 'Plus Jakarta Sans'; src: url('../../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype'); font-weight: 200 800; font-style: normal; font-display: swap; }
   @font-face { font-family: 'Plus Jakarta Sans'; src: url('../../fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('truetype'); font-weight: 200 800; font-style: italic; font-display: swap; }
   
     /* Face AI CTA Styling - Premium Perimeter Rail Animation */
-    .face-ai-cta-wrapper { display: flex; flex-direction: column; align-items: center; gap: 14px; margin: 3rem auto 0; text-align: center; width: 100%; position: relative; z-index: 50; }
+    .face-ai-cta-wrapper { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin: 1.5rem 0 0; text-align: left; width: 100%; position: relative; z-index: 50; }
     .face-ai-btn { 
       position: relative; 
       display: inline-flex; 
       align-items: center;
       justify-content: center;
-      padding: 18px 44px; 
-      background: #EC610E; 
+      padding: 16px 36px; 
+      background: var(--color-brand); 
       color: #ffffff !important; 
       text-decoration: none; 
       font-weight: 800; 
-      font-size: 1.15rem; 
+      font-size: 1.1rem; 
       border-radius: 9999px; 
       box-shadow: 0 10px 30px rgba(236,97,14,0.3); 
       transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
@@ -36,7 +41,7 @@
     }
     .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
     .face-ai-btn-text { position: relative; z-index: 12; }
-    .face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 13px; max-width: 480px; line-height: 1.5; margin: 0 auto; display: block !important; visibility: visible !important; }
+    p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     
     .face-ai-energy-rail { 
       position: absolute; 
@@ -59,7 +64,7 @@
       left: 50%;
       width: 400%; 
       height: 400%;
-      background: conic-gradient(from 0deg, transparent 65%, #EC610E 80%, #FFE1CE 95%, #ffffff 100%);
+      background: conic-gradient(from 0deg, transparent 65%, var(--color-brand) 80%, var(--color-brand-light) 95%, #ffffff 100%);
       animation: energy-loop 3.5s ease-in-out forwards;
     }
 
@@ -80,8 +85,9 @@
     }
 
     @media (max-width: 768px) {
+      .face-ai-cta-wrapper { align-items: center; text-align: center; margin-top: 2rem; }
       .face-ai-btn { padding: 16px 32px; font-size: 1rem; width: 100%; max-width: 340px; }
-      .face-ai-subtext { font-size: 12px; padding: 0 10px; }
+      p.face-ai-subtext { padding: 0 10px; }
     }
 
   </style>
@@ -249,13 +255,15 @@
     .hero {
       background: var(--color-bg-secondary);
       border-bottom: 1px solid var(--color-border);
-      padding:  6rem 2rem 10rem;
+      padding: 1rem 2rem 3rem;
     }
     .hero-inner {
       max-width: 1100px; margin: 0 auto;
       display: grid; grid-template-columns: 1fr auto;
-      gap: 3rem; align-items: center;
+      gap: 3rem; align-items: flex-start;
+      margin-top: 0;
     }
+    .hero .hero-content { margin-top: 0 !important; text-shadow: none !important; text-align: left !important; }
     .hero-tag {
       display: inline-flex; align-items: center; gap: 6px;
       background: var(--color-brand-light);
@@ -263,9 +271,10 @@
       font-size: 11px; font-weight: 700;
       letter-spacing: 0.06em; text-transform: uppercase;
       padding: 5px 14px; border-radius: 9999px;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1rem;
+      margin-top: 0;
     }
-    .hero h1 {
+    .hero .hero-content h1 {
       font-family: var(--font-brand);
       font-size: clamp(2.2rem, 4vw, 3rem);
       font-weight: 700;
@@ -273,13 +282,14 @@
       letter-spacing: -0.03em;
       color: var(--color-text-primary);
       margin-bottom: 1rem;
+      margin-top: 0;
     }
     .hero h1 em { font-style: normal; color: var(--color-brand); }
-    .hero-desc {
-      font-size: 16px; line-height: 1.7;
+    .hero .hero-content p.hero-desc {
+      font-size: 16px; font-weight: 400; line-height: 1.7;
       color: var(--color-text-secondary);
       max-width: 580px;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
     .hero-image-stack { display: flex; flex-direction: column; gap: 12px; align-items: flex-end; }
     .hero-photo {
@@ -473,18 +483,18 @@
     }
   
     /* Face AI CTA Styling - Premium Perimeter Rail Animation */
-    .face-ai-cta-wrapper { display: flex; flex-direction: column; align-items: center; gap: 14px; margin: 3rem auto 0; text-align: center; width: 100%; position: relative; z-index: 50; }
+    .face-ai-cta-wrapper { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin: 1.5rem 0 0; text-align: left; width: 100%; position: relative; z-index: 50; }
     .face-ai-btn { 
       position: relative; 
       display: inline-flex; 
       align-items: center;
       justify-content: center;
-      padding: 18px 44px; 
-      background: #EC610E; 
+      padding: 16px 36px; 
+      background: var(--color-brand); 
       color: #ffffff !important; 
       text-decoration: none; 
       font-weight: 800; 
-      font-size: 1.15rem; 
+      font-size: 1.1rem; 
       border-radius: 9999px; 
       box-shadow: 0 10px 30px rgba(236,97,14,0.3); 
       transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
@@ -493,7 +503,7 @@
     }
     .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
     .face-ai-btn-text { position: relative; z-index: 12; }
-    .face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 13px; max-width: 480px; line-height: 1.5; margin: 0 auto; display: block !important; visibility: visible !important; }
+    p.face-ai-subtext { color: var(--color-text-tertiary); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
     
     .face-ai-energy-rail { 
       position: absolute; 
