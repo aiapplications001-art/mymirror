@@ -81,14 +81,12 @@
     
     /* ── TABLE STYLES ── */
     .acne-table-wrapper { overflow-x: auto; margin: 2.5rem 0; border: 1px solid var(--color-border); border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); background: #fff; }
-    .acne-table { width: 100%; min-width: 850px; border-collapse: collapse; font-size: 14px; }
-    .acne-table th { background: var(--color-bg-tertiary); padding: 16px 20px; text-align: left; border-bottom: 2px solid var(--color-border); font-family: 'Kantumruy Pro', serif; font-size: 1.05rem; color: var(--color-text-primary); font-weight: 700; white-space: nowrap; }
-    .acne-table td { padding: 18px 20px; border-bottom: 1px solid var(--color-border); color: var(--color-text-secondary); line-height: 1.6; vertical-align: top; }
+    .acne-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+    .acne-table th { background: var(--color-bg-tertiary); padding: 18px 20px; text-align: left; border-bottom: 2px solid var(--color-border); font-family: 'Kantumruy Pro', serif; font-size: 1.1rem; color: var(--color-text-primary); font-weight: 700; }
+    .acne-table td { padding: 18px 20px; border-bottom: 1px solid var(--color-border); color: var(--color-text-secondary); line-height: 1.5; vertical-align: middle; }
     .acne-table tr:last-child td { border-bottom: none; }
     .acne-table tbody tr { transition: background 0.3s ease; }
     .acne-table tbody tr:hover { background: var(--color-bg-secondary); }
-    .acne-table td:first-child { font-weight: 600; min-width: 140px; }
-    .acne-table td:last-child { min-width: 250px; }
 
     /* ── SIDEBAR ── */
     .sidebar { display: flex; flex-direction: column; gap: 2rem; }
@@ -133,14 +131,13 @@
       .toc-inner { justify-content: flex-start; }
       
       /* Card Layout for Table */
-      .acne-table-wrapper { border: none; box-shadow: none; background: transparent; padding: 0; margin: 0; }
       .acne-table, .acne-table tbody, .acne-table tr, .acne-table td { display: block; width: 100%; box-sizing: border-box; }
-      .acne-table { min-width: unset; border: none; margin: 1rem 0; }
       .acne-table thead { display: none; }
-      .acne-table tr { margin-bottom: 1.5rem; border-radius: 16px; border: 1px solid var(--color-border); box-shadow: 0 4px 15px rgba(0,0,0,0.03); background: #fff; padding: 10px 0; }
-      .acne-table td { border-bottom: 1px solid var(--color-border); padding: 0.8rem 1.2rem 0.8rem 45%; position: relative; min-height: unset; text-align: left; word-break: break-word; }
+      .acne-table { border: none; margin: 1rem 0; }
+      .acne-table tr { margin-bottom: 1.5rem; border-radius: 12px; border: 1px solid var(--color-border); box-shadow: 0 4px 15px rgba(0,0,0,0.03); background: var(--color-bg-primary); }
+      .acne-table td { border-bottom: 1px solid var(--color-border); padding: 1rem 1rem 1rem 45%; position: relative; min-height: 50px; }
       .acne-table td:last-child { border-bottom: none; }
-      .acne-table td::before { content: attr(data-label); position: absolute; left: 1.2rem; width: 35%; font-weight: 700; color: var(--color-text-primary); top: 0.8rem; padding-right: 10px; box-sizing: border-box; font-size: 13px; }
+      .acne-table td::before { content: attr(data-label); position: absolute; left: 1rem; width: 40%; font-weight: 700; color: var(--color-text-secondary); top: 1rem; }
     }
   
     /* Face AI CTA Styling - Premium Perimeter Rail Animation */
