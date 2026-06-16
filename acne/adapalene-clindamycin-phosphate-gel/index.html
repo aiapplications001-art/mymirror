@@ -81,6 +81,17 @@
 
     .highlight-box { background: var(--color-brand-light); border-left: 4px solid var(--color-brand); padding: 1.5rem; border-radius: 0 16px 16px 0; margin: 2rem 0; }
     
+    /* ── PREMIUM COMPARISON TABLE ── */
+    .vs-table-container { margin: 2.5rem 0; border-radius: 16px; border: 1px solid var(--color-border); background: #fff; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+    .vs-row { display: grid; grid-template-columns: 1.2fr 1fr 1fr; border-bottom: 1px solid var(--color-border); }
+    .vs-row:last-child { border-bottom: none; }
+    .vs-cell { padding: 18px 20px; font-size: 15px; color: var(--color-text-secondary); line-height: 1.5; display: flex; flex-direction: column; justify-content: center; }
+    .vs-header { background: var(--color-bg-tertiary); font-family: 'Kantumruy Pro', serif; font-weight: 700; font-size: 1.1rem; color: var(--color-text-primary); }
+    .vs-feature { font-weight: 700; color: var(--color-text-primary); background: #fafafa; }
+    .vs-winner { background: #fff8f1; border-left: 2px solid var(--color-brand); border-right: 2px solid var(--color-brand); }
+    .vs-header.vs-winner { background: var(--color-brand); color: #fff; border: none; }
+    .vs-subtext { font-size: 12px; color: var(--color-text-tertiary); margin-top: 4px; }
+    
     /* ── TABLE STYLES ── */
     .acne-table-wrapper { overflow-x: auto; margin: 2.5rem 0; border: 1px solid var(--color-border); border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); background: #fff; }
     .acne-table { width: 100%; min-width: 600px; border-collapse: collapse; font-size: 15px; }
@@ -559,38 +570,43 @@
         </ul>
 
         <h4 style="color: var(--color-brand); margin-top: 1.5rem;">Vs Comparison: Adapalene vs Other Acne Treatments</h4>
-        <div class="acne-table-wrapper">
-          <table class="acne-table">
-            <thead>
-              <tr>
-                <th>Feature</th>
-                <th>Adapalene</th>
-                <th>Tretinoin</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-label="Feature"><strong>Irritation Potential</strong></td>
-                <td data-label="Adapalene">Lower</td>
-                <td data-label="Tretinoin">Higher</td>
-              </tr>
-              <tr>
-                <td data-label="Feature"><strong>Stability</strong></td>
-                <td data-label="Adapalene">More stable (doesn't degrade as fast in light)</td>
-                <td data-label="Tretinoin">Less stable</td>
-              </tr>
-              <tr>
-                <td data-label="Feature"><strong>Beginner Friendly</strong></td>
-                <td data-label="Adapalene">Yes</td>
-                <td data-label="Tretinoin">Moderate</td>
-              </tr>
-              <tr>
-                <td data-label="Feature"><strong>Acne treatment</strong></td>
-                <td data-label="Adapalene">Excellent</td>
-                <td data-label="Tretinoin">Excellent</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="vs-table-container">
+          <!-- Header Row -->
+          <div class="vs-row vs-header-row">
+            <div class="vs-cell vs-header">Feature</div>
+            <div class="vs-cell vs-header vs-winner">Adapalene</div>
+            <div class="vs-cell vs-header">Tretinoin</div>
+          </div>
+
+          <!-- Row 1 -->
+          <div class="vs-row">
+            <div class="vs-cell vs-feature">Irritation Potential</div>
+            <div class="vs-mobile-split">
+              <div class="vs-cell vs-product vs-winner"><strong>Lower</strong> 🟢</div>
+              <div class="vs-cell vs-product vs-loser">Higher 🔴</div>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="vs-row">
+            <div class="vs-cell vs-feature">Stability</div>
+            <div class="vs-mobile-split">
+              <div class="vs-cell vs-product vs-winner">
+                <strong>More stable</strong>
+                <span class="vs-subtext">Won't degrade in sunlight</span>
+              </div>
+              <div class="vs-cell vs-product vs-loser">Less stable</div>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="vs-row">
+            <div class="vs-cell vs-feature">Beginner Friendly</div>
+            <div class="vs-mobile-split">
+              <div class="vs-cell vs-product vs-winner"><strong>Yes</strong> ✅</div>
+              <div class="vs-cell vs-product vs-loser">Moderate ⚠️</div>
+            </div>
+          </div>
         </div>
 
         <h4 style="color: var(--color-brand); margin-top: 1.5rem;">Vs Comparison: Adapalene + Clindamycin vs. Epiduo</h4>
@@ -666,14 +682,6 @@
       tocLinks.forEach(l => {
         l.classList.remove('active');
         if(l.getAttribute('href') === `#${current}`) l.classList.add('active');
-      });
-    });
-  </script>
-    <div class="sticky-cta-mobile">
-       <a href="https://face3layerscanner.onrender.com/" class="nav-cta" target="_blank" rel="noopener">Free AI Skin Analysis ✨</a>
-   </div>
-</body>
-</html>');
       });
     });
   </script>
