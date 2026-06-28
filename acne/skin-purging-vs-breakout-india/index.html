@@ -13,14 +13,14 @@
     <meta property="og:url" content="https://mymirror.fit/acne/skin-purging-vs-breakout-india/">
     <meta property="og:title" content="Skin Purging vs. Breakout: Clear Guide for Indian Skin (2026)">
     <meta property="og:description" content="Started active skincare and breaking out? Learn if it's a temporary purge or a true breakout before you stop your treatment.">
-    <meta property="og:image" content="https://mymirror.fit/assets/skin-purging-vs-breakout-hero.png">
+    <meta property="og:image" content="https://mymirror.fit/assets/images/active_serum_bottle.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://mymirror.fit/acne/skin-purging-vs-breakout-india/">
     <meta property="twitter:title" content="Skin Purging vs. Breakout: Clear Guide for Indian Skin (2026)">
     <meta property="twitter:description" content="Started active skincare and breaking out? Learn if it's a temporary purge or a true breakout before you stop your treatment.">
-    <meta property="twitter:image" content="https://mymirror.fit/assets/skin-purging-vs-breakout-hero.png">
+    <meta property="twitter:image" content="https://mymirror.fit/assets/images/active_serum_bottle.jpg">
 
     <!-- JSON-LD Schema Markup -->
     <script type="application/ld+json">
@@ -45,7 +45,7 @@
         "@type": "WebPage",
         "@id": "https://mymirror.fit/acne/skin-purging-vs-breakout-india/"
       },
-      "image": "https://mymirror.fit/assets/skin-purging-vs-breakout-hero.png",
+      "image": "https://mymirror.fit/assets/images/active_serum_bottle.jpg",
       "datePublished": "2026-06-28",
       "dateModified": "2026-06-28"
     }
@@ -84,6 +84,22 @@
             --transition-base: 0.4s var(--bouncy);
         }
 
+        /* Auto Dark Mode */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg:         #120D0A;
+                --bg-2:       #1E1510;
+                --bg-3:       #2A1E17;
+                --text:       #F5EDE6;
+                --text-2:     #C4A898;
+                --text-3:     #7A6055;
+                --border:     #3A2A22;
+                --success:    #4ABA7A;
+                --danger:     #E8554A;
+                --info:       #5BA8D8;
+            }
+        }
+
         html { scroll-behavior: smooth; }
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -93,9 +109,9 @@
         }
 
         h1, h2, h3 { font-family: 'Kantumruy Pro', serif; color: var(--text); }
-        h1 { font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 600; line-height: 1.2; letter-spacing: -0.03em; }
-        h2 { font-size: 2.2rem; font-weight: 600; line-height: 1.2; margin-top: 4rem; margin-bottom: 1.5rem; }
-        h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.4rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
+        h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; line-height: 1.15; letter-spacing: -0.03em; }
+        h2 { font-size: 2rem; font-weight: 600; line-height: 1.2; margin-top: 4rem; margin-bottom: 1.5rem; }
+        h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.35rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
         p { color: var(--text-2); line-height: 1.65; margin-bottom: 1.5rem; }
         ul, ol { margin-bottom: 1.5rem; padding-left: 1.5rem; color: var(--text-2); }
         li { margin-bottom: 0.5rem; }
@@ -103,14 +119,14 @@
         a:hover { text-decoration: underline; }
 
         .container { max-width: var(--max-content); margin: 0 auto; padding: 0 2rem; }
-        .container--article { max-width: var(--max-article); margin: 0 auto; padding: 0 2rem; }
 
         /* Sticky Header */
         .sticky-header {
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: #fff;
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             height: 60px;
             display: flex;
@@ -134,80 +150,150 @@
 
         /* Trust Bar */
         .trust-bar {
-            background: #f1f5f9;
+            background: var(--bg-2);
             padding: 10px 20px;
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom: 1px solid var(--border);
             font-size: 12px;
-            color: #64748b;
+            color: var(--text-3);
             display: flex;
             gap: 16px;
             align-items: center;
             justify-content: center;
             text-align: center;
         }
-        .trust-reviewer { color: #059669; font-weight: 700; }
+        .trust-reviewer { color: var(--success); font-weight: 700; }
 
-        /* Photo Hero */
+        /* Split Hero */
         .hero {
-            position: relative;
-            width: 100%;
-            height: 50vh;
-            min-height: 400px;
-            display: flex;
-            align-items: flex-end;
-            overflow: hidden;
-            margin-bottom: 4rem;
+            background: var(--bg-2);
+            border-bottom: 1px solid var(--border);
+            padding: 4rem 2rem;
+            margin-bottom: 0;
         }
-        .hero-bg {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, #0a0a0c 0%, #1a1410 100%);
-            background-size: cover;
-        }
-        .hero-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 60%, transparent 100%);
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            padding: 0 2rem 4rem;
+        .hero-inner {
             max-width: var(--max-content);
             margin: 0 auto;
-            width: 100%;
-        }
-        .hero-title {
-            font-family: 'Kantumruy Pro', serif;
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            font-weight: 600;
-            color: #fff;
-            line-height: 1.1;
-            text-shadow: 0 2px 20px rgba(0,0,0,0.4);
-            max-width: 800px;
-        }
-        .hero-subtitle { color: rgba(255,255,255,0.9); font-size: 1.2rem; margin-top: 1rem; font-weight: 500; }
-
-        /* Article Meta */
-        .article-meta {
-            display: flex;
-            gap: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
             align-items: center;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
         }
-        .badge {
-            display: inline-block;
-            padding: 5px 15px;
-            border-radius: 20px;
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--brand-light);
+            color: var(--brand-dark);
             font-size: 11px;
             font-weight: 700;
-            background: var(--bg-3);
-            color: var(--text);
+            letter-spacing: 0.06em;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            padding: 5px 14px;
+            border-radius: 9999px;
+            margin-bottom: 1.5rem;
         }
-        .badge-brand { background: var(--brand); color: #fff; }
+        .hero-image-stack {
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end;
+        }
+        .hero-photo-card {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: flex-end;
+            width: 200px;
+        }
+        .hero-photo {
+            width: 100%;
+            height: 240px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .hero-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-stat-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px 18px;
+            width: 100%;
+            min-height: 105px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .stat-num {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--brand);
+            line-height: 1.1;
+            margin-bottom: 4px;
+            font-family: 'Kantumruy Pro', serif;
+        }
+        .stat-label {
+            font-size: 11px;
+            color: var(--text-2);
+            line-height: 1.4;
+        }
+
+        /* TOC Bar */
+        .toc-bar {
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+            padding: 0 2rem;
+            position: sticky;
+            top: 60px;
+            z-index: 90;
+        }
+        .toc-inner {
+            max-width: var(--max-content);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+        .toc-link {
+            white-space: nowrap;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-3);
+            text-decoration: none;
+            padding: 14px 18px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .toc-link:hover { color: var(--text); border-bottom-color: var(--brand); }
+        .toc-link.active { color: var(--brand); border-bottom-color: var(--brand); }
+        .toc-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--brand);
+            color: #fff;
+            font-size: 10px;
+            font-weight: 700;
+        }
+
+        /* Two Column Body Layout */
+        .page-body {
+            max-width: var(--max-content);
+            margin: 0 auto;
+            padding: 3rem 2rem 5rem;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 3rem;
+            align-items: start;
+        }
 
         /* Callout Box */
         .callout {
@@ -225,12 +311,12 @@
             background: var(--text);
             border-radius: 30px;
             padding: 3rem;
-            color: #fff;
+            color: var(--bg);
             text-align: center;
             margin: 4rem 0;
         }
-        .dark-callout h2 { color: #fff; margin-top: 0; }
-        .dark-callout p { color: rgba(255,255,255,0.8); }
+        .dark-callout h2 { color: var(--bg); margin-top: 0; }
+        .dark-callout p { color: var(--text-3); }
 
         /* Face AI CTA (V2.1 standard) */
         .face-ai-cta-wrapper { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin: 2rem 0 0; text-align: left; width: 100%; position: relative; z-index: 50; }
@@ -253,7 +339,7 @@
         }
         .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
         .face-ai-btn-text { position: relative; z-index: 12; }
-        p.face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
+        p.face-ai-subtext { color: var(--text-3); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
 
         .face-ai-energy-rail { 
             position: absolute; 
@@ -306,12 +392,77 @@
             color: #fff;
         }
 
+        /* Sidebar Styling */
+        .sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
+        .sidebar-card {
+            background: var(--bg-2);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+        }
+        .sidebar-card h4 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 700; margin-bottom: 10px; }
+        .sidebar-card p { font-size: 13px; color: var(--text-2); }
+        .sidebar-list { list-style: none; margin-top: 10px; padding: 0; }
+        .sidebar-list li {
+            font-size: 13px; color: var(--text-2);
+            padding: 6px 0; border-bottom: 1px solid var(--border);
+            display: flex; gap: 8px;
+        }
+        .sidebar-list li:last-child { border-bottom: none; }
+        .sidebar-list li::before { content: '→'; color: var(--brand); font-size: 12px; }
+        .sidebar-list a { color: inherit; text-decoration: none; }
+        .sidebar-list a:hover { color: var(--brand); }
+
         /* Responsive Comparison Tables V2.1 */
         .acne-table-wrapper { overflow-x: auto; margin: 2rem 0; border: 1px solid var(--border); border-radius: 12px; }
         .acne-table { width: 100%; border-collapse: collapse; font-size: 14px; }
         .acne-table th { background: var(--bg-2); padding: 14px; text-align: left; border-bottom: 2px solid var(--border); font-weight: 700; }
         .acne-table td { padding: 14px; border-bottom: 1px solid var(--border); color: var(--text-2); }
         .acne-table tr:last-child td { border-bottom: none; }
+
+        /* Interactive FAQ Accordion */
+        .faq-item {
+            background: var(--bg);
+            border-radius: 16px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+        .faq-question {
+            padding: 1.5rem 2rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text);
+            font-size: 1.1rem;
+            user-select: none;
+        }
+        .faq-question:hover { color: var(--brand); background: var(--bg-2); }
+        .faq-answer {
+            max-height: 0;
+            padding: 0 2rem;
+            overflow: hidden;
+            transition: all 0.4s ease-out;
+            color: var(--text-2);
+            font-size: 0.95rem;
+            line-height: 1.65;
+        }
+        .faq-item.active-faq .faq-answer {
+            max-height: 500px;
+            padding: 0 2rem 2rem 2rem;
+        }
+        .faq-icon {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+            color: var(--brand);
+        }
+        .faq-item.active-faq .faq-icon {
+            transform: rotate(45deg);
+        }
 
         /* Reveal Animation */
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s var(--bouncy); }
@@ -328,6 +479,14 @@
         .footer-logo { height: 30px; margin-bottom: 1.5rem; opacity: 0.7; }
         .footer-text { color: var(--text-3); font-size: 0.85rem; }
 
+        @media (max-width: 900px) {
+            .page-body { grid-template-columns: 1fr; }
+            .sidebar { display: none; }
+            .hero-inner { grid-template-columns: 1fr; text-align: center; }
+            .hero-image-stack { display: none; }
+            .hero-content { display: flex; flex-direction: column; align-items: center; }
+        }
+
         @media (max-width: 768px) {
             h1 { font-size: 2.2rem; }
             h2 { font-size: 1.8rem; }
@@ -337,7 +496,7 @@
             .acne-table, .acne-table tbody, .acne-table tr, .acne-table td { display: block; width: 100%; box-sizing: border-box; }
             .acne-table thead { display: none; }
             .acne-table { border: none; margin: 1rem 0; }
-            .acne-table tr { margin-bottom: 1.5rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 4px 15px rgba(0,0,0,0.03); background: #fff; }
+            .acne-table tr { margin-bottom: 1.5rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 4px 15px rgba(0,0,0,0.03); background: var(--bg); }
             .acne-table td { border-bottom: 1px solid var(--border); padding: 12px 12px 12px 40%; position: relative; min-height: 46px; text-align: right; }
             .acne-table td:last-child { border-bottom: none; }
             .acne-table td::before { content: attr(data-label); position: absolute; left: 12px; width: 35%; font-weight: 700; color: var(--text); top: 12px; text-align: left; }
@@ -358,6 +517,11 @@
             justify-content: center;
             align-items: center;
             border-top: 1px solid var(--border);
+        }
+        @media (prefers-color-scheme: dark) {
+            .sticky-cta-mobile {
+                background: rgba(18, 13, 10, 0.95);
+            }
         }
         .sticky-cta-mobile .nav-cta {
             width: 100%;
@@ -412,199 +576,314 @@
         </div>
     </header>
 
-    <!-- Hero -->
-    <div class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content reveal">
-            <h1 class="hero-title">Skin Purging vs. Breakout: How to Tell the Difference on Indian Skin</h1>
-            <p class="hero-subtitle">Decoding the timeline, symptoms, and active skincare reactions.</p>
-            
-            <!-- Face AI Skin Analysis CTA (V2.1 Standard) -->
-            <div class="face-ai-cta-wrapper reveal" style="transition-delay: 0.5s;">
-                <a href="/scan" class="face-ai-btn">
-                    <span class="face-ai-btn-text">Start your free skin analysis now</span>
-                    <div class="face-ai-energy-rail"></div>
-                </a>
-                <p class="face-ai-subtext">Scan your face to identify standard skin purging vs. breakouts in 60 seconds.</p>
+    <!-- Split Hero -->
+    <section class="hero">
+        <div class="hero-inner reveal">
+            <div class="hero-content">
+                <span class="hero-tag">Clinical Skincare</span>
+                <h1 class="hero-title">Skin Purging vs. Breakout: How to Tell the Difference on Indian Skin</h1>
+                <p class="hero-subtitle">Decoding the timeline, symptoms, and active skincare reactions.</p>
+                
+                <!-- Face AI Skin Analysis CTA (V2.1 Standard) -->
+                <div class="face-ai-cta-wrapper">
+                    <a href="/scan" class="face-ai-btn">
+                        <span class="face-ai-btn-text">Start your free skin analysis now</span>
+                        <div class="face-ai-energy-rail"></div>
+                    </a>
+                    <p class="face-ai-subtext">Scan your face to identify standard skin purging vs. breakouts in 60 seconds.</p>
+                </div>
             </div>
+            <div class="hero-image-stack">
+                <div class="hero-photo-card">
+                    <div class="hero-photo">
+                        <img src="/assets/images/active_serum_bottle.jpg" alt="Clinical active skincare bottle">
+                    </div>
+                    <div class="hero-stat-card">
+                        <span class="stat-num">6 Weeks</span>
+                        <span class="stat-label">maximum timeline for a standard active skin purge to resolve</span>
+                    </div>
+                </div>
+                <div class="hero-photo-card">
+                    <div class="hero-photo">
+                        <img src="/assets/images/healthy_skin_glow.jpg" alt="Healthy human skin texture glowing">
+                    </div>
+                    <div class="hero-stat-card">
+                        <span class="stat-num">90%</span>
+                        <span class="stat-label">of active purges clear cleanly without leaving permanent pitted scars</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky TOC Bar -->
+    <div class="toc-bar">
+        <div class="toc-inner">
+            <a class="toc-link" href="#science"><span class="toc-num">1</span> The Science</a>
+            <a class="toc-link" href="#rules"><span class="toc-num">2</span> Diagnostic Rules</a>
+            <a class="toc-link" href="#timeline"><span class="toc-num">3</span> 6-Week Timeline</a>
+            <a class="toc-link" href="#management"><span class="toc-num">4</span> Management Hacks</a>
+            <a class="toc-link" href="#faq"><span class="toc-num">5</span> FAQs</a>
         </div>
     </div>
 
-    <!-- Content -->
-    <main class="container--article">
-        <div class="article-meta reveal">
-            <span class="badge badge-brand">Scientifically Proven</span>
-            <span class="badge">Common in India</span>
-            <span class="badge">8 Min Read</span>
-        </div>
+    <!-- Main Content Layout -->
+    <div class="page-body">
+        <main>
+            <!-- INTRO -->
+            <section class="reveal">
+                <p>You finally started using that dermatologist-recommended Salicylic Acid serum or Adapalene gel to clear your skin, but three days in, you woke up with a cluster of new bumps. You are panicking, looking in the mirror, ready to throw the tube in the trash.</p>
+                
+                <p><em>"Is this product actually making my skin worse, or is it just clearing out the deep layers?"</em></p>
+                
+                <p>In India, where heat, humidity, and dust complicate active ingredients, telling the difference between a <strong>skin purge</strong> and an <strong>inflammatory breakout</strong> is critical. If you stop too early during a purge, you reset the clock and lose all progress. If you keep going during a breakout, you risk permanent scarring and hyperpigmentation (PIH).</p>
+                
+                <p>Here is the science-based guide to diagnosing your skin in under 5 minutes.</p>
+            </section>
 
-        <section class="reveal">
-            <p>You finally started using that dermatologist-recommended Salicylic Acid serum or Adapalene gel to clear your skin, but three days in, you woke up with a cluster of new bumps. You are panicking, looking in the mirror, ready to throw the tube in the trash.</p>
-            
-            <p><em>"Is this product actually making my skin worse, or is it just clearing out the deep layers?"</em></p>
-            
-            <p>In India, where heat, humidity, and dust complicate active ingredients, telling the difference between a <strong>skin purge</strong> and an <strong>inflammatory breakout</strong> is critical. If you stop too early during a purge, you reset the clock and lose all progress. If you keep going during a breakout, you risk permanent scarring and hyperpigmentation (PIH).</p>
-            
-            <p>Here is the science-based guide to diagnosing your skin in under 5 minutes.</p>
-        </section>
+            <!-- SECTION 1: THE SCIENCE -->
+            <section id="science" class="reveal">
+                <h2>1. The Science: What is a "Purge" vs. a "Breakout"?</h2>
+                
+                <h3>The Biological Purge (Accelerated Turnover)</h3>
+                <p>Before a pimple appears on your face, it starts deep in the pore as a microscopic blockage of sebum and dead skin cells called a <strong>microcomedone</strong>. Under normal conditions, it takes <strong>28 to 40 days</strong> for a microcomedone to travel to the surface and become a visible blackhead, whitehead, or pimple.</p>
+                
+                <p>When you apply active ingredients that speed up cell turnover (like retinoids or chemical exfoliants), you accelerate this 28-day timeline into <strong>2 to 5 days</strong>. The product is not creating new pimples; it is simply forcing existing, deep-seated blockages to the surface all at once. This is <strong>skin purging</strong>.</p>
 
-        <section class="reveal">
-            <h2>1. The Science: What is a "Purge" vs. a "Breakout"?</h2>
-            
-            <h3>The Biological Purge (Accelerated Turnover)</h3>
-            <p>Before a pimple appears on your face, it starts deep in the pore as a microscopic blockage of sebum and dead skin cells called a <strong>microcomedone</strong>. Under normal conditions, it takes <strong>28 to 40 days</strong> for a microcomedone to travel to the surface and become a visible blackhead, whitehead, or pimple.</p>
-            
-            <p>When you apply active ingredients that speed up cell turnover (like retinoids or chemical exfoliants), you accelerate this 28-day timeline into <strong>2 to 5 days</strong>. The product is not creating new pimples; it is simply forcing existing, deep-seated blockages to the surface all at once. This is <strong>skin purging</strong>.</p>
+                <h3>The True Breakout (Product Irritation or Clogging)</h3>
+                <p>A breakout occurs when a product contains ingredients that clog previously clean pores, trigger allergic contact dermatitis, or irritate the skin barrier. In this case, the product is actively generating new blockages that did not exist before.</p>
 
-            <h3>The True Breakout (Product Irritation or Clogging)</h3>
-            <p>A breakout occurs when a product contains ingredients that clog previously clean pores, trigger allergic contact dermatitis, or irritate the skin barrier. In this case, the product is actively generating new blockages that did not exist before.</p>
+                <div class="callout">
+                    💡 <strong>Derm Note:</strong> Hard water and monsoon humidity can make your skin look like it's breaking out when it's just barrier damage. Use the <a href="/scan">MyMirror AI Face Scan</a> to map your breakouts and determine if your skin signals match a standard active purge or an external barrier reaction.
+                </div>
+            </section>
 
-            <div class="callout">
-                💡 <strong>Derm Note:</strong> Hard water and monsoon humidity can make your skin look like it's breaking out when it's just barrier damage. Use the <a href="/scan">MyMirror AI Face Scan</a> to map your breakouts and determine if your skin signals match a standard active purge or an external barrier reaction.
+            <!-- SECTION 2: RULES -->
+            <section id="rules" class="reveal">
+                <h2>2. The 3 Diagnostic Rules: How to Tell the Difference</h2>
+                <p>To analyze your skin, evaluate these three clinical parameters:</p>
+
+                <h3>Rule 1: The Location Audit</h3>
+                <p><strong>The Purge:</strong> Bumps only appear in the specific areas where you <strong>normally get breakouts</strong>. If you always get pimples on your nose and chin, a purge will flare up on your nose and chin.<br>
+                <strong>The Breakout:</strong> Bumps appear in <strong>brand new areas</strong> where you rarely or never get acne (such as your cheeks, temples, or neck).</p>
+
+                <h3>Rule 2: The Timeline & Healing Rate</h3>
+                <p><strong>The Purge:</strong> Individual purge bumps (usually whiteheads or small red papules) mature and heal <strong>extremely fast</strong>, often disappearing within <strong>2 to 5 days</strong> without leaving deep scars.<br>
+                <strong>The Breakout:</strong> Pimple breakouts linger. They stay inflamed, turn into deep, painful cysts, and take <strong>2 to 3 weeks</strong> to fully resolve, often leaving behind dark marks (PIH).</p>
+
+                <h3>Rule 3: The Active Ingredient Check</h3>
+                <p>Only specific categories of active ingredients can cause purging. Review the comparison table below:</p>
+
+                <!-- Active Ingredients Purging Table -->
+                <div class="acne-table-wrapper">
+                    <table class="acne-table">
+                        <thead>
+                            <tr>
+                                <th>Active Category</th>
+                                <th>Specific Ingredients</th>
+                                <th>Does it Cause Purging?</th>
+                                <th>Clinical Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Active Category"><strong>Retinoids</strong></td>
+                                <td data-label="Specific Ingredients">Retinol, Adapalene, Tretinoin</td>
+                                <td data-label="Does it Cause Purging?"><strong>YES</strong></td>
+                                <td data-label="Clinical Purpose">Speeds up skin cellular renewal</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Active Category"><strong>BHA (Salicylic Acid)</strong></td>
+                                <td data-label="Specific Ingredients">Saslic Wash, Sebogel, Minimalist BHA</td>
+                                <td data-label="Does it Cause Purging?"><strong>YES</strong></td>
+                                <td data-label="Clinical Purpose">Dissolves excess sebum inside pores</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Active Category"><strong>AHA (Glycolic/Lactic)</strong></td>
+                                <td data-label="Specific Ingredients">Glyco-6, Lactic Acid Serums</td>
+                                <td data-label="Does it Cause Purging?"><strong>YES</strong></td>
+                                <td data-label="Clinical Purpose">Exfoliates top layer dead skin cells</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Active Category"><strong>Benzoyl Peroxide</strong></td>
+                                <td data-label="Specific Ingredients">Benzac AC Gel, Perobar</td>
+                                <td data-label="Does it Cause Purging?"><strong>YES</strong></td>
+                                <td data-label="Clinical Purpose">Kills acne bacteria & exfoliates</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Active Category"><strong>Hydrators & Soothers</strong></td>
+                                <td data-label="Specific Ingredients">Hyaluronic Acid, Niacinamide, Ceramides</td>
+                                <td data-label="Does it Cause Purging?"><strong>NO</strong></td>
+                                <td data-label="Clinical Purpose">Rebuilds and repairs skin barrier</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout">
+                    👉 <strong>The Rule:</strong> If you are breaking out from a pure Niacinamide, Hyaluronic Acid, or Ceramide cream, <strong>it is 100% a breakout, not a purge.</strong> Stop using the product immediately.
+                </div>
+            </section>
+
+            <!-- SECTION 3: TIMELINE -->
+            <section id="timeline" class="reveal">
+                <h2>3. The 6-Week Timeline: What to Expect During a Purge</h2>
+                <p>If you are indeed purging, the flare-up follows a predictable clinical timeline:</p>
+                <ul>
+                    <li><strong>Weeks 1–2 (The Flare):</strong> Breakouts peak. Bumps rise to the surface. Your skin may feel slightly dry, flaky, or sensitive.</li>
+                    <li><strong>Weeks 3–4 (The Transition):</strong> New bumps stop forming. The existing purge bumps start healing rapidly. Skin texture begins to feel smoother.</li>
+                    <li><strong>Weeks 5–6 (The Clear):</strong> The purge resolves completely. The skin barrier is stronger, and you will begin to see the true benefits of the active ingredient (fewer blackheads, reduced sebum, even skin tone).</li>
+                </ul>
+
+                <div class="callout">
+                    💡 <strong>Pro Tip:</strong> If your skin continues to flare up with new bumps after <strong>6 weeks</strong> of continuous use, it is no longer a purge. The product is either too strong, causing barrier irritation, or contains clogging base formulation ingredients.
+                </div>
+            </section>
+
+            <!-- SECTION 4: MANAGEMENT -->
+            <section id="management" class="reveal">
+                <h2>4. How to Manage a Purge and Avoid Scarring</h2>
+                <p>While you cannot stop a purge (those microcomedones have to come out), you can minimize the inflammation and prevent hyperpigmentation:</p>
+
+                <h3>1. Introduce Actives Slowly</h3>
+                <p>Do not apply new active ingredients daily. Start with <strong>2 nights a week</strong> for the first two weeks, increase to <strong>alternate nights</strong> for weeks 3–4, and move to <strong>every night</strong> only after week 4 if your skin tolerates it.</p>
+
+                <h3>2. Use the "Sandwich Method" (for Adapalene/Retinol)</h3>
+                <p>To buffer irritation and reduce the intensity of the purge: Apply a thin layer of a basic, lightweight moisturizer (like <em>Sebamed Clear Face Gel</em> or <em>Excela</em>). Wait 10 minutes for it to dry, apply a pea-sized amount of your Adapalene gel or Retinol, and then apply a second layer of moisturizer on top.</p>
+
+                <h3>3. Protect with Non-Comedogenic Sunscreens</h3>
+                <p>Sensitized skin during a purge is highly susceptible to UV-induced dark marks. Use a lightweight gel sunscreen that won't clog pores, such as <em>Minimalist SPF 50</em> or <em>Re'equil Ultra Matte Dry Touch</em>.</p>
+            </section>
+
+            <!-- SECTION 5: FAQS -->
+            <section id="faq" class="reveal">
+                <h2>5. FAQ: Skin Purging</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can Niacinamide cause purging?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No. Niacinamide is a barrier-restoring, anti-inflammatory vitamin. It does not speed up cell turnover. If you break out from a Niacinamide serum, it is due to a high concentration (10% can be irritating for some) or a clogging base formulation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I tell if Adapalene is purging or breaking me out?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Look at the location. If you are getting whiteheads on your forehead or chin where you usually clog, it is an Adapalene purge (Adaferin/Differin). If you get itchy bumps on your cheeks where you normally have clear skin, the gel’s base ingredients are likely clogging your pores.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Should I pop purging pimples?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No. Purging pimples rise from deep layers. Popping them pushes bacteria deeper, damages the skin wall, and guarantees permanent pitted scars or dark spots. Use a hydrocolloid pimple patch (like <em>Acnes Patch</em> or <em>Urban Yog</em>) to protect it instead.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="dark-callout reveal">
+                <h2>Is Your Skincare Working Against You?</h2>
+                <p>Many "acne-clearing" products actually contain ingredients that feed the fungus that causes breakouts. Stop the guesswork.</p>
+                <p style="margin-bottom: 2rem;"><strong>Scan your face with MyMirror AI</strong> to get a personalized, active-safe routine that finally clears your skin for good.</p>
+                <a href="/scan" class="btn-primary">Start Your Free AI Skin Scan Now</a>
             </div>
-        </section>
 
-        <section class="reveal">
-            <h2>2. The 3 Diagnostic Rules: How to Tell the Difference</h2>
-            <p>To analyze your skin, evaluate these three clinical parameters:</p>
+            <section class="reveal">
+                <h3 style="margin-top: 4rem;">Related Guides</h3>
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <a href="/acne/best-salicylic-acid-face-wash-india/" style="display:block;padding:1.1rem 1.4rem;background:var(--bg-2);border-radius:16px;text-decoration:none;color:var(--text);border:1px solid var(--border);font-weight:600;font-size:0.9rem;transition:all 0.3s;">
+                        Best Salicylic Acid Face Washes in India (2026) →
+                    </a>
+                    <a href="/acne/adapalene-differin-adaferin-gel-comparison-india/" style="display:block;padding:1.1rem 1.4rem;background:var(--bg-2);border-radius:16px;text-decoration:none;color:var(--text);border:1px solid var(--border);font-weight:600;font-size:0.9rem;transition:all 0.3s;">
+                        Adapalene Gels Comparison: Differin vs Adaferin in India →
+                    </a>
+                </div>
+            </section>
+        </main>
 
-            <h3>Rule 1: The Location Audit</h3>
-            <p><strong>The Purge:</strong> Bumps only appear in the specific areas where you <strong>normally get breakouts</strong>. If you always get pimples on your nose and chin, a purge will flare up on your nose and chin.<br>
-            <strong>The Breakout:</strong> Bumps appear in <strong>brand new areas</strong> where you rarely or never get acne (such as your cheeks, temples, or neck).</p>
-
-            <h3>Rule 2: The Timeline & Healing Rate</h3>
-            <p><strong>The Purge:</strong> Individual purge bumps (usually whiteheads or small red papules) mature and heal <strong>extremely fast</strong>, often disappearing within <strong>2 to 5 days</strong> without leaving deep scars.<br>
-            <strong>The Breakout:</strong> Pimple breakouts linger. They stay inflamed, turn into deep, painful cysts, and take <strong>2 to 3 weeks</strong> to fully resolve, often leaving behind dark marks (PIH).</p>
-
-            <h3>Rule 3: The Active Ingredient Check</h3>
-            <p>Only specific categories of active ingredients can cause purging. Review the comparison table below:</p>
-
-            <!-- Active Ingredients Purging Table -->
-            <div class="acne-table-wrapper">
-                <table class="acne-table">
-                    <thead>
-                        <tr>
-                            <th>Active Category</th>
-                            <th>Specific Ingredients</th>
-                            <th>Does it Cause Purging?</th>
-                            <th>Clinical Purpose</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="Active Category"><strong>Retinoids</strong></td>
-                            <td data-label="Specific Ingredients">Retinol, Adapalene, Tretinoin</td>
-                            <td data-label="Does it Cause Purging?"><strong>YES</strong></td>
-                            <td data-label="Clinical Purpose">Speeds up skin cellular renewal</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Active Category"><strong>BHA (Salicylic Acid)</strong></td>
-                            <td data-label="Specific Ingredients">Saslic Wash, Sebogel, Minimalist BHA</td>
-                            <td data-label="Does it Cause Purging?"><strong>YES</strong></td>
-                            <td data-label="Clinical Purpose">Dissolves excess sebum inside pores</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Active Category"><strong>AHA (Glycolic/Lactic)</strong></td>
-                            <td data-label="Specific Ingredients">Glyco-6, Lactic Acid Serums</td>
-                            <td data-label="Does it Cause Purging?"><strong>YES</strong></td>
-                            <td data-label="Clinical Purpose">Exfoliates top layer dead skin cells</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Active Category"><strong>Benzoyl Peroxide</strong></td>
-                            <td data-label="Specific Ingredients">Benzac AC Gel, Perobar</td>
-                            <td data-label="Does it Cause Purging?"><strong>YES</strong></td>
-                            <td data-label="Clinical Purpose">Kills acne bacteria & exfoliates</td>
-                        </tr>
-                        <tr>
-                            <td data-label="Active Category"><strong>Hydrators & Soothers</strong></td>
-                            <td data-label="Specific Ingredients">Hyaluronic Acid, Niacinamide, Ceramides</td>
-                            <td data-label="Does it Cause Purging?"><strong>NO</strong></td>
-                            <td data-label="Clinical Purpose">Rebuilds and repairs skin barrier</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <!-- Sidebar Layout -->
+        <aside class="sidebar">
+            <div class="sidebar-card" style="background: var(--brand-light); border-color: rgba(236,97,14,0.2);">
+                <h4 style="color: var(--brand-dark);">💡 Medical Review</h4>
+                <p>All guides on MyMirror are reviewed by board-certified specialists. This cell-turnover purging protocol is approved by <strong>Dr. Lipy Mehta</strong>.</p>
             </div>
 
-            <div class="callout">
-                👉 <strong>The Rule:</strong> If you are breaking out from a pure Niacinamide, Hyaluronic Acid, or Ceramide cream, <strong>it is 100% a breakout, not a purge.</strong> Stop using the product immediately.
+            <div class="sidebar-card">
+                <h4>Quick Diagnostics</h4>
+                <ul class="sidebar-list">
+                    <li>Purging Spot: Usual spots only</li>
+                    <li>Breakout Spot: Brand new areas</li>
+                    <li>Purge Pimple Lifecycle: 2 - 5 Days</li>
+                    <li>Breakout Lifecycle: 2 - 3 Weeks</li>
+                </ul>
             </div>
-        </section>
 
-        <section class="reveal">
-            <h2>3. The 6-Week Timeline: What to Expect During a Purge</h2>
-            <p>If you are indeed purging, the flare-up follows a predictable clinical timeline:</p>
-            <ul>
-                <li><strong>Weeks 1–2 (The Flare):</strong> Breakouts peak. Bumps rise to the surface. Your skin may feel slightly dry, flaky, or sensitive.</li>
-                <li><strong>Weeks 3–4 (The Transition):</strong> New bumps stop forming. The existing purge bumps start healing rapidly. Skin texture begins to feel smoother.</li>
-                <li><strong>Weeks 5–6 (The Clear):</strong> The purge resolves completely. The skin barrier is stronger, and you will begin to see the true benefits of the active ingredient (fewer blackheads, reduced sebum, even skin tone).</li>
-            </ul>
-
-            <div class="callout">
-                💡 <strong>Pro Tip:</strong> If your skin continues to flare up with new bumps after <strong>6 weeks</strong> of continuous use, it is no longer a purge. The product is either too strong, causing barrier irritation, or contains clogging base formulation ingredients.
+            <div class="sidebar-card" style="background: var(--bg-3);">
+                <h4>When to Consult a Doctor</h4>
+                <p>Seek dermatological advice if your breakouts exhibit:</p>
+                <ul class="sidebar-list">
+                    <li>Painful cystic nodules that bleed</li>
+                    <li>Deep indented scars forming</li>
+                    <li>No improvement after 6 weeks</li>
+                </ul>
             </div>
-        </section>
-
-        <section class="reveal">
-            <h2>4. How to Manage a Purge and Avoid Scarring</h2>
-            <p>While you cannot stop a purge (those microcomedones have to come out), you can minimize the inflammation and prevent hyperpigmentation:</p>
-
-            <h3>1. Introduce Actives Slowly</h3>
-            <p>Do not apply new active ingredients daily. Start with <strong>2 nights a week</strong> for the first two weeks, increase to <strong>alternate nights</strong> for weeks 3–4, and move to <strong>every night</strong> only after week 4 if your skin tolerates it.</p>
-
-            <h3>2. Use the "Sandwich Method" (for Adapalene/Retinol)</h3>
-            <p>To buffer irritation and reduce the intensity of the purge: Apply a thin layer of a basic, lightweight moisturizer (like <em>Sebamed Clear Face Gel</em> or <em>Excela</em>). Wait 10 minutes for it to dry, apply a pea-sized amount of your Adapalene gel or Retinol, and then apply a second layer of moisturizer on top.</p>
-
-            <h3>3. Protect with Non-Comedogenic Sunscreens</h3>
-            <p>Sensitized skin during a purge is highly susceptible to UV-induced dark marks. Use a lightweight gel sunscreen that won't clog pores, such as <em>Minimalist SPF 50</em> or <em>Re'equil Ultra Matte Dry Touch</em>.</p>
-        </section>
-
-        <section class="reveal">
-            <h2>5. FAQ: Skin Purging</h2>
-            
-            <h3>Can Niacinamide cause purging?</h3>
-            <p>No. Niacinamide is a barrier-restoring, anti-inflammatory vitamin. It does not speed up cell turnover. If you break out from a Niacinamide serum, it is due to a high concentration (10% can be irritating for some) or a clogging base formulation.</p>
-
-            <h3>How do I tell if Adapalene is purging or breaking me out?</h3>
-            <p>Look at the location. If you are getting whiteheads on your forehead or chin where you usually clog, it is an Adapalene purge (Adaferin/Differin). If you get itchy bumps on your cheeks where you normally have clear skin, the gel’s base ingredients are likely clogging your pores.</p>
-
-            <h3>Should I pop purging pimples?</h3>
-            <p>No. Purging pimples rise from deep layers. Popping them pushes bacteria deeper, damages the skin wall, and guarantees permanent pitted scars or dark spots. Use a hydrocolloid pimple patch (like <em>Acnes Patch</em> or <em>Urban Yog</em>) to protect it instead.</p>
-        </section>
-
-        <div class="dark-callout reveal">
-            <h2>Is Your Skincare Working Against You?</h2>
-            <p>Many "acne-clearing" products actually contain ingredients that feed the fungus that causes breakouts. Stop the guesswork.</p>
-            <p style="margin-bottom: 2rem;"><strong>Scan your face with MyMirror AI</strong> to get a personalized, active-safe routine that finally clears your skin for good.</p>
-            <a href="/scan" class="btn-primary">Start Your Free AI Skin Scan Now</a>
-        </div>
-
-        <section class="reveal">
-            <h3 style="margin-top: 4rem;">Related Guides</h3>
-            <div style="display: flex; flex-direction: column; gap: 1rem;">
-                <a href="/acne/best-salicylic-acid-face-wash-india/" style="display:block;padding:1.1rem 1.4rem;background:#F9F6F3;border-radius:16px;text-decoration:none;color:#1A1410;border:1px solid #E8DDD5;font-weight:600;font-size:0.9rem;transition:all 0.3s;">
-                    Best Salicylic Acid Face Washes in India (2026) →
-                </a>
-                <a href="/acne/adapalene-differin-adaferin-gel-comparison-india/" style="display:block;padding:1.1rem 1.4rem;background:#F9F6F3;border-radius:16px;text-decoration:none;color:#1A1410;border:1px solid #E8DDD5;font-weight:600;font-size:0.9rem;transition:all 0.3s;">
-                    Adapalene Gels Comparison: Differin vs Adaferin in India →
-                </a>
-            </div>
-        </section>
-    </main>
+        </aside>
+    </div>
 
     <footer class="main-footer">
         <img src="https://mymirror.fit/assets/logo-v4.png" alt="mymirror" class="footer-logo">
         <p class="footer-text">&copy; 2026 MyMirror.fit • Science-Based Skin Health for India</p>
     </footer>
 
-    <script>
-        const obs = new IntersectionObserver(e => e.forEach(x => x.isIntersecting && x.target.classList.add('active')), { threshold: 0.1 });
-        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-    </script>
-
     <!-- Sticky Mobile CTA -->
     <div class="sticky-cta-mobile">
         <a href="https://face3layerscanner.onrender.com/" class="nav-cta" target="_blank" rel="noopener">Free AI Skin Analysis ✨</a>
     </div>
+
+    <script>
+        // Scroll Reveal Animation
+        const obs = new IntersectionObserver(e => e.forEach(x => x.isIntersecting && x.target.classList.add('active')), { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+        // Interactive FAQ Accordions
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                const isActive = item.classList.contains('active-faq');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active-faq'));
+                if (!isActive) {
+                    item.classList.add('active-faq');
+                }
+            });
+        });
+
+        // Scroll Spy for TOC Links
+        const sections = document.querySelectorAll('section[id]');
+        const tocLinks = document.querySelectorAll('.toc-link');
+        window.addEventListener('scroll', () => {
+            let current = "";
+            sections.forEach(s => {
+                const sTop = s.offsetTop;
+                if (pageYOffset >= (sTop - 150)) {
+                    current = s.getAttribute('id');
+                }
+            });
+            tocLinks.forEach(l => {
+                l.classList.remove('active');
+                if (l.getAttribute('href').includes(current)) {
+                    l.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
