@@ -342,6 +342,43 @@
             .acne-table td:last-child { border-bottom: none; }
             .acne-table td::before { content: attr(data-label); position: absolute; left: 12px; width: 35%; font-weight: 700; color: var(--text); top: 12px; text-align: left; }
         }
+
+        /* ── STICKY BOTTOM CTA (MOBILE ONLY) ── */
+        .sticky-cta-mobile {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 0.8rem 1.2rem;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+            z-index: 2000;
+            display: none; /* Hidden on desktop */
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid var(--border);
+        }
+        .sticky-cta-mobile .nav-cta {
+            width: 100%;
+            text-align: center;
+            padding: 12px 0;
+            font-size: 1.05rem;
+            box-shadow: 0 8px 20px rgba(236,97,14,0.3);
+            text-decoration: none;
+            border-radius: 9999px;
+            background: var(--brand);
+            color: #fff;
+            font-weight: 800;
+        }
+        @media (max-width: 768px) {
+            .sticky-cta-mobile {
+                display: flex;
+            }
+            body {
+                padding-bottom: 70px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -578,5 +615,10 @@
         const obs = new IntersectionObserver(e => e.forEach(x => x.isIntersecting && x.target.classList.add('active')), { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
     </script>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="sticky-cta-mobile">
+        <a href="https://face3layerscanner.onrender.com/" class="nav-cta" target="_blank" rel="noopener">Free AI Skin Analysis ✨</a>
+    </div>
 </body>
 </html>
