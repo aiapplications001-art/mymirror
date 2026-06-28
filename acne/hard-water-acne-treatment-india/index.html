@@ -255,6 +255,11 @@
             margin: 0 auto;
             display: flex;
             align-items: center;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .toc-inner::-webkit-scrollbar {
+            display: none;
         }
         .toc-link {
             white-space: nowrap;
