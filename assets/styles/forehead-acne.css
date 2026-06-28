@@ -367,6 +367,12 @@ h3 { font-size: 1.4rem; font-weight: 700; color: var(--color-text-primary); marg
     .face-ai-cta-wrapper {
         display: none !important;
     }
+    /* Hide header nav CTA on mobile when bottom sticky is active */
+    .nav-links .nav-cta, 
+    .nav-inner a[href*="face-map"], 
+    .nav-inner a[href*="scan"] {
+        display: none !important;
+    }
     body {
         padding-bottom: 70px;
     }

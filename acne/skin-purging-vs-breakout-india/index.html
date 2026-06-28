@@ -375,6 +375,12 @@
             .sticky-cta-mobile {
                 display: flex;
             }
+            /* Hide header nav CTA on mobile when bottom sticky is active */
+            .nav-links .nav-cta, 
+            .nav-inner a[href*="face-map"], 
+            .nav-inner a[href*="scan"] {
+                display: none !important;
+            }
             body {
                 padding-bottom: 70px;
             }
