@@ -418,6 +418,54 @@
         .sidebar-list a { color: inherit; text-decoration: none; }
         .sidebar-list a:hover { color: var(--brand); }
 
+        /* Product Cards CSS */
+        .product-card {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 1.5rem;
+            align-items: center;
+            background: var(--bg-2);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            transition: transform var(--transition-base);
+        }
+        .product-card:hover {
+            transform: translateY(-2px);
+        }
+        .product-img-wrapper {
+            width: 140px;
+            height: 140px;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border);
+            padding: 10px;
+        }
+        .product-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            mix-blend-mode: multiply;
+        }
+        @media (max-width: 768px) {
+            .product-card {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 1.2rem;
+                gap: 1rem;
+            }
+            .product-img-wrapper {
+                margin: 0 auto;
+                width: 130px;
+                height: 130px;
+            }
+        }
+
         /* Responsive Comparison Tables V2.1 */
         .acne-table-wrapper { overflow-x: auto; margin: 2rem 0; border: 1px solid var(--border); border-radius: 12px; }
         .acne-table { width: 100%; border-collapse: collapse; font-size: 14px; }
@@ -664,17 +712,49 @@
                 <h2>2. Vetted Fungal Acne Safe Moisturizers in India</h2>
                 <p>Here are the top four moisturizers in the Indian market that pass our strict ingredient audit:</p>
                 
-                <h3>1. Sebamed Clear Face Care Gel (The Gold Standard)</h3>
-                <p>It is completely lipid-free. It has a pH of 5.5, which directly supports the skin's acid mantle to keep yeast from multiplying. The active ingredients are Aloe Vera, Hyaluronic Acid, Panthenol (Vitamin B5), and Allantoin. It is best for extremely sensitive, oily, and actively flaring fungal acne.</p>
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="/assets/images/product_sebamed.jpg" alt="Sebamed Clear Face Care Gel" class="product-img">
+                    </div>
+                    <div class="product-details">
+                        <h3 style="margin-top:0;">1. Sebamed Clear Face Care Gel (The Gold Standard)</h3>
+                        <p style="margin-bottom:0;">It is completely lipid-free. It has a pH of 5.5, which directly supports the skin's acid mantle to keep yeast from multiplying. The active ingredients are Aloe Vera, Hyaluronic Acid, Panthenol (Vitamin B5), and Allantoin. It is best for extremely sensitive, oily, and actively flaring fungal acne.</p>
+                    </div>
+                </div>
 
-                <h3>2. Minimalist Vitamin B5 10% Gel Moisturizer (Best Budget Gel)</h3>
-                <p>Zero oils or esters. Panthenol heals the skin barrier, while Zinc PCA regulates sebum production (reducing the yeast's food source). The active ingredients are 10% Panthenol (Pro-Vitamin B5), Zinc PCA, and Copper tripeptide. It is best for sensitive and irritated skin barriers.</p>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="/assets/images/product_minimalist.jpg" alt="Minimalist Vitamin B5 10% Gel Moisturizer" class="product-img">
+                    </div>
+                    <div class="product-details">
+                        <h3 style="margin-top:0;">2. Minimalist Vitamin B5 10% Gel Moisturizer (Best Budget Gel)</h3>
+                        <p style="margin-bottom:0;">Zero oils or esters. Panthenol heals the skin barrier, while Zinc PCA regulates sebum production (reducing the yeast's food source). The active ingredients are 10% Panthenol (Pro-Vitamin B5), Zinc PCA, and Copper tripeptide. It is best for sensitive and irritated skin barriers.</p>
+                    </div>
+                </div>
 
-                <h3>3. Cipla Excela Max Hydrating Gel (Pharmacy Favorite)</h3>
-                <p>Excela is a dermatologist-favorite gel that hydrates dry and combination acne-prone skin without utilizing comedogenic esters. The active ingredients are Niacinamide, Zinc PCA, and Hyaluronic Acid. It is best for combination skin with lingering dark spots (PIH).</p>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="/assets/images/product_cipla_excela.webp" alt="Cipla Excela Max Hydrating Gel" class="product-img">
+                    </div>
+                    <div class="product-details">
+                        <h3 style="margin-top:0;">3. Cipla Excela Max Hydrating Gel (Pharmacy Favorite)</h3>
+                        <p style="margin-bottom:0;">Excela is a dermatologist-favorite gel that hydrates dry and combination acne-prone skin without utilizing comedogenic esters. The active ingredients are Niacinamide, Zinc PCA, and Hyaluronic Acid. It is best for combination skin with lingering dark spots (PIH).</p>
+                    </div>
+                </div>
 
-                <h3>4. Laneige Water Bank Blue Hyaluronic Gel (Premium Pick)</h3>
-                <p>Formulated as a cooling gel-cream that locks in moisture without using comedogenic triglycerides or yeast-feeding lipids. The active ingredients are Blue Hyaluronic Acid, Mint Leaf Extract, and forest yeast extract. It is best for dehydrated or dry skin types with fungal acne.</p>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="/assets/images/product_laneige_waterbank.avif" alt="Laneige Water Bank Blue Hyaluronic Gel" class="product-img">
+                    </div>
+                    <div class="product-details">
+                        <h3 style="margin-top:0;">4. Laneige Water Bank Blue Hyaluronic Gel (Premium Pick)</h3>
+                        <p style="margin-bottom:0;">Formulated as a cooling gel-cream that locks in moisture without using comedogenic triglycerides or yeast-feeding lipids. The active ingredients are Blue Hyaluronic Acid, Mint Leaf Extract, and forest yeast extract. It is best for dehydrated or dry skin types with fungal acne.</p>
+                    </div>
+                </div>
             </section>
 
             <!-- SECTION 3: CHECKER -->
