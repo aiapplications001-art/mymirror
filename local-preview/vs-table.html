@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Versus Table Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-brand: #EC610E;
+      --color-brand-light: #FFE1CE;
+      --color-bg-primary: #FFFFFF;
+      --color-bg-secondary: #F9F6F3;
+      --color-bg-tertiary: #F2EDE8;
+      --color-text-primary: #1A1410;
+      --color-text-secondary: #5C4A3A;
+      --color-text-tertiary: #9E8575;
+      --color-border: #E8DDD5;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--color-bg-secondary);
+      color: var(--color-text-primary);
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    /* ── PREMIUM COMPARISON TABLE ── */
+    .vs-table-container {
+      margin: 2.5rem 0;
+      border-radius: 16px;
+      border: 1px solid var(--color-border);
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    }
+
+    .vs-row {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .vs-row:last-child {
+      border-bottom: none;
+    }
+
+    .vs-cell {
+      padding: 18px 20px;
+      font-size: 15px;
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Header Styling */
+    .vs-header {
+      background: var(--color-bg-tertiary);
+      font-family: 'Kantumruy Pro', serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--color-text-primary);
+    }
+
+    /* Feature Column (Left) */
+    .vs-feature {
+      font-weight: 700;
+      color: var(--color-text-primary);
+      background: #fafafa;
+    }
+
+    /* Winner Column Highlight (Middle) */
+    .vs-winner {
+      background: #fff8f1; /* Soft brand tint */
+      border-left: 2px solid var(--color-brand);
+      border-right: 2px solid var(--color-brand);
+    }
+    .vs-header.vs-winner {
+      background: var(--color-brand);
+      color: #fff;
+      border: none;
+    }
+
+    /* Subtext Styling */
+    .vs-subtext {
+      font-size: 12px;
+      color: var(--color-text-tertiary);
+      margin-top: 4px;
+    }
+
+    /* ── MOBILE (UNDER 768px) ── */
+    @media (max-width: 768px) {
+      body { padding: 1rem; }
+      .vs-row {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      
+      /* Hide the desktop header row entirely on mobile */
+      .vs-row.vs-header-row {
+        display: none; 
+      }
+
+      /* The Feature becomes the Card Title */
+      .vs-feature {
+        background: var(--color-bg-tertiary);
+        padding: 12px 20px;
+        font-size: 1.1rem;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      /* Container for the two products side-by-side */
+      .vs-mobile-split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      /* Individual product cells */
+      .vs-cell.vs-product {
+        padding: 16px 20px;
+        text-align: center;
+        border-bottom: none;
+      }
+
+      /* Inject the column names via CSS for mobile */
+      .vs-cell.vs-product::before {
+        font-size: 11px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: var(--color-text-tertiary);
+        margin-bottom: 8px;
+        display: block;
+      }
+      
+      .vs-cell.vs-winner::before { content: "Adapalene (Winner)"; color: var(--color-brand); }
+      .vs-cell.vs-loser::before { content: "Tretinoin"; }
+
+      .vs-winner {
+        border-left: none;
+        border-right: 1px solid var(--color-border);
+        border-bottom: none;
+        background: #fff8f1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2 style="font-family: 'Kantumruy Pro', serif; color: var(--color-text-primary);">Vs Comparison: Adapalene vs Other Acne Treatments</h2>
+    <p style="color: var(--color-text-secondary); font-size: 15px;">Previewing the responsive layout. Resize your browser window to see how it converts from a desktop table to mobile side-by-side cards.</p>
+    
+    <div class="vs-table-container">
+      
+      <!-- Header Row -->
+      <div class="vs-row vs-header-row">
+        <div class="vs-cell vs-header">Feature</div>
+        <div class="vs-cell vs-header vs-winner">Adapalene</div>
+        <div class="vs-cell vs-header">Tretinoin</div>
+      </div>
+
+      <!-- Row 1 -->
+      <div class="vs-row">
+        <div class="vs-cell vs-feature">Irritation Potential</div>
+        <div class="vs-mobile-split">
+          <div class="vs-cell vs-product vs-winner"><strong>Lower</strong> 🟢</div>
+          <div class="vs-cell vs-product vs-loser">Higher 🔴</div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="vs-row">
+        <div class="vs-cell vs-feature">Stability</div>
+        <div class="vs-mobile-split">
+          <div class="vs-cell vs-product vs-winner">
+            <strong>More stable</strong>
+            <span class="vs-subtext">Won't degrade in sunlight</span>
+          </div>
+          <div class="vs-cell vs-product vs-loser">Less stable</div>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="vs-row">
+        <div class="vs-cell vs-feature">Beginner Friendly</div>
+        <div class="vs-mobile-split">
+          <div class="vs-cell vs-product vs-winner"><strong>Yes</strong> ✅</div>
+          <div class="vs-cell vs-product vs-loser">Moderate ⚠️</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
