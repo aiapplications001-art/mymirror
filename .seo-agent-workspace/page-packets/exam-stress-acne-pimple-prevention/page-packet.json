@@ -1,0 +1,96 @@
+{
+  "slug": "exam-stress-acne-pimple-prevention",
+  "title": "The Exam Week Pimple: Managing Stress Breakouts During Boards & Entrance Exams",
+  "meta_description": "Struggling with acne during Boards, JEE, or NEET? Learn the 2026 clinical strategy for exam stress breakouts. 3-minute study-break routine, anti-picking tips, and diet swaps.",
+  "canonical_url": "https://mymirror.in/acne/exam-stress-acne-pimple-prevention/",
+  "keywords": [
+    "exam stress acne india",
+    "how to stop stress pimples before boards",
+    "stress acne jawline forehead",
+    "JEE NEET stress breakouts",
+    "acne mechanica study habits",
+    "sleep deprivation acne students",
+    "ER stress skin filaggrin 2026",
+    "pimple patches for students india"
+  ],
+  "internal_links": [
+    {
+      "anchor": "Teenage Acne India Parents Guide",
+      "url": "/acne/teenage-acne-india-parents-guide/"
+    },
+    {
+      "anchor": "Sweat Acne School Sports India",
+      "url": "/acne/sweat-acne-school-sports-india/"
+    },
+    {
+      "anchor": "MyMirror Face Map",
+      "url": "/acne/face-map/"
+    }
+  ],
+  "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "The Exam Week Pimple: Managing Stress Breakouts During Boards & Entrance Exams",
+        "description": "A comprehensive clinical and lifestyle guide for Indian students managing acne breakouts during high-stakes exam seasons like Boards, JEE, and NEET.",
+        "author": {
+          "@type": "Organization",
+          "name": "MyMirror Editorial Team"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "MyMirror",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mymirror.in/logo.png"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mymirror.in/acne/exam-stress-acne-pimple-prevention/"
+        },
+        "image": "https://mymirror.in/static/og/exam-stress-acne-india.jpg",
+        "datePublished": "2026-03-05",
+        "dateModified": "2026-03-05"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Will my stress acne go away immediately after exams?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually, yes. Once the cortisol levels drop and your stress stabilizes, your oil production returns to normal. However, Post-Inflammatory Hyperpigmentation (PIH) or scarring from nervous picking can last much longer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I flatten a pimple overnight before a viva or practical?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The fastest way is using a Salicylic Acid spot treatment combined with a micro-dart pimple patch. Avoid home remedies like toothpaste, which can cause chemical burns."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does my skin feel oily but dry during exam season?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This is often due to 'ER Stress' from sleep deprivation, which weakens the skin barrier. Your skin produces excess oil to compensate for the lack of moisture, leading to a 'leaky' and irritated barrier."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "og_metadata": {
+    "og:title": "The Exam Week Pimple: Surviving Boards & NEET Breakouts",
+    "og:description": "Don't let a breakout distract you from your rank. Learn the 3-minute study-break skincare routine and why you should swap Maggi for Makhana.",
+    "og:image": "https://mymirror.in/static/og/exam-stress-acne-india.jpg",
+    "og:type": "article",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://mymirror.in/static/og/exam-stress-acne-india.jpg"
+  }
+}
