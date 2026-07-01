@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "audience-definition.v2",
+  "status": "passed",
+  "targetCohort": "Indian adults experiencing stubborn breakouts resistant to topical creams.",
+  "awarenessStage": "solution_seeking",
+  "readerTakeaway": "Understand how internal markers affect skin healing and sebum thickness, and check diagnostic levels.",
+  "objections": [
+    "Worries about testing costs in India",
+    "Confused between normal lab ranges and optimal range for skin"
+  ],
+  "ctaConnection": "Take a free AI skin scan to analyze active skin signals and get a customized dermatology guide.",
+  "judgmentChecks": {
+    "passed": true
+  }
+}

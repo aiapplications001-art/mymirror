@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "social-video-research.v2",
+  "status": "passed",
+  "assets": [
+    {
+      "id": "video-1",
+      "accessStatus": "reviewed"
+    },
+    {
+      "id": "video-2",
+      "accessStatus": "reviewed"
+    },
+    {
+      "id": "video-3",
+      "accessStatus": "reviewed"
+    },
+    {
+      "id": "video-4",
+      "accessStatus": "reviewed"
+    },
+    {
+      "id": "video-5",
+      "accessStatus": "reviewed"
+    },
+    {
+      "id": "video-6",
+      "accessStatus": "reviewed"
+    },
+    {
+      "id": "video-7",
+      "accessStatus": "reviewed"
+    }
+  ],
+  "insights": [
+    "Many users report that resolving internal deficiencies leads to faster skin healing and fewer cystic recurrences."
+  ],
+  "confidence": "high",
+  "judgmentChecks": {
+    "passed": true
+  }
+}
