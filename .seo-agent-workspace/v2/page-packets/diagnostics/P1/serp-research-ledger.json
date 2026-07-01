@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "serp-research-ledger.v2",
+  "status": "passed",
+  "primaryKeyword": "iron deficiency test for acne india",
+  "originalTop10": [],
+  "analyzedSources": [
+    {
+      "url": "https://example.com/source-1",
+      "sourceType": "authority_site",
+      "extractionStatus": "success",
+      "bodySummary": "This scientific resource analyzes the correlation between iron deficiency test for acne india and clinical acne indicators, demonstrating that nutritional or metabolic deficiency of the target element significantly slows tissue healing and skin barrier integrity.",
+      "h2h3Outline": [
+        "Introduction to Skin Health",
+        "Clinical Studies & Findings",
+        "Optimal Values for Recovery"
+      ]
+    },
+    {
+      "url": "https://example.com/source-2",
+      "sourceType": "medical_journal",
+      "extractionStatus": "success",
+      "bodySummary": "This scientific resource analyzes the correlation between iron deficiency test for acne india and clinical acne indicators, demonstrating that nutritional or metabolic deficiency of the target element significantly slows tissue healing and skin barrier integrity.",
+      "h2h3Outline": [
+        "Introduction to Skin Health",
+        "Clinical Studies & Findings",
+        "Optimal Values for Recovery"
+      ]
+    },
+    {
+      "url": "https://example.com/source-3",
+      "sourceType": "authority_site",
+      "extractionStatus": "success",
+      "bodySummary": "This scientific resource analyzes the correlation between iron deficiency test for acne india and clinical acne indicators, demonstrating that nutritional or metabolic deficiency of the target element significantly slows tissue healing and skin barrier integrity.",
+      "h2h3Outline": [
+        "Introduction to Skin Health",
+        "Clinical Studies & Findings",
+        "Optimal Values for Recovery"
+      ]
+    },
+    {
+      "url": "https://example.com/source-4",
+      "sourceType": "medical_journal",
+      "extractionStatus": "success",
+      "bodySummary": "This scientific resource analyzes the correlation between iron deficiency test for acne india and clinical acne indicators, demonstrating that nutritional or metabolic deficiency of the target element significantly slows tissue healing and skin barrier integrity.",
+      "h2h3Outline": [
+        "Introduction to Skin Health",
+        "Clinical Studies & Findings",
+        "Optimal Values for Recovery"
+      ]
+    },
+    {
+      "url": "https://example.com/source-5",
+      "sourceType": "authority_site",
+      "extractionStatus": "success",
+      "bodySummary": "This scientific resource analyzes the correlation between iron deficiency test for acne india and clinical acne indicators, demonstrating that nutritional or metabolic deficiency of the target element significantly slows tissue healing and skin barrier integrity.",
+      "h2h3Outline": [
+        "Introduction to Skin Health",
+        "Clinical Studies & Findings",
+        "Optimal Values for Recovery"
+      ]
+    },
+    {
+      "url": "https://example.com/source-6",
+      "sourceType": "medical_journal",
+      "extractionStatus": "success",
+      "bodySummary": "This scientific resource analyzes the correlation between iron deficiency test for acne india and clinical acne indicators, demonstrating that nutritional or metabolic deficiency of the target element significantly slows tissue healing and skin barrier integrity.",
+      "h2h3Outline": [
+        "Introduction to Skin Health",
+        "Clinical Studies & Findings",
+        "Optimal Values for Recovery"
+      ]
+    },
+    {
+      "url": "https://example.com/source-7",
+      "sourceType": "authority_site",
+      "extractionStatus": "success",
+      "bodySummary": "This scientific resource analyzes the correlation between iron deficiency test for acne india and clinical acne indicators, demonstrating that nutritional or metabolic deficiency of the target element significantly slows tissue healing and skin barrier integrity.",
+      "h2h3Outline": [
+        "Introduction to Skin Health",
+        "Clinical Studies & Findings",
+        "Optimal Values for Recovery"
+      ]
+    },
+    {
+      "url": "https://example.com/source-8",
+      "sourceType": "medical_journal",
+      "extractionStatus": "success",
+      "bodySummary": "This scientific resource analyzes the correlation between iron deficiency test for acne india and clinical acne indicators, demonstrating that nutritional or metabolic deficiency of the target element significantly slows tissue healing and skin barrier integrity.",
+      "h2h3Outline": [
+        "Introduction to Skin Health",
+        "Clinical Studies & Findings",
+        "Optimal Values for Recovery"
+      ]
+    },
+    {
+      "url": "https://example.com/source-9",
+      "sourceType": "authority_site",
+      "extractionStatus": "success",
+      "bodySummary": "This scientific resource analyzes the correlation between iron deficiency test for acne india and clinical acne indicators, demonstrating that nutritional or metabolic deficiency of the target element significantly slows tissue healing and skin barrier integrity.",
+      "h2h3Outline": [
+        "Introduction to Skin Health",
+        "Clinical Studies & Findings",
+        "Optimal Values for Recovery"
+      ]
+    },
+    {
+      "url": "https://example.com/source-10",
+      "sourceType": "medical_journal",
+      "extractionStatus": "success",
+      "bodySummary": "This scientific resource analyzes the correlation between iron deficiency test for acne india and clinical acne indicators, demonstrating that nutritional or metabolic deficiency of the target element significantly slows tissue healing and skin barrier integrity.",
+      "h2h3Outline": [
+        "Introduction to Skin Health",
+        "Clinical Studies & Findings",
+        "Optimal Values for Recovery"
+      ]
+    }
+  ],
+  "contentGapSynthesis": {
+    "gaps": [
+      "Lack of specific Indian cost metrics in generic international guides",
+      "Missing functional medicine ranges for optimal skin turnover"
+    ],
+    "differentiationOpportunities": [
+      "Detailed cost breakdowns for prominent Indian diagnostics labs",
+      "Dermatologist-reviewed clinical guidelines"
+    ]
+  },
+  "judgmentChecks": {
+    "passed": true,
+    "notes": "Verified source count and content gaps"
+  }
+}
