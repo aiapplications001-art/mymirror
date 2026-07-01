@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "citation-set.v2",
+  "status": "passed",
+  "claims": [
+    {
+      "claim": "Nutritional and hormonal factors affect sebum production and skin cell regeneration.",
+      "strength": "high",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/22382491/"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22382491/",
+      "title": "Nutrition and skin acne connection",
+      "strength": "high"
+    }
+  ],
+  "judgmentChecks": {
+    "passed": true
+  }
+}
