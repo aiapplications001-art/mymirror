@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "human-editorial-brief.v2",
+  "status": "passed",
+  "voiceModel": "category_manager_with_editorial_empathy",
+  "visibility": {
+    "default": "internal_only",
+    "editorVisibleSummary": "editorial_qa_report",
+    "debugBundle": "include_artifact_path_and_summary"
+  },
+  "depthStrategy": {
+    "pageType": "guide_blog",
+    "depth": "full",
+    "framework": "five_w_plus_causal_chain",
+    "lengthBehavior": "auto_expand_when_useful",
+    "requiredAngles": [
+      "what",
+      "why",
+      "how",
+      "who",
+      "when",
+      "where",
+      "types",
+      "mistakes",
+      "next step"
+    ]
+  },
+  "readerTension": {
+    "whatReaderIsConfusedAbout": "Normal reference ranges versus optimal ranges for clear skin.",
+    "whatReaderIsAnxiousAbout": "Acne worsening and leaving permanent scars.",
+    "decisionReaderNeedsToMake": "Should I get a blood test done to check internal levels?"
+  },
+  "categoryManagerPov": {
+    "whatToChoose": "Targeted mineral and vitamin supplements based on diagnosed blood markers.",
+    "whatToAvoid": "High-dose self-supplementation without a baseline test.",
+    "whereBuyersGoWrong": "Buying expensive topical serums when the trigger is internal.",
+    "whatTheBrandBelieves": "Root-cause diagnostics are essential for long-term clear skin.",
+    "tradeoffsThatMatter": [
+      "Supplements take time to show results",
+      "Accurate testing requires overnight fasting"
+    ]
+  },
+  "exampleRequirement": {
+    "minimumExamplesPerPage": 2,
+    "priority": [
+      "category_context",
+      "india_context_when_relevant"
+    ],
+    "plannedExamples": [
+      {
+        "name": "Indian metabolic / lab testing case",
+        "description": "How testing ferritin or zinc levels helps guide acne treatments."
+      },
+      {
+        "name": "Tata 1mg or local Indian lab pricing example",
+        "description": "Standard costs of checking blood markers at home."
+      }
+    ]
+  },
+  "humanDevices": {
+    "decisionFramework": {
+      "required": true,
+      "askUserOnce": true,
+      "selectedFormat": "comparison_table",
+      "recommendedFormats": [
+        "comparison_table"
+      ]
+    },
+    "commonMistakes": {
+      "required": true,
+      "standaloneSectionDefault": false,
+      "placement": "blended_into_relevant_sections",
+      "mistakesToCover": [
+        "Self-supplementing with high-dose B12 or zinc without a diagnostic baseline.",
+        "Using harsh exfoliators on dry skin."
+      ]
+    },
+    "notRightForYou": {
+      "required": false,
+      "conditions": [
+        "Mild, temporary breakouts that clear with basic skincare."
+      ]
+    },
+    "brandPov": {
+      "mode": "clear_not_salesy",
+      "firstPerson": "occasional",
+      "statement": "We believe diagnosing internal signals is critical to ending skincare frustration."
+    },
+    "readerQuestions": "natural_when_useful",
+    "analogies": "use_when_useful",
+    "decisionTrees": "preferred",
+    "microSummaries": "after_complex_explanations",
+    "simpleWordsExplainer": "only_when_necessary",
+    "finalClosingBeforeCta": {
+      "required": true,
+      "plannedClosing": "Restoring internal balance is the first step toward external clarity."
+    }
+  },
+  "qaSummary": {
+    "includeInEditorialQaReport": true,
+    "fields": [
+      "voice model",
+      "depth level",
+      "examples count"
+    ]
+  }
+}
