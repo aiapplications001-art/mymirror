@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "claim-first-section-plan.v2",
+  "sections": [
+    {
+      "sectionId": "S1_hero",
+      "sectionClaim": "Internal blood markers directly impact skin barrier function and oil thickness.",
+      "readerQuestion": "Why do my breakouts refuse to heal?",
+      "evidenceNeeded": "Correlation between blood markers (ferritin/zinc) and cellular turnover.",
+      "exampleOrTradeoff": "How low iron levels prolong post-pimple red marks.",
+      "decisionPurpose": "Help the reader realize that topicals alone are not enough.",
+      "transitionPurpose": "Move into detail on hormone conversion."
+    }
+  ]
+}

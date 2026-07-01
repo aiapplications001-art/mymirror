@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "narrative-brief.v2",
+  "status": "passed",
+  "primaryStyle": "compact_professional",
+  "openingAngle": "Clinical yet empathetic connection highlighting the frustration of breakouts.",
+  "brandPov": "Scientific skincare with a focus on internal wellness and root-cause solutions.",
+  "pagePromise": "Deliver clear, actionable guidance on diagnostic markers and testing costs in India.",
+  "sectionDirections": [
+    {
+      "sectionId": "S1_hero",
+      "direction": "Scientific introduction explaining the connection to skin."
+    }
+  ],
+  "judgmentChecks": {
+    "passed": true
+  }
+}
