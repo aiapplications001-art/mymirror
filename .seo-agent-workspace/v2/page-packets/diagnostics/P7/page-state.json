@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "page-state.v2",
+  "status": "in_progress",
+  "clusterSlug": "diagnostics",
+  "pageId": "P7",
+  "pageType": "guide_blog",
+  "gates": {
+    "serpResearch": {
+      "status": "missing",
+      "machineChecksPassed": false,
+      "judgmentChecksPassed": false,
+      "blockingIssues": [
+        "Artifact has not been completed."
+      ],
+      "advisoryIssues": []
+    },
+    "socialVideoResearch": {
+      "status": "missing",
+      "machineChecksPassed": false,
+      "judgmentChecksPassed": false,
+      "blockingIssues": [
+        "Artifact has not been completed."
+      ],
+      "advisoryIssues": []
+    },
+    "audienceDefinition": {
+      "status": "missing",
+      "machineChecksPassed": false,
+      "judgmentChecksPassed": false,
+      "blockingIssues": [
+        "Artifact has not been completed."
+      ],
+      "advisoryIssues": []
+    },
+    "narrativeBrief": {
+      "status": "missing",
+      "machineChecksPassed": false,
+      "judgmentChecksPassed": false,
+      "blockingIssues": [
+        "Artifact has not been completed."
+      ],
+      "advisoryIssues": []
+    },
+    "citationSet": {
+      "status": "missing",
+      "machineChecksPassed": false,
+      "judgmentChecksPassed": false,
+      "blockingIssues": [
+        "Artifact has not been completed."
+      ],
+      "advisoryIssues": []
+    }
+  },
+  "repairAttempts": {
+    "automatic": 0,
+    "manual": 0,
+    "maxAutomatic": 1,
+    "maxManualWithoutUpstreamRevision": 1
+  },
+  "content": {
+    "packetGenerated": false,
+    "qaReportGenerated": false
+  },
+  "images": {
+    "manifestGenerated": false,
+    "requiredSlotsComplete": false
+  },
+  "publishReady": false,
+  "nextRecommendedAction": "Complete the SERP research ledger.",
+  "updatedAt": "2026-07-01T16:00:09.522Z"
+}
