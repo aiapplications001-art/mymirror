@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "claim-first-section-plan.v2",
+  "sections": [
+    {
+      "sectionId": "S1_hero",
+      "sectionClaim": "Body skin requires stronger exfoliating agents and targeted protocols than facial skin.",
+      "readerQuestion": "Why do regular body washes fail to clear my breakouts?",
+      "evidenceNeeded": "Correlation between sweat, tight clothing, folliculitis, and bacterial proliferation.",
+      "exampleOrTradeoff": "How synthetic fabrics worsen friction-induced bumps.",
+      "decisionPurpose": "Help the reader select an active clinical treatment.",
+      "transitionPurpose": "Move into detail on specific clinical active ingredients."
+    }
+  ]
+}
