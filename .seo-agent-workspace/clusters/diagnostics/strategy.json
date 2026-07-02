@@ -1,0 +1,181 @@
+{
+  "companyName": "MyMirror",
+  "market": "India",
+  "category": {
+    "name": "Diagnostics",
+    "slug": "diagnostics"
+  },
+  "sourceMetadata": {
+    "urlsConsidered": 96,
+    "urlsMatched": 6,
+    "seedKeywords": [
+      "acne blood test",
+      "hormonal acne test",
+      "vitamin deficiency acne",
+      "thyroid acne",
+      "stress cortisol acne",
+      "gut skin axis panel"
+    ]
+  },
+  "existingUrlCandidates": [
+    {
+      "url": "https://mymirror.fit/acne/food-intolerance-test-for-acne-india/",
+      "pageType": "faq_support",
+      "title": "The Gut-Skin Axis Panel: SIBO, H. Pylori & Food Sensitivity (India 2026)",
+      "h1": "The Gut-Skin Axis Panel: SIBO, H. Pylori & Food Sensitivity",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/hormonal-acne-blood-tests/",
+      "pageType": "faq_support",
+      "title": "Hormonal Acne Blood Tests: PCOS & Androgen Diagnostic Panel",
+      "h1": "Hormonal Acne Blood Tests: PCOS & Androgen Panel",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/thyroid-test-for-acne-india/",
+      "pageType": "faq_support",
+      "title": "The Thyroid & Acne Connection: TSH, Free T3 & Free T4 (India 2026)",
+      "h1": "The Thyroid & Acne Connection: TSH, Free T3 & Free T4",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/vitamin-deficiency-acne-tests-india/",
+      "pageType": "faq_support",
+      "title": "Vitamin Deficiency and Acne: The Inside-Out Diagnostic Panel (India 2026)",
+      "h1": "Vitamin Deficiency & Acne: The Inside-Out Diagnostic Panel",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/stress-hormone-test-for-acne-india/",
+      "pageType": "faq_support",
+      "title": "Stress Hormones & Cortisol Acne: The Adrenal Diagnostic Panel (India 2026)",
+      "h1": "Stress Hormones & Cortisol Acne: The Adrenal Diagnostic Panel",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    }
+  ],
+  "pageOpportunities": [
+    {
+      "id": "P1",
+      "title": "Iron Deficiency & Acne: Ferritin & Serum Iron Panel",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Explain how iron deficiency slows down skin healing, degrades collagen synthesis, and triggers persistent breakouts.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "iron-deficiency-test-for-acne-india",
+      "evidenceStrength": "medium"
+    },
+    {
+      "id": "P2",
+      "title": "Zinc Deficiency & Acne: The Sebum Regulation Marker",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Explain the role of zinc in controlling skin inflammation and regulating sebaceous gland activity.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "zinc-test-for-acne-india",
+      "evidenceStrength": "medium"
+    },
+    {
+      "id": "P3",
+      "title": "Heavy Metal Toxicity & Acne: Environmental Skin Triggers",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Detail how arsenic, lead, and mercury toxicity from pollution and water damages the skin barrier.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "heavy-metal-test-for-acne-india",
+      "evidenceStrength": "medium"
+    },
+    {
+      "id": "P4",
+      "title": "Insulin Resistance & Acne: HbA1c & Fasting Insulin Connection",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Detail the metabolic link between blood sugar spikes, insulin resistance, sebum production, and cystic breakouts.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "insulin-resistance-test-for-acne-india",
+      "evidenceStrength": "medium"
+    },
+    {
+      "id": "P5",
+      "title": "Systemic Inflammation & Acne: hs-CRP & ESR Testing",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Explain how systemic inflammatory markers correlate to painful nodulocystic acne.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "inflammatory-markers-test-for-acne-india",
+      "evidenceStrength": "medium"
+    },
+    {
+      "id": "P6",
+      "title": "Liver Function & Acne: SGOT, SGPT & Detoxification Pathways",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Detail how liver health and enzyme levels affect lipid composition and acne severity.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "liver-function-test-for-acne-india",
+      "evidenceStrength": "medium"
+    },
+    {
+      "id": "P7",
+      "title": "Lipid Profile & Acne: Cholesterol & Triglyceride Analysis",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Analyze how serum lipids and cholesterol levels impact sebum composition and follicle blockages.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "lipid-profile-test-for-acne-india",
+      "evidenceStrength": "medium"
+    },
+    {
+      "id": "P8",
+      "title": "Progesterone-Estrogen Ratio & Acne: Premenstrual Flares",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Track how estrogen and progesterone ratios drive cyclical breakouts.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "progesterone-estrogen-test-for-acne-india",
+      "evidenceStrength": "medium"
+    },
+    {
+      "id": "P9",
+      "title": "Stool PCR & Gut Dysbiosis: Deep Gut-Skin Axis Analysis",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Explain how stool PCR testing and microbiome composition connect to chronic skin conditions.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "gut-microbiome-test-for-acne-india",
+      "evidenceStrength": "medium"
+    },
+    {
+      "id": "P10",
+      "title": "Vitamin B12 Induced Acne: The Paradoxical Trigger",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Detail how high doses of Vitamin B12 alter skin bacteria and trigger sudden acne.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "vitamin-b12-acne-test-india",
+      "evidenceStrength": "medium"
+    }
+  ],
+  "internalLinkSuggestions": [],
+  "qualityScore": {
+    "score": 85,
+    "advisoryOnly": true,
+    "topIssues": []
+  },
+  "assumptions": [
+    {
+      "statement": "Diagnostics has enough site-inventory evidence to draft a cluster strategy.",
+      "evidenceStrength": "high",
+      "source": "metadata"
+    }
+  ],
+  "nextPageSelection": {
+    "instruction": "User should select P1 to generate next.",
+    "recommendedPageId": "P1"
+  }
+}

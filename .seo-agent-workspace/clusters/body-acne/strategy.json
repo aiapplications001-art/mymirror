@@ -1,0 +1,102 @@
+{
+  "companyName": "MyMirror",
+  "market": "India",
+  "category": {
+    "name": "body-acne",
+    "slug": "body-acne"
+  },
+  "sourceMetadata": {
+    "urlsConsidered": 96,
+    "urlsMatched": 12,
+    "seedKeywords": []
+  },
+  "existingUrlCandidates": [
+    {
+      "url": "https://mymirror.fit/acne/body-acne-india-bacne-chestne-guide/",
+      "pageType": "faq_support",
+      "title": "Body Acne in India: 2026 Guide to Clearing Bacne & Chestne | MyMirror",
+      "h1": "Body Acne in India: The Ultimate Guide to Clearing Bacne & Chestne (2026)",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    }
+  ],
+  "pageOpportunities": [
+    {
+      "id": "P1",
+      "title": "Chest Acne Treatment & Prevention: Clearing Chest Breakouts",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Explain chest acne triggers like sweat friction and occlusive clothing, and provide clinical remedies.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "chest-acne-treatment-india",
+      "evidenceStrength": "medium"
+    },
+    {
+      "id": "P2",
+      "title": "Butt Acne & Folliculitis Cures: Clearing buttocks pimples",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Explain buttocks bumps/folliculitis causes such as sweat friction and tight clothing, and provide clinical remedies.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "butt-acne-treatment-india",
+      "evidenceStrength": "medium"
+    },
+    {
+      "id": "P3",
+      "title": "Back Acne Scars & Marks: Fading Body Dark Spots (PIH)",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Provide guidance on fading post-acne dark marks (PIH) on thick body skin using exfoliating sprays and creams.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "back-acne-scars-treatment-india",
+      "evidenceStrength": "medium"
+    },
+    {
+      "id": "P4",
+      "title": "Salicylic Acid Body Lotions: Clearing Rough & Bumpy Skin",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Explain the role of BHA body lotions in hydrating and exfoliating rough, bumpy body skin to prevent breakouts.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "acne-body-lotion-salicylic-acid-india",
+      "evidenceStrength": "medium"
+    },
+    {
+      "id": "P5",
+      "title": "Post-Workout Acne Prevention: The Complete Gym Shower Protocol",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Detail sweat/gym breakouts prevention protocol to stop Malassezia and bacterial folliculitis.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "post-workout-acne-prevention-india",
+      "evidenceStrength": "medium"
+    },
+    {
+      "id": "P6",
+      "title": "Hormonal Body Acne: Understanding Internal Triggers & Solutions",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Detail the hormonal triggers of back and chest acne and clinical systemic remedies like Spironolactone.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "hormonal-body-acne-treatment-india",
+      "evidenceStrength": "medium"
+    }
+  ],
+  "internalLinkSuggestions": [],
+  "qualityScore": {
+    "score": 85,
+    "advisoryOnly": true,
+    "topIssues": []
+  },
+  "assumptions": [
+    {
+      "statement": "Body-acne has enough site-inventory evidence to draft a cluster strategy.",
+      "evidenceStrength": "high",
+      "source": "metadata"
+    }
+  ],
+  "nextPageSelection": {
+    "instruction": "User should select P1 to generate next.",
+    "recommendedPageId": "P1"
+  }
+}

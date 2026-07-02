@@ -1,0 +1,191 @@
+{
+  "companyName": "MyMirror",
+  "market": "India",
+  "category": {
+    "name": "Diagnostics",
+    "slug": "diagnostics"
+  },
+  "selectedPage": {
+    "id": "P3",
+    "title": "Heavy Metal Toxicity & Acne: Environmental Skin Triggers",
+    "pageType": "guide_blog",
+    "strategyCategory": "low_competition",
+    "targetIntent": "Detail how arsenic, lead, and mercury toxicity from pollution and water damages the skin barrier.",
+    "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+    "suggestedUrlSlug": "heavy-metal-test-for-acne-india",
+    "evidenceStrength": "medium"
+  },
+  "audience": {
+    "cohort": "Indian adults experiencing breakouts",
+    "market": "India"
+  },
+  "tone": {
+    "selected": "category-manager-with-editorial-empathy",
+    "requiresUserSelection": false,
+    "options": [
+      "story-led explainer",
+      "professional compact",
+      "empathetic educational"
+    ]
+  },
+  "keywords": {
+    "primary": "heavy metal test for acne india",
+    "secondary": [
+      "heavy metal toxicity acne breakouts",
+      "arsenic lead mercury skin damage",
+      "heavy metal test price india",
+      "oxidized squalene clogged pores"
+    ],
+    "clusterSeeds": [
+      "acne blood test",
+      "hormonal acne test",
+      "vitamin deficiency acne",
+      "thyroid acne",
+      "stress cortisol acne",
+      "gut skin axis panel"
+    ]
+  },
+  "contentDepth": {
+    "targetRange": "1500-2200 words",
+    "strict": false
+  },
+  "cta": {
+    "primaryGoal": "Route readers to start MyMirror AI face scan.",
+    "firstFoldRequired": true,
+    "mobileSticky": {
+      "recommended": true,
+      "shortenedLabelRequired": true
+    }
+  },
+  "pageStructure": {
+    "h1Rule": "exactly_one",
+    "sections": [
+      {
+        "id": "S1_hero",
+        "purpose": "First-fold answer, H1, primary CTA, and surrounding CTA microcopy.",
+        "contentRole": "conversion",
+        "notes": "Primary actionable must be visible in the first fold on desktop and mobile."
+      },
+      {
+        "id": "S2_quick_answer",
+        "purpose": "Short answer optimized for humans and AI overview style retrieval.",
+        "contentRole": "seo",
+        "notes": "Answer the page intent directly before expanding details."
+      },
+      {
+        "id": "S3_context",
+        "purpose": "Explain the problem, audience context, and why the page exists.",
+        "contentRole": "ux",
+        "notes": "Keep this aligned to the selected audience cohort."
+      },
+      {
+        "id": "S4_main_content",
+        "purpose": "Main educational or category explanation.",
+        "contentRole": "seo",
+        "notes": "State the user problem, page promise, and primary CTA in the first fold."
+      },
+      {
+        "id": "S5_decision_support",
+        "purpose": "Comparison table, decision criteria, checklist, or user path.",
+        "contentRole": "ux",
+        "notes": "Use qualitative labels by default."
+      },
+      {
+        "id": "S6_product_or_solution_block",
+        "purpose": "Connect the user's problem to the relevant internal destination.",
+        "contentRole": "conversion",
+        "notes": "Preserve the recommended CTA destination unless the editor changes it."
+      },
+      {
+        "id": "S7_trust_proof",
+        "purpose": "Author, reviewer, methodology, experience, proof, and brand trust signals.",
+        "contentRole": "trust",
+        "notes": "Include authored-by visibility and page creation or update date."
+      },
+      {
+        "id": "S8_faq",
+        "purpose": "Answer likely questions and support FAQ JSON-LD only when FAQ content exists.",
+        "contentRole": "seo",
+        "notes": "Include FAQ schema draft when this section is present."
+      },
+      {
+        "id": "S9_final_cta",
+        "purpose": "Final primary CTA and conversion-oriented closing copy.",
+        "contentRole": "conversion",
+        "notes": "Use one primary CTA variant in V1."
+      },
+      {
+        "id": "S10_references",
+        "purpose": "Reference URLs and source metadata used for page claims.",
+        "contentRole": "reference",
+        "notes": "Only URL/source metadata belongs here."
+      }
+    ]
+  },
+  "referenceRequirements": {
+    "liveSerpReviewRequired": true,
+    "quoteReferenceUrlsRequired": true,
+    "externalLinksOpenInNewTab": true,
+    "notes": [
+      "Review top live search results before finalizing page structure.",
+      "Use cited source URLs for claims and reference notes.",
+      "Do not copy competitor wording."
+    ]
+  },
+  "imageRequirements": {
+    "defaultGeneratedImageCount": "3-5",
+    "ogImageRequired": true,
+    "brandGuidelineRequired": true,
+    "notes": [
+      "Generate top 3-5 high-impact in-page images when possible.",
+      "Include a separate OG image asset.",
+      "Use image briefs only when generation is unavailable or time-bounded by the user."
+    ]
+  },
+  "approvalQueues": {
+    "structure": [
+      {
+        "item": "Selected section order",
+        "reason": "Standard V1 section order is proposed before full copy is drafted.",
+        "risk": "low"
+      }
+    ],
+    "content": [
+      {
+        "item": "Tone and content depth",
+        "reason": "The user should choose tone per page and content depth is treated as a target range.",
+        "risk": "medium"
+      }
+    ],
+    "images": [
+      {
+        "item": "Brand-led generated images",
+        "reason": "Images should follow brand guidelines and include logo/brand signals only when appropriate.",
+        "risk": "medium"
+      }
+    ],
+    "critical": []
+  },
+  "evidenceNotes": [
+    {
+      "pointer": "Selected page P3 came from cluster opportunity low_competition.",
+      "evidenceStrength": "medium",
+      "source": "cluster_strategy"
+    },
+    {
+      "pointer": "Audience cohort supplied: Indian adults experiencing breakouts.",
+      "evidenceStrength": "high",
+      "source": "user_input"
+    },
+    {
+      "pointer": "Cluster quality score at strategy time was 85/100.",
+      "evidenceStrength": "medium",
+      "source": "cluster_strategy"
+    }
+  ],
+  "machineMetadata": {
+    "schemaVersion": "prewriting-strategy.v1",
+    "generatedFrom": "cluster-strategy.v1",
+    "selectedPageId": "P3"
+  }
+}

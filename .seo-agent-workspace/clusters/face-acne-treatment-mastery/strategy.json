@@ -1,0 +1,30 @@
+{
+  "companyName": "MyMirror",
+  "market": "India",
+  "category": {
+    "name": "Face Acne Treatment Mastery",
+    "slug": "face-acne-treatment-mastery"
+  },
+  "pageOpportunities": [
+    {
+      "id": "P1",
+      "title": "Double Cleansing for Oily Acne-Prone Skin: The Commuter & Summer Guide",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Explain double cleansing for oily/acne-prone skin to remove waterproof sunscreen/makeup in Indian humidity without clogging pores.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "double-cleansing-oily-acne-skin-india",
+      "evidenceStrength": "high"
+    },
+    {
+      "id": "P2",
+      "title": "Benzoyl Peroxide Short Contact Therapy: Stop Irritation & Purging",
+      "pageType": "guide_blog",
+      "strategyCategory": "low_competition",
+      "targetIntent": "Explain the Short Contact Therapy (SCT) protocol for Benzoyl Peroxide to treat inflamed acne without dry peeling.",
+      "primaryCtaGoal": "Route readers to start MyMirror AI face scan.",
+      "suggestedUrlSlug": "benzoyl-peroxide-short-contact-therapy-guide",
+      "evidenceStrength": "high"
+    }
+  ]
+}
