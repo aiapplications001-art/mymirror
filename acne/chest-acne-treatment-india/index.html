@@ -496,6 +496,64 @@
                 display: none !important;
             }
         }
+
+        /* Product Showcase Grid Style */
+        .product-showcase {
+            display: flex;
+            gap: 20px;
+            margin: 1.5rem 0;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            flex: 1;
+            min-width: 180px;
+            max-width: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            transition: all 0.3s ease;
+        }
+        @media (max-width: 480px) {
+            .product-card {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            border-color: var(--brand);
+        }
+        .product-card img {
+            height: 180px;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            margin-bottom: 12px;
+            mix-blend-mode: multiply;
+        }
+        .product-card a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text);
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+        .product-card a:hover {
+            color: var(--brand);
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -616,7 +674,26 @@
                 <h3>OTC & Clinical Pharmacy Solutions in India</h3>
                 <p>Indian dermatologists frequently recommend specific pharmacy formulations for target chest acne concerns. These can be purchased over-the-counter or via digital healthcare platforms:</p>
                 <ul>
-                    <li><strong>Medicated Cleanser:</strong> <i>Fixderma Salyzap Body Wash</i> or <i>Be Bodywise 2% Salicylic Body Wash</i> for daily oil-dissolving exfoliation. If dealing with pustules, use a 4% Benzoyl Peroxide wash or <i>Pero Bar Soap</i>.</li>
+                    <li>
+                        <strong>Medicated Cleanser:</strong> 
+                        <a href="https://www.fixderma.com/products/salyzap-salicylic-acid-body-wash-for-acne?srsltid=AfmBOoqwPTVTZbEHYtzUJXNP5GnHmsm380GjZngvklzwbrdjCJi1Ps7H" target="_blank" rel="noopener">Fixderma Salyzap Body Wash</a> or 
+                        <a href="https://bebodywise.com/product/1-salicylic-acid-body-wash" target="_blank" rel="noopener">Be Bodywise 1% Salicylic Acid Body Wash</a> for daily oil-dissolving exfoliation. If dealing with pustules, use a 4% Benzoyl Peroxide wash or <i>Pero Bar Soap</i>.
+                        
+                        <div class="product-showcase">
+                            <div class="product-card">
+                                <a href="https://www.fixderma.com/products/salyzap-salicylic-acid-body-wash-for-acne?srsltid=AfmBOoqwPTVTZbEHYtzUJXNP5GnHmsm380GjZngvklzwbrdjCJi1Ps7H" target="_blank" rel="noopener">
+                                    <img src="/assets/images/fixderma-salyzap-wash.jpg" alt="Fixderma Salyzap Body Wash">
+                                    <span>Fixderma Salyzap Wash &rarr;</span>
+                                </a>
+                            </div>
+                            <div class="product-card">
+                                <a href="https://bebodywise.com/product/1-salicylic-acid-body-wash" target="_blank" rel="noopener">
+                                    <img src="/assets/images/bodywise-salicylic-wash.jpg" alt="Be Bodywise 1% Salicylic Acid Body Wash">
+                                    <span>Be Bodywise 1% SA Wash &rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
                     <li><strong>The 3-Minute Contact Rule:</strong> Medicated body washes need time to penetrate the thicker skin of the chest. Lather the product over the area, leave it on for <strong>3 minutes</strong> while showering, and then rinse thoroughly.</li>
                     <li><strong>Spot & Mark Treatments:</strong> Apply <i>Aziderm 10% Gel</i> (Azelaic Acid) to fade dark post-inflammatory marks (PIH) safely on Indian skin tones. For stubborn acne, <i>Deriva-CMS Gel</i> (Adapalene + Clindamycin) can be used under medical guidance.</li>
                 </ul>
