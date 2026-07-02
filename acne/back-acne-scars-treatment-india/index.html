@@ -496,6 +496,64 @@
                 display: none !important;
             }
         }
+
+        /* Product Showcase Grid Style */
+        .product-showcase {
+            display: flex;
+            gap: 20px;
+            margin: 1.5rem 0;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            flex: 1;
+            min-width: 180px;
+            max-width: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            transition: all 0.3s ease;
+        }
+        @media (max-width: 480px) {
+            .product-card {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            border-color: var(--brand);
+        }
+        .product-card img {
+            height: 180px;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            margin-bottom: 12px;
+            mix-blend-mode: multiply;
+        }
+        .product-card a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text);
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+        .product-card a:hover {
+            color: var(--brand);
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -601,6 +659,33 @@
                         </tbody>
                     </table>
                 </div>
+
+                                <h3>OTC & Clinical Pharmacy Solutions in India</h3>
+                <p>Fading back acne scars and post-inflammatory hyperpigmentation (PIH) requires deep chemical exfoliation paired with melanin inhibitors:</p>
+                <ul>
+                    <li>
+                        <strong>Active Exfoliation:</strong> 
+                        Use an 8% Glycolic Acid spray or cream like <a href="https://www.1mg.com/drugs/glyco-6-cream-117565" target="_blank" rel="noopener">Glyco-6 Cream</a> to accelerate cell turnover and shed hyperpigmented skin layers.
+                        
+                        <div class="product-showcase">
+                            <div class="product-card">
+                                <a href="https://www.1mg.com/drugs/glyco-6-cream-117565" target="_blank" rel="noopener">
+                                    <img src="/assets/images/benzoyl-peroxide-nanz-gel.jpg" alt="Glyco-6 Glycolic Acid Cream">
+                                    <span>Glyco-6 Cream &rarr;</span>
+                                </a>
+                            </div>
+                            <div class="product-card">
+                                <a href="https://www.1mg.com/drugs/aziderm-10-gel-325075?srsltid=AfmBOooE3nYo-r72oOC9Uo571cWIgbmUnsnbJq7DG61-IiTAmGH8-hHi" target="_blank" rel="noopener">
+                                    <img src="/assets/images/aziderm-10-gel.jpg" alt="Aziderm 10% Gel">
+                                    <span>Aziderm 10% Gel &rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Melanin Inhibition:</strong> Apply a Tyrosinase inhibitor spot treatment containing Kojic Acid or Arbutin like <a href="https://www.1mg.com/drugs/kojivit-ultra-gel-325363" target="_blank" rel="noopener">Kojivit Ultra Gel</a> to prevent new dark spots from forming on the back.
+                    </li>
+                </ul>
 
                 <div class="callout">
                     💡 <strong>Pro Tip:</strong> Always consult your clinical dermatologist or physician before starting high-dose mineral supplements or starting targeted hormonal therapies to treat your skin.
