@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "narrative-brief.v2",
+  "status": "passed",
+  "primaryStyle": "compact_professional",
+  "openingAngle": "Clinical yet empathetic connection highlighting body acne frustration.",
+  "brandPov": "Scientific skincare focused on body hygiene and targeted active formulations.",
+  "pagePromise": "Provide clear guidance on treating chest, back, and buttocks breakouts.",
+  "sectionDirections": [
+    {
+      "sectionId": "S1_hero",
+      "direction": "Introduction to the clinical realities of body breakouts."
+    }
+  ],
+  "judgmentChecks": {
+    "passed": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "audience-definition.v2",
+  "status": "passed",
+  "targetCohort": "Indian adults experiencing body breakouts, chest acne, or buttocks folliculitis.",
+  "awarenessStage": "solution_seeking",
+  "readerTakeaway": "Learn how sweat, friction, and correct clinical products clear chest, back, and buttocks bumps.",
+  "objections": [
+    "Worries that facial cleansers are not strong enough",
+    "Confusion about body marks vs active acne"
+  ],
+  "ctaConnection": "Take a free AI skin scan to analyze active skin signals and get a customized dermatology guide.",
+  "judgmentChecks": {
+    "passed": true
+  }
+}

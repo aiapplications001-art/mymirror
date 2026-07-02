@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "human-editorial-brief.v2",
+  "status": "passed",
+  "voiceModel": "category_manager_with_editorial_empathy",
+  "visibility": {
+    "default": "internal_only",
+    "editorVisibleSummary": "editorial_qa_report",
+    "debugBundle": "include_artifact_path_and_summary"
+  },
+  "depthStrategy": {
+    "pageType": "guide_blog",
+    "depth": "full",
+    "framework": "five_w_plus_causal_chain",
+    "lengthBehavior": "auto_expand_when_useful",
+    "requiredAngles": [
+      "what",
+      "why",
+      "how",
+      "who",
+      "when",
+      "where",
+      "types",
+      "mistakes",
+      "next step"
+    ]
+  },
+  "readerTension": {
+    "whatReaderIsConfusedAbout": "Whether their bumps are true acne or fungal folliculitis.",
+    "whatReaderIsAnxiousAbout": "Body breakouts worsening, causing discomfort or scarring.",
+    "decisionReaderNeedsToMake": "Which targeted active wash or lotion should they incorporate?"
+  },
+  "categoryManagerPov": {
+    "whatToChoose": "Targeted clinical washes containing Salicylic Acid or Benzoyl Peroxide.",
+    "whatToAvoid": "Using abrasive scrubs or body brushes that trigger more irritation.",
+    "whereBuyersGoWrong": "Using heavy, greasy body butters or comedogenic oils on breakout-prone skin.",
+    "whatTheBrandBelieves": "Scientific, biology-first body care is the only path to lasting smoothness.",
+    "tradeoffsThatMatter": [
+      "Chemical exfoliants take 4-8 weeks to clear body bumps",
+      "Some washes can stain colored fabrics"
+    ]
+  },
+  "exampleRequirement": {
+    "minimumExamplesPerPage": 2,
+    "priority": [
+      "category_context",
+      "india_context_when_relevant"
+    ],
+    "plannedExamples": [
+      {
+        "name": "Indian climate / sweat triggers case",
+        "description": "How high humidity and synthetic clothes lead to sweat bumps."
+      },
+      {
+        "name": "Indian pharmaceutical active options",
+        "description": "Popular pharmacy treatments available at affordable pricing."
+      }
+    ]
+  },
+  "humanDevices": {
+    "decisionFramework": {
+      "required": true,
+      "askUserOnce": true,
+      "selectedFormat": "comparison_table",
+      "recommendedFormats": [
+        "comparison_table"
+      ]
+    },
+    "commonMistakes": {
+      "required": true,
+      "standaloneSectionDefault": false,
+      "placement": "blended_into_relevant_sections",
+      "mistakesToCover": [
+        "Scrubbing active breakouts with loofahs.",
+        "Staying in sweaty gym clothes after a workout."
+      ]
+    },
+    "notRightForYou": {
+      "required": false,
+      "conditions": [
+        "Mild, temporary redness not associated with breakouts."
+      ]
+    },
+    "brandPov": {
+      "mode": "clear_not_salesy",
+      "firstPerson": "occasional",
+      "statement": "We believe diagnosing internal signals is critical to ending skincare frustration."
+    },
+    "readerQuestions": "natural_when_useful",
+    "analogies": "use_when_useful",
+    "decisionTrees": "preferred",
+    "microSummaries": "after_complex_explanations",
+    "simpleWordsExplainer": "only_when_necessary",
+    "finalClosingBeforeCta": {
+      "required": true,
+      "plannedClosing": "Consistency with clinical body care is the foundation of clear skin."
+    }
+  },
+  "qaSummary": {
+    "includeInEditorialQaReport": true,
+    "fields": [
+      "voice model",
+      "depth level",
+      "examples count"
+    ]
+  }
+}

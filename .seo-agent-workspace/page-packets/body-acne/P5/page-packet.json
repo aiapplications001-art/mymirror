@@ -1,0 +1,311 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v1",
+    "sourcePrewritingPageId": "P5",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "guide_blog",
+    "createdDate": "2026-07-02",
+    "updatedDate": "2026-07-02"
+  },
+  "seo": {
+    "title": "Post-Workout Acne Prevention: The Complete Gym Shower Protocol | MyMirror",
+    "description": "Post-Workout Acne Prevention: The Complete Gym Shower Protocol for Indian adults experiencing breakouts, with clear guidance, references, and one primary action path.",
+    "slug": "post-workout-acne-prevention-india",
+    "h1": "Post-Workout Acne Prevention: The Complete Gym Shower Protocol",
+    "primaryKeyword": "post workout acne prevention india",
+    "secondaryKeywords": [
+      "gym breakouts back chest",
+      "post gym skin care routine",
+      "best sweat acne wash",
+      "shower timeline for gym bumps"
+    ],
+    "ogTitle": "Post-Workout Acne Prevention: The Complete Gym Shower Protocol | MyMirror",
+    "ogDescription": "Post-Workout Acne Prevention: The Complete Gym Shower Protocol for Indian adults experiencing breakouts, with clear guidance, references, and one primary action path.",
+    "twitterTitle": "Post-Workout Acne Prevention: The Complete Gym Shower Protocol | MyMirror",
+    "twitterDescription": "Post-Workout Acne Prevention: The Complete Gym Shower Protocol for Indian adults experiencing breakouts, with clear guidance, references, and one primary action path."
+  },
+  "authorship": {
+    "author": {
+      "name": "MyMirror Editorial Team",
+      "descriptor": "Brand editorial team"
+    },
+    "reviewedByVisible": false
+  },
+  "cta": {
+    "primary": {
+      "label": "Start your free skin analysis now",
+      "microcopy": "Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+    },
+    "mobileSticky": {
+      "label": "Start analysis"
+    }
+  },
+  "rendering": {
+    "mobileFirst": true,
+    "desktopNotes": [
+      "Keep the primary CTA visible in the first fold.",
+      "Use section blocks as editable units."
+    ],
+    "mobileNotes": [
+      "Use a sticky shortened CTA where appropriate.",
+      "Prioritize short paragraphs and visible section hierarchy."
+    ]
+  },
+  "sections": [
+    {
+      "id": "S1_hero",
+      "heading": "Hero",
+      "role": "conversion",
+      "markdown": "# Post-Workout Acne Prevention: The Complete Gym Shower Protocol\n\nDetail sweat/gym breakouts prevention protocol to stop Malassezia and bacterial folliculitis.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+    },
+    {
+      "id": "S2_quick_answer",
+      "heading": "Quick Answer",
+      "role": "seo",
+      "markdown": "Editable section scaffold for Quick Answer. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S3_context",
+      "heading": "Context",
+      "role": "ux",
+      "markdown": "Editable section scaffold for Context. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S4_main_content",
+      "heading": "Main Content",
+      "role": "seo",
+      "markdown": "Editable section scaffold for Main Content. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S5_decision_support",
+      "heading": "Decision Support",
+      "role": "ux",
+      "markdown": "Editable section scaffold for Decision Support. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S6_product_or_solution_block",
+      "heading": "Product Or Solution Block",
+      "role": "conversion",
+      "markdown": "Editable section scaffold for Product Or Solution Block. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S7_trust_proof",
+      "heading": "Trust Proof",
+      "role": "trust",
+      "markdown": "Editable section scaffold for Trust Proof. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S8_faq",
+      "heading": "Faq",
+      "role": "seo",
+      "markdown": "### FAQ draft\n\n**Question:** What should a reader understand before choosing body-acne?\n\n**Answer:** The page should answer this with source-backed, brand-appropriate guidance after live reference review."
+    },
+    {
+      "id": "S9_final_cta",
+      "heading": "Final Cta",
+      "role": "conversion",
+      "markdown": "Editable section scaffold for Final Cta. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S10_references",
+      "heading": "References",
+      "role": "reference",
+      "markdown": "Add reference URLs, source labels, and access dates after live search and editorial review."
+    }
+  ],
+  "links": {
+    "internal": [],
+    "external": []
+  },
+  "images": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph image for social and search previews.",
+      "aspectRatio": "1.91:1",
+      "altText": "Post-Workout Acne Prevention: The Complete Gym Shower Protocol preview image",
+      "status": "reserved"
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "Mandatory hero visual for the first fold.",
+      "aspectRatio": "16:9",
+      "altText": "body-acne hero visual",
+      "status": "brief_needed"
+    },
+    {
+      "id": "IMG_02",
+      "sectionId": "S2_quick_answer",
+      "purpose": "High-impact visual support for S2_quick_answer.",
+      "aspectRatio": "4:3",
+      "altText": "body-acne quick answer visual",
+      "status": "brief_needed"
+    },
+    {
+      "id": "IMG_03",
+      "sectionId": "S3_context",
+      "purpose": "High-impact visual support for S3_context.",
+      "aspectRatio": "4:3",
+      "altText": "body-acne context visual",
+      "status": "brief_needed"
+    },
+    {
+      "id": "IMG_04",
+      "sectionId": "S4_main_content",
+      "purpose": "High-impact visual support for S4_main_content.",
+      "aspectRatio": "4:3",
+      "altText": "body-acne main content visual",
+      "status": "brief_needed"
+    }
+  ],
+  "schemaDrafts": [
+    {
+      "type": "WebPage",
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Post-Workout Acne Prevention: The Complete Gym Shower Protocol",
+        "description": "Post-Workout Acne Prevention: The Complete Gym Shower Protocol for Indian adults experiencing breakouts, with clear guidance, references, and one primary action path."
+      }
+    },
+    {
+      "type": "BreadcrumbList",
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "body-acne",
+            "item": "/body-acne"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FAQPage",
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": []
+      }
+    }
+  ],
+  "machineReadable": {
+    "sections": [
+      {
+        "id": "S1_hero",
+        "heading": "Hero",
+        "role": "conversion",
+        "markdown": "# Post-Workout Acne Prevention: The Complete Gym Shower Protocol\n\nDetail sweat/gym breakouts prevention protocol to stop Malassezia and bacterial folliculitis.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+      },
+      {
+        "id": "S2_quick_answer",
+        "heading": "Quick Answer",
+        "role": "seo",
+        "markdown": "Editable section scaffold for Quick Answer. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S3_context",
+        "heading": "Context",
+        "role": "ux",
+        "markdown": "Editable section scaffold for Context. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S4_main_content",
+        "heading": "Main Content",
+        "role": "seo",
+        "markdown": "Editable section scaffold for Main Content. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S5_decision_support",
+        "heading": "Decision Support",
+        "role": "ux",
+        "markdown": "Editable section scaffold for Decision Support. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S6_product_or_solution_block",
+        "heading": "Product Or Solution Block",
+        "role": "conversion",
+        "markdown": "Editable section scaffold for Product Or Solution Block. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S7_trust_proof",
+        "heading": "Trust Proof",
+        "role": "trust",
+        "markdown": "Editable section scaffold for Trust Proof. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S8_faq",
+        "heading": "Faq",
+        "role": "seo",
+        "markdown": "### FAQ draft\n\n**Question:** What should a reader understand before choosing body-acne?\n\n**Answer:** The page should answer this with source-backed, brand-appropriate guidance after live reference review."
+      },
+      {
+        "id": "S9_final_cta",
+        "heading": "Final Cta",
+        "role": "conversion",
+        "markdown": "Editable section scaffold for Final Cta. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S10_references",
+        "heading": "References",
+        "role": "reference",
+        "markdown": "Add reference URLs, source labels, and access dates after live search and editorial review."
+      }
+    ],
+    "images": [
+      {
+        "id": "IMG_OG",
+        "purpose": "Open Graph image for social and search previews.",
+        "aspectRatio": "1.91:1",
+        "altText": "Post-Workout Acne Prevention: The Complete Gym Shower Protocol preview image",
+        "status": "reserved"
+      },
+      {
+        "id": "IMG_HERO",
+        "sectionId": "S1_hero",
+        "purpose": "Mandatory hero visual for the first fold.",
+        "aspectRatio": "16:9",
+        "altText": "body-acne hero visual",
+        "status": "brief_needed"
+      },
+      {
+        "id": "IMG_02",
+        "sectionId": "S2_quick_answer",
+        "purpose": "High-impact visual support for S2_quick_answer.",
+        "aspectRatio": "4:3",
+        "altText": "body-acne quick answer visual",
+        "status": "brief_needed"
+      },
+      {
+        "id": "IMG_03",
+        "sectionId": "S3_context",
+        "purpose": "High-impact visual support for S3_context.",
+        "aspectRatio": "4:3",
+        "altText": "body-acne context visual",
+        "status": "brief_needed"
+      },
+      {
+        "id": "IMG_04",
+        "sectionId": "S4_main_content",
+        "purpose": "High-impact visual support for S4_main_content.",
+        "aspectRatio": "4:3",
+        "altText": "body-acne main content visual",
+        "status": "brief_needed"
+      }
+    ],
+    "links": {
+      "internal": [],
+      "external": []
+    }
+  }
+}

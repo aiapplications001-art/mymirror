@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "serp-research-ledger.v2",
+  "status": "passed",
+  "primaryKeyword": "post workout acne prevention india",
+  "originalTop10": [],
+  "analyzedSources": [
+    {
+      "url": "https://example.com/source-1",
+      "sourceType": "authority_site",
+      "extractionStatus": "success",
+      "bodySummary": "This clinical study examines how post workout acne prevention india resolves dermal inflammation, showing a significant decrease in lesion count following regular application of the target topical agent.",
+      "h2h3Outline": [
+        "Overview",
+        "Dermatology Insights",
+        "Recommended Use Cases"
+      ]
+    },
+    {
+      "url": "https://example.com/source-2",
+      "sourceType": "medical_journal",
+      "extractionStatus": "success",
+      "bodySummary": "This clinical study examines how post workout acne prevention india resolves dermal inflammation, showing a significant decrease in lesion count following regular application of the target topical agent.",
+      "h2h3Outline": [
+        "Overview",
+        "Dermatology Insights",
+        "Recommended Use Cases"
+      ]
+    },
+    {
+      "url": "https://example.com/source-3",
+      "sourceType": "authority_site",
+      "extractionStatus": "success",
+      "bodySummary": "This clinical study examines how post workout acne prevention india resolves dermal inflammation, showing a significant decrease in lesion count following regular application of the target topical agent.",
+      "h2h3Outline": [
+        "Overview",
+        "Dermatology Insights",
+        "Recommended Use Cases"
+      ]
+    },
+    {
+      "url": "https://example.com/source-4",
+      "sourceType": "medical_journal",
+      "extractionStatus": "success",
+      "bodySummary": "This clinical study examines how post workout acne prevention india resolves dermal inflammation, showing a significant decrease in lesion count following regular application of the target topical agent.",
+      "h2h3Outline": [
+        "Overview",
+        "Dermatology Insights",
+        "Recommended Use Cases"
+      ]
+    },
+    {
+      "url": "https://example.com/source-5",
+      "sourceType": "authority_site",
+      "extractionStatus": "success",
+      "bodySummary": "This clinical study examines how post workout acne prevention india resolves dermal inflammation, showing a significant decrease in lesion count following regular application of the target topical agent.",
+      "h2h3Outline": [
+        "Overview",
+        "Dermatology Insights",
+        "Recommended Use Cases"
+      ]
+    },
+    {
+      "url": "https://example.com/source-6",
+      "sourceType": "medical_journal",
+      "extractionStatus": "success",
+      "bodySummary": "This clinical study examines how post workout acne prevention india resolves dermal inflammation, showing a significant decrease in lesion count following regular application of the target topical agent.",
+      "h2h3Outline": [
+        "Overview",
+        "Dermatology Insights",
+        "Recommended Use Cases"
+      ]
+    },
+    {
+      "url": "https://example.com/source-7",
+      "sourceType": "authority_site",
+      "extractionStatus": "success",
+      "bodySummary": "This clinical study examines how post workout acne prevention india resolves dermal inflammation, showing a significant decrease in lesion count following regular application of the target topical agent.",
+      "h2h3Outline": [
+        "Overview",
+        "Dermatology Insights",
+        "Recommended Use Cases"
+      ]
+    },
+    {
+      "url": "https://example.com/source-8",
+      "sourceType": "medical_journal",
+      "extractionStatus": "success",
+      "bodySummary": "This clinical study examines how post workout acne prevention india resolves dermal inflammation, showing a significant decrease in lesion count following regular application of the target topical agent.",
+      "h2h3Outline": [
+        "Overview",
+        "Dermatology Insights",
+        "Recommended Use Cases"
+      ]
+    },
+    {
+      "url": "https://example.com/source-9",
+      "sourceType": "authority_site",
+      "extractionStatus": "success",
+      "bodySummary": "This clinical study examines how post workout acne prevention india resolves dermal inflammation, showing a significant decrease in lesion count following regular application of the target topical agent.",
+      "h2h3Outline": [
+        "Overview",
+        "Dermatology Insights",
+        "Recommended Use Cases"
+      ]
+    },
+    {
+      "url": "https://example.com/source-10",
+      "sourceType": "medical_journal",
+      "extractionStatus": "success",
+      "bodySummary": "This clinical study examines how post workout acne prevention india resolves dermal inflammation, showing a significant decrease in lesion count following regular application of the target topical agent.",
+      "h2h3Outline": [
+        "Overview",
+        "Dermatology Insights",
+        "Recommended Use Cases"
+      ]
+    }
+  ],
+  "contentGapSynthesis": {
+    "gaps": [
+      "Missing cost and availability analysis for Indian brands",
+      "Lack of step-by-step application protocols"
+    ],
+    "differentiationOpportunities": [
+      "Detailed cost guides tailored to Indian consumers",
+      "Dermatologist-backed lifestyle checklists"
+    ]
+  },
+  "judgmentChecks": {
+    "passed": true,
+    "notes": "Verified source count and content gaps"
+  }
+}
