@@ -1,0 +1,52 @@
+{
+  "readerQuestionCoverage": [
+    {
+      "item": "Can tretinoin fill deep pitted icepick scars?",
+      "sourceRefs": ["Ref6", "Ref11"],
+      "mappedSectionId": "S2_quick_answer",
+      "whyThisMatters": "Managing expectations prevents users from discarding tretinoin early when deep scars do not fill.",
+      "finalCopyUse": "Explain that tretinoin improves skin reflectivity and softens boxcar edges but cannot fill deep icepick craters."
+    },
+    {
+      "item": "How long does it take for tretinoin to fade acne marks?",
+      "sourceRefs": ["Ref8", "Ref10"],
+      "mappedSectionId": "S3_context",
+      "whyThisMatters": "Fading post-acne marks (PIH/PIE) requires 3-6 months due to cell turnover speeds.",
+      "finalCopyUse": "Provide a timeline showing 6 months is the minimum duration for deep collagen remodeling."
+    },
+    {
+      "item": "Why does tretinoin make my skin peel?",
+      "sourceRefs": ["Ref8", "Ref3"],
+      "mappedSectionId": "S4_main_content",
+      "whyThisMatters": "Peeling is a common side effect of rapid epidermal shedding (retinization).",
+      "finalCopyUse": "Explain the cellular shedding process and introduce the sandwich method to control peeling."
+    }
+  ],
+  "recommendationSanityPlan": [
+    {
+      "item": "Schedule H Tretinoin Cream (0.025%)",
+      "sourceRefs": ["Ref1", "Ref6"],
+      "mappedSectionId": "S6_product_or_solution_block",
+      "whyThisMatters": "Prescription warning is legally required for Indian Schedule H drugs.",
+      "finalCopyUse": "Include an explicit dermatologist prescription notice and outline the typical price range."
+    }
+  ],
+  "claimRiskPlan": [
+    {
+      "item": "Tretinoin cures all types of acne scars within weeks",
+      "sourceRefs": ["Ref8"],
+      "mappedSectionId": "S7_trust_proof",
+      "whyThisMatters": "Overclaiming efficacy destroys credibility and violates medical compliance.",
+      "finalCopyUse": "Position tretinoin as a slow, steady remodeling active requiring at least 6 months."
+    }
+  ],
+  "troubleshootingPlan": [
+    {
+      "item": "Severe burning and redness (retinoid dermatitis)",
+      "sourceRefs": ["Ref3"],
+      "mappedSectionId": "S5_decision_support",
+      "whyThisMatters": "Severe skin barrier compromise requires immediate cessation.",
+      "finalCopyUse": "Advise pausing tretinoin and applying only basic ceramides until the skin barrier recovers."
+    }
+  ]
+}
