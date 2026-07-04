@@ -1,0 +1,45 @@
+{
+  "readerQuestionCoverage": [
+    {
+      "item": "Does popping pimples cause permanent scars?",
+      "sourceRefs": ["Ref1", "Ref3"],
+      "mappedSectionId": "S2_quick_answer",
+      "whyThisMatters": "Popping deep nodules ruptures the follicular wall, causing dermal collagen collapse.",
+      "finalCopyUse": "Explain the biomechanics of dermal tissue damage leading to rolling or boxcar scars."
+    },
+    {
+      "item": "How do I stop picking my face?",
+      "sourceRefs": ["Ref2"],
+      "mappedSectionId": "S3_context",
+      "whyThisMatters": "Behavioral habits (mirror triggers, stress) lead to compulsive picking.",
+      "finalCopyUse": "Suggest practical swaps like hydrocolloid pimple patches and mirror dimming tips."
+    }
+  ],
+  "recommendationSanityPlan": [
+    {
+      "item": "Salicylic Acid Spot Treatment / Pimple Patches",
+      "sourceRefs": ["Ref6"],
+      "mappedSectionId": "S6_product_or_solution_block",
+      "whyThisMatters": "Non-invasive treatments prevent picking behavior and reduce inflammation quickly.",
+      "finalCopyUse": "Provide clear guidelines on using hydrocolloid patches on whiteheads and salicylic/clindamycin spot gels on red nodules."
+    }
+  ],
+  "claimRiskPlan": [
+    {
+      "item": "Scar prevention creams can undo picking damage instantly",
+      "sourceRefs": ["Ref1"],
+      "mappedSectionId": "S7_trust_proof",
+      "whyThisMatters": "Topical creams cannot rebuild deep structural voids left by picked nodules.",
+      "finalCopyUse": "Be clear that preventing damage in the first place is far more effective than trying to treat pitted scars later."
+    }
+  ],
+  "troubleshootingPlan": [
+    {
+      "item": "What to do if you just popped a pimple",
+      "sourceRefs": ["Ref2"],
+      "mappedSectionId": "S5_decision_support",
+      "whyThisMatters": "Immediate wound care prevents infection and limits hyperpigmentation.",
+      "finalCopyUse": "Provide a 3-step emergency protocol (disinfect, hydrate, occlude) to minimize scar risk."
+    }
+  ]
+}
