@@ -1,0 +1,45 @@
+{
+  "readerQuestionCoverage": [
+    {
+      "item": "How do I layer different skin acids?",
+      "sourceRefs": ["Ref2", "Ref3"],
+      "mappedSectionId": "S2_quick_answer",
+      "whyThisMatters": "Layering low-pH and neutral-pH ingredients incorrectly neutralizes their efficacy or causes chemical burns.",
+      "finalCopyUse": "Introduce wait times and pH hierarchy (apply lowest pH acid first, wait 5-10 minutes, then apply neutral-pH barrier creams)."
+    },
+    {
+      "item": "Should oily skin double cleanse daily?",
+      "sourceRefs": ["Ref2"],
+      "mappedSectionId": "S3_context",
+      "whyThisMatters": "Daily double cleansing removes sweat-resistant silicone sunscreen and metropolitan pollution.",
+      "finalCopyUse": "Explain that oily skin benefits from PM double cleansing with a gentle oil/balm and non-stripping gel cleanser."
+    }
+  ],
+  "recommendationSanityPlan": [
+    {
+      "item": "Azelaic Acid 10% Gel (Aziderm)",
+      "sourceRefs": ["Ref1", "Ref12"],
+      "mappedSectionId": "S6_product_or_solution_block",
+      "whyThisMatters": "Azelaic acid is a dermatologist-favored gentle exfoliant that is safer for Fitzpatrick Types III-VI than high-dose glycolic acid.",
+      "finalCopyUse": "Detail standard concentration, suitability, and pharmacy pricing range for Indian users."
+    }
+  ],
+  "claimRiskPlan": [
+    {
+      "item": "Glycolic acid is the safest exfoliant for all Indian skin types",
+      "sourceRefs": ["Ref2"],
+      "mappedSectionId": "S7_trust_proof",
+      "whyThisMatters": "High strength glycolic acid can trigger post-inflammatory hyperpigmentation on darker Fitzpatrick skin types.",
+      "finalCopyUse": "Soften the claim by advising low concentrations (5-8%) or lactic acid alternatives for sensitive brown skin."
+    }
+  ],
+  "troubleshootingPlan": [
+    {
+      "item": "Skin barrier damage from over-exfoliation",
+      "sourceRefs": ["Ref12"],
+      "mappedSectionId": "S5_decision_support",
+      "whyThisMatters": "Combining too many resurfacing acids ruins the lipid barrier.",
+      "finalCopyUse": "Introduce a step-by-step troubleshooting protocol for peeling, stinging, or redness."
+    }
+  ]
+}
