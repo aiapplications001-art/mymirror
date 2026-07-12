@@ -125,6 +125,25 @@
       background-color: #FDFCFB; /* Very subtle warm hover */
     }
     
+    /* Desktop-only First Column structure */
+    @media (min-width: 641px) {
+      .acne-table td:first-child {
+        font-weight: 700;
+        color: #2D231E;
+        white-space: nowrap;
+        width: 180px;
+        background: #FDFCFB; /* Subtle vertical accent block */
+        border-right: 1px solid #E8DDD5;
+      }
+      .acne-table th:first-child {
+        border-right: 1px solid #3D312A;
+        width: 180px;
+      }
+      .acne-table td {
+        background: #FFFFFF;
+      }
+    }
+    
     /* Pill Badges with high contrast and borders */
     .active-badge {
       display: inline-block;
