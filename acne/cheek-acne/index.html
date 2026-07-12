@@ -93,12 +93,18 @@
       background: #FFFFFF; /* Pure white background for maximum contrast */
     }
     .acne-table {
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 0;
+      width: 100% !important;
+      margin: 0 !important;
+      border-collapse: collapse !important; /* Forces cells to merge flush against each other */
+      border-spacing: 0 !important;
       font-size: 14px;
       color: #1A1410; /* Max contrast dark charcoal */
       text-align: left;
+    }
+    .acne-table tr {
+      background: transparent !important;
+      box-shadow: none !important;
+      transform: none !important;
     }
     .acne-table th {
       background: #2D231E; /* Rich deep charcoal-brown for high-contrast header */
@@ -111,6 +117,7 @@
       font-size: 11.5px;
       letter-spacing: 0.1em;
       vertical-align: top;
+      border-radius: 0 !important;
     }
     .acne-table td {
       padding: 16px 20px; /* Generous breathing room but compact height */
@@ -118,6 +125,7 @@
       vertical-align: top; /* Top-aligned for natural visual reading axis */
       color: #1A1410;
       line-height: 1.6;
+      border-radius: 0 !important;
     }
     .acne-table tr:last-child td {
       border-bottom: none;
@@ -143,11 +151,13 @@
         background: #FDFCFB !important; /* Forces vertical accent block to display correctly */
         border-right: 1px solid #E8DDD5;
         text-align: center; /* Center-aligned for balanced symmetry */
+        border-radius: 0 !important;
       }
       .acne-table th:first-child {
         border-right: 1px solid #3D312A;
         width: 150px;
         text-align: center; /* Center-aligned header */
+        border-radius: 0 !important;
       }
     }
     
@@ -192,17 +202,18 @@
       .acne-table td, 
       .acne-table tr {
         display: block;
+        width: 100% !important;
       }
       .acne-table thead {
         display: none;
       }
       .acne-table tr {
-        background: #FFFFFF; /* Pure white card to contrast body background */
-        border: 2px solid #D9C8BC; /* Stronger border */
-        border-radius: 16px;
+        background: #FFFFFF !important; /* Pure white card to contrast body background */
+        border: 2px solid #D9C8BC !important; /* Stronger border */
+        border-radius: 16px !important;
         padding: 20px;
         margin-bottom: 20px;
-        box-shadow: 0 4px 15px rgba(26,20,16,0.04);
+        box-shadow: 0 4px 15px rgba(26,20,16,0.04) !important;
       }
       .acne-table td {
         display: flex;
@@ -211,6 +222,7 @@
         padding: 10px 0; /* Adjusted mobile padding for better spacing balance */
         border-bottom: 1px solid #F2EDE8;
         text-align: left;
+        border-radius: 0 !important;
       }
       .acne-table td:last-child {
         border-bottom: none;
@@ -226,6 +238,7 @@
         padding-top: 0; /* Align perfectly with card top padding */
         padding-bottom: 10px; /* Tighter padding */
         margin-bottom: 6px;
+        border-radius: 0 !important;
       }
       .acne-table tr td:first-child::before {
         display: none; /* Hide redundant label */
