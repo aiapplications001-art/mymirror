@@ -84,11 +84,120 @@
     .highlight-box { background: var(--color-brand-light); border-left: 4px solid var(--color-brand); padding: 1.5rem; border-radius: 0 16px 16px 0; margin: 2rem 0; }
     
     /* ── TABLE STYLES ── */
-    .acne-table-wrapper { overflow-x: auto; margin: 2rem 0; border: 1px solid var(--color-border); border-radius: 12px; }
-    .acne-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-    .acne-table th { background: var(--color-bg-secondary); padding: 12px; text-align: left; border-bottom: 2px solid var(--color-border); }
-    .acne-table td { padding: 12px; border-bottom: 1px solid var(--color-border); }
-    .acne-table tr:last-child td { border-bottom: none; }
+    /* ── PREMIUM TABLE STYLES ── */
+    .acne-table-wrapper {
+      margin: 2.5rem 0;
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(26, 20, 16, 0.03);
+      background: var(--color-bg-primary);
+    }
+    .acne-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+      color: var(--color-text-primary);
+      text-align: left;
+    }
+    .acne-table th {
+      background: var(--color-bg-secondary);
+      font-family: 'Kantumruy Pro', serif;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      padding: 16px 24px;
+      border-bottom: 2px solid var(--color-border);
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+    }
+    .acne-table td {
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--color-border);
+      vertical-align: middle;
+      transition: background-color 0.2s ease;
+    }
+    .acne-table tr:last-child td {
+      border-bottom: none;
+    }
+    .acne-table tr:hover td {
+      background-color: var(--color-bg-secondary);
+    }
+    
+    /* Pill Badges for Actives */
+    .active-badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .badge-salicylic {
+      background-color: #E0F2FE;
+      color: #0369A1;
+    }
+    .badge-benzoyl {
+      background-color: var(--color-brand-light);
+      color: var(--color-brand-dark);
+    }
+    .badge-niacinamide {
+      background-color: #D1FAE5;
+      color: #065F46;
+    }
+    
+    /* Mobile-first responsive grid for tables */
+    @media (max-width: 640px) {
+      .acne-table-wrapper {
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        margin: 1.5rem 0;
+      }
+      .acne-table, 
+      .acne-table thead, 
+      .acne-table tbody, 
+      .acne-table th, 
+      .acne-table td, 
+      .acne-table tr {
+        display: block;
+      }
+      .acne-table thead {
+        display: none; /* Hide header rows on mobile */
+      }
+      .acne-table tr {
+        background: var(--color-bg-secondary);
+        border: 1px solid var(--color-border);
+        border-radius: 16px;
+        padding: 16px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+      }
+      .acne-table td {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--color-border);
+        text-align: left;
+      }
+      .acne-table td:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      .acne-table td::before {
+        content: attr(data-label);
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--color-text-tertiary);
+        font-weight: 700;
+      }
+      .active-badge {
+        align-self: flex-start;
+      }
+    }
 
     /* ── SIDEBAR ── */
     .sidebar { display: flex; flex-direction: column; gap: 2rem; }
@@ -329,19 +438,19 @@
             </thead>
             <tbody>
               <tr>
-                <td><strong>Upper Cheek</strong></td>
-                <td>Phone screens, pillowcases, dirty makeup brushes</td>
-                <td>Salicylic Acid (clogged pore exfoliation)</td>
+                <td data-label="Cheek Zone"><strong>Upper Cheek</strong></td>
+                <td data-label="Primary Triggers">Phone screens, pillowcases, dirty makeup brushes</td>
+                <td data-label="Skincare Active"><span class="active-badge badge-salicylic">Salicylic Acid</span> (clogged pore exfoliation)</td>
               </tr>
               <tr>
-                <td><strong>Lower Cheek</strong></td>
-                <td>Helmet straps, champi hair oil run-off, dental issues</td>
-                <td>Benzoyl Peroxide (antibacterial cyst wash)</td>
+                <td data-label="Cheek Zone"><strong>Lower Cheek</strong></td>
+                <td data-label="Primary Triggers">Helmet straps, champi hair oil run-off, dental issues</td>
+                <td data-label="Skincare Active"><span class="active-badge badge-benzoyl">Benzoyl Peroxide</span> (antibacterial cyst wash)</td>
               </tr>
               <tr>
-                <td><strong>Cheek Border</strong></td>
-                <td>Jawline friction, heavy comedogenic face creams</td>
-                <td>Niacinamide (barrier repair and redness)</td>
+                <td data-label="Cheek Zone"><strong>Cheek Border</strong></td>
+                <td data-label="Primary Triggers">Jawline friction, heavy comedogenic face creams</td>
+                <td data-label="Skincare Active"><span class="active-badge badge-niacinamide">Niacinamide</span> (barrier repair and redness)</td>
               </tr>
             </tbody>
           </table>
