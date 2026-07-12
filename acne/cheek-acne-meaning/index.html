@@ -96,7 +96,7 @@
       width: 100%;
       border-collapse: separate;
       border-spacing: 0;
-      font-size: 14.5px;
+      font-size: 14px;
       color: #1A1410; /* Max contrast dark charcoal */
       text-align: left;
     }
@@ -105,14 +105,14 @@
       font-family: 'Kantumruy Pro', serif;
       font-weight: 700;
       color: #FFFFFF; /* Pure white text on dark background */
-      padding: 18px 24px;
+      padding: 14px 20px; /* Tighter padding for balanced header */
       border-bottom: 2px solid #1A1410;
       text-transform: uppercase;
-      font-size: 12px;
+      font-size: 11.5px;
       letter-spacing: 0.1em;
     }
     .acne-table td {
-      padding: 20px 24px;
+      padding: 16px 20px; /* Tighter padding for optimal density */
       border-bottom: 1px solid #E8DDD5;
       vertical-align: middle;
       color: #1A1410;
@@ -138,20 +138,22 @@
         font-weight: 700;
         color: #2D231E;
         white-space: nowrap;
-        width: 180px;
+        width: 150px;
         background: #FDFCFB !important; /* Forces vertical accent block to display correctly */
         border-right: 1px solid #E8DDD5;
+        text-align: center; /* Center-aligned for symmetry */
       }
       .acne-table th:first-child {
         border-right: 1px solid #3D312A;
-        width: 180px;
+        width: 150px;
+        text-align: center; /* Center-aligned header */
       }
     }
     
     /* Pill Badges with high contrast and borders */
     .active-badge {
       display: inline-block;
-      padding: 6px 14px;
+      padding: 5px 12px;
       border-radius: 9999px;
       font-size: 12px;
       font-weight: 800;
@@ -204,8 +206,8 @@
       .acne-table td {
         display: flex;
         flex-direction: column;
-        gap: 8px;
-        padding: 12px 0;
+        gap: 6px;
+        padding: 10px 0; /* Slightly tighter mobile cell padding */
         border-bottom: 1px solid #F2EDE8;
         text-align: left;
       }
@@ -220,6 +222,7 @@
         font-weight: 800;
         color: #2D231E;
         border-bottom: 2px solid #E8DDD5;
+        padding-top: 0; /* Align perfectly with card top padding */
         padding-bottom: 12px;
         margin-bottom: 8px;
       }
