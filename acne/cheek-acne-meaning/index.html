@@ -125,22 +125,26 @@
       background-color: #FDFCFB; /* Very subtle warm hover */
     }
     
+    .acne-table td strong {
+      color: inherit;
+    }
+    
     /* Desktop-only First Column structure */
     @media (min-width: 641px) {
+      .acne-table td {
+        background: #FFFFFF;
+      }
       .acne-table td:first-child {
         font-weight: 700;
         color: #2D231E;
         white-space: nowrap;
         width: 180px;
-        background: #FDFCFB; /* Subtle vertical accent block */
+        background: #FDFCFB !important; /* Forces vertical accent block to display correctly */
         border-right: 1px solid #E8DDD5;
       }
       .acne-table th:first-child {
         border-right: 1px solid #3D312A;
         width: 180px;
-      }
-      .acne-table td {
-        background: #FFFFFF;
       }
     }
     
@@ -209,6 +213,20 @@
         border-bottom: none;
         padding-bottom: 0;
       }
+      
+      /* Format first cell as card header on mobile */
+      .acne-table tr td:first-child {
+        font-size: 16px;
+        font-weight: 800;
+        color: #2D231E;
+        border-bottom: 2px solid #E8DDD5;
+        padding-bottom: 12px;
+        margin-bottom: 8px;
+      }
+      .acne-table tr td:first-child::before {
+        display: none; /* Hide redundant label */
+      }
+      
       .acne-table td::before {
         content: attr(data-label);
         font-size: 11px;
