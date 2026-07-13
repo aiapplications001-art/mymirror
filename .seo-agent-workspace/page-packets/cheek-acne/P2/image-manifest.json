@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "cheek-acne-guide",
+    "h1": "Cheek Acne Guide",
+    "pageId": "P2",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": true,
+  "assets": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph image for social and search previews.",
+      "assetType": "reserved",
+      "recommendedFilename": "cheek-acne-guide-open-graph-image-for-social-and-search-previews.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "1.91:1",
+      "altText": "Cheek Acne Guide preview image",
+      "status": "reserved",
+      "licensing": {
+        "status": "pending_review",
+        "note": "Rights and licensing approval should be reviewed before publishing."
+      },
+      "promptBrief": {
+        "imageId": "IMG_OG",
+        "imagePurpose": "Open Graph image for social and search previews.",
+        "recommendedAspectRatio": "1.91:1",
+        "preferredFormat": "webp",
+        "brandStyle": "MyMirror brand guidelines, clean editorial layout, mobile-first readability.",
+        "logoUsage": "Mandatory brand logo usage unless the user or brand guideline explicitly disallows it.",
+        "prompt": "Create a brand-aligned image for Cheek Acne Guide: Open Graph image for social and search previews.. The image should support Cheek Acne Guide without making unsupported medical or product claims.",
+        "negativeConstraints": "Do not copy competitor visuals, do not use external brand marks without approval, avoid exaggerated before-after claims.",
+        "altText": "Cheek Acne Guide preview image",
+        "caption": "Cheek Acne Guide visual support",
+        "designerNotes": "Prefer WebP output. Keep subject clear on mobile and leave safe space for cropping where needed."
+      }
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "Mandatory hero visual for the first fold.",
+      "assetType": "prompt_only",
+      "recommendedFilename": "cheek-acne-guide-mandatory-hero-visual-for-the-first-fold.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "16:9",
+      "altText": "Cheek Acne hero visual",
+      "status": "brief_needed",
+      "licensing": {
+        "status": "pending_review",
+        "note": "Rights and licensing approval should be reviewed before publishing."
+      },
+      "promptBrief": {
+        "imageId": "IMG_HERO",
+        "sectionId": "S1_hero",
+        "imagePurpose": "Mandatory hero visual for the first fold.",
+        "recommendedAspectRatio": "16:9",
+        "preferredFormat": "webp",
+        "brandStyle": "MyMirror brand guidelines, clean editorial layout, mobile-first readability.",
+        "logoUsage": "Mandatory brand logo usage unless the user or brand guideline explicitly disallows it.",
+        "prompt": "Create a brand-aligned image for Cheek Acne Guide: Mandatory hero visual for the first fold.. The image should support Cheek Acne Guide without making unsupported medical or product claims.",
+        "negativeConstraints": "Do not copy competitor visuals, do not use external brand marks without approval, avoid exaggerated before-after claims.",
+        "altText": "Cheek Acne hero visual",
+        "caption": "Cheek Acne Guide visual support",
+        "designerNotes": "Prefer WebP output. Keep subject clear on mobile and leave safe space for cropping where needed."
+      }
+    },
+    {
+      "id": "IMG_02",
+      "sectionId": "S2_quick_answer",
+      "purpose": "High-impact visual support for S2_quick_answer.",
+      "assetType": "prompt_only",
+      "recommendedFilename": "cheek-acne-guide-high-impact-visual-support-for-s2-quick-answer.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "4:3",
+      "altText": "Cheek Acne quick answer visual",
+      "status": "brief_needed",
+      "licensing": {
+        "status": "pending_review",
+        "note": "Rights and licensing approval should be reviewed before publishing."
+      },
+      "promptBrief": {
+        "imageId": "IMG_02",
+        "sectionId": "S2_quick_answer",
+        "imagePurpose": "High-impact visual support for S2_quick_answer.",
+        "recommendedAspectRatio": "4:3",
+        "preferredFormat": "webp",
+        "brandStyle": "MyMirror brand guidelines, clean editorial layout, mobile-first readability.",
+        "logoUsage": "Use logo only when the brand guideline allows it.",
+        "prompt": "Create a brand-aligned image for Cheek Acne Guide: High-impact visual support for S2_quick_answer.. The image should support Cheek Acne Guide without making unsupported medical or product claims.",
+        "negativeConstraints": "Do not copy competitor visuals, do not use external brand marks without approval, avoid exaggerated before-after claims.",
+        "altText": "Cheek Acne quick answer visual",
+        "caption": "Cheek Acne Guide visual support",
+        "designerNotes": "Prefer WebP output. Keep subject clear on mobile and leave safe space for cropping where needed."
+      }
+    },
+    {
+      "id": "IMG_03",
+      "sectionId": "S3_topic_context",
+      "purpose": "High-impact visual support for S3_topic_context.",
+      "assetType": "prompt_only",
+      "recommendedFilename": "cheek-acne-guide-high-impact-visual-support-for-s3-topic-context.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "4:3",
+      "altText": "Cheek Acne topic context visual",
+      "status": "brief_needed",
+      "licensing": {
+        "status": "pending_review",
+        "note": "Rights and licensing approval should be reviewed before publishing."
+      },
+      "promptBrief": {
+        "imageId": "IMG_03",
+        "sectionId": "S3_topic_context",
+        "imagePurpose": "High-impact visual support for S3_topic_context.",
+        "recommendedAspectRatio": "4:3",
+        "preferredFormat": "webp",
+        "brandStyle": "MyMirror brand guidelines, clean editorial layout, mobile-first readability.",
+        "logoUsage": "Use logo only when the brand guideline allows it.",
+        "prompt": "Create a brand-aligned image for Cheek Acne Guide: High-impact visual support for S3_topic_context.. The image should support Cheek Acne Guide without making unsupported medical or product claims.",
+        "negativeConstraints": "Do not copy competitor visuals, do not use external brand marks without approval, avoid exaggerated before-after claims.",
+        "altText": "Cheek Acne topic context visual",
+        "caption": "Cheek Acne Guide visual support",
+        "designerNotes": "Prefer WebP output. Keep subject clear on mobile and leave safe space for cropping where needed."
+      }
+    },
+    {
+      "id": "IMG_04",
+      "sectionId": "S4_deep_explanation",
+      "purpose": "High-impact visual support for S4_deep_explanation.",
+      "assetType": "prompt_only",
+      "recommendedFilename": "cheek-acne-guide-high-impact-visual-support-for-s4-deep-explanation.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "4:3",
+      "altText": "Cheek Acne deep explanation visual",
+      "status": "brief_needed",
+      "licensing": {
+        "status": "pending_review",
+        "note": "Rights and licensing approval should be reviewed before publishing."
+      },
+      "promptBrief": {
+        "imageId": "IMG_04",
+        "sectionId": "S4_deep_explanation",
+        "imagePurpose": "High-impact visual support for S4_deep_explanation.",
+        "recommendedAspectRatio": "4:3",
+        "preferredFormat": "webp",
+        "brandStyle": "MyMirror brand guidelines, clean editorial layout, mobile-first readability.",
+        "logoUsage": "Use logo only when the brand guideline allows it.",
+        "prompt": "Create a brand-aligned image for Cheek Acne Guide: High-impact visual support for S4_deep_explanation.. The image should support Cheek Acne Guide without making unsupported medical or product claims.",
+        "negativeConstraints": "Do not copy competitor visuals, do not use external brand marks without approval, avoid exaggerated before-after claims.",
+        "altText": "Cheek Acne deep explanation visual",
+        "caption": "Cheek Acne Guide visual support",
+        "designerNotes": "Prefer WebP output. Keep subject clear on mobile and leave safe space for cropping where needed."
+      }
+    }
+  ]
+}

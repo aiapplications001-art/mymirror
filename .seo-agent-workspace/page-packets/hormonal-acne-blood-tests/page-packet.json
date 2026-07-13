@@ -1,0 +1,55 @@
+{
+  "slug": "hormonal-acne-blood-tests",
+  "title": "Hormonal Acne Blood Tests: PCOS & Androgen Diagnostic Panel",
+  "meta_description": "Struggling with jawline cystic acne? Discover the exact hormonal acne blood tests to order (Testosterone, DHEAS, LH/FSH), cycle timing, and costs in India.",
+  "canonical_url": "https://mymirror.fit/acne/hormonal-acne-blood-tests/",
+  "keywords": [
+    "hormonal acne blood tests india",
+    "blood test for acne root cause",
+    "hormone test for acne cost",
+    "pcos acne diagnostic panel"
+  ],
+  "internal_links": [
+    {
+      "anchor": "Hormonal Acne Diet Guide",
+      "url": "/acne/hormonal-acne-diet-india/"
+    },
+    {
+      "anchor": "Dry Skin Acne Treatment",
+      "url": "/acne/dry-skin-acne-treatment/"
+    }
+  ],
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Hormonal Acne Blood Tests: PCOS & Androgen Diagnostic Panel",
+    "description": "A clinical week-by-week and cycle-timing guide detailing the blood hormone markers needed to identify hormonal acne and PCOS in India.",
+    "author": {
+      "@type": "Organization",
+      "name": "MyMirror Editorial Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "MyMirror Skin Health",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mymirror.fit/favicon.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://mymirror.fit/acne/hormonal-acne-blood-tests/"
+    },
+    "image": "https://mymirror.fit/assets/images/blood_vials.jpg",
+    "datePublished": "2026-06-28",
+    "dateModified": "2026-06-28"
+  },
+  "og_metadata": {
+    "og:title": "Hormonal Acne Blood Tests: PCOS & Androgen Diagnostic Panel",
+    "og:description": "Tired of topical treatments failing? Learn the exact diagnostic hormone panel needed to identify the root cause of your acne.",
+    "og:image": "https://mymirror.fit/assets/images/blood_vials.jpg",
+    "og:type": "article",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://mymirror.fit/assets/images/blood_vials.jpg"
+  }
+}

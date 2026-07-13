@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "pre-draft-synthesis-brief.v2",
+  "status": "passed",
+  "thresholds": {
+    "minimumWords": 500,
+    "maximumWords": 900
+  },
+  "wordCount": 650,
+  "searchIntent": "Informational search by readers looking to diagnose why they have stubborn breakouts on their cheeks and how to address them.",
+  "audienceAnxieties": [
+    "Fear of permanent rolling or ice-pick scars since cheek skin is thin and heals slowly",
+    "Frustration that standard face washes and spot treatments do not stop recurrent cheek cysts"
+  ],
+  "competitorGaps": [
+    "Competitors fail to mention heavy hair oils dripping onto cheeks during Champi",
+    "Competitors ignore dirty helmet straps and pollution film buildup on phone screens"
+  ],
+  "recommendedAngle": "A comprehensive physical friction and habit-based diagnostic self-audit combining external screen/helmet triggers with gut-skin and dental links.",
+  "sectionPromises": [
+    {
+      "sectionId": "S1_hero",
+      "promise": "Explain the diagnostic steps and evidence mapping for S1_hero."
+    },
+    {
+      "sectionId": "S2_quick_answer",
+      "promise": "Explain the diagnostic steps and evidence mapping for S2_quick_answer."
+    },
+    {
+      "sectionId": "S3_topic_context",
+      "promise": "Explain the diagnostic steps and evidence mapping for S3_topic_context."
+    },
+    {
+      "sectionId": "S4_deep_explanation",
+      "promise": "Explain the diagnostic steps and evidence mapping for S4_deep_explanation."
+    },
+    {
+      "sectionId": "S5_decision_implications",
+      "promise": "Explain the diagnostic steps and evidence mapping for S5_decision_implications."
+    },
+    {
+      "sectionId": "S6_solution_bridge",
+      "promise": "Explain the diagnostic steps and evidence mapping for S6_solution_bridge."
+    },
+    {
+      "sectionId": "S7_trust_proof",
+      "promise": "Explain the diagnostic steps and evidence mapping for S7_trust_proof."
+    },
+    {
+      "sectionId": "S8_faq",
+      "promise": "Explain the diagnostic steps and evidence mapping for S8_faq."
+    },
+    {
+      "sectionId": "S9_final_cta",
+      "promise": "Explain the diagnostic steps and evidence mapping for S9_final_cta."
+    }
+  ],
+  "evidenceInventory": [
+    {
+      "evidenceId": "FACT1",
+      "strength": "high"
+    },
+    {
+      "evidenceId": "FACT2",
+      "strength": "high"
+    },
+    {
+      "evidenceId": "FACT3",
+      "strength": "high"
+    },
+    {
+      "evidenceId": "FACT4",
+      "strength": "high"
+    },
+    {
+      "evidenceId": "FACT5",
+      "strength": "high"
+    },
+    {
+      "evidenceId": "FACT6",
+      "strength": "high"
+    },
+    {
+      "evidenceId": "FACT7",
+      "strength": "high"
+    },
+    {
+      "evidenceId": "FACT8",
+      "strength": "high"
+    },
+    {
+      "evidenceId": "FACT9",
+      "strength": "high"
+    },
+    {
+      "evidenceId": "FACT10",
+      "strength": "high"
+    }
+  ]
+}

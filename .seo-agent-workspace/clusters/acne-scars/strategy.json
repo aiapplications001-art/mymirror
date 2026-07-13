@@ -1,0 +1,186 @@
+{
+  "companyName": "MyMirror",
+  "market": "India",
+  "category": {
+    "name": "Acne Scars",
+    "slug": "acne-scars"
+  },
+  "sourceMetadata": {
+    "urlsConsidered": 96,
+    "urlsMatched": 12,
+    "seedKeywords": [
+      "tretinoin for acne scars",
+      "texture smoothing skincare routine",
+      "how to prevent acne scarring",
+      "at home vs clinical scar treatment",
+      "acne scar removal cream myth"
+    ]
+  },
+  "existingUrlCandidates": [
+    {
+      "url": "https://mymirror.fit/acne/best-salicylic-acid-products-india/",
+      "pageType": "comparison",
+      "title": "Best Salicylic Acid Products in India (2026) | MyMirror",
+      "h1": "Best Salicylic Acid Products in India (2026 Edition)",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/body-acne-india-bacne-chestne-guide/",
+      "pageType": "faq_support",
+      "title": "Body Acne in India: 2026 Guide to Clearing Bacne & Chestne | MyMirror",
+      "h1": "Body Acne in India: The Ultimate Guide to Clearing Bacne & Chestne (2026)",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/skincare-layering-guide/",
+      "pageType": "guide_blog",
+      "title": "The Chemistry of Clear Skin: How to Layer Acne Actives | MyMirror",
+      "h1": "The Chemistry of Clear Skin: How to Layer Actives Without Stinging",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/teenage-acne-india-parents-guide/",
+      "pageType": "faq_support",
+      "title": "Teenage Acne in India: 2026 Parent & Student Manual | MyMirror",
+      "h1": "Teenage Acne in India: The 2026 Parent & Student Manual",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/1-vs-2-percent-salicylic-acid/",
+      "pageType": "comparison",
+      "title": "Salicylic Acid 1% vs 2% Comparison: Choosing the Right Strength | MyMirror",
+      "h1": "1% vs 2% Salicylic Acid: Which Strength is Best?",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/adapalene-differin-adaferin-gel-comparison-india/",
+      "pageType": "comparison",
+      "title": "Adapalene Gel vs. Differin vs. Adaferin vs. Adalene Nano Gel: Uses, Price & How to Use in India 2026 | MyMirror",
+      "h1": "Adapalene Gel vs. Differin vs. Adaferin: Uses, Price & How to Use in India",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/bacne-vs-fungal-acne-body-india/",
+      "pageType": "faq_support",
+      "title": "Is it Bacne or Fungal Acne? How to Tell the Difference | MyMirror",
+      "h1": "Bacne vs Fungal Acne",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/hormonal-acne-vs-oily-skin/",
+      "pageType": "comparison",
+      "title": "Hormonal Acne or Just Oily Skin? The 2026 Face-Mapping Guide | MyMirror",
+      "h1": "Hormonal Acne or Just Oily Skin? The 2026 Face-Mapping Guide",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/jawline-acne-meaning-hormonal-vs-product/",
+      "pageType": "faq_support",
+      "title": "Jawline Acne Meaning: Is it Hormonal or Product-Induced? | MyMirror",
+      "h1": "Jawline Acne Meaning: Is it Hormonal or Product-Induced?",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/microneedling-vs-chemical-peels-scars/",
+      "pageType": "faq_support",
+      "title": "Microneedling vs. Chemical Peels: Which is Best for Scars? | MyMirror",
+      "h1": "Microneedling vs. Chemical Peels",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/mineral-vs-chemical-sunscreen-active-acne/",
+      "pageType": "faq_support",
+      "title": "Mineral vs. Chemical Sunscreen for Acne: The 2026 Clinical Verdict | MyMirror",
+      "h1": "Mineral vs. Chemical Sunscreen for Acne: The 2026 Verdict",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/pie-vs-pih-indian-skin/",
+      "pageType": "faq_support",
+      "title": "PIE vs. PIH on Brown Skin: How to Treat Red Marks & Dark Spots (2026)",
+      "h1": "PIE vs. PIH on Brown Skin: How to Treat Red Marks & Dark Spots",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    }
+  ],
+  "pageOpportunities": [
+    {
+      "id": "P1",
+      "title": "Acne Scars Category Page",
+      "pageType": "product_category",
+      "strategyCategory": "startup_conversion",
+      "targetIntent": "Help users understand the category and route them toward the best product or diagnostic action.",
+      "primaryCtaGoal": "Route users to the category's primary product or action destination.",
+      "suggestedUrlSlug": "acne-scars",
+      "evidenceStrength": "low"
+    },
+    {
+      "id": "P2",
+      "title": "Acne Scars Guide",
+      "pageType": "guide_blog",
+      "strategyCategory": "first_organic_wins",
+      "targetIntent": "Capture informational and long-tail search demand before moving readers to the main category experience.",
+      "primaryCtaGoal": "Route readers to a relevant category page, diagnostic flow, or deeper guide.",
+      "suggestedUrlSlug": "acne-scars-guide",
+      "sourceUrl": "https://mymirror.fit/acne/skincare-layering-guide/",
+      "evidenceStrength": "high"
+    },
+    {
+      "id": "P3",
+      "title": "Acne Scars Comparison Page",
+      "pageType": "comparison",
+      "strategyCategory": "competitor_category",
+      "targetIntent": "Support users comparing alternatives, formats, or brands before they choose a solution.",
+      "primaryCtaGoal": "Route high-intent comparison traffic to the best internal product/category destination.",
+      "suggestedUrlSlug": "acne-scars-comparison",
+      "sourceUrl": "https://mymirror.fit/acne/best-salicylic-acid-products-india/",
+      "evidenceStrength": "high"
+    }
+  ],
+  "internalLinkSuggestions": [],
+  "qualityScore": {
+    "score": 74,
+    "advisoryOnly": true,
+    "topIssues": [
+      {
+        "area": "Primary category page",
+        "issue": "No existing product/category destination was found for this cluster.",
+        "likelyImpact": "seo_and_conversion",
+        "priority": "high"
+      },
+      {
+        "area": "FAQ schema",
+        "issue": "FAQ schema exists in the cluster, but should be checked for the selected page packet only when FAQ content is present.",
+        "likelyImpact": "seo",
+        "priority": "low"
+      }
+    ]
+  },
+  "assumptions": [
+    {
+      "statement": "Acne Scars has enough site-inventory evidence to draft a cluster strategy before generating page packets.",
+      "evidenceStrength": "high",
+      "source": "metadata"
+    },
+    {
+      "statement": "The selected target market is India.",
+      "evidenceStrength": "high",
+      "source": "seed_keywords"
+    }
+  ],
+  "nextPageSelection": {
+    "instruction": "User should select one page opportunity to generate next. V1 generates one publish-ready page packet at a time.",
+    "recommendedPageId": "P1"
+  }
+}
