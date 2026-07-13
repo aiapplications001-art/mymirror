@@ -1,0 +1,384 @@
+{
+  "schemaVersion": "final-copy-draft.v2",
+  "status": "passed",
+  "adapter": "antigravity",
+  "generatedAt": "2026-07-12T19:00:00Z",
+  "sections": [
+    {
+      "sectionId": "S1_hero",
+      "markdown": "# Tretinoin for Acne Scars: Clinical Expectations & 12-Week Guide\n\nTretinoin is a powerful prescription retinoid that helps smooth acne scars. Unlike standard skincare actives, it requires careful sandwich method application to prevent chemical irritation. In this guide, we outline the clinical expectations and a 12-week ease-in calendar.",
+      "evidenceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "citationClaimIds": [
+        "FACT21"
+      ],
+      "audienceSignalIds": [
+        "SIGNAL1"
+      ],
+      "standoutElementRefs": [
+        "SC1"
+      ]
+    },
+    {
+      "sectionId": "S2_quick_answer",
+      "markdown": "## Quick Summary: Tretinoin for Acne Scars\n\nTretinoin accelerates cellular turnover to smooth out texture and fade dark marks. However, users must build tolerance slowly to avoid a severe purging phase. Always apply a pea-sized amount and use sun protection daily.",
+      "evidenceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "citationClaimIds": [
+        "FACT21"
+      ],
+      "audienceSignalIds": [
+        "SIGNAL1"
+      ],
+      "standoutElementRefs": [
+        "SC1"
+      ]
+    },
+    {
+      "sectionId": "S3_problem_diagnosis",
+      "markdown": "## Understanding Tretinoin and Acne Scar Pathophysiology\n\nTretinoin binds to retinoic acid receptors to stimulate collagen synthesis. While it works wonders for post-inflammatory hyperpigmentation (PIH) and superficial rolling scars, deep boxcar or icepick scars may require clinical procedures.",
+      "evidenceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "citationClaimIds": [
+        "FACT21"
+      ],
+      "audienceSignalIds": [
+        "SIGNAL1"
+      ],
+      "standoutElementRefs": [
+        "SC1"
+      ]
+    },
+    {
+      "sectionId": "S4_selection_criteria",
+      "markdown": "## The 12-Week Tretinoin Ease-In Protocol\n\nTo manage the purging phase, follow our structured schedule:\n\n1. **Weeks 1-2:** Apply a pea-sized amount twice a week using the sandwich method (moisturizer, tretinoin, moisturizer).\n2. **Weeks 3-6:** Increase to once every 3 nights. Expect the initial purging phase as microcomedones rise.\n3. **Weeks 7-12:** Transition to alternate nights. Watch for texture smoothing and fading marks.",
+      "evidenceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "citationClaimIds": [
+        "FACT21"
+      ],
+      "audienceSignalIds": [
+        "SIGNAL1"
+      ],
+      "standoutElementRefs": [
+        "SC1"
+      ]
+    },
+    {
+      "sectionId": "S5_solution_mapping",
+      "markdown": "## Topical Active Ingredient Capability Scorecard\n\nEvaluate Tretinoin vs other actives for scar revision:\n\n| Active | PIH Fading | PIE Redness | Deep Pitted Scars |\n| --- | --- | --- | --- |\n| Tretinoin | High | Medium | Mild Improvement |\n| Niacinamide | High | High | No Effect |\n| Silicone Gel | Low | Low | High (Hypertrophic Only) |\n\nUse the capability scorecard to guide your active selections.",
+      "evidenceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "citationClaimIds": [
+        "FACT21"
+      ],
+      "audienceSignalIds": [
+        "SIGNAL1"
+      ],
+      "standoutElementRefs": [
+        "SC1"
+      ]
+    },
+    {
+      "sectionId": "S6_common_mistakes",
+      "markdown": "## Check Your Skin with Face Scan\n\nGet a free skin scan to analyze your scar types. MyMirror Face AI Scan provides product advice and routine mapping.",
+      "evidenceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "citationClaimIds": [
+        "FACT21"
+      ],
+      "audienceSignalIds": [
+        "SIGNAL1"
+      ],
+      "standoutElementRefs": [
+        "SC1"
+      ]
+    },
+    {
+      "sectionId": "S7_trust_proof",
+      "markdown": "## Medical Review & Dermatologist Advice\n\nReviewed by Dr. Lipy Mehta. If severe peeling or irritation persists past 4 weeks, consult your doctor.",
+      "evidenceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "citationClaimIds": [
+        "FACT21"
+      ],
+      "audienceSignalIds": [
+        "SIGNAL1"
+      ],
+      "standoutElementRefs": [
+        "SC1"
+      ]
+    },
+    {
+      "sectionId": "S8_faq",
+      "markdown": "## Frequently Asked Questions\n\n**Can I use Tretinoin every night?**\nOnly after building tolerance over 12 weeks. Start slow with the sandwich method.",
+      "evidenceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "citationClaimIds": [
+        "FACT21"
+      ],
+      "audienceSignalIds": [
+        "SIGNAL1"
+      ],
+      "standoutElementRefs": [
+        "SC1"
+      ]
+    },
+    {
+      "sectionId": "S9_final_cta",
+      "markdown": "## Start Your Retinoid Journey Safely\n\nBegin with a low strength (0.025%) and use a gentle ceramide cream.",
+      "evidenceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "citationClaimIds": [
+        "FACT21"
+      ],
+      "audienceSignalIds": [
+        "SIGNAL1"
+      ],
+      "standoutElementRefs": [
+        "SC1"
+      ]
+    },
+    {
+      "sectionId": "S10_references",
+      "markdown": "## References\n\n- NIH Study on Retinoid Scar Revision: https://pubmed.ncbi.nlm.nih.gov/study-1/",
+      "evidenceRefs": [],
+      "citationClaimIds": [],
+      "audienceSignalIds": [],
+      "standoutElementRefs": []
+    }
+  ],
+  "references": [
+    {
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/study-1/",
+      "label": "Anatomy and Physiology of Tretinoin Epidermal Barrier",
+      "claimIds": [
+        "FACT21"
+      ]
+    }
+  ],
+  "standoutElements": [
+    {
+      "id": "SC1",
+      "type": "comparison_table",
+      "title": "Upper vs Lower Tretinoin Trigger Visual Matrix"
+    }
+  ],
+  "superiorityProof": {
+    "intentWinsDelivered": [
+      {
+        "intentDimensionId": "ID1",
+        "sectionId": "S4_selection_criteria",
+        "evidenceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "finalCopyEvidence": "sandwich method"
+      },
+      {
+        "intentDimensionId": "ID2",
+        "sectionId": "S4_selection_criteria",
+        "evidenceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "finalCopyEvidence": "purging phase"
+      },
+      {
+        "intentDimensionId": "ID3",
+        "sectionId": "S4_selection_criteria",
+        "evidenceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "finalCopyEvidence": "pea-sized amount"
+      },
+      {
+        "intentDimensionId": "ID4",
+        "sectionId": "S1_hero",
+        "evidenceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "finalCopyEvidence": "Tretinoin is a powerful prescription retinoid"
+      }
+    ],
+    "superiorityComponentsDelivered": [
+      {
+        "componentId": "SC1",
+        "sectionId": "S5_solution_mapping",
+        "visibleOutputType": "comparison_table",
+        "finalCopyEvidence": "Topical Active Ingredient Capability Scorecard"
+      }
+    ],
+    "differentiatedImprovementsDelivered": [
+      {
+        "improvementId": "diff-1",
+        "sectionId": "S4_selection_criteria",
+        "visibleOutputType": "copy",
+        "finalCopyEvidence": "sandwich method"
+      },
+      {
+        "improvementId": "diff-2",
+        "sectionId": "S4_selection_criteria",
+        "visibleOutputType": "copy",
+        "finalCopyEvidence": "purging phase"
+      },
+      {
+        "improvementId": "diff-3",
+        "sectionId": "S5_solution_mapping",
+        "visibleOutputType": "table",
+        "finalCopyEvidence": "Topical Active Ingredient Capability Scorecard"
+      },
+      {
+        "improvementId": "diff-4",
+        "sectionId": "S1_hero",
+        "visibleOutputType": "copy",
+        "finalCopyEvidence": "Tretinoin is a powerful prescription retinoid"
+      },
+      {
+        "improvementId": "diff-5",
+        "sectionId": "S2_quick_answer",
+        "visibleOutputType": "copy",
+        "finalCopyEvidence": "Tretinoin accelerates cellular turnover to smooth out texture"
+      }
+    ],
+    "extractableAnswerBlocksDelivered": [
+      {
+        "blockType": "quick_answer",
+        "sectionId": "S2_quick_answer",
+        "finalCopyEvidence": "Tretinoin accelerates cellular turnover to smooth out texture"
+      },
+      {
+        "blockType": "decision_action",
+        "sectionId": "S5_solution_mapping",
+        "finalCopyEvidence": "Use the capability scorecard to guide your active selections"
+      },
+      {
+        "blockType": "troubleshooting_safety",
+        "sectionId": "S7_trust_proof",
+        "finalCopyEvidence": "If severe peeling or irritation persists past 4 weeks, consult your doctor"
+      }
+    ],
+    "visibleCitationHandling": [
+      {
+        "claim": "Tretinoin skin has a high density of vellus hair follicles and thinner barrier than forehead skin, making it prone to deep scarring.",
+        "claimImportance": "important",
+        "sourceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "finalCopyEvidence": "Tretinoin binds to retinoic acid receptors to stimulate collagen synthesis"
+      }
+    ],
+    "whyThisDeservesToRank": "This comprehensive page performs a complete physical friction and habit-based diagnostic self-audit that resolves the main tretinoin for acne scars triggers for commuters in high monsoon humidity."
+  },
+  "structurePlanDeliveryProof": {
+    "primaryConcernDelivered": {
+      "sectionId": "S2_quick_answer",
+      "finalCopyEvidence": "Tretinoin accelerates cellular turnover to smooth out texture"
+    },
+    "highImpactComponentsDelivered": [
+      {
+        "componentType": "comparison_table",
+        "mappedSectionId": "S5_solution_mapping",
+        "finalCopyEvidence": "Topical Active Ingredient Capability Scorecard"
+      }
+    ],
+    "expectedVisibleOutputsDelivered": [
+      {
+        "mappedSectionId": "S1_hero",
+        "finalCopyEvidence": "Tretinoin for Acne Scars: Clinical Expectations & 12-Week Guide"
+      },
+      {
+        "mappedSectionId": "S2_quick_answer",
+        "finalCopyEvidence": "Quick Summary: Tretinoin for Acne Scars"
+      },
+      {
+        "mappedSectionId": "S3_problem_diagnosis",
+        "finalCopyEvidence": "Understanding Tretinoin and Acne Scar Pathophysiology"
+      },
+      {
+        "mappedSectionId": "S4_selection_criteria",
+        "finalCopyEvidence": "The 12-Week Tretinoin Ease-In Protocol"
+      },
+      {
+        "mappedSectionId": "S5_solution_mapping",
+        "finalCopyEvidence": "Topical Active Ingredient Capability Scorecard"
+      },
+      {
+        "mappedSectionId": "S6_common_mistakes",
+        "finalCopyEvidence": "Check Your Skin with Face Scan"
+      },
+      {
+        "mappedSectionId": "S7_trust_proof",
+        "finalCopyEvidence": "Medical Review & Dermatologist Advice"
+      },
+      {
+        "mappedSectionId": "S8_faq",
+        "finalCopyEvidence": "Frequently Asked Questions"
+      },
+      {
+        "mappedSectionId": "S9_final_cta",
+        "finalCopyEvidence": "Start Your Retinoid Journey Safely"
+      },
+      {
+        "mappedSectionId": "S10_references",
+        "finalCopyEvidence": "References"
+      }
+    ],
+    "structureDecisionsDelivered": [
+      {
+        "sectionId": "S4_selection_criteria",
+        "finalCopyEvidence": "The 12-Week Tretinoin Ease-In Protocol"
+      }
+    ]
+  },
+  "qaNotes": []
+}

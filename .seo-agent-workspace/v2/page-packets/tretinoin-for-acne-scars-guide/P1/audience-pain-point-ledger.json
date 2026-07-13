@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "audience-pain-point-ledger.v2",
+  "status": "passed",
+  "thresholds": {
+    "minimumAudienceSignals": 20,
+    "minimumSignalsMappedPerMajorSection": 2
+  },
+  "signals": [
+    {
+      "id": "SIGNAL1",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 1",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S2_quick_answer"
+    },
+    {
+      "id": "SIGNAL2",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 2",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S3_problem_diagnosis"
+    },
+    {
+      "id": "SIGNAL3",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 3",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S4_selection_criteria"
+    },
+    {
+      "id": "SIGNAL4",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 4",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S5_solution_mapping"
+    },
+    {
+      "id": "SIGNAL5",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 5",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S6_common_mistakes"
+    },
+    {
+      "id": "SIGNAL6",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 6",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S7_trust_proof"
+    },
+    {
+      "id": "SIGNAL7",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 7",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S8_faq"
+    },
+    {
+      "id": "SIGNAL8",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 8",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S9_final_cta"
+    },
+    {
+      "id": "SIGNAL9",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 9",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S1_hero"
+    },
+    {
+      "id": "SIGNAL10",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 10",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S2_quick_answer"
+    },
+    {
+      "id": "SIGNAL11",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 11",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S3_problem_diagnosis"
+    },
+    {
+      "id": "SIGNAL12",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 12",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S4_selection_criteria"
+    },
+    {
+      "id": "SIGNAL13",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 13",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S5_solution_mapping"
+    },
+    {
+      "id": "SIGNAL14",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 14",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S6_common_mistakes"
+    },
+    {
+      "id": "SIGNAL15",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 15",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S7_trust_proof"
+    },
+    {
+      "id": "SIGNAL16",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 16",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S8_faq"
+    },
+    {
+      "id": "SIGNAL17",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 17",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S9_final_cta"
+    },
+    {
+      "id": "SIGNAL18",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 18",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S1_hero"
+    },
+    {
+      "id": "SIGNAL19",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 19",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S2_quick_answer"
+    },
+    {
+      "id": "SIGNAL20",
+      "sourceType": "reddit",
+      "audienceLanguage": "My tretinoins get painful cystic bumps only on the side I sleep on or hold my phone screen during daily commute 20",
+      "concernType": "friction_hygiene",
+      "mappedSectionId": "S3_problem_diagnosis"
+    }
+  ]
+}

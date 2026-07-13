@@ -1,0 +1,427 @@
+# Pre-Writing Strategy: tretinoin-for-acne-scars-guide Category Page
+
+Company: MyMirror
+Market: India
+Cluster: tretinoin-for-acne-scars-guide
+Selected page: P1
+
+## Audience And Tone
+
+- Audience cohort: Indian users exploring Tretinoin for pitted acne scars and texture.
+- Tone selected: professional compact
+- Tone options: professional compact, clear advisory, conversion-supportive
+- User tone selection required: no
+
+## Keywords And Depth
+
+- Primary keyword: Not provided
+- Secondary keywords: None provided
+- Cluster seed keywords: tretinoin for acne scars
+- Content depth target: 1800-2400 words
+- Strict range: no
+
+## CTA Strategy
+
+- Primary CTA goal: Route users to the category's primary product or action destination.
+- Recommended destination: Not found
+- First-fold CTA required: yes
+- Mobile sticky CTA recommended: yes
+
+## Section Plan
+
+Intent pattern: product_category
+Structure variant: category_solution
+Inference confidence: high
+Inference signals: pageType=product_category
+Inference notes: Product/category pages need diagnosis, selection criteria, solution mapping, and conversion support.
+
+| Section ID | Role | Section Intent | Evidence Budget (facts/cited claims/examples) | Required Devices | Notes |
+| --- | --- | --- | --- | --- | --- |
+| S1_hero | conversion | first-fold promise | 2/0/1 | H1, primary CTA, CTA microcopy | State the category promise, reader problem, and primary CTA in the first fold. Primary actionable must be visible in the first fold on desktop and mobile. |
+| S2_quick_answer | seo | direct answer | 3/1/1 | short answer block | Give the category fit answer before expanding details. |
+| S3_problem_diagnosis | ux | problem diagnosis | 3/1/2 | diagnostic checklist, reader-fit examples | Tie the diagnosis to the selected audience cohort. |
+| S4_selection_criteria | seo | selection criteria | 4/2/1 | criteria list, decision table | Make criteria specific enough to guide product/category choice. |
+| S5_solution_mapping | conversion | solution mapping | 3/1/2 | scenario-to-solution map, contextual CTA | Connect the user's problem to the relevant internal destination. |
+| S6_common_mistakes | ux | mistake prevention | 3/1/2 | mistakes table, not-right-for-you guidance | Include not-right-for-you guidance so the page does not over-sell. |
+| S7_trust_proof | trust | trust and methodology proof | 3/1/1 | author/reviewer block, methodology note, proof points | Include authored-by visibility and page creation or update date. |
+| S8_faq | seo | FAQ support | 4/2/0 | FAQ entries, FAQ schema draft | Include FAQ schema draft when this section is present. |
+| S9_final_cta | conversion | final conversion path | 2/0/1 | final CTA, short closing copy | Use one primary CTA variant in V1. |
+| S10_references | reference | source record | 0/0/0 | reference list | Only URL/source metadata belongs here. |
+
+## Reference Requirements
+
+- Live SERP review required: yes
+- Quote/reference URLs required: yes
+- External links open in new tab: yes
+- Notes: Review top live search results before finalizing page structure. Use cited source URLs for claims and reference notes. Do not copy competitor wording.
+
+## Image Requirements
+
+- Default generated image count: 3-5
+- OG image required: yes
+- Brand guideline required: yes
+- Notes: Generate top 3-5 high-impact in-page images when possible. Include a separate OG image asset. Use image briefs only when generation is unavailable or time-bounded by the user.
+
+## Approval Queues
+
+| Risk | Item | Reason |
+| --- | --- | --- |
+| medium | Tone and content depth | The user should choose tone per page and content depth is treated as a target range. |
+| medium | Brand-led generated images | Images should follow brand guidelines and include logo/brand signals only when appropriate. |
+| low | Selected section order | Standard V1 section order is proposed before full copy is drafted. |
+
+## Source-Backed Inference Notes
+
+- Selected page P1 came from cluster opportunity startup_conversion. Evidence strength: low. Source: cluster_strategy.
+- Audience cohort supplied: Indian users exploring Tretinoin for pitted acne scars and texture.. Evidence strength: high. Source: user_input.
+- Cluster quality score at strategy time was 74/100. Evidence strength: medium. Source: cluster_strategy.
+
+## Machine-Readable JSON
+
+```json
+{
+  "companyName": "MyMirror",
+  "market": "India",
+  "category": {
+    "name": "tretinoin-for-acne-scars-guide",
+    "slug": "tretinoin-for-acne-scars-guide"
+  },
+  "selectedPage": {
+    "id": "P1",
+    "title": "tretinoin-for-acne-scars-guide Category Page",
+    "pageType": "product_category",
+    "strategyCategory": "startup_conversion",
+    "targetIntent": "Help users understand the category and route them toward the best product or diagnostic action.",
+    "primaryCtaGoal": "Route users to the category's primary product or action destination.",
+    "suggestedUrlSlug": "tretinoin-for-acne-scars-guide",
+    "evidenceStrength": "low"
+  },
+  "audience": {
+    "cohort": "Indian users exploring Tretinoin for pitted acne scars and texture.",
+    "market": "India"
+  },
+  "tone": {
+    "selected": "professional compact",
+    "requiresUserSelection": false,
+    "options": [
+      "professional compact",
+      "clear advisory",
+      "conversion-supportive"
+    ]
+  },
+  "keywords": {
+    "secondary": [],
+    "clusterSeeds": [
+      "tretinoin for acne scars"
+    ]
+  },
+  "contentDepth": {
+    "targetRange": "1800-2400 words",
+    "strict": false
+  },
+  "cta": {
+    "primaryGoal": "Route users to the category's primary product or action destination.",
+    "firstFoldRequired": true,
+    "mobileSticky": {
+      "recommended": true,
+      "shortenedLabelRequired": true
+    }
+  },
+  "pageStructure": {
+    "intentPattern": "product_category",
+    "structureVariant": "category_solution",
+    "inference": {
+      "confidence": "high",
+      "signals": [
+        "pageType=product_category"
+      ],
+      "notes": "Product/category pages need diagnosis, selection criteria, solution mapping, and conversion support."
+    },
+    "researchBasis": [
+      "selected page title, slug, target intent, page type, and strategy category",
+      "live SERP, PAA, social/video, competitor-gap, and audience-language research must refine this before final copy"
+    ],
+    "structureUniquenessRationale": "category_solution is the starting structure because the selected opportunity signals product_category intent. The adapter must revise the section sequence, decision tools, FAQs, troubleshooting blocks, tables, superiority components, and CTA placement when current-page research shows different sub-intents or gaps, and must not reuse a structure from another page, batch, or historical run.",
+    "mustDifferFromPages": [],
+    "sections": [
+      {
+        "id": "S1_hero",
+        "purpose": "First-fold answer, H1, primary CTA, and surrounding CTA microcopy.",
+        "contentRole": "conversion",
+        "sectionIntent": "first-fold promise",
+        "evidenceNeeded": [
+          "page promise",
+          "primary CTA rationale",
+          "reader intent"
+        ],
+        "requiredDevices": [
+          "H1",
+          "primary CTA",
+          "CTA microcopy"
+        ],
+        "evidenceBudget": {
+          "minimumFacts": 2,
+          "minimumCitedClaims": 0,
+          "minimumConcreteExamples": 1
+        },
+        "notes": "State the category promise, reader problem, and primary CTA in the first fold. Primary actionable must be visible in the first fold on desktop and mobile."
+      },
+      {
+        "id": "S2_quick_answer",
+        "purpose": "Short answer optimized for humans and AI overview style retrieval.",
+        "contentRole": "seo",
+        "sectionIntent": "direct answer",
+        "evidenceNeeded": [
+          "direct answer",
+          "intent qualifier",
+          "reader next step"
+        ],
+        "requiredDevices": [
+          "short answer block"
+        ],
+        "evidenceBudget": {
+          "minimumFacts": 3,
+          "minimumCitedClaims": 1,
+          "minimumConcreteExamples": 1
+        },
+        "notes": "Give the category fit answer before expanding details."
+      },
+      {
+        "id": "S3_problem_diagnosis",
+        "purpose": "Explain the problem, audience context, and how readers should recognize fit.",
+        "contentRole": "ux",
+        "sectionIntent": "problem diagnosis",
+        "evidenceNeeded": [
+          "audience signal",
+          "category symptom or trigger",
+          "reader decision context"
+        ],
+        "requiredDevices": [
+          "diagnostic checklist",
+          "reader-fit examples"
+        ],
+        "evidenceBudget": {
+          "minimumFacts": 3,
+          "minimumCitedClaims": 1,
+          "minimumConcreteExamples": 2
+        },
+        "notes": "Tie the diagnosis to the selected audience cohort."
+      },
+      {
+        "id": "S4_selection_criteria",
+        "purpose": "Define practical buying or selection criteria for the category.",
+        "contentRole": "seo",
+        "sectionIntent": "selection criteria",
+        "evidenceNeeded": [
+          "criteria with rationale",
+          "common tradeoffs",
+          "category constraints"
+        ],
+        "requiredDevices": [
+          "criteria list",
+          "decision table"
+        ],
+        "evidenceBudget": {
+          "minimumFacts": 4,
+          "minimumCitedClaims": 2,
+          "minimumConcreteExamples": 1
+        },
+        "notes": "Make criteria specific enough to guide product/category choice."
+      },
+      {
+        "id": "S5_solution_mapping",
+        "purpose": "Map reader situations to the relevant internal solution path.",
+        "contentRole": "conversion",
+        "sectionIntent": "solution mapping",
+        "evidenceNeeded": [
+          "internal offer fit",
+          "reader scenario",
+          "CTA rationale"
+        ],
+        "requiredDevices": [
+          "scenario-to-solution map",
+          "contextual CTA"
+        ],
+        "evidenceBudget": {
+          "minimumFacts": 3,
+          "minimumCitedClaims": 1,
+          "minimumConcreteExamples": 2
+        },
+        "notes": "Connect the user's problem to the relevant internal destination."
+      },
+      {
+        "id": "S6_common_mistakes",
+        "purpose": "Show what readers often get wrong and how to avoid it.",
+        "contentRole": "ux",
+        "sectionIntent": "mistake prevention",
+        "evidenceNeeded": [
+          "common mistake",
+          "better action",
+          "consequence"
+        ],
+        "requiredDevices": [
+          "mistakes table",
+          "not-right-for-you guidance"
+        ],
+        "evidenceBudget": {
+          "minimumFacts": 3,
+          "minimumCitedClaims": 1,
+          "minimumConcreteExamples": 2
+        },
+        "notes": "Include not-right-for-you guidance so the page does not over-sell."
+      },
+      {
+        "id": "S7_trust_proof",
+        "purpose": "Author, reviewer, methodology, experience, proof, and brand trust signals.",
+        "contentRole": "trust",
+        "sectionIntent": "trust and methodology proof",
+        "evidenceNeeded": [
+          "authorship signal",
+          "review or methodology note",
+          "brand proof"
+        ],
+        "requiredDevices": [
+          "author/reviewer block",
+          "methodology note",
+          "proof points"
+        ],
+        "evidenceBudget": {
+          "minimumFacts": 3,
+          "minimumCitedClaims": 1,
+          "minimumConcreteExamples": 1
+        },
+        "notes": "Include authored-by visibility and page creation or update date."
+      },
+      {
+        "id": "S8_faq",
+        "purpose": "Answer likely questions and support FAQ JSON-LD only when FAQ content exists.",
+        "contentRole": "seo",
+        "sectionIntent": "FAQ support",
+        "evidenceNeeded": [
+          "question",
+          "direct answer",
+          "source-backed caveat"
+        ],
+        "requiredDevices": [
+          "FAQ entries",
+          "FAQ schema draft"
+        ],
+        "evidenceBudget": {
+          "minimumFacts": 4,
+          "minimumCitedClaims": 2,
+          "minimumConcreteExamples": 0
+        },
+        "notes": "Include FAQ schema draft when this section is present."
+      },
+      {
+        "id": "S9_final_cta",
+        "purpose": "Final primary CTA and conversion-oriented closing copy.",
+        "contentRole": "conversion",
+        "sectionIntent": "final conversion path",
+        "evidenceNeeded": [
+          "CTA rationale",
+          "reader readiness cue",
+          "destination fit"
+        ],
+        "requiredDevices": [
+          "final CTA",
+          "short closing copy"
+        ],
+        "evidenceBudget": {
+          "minimumFacts": 2,
+          "minimumCitedClaims": 0,
+          "minimumConcreteExamples": 1
+        },
+        "notes": "Use one primary CTA variant in V1."
+      },
+      {
+        "id": "S10_references",
+        "purpose": "Reference URLs and source metadata used for page claims.",
+        "contentRole": "reference",
+        "sectionIntent": "source record",
+        "evidenceNeeded": [
+          "reference URL",
+          "source label",
+          "access date or retrieval note"
+        ],
+        "requiredDevices": [
+          "reference list"
+        ],
+        "evidenceBudget": {
+          "minimumFacts": 0,
+          "minimumCitedClaims": 0,
+          "minimumConcreteExamples": 0
+        },
+        "notes": "Only URL/source metadata belongs here."
+      }
+    ],
+    "h1Rule": "exactly_one"
+  },
+  "referenceRequirements": {
+    "liveSerpReviewRequired": true,
+    "quoteReferenceUrlsRequired": true,
+    "externalLinksOpenInNewTab": true,
+    "notes": [
+      "Review top live search results before finalizing page structure.",
+      "Use cited source URLs for claims and reference notes.",
+      "Do not copy competitor wording."
+    ]
+  },
+  "imageRequirements": {
+    "defaultGeneratedImageCount": "3-5",
+    "ogImageRequired": true,
+    "brandGuidelineRequired": true,
+    "notes": [
+      "Generate top 3-5 high-impact in-page images when possible.",
+      "Include a separate OG image asset.",
+      "Use image briefs only when generation is unavailable or time-bounded by the user."
+    ]
+  },
+  "approvalQueues": {
+    "structure": [
+      {
+        "item": "Selected section order",
+        "reason": "Standard V1 section order is proposed before full copy is drafted.",
+        "risk": "low"
+      }
+    ],
+    "content": [
+      {
+        "item": "Tone and content depth",
+        "reason": "The user should choose tone per page and content depth is treated as a target range.",
+        "risk": "medium"
+      }
+    ],
+    "images": [
+      {
+        "item": "Brand-led generated images",
+        "reason": "Images should follow brand guidelines and include logo/brand signals only when appropriate.",
+        "risk": "medium"
+      }
+    ],
+    "critical": []
+  },
+  "evidenceNotes": [
+    {
+      "pointer": "Selected page P1 came from cluster opportunity startup_conversion.",
+      "evidenceStrength": "low",
+      "source": "cluster_strategy"
+    },
+    {
+      "pointer": "Audience cohort supplied: Indian users exploring Tretinoin for pitted acne scars and texture..",
+      "evidenceStrength": "high",
+      "source": "user_input"
+    },
+    {
+      "pointer": "Cluster quality score at strategy time was 74/100.",
+      "evidenceStrength": "medium",
+      "source": "cluster_strategy"
+    }
+  ],
+  "machineMetadata": {
+    "schemaVersion": "prewriting-strategy.v1",
+    "generatedFrom": "cluster-strategy.v1",
+    "selectedPageId": "P1"
+  }
+}
+```
