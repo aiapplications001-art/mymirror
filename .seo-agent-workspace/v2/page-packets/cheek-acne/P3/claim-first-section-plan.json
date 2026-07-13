@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "claim-first-section-plan.v2",
+  "status": "passed",
+  "sections": [
+    {
+      "sectionId": "S1_hero",
+      "sectionClaim": "Cheek acne comparison hero clarifies BHA vs BP options.",
+      "readerQuestion": "Which active is best for cheek pimples?",
+      "evidenceNeeded": "Dermatological comparison of lipophilic vs hydrophilic properties.",
+      "exampleOrTradeoff": "Daily face wash contact time vs leave-on spot gels.",
+      "caveatOrNotRightForYou": "Severe cysts need oral prescription meds.",
+      "decisionPurpose": "Enable reader to identify their primary cheek breakout type.",
+      "transitionPurpose": "Move to the quick verdict comparison summary."
+    },
+    {
+      "sectionId": "S2_quick_verdict",
+      "sectionClaim": "A quick verdict helps readers choose the right product strength.",
+      "readerQuestion": "Which product should I buy first?",
+      "evidenceNeeded": "Typical success rates of salicylic acid vs benzoyl peroxide.",
+      "exampleOrTradeoff": "Minimalist 2% Salicylic Acid vs Benzoyl Peroxide 2.5%.",
+      "caveatOrNotRightForYou": "Not for highly sensitive skin barriers.",
+      "decisionPurpose": "Provide an immediate, qualified recommendation.",
+      "transitionPurpose": "Explain the comparison methodology."
+    },
+    {
+      "sectionId": "S3_comparison_methodology",
+      "sectionClaim": "Our evaluation methodology uses clinical study references.",
+      "readerQuestion": "How are these products compared?",
+      "evidenceNeeded": "Clinical endpoints (comedone reduction and inflammatory lesion counts).",
+      "exampleOrTradeoff": "Comparing Indian OTC products on price-to-volume ratio.",
+      "caveatOrNotRightForYou": "Subjective feedback from user trials excluded.",
+      "decisionPurpose": "Establish clinical and cost transparency.",
+      "transitionPurpose": "Outline the decision criteria."
+    },
+    {
+      "sectionId": "S4_decision_criteria",
+      "sectionClaim": "Four decision criteria dictate the best cheek treatment.",
+      "readerQuestion": "What factors should I compare?",
+      "evidenceNeeded": "Friction compatibility, skin type, active strength, and barrier support.",
+      "exampleOrTradeoff": "High active percentage vs barrier nourishing lipids.",
+      "caveatOrNotRightForYou": "Not applicable to generic body acne.",
+      "decisionPurpose": "Structure the reader's comparison priorities.",
+      "transitionPurpose": "Show the comparison matrix."
+    },
+    {
+      "sectionId": "S5_side_by_side_matrix",
+      "sectionClaim": "A side-by-side matrix highlights formula vehicle differences.",
+      "readerQuestion": "How do the top products compare side-by-side?",
+      "evidenceNeeded": "Ingredient lists, vehicle type (gel/lotion/wash), and price range.",
+      "exampleOrTradeoff": "Gel moisturizers vs foaming cleansers.",
+      "caveatOrNotRightForYou": "Formula pH variation not accounted for.",
+      "decisionPurpose": "Render the complete comparative picture.",
+      "transitionPurpose": "Analyze reader-fit tradeoffs."
+    },
+    {
+      "sectionId": "S6_reader_fit_tradeoffs",
+      "sectionClaim": "Specific product vehicles are fit for commuter vs student lifestyles.",
+      "readerQuestion": "Which option fits my daily routine?",
+      "evidenceNeeded": "Friction levels, sebum production rate, and morning vs night application.",
+      "exampleOrTradeoff": "Commuter helmet wearers vs long-hour studying students.",
+      "caveatOrNotRightForYou": "Individual sweat rates vary.",
+      "decisionPurpose": "Define product compatibility profiles.",
+      "transitionPurpose": "Present brand trust proof."
+    },
+    {
+      "sectionId": "S7_trust_proof",
+      "sectionClaim": "Dermatological review ensures safety and reliability.",
+      "readerQuestion": "Who verified these comparisons?",
+      "evidenceNeeded": "Dermatologist certifications and clinical guidance standards.",
+      "exampleOrTradeoff": "Board-certified verification vs social media influencer claims.",
+      "caveatOrNotRightForYou": "Does not replace an in-person dermatological consultation.",
+      "decisionPurpose": "Build professional credibility.",
+      "transitionPurpose": "Address frequently asked questions."
+    },
+    {
+      "sectionId": "S8_faq",
+      "sectionClaim": "Answers to common questions prevent active layering mistakes.",
+      "readerQuestion": "Can I use both BHAs and BP together?",
+      "evidenceNeeded": "Mechanism of action and chemical compatibility of actives.",
+      "exampleOrTradeoff": "Alternating nights vs layering directly.",
+      "caveatOrNotRightForYou": "Individual barrier tolerance limits vary.",
+      "decisionPurpose": "Resolve common application doubts.",
+      "transitionPurpose": "Lead to the final CTA and scanner action."
+    },
+    {
+      "sectionId": "S9_final_cta",
+      "sectionClaim": "The MyMirror AI Scanner offers the final personalized diagnosis.",
+      "readerQuestion": "What is my next step?",
+      "evidenceNeeded": "AI face mapping accuracy metrics and analysis benefits.",
+      "exampleOrTradeoff": "Self-guessing products vs getting a customized scanner report.",
+      "caveatOrNotRightForYou": "Requires adequate lighting for accurate scanning.",
+      "decisionPurpose": "Guide the reader to take diagnostic action.",
+      "transitionPurpose": "Provide reference credentials."
+    },
+    {
+      "sectionId": "S10_references",
+      "sectionClaim": "Our claims are backed by clinical dermatological studies.",
+      "readerQuestion": "Where can I read the primary studies?",
+      "evidenceNeeded": "PubMed and medical journal links.",
+      "exampleOrTradeoff": "Medical journal findings vs marketing claims.",
+      "caveatOrNotRightForYou": "Some full-text journal access may require subscriptions.",
+      "decisionPurpose": "Verify facts and claims.",
+      "transitionPurpose": "None."
+    }
+  ]
+}

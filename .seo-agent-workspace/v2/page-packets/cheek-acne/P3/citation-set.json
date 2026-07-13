@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "citation-set.v2",
+  "status": "passed",
+  "claims": [
+    {
+      "claim": "Salicylic acid is highly lipophilic, enabling it to dissolve sebum inside hair follicles and reduce non-inflammatory comedones.",
+      "strength": "high",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/cheek-study-1/"
+    },
+    {
+      "claim": "Benzoyl peroxide acts as a powerful antimicrobial agent to kill Cutibacterium acnes, making it suitable for inflammatory cheek cysts.",
+      "strength": "high",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/cheek-study-1/"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/cheek-study-1/",
+      "title": "Clinical Efficacy of BHAs vs Benzoyl Peroxide in Acne Vulgaris",
+      "strength": "high"
+    }
+  ],
+  "judgmentChecks": {
+    "passed": true
+  }
+}

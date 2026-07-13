@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "audience-definition.v2",
+  "status": "passed",
+  "targetCohort": "Young Indian commuters and students comparing treatment options for persistent, painful cheek breakouts.",
+  "awarenessStage": "solution_seeking",
+  "readerTakeaway": "Understand the differences between active ingredients and spot treatments to select the most suitable, non-irritating option for their cheek acne type.",
+  "objections": [
+    "Believing that one active ingredient works for all cheek breakouts (e.g. using salicylic acid on deep cystic nodules).",
+    "Fearing that comparing products will lead to purchasing expensive, counter-productive regimens."
+  ],
+  "ctaConnection": "Take the free MyMirror AI skin analysis to check for active inflammation on your cheeks and get a custom guide.",
+  "judgmentChecks": {
+    "passed": true
+  }
+}

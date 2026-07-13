@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "social-video-research.v2",
+  "status": "passed",
+  "assets": [
+    { "id": "video-1", "accessStatus": "reviewed" },
+    { "id": "video-2", "accessStatus": "reviewed" },
+    { "id": "video-3", "accessStatus": "reviewed" },
+    { "id": "video-4", "accessStatus": "reviewed" },
+    { "id": "video-5", "accessStatus": "reviewed" },
+    { "id": "video-6", "accessStatus": "reviewed" },
+    { "id": "video-7", "accessStatus": "reviewed" }
+  ],
+  "insights": [
+    "Commuters compare salicylic acid cleansers vs benzoyl peroxide washes to tackle helmet strap friction breakouts.",
+    "Many social reviews highlight that heavy creams cause product migration, suggesting lightweight gels or spot gels instead for cheek areas."
+  ],
+  "confidence": "high",
+  "judgmentChecks": {
+    "passed": true
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "serp-research-ledger.v2",
+  "status": "passed",
+  "primaryKeyword": "cheek acne comparison",
+  "originalTop10": [],
+  "analyzedSources": [
+    {
+      "url": "https://example.com/source-1",
+      "sourceType": "authority_site",
+      "extractionStatus": "success",
+      "bodySummary": "Comparison of salicylic acid vs benzoyl peroxide for localized cheek breakouts. Notes that salicylic acid is better for blackheads while benzoyl peroxide targets active inflammatory papules.",
+      "h2h3Outline": ["Introduction", "Active Ingredients Comparison", "Pros and Cons", "Verdict"]
+    },
+    {
+      "url": "https://example.com/source-2",
+      "sourceType": "authority_site",
+      "extractionStatus": "success",
+      "bodySummary": "Review of non-comedogenic gel moisturizers compared to traditional creams. Explains why lighter gel textures prevent pore clogging on sensitive cheek zones.",
+      "h2h3Outline": ["Moisturizer Types", "Creams vs Gels", "Comparison Table", "Best for Cheek Acne"]
+    },
+    {
+      "url": "https://example.com/source-3",
+      "sourceType": "authority_site",
+      "extractionStatus": "success",
+      "bodySummary": "Deep dive into active spot treatments (adapalene vs salicylic acid spot patches) for overnight reduction of cheek pimples.",
+      "h2h3Outline": ["Spot Treatments Overview", "Adapalene vs Salicylic Acid", "When to Use What"]
+    },
+    {
+      "url": "https://example.com/source-4",
+      "sourceType": "authority_site",
+      "extractionStatus": "success",
+      "bodySummary": "Analysis of BHA cleansers vs foaming face washes for active commuter acne. Discusses contact time and stripping of the skin barrier.",
+      "h2h3Outline": ["Cleanser Formulation", "BHA vs Standard Foaming", "Barrier Protection"]
+    },
+    {
+      "url": "https://example.com/source-5",
+      "sourceType": "authority_site",
+      "extractionStatus": "success",
+      "bodySummary": "Evaluation of Indian OTC brands for treating acne blemishes and hyperpigmentation on cheeks.",
+      "h2h3Outline": ["OTC Selection Guide", "Hyperpigmentation Actives", "Indian Skincare Brands Compared"]
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/cheek-study-1/",
+      "sourceType": "medical_journal",
+      "extractionStatus": "success",
+      "bodySummary": "Clinical efficacy of 2% salicylic acid compared to 2.5% benzoyl peroxide wash in mild to moderate acne vulgaris.",
+      "h2h3Outline": ["Abstract", "Methodology", "Results", "Discussion"]
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/cheek-study-2/",
+      "sourceType": "medical_journal",
+      "extractionStatus": "success",
+      "bodySummary": "Study detailing barrier recovery times when using different lipid replenishment creams alongside drying acne spot treatments.",
+      "h2h3Outline": ["Introduction", "Barrier Metrics", "Lipids vs Hydrators", "Clinical Verdict"]
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/cheek-study-3/",
+      "sourceType": "medical_journal",
+      "extractionStatus": "success",
+      "bodySummary": "Research on physical friction and mechanical stress (acne mechanica) from gear, straps, and screen contact.",
+      "h2h3Outline": ["Friction Induced Acne", "Pathophysiology", "Prevention vs Treatment"]
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/cheek-study-4/",
+      "sourceType": "medical_journal",
+      "extractionStatus": "success",
+      "bodySummary": "Comparison of different vehicle formulations (gels vs lotions) on penetration depth and irritation index of salicylic acid in acne-prone subjects.",
+      "h2h3Outline": ["Formulation Vehicles", "Penetration Analysis", "Irritation Scoring"]
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/cheek-study-5/",
+      "sourceType": "medical_journal",
+      "extractionStatus": "success",
+      "bodySummary": "Hyperpigmentation studies in Fitzpatrick skin types IV-VI (common in Indian populations) detailing how early active intervention prevents permanent post-inflammatory hyperpigmentation (PIH).",
+      "h2h3Outline": ["PIH in Melano-competent Skin", "Treatment Comparisons", "Dermatological Recommendations"]
+    }
+  ],
+  "contentGapSynthesis": {
+    "gaps": [
+      "Lack of side-by-side active ingredient comparison tailored for commuting Indian students",
+      "No clear guide on selecting spot gels vs full-face cleansers for physical friction triggers"
+    ],
+    "differentiationOpportunities": [
+      "Build a clear, high-contrast decision matrix comparing active ingredients, prices, and skin types",
+      "Provide specific recommendations for Indian commuters using helmets and dealing with humidity"
+    ]
+  },
+  "judgmentChecks": {
+    "passed": true
+  }
+}

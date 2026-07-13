@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "narrative-brief.v2",
+  "status": "passed",
+  "primaryStyle": "compact_professional",
+  "openingAngle": "Help readers cut through the confusion of marketing claims to select the exact active skincare product for cheek blemishes.",
+  "brandPov": "We believe that choosing the right active is about matching the formulation vehicle and strength to your daily physical triggers.",
+  "pagePromise": "Provide a clean, unbiased comparison of actives and products to simplify your skincare decision.",
+  "sectionDirections": [
+    { "sectionId": "S1_hero", "direction": "Introduce the cheek acne comparison page and frame the choice of actives." },
+    { "sectionId": "S2_quick_verdict", "direction": "Provide a quick comparison summary or recommendation based on specific reader scenarios." },
+    { "sectionId": "S3_comparison_methodology", "direction": "Explain the criteria and data sources used to compare products fairly." },
+    { "sectionId": "S4_decision_criteria", "direction": "Detail the parameters like skin sensitivity, active type, and cost that matter to students." },
+    { "sectionId": "S5_side_by_side_matrix", "direction": "Present the main side-by-side product comparison table." },
+    { "sectionId": "S6_reader_fit_tradeoffs", "direction": "Outline tradeoffs for different skin barriers, triggers, and budgets." },
+    { "sectionId": "S7_trust_proof", "direction": "Include board-certified dermatologist review credentials and editorial standards." },
+    { "sectionId": "S8_faq", "direction": "Answer common reader queries regarding mixing actives and application frequencies." },
+    { "sectionId": "S9_final_cta", "direction": "Offer the free MyMirror AI skin analysis scanner as the ultimate diagnostic next step." },
+    { "sectionId": "S10_references", "direction": "List clinical studies and factual sources used for page claims." }
+  ],
+  "judgmentChecks": {
+    "passed": true
+  }
+}
