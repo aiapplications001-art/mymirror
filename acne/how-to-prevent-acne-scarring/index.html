@@ -36,7 +36,6 @@
       --color-success: #2D7A4F;
       --color-info:    #1A5F8A;
       --color-danger:  #C0392B;
-      --ease-bouncy: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
     html { scroll-behavior: smooth; }
@@ -75,7 +74,15 @@
     .section-num { width: 36px; height: 36px; border-radius: 50%; background: var(--color-brand); color: #fff; font-family: 'Kantumruy Pro', serif; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .section-title { font-family: 'Kantumruy Pro', serif; font-size: 1.8rem; font-weight: 700; }
 
-    .highlight-box { background: var(--color-brand-light); border-left: 4px solid var(--color-brand); padding: 1.5rem; border-radius: 0 16px 16px 0; margin: 2rem 0; }
+    .summary-box { background: var(--color-bg-secondary); border: 2px solid var(--color-border); border-radius: 16px; padding: 1.5rem; margin: 1.5rem 0; }
+    .summary-list { list-style: none; padding-left: 0; }
+    .summary-list li { padding: 6px 0; display: flex; gap: 10px; font-size: 14px; color: var(--color-text-secondary); }
+    .summary-list li::before { content: '✓'; color: var(--color-brand); font-weight: 800; }
+
+    .faq-container { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+    .faq-item { background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: 12px; padding: 1.25rem; }
+    .faq-question { font-weight: 700; font-size: 15px; color: var(--color-text-primary); margin-bottom: 8px; }
+    .faq-answer { font-size: 14px; color: var(--color-text-secondary); }
     
     /* ── HIGH-CONTRAST PREMIUM TABLE STYLES ── */
     .acne-table-wrapper {
@@ -268,38 +275,57 @@
 
   <div class="toc-bar">
     <div class="toc-inner">
-      <a class="toc-link active" href="#tissue-damage"><span class="toc-num">1</span> Dermal Collapse</a>
-      <a class="toc-link" href="#picking-hazard"><span class="toc-num">2</span> Picking Hazard</a>
-      <a class="toc-link" href="#hazard-matrix"><span class="toc-num">3</span> Hazard Matrix</a>
-      <a class="toc-link" href="#prevention"><span class="toc-num">4</span> Prevention Rules</a>
+      <a class="toc-link active" href="#quick-summary"><span class="toc-num">1</span> Summary</a>
+      <a class="toc-link" href="#tissue-damage"><span class="toc-num">2</span> Science</a>
+      <a class="toc-link" href="#picking-hazard"><span class="toc-num">3</span> Picking Hazard</a>
+      <a class="toc-link" href="#hazard-matrix"><span class="toc-num">4</span> Hazard Matrix</a>
+      <a class="toc-link" href="#prevention"><span class="toc-num">5</span> Prevention</a>
+      <a class="toc-link" href="#faq"><span class="toc-num">6</span> FAQ</a>
     </div>
   </div>
 
   <div class="page-body">
     <main>
-      <!-- SECTION 1 -->
-      <section class="content-section" id="tissue-damage">
+      <!-- SECTION 1: QUICK SUMMARY -->
+      <section class="content-section" id="quick-summary">
         <div class="section-header">
           <div class="section-num">1</div>
+          <div class="section-title">Quick Summary & Key Takeaways</div>
+        </div>
+        <p>Before exploring tissue trauma biology, keep these scar prevention rules in mind:</p>
+        <div class="summary-box">
+          <ul class="summary-list">
+            <li><strong>Inflammation Causes Scars:</strong> Structural pitted marks are the result of deep white blood cell enzymes destroying local collagen.</li>
+            <li><strong>Picking Ruptures Follicles:</strong> Squeezing forces infection deeper, causing dermal tissue collapse.</li>
+            <li><strong>Shield with Patches:</strong> Pimple patches act as physical shields to block fingers and absorb fluid.</li>
+            <li><strong>Calm Inflammation Early:</strong> Topicals like Azelaic Acid reduce swelling and localized cellular damage.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION 2: SCIENCE -->
+      <section class="content-section" id="tissue-damage">
+        <div class="section-header">
+          <div class="section-num">2</div>
           <div class="section-title">Understanding Pimple Picking and Tissue Damage</div>
         </div>
         <p>Acne scarring is not caused by the pimple itself, but by the extent of dermal inflammation that destroys surrounding tissue. When a cyst or papule forms, white blood cells rush to clear bacteria, creating an enzyme-heavy environment. This enzyme cascade dissolves dermal collagen structures.</p>
         <p>Squeezing or picking a pimple tears the delicate follicular wall, forcing bacteria, lipids, and keratin deep into the surrounding dermis. This triggers a massive secondary inflammatory response that causes the dermal matrix to collapse, leaving permanent structural pits (boxcar or rolling scars).</p>
       </section>
 
-      <!-- SECTION 2 -->
+      <!-- SECTION 3: PICKING HAZARD -->
       <section class="content-section" id="picking-hazard">
         <div class="section-header">
-          <div class="section-num">2</div>
+          <div class="section-num">3</div>
           <div class="section-title">The Pimple-Picking Hazard Assessment Matrix</div>
         </div>
         <p>Depending on the type of lesion and the mechanical force applied, the risk of permanent scarring varies. Deep, blind cystic acne carries the highest risk of dermal collapse if picked, whereas superficial blackheads carry a lower risk of permanent scarring but can still lead to post-inflammatory hyperpigmentation (PIH).</p>
       </section>
 
-      <!-- SECTION 3 -->
+      <!-- SECTION 4: HAZARD MATRIX -->
       <section class="content-section" id="hazard-matrix">
         <div class="section-header">
-          <div class="section-num">3</div>
+          <div class="section-num">4</div>
           <div class="section-title">Picking Depth vs. Scar Risk Matrix</div>
         </div>
         <p>Use this clinical hazard scale to evaluate lesion types, the structural depth of mechanical damage, and the resulting scar risk profile:</p>
@@ -338,10 +364,10 @@
         </div>
       </section>
 
-      <!-- SECTION 4 -->
+      <!-- SECTION 5: PREVENTION -->
       <section class="content-section" id="prevention">
         <div class="section-header">
-          <div class="section-num">4</div>
+          <div class="section-num">5</div>
           <div class="section-title">Habit Modification and Active Prevention Rules</div>
         </div>
         <p>To prevent scarring, implement the **Hands-Off Protocol**:</p>
@@ -351,11 +377,33 @@
           <li>Incorporate topical anti-inflammatories like Azelaic Acid (10–15%) or Centella Asiatica to speed up healing without damaging the skin barrier.</li>
         </ol>
       </section>
+
+      <!-- SECTION 6: FAQ -->
+      <section class="content-section" id="faq">
+        <div class="section-header">
+          <div class="section-num">6</div>
+          <div class="section-title">Frequently Asked Questions (FAQ)</div>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">Why does picking a pimple guarantee a scar?</div>
+            <div class="faq-answer">Squeezing ruptures the internal follicular wall, pushing bacteria and inflammatory enzymes deeper into the dermis. This destroys the localized collagen mattress, leading to tissue collapse.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">How do I reduce swelling on a deep blind cyst without popping it?</div>
+            <div class="faq-answer">Apply a cold ice pack wrapped in a clean washcloth for 5 minutes to reduce swelling. Follow with an anti-inflammatory patch containing microdarts to deliver active ingredients like Salicylic Acid directly into the cyst.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Do hydrocolloid pimple patches actually prevent scarring?</div>
+            <div class="faq-answer">Yes. They absorb fluid, keep the wound moist for faster healing, and act as a physical barrier that prevents you from touching, scratching, or picking the lesion.</div>
+          </div>
+        </div>
+      </section>
       
       <!-- REFERENCES -->
       <section class="content-section" id="references">
         <div class="section-header">
-          <div class="section-num">5</div>
+          <div class="section-num">7</div>
           <div class="section-title">References</div>
         </div>
         <ul style="list-style: none; padding-left: 0;">

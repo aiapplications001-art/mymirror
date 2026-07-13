@@ -36,7 +36,6 @@
       --color-success: #2D7A4F;
       --color-info:    #1A5F8A;
       --color-danger:  #C0392B;
-      --ease-bouncy: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
     html { scroll-behavior: smooth; }
@@ -75,7 +74,15 @@
     .section-num { width: 36px; height: 36px; border-radius: 50%; background: var(--color-brand); color: #fff; font-family: 'Kantumruy Pro', serif; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .section-title { font-family: 'Kantumruy Pro', serif; font-size: 1.8rem; font-weight: 700; }
 
-    .highlight-box { background: var(--color-brand-light); border-left: 4px solid var(--color-brand); padding: 1.5rem; border-radius: 0 16px 16px 0; margin: 2rem 0; }
+    .summary-box { background: var(--color-bg-secondary); border: 2px solid var(--color-border); border-radius: 16px; padding: 1.5rem; margin: 1.5rem 0; }
+    .summary-list { list-style: none; padding-left: 0; }
+    .summary-list li { padding: 6px 0; display: flex; gap: 10px; font-size: 14px; color: var(--color-text-secondary); }
+    .summary-list li::before { content: '✓'; color: var(--color-brand); font-weight: 800; }
+
+    .faq-container { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+    .faq-item { background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: 12px; padding: 1.25rem; }
+    .faq-question { font-weight: 700; font-size: 15px; color: var(--color-text-primary); margin-bottom: 8px; }
+    .faq-answer { font-size: 14px; color: var(--color-text-secondary); }
     
     /* ── HIGH-CONTRAST PREMIUM TABLE STYLES ── */
     .acne-table-wrapper {
@@ -268,38 +275,57 @@
 
   <div class="toc-bar">
     <div class="toc-inner">
-      <a class="toc-link active" href="#methodology"><span class="toc-num">1</span> Treatment Science</a>
-      <a class="toc-link" href="#warnings"><span class="toc-num">2</span> Dermarolling Risks</a>
-      <a class="toc-link" href="#matrix"><span class="toc-num">3</span> Efficacy Matrix</a>
-      <a class="toc-link" href="#cost-analysis"><span class="toc-num">4</span> Cost & Pain</a>
+      <a class="toc-link active" href="#quick-summary"><span class="toc-num">1</span> Summary</a>
+      <a class="toc-link" href="#methodology"><span class="toc-num">2</span> Science</a>
+      <a class="toc-link" href="#warnings"><span class="toc-num">3</span> Risks</a>
+      <a class="toc-link" href="#matrix"><span class="toc-num">4</span> Comparison</a>
+      <a class="toc-link" href="#cost-analysis"><span class="toc-num">5</span> Analysis</a>
+      <a class="toc-link" href="#faq"><span class="toc-num">6</span> FAQ</a>
     </div>
   </div>
 
   <div class="page-body">
     <main>
-      <!-- SECTION 1 -->
-      <section class="content-section" id="methodology">
+      <!-- SECTION 1: QUICK SUMMARY -->
+      <section class="content-section" id="quick-summary">
         <div class="section-header">
           <div class="section-num">1</div>
+          <div class="section-title">Quick Summary & Key Takeaways</div>
+        </div>
+        <p>Before reviewing detailed clinical comparisons, here is the baseline comparison between home and clinical treatments:</p>
+        <div class="summary-box">
+          <ul class="summary-list">
+            <li><strong>At-Home Limits:</strong> Topicals and home rollers cannot structurally lift pitted scars.</li>
+            <li><strong>Dermarolling Risk:</strong> Cheap rollers cause micro-tears, pigmentation, and infections.</li>
+            <li><strong>MNRF is Safer:</strong> Bypasses the epidermis, making it highly safe for darker Indian skin (Fitzpatrick IV/V).</li>
+            <li><strong>Subcision for Rolling Scars:</strong> The gold standard procedure to physically detach fibrous tissue anchors.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION 2: SCIENCE -->
+      <section class="content-section" id="methodology">
+        <div class="section-header">
+          <div class="section-num">2</div>
           <div class="section-title">Understanding Scar Revision Modalities</div>
         </div>
         <p>Depressed acne scars (icepick, boxcar, and rolling) are structural defects located in the deep dermis. Fading them requires rebuilding collagen and freeing anchored scar tissue. While at-home topical products can help improve superficial skin tone, they cannot physically lift structural depressions.</p>
         <p>Clinical treatments like Microneedling Radiofrequency (MNRF), Fractional CO2 lasers, and subcision are needed to target deeper tissue layers and achieve significant scar revision.</p>
       </section>
 
-      <!-- SECTION 2 -->
+      <!-- SECTION 3: RISKS -->
       <section class="content-section" id="warnings">
         <div class="section-header">
-          <div class="section-num">2</div>
+          <div class="section-num">3</div>
           <div class="section-title">The Danger of At-Home Dermarolling</div>
         </div>
         <p>Many users turn to cheap, at-home dermarollers to save on clinical costs. However, dermatologists warn that manual rolling needles enter and exit the skin at an angle, creating micro-tears and mechanical damage. Without clinical sterilization, at-home dermarolling frequently causes micro-infections, worsening hyperpigmentation (PIH), and permanent skin scarring.</p>
       </section>
 
-      <!-- SECTION 3 -->
+      <!-- SECTION 4: COMPARISON MATRIX -->
       <section class="content-section" id="matrix">
         <div class="section-header">
-          <div class="section-num">3</div>
+          <div class="section-num">4</div>
           <div class="section-title">Treatment Cost, Pain, and Efficacy Comparison Matrix</div>
         </div>
         <p>Compare the clinical efficacy, estimated cost range in India, pain levels, and target scar types for popular treatments:</p>
@@ -349,19 +375,41 @@
         </div>
       </section>
 
-      <!-- SECTION 4 -->
+      <!-- SECTION 5: ANALYSIS -->
       <section class="content-section" id="cost-analysis">
         <div class="section-header">
-          <div class="section-num">4</div>
+          <div class="section-num">5</div>
           <div class="section-title">Cost vs. Benefit Analysis for Indian Skin</div>
         </div>
         <p>While professional clinical treatments involve higher upfront costs, they provide controlled, sterile, and targeted tissue remodeling. For darker Indian skin types, MNRF is often preferred over CO2 lasers, as it bypasses the melanin-producing epidermis, significantly reducing the risk of post-inflammatory hyperpigmentation (PIH).</p>
+      </section>
+
+      <!-- SECTION 6: FAQ -->
+      <section class="content-section" id="faq">
+        <div class="section-header">
+          <div class="section-num">6</div>
+          <div class="section-title">Frequently Asked Questions (FAQ)</div>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">Is at-home microneedling safe for acne scars?</div>
+            <div class="faq-answer">No. Cheap at-home rollers enter and exit the skin at an angle, tearing the epidermis and causing micro-infections. Clinical microneedling uses professional vertical pens under strict sterilization.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Why is MNRF preferred over Fractional CO2 lasers for darker skin?</div>
+            <div class="faq-answer">MNRF bypasses the superficial epidermis to deliver heat directly into the dermis. This prevents over-activating melanocytes, significantly reducing the risk of post-treatment darkening (PIH).</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">How many clinical sessions are needed for pitted scars?</div>
+            <div class="faq-answer">Most patients require 4 to 6 sessions spaced 4 weeks apart to achieve visible improvement (usually 50% to 70% scar depth reduction). Collagen remodeling continues for 3–6 months after the final session.</div>
+          </div>
+        </div>
       </section>
       
       <!-- REFERENCES -->
       <section class="content-section" id="references">
         <div class="section-header">
-          <div class="section-num">5</div>
+          <div class="section-num">7</div>
           <div class="section-title">References</div>
         </div>
         <ul style="list-style: none; padding-left: 0;">

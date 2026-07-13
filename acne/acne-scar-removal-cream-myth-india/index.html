@@ -36,7 +36,6 @@
       --color-success: #2D7A4F;
       --color-info:    #1A5F8A;
       --color-danger:  #C0392B;
-      --ease-bouncy: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
     html { scroll-behavior: smooth; }
@@ -75,7 +74,15 @@
     .section-num { width: 36px; height: 36px; border-radius: 50%; background: var(--color-brand); color: #fff; font-family: 'Kantumruy Pro', serif; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .section-title { font-family: 'Kantumruy Pro', serif; font-size: 1.8rem; font-weight: 700; }
 
-    .highlight-box { background: var(--color-brand-light); border-left: 4px solid var(--color-brand); padding: 1.5rem; border-radius: 0 16px 16px 0; margin: 2rem 0; }
+    .summary-box { background: var(--color-bg-secondary); border: 2px solid var(--color-border); border-radius: 16px; padding: 1.5rem; margin: 1.5rem 0; }
+    .summary-list { list-style: none; padding-left: 0; }
+    .summary-list li { padding: 6px 0; display: flex; gap: 10px; font-size: 14px; color: var(--color-text-secondary); }
+    .summary-list li::before { content: '✓'; color: var(--color-brand); font-weight: 800; }
+
+    .faq-container { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+    .faq-item { background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: 12px; padding: 1.25rem; }
+    .faq-question { font-weight: 700; font-size: 15px; color: var(--color-text-primary); margin-bottom: 8px; }
+    .faq-answer { font-size: 14px; color: var(--color-text-secondary); }
     
     /* ── HIGH-CONTRAST PREMIUM TABLE STYLES ── */
     .acne-table-wrapper {
@@ -268,38 +275,57 @@
 
   <div class="toc-bar">
     <div class="toc-inner">
-      <a class="toc-link active" href="#tyrosinase"><span class="toc-num">1</span> Pigmentation Science</a>
-      <a class="toc-link" href="#active-scorecard"><span class="toc-num">2</span> Ingredient Limits</a>
-      <a class="toc-link" href="#scorecard-matrix"><span class="toc-num">3</span> Capability Scorecard</a>
-      <a class="toc-link" href="#real-solutions"><span class="toc-num">4</span> Real Scar Solutions</a>
+      <a class="toc-link active" href="#quick-summary"><span class="toc-num">1</span> Summary</a>
+      <a class="toc-link" href="#tyrosinase"><span class="toc-num">2</span> Science</a>
+      <a class="toc-link" href="#active-scorecard"><span class="toc-num">3</span> Limits</a>
+      <a class="toc-link" href="#scorecard-matrix"><span class="toc-num">4</span> Scorecard</a>
+      <a class="toc-link" href="#real-solutions"><span class="toc-num">5</span> Solutions</a>
+      <a class="toc-link" href="#faq"><span class="toc-num">6</span> FAQ</a>
     </div>
   </div>
 
   <div class="page-body">
     <main>
-      <!-- SECTION 1 -->
-      <section class="content-section" id="tyrosinase">
+      <!-- SECTION 1: QUICK SUMMARY -->
+      <section class="content-section" id="quick-summary">
         <div class="section-header">
           <div class="section-num">1</div>
+          <div class="section-title">Quick Summary & Key Takeaways</div>
+        </div>
+        <p>Before reviewing topical active ingredients, keep these scar myths in mind:</p>
+        <div class="summary-box">
+          <ul class="summary-list">
+            <li><strong>Creams Cannot Fill Pits:</strong> Depressed scars are structural dermal collagen losses. Topicals cannot rebuild deep tissue structures.</li>
+            <li><strong>Effective for Pigmentation:</strong> Creams containing tyrosinase inhibitors are excellent for clearing post-acne spots (PIH).</li>
+            <li><strong>Silicone for Keloids:</strong> Silicone sheets and gels flatten raised hypertrophic scars, but do not help indented scars.</li>
+            <li><strong>Consult for Pits:</strong> Pitted scars require physical resurfacing treatments (MNRF, Subcision, Lasers) in a clinic.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION 2: SCIENCE -->
+      <section class="content-section" id="tyrosinase">
+        <div class="section-header">
+          <div class="section-num">2</div>
           <div class="section-title">Understanding Tyrosinase Inhibition and Silicone Gel Efficacy</div>
         </div>
         <p>Many commercial "scar removal creams" promise to erase physical, pitted acne scars. However, skin science tells a different story. Over-the-counter creams can only target surface issues: they use tyrosinase inhibitors (like Kojic Acid or Vitamin C) to block melanin synthesis and fade dark spots (PIH), or use silicone gel to lock in hydration and flatten raised keloids.</p>
         <p>Topical creams cannot rebuild collagen or repair deep dermal damage. Marketing claims promising to cure boxcar, icepick, or rolling scars with simple creams are misleading.</p>
       </section>
 
-      <!-- SECTION 2 -->
+      <!-- SECTION 3: LIMITS -->
       <section class="content-section" id="active-scorecard">
         <div class="section-header">
-          <div class="section-num">2</div>
+          <div class="section-num">3</div>
           <div class="section-title">Topical Active Ingredient Capability Scorecard</div>
         </div>
         <p>Different topical active ingredients target different phases of skin healing and pigmentation. While some are excellent for pigmentation, others do not affect structural scars. Read the scorecard below to understand what topicals can and cannot do.</p>
       </section>
 
-      <!-- SECTION 3 -->
+      <!-- SECTION 4: SCORECARD MATRIX -->
       <section class="content-section" id="scorecard-matrix">
         <div class="section-header">
-          <div class="section-num">3</div>
+          <div class="section-num">4</div>
           <div class="section-title">Topical Active Ingredient Capability Scorecard</div>
         </div>
         <p>Use this clinical matrix to evaluate active ingredients, their targeting mechanisms, and their true effectiveness for different scar types:</p>
@@ -349,19 +375,41 @@
         </div>
       </section>
 
-      <!-- SECTION 4 -->
+      <!-- SECTION 5: SOLUTIONS -->
       <section class="content-section" id="real-solutions">
         <div class="section-header">
-          <div class="section-num">4</div>
+          <div class="section-num">5</div>
           <div class="section-title">The Real Solution for Pitted Scars</div>
         </div>
         <p>If you have structural pitted scars, save your money on expensive "removal creams." Instead, consult a certified dermatologist to discuss physical resurfacing treatments (such as microneedling, subcision, or laser resurfacing) that physically stimulate and remodel dermal collagen.</p>
+      </section>
+
+      <!-- SECTION 6: FAQ -->
+      <section class="content-section" id="faq">
+        <div class="section-header">
+          <div class="section-num">6</div>
+          <div class="section-title">Frequently Asked Questions (FAQ)</div>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">Can scar removal creams fade pitted boxcar scars?</div>
+            <div class="faq-answer">No. Depressed scars represent actual losses of structural dermal collagen. Topical creams cannot rebuild sheets of collagen to fill these deep physical holes. They are only effective for surface discoloration.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">What is the actual purpose of silicone gel for scars?</div>
+            <div class="faq-answer">Silicone gel creates an occlusive, hydrating seal over healing skin. This normalizes fibroblast activity to flatten and soften raised hypertrophic or keloid scars, but it will not raise depressed scars.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Which active ingredient is best for brown post-acne marks?</div>
+            <div class="faq-answer">Active ingredients classified as tyrosinase inhibitors (such as Kojic Acid, Alpha Arbutin, and Tranexamic Acid) are highly effective at blocking the pathway of melanin synthesis, fading brown dark spots (PIH).</div>
+          </div>
+        </div>
       </section>
       
       <!-- REFERENCES -->
       <section class="content-section" id="references">
         <div class="section-header">
-          <div class="section-num">5</div>
+          <div class="section-num">7</div>
           <div class="section-title">References</div>
         </div>
         <ul style="list-style: none; padding-left: 0;">

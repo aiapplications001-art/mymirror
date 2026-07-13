@@ -36,7 +36,6 @@
       --color-success: #2D7A4F;
       --color-info:    #1A5F8A;
       --color-danger:  #C0392B;
-      --ease-bouncy: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
     html { scroll-behavior: smooth; }
@@ -75,8 +74,16 @@
     .section-num { width: 36px; height: 36px; border-radius: 50%; background: var(--color-brand); color: #fff; font-family: 'Kantumruy Pro', serif; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .section-title { font-family: 'Kantumruy Pro', serif; font-size: 1.8rem; font-weight: 700; }
 
-    .highlight-box { background: var(--color-brand-light); border-left: 4px solid var(--color-brand); padding: 1.5rem; border-radius: 0 16px 16px 0; margin: 2rem 0; }
-    
+    .summary-box { background: var(--color-bg-secondary); border: 2px solid var(--color-border); border-radius: 16px; padding: 1.5rem; margin: 1.5rem 0; }
+    .summary-list { list-style: none; padding-left: 0; }
+    .summary-list li { padding: 6px 0; display: flex; gap: 10px; font-size: 14px; color: var(--color-text-secondary); }
+    .summary-list li::before { content: '✓'; color: var(--color-brand); font-weight: 800; }
+
+    .faq-container { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+    .faq-item { background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: 12px; padding: 1.25rem; }
+    .faq-question { font-weight: 700; font-size: 15px; color: var(--color-text-primary); margin-bottom: 8px; }
+    .faq-answer { font-size: 14px; color: var(--color-text-secondary); }
+
     /* ── HIGH-CONTRAST PREMIUM TABLE STYLES ── */
     .acne-table-wrapper {
       margin: 2.5rem 0;
@@ -258,29 +265,48 @@
 
   <div class="toc-bar">
     <div class="toc-inner">
-      <a class="toc-link active" href="#how-it-works"><span class="toc-num">1</span> How Tretinoin Works</a>
-      <a class="toc-link" href="#sandwich-method"><span class="toc-num">2</span> Sandwich Method</a>
-      <a class="toc-link" href="#calendar"><span class="toc-num">3</span> 12-Week Calendar</a>
-      <a class="toc-link" href="#purging"><span class="toc-num">4</span> Purging Management</a>
+      <a class="toc-link active" href="#quick-summary"><span class="toc-num">1</span> Summary</a>
+      <a class="toc-link" href="#how-it-works"><span class="toc-num">2</span> Science</a>
+      <a class="toc-link" href="#sandwich-method"><span class="toc-num">3</span> Sandwich Method</a>
+      <a class="toc-link" href="#calendar"><span class="toc-num">4</span> 12-Week Calendar</a>
+      <a class="toc-link" href="#purging"><span class="toc-num">5</span> Purging</a>
+      <a class="toc-link" href="#faq"><span class="toc-num">6</span> FAQ</a>
     </div>
   </div>
 
   <div class="page-body">
     <main>
-      <!-- SECTION 1 -->
-      <section class="content-section" id="how-it-works">
+      <!-- SECTION 1: QUICK SUMMARY -->
+      <section class="content-section" id="quick-summary">
         <div class="section-header">
           <div class="section-num">1</div>
+          <div class="section-title">Quick Summary & Key Takeaways</div>
+        </div>
+        <p>Before diving into the detailed biological details, here are the clinical rules of using Tretinoin for acne scar revision:</p>
+        <div class="summary-box">
+          <ul class="summary-list">
+            <li><strong>Rebuilds Collagen:</strong> Tretinoin binds cell receptors to stimulate new type I and III dermal collagen.</li>
+            <li><strong>Fades Surface Discoloration:</strong> Speeds up cell shedding to clear post-inflammatory spots (PIH/PIE).</li>
+            <li><strong>Requires Sandwiching:</strong> Applying moisturizer first and last creates a barrier that prevents retinoid dermatitis.</li>
+            <li><strong>SPF 50 is Non-Negotiable:</strong> Retinoids leave the skin highly photosensitive, meaning unprotected sun exposure will worsen scarring.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION 2: HOW IT WORKS -->
+      <section class="content-section" id="how-it-works">
+        <div class="section-header">
+          <div class="section-num">2</div>
           <div class="section-title">How Tretinoin Works for Acne Scars</div>
         </div>
         <p>Tretinoin (all-trans retinoic acid) is the gold standard topical retinoid for skin resurfacing. According to NIH clinical studies, Tretinoin binds directly to retinoic acid receptors in dermal cells, stimulating the synthesis of new collagen type I and III. This process gradually fills in superficial pitted scars and accelerates stratum corneum renewal to fade post-inflammatory hyperpigmentation (PIH).</p>
         <p>However, Tretinoin cannot completely resolve deep, fibrotic icepick or anchored boxcar scars on its own, as these require structural remodeling beneath the dermis. Combining Tretinoin with clinical treatments like subcision or microneedling provides the best outcomes.</p>
       </section>
 
-      <!-- SECTION 2 -->
+      <!-- SECTION 3: THE SANDWICH METHOD -->
       <section class="content-section" id="sandwich-method">
         <div class="section-header">
-          <div class="section-num">2</div>
+          <div class="section-num">3</div>
           <div class="section-title">The Sandwich Method: Minimizing Retinoid Irritation</div>
         </div>
         <p>Retinoid-induced dermatitis (redness, flaking, and burning) is a common side effect, especially for beginners on Indian skin. Dermatologists recommend the **Sandwich Method** to buffer the active ingredient and limit trans-epidermal water loss (TEWL):</p>
@@ -292,10 +318,10 @@
         </ol>
       </section>
 
-      <!-- SECTION 3 -->
+      <!-- SECTION 4: THE 12-WEEK CALENDAR -->
       <section class="content-section" id="calendar">
         <div class="section-header">
-          <div class="section-num">3</div>
+          <div class="section-num">4</div>
           <div class="section-title">The 12-Week Tretinoin Ease-In Calendar</div>
         </div>
         <p>Rushing Tretinoin application is the primary cause of retinoid burns. Follow this clinical scheduling matrix to safely build tolerance over 12 weeks:</p>
@@ -334,20 +360,42 @@
         </div>
       </section>
 
-      <!-- SECTION 4 -->
+      <!-- SECTION 5: PURGING -->
       <section class="content-section" id="purging">
         <div class="section-header">
-          <div class="section-num">4</div>
+          <div class="section-num">5</div>
           <div class="section-title">Purging Management & Safety Rules</div>
         </div>
         <p>Skin purging refers to the rapid expulsion of deep-seated clogs as cellular turnover accelerates. It typically peaks around week 3 to 4 and subsides by week 8. Avoid picking or squeezing purging lesions, as the skin barrier is fragile and picking during Tretinoin therapy will cause permanent structural pitting.</p>
         <p>Always use a broad-spectrum SPF 50 sunscreen during the day, as Tretinoin makes the skin highly photosensitive, increasing the risk of sunburn and PIH.</p>
       </section>
+
+      <!-- SECTION 6: FAQ -->
+      <section class="content-section" id="faq">
+        <div class="section-header">
+          <div class="section-num">6</div>
+          <div class="section-title">Frequently Asked Questions (FAQ)</div>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">How long does Tretinoin take to show improvement on pitted scars?</div>
+            <div class="faq-answer">Mild, superficial skin texture improvements may begin to appear in 6 to 12 months of consistent use. However, deep, structural pitted scars require in-clinic procedures like laser treatments or subcision.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Can I use Salicylic Acid or Glycolic Acid while using Tretinoin?</div>
+            <div class="faq-answer">Do not layer exfoliating acids like AHA/BHA in the same night routine as Tretinoin, as this will trigger severe barrier damage and retinoid burns. If needed, use BHA/AHA in the morning and Tretinoin at night.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">What should I do if my skin begins to peel or flake?</div>
+            <div class="faq-answer">Flaking is normal during the first 4 weeks. Cut back on your Tretinoin application frequency to twice a week, skip exfoliating scrubs, and double down on ceramide moisturizers using the sandwich method.</div>
+          </div>
+        </div>
+      </section>
       
       <!-- REFERENCES -->
       <section class="content-section" id="references">
         <div class="section-header">
-          <div class="section-num">5</div>
+          <div class="section-num">7</div>
           <div class="section-title">References</div>
         </div>
         <ul style="list-style: none; padding-left: 0;">

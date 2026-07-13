@@ -36,7 +36,6 @@
       --color-success: #2D7A4F;
       --color-info:    #1A5F8A;
       --color-danger:  #C0392B;
-      --ease-bouncy: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
     html { scroll-behavior: smooth; }
@@ -75,7 +74,15 @@
     .section-num { width: 36px; height: 36px; border-radius: 50%; background: var(--color-brand); color: #fff; font-family: 'Kantumruy Pro', serif; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .section-title { font-family: 'Kantumruy Pro', serif; font-size: 1.8rem; font-weight: 700; }
 
-    .highlight-box { background: var(--color-brand-light); border-left: 4px solid var(--color-brand); padding: 1.5rem; border-radius: 0 16px 16px 0; margin: 2rem 0; }
+    .summary-box { background: var(--color-bg-secondary); border: 2px solid var(--color-border); border-radius: 16px; padding: 1.5rem; margin: 1.5rem 0; }
+    .summary-list { list-style: none; padding-left: 0; }
+    .summary-list li { padding: 6px 0; display: flex; gap: 10px; font-size: 14px; color: var(--color-text-secondary); }
+    .summary-list li::before { content: '✓'; color: var(--color-brand); font-weight: 800; }
+
+    .faq-container { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+    .faq-item { background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: 12px; padding: 1.25rem; }
+    .faq-question { font-weight: 700; font-size: 15px; color: var(--color-text-primary); margin-bottom: 8px; }
+    .faq-answer { font-size: 14px; color: var(--color-text-secondary); }
     
     /* ── HIGH-CONTRAST PREMIUM TABLE STYLES ── */
     .acne-table-wrapper {
@@ -268,38 +275,57 @@
 
   <div class="toc-bar">
     <div class="toc-inner">
-      <a class="toc-link active" href="#corneum-renewal"><span class="toc-num">1</span> Stratum Corneum</a>
-      <a class="toc-link" href="#layering-ph"><span class="toc-num">2</span> Layering & pH Rules</a>
-      <a class="toc-link" href="#flowchart"><span class="toc-num">3</span> pH Flowchart</a>
-      <a class="toc-link" href="#warnings"><span class="toc-num">4</span> Safety Guidelines</a>
+      <a class="toc-link active" href="#quick-summary"><span class="toc-num">1</span> Summary</a>
+      <a class="toc-link" href="#corneum-renewal"><span class="toc-num">2</span> Science</a>
+      <a class="toc-link" href="#layering-ph"><span class="toc-num">3</span> pH Rules</a>
+      <a class="toc-link" href="#flowchart"><span class="toc-num">4</span> Flowchart</a>
+      <a class="toc-link" href="#warnings"><span class="toc-num">5</span> Warnings</a>
+      <a class="toc-link" href="#faq"><span class="toc-num">6</span> FAQ</a>
     </div>
   </div>
 
   <div class="page-body">
     <main>
-      <!-- SECTION 1 -->
-      <section class="content-section" id="corneum-renewal">
+      <!-- SECTION 1: QUICK SUMMARY -->
+      <section class="content-section" id="quick-summary">
         <div class="section-header">
           <div class="section-num">1</div>
+          <div class="section-title">Quick Summary & Key Takeaways</div>
+        </div>
+        <p>Before studying active ingredient dynamics, here are the core principles of chemical resurfacing:</p>
+        <div class="summary-box">
+          <ul class="summary-list">
+            <li><strong>Clears Surface Clutter:</strong> Exfoliating acids dissolve intercellular lipids to speed up stratum corneum shedding.</li>
+            <li><strong>pH Ordering is Key:</strong> Layering from lowest pH to highest pH prevents skin neutralization and sensitization.</li>
+            <li><strong>Requires Wait Times:</strong> Waiting 15 minutes allows low-pH acids to work before applying neutralizers.</li>
+            <li><strong>Barrier Hydration:</strong> Restore hydration with physiological ceramides post-exfoliation to prevent peeling.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION 2: SCIENCE -->
+      <section class="content-section" id="corneum-renewal">
+        <div class="section-header">
+          <div class="section-num">2</div>
           <div class="section-title">Understanding Stratum Corneum and Skin Resurfacing</div>
         </div>
         <p>Skin texture irregularities—such as microcomedones, rough patches, and pitted post-acne marks—occur when the stratum corneum (the outermost layer of the epidermis) fails to shed dead skin cells efficiently. In Indian conditions, monsoon humidity and urban dust settle into sebum, cementing dead cells together and clogging follicles.</p>
         <p>According to IADVL guidelines, chemical resurfacing using Beta Hydroxy Acids (BHAs) and Alpha Hydroxy Acids (AHAs) is the most effective topical method to clear this buildup and stimulate cellular renewal.</p>
       </section>
 
-      <!-- SECTION 2 -->
+      <!-- SECTION 3: PH RULES -->
       <section class="content-section" id="layering-ph">
         <div class="section-header">
-          <div class="section-num">2</div>
+          <div class="section-num">3</div>
           <div class="section-title">Chemical Layering and pH Rules</div>
         </div>
         <p>Skincare acids are highly dependent on their formulation pH to penetrate skin lipids. Mixing low-pH acids (such as Glycolic or Salicylic acid, pH 3.0–3.5) with higher-pH actives (like Niacinamide, pH 5.5–6.0) without wait times can neutralize both actives or cause severe chemical burns. The golden rule is: **apply from lowest pH to highest pH**, allowing the skin's natural barrier to dry between layers.</p>
       </section>
 
-      <!-- SECTION 3 -->
+      <!-- SECTION 4: FLOWCHART -->
       <section class="content-section" id="flowchart">
         <div class="section-header">
-          <div class="section-num">3</div>
+          <div class="section-num">4</div>
           <div class="section-title">Active Ingredient Layering & pH Flowchart</div>
         </div>
         <p>Follow this structural matrix to sequence your resurfacing actives, maintain correct pH levels, and avoid skin irritation:</p>
@@ -342,19 +368,41 @@
         </div>
       </section>
 
-      <!-- SECTION 4 -->
+      <!-- SECTION 5: WARNINGS -->
       <section class="content-section" id="warnings">
         <div class="section-header">
-          <div class="section-num">4</div>
+          <div class="section-num">5</div>
           <div class="section-title">Preventing Chemical Burns and Sensitization</div>
         </div>
         <p>Combining low-pH acids like AHA and BHA in the same routine should be approached with caution. If you have sensitive skin, alternate days (e.g., BHA on Monday, AHA on Wednesday) instead of layering them in a single session. If you experience burning, stinging, or persistent redness, immediately rinse with cold water, apply a ceramide barrier repair cream, and suspend all active exfoliants for at least 7 days.</p>
+      </section>
+
+      <!-- SECTION 6: FAQ -->
+      <section class="content-section" id="faq">
+        <div class="section-header">
+          <div class="section-num">6</div>
+          <div class="section-title">Frequently Asked Questions (FAQ)</div>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">How often should I use Salicylic Acid for clogged pores?</div>
+            <div class="faq-answer">For Indian skin, using BHA 2-3 times a week at night is typically sufficient. Exfoliating too often can dry out your moisture barrier, triggering secondary breakouts.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Can I layer Niacinamide immediately after Glycolic Acid?</div>
+            <div class="faq-answer">No. Wait 15 minutes after Glycolic Acid application to let your skin's pH stabilize before applying Niacinamide, which has a higher pH of 5.5 to 6.0.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">What is the best time to apply texture-smoothing acids?</div>
+            <div class="faq-answer">Always apply chemical exfoliants at night. Exfoliation removes dead cells, leaving the fresh skin below highly sensitive to daytime UV rays. Ensure you use an SPF 50 daily.</div>
+          </div>
+        </div>
       </section>
       
       <!-- REFERENCES -->
       <section class="content-section" id="references">
         <div class="section-header">
-          <div class="section-num">5</div>
+          <div class="section-num">7</div>
           <div class="section-title">References</div>
         </div>
         <ul style="list-style: none; padding-left: 0;">
