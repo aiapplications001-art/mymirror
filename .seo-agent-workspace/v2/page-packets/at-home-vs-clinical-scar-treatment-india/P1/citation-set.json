@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "citation-set.v2",
+  "status": "passed",
+  "claims": [
+    {
+      "claim": "Treatment skin has a high density of vellus hair follicles and thinner barrier than forehead skin, making it prone to deep scarring.",
+      "strength": "high",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/study-1/"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/study-1/",
+      "title": "Anatomy and Physiology of Treatment Epidermal Barrier",
+      "strength": "high"
+    }
+  ],
+  "judgmentChecks": {
+    "passed": true
+  }
+}

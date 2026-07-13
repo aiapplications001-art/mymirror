@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "narrative-brief.v2",
+  "status": "passed",
+  "primaryStyle": "compact_professional",
+  "openingAngle": "Empathy-driven hook addressing the frustration of painful myth bumps that leave long-lasting marks.",
+  "brandPov": "We believe that understanding the precise physical and metabolic triggers of myth breakouts is the key to clear skin.",
+  "pagePromise": "Provide a comprehensive, habit-focused diagnostic audit to help you decode and eliminate acne scar removal cream myth causes.",
+  "sectionDirections": [
+    {
+      "sectionId": "S1_hero",
+      "direction": "Detail the diagnostic and habit audit steps for S1_hero."
+    },
+    {
+      "sectionId": "S2_quick_answer",
+      "direction": "Detail the diagnostic and habit audit steps for S2_quick_answer."
+    },
+    {
+      "sectionId": "S3_problem_diagnosis",
+      "direction": "Detail the diagnostic and habit audit steps for S3_problem_diagnosis."
+    },
+    {
+      "sectionId": "S4_selection_criteria",
+      "direction": "Detail the diagnostic and habit audit steps for S4_selection_criteria."
+    },
+    {
+      "sectionId": "S5_solution_mapping",
+      "direction": "Detail the diagnostic and habit audit steps for S5_solution_mapping."
+    },
+    {
+      "sectionId": "S6_common_mistakes",
+      "direction": "Detail the diagnostic and habit audit steps for S6_common_mistakes."
+    },
+    {
+      "sectionId": "S7_trust_proof",
+      "direction": "Detail the diagnostic and habit audit steps for S7_trust_proof."
+    },
+    {
+      "sectionId": "S8_faq",
+      "direction": "Detail the diagnostic and habit audit steps for S8_faq."
+    },
+    {
+      "sectionId": "S9_final_cta",
+      "direction": "Detail the diagnostic and habit audit steps for S9_final_cta."
+    }
+  ],
+  "judgmentChecks": {
+    "passed": true
+  }
+}

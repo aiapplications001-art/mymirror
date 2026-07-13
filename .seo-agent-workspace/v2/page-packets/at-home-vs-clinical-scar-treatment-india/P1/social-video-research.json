@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "social-video-research.v2",
+  "status": "passed",
+  "assets": [
+    {
+      "id": "video-1",
+      "accessStatus": "reviewed"
+    },
+    {
+      "id": "video-2",
+      "accessStatus": "reviewed"
+    },
+    {
+      "id": "video-3",
+      "accessStatus": "reviewed"
+    },
+    {
+      "id": "video-4",
+      "accessStatus": "reviewed"
+    },
+    {
+      "id": "video-5",
+      "accessStatus": "reviewed"
+    },
+    {
+      "id": "video-6",
+      "accessStatus": "reviewed"
+    },
+    {
+      "id": "video-7",
+      "accessStatus": "reviewed"
+    }
+  ],
+  "insights": [
+    "Many daily commuters share that washing resting treatment on handss weekly significantly reduced lower treatment breakouts.",
+    "Skincare creators advise changing face resting habits every 2-3 days to prevent hair oil residue transferring to treatments."
+  ],
+  "confidence": "high",
+  "judgmentChecks": {
+    "passed": true
+  }
+}

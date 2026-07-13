@@ -402,11 +402,293 @@
         .sidebar-list li:last-child { border-bottom: none; }
         .sidebar-list li::before { content: '→'; color: var(--brand); font-size: 12px; }
 
-        .acne-table-wrapper { overflow-x: auto; margin: 2rem 0; border: 1px solid var(--border); border-radius: 12px; }
-        .acne-table { width: 100%; border-collapse: collapse; font-size: 13px; }
-        .acne-table th { background: var(--bg-2); padding: 12px; text-align: left; border-bottom: 2px solid var(--border); font-weight: 700; color: var(--text); }
-        .acne-table td { padding: 12px; border-bottom: 1px solid var(--border); color: var(--text-2); }
-        .acne-table tr:last-child td { border-bottom: none; }
+                /* ── HIGH-CONTRAST PREMIUM TABLE STYLES & OVERRIDES ── */
+                /* ── HIGH-CONTRAST PREMIUM TABLE STYLES & OVERRIDES ── */
+        .acne-table-wrapper {
+          margin: 2.5rem 0 !important;
+          border: 2px solid #D9C8BC !important; /* Darker border for structure */
+          border-radius: 16px !important;
+          overflow: hidden !important;
+          box-shadow: 0 6px 24px rgba(26, 20, 16, 0.05) !important;
+          background: #FFFFFF !important; /* Pure white background for maximum contrast */
+        }
+        .acne-table {
+          width: 100% !important;
+          margin: 0 !important;
+          border-collapse: collapse !important; /* Forces cells to merge flush against each other */
+          border-spacing: 0 !important;
+          font-size: 14px !important;
+          color: #1A1410 !important; /* Max contrast dark charcoal */
+          text-align: left !important;
+        }
+        .acne-table tr {
+          background: transparent !important;
+          box-shadow: none !important;
+          transform: none !important;
+          border-bottom: 1px solid #E8DDD5 !important;
+        }
+        .acne-table tr:last-child {
+          border-bottom: none !important;
+        }
+        .acne-table th {
+          background: #2D231E !important; /* Rich deep charcoal-brown for high-contrast header */
+          font-family: 'Kantumruy Pro', serif !important;
+          font-weight: 700 !important;
+          color: #FFFFFF !important; /* Pure white text on dark background */
+          padding: 14px 20px !important; /* Aligned header padding */
+          border-bottom: 2px solid #1A1410 !important;
+          text-transform: uppercase !important;
+          font-size: 11.5px !important;
+          letter-spacing: 0.1em !important;
+          vertical-align: top !important;
+          border-radius: 0 !important;
+        }
+        .acne-table td {
+          padding: 16px 20px !important; /* Generous breathing room but compact height */
+          border-bottom: none !important;
+          vertical-align: top !important; /* Top-aligned for natural visual reading axis */
+          color: #1A1410 !important;
+          line-height: 1.6 !important;
+          border-radius: 0 !important;
+        }
+        .acne-table tr:hover td {
+          background-color: #FDFCFB !important; /* Very subtle warm hover */
+        }
+        
+        .acne-table td strong {
+          color: inherit !important;
+        }
+        
+        /* Desktop-only First Column structure */
+        @media (min-width: 641px) {
+          .acne-table td {
+            background: #FFFFFF !important;
+          }
+          .acne-table td:first-child {
+            font-weight: 700 !important;
+            color: #2D231E !important;
+            white-space: nowrap !important;
+            width: 150px !important;
+            background: #FDFCFB !important; /* Forces vertical accent block to display correctly */
+            border-right: 1px solid #E8DDD5 !important;
+            text-align: center !important; /* Center-aligned for balanced symmetry */
+            border-radius: 0 !important;
+          }
+          .acne-table th:first-child {
+            border-right: 1px solid #3D312A !important;
+            width: 150px !important;
+            text-align: center !important; /* Center-aligned header */
+            border-radius: 0 !important;
+          }
+        }
+        
+        /* Pill Badges with high contrast and borders */
+        .active-badge {
+          display: inline-block !important;
+          padding: 5px 12px !important;
+          border-radius: 9999px !important;
+          font-size: 12px !important;
+          font-weight: 800 !important;
+          text-align: center !important;
+          letter-spacing: 0.03em !important;
+        }
+        
+        /* Mobile responsive card grid (Widths <= 640px) */
+        @media (max-width: 640px) {
+          .acne-table-wrapper {
+            border: none !important;
+            box-shadow: none !important;
+            background: transparent !important;
+            margin: 1.5rem 0 !important;
+          }
+          .acne-table, 
+          .acne-table thead, 
+          .acne-table tbody, 
+          .acne-table th, 
+          .acne-table td, 
+          .acne-table tr {
+            display: block !important;
+            width: 100% !important;
+          }
+          .acne-table thead {
+            display: none !important;
+          }
+          .acne-table tr {
+            background: #FFFFFF !important; /* Pure white card to contrast body background */
+            border: 2px solid #D9C8BC !important; /* Stronger border */
+            border-radius: 16px !important;
+            padding: 20px !important;
+            margin-bottom: 20px !important;
+            box-shadow: 0 4px 15px rgba(26,20,16,0.04) !important;
+          }
+          .acne-table td {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 6px !important;
+            padding: 10px 0 !important; /* Adjusted mobile padding for better spacing balance */
+            border-bottom: 1px solid #F2EDE8 !important;
+            text-align: left !important;
+            border-radius: 0 !important;
+          }
+          .acne-table td:last-child {
+            border-bottom: none !important;
+            padding-bottom: 0 !important;
+          }
+          
+          /* Format first cell as card header on mobile */
+          .acne-table tr td:first-child {
+            font-size: 16px !important;
+            font-weight: 800 !important;
+            color: #2D231E !important;
+            border-bottom: 2px solid #E8DDD5 !important;
+            padding-top: 0 !important; /* Align perfectly with card top padding */
+            padding-bottom: 10px !important; /* Tighter padding */
+            margin-bottom: 6px !important;
+            border-radius: 0 !important;
+            text-align: left !important;
+            background: transparent !important;
+          }
+          .acne-table tr td:first-child::before {
+            display: none !important; /* Hide redundant label */
+          }
+          
+          .acne-table td::before {
+            content: attr(data-label) !important;
+            font-size: 11px !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.08em !important;
+            color: #5C4A3A !important; /* Darker brown-charcoal for clear contrast */
+            font-weight: 800 !important;
+            display: block !important;
+          }
+          .active-badge {
+            align-self: flex-start !important;
+            margin-top: 4px !important;
+          }
+        }
+        .acne-table td {
+          padding: 16px 20px !important; /* Generous breathing room but compact height */
+          border-bottom: none !important;
+          vertical-align: top !important; /* Top-aligned for natural visual reading axis */
+          color: #1A1410 !important;
+          line-height: 1.6 !important;
+          border-radius: 0 !important;
+        }
+        .acne-table tr:hover td {
+          background-color: #FDFCFB !important; /* Very subtle warm hover */
+        }
+        
+        .acne-table td strong {
+          color: inherit !important;
+        }
+        
+        /* Desktop-only First Column structure */
+        @media (min-width: 641px) {
+          .acne-table td {
+            background: #FFFFFF !important;
+          }
+          .acne-table td:first-child {
+            font-weight: 700 !important;
+            color: #2D231E !important;
+            white-space: nowrap !important;
+            width: 150px !important;
+            background: #FDFCFB !important; /* Forces vertical accent block to display correctly */
+            border-right: 1px solid #E8DDD5 !important;
+            text-align: center !important; /* Center-aligned for balanced symmetry */
+            border-radius: 0 !important;
+          }
+          .acne-table th:first-child {
+            border-right: 1px solid #3D312A !important;
+            width: 150px !important;
+            text-align: center !important; /* Center-aligned header */
+            border-radius: 0 !important;
+          }
+        }
+        
+        /* Pill Badges with high contrast and borders */
+        .active-badge {
+          display: inline-block !important;
+          padding: 5px 12px !important;
+          border-radius: 9999px !important;
+          font-size: 12px !important;
+          font-weight: 800 !important;
+          text-align: center !important;
+          letter-spacing: 0.03em !important;
+        }
+        
+        /* Mobile responsive card grid (Widths <= 640px) */
+        @media (max-width: 640px) {
+          .acne-table-wrapper {
+            border: none !important;
+            box-shadow: none !important;
+            background: transparent !important;
+            margin: 1.5rem 0 !important;
+          }
+          .acne-table, 
+          .acne-table thead, 
+          .acne-table tbody, 
+          .acne-table th, 
+          .acne-table td, 
+          .acne-table tr {
+            display: block !important;
+            width: 100% !important;
+          }
+          .acne-table thead {
+            display: none !important;
+          }
+          .acne-table tr {
+            background: #FFFFFF !important; /* Pure white card to contrast body background */
+            border: 2px solid #D9C8BC !important; /* Stronger border */
+            border-radius: 16px !important;
+            padding: 20px !important;
+            margin-bottom: 20px !important;
+            box-shadow: 0 4px 15px rgba(26,20,16,0.04) !important;
+          }
+          .acne-table td {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 6px !important;
+            padding: 10px 0 !important; /* Adjusted mobile padding for better spacing balance */
+            border-bottom: 1px solid #F2EDE8 !important;
+            text-align: left !important;
+            border-radius: 0 !important;
+          }
+          .acne-table td:last-child {
+            border-bottom: none !important;
+            padding-bottom: 0 !important;
+          }
+          
+          /* Format first cell as card header on mobile */
+          .acne-table tr td:first-child {
+            font-size: 16px !important;
+            font-weight: 800 !important;
+            color: #2D231E !important;
+            border-bottom: 2px solid #E8DDD5 !important;
+            padding-top: 0 !important; /* Align perfectly with card top padding */
+            padding-bottom: 10px !important; /* Tighter padding */
+            margin-bottom: 6px !important;
+            border-radius: 0 !important;
+            text-align: left !important;
+            background: transparent !important;
+          }
+          .acne-table tr td:first-child::before {
+            display: none !important; /* Hide redundant label */
+          }
+          
+          .acne-table td::before {
+            content: attr(data-label) !important;
+            font-size: 11px !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.08em !important;
+            color: #5C4A3A !important; /* Darker brown-charcoal for clear contrast */
+            font-weight: 800 !important;
+            display: block !important;
+          }
+          .active-badge {
+            align-self: flex-start !important;
+            margin-top: 4px !important;
+          }
+        }
 
         .product-showcase {
             display: flex;

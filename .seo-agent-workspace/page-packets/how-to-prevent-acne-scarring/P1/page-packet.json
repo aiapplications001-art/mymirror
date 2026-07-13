@@ -1,0 +1,305 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v1",
+    "sourcePrewritingPageId": "P1",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "product_category",
+    "createdDate": "2026-07-13",
+    "updatedDate": "2026-07-13"
+  },
+  "seo": {
+    "title": "how-to-prevent-acne-scarring Category Page | MyMirror",
+    "description": "how-to-prevent-acne-scarring Category Page for Indian teenagers and parents managing acne-prone skin habits., with clear guidance, references, and one primary action path.",
+    "slug": "how-to-prevent-acne-scarring",
+    "h1": "how-to-prevent-acne-scarring Category Page",
+    "secondaryKeywords": [],
+    "ogTitle": "how-to-prevent-acne-scarring Category Page | MyMirror",
+    "ogDescription": "how-to-prevent-acne-scarring Category Page for Indian teenagers and parents managing acne-prone skin habits., with clear guidance, references, and one primary action path.",
+    "twitterTitle": "how-to-prevent-acne-scarring Category Page | MyMirror",
+    "twitterDescription": "how-to-prevent-acne-scarring Category Page for Indian teenagers and parents managing acne-prone skin habits., with clear guidance, references, and one primary action path."
+  },
+  "authorship": {
+    "author": {
+      "name": "MyMirror Editorial Team",
+      "descriptor": "Brand editorial team"
+    },
+    "reviewedByVisible": false
+  },
+  "cta": {
+    "primary": {
+      "label": "Start your free skin analysis now",
+      "microcopy": "Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+    },
+    "mobileSticky": {
+      "label": "Start analysis"
+    }
+  },
+  "rendering": {
+    "mobileFirst": true,
+    "desktopNotes": [
+      "Keep the primary CTA visible in the first fold.",
+      "Use section blocks as editable units."
+    ],
+    "mobileNotes": [
+      "Use a sticky shortened CTA where appropriate.",
+      "Prioritize short paragraphs and visible section hierarchy."
+    ]
+  },
+  "sections": [
+    {
+      "id": "S1_hero",
+      "heading": "Hero",
+      "role": "conversion",
+      "markdown": "# how-to-prevent-acne-scarring Category Page\n\nHelp users understand the category and route them toward the best product or diagnostic action.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+    },
+    {
+      "id": "S2_quick_answer",
+      "heading": "Quick Answer",
+      "role": "seo",
+      "markdown": "Editable section scaffold for Quick Answer. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S3_prerequisites_safety",
+      "heading": "Prerequisites Safety",
+      "role": "trust",
+      "markdown": "Editable section scaffold for Prerequisites Safety. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S4_step_by_step_process",
+      "heading": "Step By Step Process",
+      "role": "seo",
+      "markdown": "Editable section scaffold for Step By Step Process. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S5_mistakes_troubleshooting",
+      "heading": "Mistakes Troubleshooting",
+      "role": "ux",
+      "markdown": "Editable section scaffold for Mistakes Troubleshooting. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S6_expected_outcome",
+      "heading": "Expected Outcome",
+      "role": "conversion",
+      "markdown": "Editable section scaffold for Expected Outcome. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S7_trust_proof",
+      "heading": "Trust Proof",
+      "role": "trust",
+      "markdown": "Editable section scaffold for Trust Proof. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S8_faq",
+      "heading": "Faq",
+      "role": "seo",
+      "markdown": "### FAQ draft\n\n**Question:** What should a reader understand before choosing how-to-prevent-acne-scarring?\n\n**Answer:** The page should answer this with source-backed, brand-appropriate guidance after live reference review."
+    },
+    {
+      "id": "S9_final_cta",
+      "heading": "Final Cta",
+      "role": "conversion",
+      "markdown": "Editable section scaffold for Final Cta. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S10_references",
+      "heading": "References",
+      "role": "reference",
+      "markdown": "Add reference URLs, source labels, and access dates after live search and editorial review."
+    }
+  ],
+  "links": {
+    "internal": [],
+    "external": []
+  },
+  "images": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph image for social and search previews.",
+      "aspectRatio": "1.91:1",
+      "altText": "how-to-prevent-acne-scarring Category Page preview image",
+      "status": "reserved"
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "Mandatory hero visual for the first fold.",
+      "aspectRatio": "16:9",
+      "altText": "how-to-prevent-acne-scarring hero visual",
+      "status": "brief_needed"
+    },
+    {
+      "id": "IMG_02",
+      "sectionId": "S2_quick_answer",
+      "purpose": "High-impact visual support for S2_quick_answer.",
+      "aspectRatio": "4:3",
+      "altText": "how-to-prevent-acne-scarring quick answer visual",
+      "status": "brief_needed"
+    },
+    {
+      "id": "IMG_03",
+      "sectionId": "S3_prerequisites_safety",
+      "purpose": "High-impact visual support for S3_prerequisites_safety.",
+      "aspectRatio": "4:3",
+      "altText": "how-to-prevent-acne-scarring prerequisites safety visual",
+      "status": "brief_needed"
+    },
+    {
+      "id": "IMG_04",
+      "sectionId": "S4_step_by_step_process",
+      "purpose": "High-impact visual support for S4_step_by_step_process.",
+      "aspectRatio": "4:3",
+      "altText": "how-to-prevent-acne-scarring step by step process visual",
+      "status": "brief_needed"
+    }
+  ],
+  "schemaDrafts": [
+    {
+      "type": "WebPage",
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "how-to-prevent-acne-scarring Category Page",
+        "description": "how-to-prevent-acne-scarring Category Page for Indian teenagers and parents managing acne-prone skin habits., with clear guidance, references, and one primary action path."
+      }
+    },
+    {
+      "type": "BreadcrumbList",
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "how-to-prevent-acne-scarring",
+            "item": "/how-to-prevent-acne-scarring"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FAQPage",
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": []
+      }
+    }
+  ],
+  "machineReadable": {
+    "sections": [
+      {
+        "id": "S1_hero",
+        "heading": "Hero",
+        "role": "conversion",
+        "markdown": "# how-to-prevent-acne-scarring Category Page\n\nHelp users understand the category and route them toward the best product or diagnostic action.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+      },
+      {
+        "id": "S2_quick_answer",
+        "heading": "Quick Answer",
+        "role": "seo",
+        "markdown": "Editable section scaffold for Quick Answer. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S3_prerequisites_safety",
+        "heading": "Prerequisites Safety",
+        "role": "trust",
+        "markdown": "Editable section scaffold for Prerequisites Safety. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S4_step_by_step_process",
+        "heading": "Step By Step Process",
+        "role": "seo",
+        "markdown": "Editable section scaffold for Step By Step Process. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S5_mistakes_troubleshooting",
+        "heading": "Mistakes Troubleshooting",
+        "role": "ux",
+        "markdown": "Editable section scaffold for Mistakes Troubleshooting. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S6_expected_outcome",
+        "heading": "Expected Outcome",
+        "role": "conversion",
+        "markdown": "Editable section scaffold for Expected Outcome. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S7_trust_proof",
+        "heading": "Trust Proof",
+        "role": "trust",
+        "markdown": "Editable section scaffold for Trust Proof. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S8_faq",
+        "heading": "Faq",
+        "role": "seo",
+        "markdown": "### FAQ draft\n\n**Question:** What should a reader understand before choosing how-to-prevent-acne-scarring?\n\n**Answer:** The page should answer this with source-backed, brand-appropriate guidance after live reference review."
+      },
+      {
+        "id": "S9_final_cta",
+        "heading": "Final Cta",
+        "role": "conversion",
+        "markdown": "Editable section scaffold for Final Cta. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S10_references",
+        "heading": "References",
+        "role": "reference",
+        "markdown": "Add reference URLs, source labels, and access dates after live search and editorial review."
+      }
+    ],
+    "images": [
+      {
+        "id": "IMG_OG",
+        "purpose": "Open Graph image for social and search previews.",
+        "aspectRatio": "1.91:1",
+        "altText": "how-to-prevent-acne-scarring Category Page preview image",
+        "status": "reserved"
+      },
+      {
+        "id": "IMG_HERO",
+        "sectionId": "S1_hero",
+        "purpose": "Mandatory hero visual for the first fold.",
+        "aspectRatio": "16:9",
+        "altText": "how-to-prevent-acne-scarring hero visual",
+        "status": "brief_needed"
+      },
+      {
+        "id": "IMG_02",
+        "sectionId": "S2_quick_answer",
+        "purpose": "High-impact visual support for S2_quick_answer.",
+        "aspectRatio": "4:3",
+        "altText": "how-to-prevent-acne-scarring quick answer visual",
+        "status": "brief_needed"
+      },
+      {
+        "id": "IMG_03",
+        "sectionId": "S3_prerequisites_safety",
+        "purpose": "High-impact visual support for S3_prerequisites_safety.",
+        "aspectRatio": "4:3",
+        "altText": "how-to-prevent-acne-scarring prerequisites safety visual",
+        "status": "brief_needed"
+      },
+      {
+        "id": "IMG_04",
+        "sectionId": "S4_step_by_step_process",
+        "purpose": "High-impact visual support for S4_step_by_step_process.",
+        "aspectRatio": "4:3",
+        "altText": "how-to-prevent-acne-scarring step by step process visual",
+        "status": "brief_needed"
+      }
+    ],
+    "links": {
+      "internal": [],
+      "external": []
+    }
+  }
+}

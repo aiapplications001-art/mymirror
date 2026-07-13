@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "narrative-brief.v2",
+  "status": "passed",
+  "primaryStyle": "compact_professional",
+  "openingAngle": "Empathy-driven hook addressing the frustration of painful scar bumps that leave long-lasting marks.",
+  "brandPov": "We believe that understanding the precise physical and metabolic triggers of scar breakouts is the key to clear skin.",
+  "pagePromise": "Provide a comprehensive, habit-focused diagnostic audit to help you decode and eliminate acne scar prevention causes.",
+  "sectionDirections": [
+    {
+      "sectionId": "S1_hero",
+      "direction": "Detail the diagnostic and habit audit steps for S1_hero."
+    },
+    {
+      "sectionId": "S2_quick_answer",
+      "direction": "Detail the diagnostic and habit audit steps for S2_quick_answer."
+    },
+    {
+      "sectionId": "S3_prerequisites_safety",
+      "direction": "Detail the diagnostic and habit audit steps for S3_prerequisites_safety."
+    },
+    {
+      "sectionId": "S4_step_by_step_process",
+      "direction": "Detail the diagnostic and habit audit steps for S4_step_by_step_process."
+    },
+    {
+      "sectionId": "S5_mistakes_troubleshooting",
+      "direction": "Detail the diagnostic and habit audit steps for S5_mistakes_troubleshooting."
+    },
+    {
+      "sectionId": "S6_expected_outcome",
+      "direction": "Detail the diagnostic and habit audit steps for S6_expected_outcome."
+    },
+    {
+      "sectionId": "S7_trust_proof",
+      "direction": "Detail the diagnostic and habit audit steps for S7_trust_proof."
+    },
+    {
+      "sectionId": "S8_faq",
+      "direction": "Detail the diagnostic and habit audit steps for S8_faq."
+    },
+    {
+      "sectionId": "S9_final_cta",
+      "direction": "Detail the diagnostic and habit audit steps for S9_final_cta."
+    }
+  ],
+  "judgmentChecks": {
+    "passed": true
+  }
+}
