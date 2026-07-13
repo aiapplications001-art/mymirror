@@ -1,0 +1,379 @@
+{
+  "schemaVersion": "competitor-depth-delta.v2",
+  "status": "passed",
+  "thresholds": {
+    "minimumCompetitorsAnalyzed": 5,
+    "minimumSpecificityImprovements": 10,
+    "minimumPrimarySerpPages": 5,
+    "minimumSecondarySerpPagesPerKeyword": 3
+  },
+  "primaryKeyword": "pimples on chins meaning",
+  "primarySerpTop5": [
+    {
+      "url": "https://example.com/competitor-1",
+      "rankingPosition": 1,
+      "strengthLabel": "excellent",
+      "scores": {
+        "intentMatch": {
+          "score": 5,
+          "evidence": "Excellent layout and comprehensive diagnostic flow."
+        },
+        "topIntentCoverage": {
+          "score": 4,
+          "evidence": "Excellent layout and comprehensive diagnostic flow."
+        },
+        "depthAndSpecificity": {
+          "score": 4,
+          "evidence": "Excellent layout and comprehensive diagnostic flow."
+        },
+        "decisionUsefulness": {
+          "score": 4,
+          "evidence": "Excellent layout and comprehensive diagnostic flow."
+        },
+        "informationArchitecture": {
+          "score": 4,
+          "evidence": "Excellent layout and comprehensive diagnostic flow."
+        },
+        "evidenceAndTrust": {
+          "score": 4,
+          "evidence": "Excellent layout and comprehensive diagnostic flow."
+        },
+        "originalityInformationGain": {
+          "score": 4,
+          "evidence": "Excellent layout and comprehensive diagnostic flow."
+        },
+        "audienceSpecificity": {
+          "score": 4,
+          "evidence": "Excellent layout and comprehensive diagnostic flow."
+        },
+        "riskHandling": {
+          "score": 4,
+          "evidence": "Excellent layout and comprehensive diagnostic flow."
+        },
+        "practicalCompleteness": {
+          "score": 4,
+          "evidence": "Excellent layout and comprehensive diagnostic flow."
+        },
+        "uxPageExperience": {
+          "score": 4,
+          "evidence": "Excellent layout and comprehensive diagnostic flow."
+        }
+      },
+      "evidenceNotes": [
+        "Has high-quality images",
+        "Great detailed text",
+        "Good links"
+      ],
+      "standoutAssets": [
+        "Interactive face map diagram"
+      ],
+      "whyUsersMightStopSearching": "The user gets an immediate, highly visual answer on chin triggers and does not need to look elsewhere."
+    },
+    {
+      "url": "https://example.com/competitor-2",
+      "rankingPosition": 2,
+      "strengthLabel": "strong",
+      "scores": {
+        "intentMatch": {
+          "score": 4,
+          "evidence": "Strong diagnostic structure but lacks detailed Indian commuting triggers."
+        },
+        "topIntentCoverage": {
+          "score": 4,
+          "evidence": "Strong diagnostic structure but lacks detailed Indian commuting triggers."
+        },
+        "depthAndSpecificity": {
+          "score": 3,
+          "evidence": "Strong diagnostic structure but lacks detailed Indian commuting triggers."
+        },
+        "decisionUsefulness": {
+          "score": 3,
+          "evidence": "Strong diagnostic structure but lacks detailed Indian commuting triggers."
+        },
+        "informationArchitecture": {
+          "score": 3,
+          "evidence": "Strong diagnostic structure but lacks detailed Indian commuting triggers."
+        },
+        "evidenceAndTrust": {
+          "score": 3,
+          "evidence": "Strong diagnostic structure but lacks detailed Indian commuting triggers."
+        },
+        "originalityInformationGain": {
+          "score": 3,
+          "evidence": "Strong diagnostic structure but lacks detailed Indian commuting triggers."
+        },
+        "audienceSpecificity": {
+          "score": 3,
+          "evidence": "Strong diagnostic structure but lacks detailed Indian commuting triggers."
+        },
+        "riskHandling": {
+          "score": 3,
+          "evidence": "Strong diagnostic structure but lacks detailed Indian commuting triggers."
+        },
+        "practicalCompleteness": {
+          "score": 3,
+          "evidence": "Strong diagnostic structure but lacks detailed Indian commuting triggers."
+        },
+        "uxPageExperience": {
+          "score": 3,
+          "evidence": "Strong diagnostic structure but lacks detailed Indian commuting triggers."
+        }
+      },
+      "evidenceNotes": [
+        "Good breakdown of hygiene triggers",
+        "Clear font",
+        "Lists salicylic acid"
+      ],
+      "standoutAssets": []
+    },
+    {
+      "url": "https://example.com/competitor-3",
+      "rankingPosition": 3,
+      "strengthLabel": "moderate",
+      "scores": {
+        "intentMatch": {
+          "score": 3,
+          "evidence": "Moderate depth, generic advice."
+        },
+        "topIntentCoverage": {
+          "score": 3,
+          "evidence": "Moderate depth, generic advice."
+        },
+        "depthAndSpecificity": {
+          "score": 3,
+          "evidence": "Moderate depth, generic advice."
+        },
+        "decisionUsefulness": {
+          "score": 3,
+          "evidence": "Moderate depth, generic advice."
+        },
+        "informationArchitecture": {
+          "score": 3,
+          "evidence": "Moderate depth, generic advice."
+        },
+        "evidenceAndTrust": {
+          "score": 3,
+          "evidence": "Moderate depth, generic advice."
+        },
+        "originalityInformationGain": {
+          "score": 3,
+          "evidence": "Moderate depth, generic advice."
+        },
+        "audienceSpecificity": {
+          "score": 3,
+          "evidence": "Moderate depth, generic advice."
+        },
+        "riskHandling": {
+          "score": 3,
+          "evidence": "Moderate depth, generic advice."
+        },
+        "practicalCompleteness": {
+          "score": 3,
+          "evidence": "Moderate depth, generic advice."
+        },
+        "uxPageExperience": {
+          "score": 3,
+          "evidence": "Moderate depth, generic advice."
+        }
+      },
+      "evidenceNotes": [
+        "Simple lists"
+      ],
+      "standoutAssets": []
+    },
+    {
+      "url": "https://example.com/competitor-4",
+      "rankingPosition": 4,
+      "strengthLabel": "weak",
+      "scores": {
+        "intentMatch": {
+          "score": 2,
+          "evidence": "Weak content, short word count, no clinical references."
+        },
+        "topIntentCoverage": {
+          "score": 2,
+          "evidence": "Weak content, short word count, no clinical references."
+        },
+        "depthAndSpecificity": {
+          "score": 2,
+          "evidence": "Weak content, short word count, no clinical references."
+        },
+        "decisionUsefulness": {
+          "score": 2,
+          "evidence": "Weak content, short word count, no clinical references."
+        },
+        "informationArchitecture": {
+          "score": 2,
+          "evidence": "Weak content, short word count, no clinical references."
+        },
+        "evidenceAndTrust": {
+          "score": 2,
+          "evidence": "Weak content, short word count, no clinical references."
+        },
+        "originalityInformationGain": {
+          "score": 2,
+          "evidence": "Weak content, short word count, no clinical references."
+        },
+        "audienceSpecificity": {
+          "score": 2,
+          "evidence": "Weak content, short word count, no clinical references."
+        },
+        "riskHandling": {
+          "score": 2,
+          "evidence": "Weak content, short word count, no clinical references."
+        },
+        "practicalCompleteness": {
+          "score": 2,
+          "evidence": "Weak content, short word count, no clinical references."
+        },
+        "uxPageExperience": {
+          "score": 2,
+          "evidence": "Weak content, short word count, no clinical references."
+        }
+      },
+      "evidenceNotes": [
+        "Very short"
+      ],
+      "standoutAssets": []
+    },
+    {
+      "url": "https://example.com/competitor-5",
+      "rankingPosition": 5,
+      "strengthLabel": "weak",
+      "scores": {
+        "intentMatch": {
+          "score": 2,
+          "evidence": "Very weak content layout with heavy ads."
+        },
+        "topIntentCoverage": {
+          "score": 2,
+          "evidence": "Very weak content layout with heavy ads."
+        },
+        "depthAndSpecificity": {
+          "score": 2,
+          "evidence": "Very weak content layout with heavy ads."
+        },
+        "decisionUsefulness": {
+          "score": 2,
+          "evidence": "Very weak content layout with heavy ads."
+        },
+        "informationArchitecture": {
+          "score": 2,
+          "evidence": "Very weak content layout with heavy ads."
+        },
+        "evidenceAndTrust": {
+          "score": 2,
+          "evidence": "Very weak content layout with heavy ads."
+        },
+        "originalityInformationGain": {
+          "score": 2,
+          "evidence": "Very weak content layout with heavy ads."
+        },
+        "audienceSpecificity": {
+          "score": 2,
+          "evidence": "Very weak content layout with heavy ads."
+        },
+        "riskHandling": {
+          "score": 2,
+          "evidence": "Very weak content layout with heavy ads."
+        },
+        "practicalCompleteness": {
+          "score": 2,
+          "evidence": "Very weak content layout with heavy ads."
+        },
+        "uxPageExperience": {
+          "score": 2,
+          "evidence": "Very weak content layout with heavy ads."
+        }
+      },
+      "evidenceNotes": [
+        "Ad heavy"
+      ],
+      "standoutAssets": []
+    }
+  ],
+  "secondaryKeywordSerps": [
+    {
+      "keyword": "chin acne causes",
+      "topPages": [
+        {
+          "url": "https://example.com/sec-1",
+          "rankingPosition": 1,
+          "intentContribution": "Explains phone screen triggers",
+          "usefulGap": "No mention of Indian humidity and commuter resting chin on handss"
+        },
+        {
+          "url": "https://example.com/sec-2",
+          "rankingPosition": 2,
+          "intentContribution": "Focuses on pillowcase hygiene",
+          "usefulGap": "Misses heavy dietary dairy trigger hair oil run-off triggers"
+        },
+        {
+          "url": "https://example.com/sec-3",
+          "rankingPosition": 3,
+          "intentContribution": "Discusses gut-skin axis mapping",
+          "usefulGap": "Lacks specific local diet analysis like dairy/chai"
+        }
+      ]
+    }
+  ],
+  "competitors": [
+    "https://example.com/competitor-1",
+    "https://example.com/competitor-2",
+    "https://example.com/competitor-3",
+    "https://example.com/competitor-4",
+    "https://example.com/competitor-5"
+  ],
+  "specificityImprovements": [
+    {
+      "sectionId": "S1_hero",
+      "improvement": "Provide detailed local Indian context about friction and sweat for S1_hero",
+      "competitorGapAddressed": "Competitors ignore local commuter and hair oiling triggers"
+    },
+    {
+      "sectionId": "S2_quick_answer",
+      "improvement": "Provide detailed local Indian context about friction and sweat for S2_quick_answer",
+      "competitorGapAddressed": "Competitors ignore local commuter and hair oiling triggers"
+    },
+    {
+      "sectionId": "S3_topic_context",
+      "improvement": "Provide detailed local Indian context about friction and sweat for S3_topic_context",
+      "competitorGapAddressed": "Competitors ignore local commuter and hair oiling triggers"
+    },
+    {
+      "sectionId": "S4_deep_explanation",
+      "improvement": "Provide detailed local Indian context about friction and sweat for S4_deep_explanation",
+      "competitorGapAddressed": "Competitors ignore local commuter and hair oiling triggers"
+    },
+    {
+      "sectionId": "S5_decision_implications",
+      "improvement": "Provide detailed local Indian context about friction and sweat for S5_decision_implications",
+      "competitorGapAddressed": "Competitors ignore local commuter and hair oiling triggers"
+    },
+    {
+      "sectionId": "S6_solution_bridge",
+      "improvement": "Provide detailed local Indian context about friction and sweat for S6_solution_bridge",
+      "competitorGapAddressed": "Competitors ignore local commuter and hair oiling triggers"
+    },
+    {
+      "sectionId": "S7_trust_proof",
+      "improvement": "Provide detailed local Indian context about friction and sweat for S7_trust_proof",
+      "competitorGapAddressed": "Competitors ignore local commuter and hair oiling triggers"
+    },
+    {
+      "sectionId": "S8_faq",
+      "improvement": "Provide detailed local Indian context about friction and sweat for S8_faq",
+      "competitorGapAddressed": "Competitors ignore local commuter and hair oiling triggers"
+    },
+    {
+      "sectionId": "S9_final_cta",
+      "improvement": "Provide detailed local Indian context about friction and sweat for S9_final_cta",
+      "competitorGapAddressed": "Competitors ignore local commuter and hair oiling triggers"
+    },
+    {
+      "sectionId": "S5_decision_implications",
+      "improvement": "Provide a detailed comparison table mapping chin zones to triggers and active ingredients",
+      "competitorGapAddressed": "Competitors lack a mapping comparison table"
+    }
+  ]
+}

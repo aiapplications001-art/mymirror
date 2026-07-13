@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "audience-definition.v2",
+  "status": "passed",
+  "targetCohort": "Young Indian commuters and students experiencing persistent, painful chin breakouts.",
+  "awarenessStage": "solution_seeking",
+  "readerTakeaway": "Understand that chin acne is driven by physical friction (helmets, phones, pillows) and hair oil, and can be cleared with simple habit shifts.",
+  "objections": [
+    "Believing that chin pimples are purely hormonal and cannot be solved by lifestyle shifts.",
+    "Worrying that active ingredients like salicylic acid will burn their thin chin skin."
+  ],
+  "ctaConnection": "Take the free MyMirror AI skin analysis to check for active inflammation on your chins and get a custom guide.",
+  "judgmentChecks": {
+    "passed": true
+  }
+}
