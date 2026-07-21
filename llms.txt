@@ -1,0 +1,191 @@
+# MyMirror
+
+> MyMirror is an India-focused, evidence-based skincare knowledge platform for acne, acne scarring, and related skin concerns — built for Indian Fitzpatrick IV–V skin with dermatologist-reviewed content, active ingredient guides, and an AI skin scanner.
+
+MyMirror publishes science-backed skincare guides for Indian users, covering acne treatment actives, face-zone-specific breakout causes, post-inflammatory hyperpigmentation (PIH), scar treatment, hormonal acne, lifestyle triggers, and product comparisons. All content is tailored for Indian climate (high humidity, hard water, pollution), Indian skin types (Fitzpatrick III–V), and products available in the Indian market (₹ pricing). MyMirror also operates a free AI skin analysis tool at https://face3layerscanner.onrender.com/
+
+---
+
+## Active Ingredient Guides
+
+- [Azelaic Acid for Acne & Dark Spots India](https://mymirror.fit/acne/azelaic-acid-for-acne-dark-spots-india/): Aziderm 10% vs 15% vs 20% strength decision chart, comparison with niacinamide and salicylic acid, OTC vs prescription options, Fitzpatrick IV–V PIH treatment, full AM/PM routine
+- [Tretinoin for Acne Scars Guide](https://mymirror.fit/acne/tretinoin-for-acne-scars-guide/): Complete guide to tretinoin for acne scarring and PIH on Indian skin — purging timeline, Retino-A, concentrations, routine integration
+- [Adapalene / Adaferin / Differin Comparison India](https://mymirror.fit/acne/adapalene-differin-adaferin-gel-comparison-india/): Adapalene 0.1% vs 0.3%, Adaferin vs Deriva vs Differin, purging timeline, combination with benzoyl peroxide and clindamycin
+- [Adapalene Purging Timeline](https://mymirror.fit/acne/adapalene-purging-timeline/): Week-by-week breakdown of what to expect when starting adapalene — purging vs breakout, how to manage
+- [Adapalene + Benzoyl Peroxide Gel](https://mymirror.fit/acne/adapalene-benzoyl-peroxide-gel/): How adapalene and BPO combination gels work, India product options, how to use
+- [Adapalene + Clindamycin Phosphate Gel](https://mymirror.fit/acne/adapalene-clindamycin-phosphate-gel/): Combination antibiotic + retinoid guide for India — prescription context, use protocol
+- [Azelaic Acid Beginners Guide](https://mymirror.fit/acne/beginners-guide-to-azelaic-acid-the-gentle-alternative-for-sensitive-acne/): Introduction to azelaic acid for sensitive acne-prone skin
+- [Salicylic Acid for Beginners India](https://mymirror.fit/acne/salicylic-acid-for-beginners/): How to start salicylic acid safely — concentrations, frequency, what to expect
+- [1% vs 2% Salicylic Acid](https://mymirror.fit/acne/1-vs-2-percent-salicylic-acid/): Which concentration to use for different acne severity levels
+- [How to Use Salicylic Acid Without Damaging Skin Barrier](https://mymirror.fit/acne/how-to-use-salicylic-acid-without-damaging-skin-barrier/): Over-exfoliation prevention, frequency limits, barrier repair protocol
+- [Mixing Salicylic Acid with Retinol / Adapalene](https://mymirror.fit/acne/mixing-salicylic-acid-with-retinol-adapalene/): Safe combination protocols, timing, what to avoid
+- [Salicylic Acid Purging Timeline](https://mymirror.fit/acne/salicylic-acid-purging-timeline/): What purging looks like on salicylic acid vs a true breakout
+- [Salicylic Acid Face Wash vs Serum](https://mymirror.fit/acne/salicylic-acid-face-wash-vs-serum/): Which delivery format works better for different skin profiles
+- [Salicylic Acid vs Benzoyl Peroxide India](https://mymirror.fit/acne/salicylic-acid-vs-benzoyl-peroxide-acne-india/): Head-to-head comparison for Indian oily and acne-prone skin
+- [Benzoyl Peroxide Short Contact Therapy Guide](https://mymirror.fit/acne/benzoyl-peroxide-short-contact-therapy-guide/): How to use BPO as a rinse-off treatment to minimise irritation
+- [Niacinamide Serums India](https://mymirror.fit/acne/niacinamide-serums-india/): Best niacinamide serums available in India — concentrations, brands, use guide
+- [Niacinamide Purging or Breakout?](https://mymirror.fit/acne/niacinamide-purging-or-breakout/): How to distinguish a niacinamide adjustment reaction from a true comedogenic breakout
+
+---
+
+## Face Zone Acne Guides (Face Mapping)
+
+- [Forehead Acne](https://mymirror.fit/acne/forehead-acne/): Complete guide to forehead acne causes, types, and treatment for Indian skin — hairline, hair oil, helmets, sebum
+- [Cheek Acne](https://mymirror.fit/acne/cheek-acne/): Causes of cheek acne on Indian skin — phone friction, pillowcase, products, hormonal
+- [Cheek Acne Meaning](https://mymirror.fit/acne/cheek-acne-meaning/): What persistent cheek acne indicates about skin health and triggers
+- [Chin Acne](https://mymirror.fit/acne/chin-acne/): Chin acne causes on Indian skin — hormonal, PCOS, contact, products
+- [Chin Acne Meaning](https://mymirror.fit/acne/chin-acne-meaning/): What chin acne location indicates — hormonal patterns, lifestyle triggers
+- [Jawline Acne Meaning — Hormonal vs Product](https://mymirror.fit/acne/jawline-acne-meaning-hormonal-vs-product/): Differentiating hormonal jawline acne from product-induced breakouts
+- [Nose Acne Treatment](https://mymirror.fit/acne/nose-acne-treatment/): Nose pimples vs sebaceous filaments — treatment guide
+- [Nose Pimple Treatments — Home Remedies & Clinical Cures](https://mymirror.fit/acne/nose-pimple-treatments-home-remedies-clinical-cures/): Both OTC and professional treatment options for nose acne
+- [Closed Comedones & Whiteheads on Face India](https://mymirror.fit/acne/closed-comedones-whiteheads-face-india/): Identification chart (closed comedone vs whitehead vs milia), face zone map, 5-tier treatment ladder — salicylic acid, adapalene, tretinoin, azelaic acid, chemical peel
+- [Acne Face Map](https://mymirror.fit/acne/face-map/): Interactive and visual face map linking acne zones to likely causes
+- [Small Pimples on Forehead (Men)](https://mymirror.fit/acne/small-pimples-forehead-men/): Tiny forehead bumps specific to male skin — causes and treatment
+- [Cystic Chin Pimple](https://mymirror.fit/acne/cystic-chin-pimple/): Treatment guide for deep, painful cystic pimples on the chin
+- [Nodule vs Cyst Acne](https://mymirror.fit/acne/nodule-cyst/): Clinical difference between nodular and cystic acne on Indian skin
+
+---
+
+## Hormonal & Adult Acne
+
+- [Hormonal Acne — PCOS, Periods, India](https://mymirror.fit/acne/hormonal-acne-pcos-periods-india/): Complete guide to hormonal acne on Indian skin — PCOS, menstrual cycle, androgens
+- [PCOS Acne Treatment India](https://mymirror.fit/acne/pcos-acne-treatment-india/): Dermatological and hormonal treatment approaches for PCOS-driven acne
+- [Acne PCOS Treatment Indian Skin](https://mymirror.fit/acne/acne-pcos-treatment-indian-skin/): India-specific management of PCOS acne — topicals, hormonal therapy, lifestyle
+- [Hormonal Acne vs Oily Skin](https://mymirror.fit/acne/hormonal-acne-vs-oily-skin/): How to differentiate hormonal acne from general oiliness-driven breakouts
+- [Hormonal Acne Diet India](https://mymirror.fit/acne/hormonal-acne-diet-india/): Diet modifications for hormonal acne — low-GI, dairy, sugar, Indian food context
+- [Cycle-Synced Skincare — Predicting Breakouts](https://mymirror.fit/acne/cycle-synced-skincare-predicting-breakouts/): How to adapt skincare routine across the menstrual cycle to minimise hormonal breakouts
+- [Hormonal Acne Jawline Map — Is Your Period Causing These Breakouts?](https://mymirror.fit/acne/hormonal-acne-jawline-map-is-your-period-causing-these-breakouts-/): Pattern recognition guide for period-driven lower-face breakouts
+- [PCOS Supplements — Spearmint, Inositol India](https://mymirror.fit/acne/pcos-supplements-spearmint-inositol-india/): Evidence review of spearmint tea, myo-inositol, and other supplements for PCOS acne
+- [Adult Acne Worsening](https://mymirror.fit/acne/adult-acne-worsening/): Why acne worsens in adulthood — hormonal changes, stress, urban India lifestyle factors
+
+---
+
+## Acne Scar & PIH Treatment
+
+- [At-Home vs Clinical Scar Treatment India](https://mymirror.fit/acne/at-home-vs-clinical-scar-treatment-india/): Comparison of home treatments vs professional procedures for Indian acne scars — cost, efficacy, risk
+- [Pitted Acne Scars Treatment India](https://mymirror.fit/acne/pitted-acne-scars-treatment-india/): Atrophic/pitted scar treatment options — microneedling, subcision, fillers, lasers for Indian skin
+- [Acne Scar Prevention Guide](https://mymirror.fit/acne/how-to-prevent-acne-scarring/): How to prevent acne scarring in real time — what to do during an active breakout
+- [Acne Scar Removal Cream Myth India](https://mymirror.fit/acne/acne-scar-removal-cream-myth-india/): Why OTC scar creams don't work for atrophic scars — what actually does
+- [PIE vs PIH Indian Skin](https://mymirror.fit/acne/pie-vs-pih-indian-skin/): Post-inflammatory erythema vs hyperpigmentation — identification, treatment, timeline
+- [Post-Pimple Mark Removal — Indian Skin Guide to PIH and PIE](https://mymirror.fit/acne/post-pimple-mark-removal-the-indian-skin-guide-to-pih-pie/): Comprehensive PIH treatment guide for Fitzpatrick IV–V skin
+- [Post-Acne Mark Removal — Forehead India](https://mymirror.fit/acne/post-acne-mark-removal-forehead-india/): Targeted PIH treatment for forehead post-acne marks
+- [Fade Dark Spots / Bacne Scars India](https://mymirror.fit/acne/fade-dark-spots-bacne-scars-india/): Treatment guide for back acne PIH marks on Indian skin
+- [Texture Smoothing Skincare Routine India](https://mymirror.fit/acne/texture-smoothing-skincare-routine-india/): Routine for improving skin texture, enlarged pores, and uneven surface on Indian skin
+- [Microneedling vs Chemical Peels for Scars](https://mymirror.fit/acne/microneedling-vs-chemical-peels-scars/): Head-to-head comparison for Indian acne scar treatment
+
+---
+
+## Sunscreen & Moisturiser for Acne-Prone Skin
+
+- [Best Non-Comedogenic Moisturizer India](https://mymirror.fit/acne/best-non-comedogenic-moisturizer-india/): 10 dermatologist-reviewed non-comedogenic moisturisers for Indian oily and acne-prone skin — comedogenic scale, ingredient radar, product reviews
+- [Best Non-Comedogenic Moisturizer USA](https://mymirror.fit/acne/best-non-comedogenic-moisturizer-usa/): US-specific guide — climate moisture map, drugstore vs prestige scorecard, 10 product reviews in USD
+- [Best Non-Comedogenic Moisturizer Europe](https://mymirror.fit/acne/best-non-comedogenic-moisturizer-europe/): European guide — EU vs USA vs India regulation comparison, French pharmacy brand guide, EUR/GBP pricing
+- [Best Sunscreen for Acne-Prone Skin India](https://mymirror.fit/acne/best-sunscreen-for-acne-prone-skin-india/): Non-comedogenic SPF picks for Indian oily skin — fluid vs gel vs mineral
+- [Best Gel Sunscreen for Oily Skin Under ₹500](https://mymirror.fit/acne/best-gel-sunscreen-for-oily-skin-under-500/): Budget non-comedogenic SPF options for Indian oily skin
+- [Best Non-Comedogenic Sunscreens Under ₹600](https://mymirror.fit/acne/best-non-comedogenic-sunscreens-under-600-for-acne-prone-skin/): Affordable sunscreen picks for acne-prone skin under ₹600
+- [Does Sunscreen Cause Pimples?](https://mymirror.fit/acne/does-sunscreen-cause-pimples/): Evidence review of sunscreen-induced acne — which ingredients to check, safe alternatives
+- [Mineral vs Chemical Sunscreen for Active Acne](https://mymirror.fit/acne/mineral-vs-chemical-sunscreen-active-acne/): Which SPF type is safer for inflamed or cystic acne-prone Indian skin
+- [Reapply Sunscreen Over Makeup](https://mymirror.fit/acne/reapply-sunscreen-over-makeup/): How to reapply SPF over makeup without clogging pores — spray, powder, and hybrid methods
+- [Fungal Acne Safe Moisturizers](https://mymirror.fit/acne/fungal-acne-safe-moisturizers/): Moisturisers confirmed safe for fungal acne (Malassezia-safe) on Indian skin
+- [Fungal Acne Safe Sunscreen India](https://mymirror.fit/acne/fungal-acne-safe-sunscreen-india/): Malassezia-safe SPF options available in India
+
+---
+
+## Face Wash & Cleansing
+
+- [Best Salicylic Acid Face Wash India](https://mymirror.fit/acne/best-salicylic-acid-face-wash-india/): Top SA face wash picks for Indian oily and acne-prone skin — reviews and comparison
+- [Best Benzoyl Peroxide Face Wash India](https://mymirror.fit/acne/best-benzoyl-peroxide-face-wash-india/): BPO face wash options in India — concentrations, brands, how to use
+- [Best Salicylic Acid Products India](https://mymirror.fit/acne/best-salicylic-acid-products-india/): Full product category review — face washes, toners, serums, spot treatments
+- [Double Cleansing for Oily Acne Skin India](https://mymirror.fit/acne/double-cleansing-oily-acne-skin-india/): How to double cleanse without stripping the barrier on Indian oily skin
+- [Best Men's Face Wash for Pimples & Dark Spots](https://mymirror.fit/acne/best-mens-face-wash-pimples-dark-spots/): Men-specific face wash guide for acne and PIH on Indian skin
+
+---
+
+## Acne Routines
+
+- [Minimalist Acne Routine India](https://mymirror.fit/acne/minimalist-acne-routine/): Bare-minimum effective acne routine for beginners — 3–4 steps only
+- [Skincare Layering Guide](https://mymirror.fit/acne/skincare-layering-guide/): How to correctly layer actives — order, wait times, compatibility rules
+- [Student Acne Routine Under ₹1,000](https://mymirror.fit/acne/student-acne-routine-under-1000/): Budget-conscious complete acne routine for Indian students
+- [Teen Acne Routine Under ₹500](https://mymirror.fit/acne/teen-acne-routine-under-500/): Ultra-affordable acne routine for Indian teenagers
+- [Nighttime Routine for Forehead Acne Prevention](https://mymirror.fit/acne/nighttime-routine-forehead-acne-prevention/): PM routine specifically targeting forehead acne prevention
+- [Monsoon Fungal Acne Routine](https://mymirror.fit/acne/monsoon-fungal-acne-routine/): Rainy season routine for fungal acne-prone Indian skin
+
+---
+
+## Body Acne
+
+- [Back Acne (Bacne) India](https://mymirror.fit/acne/back-acne/): Complete guide to back acne causes and treatment for Indian skin
+- [Body Acne India — Bacne & Chestne Guide](https://mymirror.fit/acne/body-acne-india-bacne-chestne-guide/): Comprehensive back and chest acne guide — causes, routine, products
+- [Chest Acne Treatment India](https://mymirror.fit/acne/chest-acne-treatment-india/): Chest breakout causes and treatment — heat, sweat, fabrics, products
+- [Back Acne Scars Treatment India](https://mymirror.fit/acne/back-acne-scars-treatment-india/): PIH and atrophic scar treatment for back acne marks on Indian skin
+- [Acne Body Lotion Salicylic Acid India](https://mymirror.fit/acne/acne-body-lotion-salicylic-acid-india/): SA-containing body lotions for bacne-prone Indian skin
+- [Salicylic vs Benzoyl Peroxide Body Wash India](https://mymirror.fit/acne/salicylic-vs-benzoyl-peroxide-body-wash-india/): Which body wash active is better for back and chest acne
+- [Bacne vs Fungal Acne Body India](https://mymirror.fit/acne/bacne-vs-fungal-acne-body-india/): How to distinguish bacterial back acne from Malassezia folliculitis on Indian skin
+- [Butt Acne Treatment India](https://mymirror.fit/acne/butt-acne-treatment-india/): Folliculitis and acne on the buttocks — causes, safe treatment
+- [Gym Body Acne — Post-Workout Routine](https://mymirror.fit/acne/gym-body-acne-post-workout-routine/): How to prevent and treat gym-induced body acne — sweat, friction, fabrics
+- [Back Acne Women](https://mymirror.fit/acne/back-acne-women/): Female-specific back acne causes — hormonal, bra friction, hair products, pregnancy
+
+---
+
+## Lifestyle & Environmental Triggers
+
+- [Hard Water Acne Treatment India](https://mymirror.fit/acne/hard-water-acne-treatment-india/): How hard water triggers acne in Indian cities — filtration, chelating cleansers
+- [Stress Acne Forehead — Cortisol India](https://mymirror.fit/acne/stress-acne-forehead-cortisol-india/): How cortisol from academic or work stress triggers forehead breakouts
+- [Champi Breakout — Hair Oil & Forehead Acne](https://mymirror.fit/acne/champi-breakout-hair-oil-forehead-acne/): How coconut and other Indian hair oils migrate to cause forehead acne
+- [Forehead Acne from Hair Products India](https://mymirror.fit/acne/stop-forehead-acne-hair-products-india/): Shampoos, conditioners, and serums that trigger forehead acne — ingredient checklist
+- [Forehead Acne & Dandruff](https://mymirror.fit/acne/forehead-acne-dandruff/): Link between seborrheic dermatitis / dandruff and forehead acne
+- [Helmet Acne Mechanica India](https://mymirror.fit/acne/helmet-acne-mechanica-forehead-prevention-india/): How helmet friction causes forehead acne mechanica — prevention and treatment
+- [Sweat Acne — School & Sports India](https://mymirror.fit/acne/sweat-acne-school-sports-india/): How sweat during physical activity triggers acne on Indian skin
+- [Gym Monsoon Acne — Preventing Sweat Pimples in Indian Humidity](https://mymirror.fit/acne/gym-monsoon-acne-preventing-sweat-pimples-in-indian-humidity/): Monsoon-specific sweat acne prevention for active Indians
+- [Work from Home vs Office Acne — Pollution & Blue Light](https://mymirror.fit/acne/work-from-home-vs-office-acne-how-pollution-blue-light-affect-you/): How air quality and screen exposure affect acne differently
+- [Exam Stress Acne Prevention](https://mymirror.fit/acne/exam-stress-acne-pimple-prevention/): How to manage stress-triggered breakouts during exam seasons
+- [Post-Workout Acne Prevention India](https://mymirror.fit/acne/post-workout-acne-prevention-india/): Pre and post-workout skincare protocol to prevent exercise-induced breakouts
+- [Skin Purging vs Breakout India](https://mymirror.fit/acne/skin-purging-vs-breakout-india/): How to determine if new pimples are purging from an active ingredient or a true allergic/comedogenic reaction
+- [At-Home Dermarolling Safety](https://mymirror.fit/acne/at-home-dermarolling-safety/): Evidence review of home microneedling — risks, benefits, safe protocols
+- [At-Home Chemical Peels Safety](https://mymirror.fit/acne/at-home-chemical-peels-safety/): Safety guide for home chemical peels on Indian Fitzpatrick IV–V skin
+
+---
+
+## Diet, Gut & Lab Tests for Acne
+
+- [Acne Diet India](https://mymirror.fit/acne/acne-diet-india/): Evidence-based dietary guidance for acne — dairy, sugar, glycaemic index, Indian food context
+- [Hormonal Acne Diet India](https://mymirror.fit/acne/hormonal-acne-diet-india/): Diet approach for androgen-driven acne — low-GI, anti-inflammatory, Indian cuisine adaptations
+- [Food Intolerance Test for Acne India](https://mymirror.fit/acne/food-intolerance-test-for-acne-india/): Evidence review of food intolerance testing for acne — what the research actually shows
+- [Gut Microbiome Test for Acne India](https://mymirror.fit/acne/gut-microbiome-test-for-acne-india/): Gut-skin axis and acne — what microbiome testing can and cannot tell you
+- [Hormonal Acne Blood Tests](https://mymirror.fit/acne/hormonal-acne-blood-tests/): Which blood panels to request for hormonal acne investigation in India
+- [Insulin Resistance Test for Acne India](https://mymirror.fit/acne/insulin-resistance-test-for-acne-india/): How insulin resistance (common with PCOS) drives acne — testing and management
+- [Vitamin Deficiency Acne Tests India](https://mymirror.fit/acne/vitamin-deficiency-acne-tests-india/): Which deficiencies (Vitamin D, B12, Zinc) are linked to acne — testing in India
+- [Zinc Test for Acne India](https://mymirror.fit/acne/zinc-test-for-acne-india/): Zinc deficiency's role in acne and how to test for it in India
+- [Thyroid Test for Acne India](https://mymirror.fit/acne/thyroid-test-for-acne-india/): How thyroid dysfunction affects skin and acne — testing protocol
+- [Liver Function Test for Acne India](https://mymirror.fit/acne/liver-function-test-for-acne-india/): The liver-acne connection — when LFT is warranted
+
+---
+
+## Acne Types & Fundamentals
+
+- [Types of Acne](https://mymirror.fit/acne/types-of-acne/): Visual and clinical guide to all acne lesion types — comedones, papules, pustules, nodules, cysts
+- [Blackheads & Whiteheads](https://mymirror.fit/acne/blackheads-whiteheads/): Overview of comedonal acne — causes, treatment, extraction safety
+- [Why Teenagers Get Acne](https://mymirror.fit/acne/why-teenagers-get-acne/): Hormonal and physiological explanation of teenage acne for Indian adolescents
+- [Why Men Get Acne](https://mymirror.fit/acne/why-men-get-acne/): Male-specific acne drivers — androgens, shaving, grooming products
+- [Teenage Acne India — Parents Guide](https://mymirror.fit/acne/teenage-acne-india-parents-guide/): Guide for Indian parents navigating acne treatment decisions for their children
+- [Tiny Bumps on Forehead — Fungal Acne India](https://mymirror.fit/acne/tiny-bumps-on-forehead-fungal-acne-india/): How to identify and treat Malassezia folliculitis presenting as tiny forehead bumps
+- [Science of Clear Skin](https://mymirror.fit/acne/science-of-clear-skin/): Overview of the biological mechanisms behind acne — sebum, C. acnes, inflammation, follicular hyperkeratinisation
+- [When to See a Dermatologist for Acne India](https://mymirror.fit/acne/when-to-see-dermatologist-for-acne-india/): Clear criteria for when OTC management is insufficient and professional treatment is required
+- [Dry Skin Acne Treatment](https://mymirror.fit/acne/dry-skin-acne-treatment/): Managing acne on dry skin — different approach from oily skin acne
+
+---
+
+## AI Skin Analysis
+
+- [MyMirror AI Skin Scanner](https://face3layerscanner.onrender.com/): Free AI tool that analyses skin type, pore size, oiliness, and acne pattern from a photo
+- [AI Skin Analysis vs Manual Face Mapping](https://mymirror.fit/acne/ai-skin-analysis-vs-manual-face-mapping-accuracy/): Accuracy comparison between AI and clinical face mapping for acne diagnosis
+- [MyMirror vs Top Dermatology Acne Brands India](https://mymirror.fit/acne/mymirror-vs-top-dermatology-acne-brands-india/): How MyMirror's AI approach compares with established Indian dermatology brands
+
+---
+
+## Optional
+
+- Skincare content is updated regularly; crawl frequency of monthly is recommended
+- All content is in English (en-IN) and targeted to the Indian market unless otherwise specified in page metadata
+- Pages with `lang="en-US"` or `lang="en-GB"` in their HTML are explicitly for US or European audiences
+- MyMirror does not provide prescriptions or replace dermatological consultation; all medical guidance is educational
