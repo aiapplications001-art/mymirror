@@ -96,12 +96,131 @@
 
     .highlight-box { background: #f8fafc; border-left: 5px solid var(--color-brand); padding: 2rem; border-radius: 0 20px 20px 0; margin: 3rem 0; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
     
-    /* ── TABLE STYLES ── */
-    .acne-table-wrapper { overflow-x: auto; margin: 3rem 0; border: 1px solid var(--color-border); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.04); }
-    .acne-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-    .acne-table th { background: var(--color-bg-secondary); padding: 12px; text-align: left; border-bottom: 2px solid var(--color-border); }
-    .acne-table td { padding: 12px; border-bottom: 1px solid var(--color-border); }
+    /* ── HIGH-CONTRAST PREMIUM TABLE (Design System §9.15) ── */
+    .acne-table-wrapper {
+      margin: 2.5rem 0;
+      border: 2px solid #D9C8BC;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 24px rgba(26, 20, 16, 0.05);
+      background: #FFFFFF;
+    }
+    .acne-table {
+      width: 100% !important;
+      margin: 0 !important;
+      border-collapse: collapse !important;
+      border-spacing: 0 !important;
+      font-size: 14px;
+      color: #1A1410;
+      text-align: left;
+    }
+    .acne-table tr {
+      background: transparent !important;
+      box-shadow: none !important;
+      transform: none !important;
+    }
+    .acne-table th {
+      background: #2D231E;
+      font-family: 'Kantumruy Pro', serif;
+      font-weight: 700;
+      color: #FFFFFF;
+      padding: 14px 20px;
+      border-bottom: 2px solid #1A1410;
+      text-transform: uppercase;
+      font-size: 11.5px;
+      letter-spacing: 0.1em;
+      vertical-align: top;
+      border-radius: 0 !important;
+    }
+    .acne-table td {
+      padding: 16px 20px;
+      border-bottom: 1px solid #E8DDD5;
+      vertical-align: top;
+      color: #1A1410;
+      line-height: 1.6;
+      border-radius: 0 !important;
+    }
     .acne-table tr:last-child td { border-bottom: none; }
+    .acne-table tr:hover td { background-color: #FDFCFB; }
+    .acne-table td strong { color: inherit; }
+
+    /* Desktop first-column accent */
+    @media (min-width: 641px) {
+      .acne-table td { background: #FFFFFF; }
+      .acne-table td:first-child {
+        font-weight: 700;
+        color: #2D231E;
+        white-space: nowrap;
+        width: 150px;
+        background: #FDFCFB !important;
+        border-right: 1px solid #E8DDD5;
+        text-align: center;
+        border-radius: 0 !important;
+      }
+      .acne-table th:first-child {
+        border-right: 1px solid #3D312A;
+        width: 150px;
+        text-align: center;
+        border-radius: 0 !important;
+      }
+    }
+
+    /* Mobile — card grid layout */
+    @media (max-width: 640px) {
+      .acne-table-wrapper {
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        margin: 1.5rem 0;
+      }
+      .acne-table,
+      .acne-table thead,
+      .acne-table tbody,
+      .acne-table th,
+      .acne-table td,
+      .acne-table tr {
+        display: block;
+        width: 100% !important;
+      }
+      .acne-table thead { display: none; }
+      .acne-table tr {
+        background: #FFFFFF !important;
+        border: 2px solid #D9C8BC !important;
+        border-radius: 16px !important;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 15px rgba(26,20,16,0.04) !important;
+      }
+      .acne-table td {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding: 10px 0;
+        border-bottom: 1px solid #F2EDE8;
+        text-align: left;
+        border-radius: 0 !important;
+      }
+      .acne-table td:last-child { border-bottom: none; padding-bottom: 0; }
+      .acne-table tr td:first-child {
+        font-size: 16px;
+        font-weight: 800;
+        color: #2D231E;
+        border-bottom: 2px solid #E8DDD5;
+        padding-top: 0;
+        padding-bottom: 10px;
+        margin-bottom: 6px;
+        border-radius: 0 !important;
+      }
+      .acne-table tr td:first-child::before { display: none; }
+      .acne-table td::before {
+        content: attr(data-label);
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #5C4A3A;
+        font-weight: 800;
+      }
+    }
 
     /* ── SIDEBAR ── */
     .sidebar { display: flex; flex-direction: column; gap: 2rem; }
@@ -144,15 +263,6 @@
       .hero p { font-size: 1rem; margin-bottom: 1rem; }
       .trust-bar { flex-direction: column; gap: 5px; text-align: center; }
       .toc-inner { justify-content: flex-start; }
-      
-      /* Card Layout for Table */
-      .acne-table, .acne-table tbody, .acne-table tr, .acne-table td { display: block; width: 100%; box-sizing: border-box; }
-      .acne-table thead { display: none; }
-      .acne-table { border: none; margin: 1rem 0; }
-      .acne-table tr { margin-bottom: 1.5rem; border-radius: 12px; border: 1px solid var(--color-border); box-shadow: 0 4px 15px rgba(0,0,0,0.03); background: var(--color-bg-primary); }
-      .acne-table td { border-bottom: 1px solid var(--color-border); padding: 1rem 1rem 1rem 45%; position: relative; min-height: 50px; }
-      .acne-table td:last-child { border-bottom: none; }
-      .acne-table td::before { content: attr(data-label); position: absolute; left: 1rem; width: 40%; font-weight: 700; color: var(--color-text-secondary); top: 1rem; }
     }
   
     /* Face AI CTA Styling - Premium Perimeter Rail Animation */
