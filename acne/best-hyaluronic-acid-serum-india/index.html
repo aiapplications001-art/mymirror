@@ -60,11 +60,21 @@
     .nav-links a { font-size: 13px; font-weight: 500; color: var(--text2); text-decoration: none; padding: 6px 12px; border-radius: 6px; }
     .nav-links a:hover { color: var(--brand); }
 
-    /* Dark Hero */
-    .hero { background: linear-gradient(135deg, #0a0a0c 0%, #1a1410 100%); color: #fff; text-align: center; padding: 3.5rem 2rem 4rem; }
-    .hero h1 { font-family: 'Kantumruy Pro', serif; font-size: clamp(1.9rem,4.5vw,3.2rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.2rem; letter-spacing: -0.04em; }
-    .hero p { color: rgba(255,255,255,.85); font-size: 1.05rem; max-width: 730px; margin: 0 auto 1.5rem; }
-    .hero-img { width: 100%; max-width: 760px; height: auto; border-radius: 16px; margin: 1rem auto 1.5rem; display: block; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+    /* Dark Hero - 2-Column Split Layout */
+    .hero { background: linear-gradient(135deg, #0a0a0c 0%, #1a1410 100%); color: #fff; padding: 3.5rem 2rem 4rem; }
+    .hero-container { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center; text-align: left; }
+    .hero-content { text-align: left; }
+    .hero h1 { font-family: 'Kantumruy Pro', serif; font-size: clamp(1.9rem,4.5vw,2.8rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.2rem; letter-spacing: -0.04em; text-align: left; }
+    .hero p { color: rgba(255,255,255,.85); font-size: 1.05rem; margin: 0 0 1.5rem 0; text-align: left; }
+    .hero-img { width: 100%; max-height: 380px; object-fit: cover; border-radius: 16px; margin: 0; display: block; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+    .face-ai-cta-wrapper { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin-top: 1.5rem; }
+    @media (max-width: 900px) {
+      .hero-container { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+      .hero-content { text-align: center; }
+      .hero h1, .hero p { text-align: center; }
+      .hero-img { max-height: 300px; }
+      .face-ai-cta-wrapper { align-items: center; }
+    }
 
     /* Perimeter-Rail Animated CTA */
     .face-ai-cta-wrapper { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 1.5rem; }
@@ -241,19 +251,21 @@
 
   <!-- DARK HERO SECTION -->
   <section class="hero">
-    <div class="reveal">
-      <h1>Best Hyaluronic Acid Serums in India:<br><span style="color:var(--brand);">2% HA + B5 Hydration Guide</span> (2026)</h1>
-      <p>Compare top Hyaluronic Acid serums in India for dry, dehydrated skin. Master multi-molecular weights, damp skin application, and climate-dependent hydration.</p>
-      
-      <img src="/assets/images/ha-serum-india-og.jpg" alt="Best Hyaluronic Acid Serums in India 2026" class="hero-img" />
+    <div class="hero-container reveal">
+      <div class="hero-content">
+        <h1>Best Hyaluronic Acid Serums in India:<br><span style="color:var(--brand);">2% HA + B5 Hydration Guide</span> (2026)</h1>
+        <p>Compare top Hyaluronic Acid serums in India for dry, dehydrated skin. Master multi-molecular weights, damp skin application, and climate-dependent hydration.</p>
 
-      <div class="face-ai-cta-wrapper">
-        <a href="https://face3layerscanner.onrender.com/" class="face-ai-btn" target="_blank" rel="noopener">
-          <span>Scan My Skin Barrier with AI ✨</span>
-          <div class="face-ai-energy-rail"></div>
-        </a>
-        <p class="ai-sub">Analyze dehydration levels & get tailored non-comedogenic routine picks in 60 seconds.</p>
+        <div class="face-ai-cta-wrapper">
+          <a href="https://face3layerscanner.onrender.com/" class="face-ai-btn" target="_blank" rel="noopener">
+            <span>Scan My Skin Barrier with AI ✨</span>
+            <div class="face-ai-energy-rail"></div>
+          </a>
+          <p class="ai-sub">Analyze dehydration levels & get tailored non-comedogenic routine picks in 60 seconds.</p>
+        </div>
       </div>
+
+      <img src="/assets/images/ha-serum-india-og.jpg" alt="Best Hyaluronic Acid Serums in India 2026" class="hero-img" />
     </div>
   </section>
 
