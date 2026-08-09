@@ -171,24 +171,45 @@
     .hero-sub { color: #D5C4B5; font-size: 1.05rem; max-width: 660px; margin: 0 auto 2rem; font-weight: 400; }
 
     /* PERIMETER-RAIL AI CTA */
-    .ai-cta-wrap { display: inline-flex; position: relative; margin-bottom: 0.5rem; }
+    .ai-cta-wrap {
+      display: inline-flex; flex-direction: column;
+      align-items: center; gap: 10px; margin-bottom: 0.5rem;
+    }
+    .ai-cta-btn {
+      position: relative; display: inline-flex;
+      align-items: center; justify-content: center; gap: 0.6rem;
+      padding: 0.85rem 2rem; border-radius: 999px;
+      background: var(--brand); color: #fff;
+      font-family: var(--font-body); font-weight: 800; font-size: 1rem;
+      text-decoration: none; white-space: nowrap;
+      box-shadow: 0 10px 30px rgba(236,97,14,0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+      z-index: 1;
+    }
+    .ai-cta-btn:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(236,97,14,0.6); }
+    .ai-cta-btn .icon { font-size: 1.2rem; }
     .ai-cta-rail {
       position: absolute; inset: -3px; border-radius: 999px;
-      background: conic-gradient(from 0deg, #EC610E, #ff9a5c, #FFE1CE, #EC610E);
-      animation: spin-rail 2.6s linear infinite;
-      z-index: 0; filter: blur(1px);
+      padding: 3px; pointer-events: none; z-index: 0;
+      overflow: hidden;
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+      -webkit-mask-composite: xor;
     }
-    @keyframes spin-rail { to { transform: rotate(360deg); } }
-    .ai-cta-btn {
-      position: relative; z-index: 1; background: #1A1410; color: #ffffff;
-      font-family: var(--font-body); font-weight: 700; font-size: 1rem;
-      text-decoration: none; padding: 0.85rem 2rem; border-radius: 999px;
-      display: flex; align-items: center; gap: 0.6rem;
-      transition: background 0.2s, transform 0.2s; white-space: nowrap;
+    .ai-cta-rail::before {
+      content: '';
+      position: absolute; top: 50%; left: 50%;
+      width: 400%; height: 400%;
+      background: conic-gradient(from 0deg, transparent 60%, #EC610E 75%, #FFE1CE 90%, #fff 100%);
+      animation: energy-loop 3.5s ease-in-out infinite;
     }
-    .ai-cta-btn:hover { background: #C14800; transform: scale(1.03); }
-    .ai-cta-btn .icon { font-size: 1.2rem; }
-    .ai-cta-note { font-size: 0.78rem; color: #A08D7E; margin-top: 0.6rem; display: block; text-align: center; }
+    @keyframes energy-loop {
+      0%   { transform: translate(-50%, -50%) rotate(0deg);   opacity: 0.3; }
+      50%  { opacity: 1; }
+      100% { transform: translate(-50%, -50%) rotate(720deg); opacity: 0.3; }
+    }
+    .ai-cta-note { font-size: 0.78rem; color: #A08D7E; display: block; text-align: center; }
 
     /* STICKY TOC */
     .toc-bar {
@@ -442,12 +463,12 @@
     <h1>Vitamin C Serum for Acne Scars &amp; Dark Spots in India</h1>
     <p class="hero-sub">L-Ascorbic Acid vs Stable Derivatives, the Oxidation Problem, SPF Layering Protocols, and Top Dermatologist Picks for 2026.</p>
     <div class="ai-cta-wrap">
-      <div class="ai-cta-rail" aria-hidden="true"></div>
       <a class="ai-cta-btn" href="https://face3layerscanner.onrender.com/" id="hero-ai-cta" target="_blank" rel="noopener">
+        <div class="ai-cta-rail" aria-hidden="true"></div>
         <span class="icon">🤖</span> Get Your Free AI Skin Analysis
       </a>
+      <span class="ai-cta-note">Analyze PIH dark spots &amp; skin barrier status in 60 seconds</span>
     </div>
-    <span class="ai-cta-note">Analyze PIH dark spots &amp; skin barrier status in 60 seconds</span>
   </header>
 
   <!-- STICKY TOC BAR -->
