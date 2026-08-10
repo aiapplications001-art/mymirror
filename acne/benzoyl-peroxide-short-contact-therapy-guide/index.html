@@ -492,7 +492,8 @@
             .acne-table tr { margin-bottom: 1.5rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 4px 15px rgba(0,0,0,0.03); background: var(--bg); }
             .acne-table td { border-bottom: 1px solid var(--border); padding: 12px 12px 12px 40%; position: relative; min-height: 46px; text-align: right; }
             .acne-table td:last-child { border-bottom: none; }
-            .acne-table td::before { content: attr(data-label); position: absolute; left: 12px; width: 35%; font-weight: 700; color: var(--text); top: 12px; text-align: left; }
+            .acne-table td:first-child::before { display: none !important; content: none !important; }
+      .acne-table td::before { content: attr(data-label); position: absolute; left: 12px; width: 35%; font-weight: 700; color: var(--text); top: 12px; text-align: left; }
         }
 
         .sticky-cta-mobile {

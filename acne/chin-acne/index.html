@@ -255,6 +255,7 @@
         display: none !important; /* Hide redundant label */
       }
       
+      .acne-table td:first-child::before { display: none !important; content: none !important; }
       .acne-table td::before {
         content: attr(data-label) !important;
         font-size: 11px !important;

@@ -407,6 +407,7 @@
       .matrix-table td { border-bottom: 1px solid var(--border); padding: 12px 12px 12px 44%; position: relative; min-height: 48px; }
       .matrix-table td:first-child { background: #f5f0eb; border-radius: 14px 14px 0 0; padding: 12px; }
       .matrix-table td:last-child { border-bottom: none; }
+      .matrix-table td:first-child::before { display: none !important; content: none !important; }
       .matrix-table td::before { content: attr(data-label); position: absolute; left: 12px; width: 38%; font-weight: 700; color: var(--txt2); top: 12px; font-size: 11px; }
       .matrix-table tr:hover td, .matrix-table tr:hover td:first-child { background: inherit; }
       .section-title { font-size: 1.3rem; }

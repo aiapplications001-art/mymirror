@@ -217,6 +217,7 @@ html_content = '''<!DOCTYPE html>
         border-radius: 0 !important;
       }
       .acne-table tr td:first-child::before { display: none; }
+      .acne-table td:first-child::before { display: none !important; content: none !important; }
       .acne-table td::before {
         content: attr(data-label);
         font-size: 11px;
