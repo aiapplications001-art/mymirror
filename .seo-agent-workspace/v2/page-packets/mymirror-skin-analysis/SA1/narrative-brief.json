@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "narrative-brief.v2",
+  "status": "complete",
+  "primaryStyle": "calm expert guide with category-manager editorial empathy",
+  "secondaryFlavor": "privacy-forward, no-pressure reassurance",
+  "readerTakeaway": "Use the scan to understand visible patterns and choose a starting point, then seek clinical help when that is the sensible next step.",
+  "openingAngle": "Start with the reader's uncertainty in the mirror, not with AI technology or a promise of perfect skin.",
+  "brandPov": "MyMirror believes a useful scan should make skincare decisions simpler without pretending to diagnose, prescribe, or judge a face.",
+  "pagePromise": "In a few minutes, readers will know what a 60-second face scan can show, what it cannot show, and whether it is a worthwhile starting point for them.",
+  "sectionDirections": [
+    {"sectionId":"S1","direction":"Give the direct, non-diagnostic answer and CTA above the fold."},
+    {"sectionId":"S2","direction":"Explain the scan journey: face, visible regions, prioritized signals, and routine starting point."},
+    {"sectionId":"S3","direction":"Show two realistic decisions a scan can simplify without claiming medical certainty."},
+    {"sectionId":"S4","direction":"State limits, privacy, and when speaking to a dermatologist matters more than a scan."},
+    {"sectionId":"S5","direction":"Close like a helpful editor: less guessing, one clearer next step, then CTA."}
+  ],
+  "judgmentChecks": {"passed": true, "notes":"The user supplied the category-manager-with-editorial-empathy voice; sensitive health language is intentionally calm and bounded."}
+}

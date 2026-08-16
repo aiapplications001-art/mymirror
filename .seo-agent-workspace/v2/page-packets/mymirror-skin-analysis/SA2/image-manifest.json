@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "how-to-know-your-skin-type",
+    "h1": "How to know your skin type—without overthinking it.",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": false,
+  "assets": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph preview image",
+      "assetType": "generated",
+      "recommendedFilename": "how-to-know-your-skin-type-open-graph-preview-image.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "1:1",
+      "altText": "Notice your pattern graphic with a mirror outline",
+      "status": "generated",
+      "licensing": {
+        "status": "approved",
+        "note": "Generated or fetched image must retain source/licensing approval metadata.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-16T20:02:38.048Z"
+      },
+      "filePath": "/assets/skin-analysis/how-to-know-your-skin-type-og.png"
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "assetType": "generated",
+      "recommendedFilename": "how-to-know-your-skin-type-first-fold-hero-visual.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "1:1",
+      "altText": "A young Indian woman observing her face in a softly lit mirror",
+      "status": "generated",
+      "licensing": {
+        "status": "approved",
+        "note": "Generated or fetched image must retain source/licensing approval metadata.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-16T20:02:38.129Z"
+      },
+      "filePath": "/assets/skin-analysis/how-to-know-your-skin-type-hero.png"
+    }
+  ]
+}

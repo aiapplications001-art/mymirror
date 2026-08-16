@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "claim-first-section-plan.v2",
+  "status": "complete",
+  "sectionPlanTemplate": {
+    "requiredFields": [
+      "sectionId",
+      "sectionClaim",
+      "readerQuestion",
+      "evidenceNeeded",
+      "exampleOrTradeoff",
+      "caveatOrNotRightForYou",
+      "decisionPurpose",
+      "transitionPurpose"
+    ],
+    "guidance": "Draft every visible section from a claim, reader question, evidence need, and usefulness reason before writing final copy."
+  },
+  "sections": [
+    {"sectionId":"S1","sectionClaim":"A skin scan is most useful as a quick, private starting point for visible questions, not as a diagnosis.","readerQuestion":"Is an online skin analysis worth trying?","evidenceNeeded":"MyMirror scan capability and limitations; live competitor pattern research.","exampleOrTradeoff":"It can organize visible oiliness and breakouts; it cannot diagnose the cause of a painful rash.","caveatOrNotRightForYou":"Readers seeking a diagnosis, urgent treatment, or prescription advice should contact a dermatologist.","decisionPurpose":"Set an honest expectation before CTA.","transitionPurpose":"Move from promise to what happens in the scan."},
+    {"sectionId":"S2","sectionClaim":"Readers trust a scan more when they know the simple journey from face view to prioritized next step.","readerQuestion":"What will happen after I start?","evidenceNeeded":"MyMirror homepage workflow and product patterns.","exampleOrTradeoff":"A region-by-region view makes an oily T-zone easier to separate from marks on the cheeks.","caveatOrNotRightForYou":"Lighting and what is visible on the day can affect what a camera can interpret.","decisionPurpose":"Remove signup, privacy, and process uncertainty.","transitionPurpose":"Move from mechanics to useful decisions."},
+    {"sectionId":"S3","sectionClaim":"The value is choosing where to begin, not receiving a beauty score.","readerQuestion":"How would this change what I do next?","evidenceNeeded":"Audience research and MyMirror product positioning.","exampleOrTradeoff":"A reader with several concerns can start with the most visible priority instead of layering three new actives.","caveatOrNotRightForYou":"A scan should not be used to decide whether a serious symptom needs medical attention.","decisionPurpose":"Make the CTA commercially relevant without overselling.","transitionPurpose":"Introduce limits and escalation guidance."},
+    {"sectionId":"S4","sectionClaim":"Clear boundaries make a scan more useful, not less useful.","readerQuestion":"What can a face scan not tell me?","evidenceNeeded":"Responsible competitor disclaimers and MyMirror non-diagnosis policy.","exampleOrTradeoff":"A normal-looking image cannot rule out a condition; a changing or painful concern deserves professional advice.","caveatOrNotRightForYou":"Do not rely on a scan for urgent or persistent symptoms.","decisionPurpose":"Protect reader trust and satisfy the health sensitivity requirement.","transitionPurpose":"Prepare a human closing and CTA."},
+    {"sectionId":"S5","sectionClaim":"One clear view is a better first step than more guessing.","readerQuestion":"What should I do now?","evidenceNeeded":"Approved CTA and microcopy.","exampleOrTradeoff":"Start now if you want help prioritizing visible signals; choose a dermatologist if you need medical assessment.","caveatOrNotRightForYou":"No promise of diagnosis, cure, or permanent change.","decisionPurpose":"Earn the final CTA.","transitionPurpose":"End the page."}
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "serp-research-ledger.v2",
+  "status": "complete",
+  "primaryKeyword": "free online skin analysis",
+  "originalTop10": [
+    "https://www.sephora.com/beauty/skin-analysis-tool",
+    "https://glowdekho.com/",
+    "https://nikhar.co/",
+    "https://skinchecker.in/skinchecker.html",
+    "https://glowdekho.com/analyse",
+    "https://m.cremedelamer.com/virtual-skin-analysis",
+    "https://www.deepsenseai.in/",
+    "https://int.biotherm.com/en_GB/bioscan-online/Bioscan-skin-diagnosis.html",
+    "https://glintas.com/en",
+    "https://www.1753skin.com/en/free-skin-analysis",
+    "https://www.lorealparis.co.in/skin-genius"
+  ],
+  "analyzedSources": [
+    {"url":"https://www.sephora.com/beauty/skin-analysis-tool","sourceType":"brand","extractionStatus":"success","bodySummary":"The landing page presents a rapid camera-led skin scan, explains which visible categories it reports on, and positions the output as a way to choose a routine. It uses a short FAQ immediately after the CTA to answer what the scan considers and how the technology is described.","h2h3Outline":["How it works","What concerns will the scan detect?","Why should I trust this tool?"]},
+    {"url":"https://glowdekho.com/","sourceType":"brand","extractionStatus":"success","bodySummary":"This India-focused tool leads with a free, no-sign-up promise, then explains that a selfie plus questions creates a routine. Its page prioritizes familiar local product availability and privacy reassurance, while using a large amount of product-led content after the introductory promise.","h2h3Outline":["Know your skin","Just one selfie and 12 questions","India-specific picks","How the analysis works"]},
+    {"url":"https://nikhar.co/","sourceType":"brand","extractionStatus":"success","bodySummary":"Nikhar frames the alternative to a scan as random product experimentation and uses a three-step workflow: capture images, receive a structured cosmetic read, and view a plan. The page is highly conversion-focused but makes strong performance and cost comparison claims that a responsible MyMirror page should avoid repeating.","h2h3Outline":["The problem","How it works","Three steps to know your skin better","What you get"]},
+    {"url":"https://skinchecker.in/skinchecker.html","sourceType":"brand","extractionStatus":"success","bodySummary":"SkinChecker describes a simple take-a-selfie, analyze, view-results journey and lists information such as visible acne, pigmentation, and texture. Its footer disclaimer explicitly says the service is informational and does not replace professional medical advice, diagnosis, or treatment.","h2h3Outline":["How it works","What we offer","Try it now","Disclaimer"]},
+    {"url":"https://glowdekho.com/analyse","sourceType":"brand","extractionStatus":"success","bodySummary":"The results page shows that competitor experiences commonly extend a scan into type classification, routine steps, product bundles, follow-up reminders, and tracking. It also demonstrates the risk of overloading first-time users with product and ingredient guidance before helping them understand their main concern.","h2h3Outline":["AI analysis","Skin score breakdown","Morning routine","When to see a dermatologist"]},
+    {"url":"https://m.cremedelamer.com/virtual-skin-analysis","sourceType":"brand","extractionStatus":"success","bodySummary":"La Mer makes the scan flow concrete with questions, a selfie, results, and routine recommendations. It includes practical capture guidance such as limited makeup and notes that the process takes only minutes, while keeping help-with-results and data retention in the FAQ.","h2h3Outline":["How it works","What is the science behind this tool?","How long does analysis take?","Are my results saved?"]},
+    {"url":"https://www.deepsenseai.in/","sourceType":"brand","extractionStatus":"success","bodySummary":"PerfectSkin uses a selfie, routine, and tracking sequence, emphasizing Indian climate, local availability, and privacy. The page uses a benefit-led layout that makes the scan feel like a starting point, although its broad performance claims require independent substantiation before reuse.","h2h3Outline":["Snap a selfie","Get your routine","Track progress","Built for Indian skin"]},
+    {"url":"https://int.biotherm.com/en_GB/bioscan-online/Bioscan-skin-diagnosis.html","sourceType":"brand","extractionStatus":"success","bodySummary":"Biotherm breaks the journey into photo, brief skin context, results, and routine. The layout demonstrates that readers expect a transparent explanation of what happens after they tap the CTA, but its use of diagnostic language is not appropriate for MyMirror's non-diagnostic position.","h2h3Outline":["Understand the nature of your skin","Powered by AI","Take a photo","Get your results"]},
+    {"url":"https://glintas.com/en","sourceType":"brand","extractionStatus":"success","bodySummary":"Glintas addresses decision fatigue directly and shows a short three-step flow from selfie to visible skin signs to care plan. Its language makes the commercial insight clear: users want help choosing a starting point and avoiding wasted purchases, not an abstract technology explanation.","h2h3Outline":["How it works","Take a selfie","The AI reads your skin","Get your care plan"]},
+    {"url":"https://www.1753skin.com/en/free-skin-analysis","sourceType":"brand","extractionStatus":"success","bodySummary":"This page invests heavily in method and privacy information, including face zones, data handling, and a clear statement that the service cannot replace a dermatologist. It shows a useful trust pattern for MyMirror: explain the result, explain photo handling, and state the boundary without turning the page into a technical manual.","h2h3Outline":["How it works","Your data, your rules","Skin metrics","Can the analysis replace a dermatologist?"]},
+    {"url":"https://www.lorealparis.co.in/skin-genius","sourceType":"brand","extractionStatus":"success","bodySummary":"L'Oréal places its skin-analysis explanation in a concise FAQ, covering clear-lighting selfie capture, facial-zone scanning, and basic type classification. The format confirms that a direct answer above the fold plus a short FAQ can satisfy the query without making unsupported clinical claims.","h2h3Outline":["What is Skin Genius?","How can I analyse my skin?","How do I confirm my skin type online?","Do skin analysis tools work?"]}
+  ],
+  "contentGapSynthesis": {
+    "gaps": [
+      "Most ranking pages jump from a scan claim to products before explaining how to read visible signals responsibly.",
+      "Privacy and non-diagnostic limits are usually separated into FAQs rather than made part of the first decision.",
+      "India-specific pages often use aggressive accuracy, cure, or product claims instead of a calm next-step framework."
+    ],
+    "differentiationOpportunities": [
+      "Lead with what a reader can understand in 60 seconds and what a scan cannot tell them.",
+      "Use a region-by-region visible-signal explanation and a simple next-step decision tree before any routine discussion.",
+      "Make privacy, no-account access, and dermatologist escalation understandable in the first screenful."
+    ]
+  },
+  "judgmentChecks": {"passed": true, "notes":"Reviewed eleven relevant organic pages in full enough to identify their workflows, hierarchy, claims, and gap patterns. The proposed page uses an original MyMirror limits-first angle and excludes unsupported competitor claims."}
+}

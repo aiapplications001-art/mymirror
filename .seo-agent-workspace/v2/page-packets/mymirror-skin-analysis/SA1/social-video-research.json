@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "social-video-research.v2",
+  "status": "complete",
+  "assets": [
+    {"id":"SV1","url":"https://www.reddit.com/r/buildinpublic/comments/1upnafh/built_a_free_ai_skin_analysis_tool_for_indian/","assetType":"community_post","accessStatus":"reviewed","audienceLanguage":"free, no signup, one selfie; asks whether results fit deeper Indian tones"},
+    {"id":"SV2","url":"https://www.reddit.com/r/SideProject/comments/1vmh9gx/built_an_glow_ai_the_skincare_app_for_indian_skin/","assetType":"community_post","accessStatus":"reviewed","audienceLanguage":"frustrated by generic product quizzes and unavailable recommendations"},
+    {"id":"SV3","url":"https://www.reddit.com/r/K_beauty_insider/comments/1v4d3cv/what_a_skin_analysis_scan_actually_tells_you_and/","assetType":"community_post","accessStatus":"reviewed","audienceLanguage":"wants an objective starting point, not a diagnosis or upsell"},
+    {"id":"SV4","url":"https://www.reddit.com/r/apps/comments/1utudga/free_w_subscription_skinly_ai_skin_analysis_that/","assetType":"community_post","accessStatus":"reviewed","audienceLanguage":"phone-camera limitation, consistent lighting, and comparison over time matter"},
+    {"id":"SV5","url":"https://www.reddit.com/r/SideProject/comments/1vbcfrw/i_built_an_ai_skincare_scanner_app_from_scratch/","assetType":"community_post","accessStatus":"reviewed","audienceLanguage":"people expect scans to cover multiple visible dimensions and a routine builder"},
+    {"id":"SV6","url":"https://www.youtube.com/results?search_query=ai+skin+analysis+india","assetType":"video_search","accessStatus":"inaccessible","failureReason":"Search result did not expose a reliable individual video transcript in this environment."},
+    {"id":"SV7","url":"https://www.instagram.com/explore/tags/aiskinanalysis/","assetType":"social_tag","accessStatus":"inaccessible","failureReason":"Instagram content required authentication and did not expose reliable caption text."}
+  ],
+  "insights": [
+    "Use plain-language reassurance around privacy, lighting, and the difference between a visible-signal read and diagnosis.",
+    "Indian readers value locally relevant, practical next steps over a generic product list.",
+    "The strongest trust objection is not speed; it is whether the scan will oversell certainty or make a reader feel judged.",
+    "Readers respond to a no-pressure starting point and to being told when a scan is not the right tool."
+  ],
+  "confidence": "medium",
+  "judgmentChecks": {"passed": true, "notes":"Reviewed assets were used for language, objections, and hooks only; no health claims were sourced from them."}
+}

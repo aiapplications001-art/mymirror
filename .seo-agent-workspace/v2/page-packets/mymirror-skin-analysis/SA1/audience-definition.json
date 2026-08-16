@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "audience-definition.v2",
+  "status": "complete",
+  "targetCohort": "Indian skincare beginners and routine-switchers, roughly 18–40, who can see acne, oiliness, marks, or texture but do not know what deserves attention first.",
+  "awarenessStage": "Problem aware; uncertain whether a scan is useful, private, or appropriate for their concern.",
+  "readerTakeaway": "A 60-second MyMirror scan can organize visible signals into a calmer starting point; it is not a diagnosis or a replacement for a dermatologist.",
+  "objections": [
+    "I do not want a beauty score or a judgement about my face.",
+    "I am unsure what happens to my photo and whether I need an account.",
+    "I do not want another generic routine or an AI answer that sounds medical.",
+    "I need to know when I should skip a scan and speak to a dermatologist instead."
+  ],
+  "ctaConnection": "The CTA is earned after the page shows what the scan can organize, its limits, and the practical next step the reader will receive.",
+  "judgmentChecks": {"passed": true, "notes":"Audience and CTA fit the approved MyMirror position and avoid a diagnosis promise."}
+}

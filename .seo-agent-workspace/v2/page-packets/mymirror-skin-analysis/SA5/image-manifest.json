@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "uneven-skin-texture-causes",
+    "h1": "Uneven skin texture is a clue—not a single problem.",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": false,
+  "assets": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph preview",
+      "assetType": "generated",
+      "recommendedFilename": "uneven-skin-texture-causes-open-graph-preview.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "1:1",
+      "altText": "Uneven texture guide artwork",
+      "status": "generated",
+      "licensing": {
+        "status": "approved",
+        "note": "Generated or fetched image must retain source/licensing approval metadata.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-16T20:18:34.180Z"
+      },
+      "filePath": "/assets/skin-analysis/uneven-skin-texture-causes-og.png"
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "Hero image",
+      "assetType": "generated",
+      "recommendedFilename": "uneven-skin-texture-causes-hero-image.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "1:1",
+      "altText": "A young Indian woman looking at her reflection in soft natural daylight",
+      "status": "generated",
+      "licensing": {
+        "status": "approved",
+        "note": "Generated or fetched image must retain source/licensing approval metadata.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-16T20:18:34.273Z"
+      },
+      "filePath": "/assets/skin-analysis/uneven-skin-texture-causes-hero.png"
+    }
+  ]
+}

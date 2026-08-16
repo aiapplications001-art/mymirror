@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "online-skin-analysis",
+    "h1": "Free online skin analysis, without the beauty score.",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": false,
+  "assets": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph preview image",
+      "assetType": "generated",
+      "recommendedFilename": "online-skin-analysis-open-graph-preview-image.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "1.91:1",
+      "altText": "See your skin more clearly graphic",
+      "status": "generated",
+      "licensing": {
+        "status": "approved",
+        "note": "Generated or fetched image must retain source/licensing approval metadata.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-16T19:55:29.413Z"
+      },
+      "filePath": "/assets/skin-analysis/online-skin-analysis-og.png"
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "assetType": "generated",
+      "recommendedFilename": "online-skin-analysis-first-fold-hero-visual.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "3:2",
+      "altText": "A young Indian woman holding a phone before starting a private online skin analysis",
+      "status": "generated",
+      "licensing": {
+        "status": "approved",
+        "note": "Generated or fetched image must retain source/licensing approval metadata.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-16T19:55:29.506Z"
+      },
+      "filePath": "/assets/skin-analysis/online-skin-analysis-hero.png"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "combination-skin-routine-india",
+    "h1": "A combination-skin routine that follows your face—not a rulebook.",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": false,
+  "assets": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph preview",
+      "assetType": "generated",
+      "recommendedFilename": "combination-skin-routine-india-open-graph-preview.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "1:1",
+      "altText": "Care by zone graphic",
+      "status": "generated",
+      "licensing": {
+        "status": "approved",
+        "note": "Generated or fetched image must retain source/licensing approval metadata.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-16T20:15:09.430Z"
+      },
+      "filePath": "/assets/skin-analysis/combination-skin-routine-india-og.png"
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "Hero image",
+      "assetType": "generated",
+      "recommendedFilename": "combination-skin-routine-india-hero-image.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "1:1",
+      "altText": "A young Indian woman with a calm skincare routine in warm natural light",
+      "status": "generated",
+      "licensing": {
+        "status": "approved",
+        "note": "Generated or fetched image must retain source/licensing approval metadata.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-16T20:15:03.243Z"
+      },
+      "filePath": "/assets/skin-analysis/combination-skin-routine-india-hero.png"
+    }
+  ]
+}

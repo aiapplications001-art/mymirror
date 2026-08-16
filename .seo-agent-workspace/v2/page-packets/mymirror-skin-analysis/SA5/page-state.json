@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "page-state.v2",
+  "status": "publish_ready",
+  "clusterSlug": "mymirror-skin-analysis",
+  "pageId": "SA5",
+  "pageType": "decision_guide",
+  "gates": {
+    "serpResearch": {
+      "status": "passed",
+      "machineChecksPassed": true,
+      "judgmentChecksPassed": true,
+      "blockingIssues": [],
+      "advisoryIssues": []
+    },
+    "socialVideoResearch": {
+      "status": "passed",
+      "machineChecksPassed": true,
+      "judgmentChecksPassed": true,
+      "blockingIssues": [],
+      "advisoryIssues": []
+    },
+    "audienceDefinition": {
+      "status": "passed",
+      "machineChecksPassed": true,
+      "judgmentChecksPassed": true,
+      "blockingIssues": [],
+      "advisoryIssues": []
+    },
+    "narrativeBrief": {
+      "status": "passed",
+      "machineChecksPassed": true,
+      "judgmentChecksPassed": true,
+      "blockingIssues": [],
+      "advisoryIssues": []
+    },
+    "citationSet": {
+      "status": "passed",
+      "machineChecksPassed": true,
+      "judgmentChecksPassed": true,
+      "blockingIssues": [],
+      "advisoryIssues": []
+    }
+  },
+  "repairAttempts": {
+    "automatic": 0,
+    "manual": 0,
+    "maxAutomatic": 1,
+    "maxManualWithoutUpstreamRevision": 1
+  },
+  "content": {
+    "packetGenerated": true,
+    "qaReportGenerated": true,
+    "minimumSectionScore": 88
+  },
+  "images": {
+    "manifestGenerated": true,
+    "requiredSlotsComplete": true
+  },
+  "publishReady": true,
+  "nextRecommendedAction": "Page is publish-ready.",
+  "updatedAt": "2026-08-16T20:18:34.362Z"
+}

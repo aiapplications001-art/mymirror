@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "citation-set.v2",
+  "status": "complete",
+  "claims": [
+    {"claim":"MyMirror maps visible skin signals across six facial zones and organizes routine priorities.","strength":"high","sourceUrl":"https://mymirror.fit/","approvalStatus":"approved"},
+    {"claim":"MyMirror is not a medical diagnosis and does not replace professional medical advice.","strength":"high","sourceUrl":"https://mymirror.fit/","approvalStatus":"approved"},
+    {"claim":"Clear selfie capture and face-zone scanning are common online skin-analysis interaction patterns.","strength":"medium","sourceUrl":"https://www.lorealparis.co.in/skin-genius","approvalStatus":"not_required"},
+    {"claim":"A privacy and limits explanation is an important part of a responsible scan experience.","strength":"medium","sourceUrl":"https://www.1753skin.com/en/free-skin-analysis","approvalStatus":"not_required"},
+    {"claim":"Readers can use a scan as a visible-signal starting point rather than a substitute for dermatology assessment.","strength":"medium","sourceUrl":"https://skinchecker.in/skinchecker.html","approvalStatus":"not_required"}
+  ],
+  "sources": [
+    {"id":"C1","url":"https://mymirror.fit/","publisher":"MyMirror","use":"product capabilities, privacy position, and non-diagnosis boundary"},
+    {"id":"C2","url":"https://www.lorealparis.co.in/skin-genius","publisher":"L'Oréal Paris India","use":"capture and facial-zone workflow pattern"},
+    {"id":"C3","url":"https://www.1753skin.com/en/free-skin-analysis","publisher":"1753 Skincare","use":"privacy and dermatologist-limit pattern"},
+    {"id":"C4","url":"https://skinchecker.in/skinchecker.html","publisher":"SkinChecker","use":"informational-service disclaimer pattern"}
+  ],
+  "judgmentChecks": {"passed": true, "notes":"Claims are limited to MyMirror's supplied capabilities and cautious, source-linked workflow statements; no diagnostic or efficacy claims are made."}
+}

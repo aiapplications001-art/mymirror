@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "oily-vs-dehydrated-skin",
+    "h1": "Oily vs dehydrated skin: they are not opposites.",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": false,
+  "assets": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph preview image",
+      "assetType": "generated",
+      "recommendedFilename": "oily-vs-dehydrated-skin-open-graph-preview-image.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "1:1",
+      "altText": "Shine and comfort abstract graphic",
+      "status": "generated",
+      "licensing": {
+        "status": "approved",
+        "note": "Generated or fetched image must retain source/licensing approval metadata.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-16T20:08:21.034Z"
+      },
+      "filePath": "/assets/skin-analysis/oily-vs-dehydrated-skin-og.png"
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "assetType": "generated",
+      "recommendedFilename": "oily-vs-dehydrated-skin-first-fold-hero-visual.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "1:1",
+      "altText": "A young Indian woman in soft daylight gently touching her cheek",
+      "status": "generated",
+      "licensing": {
+        "status": "approved",
+        "note": "Generated or fetched image must retain source/licensing approval metadata.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-16T20:08:21.114Z"
+      },
+      "filePath": "/assets/skin-analysis/oily-vs-dehydrated-skin-hero.png"
+    }
+  ]
+}

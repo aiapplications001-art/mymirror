@@ -1,0 +1,14 @@
+{
+  "schemaVersion":"social-video-research.v2","status":"complete",
+  "assets":[
+    {"id":"SV1","url":"https://www.youtube.com/results?search_query=Dr+Dray+how+to+determine+skin+type","assetType":"video","accessStatus":"inaccessible","failureReason":"The video result did not expose a dependable transcript in this environment."},
+    {"id":"SV2","url":"https://www.youtube.com/results?search_query=Dr+Shikha+skin+type+India","assetType":"video","accessStatus":"inaccessible","failureReason":"The video result did not expose a dependable transcript in this environment."},
+    {"id":"https://www.reddit.com/r/skincareaddictsindia/comments/1lejy3w/combination_skin_type_how_to_identify_treat_care/","url":"https://www.reddit.com/r/skincareaddictsindia/comments/1lejy3w/combination_skin_type_how_to_identify_treat_care/","assetType":"community_post","accessStatus":"reviewed","audienceLanguage":"oily T-zone, dry cheeks, and a routine that has to hold both at once"},
+    {"id":"SV4","url":"https://www.reddit.com/r/IndianBeautyTalks/comments/1r82m23/help_me_build_skincare_routine/","assetType":"community_post","accessStatus":"reviewed","audienceLanguage":"combination plus sensitive, beginner-friendly, simple routine and budget-friendly options"},
+    {"id":"SV5","url":"https://www.reddit.com/r/IndianBeautyTalks/comments/1hik7az/how_did_you_determine_your_skin_type_struggling/","assetType":"community_post","accessStatus":"reviewed","audienceLanguage":"struggling to figure out dry, normal, or combination; observe oil where it accumulates"},
+    {"id":"SV6","url":"https://www.reddit.com/r/IndianBeautyTalks/search/?q=skin%20type&restrict_sr=1","assetType":"community_search","accessStatus":"inaccessible","failureReason":"Search result did not return a stable individual post in this environment."},
+    {"id":"SV7","url":"https://www.reddit.com/r/skincareaddictsindia/search/?q=skin%20type&restrict_sr=1","assetType":"community_search","accessStatus":"inaccessible","failureReason":"Search result did not return a stable individual post in this environment."}
+  ],
+  "insights":["Readers use mixed descriptions rather than neat labels: shiny nose, dry cheeks, and reaction-prone skin appear together.","A simple, low-spend observation step has more resonance than an immediate product list.","Social posts were used only for reader language and objections, not for skincare or medical claims."],
+  "confidence":"medium","judgmentChecks":{"passed":true,"notes":"Seven social/video attempts were logged; three accessible posts informed wording and four inaccessible assets are retained for traceability."}
+}

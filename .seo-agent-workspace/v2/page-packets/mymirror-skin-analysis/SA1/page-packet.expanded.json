@@ -1,0 +1,16 @@
+{
+  "metadata": {"schemaVersion":"page-packet.v2","companyName":"MyMirror","market":"India","pageType":"commercial_explainer","copyStatus":"expanded_review_ready","createdDate":"2026-08-17"},
+  "seo": {"title":"Free Online Skin Analysis: What a 60-Second Face Scan Can Help You Understand | MyMirror","description":"See how a free MyMirror face scan helps you understand visible acne, oiliness, marks, texture and skin signals in about 60 seconds—without treating the result as a diagnosis.","slug":"online-skin-analysis","h1":"Free online skin analysis, without the beauty score.","primaryKeyword":"free online skin analysis"},
+  "cta": {"primary":{"label":"Start your free skin analysis now","destination":"https://mymirror.fit/scan","microcopy":"Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."}},
+  "sections": [
+    {"id":"S1_hero","heading":"Free online skin analysis, without the beauty score.","role":"conversion","markdown":"MyMirror helps readers understand visible acne, oiliness, marks, texture and skin signals in about 60 seconds. The scan is a starting point, not a diagnosis."},
+    {"id":"S2_what","heading":"What an online skin analysis is for","role":"seo","markdown":"The page explains that a face scan organizes visible patterns by region and helps readers choose a routine priority without treating the result as clinical certainty."},
+    {"id":"S3_examples","heading":"When a scan can be useful","role":"ux","markdown":"Two India-relevant scenarios show how readers can reduce product guessing and describe visible concerns more clearly."},
+    {"id":"S4_limits","heading":"When to scan—and when not to","role":"trust","markdown":"The page states that MyMirror does not diagnose conditions or replace a qualified dermatologist, especially for painful, rapidly changing, bleeding, or persistent concerns."},
+    {"id":"S5_cta","heading":"Your next step","role":"conversion","markdown":"Start by seeing what is visible today, then choose one sensible next step."}
+  ],
+  "images": [
+    {"id":"IMG_OG","purpose":"Open Graph preview image","aspectRatio":"1.91:1","altText":"See your skin more clearly graphic","status":"generated","filePath":"/assets/skin-analysis/online-skin-analysis-og.png"},
+    {"id":"IMG_HERO","sectionId":"S1_hero","purpose":"First-fold hero visual","aspectRatio":"3:2","altText":"A young Indian woman holding a phone before starting a private online skin analysis","status":"generated","filePath":"/assets/skin-analysis/online-skin-analysis-hero.png"}
+  ]
+}

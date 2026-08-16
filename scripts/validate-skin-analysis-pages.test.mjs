@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { validatePage } from './validate-skin-analysis-pages.mjs';
+import { validateCampaign, validatePage } from './validate-skin-analysis-pages.mjs';
 
 const validPage = `<!doctype html>
 <html lang="en">
@@ -33,4 +33,24 @@ test('reports each missing required page element', () => {
     'hero image or descriptive alt text is missing',
     'JSON-LD block is missing'
   ]);
+});
+
+test('SA1 passes the static MyMirror page contract', async () => {
+  assert.deepEqual(await validateCampaign(process.cwd(), ['online-skin-analysis']), []);
+});
+
+test('SA2 passes the static MyMirror page contract', async () => {
+  assert.deepEqual(await validateCampaign(process.cwd(), ['how-to-know-your-skin-type']), []);
+});
+
+test('SA3 passes the static MyMirror page contract', async () => {
+  assert.deepEqual(await validateCampaign(process.cwd(), ['oily-vs-dehydrated-skin']), []);
+});
+
+test('SA4 passes the static MyMirror page contract', async () => {
+  assert.deepEqual(await validateCampaign(process.cwd(), ['combination-skin-routine-india']), []);
+});
+
+test('SA5 passes the static MyMirror page contract', async () => {
+  assert.deepEqual(await validateCampaign(process.cwd(), ['uneven-skin-texture-causes']), []);
 });
