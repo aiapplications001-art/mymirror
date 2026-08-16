@@ -1,0 +1,42 @@
+import json
+import os
+
+workspace_dir = "/Users/tm030/.seo-agent-workspace/page-packets/acne-treatment/scalp-acne-treatment-india"
+page_dir = "/Users/tm030/acne/scalp-acne-treatment-india"
+
+os.makedirs(workspace_dir, exist_ok=True)
+os.makedirs(page_dir, exist_ok=True)
+
+step0b = {
+    "targetKeyword": "scalp acne treatment india",
+    "targetQueryIntent": "Informational & clinical guide on causes and treatments for scalp pimples and folliculitis in India",
+    "queryCluster": [
+        "scalp acne treatment india",
+        "scalp folliculitis vs dandruff pimples",
+        "best shampoo for scalp pimples in india",
+        "ketoconazole vs salicylic acid shampoo scalp acne",
+        "does hair oil cause scalp pimples",
+        "how to clear bumps on head scalp indian routine"
+    ],
+    "pageScopeSummary": "A definitive guide to diagnosing and treating scalp acne, pimples, and folliculitis on Indian hair and scalp types, covering active ingredients (Ketoconazole, Salicylic Acid, Zinc Pyrithione), hair oiling rules, and top Indian medicated washes.",
+    "uniqueContribution": "Detailed diagnostic matrix differentiating scalp acne, fungal folliculitis, and seborrheic dermatitis, combined with an Indian scalp care protocol (Ketoconazole/Salicylic Acid rotation) and top Indian pharmacy/OTC products.",
+    "mustCover": [
+        "Scalp Acne vs Scalp Folliculitis vs Dandruff distinction",
+        "The role of Malassezia yeast and Staphylococcus bacteria",
+        "Why overnight hair oiling (champi) exacerbates scalp pimples",
+        "Active ingredients: Ketoconazole 2%, Salicylic Acid 2%, Zinc Pyrithione, Piroctone Olamine",
+        "Top recommended Indian medicated shampoos (Scalpe Plus, Selsun, Salisia KT, Ketocip)",
+        "Step-by-step 3-stage scalp clearing routine",
+        "Helmet hygiene and monsoon humidity management"
+    ],
+    "mustNotCover": [
+        "Surgical hair loss restoration / hair transplant techniques",
+        "Pitted facial scar laser protocols"
+    ],
+    "contractHash": "hash_0b_scalp_acne_2026"
+}
+
+with open(f"{workspace_dir}/step0b-contract.json", "w") as f:
+    json.dump(step0b, f, indent=2)
+
+print("Step 0B Contract written for scalp-acne-treatment-india.")

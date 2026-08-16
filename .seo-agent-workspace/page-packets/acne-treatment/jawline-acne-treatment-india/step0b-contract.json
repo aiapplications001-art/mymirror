@@ -1,0 +1,41 @@
+import json
+import os
+
+workspace_base = "/Users/tm030/.seo-agent-workspace/page-packets/acne-treatment/jawline-acne-treatment-india"
+cluster_base = "/Users/tm030/.seo-agent-workspace/clusters/acne-treatment/prewriting/jawline-acne-treatment-india"
+
+# Step 0B Contract
+step0b = {
+    "targetKeyword": "jawline acne treatment india",
+    "targetQueryIntent": "Informational and clinical guidance on treating jawline acne in India",
+    "queryCluster": [
+        "jawline acne treatment india",
+        "how to stop hormonal jawline acne india",
+        "best face wash for jawline acne in india",
+        "pcos jawline acne treatment dermatologists",
+        "salicylic acid vs benzoyl peroxide for jawline acne",
+        "helmet strap acne chin jawline remedies",
+        "hard water jawline breakouts indian skin"
+    ],
+    "pageScopeSummary": "A definitive clinical and daily routine guide for clearing jawline acne on Indian skin, covering hormonal/PCOS root causes, environmental triggers, dermatologist medical treatments, and barrier-safe home protocols.",
+    "uniqueContribution": "Detailed breakdown of Indian-specific triggers (helmet mechanica, hard water, hair oil migration) combined with dermatologist-backed clinical treatments (anti-androgens, SCT benzoyl peroxide, azelaic acid) and an interactive AI skin scan integration.",
+    "mustCover": [
+        "Hormonal vs mechanical jawline acne distinction",
+        "PCOS and androgenic sebum overproduction",
+        "Dermatologist clinical treatments (Spironolactone, Oral Contraceptives, Retinoids, Peels)",
+        "Topical actives suitable for Indian skin (Azelaic acid, BPO Short Contact Therapy, Salicylic acid)",
+        "Environmental triggers (helmet friction, hard water salts, hair oil champi)",
+        "Step-by-step 4-week barrier repair routine",
+        "Cost breakdown in major Indian cities"
+    ],
+    "mustNotCover": [
+        "Deep pitted scar surgical revision (refer to scar guide)",
+        "Pregnancy prescription drug administration (requires in-person OB-GYN consultation)"
+    ],
+    "contractHash": "hash_0b_jawline_acne_2026"
+}
+
+with open(f"{workspace_base}/step0b-contract.json", "w") as f:
+    json.dump(step0b, f, indent=2)
+
+print("Step 0B Contract generated successfully.")

@@ -1,0 +1,41 @@
+import json
+import os
+
+workspace_dir = "/Users/tm030/.seo-agent-workspace/page-packets/acne-treatment/glycolic-acid-vs-salicylic-acid-acne-india"
+page_dir = "/Users/tm030/acne/glycolic-acid-vs-salicylic-acid-acne-india"
+
+os.makedirs(workspace_dir, exist_ok=True)
+os.makedirs(page_dir, exist_ok=True)
+
+step0b = {
+    "targetKeyword": "glycolic acid vs salicylic acid acne india",
+    "targetQueryIntent": "Informational & clinical comparison of Glycolic Acid (AHA) vs Salicylic Acid (BHA) for active acne and dark spots (PIH) on Indian skin",
+    "queryCluster": [
+        "glycolic acid vs salicylic acid acne india",
+        "aha vs bha for acne marks indian skin",
+        "can i use glycolic acid and salicylic acid together",
+        "glycolic acid or salicylic acid for dark spots",
+        "best glycolic acid and salicylic acid products in india"
+    ],
+    "pageScopeSummary": "A clinical comparison guide evaluating water-soluble Glycolic Acid (AHA surface brightener) vs oil-soluble Salicylic Acid (BHA pore declogger) for Indian skin, detailing safe alternating routines, PIH risks, and top Indian formulations.",
+    "uniqueContribution": "Detailed AHA vs BHA Comparison Matrix & Alternating Night Protocol, contrasting surface cell turnover for PIH against deep follicular pore clearing on Fitzpatrick IV-VI skin tones with top Indian brand options (Minimalist, Glyco-6, Saslic, Chemist at Play).",
+    "mustCover": [
+        "Core Active Comparison: Glycolic Acid (water-soluble AHA) vs Salicylic Acid (oil-soluble BHA)",
+        "When to choose Salicylic Acid (active acne, blackheads, sebum-heavy pores)",
+        "When to choose Glycolic Acid (post-acne dark marks/PIH, textured skin, dullness)",
+        "Why you should NOT layer them simultaneously on Indian skin (over-exfoliation & PIH risk)",
+        "The Alternating Night Protocol (BHA Night vs AHA Night vs Rest Night)",
+        "Recommended Indian Brand Formulations (Glyco-6 Cream, Minimalist 8% Glycolic, Minimalist 2% BHA, Saslic Wash)",
+        "Sunscreen imperative (SPF 50) on melanin-rich skin"
+    ],
+    "mustNotCover": [
+        "High-concentration in-clinic TCA CROSS chemical peels",
+        "Systemic oral retinoid prescriptions"
+    ],
+    "contractHash": "hash_0b_glycolic_vs_salicylic_2026"
+}
+
+with open(f"{workspace_dir}/step0b-contract.json", "w") as f:
+    json.dump(step0b, f, indent=2)
+
+print("Step 0B Contract written for glycolic-acid-vs-salicylic-acid-acne-india.")

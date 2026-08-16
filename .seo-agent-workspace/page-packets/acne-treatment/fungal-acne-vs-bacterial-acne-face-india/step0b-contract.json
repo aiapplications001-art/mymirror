@@ -1,0 +1,41 @@
+import json
+import os
+
+workspace_dir = "/Users/tm030/.seo-agent-workspace/page-packets/acne-treatment/fungal-acne-vs-bacterial-acne-face-india"
+page_dir = "/Users/tm030/acne/fungal-acne-vs-bacterial-acne-face-india"
+
+os.makedirs(workspace_dir, exist_ok=True)
+os.makedirs(page_dir, exist_ok=True)
+
+step0b = {
+    "targetKeyword": "fungal acne vs bacterial acne face india",
+    "targetQueryIntent": "Informational & clinical diagnostic guide comparing Fungal Acne (Malassezia Folliculitis) vs Bacterial Acne (Acne Vulgaris) on Indian facial skin",
+    "queryCluster": [
+        "fungal acne vs bacterial acne face india",
+        "how to tell if forehead bumps are fungal or bacterial acne",
+        "ketoconazole vs benzoyl peroxide for fungal acne face",
+        "fungal acne safe routine indian climate humidity",
+        "best fungal acne face wash in india"
+    ],
+    "pageScopeSummary": "A definitive clinical diagnostic guide contrasting fungal acne (uniform, itchy Malassezia yeast overgrowth) vs bacterial acne (diverse papules, cysts, C. acnes) on Indian skin, detailing anti-fungal face washes, ingredient safety, and Indian climate triggers.",
+    "uniqueContribution": "Detailed Fungal vs Bacterial Face Diagnostic Matrix & Fungal-Safe Skincare Protocol, contrasting Ketoconazole 2% short-contact face washing against Benzoyl Peroxide & Clindamycin for Indian skin in high-humidity monsoon environments.",
+    "mustCover": [
+        "Core Diagnostic Difference: Fungal (Malassezia yeast) vs Bacterial (C. acnes bacteria)",
+        "Visual & Tactile Signals: Uniform itchy monomorphic papules vs diverse cysts & comedones",
+        "Why standard acne antibiotics make fungal acne worse",
+        "Antifungal Gold Standards: Ketoconazole 2% face wash protocol, Zinc Pyrithione, Piroctone Olamine",
+        "Antibacterial Gold Standards: Benzoyl Peroxide 2.5%, Clindamycin, Salicylic Acid",
+        "Recommended Indian Brand Formulations (Scalpe Plus, Nizral, Ketocip, Saslic DS, Benzac AC)",
+        "Fungal-safe ingredient checking (avoiding heavy esters, polysorbates, and hair oil migration)"
+    ],
+    "mustNotCover": [
+        "Deep systemic oral antifungal organ toxicity protocols",
+        "Laser scar revision procedures"
+    ],
+    "contractHash": "hash_0b_fungal_vs_bacterial_2026"
+}
+
+with open(f"{workspace_dir}/step0b-contract.json", "w") as f:
+    json.dump(step0b, f, indent=2)
+
+print("Step 0B Contract written for fungal-acne-vs-bacterial-acne-face-india.")

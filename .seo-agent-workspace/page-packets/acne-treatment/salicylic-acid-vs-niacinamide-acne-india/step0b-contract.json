@@ -1,0 +1,41 @@
+import json
+import os
+
+workspace_dir = "/Users/tm030/.seo-agent-workspace/page-packets/acne-treatment/salicylic-acid-vs-niacinamide-acne-india"
+page_dir = "/Users/tm030/acne/salicylic-acid-vs-niacinamide-acne-india"
+
+os.makedirs(workspace_dir, exist_ok=True)
+os.makedirs(page_dir, exist_ok=True)
+
+step0b = {
+    "targetKeyword": "salicylic acid vs niacinamide acne india",
+    "targetQueryIntent": "Informational & clinical comparison on Salicylic Acid vs Niacinamide for acne and dark spots on Indian skin",
+    "queryCluster": [
+        "salicylic acid vs niacinamide acne india",
+        "can i use salicylic acid and niacinamide together",
+        "salicylic acid or niacinamide for dark spots and pimples",
+        "how to layer salicylic acid and niacinamide routine india",
+        "best niacinamide and salicylic acid serums in india"
+    ],
+    "pageScopeSummary": "A definitive clinical comparison guide evaluating Salicylic Acid (BHA pore declogger) vs Niacinamide (B3 barrier & PIH fading) for Indian skin, detailing safe layering rules, concentration benchmarks, and top Indian formulations.",
+    "uniqueContribution": "Detailed Active Comparison Matrix & 15-Minute Wait Layering Protocol, contrasting BHA deep pore action against Niacinamide sebum regulation & PIH fading on Fitzpatrick IV-VI skin tones with top Indian brand options.",
+    "mustCover": [
+        "Core Active Comparison: Salicylic Acid (oil-soluble BHA) vs Niacinamide (Vitamin B3)",
+        "When to choose Salicylic Acid (blackheads, active clogged pores, acne mechanica)",
+        "When to choose Niacinamide (post-acne dark marks/PIH, barrier damage, oily redness)",
+        "How to layer them safely: The 15-Minute Wait Rule vs AM/PM Split",
+        "Ideal concentrations for Indian skin (1-2% Salicylic, 5-10% Niacinamide)",
+        "Recommended Indian Brand Formulations (Minimalist, Chemist at Play, Derma Co, Pharmacy Saslic)",
+        "Common mistakes (over-exfoliation, purging vs breakout, skipping SPF)"
+    ],
+    "mustNotCover": [
+        "Deep surgical laser scar resurfacing",
+        "Oral isotretinoin medical dosages"
+    ],
+    "contractHash": "hash_0b_salicylic_vs_niacinamide_2026"
+}
+
+with open(f"{workspace_dir}/step0b-contract.json", "w") as f:
+    json.dump(step0b, f, indent=2)
+
+print("Step 0B Contract written for salicylic-acid-vs-niacinamide-acne-india.")
