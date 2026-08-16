@@ -91,6 +91,20 @@ nav.site-nav {
     gap: 0 !important;
 }
 
+.brand-logo {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.2rem !important;
+    font-weight: 700 !important;
+    font-size: 1.35rem !important;
+    color: var(--color-text-primary, #1A1410) !important;
+    text-decoration: none !important;
+}
+
+.brand-logo span {
+    color: var(--color-brand, #EC610E) !important;
+}
+
 .logo-wrapper,
 .nav-logo {
     height: 32px;
@@ -155,6 +169,27 @@ nav.site-nav {
     align-items: center !important;
     gap: 0.5rem !important;
     text-decoration: none !important;
+}
+
+.hamburger-btn {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .trust-bar { padding: 6px 1rem; font-size: 11px; gap: 0.35rem 0.75rem; }
+    .header-container, .nav-inner { padding: 0 1rem !important; }
+    .logo, .nav-logo img, .logo-wrapper img { height: 22px !important; }
+    .nav-links li:not(:last-child),
+    .nav-links a:not(.nav-cta):not(.nav-cta-btn):not(.header-cta) {
+        display: none !important;
+    }
+    .nav-links .nav-cta,
+    .nav-links .nav-cta-btn,
+    .header-cta {
+        padding: 6px 14px !important;
+        font-size: 12px !important;
+        white-space: nowrap !important;
+    }
 }
 
 /* Hero Animation */
