@@ -476,12 +476,19 @@
       right: 0;
       background: rgba(15, 19, 22, 0.95);
       backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       padding: 12px 16px;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
-      z-index: 999;
+      z-index: 9999;
     }
-    @media (max-width: 991px) {
-      .mobile-sticky-cta { display: block; }
+    @media (min-width: 769px) {
+      .mobile-sticky-cta { display: none !important; }
+      .hero-cta-wrapper { display: block !important; }
+    }
+    @media (max-width: 768px) {
+      .mobile-sticky-cta { display: flex !important; justify-content: center; align-items: center; }
+      .hero-cta-wrapper { display: none !important; }
+      body { padding-bottom: 70px !important; }
     }
     .mobile-sticky-btn {
       display: block;
@@ -529,11 +536,13 @@
         <p class="hero-subtitle">Skincare fatigue? Discover why your 10-step routine is failing. Get a simple, dermatologist-backed 3-step skincare routine for oily, acne-prone skin under ₹1500.</p>
         
         <div>
-          <a href="/scan" class="perimeter-cta">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-            Start Your Free Skin Analysis Now
-          </a>
-          <p class="cta-subtext">Scan your face to analyze acne, oiliness & skin barrier in 60 seconds.</p>
+          <div class="hero-cta-wrapper">
+            <a href="/scan" class="perimeter-cta">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              Start Your Free Skin Analysis Now
+            </a>
+            <p class="cta-subtext">Scan your face to analyze acne, oiliness & skin barrier in 60 seconds.</p>
+          </div>
           <p style="margin-top: 1rem;"><a href="#blueprint" style="color: #FF8B42; font-weight: 700; text-decoration: underline;">View the ₹1500 Blueprint ↓</a></p>
         </div>
       </div>

@@ -330,13 +330,15 @@ h3 { font-size: 1.4rem; font-weight: 700; color: var(--color-text-primary); marg
 }
 
 /* ── STICKY BOTTOM CTA (MOBILE ONLY) ── */
-.sticky-cta-mobile {
+.sticky-cta-mobile,
+.mobile-sticky-cta {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     padding: 0.8rem 1.2rem;
     box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
     z-index: 2000;
@@ -346,7 +348,9 @@ h3 { font-size: 1.4rem; font-weight: 700; color: var(--color-text-primary); marg
     border-top: 1px solid var(--color-border);
 }
 
-.sticky-cta-mobile .nav-cta {
+.sticky-cta-mobile a,
+.sticky-cta-mobile .nav-cta,
+.mobile-sticky-cta a {
     width: 100%;
     text-align: center;
     padding: 12px 0;
@@ -354,26 +358,36 @@ h3 { font-size: 1.4rem; font-weight: 700; color: var(--color-text-primary); marg
     box-shadow: 0 8px 20px rgba(236,97,14,0.3);
     text-decoration: none;
     border-radius: 9999px;
-    background: var(--color-brand);
-    color: #fff;
+    background: var(--color-brand, #EC610E);
+    color: #fff !important;
     font-weight: 800;
+    white-space: nowrap;
+}
+
+@media (min-width: 769px) {
+    .sticky-cta-mobile,
+    .mobile-sticky-cta {
+        display: none !important;
+    }
+    .face-ai-cta-wrapper,
+    .perimeter-cta,
+    .hero-cta {
+        display: flex !important;
+    }
 }
 
 @media (max-width: 768px) {
-    .sticky-cta-mobile {
-        display: flex;
+    .sticky-cta-mobile,
+    .mobile-sticky-cta {
+        display: flex !important;
     }
-    /* Hide hero CTA on mobile to avoid redundancy */
-    .face-ai-cta-wrapper {
-        display: none !important;
-    }
-    /* Hide header nav CTA on mobile when bottom sticky is active */
-    .nav-links .nav-cta, 
-    .nav-inner a[href*="face-map"], 
-    .nav-inner a[href*="scan"] {
+    /* Hide hero CTA on mobile to avoid redundancy with sticky bottom nav CTA */
+    .hero .face-ai-cta-wrapper,
+    .dark-hero .perimeter-cta,
+    .hero-content .face-ai-cta-wrapper {
         display: none !important;
     }
     body {
-        padding-bottom: 70px;
+        padding-bottom: 70px !important;
     }
 }

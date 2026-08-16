@@ -198,7 +198,46 @@
         .nav-cta-btn { background: var(--brand, #EC610E) !important; color: #FFFFFF !important; font-weight: 700 !important; border-radius: 9999px !important; padding: 8px 18px !important; white-space: nowrap !important; }
         .nav-cta-btn:hover { background: var(--brand-dark, #C14800) !important; }
 
+        @media (min-width: 769px) {
+            .mobile-sticky-cta { display: none !important; }
+            .hero-content .cta-group { display: flex !important; }
+        }
+
         @media (max-width: 768px) {
+            .hero-content .cta-group { display: none !important; }
+            .mobile-sticky-cta {
+                display: flex !important;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                padding: 10px 16px;
+                border-top: 1px solid var(--border);
+                z-index: 9999;
+                box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+                align-items: center;
+                justify-content: center;
+            }
+            .mobile-sticky-cta a {
+                display: block;
+                width: 100%;
+                background: var(--brand);
+                color: #ffffff !important;
+                text-align: center;
+                padding: 14px;
+                border-radius: 9999px;
+                font-weight: 800;
+                font-size: 1rem;
+                text-decoration: none;
+                box-shadow: 0 4px 16px rgba(232, 122, 93, 0.35);
+                white-space: nowrap;
+            }
+            body {
+                padding-bottom: 68px !important;
+            }
             .trust-bar { padding: 6px 1rem; font-size: 11px; gap: 0.35rem 0.75rem; }
             .nav-inner { padding: 0 1rem; }
             .nav-logo img { height: 22px; }
@@ -1303,5 +1342,9 @@
             </div>
         </div>
     </footer>
+
+    <div class="mobile-sticky-cta">
+        <a href="/scan">Start free live skin scan ✨</a>
+    </div>
 </body>
 </html>
