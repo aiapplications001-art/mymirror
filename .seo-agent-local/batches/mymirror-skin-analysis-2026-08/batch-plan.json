@@ -1,0 +1,56 @@
+{
+  "batchId": "mymirror-skin-analysis-2026-08",
+  "company": "MyMirror",
+  "domain": "https://mymirror.fit/",
+  "market": "India",
+  "clusterSlug": "mymirror-skin-analysis",
+  "targetPageCount": 5,
+  "selectedStrategy": "analysis-led",
+  "pageQueue": [
+    {
+      "pageId": "SA1",
+      "slug": "online-skin-analysis",
+      "title": "Free Online Skin Analysis: What a 60-Second Face Scan Can Help You Understand",
+      "pageType": "commercial_explainer",
+      "priorityLabel": "high_conversion",
+      "riskLevel": "medium",
+      "status": "pending"
+    },
+    {
+      "pageId": "SA2",
+      "slug": "how-to-know-your-skin-type",
+      "title": "How to Know Your Skin Type: A Practical At-Home Guide",
+      "pageType": "decision_guide",
+      "priorityLabel": "first_organic_wins",
+      "riskLevel": "low",
+      "status": "pending"
+    },
+    {
+      "pageId": "SA3",
+      "slug": "oily-vs-dehydrated-skin",
+      "title": "Oily Skin vs Dehydrated Skin: How to Tell the Difference",
+      "pageType": "comparison_guide",
+      "priorityLabel": "low_competition",
+      "riskLevel": "medium",
+      "status": "pending"
+    },
+    {
+      "pageId": "SA4",
+      "slug": "combination-skin-routine-india",
+      "title": "Combination Skin Routine for Indian Weather",
+      "pageType": "practical_guide",
+      "priorityLabel": "supporting_page",
+      "riskLevel": "low",
+      "status": "pending"
+    },
+    {
+      "pageId": "SA5",
+      "slug": "uneven-skin-texture-causes",
+      "title": "Uneven Skin Texture: Visible Signals and Sensible Next Steps",
+      "pageType": "decision_guide",
+      "priorityLabel": "strategic_high_competition",
+      "riskLevel": "medium",
+      "status": "pending"
+    }
+  ]
+}
