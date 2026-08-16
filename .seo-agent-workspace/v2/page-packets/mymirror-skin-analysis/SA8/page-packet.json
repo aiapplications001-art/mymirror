@@ -70,18 +70,18 @@
       "id": "IMG_OG",
       "purpose": "Open Graph preview image",
       "aspectRatio": "16:9",
-      "altText": "Calming skincare texture beside a redness-focused skin care setup",
-      "status": "existing_asset",
-      "filePath": "/assets/images/rosacea-redness-calming-texture.jpg"
+      "altText": "A woman checking mild cheek redness and irritation in a mirror",
+      "status": "generated",
+      "filePath": "/assets/skin-analysis/skin-rash-on-face-hero-v2.png"
     },
     {
       "id": "IMG_HERO",
       "sectionId": "S1_hero",
       "purpose": "First-fold hero visual",
       "aspectRatio": "4:3",
-      "altText": "Calming skincare texture beside a redness-focused skin care setup",
-      "status": "existing_asset",
-      "filePath": "/assets/images/rosacea-redness-calming-texture.jpg"
+      "altText": "A woman checking mild cheek redness and irritation in a mirror",
+      "status": "generated",
+      "filePath": "/assets/skin-analysis/skin-rash-on-face-hero-v2.png"
     }
   ],
   "sources": [

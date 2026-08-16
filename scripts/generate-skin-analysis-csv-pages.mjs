@@ -16,8 +16,8 @@ const pages = [
     eyebrow: 'CSV keyword: tanning',
     primaryKeyword: 'tanning',
     secondaryKeywords: ['pigmentation', 'tan skin', 'face tan removal', 'dark spots on skin'],
-    heroImage: '/assets/images/sunscreen-texture-application.jpg',
-    heroAlt: 'Sunscreen being applied as part of a sun protection routine',
+    heroImage: '/assets/skin-analysis/tanning-vs-pigmentation-face-hero-v2.png',
+    heroAlt: 'A woman checking subtle tan and pigmentation patterns on her face in a mirror',
     heroNote: 'Sun pattern or pigment patch?',
     heroCopy: 'A calm photo review can help you describe whether your concern looks like an all-over tan, patchy pigment, or post-breakout marks before you change your routine.',
     proof: ['CSV volume: 500K', 'Low competition', 'Photo-led guide'],
@@ -54,8 +54,8 @@ const pages = [
     eyebrow: 'CSV keyword: white spots on face',
     primaryKeyword: 'white spots on face',
     secondaryKeywords: ['white spots on skin', 'skin color', 'skin problems'],
-    heroImage: '/assets/images/clear_skin_texture.jpg',
-    heroAlt: 'Close view of facial skin texture in natural light',
+    heroImage: '/assets/skin-analysis/white-spots-on-face-hero-v2.png',
+    heroAlt: 'A woman observing a subtle pale spot on her cheek in a mirror',
     heroNote: 'Spot, patch, or texture?',
     heroCopy: 'White spots can mean different things depending on whether they are flat, raised, scaly, spreading, or linked to dryness. Start by describing what is visible instead of naming a condition too soon.',
     proof: ['CSV volume: 50K', 'Low competition', 'Non-diagnostic'],
@@ -92,8 +92,8 @@ const pages = [
     eyebrow: 'CSV keyword: skin rash',
     primaryKeyword: 'skin rash',
     secondaryKeywords: ['rash', 'skin rash types', 'red itchy spots on skin'],
-    heroImage: '/assets/images/rosacea-redness-calming-texture.jpg',
-    heroAlt: 'Calming skincare texture beside a redness-focused skin care setup',
+    heroImage: '/assets/skin-analysis/skin-rash-on-face-hero-v2.png',
+    heroAlt: 'A woman checking mild cheek redness and irritation in a mirror',
     heroNote: 'Redness, itch, scale, or swelling?',
     heroCopy: 'A face rash is not a product-matching problem until you know whether it is mild, spreading, painful, itchy, swollen, or linked to a trigger.',
     proof: ['CSV volume: 50K', 'Low competition', 'Triage-first'],
@@ -130,8 +130,8 @@ const pages = [
     eyebrow: 'CSV keyword: milia',
     primaryKeyword: 'milia',
     secondaryKeywords: ['milia on face', 'milia under eye', 'white bumps on face'],
-    heroImage: '/assets/images/pimple-under-skin-og.jpg',
-    heroAlt: 'Close facial skin view used to compare small bumps under the surface',
+    heroImage: '/assets/skin-analysis/milia-on-face-hero-v2.png',
+    heroAlt: 'A woman observing tiny raised white bumps near her cheek in a mirror',
     heroNote: 'Bump, pore, or white spot?',
     heroCopy: 'Milia-like bumps are easy to confuse with whiteheads, clogged pores, or flat white spots. Start with whether the mark is raised, firm, and not inflamed.',
     proof: ['CSV volume: 50K', 'Low competition', 'Bump-focused'],
@@ -168,8 +168,8 @@ const pages = [
     eyebrow: 'CSV keyword: pores',
     primaryKeyword: 'pores',
     secondaryKeywords: ['pores on face', 'clogged pores', 'visible pores'],
-    heroImage: '/assets/images/refined-pores-closeup.jpg',
-    heroAlt: 'Close view of facial skin texture and visible pores',
+    heroImage: '/assets/skin-analysis/pores-on-face-hero-v2.png',
+    heroAlt: 'A woman checking visible pores and skin texture on her cheek in a mirror',
     heroNote: 'Pores, oil, or texture?',
     heroCopy: 'Visible pores are normal skin features. The useful question is whether oil, clogged pores, irritation, lighting, or texture is making them stand out today.',
     proof: ['CSV volume: 50K', 'Low competition', 'Texture-led'],
@@ -379,8 +379,8 @@ function packet(page) {
       { id: 'S6_final_cta', heading: 'Use the scan to describe, not diagnose', role: 'conversion', markdown: 'Start with what is visible today, choose one sensible next step, and get professional care when needed.' }
     ],
     images: [
-      { id: 'IMG_OG', purpose: 'Open Graph preview image', aspectRatio: '16:9', altText: page.heroAlt, status: 'existing_asset', filePath: page.heroImage },
-      { id: 'IMG_HERO', sectionId: 'S1_hero', purpose: 'First-fold hero visual', aspectRatio: '4:3', altText: page.heroAlt, status: 'existing_asset', filePath: page.heroImage }
+      { id: 'IMG_OG', purpose: 'Open Graph preview image', aspectRatio: '16:9', altText: page.heroAlt, status: 'generated', filePath: page.heroImage },
+      { id: 'IMG_HERO', sectionId: 'S1_hero', purpose: 'First-fold hero visual', aspectRatio: '4:3', altText: page.heroAlt, status: 'generated', filePath: page.heroImage }
     ],
     sources: page.sources.map(([label, url]) => ({ label, url }))
   };
@@ -418,11 +418,11 @@ function imageManifest(page) {
     promptCompanionRequired: false,
     assets: packet(page).images.map((image) => ({
       ...image,
-      assetType: 'existing_repo_asset',
-      preferredFormat: image.filePath.endsWith('.jpg') ? 'jpg' : 'png',
+      assetType: 'generated',
+      preferredFormat: 'png',
       licensing: {
         status: 'approved',
-        note: 'Existing repository asset reused; no external brand screenshot, logo, or third-party product visual introduced.',
+        note: 'Generated MyMirror hero visual; no external brand screenshot, logo, or third-party product visual introduced.',
         approvedBy: 'MyMirror',
         approvedAt: `${today}T00:00:00.000Z`
       }

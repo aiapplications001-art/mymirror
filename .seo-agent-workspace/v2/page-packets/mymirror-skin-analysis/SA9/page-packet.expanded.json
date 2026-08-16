@@ -70,18 +70,18 @@
       "id": "IMG_OG",
       "purpose": "Open Graph preview image",
       "aspectRatio": "16:9",
-      "altText": "Close facial skin view used to compare small bumps under the surface",
-      "status": "existing_asset",
-      "filePath": "/assets/images/pimple-under-skin-og.jpg"
+      "altText": "A woman observing tiny raised white bumps near her cheek in a mirror",
+      "status": "generated",
+      "filePath": "/assets/skin-analysis/milia-on-face-hero-v2.png"
     },
     {
       "id": "IMG_HERO",
       "sectionId": "S1_hero",
       "purpose": "First-fold hero visual",
       "aspectRatio": "4:3",
-      "altText": "Close facial skin view used to compare small bumps under the surface",
-      "status": "existing_asset",
-      "filePath": "/assets/images/pimple-under-skin-og.jpg"
+      "altText": "A woman observing tiny raised white bumps near her cheek in a mirror",
+      "status": "generated",
+      "filePath": "/assets/skin-analysis/milia-on-face-hero-v2.png"
     }
   ],
   "sources": [

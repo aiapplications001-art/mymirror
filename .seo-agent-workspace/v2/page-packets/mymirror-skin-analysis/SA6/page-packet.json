@@ -71,18 +71,18 @@
       "id": "IMG_OG",
       "purpose": "Open Graph preview image",
       "aspectRatio": "16:9",
-      "altText": "Sunscreen being applied as part of a sun protection routine",
-      "status": "existing_asset",
-      "filePath": "/assets/images/sunscreen-texture-application.jpg"
+      "altText": "A woman checking subtle tan and pigmentation patterns on her face in a mirror",
+      "status": "generated",
+      "filePath": "/assets/skin-analysis/tanning-vs-pigmentation-face-hero-v2.png"
     },
     {
       "id": "IMG_HERO",
       "sectionId": "S1_hero",
       "purpose": "First-fold hero visual",
       "aspectRatio": "4:3",
-      "altText": "Sunscreen being applied as part of a sun protection routine",
-      "status": "existing_asset",
-      "filePath": "/assets/images/sunscreen-texture-application.jpg"
+      "altText": "A woman checking subtle tan and pigmentation patterns on her face in a mirror",
+      "status": "generated",
+      "filePath": "/assets/skin-analysis/tanning-vs-pigmentation-face-hero-v2.png"
     }
   ],
   "sources": [

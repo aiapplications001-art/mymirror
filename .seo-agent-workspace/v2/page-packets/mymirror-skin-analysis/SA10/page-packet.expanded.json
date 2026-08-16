@@ -70,18 +70,18 @@
       "id": "IMG_OG",
       "purpose": "Open Graph preview image",
       "aspectRatio": "16:9",
-      "altText": "Close view of facial skin texture and visible pores",
-      "status": "existing_asset",
-      "filePath": "/assets/images/refined-pores-closeup.jpg"
+      "altText": "A woman checking visible pores and skin texture on her cheek in a mirror",
+      "status": "generated",
+      "filePath": "/assets/skin-analysis/pores-on-face-hero-v2.png"
     },
     {
       "id": "IMG_HERO",
       "sectionId": "S1_hero",
       "purpose": "First-fold hero visual",
       "aspectRatio": "4:3",
-      "altText": "Close view of facial skin texture and visible pores",
-      "status": "existing_asset",
-      "filePath": "/assets/images/refined-pores-closeup.jpg"
+      "altText": "A woman checking visible pores and skin texture on her cheek in a mirror",
+      "status": "generated",
+      "filePath": "/assets/skin-analysis/pores-on-face-hero-v2.png"
     }
   ],
   "sources": [

@@ -11,14 +11,14 @@
       "id": "IMG_OG",
       "purpose": "Open Graph preview image",
       "aspectRatio": "16:9",
-      "altText": "Close facial skin view used to compare small bumps under the surface",
-      "status": "existing_asset",
-      "filePath": "/assets/images/pimple-under-skin-og.jpg",
-      "assetType": "existing_repo_asset",
-      "preferredFormat": "jpg",
+      "altText": "A woman observing tiny raised white bumps near her cheek in a mirror",
+      "status": "generated",
+      "filePath": "/assets/skin-analysis/milia-on-face-hero-v2.png",
+      "assetType": "generated",
+      "preferredFormat": "png",
       "licensing": {
         "status": "approved",
-        "note": "Existing repository asset reused; no external brand screenshot, logo, or third-party product visual introduced.",
+        "note": "Generated MyMirror hero visual; no external brand screenshot, logo, or third-party product visual introduced.",
         "approvedBy": "MyMirror",
         "approvedAt": "2026-08-17T00:00:00.000Z"
       }
@@ -28,14 +28,14 @@
       "sectionId": "S1_hero",
       "purpose": "First-fold hero visual",
       "aspectRatio": "4:3",
-      "altText": "Close facial skin view used to compare small bumps under the surface",
-      "status": "existing_asset",
-      "filePath": "/assets/images/pimple-under-skin-og.jpg",
-      "assetType": "existing_repo_asset",
-      "preferredFormat": "jpg",
+      "altText": "A woman observing tiny raised white bumps near her cheek in a mirror",
+      "status": "generated",
+      "filePath": "/assets/skin-analysis/milia-on-face-hero-v2.png",
+      "assetType": "generated",
+      "preferredFormat": "png",
       "licensing": {
         "status": "approved",
-        "note": "Existing repository asset reused; no external brand screenshot, logo, or third-party product visual introduced.",
+        "note": "Generated MyMirror hero visual; no external brand screenshot, logo, or third-party product visual introduced.",
         "approvedBy": "MyMirror",
         "approvedAt": "2026-08-17T00:00:00.000Z"
       }

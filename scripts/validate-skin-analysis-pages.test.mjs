@@ -108,3 +108,19 @@ test('SA6-SA10 generated pages protect mobile first-fold content from horizontal
   assert.match(html, /\.hero p \{ max-width:330px; \}/);
   assert.match(html, /\.hero-proof \{ display:grid; grid-template-columns:1fr; \}/);
 });
+
+test('SA6-SA10 use dedicated topic-relevant skin-analysis hero assets', async () => {
+  const slugs = [
+    'tanning-vs-pigmentation-face',
+    'white-spots-on-face',
+    'skin-rash-on-face',
+    'milia-on-face',
+    'pores-on-face'
+  ];
+
+  for (const slug of slugs) {
+    const html = await readFile(`skin-analysis/${slug}/index.html`, 'utf8');
+    assert.match(html, new RegExp(`/assets/skin-analysis/${slug}-hero-v2\\.png`));
+    assert.doesNotMatch(html, /<img class="hero-image" src="\/assets\/images\//);
+  }
+});
