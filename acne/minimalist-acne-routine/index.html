@@ -68,11 +68,6 @@
     .nav-links a:hover, .nav-links a.active { background: var(--color-brand-light); color: var(--color-brand); font-weight: 600; }
 
     /* ── HERO ── */
-    .hero { background: linear-gradient(135deg, #0a0a0c 0%, #1a1410 100%); color: #fff; text-align: center; padding: 3rem 2rem 4rem; margin-bottom: 0 !important; }
-    .hero-tag { display: inline-block; background: rgba(236,97,14,0.15); color: var(--color-brand); border: 1px solid rgba(236,97,14,0.3); font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 6px 16px; border-radius: 99px; margin-bottom: 1.2rem; }
-    .hero h1 { font-family: 'Kantumruy Pro', serif; font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.04em; margin-bottom: 1.5rem; max-width: 900px; margin-left: auto; margin-right: auto;  color: #ffffff !important;}
-    .hero h1 em { font-style: normal; color: var(--color-brand); }
-    .hero p { color: rgba(255,255,255,0.85); font-size: 1.1rem; max-width: 700px; margin: 0 auto 3rem; line-height: 1.6; }
 
     /* ── TOC ── */
     .toc-bar { background: var(--color-bg-primary); border-bottom: 1px solid var(--color-border); position: sticky; top: 60px; z-index: 900; overflow-x: auto; }
@@ -207,7 +202,7 @@
 
     @media (max-width: 768px) {
       .face-ai-btn { padding: 16px 32px; font-size: 1rem; width: 100%; max-width: 340px; }
-      p.face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px auto 0 auto !important; display: block !important; visibility: visible !important; }
+      p.face-ai-subtext { color: var(--color-text-secondary) !important; font-size: 13px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px auto 0 auto !important; display: block !important; visibility: visible !important; }
     }
 
   </style>
@@ -264,9 +259,9 @@
           <p class="face-ai-subtext" style="color: var(--color-text-secondary) !important; margin: 8px 0 0 0 !important; text-align: left;">Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds.</p>
         </div>
         
-        <div style="display: flex; align-items: center; gap: 1rem; margin-top: 1rem;">
+        <div class="secondary-cta-group">
           <a href="#blueprint" style="color: var(--color-brand); font-weight: 700; text-decoration: underline; font-size: 1.05rem; transition: opacity 0.2s;">View the ₹1500 Blueprint</a>
-          <div style="display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--color-text-tertiary); font-weight: 600;">
+          <div style="display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 11px; color: var(--color-text-tertiary); font-weight: 600;">
              <span style="color: var(--color-success);">✓</span> Dermatologist Reviewed
           </div>
         </div>
@@ -288,6 +283,7 @@
   </section>
   
   <style>
+    .secondary-cta-group { display: flex; align-items: center; gap: 1rem; margin-top: 1rem; }
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr !important; gap: 3rem !important; }
       .hero { padding: 1.5rem 1.5rem 3rem !important; text-align: center !important; }
@@ -296,6 +292,7 @@
       .face-ai-cta-wrapper { align-items: center !important; text-align: center !important; }
       .face-ai-subtext { text-align: center !important; }
       .hero-visual { aspect-ratio: 16/9 !important; }
+      .secondary-cta-group { flex-direction: column; gap: 0.5rem; text-align: center; }
     }
   </style>
 
