@@ -1,0 +1,242 @@
+# Cluster Strategy: azelaic-vs-salicylic
+
+Company: MyMirror
+Market: India
+Cluster slug: azelaic-vs-salicylic
+
+## Source Metadata
+
+- URLs considered: 96
+- URLs matched: 11
+- Seed keywords: azelaic acid vs salicylic acid for acne india, 15% azelaic acid gel india, salicylic acid serum acne marks
+
+## Existing URL Candidates
+
+| Page type | URL | Evidence | Match reason |
+| --- | --- | --- | --- |
+| comparison | https://mymirror.fit/acne/best-salicylic-acid-products-india/ | high | URL and metadata matched the selected product/category cluster. |
+| guide_blog | https://mymirror.fit/acne/skincare-layering-guide/ | high | URL and metadata matched the selected product/category cluster. |
+| comparison | https://mymirror.fit/acne/1-vs-2-percent-salicylic-acid/ | high | URL and metadata matched the selected product/category cluster. |
+| comparison | https://mymirror.fit/acne/salicylic-acid-face-wash-vs-serum/ | high | URL and metadata matched the selected product/category cluster. |
+| faq_support | https://mymirror.fit/acne/salicylic-vs-benzoyl-peroxide-body-wash-india/ | high | URL and metadata matched the selected product/category cluster. |
+| faq_support | https://mymirror.fit/acne/skin-purging-vs-breakout-india/ | high | URL and metadata matched the selected product/category cluster. |
+| comparison | https://mymirror.fit/acne/best-salicylic-acid-face-wash-india/ | high | URL and metadata matched the selected product/category cluster. |
+| guide_blog | https://mymirror.fit/acne/mixing-salicylic-acid-with-retinol-adapalene/ | high | URL and metadata matched the selected product/category cluster. |
+| guide_blog | https://mymirror.fit/acne/salicylic-acid-for-beginners/ | high | URL and metadata matched the selected product/category cluster. |
+| faq_support | https://mymirror.fit/acne/salicylic-acid-purging-timeline/ | high | URL and metadata matched the selected product/category cluster. |
+| guide_blog | https://mymirror.fit/acne/science-of-clear-skin/ | high | URL and metadata matched the selected product/category cluster. |
+
+## Page Opportunities
+
+| ID | Page | Type | Strategy category | Recommended slug | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| P1 | azelaic-vs-salicylic Category Page | product_category | startup_conversion | azelaic-vs-salicylic | low |
+| P2 | azelaic-vs-salicylic Guide | guide_blog | first_organic_wins | azelaic-vs-salicylic-guide | high |
+| P3 | azelaic-vs-salicylic Comparison Page | comparison | competitor_category | azelaic-vs-salicylic-comparison | high |
+
+## Internal Link Suggestions
+
+| Source URL | Destination URL | Placement | Anchor text |
+| --- | --- | --- | --- |
+| none | none | none | No internal link destination found yet. |
+
+## Advisory Quality Score
+
+Score: 74/100
+
+| Priority | Area | Issue | Likely impact |
+| --- | --- | --- | --- |
+| high | Primary category page | No existing product/category destination was found for this cluster. | seo_and_conversion |
+| low | FAQ schema | FAQ schema exists in the cluster, but should be checked for the selected page packet only when FAQ content is present. | seo |
+
+## Source-Backed Inference Notes
+
+- azelaic-vs-salicylic has enough site-inventory evidence to draft a cluster strategy before generating page packets. Evidence strength: high. Source: metadata.
+- The selected target market is India. Evidence strength: high. Source: seed_keywords.
+
+## Next Page Selection
+
+Recommended next page: P1
+
+User should select one page opportunity to generate next. V1 generates one publish-ready page packet at a time.
+
+## Machine-Readable JSON
+
+```json
+{
+  "companyName": "MyMirror",
+  "market": "India",
+  "category": {
+    "name": "azelaic-vs-salicylic",
+    "slug": "azelaic-vs-salicylic"
+  },
+  "sourceMetadata": {
+    "urlsConsidered": 96,
+    "urlsMatched": 11,
+    "seedKeywords": [
+      "azelaic acid vs salicylic acid for acne india",
+      "15% azelaic acid gel india",
+      "salicylic acid serum acne marks"
+    ]
+  },
+  "existingUrlCandidates": [
+    {
+      "url": "https://mymirror.fit/acne/best-salicylic-acid-products-india/",
+      "pageType": "comparison",
+      "title": "Best Salicylic Acid Products in India (2026) | MyMirror",
+      "h1": "Best Salicylic Acid Products in India (2026 Edition)",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/skincare-layering-guide/",
+      "pageType": "guide_blog",
+      "title": "The Chemistry of Clear Skin: How to Layer Acne Actives | MyMirror",
+      "h1": "The Chemistry of Clear Skin: How to Layer Actives Without Stinging",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/1-vs-2-percent-salicylic-acid/",
+      "pageType": "comparison",
+      "title": "Salicylic Acid 1% vs 2% Comparison: Choosing the Right Strength | MyMirror",
+      "h1": "1% vs 2% Salicylic Acid: Which Strength is Best?",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/salicylic-acid-face-wash-vs-serum/",
+      "pageType": "comparison",
+      "title": "Salicylic Acid Face Wash vs. Serum: Which Formula Works Faster? | MyMirror",
+      "h1": "The Ultimate Showdown: Is Salicylic Acid Better as a Cleanser or a Serum?",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/salicylic-vs-benzoyl-peroxide-body-wash-india/",
+      "pageType": "faq_support",
+      "title": "Salicylic Acid vs. Benzoyl Peroxide Body Washes: Which is Better for Bacne? (2026) | MyMirror",
+      "h1": "Salicylic Acid vs. Benzoyl Peroxide Body Washes",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/skin-purging-vs-breakout-india/",
+      "pageType": "faq_support",
+      "title": "Skin Purging vs. Breakout: How to Tell the Difference on Indian Skin (2026)",
+      "h1": "Skin Purging vs. Breakout: How to Tell the Difference on Indian Skin",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/best-salicylic-acid-face-wash-india/",
+      "pageType": "comparison",
+      "title": "Best Salicylic Acid Face Wash in India: 1% vs 2% Cleansers Compared | MyMirror",
+      "h1": "Best Salicylic Acid Face Wash in India: 1% vs 2% Cleansers Compared",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/mixing-salicylic-acid-with-retinol-adapalene/",
+      "pageType": "guide_blog",
+      "title": "How to Mix Salicylic Acid with Retinol & Adapalene Safely | MyMirror",
+      "h1": "Can I Use Salicylic Acid With Retinol, Tretinoin, or Adapalene?",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/salicylic-acid-for-beginners/",
+      "pageType": "guide_blog",
+      "title": "Salicylic Acid for Beginners: The First-Timer's Guide to BHAs | MyMirror",
+      "h1": "Salicylic Acid for Beginners: How Often Should You Use It?",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/salicylic-acid-purging-timeline/",
+      "pageType": "faq_support",
+      "title": "Salicylic Acid (BHA) Purging Timeline: How Long Does the Purge Last?",
+      "h1": "Salicylic Acid (BHA) Purging Timeline: How Long Does the Purge Last?",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/science-of-clear-skin/",
+      "pageType": "guide_blog",
+      "title": "The Science of Clear Skin: A Clinical Guide to Managing Acne | MyMirror",
+      "h1": "The Science of Clear Skin: A Clinical Guide to Managing Acne",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    }
+  ],
+  "pageOpportunities": [
+    {
+      "id": "P1",
+      "title": "azelaic-vs-salicylic Category Page",
+      "pageType": "product_category",
+      "strategyCategory": "startup_conversion",
+      "targetIntent": "Help users understand the category and route them toward the best product or diagnostic action.",
+      "primaryCtaGoal": "Route users to the category's primary product or action destination.",
+      "suggestedUrlSlug": "azelaic-vs-salicylic",
+      "evidenceStrength": "low"
+    },
+    {
+      "id": "P2",
+      "title": "azelaic-vs-salicylic Guide",
+      "pageType": "guide_blog",
+      "strategyCategory": "first_organic_wins",
+      "targetIntent": "Capture informational and long-tail search demand before moving readers to the main category experience.",
+      "primaryCtaGoal": "Route readers to a relevant category page, diagnostic flow, or deeper guide.",
+      "suggestedUrlSlug": "azelaic-vs-salicylic-guide",
+      "sourceUrl": "https://mymirror.fit/acne/skincare-layering-guide/",
+      "evidenceStrength": "high"
+    },
+    {
+      "id": "P3",
+      "title": "azelaic-vs-salicylic Comparison Page",
+      "pageType": "comparison",
+      "strategyCategory": "competitor_category",
+      "targetIntent": "Support users comparing alternatives, formats, or brands before they choose a solution.",
+      "primaryCtaGoal": "Route high-intent comparison traffic to the best internal product/category destination.",
+      "suggestedUrlSlug": "azelaic-vs-salicylic-comparison",
+      "sourceUrl": "https://mymirror.fit/acne/best-salicylic-acid-products-india/",
+      "evidenceStrength": "high"
+    }
+  ],
+  "internalLinkSuggestions": [],
+  "qualityScore": {
+    "score": 74,
+    "advisoryOnly": true,
+    "topIssues": [
+      {
+        "area": "Primary category page",
+        "issue": "No existing product/category destination was found for this cluster.",
+        "likelyImpact": "seo_and_conversion",
+        "priority": "high"
+      },
+      {
+        "area": "FAQ schema",
+        "issue": "FAQ schema exists in the cluster, but should be checked for the selected page packet only when FAQ content is present.",
+        "likelyImpact": "seo",
+        "priority": "low"
+      }
+    ]
+  },
+  "assumptions": [
+    {
+      "statement": "azelaic-vs-salicylic has enough site-inventory evidence to draft a cluster strategy before generating page packets.",
+      "evidenceStrength": "high",
+      "source": "metadata"
+    },
+    {
+      "statement": "The selected target market is India.",
+      "evidenceStrength": "high",
+      "source": "seed_keywords"
+    }
+  ],
+  "nextPageSelection": {
+    "instruction": "User should select one page opportunity to generate next. V1 generates one publish-ready page packet at a time.",
+    "recommendedPageId": "P1"
+  }
+}
+```
