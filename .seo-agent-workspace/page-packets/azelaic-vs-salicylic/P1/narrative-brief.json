@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "narrative-brief.v2",
+  "status": "passed",
+  "primaryStyle": "compact_professional",
+  "openingAngle": "Empathy-driven hook addressing the frustration of painful cheek bumps that leave long-lasting marks.",
+  "brandPov": "We believe that understanding the precise physical and metabolic triggers of cheek breakouts is the key to clear skin.",
+  "pagePromise": "Provide a comprehensive, habit-focused diagnostic audit to help you decode and eliminate cheek acne causes.",
+  "sectionDirections": [
+    {
+      "sectionId": "S1_hero",
+      "direction": "Detail the diagnostic and habit audit steps for S1_hero."
+    },
+    {
+      "sectionId": "S2_quick_verdict",
+      "direction": "Detail the diagnostic and habit audit steps for S2_quick_answer."
+    },
+    {
+      "sectionId": "S3_comparison_methodology",
+      "direction": "Detail the diagnostic and habit audit steps for S3_problem_diagnosis."
+    },
+    {
+      "sectionId": "S4_decision_criteria",
+      "direction": "Detail the diagnostic and habit audit steps for S4_selection_criteria."
+    },
+    {
+      "sectionId": "S5_side_by_side_matrix",
+      "direction": "Detail the diagnostic and habit audit steps for S5_solution_mapping."
+    },
+    {
+      "sectionId": "S6_reader_fit_tradeoffs",
+      "direction": "Detail the diagnostic and habit audit steps for S6_common_mistakes."
+    },
+    {
+      "sectionId": "S7_trust_proof",
+      "direction": "Detail the diagnostic and habit audit steps for S7_trust_proof."
+    },
+    {
+      "sectionId": "S8_faq",
+      "direction": "Detail the diagnostic and habit audit steps for S8_faq."
+    },
+    {
+      "sectionId": "S9_final_cta",
+      "direction": "Detail the diagnostic and habit audit steps for S9_final_cta."
+    }
+  ],
+  "judgmentChecks": {
+    "passed": true
+  }
+}
