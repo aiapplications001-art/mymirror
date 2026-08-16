@@ -1,3 +1,0 @@
-# Citation Set
-
-Status: missing

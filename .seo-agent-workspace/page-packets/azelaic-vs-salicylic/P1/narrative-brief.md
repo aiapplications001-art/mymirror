@@ -1,3 +1,0 @@
-# Narrative Brief
-
-Status: missing
