@@ -227,8 +227,8 @@
     <div class="nav-inner">
       <a class="nav-logo" href="/"><img fetchpriority="high" decoding="async" src="/acne/forehead-acne/logo-v4.png" alt="mymirror" /></a>
       <ul class="nav-links">
-        <li><a href="/acne/">Knowledge Hub</a></li>
-        <li><a href="/acne/skincare-layering-guide/">Chemistry of Layering</a></li>
+        <li class="hide-mobile"><a href="/acne/">Knowledge Hub</a></li>
+        <li class="hide-mobile"><a href="/acne/skincare-layering-guide/">Chemistry of Layering</a></li>
         <li><a href="/acne/face-map/" class="active">Skin Scan →</a></li>
       </ul>
     </div>
@@ -285,8 +285,9 @@
   <style>
     .secondary-cta-group { display: flex; align-items: center; gap: 1rem; margin-top: 1rem; }
     @media (max-width: 900px) {
-      nav { height: auto !important; min-height: 60px; padding: 12px 0; }
-      .nav-inner { flex-wrap: wrap; justify-content: center; gap: 12px; }
+      .hide-mobile { display: none !important; }
+      nav { height: 60px !important; padding: 0; }
+      .nav-inner { flex-wrap: nowrap; justify-content: space-between; padding: 0 1rem; }
       .hero-inner { grid-template-columns: 1fr !important; gap: 3rem !important; }
       .hero { padding: 1.5rem 1.5rem 3rem !important; text-align: center !important; }
       .hero-content { display: flex; flex-direction: column; align-items: center; }
