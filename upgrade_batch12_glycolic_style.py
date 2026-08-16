@@ -1,6 +1,6 @@
 import os
 
-# Read the full reference glycolic acid HTML template to extract exact head, CSS styles, header, trust-bar, TOC, hero, sidebar, and footer
+# Read reference file
 ref_file_path = "/Users/tm030/acne/glycolic-acid-toner-for-acne-india/index.html"
 with open(ref_file_path, "r", encoding="utf-8") as f:
     ref_content = f.read()
@@ -303,8 +303,8 @@ pages = [
           <h2>How to Layer Oil-Free Moisturizer in Your Routine</h2>
 
           <ul style="margin-left: 1.5rem; line-height: 1.8;">
-            <li><strong>Morning Routine (AM):</strong> Gentle Salicylic Cleanser &rarr; Vitamin B5 / Hyaluronic Gel Moisturizer &rarr; Matte Sunscreen SPF 50+.</li>
-            <li><strong>Evening Routine (PM):</strong> Gentle Cleanser &rarr; Active Serum (Adapalene / Niacinamide / Azelaic) &rarr; Barrier Relief Gel Moisturizer.</li>
+            <li><strong>Morning Routine (AM):</strong> Gentle Salicylic Cleanser &rrarr; Vitamin B5 / Hyaluronic Gel Moisturizer &rrarr; Matte Sunscreen SPF 50+.</li>
+            <li><strong>Evening Routine (PM):</strong> Gentle Cleanser &rrarr; Active Serum (Adapalene / Niacinamide / Azelaic) &rrarr; Barrier Relief Gel Moisturizer.</li>
           </ul>
         </section>
 
@@ -640,12 +640,17 @@ def generate_full_html(p):
               "text": "{item['a']}"
             }}
           }}""")
-        faq_accordion_items.append(f"""        <div class="faq-item">
-          <button class="faq-question">{item['q']} <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>{item['a']}</p>
-          </div>
-        </div>""")
+        faq_accordion_items.append(f"""          <div class="faq-item">
+            <button class="faq-header">
+              <span>{item['q']}</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                {item['a']}
+              </div>
+            </div>
+          </div>""")
 
     faq_schema_str = ",\n".join(faq_schema_items)
     faq_accordion_str = "\n".join(faq_accordion_items)
@@ -732,7 +737,7 @@ def generate_full_html(p):
   <!-- TOP HEADER BAR -->
   <header class="site-header">
     <a href="/" class="brand-logo">My<span>Mirror</span></a>
-    <a href="/ai-skin-scanner" class="header-cta">
+    <a href="https://face3layerscanner.onrender.com/" class="header-cta" target="_blank" rel="noopener">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
       Start Free AI Face Scan
     </a>
@@ -779,7 +784,7 @@ def generate_full_html(p):
           </div>
         </div>
 
-        <a href="/ai-skin-scanner" class="perimeter-cta">
+        <a href="https://face3layerscanner.onrender.com/" class="perimeter-cta" target="_blank" rel="noopener">
           <span>Start Free AI Face Scan</span>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
@@ -804,15 +809,15 @@ def generate_full_html(p):
       <div style="background: linear-gradient(135deg, #121619 0%, #1E2328 100%); color: #FFFFFF; padding: 2rem; border-radius: var(--radius-lg); margin: 3rem 0; text-align: center; border: 1px solid rgba(255,255,255,0.1);">
         <h3 style="color: #FFFFFF; font-size: 1.5rem; margin-bottom: 0.75rem;">Avoid Wasting Money on the Wrong Actives</h3>
         <p style="color: #94A3B8; margin-bottom: 1.5rem; font-size: 0.95rem;">Unsure if your skin barrier is damaged or what active strength you need? Get instant dermatological clarity with our 3-Layer AI Skin Scan.</p>
-        <a href="/ai-skin-scanner" class="perimeter-cta">
+        <a href="https://face3layerscanner.onrender.com/" class="perimeter-cta" target="_blank" rel="noopener">
           <span>Start Free AI Face Scan</span>
         </a>
       </div>
 
       <!-- FAQ SECTION -->
       <section id="faq" class="section-block" style="margin-top: 3.5rem;">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-section">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <div class="faq-accordion">
 {faq_accordion_str}
         </div>
       </section>
@@ -836,7 +841,7 @@ def generate_full_html(p):
       <div style="background: linear-gradient(135deg, #121619 0%, #1E2328 100%); color: #FFFFFF; padding: 2.5rem; border-radius: var(--radius-lg); margin-top: 4rem; text-align: center;">
         <h3 style="color: #FFFFFF; font-size: 1.6rem; margin-bottom: 0.75rem;">Ready to Clear Your Acne for Good?</h3>
         <p style="color: #94A3B8; margin-bottom: 1.5rem;">Join over 100,000 users who cleared their skin using AI-driven root cause analysis.</p>
-        <a href="/ai-skin-scanner" class="perimeter-cta">
+        <a href="https://face3layerscanner.onrender.com/" class="perimeter-cta" target="_blank" rel="noopener">
           <span>Start Free AI Face Scan</span>
         </a>
       </div>
@@ -847,12 +852,23 @@ def generate_full_html(p):
       <div style="position: sticky; top: 120px; background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.5rem; text-align: center;">
         <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem;">Instant 3D AI Skin Analysis</h3>
         <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.25rem;">Scan your skin in 60 seconds with our clinical 3-Layer AI scanner.</p>
-        <a href="/ai-skin-scanner" class="perimeter-cta" style="width: 100%; box-sizing: border-box; font-size: 0.9rem; padding: 12px 20px;">
+        <a href="https://face3layerscanner.onrender.com/" class="perimeter-cta" style="width: 100%; box-sizing: border-box; font-size: 0.9rem; padding: 12px 20px;" target="_blank" rel="noopener">
           <span>Start Free AI Scan</span>
         </a>
       </div>
     </aside>
   </main>
+
+  <!-- STICKY BOTTOM MOBILE CTA BAR -->
+  <div class="sticky-bottom-bar">
+    <div class="mobile-bar-text">
+      <strong>Not sure which product to pick?</strong>
+      <span>Analyze acne with 3-Layer AI</span>
+    </div>
+    <a href="https://face3layerscanner.onrender.com/" class="mobile-bar-btn" target="_blank" rel="noopener">
+      Scan Face Now
+    </a>
+  </div>
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -865,11 +881,15 @@ def generate_full_html(p):
   </footer>
 
   <script>
-    // FAQ Accordion
-    document.querySelectorAll('.faq-question').forEach(button => {{
-      button.addEventListener('click', () => {{
-        const faqItem = button.parentElement;
-        faqItem.classList.toggle('active');
+    // Simple Accordion Toggle logic
+    document.querySelectorAll('.faq-header').forEach(btn => {{
+      btn.addEventListener('click', function() {{
+        const item = this.parentElement;
+        item.classList.toggle('active');
+        const icon = this.querySelector('.faq-icon');
+        if (icon) {{
+          icon.textContent = item.classList.contains('active') ? '-' : '+';
+        }}
       }});
     }});
 
@@ -904,4 +924,4 @@ for p in pages:
     full_html = generate_full_html(p)
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(full_html)
-    print(f"Upgraded to Glycolic Acid 1:1 Template: {file_path}")
+    print(f"Updated CTA Href to https://face3layerscanner.onrender.com/ in: {file_path}")
