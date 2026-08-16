@@ -20,7 +20,6 @@ const pages = [
     heroAlt: 'A woman checking subtle tan and pigmentation patterns on her face in a mirror',
     heroNote: 'Sun pattern or pigment patch?',
     heroCopy: 'A calm photo review can help you describe whether your concern looks like an all-over tan, patchy pigment, or post-breakout marks before you change your routine.',
-    proof: ['CSV volume: 500K', 'Low competition', 'Photo-led guide'],
     introHeading: 'Start with the shape of the color change',
     intro: 'Tanning often looks more even across exposed areas. Pigmentation can look patchier, deeper, or more tied to old irritation, acne marks, friction, or sun exposure. A camera cannot diagnose the cause, but it can help you stop using one word for every brown mark.',
     cards: [
@@ -58,7 +57,6 @@ const pages = [
     heroAlt: 'A woman observing a subtle pale spot on her cheek in a mirror',
     heroNote: 'Spot, patch, or texture?',
     heroCopy: 'White spots can mean different things depending on whether they are flat, raised, scaly, spreading, or linked to dryness. Start by describing what is visible instead of naming a condition too soon.',
-    proof: ['CSV volume: 50K', 'Low competition', 'Non-diagnostic'],
     introHeading: 'Notice whether the spot is flat or raised',
     intro: 'A flat pale patch, a tiny raised bump, and a flaky lighter area are different visual patterns. The goal is not to self-diagnose. It is to gather a clearer description so your next step is more sensible.',
     cards: [
@@ -96,7 +94,6 @@ const pages = [
     heroAlt: 'A woman checking mild cheek redness and irritation in a mirror',
     heroNote: 'Redness, itch, scale, or swelling?',
     heroCopy: 'A face rash is not a product-matching problem until you know whether it is mild, spreading, painful, itchy, swollen, or linked to a trigger.',
-    proof: ['CSV volume: 50K', 'Low competition', 'Triage-first'],
     introHeading: 'Treat rash as a boundary topic',
     intro: 'Visible rash patterns can be organized, but not diagnosed, from a photo. The practical job is to notice severity, location, speed of change, and warning signs before adding actives or home remedies.',
     cards: [
@@ -134,7 +131,6 @@ const pages = [
     heroAlt: 'A woman observing tiny raised white bumps near her cheek in a mirror',
     heroNote: 'Bump, pore, or white spot?',
     heroCopy: 'Milia-like bumps are easy to confuse with whiteheads, clogged pores, or flat white spots. Start with whether the mark is raised, firm, and not inflamed.',
-    proof: ['CSV volume: 50K', 'Low competition', 'Bump-focused'],
     introHeading: 'Do not squeeze first',
     intro: 'Milia are commonly described as small white cyst-like bumps under the skin, but not every small white bump is milia. A photo can help you compare location and texture; it cannot confirm what the bump is.',
     cards: [
@@ -172,7 +168,6 @@ const pages = [
     heroAlt: 'A woman checking visible pores and skin texture on her cheek in a mirror',
     heroNote: 'Pores, oil, or texture?',
     heroCopy: 'Visible pores are normal skin features. The useful question is whether oil, clogged pores, irritation, lighting, or texture is making them stand out today.',
-    proof: ['CSV volume: 50K', 'Low competition', 'Texture-led'],
     introHeading: 'Pores are normal. Visibility changes.',
     intro: 'You cannot erase pores, and a scan should not turn normal texture into a flaw. But it can help you notice whether pores look more visible in the T-zone, beside the nose, or across cheeks.',
     cards: [
@@ -226,10 +221,6 @@ const css = `
     .hero-copy { align-self:center; max-width:700px; padding:44px 24px 44px max(24px,calc((100vw - 1160px)/2)); }
     .eyebrow { display:inline-block; color:var(--brand-dark); background:var(--peach); border-radius:999px; padding:6px 11px; font-size:12px; font-weight:800; letter-spacing:.04em; text-transform:uppercase; margin-bottom:12px; }
     .hero p { max-width:610px; font-size:17px; margin:14px 0 18px; }
-    .hero-proof { display:flex; flex-wrap:wrap; gap:8px 14px; margin:13px 0 0; color:var(--body); font-size:13px; font-weight:750; }
-    .hero-proof span { display:inline-flex; align-items:center; gap:6px; }
-    .hero-proof i { display:inline-grid; place-items:center; width:17px; height:17px; border-radius:50%; background:#dff2e8; color:var(--good); font-style:normal; font-size:11px; }
-    .micro { color:var(--body); font-size:12px; margin-top:8px; }
     .hero-media { position:relative; min-height:350px; isolation:isolate; }
     .hero-image { width:100%; height:100%; object-fit:cover; object-position:center; display:block; }
     .hero-insights { position:absolute; z-index:1; left:32px; bottom:28px; width:min(260px,calc(100% - 48px)); padding:14px; border:1px solid rgba(255,255,255,.82); border-radius:16px; background:rgba(255,255,255,.88); box-shadow:0 14px 35px rgba(53,34,18,.16); backdrop-filter:blur(12px); }
@@ -268,7 +259,6 @@ const css = `
       .hero { grid-template-columns:1fr; min-height:auto; }
       .hero-copy { padding:34px 24px 22px; }
       .hero p { max-width:330px; }
-      .hero-proof { display:grid; grid-template-columns:1fr; }
       .hero-media { min-height:340px; }
       .hero-insights { left:20px; bottom:20px; width:245px; }
       .section { padding:56px 0; }
@@ -329,7 +319,7 @@ function renderPage(page) {
   <div class="trust"><div class="wrap"><span>MyMirror Editorial Team</span><span>CSV-backed skin-analysis guide</span><span>Not a diagnosis</span></div></div>
   <header><nav class="wrap nav"><a class="brand" href="/"><img src="/assets/logo-v4.png" alt="MyMirror"><span>MyMirror</span></a><div class="links"><a href="/skin-analysis/online-skin-analysis/">Skin analysis</a><a href="/acne/">Skin guides</a><a class="button" href="/scan">Start free scan</a></div></nav></header>
   <main>
-    <section class="hero"><div class="hero-copy"><span class="eyebrow">${esc(page.eyebrow)}</span><h1>${esc(page.h1)}</h1><p>${esc(page.heroCopy)}</p><a class="button" href="/scan">Start your free skin analysis now</a><div class="hero-proof" aria-label="Keyword and page signals">${page.proof.map((item) => `<span><i>✓</i>${esc(item)}</span>`).join('')}</div><div class="micro">A visible-signal starting point. Not a medical diagnosis.</div></div><div class="hero-media"><img class="hero-image" src="${esc(page.heroImage)}" alt="${esc(page.heroAlt)}"><aside class="hero-insights" aria-label="Page focus"><strong>${esc(page.heroNote)}</strong><p>Use one clear photo to organize what you can see before choosing a next step.</p></aside></div></section>
+    <section class="hero"><div class="hero-copy"><span class="eyebrow">${esc(page.eyebrow)}</span><h1>${esc(page.h1)}</h1><p>${esc(page.heroCopy)}</p><a class="button" href="/scan">Start your free skin analysis now</a></div><div class="hero-media"><img class="hero-image" src="${esc(page.heroImage)}" alt="${esc(page.heroAlt)}"><aside class="hero-insights" aria-label="Page focus"><strong>${esc(page.heroNote)}</strong><p>Use one clear photo to organize what you can see before choosing a next step.</p></aside></div></section>
     <section class="section"><div class="wrap"><h2>${esc(page.introHeading)}</h2><p class="lede">${esc(page.intro)}</p><div class="grid">${page.cards.map(([heading, body]) => `<article class="card"><h3>${esc(heading)}</h3><p>${esc(body)}</p></article>`).join('')}</div></div></section>
     <section class="section alt"><div class="wrap"><h2>What the scan can and cannot do</h2><div class="two">${page.sections.slice(0, 2).map(([heading, body]) => `<article class="card"><h3>${esc(heading)}</h3><p>${esc(body)}</p></article>`).join('')}</div><div style="margin-top:18px"><article class="card"><h3>${esc(page.sections[2][0])}</h3><p>${esc(page.sections[2][1])}</p></article></div></div></section>
     <section class="section"><div class="wrap"><div class="decision"><div><h2>When to stop guessing</h2><p>MyMirror is designed to help with visible organization, not medical certainty. Use the photo to make a calmer next choice, then escalate when the skin itself asks for it.</p></div><div><strong>Use the scan to:</strong><ul><li>compare visible signals by facial area</li><li>avoid changing too many products at once</li><li>prepare clearer language for a dermatologist if needed</li></ul><strong style="display:block;margin-top:18px">Do not use it to:</strong><ul><li>diagnose a disease or infection</li><li>replace urgent care</li><li>justify harsh treatment on irritated skin</li></ul></div></div><p class="warning">${esc(page.warning)}</p></div></section>
