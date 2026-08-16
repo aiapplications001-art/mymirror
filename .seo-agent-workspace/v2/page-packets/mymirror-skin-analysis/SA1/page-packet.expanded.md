@@ -1,6 +1,6 @@
 # Free Online Skin Analysis: What a 60-Second Face Scan Can Help You Understand
 
-MyMirror is a calm, non-diagnostic starting point for visible acne, oiliness, marks, texture, and other skin signals. The final responsive page is at `/skin-analysis/online-skin-analysis/`.
+MyMirror is a calm, non-diagnostic starting point for visible acne, oiliness, marks, texture, and other skin signals. The first fold now makes the free, private, approximately 60-second scan journey clear beside its single CTA. The final responsive page is at `/skin-analysis/online-skin-analysis/`.
 
 ## Editorial direction
 

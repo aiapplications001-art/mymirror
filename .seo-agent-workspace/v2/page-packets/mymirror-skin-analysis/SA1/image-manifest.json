@@ -2,7 +2,7 @@
   "schemaVersion": "image-manifest.v1",
   "page": {
     "slug": "online-skin-analysis",
-    "h1": "Free online skin analysis, without the beauty score.",
+    "h1": "See your skin more clearly—in about 60 seconds.",
     "companyName": "MyMirror"
   },
   "promptCompanionRequired": false,
@@ -29,18 +29,19 @@
       "sectionId": "S1_hero",
       "purpose": "First-fold hero visual",
       "assetType": "generated",
-      "recommendedFilename": "online-skin-analysis-first-fold-hero-visual.webp",
-      "preferredFormat": "webp",
+      "recommendedFilename": "online-skin-analysis-hero-v2.png",
+      "preferredFormat": "png",
       "aspectRatio": "3:2",
-      "altText": "A young Indian woman holding a phone before starting a private online skin analysis",
+      "altText": "A woman using her phone to begin a private online skin analysis",
       "status": "generated",
       "licensing": {
         "status": "approved",
         "note": "Generated or fetched image must retain source/licensing approval metadata.",
         "approvedBy": "MyMirror",
-        "approvedAt": "2026-08-16T19:55:29.506Z"
+        "approvedAt": "2026-08-17T00:00:00.000Z"
       },
-      "filePath": "/assets/skin-analysis/online-skin-analysis-hero.png"
+      "filePath": "/assets/skin-analysis/online-skin-analysis-hero-v2.png",
+      "generationNote": "Product-led, non-clinical hero refresh: an Indian woman uses a smartphone in a warm cream-and-terracotta setting. The page supplies the semantic scan-insights overlay in HTML; the image contains no text, scores, diagnostic labels, branding, or medical claims."
     }
   ]
 }

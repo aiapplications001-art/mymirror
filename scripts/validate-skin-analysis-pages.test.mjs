@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import { validateCampaign, validatePage } from './validate-skin-analysis-pages.mjs';
 
@@ -37,6 +38,16 @@ test('reports each missing required page element', () => {
 
 test('SA1 passes the static MyMirror page contract', async () => {
   assert.deepEqual(await validateCampaign(process.cwd(), ['online-skin-analysis']), []);
+});
+
+test('SA1 hero makes the free, fast, private scan promise visible before scrolling', async () => {
+  const html = await readFile('skin-analysis/online-skin-analysis/index.html', 'utf8');
+
+  assert.match(html, /class="hero-proof"/);
+  assert.match(html, /online-skin-analysis-hero-v2\.png/);
+  assert.match(html, /Free to start/);
+  assert.match(html, /About 60 seconds/);
+  assert.match(html, /Private by design/);
 });
 
 test('SA2 passes the static MyMirror page contract', async () => {
