@@ -120,61 +120,28 @@
     a:hover { color: var(--brand-dark); }
     img { max-width: 100%; height: auto; display: block; }
 
-    /* HEADER */
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      height: 60px;
-      background: #FFFFFF;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 1.5rem;
-    }
-    .brand-logo {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-family: 'Kantumruy Pro', serif;
-      font-weight: 700;
-      font-size: 1.35rem;
-      color: var(--brand-dark);
-      text-decoration: none;
-    }
-    .brand-logo span { color: var(--brand); }
-    .header-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      color: var(--brand-dark);
-      padding: 6px 14px;
-      border-radius: 9999px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      transition: all 0.2s ease;
-    }
-    .header-cta:hover { background: var(--brand-light); border-color: var(--brand); }
+    /* ── TRUST BAR ── */
+    .trust-bar { background: var(--bg2, #F9F6F3); border-bottom: 1px solid var(--border, #E8DDD5); padding: 8px 1.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.5rem 1.5rem; font-size: 12px; color: var(--text-muted, #5C4A3A); text-align: center; }
+    .verified { display: flex; align-items: center; gap: 5px; color: #059669; font-weight: 600; }
+    .verified::before { content: '✓'; background: #059669; color: #fff; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 9px; flex-shrink: 0; }
 
-    /* TRUST BAR */
-    .trust-bar {
-      background: var(--bg2);
-      border-bottom: 1px solid var(--border);
-      padding: 0.6rem 1rem;
-      text-align: center;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--brand-dark);
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem 1.25rem;
+    /* ── NAV ── */
+    nav.site-nav { background: #FFFFFF; border-bottom: 1px solid var(--border, #E8DDD5); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; height: 60px; display: flex; align-items: center; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; width: 100%; padding: 0 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo img { height: 28px; width: auto; margin: 0; box-shadow: none; border-radius: 0; background: transparent; display: block; }
+    .nav-links { display: flex; gap: 10px; list-style: none; align-items: center; }
+    .nav-links a { font-size: 13px; font-weight: 500; color: var(--text-muted, #5C4A3A); text-decoration: none; padding: 6px 12px; border-radius: 6px; white-space: nowrap; transition: all 0.2s ease; }
+    .nav-links a:hover { background: var(--brand-light, #FFE1CE); color: var(--brand, #EC610E); font-weight: 600; }
+    .nav-cta-btn { background: var(--brand, #EC610E) !important; color: #FFFFFF !important; font-weight: 700 !important; border-radius: 9999px !important; padding: 8px 18px !important; white-space: nowrap !important; }
+    .nav-cta-btn:hover { background: var(--brand-dark, #C14800) !important; }
+
+    @media (max-width: 768px) {
+      .trust-bar { padding: 6px 1rem; font-size: 11px; gap: 0.35rem 0.75rem; }
+      .nav-inner { padding: 0 1rem; }
+      .nav-logo img { height: 22px; }
+      .nav-links li:not(:last-child) { display: none !important; }
+      .nav-cta-btn { padding: 6px 14px !important; font-size: 12px !important; }
     }
-    .trust-badge-icon { width: 16px; height: 16px; fill: var(--brand); display: inline-block; vertical-align: middle; }
 
     /* STICKY TOC BAR */
     .sticky-toc-bar {
@@ -534,21 +501,24 @@
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <a href="/" class="brand-logo">mymirror<span>.fit</span></a>
-    <a href="/scan" class="header-cta">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-      Scan Face (Free)
-    </a>
-  </header>
-
   <!-- TRUST BAR -->
   <div class="trust-bar">
     <span>Editorial Team: <strong>MyMirror.fit</strong></span>
-    <span>•</span>
-    <span><svg class="trust-badge-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Reviewed by Dr. Lipy Mehta, Dermatologist</span>
+    <span class="verified">Reviewed by Dr. Lipy Mehta, Dermatologist</span>
+    <span>Updated April 2026</span>
   </div>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/"><img fetchpriority="high" decoding="async" src="/acne/forehead-acne/logo-v4.png" alt="mymirror" /></a>
+      <ul class="nav-links">
+        <li><a href="/acne/">Knowledge Hub</a></li>
+        <li><a href="/acne/skincare-layering-guide/">Layering Guide</a></li>
+        <li><a href="/scan" class="nav-cta-btn">Skin Scan →</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- DARK HERO -->
   <section class="dark-hero">
