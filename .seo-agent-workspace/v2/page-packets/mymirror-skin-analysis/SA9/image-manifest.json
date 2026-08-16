@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "milia-on-face",
+    "h1": "Milia on face: tiny white bumps or something else?",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": false,
+  "assets": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph preview image",
+      "aspectRatio": "16:9",
+      "altText": "Close facial skin view used to compare small bumps under the surface",
+      "status": "existing_asset",
+      "filePath": "/assets/images/pimple-under-skin-og.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "approved",
+        "note": "Existing repository asset reused; no external brand screenshot, logo, or third-party product visual introduced.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-17T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "4:3",
+      "altText": "Close facial skin view used to compare small bumps under the surface",
+      "status": "existing_asset",
+      "filePath": "/assets/images/pimple-under-skin-og.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "approved",
+        "note": "Existing repository asset reused; no external brand screenshot, logo, or third-party product visual introduced.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-17T00:00:00.000Z"
+      }
+    }
+  ]
+}

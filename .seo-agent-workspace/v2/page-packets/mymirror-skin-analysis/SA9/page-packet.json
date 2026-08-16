@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v2",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "decision_guide",
+    "copyStatus": "expanded_review_ready",
+    "createdDate": "2026-08-17",
+    "csvSource": "/Users/tm030/Downloads/Keyword Stats 2026-08-17 at 02_35_10.csv"
+  },
+  "seo": {
+    "title": "Milia on Face: Tiny White Bumps or Something Else? | MyMirror",
+    "description": "A visual guide to milia-like bumps on the face, how they differ from pimples and white spots, and when to avoid squeezing.",
+    "slug": "milia-on-face",
+    "h1": "Milia on face: tiny white bumps or something else?",
+    "primaryKeyword": "milia",
+    "secondaryKeywords": [
+      "milia on face",
+      "milia under eye",
+      "white bumps on face"
+    ]
+  },
+  "cta": {
+    "primary": {
+      "label": "Start your free skin analysis now",
+      "destination": "https://mymirror.fit/scan",
+      "microcopy": "Use MyMirror to organize visible skin signals into a clearer starting point."
+    }
+  },
+  "sections": [
+    {
+      "id": "S1_hero",
+      "heading": "Milia on face: tiny white bumps or something else?",
+      "role": "conversion",
+      "markdown": "Milia-like bumps are easy to confuse with whiteheads, clogged pores, or flat white spots. Start with whether the mark is raised, firm, and not inflamed."
+    },
+    {
+      "id": "S2_visible_clues",
+      "heading": "Do not squeeze first",
+      "role": "education",
+      "markdown": "Milia are commonly described as small white cyst-like bumps under the skin, but not every small white bump is milia. A photo can help you compare location and texture; it cannot confirm what the bump is."
+    },
+    {
+      "id": "S3_scan_limits",
+      "heading": "What the scan can and cannot do",
+      "role": "trust",
+      "markdown": "What MyMirror can help organize: Use the scan to separate raised white bumps from flat pale patches, redness, acne clusters, and visible pores.\n\nWhat it cannot decide: A scan cannot confirm milia, diagnose cysts, or decide whether extraction is appropriate.\n\nSafer next step: Avoid piercing or squeezing at home, especially near the eye. Keep products simple and ask a professional if bumps persist or bother you."
+    },
+    {
+      "id": "S4_escalation",
+      "heading": "When to stop guessing",
+      "role": "safety",
+      "markdown": "Get medical advice for bumps near the eye, painful or changing lesions, or anything you are unsure about before attempting removal."
+    },
+    {
+      "id": "S5_faq",
+      "heading": "Questions people ask",
+      "role": "seo",
+      "markdown": "Q: Are milia the same as whiteheads?\nA: No. They can look similar, but milia are not simply pimples waiting to pop.\n\nQ: Will milia go away by themselves?\nA: Some can fade over time, but persistent adult milia may need professional advice.\n\nQ: Can MyMirror remove milia?\nA: No. MyMirror helps you organize visible patterns so you can choose a better next step."
+    },
+    {
+      "id": "S6_final_cta",
+      "heading": "Use the scan to describe, not diagnose",
+      "role": "conversion",
+      "markdown": "Start with what is visible today, choose one sensible next step, and get professional care when needed."
+    }
+  ],
+  "images": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph preview image",
+      "aspectRatio": "16:9",
+      "altText": "Close facial skin view used to compare small bumps under the surface",
+      "status": "existing_asset",
+      "filePath": "/assets/images/pimple-under-skin-og.jpg"
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "4:3",
+      "altText": "Close facial skin view used to compare small bumps under the surface",
+      "status": "existing_asset",
+      "filePath": "/assets/images/pimple-under-skin-og.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Cleveland Clinic on milia",
+      "url": "https://my.clevelandclinic.org/health/diseases/17868-milia"
+    },
+    {
+      "label": "Healthdirect on milia",
+      "url": "https://www.healthdirect.gov.au/milia"
+    }
+  ]
+}

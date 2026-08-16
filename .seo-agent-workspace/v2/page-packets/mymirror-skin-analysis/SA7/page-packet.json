@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v2",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "decision_guide",
+    "copyStatus": "expanded_review_ready",
+    "createdDate": "2026-08-17",
+    "csvSource": "/Users/tm030/Downloads/Keyword Stats 2026-08-17 at 02_35_10.csv"
+  },
+  "seo": {
+    "title": "White Spots on Face: What a Photo Can Show | MyMirror",
+    "description": "Understand visible white spots on the face without guessing the diagnosis. Learn what to observe, what to avoid, and when to see a dermatologist.",
+    "slug": "white-spots-on-face",
+    "h1": "White spots on face: what should you observe first?",
+    "primaryKeyword": "white spots on face",
+    "secondaryKeywords": [
+      "white spots on skin",
+      "skin color",
+      "skin problems"
+    ]
+  },
+  "cta": {
+    "primary": {
+      "label": "Start your free skin analysis now",
+      "destination": "https://mymirror.fit/scan",
+      "microcopy": "Use MyMirror to organize visible skin signals into a clearer starting point."
+    }
+  },
+  "sections": [
+    {
+      "id": "S1_hero",
+      "heading": "White spots on face: what should you observe first?",
+      "role": "conversion",
+      "markdown": "White spots can mean different things depending on whether they are flat, raised, scaly, spreading, or linked to dryness. Start by describing what is visible instead of naming a condition too soon."
+    },
+    {
+      "id": "S2_visible_clues",
+      "heading": "Notice whether the spot is flat or raised",
+      "role": "education",
+      "markdown": "A flat pale patch, a tiny raised bump, and a flaky lighter area are different visual patterns. The goal is not to self-diagnose. It is to gather a clearer description so your next step is more sensible."
+    },
+    {
+      "id": "S3_scan_limits",
+      "heading": "What the scan can and cannot do",
+      "role": "trust",
+      "markdown": "What MyMirror can help organize: Use a scan to map where the lighter areas appear and whether they look flat, raised, or texture-led.\n\nWhat it cannot decide: A scan cannot distinguish vitiligo, fungal changes, pityriasis alba, post-inflammatory color loss, or other conditions with certainty.\n\nSafer next step: Avoid squeezing, scraping, or bleaching the area. Use gentle care, daily sun protection, and get medical advice for spreading or symptomatic patches."
+    },
+    {
+      "id": "S4_escalation",
+      "heading": "When to stop guessing",
+      "role": "safety",
+      "markdown": "Seek professional care if white patches spread, itch, hurt, scale heavily, appear after a new medicine, or affect confidence enough that you need a clear diagnosis."
+    },
+    {
+      "id": "S5_faq",
+      "heading": "Questions people ask",
+      "role": "seo",
+      "markdown": "Q: Are all white spots on the face milia?\nA: No. Milia are raised tiny cyst-like bumps. Flat pale patches have a different set of possibilities.\n\nQ: Can a scan tell me if it is vitiligo?\nA: No. MyMirror can organize visible patterns, but diagnosis belongs with a dermatologist.\n\nQ: Should I exfoliate white spots?\nA: Do not treat first and identify later. If the area is irritated, exfoliation can make it worse."
+    },
+    {
+      "id": "S6_final_cta",
+      "heading": "Use the scan to describe, not diagnose",
+      "role": "conversion",
+      "markdown": "Start with what is visible today, choose one sensible next step, and get professional care when needed."
+    }
+  ],
+  "images": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph preview image",
+      "aspectRatio": "16:9",
+      "altText": "Close view of facial skin texture in natural light",
+      "status": "existing_asset",
+      "filePath": "/assets/images/clear_skin_texture.jpg"
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "4:3",
+      "altText": "Close view of facial skin texture in natural light",
+      "status": "existing_asset",
+      "filePath": "/assets/images/clear_skin_texture.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "label": "Cleveland Clinic on white spots",
+      "url": "https://health.clevelandclinic.org/white-spots-on-skin"
+    },
+    {
+      "label": "Cleveland Clinic on vitiligo",
+      "url": "https://my.clevelandclinic.org/health/diseases/12419-vitiligo"
+    }
+  ]
+}

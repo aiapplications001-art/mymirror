@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "white-spots-on-face",
+    "h1": "White spots on face: what should you observe first?",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": false,
+  "assets": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph preview image",
+      "aspectRatio": "16:9",
+      "altText": "Close view of facial skin texture in natural light",
+      "status": "existing_asset",
+      "filePath": "/assets/images/clear_skin_texture.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "approved",
+        "note": "Existing repository asset reused; no external brand screenshot, logo, or third-party product visual introduced.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-17T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "4:3",
+      "altText": "Close view of facial skin texture in natural light",
+      "status": "existing_asset",
+      "filePath": "/assets/images/clear_skin_texture.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "approved",
+        "note": "Existing repository asset reused; no external brand screenshot, logo, or third-party product visual introduced.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-17T00:00:00.000Z"
+      }
+    }
+  ]
+}

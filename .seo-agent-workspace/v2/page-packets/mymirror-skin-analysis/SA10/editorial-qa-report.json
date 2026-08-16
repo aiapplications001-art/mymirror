@@ -1,0 +1,7 @@
+{
+  "schemaVersion": "editorial-qa-report.v1",
+  "pageId": "SA10",
+  "slug": "pores-on-face",
+  "status": "passed",
+  "body": "# Editorial QA Report\n\nStatus: pass\n\n- One H1\n- Visible first-fold CTA\n- No diagnostic promise\n- Sources listed visibly\n- Existing MyMirror theme reused\n"
+}

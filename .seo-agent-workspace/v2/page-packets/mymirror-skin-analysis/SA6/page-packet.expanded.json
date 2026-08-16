@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v2",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "decision_guide",
+    "copyStatus": "expanded_review_ready",
+    "createdDate": "2026-08-17",
+    "csvSource": "/Users/tm030/Downloads/Keyword Stats 2026-08-17 at 02_35_10.csv"
+  },
+  "seo": {
+    "title": "Tanning vs Pigmentation on Face | MyMirror",
+    "description": "A photo-first guide to telling face tanning, pigmentation and dark patches apart, with a clear boundary between visible signals and diagnosis.",
+    "slug": "tanning-vs-pigmentation-face",
+    "h1": "Tanning vs pigmentation on face: what looks different?",
+    "primaryKeyword": "tanning",
+    "secondaryKeywords": [
+      "pigmentation",
+      "tan skin",
+      "face tan removal",
+      "dark spots on skin"
+    ]
+  },
+  "cta": {
+    "primary": {
+      "label": "Start your free skin analysis now",
+      "destination": "https://mymirror.fit/scan",
+      "microcopy": "Use MyMirror to organize visible skin signals into a clearer starting point."
+    }
+  },
+  "sections": [
+    {
+      "id": "S1_hero",
+      "heading": "Tanning vs pigmentation on face: what looks different?",
+      "role": "conversion",
+      "markdown": "A calm photo review can help you describe whether your concern looks like an all-over tan, patchy pigment, or post-breakout marks before you change your routine."
+    },
+    {
+      "id": "S2_visible_clues",
+      "heading": "Start with the shape of the color change",
+      "role": "education",
+      "markdown": "Tanning often looks more even across exposed areas. Pigmentation can look patchier, deeper, or more tied to old irritation, acne marks, friction, or sun exposure. A camera cannot diagnose the cause, but it can help you stop using one word for every brown mark."
+    },
+    {
+      "id": "S3_scan_limits",
+      "heading": "What the scan can and cannot do",
+      "role": "trust",
+      "markdown": "What MyMirror can help organize: Use the scan to compare visible tone changes by facial area, then decide whether your next step is sun protection, a dark-spot guide, or a dermatologist visit.\n\nWhat it cannot decide: A scan cannot tell you whether a patch is melasma, post-inflammatory hyperpigmentation, a medication reaction, or another medical condition. That needs professional judgment.\n\nSafer next step: Build the first decision around daily broad-spectrum sunscreen, shade, hats, and avoiding intentional tanning. Do not start harsh brightening products on irritated skin."
+    },
+    {
+      "id": "S4_escalation",
+      "heading": "When to stop guessing",
+      "role": "safety",
+      "markdown": "See a dermatologist for rapidly changing patches, symptoms such as pain or bleeding, or pigment changes that worry you."
+    },
+    {
+      "id": "S5_faq",
+      "heading": "Questions people ask",
+      "role": "seo",
+      "markdown": "Q: Can a tan and pigmentation happen together?\nA: Yes. Sun exposure can darken the whole face and also make existing dark spots look stronger.\n\nQ: Does MyMirror remove tan?\nA: No. MyMirror helps organize visible signals so you can choose a better next step. It does not treat or diagnose skin concerns.\n\nQ: What should I photograph?\nA: Use even light, no heavy makeup, and a front-facing view so shadows do not look like pigment."
+    },
+    {
+      "id": "S6_final_cta",
+      "heading": "Use the scan to describe, not diagnose",
+      "role": "conversion",
+      "markdown": "Start with what is visible today, choose one sensible next step, and get professional care when needed."
+    }
+  ],
+  "images": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph preview image",
+      "aspectRatio": "16:9",
+      "altText": "Sunscreen being applied as part of a sun protection routine",
+      "status": "existing_asset",
+      "filePath": "/assets/images/sunscreen-texture-application.jpg"
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "4:3",
+      "altText": "Sunscreen being applied as part of a sun protection routine",
+      "status": "existing_asset",
+      "filePath": "/assets/images/sunscreen-texture-application.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "label": "AAD sunscreen FAQs",
+      "url": "https://www.aad.org/media/stats-sunscreen"
+    },
+    {
+      "label": "AAD dark spots guidance",
+      "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots"
+    }
+  ]
+}

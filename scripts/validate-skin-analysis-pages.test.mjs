@@ -73,3 +73,38 @@ test('SA4 passes the static MyMirror page contract', async () => {
 test('SA5 passes the static MyMirror page contract', async () => {
   assert.deepEqual(await validateCampaign(process.cwd(), ['uneven-skin-texture-causes']), []);
 });
+
+test('SA6-SA10 CSV-derived pages pass the static MyMirror page contract', async () => {
+  assert.deepEqual(await validateCampaign(process.cwd(), [
+    'tanning-vs-pigmentation-face',
+    'white-spots-on-face',
+    'skin-rash-on-face',
+    'milia-on-face',
+    'pores-on-face'
+  ]), []);
+});
+
+test('sitemap is closed and includes the CSV-derived skin-analysis URLs', async () => {
+  const xml = await readFile('sitemap.xml', 'utf8');
+
+  assert.equal((xml.match(/<url>/g) ?? []).length, (xml.match(/<\/url>/g) ?? []).length);
+  assert.match(xml, /<\/urlset>\s*$/);
+  for (const slug of [
+    'tanning-vs-pigmentation-face',
+    'white-spots-on-face',
+    'skin-rash-on-face',
+    'milia-on-face',
+    'pores-on-face'
+  ]) {
+    assert.match(xml, new RegExp(`https://mymirror\\.fit/skin-analysis/${slug}/`));
+  }
+});
+
+test('SA6-SA10 generated pages protect mobile first-fold content from horizontal clipping', async () => {
+  const html = await readFile('skin-analysis/skin-rash-on-face/index.html', 'utf8');
+
+  assert.match(html, /\.links \.button \{ display:none; \}/);
+  assert.match(html, /h1 \{ font-size:34px; max-width:330px; \}/);
+  assert.match(html, /\.hero p \{ max-width:330px; \}/);
+  assert.match(html, /\.hero-proof \{ display:grid; grid-template-columns:1fr; \}/);
+});

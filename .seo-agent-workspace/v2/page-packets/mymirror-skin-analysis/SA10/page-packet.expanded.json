@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v2",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "decision_guide",
+    "copyStatus": "expanded_review_ready",
+    "createdDate": "2026-08-17",
+    "csvSource": "/Users/tm030/Downloads/Keyword Stats 2026-08-17 at 02_35_10.csv"
+  },
+  "seo": {
+    "title": "Pores on Face: What Makes Them Look Larger? | MyMirror",
+    "description": "A practical visual guide to pores on the face: oiliness, clogged pores, texture, lighting, and routine choices that may make pores look more noticeable.",
+    "slug": "pores-on-face",
+    "h1": "Pores on face: what makes them look more noticeable?",
+    "primaryKeyword": "pores",
+    "secondaryKeywords": [
+      "pores on face",
+      "clogged pores",
+      "visible pores"
+    ]
+  },
+  "cta": {
+    "primary": {
+      "label": "Start your free skin analysis now",
+      "destination": "https://mymirror.fit/scan",
+      "microcopy": "Use MyMirror to organize visible skin signals into a clearer starting point."
+    }
+  },
+  "sections": [
+    {
+      "id": "S1_hero",
+      "heading": "Pores on face: what makes them look more noticeable?",
+      "role": "conversion",
+      "markdown": "Visible pores are normal skin features. The useful question is whether oil, clogged pores, irritation, lighting, or texture is making them stand out today."
+    },
+    {
+      "id": "S2_visible_clues",
+      "heading": "Pores are normal. Visibility changes.",
+      "role": "education",
+      "markdown": "You cannot erase pores, and a scan should not turn normal texture into a flaw. But it can help you notice whether pores look more visible in the T-zone, beside the nose, or across cheeks."
+    },
+    {
+      "id": "S3_scan_limits",
+      "heading": "What the scan can and cannot do",
+      "role": "trust",
+      "markdown": "What MyMirror can help organize: Use the scan to compare visible pores with oil balance, texture, and clogged-looking areas rather than blaming one product.\n\nWhat it cannot decide: A scan cannot shrink pores, diagnose acne, or prove which ingredient will work for you.\n\nSafer next step: Start with gentle cleansing, sunscreen, and one routine change at a time. Avoid aggressive scrubbing or layering multiple exfoliants."
+    },
+    {
+      "id": "S4_escalation",
+      "heading": "When to stop guessing",
+      "role": "safety",
+      "markdown": "If visible pores come with painful acne, sudden texture change, redness, or irritation, address the symptom first rather than chasing pore minimization."
+    },
+    {
+      "id": "S5_faq",
+      "heading": "Questions people ask",
+      "role": "seo",
+      "markdown": "Q: Can pores close permanently?\nA: No. Pores are part of normal skin. The goal is to make them less noticeable, not erase them.\n\nQ: Can over-cleansing make pores look worse?\nA: Yes. Irritation can make texture and pores look more obvious.\n\nQ: How should I track pores?\nA: Use the same lighting, distance, and angle each time so camera changes do not become your result."
+    },
+    {
+      "id": "S6_final_cta",
+      "heading": "Use the scan to describe, not diagnose",
+      "role": "conversion",
+      "markdown": "Start with what is visible today, choose one sensible next step, and get professional care when needed."
+    }
+  ],
+  "images": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph preview image",
+      "aspectRatio": "16:9",
+      "altText": "Close view of facial skin texture and visible pores",
+      "status": "existing_asset",
+      "filePath": "/assets/images/refined-pores-closeup.jpg"
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "4:3",
+      "altText": "Close view of facial skin texture and visible pores",
+      "status": "existing_asset",
+      "filePath": "/assets/images/refined-pores-closeup.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "label": "AAD on large pores",
+      "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/face/treat-large-pores"
+    },
+    {
+      "label": "Facial skin pores study",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4337418/"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "skin-rash-on-face",
+    "h1": "Skin rash on face: what deserves attention first?",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": false,
+  "assets": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph preview image",
+      "aspectRatio": "16:9",
+      "altText": "Calming skincare texture beside a redness-focused skin care setup",
+      "status": "existing_asset",
+      "filePath": "/assets/images/rosacea-redness-calming-texture.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "approved",
+        "note": "Existing repository asset reused; no external brand screenshot, logo, or third-party product visual introduced.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-17T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "4:3",
+      "altText": "Calming skincare texture beside a redness-focused skin care setup",
+      "status": "existing_asset",
+      "filePath": "/assets/images/rosacea-redness-calming-texture.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "approved",
+        "note": "Existing repository asset reused; no external brand screenshot, logo, or third-party product visual introduced.",
+        "approvedBy": "MyMirror",
+        "approvedAt": "2026-08-17T00:00:00.000Z"
+      }
+    }
+  ]
+}
