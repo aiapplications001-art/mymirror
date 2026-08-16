@@ -1287,38 +1287,63 @@
 
       <!-- FAQ SECTION -->
       <section id="faq" class="section-block" style="margin-top: 3.5rem;">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-section">
-        <div class="faq-item">
-          <button class="faq-question">Will a cleansing balm make my acne worse? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Not if you use a non-comedogenic formula that emulsifies completely with water. High-quality cleansing balms dissolve oil-soluble sebum plugs without leaving pore-clogging film behind.</p>
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Will a cleansing balm make my acne worse?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Not if you use a non-comedogenic formula that emulsifies completely with water. High-quality cleansing balms dissolve oil-soluble sebum plugs without leaving pore-clogging film behind.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">What is the correct way to double cleanse with a balm? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Apply balm to dry hands and dry face. Massage gently for 60 seconds to melt makeup and SPF. Add lukewarm water to emulsify into a milky lotion, rinse off, and follow immediately with a water-based gentle gel cleanser.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>What is the correct way to double cleanse with a balm?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Apply balm to dry hands and dry face. Massage gently for 60 seconds to melt makeup and SPF. Add lukewarm water to emulsify into a milky lotion, rinse off, and follow immediately with a water-based gentle gel cleanser.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Can I double cleanse if I don't wear makeup? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Yes! Modern water-resistant mineral sunscreens, airborne pollution, and oxidized sebum cannot be fully removed by water-based cleansers alone. Double cleansing prevents clogged pores.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Can I double cleanse if I don't wear makeup?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Yes! Modern water-resistant mineral sunscreens, airborne pollution, and oxidized sebum cannot be fully removed by water-based cleansers alone. Double cleansing prevents clogged pores.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Are coconut oil cleansing balms safe for acne? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>No! Avoid cleansing balms containing raw coconut oil, ethylhexyl palmitate, or heavy cocoa butter as these rank high on the comedogenic scale.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Are coconut oil cleansing balms safe for acne?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                No! Avoid cleansing balms containing raw coconut oil, ethylhexyl palmitate, or heavy cocoa butter as these rank high on the comedogenic scale.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">How often should I double cleanse? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Double cleansing should be performed once daily during your evening (PM) routine to clear away the day's buildup.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>How often should I double cleanse?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Double cleansing should be performed once daily during your evening (PM) routine to clear away the day's buildup.
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </section>
 
@@ -1370,11 +1395,15 @@
   </footer>
 
   <script>
-    // FAQ Accordion
-    document.querySelectorAll('.faq-question').forEach(button => {
-      button.addEventListener('click', () => {
-        const faqItem = button.parentElement;
-        faqItem.classList.toggle('active');
+    // Simple Accordion Toggle logic
+    document.querySelectorAll('.faq-header').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const item = this.parentElement;
+        item.classList.toggle('active');
+        const icon = this.querySelector('.faq-icon');
+        if (icon) {
+          icon.textContent = item.classList.contains('active') ? '-' : '+';
+        }
       });
     });
 

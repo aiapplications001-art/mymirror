@@ -1285,38 +1285,63 @@
 
       <!-- FAQ SECTION -->
       <section id="faq" class="section-block" style="margin-top: 3.5rem;">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-section">
-        <div class="faq-item">
-          <button class="faq-question">Is 2.5% Benzoyl Peroxide as effective as 10%? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Yes! Clinical trials prove that 2.5% Benzoyl Peroxide kills Cutibacterium acnes bacteria just as effectively as 10% concentrations, but causes significantly less dryness, peeling, and skin irritation.</p>
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Is 2.5% Benzoyl Peroxide as effective as 10%?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Yes! Clinical trials prove that 2.5% Benzoyl Peroxide kills Cutibacterium acnes bacteria just as effectively as 10% concentrations, but causes significantly less dryness, peeling, and skin irritation.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Does Benzoyl Peroxide bleach pillowcases and towels? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Yes. Benzoyl Peroxide is a potent oxidizing agent that will bleach colored fabrics, pillowcases, and towels. Wash hands thoroughly after application and use white pillowcases or allow gel to dry completely.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Does Benzoyl Peroxide bleach pillowcases and towels?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Yes. Benzoyl Peroxide is a potent oxidizing agent that will bleach colored fabrics, pillowcases, and towels. Wash hands thoroughly after application and use white pillowcases or allow gel to dry completely.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Can I use Benzoyl Peroxide and Retinol together? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Do not mix traditional Benzoyl Peroxide and Retinol at the exact same time as BPO can oxidize and deactivate retinol. Use Benzoyl Peroxide in the morning (or as short contact therapy) and Retinol/Adapalene at night.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Can I use Benzoyl Peroxide and Retinol together?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Do not mix traditional Benzoyl Peroxide and Retinol at the exact same time as BPO can oxidize and deactivate retinol. Use Benzoyl Peroxide in the morning (or as short contact therapy) and Retinol/Adapalene at night.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">What is Short Contact Therapy (SCT)? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Short Contact Therapy involves applying Benzoyl Peroxide gel to active pimples, letting it sit for 5 to 10 minutes, and rinsing off with water. It provides full antibacterial action with zero long-term dryness.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>What is Short Contact Therapy (SCT)?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Short Contact Therapy involves applying Benzoyl Peroxide gel to active pimples, letting it sit for 5 to 10 minutes, and rinsing off with water. It provides full antibacterial action with zero long-term dryness.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">How quickly does Benzoyl Peroxide work on pimples? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Benzoyl Peroxide introduces oxygen into the pores, killing anaerobic acne bacteria on contact. Redness and swelling of inflammatory papules typically decrease within 24 to 48 hours.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>How quickly does Benzoyl Peroxide work on pimples?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Benzoyl Peroxide introduces oxygen into the pores, killing anaerobic acne bacteria on contact. Redness and swelling of inflammatory papules typically decrease within 24 to 48 hours.
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </section>
 
@@ -1368,11 +1393,15 @@
   </footer>
 
   <script>
-    // FAQ Accordion
-    document.querySelectorAll('.faq-question').forEach(button => {
-      button.addEventListener('click', () => {
-        const faqItem = button.parentElement;
-        faqItem.classList.toggle('active');
+    // Simple Accordion Toggle logic
+    document.querySelectorAll('.faq-header').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const item = this.parentElement;
+        item.classList.toggle('active');
+        const icon = this.querySelector('.faq-icon');
+        if (icon) {
+          icon.textContent = item.classList.contains('active') ? '-' : '+';
+        }
       });
     });
 

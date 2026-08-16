@@ -1290,38 +1290,63 @@
 
       <!-- FAQ SECTION -->
       <section id="faq" class="section-block" style="margin-top: 3.5rem;">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-section">
-        <div class="faq-item">
-          <button class="faq-question">Why does oily acne-prone skin need moisturizer? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Dehydrated skin signals sebaceous glands to produce excess sebum to compensate. Using an oil-free water gel restores moisture balance, reducing excess oiliness and acne breakouts.</p>
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Why does oily acne-prone skin need moisturizer?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Dehydrated skin signals sebaceous glands to produce excess sebum to compensate. Using an oil-free water gel restores moisture balance, reducing excess oiliness and acne breakouts.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">What does non-comedogenic mean? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Non-comedogenic ingredients are formulated specifically not to block hair follicles or pores, preventing whiteheads, blackheads, and acne lesions.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>What does non-comedogenic mean?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Non-comedogenic ingredients are formulated specifically not to block hair follicles or pores, preventing whiteheads, blackheads, and acne lesions.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Can I use oil-free gel moisturizer during monsoon humidity? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Yes! Oil-free gel moisturizers absorb in seconds without leaving a sticky or sweaty residue, making them ideal for humid Indian weather.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Can I use oil-free gel moisturizer during monsoon humidity?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Yes! Oil-free gel moisturizers absorb in seconds without leaving a sticky or sweaty residue, making them ideal for humid Indian weather.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Is Hyaluronic Acid better than Vitamin B5 Panthenol for oily skin? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Hyaluronic acid draws surface moisture, while Panthenol (Vitamin B5) soothes redness and repairs compromised skin barriers. A combination of both offers ultimate hydration without oil.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Is Hyaluronic Acid better than Vitamin B5 Panthenol for oily skin?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Hyaluronic acid draws surface moisture, while Panthenol (Vitamin B5) soothes redness and repairs compromised skin barriers. A combination of both offers ultimate hydration without oil.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Can oil-free gel moisturizer be layered under sunscreen? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Absolutely. Allow 2 minutes for the gel moisturizer to absorb completely into the skin before applying your non-comedogenic sunscreen.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Can oil-free gel moisturizer be layered under sunscreen?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Absolutely. Allow 2 minutes for the gel moisturizer to absorb completely into the skin before applying your non-comedogenic sunscreen.
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </section>
 
@@ -1373,11 +1398,15 @@
   </footer>
 
   <script>
-    // FAQ Accordion
-    document.querySelectorAll('.faq-question').forEach(button => {
-      button.addEventListener('click', () => {
-        const faqItem = button.parentElement;
-        faqItem.classList.toggle('active');
+    // Simple Accordion Toggle logic
+    document.querySelectorAll('.faq-header').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const item = this.parentElement;
+        item.classList.toggle('active');
+        const icon = this.querySelector('.faq-icon');
+        if (icon) {
+          icon.textContent = item.classList.contains('active') ? '-' : '+';
+        }
       });
     });
 

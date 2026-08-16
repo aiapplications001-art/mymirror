@@ -1293,38 +1293,63 @@
 
       <!-- FAQ SECTION -->
       <section id="faq" class="section-block" style="margin-top: 3.5rem;">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-section">
-        <div class="faq-item">
-          <button class="faq-question">Is Adapalene gel available over-the-counter (OTC) in India? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>While micro-formulations like Minimalist Adapalene or certain low-strength gels are sold OTC in India, standard 0.1% formulations like Deriva MS or Adapen are Schedule H prescription medicines in India. Always consult a dermatologist before starting.</p>
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Is Adapalene gel available over-the-counter (OTC) in India?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                While micro-formulations like Minimalist Adapalene or certain low-strength gels are sold OTC in India, standard 0.1% formulations like Deriva MS or Adapen are Schedule H prescription medicines in India. Always consult a dermatologist before starting.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">How long does the Adapalene purging phase last? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Adapalene purging typically starts within 1-2 weeks of use and lasts between 4 to 6 weeks. During this time, micro-comedones underneath the skin surface rapidly rise to the top. Do not panic or stop using it—purging is a sign of accelerated cell turnover.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>How long does the Adapalene purging phase last?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Adapalene purging typically starts within 1-2 weeks of use and lasts between 4 to 6 weeks. During this time, micro-comedones underneath the skin surface rapidly rise to the top. Do not panic or stop using it—purging is a sign of accelerated cell turnover.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Can I use Adapalene and Salicylic Acid together? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>Avoid applying Salicylic Acid serum and Adapalene at the exact same time at night, as this severely strips your skin barrier. Instead, use a gentle Salicylic Acid face wash in the morning and apply Adapalene at night on dry skin.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Can I use Adapalene and Salicylic Acid together?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Avoid applying Salicylic Acid serum and Adapalene at the exact same time at night, as this severely strips your skin barrier. Instead, use a gentle Salicylic Acid face wash in the morning and apply Adapalene at night on dry skin.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">What is the Sandwich Method for Adapalene? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>The sandwich method involves applying a thin layer of moisturizer, waiting 10 minutes, applying a pea-sized amount of Adapalene gel, and following with another layer of moisturizer. This minimizes peeling and redness for sensitive skin.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>What is the Sandwich Method for Adapalene?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                The sandwich method involves applying a thin layer of moisturizer, waiting 10 minutes, applying a pea-sized amount of Adapalene gel, and following with another layer of moisturizer. This minimizes peeling and redness for sensitive skin.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">Is Adapalene safe during pregnancy? <span class="faq-icon">+</span></button>
-          <div class="faq-answer">
-            <p>No. Like all topical retinoids, Adapalene is contraindicated during pregnancy and breastfeeding due to potential teratogenic risks. Switch to Azelaic Acid or Cica during pregnancy under medical guidance.</p>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Is Adapalene safe during pregnancy?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                No. Like all topical retinoids, Adapalene is contraindicated during pregnancy and breastfeeding due to potential teratogenic risks. Switch to Azelaic Acid or Cica during pregnancy under medical guidance.
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </section>
 
@@ -1376,11 +1401,15 @@
   </footer>
 
   <script>
-    // FAQ Accordion
-    document.querySelectorAll('.faq-question').forEach(button => {
-      button.addEventListener('click', () => {
-        const faqItem = button.parentElement;
-        faqItem.classList.toggle('active');
+    // Simple Accordion Toggle logic
+    document.querySelectorAll('.faq-header').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const item = this.parentElement;
+        item.classList.toggle('active');
+        const icon = this.querySelector('.faq-icon');
+        if (icon) {
+          icon.textContent = item.classList.contains('active') ? '-' : '+';
+        }
       });
     });
 
