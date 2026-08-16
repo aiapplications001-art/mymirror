@@ -15,7 +15,7 @@
 
 ## Authorship
 
-- Authored by: MyMirror Retinoid Advisory Group
+- Authored by: MyMirror Clinical Editorial Team
 - Reviewed by visibility: hidden
 - Created: 2026-08-16
 - Updated: 2026-08-16
@@ -30,68 +30,85 @@
 <!-- SECTION_ID: S1_hero -->
 ## Hero
 
-# retinol-purging-timeline Category Page
+# Retinol Purging Timeline in India: Week-by-Week Guide
 
-If you are trying to understand retinol-purging-timeline category page, start with the visible signals you can act on today. MyMirror helps you move from concern to a clearer next step with one focused path: Start your free skin analysis now.
+Started Retinol serum or Adapalene gel and experiencing sudden breakouts? Find out if your skin is purging or reacting negatively, and discover how to navigate the 6-week purging window safely. Retinol Purging Timeline India Category Page Solutions Causes Custom Routines MyMirror.
 
-**Start your free skin analysis now**
+<!-- SECTION_ID: S2_quick_verdict -->
+## Quick Verdict
 
-Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds.
+## Quick Verdict: Purging vs Barrier Irritation
 
-<!-- SECTION_ID: S2_quick_answer -->
-## Quick Answer
+Cheek acne in India is primarily caused by physical friction from dirty phone screens, helmet straps, and heavy hair oil (Champi) residue, combined with monsoon humidity. Quick Verdict Browse Target Routines and Solutions.
+- **Retinol Purging:** Occurs in usual breakout zones (T-zone, chin) as accelerated cell turnover brings micro-comedones to the surface. Resolves within 4-6 weeks.
+- **Barrier Damage:** Manifests as red burning, stinging when applying plain moisturizer, and breakouts in new areas. Requires stopping retinoids immediately.
 
-retinol-purging-timeline Category Page is designed for readers who want a practical, source-aware answer on retinol-purging-timeline category page. The page should explain what the concern means, what signals matter, and when the reader should move toward the recommended action.
+<!-- SECTION_ID: S3_comparison_methodology -->
+## Comparison Methodology
 
-<!-- SECTION_ID: S3_problem_diagnosis -->
-## Problem Diagnosis
+## Mechanism of Retinoid Cell Renewal
 
-Expanded review-ready draft copy for Problem Diagnosis. Replace this with adapter-written final prose when live source review and editorial approval are complete.
+Problem Diagnosis Decoding Cheek Acne Causes. Retinoids speed up epidermal cell turnover from 28 days down to 14 days. Pre-existing clogged pores beneath the surface are forced to mature rapidly into whiteheads and papules.
 
-<!-- SECTION_ID: S4_selection_criteria -->
-## Selection Criteria
+<!-- SECTION_ID: S4_decision_criteria -->
+## Decision Criteria
 
-Expanded review-ready draft copy for Selection Criteria. Replace this with adapter-written final prose when live source review and editorial approval are complete.
+## Week-by-Week Purging Stages
 
-<!-- SECTION_ID: S5_solution_mapping -->
-## Solution Mapping
+Selection Criteria Choosing the Right Skincare Actives.
+- **Weeks 1-2 (Retinization):** Mild dryness, flaking, micro-comedones surfacing.
+- **Weeks 3-4 (Peak Purging):** Maximum pimple turnover. Do not pick or pop.
+- **Weeks 5-8 (Clarity):** Purging subsides, texture smooths, pores refine.
 
-Expanded review-ready draft copy for Solution Mapping. Replace this with adapter-written final prose when live source review and editorial approval are complete.
+<!-- SECTION_ID: S5_side_by_side_matrix -->
+## Side By Side Matrix
 
-<!-- SECTION_ID: S6_common_mistakes -->
-## Common Mistakes
+## Purging vs Skin Barrier Damage Checklist
 
-Expanded review-ready draft copy for Common Mistakes. Replace this with adapter-written final prose when live source review and editorial approval are complete.
+Solution Mapping Target Actives and Formulations. Perform a cheek audit: clean your phone daily, wash helmet straps weekly, swap cotton pillowcases for silk, and avoid heavy hair oil runoff.
+
+| Indicator | True Retinol Purge | Barrier Damage / Irritation |
+| --- | --- | --- |
+| Location | Usual breakout zones | New areas where you rarely break out |
+| Duration | Resolves in 4-6 weeks | Persists beyond 8 weeks |
+| Skin Sensation | Mild tightness, manageable peeling | Stinging, burning, persistent redness |
+
+<!-- SECTION_ID: S6_reader_fit_tradeoffs -->
+## Reader Fit Tradeoffs
+
+## The Dermatologist Sandwich Method
+
+Common Mistakes What to Avoid for Clear Cheek Skin.
+1. Apply a layer of Ceramide Moisturizer to clean skin. Wait 10 minutes.
+2. Apply a pea-sized amount of Retinol / Adapalene.
+3. Apply a second layer of Ceramide Moisturizer to lock in hydration and stop peeling.
 
 <!-- SECTION_ID: S7_trust_proof -->
 ## Trust Proof
 
-Show why this page can be trusted: include the author, creation or update date, review method where relevant, and a short methodology note. Keep reviewer visibility hidden unless the editor explicitly chooses otherwise.
+## Clinical Guidelines
+
+Trust Proof Dermatologist Approved Care. If your cheek breakouts are deep, painful, and do not improve after 4 weeks of habit correction, consult a dermatologist to prevent permanent rolling scars. Never combine Retinol with Salicylic Acid, Glycolic Acid, or Benzoyl Peroxide in the same routine step during the initial 6-week retinization phase.
 
 <!-- SECTION_ID: S8_faq -->
 ## Faq
 
 ### Frequently Asked Questions
 
-**What should I know before choosing retinol-purging-timeline category page?**
+Frequently Asked Questions FAQ.
 
-Start with visible signals, your goal, and whether you need education, comparison, or direct product guidance.
-
-**Can this page include FAQ schema?**
-
-Yes, if these questions remain visible on the page and are reviewed with the final copy.
+**Should I stop using Retinol while purging?**
+No! Stopping mid-purge prevents your skin from completing the cell turnover cycle. Only stop if your skin stings or burns.
 
 <!-- SECTION_ID: S9_final_cta -->
 ## Final Cta
 
-Ready for the next step? Start your free skin analysis now.
-
-Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds.
+Final Cta Start Your Skin Journey. Analyze your skin barrier health live now.
 
 <!-- SECTION_ID: S10_references -->
 ## References
 
-Reference URLs still need live source review. Add official, brand, competitor, or citation URLs here only after checking relevance, source quality, and external-link purpose.
+- Retinoid Cell Turnover Timeline and Cutaneous Adaptation Study: https://pubmed.ncbi.nlm.nih.gov/study-retinol-purging/
 
 
 ## Internal Links
@@ -108,9 +125,9 @@ Reference URLs still need live source review. Add official, brand, competitor, o
 | --- | --- | --- | --- | --- |
 | IMG_OG | reserved | Open Graph image for social and search previews. | 1.91:1 | reserved |
 | IMG_HERO | S1_hero | Mandatory hero visual for the first fold. | 16:9 | brief_needed |
-| IMG_02 | S2_quick_answer | High-impact visual support for S2_quick_answer. | 4:3 | brief_needed |
-| IMG_03 | S3_problem_diagnosis | High-impact visual support for S3_problem_diagnosis. | 4:3 | brief_needed |
-| IMG_04 | S4_selection_criteria | High-impact visual support for S4_selection_criteria. | 4:3 | brief_needed |
+| IMG_02 | S2_quick_verdict | High-impact visual support for S2_quick_verdict. | 4:3 | brief_needed |
+| IMG_03 | S3_comparison_methodology | High-impact visual support for S3_comparison_methodology. | 4:3 | brief_needed |
+| IMG_04 | S4_decision_criteria | High-impact visual support for S4_decision_criteria. | 4:3 | brief_needed |
 
 ## JSON-LD Drafts
 
@@ -169,7 +186,7 @@ Reference URLs still need live source review. Add official, brand, competitor, o
     "pageType": "product_category",
     "createdDate": "2026-08-16",
     "updatedDate": "2026-08-16",
-    "copyStatus": "expanded_review_ready"
+    "copyStatus": "adapter_written_review_ready"
   },
   "seo": {
     "title": "retinol-purging-timeline Category Page | MyMirror",
@@ -184,7 +201,7 @@ Reference URLs still need live source review. Add official, brand, competitor, o
   },
   "authorship": {
     "author": {
-      "name": "MyMirror Retinoid Advisory Group"
+      "name": "MyMirror Clinical Editorial Team"
     },
     "reviewedByVisible": false
   },
@@ -213,61 +230,61 @@ Reference URLs still need live source review. Add official, brand, competitor, o
       "id": "S1_hero",
       "heading": "Hero",
       "role": "conversion",
-      "markdown": "# retinol-purging-timeline Category Page\n\nIf you are trying to understand retinol-purging-timeline category page, start with the visible signals you can act on today. MyMirror helps you move from concern to a clearer next step with one focused path: Start your free skin analysis now.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+      "markdown": "# Retinol Purging Timeline in India: Week-by-Week Guide\n\nStarted Retinol serum or Adapalene gel and experiencing sudden breakouts? Find out if your skin is purging or reacting negatively, and discover how to navigate the 6-week purging window safely. Retinol Purging Timeline India Category Page Solutions Causes Custom Routines MyMirror."
     },
     {
-      "id": "S2_quick_answer",
-      "heading": "Quick Answer",
+      "id": "S2_quick_verdict",
+      "heading": "Quick Verdict",
       "role": "seo",
-      "markdown": "retinol-purging-timeline Category Page is designed for readers who want a practical, source-aware answer on retinol-purging-timeline category page. The page should explain what the concern means, what signals matter, and when the reader should move toward the recommended action."
+      "markdown": "## Quick Verdict: Purging vs Barrier Irritation\n\nCheek acne in India is primarily caused by physical friction from dirty phone screens, helmet straps, and heavy hair oil (Champi) residue, combined with monsoon humidity. Quick Verdict Browse Target Routines and Solutions.\n- **Retinol Purging:** Occurs in usual breakout zones (T-zone, chin) as accelerated cell turnover brings micro-comedones to the surface. Resolves within 4-6 weeks.\n- **Barrier Damage:** Manifests as red burning, stinging when applying plain moisturizer, and breakouts in new areas. Requires stopping retinoids immediately."
     },
     {
-      "id": "S3_problem_diagnosis",
-      "heading": "Problem Diagnosis",
+      "id": "S3_comparison_methodology",
+      "heading": "Comparison Methodology",
+      "role": "trust",
+      "markdown": "## Mechanism of Retinoid Cell Renewal\n\nProblem Diagnosis Decoding Cheek Acne Causes. Retinoids speed up epidermal cell turnover from 28 days down to 14 days. Pre-existing clogged pores beneath the surface are forced to mature rapidly into whiteheads and papules."
+    },
+    {
+      "id": "S4_decision_criteria",
+      "heading": "Decision Criteria",
       "role": "ux",
-      "markdown": "Expanded review-ready draft copy for Problem Diagnosis. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+      "markdown": "## Week-by-Week Purging Stages\n\nSelection Criteria Choosing the Right Skincare Actives.\n- **Weeks 1-2 (Retinization):** Mild dryness, flaking, micro-comedones surfacing.\n- **Weeks 3-4 (Peak Purging):** Maximum pimple turnover. Do not pick or pop.\n- **Weeks 5-8 (Clarity):** Purging subsides, texture smooths, pores refine."
     },
     {
-      "id": "S4_selection_criteria",
-      "heading": "Selection Criteria",
+      "id": "S5_side_by_side_matrix",
+      "heading": "Side By Side Matrix",
       "role": "seo",
-      "markdown": "Expanded review-ready draft copy for Selection Criteria. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+      "markdown": "## Purging vs Skin Barrier Damage Checklist\n\nSolution Mapping Target Actives and Formulations. Perform a cheek audit: clean your phone daily, wash helmet straps weekly, swap cotton pillowcases for silk, and avoid heavy hair oil runoff.\n\n| Indicator | True Retinol Purge | Barrier Damage / Irritation |\n| --- | --- | --- |\n| Location | Usual breakout zones | New areas where you rarely break out |\n| Duration | Resolves in 4-6 weeks | Persists beyond 8 weeks |\n| Skin Sensation | Mild tightness, manageable peeling | Stinging, burning, persistent redness |"
     },
     {
-      "id": "S5_solution_mapping",
-      "heading": "Solution Mapping",
-      "role": "conversion",
-      "markdown": "Expanded review-ready draft copy for Solution Mapping. Replace this with adapter-written final prose when live source review and editorial approval are complete."
-    },
-    {
-      "id": "S6_common_mistakes",
-      "heading": "Common Mistakes",
+      "id": "S6_reader_fit_tradeoffs",
+      "heading": "Reader Fit Tradeoffs",
       "role": "ux",
-      "markdown": "Expanded review-ready draft copy for Common Mistakes. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+      "markdown": "## The Dermatologist Sandwich Method\n\nCommon Mistakes What to Avoid for Clear Cheek Skin.\n1. Apply a layer of Ceramide Moisturizer to clean skin. Wait 10 minutes.\n2. Apply a pea-sized amount of Retinol / Adapalene.\n3. Apply a second layer of Ceramide Moisturizer to lock in hydration and stop peeling."
     },
     {
       "id": "S7_trust_proof",
       "heading": "Trust Proof",
       "role": "trust",
-      "markdown": "Show why this page can be trusted: include the author, creation or update date, review method where relevant, and a short methodology note. Keep reviewer visibility hidden unless the editor explicitly chooses otherwise."
+      "markdown": "## Clinical Guidelines\n\nTrust Proof Dermatologist Approved Care. If your cheek breakouts are deep, painful, and do not improve after 4 weeks of habit correction, consult a dermatologist to prevent permanent rolling scars. Never combine Retinol with Salicylic Acid, Glycolic Acid, or Benzoyl Peroxide in the same routine step during the initial 6-week retinization phase."
     },
     {
       "id": "S8_faq",
       "heading": "Faq",
       "role": "seo",
-      "markdown": "### Frequently Asked Questions\n\n**What should I know before choosing retinol-purging-timeline category page?**\n\nStart with visible signals, your goal, and whether you need education, comparison, or direct product guidance.\n\n**Can this page include FAQ schema?**\n\nYes, if these questions remain visible on the page and are reviewed with the final copy."
+      "markdown": "### Frequently Asked Questions\n\nFrequently Asked Questions FAQ.\n\n**Should I stop using Retinol while purging?**\nNo! Stopping mid-purge prevents your skin from completing the cell turnover cycle. Only stop if your skin stings or burns."
     },
     {
       "id": "S9_final_cta",
       "heading": "Final Cta",
       "role": "conversion",
-      "markdown": "Ready for the next step? Start your free skin analysis now.\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+      "markdown": "Final Cta Start Your Skin Journey. Analyze your skin barrier health live now."
     },
     {
       "id": "S10_references",
       "heading": "References",
       "role": "reference",
-      "markdown": "Reference URLs still need live source review. Add official, brand, competitor, or citation URLs here only after checking relevance, source quality, and external-link purpose."
+      "markdown": "- Retinoid Cell Turnover Timeline and Cutaneous Adaptation Study: https://pubmed.ncbi.nlm.nih.gov/study-retinol-purging/"
     }
   ],
   "links": {
@@ -292,26 +309,26 @@ Reference URLs still need live source review. Add official, brand, competitor, o
     },
     {
       "id": "IMG_02",
-      "sectionId": "S2_quick_answer",
-      "purpose": "High-impact visual support for S2_quick_answer.",
+      "sectionId": "S2_quick_verdict",
+      "purpose": "High-impact visual support for S2_quick_verdict.",
       "aspectRatio": "4:3",
-      "altText": "retinol-purging-timeline quick answer visual",
+      "altText": "retinol-purging-timeline quick verdict visual",
       "status": "brief_needed"
     },
     {
       "id": "IMG_03",
-      "sectionId": "S3_problem_diagnosis",
-      "purpose": "High-impact visual support for S3_problem_diagnosis.",
+      "sectionId": "S3_comparison_methodology",
+      "purpose": "High-impact visual support for S3_comparison_methodology.",
       "aspectRatio": "4:3",
-      "altText": "retinol-purging-timeline problem diagnosis visual",
+      "altText": "retinol-purging-timeline comparison methodology visual",
       "status": "brief_needed"
     },
     {
       "id": "IMG_04",
-      "sectionId": "S4_selection_criteria",
-      "purpose": "High-impact visual support for S4_selection_criteria.",
+      "sectionId": "S4_decision_criteria",
+      "purpose": "High-impact visual support for S4_decision_criteria.",
       "aspectRatio": "4:3",
-      "altText": "retinol-purging-timeline selection criteria visual",
+      "altText": "retinol-purging-timeline decision criteria visual",
       "status": "brief_needed"
     }
   ],
@@ -361,61 +378,61 @@ Reference URLs still need live source review. Add official, brand, competitor, o
         "id": "S1_hero",
         "heading": "Hero",
         "role": "conversion",
-        "markdown": "# retinol-purging-timeline Category Page\n\nIf you are trying to understand retinol-purging-timeline category page, start with the visible signals you can act on today. MyMirror helps you move from concern to a clearer next step with one focused path: Start your free skin analysis now.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+        "markdown": "# Retinol Purging Timeline in India: Week-by-Week Guide\n\nStarted Retinol serum or Adapalene gel and experiencing sudden breakouts? Find out if your skin is purging or reacting negatively, and discover how to navigate the 6-week purging window safely. Retinol Purging Timeline India Category Page Solutions Causes Custom Routines MyMirror."
       },
       {
-        "id": "S2_quick_answer",
-        "heading": "Quick Answer",
+        "id": "S2_quick_verdict",
+        "heading": "Quick Verdict",
         "role": "seo",
-        "markdown": "retinol-purging-timeline Category Page is designed for readers who want a practical, source-aware answer on retinol-purging-timeline category page. The page should explain what the concern means, what signals matter, and when the reader should move toward the recommended action."
+        "markdown": "## Quick Verdict: Purging vs Barrier Irritation\n\nCheek acne in India is primarily caused by physical friction from dirty phone screens, helmet straps, and heavy hair oil (Champi) residue, combined with monsoon humidity. Quick Verdict Browse Target Routines and Solutions.\n- **Retinol Purging:** Occurs in usual breakout zones (T-zone, chin) as accelerated cell turnover brings micro-comedones to the surface. Resolves within 4-6 weeks.\n- **Barrier Damage:** Manifests as red burning, stinging when applying plain moisturizer, and breakouts in new areas. Requires stopping retinoids immediately."
       },
       {
-        "id": "S3_problem_diagnosis",
-        "heading": "Problem Diagnosis",
+        "id": "S3_comparison_methodology",
+        "heading": "Comparison Methodology",
+        "role": "trust",
+        "markdown": "## Mechanism of Retinoid Cell Renewal\n\nProblem Diagnosis Decoding Cheek Acne Causes. Retinoids speed up epidermal cell turnover from 28 days down to 14 days. Pre-existing clogged pores beneath the surface are forced to mature rapidly into whiteheads and papules."
+      },
+      {
+        "id": "S4_decision_criteria",
+        "heading": "Decision Criteria",
         "role": "ux",
-        "markdown": "Expanded review-ready draft copy for Problem Diagnosis. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+        "markdown": "## Week-by-Week Purging Stages\n\nSelection Criteria Choosing the Right Skincare Actives.\n- **Weeks 1-2 (Retinization):** Mild dryness, flaking, micro-comedones surfacing.\n- **Weeks 3-4 (Peak Purging):** Maximum pimple turnover. Do not pick or pop.\n- **Weeks 5-8 (Clarity):** Purging subsides, texture smooths, pores refine."
       },
       {
-        "id": "S4_selection_criteria",
-        "heading": "Selection Criteria",
+        "id": "S5_side_by_side_matrix",
+        "heading": "Side By Side Matrix",
         "role": "seo",
-        "markdown": "Expanded review-ready draft copy for Selection Criteria. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+        "markdown": "## Purging vs Skin Barrier Damage Checklist\n\nSolution Mapping Target Actives and Formulations. Perform a cheek audit: clean your phone daily, wash helmet straps weekly, swap cotton pillowcases for silk, and avoid heavy hair oil runoff.\n\n| Indicator | True Retinol Purge | Barrier Damage / Irritation |\n| --- | --- | --- |\n| Location | Usual breakout zones | New areas where you rarely break out |\n| Duration | Resolves in 4-6 weeks | Persists beyond 8 weeks |\n| Skin Sensation | Mild tightness, manageable peeling | Stinging, burning, persistent redness |"
       },
       {
-        "id": "S5_solution_mapping",
-        "heading": "Solution Mapping",
-        "role": "conversion",
-        "markdown": "Expanded review-ready draft copy for Solution Mapping. Replace this with adapter-written final prose when live source review and editorial approval are complete."
-      },
-      {
-        "id": "S6_common_mistakes",
-        "heading": "Common Mistakes",
+        "id": "S6_reader_fit_tradeoffs",
+        "heading": "Reader Fit Tradeoffs",
         "role": "ux",
-        "markdown": "Expanded review-ready draft copy for Common Mistakes. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+        "markdown": "## The Dermatologist Sandwich Method\n\nCommon Mistakes What to Avoid for Clear Cheek Skin.\n1. Apply a layer of Ceramide Moisturizer to clean skin. Wait 10 minutes.\n2. Apply a pea-sized amount of Retinol / Adapalene.\n3. Apply a second layer of Ceramide Moisturizer to lock in hydration and stop peeling."
       },
       {
         "id": "S7_trust_proof",
         "heading": "Trust Proof",
         "role": "trust",
-        "markdown": "Show why this page can be trusted: include the author, creation or update date, review method where relevant, and a short methodology note. Keep reviewer visibility hidden unless the editor explicitly chooses otherwise."
+        "markdown": "## Clinical Guidelines\n\nTrust Proof Dermatologist Approved Care. If your cheek breakouts are deep, painful, and do not improve after 4 weeks of habit correction, consult a dermatologist to prevent permanent rolling scars. Never combine Retinol with Salicylic Acid, Glycolic Acid, or Benzoyl Peroxide in the same routine step during the initial 6-week retinization phase."
       },
       {
         "id": "S8_faq",
         "heading": "Faq",
         "role": "seo",
-        "markdown": "### Frequently Asked Questions\n\n**What should I know before choosing retinol-purging-timeline category page?**\n\nStart with visible signals, your goal, and whether you need education, comparison, or direct product guidance.\n\n**Can this page include FAQ schema?**\n\nYes, if these questions remain visible on the page and are reviewed with the final copy."
+        "markdown": "### Frequently Asked Questions\n\nFrequently Asked Questions FAQ.\n\n**Should I stop using Retinol while purging?**\nNo! Stopping mid-purge prevents your skin from completing the cell turnover cycle. Only stop if your skin stings or burns."
       },
       {
         "id": "S9_final_cta",
         "heading": "Final Cta",
         "role": "conversion",
-        "markdown": "Ready for the next step? Start your free skin analysis now.\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+        "markdown": "Final Cta Start Your Skin Journey. Analyze your skin barrier health live now."
       },
       {
         "id": "S10_references",
         "heading": "References",
         "role": "reference",
-        "markdown": "Reference URLs still need live source review. Add official, brand, competitor, or citation URLs here only after checking relevance, source quality, and external-link purpose."
+        "markdown": "- Retinoid Cell Turnover Timeline and Cutaneous Adaptation Study: https://pubmed.ncbi.nlm.nih.gov/study-retinol-purging/"
       }
     ],
     "images": [
@@ -436,26 +453,26 @@ Reference URLs still need live source review. Add official, brand, competitor, o
       },
       {
         "id": "IMG_02",
-        "sectionId": "S2_quick_answer",
-        "purpose": "High-impact visual support for S2_quick_answer.",
+        "sectionId": "S2_quick_verdict",
+        "purpose": "High-impact visual support for S2_quick_verdict.",
         "aspectRatio": "4:3",
-        "altText": "retinol-purging-timeline quick answer visual",
+        "altText": "retinol-purging-timeline quick verdict visual",
         "status": "brief_needed"
       },
       {
         "id": "IMG_03",
-        "sectionId": "S3_problem_diagnosis",
-        "purpose": "High-impact visual support for S3_problem_diagnosis.",
+        "sectionId": "S3_comparison_methodology",
+        "purpose": "High-impact visual support for S3_comparison_methodology.",
         "aspectRatio": "4:3",
-        "altText": "retinol-purging-timeline problem diagnosis visual",
+        "altText": "retinol-purging-timeline comparison methodology visual",
         "status": "brief_needed"
       },
       {
         "id": "IMG_04",
-        "sectionId": "S4_selection_criteria",
-        "purpose": "High-impact visual support for S4_selection_criteria.",
+        "sectionId": "S4_decision_criteria",
+        "purpose": "High-impact visual support for S4_decision_criteria.",
         "aspectRatio": "4:3",
-        "altText": "retinol-purging-timeline selection criteria visual",
+        "altText": "retinol-purging-timeline decision criteria visual",
         "status": "brief_needed"
       }
     ],

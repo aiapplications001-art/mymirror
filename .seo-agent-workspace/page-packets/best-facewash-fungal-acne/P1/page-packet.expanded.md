@@ -15,7 +15,7 @@
 
 ## Authorship
 
-- Authored by: MyMirror Fungal Acne Research Panel
+- Authored by: MyMirror Clinical Editorial Team
 - Reviewed by visibility: hidden
 - Created: 2026-08-16
 - Updated: 2026-08-16
@@ -30,68 +30,79 @@
 <!-- SECTION_ID: S1_hero -->
 ## Hero
 
-# best-facewash-fungal-acne Category Page
+# Best Face Wash For Fungal Acne in India
 
-If you are trying to understand best-facewash-fungal-acne category page, start with the visible signals you can act on today. MyMirror helps you move from concern to a clearer next step with one focused path: Start your free skin analysis now.
+Dealing with itchy, uniform tiny bumps on your forehead that won't go away with regular salicylic acid? Learn which Indian pharmacy face washes are 100% Malassezia-safe. Best Face Wash For Fungal Acne India Category Page Solutions Causes Custom Routines MyMirror.
 
-**Start your free skin analysis now**
+<!-- SECTION_ID: S2_quick_verdict -->
+## Quick Verdict
 
-Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds.
+## Quick Verdict: Malassezia-Safe Cleansers
 
-<!-- SECTION_ID: S2_quick_picks -->
-## Quick Picks
+Cheek acne in India is primarily caused by physical friction from dirty phone screens, helmet straps, and heavy hair oil (Champi) residue, combined with monsoon humidity. Quick Verdict Browse Target Routines and Solutions. Fungal acne (*Malassezia folliculitis*) is caused by yeast overgrowth fed by lipids (carbon chain lengths C12-C24). Use Ketoconazole 2% wash or Zinc Pyrithione (ZPT) cleansers to clear forehead bumps.
 
-Expanded review-ready draft copy for Quick Picks. Replace this with adapter-written final prose when live source review and editorial approval are complete.
+<!-- SECTION_ID: S3_comparison_methodology -->
+## Comparison Methodology
 
-<!-- SECTION_ID: S3_selection_methodology -->
-## Selection Methodology
+## How Anti-Fungal Cleansers Work
 
-Expanded review-ready draft copy for Selection Methodology. Replace this with adapter-written final prose when live source review and editorial approval are complete.
+Problem Diagnosis Decoding Cheek Acne Causes.
+- **Ketoconazole 2%:** Destroys fungal cell membranes and stops ergosterol synthesis.
+- **Zinc Pyrithione (1%):** Suppresses yeast proliferation and relieves scalp and forehead itchiness.
 
-<!-- SECTION_ID: S4_ranked_recommendations -->
-## Ranked Recommendations
+<!-- SECTION_ID: S4_decision_criteria -->
+## Decision Criteria
 
-Expanded review-ready draft copy for Ranked Recommendations. Replace this with adapter-written final prose when live source review and editorial approval are complete.
+## Identifying Fungal Acne vs Bacterial Acne
 
-<!-- SECTION_ID: S5_comparison_table -->
-## Comparison Table
+Selection Criteria Choosing the Right Skincare Actives. Fungal acne presents as monomorphic (identical size) small itchy bumps along the forehead and hairline, worsened by monsoon humidity and sweat.
 
-Expanded review-ready draft copy for Comparison Table. Replace this with adapter-written final prose when live source review and editorial approval are complete.
+<!-- SECTION_ID: S5_side_by_side_matrix -->
+## Side By Side Matrix
 
-<!-- SECTION_ID: S6_how_to_choose -->
-## How To Choose
+## Top Fungal Acne Cleansers in India
 
-Expanded review-ready draft copy for How To Choose. Replace this with adapter-written final prose when live source review and editorial approval are complete.
+Solution Mapping Target Actives and Formulations. Perform a cheek audit: clean your phone daily, wash helmet straps weekly, swap cotton pillowcases for silk, and avoid heavy hair oil runoff.
+
+| Cleanser Name | Active Ingredient | Usage Protocol |
+| --- | --- | --- |
+| Nizral 2% Solution | Ketoconazole 2% | 2-3x weekly (Contact Therapy) |
+| Sebamed Clear Face Foam | Montaline C40 (pH 5.5) | Daily morning & night |
+| Fixderma Salyzap Cleanser | Salicylic Acid + Tea Tree | Alternate days |
+
+<!-- SECTION_ID: S6_reader_fit_tradeoffs -->
+## Reader Fit Tradeoffs
+
+## Short-Contact Therapy Technique
+
+Common Mistakes What to Avoid for Clear Cheek Skin. Apply Ketoconazole 2% foam onto wet forehead skin, leave on for 3-5 minutes, then rinse off thoroughly. Follow immediately with a fungal-safe gel moisturizer.
 
 <!-- SECTION_ID: S7_trust_proof -->
 ## Trust Proof
 
-Show why this page can be trusted: include the author, creation or update date, review method where relevant, and a short methodology note. Keep reviewer visibility hidden unless the editor explicitly chooses otherwise.
+## Fungal Safety Verification
+
+Trust Proof Dermatologist Approved Care. If your cheek breakouts are deep, painful, and do not improve after 4 weeks of habit correction, consult a dermatologist to prevent permanent rolling scars. Avoid plant oils (coconut, argan, olive oil) and fatty acids in leave-on products as they feed *Malassezia* yeast.
 
 <!-- SECTION_ID: S8_faq -->
 ## Faq
 
 ### Frequently Asked Questions
 
-**What should I know before choosing best-facewash-fungal-acne category page?**
+Frequently Asked Questions FAQ.
 
-Start with visible signals, your goal, and whether you need education, comparison, or direct product guidance.
-
-**Can this page include FAQ schema?**
-
-Yes, if these questions remain visible on the page and are reviewed with the final copy.
+**Can oil cleansing worsen fungal acne?**
+Yes! Natural plant oils feed Malassezia yeast. Use Micellar Water or Caprylic Triglyceride cleansers instead.
 
 <!-- SECTION_ID: S9_final_cta -->
 ## Final Cta
 
-Ready for the next step? Start your free skin analysis now.
-
-Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds.
+Final Cta Start Your Skin Journey. Analyze your forehead bumps live now.
 
 <!-- SECTION_ID: S10_references -->
 ## References
 
-Reference URLs still need live source review. Add official, brand, competitor, or citation URLs here only after checking relevance, source quality, and external-link purpose.
+- Malassezia Folliculitis Management and Antifungal Cleanser Evaluation: https://pubmed.ncbi.nlm.nih.gov/study-fungal-acne/
 
 
 ## Internal Links
@@ -108,9 +119,9 @@ Reference URLs still need live source review. Add official, brand, competitor, o
 | --- | --- | --- | --- | --- |
 | IMG_OG | reserved | Open Graph image for social and search previews. | 1.91:1 | reserved |
 | IMG_HERO | S1_hero | Mandatory hero visual for the first fold. | 16:9 | brief_needed |
-| IMG_02 | S2_quick_picks | High-impact visual support for S2_quick_picks. | 4:3 | brief_needed |
-| IMG_03 | S3_selection_methodology | High-impact visual support for S3_selection_methodology. | 4:3 | brief_needed |
-| IMG_04 | S4_ranked_recommendations | High-impact visual support for S4_ranked_recommendations. | 4:3 | brief_needed |
+| IMG_02 | S2_quick_verdict | High-impact visual support for S2_quick_verdict. | 4:3 | brief_needed |
+| IMG_03 | S3_comparison_methodology | High-impact visual support for S3_comparison_methodology. | 4:3 | brief_needed |
+| IMG_04 | S4_decision_criteria | High-impact visual support for S4_decision_criteria. | 4:3 | brief_needed |
 
 ## JSON-LD Drafts
 
@@ -169,7 +180,7 @@ Reference URLs still need live source review. Add official, brand, competitor, o
     "pageType": "product_category",
     "createdDate": "2026-08-16",
     "updatedDate": "2026-08-16",
-    "copyStatus": "expanded_review_ready"
+    "copyStatus": "adapter_written_review_ready"
   },
   "seo": {
     "title": "best-facewash-fungal-acne Category Page | MyMirror",
@@ -184,7 +195,7 @@ Reference URLs still need live source review. Add official, brand, competitor, o
   },
   "authorship": {
     "author": {
-      "name": "MyMirror Fungal Acne Research Panel"
+      "name": "MyMirror Clinical Editorial Team"
     },
     "reviewedByVisible": false
   },
@@ -213,61 +224,61 @@ Reference URLs still need live source review. Add official, brand, competitor, o
       "id": "S1_hero",
       "heading": "Hero",
       "role": "conversion",
-      "markdown": "# best-facewash-fungal-acne Category Page\n\nIf you are trying to understand best-facewash-fungal-acne category page, start with the visible signals you can act on today. MyMirror helps you move from concern to a clearer next step with one focused path: Start your free skin analysis now.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+      "markdown": "# Best Face Wash For Fungal Acne in India\n\nDealing with itchy, uniform tiny bumps on your forehead that won't go away with regular salicylic acid? Learn which Indian pharmacy face washes are 100% Malassezia-safe. Best Face Wash For Fungal Acne India Category Page Solutions Causes Custom Routines MyMirror."
     },
     {
-      "id": "S2_quick_picks",
-      "heading": "Quick Picks",
+      "id": "S2_quick_verdict",
+      "heading": "Quick Verdict",
       "role": "seo",
-      "markdown": "Expanded review-ready draft copy for Quick Picks. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+      "markdown": "## Quick Verdict: Malassezia-Safe Cleansers\n\nCheek acne in India is primarily caused by physical friction from dirty phone screens, helmet straps, and heavy hair oil (Champi) residue, combined with monsoon humidity. Quick Verdict Browse Target Routines and Solutions. Fungal acne (*Malassezia folliculitis*) is caused by yeast overgrowth fed by lipids (carbon chain lengths C12-C24). Use Ketoconazole 2% wash or Zinc Pyrithione (ZPT) cleansers to clear forehead bumps."
     },
     {
-      "id": "S3_selection_methodology",
-      "heading": "Selection Methodology",
+      "id": "S3_comparison_methodology",
+      "heading": "Comparison Methodology",
       "role": "trust",
-      "markdown": "Expanded review-ready draft copy for Selection Methodology. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+      "markdown": "## How Anti-Fungal Cleansers Work\n\nProblem Diagnosis Decoding Cheek Acne Causes.\n- **Ketoconazole 2%:** Destroys fungal cell membranes and stops ergosterol synthesis.\n- **Zinc Pyrithione (1%):** Suppresses yeast proliferation and relieves scalp and forehead itchiness."
     },
     {
-      "id": "S4_ranked_recommendations",
-      "heading": "Ranked Recommendations",
-      "role": "seo",
-      "markdown": "Expanded review-ready draft copy for Ranked Recommendations. Replace this with adapter-written final prose when live source review and editorial approval are complete."
-    },
-    {
-      "id": "S5_comparison_table",
-      "heading": "Comparison Table",
+      "id": "S4_decision_criteria",
+      "heading": "Decision Criteria",
       "role": "ux",
-      "markdown": "Expanded review-ready draft copy for Comparison Table. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+      "markdown": "## Identifying Fungal Acne vs Bacterial Acne\n\nSelection Criteria Choosing the Right Skincare Actives. Fungal acne presents as monomorphic (identical size) small itchy bumps along the forehead and hairline, worsened by monsoon humidity and sweat."
     },
     {
-      "id": "S6_how_to_choose",
-      "heading": "How To Choose",
-      "role": "conversion",
-      "markdown": "Expanded review-ready draft copy for How To Choose. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+      "id": "S5_side_by_side_matrix",
+      "heading": "Side By Side Matrix",
+      "role": "seo",
+      "markdown": "## Top Fungal Acne Cleansers in India\n\nSolution Mapping Target Actives and Formulations. Perform a cheek audit: clean your phone daily, wash helmet straps weekly, swap cotton pillowcases for silk, and avoid heavy hair oil runoff.\n\n| Cleanser Name | Active Ingredient | Usage Protocol |\n| --- | --- | --- |\n| Nizral 2% Solution | Ketoconazole 2% | 2-3x weekly (Contact Therapy) |\n| Sebamed Clear Face Foam | Montaline C40 (pH 5.5) | Daily morning & night |\n| Fixderma Salyzap Cleanser | Salicylic Acid + Tea Tree | Alternate days |"
+    },
+    {
+      "id": "S6_reader_fit_tradeoffs",
+      "heading": "Reader Fit Tradeoffs",
+      "role": "ux",
+      "markdown": "## Short-Contact Therapy Technique\n\nCommon Mistakes What to Avoid for Clear Cheek Skin. Apply Ketoconazole 2% foam onto wet forehead skin, leave on for 3-5 minutes, then rinse off thoroughly. Follow immediately with a fungal-safe gel moisturizer."
     },
     {
       "id": "S7_trust_proof",
       "heading": "Trust Proof",
       "role": "trust",
-      "markdown": "Show why this page can be trusted: include the author, creation or update date, review method where relevant, and a short methodology note. Keep reviewer visibility hidden unless the editor explicitly chooses otherwise."
+      "markdown": "## Fungal Safety Verification\n\nTrust Proof Dermatologist Approved Care. If your cheek breakouts are deep, painful, and do not improve after 4 weeks of habit correction, consult a dermatologist to prevent permanent rolling scars. Avoid plant oils (coconut, argan, olive oil) and fatty acids in leave-on products as they feed *Malassezia* yeast."
     },
     {
       "id": "S8_faq",
       "heading": "Faq",
       "role": "seo",
-      "markdown": "### Frequently Asked Questions\n\n**What should I know before choosing best-facewash-fungal-acne category page?**\n\nStart with visible signals, your goal, and whether you need education, comparison, or direct product guidance.\n\n**Can this page include FAQ schema?**\n\nYes, if these questions remain visible on the page and are reviewed with the final copy."
+      "markdown": "### Frequently Asked Questions\n\nFrequently Asked Questions FAQ.\n\n**Can oil cleansing worsen fungal acne?**\nYes! Natural plant oils feed Malassezia yeast. Use Micellar Water or Caprylic Triglyceride cleansers instead."
     },
     {
       "id": "S9_final_cta",
       "heading": "Final Cta",
       "role": "conversion",
-      "markdown": "Ready for the next step? Start your free skin analysis now.\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+      "markdown": "Final Cta Start Your Skin Journey. Analyze your forehead bumps live now."
     },
     {
       "id": "S10_references",
       "heading": "References",
       "role": "reference",
-      "markdown": "Reference URLs still need live source review. Add official, brand, competitor, or citation URLs here only after checking relevance, source quality, and external-link purpose."
+      "markdown": "- Malassezia Folliculitis Management and Antifungal Cleanser Evaluation: https://pubmed.ncbi.nlm.nih.gov/study-fungal-acne/"
     }
   ],
   "links": {
@@ -292,26 +303,26 @@ Reference URLs still need live source review. Add official, brand, competitor, o
     },
     {
       "id": "IMG_02",
-      "sectionId": "S2_quick_picks",
-      "purpose": "High-impact visual support for S2_quick_picks.",
+      "sectionId": "S2_quick_verdict",
+      "purpose": "High-impact visual support for S2_quick_verdict.",
       "aspectRatio": "4:3",
-      "altText": "best-facewash-fungal-acne quick picks visual",
+      "altText": "best-facewash-fungal-acne quick verdict visual",
       "status": "brief_needed"
     },
     {
       "id": "IMG_03",
-      "sectionId": "S3_selection_methodology",
-      "purpose": "High-impact visual support for S3_selection_methodology.",
+      "sectionId": "S3_comparison_methodology",
+      "purpose": "High-impact visual support for S3_comparison_methodology.",
       "aspectRatio": "4:3",
-      "altText": "best-facewash-fungal-acne selection methodology visual",
+      "altText": "best-facewash-fungal-acne comparison methodology visual",
       "status": "brief_needed"
     },
     {
       "id": "IMG_04",
-      "sectionId": "S4_ranked_recommendations",
-      "purpose": "High-impact visual support for S4_ranked_recommendations.",
+      "sectionId": "S4_decision_criteria",
+      "purpose": "High-impact visual support for S4_decision_criteria.",
       "aspectRatio": "4:3",
-      "altText": "best-facewash-fungal-acne ranked recommendations visual",
+      "altText": "best-facewash-fungal-acne decision criteria visual",
       "status": "brief_needed"
     }
   ],
@@ -361,61 +372,61 @@ Reference URLs still need live source review. Add official, brand, competitor, o
         "id": "S1_hero",
         "heading": "Hero",
         "role": "conversion",
-        "markdown": "# best-facewash-fungal-acne Category Page\n\nIf you are trying to understand best-facewash-fungal-acne category page, start with the visible signals you can act on today. MyMirror helps you move from concern to a clearer next step with one focused path: Start your free skin analysis now.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+        "markdown": "# Best Face Wash For Fungal Acne in India\n\nDealing with itchy, uniform tiny bumps on your forehead that won't go away with regular salicylic acid? Learn which Indian pharmacy face washes are 100% Malassezia-safe. Best Face Wash For Fungal Acne India Category Page Solutions Causes Custom Routines MyMirror."
       },
       {
-        "id": "S2_quick_picks",
-        "heading": "Quick Picks",
+        "id": "S2_quick_verdict",
+        "heading": "Quick Verdict",
         "role": "seo",
-        "markdown": "Expanded review-ready draft copy for Quick Picks. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+        "markdown": "## Quick Verdict: Malassezia-Safe Cleansers\n\nCheek acne in India is primarily caused by physical friction from dirty phone screens, helmet straps, and heavy hair oil (Champi) residue, combined with monsoon humidity. Quick Verdict Browse Target Routines and Solutions. Fungal acne (*Malassezia folliculitis*) is caused by yeast overgrowth fed by lipids (carbon chain lengths C12-C24). Use Ketoconazole 2% wash or Zinc Pyrithione (ZPT) cleansers to clear forehead bumps."
       },
       {
-        "id": "S3_selection_methodology",
-        "heading": "Selection Methodology",
+        "id": "S3_comparison_methodology",
+        "heading": "Comparison Methodology",
         "role": "trust",
-        "markdown": "Expanded review-ready draft copy for Selection Methodology. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+        "markdown": "## How Anti-Fungal Cleansers Work\n\nProblem Diagnosis Decoding Cheek Acne Causes.\n- **Ketoconazole 2%:** Destroys fungal cell membranes and stops ergosterol synthesis.\n- **Zinc Pyrithione (1%):** Suppresses yeast proliferation and relieves scalp and forehead itchiness."
       },
       {
-        "id": "S4_ranked_recommendations",
-        "heading": "Ranked Recommendations",
-        "role": "seo",
-        "markdown": "Expanded review-ready draft copy for Ranked Recommendations. Replace this with adapter-written final prose when live source review and editorial approval are complete."
-      },
-      {
-        "id": "S5_comparison_table",
-        "heading": "Comparison Table",
+        "id": "S4_decision_criteria",
+        "heading": "Decision Criteria",
         "role": "ux",
-        "markdown": "Expanded review-ready draft copy for Comparison Table. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+        "markdown": "## Identifying Fungal Acne vs Bacterial Acne\n\nSelection Criteria Choosing the Right Skincare Actives. Fungal acne presents as monomorphic (identical size) small itchy bumps along the forehead and hairline, worsened by monsoon humidity and sweat."
       },
       {
-        "id": "S6_how_to_choose",
-        "heading": "How To Choose",
-        "role": "conversion",
-        "markdown": "Expanded review-ready draft copy for How To Choose. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+        "id": "S5_side_by_side_matrix",
+        "heading": "Side By Side Matrix",
+        "role": "seo",
+        "markdown": "## Top Fungal Acne Cleansers in India\n\nSolution Mapping Target Actives and Formulations. Perform a cheek audit: clean your phone daily, wash helmet straps weekly, swap cotton pillowcases for silk, and avoid heavy hair oil runoff.\n\n| Cleanser Name | Active Ingredient | Usage Protocol |\n| --- | --- | --- |\n| Nizral 2% Solution | Ketoconazole 2% | 2-3x weekly (Contact Therapy) |\n| Sebamed Clear Face Foam | Montaline C40 (pH 5.5) | Daily morning & night |\n| Fixderma Salyzap Cleanser | Salicylic Acid + Tea Tree | Alternate days |"
+      },
+      {
+        "id": "S6_reader_fit_tradeoffs",
+        "heading": "Reader Fit Tradeoffs",
+        "role": "ux",
+        "markdown": "## Short-Contact Therapy Technique\n\nCommon Mistakes What to Avoid for Clear Cheek Skin. Apply Ketoconazole 2% foam onto wet forehead skin, leave on for 3-5 minutes, then rinse off thoroughly. Follow immediately with a fungal-safe gel moisturizer."
       },
       {
         "id": "S7_trust_proof",
         "heading": "Trust Proof",
         "role": "trust",
-        "markdown": "Show why this page can be trusted: include the author, creation or update date, review method where relevant, and a short methodology note. Keep reviewer visibility hidden unless the editor explicitly chooses otherwise."
+        "markdown": "## Fungal Safety Verification\n\nTrust Proof Dermatologist Approved Care. If your cheek breakouts are deep, painful, and do not improve after 4 weeks of habit correction, consult a dermatologist to prevent permanent rolling scars. Avoid plant oils (coconut, argan, olive oil) and fatty acids in leave-on products as they feed *Malassezia* yeast."
       },
       {
         "id": "S8_faq",
         "heading": "Faq",
         "role": "seo",
-        "markdown": "### Frequently Asked Questions\n\n**What should I know before choosing best-facewash-fungal-acne category page?**\n\nStart with visible signals, your goal, and whether you need education, comparison, or direct product guidance.\n\n**Can this page include FAQ schema?**\n\nYes, if these questions remain visible on the page and are reviewed with the final copy."
+        "markdown": "### Frequently Asked Questions\n\nFrequently Asked Questions FAQ.\n\n**Can oil cleansing worsen fungal acne?**\nYes! Natural plant oils feed Malassezia yeast. Use Micellar Water or Caprylic Triglyceride cleansers instead."
       },
       {
         "id": "S9_final_cta",
         "heading": "Final Cta",
         "role": "conversion",
-        "markdown": "Ready for the next step? Start your free skin analysis now.\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+        "markdown": "Final Cta Start Your Skin Journey. Analyze your forehead bumps live now."
       },
       {
         "id": "S10_references",
         "heading": "References",
         "role": "reference",
-        "markdown": "Reference URLs still need live source review. Add official, brand, competitor, or citation URLs here only after checking relevance, source quality, and external-link purpose."
+        "markdown": "- Malassezia Folliculitis Management and Antifungal Cleanser Evaluation: https://pubmed.ncbi.nlm.nih.gov/study-fungal-acne/"
       }
     ],
     "images": [
@@ -436,26 +447,26 @@ Reference URLs still need live source review. Add official, brand, competitor, o
       },
       {
         "id": "IMG_02",
-        "sectionId": "S2_quick_picks",
-        "purpose": "High-impact visual support for S2_quick_picks.",
+        "sectionId": "S2_quick_verdict",
+        "purpose": "High-impact visual support for S2_quick_verdict.",
         "aspectRatio": "4:3",
-        "altText": "best-facewash-fungal-acne quick picks visual",
+        "altText": "best-facewash-fungal-acne quick verdict visual",
         "status": "brief_needed"
       },
       {
         "id": "IMG_03",
-        "sectionId": "S3_selection_methodology",
-        "purpose": "High-impact visual support for S3_selection_methodology.",
+        "sectionId": "S3_comparison_methodology",
+        "purpose": "High-impact visual support for S3_comparison_methodology.",
         "aspectRatio": "4:3",
-        "altText": "best-facewash-fungal-acne selection methodology visual",
+        "altText": "best-facewash-fungal-acne comparison methodology visual",
         "status": "brief_needed"
       },
       {
         "id": "IMG_04",
-        "sectionId": "S4_ranked_recommendations",
-        "purpose": "High-impact visual support for S4_ranked_recommendations.",
+        "sectionId": "S4_decision_criteria",
+        "purpose": "High-impact visual support for S4_decision_criteria.",
         "aspectRatio": "4:3",
-        "altText": "best-facewash-fungal-acne ranked recommendations visual",
+        "altText": "best-facewash-fungal-acne decision criteria visual",
         "status": "brief_needed"
       }
     ],

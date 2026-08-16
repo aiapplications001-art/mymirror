@@ -16,7 +16,7 @@ Selected page: P1
 
 - Primary keyword: Not provided
 - Secondary keywords: None provided
-- Cluster seed keywords: retinol purging timeline india, retinoid purging stages week by week, retinol purging vs breakout
+- Cluster seed keywords: azelaic acid vs salicylic acid for acne india, 15% azelaic acid gel india, salicylic acid serum acne marks
 - Content depth target: 1800-2400 words
 - Strict range: no
 
@@ -29,20 +29,20 @@ Selected page: P1
 
 ## Section Plan
 
-Intent pattern: product_category
-Structure variant: category_solution
-Inference confidence: high
-Inference signals: pageType=product_category
-Inference notes: Product/category pages need diagnosis, selection criteria, solution mapping, and conversion support.
+Intent pattern: comparison
+Structure variant: comparison_matrix
+Inference confidence: medium
+Inference signals: comparison language
+Inference notes: Comparison intent needs methodology, criteria, and tradeoff structure.
 
 | Section ID | Role | Section Intent | Evidence Budget (facts/cited claims/examples) | Required Devices | Notes |
 | --- | --- | --- | --- | --- | --- |
-| S1_hero | conversion | first-fold promise | 2/0/1 | H1, primary CTA, CTA microcopy | State the category promise, reader problem, and primary CTA in the first fold. Primary actionable must be visible in the first fold on desktop and mobile. |
-| S2_quick_answer | seo | direct answer | 3/1/1 | short answer block | Give the category fit answer before expanding details. |
-| S3_problem_diagnosis | ux | problem diagnosis | 3/1/2 | diagnostic checklist, reader-fit examples | Tie the diagnosis to the selected audience cohort. |
-| S4_selection_criteria | seo | selection criteria | 4/2/1 | criteria list, decision table | Make criteria specific enough to guide product/category choice. |
-| S5_solution_mapping | conversion | solution mapping | 3/1/2 | scenario-to-solution map, contextual CTA | Connect the user's problem to the relevant internal destination. |
-| S6_common_mistakes | ux | mistake prevention | 3/1/2 | mistakes table, not-right-for-you guidance | Include not-right-for-you guidance so the page does not over-sell. |
+| S1_hero | conversion | first-fold promise | 2/0/1 | H1, primary CTA, CTA microcopy | State the comparison promise and primary CTA without declaring a winner before evidence. Primary actionable must be visible in the first fold on desktop and mobile. |
+| S2_quick_verdict | seo | quick comparison verdict | 3/1/2 | best-for/avoid-if callout | Use a qualified verdict, not a universal winner. |
+| S3_comparison_methodology | trust | comparison methodology | 3/2/1 | methodology note, scoring rubric | Include a concise comparison methodology and qualitative labels unless numeric scoring is explicitly requested. |
+| S4_decision_criteria | ux | decision criteria | 4/2/1 | criteria checklist | Make each criterion actionable and tied to the search intent. |
+| S5_side_by_side_matrix | seo | side-by-side evaluation | 5/3/2 | side-by-side comparison matrix | Matrix cells must be specific; avoid generic good/better/best language. |
+| S6_reader_fit_tradeoffs | ux | reader-fit tradeoffs | 4/2/2 | best-for/avoid-if blocks, reader scenarios | Spell out tradeoffs by reader need, not just feature lists. |
 | S7_trust_proof | trust | trust and methodology proof | 3/1/1 | author/reviewer block, methodology note, proof points | Include authored-by visibility and page creation or update date. |
 | S8_faq | seo | FAQ support | 4/2/0 | FAQ entries, FAQ schema draft | Include FAQ schema draft when this section is present. |
 | S9_final_cta | conversion | final conversion path | 2/0/1 | final CTA, short closing copy | Use one primary CTA variant in V1. |
@@ -66,6 +66,7 @@ Inference notes: Product/category pages need diagnosis, selection criteria, solu
 
 | Risk | Item | Reason |
 | --- | --- | --- |
+| critical | Competitor or external brand mentions | Comparison pages may mention competitors or external products and require explicit approval before inclusion. |
 | medium | Tone and content depth | The user should choose tone per page and content depth is treated as a target range. |
 | medium | Brand-led generated images | Images should follow brand guidelines and include logo/brand signals only when appropriate. |
 | low | Selected section order | Standard V1 section order is proposed before full copy is drafted. |
@@ -74,7 +75,7 @@ Inference notes: Product/category pages need diagnosis, selection criteria, solu
 
 - Selected page P1 came from cluster opportunity startup_conversion. Evidence strength: low. Source: cluster_strategy.
 - Audience cohort supplied: IndianAcneCareSeekers. Evidence strength: high. Source: user_input.
-- Cluster quality score at strategy time was 67/100. Evidence strength: medium. Source: cluster_strategy.
+- Cluster quality score at strategy time was 74/100. Evidence strength: medium. Source: cluster_strategy.
 
 ## Machine-Readable JSON
 
@@ -112,9 +113,9 @@ Inference notes: Product/category pages need diagnosis, selection criteria, solu
   "keywords": {
     "secondary": [],
     "clusterSeeds": [
-      "retinol purging timeline india",
-      "retinoid purging stages week by week",
-      "retinol purging vs breakout"
+      "azelaic acid vs salicylic acid for acne india",
+      "15% azelaic acid gel india",
+      "salicylic acid serum acne marks"
     ]
   },
   "contentDepth": {
@@ -130,20 +131,20 @@ Inference notes: Product/category pages need diagnosis, selection criteria, solu
     }
   },
   "pageStructure": {
-    "intentPattern": "product_category",
-    "structureVariant": "category_solution",
+    "intentPattern": "comparison",
+    "structureVariant": "comparison_matrix",
     "inference": {
-      "confidence": "high",
+      "confidence": "medium",
       "signals": [
-        "pageType=product_category"
+        "comparison language"
       ],
-      "notes": "Product/category pages need diagnosis, selection criteria, solution mapping, and conversion support."
+      "notes": "Comparison intent needs methodology, criteria, and tradeoff structure."
     },
     "researchBasis": [
       "selected page title, slug, target intent, page type, and strategy category",
       "live SERP, PAA, social/video, competitor-gap, and audience-language research must refine this before final copy"
     ],
-    "structureUniquenessRationale": "category_solution is the starting structure because the selected opportunity signals product_category intent. The adapter must revise the section sequence, decision tools, FAQs, troubleshooting blocks, tables, superiority components, and CTA placement when current-page research shows different sub-intents or gaps, and must not reuse a structure from another page, batch, or historical run.",
+    "structureUniquenessRationale": "comparison_matrix is the starting structure because the selected opportunity signals comparison intent. The adapter must revise the section sequence, decision tools, FAQs, troubleshooting blocks, tables, superiority components, and CTA placement when current-page research shows different sub-intents or gaps, and must not reuse a structure from another page, batch, or historical run.",
     "mustDifferFromPages": [],
     "sections": [
       {
@@ -166,111 +167,109 @@ Inference notes: Product/category pages need diagnosis, selection criteria, solu
           "minimumCitedClaims": 0,
           "minimumConcreteExamples": 1
         },
-        "notes": "State the category promise, reader problem, and primary CTA in the first fold. Primary actionable must be visible in the first fold on desktop and mobile."
+        "notes": "State the comparison promise and primary CTA without declaring a winner before evidence. Primary actionable must be visible in the first fold on desktop and mobile."
       },
       {
-        "id": "S2_quick_answer",
-        "purpose": "Short answer optimized for humans and AI overview style retrieval.",
+        "id": "S2_quick_verdict",
+        "purpose": "Give a short, qualified verdict for the main comparison intent.",
         "contentRole": "seo",
-        "sectionIntent": "direct answer",
+        "sectionIntent": "quick comparison verdict",
         "evidenceNeeded": [
-          "direct answer",
-          "intent qualifier",
-          "reader next step"
+          "verdict condition",
+          "reader scenario",
+          "comparison caveat"
         ],
         "requiredDevices": [
-          "short answer block"
-        ],
-        "evidenceBudget": {
-          "minimumFacts": 3,
-          "minimumCitedClaims": 1,
-          "minimumConcreteExamples": 1
-        },
-        "notes": "Give the category fit answer before expanding details."
-      },
-      {
-        "id": "S3_problem_diagnosis",
-        "purpose": "Explain the problem, audience context, and how readers should recognize fit.",
-        "contentRole": "ux",
-        "sectionIntent": "problem diagnosis",
-        "evidenceNeeded": [
-          "audience signal",
-          "category symptom or trigger",
-          "reader decision context"
-        ],
-        "requiredDevices": [
-          "diagnostic checklist",
-          "reader-fit examples"
+          "best-for/avoid-if callout"
         ],
         "evidenceBudget": {
           "minimumFacts": 3,
           "minimumCitedClaims": 1,
           "minimumConcreteExamples": 2
         },
-        "notes": "Tie the diagnosis to the selected audience cohort."
+        "notes": "Use a qualified verdict, not a universal winner."
       },
       {
-        "id": "S4_selection_criteria",
-        "purpose": "Define practical buying or selection criteria for the category.",
-        "contentRole": "seo",
-        "sectionIntent": "selection criteria",
+        "id": "S3_comparison_methodology",
+        "purpose": "Explain how options are compared and what evidence is allowed.",
+        "contentRole": "trust",
+        "sectionIntent": "comparison methodology",
         "evidenceNeeded": [
-          "criteria with rationale",
-          "common tradeoffs",
-          "category constraints"
+          "methodology",
+          "evaluation scope",
+          "fairness caveat"
         ],
         "requiredDevices": [
-          "criteria list",
-          "decision table"
+          "methodology note",
+          "scoring rubric"
+        ],
+        "evidenceBudget": {
+          "minimumFacts": 3,
+          "minimumCitedClaims": 2,
+          "minimumConcreteExamples": 1
+        },
+        "notes": "Include a concise comparison methodology and qualitative labels unless numeric scoring is explicitly requested."
+      },
+      {
+        "id": "S4_decision_criteria",
+        "purpose": "Define the criteria readers should use before reading the matrix.",
+        "contentRole": "ux",
+        "sectionIntent": "decision criteria",
+        "evidenceNeeded": [
+          "criteria",
+          "why it matters",
+          "reader use case"
+        ],
+        "requiredDevices": [
+          "criteria checklist"
         ],
         "evidenceBudget": {
           "minimumFacts": 4,
           "minimumCitedClaims": 2,
           "minimumConcreteExamples": 1
         },
-        "notes": "Make criteria specific enough to guide product/category choice."
+        "notes": "Make each criterion actionable and tied to the search intent."
       },
       {
-        "id": "S5_solution_mapping",
-        "purpose": "Map reader situations to the relevant internal solution path.",
-        "contentRole": "conversion",
-        "sectionIntent": "solution mapping",
+        "id": "S5_side_by_side_matrix",
+        "purpose": "Compare options side by side against the stated criteria.",
+        "contentRole": "seo",
+        "sectionIntent": "side-by-side evaluation",
         "evidenceNeeded": [
-          "internal offer fit",
-          "reader scenario",
-          "CTA rationale"
+          "option-specific facts",
+          "tradeoff",
+          "citation-backed claim"
         ],
         "requiredDevices": [
-          "scenario-to-solution map",
-          "contextual CTA"
+          "side-by-side comparison matrix"
         ],
         "evidenceBudget": {
-          "minimumFacts": 3,
-          "minimumCitedClaims": 1,
+          "minimumFacts": 5,
+          "minimumCitedClaims": 3,
           "minimumConcreteExamples": 2
         },
-        "notes": "Connect the user's problem to the relevant internal destination."
+        "notes": "Matrix cells must be specific; avoid generic good/better/best language."
       },
       {
-        "id": "S6_common_mistakes",
-        "purpose": "Show what readers often get wrong and how to avoid it.",
+        "id": "S6_reader_fit_tradeoffs",
+        "purpose": "Explain who each option is and is not for.",
         "contentRole": "ux",
-        "sectionIntent": "mistake prevention",
+        "sectionIntent": "reader-fit tradeoffs",
         "evidenceNeeded": [
-          "common mistake",
-          "better action",
-          "consequence"
+          "best-fit scenario",
+          "avoid-if scenario",
+          "switching consideration"
         ],
         "requiredDevices": [
-          "mistakes table",
-          "not-right-for-you guidance"
+          "best-for/avoid-if blocks",
+          "reader scenarios"
         ],
         "evidenceBudget": {
-          "minimumFacts": 3,
-          "minimumCitedClaims": 1,
+          "minimumFacts": 4,
+          "minimumCitedClaims": 2,
           "minimumConcreteExamples": 2
         },
-        "notes": "Include not-right-for-you guidance so the page does not over-sell."
+        "notes": "Spell out tradeoffs by reader need, not just feature lists."
       },
       {
         "id": "S7_trust_proof",
@@ -401,7 +400,13 @@ Inference notes: Product/category pages need diagnosis, selection criteria, solu
         "risk": "medium"
       }
     ],
-    "critical": []
+    "critical": [
+      {
+        "item": "Competitor or external brand mentions",
+        "reason": "Comparison pages may mention competitors or external products and require explicit approval before inclusion.",
+        "risk": "critical"
+      }
+    ]
   },
   "evidenceNotes": [
     {
@@ -415,7 +420,7 @@ Inference notes: Product/category pages need diagnosis, selection criteria, solu
       "source": "user_input"
     },
     {
-      "pointer": "Cluster quality score at strategy time was 67/100.",
+      "pointer": "Cluster quality score at strategy time was 74/100.",
       "evidenceStrength": "medium",
       "source": "cluster_strategy"
     }

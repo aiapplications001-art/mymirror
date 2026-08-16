@@ -7,25 +7,24 @@ Cluster slug: spearmint-tea-acne
 ## Source Metadata
 
 - URLs considered: 96
-- URLs matched: 12
-- Seed keywords: spearmint tea for hormonal acne india, spearmint tea pcos acne benefits, organic spearmint tea jawline pimples
+- URLs matched: 11
+- Seed keywords: azelaic acid vs salicylic acid for acne india, 15% azelaic acid gel india, salicylic acid serum acne marks
 
 ## Existing URL Candidates
 
 | Page type | URL | Evidence | Match reason |
 | --- | --- | --- | --- |
 | comparison | https://mymirror.fit/acne/best-salicylic-acid-products-india/ | high | URL and metadata matched the selected product/category cluster. |
-| faq_support | https://mymirror.fit/acne/body-acne-india-bacne-chestne-guide/ | high | URL and metadata matched the selected product/category cluster. |
 | guide_blog | https://mymirror.fit/acne/skincare-layering-guide/ | high | URL and metadata matched the selected product/category cluster. |
-| faq_support | https://mymirror.fit/acne/teenage-acne-india-parents-guide/ | high | URL and metadata matched the selected product/category cluster. |
 | comparison | https://mymirror.fit/acne/1-vs-2-percent-salicylic-acid/ | high | URL and metadata matched the selected product/category cluster. |
-| comparison | https://mymirror.fit/acne/adapalene-differin-adaferin-gel-comparison-india/ | high | URL and metadata matched the selected product/category cluster. |
-| faq_support | https://mymirror.fit/acne/bacne-vs-fungal-acne-body-india/ | high | URL and metadata matched the selected product/category cluster. |
-| comparison | https://mymirror.fit/acne/hormonal-acne-vs-oily-skin/ | high | URL and metadata matched the selected product/category cluster. |
-| faq_support | https://mymirror.fit/acne/jawline-acne-meaning-hormonal-vs-product/ | high | URL and metadata matched the selected product/category cluster. |
-| faq_support | https://mymirror.fit/acne/microneedling-vs-chemical-peels-scars/ | high | URL and metadata matched the selected product/category cluster. |
-| faq_support | https://mymirror.fit/acne/mineral-vs-chemical-sunscreen-active-acne/ | high | URL and metadata matched the selected product/category cluster. |
-| faq_support | https://mymirror.fit/acne/pie-vs-pih-indian-skin/ | high | URL and metadata matched the selected product/category cluster. |
+| comparison | https://mymirror.fit/acne/salicylic-acid-face-wash-vs-serum/ | high | URL and metadata matched the selected product/category cluster. |
+| faq_support | https://mymirror.fit/acne/salicylic-vs-benzoyl-peroxide-body-wash-india/ | high | URL and metadata matched the selected product/category cluster. |
+| faq_support | https://mymirror.fit/acne/skin-purging-vs-breakout-india/ | high | URL and metadata matched the selected product/category cluster. |
+| comparison | https://mymirror.fit/acne/best-salicylic-acid-face-wash-india/ | high | URL and metadata matched the selected product/category cluster. |
+| guide_blog | https://mymirror.fit/acne/mixing-salicylic-acid-with-retinol-adapalene/ | high | URL and metadata matched the selected product/category cluster. |
+| guide_blog | https://mymirror.fit/acne/salicylic-acid-for-beginners/ | high | URL and metadata matched the selected product/category cluster. |
+| faq_support | https://mymirror.fit/acne/salicylic-acid-purging-timeline/ | high | URL and metadata matched the selected product/category cluster. |
+| guide_blog | https://mymirror.fit/acne/science-of-clear-skin/ | high | URL and metadata matched the selected product/category cluster. |
 
 ## Page Opportunities
 
@@ -73,11 +72,11 @@ User should select one page opportunity to generate next. V1 generates one publi
   },
   "sourceMetadata": {
     "urlsConsidered": 96,
-    "urlsMatched": 12,
+    "urlsMatched": 11,
     "seedKeywords": [
-      "spearmint tea for hormonal acne india",
-      "spearmint tea pcos acne benefits",
-      "organic spearmint tea jawline pimples"
+      "azelaic acid vs salicylic acid for acne india",
+      "15% azelaic acid gel india",
+      "salicylic acid serum acne marks"
     ]
   },
   "existingUrlCandidates": [
@@ -90,26 +89,10 @@ User should select one page opportunity to generate next. V1 generates one publi
       "matchReason": "URL and metadata matched the selected product/category cluster."
     },
     {
-      "url": "https://mymirror.fit/acne/body-acne-india-bacne-chestne-guide/",
-      "pageType": "faq_support",
-      "title": "Body Acne in India: 2026 Guide to Clearing Bacne & Chestne | MyMirror",
-      "h1": "Body Acne in India: The Ultimate Guide to Clearing Bacne & Chestne (2026)",
-      "evidenceStrength": "high",
-      "matchReason": "URL and metadata matched the selected product/category cluster."
-    },
-    {
       "url": "https://mymirror.fit/acne/skincare-layering-guide/",
       "pageType": "guide_blog",
       "title": "The Chemistry of Clear Skin: How to Layer Acne Actives | MyMirror",
       "h1": "The Chemistry of Clear Skin: How to Layer Actives Without Stinging",
-      "evidenceStrength": "high",
-      "matchReason": "URL and metadata matched the selected product/category cluster."
-    },
-    {
-      "url": "https://mymirror.fit/acne/teenage-acne-india-parents-guide/",
-      "pageType": "faq_support",
-      "title": "Teenage Acne in India: 2026 Parent & Student Manual | MyMirror",
-      "h1": "Teenage Acne in India: The 2026 Parent & Student Manual",
       "evidenceStrength": "high",
       "matchReason": "URL and metadata matched the selected product/category cluster."
     },
@@ -122,58 +105,66 @@ User should select one page opportunity to generate next. V1 generates one publi
       "matchReason": "URL and metadata matched the selected product/category cluster."
     },
     {
-      "url": "https://mymirror.fit/acne/adapalene-differin-adaferin-gel-comparison-india/",
+      "url": "https://mymirror.fit/acne/salicylic-acid-face-wash-vs-serum/",
       "pageType": "comparison",
-      "title": "Adapalene Gel vs. Differin vs. Adaferin vs. Adalene Nano Gel: Uses, Price & How to Use in India 2026 | MyMirror",
-      "h1": "Adapalene Gel vs. Differin vs. Adaferin: Uses, Price & How to Use in India",
+      "title": "Salicylic Acid Face Wash vs. Serum: Which Formula Works Faster? | MyMirror",
+      "h1": "The Ultimate Showdown: Is Salicylic Acid Better as a Cleanser or a Serum?",
       "evidenceStrength": "high",
       "matchReason": "URL and metadata matched the selected product/category cluster."
     },
     {
-      "url": "https://mymirror.fit/acne/bacne-vs-fungal-acne-body-india/",
+      "url": "https://mymirror.fit/acne/salicylic-vs-benzoyl-peroxide-body-wash-india/",
       "pageType": "faq_support",
-      "title": "Is it Bacne or Fungal Acne? How to Tell the Difference | MyMirror",
-      "h1": "Bacne vs Fungal Acne",
+      "title": "Salicylic Acid vs. Benzoyl Peroxide Body Washes: Which is Better for Bacne? (2026) | MyMirror",
+      "h1": "Salicylic Acid vs. Benzoyl Peroxide Body Washes",
       "evidenceStrength": "high",
       "matchReason": "URL and metadata matched the selected product/category cluster."
     },
     {
-      "url": "https://mymirror.fit/acne/hormonal-acne-vs-oily-skin/",
+      "url": "https://mymirror.fit/acne/skin-purging-vs-breakout-india/",
+      "pageType": "faq_support",
+      "title": "Skin Purging vs. Breakout: How to Tell the Difference on Indian Skin (2026)",
+      "h1": "Skin Purging vs. Breakout: How to Tell the Difference on Indian Skin",
+      "evidenceStrength": "high",
+      "matchReason": "URL and metadata matched the selected product/category cluster."
+    },
+    {
+      "url": "https://mymirror.fit/acne/best-salicylic-acid-face-wash-india/",
       "pageType": "comparison",
-      "title": "Hormonal Acne or Just Oily Skin? The 2026 Face-Mapping Guide | MyMirror",
-      "h1": "Hormonal Acne or Just Oily Skin? The 2026 Face-Mapping Guide",
+      "title": "Best Salicylic Acid Face Wash in India: 1% vs 2% Cleansers Compared | MyMirror",
+      "h1": "Best Salicylic Acid Face Wash in India: 1% vs 2% Cleansers Compared",
       "evidenceStrength": "high",
       "matchReason": "URL and metadata matched the selected product/category cluster."
     },
     {
-      "url": "https://mymirror.fit/acne/jawline-acne-meaning-hormonal-vs-product/",
-      "pageType": "faq_support",
-      "title": "Jawline Acne Meaning: Is it Hormonal or Product-Induced? | MyMirror",
-      "h1": "Jawline Acne Meaning: Is it Hormonal or Product-Induced?",
+      "url": "https://mymirror.fit/acne/mixing-salicylic-acid-with-retinol-adapalene/",
+      "pageType": "guide_blog",
+      "title": "How to Mix Salicylic Acid with Retinol & Adapalene Safely | MyMirror",
+      "h1": "Can I Use Salicylic Acid With Retinol, Tretinoin, or Adapalene?",
       "evidenceStrength": "high",
       "matchReason": "URL and metadata matched the selected product/category cluster."
     },
     {
-      "url": "https://mymirror.fit/acne/microneedling-vs-chemical-peels-scars/",
-      "pageType": "faq_support",
-      "title": "Microneedling vs. Chemical Peels: Which is Best for Scars? | MyMirror",
-      "h1": "Microneedling vs. Chemical Peels",
+      "url": "https://mymirror.fit/acne/salicylic-acid-for-beginners/",
+      "pageType": "guide_blog",
+      "title": "Salicylic Acid for Beginners: The First-Timer's Guide to BHAs | MyMirror",
+      "h1": "Salicylic Acid for Beginners: How Often Should You Use It?",
       "evidenceStrength": "high",
       "matchReason": "URL and metadata matched the selected product/category cluster."
     },
     {
-      "url": "https://mymirror.fit/acne/mineral-vs-chemical-sunscreen-active-acne/",
+      "url": "https://mymirror.fit/acne/salicylic-acid-purging-timeline/",
       "pageType": "faq_support",
-      "title": "Mineral vs. Chemical Sunscreen for Acne: The 2026 Clinical Verdict | MyMirror",
-      "h1": "Mineral vs. Chemical Sunscreen for Acne: The 2026 Verdict",
+      "title": "Salicylic Acid (BHA) Purging Timeline: How Long Does the Purge Last?",
+      "h1": "Salicylic Acid (BHA) Purging Timeline: How Long Does the Purge Last?",
       "evidenceStrength": "high",
       "matchReason": "URL and metadata matched the selected product/category cluster."
     },
     {
-      "url": "https://mymirror.fit/acne/pie-vs-pih-indian-skin/",
-      "pageType": "faq_support",
-      "title": "PIE vs. PIH on Brown Skin: How to Treat Red Marks & Dark Spots (2026)",
-      "h1": "PIE vs. PIH on Brown Skin: How to Treat Red Marks & Dark Spots",
+      "url": "https://mymirror.fit/acne/science-of-clear-skin/",
+      "pageType": "guide_blog",
+      "title": "The Science of Clear Skin: A Clinical Guide to Managing Acne | MyMirror",
+      "h1": "The Science of Clear Skin: A Clinical Guide to Managing Acne",
       "evidenceStrength": "high",
       "matchReason": "URL and metadata matched the selected product/category cluster."
     }

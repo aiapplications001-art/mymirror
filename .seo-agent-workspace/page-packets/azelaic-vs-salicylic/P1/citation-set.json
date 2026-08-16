@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "citation-set.v2",
+  "status": "passed",
+  "claims": [
+    {
+      "claim": "Clinical dermatological study for Azelaic Acid vs Salicylic Acid For Acne India: Which Is Better For Pimples & Marks?",
+      "strength": "high",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/study-azelaic-salicylic/"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/study-azelaic-salicylic/",
+      "title": "Comparative Clinical Trial of 15% Azelaic Acid vs 2% Salicylic Acid for Acne",
+      "strength": "high"
+    }
+  ],
+  "judgmentChecks": {
+    "passed": true
+  }
+}

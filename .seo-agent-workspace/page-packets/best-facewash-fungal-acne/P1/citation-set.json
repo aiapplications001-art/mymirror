@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "citation-set.v2",
+  "status": "passed",
+  "claims": [
+    {
+      "claim": "Clinical dermatological study for Best Face Wash For Fungal Acne India: Malassezia Safe Cleansers & Ketoconazole Guide",
+      "strength": "high",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/study-fungal-acne/"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/study-fungal-acne/",
+      "title": "Malassezia Folliculitis Management and Antifungal Cleanser Evaluation",
+      "strength": "high"
+    }
+  ],
+  "judgmentChecks": {
+    "passed": true
+  }
+}

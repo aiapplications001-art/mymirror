@@ -15,7 +15,7 @@
 
 ## Authorship
 
-- Authored by: MyMirror Hyperpigmentation Board
+- Authored by: MyMirror Clinical Editorial Team
 - Reviewed by visibility: hidden
 - Created: 2026-08-16
 - Updated: 2026-08-16
@@ -38,30 +38,30 @@ Help users understand the category and route them toward the best product or dia
 
 Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds.
 
-<!-- SECTION_ID: S2_quick_answer -->
-## Quick Answer
+<!-- SECTION_ID: S2_quick_verdict -->
+## Quick Verdict
 
-Editable section scaffold for Quick Answer. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy.
+Editable section scaffold for Quick Verdict. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy.
 
-<!-- SECTION_ID: S3_problem_diagnosis -->
-## Problem Diagnosis
+<!-- SECTION_ID: S3_comparison_methodology -->
+## Comparison Methodology
 
-Editable section scaffold for Problem Diagnosis. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy.
+Editable section scaffold for Comparison Methodology. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy.
 
-<!-- SECTION_ID: S4_selection_criteria -->
-## Selection Criteria
+<!-- SECTION_ID: S4_decision_criteria -->
+## Decision Criteria
 
-Editable section scaffold for Selection Criteria. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy.
+Editable section scaffold for Decision Criteria. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy.
 
-<!-- SECTION_ID: S5_solution_mapping -->
-## Solution Mapping
+<!-- SECTION_ID: S5_side_by_side_matrix -->
+## Side By Side Matrix
 
-Editable section scaffold for Solution Mapping. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy.
+Editable section scaffold for Side By Side Matrix. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy.
 
-<!-- SECTION_ID: S6_common_mistakes -->
-## Common Mistakes
+<!-- SECTION_ID: S6_reader_fit_tradeoffs -->
+## Reader Fit Tradeoffs
 
-Editable section scaffold for Common Mistakes. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy.
+Editable section scaffold for Reader Fit Tradeoffs. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy.
 
 <!-- SECTION_ID: S7_trust_proof -->
 ## Trust Proof
@@ -102,9 +102,9 @@ Add reference URLs, source labels, and access dates after live search and editor
 | --- | --- | --- | --- | --- |
 | IMG_OG | reserved | Open Graph image for social and search previews. | 1.91:1 | reserved |
 | IMG_HERO | S1_hero | Mandatory hero visual for the first fold. | 16:9 | brief_needed |
-| IMG_02 | S2_quick_answer | High-impact visual support for S2_quick_answer. | 4:3 | brief_needed |
-| IMG_03 | S3_problem_diagnosis | High-impact visual support for S3_problem_diagnosis. | 4:3 | brief_needed |
-| IMG_04 | S4_selection_criteria | High-impact visual support for S4_selection_criteria. | 4:3 | brief_needed |
+| IMG_02 | S2_quick_verdict | High-impact visual support for S2_quick_verdict. | 4:3 | brief_needed |
+| IMG_03 | S3_comparison_methodology | High-impact visual support for S3_comparison_methodology. | 4:3 | brief_needed |
+| IMG_04 | S4_decision_criteria | High-impact visual support for S4_decision_criteria. | 4:3 | brief_needed |
 
 ## JSON-LD Drafts
 
@@ -177,7 +177,7 @@ Add reference URLs, source labels, and access dates after live search and editor
   },
   "authorship": {
     "author": {
-      "name": "MyMirror Hyperpigmentation Board"
+      "name": "MyMirror Clinical Editorial Team"
     },
     "reviewedByVisible": false
   },
@@ -209,34 +209,34 @@ Add reference URLs, source labels, and access dates after live search and editor
       "markdown": "# pimple-marks-removal-cream Category Page\n\nHelp users understand the category and route them toward the best product or diagnostic action.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
     },
     {
-      "id": "S2_quick_answer",
-      "heading": "Quick Answer",
+      "id": "S2_quick_verdict",
+      "heading": "Quick Verdict",
       "role": "seo",
-      "markdown": "Editable section scaffold for Quick Answer. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      "markdown": "Editable section scaffold for Quick Verdict. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
     },
     {
-      "id": "S3_problem_diagnosis",
-      "heading": "Problem Diagnosis",
+      "id": "S3_comparison_methodology",
+      "heading": "Comparison Methodology",
+      "role": "trust",
+      "markdown": "Editable section scaffold for Comparison Methodology. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S4_decision_criteria",
+      "heading": "Decision Criteria",
       "role": "ux",
-      "markdown": "Editable section scaffold for Problem Diagnosis. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      "markdown": "Editable section scaffold for Decision Criteria. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
     },
     {
-      "id": "S4_selection_criteria",
-      "heading": "Selection Criteria",
+      "id": "S5_side_by_side_matrix",
+      "heading": "Side By Side Matrix",
       "role": "seo",
-      "markdown": "Editable section scaffold for Selection Criteria. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      "markdown": "Editable section scaffold for Side By Side Matrix. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
     },
     {
-      "id": "S5_solution_mapping",
-      "heading": "Solution Mapping",
-      "role": "conversion",
-      "markdown": "Editable section scaffold for Solution Mapping. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-    },
-    {
-      "id": "S6_common_mistakes",
-      "heading": "Common Mistakes",
+      "id": "S6_reader_fit_tradeoffs",
+      "heading": "Reader Fit Tradeoffs",
       "role": "ux",
-      "markdown": "Editable section scaffold for Common Mistakes. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      "markdown": "Editable section scaffold for Reader Fit Tradeoffs. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
     },
     {
       "id": "S7_trust_proof",
@@ -285,26 +285,26 @@ Add reference URLs, source labels, and access dates after live search and editor
     },
     {
       "id": "IMG_02",
-      "sectionId": "S2_quick_answer",
-      "purpose": "High-impact visual support for S2_quick_answer.",
+      "sectionId": "S2_quick_verdict",
+      "purpose": "High-impact visual support for S2_quick_verdict.",
       "aspectRatio": "4:3",
-      "altText": "pimple-marks-removal-cream quick answer visual",
+      "altText": "pimple-marks-removal-cream quick verdict visual",
       "status": "brief_needed"
     },
     {
       "id": "IMG_03",
-      "sectionId": "S3_problem_diagnosis",
-      "purpose": "High-impact visual support for S3_problem_diagnosis.",
+      "sectionId": "S3_comparison_methodology",
+      "purpose": "High-impact visual support for S3_comparison_methodology.",
       "aspectRatio": "4:3",
-      "altText": "pimple-marks-removal-cream problem diagnosis visual",
+      "altText": "pimple-marks-removal-cream comparison methodology visual",
       "status": "brief_needed"
     },
     {
       "id": "IMG_04",
-      "sectionId": "S4_selection_criteria",
-      "purpose": "High-impact visual support for S4_selection_criteria.",
+      "sectionId": "S4_decision_criteria",
+      "purpose": "High-impact visual support for S4_decision_criteria.",
       "aspectRatio": "4:3",
-      "altText": "pimple-marks-removal-cream selection criteria visual",
+      "altText": "pimple-marks-removal-cream decision criteria visual",
       "status": "brief_needed"
     }
   ],
@@ -357,34 +357,34 @@ Add reference URLs, source labels, and access dates after live search and editor
         "markdown": "# pimple-marks-removal-cream Category Page\n\nHelp users understand the category and route them toward the best product or diagnostic action.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
       },
       {
-        "id": "S2_quick_answer",
-        "heading": "Quick Answer",
+        "id": "S2_quick_verdict",
+        "heading": "Quick Verdict",
         "role": "seo",
-        "markdown": "Editable section scaffold for Quick Answer. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+        "markdown": "Editable section scaffold for Quick Verdict. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
       },
       {
-        "id": "S3_problem_diagnosis",
-        "heading": "Problem Diagnosis",
+        "id": "S3_comparison_methodology",
+        "heading": "Comparison Methodology",
+        "role": "trust",
+        "markdown": "Editable section scaffold for Comparison Methodology. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S4_decision_criteria",
+        "heading": "Decision Criteria",
         "role": "ux",
-        "markdown": "Editable section scaffold for Problem Diagnosis. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+        "markdown": "Editable section scaffold for Decision Criteria. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
       },
       {
-        "id": "S4_selection_criteria",
-        "heading": "Selection Criteria",
+        "id": "S5_side_by_side_matrix",
+        "heading": "Side By Side Matrix",
         "role": "seo",
-        "markdown": "Editable section scaffold for Selection Criteria. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+        "markdown": "Editable section scaffold for Side By Side Matrix. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
       },
       {
-        "id": "S5_solution_mapping",
-        "heading": "Solution Mapping",
-        "role": "conversion",
-        "markdown": "Editable section scaffold for Solution Mapping. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-      },
-      {
-        "id": "S6_common_mistakes",
-        "heading": "Common Mistakes",
+        "id": "S6_reader_fit_tradeoffs",
+        "heading": "Reader Fit Tradeoffs",
         "role": "ux",
-        "markdown": "Editable section scaffold for Common Mistakes. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+        "markdown": "Editable section scaffold for Reader Fit Tradeoffs. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
       },
       {
         "id": "S7_trust_proof",
@@ -429,26 +429,26 @@ Add reference URLs, source labels, and access dates after live search and editor
       },
       {
         "id": "IMG_02",
-        "sectionId": "S2_quick_answer",
-        "purpose": "High-impact visual support for S2_quick_answer.",
+        "sectionId": "S2_quick_verdict",
+        "purpose": "High-impact visual support for S2_quick_verdict.",
         "aspectRatio": "4:3",
-        "altText": "pimple-marks-removal-cream quick answer visual",
+        "altText": "pimple-marks-removal-cream quick verdict visual",
         "status": "brief_needed"
       },
       {
         "id": "IMG_03",
-        "sectionId": "S3_problem_diagnosis",
-        "purpose": "High-impact visual support for S3_problem_diagnosis.",
+        "sectionId": "S3_comparison_methodology",
+        "purpose": "High-impact visual support for S3_comparison_methodology.",
         "aspectRatio": "4:3",
-        "altText": "pimple-marks-removal-cream problem diagnosis visual",
+        "altText": "pimple-marks-removal-cream comparison methodology visual",
         "status": "brief_needed"
       },
       {
         "id": "IMG_04",
-        "sectionId": "S4_selection_criteria",
-        "purpose": "High-impact visual support for S4_selection_criteria.",
+        "sectionId": "S4_decision_criteria",
+        "purpose": "High-impact visual support for S4_decision_criteria.",
         "aspectRatio": "4:3",
-        "altText": "pimple-marks-removal-cream selection criteria visual",
+        "altText": "pimple-marks-removal-cream decision criteria visual",
         "status": "brief_needed"
       }
     ],

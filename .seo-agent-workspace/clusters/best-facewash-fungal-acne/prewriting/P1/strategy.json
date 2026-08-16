@@ -31,9 +31,9 @@
   "keywords": {
     "secondary": [],
     "clusterSeeds": [
-      "best facewash for fungal acne india",
-      "ketoconazole 2% face wash india",
-      "malassezia safe cleansers india"
+      "azelaic acid vs salicylic acid for acne india",
+      "15% azelaic acid gel india",
+      "salicylic acid serum acne marks"
     ]
   },
   "contentDepth": {
@@ -49,20 +49,20 @@
     }
   },
   "pageStructure": {
-    "intentPattern": "best_list",
-    "structureVariant": "ranked_shortlist",
+    "intentPattern": "comparison",
+    "structureVariant": "comparison_matrix",
     "inference": {
       "confidence": "medium",
       "signals": [
-        "best-list title/slug language"
+        "comparison language"
       ],
-      "notes": "Best-list intent needs ranking criteria and best-fit recommendations."
+      "notes": "Comparison intent needs methodology, criteria, and tradeoff structure."
     },
     "researchBasis": [
       "selected page title, slug, target intent, page type, and strategy category",
       "live SERP, PAA, social/video, competitor-gap, and audience-language research must refine this before final copy"
     ],
-    "structureUniquenessRationale": "ranked_shortlist is the starting structure because the selected opportunity signals best_list intent. The adapter must revise the section sequence, decision tools, FAQs, troubleshooting blocks, tables, superiority components, and CTA placement when current-page research shows different sub-intents or gaps, and must not reuse a structure from another page, batch, or historical run.",
+    "structureUniquenessRationale": "comparison_matrix is the starting structure because the selected opportunity signals comparison intent. The adapter must revise the section sequence, decision tools, FAQs, troubleshooting blocks, tables, superiority components, and CTA placement when current-page research shows different sub-intents or gaps, and must not reuse a structure from another page, batch, or historical run.",
     "mustDifferFromPages": [],
     "sections": [
       {
@@ -85,110 +85,109 @@
           "minimumCitedClaims": 0,
           "minimumConcreteExamples": 1
         },
-        "notes": "State the shortlist promise and make the CTA secondary to useful selection help. Primary actionable must be visible in the first fold on desktop and mobile."
+        "notes": "State the comparison promise and primary CTA without declaring a winner before evidence. Primary actionable must be visible in the first fold on desktop and mobile."
       },
       {
-        "id": "S2_quick_picks",
-        "purpose": "Give quick best picks by use case before the full ranking.",
+        "id": "S2_quick_verdict",
+        "purpose": "Give a short, qualified verdict for the main comparison intent.",
         "contentRole": "seo",
-        "sectionIntent": "quick picks",
+        "sectionIntent": "quick comparison verdict",
         "evidenceNeeded": [
-          "pick",
-          "use case",
-          "rationale"
+          "verdict condition",
+          "reader scenario",
+          "comparison caveat"
         ],
         "requiredDevices": [
-          "quick-picks table"
-        ],
-        "evidenceBudget": {
-          "minimumFacts": 4,
-          "minimumCitedClaims": 2,
-          "minimumConcreteExamples": 3
-        },
-        "notes": "Every pick needs a clear best-for condition."
-      },
-      {
-        "id": "S3_selection_methodology",
-        "purpose": "Explain ranking criteria and evidence rules.",
-        "contentRole": "trust",
-        "sectionIntent": "selection methodology",
-        "evidenceNeeded": [
-          "ranking criteria",
-          "evidence rule",
-          "exclusion rule"
-        ],
-        "requiredDevices": [
-          "methodology note",
-          "criteria rubric"
-        ],
-        "evidenceBudget": {
-          "minimumFacts": 4,
-          "minimumCitedClaims": 2,
-          "minimumConcreteExamples": 1
-        },
-        "notes": "Make the ranking method transparent enough to avoid a thin listicle."
-      },
-      {
-        "id": "S4_ranked_recommendations",
-        "purpose": "Present ranked recommendations with evidence and tradeoffs.",
-        "contentRole": "seo",
-        "sectionIntent": "ranked recommendations",
-        "evidenceNeeded": [
-          "recommendation fact",
-          "tradeoff",
-          "reader fit"
-        ],
-        "requiredDevices": [
-          "ranked list",
-          "best-for/avoid-if blocks"
-        ],
-        "evidenceBudget": {
-          "minimumFacts": 6,
-          "minimumCitedClaims": 3,
-          "minimumConcreteExamples": 3
-        },
-        "notes": "Each recommendation needs evidence, not just a superlative."
-      },
-      {
-        "id": "S5_comparison_table",
-        "purpose": "Compare shortlisted options across the most important criteria.",
-        "contentRole": "ux",
-        "sectionIntent": "shortlist comparison",
-        "evidenceNeeded": [
-          "criteria value",
-          "decision contrast",
-          "reader scenario"
-        ],
-        "requiredDevices": [
-          "comparison table"
-        ],
-        "evidenceBudget": {
-          "minimumFacts": 4,
-          "minimumCitedClaims": 2,
-          "minimumConcreteExamples": 1
-        },
-        "notes": "Use this to help readers choose between top picks."
-      },
-      {
-        "id": "S6_how_to_choose",
-        "purpose": "Turn the shortlist into a decision path.",
-        "contentRole": "conversion",
-        "sectionIntent": "choice guidance",
-        "evidenceNeeded": [
-          "decision rule",
-          "scenario",
-          "CTA rationale"
-        ],
-        "requiredDevices": [
-          "decision tree",
-          "contextual CTA"
+          "best-for/avoid-if callout"
         ],
         "evidenceBudget": {
           "minimumFacts": 3,
           "minimumCitedClaims": 1,
           "minimumConcreteExamples": 2
         },
-        "notes": "End with a practical path, not another summary."
+        "notes": "Use a qualified verdict, not a universal winner."
+      },
+      {
+        "id": "S3_comparison_methodology",
+        "purpose": "Explain how options are compared and what evidence is allowed.",
+        "contentRole": "trust",
+        "sectionIntent": "comparison methodology",
+        "evidenceNeeded": [
+          "methodology",
+          "evaluation scope",
+          "fairness caveat"
+        ],
+        "requiredDevices": [
+          "methodology note",
+          "scoring rubric"
+        ],
+        "evidenceBudget": {
+          "minimumFacts": 3,
+          "minimumCitedClaims": 2,
+          "minimumConcreteExamples": 1
+        },
+        "notes": "Include a concise comparison methodology and qualitative labels unless numeric scoring is explicitly requested."
+      },
+      {
+        "id": "S4_decision_criteria",
+        "purpose": "Define the criteria readers should use before reading the matrix.",
+        "contentRole": "ux",
+        "sectionIntent": "decision criteria",
+        "evidenceNeeded": [
+          "criteria",
+          "why it matters",
+          "reader use case"
+        ],
+        "requiredDevices": [
+          "criteria checklist"
+        ],
+        "evidenceBudget": {
+          "minimumFacts": 4,
+          "minimumCitedClaims": 2,
+          "minimumConcreteExamples": 1
+        },
+        "notes": "Make each criterion actionable and tied to the search intent."
+      },
+      {
+        "id": "S5_side_by_side_matrix",
+        "purpose": "Compare options side by side against the stated criteria.",
+        "contentRole": "seo",
+        "sectionIntent": "side-by-side evaluation",
+        "evidenceNeeded": [
+          "option-specific facts",
+          "tradeoff",
+          "citation-backed claim"
+        ],
+        "requiredDevices": [
+          "side-by-side comparison matrix"
+        ],
+        "evidenceBudget": {
+          "minimumFacts": 5,
+          "minimumCitedClaims": 3,
+          "minimumConcreteExamples": 2
+        },
+        "notes": "Matrix cells must be specific; avoid generic good/better/best language."
+      },
+      {
+        "id": "S6_reader_fit_tradeoffs",
+        "purpose": "Explain who each option is and is not for.",
+        "contentRole": "ux",
+        "sectionIntent": "reader-fit tradeoffs",
+        "evidenceNeeded": [
+          "best-fit scenario",
+          "avoid-if scenario",
+          "switching consideration"
+        ],
+        "requiredDevices": [
+          "best-for/avoid-if blocks",
+          "reader scenarios"
+        ],
+        "evidenceBudget": {
+          "minimumFacts": 4,
+          "minimumCitedClaims": 2,
+          "minimumConcreteExamples": 2
+        },
+        "notes": "Spell out tradeoffs by reader need, not just feature lists."
       },
       {
         "id": "S7_trust_proof",
@@ -319,7 +318,13 @@
         "risk": "medium"
       }
     ],
-    "critical": []
+    "critical": [
+      {
+        "item": "Competitor or external brand mentions",
+        "reason": "Comparison pages may mention competitors or external products and require explicit approval before inclusion.",
+        "risk": "critical"
+      }
+    ]
   },
   "evidenceNotes": [
     {

@@ -21,7 +21,7 @@
   },
   "authorship": {
     "author": {
-      "name": "MyMirror Fungal Acne Research Panel"
+      "name": "MyMirror Clinical Editorial Team"
     },
     "reviewedByVisible": false
   },
@@ -53,34 +53,34 @@
       "markdown": "# best-facewash-fungal-acne Category Page\n\nHelp users understand the category and route them toward the best product or diagnostic action.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
     },
     {
-      "id": "S2_quick_picks",
-      "heading": "Quick Picks",
+      "id": "S2_quick_verdict",
+      "heading": "Quick Verdict",
       "role": "seo",
-      "markdown": "Editable section scaffold for Quick Picks. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      "markdown": "Editable section scaffold for Quick Verdict. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
     },
     {
-      "id": "S3_selection_methodology",
-      "heading": "Selection Methodology",
+      "id": "S3_comparison_methodology",
+      "heading": "Comparison Methodology",
       "role": "trust",
-      "markdown": "Editable section scaffold for Selection Methodology. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      "markdown": "Editable section scaffold for Comparison Methodology. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
     },
     {
-      "id": "S4_ranked_recommendations",
-      "heading": "Ranked Recommendations",
-      "role": "seo",
-      "markdown": "Editable section scaffold for Ranked Recommendations. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-    },
-    {
-      "id": "S5_comparison_table",
-      "heading": "Comparison Table",
+      "id": "S4_decision_criteria",
+      "heading": "Decision Criteria",
       "role": "ux",
-      "markdown": "Editable section scaffold for Comparison Table. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      "markdown": "Editable section scaffold for Decision Criteria. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
     },
     {
-      "id": "S6_how_to_choose",
-      "heading": "How To Choose",
-      "role": "conversion",
-      "markdown": "Editable section scaffold for How To Choose. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      "id": "S5_side_by_side_matrix",
+      "heading": "Side By Side Matrix",
+      "role": "seo",
+      "markdown": "Editable section scaffold for Side By Side Matrix. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+    },
+    {
+      "id": "S6_reader_fit_tradeoffs",
+      "heading": "Reader Fit Tradeoffs",
+      "role": "ux",
+      "markdown": "Editable section scaffold for Reader Fit Tradeoffs. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
     },
     {
       "id": "S7_trust_proof",
@@ -129,26 +129,26 @@
     },
     {
       "id": "IMG_02",
-      "sectionId": "S2_quick_picks",
-      "purpose": "High-impact visual support for S2_quick_picks.",
+      "sectionId": "S2_quick_verdict",
+      "purpose": "High-impact visual support for S2_quick_verdict.",
       "aspectRatio": "4:3",
-      "altText": "best-facewash-fungal-acne quick picks visual",
+      "altText": "best-facewash-fungal-acne quick verdict visual",
       "status": "brief_needed"
     },
     {
       "id": "IMG_03",
-      "sectionId": "S3_selection_methodology",
-      "purpose": "High-impact visual support for S3_selection_methodology.",
+      "sectionId": "S3_comparison_methodology",
+      "purpose": "High-impact visual support for S3_comparison_methodology.",
       "aspectRatio": "4:3",
-      "altText": "best-facewash-fungal-acne selection methodology visual",
+      "altText": "best-facewash-fungal-acne comparison methodology visual",
       "status": "brief_needed"
     },
     {
       "id": "IMG_04",
-      "sectionId": "S4_ranked_recommendations",
-      "purpose": "High-impact visual support for S4_ranked_recommendations.",
+      "sectionId": "S4_decision_criteria",
+      "purpose": "High-impact visual support for S4_decision_criteria.",
       "aspectRatio": "4:3",
-      "altText": "best-facewash-fungal-acne ranked recommendations visual",
+      "altText": "best-facewash-fungal-acne decision criteria visual",
       "status": "brief_needed"
     }
   ],
@@ -201,34 +201,34 @@
         "markdown": "# best-facewash-fungal-acne Category Page\n\nHelp users understand the category and route them toward the best product or diagnostic action.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
       },
       {
-        "id": "S2_quick_picks",
-        "heading": "Quick Picks",
+        "id": "S2_quick_verdict",
+        "heading": "Quick Verdict",
         "role": "seo",
-        "markdown": "Editable section scaffold for Quick Picks. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+        "markdown": "Editable section scaffold for Quick Verdict. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
       },
       {
-        "id": "S3_selection_methodology",
-        "heading": "Selection Methodology",
+        "id": "S3_comparison_methodology",
+        "heading": "Comparison Methodology",
         "role": "trust",
-        "markdown": "Editable section scaffold for Selection Methodology. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+        "markdown": "Editable section scaffold for Comparison Methodology. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
       },
       {
-        "id": "S4_ranked_recommendations",
-        "heading": "Ranked Recommendations",
-        "role": "seo",
-        "markdown": "Editable section scaffold for Ranked Recommendations. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-      },
-      {
-        "id": "S5_comparison_table",
-        "heading": "Comparison Table",
+        "id": "S4_decision_criteria",
+        "heading": "Decision Criteria",
         "role": "ux",
-        "markdown": "Editable section scaffold for Comparison Table. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+        "markdown": "Editable section scaffold for Decision Criteria. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
       },
       {
-        "id": "S6_how_to_choose",
-        "heading": "How To Choose",
-        "role": "conversion",
-        "markdown": "Editable section scaffold for How To Choose. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+        "id": "S5_side_by_side_matrix",
+        "heading": "Side By Side Matrix",
+        "role": "seo",
+        "markdown": "Editable section scaffold for Side By Side Matrix. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
+      },
+      {
+        "id": "S6_reader_fit_tradeoffs",
+        "heading": "Reader Fit Tradeoffs",
+        "role": "ux",
+        "markdown": "Editable section scaffold for Reader Fit Tradeoffs. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
       },
       {
         "id": "S7_trust_proof",
@@ -273,26 +273,26 @@
       },
       {
         "id": "IMG_02",
-        "sectionId": "S2_quick_picks",
-        "purpose": "High-impact visual support for S2_quick_picks.",
+        "sectionId": "S2_quick_verdict",
+        "purpose": "High-impact visual support for S2_quick_verdict.",
         "aspectRatio": "4:3",
-        "altText": "best-facewash-fungal-acne quick picks visual",
+        "altText": "best-facewash-fungal-acne quick verdict visual",
         "status": "brief_needed"
       },
       {
         "id": "IMG_03",
-        "sectionId": "S3_selection_methodology",
-        "purpose": "High-impact visual support for S3_selection_methodology.",
+        "sectionId": "S3_comparison_methodology",
+        "purpose": "High-impact visual support for S3_comparison_methodology.",
         "aspectRatio": "4:3",
-        "altText": "best-facewash-fungal-acne selection methodology visual",
+        "altText": "best-facewash-fungal-acne comparison methodology visual",
         "status": "brief_needed"
       },
       {
         "id": "IMG_04",
-        "sectionId": "S4_ranked_recommendations",
-        "purpose": "High-impact visual support for S4_ranked_recommendations.",
+        "sectionId": "S4_decision_criteria",
+        "purpose": "High-impact visual support for S4_decision_criteria.",
         "aspectRatio": "4:3",
-        "altText": "best-facewash-fungal-acne ranked recommendations visual",
+        "altText": "best-facewash-fungal-acne decision criteria visual",
         "status": "brief_needed"
       }
     ],

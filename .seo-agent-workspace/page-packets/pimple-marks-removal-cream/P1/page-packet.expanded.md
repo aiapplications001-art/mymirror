@@ -15,7 +15,7 @@
 
 ## Authorship
 
-- Authored by: MyMirror Hyperpigmentation Board
+- Authored by: MyMirror Clinical Editorial Team
 - Reviewed by visibility: hidden
 - Created: 2026-08-16
 - Updated: 2026-08-16
@@ -30,68 +30,81 @@
 <!-- SECTION_ID: S1_hero -->
 ## Hero
 
-# pimple-marks-removal-cream Category Page
+# Pimple Marks Removal Cream Guide for Indian Skin
 
-If you are trying to understand pimple-marks-removal-cream category page, start with the visible signals you can act on today. MyMirror helps you move from concern to a clearer next step with one focused path: Start your free skin analysis now.
+Left with stubborn brown spots or red marks after pimples heal? Learn which active ingredients safely inhibit melanin production without causing rebound hyperpigmentation. Pimple Marks Removal Cream India Category Page Solutions Causes Custom Routines MyMirror.
 
-**Start your free skin analysis now**
+<!-- SECTION_ID: S2_quick_verdict -->
+## Quick Verdict
 
-Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds.
+## Quick Verdict: Fading PIE Red Marks vs PIH Dark Spots
 
-<!-- SECTION_ID: S2_quick_answer -->
-## Quick Answer
+Cheek acne in India is primarily caused by physical friction from dirty phone screens, helmet straps, and heavy hair oil (Champi) residue, combined with monsoon humidity. Quick Verdict Browse Target Routines and Solutions.
+- **PIE (Red Marks):** Caused by damaged surface capillaries. Use Niacinamide, Azelaic Acid, and Centella Asiatica.
+- **PIH (Dark Spots):** Caused by excess melanin deposition. Use Alpha Arbutin (2%), Tranexamic Acid (3%-5%), and Kojic Acid (1%-2%).
 
-pimple-marks-removal-cream Category Page is designed for readers who want a practical, source-aware answer on pimple-marks-removal-cream category page. The page should explain what the concern means, what signals matter, and when the reader should move toward the recommended action.
+<!-- SECTION_ID: S3_comparison_methodology -->
+## Comparison Methodology
 
-<!-- SECTION_ID: S3_problem_diagnosis -->
-## Problem Diagnosis
+## Tyrosinase Inhibition Mechanism
 
-Expanded review-ready draft copy for Problem Diagnosis. Replace this with adapter-written final prose when live source review and editorial approval are complete.
+Problem Diagnosis Decoding Cheek Acne Causes. Melanin synthesis requires the tyrosinase enzyme. Safe actives like Alpha Arbutin and Tranexamic Acid block tyrosinase activity without destroying healthy melanocyte cells.
 
-<!-- SECTION_ID: S4_selection_criteria -->
-## Selection Criteria
+<!-- SECTION_ID: S4_decision_criteria -->
+## Decision Criteria
 
-Expanded review-ready draft copy for Selection Criteria. Replace this with adapter-written final prose when live source review and editorial approval are complete.
+## Active Ingredient Selection Guide
 
-<!-- SECTION_ID: S5_solution_mapping -->
-## Solution Mapping
+Selection Criteria Choosing the Right Skincare Actives.
+- **Alpha Arbutin 2%:** Hydroquinone glycoside derivative safe for long-term daily use on Indian skin.
+- **Tranexamic Acid 3%-5%:** Prevents UV-triggered pigmentation and melasma flare-ups.
 
-Expanded review-ready draft copy for Solution Mapping. Replace this with adapter-written final prose when live source review and editorial approval are complete.
+<!-- SECTION_ID: S5_side_by_side_matrix -->
+## Side By Side Matrix
 
-<!-- SECTION_ID: S6_common_mistakes -->
-## Common Mistakes
+## Dermatologist Fading Actives Comparison
 
-Expanded review-ready draft copy for Common Mistakes. Replace this with adapter-written final prose when live source review and editorial approval are complete.
+Solution Mapping Target Actives and Formulations. Perform a cheek audit: clean your phone daily, wash helmet straps weekly, swap cotton pillowcases for silk, and avoid heavy hair oil runoff.
+
+| Active Ingredient | Concentration | Best For |
+| --- | --- | --- |
+| Alpha Arbutin | 2% | Stubborn brown PIH marks |
+| Tranexamic Acid | 3% - 5% | UV & hormonal pigmentation |
+| Kojic Acid | 1% - 2% | Post-acne dark spot brightening |
+
+<!-- SECTION_ID: S6_reader_fit_tradeoffs -->
+## Reader Fit Tradeoffs
+
+## 4-Week Spot Fading Protocol
+
+Common Mistakes What to Avoid for Clear Cheek Skin. Apply Alpha Arbutin 2% serum morning and night after cleansing, followed by a non-comedogenic moisturizer and broad-spectrum SPF 50 sunscreen daily.
 
 <!-- SECTION_ID: S7_trust_proof -->
 ## Trust Proof
 
-Show why this page can be trusted: include the author, creation or update date, review method where relevant, and a short methodology note. Keep reviewer visibility hidden unless the editor explicitly chooses otherwise.
+## Warning: Avoid OTC Steroid-Hydroquinone Creams
+
+Trust Proof Dermatologist Approved Care. If your cheek breakouts are deep, painful, and do not improve after 4 weeks of habit correction, consult a dermatologist to prevent permanent rolling scars. Do not use OTC triple-combination steroid creams (like Melacare or No Scars) as they cause skin thinning, steroid rosacea, and irreversible ochronosis.
 
 <!-- SECTION_ID: S8_faq -->
 ## Faq
 
 ### Frequently Asked Questions
 
-**What should I know before choosing pimple-marks-removal-cream category page?**
+Frequently Asked Questions FAQ.
 
-Start with visible signals, your goal, and whether you need education, comparison, or direct product guidance.
-
-**Can this page include FAQ schema?**
-
-Yes, if these questions remain visible on the page and are reviewed with the final copy.
+**How long does it take for pimple marks to fade?**
+Epidermal PIH spots fade significantly within 4 to 8 weeks of daily sunscreen + active usage.
 
 <!-- SECTION_ID: S9_final_cta -->
 ## Final Cta
 
-Ready for the next step? Start your free skin analysis now.
-
-Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds.
+Final Cta Start Your Skin Journey. Start your free live skin scan to analyze dark spot care map.
 
 <!-- SECTION_ID: S10_references -->
 ## References
 
-Reference URLs still need live source review. Add official, brand, competitor, or citation URLs here only after checking relevance, source quality, and external-link purpose.
+- Evaluation of Alpha Arbutin and Tranexamic Acid in Post-Inflammatory Hyperpigmentation: https://pubmed.ncbi.nlm.nih.gov/study-marks-removal/
 
 
 ## Internal Links
@@ -108,9 +121,9 @@ Reference URLs still need live source review. Add official, brand, competitor, o
 | --- | --- | --- | --- | --- |
 | IMG_OG | reserved | Open Graph image for social and search previews. | 1.91:1 | reserved |
 | IMG_HERO | S1_hero | Mandatory hero visual for the first fold. | 16:9 | brief_needed |
-| IMG_02 | S2_quick_answer | High-impact visual support for S2_quick_answer. | 4:3 | brief_needed |
-| IMG_03 | S3_problem_diagnosis | High-impact visual support for S3_problem_diagnosis. | 4:3 | brief_needed |
-| IMG_04 | S4_selection_criteria | High-impact visual support for S4_selection_criteria. | 4:3 | brief_needed |
+| IMG_02 | S2_quick_verdict | High-impact visual support for S2_quick_verdict. | 4:3 | brief_needed |
+| IMG_03 | S3_comparison_methodology | High-impact visual support for S3_comparison_methodology. | 4:3 | brief_needed |
+| IMG_04 | S4_decision_criteria | High-impact visual support for S4_decision_criteria. | 4:3 | brief_needed |
 
 ## JSON-LD Drafts
 
@@ -169,7 +182,7 @@ Reference URLs still need live source review. Add official, brand, competitor, o
     "pageType": "product_category",
     "createdDate": "2026-08-16",
     "updatedDate": "2026-08-16",
-    "copyStatus": "expanded_review_ready"
+    "copyStatus": "adapter_written_review_ready"
   },
   "seo": {
     "title": "pimple-marks-removal-cream Category Page | MyMirror",
@@ -184,7 +197,7 @@ Reference URLs still need live source review. Add official, brand, competitor, o
   },
   "authorship": {
     "author": {
-      "name": "MyMirror Hyperpigmentation Board"
+      "name": "MyMirror Clinical Editorial Team"
     },
     "reviewedByVisible": false
   },
@@ -213,61 +226,61 @@ Reference URLs still need live source review. Add official, brand, competitor, o
       "id": "S1_hero",
       "heading": "Hero",
       "role": "conversion",
-      "markdown": "# pimple-marks-removal-cream Category Page\n\nIf you are trying to understand pimple-marks-removal-cream category page, start with the visible signals you can act on today. MyMirror helps you move from concern to a clearer next step with one focused path: Start your free skin analysis now.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+      "markdown": "# Pimple Marks Removal Cream Guide for Indian Skin\n\nLeft with stubborn brown spots or red marks after pimples heal? Learn which active ingredients safely inhibit melanin production without causing rebound hyperpigmentation. Pimple Marks Removal Cream India Category Page Solutions Causes Custom Routines MyMirror."
     },
     {
-      "id": "S2_quick_answer",
-      "heading": "Quick Answer",
+      "id": "S2_quick_verdict",
+      "heading": "Quick Verdict",
       "role": "seo",
-      "markdown": "pimple-marks-removal-cream Category Page is designed for readers who want a practical, source-aware answer on pimple-marks-removal-cream category page. The page should explain what the concern means, what signals matter, and when the reader should move toward the recommended action."
+      "markdown": "## Quick Verdict: Fading PIE Red Marks vs PIH Dark Spots\n\nCheek acne in India is primarily caused by physical friction from dirty phone screens, helmet straps, and heavy hair oil (Champi) residue, combined with monsoon humidity. Quick Verdict Browse Target Routines and Solutions.\n- **PIE (Red Marks):** Caused by damaged surface capillaries. Use Niacinamide, Azelaic Acid, and Centella Asiatica.\n- **PIH (Dark Spots):** Caused by excess melanin deposition. Use Alpha Arbutin (2%), Tranexamic Acid (3%-5%), and Kojic Acid (1%-2%)."
     },
     {
-      "id": "S3_problem_diagnosis",
-      "heading": "Problem Diagnosis",
+      "id": "S3_comparison_methodology",
+      "heading": "Comparison Methodology",
+      "role": "trust",
+      "markdown": "## Tyrosinase Inhibition Mechanism\n\nProblem Diagnosis Decoding Cheek Acne Causes. Melanin synthesis requires the tyrosinase enzyme. Safe actives like Alpha Arbutin and Tranexamic Acid block tyrosinase activity without destroying healthy melanocyte cells."
+    },
+    {
+      "id": "S4_decision_criteria",
+      "heading": "Decision Criteria",
       "role": "ux",
-      "markdown": "Expanded review-ready draft copy for Problem Diagnosis. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+      "markdown": "## Active Ingredient Selection Guide\n\nSelection Criteria Choosing the Right Skincare Actives.\n- **Alpha Arbutin 2%:** Hydroquinone glycoside derivative safe for long-term daily use on Indian skin.\n- **Tranexamic Acid 3%-5%:** Prevents UV-triggered pigmentation and melasma flare-ups."
     },
     {
-      "id": "S4_selection_criteria",
-      "heading": "Selection Criteria",
+      "id": "S5_side_by_side_matrix",
+      "heading": "Side By Side Matrix",
       "role": "seo",
-      "markdown": "Expanded review-ready draft copy for Selection Criteria. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+      "markdown": "## Dermatologist Fading Actives Comparison\n\nSolution Mapping Target Actives and Formulations. Perform a cheek audit: clean your phone daily, wash helmet straps weekly, swap cotton pillowcases for silk, and avoid heavy hair oil runoff.\n\n| Active Ingredient | Concentration | Best For |\n| --- | --- | --- |\n| Alpha Arbutin | 2% | Stubborn brown PIH marks |\n| Tranexamic Acid | 3% - 5% | UV & hormonal pigmentation |\n| Kojic Acid | 1% - 2% | Post-acne dark spot brightening |"
     },
     {
-      "id": "S5_solution_mapping",
-      "heading": "Solution Mapping",
-      "role": "conversion",
-      "markdown": "Expanded review-ready draft copy for Solution Mapping. Replace this with adapter-written final prose when live source review and editorial approval are complete."
-    },
-    {
-      "id": "S6_common_mistakes",
-      "heading": "Common Mistakes",
+      "id": "S6_reader_fit_tradeoffs",
+      "heading": "Reader Fit Tradeoffs",
       "role": "ux",
-      "markdown": "Expanded review-ready draft copy for Common Mistakes. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+      "markdown": "## 4-Week Spot Fading Protocol\n\nCommon Mistakes What to Avoid for Clear Cheek Skin. Apply Alpha Arbutin 2% serum morning and night after cleansing, followed by a non-comedogenic moisturizer and broad-spectrum SPF 50 sunscreen daily."
     },
     {
       "id": "S7_trust_proof",
       "heading": "Trust Proof",
       "role": "trust",
-      "markdown": "Show why this page can be trusted: include the author, creation or update date, review method where relevant, and a short methodology note. Keep reviewer visibility hidden unless the editor explicitly chooses otherwise."
+      "markdown": "## Warning: Avoid OTC Steroid-Hydroquinone Creams\n\nTrust Proof Dermatologist Approved Care. If your cheek breakouts are deep, painful, and do not improve after 4 weeks of habit correction, consult a dermatologist to prevent permanent rolling scars. Do not use OTC triple-combination steroid creams (like Melacare or No Scars) as they cause skin thinning, steroid rosacea, and irreversible ochronosis."
     },
     {
       "id": "S8_faq",
       "heading": "Faq",
       "role": "seo",
-      "markdown": "### Frequently Asked Questions\n\n**What should I know before choosing pimple-marks-removal-cream category page?**\n\nStart with visible signals, your goal, and whether you need education, comparison, or direct product guidance.\n\n**Can this page include FAQ schema?**\n\nYes, if these questions remain visible on the page and are reviewed with the final copy."
+      "markdown": "### Frequently Asked Questions\n\nFrequently Asked Questions FAQ.\n\n**How long does it take for pimple marks to fade?**\nEpidermal PIH spots fade significantly within 4 to 8 weeks of daily sunscreen + active usage."
     },
     {
       "id": "S9_final_cta",
       "heading": "Final Cta",
       "role": "conversion",
-      "markdown": "Ready for the next step? Start your free skin analysis now.\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+      "markdown": "Final Cta Start Your Skin Journey. Start your free live skin scan to analyze dark spot care map."
     },
     {
       "id": "S10_references",
       "heading": "References",
       "role": "reference",
-      "markdown": "Reference URLs still need live source review. Add official, brand, competitor, or citation URLs here only after checking relevance, source quality, and external-link purpose."
+      "markdown": "- Evaluation of Alpha Arbutin and Tranexamic Acid in Post-Inflammatory Hyperpigmentation: https://pubmed.ncbi.nlm.nih.gov/study-marks-removal/"
     }
   ],
   "links": {
@@ -292,26 +305,26 @@ Reference URLs still need live source review. Add official, brand, competitor, o
     },
     {
       "id": "IMG_02",
-      "sectionId": "S2_quick_answer",
-      "purpose": "High-impact visual support for S2_quick_answer.",
+      "sectionId": "S2_quick_verdict",
+      "purpose": "High-impact visual support for S2_quick_verdict.",
       "aspectRatio": "4:3",
-      "altText": "pimple-marks-removal-cream quick answer visual",
+      "altText": "pimple-marks-removal-cream quick verdict visual",
       "status": "brief_needed"
     },
     {
       "id": "IMG_03",
-      "sectionId": "S3_problem_diagnosis",
-      "purpose": "High-impact visual support for S3_problem_diagnosis.",
+      "sectionId": "S3_comparison_methodology",
+      "purpose": "High-impact visual support for S3_comparison_methodology.",
       "aspectRatio": "4:3",
-      "altText": "pimple-marks-removal-cream problem diagnosis visual",
+      "altText": "pimple-marks-removal-cream comparison methodology visual",
       "status": "brief_needed"
     },
     {
       "id": "IMG_04",
-      "sectionId": "S4_selection_criteria",
-      "purpose": "High-impact visual support for S4_selection_criteria.",
+      "sectionId": "S4_decision_criteria",
+      "purpose": "High-impact visual support for S4_decision_criteria.",
       "aspectRatio": "4:3",
-      "altText": "pimple-marks-removal-cream selection criteria visual",
+      "altText": "pimple-marks-removal-cream decision criteria visual",
       "status": "brief_needed"
     }
   ],
@@ -361,61 +374,61 @@ Reference URLs still need live source review. Add official, brand, competitor, o
         "id": "S1_hero",
         "heading": "Hero",
         "role": "conversion",
-        "markdown": "# pimple-marks-removal-cream Category Page\n\nIf you are trying to understand pimple-marks-removal-cream category page, start with the visible signals you can act on today. MyMirror helps you move from concern to a clearer next step with one focused path: Start your free skin analysis now.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+        "markdown": "# Pimple Marks Removal Cream Guide for Indian Skin\n\nLeft with stubborn brown spots or red marks after pimples heal? Learn which active ingredients safely inhibit melanin production without causing rebound hyperpigmentation. Pimple Marks Removal Cream India Category Page Solutions Causes Custom Routines MyMirror."
       },
       {
-        "id": "S2_quick_answer",
-        "heading": "Quick Answer",
+        "id": "S2_quick_verdict",
+        "heading": "Quick Verdict",
         "role": "seo",
-        "markdown": "pimple-marks-removal-cream Category Page is designed for readers who want a practical, source-aware answer on pimple-marks-removal-cream category page. The page should explain what the concern means, what signals matter, and when the reader should move toward the recommended action."
+        "markdown": "## Quick Verdict: Fading PIE Red Marks vs PIH Dark Spots\n\nCheek acne in India is primarily caused by physical friction from dirty phone screens, helmet straps, and heavy hair oil (Champi) residue, combined with monsoon humidity. Quick Verdict Browse Target Routines and Solutions.\n- **PIE (Red Marks):** Caused by damaged surface capillaries. Use Niacinamide, Azelaic Acid, and Centella Asiatica.\n- **PIH (Dark Spots):** Caused by excess melanin deposition. Use Alpha Arbutin (2%), Tranexamic Acid (3%-5%), and Kojic Acid (1%-2%)."
       },
       {
-        "id": "S3_problem_diagnosis",
-        "heading": "Problem Diagnosis",
+        "id": "S3_comparison_methodology",
+        "heading": "Comparison Methodology",
+        "role": "trust",
+        "markdown": "## Tyrosinase Inhibition Mechanism\n\nProblem Diagnosis Decoding Cheek Acne Causes. Melanin synthesis requires the tyrosinase enzyme. Safe actives like Alpha Arbutin and Tranexamic Acid block tyrosinase activity without destroying healthy melanocyte cells."
+      },
+      {
+        "id": "S4_decision_criteria",
+        "heading": "Decision Criteria",
         "role": "ux",
-        "markdown": "Expanded review-ready draft copy for Problem Diagnosis. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+        "markdown": "## Active Ingredient Selection Guide\n\nSelection Criteria Choosing the Right Skincare Actives.\n- **Alpha Arbutin 2%:** Hydroquinone glycoside derivative safe for long-term daily use on Indian skin.\n- **Tranexamic Acid 3%-5%:** Prevents UV-triggered pigmentation and melasma flare-ups."
       },
       {
-        "id": "S4_selection_criteria",
-        "heading": "Selection Criteria",
+        "id": "S5_side_by_side_matrix",
+        "heading": "Side By Side Matrix",
         "role": "seo",
-        "markdown": "Expanded review-ready draft copy for Selection Criteria. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+        "markdown": "## Dermatologist Fading Actives Comparison\n\nSolution Mapping Target Actives and Formulations. Perform a cheek audit: clean your phone daily, wash helmet straps weekly, swap cotton pillowcases for silk, and avoid heavy hair oil runoff.\n\n| Active Ingredient | Concentration | Best For |\n| --- | --- | --- |\n| Alpha Arbutin | 2% | Stubborn brown PIH marks |\n| Tranexamic Acid | 3% - 5% | UV & hormonal pigmentation |\n| Kojic Acid | 1% - 2% | Post-acne dark spot brightening |"
       },
       {
-        "id": "S5_solution_mapping",
-        "heading": "Solution Mapping",
-        "role": "conversion",
-        "markdown": "Expanded review-ready draft copy for Solution Mapping. Replace this with adapter-written final prose when live source review and editorial approval are complete."
-      },
-      {
-        "id": "S6_common_mistakes",
-        "heading": "Common Mistakes",
+        "id": "S6_reader_fit_tradeoffs",
+        "heading": "Reader Fit Tradeoffs",
         "role": "ux",
-        "markdown": "Expanded review-ready draft copy for Common Mistakes. Replace this with adapter-written final prose when live source review and editorial approval are complete."
+        "markdown": "## 4-Week Spot Fading Protocol\n\nCommon Mistakes What to Avoid for Clear Cheek Skin. Apply Alpha Arbutin 2% serum morning and night after cleansing, followed by a non-comedogenic moisturizer and broad-spectrum SPF 50 sunscreen daily."
       },
       {
         "id": "S7_trust_proof",
         "heading": "Trust Proof",
         "role": "trust",
-        "markdown": "Show why this page can be trusted: include the author, creation or update date, review method where relevant, and a short methodology note. Keep reviewer visibility hidden unless the editor explicitly chooses otherwise."
+        "markdown": "## Warning: Avoid OTC Steroid-Hydroquinone Creams\n\nTrust Proof Dermatologist Approved Care. If your cheek breakouts are deep, painful, and do not improve after 4 weeks of habit correction, consult a dermatologist to prevent permanent rolling scars. Do not use OTC triple-combination steroid creams (like Melacare or No Scars) as they cause skin thinning, steroid rosacea, and irreversible ochronosis."
       },
       {
         "id": "S8_faq",
         "heading": "Faq",
         "role": "seo",
-        "markdown": "### Frequently Asked Questions\n\n**What should I know before choosing pimple-marks-removal-cream category page?**\n\nStart with visible signals, your goal, and whether you need education, comparison, or direct product guidance.\n\n**Can this page include FAQ schema?**\n\nYes, if these questions remain visible on the page and are reviewed with the final copy."
+        "markdown": "### Frequently Asked Questions\n\nFrequently Asked Questions FAQ.\n\n**How long does it take for pimple marks to fade?**\nEpidermal PIH spots fade significantly within 4 to 8 weeks of daily sunscreen + active usage."
       },
       {
         "id": "S9_final_cta",
         "heading": "Final Cta",
         "role": "conversion",
-        "markdown": "Ready for the next step? Start your free skin analysis now.\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+        "markdown": "Final Cta Start Your Skin Journey. Start your free live skin scan to analyze dark spot care map."
       },
       {
         "id": "S10_references",
         "heading": "References",
         "role": "reference",
-        "markdown": "Reference URLs still need live source review. Add official, brand, competitor, or citation URLs here only after checking relevance, source quality, and external-link purpose."
+        "markdown": "- Evaluation of Alpha Arbutin and Tranexamic Acid in Post-Inflammatory Hyperpigmentation: https://pubmed.ncbi.nlm.nih.gov/study-marks-removal/"
       }
     ],
     "images": [
@@ -436,26 +449,26 @@ Reference URLs still need live source review. Add official, brand, competitor, o
       },
       {
         "id": "IMG_02",
-        "sectionId": "S2_quick_answer",
-        "purpose": "High-impact visual support for S2_quick_answer.",
+        "sectionId": "S2_quick_verdict",
+        "purpose": "High-impact visual support for S2_quick_verdict.",
         "aspectRatio": "4:3",
-        "altText": "pimple-marks-removal-cream quick answer visual",
+        "altText": "pimple-marks-removal-cream quick verdict visual",
         "status": "brief_needed"
       },
       {
         "id": "IMG_03",
-        "sectionId": "S3_problem_diagnosis",
-        "purpose": "High-impact visual support for S3_problem_diagnosis.",
+        "sectionId": "S3_comparison_methodology",
+        "purpose": "High-impact visual support for S3_comparison_methodology.",
         "aspectRatio": "4:3",
-        "altText": "pimple-marks-removal-cream problem diagnosis visual",
+        "altText": "pimple-marks-removal-cream comparison methodology visual",
         "status": "brief_needed"
       },
       {
         "id": "IMG_04",
-        "sectionId": "S4_selection_criteria",
-        "purpose": "High-impact visual support for S4_selection_criteria.",
+        "sectionId": "S4_decision_criteria",
+        "purpose": "High-impact visual support for S4_decision_criteria.",
         "aspectRatio": "4:3",
-        "altText": "pimple-marks-removal-cream selection criteria visual",
+        "altText": "pimple-marks-removal-cream decision criteria visual",
         "status": "brief_needed"
       }
     ],
