@@ -157,6 +157,78 @@
             .nav-links { display: none; }
         }
 
+        /* TOP HEADER BAR & TRUST BAR (Sitemap Standard) */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            height: 60px;
+            background: #FFFFFF;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1.5rem;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1.35rem;
+            color: var(--brand-dark);
+            text-decoration: none;
+        }
+
+        .brand-logo span {
+            color: var(--brand);
+        }
+
+        .header-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--brand-dark);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .header-cta:hover {
+            background: var(--brand-light);
+            border-color: var(--brand);
+        }
+
+        .trust-bar {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 0.6rem 1rem;
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--brand-dark);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem 1.25rem;
+        }
+
+        .trust-badge-icon {
+            width: 16px;
+            height: 16px;
+            fill: var(--brand);
+            display: inline-block;
+            vertical-align: middle;
+        }
+
         /* Hero */
         .hero {
             padding: 80px 0;
@@ -623,18 +695,19 @@
 </head>
 <body>
 
-    <header>
-        <div class="container nav-inner">
-            <a href="/" class="logo">MyMirror</a>
-            <nav class="nav-links">
-                <a href="#how-it-works">How it works</a>
-                <a href="#payoff">What you'll get</a>
-                <a href="#guides">Skin guides</a>
-                <a href="#faq">FAQs</a>
-            </nav>
-            <a href="https://mymirror.fit/scan" class="btn btn-primary">Start free scan</a>
-        </div>
+    <header class="site-header">
+        <a href="/" class="brand-logo">mymirror<span>.fit</span></a>
+        <a href="/scan" class="header-cta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            Scan Face (Free)
+        </a>
     </header>
+
+    <div class="trust-bar">
+        <span>Editorial Team: <strong>MyMirror.fit</strong></span>
+        <span>•</span>
+        <span><svg class="trust-badge-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg> Reviewed by Dr. Lipy Mehta, Dermatologist</span>
+    </div>
 
     <main>
         <!-- Hero -->
