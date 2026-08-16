@@ -23,23 +23,23 @@
     },
     {
       "sectionId": "S2_quick_verdict",
-      "promise": "Explain the diagnostic steps and evidence mapping for S2_quick_answer."
+      "promise": "Explain the diagnostic steps and evidence mapping for S2_quick_verdict."
     },
     {
       "sectionId": "S3_comparison_methodology",
-      "promise": "Explain the diagnostic steps and evidence mapping for S3_problem_diagnosis."
+      "promise": "Explain the diagnostic steps and evidence mapping for S3_comparison_methodology."
     },
     {
       "sectionId": "S4_decision_criteria",
-      "promise": "Explain the diagnostic steps and evidence mapping for S4_selection_criteria."
+      "promise": "Explain the diagnostic steps and evidence mapping for S4_decision_criteria."
     },
     {
       "sectionId": "S5_side_by_side_matrix",
-      "promise": "Explain the diagnostic steps and evidence mapping for S5_solution_mapping."
+      "promise": "Explain the diagnostic steps and evidence mapping for S5_side_by_side_matrix."
     },
     {
       "sectionId": "S6_reader_fit_tradeoffs",
-      "promise": "Explain the diagnostic steps and evidence mapping for S6_common_mistakes."
+      "promise": "Explain the diagnostic steps and evidence mapping for S6_reader_fit_tradeoffs."
     },
     {
       "sectionId": "S7_trust_proof",

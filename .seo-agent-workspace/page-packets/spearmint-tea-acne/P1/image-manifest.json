@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "acne/spearmint-tea-for-hormonal-acne-india",
+    "h1": "Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide",
+    "pageId": "P1",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": true,
+  "assets": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph image for social and search previews.",
+      "assetType": "reserved",
+      "recommendedFilename": "acne-spearmint-tea-for-hormonal-acne-india-open-graph-image-for-social-and-search-previews.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "1.91:1",
+      "altText": "Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide preview image",
+      "status": "reserved",
+      "licensing": {
+        "status": "pending_review",
+        "note": "Rights and licensing approval should be reviewed before publishing."
+      },
+      "promptBrief": {
+        "imageId": "IMG_OG",
+        "imagePurpose": "Open Graph image for social and search previews.",
+        "recommendedAspectRatio": "1.91:1",
+        "preferredFormat": "webp",
+        "brandStyle": "MyMirror brand guidelines, clean editorial layout, mobile-first readability.",
+        "logoUsage": "Mandatory brand logo usage unless the user or brand guideline explicitly disallows it.",
+        "prompt": "Create a brand-aligned image for Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide: Open Graph image for social and search previews.. The image should support Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide without making unsupported medical or product claims.",
+        "negativeConstraints": "Do not copy competitor visuals, do not use external brand marks without approval, avoid exaggerated before-after claims.",
+        "altText": "Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide preview image",
+        "caption": "Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide visual support",
+        "designerNotes": "Prefer WebP output. Keep subject clear on mobile and leave safe space for cropping where needed."
+      }
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "Mandatory hero visual for the first fold.",
+      "assetType": "prompt_only",
+      "recommendedFilename": "acne-spearmint-tea-for-hormonal-acne-india-mandatory-hero-visual-for-the-first-fold.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "16:9",
+      "altText": "Spearmint Tea For Acne hero visual",
+      "status": "brief_needed",
+      "licensing": {
+        "status": "pending_review",
+        "note": "Rights and licensing approval should be reviewed before publishing."
+      },
+      "promptBrief": {
+        "imageId": "IMG_HERO",
+        "sectionId": "S1_hero",
+        "imagePurpose": "Mandatory hero visual for the first fold.",
+        "recommendedAspectRatio": "16:9",
+        "preferredFormat": "webp",
+        "brandStyle": "MyMirror brand guidelines, clean editorial layout, mobile-first readability.",
+        "logoUsage": "Mandatory brand logo usage unless the user or brand guideline explicitly disallows it.",
+        "prompt": "Create a brand-aligned image for Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide: Mandatory hero visual for the first fold.. The image should support Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide without making unsupported medical or product claims.",
+        "negativeConstraints": "Do not copy competitor visuals, do not use external brand marks without approval, avoid exaggerated before-after claims.",
+        "altText": "Spearmint Tea For Acne hero visual",
+        "caption": "Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide visual support",
+        "designerNotes": "Prefer WebP output. Keep subject clear on mobile and leave safe space for cropping where needed."
+      }
+    },
+    {
+      "id": "IMG_02",
+      "sectionId": "S2_quick_verdict",
+      "purpose": "High-impact visual support for S2_quick_verdict.",
+      "assetType": "prompt_only",
+      "recommendedFilename": "acne-spearmint-tea-for-hormonal-acne-india-high-impact-visual-support-for-s2-quick-verdict.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "4:3",
+      "altText": "Spearmint Tea For Acne quick verdict visual",
+      "status": "brief_needed",
+      "licensing": {
+        "status": "pending_review",
+        "note": "Rights and licensing approval should be reviewed before publishing."
+      },
+      "promptBrief": {
+        "imageId": "IMG_02",
+        "sectionId": "S2_quick_verdict",
+        "imagePurpose": "High-impact visual support for S2_quick_verdict.",
+        "recommendedAspectRatio": "4:3",
+        "preferredFormat": "webp",
+        "brandStyle": "MyMirror brand guidelines, clean editorial layout, mobile-first readability.",
+        "logoUsage": "Use logo only when the brand guideline allows it.",
+        "prompt": "Create a brand-aligned image for Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide: High-impact visual support for S2_quick_verdict.. The image should support Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide without making unsupported medical or product claims.",
+        "negativeConstraints": "Do not copy competitor visuals, do not use external brand marks without approval, avoid exaggerated before-after claims.",
+        "altText": "Spearmint Tea For Acne quick verdict visual",
+        "caption": "Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide visual support",
+        "designerNotes": "Prefer WebP output. Keep subject clear on mobile and leave safe space for cropping where needed."
+      }
+    },
+    {
+      "id": "IMG_03",
+      "sectionId": "S3_comparison_methodology",
+      "purpose": "High-impact visual support for S3_comparison_methodology.",
+      "assetType": "prompt_only",
+      "recommendedFilename": "acne-spearmint-tea-for-hormonal-acne-india-high-impact-visual-support-for-s3-comparison-methodology.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "4:3",
+      "altText": "Spearmint Tea For Acne comparison methodology visual",
+      "status": "brief_needed",
+      "licensing": {
+        "status": "pending_review",
+        "note": "Rights and licensing approval should be reviewed before publishing."
+      },
+      "promptBrief": {
+        "imageId": "IMG_03",
+        "sectionId": "S3_comparison_methodology",
+        "imagePurpose": "High-impact visual support for S3_comparison_methodology.",
+        "recommendedAspectRatio": "4:3",
+        "preferredFormat": "webp",
+        "brandStyle": "MyMirror brand guidelines, clean editorial layout, mobile-first readability.",
+        "logoUsage": "Use logo only when the brand guideline allows it.",
+        "prompt": "Create a brand-aligned image for Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide: High-impact visual support for S3_comparison_methodology.. The image should support Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide without making unsupported medical or product claims.",
+        "negativeConstraints": "Do not copy competitor visuals, do not use external brand marks without approval, avoid exaggerated before-after claims.",
+        "altText": "Spearmint Tea For Acne comparison methodology visual",
+        "caption": "Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide visual support",
+        "designerNotes": "Prefer WebP output. Keep subject clear on mobile and leave safe space for cropping where needed."
+      }
+    },
+    {
+      "id": "IMG_04",
+      "sectionId": "S4_decision_criteria",
+      "purpose": "High-impact visual support for S4_decision_criteria.",
+      "assetType": "prompt_only",
+      "recommendedFilename": "acne-spearmint-tea-for-hormonal-acne-india-high-impact-visual-support-for-s4-decision-criteria.webp",
+      "preferredFormat": "webp",
+      "aspectRatio": "4:3",
+      "altText": "Spearmint Tea For Acne decision criteria visual",
+      "status": "brief_needed",
+      "licensing": {
+        "status": "pending_review",
+        "note": "Rights and licensing approval should be reviewed before publishing."
+      },
+      "promptBrief": {
+        "imageId": "IMG_04",
+        "sectionId": "S4_decision_criteria",
+        "imagePurpose": "High-impact visual support for S4_decision_criteria.",
+        "recommendedAspectRatio": "4:3",
+        "preferredFormat": "webp",
+        "brandStyle": "MyMirror brand guidelines, clean editorial layout, mobile-first readability.",
+        "logoUsage": "Use logo only when the brand guideline allows it.",
+        "prompt": "Create a brand-aligned image for Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide: High-impact visual support for S4_decision_criteria.. The image should support Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide without making unsupported medical or product claims.",
+        "negativeConstraints": "Do not copy competitor visuals, do not use external brand marks without approval, avoid exaggerated before-after claims.",
+        "altText": "Spearmint Tea For Acne decision criteria visual",
+        "caption": "Spearmint Tea For Hormonal Acne India: Benefits, Dosage & PCOS Breakouts Guide visual support",
+        "designerNotes": "Prefer WebP output. Keep subject clear on mobile and leave safe space for cropping where needed."
+      }
+    }
+  ]
+}

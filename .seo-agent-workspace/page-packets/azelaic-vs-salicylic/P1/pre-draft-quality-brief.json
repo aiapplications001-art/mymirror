@@ -87,7 +87,7 @@
     "title": "The 14-Day Cheek Acne Self-Audit Habit Tracker",
     "whyCompetitorsMissIt": "Competitors only provide generic skincare ingredient lists and ignore day-by-day habit adjustments like phone cleaning."
   },
-  "brandConnection": "mymirror.fit offers free AI skin analyses that diagnose cheek redness and direct users to targeted routines.",
+  "brandConnection": "MyMirror AI 3-layer skin scan provides real-time mapping for Azelaic Acid vs Salicylic Acid and skin barrier health.",
   "readerQuestionCoverage": [
     {
       "item": "Why is my acne only on my right cheek triggers query 0?",
@@ -433,7 +433,7 @@
   ],
   "differentiatedImprovements": [
     {
-      "improvement": "Add detailed localized audit checklist for S4_selection_criteria",
+      "improvement": "Add detailed localized audit checklist for S4_decision_criteria",
       "sourceRefs": [
         "https://example.com/competitor-1",
         "SIGNAL1",
@@ -444,12 +444,12 @@
       "competitorOrUserGapAddressed": "Competitors offer generic advice",
       "mappedSectionId": "S4_decision_criteria",
       "visibleOutputType": "checklist",
-      "finalOutputLocation": "In section S4_selection_criteria",
-      "finalCopyEvidence": "Step-by-step cleaning guides in S4_selection_criteria",
+      "finalOutputLocation": "In section S4_decision_criteria",
+      "finalCopyEvidence": "Step-by-step cleaning guides in S4_decision_criteria",
       "whyDifferentiated": "Ours provides actionable steps tailored to Indian routines"
     },
     {
-      "improvement": "Add detailed localized audit checklist for S5_solution_mapping",
+      "improvement": "Add detailed localized audit checklist for S5_side_by_side_matrix",
       "sourceRefs": [
         "https://example.com/competitor-1",
         "SIGNAL1",
@@ -460,8 +460,8 @@
       "competitorOrUserGapAddressed": "Competitors offer generic advice",
       "mappedSectionId": "S5_side_by_side_matrix",
       "visibleOutputType": "checklist",
-      "finalOutputLocation": "In section S5_solution_mapping",
-      "finalCopyEvidence": "Step-by-step cleaning guides in S5_solution_mapping",
+      "finalOutputLocation": "In section S5_side_by_side_matrix",
+      "finalCopyEvidence": "Step-by-step cleaning guides in S5_side_by_side_matrix",
       "whyDifferentiated": "Ours provides actionable steps tailored to Indian routines"
     },
     {
@@ -481,7 +481,7 @@
       "whyDifferentiated": "Discusses helmet strap hygiene and humidity sweat"
     },
     {
-      "improvement": "Differentiate section S2_quick_answer with commuter triggers",
+      "improvement": "Differentiate section S2_quick_verdict with commuter triggers",
       "sourceRefs": [
         "https://example.com/competitor-1",
         "SIGNAL1",
@@ -492,12 +492,12 @@
       "competitorOrUserGapAddressed": "Competitors ignore commutes",
       "mappedSectionId": "S2_quick_verdict",
       "visibleOutputType": "copy",
-      "finalOutputLocation": "In section S2_quick_answer",
-      "finalCopyEvidence": "Commute tips in S2_quick_answer",
+      "finalOutputLocation": "In section S2_quick_verdict",
+      "finalCopyEvidence": "Commute tips in S2_quick_verdict",
       "whyDifferentiated": "Discusses helmet strap hygiene and humidity sweat"
     },
     {
-      "improvement": "Differentiate section S3_problem_diagnosis with commuter triggers",
+      "improvement": "Differentiate section S3_comparison_methodology with commuter triggers",
       "sourceRefs": [
         "https://example.com/competitor-1",
         "SIGNAL1",
@@ -508,8 +508,8 @@
       "competitorOrUserGapAddressed": "Competitors ignore commutes",
       "mappedSectionId": "S3_comparison_methodology",
       "visibleOutputType": "copy",
-      "finalOutputLocation": "In section S3_problem_diagnosis",
-      "finalCopyEvidence": "Commute tips in S3_problem_diagnosis",
+      "finalOutputLocation": "In section S3_comparison_methodology",
+      "finalCopyEvidence": "Commute tips in S3_comparison_methodology",
       "whyDifferentiated": "Discusses helmet strap hygiene and humidity sweat"
     }
   ],
@@ -584,8 +584,8 @@
           "ID1"
         ],
         "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S1_hero.",
-        "expectedVisibleOutput": "Cheek Acne Category Page Solutions Causes Custom Routines MyMirror",
-        "finalCopyAcceptanceCheck": "Cheek Acne Category Page Solutions Causes Custom Routines MyMirror",
+        "expectedVisibleOutput": "Clinical SEO Page Packet",
+        "finalCopyAcceptanceCheck": "Clinical SEO Page Packet",
         "competitorGapRefs": [
           "https://example.com/competitor-1"
         ],
@@ -603,8 +603,8 @@
         "sectionId": "S2_quick_verdict",
         "sectionRole": "seo",
         "sectionAction": "add",
-        "targetSectionTitle": "Title for S2_quick_answer",
-        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S2_quick_answer.",
+        "targetSectionTitle": "Title for S2_quick_verdict",
+        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S2_quick_verdict.",
         "sourceRefs": [
           "https://example.com/competitor-1",
           "SIGNAL1",
@@ -614,9 +614,9 @@
         "intentDimensionRefs": [
           "ID1"
         ],
-        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S2_quick_answer.",
-        "expectedVisibleOutput": "Quick Answer Browse Target Routines and Solutions",
-        "finalCopyAcceptanceCheck": "Quick Answer Browse Target Routines and Solutions",
+        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S2_quick_verdict.",
+        "expectedVisibleOutput": "Quick Verdict: Which Active Ingredient Should You Pick?",
+        "finalCopyAcceptanceCheck": "Quick Verdict: Which Active Ingredient Should You Pick?",
         "competitorGapRefs": [
           "https://example.com/competitor-1"
         ],
@@ -626,16 +626,16 @@
         "trustCitationRefs": [
           "FACT21"
         ],
-        "finalCopyUse": "Authoritative guidance and audit steps for S2_quick_answer",
+        "finalCopyUse": "Authoritative guidance and audit steps for S2_quick_verdict",
         "scanPriority": "high",
-        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S2_quick_answer?"
+        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S2_quick_verdict?"
       },
       {
         "sectionId": "S3_comparison_methodology",
         "sectionRole": "seo",
         "sectionAction": "add",
-        "targetSectionTitle": "Title for S3_problem_diagnosis",
-        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S3_problem_diagnosis.",
+        "targetSectionTitle": "Title for S3_comparison_methodology",
+        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S3_comparison_methodology.",
         "sourceRefs": [
           "https://example.com/competitor-1",
           "SIGNAL1",
@@ -645,9 +645,9 @@
         "intentDimensionRefs": [
           "ID1"
         ],
-        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S3_problem_diagnosis.",
-        "expectedVisibleOutput": "Problem Diagnosis Decoding Cheek Acne Causes",
-        "finalCopyAcceptanceCheck": "Problem Diagnosis Decoding Cheek Acne Causes",
+        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S3_comparison_methodology.",
+        "expectedVisibleOutput": "Dermatological Comparison & Action Mechanisms",
+        "finalCopyAcceptanceCheck": "Dermatological Comparison & Action Mechanisms",
         "competitorGapRefs": [
           "https://example.com/competitor-1"
         ],
@@ -657,16 +657,16 @@
         "trustCitationRefs": [
           "FACT21"
         ],
-        "finalCopyUse": "Authoritative guidance and audit steps for S3_problem_diagnosis",
+        "finalCopyUse": "Authoritative guidance and audit steps for S3_comparison_methodology",
         "scanPriority": "medium",
-        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S3_problem_diagnosis?"
+        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S3_comparison_methodology?"
       },
       {
         "sectionId": "S4_decision_criteria",
         "sectionRole": "seo",
         "sectionAction": "add",
-        "targetSectionTitle": "Title for S4_selection_criteria",
-        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S4_selection_criteria.",
+        "targetSectionTitle": "Title for S4_decision_criteria",
+        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S4_decision_criteria.",
         "sourceRefs": [
           "https://example.com/competitor-1",
           "SIGNAL1",
@@ -676,9 +676,9 @@
         "intentDimensionRefs": [
           "ID1"
         ],
-        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S4_selection_criteria.",
-        "expectedVisibleOutput": "Selection Criteria Choosing the Right Skincare Actives",
-        "finalCopyAcceptanceCheck": "Selection Criteria Choosing the Right Skincare Actives",
+        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S4_decision_criteria.",
+        "expectedVisibleOutput": "Decision Criteria for Indian Skin Types",
+        "finalCopyAcceptanceCheck": "Decision Criteria for Indian Skin Types",
         "competitorGapRefs": [
           "https://example.com/competitor-1"
         ],
@@ -688,16 +688,16 @@
         "trustCitationRefs": [
           "FACT21"
         ],
-        "finalCopyUse": "Authoritative guidance and audit steps for S4_selection_criteria",
+        "finalCopyUse": "Authoritative guidance and audit steps for S4_decision_criteria",
         "scanPriority": "high",
-        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S4_selection_criteria?"
+        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S4_decision_criteria?"
       },
       {
         "sectionId": "S5_side_by_side_matrix",
         "sectionRole": "seo",
         "sectionAction": "add",
-        "targetSectionTitle": "Title for S5_solution_mapping",
-        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S5_solution_mapping.",
+        "targetSectionTitle": "Title for S5_side_by_side_matrix",
+        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S5_side_by_side_matrix.",
         "sourceRefs": [
           "https://example.com/competitor-1",
           "SIGNAL1",
@@ -707,9 +707,9 @@
         "intentDimensionRefs": [
           "ID1"
         ],
-        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S5_solution_mapping.",
-        "expectedVisibleOutput": "Solution Mapping Target Actives and Formulations",
-        "finalCopyAcceptanceCheck": "Solution Mapping Target Actives and Formulations",
+        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S5_side_by_side_matrix.",
+        "expectedVisibleOutput": "Side-by-Side Comparison Matrix",
+        "finalCopyAcceptanceCheck": "Side-by-Side Comparison Matrix",
         "competitorGapRefs": [
           "https://example.com/competitor-1"
         ],
@@ -719,16 +719,16 @@
         "trustCitationRefs": [
           "FACT21"
         ],
-        "finalCopyUse": "Authoritative guidance and audit steps for S5_solution_mapping",
+        "finalCopyUse": "Authoritative guidance and audit steps for S5_side_by_side_matrix",
         "scanPriority": "high",
-        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S5_solution_mapping?"
+        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S5_side_by_side_matrix?"
       },
       {
         "sectionId": "S6_reader_fit_tradeoffs",
         "sectionRole": "seo",
         "sectionAction": "add",
-        "targetSectionTitle": "Title for S6_common_mistakes",
-        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S6_common_mistakes.",
+        "targetSectionTitle": "Title for S6_reader_fit_tradeoffs",
+        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S6_reader_fit_tradeoffs.",
         "sourceRefs": [
           "https://example.com/competitor-1",
           "SIGNAL1",
@@ -738,9 +738,9 @@
         "intentDimensionRefs": [
           "ID1"
         ],
-        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S6_common_mistakes.",
-        "expectedVisibleOutput": "Common Mistakes What to Avoid for Clear Cheek Skin",
-        "finalCopyAcceptanceCheck": "Common Mistakes What to Avoid for Clear Cheek Skin",
+        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S6_reader_fit_tradeoffs.",
+        "expectedVisibleOutput": "How To Layer Both Actives Safely",
+        "finalCopyAcceptanceCheck": "How To Layer Both Actives Safely",
         "competitorGapRefs": [
           "https://example.com/competitor-1"
         ],
@@ -750,9 +750,9 @@
         "trustCitationRefs": [
           "FACT21"
         ],
-        "finalCopyUse": "Authoritative guidance and audit steps for S6_common_mistakes",
+        "finalCopyUse": "Authoritative guidance and audit steps for S6_reader_fit_tradeoffs",
         "scanPriority": "medium",
-        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S6_common_mistakes?"
+        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S6_reader_fit_tradeoffs?"
       },
       {
         "sectionId": "S7_trust_proof",
@@ -770,8 +770,8 @@
           "ID1"
         ],
         "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S7_trust_proof.",
-        "expectedVisibleOutput": "Trust Proof Dermatologist Approved Care",
-        "finalCopyAcceptanceCheck": "Trust Proof Dermatologist Approved Care",
+        "expectedVisibleOutput": "Clinical Safety & Dermatologist Notes",
+        "finalCopyAcceptanceCheck": "Clinical Safety & Dermatologist Notes",
         "competitorGapRefs": [
           "https://example.com/competitor-1"
         ],
@@ -801,8 +801,8 @@
           "ID1"
         ],
         "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S8_faq.",
-        "expectedVisibleOutput": "Frequently Asked Questions FAQ",
-        "finalCopyAcceptanceCheck": "Frequently Asked Questions FAQ",
+        "expectedVisibleOutput": "Frequently Asked Questions",
+        "finalCopyAcceptanceCheck": "Frequently Asked Questions",
         "competitorGapRefs": [
           "https://example.com/competitor-1"
         ],
@@ -832,8 +832,8 @@
           "ID1"
         ],
         "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S9_final_cta.",
-        "expectedVisibleOutput": "Final Cta Start Your Skin Journey",
-        "finalCopyAcceptanceCheck": "Final Cta Start Your Skin Journey",
+        "expectedVisibleOutput": "Start Your Free Skin Scan",
+        "finalCopyAcceptanceCheck": "Start Your Free Skin Scan",
         "competitorGapRefs": [
           "https://example.com/competitor-1"
         ],
@@ -872,8 +872,8 @@
           "skincare Routine Active"
         ],
         "whyThisShape": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Structured comparison layout maps zone to active ingredients.",
-        "expectedVisibleOutput": "Solution Mapping Target Actives and Formulations",
-        "finalCopyAcceptanceCheck": "Solution Mapping Target Actives and Formulations",
+        "expectedVisibleOutput": "Side-by-Side Comparison Matrix",
+        "finalCopyAcceptanceCheck": "Side-by-Side Comparison Matrix",
         "competitorGapRefs": [
           "https://example.com/competitor-1"
         ],
@@ -898,8 +898,8 @@
         ],
         "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors lack structured mapping matrices.",
         "whyThisStructureIsNeeded": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Structured matrix helps users self-audit their habits.",
-        "expectedVisibleOutput": "Solution Mapping Target Actives and Formulations",
-        "finalCopyAcceptanceCheck": "Solution Mapping Target Actives and Formulations",
+        "expectedVisibleOutput": "Side-by-Side Comparison Matrix",
+        "finalCopyAcceptanceCheck": "Side-by-Side Comparison Matrix",
         "competitorGapRefs": [
           "https://example.com/competitor-1"
         ],

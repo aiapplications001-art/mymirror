@@ -112,14 +112,14 @@ Suggested JSON shape:
   ],
   "researchDerivedStructurePlan": {
     "primaryUserConcern": "The main thing the reader came to learn or avoid.",
-    "primaryConcernVisibleBySectionId": "S2_quick_answer",
+    "primaryConcernVisibleBySectionId": "S2_quick_verdict",
     "primaryConcernVisibleBySectionIndex": 2,
     "importantInformationNotBuried": true,
     "scanPriorityRationale": "Why the main intent must be visible near the top.",
     "sectionOrderRationale": "Why this page order follows the research instead of a reusable template.",
     "sections": [
       {
-        "sectionId": "S2_quick_answer",
+        "sectionId": "S2_quick_verdict",
         "sectionRole": "quick answer",
         "sectionAction": "add",
         "targetSectionTitle": "Research-derived section title",
@@ -236,7 +236,7 @@ Suggested JSON shape:
       "blockType": "quick_answer",
       "answer": "Short answer that is safer and more useful than AI Overview or SERP summaries.",
       "sourceRefs": ["F4", "A4"],
-      "mappedSectionId": "S2_quick_answer",
+      "mappedSectionId": "S2_quick_verdict",
       "keywordUse": ["primary keyword", "long-tail variant"],
       "aiOverviewDelta": "What this answer adds without copying AI Overview."
     }

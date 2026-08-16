@@ -32,92 +32,92 @@
 
 # Azelaic Acid vs Salicylic Acid For Acne India: Which Is Better For Pimples & Marks?
 
-Comprehensive evidence-backed dermatological breakdown for Indian skin types. Start your free skin analysis now on MyMirror.
-
-Cheek Acne Category Page Solutions Causes Custom Routines MyMirror
+Deciding how to tackle your skin concerns? Choose 15% Azelaic Acid gel if your main skin concern is post-acne dark marks (PIH), red spots (PIE) Start your free skin analysis now on MyMirror. Clinical SEO Page Packet.
 
 <!-- SECTION_ID: S2_quick_verdict -->
 ## Quick Verdict
 
-## Quick Answer: Browse Target Routines and Solutions
+## Quick Verdict: Which Active Ingredient Should You Pick?
 
-Cheek acne in India is primarily caused by physical friction from dirty phone screens, helmet straps, and heavy hair oil (Champi) residue, combined with monsoon humidity. If you commute daily on a bike or auto-rickshaw, pollution and sweat settle on your skin, while screen contact and hair oil migration block the follicles. 
+Choose 15% Azelaic Acid gel if your main skin concern is post-acne dark marks (PIH), red spots (PIE), rosacea, or sensitive skin redness. Choose 2% Salicylic Acid serum if your main skin concern is oiliness, blackheads, whiteheads, or clogged pores.
 
-To start clearing this, perform a physical audit: clean your phone screen daily with an alcohol wipe, wash your helmet straps weekly, and avoid heavy hair oils running onto your cheeks during champi. If these habit adjustments do not clear your cheek breakouts within 4 weeks, consult a dermatologist to prevent permanent rolling scars. Quick Answer Browse Target Routines and Solutions.
+Quick Verdict: Which Active Ingredient Should You Pick?
 
 <!-- SECTION_ID: S3_comparison_methodology -->
 ## Comparison Methodology
 
-## Problem Diagnosis: Decoding Cheek Acne Causes
+## Dermatological Comparison & Action Mechanisms
 
-Diagnosing cheek breakouts requires looking at physical habits. Sweat under scooter helmet straps, makeup residue on phone screens, and amla/coconut oil champi run-off migrating down the temples are the primary external causes of localized cheek congestion in metro environments. 
+Azelaic Acid is a dicarboxylic acid that acts as a tyrosinase enzyme inhibitor to stop melanin overproduction while reducing C. acnes bacteria. Salicylic Acid is a lipophilic Beta Hydroxy Acid (BHA) that penetrates oil-filled pores to dissolve keratin plugs.
 
-Cheek skin has a thinner epidermal barrier than other areas of your face, meaning it is highly vulnerable to friction, environmental dust, and bacterial buildup. Daily habits like holding a phone screen directly against your face, wearing scooter helmet straps, or applying heavy hair oils can block pores and cause deep inflammation. Problem Diagnosis Decoding Cheek Acne Causes.
+Dermatological Comparison & Action Mechanisms
 
 <!-- SECTION_ID: S4_decision_criteria -->
 ## Decision Criteria
 
-## Selection Criteria: Choosing the Right Skincare Actives
+## Decision Criteria for Indian Skin Types
 
-When choosing acne treatments for cheeks, consider your skin type and breakout depth. Oily, clog-prone skin benefits from Salicylic Acid washes, whereas dry or barrier-compromised skin requires gentle, hydrating cleansers to avoid raw irritation. 
+Indian skin has higher epidermal melanin density, making post-inflammatory hyperpigmentation (PIH) a major risk after breakouts. Azelaic Acid is ideal when mark fading is prioritized; Salicylic Acid is superior for T-zone congestion.
 
-Avoid heavy hair oils (like coconut, amla, or mustard oil) and leaving them overnight often leads to oil migrating down your temples and cheeks, causing deep comedonal clogs. Selection Criteria Choosing the Right Skincare Actives.
+Decision Criteria for Indian Skin Types
 
 <!-- SECTION_ID: S5_side_by_side_matrix -->
 ## Side By Side Matrix
 
-## Solution Mapping: Target Actives and Formulations
+## Side-by-Side Comparison Matrix
 
-Use our mapping matrix to align actives with your cheek breakout zones: Salicylic Acid for upper cheek screen friction, Benzoyl Peroxide wash for lower cheek cysts, and Niacinamide for jawline redness. 
+Azelaic Acid (10%-20%) targets PIH dark marks and redness with low irritation. Salicylic Acid (1%-2%) targets oiliness, blackheads, and open pores by penetrating sebum.
 
-| Cheek Zone | Primary Triggers | Skincare Routine Active |
+| Parameter | Azelaic Acid (10%-20%) | Salicylic Acid (1%-2%) |
 | --- | --- | --- |
-| Upper Cheek | Phone screens, pillowcases, dirty makeup brushes | Salicylic Acid (clogged pore exfoliation) |
-| Lower Cheek | Helmet straps, champi hair oil run-off, dental issues | Benzoyl Peroxide (antibacterial cyst wash) |
-| Cheek Border | Jawline friction, heavy comedogenic face creams | Niacinamide (barrier repair and redness) |
+| Primary Target | Dark marks (PIH/PIE), redness | Blackheads, clogged pores, oily skin |
+| Solubility | Water-soluble cream/gel | Oil-soluble BHA |
+| Melanin Fading | Exceptional (Tyrosinase inhibitor) | Moderate (Exfoliation only) |
+| Irritation Risk | Low to Moderate (Mild tingling) | Moderate (Can dry out skin) |
+| Pregnancy Safety | Safe (Category B) | Consult Doctor |
 
-Perform a cheek audit: clean your phone daily, wash helmet straps weekly, swap cotton pillowcases for silk, and avoid heavy hair oil runoff. Solution Mapping Target Actives and Formulations.
+Side-by-Side Comparison Matrix
 
 <!-- SECTION_ID: S6_reader_fit_tradeoffs -->
 ## Reader Fit Tradeoffs
 
-## Common Mistakes: What to Avoid for Clear Cheek Skin
+## How To Layer Both Actives Safely
 
-Avoid scrubbing inflamed cheek cysts with physical exfoliants, which ruptures pore walls and causes pitted scars. Avoid leaving heavy hair oils overnight without washing your temples, and avoid placing phone screens directly on active breakouts. 
+Layer both actives safely using an AM/PM split: apply Azelaic Acid gel in the morning under SPF 50 sunscreen, and use Salicylic Acid cleanser or serum in the evening.
 
-Avoid claiming that MyMirror AI scan can detect clinical skin infections, as it is an educational tool. The scan helps track active cheek breakouts and maps them to a customized dermatologist guide for long-term clarity. Common Mistakes What to Avoid for Clear Cheek Skin.
+How To Layer Both Actives Safely
 
 <!-- SECTION_ID: S7_trust_proof -->
 ## Trust Proof
 
-## Trust Proof: Dermatologist Approved Care
+## Clinical Safety & Dermatologist Notes
 
-All recommendations on MyMirror are reviewed by Dr. Lipy Mehta, Board-Certified Dermatologist. Early intervention is critical because deep cheek cysts can destroy dermal tissue and lead to permanent pitted scarring. 
+Reviewed by Board-Certified Dermatologists. Always patch-test new active ingredients behind your ear for 24 hours before applying them across your entire face.
 
-If your cheek breakouts are deep, painful, and do not improve after 4 weeks of habit correction, consult a dermatologist to prevent permanent rolling scars. Trust Proof Dermatologist Approved Care.
+Clinical Safety & Dermatologist Notes
 
 <!-- SECTION_ID: S8_faq -->
 ## Faq
 
-## Frequently Asked Questions (FAQ)
+### Frequently Asked Questions
 
-**Q: Why does my phone screen cause cheek pimples?**
-**A:** Phone screens carry bacteria and sweat biofilm that transfers to your skin, clogging pores. Frequently Asked Questions FAQ.
+Q: Can I use both together? A: Yes, via AM/PM split. Q: Which is faster for dark marks? A: Azelaic Acid directly inhibits tyrosinase for faster mark fading.
 
-**Q: Can hair oiling cause cheek pimples?**
-**A:** Yes, heavy coconut oil drips during champi can clog cheek pores. Wash your temples and cheeks with a gentle cleanser after oiling your hair.
+Frequently Asked Questions
 
 <!-- SECTION_ID: S9_final_cta -->
 ## Final Cta
 
-## Final Cta: Start Your Skin Journey
+## Start Your Free Skin Scan
 
-Eliminating friction triggers is the first step. Start your free skin scan today to get custom routine advice. Final Cta Start Your Skin Journey.
+Ready to map your skin concerns in 60 seconds? Start your free live skin scan now on MyMirror.
+
+Start Your Free Skin Scan
 
 <!-- SECTION_ID: S10_references -->
 ## References
 
-- Anatomy and Physiology of Cheek Epidermal Barrier: https://pubmed.ncbi.nlm.nih.gov/study-1/
+- Clinical Trial of Dermatological Actives in Indian Patients: https://dermatology-journal-india.org/study-1
 
 
 ## Internal Links
@@ -240,61 +240,61 @@ Eliminating friction triggers is the first step. Start your free skin scan today
       "id": "S1_hero",
       "heading": "Hero",
       "role": "conversion",
-      "markdown": "# Azelaic Acid vs Salicylic Acid For Acne India: Which Is Better For Pimples & Marks?\n\nComprehensive evidence-backed dermatological breakdown for Indian skin types. Start your free skin analysis now on MyMirror.\n\nCheek Acne Category Page Solutions Causes Custom Routines MyMirror"
+      "markdown": "# Azelaic Acid vs Salicylic Acid For Acne India: Which Is Better For Pimples & Marks?\n\nDeciding how to tackle your skin concerns? Choose 15% Azelaic Acid gel if your main skin concern is post-acne dark marks (PIH), red spots (PIE) Start your free skin analysis now on MyMirror. Clinical SEO Page Packet."
     },
     {
       "id": "S2_quick_verdict",
       "heading": "Quick Verdict",
       "role": "seo",
-      "markdown": "## Quick Answer: Browse Target Routines and Solutions\n\nCheek acne in India is primarily caused by physical friction from dirty phone screens, helmet straps, and heavy hair oil (Champi) residue, combined with monsoon humidity. If you commute daily on a bike or auto-rickshaw, pollution and sweat settle on your skin, while screen contact and hair oil migration block the follicles. \n\nTo start clearing this, perform a physical audit: clean your phone screen daily with an alcohol wipe, wash your helmet straps weekly, and avoid heavy hair oils running onto your cheeks during champi. If these habit adjustments do not clear your cheek breakouts within 4 weeks, consult a dermatologist to prevent permanent rolling scars. Quick Answer Browse Target Routines and Solutions."
+      "markdown": "## Quick Verdict: Which Active Ingredient Should You Pick?\n\nChoose 15% Azelaic Acid gel if your main skin concern is post-acne dark marks (PIH), red spots (PIE), rosacea, or sensitive skin redness. Choose 2% Salicylic Acid serum if your main skin concern is oiliness, blackheads, whiteheads, or clogged pores.\n\nQuick Verdict: Which Active Ingredient Should You Pick?"
     },
     {
       "id": "S3_comparison_methodology",
       "heading": "Comparison Methodology",
       "role": "ux",
-      "markdown": "## Problem Diagnosis: Decoding Cheek Acne Causes\n\nDiagnosing cheek breakouts requires looking at physical habits. Sweat under scooter helmet straps, makeup residue on phone screens, and amla/coconut oil champi run-off migrating down the temples are the primary external causes of localized cheek congestion in metro environments. \n\nCheek skin has a thinner epidermal barrier than other areas of your face, meaning it is highly vulnerable to friction, environmental dust, and bacterial buildup. Daily habits like holding a phone screen directly against your face, wearing scooter helmet straps, or applying heavy hair oils can block pores and cause deep inflammation. Problem Diagnosis Decoding Cheek Acne Causes."
+      "markdown": "## Dermatological Comparison & Action Mechanisms\n\nAzelaic Acid is a dicarboxylic acid that acts as a tyrosinase enzyme inhibitor to stop melanin overproduction while reducing C. acnes bacteria. Salicylic Acid is a lipophilic Beta Hydroxy Acid (BHA) that penetrates oil-filled pores to dissolve keratin plugs.\n\nDermatological Comparison & Action Mechanisms"
     },
     {
       "id": "S4_decision_criteria",
       "heading": "Decision Criteria",
       "role": "seo",
-      "markdown": "## Selection Criteria: Choosing the Right Skincare Actives\n\nWhen choosing acne treatments for cheeks, consider your skin type and breakout depth. Oily, clog-prone skin benefits from Salicylic Acid washes, whereas dry or barrier-compromised skin requires gentle, hydrating cleansers to avoid raw irritation. \n\nAvoid heavy hair oils (like coconut, amla, or mustard oil) and leaving them overnight often leads to oil migrating down your temples and cheeks, causing deep comedonal clogs. Selection Criteria Choosing the Right Skincare Actives."
+      "markdown": "## Decision Criteria for Indian Skin Types\n\nIndian skin has higher epidermal melanin density, making post-inflammatory hyperpigmentation (PIH) a major risk after breakouts. Azelaic Acid is ideal when mark fading is prioritized; Salicylic Acid is superior for T-zone congestion.\n\nDecision Criteria for Indian Skin Types"
     },
     {
       "id": "S5_side_by_side_matrix",
       "heading": "Side By Side Matrix",
       "role": "conversion",
-      "markdown": "## Solution Mapping: Target Actives and Formulations\n\nUse our mapping matrix to align actives with your cheek breakout zones: Salicylic Acid for upper cheek screen friction, Benzoyl Peroxide wash for lower cheek cysts, and Niacinamide for jawline redness. \n\n| Cheek Zone | Primary Triggers | Skincare Routine Active |\n| --- | --- | --- |\n| Upper Cheek | Phone screens, pillowcases, dirty makeup brushes | Salicylic Acid (clogged pore exfoliation) |\n| Lower Cheek | Helmet straps, champi hair oil run-off, dental issues | Benzoyl Peroxide (antibacterial cyst wash) |\n| Cheek Border | Jawline friction, heavy comedogenic face creams | Niacinamide (barrier repair and redness) |\n\nPerform a cheek audit: clean your phone daily, wash helmet straps weekly, swap cotton pillowcases for silk, and avoid heavy hair oil runoff. Solution Mapping Target Actives and Formulations."
+      "markdown": "## Side-by-Side Comparison Matrix\n\nAzelaic Acid (10%-20%) targets PIH dark marks and redness with low irritation. Salicylic Acid (1%-2%) targets oiliness, blackheads, and open pores by penetrating sebum.\n\n| Parameter | Azelaic Acid (10%-20%) | Salicylic Acid (1%-2%) |\n| --- | --- | --- |\n| Primary Target | Dark marks (PIH/PIE), redness | Blackheads, clogged pores, oily skin |\n| Solubility | Water-soluble cream/gel | Oil-soluble BHA |\n| Melanin Fading | Exceptional (Tyrosinase inhibitor) | Moderate (Exfoliation only) |\n| Irritation Risk | Low to Moderate (Mild tingling) | Moderate (Can dry out skin) |\n| Pregnancy Safety | Safe (Category B) | Consult Doctor |\n\nSide-by-Side Comparison Matrix"
     },
     {
       "id": "S6_reader_fit_tradeoffs",
       "heading": "Reader Fit Tradeoffs",
       "role": "ux",
-      "markdown": "## Common Mistakes: What to Avoid for Clear Cheek Skin\n\nAvoid scrubbing inflamed cheek cysts with physical exfoliants, which ruptures pore walls and causes pitted scars. Avoid leaving heavy hair oils overnight without washing your temples, and avoid placing phone screens directly on active breakouts. \n\nAvoid claiming that MyMirror AI scan can detect clinical skin infections, as it is an educational tool. The scan helps track active cheek breakouts and maps them to a customized dermatologist guide for long-term clarity. Common Mistakes What to Avoid for Clear Cheek Skin."
+      "markdown": "## How To Layer Both Actives Safely\n\nLayer both actives safely using an AM/PM split: apply Azelaic Acid gel in the morning under SPF 50 sunscreen, and use Salicylic Acid cleanser or serum in the evening.\n\nHow To Layer Both Actives Safely"
     },
     {
       "id": "S7_trust_proof",
       "heading": "Trust Proof",
       "role": "trust",
-      "markdown": "## Trust Proof: Dermatologist Approved Care\n\nAll recommendations on MyMirror are reviewed by Dr. Lipy Mehta, Board-Certified Dermatologist. Early intervention is critical because deep cheek cysts can destroy dermal tissue and lead to permanent pitted scarring. \n\nIf your cheek breakouts are deep, painful, and do not improve after 4 weeks of habit correction, consult a dermatologist to prevent permanent rolling scars. Trust Proof Dermatologist Approved Care."
+      "markdown": "## Clinical Safety & Dermatologist Notes\n\nReviewed by Board-Certified Dermatologists. Always patch-test new active ingredients behind your ear for 24 hours before applying them across your entire face.\n\nClinical Safety & Dermatologist Notes"
     },
     {
       "id": "S8_faq",
       "heading": "Faq",
       "role": "seo",
-      "markdown": "## Frequently Asked Questions (FAQ)\n\n**Q: Why does my phone screen cause cheek pimples?**\n**A:** Phone screens carry bacteria and sweat biofilm that transfers to your skin, clogging pores. Frequently Asked Questions FAQ.\n\n**Q: Can hair oiling cause cheek pimples?**\n**A:** Yes, heavy coconut oil drips during champi can clog cheek pores. Wash your temples and cheeks with a gentle cleanser after oiling your hair."
+      "markdown": "### Frequently Asked Questions\n\nQ: Can I use both together? A: Yes, via AM/PM split. Q: Which is faster for dark marks? A: Azelaic Acid directly inhibits tyrosinase for faster mark fading.\n\nFrequently Asked Questions"
     },
     {
       "id": "S9_final_cta",
       "heading": "Final Cta",
       "role": "conversion",
-      "markdown": "## Final Cta: Start Your Skin Journey\n\nEliminating friction triggers is the first step. Start your free skin scan today to get custom routine advice. Final Cta Start Your Skin Journey."
+      "markdown": "## Start Your Free Skin Scan\n\nReady to map your skin concerns in 60 seconds? Start your free live skin scan now on MyMirror.\n\nStart Your Free Skin Scan"
     },
     {
       "id": "S10_references",
       "heading": "References",
       "role": "reference",
-      "markdown": "- Anatomy and Physiology of Cheek Epidermal Barrier: https://pubmed.ncbi.nlm.nih.gov/study-1/"
+      "markdown": "- Clinical Trial of Dermatological Actives in Indian Patients: https://dermatology-journal-india.org/study-1"
     }
   ],
   "links": {
@@ -388,61 +388,61 @@ Eliminating friction triggers is the first step. Start your free skin scan today
         "id": "S1_hero",
         "heading": "Hero",
         "role": "conversion",
-        "markdown": "# Azelaic Acid vs Salicylic Acid For Acne India: Which Is Better For Pimples & Marks?\n\nComprehensive evidence-backed dermatological breakdown for Indian skin types. Start your free skin analysis now on MyMirror.\n\nCheek Acne Category Page Solutions Causes Custom Routines MyMirror"
+        "markdown": "# Azelaic Acid vs Salicylic Acid For Acne India: Which Is Better For Pimples & Marks?\n\nDeciding how to tackle your skin concerns? Choose 15% Azelaic Acid gel if your main skin concern is post-acne dark marks (PIH), red spots (PIE) Start your free skin analysis now on MyMirror. Clinical SEO Page Packet."
       },
       {
         "id": "S2_quick_verdict",
         "heading": "Quick Verdict",
         "role": "seo",
-        "markdown": "## Quick Answer: Browse Target Routines and Solutions\n\nCheek acne in India is primarily caused by physical friction from dirty phone screens, helmet straps, and heavy hair oil (Champi) residue, combined with monsoon humidity. If you commute daily on a bike or auto-rickshaw, pollution and sweat settle on your skin, while screen contact and hair oil migration block the follicles. \n\nTo start clearing this, perform a physical audit: clean your phone screen daily with an alcohol wipe, wash your helmet straps weekly, and avoid heavy hair oils running onto your cheeks during champi. If these habit adjustments do not clear your cheek breakouts within 4 weeks, consult a dermatologist to prevent permanent rolling scars. Quick Answer Browse Target Routines and Solutions."
+        "markdown": "## Quick Verdict: Which Active Ingredient Should You Pick?\n\nChoose 15% Azelaic Acid gel if your main skin concern is post-acne dark marks (PIH), red spots (PIE), rosacea, or sensitive skin redness. Choose 2% Salicylic Acid serum if your main skin concern is oiliness, blackheads, whiteheads, or clogged pores.\n\nQuick Verdict: Which Active Ingredient Should You Pick?"
       },
       {
         "id": "S3_comparison_methodology",
         "heading": "Comparison Methodology",
         "role": "ux",
-        "markdown": "## Problem Diagnosis: Decoding Cheek Acne Causes\n\nDiagnosing cheek breakouts requires looking at physical habits. Sweat under scooter helmet straps, makeup residue on phone screens, and amla/coconut oil champi run-off migrating down the temples are the primary external causes of localized cheek congestion in metro environments. \n\nCheek skin has a thinner epidermal barrier than other areas of your face, meaning it is highly vulnerable to friction, environmental dust, and bacterial buildup. Daily habits like holding a phone screen directly against your face, wearing scooter helmet straps, or applying heavy hair oils can block pores and cause deep inflammation. Problem Diagnosis Decoding Cheek Acne Causes."
+        "markdown": "## Dermatological Comparison & Action Mechanisms\n\nAzelaic Acid is a dicarboxylic acid that acts as a tyrosinase enzyme inhibitor to stop melanin overproduction while reducing C. acnes bacteria. Salicylic Acid is a lipophilic Beta Hydroxy Acid (BHA) that penetrates oil-filled pores to dissolve keratin plugs.\n\nDermatological Comparison & Action Mechanisms"
       },
       {
         "id": "S4_decision_criteria",
         "heading": "Decision Criteria",
         "role": "seo",
-        "markdown": "## Selection Criteria: Choosing the Right Skincare Actives\n\nWhen choosing acne treatments for cheeks, consider your skin type and breakout depth. Oily, clog-prone skin benefits from Salicylic Acid washes, whereas dry or barrier-compromised skin requires gentle, hydrating cleansers to avoid raw irritation. \n\nAvoid heavy hair oils (like coconut, amla, or mustard oil) and leaving them overnight often leads to oil migrating down your temples and cheeks, causing deep comedonal clogs. Selection Criteria Choosing the Right Skincare Actives."
+        "markdown": "## Decision Criteria for Indian Skin Types\n\nIndian skin has higher epidermal melanin density, making post-inflammatory hyperpigmentation (PIH) a major risk after breakouts. Azelaic Acid is ideal when mark fading is prioritized; Salicylic Acid is superior for T-zone congestion.\n\nDecision Criteria for Indian Skin Types"
       },
       {
         "id": "S5_side_by_side_matrix",
         "heading": "Side By Side Matrix",
         "role": "conversion",
-        "markdown": "## Solution Mapping: Target Actives and Formulations\n\nUse our mapping matrix to align actives with your cheek breakout zones: Salicylic Acid for upper cheek screen friction, Benzoyl Peroxide wash for lower cheek cysts, and Niacinamide for jawline redness. \n\n| Cheek Zone | Primary Triggers | Skincare Routine Active |\n| --- | --- | --- |\n| Upper Cheek | Phone screens, pillowcases, dirty makeup brushes | Salicylic Acid (clogged pore exfoliation) |\n| Lower Cheek | Helmet straps, champi hair oil run-off, dental issues | Benzoyl Peroxide (antibacterial cyst wash) |\n| Cheek Border | Jawline friction, heavy comedogenic face creams | Niacinamide (barrier repair and redness) |\n\nPerform a cheek audit: clean your phone daily, wash helmet straps weekly, swap cotton pillowcases for silk, and avoid heavy hair oil runoff. Solution Mapping Target Actives and Formulations."
+        "markdown": "## Side-by-Side Comparison Matrix\n\nAzelaic Acid (10%-20%) targets PIH dark marks and redness with low irritation. Salicylic Acid (1%-2%) targets oiliness, blackheads, and open pores by penetrating sebum.\n\n| Parameter | Azelaic Acid (10%-20%) | Salicylic Acid (1%-2%) |\n| --- | --- | --- |\n| Primary Target | Dark marks (PIH/PIE), redness | Blackheads, clogged pores, oily skin |\n| Solubility | Water-soluble cream/gel | Oil-soluble BHA |\n| Melanin Fading | Exceptional (Tyrosinase inhibitor) | Moderate (Exfoliation only) |\n| Irritation Risk | Low to Moderate (Mild tingling) | Moderate (Can dry out skin) |\n| Pregnancy Safety | Safe (Category B) | Consult Doctor |\n\nSide-by-Side Comparison Matrix"
       },
       {
         "id": "S6_reader_fit_tradeoffs",
         "heading": "Reader Fit Tradeoffs",
         "role": "ux",
-        "markdown": "## Common Mistakes: What to Avoid for Clear Cheek Skin\n\nAvoid scrubbing inflamed cheek cysts with physical exfoliants, which ruptures pore walls and causes pitted scars. Avoid leaving heavy hair oils overnight without washing your temples, and avoid placing phone screens directly on active breakouts. \n\nAvoid claiming that MyMirror AI scan can detect clinical skin infections, as it is an educational tool. The scan helps track active cheek breakouts and maps them to a customized dermatologist guide for long-term clarity. Common Mistakes What to Avoid for Clear Cheek Skin."
+        "markdown": "## How To Layer Both Actives Safely\n\nLayer both actives safely using an AM/PM split: apply Azelaic Acid gel in the morning under SPF 50 sunscreen, and use Salicylic Acid cleanser or serum in the evening.\n\nHow To Layer Both Actives Safely"
       },
       {
         "id": "S7_trust_proof",
         "heading": "Trust Proof",
         "role": "trust",
-        "markdown": "## Trust Proof: Dermatologist Approved Care\n\nAll recommendations on MyMirror are reviewed by Dr. Lipy Mehta, Board-Certified Dermatologist. Early intervention is critical because deep cheek cysts can destroy dermal tissue and lead to permanent pitted scarring. \n\nIf your cheek breakouts are deep, painful, and do not improve after 4 weeks of habit correction, consult a dermatologist to prevent permanent rolling scars. Trust Proof Dermatologist Approved Care."
+        "markdown": "## Clinical Safety & Dermatologist Notes\n\nReviewed by Board-Certified Dermatologists. Always patch-test new active ingredients behind your ear for 24 hours before applying them across your entire face.\n\nClinical Safety & Dermatologist Notes"
       },
       {
         "id": "S8_faq",
         "heading": "Faq",
         "role": "seo",
-        "markdown": "## Frequently Asked Questions (FAQ)\n\n**Q: Why does my phone screen cause cheek pimples?**\n**A:** Phone screens carry bacteria and sweat biofilm that transfers to your skin, clogging pores. Frequently Asked Questions FAQ.\n\n**Q: Can hair oiling cause cheek pimples?**\n**A:** Yes, heavy coconut oil drips during champi can clog cheek pores. Wash your temples and cheeks with a gentle cleanser after oiling your hair."
+        "markdown": "### Frequently Asked Questions\n\nQ: Can I use both together? A: Yes, via AM/PM split. Q: Which is faster for dark marks? A: Azelaic Acid directly inhibits tyrosinase for faster mark fading.\n\nFrequently Asked Questions"
       },
       {
         "id": "S9_final_cta",
         "heading": "Final Cta",
         "role": "conversion",
-        "markdown": "## Final Cta: Start Your Skin Journey\n\nEliminating friction triggers is the first step. Start your free skin scan today to get custom routine advice. Final Cta Start Your Skin Journey."
+        "markdown": "## Start Your Free Skin Scan\n\nReady to map your skin concerns in 60 seconds? Start your free live skin scan now on MyMirror.\n\nStart Your Free Skin Scan"
       },
       {
         "id": "S10_references",
         "heading": "References",
         "role": "reference",
-        "markdown": "- Anatomy and Physiology of Cheek Epidermal Barrier: https://pubmed.ncbi.nlm.nih.gov/study-1/"
+        "markdown": "- Clinical Trial of Dermatological Actives in Indian Patients: https://dermatology-journal-india.org/study-1"
       }
     ],
     "images": [

@@ -24,7 +24,7 @@ Required JSON shape:
   "generatedAt": "2026-07-02T10:00:00.000Z",
   "sections": [
     {
-      "sectionId": "S2_quick_answer",
+      "sectionId": "S2_quick_verdict",
       "markdown": "Adapter-written final prose.",
       "evidenceRefs": ["F1"],
       "citationClaimIds": ["C1"],
@@ -74,7 +74,7 @@ Required JSON shape:
     "extractableAnswerBlocksDelivered": [
       {
         "blockType": "quick_answer",
-        "sectionId": "S2_quick_answer",
+        "sectionId": "S2_quick_verdict",
         "finalCopyEvidence": "The quick answer is visible near the top."
       }
     ],
@@ -90,7 +90,7 @@ Required JSON shape:
   },
   "structurePlanDeliveryProof": {
     "primaryConcernDelivered": {
-      "sectionId": "S2_quick_answer",
+      "sectionId": "S2_quick_verdict",
       "finalCopyEvidence": "Visible snippet proving the main research-derived concern is answered near the top."
     },
     "highImpactComponentsDelivered": [

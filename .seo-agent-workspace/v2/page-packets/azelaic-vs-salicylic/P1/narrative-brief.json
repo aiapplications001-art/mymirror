@@ -12,23 +12,23 @@
     },
     {
       "sectionId": "S2_quick_verdict",
-      "direction": "Detail the diagnostic and habit audit steps for S2_quick_answer."
+      "direction": "Detail the diagnostic and habit audit steps for S2_quick_verdict."
     },
     {
       "sectionId": "S3_comparison_methodology",
-      "direction": "Detail the diagnostic and habit audit steps for S3_problem_diagnosis."
+      "direction": "Detail the diagnostic and habit audit steps for S3_comparison_methodology."
     },
     {
       "sectionId": "S4_decision_criteria",
-      "direction": "Detail the diagnostic and habit audit steps for S4_selection_criteria."
+      "direction": "Detail the diagnostic and habit audit steps for S4_decision_criteria."
     },
     {
       "sectionId": "S5_side_by_side_matrix",
-      "direction": "Detail the diagnostic and habit audit steps for S5_solution_mapping."
+      "direction": "Detail the diagnostic and habit audit steps for S5_side_by_side_matrix."
     },
     {
       "sectionId": "S6_reader_fit_tradeoffs",
-      "direction": "Detail the diagnostic and habit audit steps for S6_common_mistakes."
+      "direction": "Detail the diagnostic and habit audit steps for S6_reader_fit_tradeoffs."
     },
     {
       "sectionId": "S7_trust_proof",
