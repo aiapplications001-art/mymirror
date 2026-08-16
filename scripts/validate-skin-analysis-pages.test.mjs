@@ -50,6 +50,14 @@ test('SA1 hero makes the free, fast, private scan promise visible before scrolli
   assert.match(html, /Private by design/);
 });
 
+test('SA1 desktop hero stays compact without losing its decision cues', async () => {
+  const html = await readFile('skin-analysis/online-skin-analysis/index.html', 'utf8');
+
+  assert.match(html, /\.hero \{ min-height:480px;/);
+  assert.match(html, /font-size:clamp\(2\.35rem,3\.7vw,3\.4rem\)/);
+  assert.match(html, /<h1>See your skin more clearly\.<\/h1>/);
+});
+
 test('SA2 passes the static MyMirror page contract', async () => {
   assert.deepEqual(await validateCampaign(process.cwd(), ['how-to-know-your-skin-type']), []);
 });

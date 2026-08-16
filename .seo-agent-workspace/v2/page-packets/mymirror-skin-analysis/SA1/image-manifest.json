@@ -2,7 +2,7 @@
   "schemaVersion": "image-manifest.v1",
   "page": {
     "slug": "online-skin-analysis",
-    "h1": "See your skin more clearly—in about 60 seconds.",
+    "h1": "See your skin more clearly.",
     "companyName": "MyMirror"
   },
   "promptCompanionRequired": false,
