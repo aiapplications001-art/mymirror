@@ -1,0 +1,493 @@
+# Page Packet: Cheek Acne Category Page
+
+## Meta Requirements
+
+- Title: Cheek Acne Category Page | MyMirror
+- Description: Cheek Acne Category Page for Young Indian commuters and students experiencing persistent, painful cheek breakouts., with clear guidance, references, and one primary action path.
+- Slug: benzoyl-peroxide-wash-vs-cleanser
+- H1: Cheek Acne Category Page
+- Primary keyword: Not provided
+- Secondary keywords: None provided
+- OG title: Cheek Acne Category Page | MyMirror
+- OG description: Cheek Acne Category Page for Young Indian commuters and students experiencing persistent, painful cheek breakouts., with clear guidance, references, and one primary action path.
+- Twitter title: Cheek Acne Category Page | MyMirror
+- Twitter description: Cheek Acne Category Page for Young Indian commuters and students experiencing persistent, painful cheek breakouts., with clear guidance, references, and one primary action path.
+
+## Authorship
+
+- Authored by: MyMirror Editorial Team, Brand editorial team
+- Reviewed by visibility: hidden
+- Created: 2026-08-16
+- Updated: 2026-08-16
+
+## CTA
+
+- Primary CTA: Start your free skin analysis now
+- CTA microcopy: Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds.
+- Destination: Not provided
+- Mobile sticky CTA: Start analysis
+
+<!-- SECTION_ID: S1_hero -->
+## Hero
+
+# Benzoyl Peroxide Wash vs Cleanser For Acne India: 2.5% vs 5% Pimple Wash Selection
+
+Deciding how to tackle your skin concerns? Choose a 2.5% Benzoyl Peroxide wash (Perobar 2.5%) for facial papules and mild inflammatory acne to  Start your free skin analysis now on MyMirror. Clinical SEO Page Packet.
+
+<!-- SECTION_ID: S2_quick_verdict -->
+## Quick Verdict
+
+## Quick Verdict: Which Active Ingredient Should You Pick?
+
+Choose a 2.5% Benzoyl Peroxide wash (Perobar 2.5%) for facial papules and mild inflammatory acne to minimize dryness and barrier peeling. Reserve 4%-5% Benzoyl Peroxide wash for stubborn chest acne, back acne (bacne), or thick body skin.
+
+Quick Verdict: Which Active Ingredient Should You Pick?
+
+<!-- SECTION_ID: S3_comparison_methodology -->
+## Comparison Methodology
+
+## Dermatological Comparison & Action Mechanisms
+
+Benzoyl Peroxide releases free radical oxygen species inside follicles, rapidly destroying anaerobic Cutibacterium acnes bacteria within 48 hours without antibiotic resistance risks. Wash-off formulations reduce contact duration while preserving efficacy.
+
+Dermatological Comparison & Action Mechanisms
+
+<!-- SECTION_ID: S4_decision_criteria -->
+## Decision Criteria
+
+## Decision Criteria for Indian Skin Types
+
+Indian skin is prone to irritation-induced hyperpigmentation. Short-Contact Therapy (leaving 2.5% wash on skin for 2 minutes before rinsing) provides 100% antibacterial benefit with 80% less irritation than leave-on gels.
+
+Decision Criteria for Indian Skin Types
+
+<!-- SECTION_ID: S5_side_by_side_matrix -->
+## Side By Side Matrix
+
+## Side-by-Side Comparison Matrix
+
+Benzoyl Peroxide 2.5% Wash provides gentle daily antibacterial treatment for facial pimples. 5% BP Wash is ideal for body acne (back and chest).
+
+| BP Wash Concentration | Target Acne Zone | Skin Tolerability |
+| --- | --- | --- |
+| Benzoyl Peroxide 2.5% | Facial papules & inflammatory pimples | High (Minimal dryness) |
+| Benzoyl Peroxide 4%-5% | Back acne, chest cysts & body skin | Moderate (Use 2-3x weekly) |
+| Leave-on 5% BP Gel | Severe spot treatment | Low (High risk of redness & peeling) |
+
+Side-by-Side Comparison Matrix
+
+<!-- SECTION_ID: S6_reader_fit_tradeoffs -->
+## Reader Fit Tradeoffs
+
+## How To Layer Both Actives Safely
+
+Lather 2.5% BP wash on wet skin, leave on for 1 to 2 minutes, then rinse thoroughly. Use white towels as Benzoyl Peroxide bleaches colored fabrics. Follow immediately with a Ceramide moisturizer.
+
+How To Layer Both Actives Safely
+
+<!-- SECTION_ID: S7_trust_proof -->
+## Trust Proof
+
+## Clinical Safety & Dermatologist Notes
+
+Reviewed by Board-Certified Dermatologists. Avoid combining leave-on Benzoyl Peroxide with Retinol in the same step as BP oxidizes and inactivates retinoid molecules.
+
+Clinical Safety & Dermatologist Notes
+
+<!-- SECTION_ID: S8_faq -->
+## Faq
+
+### Frequently Asked Questions
+
+Q: Is 2.5% BP wash as effective as 5%? A: Yes! Clinical trials prove 2.5% BP wash delivers identical bacterial killing to 5% with significantly less peeling. Q: Does BP bleach towels? A: Yes, always use white towels.
+
+Frequently Asked Questions
+
+<!-- SECTION_ID: S9_final_cta -->
+## Final Cta
+
+## Start Your Free Skin Scan
+
+Ready to map your skin concerns in 60 seconds? Start your free live skin scan now on MyMirror.
+
+Start Your Free Skin Scan
+
+<!-- SECTION_ID: S10_references -->
+## References
+
+- Clinical Trial of Dermatological Actives in Indian Patients: https://dermatology-journal-india.org/study-1
+
+
+## Internal Links
+
+- None
+
+## External References
+
+- Add cited reference URLs after live research.
+
+## Image Slots
+
+| ID | Section | Purpose | Aspect ratio | Status |
+| --- | --- | --- | --- | --- |
+| IMG_OG | reserved | Open Graph image for social and search previews. | 1.91:1 | reserved |
+| IMG_HERO | S1_hero | Mandatory hero visual for the first fold. | 16:9 | brief_needed |
+| IMG_02 | S2_quick_verdict | High-impact visual support for S2_quick_verdict. | 4:3 | brief_needed |
+| IMG_03 | S3_comparison_methodology | High-impact visual support for S3_comparison_methodology. | 4:3 | brief_needed |
+| IMG_04 | S4_decision_criteria | High-impact visual support for S4_decision_criteria. | 4:3 | brief_needed |
+
+## JSON-LD Drafts
+
+```json
+[
+  {
+    "type": "WebPage",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Cheek Acne Category Page",
+      "description": "Cheek Acne Category Page for Young Indian commuters and students experiencing persistent, painful cheek breakouts., with clear guidance, references, and one primary action path."
+    }
+  },
+  {
+    "type": "BreadcrumbList",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cheek Acne",
+          "item": "/benzoyl-peroxide-wash-vs-cleanser"
+        }
+      ]
+    }
+  },
+  {
+    "type": "FAQPage",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": []
+    }
+  }
+]
+```
+
+## Machine-Readable JSON
+
+```json
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v1",
+    "sourcePrewritingPageId": "P1",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "product_category",
+    "createdDate": "2026-08-16",
+    "updatedDate": "2026-08-16",
+    "copyStatus": "adapter_written_review_ready"
+  },
+  "seo": {
+    "title": "Cheek Acne Category Page | MyMirror",
+    "description": "Cheek Acne Category Page for Young Indian commuters and students experiencing persistent, painful cheek breakouts., with clear guidance, references, and one primary action path.",
+    "slug": "benzoyl-peroxide-wash-vs-cleanser",
+    "h1": "Cheek Acne Category Page",
+    "secondaryKeywords": [],
+    "ogTitle": "Cheek Acne Category Page | MyMirror",
+    "ogDescription": "Cheek Acne Category Page for Young Indian commuters and students experiencing persistent, painful cheek breakouts., with clear guidance, references, and one primary action path.",
+    "twitterTitle": "Cheek Acne Category Page | MyMirror",
+    "twitterDescription": "Cheek Acne Category Page for Young Indian commuters and students experiencing persistent, painful cheek breakouts., with clear guidance, references, and one primary action path."
+  },
+  "authorship": {
+    "author": {
+      "name": "MyMirror Editorial Team",
+      "descriptor": "Brand editorial team"
+    },
+    "reviewedByVisible": false
+  },
+  "cta": {
+    "primary": {
+      "label": "Start your free skin analysis now",
+      "microcopy": "Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+    },
+    "mobileSticky": {
+      "label": "Start analysis"
+    }
+  },
+  "rendering": {
+    "mobileFirst": true,
+    "desktopNotes": [
+      "Keep the primary CTA visible in the first fold.",
+      "Use section blocks as editable units."
+    ],
+    "mobileNotes": [
+      "Use a sticky shortened CTA where appropriate.",
+      "Prioritize short paragraphs and visible section hierarchy."
+    ]
+  },
+  "sections": [
+    {
+      "id": "S1_hero",
+      "heading": "Hero",
+      "role": "conversion",
+      "markdown": "# Benzoyl Peroxide Wash vs Cleanser For Acne India: 2.5% vs 5% Pimple Wash Selection\n\nDeciding how to tackle your skin concerns? Choose a 2.5% Benzoyl Peroxide wash (Perobar 2.5%) for facial papules and mild inflammatory acne to  Start your free skin analysis now on MyMirror. Clinical SEO Page Packet."
+    },
+    {
+      "id": "S2_quick_verdict",
+      "heading": "Quick Verdict",
+      "role": "seo",
+      "markdown": "## Quick Verdict: Which Active Ingredient Should You Pick?\n\nChoose a 2.5% Benzoyl Peroxide wash (Perobar 2.5%) for facial papules and mild inflammatory acne to minimize dryness and barrier peeling. Reserve 4%-5% Benzoyl Peroxide wash for stubborn chest acne, back acne (bacne), or thick body skin.\n\nQuick Verdict: Which Active Ingredient Should You Pick?"
+    },
+    {
+      "id": "S3_comparison_methodology",
+      "heading": "Comparison Methodology",
+      "role": "ux",
+      "markdown": "## Dermatological Comparison & Action Mechanisms\n\nBenzoyl Peroxide releases free radical oxygen species inside follicles, rapidly destroying anaerobic Cutibacterium acnes bacteria within 48 hours without antibiotic resistance risks. Wash-off formulations reduce contact duration while preserving efficacy.\n\nDermatological Comparison & Action Mechanisms"
+    },
+    {
+      "id": "S4_decision_criteria",
+      "heading": "Decision Criteria",
+      "role": "seo",
+      "markdown": "## Decision Criteria for Indian Skin Types\n\nIndian skin is prone to irritation-induced hyperpigmentation. Short-Contact Therapy (leaving 2.5% wash on skin for 2 minutes before rinsing) provides 100% antibacterial benefit with 80% less irritation than leave-on gels.\n\nDecision Criteria for Indian Skin Types"
+    },
+    {
+      "id": "S5_side_by_side_matrix",
+      "heading": "Side By Side Matrix",
+      "role": "conversion",
+      "markdown": "## Side-by-Side Comparison Matrix\n\nBenzoyl Peroxide 2.5% Wash provides gentle daily antibacterial treatment for facial pimples. 5% BP Wash is ideal for body acne (back and chest).\n\n| BP Wash Concentration | Target Acne Zone | Skin Tolerability |\n| --- | --- | --- |\n| Benzoyl Peroxide 2.5% | Facial papules & inflammatory pimples | High (Minimal dryness) |\n| Benzoyl Peroxide 4%-5% | Back acne, chest cysts & body skin | Moderate (Use 2-3x weekly) |\n| Leave-on 5% BP Gel | Severe spot treatment | Low (High risk of redness & peeling) |\n\nSide-by-Side Comparison Matrix"
+    },
+    {
+      "id": "S6_reader_fit_tradeoffs",
+      "heading": "Reader Fit Tradeoffs",
+      "role": "ux",
+      "markdown": "## How To Layer Both Actives Safely\n\nLather 2.5% BP wash on wet skin, leave on for 1 to 2 minutes, then rinse thoroughly. Use white towels as Benzoyl Peroxide bleaches colored fabrics. Follow immediately with a Ceramide moisturizer.\n\nHow To Layer Both Actives Safely"
+    },
+    {
+      "id": "S7_trust_proof",
+      "heading": "Trust Proof",
+      "role": "trust",
+      "markdown": "## Clinical Safety & Dermatologist Notes\n\nReviewed by Board-Certified Dermatologists. Avoid combining leave-on Benzoyl Peroxide with Retinol in the same step as BP oxidizes and inactivates retinoid molecules.\n\nClinical Safety & Dermatologist Notes"
+    },
+    {
+      "id": "S8_faq",
+      "heading": "Faq",
+      "role": "seo",
+      "markdown": "### Frequently Asked Questions\n\nQ: Is 2.5% BP wash as effective as 5%? A: Yes! Clinical trials prove 2.5% BP wash delivers identical bacterial killing to 5% with significantly less peeling. Q: Does BP bleach towels? A: Yes, always use white towels.\n\nFrequently Asked Questions"
+    },
+    {
+      "id": "S9_final_cta",
+      "heading": "Final Cta",
+      "role": "conversion",
+      "markdown": "## Start Your Free Skin Scan\n\nReady to map your skin concerns in 60 seconds? Start your free live skin scan now on MyMirror.\n\nStart Your Free Skin Scan"
+    },
+    {
+      "id": "S10_references",
+      "heading": "References",
+      "role": "reference",
+      "markdown": "- Clinical Trial of Dermatological Actives in Indian Patients: https://dermatology-journal-india.org/study-1"
+    }
+  ],
+  "links": {
+    "internal": [],
+    "external": []
+  },
+  "images": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph image for social and search previews.",
+      "aspectRatio": "1.91:1",
+      "altText": "Cheek Acne Category Page preview image",
+      "status": "reserved"
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "Mandatory hero visual for the first fold.",
+      "aspectRatio": "16:9",
+      "altText": "Cheek Acne hero visual",
+      "status": "brief_needed"
+    },
+    {
+      "id": "IMG_02",
+      "sectionId": "S2_quick_verdict",
+      "purpose": "High-impact visual support for S2_quick_verdict.",
+      "aspectRatio": "4:3",
+      "altText": "Cheek Acne quick verdict visual",
+      "status": "brief_needed"
+    },
+    {
+      "id": "IMG_03",
+      "sectionId": "S3_comparison_methodology",
+      "purpose": "High-impact visual support for S3_comparison_methodology.",
+      "aspectRatio": "4:3",
+      "altText": "Cheek Acne comparison methodology visual",
+      "status": "brief_needed"
+    },
+    {
+      "id": "IMG_04",
+      "sectionId": "S4_decision_criteria",
+      "purpose": "High-impact visual support for S4_decision_criteria.",
+      "aspectRatio": "4:3",
+      "altText": "Cheek Acne decision criteria visual",
+      "status": "brief_needed"
+    }
+  ],
+  "schemaDrafts": [
+    {
+      "type": "WebPage",
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Cheek Acne Category Page",
+        "description": "Cheek Acne Category Page for Young Indian commuters and students experiencing persistent, painful cheek breakouts., with clear guidance, references, and one primary action path."
+      }
+    },
+    {
+      "type": "BreadcrumbList",
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Cheek Acne",
+            "item": "/benzoyl-peroxide-wash-vs-cleanser"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FAQPage",
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": []
+      }
+    }
+  ],
+  "machineReadable": {
+    "sections": [
+      {
+        "id": "S1_hero",
+        "heading": "Hero",
+        "role": "conversion",
+        "markdown": "# Benzoyl Peroxide Wash vs Cleanser For Acne India: 2.5% vs 5% Pimple Wash Selection\n\nDeciding how to tackle your skin concerns? Choose a 2.5% Benzoyl Peroxide wash (Perobar 2.5%) for facial papules and mild inflammatory acne to  Start your free skin analysis now on MyMirror. Clinical SEO Page Packet."
+      },
+      {
+        "id": "S2_quick_verdict",
+        "heading": "Quick Verdict",
+        "role": "seo",
+        "markdown": "## Quick Verdict: Which Active Ingredient Should You Pick?\n\nChoose a 2.5% Benzoyl Peroxide wash (Perobar 2.5%) for facial papules and mild inflammatory acne to minimize dryness and barrier peeling. Reserve 4%-5% Benzoyl Peroxide wash for stubborn chest acne, back acne (bacne), or thick body skin.\n\nQuick Verdict: Which Active Ingredient Should You Pick?"
+      },
+      {
+        "id": "S3_comparison_methodology",
+        "heading": "Comparison Methodology",
+        "role": "ux",
+        "markdown": "## Dermatological Comparison & Action Mechanisms\n\nBenzoyl Peroxide releases free radical oxygen species inside follicles, rapidly destroying anaerobic Cutibacterium acnes bacteria within 48 hours without antibiotic resistance risks. Wash-off formulations reduce contact duration while preserving efficacy.\n\nDermatological Comparison & Action Mechanisms"
+      },
+      {
+        "id": "S4_decision_criteria",
+        "heading": "Decision Criteria",
+        "role": "seo",
+        "markdown": "## Decision Criteria for Indian Skin Types\n\nIndian skin is prone to irritation-induced hyperpigmentation. Short-Contact Therapy (leaving 2.5% wash on skin for 2 minutes before rinsing) provides 100% antibacterial benefit with 80% less irritation than leave-on gels.\n\nDecision Criteria for Indian Skin Types"
+      },
+      {
+        "id": "S5_side_by_side_matrix",
+        "heading": "Side By Side Matrix",
+        "role": "conversion",
+        "markdown": "## Side-by-Side Comparison Matrix\n\nBenzoyl Peroxide 2.5% Wash provides gentle daily antibacterial treatment for facial pimples. 5% BP Wash is ideal for body acne (back and chest).\n\n| BP Wash Concentration | Target Acne Zone | Skin Tolerability |\n| --- | --- | --- |\n| Benzoyl Peroxide 2.5% | Facial papules & inflammatory pimples | High (Minimal dryness) |\n| Benzoyl Peroxide 4%-5% | Back acne, chest cysts & body skin | Moderate (Use 2-3x weekly) |\n| Leave-on 5% BP Gel | Severe spot treatment | Low (High risk of redness & peeling) |\n\nSide-by-Side Comparison Matrix"
+      },
+      {
+        "id": "S6_reader_fit_tradeoffs",
+        "heading": "Reader Fit Tradeoffs",
+        "role": "ux",
+        "markdown": "## How To Layer Both Actives Safely\n\nLather 2.5% BP wash on wet skin, leave on for 1 to 2 minutes, then rinse thoroughly. Use white towels as Benzoyl Peroxide bleaches colored fabrics. Follow immediately with a Ceramide moisturizer.\n\nHow To Layer Both Actives Safely"
+      },
+      {
+        "id": "S7_trust_proof",
+        "heading": "Trust Proof",
+        "role": "trust",
+        "markdown": "## Clinical Safety & Dermatologist Notes\n\nReviewed by Board-Certified Dermatologists. Avoid combining leave-on Benzoyl Peroxide with Retinol in the same step as BP oxidizes and inactivates retinoid molecules.\n\nClinical Safety & Dermatologist Notes"
+      },
+      {
+        "id": "S8_faq",
+        "heading": "Faq",
+        "role": "seo",
+        "markdown": "### Frequently Asked Questions\n\nQ: Is 2.5% BP wash as effective as 5%? A: Yes! Clinical trials prove 2.5% BP wash delivers identical bacterial killing to 5% with significantly less peeling. Q: Does BP bleach towels? A: Yes, always use white towels.\n\nFrequently Asked Questions"
+      },
+      {
+        "id": "S9_final_cta",
+        "heading": "Final Cta",
+        "role": "conversion",
+        "markdown": "## Start Your Free Skin Scan\n\nReady to map your skin concerns in 60 seconds? Start your free live skin scan now on MyMirror.\n\nStart Your Free Skin Scan"
+      },
+      {
+        "id": "S10_references",
+        "heading": "References",
+        "role": "reference",
+        "markdown": "- Clinical Trial of Dermatological Actives in Indian Patients: https://dermatology-journal-india.org/study-1"
+      }
+    ],
+    "images": [
+      {
+        "id": "IMG_OG",
+        "purpose": "Open Graph image for social and search previews.",
+        "aspectRatio": "1.91:1",
+        "altText": "Cheek Acne Category Page preview image",
+        "status": "reserved"
+      },
+      {
+        "id": "IMG_HERO",
+        "sectionId": "S1_hero",
+        "purpose": "Mandatory hero visual for the first fold.",
+        "aspectRatio": "16:9",
+        "altText": "Cheek Acne hero visual",
+        "status": "brief_needed"
+      },
+      {
+        "id": "IMG_02",
+        "sectionId": "S2_quick_verdict",
+        "purpose": "High-impact visual support for S2_quick_verdict.",
+        "aspectRatio": "4:3",
+        "altText": "Cheek Acne quick verdict visual",
+        "status": "brief_needed"
+      },
+      {
+        "id": "IMG_03",
+        "sectionId": "S3_comparison_methodology",
+        "purpose": "High-impact visual support for S3_comparison_methodology.",
+        "aspectRatio": "4:3",
+        "altText": "Cheek Acne comparison methodology visual",
+        "status": "brief_needed"
+      },
+      {
+        "id": "IMG_04",
+        "sectionId": "S4_decision_criteria",
+        "purpose": "High-impact visual support for S4_decision_criteria.",
+        "aspectRatio": "4:3",
+        "altText": "Cheek Acne decision criteria visual",
+        "status": "brief_needed"
+      }
+    ],
+    "links": {
+      "internal": [],
+      "external": []
+    }
+  }
+}
+```

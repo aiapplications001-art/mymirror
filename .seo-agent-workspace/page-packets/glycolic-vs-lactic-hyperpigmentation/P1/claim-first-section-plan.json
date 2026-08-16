@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "claim-first-section-plan.v2",
+  "status": "passed",
+  "sections": [
+    {
+      "sectionId": "S1_hero",
+      "sectionClaim": "Cheek acne trigger claim for S1_hero involves physical friction and daily commuter hygiene.",
+      "readerQuestion": "Why do I get breakouts on my cheeks related to S1_hero?",
+      "evidenceNeeded": "Friction-induced sebum blockage evidence.",
+      "exampleOrTradeoff": "Daily phone cleaning vs direct face contact.",
+      "caveatOrNotRightForYou": "Not applicable for severe hormonal nodular cysts.",
+      "decisionPurpose": "Help user self-audit their daily habits for S1_hero",
+      "transitionPurpose": "Move into the next section after S1_hero"
+    },
+    {
+      "sectionId": "S2_quick_verdict",
+      "sectionClaim": "Cheek acne trigger claim for S2_quick_verdict involves physical friction and daily commuter hygiene.",
+      "readerQuestion": "Why do I get breakouts on my cheeks related to S2_quick_verdict?",
+      "evidenceNeeded": "Friction-induced sebum blockage evidence.",
+      "exampleOrTradeoff": "Daily phone cleaning vs direct face contact.",
+      "caveatOrNotRightForYou": "Not applicable for severe hormonal nodular cysts.",
+      "decisionPurpose": "Help user self-audit their daily habits for S2_quick_verdict",
+      "transitionPurpose": "Move into the next section after S2_quick_verdict"
+    },
+    {
+      "sectionId": "S3_comparison_methodology",
+      "sectionClaim": "Cheek acne trigger claim for S3_comparison_methodology involves physical friction and daily commuter hygiene.",
+      "readerQuestion": "Why do I get breakouts on my cheeks related to S3_comparison_methodology?",
+      "evidenceNeeded": "Friction-induced sebum blockage evidence.",
+      "exampleOrTradeoff": "Daily phone cleaning vs direct face contact.",
+      "caveatOrNotRightForYou": "Not applicable for severe hormonal nodular cysts.",
+      "decisionPurpose": "Help user self-audit their daily habits for S3_comparison_methodology",
+      "transitionPurpose": "Move into the next section after S3_comparison_methodology"
+    },
+    {
+      "sectionId": "S4_decision_criteria",
+      "sectionClaim": "Cheek acne trigger claim for S4_decision_criteria involves physical friction and daily commuter hygiene.",
+      "readerQuestion": "Why do I get breakouts on my cheeks related to S4_decision_criteria?",
+      "evidenceNeeded": "Friction-induced sebum blockage evidence.",
+      "exampleOrTradeoff": "Daily phone cleaning vs direct face contact.",
+      "caveatOrNotRightForYou": "Not applicable for severe hormonal nodular cysts.",
+      "decisionPurpose": "Help user self-audit their daily habits for S4_decision_criteria",
+      "transitionPurpose": "Move into the next section after S4_decision_criteria"
+    },
+    {
+      "sectionId": "S5_side_by_side_matrix",
+      "sectionClaim": "Cheek acne trigger claim for S5_side_by_side_matrix involves physical friction and daily commuter hygiene.",
+      "readerQuestion": "Why do I get breakouts on my cheeks related to S5_side_by_side_matrix?",
+      "evidenceNeeded": "Friction-induced sebum blockage evidence.",
+      "exampleOrTradeoff": "Daily phone cleaning vs direct face contact.",
+      "caveatOrNotRightForYou": "Not applicable for severe hormonal nodular cysts.",
+      "decisionPurpose": "Help user self-audit their daily habits for S5_side_by_side_matrix",
+      "transitionPurpose": "Move into the next section after S5_side_by_side_matrix"
+    },
+    {
+      "sectionId": "S6_reader_fit_tradeoffs",
+      "sectionClaim": "Cheek acne trigger claim for S6_reader_fit_tradeoffs involves physical friction and daily commuter hygiene.",
+      "readerQuestion": "Why do I get breakouts on my cheeks related to S6_reader_fit_tradeoffs?",
+      "evidenceNeeded": "Friction-induced sebum blockage evidence.",
+      "exampleOrTradeoff": "Daily phone cleaning vs direct face contact.",
+      "caveatOrNotRightForYou": "Not applicable for severe hormonal nodular cysts.",
+      "decisionPurpose": "Help user self-audit their daily habits for S6_reader_fit_tradeoffs",
+      "transitionPurpose": "Move into the next section after S6_reader_fit_tradeoffs"
+    },
+    {
+      "sectionId": "S7_trust_proof",
+      "sectionClaim": "Cheek acne trigger claim for S7_trust_proof involves physical friction and daily commuter hygiene.",
+      "readerQuestion": "Why do I get breakouts on my cheeks related to S7_trust_proof?",
+      "evidenceNeeded": "Friction-induced sebum blockage evidence.",
+      "exampleOrTradeoff": "Daily phone cleaning vs direct face contact.",
+      "caveatOrNotRightForYou": "Not applicable for severe hormonal nodular cysts.",
+      "decisionPurpose": "Help user self-audit their daily habits for S7_trust_proof",
+      "transitionPurpose": "Move into the next section after S7_trust_proof"
+    },
+    {
+      "sectionId": "S8_faq",
+      "sectionClaim": "Cheek acne trigger claim for S8_faq involves physical friction and daily commuter hygiene.",
+      "readerQuestion": "Why do I get breakouts on my cheeks related to S8_faq?",
+      "evidenceNeeded": "Friction-induced sebum blockage evidence.",
+      "exampleOrTradeoff": "Daily phone cleaning vs direct face contact.",
+      "caveatOrNotRightForYou": "Not applicable for severe hormonal nodular cysts.",
+      "decisionPurpose": "Help user self-audit their daily habits for S8_faq",
+      "transitionPurpose": "Move into the next section after S8_faq"
+    },
+    {
+      "sectionId": "S9_final_cta",
+      "sectionClaim": "Cheek acne trigger claim for S9_final_cta involves physical friction and daily commuter hygiene.",
+      "readerQuestion": "Why do I get breakouts on my cheeks related to S9_final_cta?",
+      "evidenceNeeded": "Friction-induced sebum blockage evidence.",
+      "exampleOrTradeoff": "Daily phone cleaning vs direct face contact.",
+      "caveatOrNotRightForYou": "Not applicable for severe hormonal nodular cysts.",
+      "decisionPurpose": "Help user self-audit their daily habits for S9_final_cta",
+      "transitionPurpose": "Move into the next section after S9_final_cta"
+    },
+    {
+      "sectionId": "S10_references",
+      "sectionClaim": "Cheek acne trigger claim for S10_references involves physical friction and daily commuter hygiene.",
+      "readerQuestion": "Why do I get breakouts on my cheeks related to S10_references?",
+      "evidenceNeeded": "Friction-induced sebum blockage evidence.",
+      "exampleOrTradeoff": "Daily phone cleaning vs direct face contact.",
+      "caveatOrNotRightForYou": "Not applicable for severe hormonal nodular cysts.",
+      "decisionPurpose": "Help user self-audit their daily habits for S10_references",
+      "transitionPurpose": "Move into the next section after S10_references"
+    }
+  ]
+}

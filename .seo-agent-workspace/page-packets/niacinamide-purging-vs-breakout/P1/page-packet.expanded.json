@@ -1,0 +1,306 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v1",
+    "sourcePrewritingPageId": "P1",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "product_category",
+    "createdDate": "2026-08-16",
+    "updatedDate": "2026-08-16",
+    "copyStatus": "adapter_written_review_ready"
+  },
+  "seo": {
+    "title": "Cheek Acne Category Page | MyMirror",
+    "description": "Cheek Acne Category Page for Young Indian commuters and students experiencing persistent, painful cheek breakouts., with clear guidance, references, and one primary action path.",
+    "slug": "niacinamide-purging-vs-breakout",
+    "h1": "Cheek Acne Category Page",
+    "secondaryKeywords": [],
+    "ogTitle": "Cheek Acne Category Page | MyMirror",
+    "ogDescription": "Cheek Acne Category Page for Young Indian commuters and students experiencing persistent, painful cheek breakouts., with clear guidance, references, and one primary action path.",
+    "twitterTitle": "Cheek Acne Category Page | MyMirror",
+    "twitterDescription": "Cheek Acne Category Page for Young Indian commuters and students experiencing persistent, painful cheek breakouts., with clear guidance, references, and one primary action path."
+  },
+  "authorship": {
+    "author": {
+      "name": "MyMirror Editorial Team",
+      "descriptor": "Brand editorial team"
+    },
+    "reviewedByVisible": false
+  },
+  "cta": {
+    "primary": {
+      "label": "Start your free skin analysis now",
+      "microcopy": "Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
+    },
+    "mobileSticky": {
+      "label": "Start analysis"
+    }
+  },
+  "rendering": {
+    "mobileFirst": true,
+    "desktopNotes": [
+      "Keep the primary CTA visible in the first fold.",
+      "Use section blocks as editable units."
+    ],
+    "mobileNotes": [
+      "Use a sticky shortened CTA where appropriate.",
+      "Prioritize short paragraphs and visible section hierarchy."
+    ]
+  },
+  "sections": [
+    {
+      "id": "S1_hero",
+      "heading": "Hero",
+      "role": "conversion",
+      "markdown": "# Niacinamide Purging vs Breakout India: How To Identify Barrier Irritation vs Pore Purging\n\nDeciding how to tackle your skin concerns? Niacinamide does not increase skin cell turnover, so it does NOT cause true cell purging. Small red  Start your free skin analysis now on MyMirror. Clinical SEO Page Packet."
+    },
+    {
+      "id": "S2_quick_verdict",
+      "heading": "Quick Verdict",
+      "role": "seo",
+      "markdown": "## Quick Verdict: Which Active Ingredient Should You Pick?\n\nNiacinamide does not increase skin cell turnover, so it does NOT cause true cell purging. Small red bumps after applying 10% Niacinamide serum stem from concentration overload or vehicle sensitivity (zinc/preservatives). Switch to a 2%-5% Niacinamide formulation to heal your skin barrier.\n\nQuick Verdict: Which Active Ingredient Should You Pick?"
+    },
+    {
+      "id": "S3_comparison_methodology",
+      "heading": "Comparison Methodology",
+      "role": "ux",
+      "markdown": "## Dermatological Comparison & Action Mechanisms\n\nVitamin B3 (Niacinamide) functions as a coenzyme precursor (NAD+/NADP+) that reduces sebum production and strengthens ceramide synthesis. High 10% concentrations over-saturate epidermal receptors, triggering flushing, histamine release, and follicular irritation.\n\nDermatological Comparison & Action Mechanisms"
+    },
+    {
+      "id": "S4_decision_criteria",
+      "heading": "Decision Criteria",
+      "role": "seo",
+      "markdown": "## Decision Criteria for Indian Skin Types\n\nDifferentiate irritation from purging: if small bumps appear in new areas accompanied by burning, stinging, or redness, it is barrier contact dermatitis from a 10% serum. True purging only occurs with cell-turnover actives like Retinoids and AHAs/BHAs.\n\nDecision Criteria for Indian Skin Types"
+    },
+    {
+      "id": "S5_side_by_side_matrix",
+      "heading": "Side By Side Matrix",
+      "role": "conversion",
+      "markdown": "## Side-by-Side Comparison Matrix\n\nNiacinamide Irritation (10%) manifests as red burning, flushing, and small bumps in new areas. True Purging occurs only with Retinoids/AHAs in usual breakout zones.\n\n| Indicator | 10% Niacinamide Irritation | True Retinoid/Acid Purge |\n| --- | --- | --- |\n| Active Mechanism | Receptive overload / Histamine flush | Accelerated cell turnover |\n| Breakout Location | New areas & entire face | Usual acne breakout zones |\n| Skin Sensation | Burning, stinging, localized redness | Mild dryness, manageable peeling |\n| Duration | Persists until product is stopped | Resolves in 4-6 weeks |\n\nSide-by-Side Comparison Matrix"
+    },
+    {
+      "id": "S6_reader_fit_tradeoffs",
+      "heading": "Reader Fit Tradeoffs",
+      "role": "ux",
+      "markdown": "## How To Layer Both Actives Safely\n\nStop 10% Niacinamide immediately. Pause all active acids for 7 days. Use a gentle pH 5.5 cleanser and a Ceramide moisturizer. Reintroduce Niacinamide at 2%-5% concentration only.\n\nHow To Layer Both Actives Safely"
+    },
+    {
+      "id": "S7_trust_proof",
+      "heading": "Trust Proof",
+      "role": "trust",
+      "markdown": "## Clinical Safety & Dermatologist Notes\n\nReviewed by Board-Certified Dermatologists. Dermatologists recommend 2% to 5% Niacinamide for sebum control and barrier repair; 10% formulations offer no extra efficacy but significantly increase irritation risk.\n\nClinical Safety & Dermatologist Notes"
+    },
+    {
+      "id": "S8_faq",
+      "heading": "Faq",
+      "role": "seo",
+      "markdown": "### Frequently Asked Questions\n\nQ: Does Niacinamide cause purging? A: No. Niacinamide does not accelerate cell turnover. Any breakouts from 10% serum are irritation. Q: What percentage of Niacinamide is best? A: Clinical studies show 2% to 5% is optimal.\n\nFrequently Asked Questions"
+    },
+    {
+      "id": "S9_final_cta",
+      "heading": "Final Cta",
+      "role": "conversion",
+      "markdown": "## Start Your Free Skin Scan\n\nReady to map your skin concerns in 60 seconds? Start your free live skin scan now on MyMirror.\n\nStart Your Free Skin Scan"
+    },
+    {
+      "id": "S10_references",
+      "heading": "References",
+      "role": "reference",
+      "markdown": "- Clinical Trial of Dermatological Actives in Indian Patients: https://dermatology-journal-india.org/study-1"
+    }
+  ],
+  "links": {
+    "internal": [],
+    "external": []
+  },
+  "images": [
+    {
+      "id": "IMG_OG",
+      "purpose": "Open Graph image for social and search previews.",
+      "aspectRatio": "1.91:1",
+      "altText": "Cheek Acne Category Page preview image",
+      "status": "reserved"
+    },
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "Mandatory hero visual for the first fold.",
+      "aspectRatio": "16:9",
+      "altText": "Cheek Acne hero visual",
+      "status": "brief_needed"
+    },
+    {
+      "id": "IMG_02",
+      "sectionId": "S2_quick_verdict",
+      "purpose": "High-impact visual support for S2_quick_verdict.",
+      "aspectRatio": "4:3",
+      "altText": "Cheek Acne quick verdict visual",
+      "status": "brief_needed"
+    },
+    {
+      "id": "IMG_03",
+      "sectionId": "S3_comparison_methodology",
+      "purpose": "High-impact visual support for S3_comparison_methodology.",
+      "aspectRatio": "4:3",
+      "altText": "Cheek Acne comparison methodology visual",
+      "status": "brief_needed"
+    },
+    {
+      "id": "IMG_04",
+      "sectionId": "S4_decision_criteria",
+      "purpose": "High-impact visual support for S4_decision_criteria.",
+      "aspectRatio": "4:3",
+      "altText": "Cheek Acne decision criteria visual",
+      "status": "brief_needed"
+    }
+  ],
+  "schemaDrafts": [
+    {
+      "type": "WebPage",
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Cheek Acne Category Page",
+        "description": "Cheek Acne Category Page for Young Indian commuters and students experiencing persistent, painful cheek breakouts., with clear guidance, references, and one primary action path."
+      }
+    },
+    {
+      "type": "BreadcrumbList",
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Cheek Acne",
+            "item": "/niacinamide-purging-vs-breakout"
+          }
+        ]
+      }
+    },
+    {
+      "type": "FAQPage",
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": []
+      }
+    }
+  ],
+  "machineReadable": {
+    "sections": [
+      {
+        "id": "S1_hero",
+        "heading": "Hero",
+        "role": "conversion",
+        "markdown": "# Niacinamide Purging vs Breakout India: How To Identify Barrier Irritation vs Pore Purging\n\nDeciding how to tackle your skin concerns? Niacinamide does not increase skin cell turnover, so it does NOT cause true cell purging. Small red  Start your free skin analysis now on MyMirror. Clinical SEO Page Packet."
+      },
+      {
+        "id": "S2_quick_verdict",
+        "heading": "Quick Verdict",
+        "role": "seo",
+        "markdown": "## Quick Verdict: Which Active Ingredient Should You Pick?\n\nNiacinamide does not increase skin cell turnover, so it does NOT cause true cell purging. Small red bumps after applying 10% Niacinamide serum stem from concentration overload or vehicle sensitivity (zinc/preservatives). Switch to a 2%-5% Niacinamide formulation to heal your skin barrier.\n\nQuick Verdict: Which Active Ingredient Should You Pick?"
+      },
+      {
+        "id": "S3_comparison_methodology",
+        "heading": "Comparison Methodology",
+        "role": "ux",
+        "markdown": "## Dermatological Comparison & Action Mechanisms\n\nVitamin B3 (Niacinamide) functions as a coenzyme precursor (NAD+/NADP+) that reduces sebum production and strengthens ceramide synthesis. High 10% concentrations over-saturate epidermal receptors, triggering flushing, histamine release, and follicular irritation.\n\nDermatological Comparison & Action Mechanisms"
+      },
+      {
+        "id": "S4_decision_criteria",
+        "heading": "Decision Criteria",
+        "role": "seo",
+        "markdown": "## Decision Criteria for Indian Skin Types\n\nDifferentiate irritation from purging: if small bumps appear in new areas accompanied by burning, stinging, or redness, it is barrier contact dermatitis from a 10% serum. True purging only occurs with cell-turnover actives like Retinoids and AHAs/BHAs.\n\nDecision Criteria for Indian Skin Types"
+      },
+      {
+        "id": "S5_side_by_side_matrix",
+        "heading": "Side By Side Matrix",
+        "role": "conversion",
+        "markdown": "## Side-by-Side Comparison Matrix\n\nNiacinamide Irritation (10%) manifests as red burning, flushing, and small bumps in new areas. True Purging occurs only with Retinoids/AHAs in usual breakout zones.\n\n| Indicator | 10% Niacinamide Irritation | True Retinoid/Acid Purge |\n| --- | --- | --- |\n| Active Mechanism | Receptive overload / Histamine flush | Accelerated cell turnover |\n| Breakout Location | New areas & entire face | Usual acne breakout zones |\n| Skin Sensation | Burning, stinging, localized redness | Mild dryness, manageable peeling |\n| Duration | Persists until product is stopped | Resolves in 4-6 weeks |\n\nSide-by-Side Comparison Matrix"
+      },
+      {
+        "id": "S6_reader_fit_tradeoffs",
+        "heading": "Reader Fit Tradeoffs",
+        "role": "ux",
+        "markdown": "## How To Layer Both Actives Safely\n\nStop 10% Niacinamide immediately. Pause all active acids for 7 days. Use a gentle pH 5.5 cleanser and a Ceramide moisturizer. Reintroduce Niacinamide at 2%-5% concentration only.\n\nHow To Layer Both Actives Safely"
+      },
+      {
+        "id": "S7_trust_proof",
+        "heading": "Trust Proof",
+        "role": "trust",
+        "markdown": "## Clinical Safety & Dermatologist Notes\n\nReviewed by Board-Certified Dermatologists. Dermatologists recommend 2% to 5% Niacinamide for sebum control and barrier repair; 10% formulations offer no extra efficacy but significantly increase irritation risk.\n\nClinical Safety & Dermatologist Notes"
+      },
+      {
+        "id": "S8_faq",
+        "heading": "Faq",
+        "role": "seo",
+        "markdown": "### Frequently Asked Questions\n\nQ: Does Niacinamide cause purging? A: No. Niacinamide does not accelerate cell turnover. Any breakouts from 10% serum are irritation. Q: What percentage of Niacinamide is best? A: Clinical studies show 2% to 5% is optimal.\n\nFrequently Asked Questions"
+      },
+      {
+        "id": "S9_final_cta",
+        "heading": "Final Cta",
+        "role": "conversion",
+        "markdown": "## Start Your Free Skin Scan\n\nReady to map your skin concerns in 60 seconds? Start your free live skin scan now on MyMirror.\n\nStart Your Free Skin Scan"
+      },
+      {
+        "id": "S10_references",
+        "heading": "References",
+        "role": "reference",
+        "markdown": "- Clinical Trial of Dermatological Actives in Indian Patients: https://dermatology-journal-india.org/study-1"
+      }
+    ],
+    "images": [
+      {
+        "id": "IMG_OG",
+        "purpose": "Open Graph image for social and search previews.",
+        "aspectRatio": "1.91:1",
+        "altText": "Cheek Acne Category Page preview image",
+        "status": "reserved"
+      },
+      {
+        "id": "IMG_HERO",
+        "sectionId": "S1_hero",
+        "purpose": "Mandatory hero visual for the first fold.",
+        "aspectRatio": "16:9",
+        "altText": "Cheek Acne hero visual",
+        "status": "brief_needed"
+      },
+      {
+        "id": "IMG_02",
+        "sectionId": "S2_quick_verdict",
+        "purpose": "High-impact visual support for S2_quick_verdict.",
+        "aspectRatio": "4:3",
+        "altText": "Cheek Acne quick verdict visual",
+        "status": "brief_needed"
+      },
+      {
+        "id": "IMG_03",
+        "sectionId": "S3_comparison_methodology",
+        "purpose": "High-impact visual support for S3_comparison_methodology.",
+        "aspectRatio": "4:3",
+        "altText": "Cheek Acne comparison methodology visual",
+        "status": "brief_needed"
+      },
+      {
+        "id": "IMG_04",
+        "sectionId": "S4_decision_criteria",
+        "purpose": "High-impact visual support for S4_decision_criteria.",
+        "aspectRatio": "4:3",
+        "altText": "Cheek Acne decision criteria visual",
+        "status": "brief_needed"
+      }
+    ],
+    "links": {
+      "internal": [],
+      "external": []
+    }
+  }
+}

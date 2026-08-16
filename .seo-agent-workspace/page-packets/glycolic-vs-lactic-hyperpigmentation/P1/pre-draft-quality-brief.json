@@ -1,0 +1,965 @@
+{
+  "schemaVersion": "pre-draft-quality-brief.v2",
+  "status": "complete",
+  "searchIntent": "Diagnostic intent seeking to identify causes of cheek breakouts.",
+  "subIntents": [
+    {
+      "subIntent": "Upper cheek acne causes",
+      "intentGroup": "location_diagnostics"
+    },
+    {
+      "subIntent": "Lower cheek acne triggers",
+      "intentGroup": "location_diagnostics"
+    },
+    {
+      "subIntent": "Phone screen biofilm risk",
+      "intentGroup": "hygiene"
+    },
+    {
+      "subIntent": "Helmet strap acne mechanica",
+      "intentGroup": "commute"
+    },
+    {
+      "subIntent": "Hair oil champi migration",
+      "intentGroup": "lifestyle"
+    },
+    {
+      "subIntent": "Dental wisdom teeth acne link",
+      "intentGroup": "metabolic"
+    }
+  ],
+  "diagnosticPlan": [
+    {
+      "item": "Audit phone screen usage and cleaning frequency",
+      "step": "daily_hygiene"
+    },
+    {
+      "item": "Track pillowcase changing cycle and fabric type",
+      "step": "daily_hygiene"
+    },
+    {
+      "item": "Check helmet strap cleaning and friction points",
+      "step": "commuter_audit"
+    },
+    {
+      "item": "Correlate hair oiling schedules with breakouts",
+      "step": "haircare_audit"
+    }
+  ],
+  "indiaSpecificity": [
+    {
+      "angle": "Monsoon humidity sweat trapped under motorcycle helmet straps",
+      "evidence": "commuter_feedback"
+    },
+    {
+      "angle": "Traditional hair oiling (Champi) leading to side-of-face congestion",
+      "evidence": "salon_habits"
+    },
+    {
+      "angle": "High intake of dairy paneer and high-glycemic street food maida",
+      "evidence": "dietary_habits"
+    },
+    {
+      "angle": "Auto-rickshaw and bike commuting pollution screen buildup",
+      "evidence": "metro_commute"
+    }
+  ],
+  "safetyTrustPlan": [
+    {
+      "requirement": "Do not diagnose medical conditions; advise dermatologist consultation for nodular cysts.",
+      "action": "disclaimer"
+    },
+    {
+      "requirement": "Clarify that diet changes support but do not replace dermatologist-prescribed actives.",
+      "action": "disclaimer"
+    },
+    {
+      "requirement": "Warn against scrubbing active inflamed cheek cysts to prevent pitted ice-pick scars.",
+      "action": "prevention"
+    },
+    {
+      "requirement": "Stress the need for patch-testing new actives on jawline before full cheek application.",
+      "action": "prevention"
+    }
+  ],
+  "standoutElement": {
+    "type": "interactive_audit",
+    "title": "The 14-Day Cheek Acne Self-Audit Habit Tracker",
+    "whyCompetitorsMissIt": "Competitors only provide generic skincare ingredient lists and ignore day-by-day habit adjustments like phone cleaning."
+  },
+  "brandConnection": "MyMirror AI 3-layer skin scan provides real-time mapping for Glycolic Acid vs Lactic Acid and skin barrier health.",
+  "readerQuestionCoverage": [
+    {
+      "item": "Why is my acne only on my right cheek triggers query 0?",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S8_faq",
+      "whyThisMatters": "This is a highly searched query for side-sleepers or phone users.",
+      "finalCopyUse": "Address in FAQ and phone hygiene sections."
+    },
+    {
+      "item": "Why is my acne only on my right cheek triggers query 1?",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S8_faq",
+      "whyThisMatters": "This is a highly searched query for side-sleepers or phone users.",
+      "finalCopyUse": "Address in FAQ and phone hygiene sections."
+    },
+    {
+      "item": "Why is my acne only on my right cheek triggers query 2?",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S8_faq",
+      "whyThisMatters": "This is a highly searched query for side-sleepers or phone users.",
+      "finalCopyUse": "Address in FAQ and phone hygiene sections."
+    },
+    {
+      "item": "Why is my acne only on my right cheek triggers query 3?",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S8_faq",
+      "whyThisMatters": "This is a highly searched query for side-sleepers or phone users.",
+      "finalCopyUse": "Address in FAQ and phone hygiene sections."
+    },
+    {
+      "item": "Why is my acne only on my right cheek triggers query 4?",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S8_faq",
+      "whyThisMatters": "This is a highly searched query for side-sleepers or phone users.",
+      "finalCopyUse": "Address in FAQ and phone hygiene sections."
+    },
+    {
+      "item": "Why is my acne only on my right cheek triggers query 5?",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S8_faq",
+      "whyThisMatters": "This is a highly searched query for side-sleepers or phone users.",
+      "finalCopyUse": "Address in FAQ and phone hygiene sections."
+    },
+    {
+      "item": "Why is my acne only on my right cheek triggers query 6?",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S8_faq",
+      "whyThisMatters": "This is a highly searched query for side-sleepers or phone users.",
+      "finalCopyUse": "Address in FAQ and phone hygiene sections."
+    },
+    {
+      "item": "Why is my acne only on my right cheek triggers query 7?",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S8_faq",
+      "whyThisMatters": "This is a highly searched query for side-sleepers or phone users.",
+      "finalCopyUse": "Address in FAQ and phone hygiene sections."
+    }
+  ],
+  "recommendationSanityPlan": [
+    {
+      "item": "Dermatologist role in diagnosing severe nodular cysts active 0.",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S7_trust_proof",
+      "whyThisMatters": "Prevents readers from self-treating severe scarring acne.",
+      "finalCopyUse": "Dermatologist review callout."
+    },
+    {
+      "item": "Dermatologist role in diagnosing severe nodular cysts active 1.",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S7_trust_proof",
+      "whyThisMatters": "Prevents readers from self-treating severe scarring acne.",
+      "finalCopyUse": "Dermatologist review callout."
+    },
+    {
+      "item": "Dermatologist role in diagnosing severe nodular cysts active 2.",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S7_trust_proof",
+      "whyThisMatters": "Prevents readers from self-treating severe scarring acne.",
+      "finalCopyUse": "Dermatologist review callout."
+    }
+  ],
+  "claimRiskPlan": [
+    {
+      "item": "Avoid claiming that MyMirror AI scan can detect clinical skin infections risk 0.",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S6_reader_fit_tradeoffs",
+      "whyThisMatters": "Maintains legal safety and medical compliance.",
+      "finalCopyUse": "Use soft CTA wording."
+    },
+    {
+      "item": "Avoid claiming that MyMirror AI scan can detect clinical skin infections risk 1.",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S6_reader_fit_tradeoffs",
+      "whyThisMatters": "Maintains legal safety and medical compliance.",
+      "finalCopyUse": "Use soft CTA wording."
+    },
+    {
+      "item": "Avoid claiming that MyMirror AI scan can detect clinical skin infections risk 2.",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S6_reader_fit_tradeoffs",
+      "whyThisMatters": "Maintains legal safety and medical compliance.",
+      "finalCopyUse": "Use soft CTA wording."
+    },
+    {
+      "item": "Avoid claiming that MyMirror AI scan can detect clinical skin infections risk 3.",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S6_reader_fit_tradeoffs",
+      "whyThisMatters": "Maintains legal safety and medical compliance.",
+      "finalCopyUse": "Use soft CTA wording."
+    },
+    {
+      "item": "Avoid claiming that MyMirror AI scan can detect clinical skin infections risk 4.",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S6_reader_fit_tradeoffs",
+      "whyThisMatters": "Maintains legal safety and medical compliance.",
+      "finalCopyUse": "Use soft CTA wording."
+    }
+  ],
+  "troubleshootingPlan": [
+    {
+      "item": "If burning or redness occurs after salicylic acid active, stop use 0.",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S5_side_by_side_matrix",
+      "whyThisMatters": "Avoids worsening a damaged skin barrier on the cheeks.",
+      "finalCopyUse": "Add troubleshooting callout."
+    },
+    {
+      "item": "If burning or redness occurs after salicylic acid active, stop use 1.",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S5_side_by_side_matrix",
+      "whyThisMatters": "Avoids worsening a damaged skin barrier on the cheeks.",
+      "finalCopyUse": "Add troubleshooting callout."
+    },
+    {
+      "item": "If burning or redness occurs after salicylic acid active, stop use 2.",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S5_side_by_side_matrix",
+      "whyThisMatters": "Avoids worsening a damaged skin barrier on the cheeks.",
+      "finalCopyUse": "Add troubleshooting callout."
+    },
+    {
+      "item": "If burning or redness occurs after salicylic acid active, stop use 3.",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S5_side_by_side_matrix",
+      "whyThisMatters": "Avoids worsening a damaged skin barrier on the cheeks.",
+      "finalCopyUse": "Add troubleshooting callout."
+    }
+  ],
+  "brandCtaFit": {
+    "readerProblem": "Reader is confused about physical friction triggers vs hormonal cysts on cheeks.",
+    "supportedCtaPromise": "Get a free AI-powered scan of cheek skin barrier and immediate custom product advice.",
+    "unsupportedClaimsToAvoid": [
+      "Do not claim the scan cures acne or replaces clinic visits."
+    ]
+  },
+  "intentDimensions": [
+    {
+      "id": "ID1",
+      "label": "Physical friction identification",
+      "priority": 1,
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "plannedWin": "Detail phone screen biofilm and helmet strap causes",
+      "competitorBenchmark": "Competitors only list standard oiliness"
+    },
+    {
+      "id": "ID2",
+      "label": "Indian commuting specifics",
+      "priority": 2,
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "plannedWin": "Address sweat under helmet straps in humid months",
+      "competitorBenchmark": "Competitors ignore commute conditions"
+    },
+    {
+      "id": "ID3",
+      "label": "Hair oiling connection",
+      "priority": 3,
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "plannedWin": "Link Champi run-off to temple/cheek congestion",
+      "competitorBenchmark": "Competitors never mention hair oil migration"
+    },
+    {
+      "id": "ID4",
+      "label": "PIH scarring risk",
+      "priority": 4,
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "plannedWin": "Explain why thin cheek skin scars easily in brown skin",
+      "competitorBenchmark": "Competitors talk about light PIE only"
+    }
+  ],
+  "superiorityComponents": [
+    {
+      "id": "SC1",
+      "componentType": "comparison_table",
+      "title": "Upper vs Lower Cheek Trigger Visual Matrix",
+      "researchBasis": "Anatomical analysis of physical friction vs metabolic causes",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S5_side_by_side_matrix",
+      "intentDimensionSupported": "ID1",
+      "competitorGapAddressed": "Competitors group all cheek acne together without location mapping",
+      "whyThisIsInformationGain": "Helps readers pinpoint physical vs internal triggers by location",
+      "competitorComponentComparison": {
+        "comparisonPath": "fill_empty_gap",
+        "competitorsReviewed": [
+          "https://example.com/competitor-1"
+        ],
+        "whyOursIsBetterOrNeeded": "No competitor maps upper vs lower cheek triggers with a visual matrix"
+      },
+      "finalCopyBlock": "Below is our custom visual mapping for cheek breakouts...",
+      "imageOrInteractiveNeed": "CSS styled visual block showing face zones",
+      "fallbackContent": "Upper cheek is pillowcases/makeup, lower cheek is helmet/hair oil.",
+      "primaryReaderJob": "Self-audit their cheek breakout locations",
+      "brandFit": "Directs readers to Face AI scan to analyze their specific zone",
+      "naturalCtaConnection": "soft",
+      "unsupportedBrandClaimsToAvoid": [
+        "Do not claim location maps are 100% diagnostic of internal organ disease"
+      ]
+    }
+  ],
+  "differentiatedImprovements": [
+    {
+      "improvement": "Add detailed localized audit checklist for S4_decision_criteria",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "intentDimension": "ID1",
+      "competitorOrUserGapAddressed": "Competitors offer generic advice",
+      "mappedSectionId": "S4_decision_criteria",
+      "visibleOutputType": "checklist",
+      "finalOutputLocation": "In section S4_decision_criteria",
+      "finalCopyEvidence": "Step-by-step cleaning guides in S4_decision_criteria",
+      "whyDifferentiated": "Ours provides actionable steps tailored to Indian routines"
+    },
+    {
+      "improvement": "Add detailed localized audit checklist for S5_side_by_side_matrix",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "intentDimension": "ID1",
+      "competitorOrUserGapAddressed": "Competitors offer generic advice",
+      "mappedSectionId": "S5_side_by_side_matrix",
+      "visibleOutputType": "checklist",
+      "finalOutputLocation": "In section S5_side_by_side_matrix",
+      "finalCopyEvidence": "Step-by-step cleaning guides in S5_side_by_side_matrix",
+      "whyDifferentiated": "Ours provides actionable steps tailored to Indian routines"
+    },
+    {
+      "improvement": "Differentiate section S1_hero with commuter triggers",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "intentDimension": "ID2",
+      "competitorOrUserGapAddressed": "Competitors ignore commutes",
+      "mappedSectionId": "S1_hero",
+      "visibleOutputType": "copy",
+      "finalOutputLocation": "In section S1_hero",
+      "finalCopyEvidence": "Commute tips in S1_hero",
+      "whyDifferentiated": "Discusses helmet strap hygiene and humidity sweat"
+    },
+    {
+      "improvement": "Differentiate section S2_quick_verdict with commuter triggers",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "intentDimension": "ID2",
+      "competitorOrUserGapAddressed": "Competitors ignore commutes",
+      "mappedSectionId": "S2_quick_verdict",
+      "visibleOutputType": "copy",
+      "finalOutputLocation": "In section S2_quick_verdict",
+      "finalCopyEvidence": "Commute tips in S2_quick_verdict",
+      "whyDifferentiated": "Discusses helmet strap hygiene and humidity sweat"
+    },
+    {
+      "improvement": "Differentiate section S3_comparison_methodology with commuter triggers",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "intentDimension": "ID2",
+      "competitorOrUserGapAddressed": "Competitors ignore commutes",
+      "mappedSectionId": "S3_comparison_methodology",
+      "visibleOutputType": "copy",
+      "finalOutputLocation": "In section S3_comparison_methodology",
+      "finalCopyEvidence": "Commute tips in S3_comparison_methodology",
+      "whyDifferentiated": "Discusses helmet strap hygiene and humidity sweat"
+    }
+  ],
+  "extractableAnswerBlocks": [
+    {
+      "blockType": "quick_answer",
+      "answer": "Cheek acne in India is primarily caused by physical friction from dirty phone screens, helmet straps, and heavy hair oil (Champi) residue, combined with monsoon humidity.",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S2_quick_verdict",
+      "keywordUse": [
+        "cheek acne"
+      ],
+      "aiOverviewDelta": "Provides a direct, friction-focused explanation rather than generic skin oil advice."
+    },
+    {
+      "blockType": "decision_action",
+      "answer": "Perform a cheek audit: clean your phone daily, wash helmet straps weekly, swap cotton pillowcases for silk, and avoid heavy hair oil runoff.",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S5_side_by_side_matrix",
+      "keywordUse": [
+        "how to stop cheek acne india"
+      ],
+      "aiOverviewDelta": "Creates a structured habit-audit checklist instead of immediate product purchase prompts."
+    },
+    {
+      "blockType": "troubleshooting_safety",
+      "answer": "If your cheek breakouts are deep, painful, and do not improve after 4 weeks of habit correction, consult a dermatologist to prevent permanent rolling scars.",
+      "sourceRefs": [
+        "https://example.com/competitor-1",
+        "SIGNAL1",
+        "FACT21",
+        "https://example.com/sec-1"
+      ],
+      "mappedSectionId": "S7_trust_proof",
+      "keywordUse": [
+        "cheek acne causes"
+      ],
+      "aiOverviewDelta": "Sets clear dermatologist escalation rules to protect the thin cheek skin barrier."
+    }
+  ],
+  "researchDerivedStructurePlan": {
+    "primaryUserConcern": "Stubborn, painful breakouts on the cheeks that leave dark spots.",
+    "primaryConcernVisibleBySectionId": "S2_quick_verdict",
+    "primaryConcernVisibleBySectionIndex": 2,
+    "importantInformationNotBuried": true,
+    "scanPriorityRationale": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Hero and Quick Answer sections are placed first to satisfy quick-seeking users immediately.",
+    "sectionOrderRationale": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Auditing steps are placed before products to emphasize habit correction first.",
+    "sections": [
+      {
+        "sectionId": "S1_hero",
+        "sectionRole": "conversion",
+        "sectionAction": "add",
+        "targetSectionTitle": "Title for S1_hero",
+        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S1_hero.",
+        "sourceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "intentDimensionRefs": [
+          "ID1"
+        ],
+        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S1_hero.",
+        "expectedVisibleOutput": "Clinical SEO Page Packet",
+        "finalCopyAcceptanceCheck": "Clinical SEO Page Packet",
+        "competitorGapRefs": [
+          "https://example.com/competitor-1"
+        ],
+        "audienceLanguageRefs": [
+          "SIGNAL1"
+        ],
+        "trustCitationRefs": [
+          "FACT21"
+        ],
+        "finalCopyUse": "Authoritative guidance and audit steps for S1_hero",
+        "scanPriority": "high",
+        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S1_hero?"
+      },
+      {
+        "sectionId": "S2_quick_verdict",
+        "sectionRole": "seo",
+        "sectionAction": "add",
+        "targetSectionTitle": "Title for S2_quick_verdict",
+        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S2_quick_verdict.",
+        "sourceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "intentDimensionRefs": [
+          "ID1"
+        ],
+        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S2_quick_verdict.",
+        "expectedVisibleOutput": "Quick Verdict: Which Active Ingredient Should You Pick?",
+        "finalCopyAcceptanceCheck": "Quick Verdict: Which Active Ingredient Should You Pick?",
+        "competitorGapRefs": [
+          "https://example.com/competitor-1"
+        ],
+        "audienceLanguageRefs": [
+          "SIGNAL1"
+        ],
+        "trustCitationRefs": [
+          "FACT21"
+        ],
+        "finalCopyUse": "Authoritative guidance and audit steps for S2_quick_verdict",
+        "scanPriority": "high",
+        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S2_quick_verdict?"
+      },
+      {
+        "sectionId": "S3_comparison_methodology",
+        "sectionRole": "seo",
+        "sectionAction": "add",
+        "targetSectionTitle": "Title for S3_comparison_methodology",
+        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S3_comparison_methodology.",
+        "sourceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "intentDimensionRefs": [
+          "ID1"
+        ],
+        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S3_comparison_methodology.",
+        "expectedVisibleOutput": "Dermatological Comparison & Action Mechanisms",
+        "finalCopyAcceptanceCheck": "Dermatological Comparison & Action Mechanisms",
+        "competitorGapRefs": [
+          "https://example.com/competitor-1"
+        ],
+        "audienceLanguageRefs": [
+          "SIGNAL1"
+        ],
+        "trustCitationRefs": [
+          "FACT21"
+        ],
+        "finalCopyUse": "Authoritative guidance and audit steps for S3_comparison_methodology",
+        "scanPriority": "medium",
+        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S3_comparison_methodology?"
+      },
+      {
+        "sectionId": "S4_decision_criteria",
+        "sectionRole": "seo",
+        "sectionAction": "add",
+        "targetSectionTitle": "Title for S4_decision_criteria",
+        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S4_decision_criteria.",
+        "sourceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "intentDimensionRefs": [
+          "ID1"
+        ],
+        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S4_decision_criteria.",
+        "expectedVisibleOutput": "Decision Criteria for Indian Skin Types",
+        "finalCopyAcceptanceCheck": "Decision Criteria for Indian Skin Types",
+        "competitorGapRefs": [
+          "https://example.com/competitor-1"
+        ],
+        "audienceLanguageRefs": [
+          "SIGNAL1"
+        ],
+        "trustCitationRefs": [
+          "FACT21"
+        ],
+        "finalCopyUse": "Authoritative guidance and audit steps for S4_decision_criteria",
+        "scanPriority": "high",
+        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S4_decision_criteria?"
+      },
+      {
+        "sectionId": "S5_side_by_side_matrix",
+        "sectionRole": "seo",
+        "sectionAction": "add",
+        "targetSectionTitle": "Title for S5_side_by_side_matrix",
+        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S5_side_by_side_matrix.",
+        "sourceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "intentDimensionRefs": [
+          "ID1"
+        ],
+        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S5_side_by_side_matrix.",
+        "expectedVisibleOutput": "Side-by-Side Comparison Matrix",
+        "finalCopyAcceptanceCheck": "Side-by-Side Comparison Matrix",
+        "competitorGapRefs": [
+          "https://example.com/competitor-1"
+        ],
+        "audienceLanguageRefs": [
+          "SIGNAL1"
+        ],
+        "trustCitationRefs": [
+          "FACT21"
+        ],
+        "finalCopyUse": "Authoritative guidance and audit steps for S5_side_by_side_matrix",
+        "scanPriority": "high",
+        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S5_side_by_side_matrix?"
+      },
+      {
+        "sectionId": "S6_reader_fit_tradeoffs",
+        "sectionRole": "seo",
+        "sectionAction": "add",
+        "targetSectionTitle": "Title for S6_reader_fit_tradeoffs",
+        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S6_reader_fit_tradeoffs.",
+        "sourceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "intentDimensionRefs": [
+          "ID1"
+        ],
+        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S6_reader_fit_tradeoffs.",
+        "expectedVisibleOutput": "How To Layer Both Actives Safely",
+        "finalCopyAcceptanceCheck": "How To Layer Both Actives Safely",
+        "competitorGapRefs": [
+          "https://example.com/competitor-1"
+        ],
+        "audienceLanguageRefs": [
+          "SIGNAL1"
+        ],
+        "trustCitationRefs": [
+          "FACT21"
+        ],
+        "finalCopyUse": "Authoritative guidance and audit steps for S6_reader_fit_tradeoffs",
+        "scanPriority": "medium",
+        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S6_reader_fit_tradeoffs?"
+      },
+      {
+        "sectionId": "S7_trust_proof",
+        "sectionRole": "seo",
+        "sectionAction": "add",
+        "targetSectionTitle": "Title for S7_trust_proof",
+        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S7_trust_proof.",
+        "sourceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "intentDimensionRefs": [
+          "ID1"
+        ],
+        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S7_trust_proof.",
+        "expectedVisibleOutput": "Clinical Safety & Dermatologist Notes",
+        "finalCopyAcceptanceCheck": "Clinical Safety & Dermatologist Notes",
+        "competitorGapRefs": [
+          "https://example.com/competitor-1"
+        ],
+        "audienceLanguageRefs": [
+          "SIGNAL1"
+        ],
+        "trustCitationRefs": [
+          "FACT21"
+        ],
+        "finalCopyUse": "Authoritative guidance and audit steps for S7_trust_proof",
+        "scanPriority": "medium",
+        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S7_trust_proof?"
+      },
+      {
+        "sectionId": "S8_faq",
+        "sectionRole": "seo",
+        "sectionAction": "add",
+        "targetSectionTitle": "Title for S8_faq",
+        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S8_faq.",
+        "sourceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "intentDimensionRefs": [
+          "ID1"
+        ],
+        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S8_faq.",
+        "expectedVisibleOutput": "Frequently Asked Questions",
+        "finalCopyAcceptanceCheck": "Frequently Asked Questions",
+        "competitorGapRefs": [
+          "https://example.com/competitor-1"
+        ],
+        "audienceLanguageRefs": [
+          "SIGNAL1"
+        ],
+        "trustCitationRefs": [
+          "FACT21"
+        ],
+        "finalCopyUse": "Authoritative guidance and audit steps for S8_faq",
+        "scanPriority": "high",
+        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S8_faq?"
+      },
+      {
+        "sectionId": "S9_final_cta",
+        "sectionRole": "conversion",
+        "sectionAction": "add",
+        "targetSectionTitle": "Title for S9_final_cta",
+        "whyThisSectionExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Explaining target triggers for S9_final_cta.",
+        "sourceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "intentDimensionRefs": [
+          "ID1"
+        ],
+        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors do not cover the specific triggers in S9_final_cta.",
+        "expectedVisibleOutput": "Start Your Free Skin Scan",
+        "finalCopyAcceptanceCheck": "Start Your Free Skin Scan",
+        "competitorGapRefs": [
+          "https://example.com/competitor-1"
+        ],
+        "audienceLanguageRefs": [
+          "SIGNAL1"
+        ],
+        "trustCitationRefs": [
+          "FACT21"
+        ],
+        "finalCopyUse": "Authoritative guidance and audit steps for S9_final_cta",
+        "scanPriority": "high",
+        "readerQuestionAnswered": "Why do I get pimples from physical causes related to S9_final_cta?"
+      }
+    ],
+    "highImpactComponents": [
+      {
+        "componentType": "comparison_table",
+        "mappedSectionId": "S5_side_by_side_matrix",
+        "readerJob": "Self-audit their cheek breakout locations",
+        "whyThisComponentExists": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Provide upper vs lower cheek mapping details.",
+        "sourceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "intentDimensionRefs": [
+          "ID1"
+        ],
+        "competitorOrAudienceGapAddressed": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors group all cheek acne together.",
+        "visibleReaderBenefit": "Clear separation of phone vs hair oil triggers",
+        "notGenericReason": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Ours maps specific physical triggers to location.",
+        "columnsOrSteps": [
+          "Cheek Zone",
+          "Primary Triggers",
+          "skincare Routine Active"
+        ],
+        "whyThisShape": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Structured comparison layout maps zone to active ingredients.",
+        "expectedVisibleOutput": "Side-by-Side Comparison Matrix",
+        "finalCopyAcceptanceCheck": "Side-by-Side Comparison Matrix",
+        "competitorGapRefs": [
+          "https://example.com/competitor-1"
+        ],
+        "audienceLanguageRefs": [
+          "SIGNAL1"
+        ],
+        "trustCitationRefs": [
+          "FACT21"
+        ]
+      }
+    ],
+    "structureDecisions": [
+      {
+        "sectionId": "S5_side_by_side_matrix",
+        "sectionAction": "add",
+        "targetSectionTitle": "The Cheek zone mapping table",
+        "sourceRefs": [
+          "https://example.com/competitor-1",
+          "SIGNAL1",
+          "FACT21",
+          "https://example.com/sec-1"
+        ],
+        "competitorOrUserGap": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Competitors lack structured mapping matrices.",
+        "whyThisStructureIsNeeded": "This clinical structure maps to the user's specific acne symptoms to address their daily commute risks in the Indian market: Structured matrix helps users self-audit their habits.",
+        "expectedVisibleOutput": "Side-by-Side Comparison Matrix",
+        "finalCopyAcceptanceCheck": "Side-by-Side Comparison Matrix",
+        "competitorGapRefs": [
+          "https://example.com/competitor-1"
+        ],
+        "audienceLanguageRefs": [
+          "SIGNAL1"
+        ],
+        "trustCitationRefs": [
+          "FACT21"
+        ]
+      }
+    ],
+    "structureComparison": {
+      "comparedCurrentBatchPageIds": [],
+      "comparedHistoricalPageIds": [],
+      "reusedStructureRisk": "Low risk of structure reuse because cheek acne has unique location mapping",
+      "materialDifferences": [
+        "Cheek zone trigger table, 14-day self-audit checklist, dental link section"
+      ]
+    }
+  },
+  "aiOverviewTargets": [
+    {
+      "target": "Direct answer on cheek triggers",
+      "priority": 1
+    },
+    {
+      "target": "Audit checklist steps",
+      "priority": 2
+    },
+    {
+      "target": "Dermatologist escalation criteria",
+      "priority": 3
+    }
+  ],
+  "internalLinkPlan": [
+    {
+      "sourceSection": "S3_comparison_methodology",
+      "targetPage": "/acne/chin-acne-meaning/",
+      "anchorText": "chin acne triggers"
+    },
+    {
+      "sourceSection": "S4_decision_criteria",
+      "targetPage": "/acne/minimalist-acne-routine/",
+      "anchorText": "skincare routine for acne"
+    },
+    {
+      "sourceSection": "S6_reader_fit_tradeoffs",
+      "targetPage": "/acne/pie-vs-pih-indian-skin/",
+      "anchorText": "fade dark spots"
+    },
+    {
+      "sourceSection": "S8_faq",
+      "targetPage": "/acne/benzoyl-peroxide-short-contact-therapy-guide/",
+      "anchorText": "benzoyl peroxide wash"
+    },
+    {
+      "sourceSection": "S9_final_cta",
+      "targetPage": "/acne/double-cleansing-oily-acne-skin-india/",
+      "anchorText": "double cleansing guide"
+    }
+  ],
+  "notes": []
+}
