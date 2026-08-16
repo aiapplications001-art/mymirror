@@ -251,7 +251,7 @@
         </p>
 
         <!-- Face AI Skin Analysis CTA -->
-        <div class="face-ai-cta-wrapper reveal" style="transition-delay: 0.2s; margin: 0 0 1.5rem 0; align-items: flex-start; text-align: left;">
+        <div class="face-ai-cta-wrapper reveal" style="display: flex !important; transition-delay: 0.2s; margin: 0 0 1.5rem 0; align-items: flex-start; text-align: left;">
           <a href="/scan" class="face-ai-btn" style="padding: 16px 36px;">
             <span class="face-ai-btn-text">Start your free skin analysis now</span>
             <div class="face-ai-energy-rail"></div>
@@ -285,6 +285,8 @@
   <style>
     .secondary-cta-group { display: flex; align-items: center; gap: 1rem; margin-top: 1rem; }
     @media (max-width: 900px) {
+      nav { height: auto !important; min-height: 60px; padding: 12px 0; }
+      .nav-inner { flex-wrap: wrap; justify-content: center; gap: 12px; }
       .hero-inner { grid-template-columns: 1fr !important; gap: 3rem !important; }
       .hero { padding: 1.5rem 1.5rem 3rem !important; text-align: center !important; }
       .hero-content { display: flex; flex-direction: column; align-items: center; }
