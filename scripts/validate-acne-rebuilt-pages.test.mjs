@@ -4,6 +4,11 @@ import test from 'node:test';
 
 const pages = [
   {
+    slug: 'pcos-supplements-spearmint-inositol-india',
+    h1Pattern: /PCOS supplements & Spearmint tea for hormonal acne on Indian skin/,
+    hero: '/assets/images/spearmint-tea-pcos-cup.jpg'
+  },
+  {
     slug: 'alpha-arbutin-serum-for-dark-spots-india',
     h1Pattern: /Alpha Arbutin 2% serum for post-acne dark spots on Indian skin/,
     hero: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg'
