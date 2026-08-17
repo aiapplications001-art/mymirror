@@ -12,7 +12,7 @@ const pages = [
   {
     slug: 'clindamycin-gel-for-acne-india',
     h1Pattern: /Clindamycin gel 1% for acne on Indian skin/,
-    hero: '/assets/images/product-examples/clindamycin-gel-tube.jpg'
+    hero: '/assets/images/clindamycin-gel-for-acne-india-og.jpg'
   },
   {
     slug: 'best-cica-moisturizer-for-acne-prone-skin-india',
@@ -22,7 +22,7 @@ const pages = [
   {
     slug: 'alpha-arbutin-serum-for-dark-spots-india',
     h1Pattern: /Alpha Arbutin 2% serum for post-acne dark spots on Indian skin/,
-    hero: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg'
+    hero: '/assets/images/hyperpigmentation-treatment-india-og.jpg'
   },
   {
     slug: 'pcos-supplements-spearmint-inositol-india',
@@ -32,7 +32,7 @@ const pages = [
   {
     slug: 'niacinamide-serums-india',
     h1Pattern: /Niacinamide serums for acne & dark marks on Indian skin/,
-    hero: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg'
+    hero: '/assets/images/niacinamide-serum-india-og.jpg'
   }
 ];
 
