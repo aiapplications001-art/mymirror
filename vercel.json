@@ -69,6 +69,56 @@
       "source": "/acne/azelaic-acid-for-acne-indian-skin/",
       "destination": "/acne/azelaic-acid-for-acne-india/",
       "permanent": true
+    },
+    {
+      "source": "/acne/clindamycin-gel-for-acne-indian-skin",
+      "destination": "/acne/clindamycin-gel-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/clindamycin-gel-for-acne-indian-skin/",
+      "destination": "/acne/clindamycin-gel-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/cica-soothing-moisturizer-for-acne-barrier-repair-india",
+      "destination": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/cica-soothing-moisturizer-for-acne-barrier-repair-india/",
+      "destination": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/alpha-arbutin-serum-for-acne-dark-spots-indian-skin",
+      "destination": "/acne/alpha-arbutin-serum-for-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/alpha-arbutin-serum-for-acne-dark-spots-indian-skin/",
+      "destination": "/acne/alpha-arbutin-serum-for-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/spearmint-tea-for-hormonal-acne-pcos-india",
+      "destination": "/acne/pcos-supplements-spearmint-inositol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/spearmint-tea-for-hormonal-acne-pcos-india/",
+      "destination": "/acne/pcos-supplements-spearmint-inositol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-5-percent-serum-for-acne-marks-india",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-5-percent-serum-for-acne-marks-india/",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
     }
   ],
   "rewrites": [

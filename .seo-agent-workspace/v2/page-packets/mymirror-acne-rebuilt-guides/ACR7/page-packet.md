@@ -6,7 +6,7 @@ Status: rebuilt publish ready
 
 - Title: Clindamycin Gel 1% for Active Acne on Indian Skin | MyMirror
 - Meta description: Discover how 1% Clindamycin gel clears active acne papules on Indian skin. Learn why pairing with Benzoyl Peroxide prevents antibiotic resistance.
-- Slug: clindamycin-gel-for-acne-indian-skin
+- Slug: clindamycin-gel-for-acne-india
 - Primary keyword: clindamycin gel for acne indian skin
 - Secondary keywords: clindamycin gel 1, topical antibiotic acne, bacterial resistance, clindac A, benzoyl peroxide pairing
 

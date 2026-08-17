@@ -6,7 +6,7 @@ Status: rebuilt publish ready
 
 - Title: Cica Moisturizer for Acne Barrier Repair on Indian Skin | MyMirror
 - Meta description: Calm over-exfoliated acne skin with Cica moisturizer. Learn how Centella Asiatica reduces redness and repairs skin barrier without clogging pores.
-- Slug: cica-soothing-moisturizer-for-acne-barrier-repair-india
+- Slug: best-cica-moisturizer-for-acne-prone-skin-india
 - Primary keyword: cica moisturizer for acne barrier repair india
 - Secondary keywords: cica moisturizer, centella asiatica acne, barrier repair moisturizer, madecassoside, calming gel cream
 

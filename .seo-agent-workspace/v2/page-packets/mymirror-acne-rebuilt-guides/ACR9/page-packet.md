@@ -6,7 +6,7 @@ Status: rebuilt publish ready
 
 - Title: Alpha Arbutin 2% Serum for Acne Dark Spots on Indian Skin | MyMirror
 - Meta description: Discover how 2% Alpha Arbutin serum fades post-acne dark marks (PIH) on Indian skin phototypes IV-VI without irritation or rebounding hyperpigmentation.
-- Slug: alpha-arbutin-serum-for-acne-dark-spots-indian-skin
+- Slug: alpha-arbutin-serum-for-dark-spots-india
 - Primary keyword: alpha arbutin serum for acne dark spots indian skin
 - Secondary keywords: alpha arbutin 2, post inflammatory hyperpigmentation, dark spot fading, tyrosinase inhibitor, hyaluronic acid arbutin
 

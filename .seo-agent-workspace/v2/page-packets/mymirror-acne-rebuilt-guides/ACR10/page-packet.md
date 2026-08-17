@@ -6,7 +6,7 @@ Status: rebuilt publish ready
 
 - Title: Spearmint Tea for Hormonal Acne & PCOS on Indian Skin | MyMirror
 - Meta description: Learn how spearmint tea helps regulate androgen-driven hormonal breakouts and jawline acne in Indian women with PCOS alongside dermatologist care.
-- Slug: spearmint-tea-for-hormonal-acne-pcos-india
+- Slug: pcos-supplements-spearmint-inositol-india
 - Primary keyword: spearmint tea for hormonal acne pcos india
 - Secondary keywords: spearmint tea acne, pcos hormonal acne, anti androgen tea, jawline acne breakouts, sebum regulation
 

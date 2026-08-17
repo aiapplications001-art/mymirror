@@ -8,7 +8,7 @@ const clusterSlug = 'mymirror-acne-rebuilt-guides';
 const pages = [
   {
     id: 'ACR7',
-    slug: 'clindamycin-gel-for-acne-indian-skin',
+    slug: 'clindamycin-gel-for-acne-india',
     title: 'Clindamycin Gel 1% for Active Acne on Indian Skin | MyMirror',
     description: 'Discover how 1% Clindamycin gel clears active acne papules on Indian skin. Learn why pairing with Benzoyl Peroxide prevents antibiotic resistance.',
     ogTitle: 'Clindamycin Gel 1% for Active Acne on Indian Skin',
@@ -75,7 +75,7 @@ const pages = [
   },
   {
     id: 'ACR8',
-    slug: 'cica-soothing-moisturizer-for-acne-barrier-repair-india',
+    slug: 'best-cica-moisturizer-for-acne-prone-skin-india',
     title: 'Cica Moisturizer for Acne Barrier Repair on Indian Skin | MyMirror',
     description: 'Calm over-exfoliated acne skin with Cica moisturizer. Learn how Centella Asiatica reduces redness and repairs skin barrier without clogging pores.',
     ogTitle: 'Cica Soothing Moisturizer for Acne Barrier Repair on Indian Skin',
@@ -142,7 +142,7 @@ const pages = [
   },
   {
     id: 'ACR9',
-    slug: 'alpha-arbutin-serum-for-acne-dark-spots-indian-skin',
+    slug: 'alpha-arbutin-serum-for-dark-spots-india',
     title: 'Alpha Arbutin 2% Serum for Acne Dark Spots on Indian Skin | MyMirror',
     description: 'Discover how 2% Alpha Arbutin serum fades post-acne dark marks (PIH) on Indian skin phototypes IV-VI without irritation or rebounding hyperpigmentation.',
     ogTitle: 'Alpha Arbutin 2% Serum for Acne Dark Spots on Indian Skin',
@@ -209,7 +209,7 @@ const pages = [
   },
   {
     id: 'ACR10',
-    slug: 'spearmint-tea-for-hormonal-acne-pcos-india',
+    slug: 'pcos-supplements-spearmint-inositol-india',
     title: 'Spearmint Tea for Hormonal Acne & PCOS on Indian Skin | MyMirror',
     description: 'Learn how spearmint tea helps regulate androgen-driven hormonal breakouts and jawline acne in Indian women with PCOS alongside dermatologist care.',
     ogTitle: 'Spearmint Tea for Hormonal Acne & PCOS on Indian Skin',
@@ -276,7 +276,7 @@ const pages = [
   },
   {
     id: 'ACR11',
-    slug: 'niacinamide-5-percent-serum-for-acne-marks-india',
+    slug: 'niacinamide-serums-india',
     title: '5% Niacinamide Serum for Acne Marks & Oil Control on Indian Skin | MyMirror',
     description: 'Learn why 5% Niacinamide is the optimal strength for fading acne marks and controlling oil on Indian skin without triggering 10% irritation breakouts.',
     ogTitle: '5% Niacinamide Serum for Acne Marks & Oil Control on Indian Skin',

@@ -4,27 +4,27 @@ import test from 'node:test';
 
 const pages = [
   {
-    slug: 'clindamycin-gel-for-acne-indian-skin',
+    slug: 'clindamycin-gel-for-acne-india',
     h1Pattern: /Clindamycin gel 1% for acne on Indian skin/,
     hero: '/assets/images/product-examples/deriva-ms-aqueous-gel.jpg'
   },
   {
-    slug: 'cica-soothing-moisturizer-for-acne-barrier-repair-india',
+    slug: 'best-cica-moisturizer-for-acne-prone-skin-india',
     h1Pattern: /Cica moisturizer for acne-prone Indian skin/,
     hero: '/assets/images/cica_moisturizer_india_og_1786876834752.jpg'
   },
   {
-    slug: 'alpha-arbutin-serum-for-acne-dark-spots-indian-skin',
+    slug: 'alpha-arbutin-serum-for-dark-spots-india',
     h1Pattern: /Alpha Arbutin 2% serum for acne dark spots on Indian skin/,
     hero: '/assets/images/kojic_acid_cream_india_og_1786876834752.jpg'
   },
   {
-    slug: 'spearmint-tea-for-hormonal-acne-pcos-india',
+    slug: 'pcos-supplements-spearmint-inositol-india',
     h1Pattern: /Spearmint tea for hormonal acne & PCOS on Indian skin/,
     hero: '/assets/images/stress-acne.jpg'
   },
   {
-    slug: 'niacinamide-5-percent-serum-for-acne-marks-india',
+    slug: 'niacinamide-serums-india',
     h1Pattern: /5% Niacinamide serum for acne marks & oil control on Indian skin/,
     hero: '/assets/images/salicylic_dropper.jpg'
   },

@@ -6,7 +6,7 @@ Status: rebuilt publish ready
 
 - Title: 5% Niacinamide Serum for Acne Marks & Oil Control on Indian Skin | MyMirror
 - Meta description: Learn why 5% Niacinamide is the optimal strength for fading acne marks and controlling oil on Indian skin without triggering 10% irritation breakouts.
-- Slug: niacinamide-5-percent-serum-for-acne-marks-india
+- Slug: niacinamide-serums-india
 - Primary keyword: 5 percent niacinamide serum for acne marks india
 - Secondary keywords: 5 niacinamide serum, niacinamide 10 vs 5, acne marks indian skin, barrier repair niacinamide, sebum regulation
 
