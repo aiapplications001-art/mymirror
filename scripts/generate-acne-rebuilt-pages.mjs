@@ -7,6 +7,73 @@ const clusterSlug = 'mymirror-acne-rebuilt-guides';
 
 const pages = [
   {
+    id: 'ACR10',
+    slug: 'pcos-supplements-spearmint-inositol-india',
+    title: 'PCOS Supplements & Spearmint Tea for Hormonal Acne India | MyMirror',
+    description: 'Learn how Spearmint tea and Myo-Inositol manage PCOS hormonal acne on Indian skin. Understand anti-androgen action, 40:1 inositol ratio, & safety rules.',
+    ogTitle: 'PCOS Supplements & Spearmint Tea for Hormonal Acne in India',
+    h1: 'PCOS supplements & Spearmint tea for hormonal acne on Indian skin: Myo-Inositol & anti-androgen guide',
+    eyebrow: 'Hormonal acne guide',
+    primaryKeyword: 'pcos supplements spearmint inositol india',
+    secondaryKeywords: ['spearmint tea for hormonal acne indian women', 'myo inositol d chiro ratio 40 to 1 pcos acne', 'anti androgen tea for jawline acne india', 'pcos hormonal acne supplements india', 'spearmint tea acne purging or hormonal balance'],
+    heroImage: '/assets/images/spearmint-tea-pcos-cup.jpg',
+    heroAlt: 'Fresh organic Spearmint tea leaves in a teacup for anti-androgen hormonal acne management in India',
+    heroNote: 'Spearmint anti-androgen action, 40:1 Myo-Inositol ratio, or medical endocrine supervision?',
+    heroCopy: 'Hormonal acne associated with Polycystic Ovary Syndrome (PCOS or PCOD) in Indian women primarily manifests as deep, painful cystic breakouts along the jawline, chin, and lower cheeks. Elevated serum free testosterone and insulin resistance drive hyper-sebocyte stimulation, causing persistent follicular clogging. Spearmint tea (Mentha spicata) exerts mild anti-androgenic effects by reducing free testosterone levels without suppressing total gonadotropins. Combining Spearmint tea with Myo-Inositol and D-Chiro-Inositol (in the clinically validated 40:1 physiological ratio) improves insulin sensitivity, regularizes metabolic signaling, and calms recalcitrant hormonal acne breakouts.',
+    decisionIntro: 'This decision guide evaluates Spearmint tea and Myo-Inositol supplements for Indian women managing PCOS-related hormonal acne, explaining the physiological mechanism of anti-androgen plant flavonoids, the clinical 40:1 inositol ratio, safe daily intake boundaries, and when medical endocrinology evaluation is essential. Managing PCOS acne requires addressing internal hormonal triggers alongside gentle external skincare.',
+    decisionCards: [
+      ['Best fit', 'Deep, painful jawline and chin cysts occurring prior to menstrual periods, accompanied by irregular cycles or hirsutism.'],
+      ['Use more caution', 'Pregnant or nursing women, individuals with low blood pressure, or relying on herbal teas alone for severe PCOS complications.'],
+      ['40:1 Inositol rule', 'Ensure Myo-Inositol and D-Chiro-Inositol supplements adhere to the 40:1 physiological ratio to improve ovarian insulin sensitivity safely.']
+    ],
+    indianSkinIntro: 'PCOS affects an estimated 1 in 5 Indian women, driven by genetic predisposition and urban dietary shifts. Insulin resistance triggers ovarian overproduction of androgens, which bind to sebaceous gland receptors on the lower face. For Indian skin phototypes IV to VI, deep hormonal cysts frequently heal with severe, long-lasting post-inflammatory hyperpigmentation (PIH) and dermal atrophy (scarring). Spearmint tea contains rosmarinic acid and flavonoids that lower bioavailable testosterone, while Myo-Inositol restores insulin receptor sensitivity. Reducing internal androgenic stimulation halts deep cystic lesions, preserving skin texture and stopping dark spot formation.',
+    indianRows: [
+      ['Anti-androgenic flavonoid action', 'Reduces free serum testosterone levels to calm hyperactive sebaceous glands.', 'Drink 1-2 cups of organic Spearmint tea daily after meals.'],
+      ['40:1 Myo to D-Chiro Inositol ratio', 'Restores physiological follicular insulin signaling and ovarian hormone balance.', 'Take under medical or nutritional supervision for 3-6 months.'],
+      ['Jawline cyst prevention', 'Targeting internal androgen spikes prevents deep, painful nodulocystic breakouts.', 'Pair internal care with gentle topical Adapalene or BPO.'],
+      ['PIH and scar risk reduction', 'Preventing deep dermal cysts stops severe post-acne dark marks and indented scars.', 'Use daily broad-spectrum SPF 50 sunscreen on healing areas.']
+    ],
+    safeIntro: 'Follow a structured daily wellness routine to combine dietary Spearmint tea and Myo-Inositol supplements safely with topical skincare.',
+    safeSteps: [
+      ['Steep 1 tea bag of organic Spearmint tea', 'Pour hot water over 1 tea bag (or 1 tsp loose leaves) and steep for 5 to 7 minutes.'],
+      ['Drink 1 to 2 cups daily between meals', 'Enjoy spearmint tea consistently every afternoon or evening. Do not exceed 3 cups daily.'],
+      ['Take 40:1 Myo-Inositol supplement as directed', 'Consume physician-recommended Myo-Inositol/D-Chiro-Inositol powder or capsules with water.'],
+      ['Maintain a gentle non-comedogenic skincare routine', 'Cleanse gently and apply oil-free moisturizer. Do not scrub or squeeze deep jawline cysts.'],
+      ['Monitor menstrual cycle and acne progress', 'Track jawline breakout frequency and cycle regularity over 8 to 12 weeks.']
+    ],
+    mistakes: [
+      'Drinking Spearmint tea excessively (over 4-5 cups daily), which may cause stomach upset or blood pressure drops.',
+      'Expecting Spearmint tea or inositol to clear deep hormonal cysts in 3 days; endocrine balance requires 8 to 12 weeks.',
+      'Squeezing or picking deep, painful jawline cysts, driving inflammation into the dermis and causing permanent scarring.',
+      'Purchasing unstandardized inositol supplements that lack the clinically proven 40:1 Myo to D-Chiro ratio.',
+      'Discontinuing prescribed medical PCOS treatments without consulting a gynecologist or endocrinologist.'
+    ],
+    dermIntro: 'Consult a gynecologist, endocrinologist, or dermatologist for medical diagnosis and comprehensive management of PCOS.',
+    dermList: [
+      'Obtain formal diagnostic blood tests (LH/FSH ratio, free testosterone, fasting insulin, pelvic ultrasound).',
+      'Discuss prescription medical anti-androgens (such as Spironolactone) if herbal options are insufficient.',
+      'Consult a physician if you experience severe irregular menses, hair loss, or metabolic concerns.',
+      'Establish a holistic treatment plan combining diet, exercise, medical supplements, and topical retinoids.',
+      'Bring all herbal tea and dietary supplement labels to your clinical appointment.'
+    ],
+    scanUse: 'Use MyMirror AI skin scan to measure lower-facial jawline cyst count, track skin barrier recovery, and monitor dark spot fading over 12 weeks.',
+    faqs: [
+      ['Does Spearmint tea reduce acne?', 'Yes. Clinical studies show Spearmint tea has mild anti-androgenic properties that reduce free testosterone and calm hormonal acne.'],
+      ['What is the best ratio of Myo-Inositol to D-Chiro-Inositol for PCOS?', 'The clinically proven physiological ratio is 40:1 (40 parts Myo-Inositol to 1 part D-Chiro-Inositol).'],
+      ['How long does it take for Spearmint tea to work for hormonal acne?', 'Consistent daily intake of 1-2 cups typically shows noticeable reduction in jawline breakouts after 60 to 90 days.'],
+      ['Can I drink Spearmint tea if I am pregnant?', 'No. Pregnant or nursing women should avoid therapeutic amounts of anti-androgenic herbal teas.'],
+      ['Is Peppermint tea the same as Spearmint tea for acne?', 'No. Spearmint (Mentha spicata) contains specific anti-androgenic flavonoids that Peppermint (Mentha piperita) lacks.'],
+      ['Will Inositol supplements cause weight gain?', 'No. Inositol improves insulin sensitivity, which helps manage weight and reduces sugar cravings in women with PCOS.'],
+      ['Can I combine Spearmint tea with topical Adapalene?', 'Yes. Combining internal anti-androgenic support with external topical retinoids provides comprehensive acne management.'],
+      ['Does PCOS acne require medical supervision?', 'Yes. PCOS is an endocrine disorder. A gynecologist or endocrinologist should evaluate your hormonal profile.']
+    ],
+    sources: [
+      ['Phytotherapy Research trial on anti-androgenic effects of Spearmint tea', 'https://onlinelibrary.wiley.com/journal/10991573'],
+      ['Gynecological Endocrinology consensus on 40:1 Myo-Inositol ratio in PCOS', 'https://www.tandfonline.com/toc/igye20/current'],
+      ['Indian Dermatology Online Journal on managing PCOS-related acne', 'https://idoj.in/']
+    ]
+  },
+  {
     id: 'ACR9',
     slug: 'alpha-arbutin-serum-for-dark-spots-india',
     title: 'Alpha Arbutin 2% Serum for Dark Spots on Indian Skin | MyMirror',
@@ -612,6 +679,49 @@ const pages = [
 ];
 
 const productDetails = {
+  ACR10: {
+    intro: 'PCOS hormonal acne management in India includes organic Spearmint herbal teas, 40:1 Inositol sachet supplements, and gentle non-comedogenic topical skincare.',
+    formats: [
+      ['Organic Loose Leaf Spearmint Tea', '100% pure Mentha spicata leaves providing natural anti-androgenic flavonoids.', 'Jawline hormonal acne, PCOS hirsutism, and oily skin.', 'Drink 1-2 cups daily steeped for 5-7 minutes.'],
+      ['40:1 Myo-Inositol + D-Chiro-Inositol Sachets', 'Clinical grade inositol powder supporting insulin sensitivity and ovarian health.', 'PCOS metabolic management, irregular cycles, and hormonal breakouts.', 'Mix 1 sachet in water daily as directed by a clinician.'],
+      ['Anti-Androgen Botanical Skincare Gel', 'Topical gel containing soothing green tea and Centella for localized hormonal spots.', 'Red inflammatory jawline papules and chin breakouts.', 'Apply morning and evening after gentle cleansing.']
+    ],
+    checklist: [
+      'Choose 100% pure Spearmint tea (Mentha spicata).',
+      'Verify inositol supplements use the 40:1 Myo to D-Chiro ratio.',
+      'Drink 1-2 cups of spearmint tea consistently for 8-12 weeks.',
+      'Do not pick or squeeze deep jawline cystic pimples.',
+      'Consult a gynecologist or endocrinologist for PCOS diagnosis.'
+    ],
+    landscape: 'In India, organic spearmint teas (such as Blue Tea India and Teabox Spearmint) and pharmacy 40:1 inositol supplements (such as Ovasitol and Follihair PCOS lines) are widely used for managing hormonal acne.',
+    buyFirst: 'Start with 1-2 cups of organic Spearmint tea daily paired with a gentle oil-free moisturizer, and consult a doctor for a 40:1 inositol prescription.',
+    products: [
+      {
+        name: 'The Derma Co 1% Salicylic Acid Oil-Free Moisturizer',
+        badge: 'Hormonal Spot Hydration',
+        image: '/assets/images/product-examples/derma-co-salicylic-moisturizer.jpg',
+        url: 'https://thedermaco.com/products/1-salicylic-acid-oil-free-moisturizer-for-face-with-oat-extract-50g',
+        detail: 'Lightweight moisturizer for oily jawline skin.',
+        caution: 'Oil-free formula.'
+      },
+      {
+        name: 'Minimalist Vitamin B5 10% Moisturizer',
+        badge: 'Soothing Barrier Gel',
+        image: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg',
+        url: 'https://beminimalist.co/products/vitamin-b5-10-moisturizer',
+        detail: 'Panthenol gel moisturizer to calm inflamed cysts.',
+        caution: 'Non-comedogenic.'
+      },
+      {
+        name: 'Excela Acne-Prone Moisturizer',
+        badge: 'Pharmacy Lipid Support',
+        image: '/assets/images/product-examples/excela-moisturiser.jpg',
+        url: 'https://pharmeasy.in/health-care/products/excela-moisturiser-bottle-of-50gm-pump-208388',
+        detail: 'Dermatologist-tested non-comedogenic moisturizer.',
+        caution: 'Daily application.'
+      }
+    ]
+  },
   ACR9: {
     intro: 'Alpha Arbutin 2% formulations in India range from pure water-based hyaluronic serums to multi-active brightening fluids containing Niacinamide or Kojic acid.',
     formats: [
