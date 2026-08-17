@@ -4,6 +4,11 @@ import test from 'node:test';
 
 const pages = [
   {
+    slug: 'azelaic-acid-for-acne-indian-skin',
+    h1Pattern: /Azelaic acid 10% for acne on Indian skin/,
+    hero: '/assets/images/azelaic-acid-og-v4.jpg'
+  },
+  {
     slug: 'adapalene-gel-for-acne-indian-skin-guide',
     h1Pattern: /Adapalene gel for acne on Indian skin/,
     hero: '/assets/images/adapalene-gel-india-og.jpg'

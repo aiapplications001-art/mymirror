@@ -6,11 +6,11 @@ const baseUrl = 'https://mymirror.fit';
 const clusterSlug = 'mymirror-acne-rebuilt-guides';
 
 const pages = [
-  {
+    {
     id: 'ACR6',
     slug: 'azelaic-acid-for-acne-indian-skin',
     title: 'Azelaic Acid 10% for Acne & PIH on Indian Skin | MyMirror',
-    description: 'Discover how 10% Azelaic Acid clears active breakouts and fades stubborn post-acne marks (PIH) on Indian skin. Dermatologist-reviewed 4-step Sandwich Protocol for barrier safety.',
+    description: 'Discover how 10% Azelaic Acid clears active breakouts and fades dark post-acne marks (PIH) on Indian skin. 4-step Sandwich Protocol for barrier safety.',
     ogTitle: 'Azelaic Acid 10% for Acne & PIH on Indian Skin',
     h1: 'Azelaic acid 10% for acne on Indian skin: how to clear breakouts & fade marks',
     eyebrow: 'Active ingredient guide',
@@ -19,52 +19,59 @@ const pages = [
     heroImage: '/assets/images/azelaic-acid-og-v4.jpg',
     heroAlt: 'Azelaic acid 10% gel for acne and hyperpigmentation on Indian skin',
     heroNote: 'Dicarboxylic acid, PIH, or barrier care?',
-    heroCopy: 'Azelaic acid 10% selectively inhibits hyperactive melanocytes and reduces C. acnes bacteria without bleaching surrounding normal skin tone.',
-    decisionIntro: 'This page is for people considering 10% Azelaic acid for active papules or brown post-acne marks (PIH) on Indian skin phototypes IV-VI. It explains how to buffer initial dicarboxylic paresthesia.',
+    heroCopy: 'Azelaic acid 10% selectively inhibits hyperactive melanocytes and reduces follicular Cutibacterium acnes colonization without bleaching surrounding normal skin tone. For melanin-rich Indian skin phototypes IV to VI, it provides a gentle, dual-action dermatological mechanism that targets both active inflammatory breakouts and stubborn brown post-acne marks (PIH). When introduced thoughtfully with adequate barrier support, 10% Azelaic acid gel helps smooth bumpy texture and clarify skin tone without inducing severe peeling or secondary post-inflammatory hyperpigmentation.',
+    decisionIntro: 'This decision guide is designed for individuals considering 10% Azelaic acid gel for active papules, pustules, or long-lasting dark brown post-acne marks on Indian skin phototypes. It explains how to buffer initial dicarboxylic acid paresthesia (tingling), structure a barrier-safe weekly application schedule, avoid common formulation errors in tropical humid weather, and set realistic clinical expectations for dark spot fading over an eight to twelve week timeframe.',
     decisionCards: [
-      ['Best fit', 'Inflammatory acne, post-inflammatory hyperpigmentation (PIH), rosacea-prone skin, and post-acne mark fading.'],
-      ['Use more caution', 'Severe nodulocystic acne needing oral isotretinoin, active severe barrier damage, or allergic contact dermatitis history.'],
-      ['Do not rush', 'Use the 4-Step Sandwich Protocol on dry skin to eliminate initial tingling and protect barrier lipids.']
+      ['Best fit', 'Active inflammatory acne papules, post-inflammatory hyperpigmentation (PIH), rosacea-prone skin, clogged comedonal pores, and post-acne mark fading on melanin-rich skin.'],
+      ['Use more caution', 'Severe nodulocystic acne needing oral isotretinoin, active severe barrier damage from over-exfoliation, or a history of allergic contact dermatitis.'],
+      ['Do not rush', 'Use the 4-Step Sandwich Protocol over light moisturizer to eliminate initial acid tingling and protect essential skin barrier lipids in humid climates.']
     ],
-    indianSkinIntro: 'On melanin-rich Indian skin, inflammation from acne often triggers long-lasting brown post-inflammatory hyperpigmentation. 10% Azelaic acid selectively targets hyperactive melanocytes without bleaching normal skin.',
+    indianSkinIntro: 'On melanin-rich Indian skin phototypes IV to VI, the primary aesthetic concern following acne inflammation is rarely just the temporary pimple itself; it is the stubborn brown mark (post-inflammatory hyperpigmentation) that lingers for months. Aggressive peeling acids, harsh physical scrubs, or strong retinoids can easily trigger secondary hyperpigmentation if they cause burning, peeling, or barrier breakdown. 10% Azelaic acid offers a distinct clinical advantage for Indian skin: it selectively targets and inhibits hyperactive, abnormal melanocytes while leaving baseline normal skin tone untouched. This selective tyrosinase inhibition ensures that dark spots fade without the bleaching risks associated with hydroquinone or harsh depigmenting agents. Furthermore, its antibacterial and keratolytics properties work inside hair follicles to prevent new microcomedones from forming, breaking the cycle of recurring acne and subsequent dark marks.',
     indianRows: [
-      ['Tyrosinase inhibition', 'Selective inhibition of hyperactive melanocytes prevents new dark mark formation.', 'Apply consistently for 8-12 weeks for optimal tone evenness.'],
-      ['Barrier protection', 'Initial application can cause 10-minute mild tingling or paresthesia.', 'Use the 4-Step Sandwich Protocol over light moisturizer.'],
-      ['Humid climate', 'Gel formulations are preferred over heavy creams for monsoon humidity.', 'Apply a pea-sized amount on dry skin.'],
-      ['Sun discipline', 'UV radiation can re-trigger melanogenesis on fading post-acne marks.', 'Pair daytime routines with broad-spectrum SPF 50.']
+      ['Tyrosinase selective inhibition', 'Selective inhibition of hyperactive melanocytes prevents new dark mark formation without bleaching surrounding normal skin.', 'Apply consistently for 8 to 12 weeks for visible tone evening and mark reduction.'],
+      ['Barrier protection & buffering', 'Initial dicarboxylic acid application can cause 10-minute mild tingling, itching, or paresthesia as the skin adapts.', 'Use the 4-Step Sandwich Protocol over a light hydrating moisturizer.'],
+      ['Humid climate & gel textures', 'Gel formulations are strongly preferred over heavy occlusive creams for monsoon humidity and oily Indian skin.', 'Apply a pea-sized amount evenly across completely dry skin.'],
+      ['Sun discipline & SPF protection', 'UV radiation triggers melanogenesis on fading post-acne marks, deepening PIH and delaying recovery.', 'Pair daytime routines with mandatory broad-spectrum SPF 50 sunscreen.']
     ],
-    safeIntro: 'A safe Azelaic acid routine buffers the active ingredient to prevent barrier sting while giving the skin time to adapt.',
+    safeIntro: 'A safe 10% Azelaic acid routine buffers the active ingredient to prevent barrier stinging while allowing the skin to adapt steadily over several weeks. Consistent low-friction application yields far better long-term results than aggressive overuse or daily double-dosing.',
     safeSteps: [
-      ['Cleanse gently', 'Use a sulfate-free pH-balanced cleanser.'],
-      ['Apply light buffer', 'Apply oil-free moisturizer on damp skin and dry for 5 minutes.'],
-      ['Apply pea-sized gel', 'Spread 10% Azelaic acid gel evenly across active breakout zones.'],
-      ['Seal barrier', 'Seal with barrier repair cream at night or SPF 50 daytime.'],
-      ['Maintain consistency', 'Track skin signals over 6 to 8 weeks before increasing frequency.']
+      ['Cleanse gently with pH-balanced cleanser', 'Wash your face gently with a mild, sulfate-free cleanser and pat completely dry with a soft towel. Avoid harsh physical scrubs, hot water, or aggressive cleansing tools that destabilize the acid mantle.'],
+      ['Apply a light hydrating buffer layer', 'Spread a thin layer of oil-free moisturizer containing glycerin or hyaluronic acid on damp skin and allow it to absorb and dry completely for 5 minutes. Buffering creates a protective lipid cushion.'],
+      ['Spread a pea-sized 10% Azelaic acid gel layer', 'Apply a single pea-sized amount evenly across your entire face, focusing on breakout-prone zones. Avoid sensitive areas around the eyelids, nostrils, and lip contours to prevent localized irritation.'],
+      ['Seal barrier with moisturizer or daytime SPF', 'Seal with a barrier repair moisturizer at night or follow with broad-spectrum SPF 50 during the daytime. Sunscreen is essential to prevent UV rays from darkening fading PIH marks.'],
+      ['Maintain a consistent weekly schedule', 'Start 2 or 3 nights per week and monitor skin comfort for 4 full weeks before increasing frequency. Consistency over 8 to 12 weeks delivers superior results compared to rapid daily application.']
     ],
     mistakes: [
-      'Applying Azelaic acid directly to damp skin, increasing stinging.',
-      'Expecting instant overnight PIH fading before 4-6 weeks.',
-      'Skipping daytime broad-spectrum sunscreen.',
-      'Using aggressive physical scrubs alongside dicarboxylic acids.',
-      'Over-applying more than a pea-sized gel layer.'
+      'Applying Azelaic acid directly to damp or wet skin, which accelerates acid penetration and causes intense stinging or burning.',
+      'Expecting instant overnight dark spot fading before 4 to 6 weeks of consistent night application.',
+      'Skipping daytime broad-spectrum sunscreen, allowing UV radiation to deepen fading post-acne marks.',
+      'Combining 10% Azelaic acid with aggressive physical face scrubs, high-strength AHA peeling solutions, or alcohol toners.',
+      'Using a large dollop of gel instead of a thin pea-sized layer for the entire face, leading to localized flaking and irritation.',
+      'Discontinuing use during mild early purging when microcomedones surface as pores clear out.'
     ],
-    dermIntro: 'A dermatologist can advise whether prescription 15-20% azelaic acid or combination therapy is required for severe acne.',
+    dermIntro: 'A dermatologist can advise whether prescription 15% to 20% azelaic acid, topical combination therapy, or oral medications are required for severe or scarring acne. Bring a structured photo timeline rather than just a list of products.',
     dermList: [
-      'Seek medical advice for painful cystic nodules or scarring.',
-      'Stop use if severe swelling or allergic reaction occurs.',
-      'Consult a doctor during pregnancy or breastfeeding before starting active routines.',
-      'Bring a photo timeline showing progress at weeks 0, 4, and 8.',
-      'Disclose all current actives including retinoids and peeling acids.'
+      'Seek medical evaluation for painful deep cysts, nodular acne, or pitted scarring that requires clinical procedures.',
+      'Stop use immediately if severe swelling, blistering, or raw allergic rash occurs.',
+      'Consult a medical professional during pregnancy or breastfeeding before starting active skincare routines.',
+      'Bring photos showing week 0, week 4, and week 8 to assess true clinical progress under consistent lighting.',
+      'Disclose all current active ingredients including retinoids, salicylic acid, benzoyl peroxide, and prescription gels.'
     ],
-    scanUse: 'Use MyMirror AI skin analysis to track visible acne breakouts, oiliness levels, and mark fading in 60 seconds.',
+    scanUse: 'Use MyMirror AI skin analysis before starting your routine and again after 4 to 6 weeks. The scan helps you track visible acne breakouts, oiliness levels, texture irregularities, and dark mark fading in about 60 seconds under standardized lighting.',
     faqs: [
-      ['Does 10% Azelaic Acid cause skin purging?', 'Mild temporary purging of microcomedones can occur during weeks 2 to 3. Continued use clears breakouts within 4-6 weeks.'],
-      ['Can I combine Azelaic Acid with Niacinamide?', 'Yes. 5% Niacinamide repairs barrier lipids and enhances dark spot fading.'],
-      ['How long until post-acne marks fade?', 'Noticeable mark reduction appears by weeks 6 to 8 of night use, with full results by week 12.']
+      ['Does 10% Azelaic Acid cause skin purging?', 'Mild temporary purging of microcomedones can occur during weeks 2 to 3 as pores unblock. Purging should look like small typical pimples in usual breakout areas, not raw burning or rashy redness. If raw redness occurs, pause the active and repair your skin barrier with a gentle moisturizer.'],
+      ['How often should Indian skin start Azelaic Acid 10%?', 'Start 2 or 3 nights a week over a light moisturizer. Increase to alternate nights or daily night use only when your skin barrier feels completely comfortable and displays zero stinging during gentle cleansing.'],
+      ['Can I combine Azelaic Acid with Niacinamide?', 'Yes. 5% Niacinamide complements Azelaic acid exceptionally well for Indian skin by repairing barrier ceramides, reducing inflammation, and inhibiting melanosome transfer, enhancing overall spot-fading results.'],
+      ['Is Azelaic Acid safe for dry or sensitive skin?', 'Yes, when used with the 4-Step Sandwich Protocol. Buffering the active ingredient over a light hydrating moisturizer prevents dryness and stinging while delivering full active benefits to target areas.'],
+      ['How does Azelaic Acid compare to Salicylic Acid?', 'Salicylic acid is oil-soluble BHA that excels at unclogging blackheads deep inside pores. Azelaic acid is a dicarboxylic antibacterial agent and tyrosinase inhibitor that clears active papules and selectively fades dark post-acne marks.'],
+      ['Can Azelaic Acid bleach normal skin tone?', 'No. Unlike hydroquinone or harsh bleaching agents, Azelaic acid selectively targets abnormal hyperactive melanocytes, preserving normal baseline skin tone without halo hypopigmentation.'],
+      ['What should I do if my face tings after application?', 'Mild 10-minute tingling or itching is a normal physiological response to topical dicarboxylic acids as the skin adapts. If active burning or redness lasts longer, wash off with cool water and adopt the Sandwich Protocol.'],
+      ['How long until post-acne marks show visible fading?', 'Clinical studies show noticeable reduction in dark mark intensity by weeks 6 to 8 of daily night use, with maximum tone evenness achieved by week 12 when paired with daytime broad-spectrum sunscreen.']
     ],
     sources: [
       ['JAAD azelaic acid hyperpigmentation study', 'https://www.jaad.org/article/S0190-9622(06)00827-0/fulltext'],
-      ['IJDVL clinical acne protocol', 'https://ijdvl.com/azelaic-acid-in-acne-and-hyperpigmentation/']
+      ['IJDVL clinical acne protocol', 'https://ijdvl.com/azelaic-acid-in-acne-and-hyperpigmentation/'],
+      ['AAD skin of color acne guidelines', 'https://www.aad.org/public/diseases/acne/derm-treat/skin-color']
     ]
   },
   {
@@ -406,11 +413,11 @@ const pages = [
 
 const productDetails = {
   ACR6: {
-    intro: 'Azelaic acid 10% product formats include OTC gels, topical serums, and combination active formulas designed for acne-prone skin and post-inflammatory hyperpigmentation (PIH).',
+    intro: 'Azelaic acid 10% product formats include OTC gels, topical serums, and combination active formulas designed for acne-prone skin and post-inflammatory hyperpigmentation (PIH). Choosing the right format ensures effective delivery without heavy residue in tropical Indian humidity.',
     formats: [
       ['10% OTC Gel', 'Lightweight dicarboxylic gel format ideal for oily or combination skin in humid climates.', 'Active acne papules, clogged pores, and dark mark fading.', 'Apply on completely dry skin over moisturizer to eliminate initial paresthesia.'],
       ['10% Azelaic Acid Serum', 'Fluid topical serum often formulated with 5% Niacinamide or hyaluronic acid.', 'Overall tone evenness, mild acne maintenance, and PIH prevention.', 'Avoid stacking with aggressive physical scrubs or strong peeling acids.'],
-      ['15% to 20% Prescription Formulations', 'Higher concentration medical gels or creams.', 'Persistent inflammatory papules, severe hyperpigmentation, or rosacea under dermatologist care.', 'Requires professional prescription supervision.']
+      ['15% to 20% Prescription Formulations', 'Higher concentration medical gels or creams prescribed by dermatologists.', 'Persistent inflammatory papules, severe hyperpigmentation, or rosacea under dermatologist care.', 'Requires professional medical prescription supervision.']
     ],
     checklist: [
       'Choose 10% OTC gel for gentle self-guided acne and dark spot maintenance.',
@@ -429,6 +436,22 @@ const productDetails = {
         url: 'https://thedermaco.com/products/10-azelaic-acid-serum',
         detail: 'Formulated with 10% Azelaic acid to target active breakouts and reduce dark post-acne marks.',
         caution: 'Patch test before full face application.'
+      },
+      {
+        name: 'Minimalist Tranexamic 3% + Azelaic Serum',
+        badge: 'Pigmentation & Mark Corrector',
+        image: '/assets/images/product-examples/minimalist-tranexamic-serum.jpg',
+        url: 'https://beminimalist.co/products/tranexamic-3-hpa',
+        detail: 'Combines active dark-spot fading ingredients for melano-competent Indian skin tone evening.',
+        caution: 'Use with daytime SPF 50 sunscreen.'
+      },
+      {
+        name: 'Excela Moisturiser for Acne-Prone Skin',
+        badge: 'Buffering Layer Partner',
+        image: '/assets/images/product-examples/excela-moisturiser.jpg',
+        url: 'https://pharmeasy.in/health-care/products/excela-moisturiser-bottle-of-50gm-pump-208388',
+        detail: 'Lightweight pharmacy moisturizer ideal for buffering active acid gels in the 4-Step Sandwich Protocol.',
+        caution: 'Ensure skin is dry before active application.'
       }
     ]
   },

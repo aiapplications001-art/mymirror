@@ -37,6 +37,38 @@
         "status": "existing_repository_asset",
         "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
       }
+    },
+    {
+      "id": "IMG_PRODUCT_2",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Minimalist Tranexamic 3% + Azelaic Serum product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://beminimalist.co/products/tranexamic-3-hpa",
+      "filePath": "/assets/images/product-examples/minimalist-tranexamic-serum.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    },
+    {
+      "id": "IMG_PRODUCT_3",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Excela Moisturiser for Acne-Prone Skin product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://pharmeasy.in/health-care/products/excela-moisturiser-bottle-of-50gm-pump-208388",
+      "filePath": "/assets/images/product-examples/excela-moisturiser.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
     }
   ]
 }
