@@ -59,6 +59,21 @@
       "source": "/blog/pimple-vs-zit-inflammatory-papules-pustules-indian-skin/",
       "destination": "/acne/pimple-zit/",
       "permanent": true
+    },
+    {
+      "source": "/acne/salicylic-acid-cleanser-for-acne-india",
+      "destination": "/acne/salicylic-acid-face-wash-for-acne-indian-skin/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-salicylic-acid-face-wash-india",
+      "destination": "/acne/salicylic-acid-face-wash-for-acne-indian-skin/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/salicylic-acid-face-wash-for-acne-india",
+      "destination": "/acne/salicylic-acid-face-wash-for-acne-indian-skin/",
+      "permanent": true
     }
   ],
   "rewrites": [
