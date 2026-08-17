@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "cleansing-balm-for-acne-prone-skin-india",
+    "h1": "Cleansing balm for acne-prone Indian skin: when it helps and when it clogs",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": false,
+  "assets": [
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "16:9",
+      "altText": "A person gently cleansing foam from acne-prone skin",
+      "status": "existing_repo_asset",
+      "filePath": "/assets/images/cleansing-balm-hero-v4.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    }
+  ]
+}

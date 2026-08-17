@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "oil-free-moisturizer-acne-prone-skin-india",
+    "h1": "Best oil-free moisturizer for acne-prone skin in humid weather: what to choose",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": false,
+  "assets": [
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "16:9",
+      "altText": "A lightweight gel moisturizer jar on a wet bathroom surface",
+      "status": "existing_repo_asset",
+      "filePath": "/assets/images/oil-free-hero-v4.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "benzoyl-peroxide-spot-treatment-vs-gel-india",
+    "h1": "Benzoyl peroxide spot treatment vs gel: how to choose without burning Indian skin",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": false,
+  "assets": [
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "16:9",
+      "altText": "An illustrative tube of benzoyl peroxide acne treatment on a bathroom counter",
+      "status": "existing_repo_asset",
+      "filePath": "/assets/images/bpo-spot-hero-v4.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    }
+  ]
+}

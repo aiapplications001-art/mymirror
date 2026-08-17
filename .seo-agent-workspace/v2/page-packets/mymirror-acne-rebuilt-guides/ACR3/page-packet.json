@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v2",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "acne_decision_guide",
+    "copyStatus": "rebuilt_publish_ready",
+    "createdDate": "2026-08-17"
+  },
+  "seo": {
+    "title": "Best Oil-Free Moisturizer for Acne-Prone Skin in Humid Weather | MyMirror",
+    "description": "A humid-weather guide to oil-free moisturizer for acne-prone Indian skin: gel vs lotion, non-comedogenic labels, barrier repair, sweat, and sunscreen layering.",
+    "slug": "oil-free-moisturizer-acne-prone-skin-india",
+    "h1": "Best oil-free moisturizer for acne-prone skin in humid weather: what to choose",
+    "primaryKeyword": "oil-free moisturizer acne-prone skin India",
+    "secondaryKeywords": [
+      "best oil free moisturizer",
+      "humid weather skincare",
+      "gel moisturizer acne prone",
+      "non comedogenic moisturizer"
+    ]
+  },
+  "cta": {
+    "primary": {
+      "label": "Start your free AI skin scan",
+      "destination": "https://mymirror.fit/scan",
+      "microcopy": "Use MyMirror to organize visible acne signals before changing your routine."
+    }
+  },
+  "sections": [
+    {
+      "id": "S1_hero",
+      "heading": "Best oil-free moisturizer for acne-prone skin in humid weather: what to choose",
+      "role": "conversion",
+      "markdown": "In humid weather, acne-prone skin often needs water-light hydration, not a heavy cream. The right moisturizer should calm the barrier without feeling sticky."
+    },
+    {
+      "id": "S2_decision",
+      "heading": "How to decide if this page is for you",
+      "role": "intent_match",
+      "markdown": "This page is for people who skip moisturizer because their face already feels oily, then end up with tightness, more shine, or irritation from acne actives. “Oil-free” is useful only if the formula still hydrates, layers under sunscreen, and does not sting on a compromised barrier."
+    },
+    {
+      "id": "S3_indian_skin",
+      "heading": "What to look for on Indian skin",
+      "role": "education",
+      "markdown": "Indian climates can swing between sweat, AC dryness, pollution, and strong sun. Acne-prone skin can be oily and dehydrated at the same time. If you use benzoyl peroxide, salicylic acid, adapalene, or retinoids, moisturizer is not optional decoration; it is part of keeping irritation from turning into more acne marks.\n\n- Gel texture: Water-gel formulas feel lighter and can suit humid days. Look for comfort after one hour, not just instant cooling.\n- Lotion texture: Light lotions may support the barrier better when acne actives cause dryness. Choose lotion if gel leaves tightness or flaking.\n- Non-comedogenic label: Helpful but not a guarantee; individual skin still varies. Track whether bumps appear after the moisturizer, not after every routine change.\n- Sweat and sunscreen: A moisturizer that pills under SPF can make people apply less sunscreen. The best formula is one you can wear under SPF daily."
+    },
+    {
+      "id": "S4_safe_use",
+      "heading": "Safe use plan",
+      "role": "how_to",
+      "markdown": "The safest plan is to choose a lightweight moisturizer, use enough to prevent tightness, and judge it with sunscreen layered on top. Humid weather does not remove the need for barrier support; it only changes the texture that feels wearable.\n\nChoose simple labels: Look for oil-free, non-comedogenic, fragrance-free if sensitive, and ingredients like glycerin, hyaluronic acid, panthenol, ceramides, or niacinamide if tolerated.\n\nApply on slightly damp skin: A thin layer after cleansing can trap water and reduce the tight feeling that leads to over-cleansing.\n\nMatch texture to the active: Gel may be enough on non-active mornings. A light lotion or barrier cream may be better on retinoid or benzoyl peroxide nights.\n\nTest under sunscreen: Wait five minutes, then apply SPF. If the combination pills or feels heavy, change one layer before giving up on moisturizer.\n\nIncrease during irritation: If acne actives make the face sting, pause the active and use moisturizer more consistently until the barrier feels normal."
+    },
+    {
+      "id": "S5_two_week_test",
+      "heading": "A two-week way to test the change",
+      "role": "measurement",
+      "markdown": "Change only the step this page is about, take baseline photos, compare the same zones in the same lighting, and treat tolerability as part of success."
+    },
+    {
+      "id": "S6_routine_compatibility",
+      "heading": "How it should fit with the rest of your routine",
+      "role": "routine_architecture",
+      "markdown": "Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep nights focused on one treatment decision rather than stacking every acne active together."
+    },
+    {
+      "id": "S7_mistakes",
+      "heading": "Mistakes to avoid",
+      "role": "risk_reduction",
+      "markdown": "- Skipping moisturizer because oily skin “does not need it.”\n- Choosing mattifying alcohol-heavy products that leave skin tight and reactive.\n- Blaming moisturizer for acne while also starting three new actives.\n- Using too much gel moisturizer and then blaming sunscreen for pilling.\n- Expecting moisturizer to treat acne by itself; it supports the routine but does not replace acne treatment."
+    },
+    {
+      "id": "S8_dermatologist",
+      "heading": "When to ask a dermatologist",
+      "role": "safety",
+      "markdown": "Moisturizer questions become dermatologist questions when acne is painful, scarring, or repeatedly worsened by products. The clinician can help decide whether the issue is acne, dermatitis, rosacea-like sensitivity, fungal folliculitis-like bumps, or barrier damage.\n\n- Ask for help if every moisturizer stings, even bland formulas.\n- Seek care for painful nodules, cysts, scarring, or widespread inflamed acne.\n- Mention whether bumps are itchy, uniform, or triggered by sweat.\n- Bring the full morning routine, especially sunscreen, because moisturizer is judged in a stack.\n- Track whether shine is oiliness, sweat, or product film; photos in the same light help."
+    },
+    {
+      "id": "S9_faq",
+      "heading": "Questions people ask",
+      "role": "seo",
+      "markdown": "Q: Does oily acne-prone skin need moisturizer?\nA: Often yes. Oily skin can still be dehydrated or irritated, especially with acne actives. A light moisturizer can reduce tightness and help you tolerate treatment.\n\nQ: Is gel better than lotion in humid weather?\nA: Gel usually feels lighter, but lotion may protect the barrier better if you are peeling or using retinoids. Texture should match your skin state, not only the weather.\n\nQ: What does non-comedogenic mean?\nA: It means the product is designed not to clog pores, but it is not a guarantee for every person. Individual reactions still happen.\n\nQ: Can moisturizer cause pimples?\nA: A formula can contribute to bumps if it is too heavy, irritating, or poorly layered. Test one product at a time before blaming every moisturizer.\n\nQ: Should I use moisturizer before sunscreen?\nA: Usually yes if your skin feels tight or you use acne actives. Let moisturizer settle before SPF to reduce pilling.\n\nQ: What ingredients are useful?\nA: Humectants like glycerin and hyaluronic acid, barrier helpers like ceramides or panthenol, and calming ingredients like niacinamide can help if you tolerate them.\n\nQ: Can I use moisturizer over benzoyl peroxide?\nA: Yes. Moisturizer can reduce dryness and irritation. If benzoyl peroxide burns, pause and simplify.\n\nQ: Why does my moisturizer pill?\nA: Pilling can come from too much product, incompatible sunscreen, rubbing, or not waiting between layers. Use less, wait longer, and change one layer at a time."
+    },
+    {
+      "id": "S10_sources",
+      "heading": "Source basis",
+      "role": "trust",
+      "markdown": "AAD acne skin care habits: https://www.aad.org/public/diseases/acne/skin-care/habits-stop\nAAD oily skin care guidance: https://www.aad.org/public/everyday-care/skin-care-secrets/routine/oily-skin\nAAD face washing guidance: https://www.aad.org/public/everyday-care/skin-care-basics/care/face-washing-101"
+    }
+  ],
+  "images": [
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "16:9",
+      "altText": "A lightweight gel moisturizer jar on a wet bathroom surface",
+      "status": "existing_repo_asset",
+      "filePath": "/assets/images/oil-free-hero-v4.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "label": "AAD acne skin care habits",
+      "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+    },
+    {
+      "label": "AAD oily skin care guidance",
+      "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/oily-skin"
+    },
+    {
+      "label": "AAD face washing guidance",
+      "url": "https://www.aad.org/public/everyday-care/skin-care-basics/care/face-washing-101"
+    }
+  ]
+}

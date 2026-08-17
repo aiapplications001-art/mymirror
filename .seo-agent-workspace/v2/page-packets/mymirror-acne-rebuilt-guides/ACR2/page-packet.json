@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v2",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "acne_decision_guide",
+    "copyStatus": "rebuilt_publish_ready",
+    "createdDate": "2026-08-17"
+  },
+  "seo": {
+    "title": "Cleansing Balm for Acne-Prone Indian Skin | MyMirror",
+    "description": "A practical guide to cleansing balm for acne-prone Indian skin: emulsification, sunscreen removal, pore-clogging risk, double cleansing, and mistakes.",
+    "slug": "cleansing-balm-for-acne-prone-skin-india",
+    "h1": "Cleansing balm for acne-prone Indian skin: when it helps and when it clogs",
+    "primaryKeyword": "cleansing balm for acne-prone skin India",
+    "secondaryKeywords": [
+      "cleansing balm acne prone skin",
+      "double cleansing India",
+      "non comedogenic cleanser",
+      "sunscreen removal"
+    ]
+  },
+  "cta": {
+    "primary": {
+      "label": "Start your free AI skin scan",
+      "destination": "https://mymirror.fit/scan",
+      "microcopy": "Use MyMirror to organize visible acne signals before changing your routine."
+    }
+  },
+  "sections": [
+    {
+      "id": "S1_hero",
+      "heading": "Cleansing balm for acne-prone Indian skin: when it helps and when it clogs",
+      "role": "conversion",
+      "markdown": "A cleansing balm can remove sunscreen and makeup well, but acne-prone skin needs clean emulsification, gentle rinsing, and no heavy residue left behind."
+    },
+    {
+      "id": "S2_decision",
+      "heading": "How to decide if this page is for you",
+      "role": "intent_match",
+      "markdown": "This guide is for people who wear sunscreen, water-resistant SPF, makeup, or long-wear base products and are wondering whether a balm will help or break them out. The answer is not “balms are bad” or “double cleansing fixes acne.” The useful question is whether the balm dissolves what you need removed and rinses clean enough for your skin."
+    },
+    {
+      "id": "S3_indian_skin",
+      "heading": "What to look for on Indian skin",
+      "role": "education",
+      "markdown": "Indian weather adds a twist: heat, sweat, sunscreen, dust, pollution, and humidity can create a sticky film by evening. A balm can be useful because oil dissolves oil-soluble sunscreen and makeup. But acne-prone Indian skin also reacts badly to over-massage, fragrance, residue, and aggressive second cleansing.\n\n- Humid weather: Sweat and sunscreen can mix with dust and sebum, making removal harder than a quick splash cleanse. Use balm only when there is something substantial to remove.\n- Closed comedones: Tiny bumps after starting a balm may mean residue, overuse, or an ingredient your skin dislikes. Track timing: same week, same zones, same product.\n- Barrier stress: Rubbing a balm for too long can irritate active acne and cheeks. Massage briefly with light pressure, then emulsify thoroughly.\n- PIH risk: Picking or rubbing inflamed pimples can leave darker marks. Cleansing should reduce friction, not become a nightly face massage ritual."
+    },
+    {
+      "id": "S4_safe_use",
+      "heading": "Safe use plan",
+      "role": "how_to",
+      "markdown": "A good balm routine has three jobs: dissolve the film, turn milky with water, and rinse away before a gentle second cleanse if needed. Acne-prone skin usually does not need a heavy ritual; it needs consistent low-friction removal.\n\nUse it at night only when needed: If you wore regular indoor sunscreen and no makeup, your normal cleanser may be enough. Save balm for water-resistant SPF, makeup, or heavy outdoor days.\n\nStart with a small amount: A grape-sized scoop is often plenty. More balm means more residue to remove and more rubbing.\n\nEmulsify before rinsing: Add water and massage until the balm turns milky. This step helps the oils lift away instead of sitting on the skin.\n\nFollow with a gentle cleanser: Use a mild, non-stripping second cleanse if your skin feels coated. Avoid harsh foam that leaves the face tight.\n\nPatch the pattern, not only the product: Try the balm on one routine type for two weeks. If new bumps cluster where the balm sits longest, switch before blaming every other product."
+    },
+    {
+      "id": "S5_two_week_test",
+      "heading": "A two-week way to test the change",
+      "role": "measurement",
+      "markdown": "Change only the step this page is about, take baseline photos, compare the same zones in the same lighting, and treat tolerability as part of success."
+    },
+    {
+      "id": "S6_routine_compatibility",
+      "heading": "How it should fit with the rest of your routine",
+      "role": "routine_architecture",
+      "markdown": "Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep nights focused on one treatment decision rather than stacking every acne active together."
+    },
+    {
+      "id": "S7_mistakes",
+      "heading": "Mistakes to avoid",
+      "role": "risk_reduction",
+      "markdown": "- Using balm in the morning when there is no makeup or sunscreen film to dissolve.\n- Skipping emulsification and wiping the balm off with a towel.\n- Choosing fragrance-heavy formulas when acne is inflamed or skin is sensitive.\n- Massaging inflamed pimples until they look redder.\n- Using a harsh second cleanser that strips the barrier and causes rebound oiliness."
+    },
+    {
+      "id": "S8_dermatologist",
+      "heading": "When to ask a dermatologist",
+      "role": "safety",
+      "markdown": "Most cleansing decisions are routine decisions, but breakouts after cleansing can still need a dermatologist if they are persistent, painful, or confusing. Bring the product name, ingredient list, and the timeline of when bumps started.\n\n- Ask for help if new closed comedones continue after stopping the balm for two to three weeks.\n- Seek care for painful inflamed acne, cysts, scarring, or acne that leaves frequent dark marks.\n- Mention whether bumps are itchy, uniform, or forehead-heavy, because not every bump is ordinary acne.\n- Bring photos showing the skin before the balm and after two weeks of use.\n- List sunscreen, makeup, cleansing balm, second cleanser, and moisturizer, because residue can come from any layer."
+    },
+    {
+      "id": "S9_faq",
+      "heading": "Questions people ask",
+      "role": "seo",
+      "markdown": "Q: Can cleansing balm cause acne?\nA: It can for some people if it leaves residue, contains ingredients your skin dislikes, or encourages too much rubbing. But a well-rinsed balm can also help remove sunscreen that might otherwise sit on the skin.\n\nQ: Is double cleansing necessary every day?\nA: No. Double cleanse when there is a real film to remove: water-resistant sunscreen, makeup, or heavy outdoor exposure. On lighter days, a gentle cleanser may be enough.\n\nQ: What does emulsification mean?\nA: It means adding water until the balm turns milky and lifts away. If the balm stays oily and waxy, it may not rinse cleanly.\n\nQ: Should acne-prone skin avoid oil cleansers?\nA: Not automatically. Acne-prone skin can tolerate some oil cleansers, but the formula, rinse-off quality, fragrance, and your second cleanser all matter.\n\nQ: Can cleansing balm remove sunscreen?\nA: Many balms are designed for sunscreen and makeup removal. Water-resistant sunscreen often needs more thorough removal than a quick cleanse.\n\nQ: Why do I get bumps after double cleansing?\nA: Possibilities include balm residue, an irritating second cleanser, over-massage, a heavy sunscreen, or unrelated acne timing. Change one variable at a time.\n\nQ: Is micellar water better than balm?\nA: It depends on what you wear and how your skin reacts. Micellar water can also leave surfactant residue if not rinsed. Balm can be gentler for makeup removal if it emulsifies cleanly.\n\nQ: How do I test a cleansing balm safely?\nA: Use it only at night for sunscreen or makeup removal, keep the second cleanser gentle, avoid new actives, and compare photos after two weeks."
+    },
+    {
+      "id": "S10_sources",
+      "heading": "Source basis",
+      "role": "trust",
+      "markdown": "AAD acne skin care habits: https://www.aad.org/public/diseases/acne/skin-care/habits-stop\nAAD face washing guidance: https://www.aad.org/public/everyday-care/skin-care-basics/care/face-washing-101\nAAD makeup and acne guidance: https://www.aad.org/public/diseases/acne/causes/makeup"
+    }
+  ],
+  "images": [
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "16:9",
+      "altText": "A person gently cleansing foam from acne-prone skin",
+      "status": "existing_repo_asset",
+      "filePath": "/assets/images/cleansing-balm-hero-v4.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "label": "AAD acne skin care habits",
+      "url": "https://www.aad.org/public/diseases/acne/skin-care/habits-stop"
+    },
+    {
+      "label": "AAD face washing guidance",
+      "url": "https://www.aad.org/public/everyday-care/skin-care-basics/care/face-washing-101"
+    },
+    {
+      "label": "AAD makeup and acne guidance",
+      "url": "https://www.aad.org/public/diseases/acne/causes/makeup"
+    }
+  ]
+}
