@@ -6,27 +6,27 @@ const pages = [
   {
     slug: 'adapalene-gel-for-acne-indian-skin-guide',
     h1Pattern: /Adapalene gel for acne on Indian skin/,
-    hero: '/assets/images/adapalene-hero-v4.jpg'
+    hero: '/assets/images/adapalene-gel-india-og.jpg'
   },
   {
     slug: 'cleansing-balm-for-acne-prone-skin-india',
     h1Pattern: /Cleansing balm for acne-prone Indian skin/,
-    hero: '/assets/images/cleansing-balm-hero-v4.jpg'
+    hero: '/assets/images/cleansing-balm-emulsification.jpg'
   },
   {
     slug: 'oil-free-moisturizer-acne-prone-skin-india',
     h1Pattern: /Best oil-free moisturizer for acne-prone skin in humid weather/,
-    hero: '/assets/images/oil-free-hero-v4.jpg'
+    hero: '/assets/images/oil-free-moisturizer-india-og.jpg'
   },
   {
     slug: 'benzoyl-peroxide-spot-treatment-vs-gel-india',
     h1Pattern: /Benzoyl peroxide spot treatment vs gel/,
-    hero: '/assets/images/bpo-spot-hero-v4.jpg'
+    hero: '/assets/images/benzoyl-peroxide-usa-og.jpg'
   },
   {
     slug: 'tranexamic-acid-for-pih-indian-skin',
     h1Pattern: /Tranexamic acid for PIH on Indian skin/,
-    hero: '/assets/images/txa-pih-hero-v4.jpg'
+    hero: '/assets/images/pie_vs_pih_marks.jpg'
   }
 ];
 
