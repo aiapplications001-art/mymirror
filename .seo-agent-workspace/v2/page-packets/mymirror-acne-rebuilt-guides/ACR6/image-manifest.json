@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "azelaic-acid-for-acne-indian-skin",
+    "h1": "Azelaic acid 10% for acne on Indian skin: how to clear breakouts & fade marks",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": false,
+  "assets": [
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "16:9",
+      "altText": "Azelaic acid 10% gel for acne and hyperpigmentation on Indian skin",
+      "status": "existing_repo_asset",
+      "filePath": "/assets/images/azelaic-acid-og-v4.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    },
+    {
+      "id": "IMG_PRODUCT_1",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "The Derma Co 10% Azelaic Acid Serum product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://thedermaco.com/products/10-azelaic-acid-serum",
+      "filePath": "/assets/images/product-examples/derma-co-tran-zelaic-serum.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    }
+  ]
+}
