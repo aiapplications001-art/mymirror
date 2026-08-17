@@ -84,6 +84,106 @@
       "source": "/acne/salicylic-acid-face-wash-for-acne-indian-skin/",
       "destination": "/acne/salicylic-acid-cleanser-for-acne-india/",
       "permanent": true
+    },
+    {
+      "source": "/acne/clindamycin-gel-for-acne-india",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/clindamycin-gel-for-acne-india/",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/clindamycin-gel-for-acne-indian-skin",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/clindamycin-gel-for-acne-indian-skin/",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/best-cica-moisturizer-for-acne-prone-skin-india",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/cica-soothing-moisturizer-for-acne-barrier-repair-india",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/cica-soothing-moisturizer-for-acne-barrier-repair-india/",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/alpha-arbutin-serum-for-dark-spots-india",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/alpha-arbutin-serum-for-dark-spots-india/",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/alpha-arbutin-serum-for-acne-dark-spots-indian-skin",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/alpha-arbutin-serum-for-acne-dark-spots-indian-skin/",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/pcos-supplements-spearmint-inositol-india",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/pcos-supplements-spearmint-inositol-india/",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/spearmint-tea-for-hormonal-acne-pcos-india",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/spearmint-tea-for-hormonal-acne-pcos-india/",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/niacinamide-serums-india",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/niacinamide-serums-india/",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/niacinamide-5-percent-serum-for-acne-marks-india",
+      "destination": "/acne/",
+      "permanent": false
+    },
+    {
+      "source": "/acne/niacinamide-5-percent-serum-for-acne-marks-india/",
+      "destination": "/acne/",
+      "permanent": false
     }
   ],
   "rewrites": [
