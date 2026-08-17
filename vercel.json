@@ -102,6 +102,86 @@
     {
       "source": "/scan-log/:path*",
       "destination": "https://face3layerscanner.onrender.com/scan-log/:path*"
+    },
+    {
+      "source": "/acne/clindamycin-gel-for-acne-india",
+      "destination": "/acne/clindamycin-gel-for-acne-india/index.html"
+    },
+    {
+      "source": "/acne/clindamycin-gel-for-acne-india/",
+      "destination": "/acne/clindamycin-gel-for-acne-india/index.html"
+    },
+    {
+      "source": "/acne/clindamycin-gel-for-acne-indian-skin",
+      "destination": "/acne/clindamycin-gel-for-acne-indian-skin/index.html"
+    },
+    {
+      "source": "/acne/clindamycin-gel-for-acne-indian-skin/",
+      "destination": "/acne/clindamycin-gel-for-acne-indian-skin/index.html"
+    },
+    {
+      "source": "/acne/best-cica-moisturizer-for-acne-prone-skin-india",
+      "destination": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/index.html"
+    },
+    {
+      "source": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/",
+      "destination": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/index.html"
+    },
+    {
+      "source": "/acne/cica-soothing-moisturizer-for-acne-barrier-repair-india",
+      "destination": "/acne/cica-soothing-moisturizer-for-acne-barrier-repair-india/index.html"
+    },
+    {
+      "source": "/acne/cica-soothing-moisturizer-for-acne-barrier-repair-india/",
+      "destination": "/acne/cica-soothing-moisturizer-for-acne-barrier-repair-india/index.html"
+    },
+    {
+      "source": "/acne/alpha-arbutin-serum-for-dark-spots-india",
+      "destination": "/acne/alpha-arbutin-serum-for-dark-spots-india/index.html"
+    },
+    {
+      "source": "/acne/alpha-arbutin-serum-for-dark-spots-india/",
+      "destination": "/acne/alpha-arbutin-serum-for-dark-spots-india/index.html"
+    },
+    {
+      "source": "/acne/alpha-arbutin-serum-for-acne-dark-spots-indian-skin",
+      "destination": "/acne/alpha-arbutin-serum-for-acne-dark-spots-indian-skin/index.html"
+    },
+    {
+      "source": "/acne/alpha-arbutin-serum-for-acne-dark-spots-indian-skin/",
+      "destination": "/acne/alpha-arbutin-serum-for-acne-dark-spots-indian-skin/index.html"
+    },
+    {
+      "source": "/acne/pcos-supplements-spearmint-inositol-india",
+      "destination": "/acne/pcos-supplements-spearmint-inositol-india/index.html"
+    },
+    {
+      "source": "/acne/pcos-supplements-spearmint-inositol-india/",
+      "destination": "/acne/pcos-supplements-spearmint-inositol-india/index.html"
+    },
+    {
+      "source": "/acne/spearmint-tea-for-hormonal-acne-pcos-india",
+      "destination": "/acne/spearmint-tea-for-hormonal-acne-pcos-india/index.html"
+    },
+    {
+      "source": "/acne/spearmint-tea-for-hormonal-acne-pcos-india/",
+      "destination": "/acne/spearmint-tea-for-hormonal-acne-pcos-india/index.html"
+    },
+    {
+      "source": "/acne/niacinamide-serums-india",
+      "destination": "/acne/niacinamide-serums-india/index.html"
+    },
+    {
+      "source": "/acne/niacinamide-serums-india/",
+      "destination": "/acne/niacinamide-serums-india/index.html"
+    },
+    {
+      "source": "/acne/niacinamide-5-percent-serum-for-acne-marks-india",
+      "destination": "/acne/niacinamide-5-percent-serum-for-acne-marks-india/index.html"
+    },
+    {
+      "source": "/acne/niacinamide-5-percent-serum-for-acne-marks-india/",
+      "destination": "/acne/niacinamide-5-percent-serum-for-acne-marks-india/index.html"
     }
   ],
   "headers": [
@@ -114,5 +194,7 @@
         }
       ]
     }
-  ]
+  ],
+  "cleanUrls": true,
+  "trailingSlash": true
 }
