@@ -67,6 +67,11 @@ test('rebuilt acne pages render as full-depth MyMirror guides', async () => {
     assert.match(html, /Product label checklist/);
     assert.match(html, /Example product landscape/);
     assert.match(html, /What to buy first/);
+    assert.match(html, /Indian product examples/);
+    assert.match(html, /Examples only, not endorsements/);
+    assert.ok((html.match(/class="product-card"/g) ?? []).length >= 3, `${page.slug} should render at least 3 visible product cards`);
+    assert.ok((html.match(/class="product-image"/g) ?? []).length >= 3, `${page.slug} should render at least 3 product images`);
+    assert.ok((html.match(/class="product-link"/g) ?? []).length >= 3, `${page.slug} should render at least 3 outbound product links`);
     assert.match(html, /Mistakes to avoid/);
     assert.match(html, /When to ask a dermatologist/);
     assert.match(html, /Source basis/);

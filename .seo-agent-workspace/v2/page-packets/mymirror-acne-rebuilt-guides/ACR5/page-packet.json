@@ -59,55 +59,61 @@
       "markdown": "Tranexamic acid products are sold as dark-spot serums, pigmentation correctors, ampoules, and multi-active brightening blends. The product decision should start with the mark pattern. A serum can support a calm PIH routine, but it cannot compensate for untreated acne, daily picking, or inconsistent sunscreen.\n\n- Tranexamic acid serum: Leave-on serum, often around 2–5% in cosmetic products; Minimalist Tranexamic 3% is one visible Indian-market example. Useful for: Flat brown acne marks when sunscreen is already consistent and the barrier is calm. Watch-outs: Results vary and take time; stinging or rash can worsen pigmentation risk.\n- Tranexamic plus azelaic or kojic blend: Multi-active pigmentation correctors such as tranexamic-azelaic style serums. Useful for: People who tolerate actives and want one product aimed at uneven tone. Watch-outs: More ingredients means more variables. Introduce slowly and do not stack with peels at first.\n- Niacinamide or barrier-support serum: Not a tranexamic product, but commonly compared for acne marks and tone. Useful for: Skin that is irritated, oily, or barrier-compromised before stronger pigment steps. Watch-outs: May not be enough for persistent pigmentation, but can make the routine more tolerable.\n- Dermatologist-led options: Prescription pigment plans, procedures, or oral tranexamic acid when medically appropriate. Useful for: Melasma-like patterns, stubborn PIH, or pigmentation mixed with active acne/scarring. Watch-outs: Oral tranexamic acid is not a cosmetic serum and needs medical screening."
     },
     {
-      "id": "S6_product_label_checklist",
+      "id": "S6_indian_product_examples",
+      "heading": "Indian product examples",
+      "role": "visible_product_examples",
+      "markdown": "Examples only, not endorsements.\n\n- Minimalist Tranexamic 3% Face Serum: A Minimalist serum positioned for melasma, PIE, PIH, and hyperpigmentation with 3% tranexamic acid. Caution: Use with sunscreen; pigment care is slow and irritation can worsen marks. Source: https://beminimalist.co/products/tranexamic-3-hpa Image: /assets/images/product-examples/minimalist-tranexamic-serum.jpg\n- The Derma Co Tran-Zelaic Pigmentation Corrector Serum: A serum combining tranexamic acid and azelaic acid for pigmentation and acne-mark concerns. Caution: More actives mean more irritation variables; introduce slowly. Source: https://thedermaco.com/products/tran-zelaic-pigmentation-corrector-serum-with-tranexamic-acid-azelaic-acid-30-g Image: /assets/images/product-examples/derma-co-tran-zelaic-serum.jpg\n- Foxtale Rapid Spot Reduction Drops: Foxtale lists this serum with 3% tranexamic acid and niacinamide for dark spots and uneven tone. Caution: If marks are red, indented, or melasma-like, do not assume this is the correct product class. Source: https://foxtale.in/products/hyperpigmentation-serum-with-tranexamic-acid Image: /assets/images/product-examples/foxtale-rapid-spot-reduction-drops.jpg"
+    },
+    {
+      "id": "S7_product_label_checklist",
       "heading": "Product label checklist",
       "role": "buyer_guidance",
       "markdown": "- Check the active percentage and whether tranexamic acid is the main ingredient or one of many brightening claims.\n- Look for added acids, retinoids, fragrance, or exfoliants that may make the product less beginner-friendly.\n- Buy sunscreen first if you are not already consistent; pigment products without SPF are hard to judge.\n- Avoid oral tranexamic acid unless prescribed and medically supervised.\n- Track brown PIH separately from red marks, active acne, and depressed scars because each needs a different expectation."
     },
     {
-      "id": "S7_product_landscape",
+      "id": "S8_product_landscape",
       "heading": "Example product landscape",
       "role": "product_landscape",
       "markdown": "Search results mix topical tranexamic serums, tranexamic-azelaic correctors, kojic/alpha-arbutin blends, niacinamide serums, peeling solutions, and melasma medication discussions. That mix can be confusing because the front-end promise is often “dark spots,” but the risk profile is different. For Indian acne marks, the safest product landscape is sunscreen, acne control, barrier support, then one pigment product. If the mark pattern is symmetrical or melasma-like, the product shelf is the wrong place to self-diagnose."
     },
     {
-      "id": "S8_what_to_buy_first",
+      "id": "S9_what_to_buy_first",
       "heading": "What to buy first",
       "role": "purchase_prioritization",
       "markdown": "Buy or recommit to broad-spectrum sunscreen before buying a pigment serum. If acne is still active, invest effort in preventing new breakouts first. Once the routine is calm, choose one topical tranexamic product and use it consistently for eight to twelve weeks in the same lighting. Avoid buying multiple brightening serums together because irritation can create the exact PIH you are trying to fade."
     },
     {
-      "id": "S9_two_week_test",
+      "id": "S10_two_week_test",
       "heading": "A two-week way to test the change",
       "role": "measurement",
       "markdown": "Change only the step this page is about, take baseline photos, compare the same zones in the same lighting, and treat tolerability as part of success."
     },
     {
-      "id": "S10_routine_compatibility",
+      "id": "S11_routine_compatibility",
       "heading": "How it should fit with the rest of your routine",
       "role": "routine_architecture",
       "markdown": "Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep nights focused on one treatment decision rather than stacking every acne active together."
     },
     {
-      "id": "S11_mistakes",
+      "id": "S12_mistakes",
       "heading": "Mistakes to avoid",
       "role": "risk_reduction",
       "markdown": "- Using tranexamic acid while still picking active acne.\n- Skipping sunscreen because the serum is marketed for dark spots.\n- Layering tranexamic acid with several exfoliating acids on irritated skin.\n- Treating melasma-like patches as ordinary acne marks without medical advice.\n- Expecting deep or old pigmentation to disappear in two weeks."
     },
     {
-      "id": "S12_dermatologist",
+      "id": "S13_dermatologist",
       "heading": "When to ask a dermatologist",
       "role": "safety",
       "markdown": "A dermatologist can help distinguish PIH, PIE, melasma, acne scars, and other pigment patterns. This matters because the wrong self-treatment can delay useful care or irritate skin that already marks easily.\n\n- Ask for help if pigmentation is spreading, symmetrical, gray-brown, or not clearly tied to acne.\n- Seek care for active acne that keeps making new marks.\n- Discuss pregnancy, clotting history, medications, or interest in oral tranexamic acid with a clinician.\n- Bring a list of brightening products, peels, retinoids, and home remedies you have already tried.\n- Use photos from the same lighting to show whether marks are fading, stable, or darkening."
     },
     {
-      "id": "S13_faq",
+      "id": "S14_faq",
       "heading": "Questions people ask",
       "role": "seo",
       "markdown": "Q: Does tranexamic acid work for PIH?\nA: Topical tranexamic acid may support some pigmentation routines, but results vary. PIH also depends on acne control, sun protection, skin tone, depth of pigment, and irritation level.\n\nQ: Is tranexamic acid better than niacinamide?\nA: They work differently and are often used for different roles. Niacinamide can support barrier and tone; tranexamic acid is used in some pigment-focused formulas. The best choice depends on your skin state.\n\nQ: Can I use tranexamic acid with retinoids?\nA: Some routines combine them, but introducing both at once can irritate. Start one product, establish tolerance, then consider layering slowly.\n\nQ: How long does PIH take to fade?\nA: Many acne marks take months, not days. Consistent sunscreen and fewer new breakouts are essential for judging any fading ingredient.\n\nQ: Can tranexamic acid treat melasma?\nA: Tranexamic acid is discussed in melasma care, including medical options, but melasma should be clinician-guided. Do not self-diagnose melasma from a photo.\n\nQ: Is oral tranexamic acid the same as a serum?\nA: No. Oral tranexamic acid is a medication with medical risks and should only be used under clinician supervision. This page focuses on topical product context.\n\nQ: What if my marks are red, not brown?\nA: Red or pink post-acne marks may be PIE rather than PIH. Pigment ingredients may not be the main answer, and time, inflammation control, and professional advice may be more relevant.\n\nQ: Should I exfoliate PIH aggressively?\nA: No. Over-exfoliation can inflame skin and create more marks. Gentle consistency beats repeated irritation."
     },
     {
-      "id": "S14_sources",
+      "id": "S15_sources",
       "heading": "Source basis",
       "role": "trust",
       "markdown": "AAD dark spots guidance: https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots\nAAD sun protection guidance: https://www.aad.org/public/everyday-care/sun-protection\nTranexamic acid in melasma review: https://pmc.ncbi.nlm.nih.gov/articles/PMC6715124/"
@@ -122,6 +128,36 @@
       "altText": "A close-up educational image showing visible acne marks and pigmentation zones",
       "status": "existing_repo_asset",
       "filePath": "/assets/images/pie_vs_pih_marks.jpg"
+    },
+    {
+      "id": "IMG_PRODUCT_1",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Minimalist Tranexamic 3% Face Serum product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://beminimalist.co/products/tranexamic-3-hpa",
+      "filePath": "/assets/images/product-examples/minimalist-tranexamic-serum.jpg"
+    },
+    {
+      "id": "IMG_PRODUCT_2",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "The Derma Co Tran-Zelaic Pigmentation Corrector Serum product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://thedermaco.com/products/tran-zelaic-pigmentation-corrector-serum-with-tranexamic-acid-azelaic-acid-30-g",
+      "filePath": "/assets/images/product-examples/derma-co-tran-zelaic-serum.jpg"
+    },
+    {
+      "id": "IMG_PRODUCT_3",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Foxtale Rapid Spot Reduction Drops product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://foxtale.in/products/hyperpigmentation-serum-with-tranexamic-acid",
+      "filePath": "/assets/images/product-examples/foxtale-rapid-spot-reduction-drops.jpg"
     }
   ],
   "sources": [
@@ -136,6 +172,18 @@
     {
       "label": "Tranexamic acid in melasma review",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6715124/"
+    },
+    {
+      "label": "Minimalist Tranexamic 3% Face Serum",
+      "url": "https://beminimalist.co/products/tranexamic-3-hpa"
+    },
+    {
+      "label": "The Derma Co Tran-Zelaic Pigmentation Corrector Serum",
+      "url": "https://thedermaco.com/products/tran-zelaic-pigmentation-corrector-serum-with-tranexamic-acid-azelaic-acid-30-g"
+    },
+    {
+      "label": "Foxtale Rapid Spot Reduction Drops",
+      "url": "https://foxtale.in/products/hyperpigmentation-serum-with-tranexamic-acid"
     }
   ]
 }

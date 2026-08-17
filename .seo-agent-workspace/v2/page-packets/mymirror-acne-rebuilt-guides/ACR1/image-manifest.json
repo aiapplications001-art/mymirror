@@ -21,6 +21,54 @@
         "status": "existing_repository_asset",
         "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
       }
+    },
+    {
+      "id": "IMG_PRODUCT_1",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Deriva MS Aqueous Gel product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.1mg.com/drugs/deriva-ms-aqueous-gel-144224",
+      "filePath": "/assets/images/product-examples/deriva-ms-aqueous-gel.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    },
+    {
+      "id": "IMG_PRODUCT_2",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Adaferin Gel product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.1mg.com/drugs/adaferin-gel-123250",
+      "filePath": "/assets/images/product-examples/adaferin-gel.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    },
+    {
+      "id": "IMG_PRODUCT_3",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Adapen 0.1% Gel product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.1mg.com/drugs/adapen-0.1-w-w-gel-165935",
+      "filePath": "/assets/images/product-examples/adapen-gel.png",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
     }
   ]
 }

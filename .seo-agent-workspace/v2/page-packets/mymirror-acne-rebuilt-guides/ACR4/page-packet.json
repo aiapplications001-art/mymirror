@@ -59,55 +59,61 @@
       "markdown": "Benzoyl peroxide product choice has three levers: strength, contact time, and surface area. A 2.5% gel used consistently can be more sensible than a stronger product that burns the skin and gets abandoned. On Indian skin, preventing treatment irritation matters because irritation itself can become a dark-mark trigger.\n\n- 2.5% leave-on gel: Common entry strength; Indian pharmacy examples include Benzac AC 2.5% gel listings. Useful for: Occasional inflamed pimples or acne-prone zones where lower irritation is important. Watch-outs: Can still dry and bleach fabrics. Use a thin layer and protect surrounding skin.\n- 5% leave-on gel: Common stronger gel format; Benzac AC 5% style listings are visible in Indian pharmacies. Useful for: People who tolerate lower strengths or have clinician-directed use for inflamed acne. Watch-outs: Higher strength is not automatically better; burning can create more PIH risk.\n- Benzoyl peroxide wash or short-contact routine: Wash-off formats or clinician-guided short-contact use. Useful for: People who cannot tolerate leave-on treatment or need broader but briefer contact. Watch-outs: Rinsing reduces contact but not all irritation risk; avoid eyes, lips, and broken skin.\n- Combination acne products: Benzoyl peroxide paired with adapalene or antibiotics in prescription plans. Useful for: Persistent inflammatory acne where a dermatologist wants combination therapy. Watch-outs: Do not duplicate ingredients by adding a spot treatment on top of a combination product."
     },
     {
-      "id": "S6_product_label_checklist",
+      "id": "S6_indian_product_examples",
+      "heading": "Indian product examples",
+      "role": "visible_product_examples",
+      "markdown": "Examples only, not endorsements.\n\n- Benzac AC 2.5% Gel: A Tata 1mg-listed benzoyl peroxide 2.5% gel example for reading strength and application instructions. Caution: Can irritate skin and bleach fabric; avoid broken or picked skin. Source: https://www.1mg.com/drugs/benzac-ac-2.5-gel-678551 Image: /assets/images/product-examples/benzac-ac-25-gel.jpg\n- Benzac AC 5% Gel: A stronger benzoyl peroxide gel listing; useful for comparing whether higher concentration is really needed. Caution: Higher strength is not automatically better on skin that marks easily. Source: https://www.1mg.com/drugs/benzac-ac-5-gel-679396 Image: /assets/images/product-examples/benzac-ac-25-gel.jpg\n- Persol AC 2.5 Gel: A 2.5% benzoyl peroxide alternative listing; helpful for comparing active sameness across brands. Caution: Do not duplicate BPO across multiple spot products in the same routine. Source: https://www.1mg.com/drugs/persol-ac-2.5-gel-398087 Image: /assets/images/product-examples/persol-ac-25-gel.jpg"
+    },
+    {
+      "id": "S7_product_label_checklist",
       "heading": "Product label checklist",
       "role": "buyer_guidance",
       "markdown": "- Check the percentage before buying; 2.5%, 5%, and 10% are different irritation decisions.\n- Confirm whether it is leave-on, wash-off, or a fixed combination product.\n- Look for warnings about bleaching fabrics, avoiding eyes and lips, and stopping for severe irritation.\n- If you already use adapalene, salicylic acid, peels, or retinoids, plan spacing before adding benzoyl peroxide.\n- Avoid applying to picked, open, or raw skin; the product is for acne treatment, not wound care."
     },
     {
-      "id": "S7_product_landscape",
+      "id": "S8_product_landscape",
       "heading": "Example product landscape",
       "role": "product_landscape",
       "markdown": "The Indian product landscape includes familiar benzoyl peroxide gels, acne spot products that may or may not contain benzoyl peroxide, and combination prescriptions. Many “pimple patches,” tea tree gels, sulfur products, or salicylic acid spot treatments compete for the same search intent but are not the same ingredient. Read the active ingredient line, not only the words “spot treatment.” If the front label says acne gel but the active is salicylic acid, your irritation and layering decisions change."
     },
     {
-      "id": "S8_what_to_buy_first",
+      "id": "S9_what_to_buy_first",
       "heading": "What to buy first",
       "role": "purchase_prioritization",
       "markdown": "For self-managed occasional pimples, start with the lowest practical benzoyl peroxide strength and limited application. Buy white pillowcases or use white towels if fabric bleaching is a concern. If acne is frequent, painful, or leaving marks, the better first purchase may be a dermatologist consultation rather than a stronger tube, because repeated spot treatment does not prevent every new lesion."
     },
     {
-      "id": "S9_two_week_test",
+      "id": "S10_two_week_test",
       "heading": "A two-week way to test the change",
       "role": "measurement",
       "markdown": "Change only the step this page is about, take baseline photos, compare the same zones in the same lighting, and treat tolerability as part of success."
     },
     {
-      "id": "S10_routine_compatibility",
+      "id": "S11_routine_compatibility",
       "heading": "How it should fit with the rest of your routine",
       "role": "routine_architecture",
       "markdown": "Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep nights focused on one treatment decision rather than stacking every acne active together."
     },
     {
-      "id": "S11_mistakes",
+      "id": "S12_mistakes",
       "heading": "Mistakes to avoid",
       "role": "risk_reduction",
       "markdown": "- Using a thick white dot and leaving it overnight until the skin burns.\n- Applying benzoyl peroxide to raw, picked, or freshly waxed skin.\n- Using high strength because the pimple is painful.\n- Treating fungal-looking, itchy, uniform bumps with benzoyl peroxide for weeks without review.\n- Forgetting that benzoyl peroxide bleaches fabric."
     },
     {
-      "id": "S12_dermatologist",
+      "id": "S13_dermatologist",
       "heading": "When to ask a dermatologist",
       "role": "safety",
       "markdown": "Benzoyl peroxide is common, but persistent inflamed acne often needs a full plan rather than endless spot treating. A dermatologist can decide whether you need a retinoid, antibiotic combination, hormonal evaluation, or scar-prevention strategy.\n\n- Seek care for painful, deep, cystic, or scarring acne.\n- Ask for help if benzoyl peroxide burns even at low strength or short contact.\n- Do not keep spot treating the same lesion for weeks if it is not healing.\n- Mention pregnancy, allergies, eczema, or other acne medicines before combining treatments.\n- Bring photos and note whether acne is inflamed, comedonal, hormonal-pattern, or product-triggered."
     },
     {
-      "id": "S13_faq",
+      "id": "S14_faq",
       "heading": "Questions people ask",
       "role": "seo",
       "markdown": "Q: Is benzoyl peroxide spot treatment the same as gel?\nA: No. Spot treatment describes where you apply it. Gel describes the formula type. A gel can be used as a spot treatment or as a thin acne-zone layer depending on instructions.\n\nQ: Is 2.5% benzoyl peroxide enough?\nA: For many people, lower strengths can be useful and less irritating. Higher strength is not automatically better, especially on skin that marks easily.\n\nQ: Can benzoyl peroxide cause dark marks?\nA: The ingredient targets acne bacteria and inflammation, but irritation, burns, or inflamed pimples can leave PIH. Use carefully and protect with sunscreen.\n\nQ: Can I use benzoyl peroxide with adapalene?\nA: Some routines combine them, but the pairing can irritate. If you are not under medical guidance, introduce one active at a time and avoid same-night stacking at first.\n\nQ: Should I use benzoyl peroxide on a picked pimple?\nA: Avoid applying it to open, raw, or bleeding skin. Let the area heal and seek help if there are signs of infection.\n\nQ: Why is my pillowcase bleaching?\nA: Benzoyl peroxide can bleach fabrics. Let it dry completely, wash hands after use, and use white towels or pillowcases.\n\nQ: What is short-contact benzoyl peroxide?\nA: It means applying benzoyl peroxide for a limited time and rinsing it off. It may reduce irritation for some people, but persistent acne should be discussed with a clinician.\n\nQ: When should I stop using it?\nA: Stop and simplify if you get severe burning, swelling, blistering, crusting, or rash. Seek medical advice if symptoms persist or acne is severe."
     },
     {
-      "id": "S14_sources",
+      "id": "S15_sources",
       "heading": "Source basis",
       "role": "trust",
       "markdown": "AAD acne treatment overview: https://www.aad.org/public/diseases/acne/derm-treat/treat\nAAD acne in skin of color: https://www.aad.org/public/diseases/acne/derm-treat/skin-color\nFDA benzoyl peroxide acne products safety communication: https://www.fda.gov/drugs/drug-safety-and-availability/fda-warns-rare-serious-hypersensitivity-reactions-certain-over-counter-topical-acne-products"
@@ -122,6 +128,36 @@
       "altText": "An illustrative tube of benzoyl peroxide acne treatment on a bathroom counter",
       "status": "existing_repo_asset",
       "filePath": "/assets/images/benzoyl-peroxide-usa-og.jpg"
+    },
+    {
+      "id": "IMG_PRODUCT_1",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Benzac AC 2.5% Gel product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.1mg.com/drugs/benzac-ac-2.5-gel-678551",
+      "filePath": "/assets/images/product-examples/benzac-ac-25-gel.jpg"
+    },
+    {
+      "id": "IMG_PRODUCT_2",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Benzac AC 5% Gel product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.1mg.com/drugs/benzac-ac-5-gel-679396",
+      "filePath": "/assets/images/product-examples/benzac-ac-25-gel.jpg"
+    },
+    {
+      "id": "IMG_PRODUCT_3",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Persol AC 2.5 Gel product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.1mg.com/drugs/persol-ac-2.5-gel-398087",
+      "filePath": "/assets/images/product-examples/persol-ac-25-gel.jpg"
     }
   ],
   "sources": [
@@ -136,6 +172,18 @@
     {
       "label": "FDA benzoyl peroxide acne products safety communication",
       "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-warns-rare-serious-hypersensitivity-reactions-certain-over-counter-topical-acne-products"
+    },
+    {
+      "label": "Benzac AC 2.5% Gel",
+      "url": "https://www.1mg.com/drugs/benzac-ac-2.5-gel-678551"
+    },
+    {
+      "label": "Benzac AC 5% Gel",
+      "url": "https://www.1mg.com/drugs/benzac-ac-5-gel-679396"
+    },
+    {
+      "label": "Persol AC 2.5 Gel",
+      "url": "https://www.1mg.com/drugs/persol-ac-2.5-gel-398087"
     }
   ]
 }

@@ -52,7 +52,15 @@ Oil-free moisturizer is a category, not a single texture. Some are watery gels t
 - Light lotion: Fluid moisturizer with more barrier support than a pure gel. Useful for: Retinoid or benzoyl peroxide nights when skin feels tight or flaky. Watch-outs: Not every lotion is heavy, but fragrance or richer oils can bother some acne-prone users.
 - Barrier repair cream used selectively: Richer cream with ceramides, cholesterol, fatty acids, or occlusive support. Useful for: Short repair windows after irritation, peeling, or over-treatment. Watch-outs: May feel too heavy for all-day humid wear; use only where and when needed.
 
-### S6_product_label_checklist: Product label checklist
+### S6_indian_product_examples: Indian product examples
+
+Examples only, not endorsements.
+
+- Minimalist Vitamin B5 10% Moisturizer: Minimalist describes this as a lightweight oil-free moisturiser for oily/combination and acne-prone skin. Caution: Good label fit does not guarantee personal tolerance; test under sunscreen. Source: https://beminimalist.co/products/vitamin-b5-10-moisturizer Image: /assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg
+- Excela Moisturiser: PharmEasy lists it for oily and acne-prone skin, with lightweight and non-comedogenic positioning. Caution: If every moisturizer stings, pause actives and consider barrier damage. Source: https://pharmeasy.in/health-care/products/excela-moisturiser-bottle-of-50gm-pump-208388 Image: /assets/images/product-examples/excela-moisturiser.jpg
+- The Derma Co 1% Salicylic Acid Oil-Free Moisturizer: An oil-free moisturizer with salicylic acid and oat extract, positioned for active acne. Caution: Because it contains an acne active, avoid stacking blindly with retinoids or peels. Source: https://thedermaco.com/products/1-salicylic-acid-oil-free-moisturizer-for-face-with-oat-extract-50g Image: /assets/images/product-examples/derma-co-salicylic-moisturizer.jpg
+
+### S7_product_label_checklist: Product label checklist
 
 - Look for oil-free and non-comedogenic as helpful signals, but judge your own skin because labels are not guarantees.
 - Prioritize humectants such as glycerin, hyaluronic acid, or panthenol if your face is tight but shiny.
@@ -60,23 +68,23 @@ Oil-free moisturizer is a category, not a single texture. Some are watery gels t
 - Avoid assuming matte equals healthy. A harsh mattifying product can make skin tight, irritated, and more mark-prone.
 - Always test the moisturizer under your sunscreen; pilling can lead to under-applying SPF.
 
-### S7_product_landscape: Example product landscape
+### S8_product_landscape: Example product landscape
 
 In India, oil-free moisturizers range from pharmacy gel products to cosmetic gel-creams and acne-focused lotions. Many product pages emphasize “non-sticky,” “matte,” “oil control,” or “hydrating gel.” Those claims are useful only if the formula keeps the skin comfortable after one to three hours and does not disrupt sunscreen. People using adapalene or benzoyl peroxide often need a slightly more supportive night moisturizer than the one they prefer under sunscreen in the morning.
 
-### S8_what_to_buy_first: What to buy first
+### S9_what_to_buy_first: What to buy first
 
 Start with one daytime gel or gel-cream that layers well under SPF, then add a separate repair option only if acne actives cause dryness. Do not buy five moisturizers at once; you will lose the signal. If every oil-free product stings, stop chasing texture and treat it as barrier damage or dermatitis until a clinician helps you reset.
 
-### S9_two_week_test: A two-week way to test the change
+### S10_two_week_test: A two-week way to test the change
 
 Change only the step this page is about, take baseline photos, compare the same zones in the same lighting, and treat tolerability as part of success.
 
-### S10_routine_compatibility: How it should fit with the rest of your routine
+### S11_routine_compatibility: How it should fit with the rest of your routine
 
 Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep nights focused on one treatment decision rather than stacking every acne active together.
 
-### S11_mistakes: Mistakes to avoid
+### S12_mistakes: Mistakes to avoid
 
 - Skipping moisturizer because oily skin “does not need it.”
 - Choosing mattifying alcohol-heavy products that leave skin tight and reactive.
@@ -84,7 +92,7 @@ Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep
 - Using too much gel moisturizer and then blaming sunscreen for pilling.
 - Expecting moisturizer to treat acne by itself; it supports the routine but does not replace acne treatment.
 
-### S12_dermatologist: When to ask a dermatologist
+### S13_dermatologist: When to ask a dermatologist
 
 Moisturizer questions become dermatologist questions when acne is painful, scarring, or repeatedly worsened by products. The clinician can help decide whether the issue is acne, dermatitis, rosacea-like sensitivity, fungal folliculitis-like bumps, or barrier damage.
 
@@ -94,7 +102,7 @@ Moisturizer questions become dermatologist questions when acne is painful, scarr
 - Bring the full morning routine, especially sunscreen, because moisturizer is judged in a stack.
 - Track whether shine is oiliness, sweat, or product film; photos in the same light help.
 
-### S13_faq: Questions people ask
+### S14_faq: Questions people ask
 
 Q: Does oily acne-prone skin need moisturizer?
 A: Often yes. Oily skin can still be dehydrated or irritated, especially with acne actives. A light moisturizer can reduce tightness and help you tolerate treatment.
@@ -120,7 +128,7 @@ A: Yes. Moisturizer can reduce dryness and irritation. If benzoyl peroxide burns
 Q: Why does my moisturizer pill?
 A: Pilling can come from too much product, incompatible sunscreen, rubbing, or not waiting between layers. Use less, wait longer, and change one layer at a time.
 
-### S14_sources: Source basis
+### S15_sources: Source basis
 
 AAD acne skin care habits: https://www.aad.org/public/diseases/acne/skin-care/habits-stop
 AAD oily skin care guidance: https://www.aad.org/public/everyday-care/skin-care-secrets/routine/oily-skin

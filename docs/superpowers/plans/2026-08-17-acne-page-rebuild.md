@@ -15,7 +15,8 @@
 - Do not include unsupported dermatologist-review claims.
 - Render exactly eight FAQs per page.
 - Keep each rebuilt page at 1,900 to 3,000 main-content words.
-- Include product-format comparison, product label checklist, example product landscape, and what-to-buy-first sections.
+- Include product-format comparison, visible Indian product cards with images and hyperlinks, product label checklist, example product landscape, and what-to-buy-first sections.
+- Label product cards as examples, not endorsements, and preserve medical caution for prescription-style products.
 - Use existing repository assets only.
 - Push only to `main`.
 

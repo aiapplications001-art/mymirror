@@ -52,7 +52,15 @@ The most useful adapalene product decision is not which tube looks strongest. It
 - Adapalene plus benzoyl peroxide combination: Fixed combinations exist in some prescription acne plans. Useful for: Inflamed acne where a dermatologist wants both a retinoid and benzoyl peroxide effect in one plan. Watch-outs: More irritation potential. Do not build your own aggressive same-night stack unless directed.
 - Support products around adapalene: Gentle cleanser, bland moisturizer, and broad-spectrum sunscreen are part of the product system. Useful for: Anyone starting a retinoid, especially Indian skin that marks after irritation. Watch-outs: Buying adapalene without barrier support often leads to stopping early or creating avoidable PIH.
 
-### S6_product_label_checklist: Product label checklist
+### S6_indian_product_examples: Indian product examples
+
+Examples only, not endorsements.
+
+- Deriva MS Aqueous Gel: A Tata 1mg-listed adapalene microsphere gel from Glenmark; useful as a label-reading example for 0.1% adapalene. Caution: Prescription/medical-use context. Do not self-start during pregnancy or on irritated skin. Source: https://www.1mg.com/drugs/deriva-ms-aqueous-gel-144224 Image: /assets/images/product-examples/deriva-ms-aqueous-gel.jpg
+- Adaferin Gel: A Galderma India adapalene gel listing; helpful for comparing active ingredient, strength, and instructions. Caution: Use only as directed. Retinoid irritation can worsen PIH if pushed too fast. Source: https://www.1mg.com/drugs/adaferin-gel-123250 Image: /assets/images/product-examples/adaferin-gel.jpg
+- Adapen 0.1% Gel: Another Indian pharmacy adapalene listing; compare vehicle, brand, and substitute notes rather than buying by price alone. Caution: Ask a dermatologist if acne is painful, scarring, or mixed with eczema-like irritation. Source: https://www.1mg.com/drugs/adapen-0.1-w-w-gel-165935 Image: /assets/images/product-examples/adapen-gel.png
+
+### S7_product_label_checklist: Product label checklist
 
 - Check that the active says adapalene and note the percentage; do not confuse cosmetic retinol with prescription retinoids.
 - Read whether the product is leave-on, prescription-only, or combination therapy; those details change how it should be used.
@@ -60,23 +68,23 @@ The most useful adapalene product decision is not which tube looks strongest. It
 - Look for expiry, storage instructions, and pregnancy or breastfeeding warnings before opening the tube.
 - If the product includes another active, assume irritation risk is higher and ask a dermatologist before layering more treatments.
 
-### S7_product_landscape: Example product landscape
+### S8_product_landscape: Example product landscape
 
 In search results and pharmacies you may see international OTC adapalene gels, Indian prescription adapalene gels, and retinoid-adjacent cosmetic products sold with similar acne language. The active ingredient line matters more than the front label. A “retinol night cream” is not the same decision as adapalene. A fixed adapalene-benzoyl peroxide product is also not the same decision as plain adapalene gel. For Indian skin, the practical product choice is usually the simplest medically appropriate format plus a routine that makes irritation less likely.
 
-### S8_what_to_buy_first: What to buy first
+### S9_what_to_buy_first: What to buy first
 
 If you do not already own a gentle cleanser, non-stinging moisturizer, and sunscreen you will actually wear, buy those before chasing a stronger retinoid. If adapalene is appropriate for you, choose the lowest sensible entry format and build frequency slowly. Skip bundles that sell multiple acne actives together unless a clinician has mapped the schedule, because the bundle is where many people accidentally create barrier burn.
 
-### S9_two_week_test: A two-week way to test the change
+### S10_two_week_test: A two-week way to test the change
 
 Change only the step this page is about, take baseline photos, compare the same zones in the same lighting, and treat tolerability as part of success.
 
-### S10_routine_compatibility: How it should fit with the rest of your routine
+### S11_routine_compatibility: How it should fit with the rest of your routine
 
 Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep nights focused on one treatment decision rather than stacking every acne active together.
 
-### S11_mistakes: Mistakes to avoid
+### S12_mistakes: Mistakes to avoid
 
 - Using adapalene as a spot treatment instead of a thin full-area acne maintenance layer.
 - Applying it to wet skin, which can increase penetration and irritation.
@@ -84,7 +92,7 @@ Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep
 - Calling every breakout a purge even when the skin is burning, swollen, or rashy.
 - Stopping moisturizer because the face feels oily; dehydration can make irritation worse.
 
-### S12_dermatologist: When to ask a dermatologist
+### S13_dermatologist: When to ask a dermatologist
 
 A dermatologist can help you decide whether adapalene is the right retinoid, whether you need a different acne plan, and whether dark marks require separate treatment. Bring a simple timeline rather than only a product list.
 
@@ -94,7 +102,7 @@ A dermatologist can help you decide whether adapalene is the right retinoid, whe
 - Bring photos showing week 0, week 4, and week 8 if you are unsure whether acne is purging or worsening.
 - List every active in your routine, including face washes, toners, peels, spot treatments, and fairness/brightening creams.
 
-### S13_faq: Questions people ask
+### S14_faq: Questions people ask
 
 Q: Can adapalene cause purging?
 A: It can bring existing clogged pores to the surface for some people, especially in usual breakout zones. Purging should not feel like a chemical burn. If the skin is raw, swollen, or rashy, treat that as irritation rather than proof the product is working.
@@ -120,7 +128,7 @@ A: Do not start retinoids during pregnancy, while trying to conceive, or while b
 Q: When should I expect results?
 A: Acne routines are usually judged over weeks, not days. Many people need eight to twelve weeks to fairly assess a retinoid plan, assuming the skin barrier is tolerating it.
 
-### S14_sources: Source basis
+### S15_sources: Source basis
 
 AAD acne treatment overview: https://www.aad.org/public/diseases/acne/derm-treat/treat
 AAD acne in skin of color: https://www.aad.org/public/diseases/acne/derm-treat/skin-color

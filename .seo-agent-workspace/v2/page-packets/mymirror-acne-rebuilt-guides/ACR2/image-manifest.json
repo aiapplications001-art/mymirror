@@ -21,6 +21,54 @@
         "status": "existing_repository_asset",
         "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
       }
+    },
+    {
+      "id": "IMG_PRODUCT_1",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "The Pink Foundry Melt to Foam™ Cleansing Balm product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.thepinkfoundry.com/products/melt-to-foam-cleansing-balm-makeup-remover",
+      "filePath": "/assets/images/product-examples/pink-foundry-cleansing-balm.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    },
+    {
+      "id": "IMG_PRODUCT_2",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Deconstruct Soothing Cleansing Balm product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.1mg.com/otc/deconstruct-soothing-cleansing-balm-otc795460",
+      "filePath": "/assets/images/product-examples/deconstruct-cleansing-balm.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    },
+    {
+      "id": "IMG_PRODUCT_3",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Plum E-Luminence Simply Supple Cleansing Balm product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.1mg.com/otc/plum-e-luminence-simply-supple-cleansing-balm-otc596815",
+      "filePath": "/assets/images/product-examples/plum-cleansing-balm.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
     }
   ]
 }
