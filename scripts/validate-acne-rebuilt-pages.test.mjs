@@ -4,6 +4,11 @@ import test from 'node:test';
 
 const pages = [
   {
+    slug: 'alpha-arbutin-serum-for-dark-spots-india',
+    h1Pattern: /Alpha Arbutin 2% serum for post-acne dark spots on Indian skin/,
+    hero: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg'
+  },
+  {
     slug: 'best-cica-moisturizer-for-acne-prone-skin-india',
     h1Pattern: /Best Cica moisturizer for acne-prone skin in India/,
     hero: '/assets/images/cica-moisturizer-gel-pot.jpg'
