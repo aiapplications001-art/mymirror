@@ -1,5 +1,6 @@
 {
-  "status": "PASS",
-  "qaScore": 100,
-  "slug": "pcos-supplements-spearmint-inositol-india"
+  "schemaVersion": "editorial-qa-report.v1",
+  "pageId": "ACR10",
+  "slug": "pcos-supplements-spearmint-inositol-india",
+  "status": "pass"
 }

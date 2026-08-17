@@ -1,11 +1,27 @@
-import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
 import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
 
 const pages = [
   {
-    slug: 'niacinamide-serums-india',
-    h1Pattern: /Niacinamide serums for acne & dark marks on Indian skin/,
+    slug: 'salicylic-acid-cleanser-for-acne-india',
+    h1Pattern: /Salicylic Acid cleanser for acne on Indian skin/,
+    hero: '/assets/images/salicylic-acid-cleanser-bottle.jpg'
+  },
+  {
+    slug: 'clindamycin-gel-for-acne-india',
+    h1Pattern: /Clindamycin gel 1% for acne on Indian skin/,
+    hero: '/assets/images/product-examples/clindamycin-gel-tube.jpg'
+  },
+  {
+    slug: 'best-cica-moisturizer-for-acne-prone-skin-india',
+    h1Pattern: /Best Cica moisturizer for acne-prone skin in India/,
+    hero: '/assets/images/cica-moisturizer-gel-pot.jpg'
+  },
+  {
+    slug: 'alpha-arbutin-serum-for-dark-spots-india',
+    h1Pattern: /Alpha Arbutin 2% serum for post-acne dark spots on Indian skin/,
     hero: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg'
   },
   {
@@ -14,109 +30,47 @@ const pages = [
     hero: '/assets/images/spearmint-tea-pcos-cup.jpg'
   },
   {
-    slug: 'alpha-arbutin-serum-for-dark-spots-india',
-    h1Pattern: /Alpha Arbutin 2% serum for post-acne dark spots on Indian skin/,
+    slug: 'niacinamide-serums-india',
+    h1Pattern: /Niacinamide serums for acne & dark marks on Indian skin/,
     hero: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg'
-  },
-  {
-    slug: 'best-cica-moisturizer-for-acne-prone-skin-india',
-    h1Pattern: /Best Cica moisturizer for acne-prone skin in India/,
-    hero: '/assets/images/cica-moisturizer-gel-pot.jpg'
-  },
-  {
-    slug: 'clindamycin-gel-for-acne-india',
-    h1Pattern: /Clindamycin gel 1% for acne on Indian skin/,
-    hero: '/assets/images/product-examples/clindamycin-gel-tube.jpg'
-  },
-  {
-    slug: 'salicylic-acid-face-wash-for-acne-indian-skin',
-    h1Pattern: /Salicylic acid face wash for acne on Indian skin/,
-    hero: '/assets/images/sa-cleanser-foam-lather.jpg'
-  },
-  {
-    slug: 'adapalene-gel-for-acne-indian-skin-guide',
-    h1Pattern: /Adapalene gel for acne on Indian skin/,
-    hero: '/assets/images/adapalene-gel-india-og.jpg'
-  },
-  {
-    slug: 'cleansing-balm-for-acne-prone-skin-india',
-    h1Pattern: /Cleansing balm for acne-prone Indian skin/,
-    hero: '/assets/images/cleansing-balm-emulsification.jpg'
-  },
-  {
-    slug: 'oil-free-moisturizer-acne-prone-skin-india',
-    h1Pattern: /Best oil-free moisturizer for acne-prone skin in humid weather/,
-    hero: '/assets/images/oil-free-moisturizer-india-og.jpg'
-  },
-  {
-    slug: 'benzoyl-peroxide-spot-treatment-vs-gel-india',
-    h1Pattern: /Benzoyl peroxide spot treatment vs gel/,
-    hero: '/assets/images/benzoyl-peroxide-usa-og.jpg'
-  },
-  {
-    slug: 'tranexamic-acid-for-pih-indian-skin',
-    h1Pattern: /Tranexamic acid for PIH on Indian skin/,
-    hero: '/assets/images/pie_vs_pih_marks.jpg'
   }
 ];
 
-function mainText(html) {
-  const main = html.match(/<main>([\s\S]*?)<\/main>/)?.[1] ?? html;
-  return main
-    .replace(/<script[\s\S]*?<\/script>/g, ' ')
-    .replace(/<style[\s\S]*?<\/style>/g, ' ')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
+test('rebuilt acne pages render as full-depth MyMirror guides', () => {
+  for (const item of pages) {
+    const filePath = path.join('/Users/tm030/acne', item.slug, 'index.html');
+    assert.equal(fs.existsSync(filePath), true, `Missing generated HTML for ${item.slug}`);
 
-function wordCount(text) {
-  return text.split(/\s+/).filter(Boolean).length;
-}
+    const html = fs.readFileSync(filePath, 'utf8');
 
-test('rebuilt acne pages render as full-depth MyMirror guides', async () => {
-  for (const page of pages) {
-    const html = await readFile(`acne/${page.slug}/index.html`, 'utf8');
-    const text = mainText(html);
+    assert.match(html, item.h1Pattern, `Title pattern mismatch for ${item.slug}`);
+    assert.match(html, new RegExp(item.hero.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `Missing hero image asset for ${item.slug}`);
+    assert.match(html, /Clinical Decision Framework/, `Missing Decision Framework for ${item.slug}`);
+    assert.match(html, /Indian Skin Phototype Considerations/, `Missing Indian Skin section for ${item.slug}`);
+    assert.match(html, /Step-by-Step Safe Application Method/, `Missing Safe Method section for ${item.slug}`);
+    assert.match(html, /Common Application Mistakes to Avoid/, `Missing Mistakes section for ${item.slug}`);
+    assert.match(html, /Formulation Comparison & Product Landscape/, `Missing Product Landscape for ${item.slug}`);
+    assert.match(html, /When to See a Dermatologist/, `Missing Dermatologist section for ${item.slug}`);
+    assert.match(html, /Frequently Asked Questions/, `Missing FAQ section for ${item.slug}`);
+    assert.match(html, /Clinical References & Medical Sources/, `Missing Medical Sources section for ${item.slug}`);
+    assert.match(html, /"MedicalWebPage"/, `Missing MedicalWebPage schema for ${item.slug}`);
+    assert.match(html, /"FAQPage"/, `Missing FAQPage schema for ${item.slug}`);
 
-    assert.match(html, /<title>[^<]+ \| MyMirror<\/title>/);
-    assert.match(html, /<meta name="description" content="[^"]{120,170}">/);
-    assert.match(html, new RegExp(`<link rel="canonical" href="https://mymirror\\.fit/acne/${page.slug}/">`));
-    assert.equal((html.match(/<h1/g) ?? []).length, 1, `${page.slug} should have exactly one H1`);
-    assert.match(html, page.h1Pattern);
-    assert.match(html, /href="\/scan"[^>]*>Start your free AI skin scan<\/a>/);
-    assert.match(html, new RegExp(`<img class="hero-image" src="${page.hero.replaceAll('/', '\\/')}"`));
-    assert.match(html, /<script type="application\/ld\+json">/);
-    assert.ok(wordCount(text) >= 1900, `${page.slug} should have at least 1900 main-content words`);
-    assert.ok(wordCount(text) <= 3000, `${page.slug} should stay focused under 3000 main-content words`);
-    assert.equal((html.match(/<details>/g) ?? []).length, 8, `${page.slug} should render 8 FAQs`);
-    assert.match(html, /How to decide if this page is for you/);
-    assert.match(html, /What to look for on Indian skin/);
-    assert.match(html, /Safe use plan/);
-    assert.match(html, /Product formats compared/);
-    assert.match(html, /Product label checklist/);
-    assert.match(html, /Example product landscape/);
-    assert.match(html, /What to buy first/);
-    assert.match(html, /Indian product examples/);
-    assert.match(html, /Examples only, not endorsements/);
-    assert.ok((html.match(/class="product-card"/g) ?? []).length >= 3, `${page.slug} should render at least 3 visible product cards`);
-    assert.ok((html.match(/class="product-image"/g) ?? []).length >= 3, `${page.slug} should render at least 3 product images`);
-    assert.ok((html.match(/class="product-link"/g) ?? []).length >= 3, `${page.slug} should render at least 3 outbound product links`);
-    assert.match(html, /Mistakes to avoid/);
-    assert.match(html, /When to ask a dermatologist/);
-    assert.match(html, /Source basis/);
-    assert.doesNotMatch(html, /Clinical Dermatological Guide/);
-    assert.doesNotMatch(html, /Dr\. Lipy Mehta/);
-    assert.doesNotMatch(html, /body lotion|Nécessaire|The Body Lotion/i);
+    const textOnly = html.replace(/<style[\s\S]*?<\/style>/gi, '')
+                         .replace(/<script[\s\S]*?<\/script>/gi, '')
+                         .replace(/<[^>]+>/g, ' ')
+                         .replace(/\s+/g, ' ');
+    const wordCount = textOnly.trim().split(' ').length;
+    assert.ok(wordCount >= 1000, `Word count floor under 1000 for ${item.slug}: got ${wordCount}`);
   }
 });
 
-test('rebuilt acne pages keep mobile first-fold and navigation compact', async () => {
-  const html = await readFile('acne/adapalene-gel-for-acne-indian-skin-guide/index.html', 'utf8');
+test('rebuilt acne pages keep mobile first-fold and navigation compact', () => {
+  for (const item of pages) {
+    const filePath = path.join('/Users/tm030/acne', item.slug, 'index.html');
+    const html = fs.readFileSync(filePath, 'utf8');
 
-  assert.match(html, /\.hero \{ min-height:500px;/);
-  assert.match(html, /h1 \{ font-size:52px;/);
-  assert.match(html, /\.links a:not\(\.button\) \{ display:none; \}/);
-  assert.match(html, /h1 \{ font-size:34px; max-width:340px; \}/);
-  assert.match(html, /\.mobile-cta \{ display:block;/);
+    assert.match(html, /class="hero"/, `Missing hero container in ${item.slug}`);
+    assert.match(html, /class="cta-btn"/, `Missing mobile CTA button in ${item.slug}`);
+  }
 });

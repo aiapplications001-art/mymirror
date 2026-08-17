@@ -1,6 +1,12 @@
-# Editorial & Technical QA Report: ACR11
+# Editorial QA Report
 
-- **Page Target:** 
-- **Canonical URL:** 
-- **Primary Keyword:** 
-- **QA Score:** 100 / 100 (PASS)
+Status: pass
+
+- One H1
+- Compact first fold
+- Mobile-safe nav
+- 1,500+ main-content words
+- Eight FAQs
+- Visible sources
+- No unsupported dermatologist-review claim
+- No old dark template

@@ -1,5 +1,6 @@
 {
-  "status": "PASS",
-  "qaScore": 100,
-  "slug": "alpha-arbutin-serum-for-dark-spots-india"
+  "schemaVersion": "editorial-qa-report.v1",
+  "pageId": "ACR9",
+  "slug": "alpha-arbutin-serum-for-dark-spots-india",
+  "status": "pass"
 }

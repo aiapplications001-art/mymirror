@@ -1,5 +1,6 @@
 {
-  "status": "PASS",
-  "qaScore": 100,
-  "slug": "niacinamide-serums-india"
+  "schemaVersion": "editorial-qa-report.v1",
+  "pageId": "ACR11",
+  "slug": "niacinamide-serums-india",
+  "status": "pass"
 }
