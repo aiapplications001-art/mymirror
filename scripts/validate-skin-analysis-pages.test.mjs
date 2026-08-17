@@ -15,8 +15,22 @@ const validPage = `<!doctype html>
     <a href="/scan">Start your free skin analysis now</a>
     <img class="hero-image" src="/assets/skin-analysis/example-hero.webp" alt="An abstract illustration of a face analysis">
     <script type="application/ld+json">{}</script>
-  </body>
+</body>
 </html>`;
+
+function mainText(html) {
+  const main = html.match(/<main>([\s\S]*?)<\/main>/)?.[1] ?? html;
+  return main
+    .replace(/<script[\s\S]*?<\/script>/g, ' ')
+    .replace(/<style[\s\S]*?<\/style>/g, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function wordCount(text) {
+  return text.split(/\s+/).filter(Boolean).length;
+}
 
 test('accepts a page with one H1, metadata, CTA, image alt text, and schema', () => {
   assert.deepEqual(validatePage({ slug: 'example', html: validPage }), []);
@@ -140,5 +154,28 @@ test('SA6-SA10 heroes do not show keyword proof chips or diagnostic microcopy be
     assert.doesNotMatch(html, /Low competition/);
     assert.doesNotMatch(html, /Photo-led guide|Non-diagnostic|Triage-first|Bump-focused|Texture-led/);
     assert.doesNotMatch(html, /A visible-signal starting point\. Not a medical diagnosis\./);
+  }
+});
+
+test('SA6-SA10 render as full-depth topic guides, not thin starter pages', async () => {
+  const slugs = [
+    'tanning-vs-pigmentation-face',
+    'white-spots-on-face',
+    'skin-rash-on-face',
+    'milia-on-face',
+    'pores-on-face'
+  ];
+
+  for (const slug of slugs) {
+    const html = await readFile(`skin-analysis/${slug}/index.html`, 'utf8');
+    const text = mainText(html);
+    assert.ok(wordCount(text) >= 1500, `${slug} should have at least 1500 main-content words`);
+    assert.ok(wordCount(text) <= 2200, `${slug} should stay focused under 2200 main-content words`);
+    assert.equal((html.match(/<details>/g) ?? []).length, 8, `${slug} should answer 8 FAQs`);
+    assert.match(html, /How to read the visible pattern/);
+    assert.match(html, /Common lookalikes to keep separate/);
+    assert.match(html, /A safer routine plan/);
+    assert.match(html, /Photo checklist before you scan/);
+    assert.match(html, /What to tell a dermatologist/);
   }
 });

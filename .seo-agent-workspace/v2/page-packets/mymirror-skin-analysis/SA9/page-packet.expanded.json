@@ -41,25 +41,55 @@
       "markdown": "Milia are commonly described as small white cyst-like bumps under the skin, but not every small white bump is milia. A photo can help you compare location and texture; it cannot confirm what the bump is."
     },
     {
-      "id": "S3_scan_limits",
+      "id": "S3_usage_guardrail",
+      "heading": "How to use this guide without overreading it",
+      "role": "trust",
+      "markdown": "The best use of this page is to slow the decision down. Search intent around milia often jumps straight from a visible concern to a product, procedure, or home remedy. A single image should not carry that much pressure. Use the sections below to name what you can actually see: color, border, texture, location, spread, symptoms, and timing.\n\nMyMirror is most useful when you treat it as a structured note, not a final answer. It cannot diagnose, prescribe, confirm an infection, rule out a medical condition, or replace urgent care."
+    },
+    {
+      "id": "S4_visible_pattern",
+      "heading": "How to read the visible pattern",
+      "role": "education",
+      "markdown": "Milia searches often begin with frustration: a tiny white bump will not pop, acne products are not helping, and the area is often delicate, like under the eye or upper cheek. A photo-first approach can help separate a raised, pearly bump from a flat white spot, an inflamed whitehead, a clogged pore, or a deeper cyst-like lesion. That separation matters because squeezing a milia-like bump rarely behaves like popping a pimple; it can cause bleeding, scabbing, infection, or post-inflammatory marks. MyMirror can help organize visible clues, but it cannot confirm milia or decide whether extraction is appropriate. The safer path is to observe shape, firmness, inflammation, location, and persistence.\n\n- Height: Milia-like bumps are raised, while hypopigmented patches are flat color changes. The scan can help you avoid treating a flat patch like a clogged bump.\n- Inflammation: Milia usually look pearly or white without the redness and tenderness of an inflamed pimple. Visible redness or pain changes the next step from cosmetic patience to careful review.\n- Opening: Whiteheads often have a pore opening; milia may look sealed beneath the surface. Do not dig for an opening if you cannot see one.\n- Location: Under-eye and cheek bumps are common places people notice milia-like texture. The photo can document location while the page warns against DIY extraction near the eye."
+    },
+    {
+      "id": "S5_lookalikes",
+      "heading": "Common lookalikes to keep separate",
+      "role": "education",
+      "markdown": "Closed comedones: Small clogged pores can look skin-colored or white and may cluster in oily areas, but they are not the same as firm milia.\n\nWhiteheads: Inflamed or pus-topped acne bumps can be tender and red around the base, unlike many milia-like bumps.\n\nFlat white spots: A pale patch is a pigment or texture question, not a bump-removal question.\n\nSyringoma-like bumps: Tiny under-eye bumps may have other causes that need professional identification.\n\nSkin tags or cysts: Not every small growth is milia. Growing, painful, bleeding, or changing bumps deserve medical assessment."
+    },
+    {
+      "id": "S6_safer_routine",
+      "heading": "A safer routine plan",
+      "role": "trust",
+      "markdown": "A milia routine is mostly about not making the bump worse. Cleveland Clinic notes that milia are often harmless and may clear without treatment, but persistent adult bumps can be discussed with a provider. The page therefore avoids promising removal and focuses on safe observation, gentle product choices, and escalation when bumps are near the eye, changing, painful, or bothersome.\n\nDo not squeeze or pierce: Trying to force out a sealed bump can damage the surrounding skin, especially on the eyelids or cheeks. Scarring and dark marks are not worth a guess.\n\nSimplify heavy layers: If bumps appeared after rich balms, heavy eye creams, or occlusive products, pause the newest heavy layer and watch whether new bumps stop forming.\n\nKeep cleansing gentle: Use a mild cleanser and remove makeup fully without rubbing. The goal is less residue, not stripped skin.\n\nUse actives carefully: Retinoids or exfoliants may help some texture concerns, but they can irritate delicate areas. Avoid using strong actives close to the eyes without professional guidance.\n\nConsider professional removal: If a bump persists, bothers you, or sits near the eye, a dermatologist or trained clinician can advise whether extraction or another treatment is appropriate."
+    },
+    {
+      "id": "S7_photo_and_derm_handoff",
+      "heading": "Photo checklist before you scan / What to tell a dermatologist",
+      "role": "conversion_support",
+      "markdown": "Photo checklist:\n- Use side and front angles so raised texture is visible without harsh flash.\n- Avoid applying oily balm immediately before photographing the area.\n- Photograph both the close-up bump and the wider face area for context.\n- Note whether the bump is hard, tender, red, itchy, growing, or stable.\n- Do not manipulate the bump before scanning; redness from picking confuses the picture.\n\nDermatologist handoff:\n- How long the bump has been present and whether more bumps are appearing.\n- Whether the bump is near the eye, painful, bleeding, changing, or repeatedly irritated.\n- Any new eye creams, balms, makeup, sunscreen, procedures, or skin injuries before it appeared.\n- Whether you tried squeezing, exfoliating, or acne spot treatments and what happened afterward.\n- Photos showing whether the bump is raised and stable or changing over time."
+    },
+    {
+      "id": "S8_scan_limits",
       "heading": "What the scan can and cannot do",
       "role": "trust",
       "markdown": "What MyMirror can help organize: Use the scan to separate raised white bumps from flat pale patches, redness, acne clusters, and visible pores.\n\nWhat it cannot decide: A scan cannot confirm milia, diagnose cysts, or decide whether extraction is appropriate.\n\nSafer next step: Avoid piercing or squeezing at home, especially near the eye. Keep products simple and ask a professional if bumps persist or bother you."
     },
     {
-      "id": "S4_escalation",
+      "id": "S9_escalation",
       "heading": "When to stop guessing",
       "role": "safety",
       "markdown": "Get medical advice for bumps near the eye, painful or changing lesions, or anything you are unsure about before attempting removal."
     },
     {
-      "id": "S5_faq",
+      "id": "S10_faq",
       "heading": "Questions people ask",
       "role": "seo",
-      "markdown": "Q: Are milia the same as whiteheads?\nA: No. They can look similar, but milia are not simply pimples waiting to pop.\n\nQ: Will milia go away by themselves?\nA: Some can fade over time, but persistent adult milia may need professional advice.\n\nQ: Can MyMirror remove milia?\nA: No. MyMirror helps you organize visible patterns so you can choose a better next step."
+      "markdown": "Q: Are milia the same as whiteheads?\nA: No. They can look similar, but milia are not simply pimples waiting to pop.\n\nQ: Will milia go away by themselves?\nA: Some can fade over time, but persistent adult milia may need professional advice.\n\nQ: Can MyMirror remove milia?\nA: No. MyMirror helps you organize visible patterns so you can choose a better next step.\n\nQ: Why will milia not pop like a pimple?\nA: Milia are commonly described as tiny cyst-like bumps under the skin rather than ordinary pus-filled pimples. If there is no visible opening, forcing it can injure the surface without removing the bump.\n\nQ: Are milia dangerous?\nA: Milia are often harmless, but a photo cannot confirm every bump. Pain, bleeding, rapid change, growth, or uncertainty near the eye are good reasons to ask a clinician.\n\nQ: Can heavy eye cream cause milia?\nA: Heavy or occlusive products can be part of the story for some people, especially around delicate skin. If the timing fits, simplifying the newest heavy layer is a reasonable observation step.\n\nQ: Should I use a scrub on milia?\nA: Avoid physical scrubbing, especially near the eyes. Scrubs can irritate thin skin and may cause redness or pigmentation without helping a sealed bump.\n\nQ: When should I consider extraction?\nA: If a bump persists, bothers you, or sits in a delicate area, professional advice is safer than DIY extraction. A clinician can decide whether it is milia and whether removal is appropriate."
     },
     {
-      "id": "S6_final_cta",
+      "id": "S11_final_cta",
       "heading": "Use the scan to describe, not diagnose",
       "role": "conversion",
       "markdown": "Start with what is visible today, choose one sensible next step, and get professional care when needed."

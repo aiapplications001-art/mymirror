@@ -2,9 +2,9 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Add five CSV-derived MyMirror skin-analysis SEO pages and publishable packet artifacts.
+**Goal:** Add five full-depth CSV-derived MyMirror skin-analysis SEO pages and publishable packet artifacts.
 
-**Architecture:** A small deterministic generator writes static HTML pages and matching SEO packet artifacts from a page data array. The validation test asserts that all new pages satisfy the same MyMirror page contract as the previous skin-analysis batch.
+**Architecture:** A small deterministic generator writes static HTML pages and matching SEO packet artifacts from a page data array plus page-specific deep-dive blocks. The validation test asserts that all new pages satisfy the MyMirror page contract and remain full-depth guides rather than thin starter pages.
 
 **Tech Stack:** Static HTML, inline CSS matching existing MyMirror theme, Node.js validation tests, Vercel static deployment.
 
@@ -15,6 +15,9 @@
 - Use only existing repository image assets.
 - Keep the approved CTA text: "Start your free skin analysis now".
 - Maintain one H1, canonical URL, meta description, hero image alt text, and JSON-LD per page.
+- Maintain 1,500 to 2,200 main-content words per CSV-derived page.
+- Render the deep sections: "How to read the visible pattern", "Common lookalikes to keep separate", "A safer routine plan", "Photo checklist before you scan", and "What to tell a dermatologist".
+- Render exactly eight FAQs per CSV-derived page.
 
 ---
 
@@ -30,7 +33,7 @@
 - [x] **Step 1: Write the failing test**
 - [x] **Step 2: Run test to verify it fails**
 
-### Task 2: Generate HTML and Packet Artifacts
+### Task 2: Generate Full-Depth HTML and Packet Artifacts
 
 **Files:**
 - Create: `scripts/generate-skin-analysis-csv-pages.mjs`

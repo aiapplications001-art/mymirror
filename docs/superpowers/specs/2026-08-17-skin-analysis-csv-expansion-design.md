@@ -2,7 +2,7 @@
 
 ## Goal
 
-Create five additional MyMirror skin-analysis pages using the provided Google keyword stats CSV while avoiding overlap with the first skin-analysis batch and existing acne product/treatment pages.
+Create five full-depth MyMirror skin-analysis pages using the provided Google keyword stats CSV while avoiding overlap with the first skin-analysis batch and existing acne product/treatment pages.
 
 ## Selected Topics
 
@@ -14,7 +14,7 @@ Create five additional MyMirror skin-analysis pages using the provided Google ke
 
 ## Design
 
-Use the existing MyMirror skin-analysis page language: warm, cautious, practical, and clearly non-diagnostic. Each page gets a compact first fold with the CTA visible, one hero image from existing repository assets, three visible-clue cards, a scan-limits section, medical escalation guidance, FAQs, and visible source links.
+Use the existing MyMirror skin-analysis page language: warm, cautious, practical, and clearly non-diagnostic. Each page gets a compact first fold with the CTA visible, one dedicated hero image, three visible-clue cards, a full pattern-reading section, common lookalikes, safer routine guidance, a scan-photo checklist, dermatologist handoff notes, scan-limits guidance, medical escalation guidance, eight FAQs, and visible source links.
 
 ## Constraints
 
@@ -22,3 +22,5 @@ Use the existing MyMirror skin-analysis page language: warm, cautious, practical
 - Do not add competitor logos, screenshots, or external brand visuals.
 - Keep links visible and editorial, not hidden SEO-only links.
 - Reuse existing theme elements and scan CTA.
+- Keep each generated CSV-derived page between 1,500 and 2,200 main-content words.
+- Render exactly eight FAQs for each page and mirror them in JSON-LD.

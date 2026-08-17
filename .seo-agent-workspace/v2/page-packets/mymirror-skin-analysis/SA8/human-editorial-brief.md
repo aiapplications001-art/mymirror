@@ -2,4 +2,6 @@
 
 Tone: calm, cautious, practical.
 
+Depth focus: A face rash deserves more caution than most cosmetic concerns because the same word can describe mild irritation, allergic contact dermatitis, eczema, infection, medication reactions, rosacea-like flushing, acneiform bumps, or urgent allergic symptoms. The photo can organize visible features, but it cannot decide the cause. Start with severity: is it spreading quickly, painful, blistering, crusting, involving the eyes or lips, accompanied by fever, or linked to breathing or swallowing trouble? Those are not routine-optimization signals. They are escalation signals. If the rash is mild and stable, the next useful layer is trigger tracking: new product, fragrance, sunscreen, hair dye, mask friction, food, medicine, plant exposure, heat, sweat, or shaving.
+
 Do not convert visible-signal guidance into diagnosis or treatment claims.

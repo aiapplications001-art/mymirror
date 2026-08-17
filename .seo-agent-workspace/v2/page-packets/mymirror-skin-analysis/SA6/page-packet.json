@@ -42,25 +42,55 @@
       "markdown": "Tanning often looks more even across exposed areas. Pigmentation can look patchier, deeper, or more tied to old irritation, acne marks, friction, or sun exposure. A camera cannot diagnose the cause, but it can help you stop using one word for every brown mark."
     },
     {
-      "id": "S3_scan_limits",
+      "id": "S3_usage_guardrail",
+      "heading": "How to use this guide without overreading it",
+      "role": "trust",
+      "markdown": "The best use of this page is to slow the decision down. Search intent around tanning often jumps straight from a visible concern to a product, procedure, or home remedy. A single image should not carry that much pressure. Use the sections below to name what you can actually see: color, border, texture, location, spread, symptoms, and timing.\n\nMyMirror is most useful when you treat it as a structured note, not a final answer. It cannot diagnose, prescribe, confirm an infection, rule out a medical condition, or replace urgent care."
+    },
+    {
+      "id": "S4_visible_pattern",
+      "heading": "How to read the visible pattern",
+      "role": "education",
+      "markdown": "A useful first read separates color depth, shape, timing, and trigger. Tanning is usually a response to ultraviolet exposure and often follows the areas the sun reaches most evenly. Pigmentation is a broader word for darker patches or spots, and it can follow acne, friction, hormonal change, irritation, medication sensitivity, or sun exposure. From a photo, MyMirror can help you organize what is visible: whether the color is even or patchy, whether it sits on old breakout areas, and whether it is changing over time. It cannot name the cause. That distinction matters because “tan removal” searches often push people toward harsh scrubs or bleaching promises when the safer first step may simply be sun protection, barrier repair, and professional advice for persistent patches.\n\n- Spread: Tan usually looks more even across exposed zones such as the forehead, nose, cheeks, and upper lip. MyMirror can help you compare whether the color change is broad, symmetrical, or concentrated in small areas.\n- Edges: Pigment patches often have clearer borders, clusters, or repeated shapes that do not match ordinary sun exposure. A consistent photo makes edge changes easier to notice without over-reading shadows.\n- Timeline: A tan may become obvious after outdoor exposure, while post-inflammatory marks can linger after acne, cuts, burns, or irritation. Track one photo now and another later rather than changing several products immediately.\n- Texture: Flat brown color is different from rough, scaly, painful, itchy, or raised skin. If texture or symptoms are present, the page points you toward medical review instead of cosmetic guessing."
+    },
+    {
+      "id": "S5_lookalikes",
+      "heading": "Common lookalikes to keep separate",
+      "role": "education",
+      "markdown": "Post-acne marks: Dark spots left after pimples can look like pigmentation rather than a fresh tan. They usually sit exactly where old breakouts healed.\n\nMelasma-like patches: Symmetrical brown or gray-brown patches on cheeks, forehead, or upper lip need careful evaluation, especially if they persist or deepen.\n\nFriction or shaving marks: Repeated rubbing, threading, shaving, tight masks, or harsh cleansing can leave localized darkening that sun exposure then makes more visible.\n\nSun spots: Small darker spots on high-exposure areas may build gradually over months or years and should be protected from more sun.\n\nIrritation from products: Burning, stinging, peeling, or redness before the darkening suggests the routine may be creating the mark rather than clearing it."
+    },
+    {
+      "id": "S6_safer_routine",
+      "heading": "A safer routine plan",
+      "role": "trust",
+      "markdown": "The safest routine starts by preventing new darkening and calming irritation. AAD guidance emphasizes finding and addressing the trigger, using sunscreen consistently, and avoiding harmful fading shortcuts. MyMirror should support that process by helping you describe what changed, not by promising to fade the mark.\n\nProtect every morning: Use broad-spectrum SPF 30 or higher and reapply when outdoors. For stubborn dark spots, tinted sunscreen with iron oxide may be useful because visible light can worsen some pigmentation patterns. Hats and shade matter too.\n\nStop friction first: Pause scrubs, aggressive towels, repeated waxing over irritated skin, and products that sting. If the skin is inflamed, brightening actives often make the cycle more confusing.\n\nChange one thing at a time: If you add vitamin C, azelaic acid, a retinoid, or another tone-evening ingredient, introduce one product slowly. A photo log is only useful when you know what changed.\n\nRespect slow fading: Some surface marks fade over months, while deeper discoloration can take much longer. A page about visible signals should not make fast “tan removal” promises.\n\nEscalate persistent patches: If a patch grows, returns in the same pattern, becomes gray-blue, or does not respond to gentle care and sun protection, dermatology advice is more useful than another product experiment."
+    },
+    {
+      "id": "S7_photo_and_derm_handoff",
+      "heading": "Photo checklist before you scan / What to tell a dermatologist",
+      "role": "conversion_support",
+      "markdown": "Photo checklist:\n- Take the photo in bright indirect light, not side lighting that exaggerates shadows.\n- Use the same distance and angle each time so a darker image is not mistaken for darker skin.\n- Avoid heavy makeup, filters, or beauty mode before scanning.\n- Include the full face and neck if the color change may be sun-pattern related.\n- Write down recent sun exposure, acne flare-ups, waxing, shaving, new medicines, or new products.\n\nDermatologist handoff:\n- When the mark first appeared and whether it followed acne, injury, irritation, or sun exposure.\n- Whether the color is spreading, deepening, fading, or staying the same.\n- Which brightening products, peels, home remedies, or prescriptions you have already used.\n- Whether the area itches, hurts, bleeds, scales, or feels different from nearby skin.\n- Any pregnancy, hormonal treatment, medication changes, or family history relevant to pigment concerns."
+    },
+    {
+      "id": "S8_scan_limits",
       "heading": "What the scan can and cannot do",
       "role": "trust",
       "markdown": "What MyMirror can help organize: Use the scan to compare visible tone changes by facial area, then decide whether your next step is sun protection, a dark-spot guide, or a dermatologist visit.\n\nWhat it cannot decide: A scan cannot tell you whether a patch is melasma, post-inflammatory hyperpigmentation, a medication reaction, or another medical condition. That needs professional judgment.\n\nSafer next step: Build the first decision around daily broad-spectrum sunscreen, shade, hats, and avoiding intentional tanning. Do not start harsh brightening products on irritated skin."
     },
     {
-      "id": "S4_escalation",
+      "id": "S9_escalation",
       "heading": "When to stop guessing",
       "role": "safety",
       "markdown": "See a dermatologist for rapidly changing patches, symptoms such as pain or bleeding, or pigment changes that worry you."
     },
     {
-      "id": "S5_faq",
+      "id": "S10_faq",
       "heading": "Questions people ask",
       "role": "seo",
-      "markdown": "Q: Can a tan and pigmentation happen together?\nA: Yes. Sun exposure can darken the whole face and also make existing dark spots look stronger.\n\nQ: Does MyMirror remove tan?\nA: No. MyMirror helps organize visible signals so you can choose a better next step. It does not treat or diagnose skin concerns.\n\nQ: What should I photograph?\nA: Use even light, no heavy makeup, and a front-facing view so shadows do not look like pigment."
+      "markdown": "Q: Can a tan and pigmentation happen together?\nA: Yes. Sun exposure can darken the whole face and also make existing dark spots look stronger.\n\nQ: Does MyMirror remove tan?\nA: No. MyMirror helps organize visible signals so you can choose a better next step. It does not treat or diagnose skin concerns.\n\nQ: What should I photograph?\nA: Use even light, no heavy makeup, and a front-facing view so shadows do not look like pigment.\n\nQ: Is face tanning the same as hyperpigmentation?\nA: No. Tanning is usually a more even darkening after ultraviolet exposure. Hyperpigmentation is a broader pattern of extra pigment that can follow inflammation, acne, friction, melasma-like changes, or other triggers. They can overlap, which is why the first job is to describe the pattern rather than force one label.\n\nQ: Can sunscreen help existing dark spots?\nA: Sunscreen cannot instantly erase a spot, but it helps prevent new darkening and can support fading by reducing ongoing UV exposure. For many pigment concerns, protection is the base step before judging whether a tone-evening ingredient is doing anything.\n\nQ: Why did my marks look worse after a sunny day?\nA: Sun exposure can darken the whole face and make existing spots contrast more strongly. It can also make some forms of pigmentation harder to calm. Take comparison photos in similar lighting before deciding that the mark itself suddenly changed.\n\nQ: Are home remedies safe for tan or pigmentation?\nA: Be careful. Lemon juice, toothpaste, harsh scrubs, and bleach-like shortcuts can irritate skin and leave more pigmentation, especially on medium to deep skin tones. Gentle care and sunscreen are safer starting points.\n\nQ: When is pigmentation not a cosmetic issue?\nA: Pain, bleeding, rapid change, unusual color, new symptoms, or a spot that worries you deserves medical review. MyMirror can help prepare your description, but it should not replace a dermatologist’s assessment."
     },
     {
-      "id": "S6_final_cta",
+      "id": "S11_final_cta",
       "heading": "Use the scan to describe, not diagnose",
       "role": "conversion",
       "markdown": "Start with what is visible today, choose one sensible next step, and get professional care when needed."
@@ -87,12 +117,12 @@
   ],
   "sources": [
     {
-      "label": "AAD sunscreen FAQs",
-      "url": "https://www.aad.org/media/stats-sunscreen"
-    },
-    {
       "label": "AAD dark spots guidance",
       "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots"
+    },
+    {
+      "label": "AAD sun protection guidance",
+      "url": "https://www.aad.org/public/everyday-care/sun-protection"
     }
   ]
 }

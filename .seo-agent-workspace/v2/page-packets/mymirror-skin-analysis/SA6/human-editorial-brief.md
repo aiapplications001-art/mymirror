@@ -2,4 +2,6 @@
 
 Tone: calm, cautious, practical.
 
+Depth focus: A useful first read separates color depth, shape, timing, and trigger. Tanning is usually a response to ultraviolet exposure and often follows the areas the sun reaches most evenly. Pigmentation is a broader word for darker patches or spots, and it can follow acne, friction, hormonal change, irritation, medication sensitivity, or sun exposure. From a photo, MyMirror can help you organize what is visible: whether the color is even or patchy, whether it sits on old breakout areas, and whether it is changing over time. It cannot name the cause. That distinction matters because “tan removal” searches often push people toward harsh scrubs or bleaching promises when the safer first step may simply be sun protection, barrier repair, and professional advice for persistent patches.
+
 Do not convert visible-signal guidance into diagnosis or treatment claims.
