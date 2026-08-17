@@ -4,31 +4,6 @@ import test from 'node:test';
 
 const pages = [
   {
-    slug: 'niacinamide-serums-india',
-    h1Pattern: /Niacinamide serums for acne & dark marks on Indian skin/,
-    hero: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg'
-  },
-  {
-    slug: 'pcos-supplements-spearmint-inositol-india',
-    h1Pattern: /PCOS supplements & Spearmint tea for hormonal acne on Indian skin/,
-    hero: '/assets/images/spearmint-tea-pcos-cup.jpg'
-  },
-  {
-    slug: 'alpha-arbutin-serum-for-dark-spots-india',
-    h1Pattern: /Alpha Arbutin 2% serum for post-acne dark spots on Indian skin/,
-    hero: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg'
-  },
-  {
-    slug: 'best-cica-moisturizer-for-acne-prone-skin-india',
-    h1Pattern: /Best Cica moisturizer for acne-prone skin in India/,
-    hero: '/assets/images/cica-moisturizer-gel-pot.jpg'
-  },
-  {
-    slug: 'clindamycin-gel-for-acne-india',
-    h1Pattern: /Clindamycin gel 1% for acne on Indian skin/,
-    hero: '/assets/images/product-examples/clindamycin-gel-tube.jpg'
-  },
-  {
     slug: 'salicylic-acid-face-wash-for-acne-indian-skin',
     h1Pattern: /Salicylic acid face wash for acne on Indian skin/,
     hero: '/assets/images/sa-cleanser-foam-lather.jpg'

@@ -1,10 +1,6 @@
 {
-  "status": "PASS",
-  "qaScore": 100,
+  "schemaVersion": "editorial-qa-report.v1",
+  "pageId": "ACR12",
   "slug": "salicylic-acid-face-wash-for-acne-indian-skin",
-  "wordCount": 1992,
-  "h1Count": 1,
-  "faqCount": 8,
-  "productCardsCount": 3,
-  "medicalSourcesCount": 3
+  "status": "pass"
 }
