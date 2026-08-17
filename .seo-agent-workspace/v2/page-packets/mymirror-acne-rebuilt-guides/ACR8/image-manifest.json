@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "cica-soothing-moisturizer-for-acne-barrier-repair-india",
+    "h1": "Cica moisturizer for acne-prone Indian skin: how Centella Asiatica repairs damaged barrier",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": false,
+  "assets": [
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "16:9",
+      "altText": "Soothing Cica gel moisturizer for acne barrier repair on Indian skin",
+      "status": "existing_repo_asset",
+      "filePath": "/assets/images/cica_moisturizer_india_og_1786876834752.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    },
+    {
+      "id": "IMG_PRODUCT_1",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Minimalist Vitamin B5 10% Moisturizer product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+      "filePath": "/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    },
+    {
+      "id": "IMG_PRODUCT_2",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Excela Moisturiser for Acne-Prone Skin product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://pharmeasy.in/health-care/products/excela-moisturiser-bottle-of-50gm-pump-208388",
+      "filePath": "/assets/images/product-examples/excela-moisturiser.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    },
+    {
+      "id": "IMG_PRODUCT_3",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Deconstruct Soothing Cleansing Balm product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.thedeconstruct.in/products/soothing-cleansing-balm",
+      "filePath": "/assets/images/product-examples/deconstruct-cleansing-balm.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    }
+  ]
+}

@@ -6,6 +6,341 @@ const baseUrl = 'https://mymirror.fit';
 const clusterSlug = 'mymirror-acne-rebuilt-guides';
 
 const pages = [
+  {
+    id: 'ACR7',
+    slug: 'clindamycin-gel-for-acne-indian-skin',
+    title: 'Clindamycin Gel 1% for Active Acne on Indian Skin | MyMirror',
+    description: 'Discover how 1% Clindamycin gel clears active acne papules on Indian skin. Learn why pairing with Benzoyl Peroxide prevents antibiotic resistance.',
+    ogTitle: 'Clindamycin Gel 1% for Active Acne on Indian Skin',
+    h1: 'Clindamycin gel 1% for acne on Indian skin: how to prevent resistance & barrier burn',
+    eyebrow: 'Prescription active guide',
+    primaryKeyword: 'clindamycin gel for acne indian skin',
+    secondaryKeywords: ['clindamycin gel 1', 'topical antibiotic acne', 'bacterial resistance', 'clindac A', 'benzoyl peroxide pairing'],
+    heroImage: '/assets/images/product-examples/deriva-ms-aqueous-gel.jpg',
+    heroAlt: 'Clindamycin 1% gel tube for active acne treatment on Indian skin',
+    heroNote: 'Topical antibiotic, resistance, or barrier protection?',
+    heroCopy: 'Topical 1% Clindamycin phosphate is an effective lincosamide antibiotic that targets Cutibacterium acnes bacteria inside hair follicles. For Indian skin phototypes IV to VI, it rapidly reduces red, painful inflammatory acne papules and pustules. However, monotherapy causes bacterial resistance within 2 to 4 weeks; dermatologists strongly advise pairing it with Benzoyl Peroxide to maintain efficacy.',
+    decisionIntro: 'This decision guide is for individuals using or considering topical 1% Clindamycin gel for red, swollen acne papules on Indian skin phototypes. It explains how to combine topical antibiotics with Benzoyl Peroxide or Azelaic Acid to stop bacterial resistance, avoid barrier stinging, prevent post-inflammatory hyperpigmentation (PIH), and transition off antibiotics once active inflammation subsides.',
+    decisionCards: [
+      ['Best fit', 'Inflammatory red papules, pustules, painful surface pimples, and acute acne flare-ups requiring fast antibacterial action.'],
+      ['Use more caution', 'Non-inflammatory blackheads, closed comedones, long-term daily use without Benzoyl Peroxide, or active eczema-prone barrier damage.'],
+      ['Resistance rule', 'Never use Clindamycin gel as a solo monotherapy for more than 4 weeks. Always pair with 2.5% Benzoyl Peroxide to prevent bacterial resistance.']
+    ],
+    indianSkinIntro: 'On melanin-rich Indian skin phototypes IV to VI, active inflammatory pimples are high-risk events because severe follicular inflammation damages surrounding dermal tissue, leaving dark brown post-inflammatory hyperpigmentation (PIH) that lasts for months. Topical 1% Clindamycin gel rapidly suppresses C. acnes growth and inflammatory cytokines, shortening the lifespan of red pimples. However, relying on Clindamycin gel alone creates resistant bacterial strains. Combining Clindamycin with 2.5% Benzoyl Peroxide or 10% Azelaic Acid produces a synergistic effect: Benzoyl Peroxide releases reactive oxygen species that instantly destroy C. acnes without resistance potential, allowing Clindamycin to clear deep follicular papules safely.',
+    indianRows: [
+      ['Bacterial suppression', 'Lincosamide antibiotic halts C. acnes protein synthesis inside clogged pores.', 'Use for 4 to 8 weeks maximum during active breakout flares.'],
+      ['Resistance prevention', 'Bacteria adapt rapidly to monotherapy within 30 days of continuous use.', 'Pair with 2.5% Benzoyl Peroxide wash or leave-on gel.'],
+      ['PIH risk reduction', 'Shortening red pimple lifespan reduces secondary melanocyte activation and dark marks.', 'Apply on active inflammatory spots under light moisturizer.'],
+      ['Humid climate gel formulation', 'Phosphate gel vehicle absorbs quickly without heavy grease in tropical humidity.', 'Apply a thin layer to clean dry skin before moisturizer.']
+    ],
+    safeIntro: 'A safe Clindamycin gel routine focuses on short-term inflammatory control, mandatory resistance prevention with Benzoyl Peroxide, and steady barrier hydration to prevent peeling or redness.',
+    safeSteps: [
+      ['Cleanse with a gentle pH-balanced cleanser', 'Wash face gently with a sulfate-free cleanser and pat completely dry. Avoid aggressive scrubbing on inflamed pimples.'],
+      ['Apply 2.5% Benzoyl Peroxide layer or wash', 'Use a 2.5% Benzoyl Peroxide wash or thin gel layer to eliminate bacterial resistance mechanisms.'],
+      ['Spread a thin layer of 1% Clindamycin gel', 'Apply a thin layer of 1% Clindamycin gel directly onto active red pimples and breakout zones.'],
+      ['Moisturize to protect lipid barrier', 'Seal with an oil-free barrier repair moisturizer to prevent flaking and maintain hydration.'],
+      ['Plan short-term exit timeline', 'Taper off Clindamycin gel after 6 to 8 weeks, transitioning to maintenance actives like Adapalene or Azelaic Acid.']
+    ],
+    mistakes: [
+      'Using Clindamycin gel as a long-term daily spot treatment for months without Benzoyl Peroxide.',
+      'Applying topical antibiotics to non-inflammatory blackheads or closed comedones that lack bacterial infection.',
+      'Expecting Clindamycin gel to fade old brown post-acne marks (PIH); it targets active bacteria, not melanin.',
+      'Combining multiple prescription topical antibiotics simultaneously without medical guidance.',
+      'Stopping treatment prematurely after 3 days before inflammation has fully resolved.'
+    ],
+    dermIntro: 'A dermatologist can evaluate whether oral antibiotics, hormonal evaluation, or prescription retinoid combinations (like Adapalene + Clindamycin) are required for your acne severity.',
+    dermList: [
+      'Seek medical guidance for deep painful nodular cysts or scarring acne.',
+      'Consult a clinician if active acne fails to improve after 4 weeks of compliant topical therapy.',
+      'Discuss pregnancy-safe acne alternatives before starting prescription topical actives.',
+      'Bring a clear photo timeline documenting breakout frequency and location.',
+      'Disclose all current OTC products, oral supplements, and prescription creams.'
+    ],
+    scanUse: 'Use MyMirror AI skin analysis to monitor active inflammatory papule counts, red spot reduction, and skin barrier hydration over 4 to 6 weeks in 60 seconds.',
+    faqs: [
+      ['Why should Clindamycin gel be paired with Benzoyl Peroxide?', 'Pairing Clindamycin with Benzoyl Peroxide prevents C. acnes bacteria from developing resistance to the antibiotic, ensuring continued treatment efficacy.'],
+      ['How long does Clindamycin gel take to work on pimples?', 'Most users notice reduced redness and swelling in active papules within 48 to 72 hours, with significant clearing in 2 to 4 weeks.'],
+      ['Can Clindamycin gel fade dark acne marks?', 'No. Clindamycin is an antibacterial agent, not a tyrosinase inhibitor. Pair with Azelaic Acid or Niacinamide to fade post-acne PIH.'],
+      ['Is Clindamycin gel safe during pregnancy?', 'Topical Clindamycin is Category B, but you should always consult your dermatologist or obstetrician before using prescription antibiotics during pregnancy.'],
+      ['Can I use Clindamycin gel with Salicylic Acid?', 'Yes. You can use Salicylic acid cleanser in the morning to unclog pores and Clindamycin gel at night for antibacterial action.'],
+      ['Does Clindamycin gel cause skin purging?', 'No. Clindamycin does not increase cell turnover, so it does not cause skin purging. New breakouts indicate ongoing acne or product irritation.'],
+      ['What is the difference between Clindamycin solution and gel?', 'Clindamycin gel is formulated in an aqueous vehicle ideal for sensitive skin, whereas alcoholic solutions can cause stinging on dry or broken skin.'],
+      ['How should I taper off Clindamycin gel?', 'Once active red pimples are clear for 2 consecutive weeks, taper Clindamycin and rely on Adapalene or Azelaic acid for long-term acne maintenance.']
+    ],
+    sources: [
+      ['JAAD topical clindamycin resistance study', 'https://www.jaad.org/article/S0190-9622(05)00345-2/fulltext'],
+      ['IJDVL acne management consensus guidelines', 'https://ijdvl.com/topical-antibiotics-in-acne-vulgaris/'],
+      ['AAD acne treatment guidelines', 'https://www.aad.org/public/diseases/acne/derm-treat/treat']
+    ]
+  },
+  {
+    id: 'ACR8',
+    slug: 'cica-soothing-moisturizer-for-acne-barrier-repair-india',
+    title: 'Cica Moisturizer for Acne Barrier Repair on Indian Skin | MyMirror',
+    description: 'Calm over-exfoliated acne skin with Cica moisturizer. Learn how Centella Asiatica reduces redness and repairs skin barrier without clogging pores.',
+    ogTitle: 'Cica Soothing Moisturizer for Acne Barrier Repair on Indian Skin',
+    h1: 'Cica moisturizer for acne-prone Indian skin: how Centella Asiatica repairs damaged barrier',
+    eyebrow: 'Barrier repair guide',
+    primaryKeyword: 'cica moisturizer for acne barrier repair india',
+    secondaryKeywords: ['cica moisturizer', 'centella asiatica acne', 'barrier repair moisturizer', 'madecassoside', 'calming gel cream'],
+    heroImage: '/assets/images/cica_moisturizer_india_og_1786876834752.jpg',
+    heroAlt: 'Soothing Cica gel moisturizer for acne barrier repair on Indian skin',
+    heroNote: 'Centella Asiatica, barrier damage, or redness relief?',
+    heroCopy: 'Cica moisturizers formulated with Centella Asiatica extracts (Madecassoside, Asiaticoside, Asiatic Acid) provide powerful anti-inflammatory and barrier-repair benefits. For Indian skin prone to over-exfoliation from strong acids, Cica gel-creams restore intercellular lipids, reduce micro-inflammation, and soothe burning sensations without clogging pores.',
+    decisionIntro: 'This guide helps individuals with sensitive, acne-prone, or over-exfoliated Indian skin choose the right Cica (Centella Asiatica) moisturizer. It covers active bio-compounds, texture selection for humid Indian weather, barrier recovery timelines, and how to pair soothing Cica creams with acne actives.',
+    decisionCards: [
+      ['Best fit', 'Stinging, tight, red, or over-exfoliated skin caused by retinoids, salicylic acid, or harsh benzoyl peroxide spot treatments.'],
+      ['Use more caution', 'Fungal acne suspicions if using heavy botanical oil formulas, or expecting Cica alone to cure deep hormonal cystic acne.'],
+      ['Key benefit', 'Centella Asiatica bio-compounds accelerate epidermal wound healing, synthesize collagen, and reduce redness without pore-clogging heavy waxes.']
+    ],
+    indianSkinIntro: 'Indian skin is frequently subjected to high humidity, UV exposure, dust, and harsh acne treatments that strip the stratum corneum. When the lipid barrier breaks down, transepidermal water loss (TEWL) spikes, making skin tight, shiny, and highly reactive to gentle cleansers. Irritation on melanin-rich skin triggers post-inflammatory hyperpigmentation. Cica (Centella Asiatica) contains four key triterpenoids—Madecassoside, Asiaticoside, Madecassic Acid, and Asiatic Acid—that suppress inflammatory cytokines (IL-1b, TNF-alpha) and stimulate ceramide production. Using a lightweight, oil-free Cica gel-cream repairs barrier integrity while preventing secondary dark marks.',
+    indianRows: [
+      ['Centella bio-compounds', 'Madecassoside and Asiaticoside reduce inflammatory redness and promote lipid synthesis.', 'Use twice daily during active barrier repair recovery windows.'],
+      ['TEWL reduction', 'Restores epidermal barrier structure, lowering transepidermal water loss and tightness.', 'Apply on slightly damp skin after gentle cleansing.'],
+      ['Humid climate compatibility', 'Lightweight gel-cream textures absorb rapidly without leaving greasy film in humidity.', 'Ideal for oily, combination, and acne-prone phototypes.'],
+      ['Active buffering partner', 'Buffers strong acne actives like Tretinoin, Adapalene, or Benzoyl Peroxide.', 'Apply as a sandwich layer to prevent retinoid burn.']
+    ],
+    safeIntro: 'A barrier-repair Cica routine pauses all harsh physical and chemical exfoliants, prioritizing mild cleansing, Centella hydration, and non-comedogenic sun protection.',
+    safeSteps: [
+      ['Pause all active acids and retinoids', 'Temporarily stop Salicylic acid, Glycolic acid, Retinol, and Benzoyl peroxide for 7 to 14 days.'],
+      ['Cleanse with a ultra-gentle hydrating wash', 'Use a non-foaming, sulfate-free cleanser with lukewarm water once or twice daily.'],
+      ['Apply Cica soothing gel-cream generously', 'Massage a generous layer of Cica moisturizer containing Centella Asiatica over face and neck.'],
+      ['Protect with non-comedogenic sunscreen', 'Apply broad-spectrum mineral or lightweight sunscreen daily to protect recovering skin from UV irritation.'],
+      ['Reintroduce acne actives slowly', 'Once skin no longer stings or flakes, reintroduce active treatments 2 nights per week using the Sandwich Protocol.']
+    ],
+    mistakes: [
+      'Continuing to use high-strength AHA/BHA peels while trying to repair a burning, damaged barrier.',
+      'Selecting a heavy, comedogenic Cica balm designed for dry body skin instead of a lightweight facial gel-cream.',
+      'Rinsing face with very hot water or scrubbing with harsh face brushes during recovery.',
+      'Expecting Cica moisturizer to unclog deep blackheads; its role is anti-inflammatory healing, not exfoliation.',
+      'Stopping moisturizer as soon as skin stops burning instead of completing a full 14-day lipid restoration cycle.'
+    ],
+    dermIntro: 'Consult a dermatologist if your skin displays severe contact dermatitis, weeping lesions, persistent facial burning, or rosacea flare-ups that fail to improve after 2 weeks.',
+    dermList: [
+      'Seek medical evaluation for severe burning, swelling, or allergic contact dermatitis.',
+      'Consult a clinician if barrier damage is accompanied by infected pustular breakouts.',
+      'Ask a dermatologist for prescription barrier repair creams if OTC moisturizers fail.',
+      'Bring your current product shelf to identify the specific irritant causing barrier failure.',
+      'Discuss gentle acne maintenance options suitable for sensitive skin phototypes.'
+    ],
+    scanUse: 'Use MyMirror AI skin analysis to track barrier recovery, skin hydration index, and redness reduction over 14 days in 60 seconds.',
+    faqs: [
+      ['What is Cica in skincare?', 'Cica refers to Centella Asiatica (Gotu Kola) is a medicinal botanical extract rich in Madecassoside, Asiaticoside, Madecassic Acid, and Asiatic Acid. These triterpenoid bio-compounds suppress pro-inflammatory cytokines (IL-1b, TNF-alpha), accelerate epidermal wound closure, stimulate Type I collagen synthesis, and restore essential lipid barrier function on sensitive skin.'],
+      ['Can Cica moisturizer cause breakouts?', 'Lightweight, non-comedogenic Cica gel-creams rarely cause breakouts. Avoid heavy balms containing shea butter or coconut oil if oily.'],
+      ['How long does it take to repair a damaged skin barrier with Cica?', 'Mild skin barrier irritation improves within 3 to 7 days of pausing active acids. Severe barrier compromise caused by over-exfoliation, retinoid burning, or chemical peels typically requires 14 to 21 days of dedicated repair using non-comedogenic Cica gel-creams and strict sun protection.'],
+      ['Can I use Cica moisturizer with Salicylic Acid?', 'Yes. Cica moisturizer is an ideal pairing for Salicylic acid treatments. While Salicylic acid penetrates deep into pores to dissolve oil and microcomedones, Centella Asiatica bio-compounds soothe surface micro-inflammation and prevent potential dryness or barrier tightness.'],
+      ['Is Cica suitable for oily Indian skin?', 'Yes. Water-based Cica gel-creams hydrate oily skin without adding heavy oils or shine in humid weather.'],
+      ['Does Cica help fade post-acne dark marks?', 'By suppressing active inflammation early, Cica reduces the severity of post-inflammatory hyperpigmentation (PIH).'],
+      ['Can I use Cica moisturizer morning and night?', 'Yes. Apply Cica gel-cream moisturizer twice daily to clean skin—once during your morning routine under broad-spectrum SPF 50 sunscreen, and once at night following gentle cleansing to support continuous epidermal lipid restoration and soothe inflammation.'],
+      ['What is the difference between Cica gel and Cica balm?', 'Cica gels are water-based and suitable for acne-prone skin, whereas Cica balms are thick occlusives designed for extreme dry patches.']
+    ],
+    sources: [
+      ['Indian Journal of Dermatology centella review', 'https://ijdvl.com/centella-asiatica-in-dermatology/'],
+      ['PMC centella asiatica wound healing study', 'https://pmc.ncbi.nlm.nih.gov/articles/PMC3116297/'],
+      ['AAD skin barrier care guidance', 'https://www.aad.org/public/everyday-care/skin-care-basics/dry/repair-skin-barrier']
+    ]
+  },
+  {
+    id: 'ACR9',
+    slug: 'alpha-arbutin-serum-for-acne-dark-spots-indian-skin',
+    title: 'Alpha Arbutin 2% Serum for Acne Dark Spots on Indian Skin | MyMirror',
+    description: 'Discover how 2% Alpha Arbutin serum fades post-acne dark marks (PIH) on Indian skin phototypes IV-VI without irritation or rebounding hyperpigmentation.',
+    ogTitle: 'Alpha Arbutin 2% Serum for Acne Dark Spots on Indian Skin',
+    h1: 'Alpha Arbutin 2% serum for acne dark spots on Indian skin: gentle PIH fading guide',
+    eyebrow: 'Hyperpigmentation guide',
+    primaryKeyword: 'alpha arbutin serum for acne dark spots indian skin',
+    secondaryKeywords: ['alpha arbutin 2', 'post inflammatory hyperpigmentation', 'dark spot fading', 'tyrosinase inhibitor', 'hyaluronic acid arbutin'],
+    heroImage: '/assets/images/kojic_acid_cream_india_og_1786876834752.jpg',
+    heroAlt: 'Alpha Arbutin 2% serum dropper for fading acne dark spots on Indian skin',
+    heroNote: 'Gentle hydroquinone glycoside, PIH, or tone evenness?',
+    heroCopy: 'Alpha Arbutin is a naturally derived hydroquinone glucoside that gently inhibits tyrosinase activity. For Indian skin phototypes IV to VI, 2% Alpha Arbutin serum selectively targets hyperactive melanocytes to fade brown post-acne marks (PIH) without causing halo hypopigmentation, skin peeling, or rebound pigmentation.',
+    decisionIntro: 'This guide explains how 2% Alpha Arbutin serum functions on melanin-rich Indian skin. Learn how to layer Alpha Arbutin with Niacinamide or Vitamin C, how long it takes to fade flat brown PIH marks, and why gentle daily application outperforms aggressive chemical peels.',
+    decisionCards: [
+      ['Best fit', 'Flat brown post-acne dark marks (PIH), sun spots, uneven skin tone, and sensitive skin that reacts poorly to strong peeling acids.'],
+      ['Use more caution', 'Active inflamed pustular acne requiring antibacterial treatment, or red vascular marks (PIE) that need capillary calming.'],
+      ['Safety profile', 'Alpha Arbutin releases hydroquinone slowly via enzymatic hydrolysis, delivering safe depigmenting action without cytotoxicity or ochronosis risk.']
+    ],
+    indianSkinIntro: 'Melanin-rich Indian skin possesses highly reactive melanocytes that produce excess melanin whenever skin experiences acne inflammation. Traditional depigmenting agents like high-strength hydroquinone carry risks of ochronosis or halo bleaching if mismanaged. 2% Alpha Arbutin offers a safer alternative: as a glycosylated hydroquinone derivative, it competitively inhibits the tyrosinase enzyme, slowing L-DOPA synthesis in melanocytes. Because it releases active compounds gradually, it fades stubborn brown acne marks smoothly over 8 to 12 weeks while maintaining surrounding normal skin tone.',
+    indianRows: [
+      ['Tyrosinase competitive inhibition', 'Slows melanin synthesis in hyperactive melanocytes to even skin tone.', 'Apply twice daily under sunscreen for 8 to 12 weeks.'],
+      ['Gentle depigmentation', 'Does not cause skin peeling, dryness, or irritation on sensitive skin.', 'Ideal entry active for beginners with post-acne PIH.'],
+      ['Synergistic pairing', 'Pairs exceptionally well with 5% Niacinamide and Hyaluronic acid.', 'Apply after cleansing before heavier creams.'],
+      ['Sun stability', 'Stable under daylight when worn with broad-spectrum SPF 50 sunscreen.', 'Mandatory sunscreen pairing to prevent UV dark mark darkening.']
+    ],
+    safeIntro: 'A successful Alpha Arbutin routine requires consistent daily application, gentle routine layering, and strict daytime sun protection to protect fading post-acne marks.',
+    safeSteps: [
+      ['Cleanse gently with mild cleanser', 'Wash face with a hydrating cleanser and pat dry gently.'],
+      ['Apply 2-3 drops of 2% Alpha Arbutin serum', 'Dispense 2 to 3 drops onto fingertips and pat evenly across face, concentrating on dark mark zones.'],
+      ['Layer with 5% Niacinamide or moisturizer', 'Allow serum to absorb for 1 minute, then follow with moisturizer to lock in hydration.'],
+      ['Apply broad-spectrum SPF 50 in daytime', 'Finish morning routine with broad-spectrum sunscreen to block UV-induced melanogenesis.'],
+      ['Track progress over 8 to 12 weeks', 'Take weekly photos under consistent lighting to evaluate gradual dark spot fading.']
+    ],
+    mistakes: [
+      'Expecting instant dark spot removal within 7 days; melanocyte turnover requires 6 to 8 weeks.',
+      'Skipping daily sunscreen while using brightening serums, allowing UV rays to re-darken fading marks.',
+      'Combining Alpha Arbutin with multiple strong exfoliants that irritate skin and cause new PIH.',
+      'Applying serum to open, picked pimples instead of waiting for inflammation to settle.',
+      'Using unverified DIY arbutin mixtures that degrade under light and heat.'
+    ],
+    dermIntro: 'Consult a dermatologist if your dark spots are symmetrical (melasma), spreading rapidly, or failing to fade after 12 weeks of compliant serum and sunscreen use.',
+    dermList: [
+      'Seek evaluation for symmetrical facial patches that may indicate melasma.',
+      'Consult a clinician if post-acne marks are accompanied by pitted structural scarring.',
+      'Discuss prescription combination depigmenting creams for stubborn deep dermal PIH.',
+      'Bring a 3-month photo log tracking mark intensity and routine compliance.',
+      'Disclose all current cosmetic serums, oral supplements, and medical history.'
+    ],
+    scanUse: 'Use MyMirror AI skin analysis to track dark spot intensity, melanin distribution, and overall tone evenness over 8 to 12 weeks in 60 seconds.',
+    faqs: [
+      ['What does Alpha Arbutin do for acne marks?', 'Alpha Arbutin is a glycosylated hydroquinone derivative that competitively inhibits the tyrosinase enzyme within melanocytes. By slowing down L-DOPA oxidation, it reduces excess melanin synthesis, fading brown post-acne dark marks (PIH) and sun spots without inducing skin peeling or cytotoxicity.'],
+      ['Can I use Alpha Arbutin every day?', 'Yes. 2% Alpha Arbutin is exceptionally gentle and non-irritating, making it suitable for consistent daily application both in the morning under broad-spectrum sunscreen and at night under your regular moisturizer.'],
+      ['Is Alpha Arbutin safer than Hydroquinone for Indian skin?', 'Yes. Alpha Arbutin releases hydroquinone slowly, making it safe for long-term use without risk of ochronosis or halo bleaching.'],
+      ['Can I combine Alpha Arbutin with Niacinamide?', 'Yes. Niacinamide blocks pigment transfer while Alpha Arbutin inhibits pigment synthesis, creating a powerful dual-action pairing.'],
+      ['How long does Alpha Arbutin take to fade dark spots?', 'Most users observe initial dark spot fading between weeks 6 and 8 of daily morning and night application. Optimal overall skin tone evenness and PIH reduction are typically achieved by week 12 when paired with daytime broad-spectrum SPF 50 sunscreen.'],
+      ['Does Alpha Arbutin cause skin purging?', 'No. Alpha Arbutin does not increase cell turnover, so it does not cause purging. New pimples indicate ongoing acne.'],
+      ['Can I use Alpha Arbutin with Vitamin C?', 'Yes. Combining Alpha Arbutin with Vitamin C enhances antioxidant protection and brightens post-acne marks.'],
+      ['Should I apply Alpha Arbutin before or after moisturizer?', 'Apply 2 to 3 drops of 2% Alpha Arbutin serum directly to clean skin immediately after cleansing or toning, allowing it 60 seconds to absorb before sealing with your lightweight oil-free moisturizer and daytime SPF 50.']
+    ],
+    sources: [
+      ['JAAD alpha arbutin hyperpigmentation review', 'https://www.jaad.org/article/S0190-9622(18)30123-5/fulltext'],
+      ['IJDVL topical depigmenting agents guide', 'https://ijdvl.com/topical-depigmenting-agents-in-hyperpigmentation/'],
+      ['AAD dark spots fading protocol', 'https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots']
+    ]
+  },
+  {
+    id: 'ACR10',
+    slug: 'spearmint-tea-for-hormonal-acne-pcos-india',
+    title: 'Spearmint Tea for Hormonal Acne & PCOS on Indian Skin | MyMirror',
+    description: 'Learn how spearmint tea helps regulate androgen-driven hormonal breakouts and jawline acne in Indian women with PCOS alongside dermatologist care.',
+    ogTitle: 'Spearmint Tea for Hormonal Acne & PCOS on Indian Skin',
+    h1: 'Spearmint tea for hormonal acne & PCOS on Indian skin: benefits, science & routine',
+    eyebrow: 'Hormonal acne guide',
+    primaryKeyword: 'spearmint tea for hormonal acne pcos india',
+    secondaryKeywords: ['spearmint tea acne', 'pcos hormonal acne', 'anti androgen tea', 'jawline acne breakouts', 'sebum regulation'],
+    heroImage: '/assets/images/stress-acne.jpg',
+    heroAlt: 'Spearmint tea cup and herbal leaves for hormonal acne and PCOS care in India',
+    heroNote: 'Anti-androgenic herbal support, jawline breakouts, or PCOS management?',
+    heroCopy: 'Spearmint (Mentha spicata) tea has demonstrated mild anti-androgenic properties in clinical studies. For Indian women experiencing androgen-driven jawline acne, sebum hypersecretion, or PCOS-related breakouts, drinking 1 to 2 cups of organic spearmint tea daily offers a natural complementary support mechanism alongside medical dermatologist care.',
+    decisionIntro: 'This guide explores the dermatological science, clinical studies, and practical routine integration of spearmint tea for hormonal jawline acne and PCOS in India. Learn how anti-androgenic herbal polyphenols influence free testosterone levels, how to pair internal support with topical skincare, and when medical endocrinology evaluation is necessary.',
+    decisionCards: [
+      ['Best fit', 'Deep, painful jawline and chin acne papules that flare predictably around menstrual cycles or PCOS hormonal imbalances.'],
+      ['Use more caution', 'Pregnancy, GERD/acid reflux sensitivity, androgen-deficiency conditions, or expecting herbal tea alone to replace medical prescriptions.'],
+      ['Scientific basis', 'Clinical trials show 2 cups of spearmint tea daily for 30 days significantly reduces free serum testosterone levels in women with hirsutism and PCOS.']
+    ],
+    indianSkinIntro: 'Hormonal acne in Indian women frequently manifests as deep, tender, subcutaneous nodules along the lower third of the face—specifically the jawline, chin, and upper neck. Elevated free androgens (such as dihydrotestosterone, DHT) bind to androgen receptors in sebaceous glands, triggering sebum hypersecretion and follicular hyperkeratinization. Because deep hormonal lesions carry high risks of severe post-inflammatory hyperpigmentation (PIH) and pitted scarring on melanin-rich skin, controlling sebum production at the systemic level is valuable. Spearmint tea contains active polyphenols (rosmarinic acid, carvone) that inhibit 5-alpha-reductase, reducing the conversion of testosterone into potent DHT. When combined with topical barrier care and dermatologist-directed treatments, spearmint tea helps reduce the frequency of monthly hormonal flare-ups.',
+    indianRows: [
+      ['Anti-androgenic action', 'Reduces free serum testosterone and inhibits 5-alpha-reductase activity.', 'Drink 1 to 2 cups daily consistently for at least 60 days.'],
+      ['Sebum regulation', 'Decreases sebaceous gland hyperresponsiveness, reducing oily shine and pore congestion.', 'Pairs well with gentle BHA cleansers and oil-free moisturizers.'],
+      ['PIH risk reduction', 'Preventing deep nodular breakouts reduces long-lasting brown jawline marks.', 'Protect healing areas with daily broad-spectrum SPF 50.'],
+      ['Complementary PCOS care', 'Supports lifestyle modifications including low-GI Indian diets and exercise.', 'Spearmint tea serves as a helpful herbal lifestyle adjunct and does not replace comprehensive medical gynecological or endocrinological evaluation and treatments.']
+    ],
+    safeIntro: 'Integrating spearmint tea into a hormonal acne routine works best when treated as a gentle, long-term dietary habit alongside a consistent, non-irritating topical skincare routine.',
+    safeSteps: [
+      ['Choose organic loose-leaf spearmint tea', 'Select 100% pure organic Mentha spicata (spearmint) leaves, avoiding peppermint blends.'],
+      ['Steep 1 cup twice daily', 'Steep 1 teaspoon of leaves in hot water for 5 to 10 minutes. Drink 1 cup in the morning and 1 cup in the evening.'],
+      ['Maintain consistent routine for 60-90 days', 'Hormonal regulation requires 2 to 3 menstrual cycles to demonstrate visible skin clarity improvement.'],
+      ['Maintain gentle topical barrier care', 'Use a gentle BHA cleanser, oil-free moisturizer, and non-comedogenic sunscreen daily.'],
+      ['Monitor cycle patterns and skin signals', 'Track jawline breakout counts before, during, and after your menstrual period using a skin log.']
+    ],
+    mistakes: [
+      'Confusing spearmint tea with peppermint tea; peppermint lacks the specific anti-androgenic polyphenol profile.',
+      'Expecting overnight clearing of deep hormonal cysts after drinking tea for only 3 days.',
+      'Stopping prescribed medical acne treatments or PCOS medications without consulting your doctor.',
+      'Drinking excessive quantities (over 4 cups daily) which may cause mild stomach upset or acid reflux.',
+      'Neglecting topical sunscreen, allowing deep jawline pimple marks to turn into dark PIH spots.'
+    ],
+    dermIntro: 'Consult a dermatologist or endocrinologist if jawline acne is severe, painful, causing scarring, or accompanied by irregular periods, excess facial hair (hirsutism), or hair thinning.',
+    dermList: [
+      'Seek endocrinological evaluation for irregular menstrual cycles, hirsutism, or suspected PCOS.',
+      'Consult a dermatologist for severe cystic nodules that require prescription hormonal therapies (e.g., Spironolactone).',
+      'Discuss blood hormone panel testing (Free Testosterone, DHEAS, LH/FSH ratio).',
+      'Bring a 3-month cycle and breakout tracker to your consultation.',
+      'Disclose all herbal supplements, teas, and prescription medications.'
+    ],
+    scanUse: 'Use MyMirror AI skin analysis to track jawline acne lesion counts, inflammatory spot reduction, and skin clarity over 60 to 90 days in 60 seconds.',
+    faqs: [
+      ['How does spearmint tea help hormonal acne?', 'Spearmint tea contains rich polyphenols such as rosmarinic acid and carvone that reduce free serum testosterone levels and inhibit 5-alpha-reductase enzymatic conversion. This action decreases sebaceous gland androgen-binding, lessening deep jawline breakouts and excessive sebum hypersecretion.'],
+      ['What is the difference between spearmint tea and peppermint tea?', 'Spearmint (Mentha spicata) has anti-androgenic properties, whereas peppermint (Mentha piperita) contains higher menthol and does not reduce testosterone.'],
+      ['How many cups of spearmint tea should I drink daily for acne?', 'Clinical studies recommend drinking 2 cups of organic spearmint tea daily for hormonal benefits.'],
+      ['How long does spearmint tea take to clear jawline breakouts?', 'Most women notice reduced hormonal flare-up severity after 60 to 90 days of consistent daily use.'],
+      ['Is spearmint tea safe during pregnancy?', 'Do not consume medicinal amounts of spearmint tea during pregnancy or breastfeeding without consulting your obstetrician.'],
+      ['Can men drink spearmint tea for acne?', 'Men should use caution, as spearmint tea can lower free testosterone levels. Consult a doctor before regular use.'],
+      ['Can I drink spearmint tea while taking PCOS medication?', 'Yes, spearmint tea is generally safe alongside PCOS diets and supplements, but inform your doctor.'],
+      ['Does spearmint tea cure PCOS?', 'No. Spearmint tea is a supportive herbal beverage that aids symptom management; it does not cure underlying PCOS.']
+    ],
+    sources: [
+      ['Phytotherapy Research spearmint anti-androgen study', 'https://pubmed.ncbi.nlm.nih.gov/19585478/'],
+      ['IJDVL hormonal acne in Indian women review', 'https://ijdvl.com/hormonal-acne-in-females/'],
+      ['AAD adult female acne guidelines', 'https://www.aad.org/public/diseases/acne/really-acne/adult-acne']
+    ]
+  },
+  {
+    id: 'ACR11',
+    slug: 'niacinamide-5-percent-serum-for-acne-marks-india',
+    title: '5% Niacinamide Serum for Acne Marks & Oil Control on Indian Skin | MyMirror',
+    description: 'Learn why 5% Niacinamide is the optimal strength for fading acne marks and controlling oil on Indian skin without triggering 10% irritation breakouts.',
+    ogTitle: '5% Niacinamide Serum for Acne Marks & Oil Control on Indian Skin',
+    h1: '5% Niacinamide serum for acne marks & oil control on Indian skin: why 10% may irritate',
+    eyebrow: 'Ingredient concentration guide',
+    primaryKeyword: '5 percent niacinamide serum for acne marks india',
+    secondaryKeywords: ['5 niacinamide serum', 'niacinamide 10 vs 5', 'acne marks indian skin', 'barrier repair niacinamide', 'sebum regulation'],
+    heroImage: '/assets/images/salicylic_dropper.jpg',
+    heroAlt: '5% Niacinamide serum bottle for oil control and acne mark fading on Indian skin',
+    heroNote: '5% optimal concentration, barrier repair, or 10% irritation control?',
+    heroCopy: 'Niacinamide (Vitamin B3) is one of dermatologys most versatile actives, but clinical studies prove that 2% to 5% is the sweet spot for barrier repair, sebum regulation, and melanosome transfer inhibition. In India, over-concentrated 10% or 15% serums frequently cause stinging, flushing, and breakout flares. A 5% Niacinamide serum delivers full clinical benefits with zero barrier irritation.',
+    decisionIntro: 'This concentration guide explains why 5% Niacinamide serum outperforms aggressive 10% formulas for acne-prone Indian skin. Learn how Niacinamide inhibits melanosome transfer to fade brown PIH, regulates sebum synthesis, strengthens ceramide production, and pairs with Salicylic acid or Retinoids.',
+    decisionCards: [
+      ['Best fit', 'Oily skin, enlarged pores, post-acne dark marks (PIH), compromised skin barrier, and skin that broke out from 10% Niacinamide serums.'],
+      ['Use more caution', 'Expecting Niacinamide alone to clear severe cystic acne, or combining multiple 10% active serums simultaneously.'],
+      ['Clinical evidence', 'Peer-reviewed studies confirm 5% Niacinamide significantly reduces hyperpigmentation and sebum excretion rate after 4 to 8 weeks, with optimal skin tolerance.']
+    ],
+    indianSkinIntro: 'Niacinamide (Nicotinamide) works through multiple physiological pathways relevant to Indian skin phototypes IV to VI. First, it inhibits the transfer of melanosomes from melanocytes to surrounding keratinocytes by 35% to 68%, preventing new dark post-acne marks from fixing in the epidermis. Second, it increases epidermal ceramide and free fatty acid synthesis, repairing the damaged stratum corneum. Third, it reduces sebaceous lipogenesis, controlling excess oil production in humid weather. However, marketing trends have driven serum concentrations up to 10% or 20%. On sensitive or acne-prone Indian skin, high concentrations trigger nicotinic acid flushing, histamine release, and localized micro-inflammation that creates new acne breakouts. Switching to a well-formulated 5% Niacinamide serum provides all physiological benefits while preserving skin barrier calm.',
+    indianRows: [
+      ['Melanosome transfer inhibition', 'Blocks melanin transfer to epidermal cells, fading post-acne dark marks smoothly.', 'Apply 5% serum twice daily for 8 weeks.'],
+      ['Ceramide synthesis', 'Boosts natural ceramide and lipid production to strengthen fragile barriers.', 'Helps cushion skin against retinoid or BHA dryness.'],
+      ['Sebum regulation', 'Reduces triglyceride synthesis in sebaceous glands, controlling humid T-zone shine.', 'Ideal for daily morning and night application.'],
+      ['Optimal 5% concentration', 'Delivers maximum dermatological efficacy without nicotinic acid flushing or irritation.', 'Safer for sensitive and acne-prone phototypes.']
+    ],
+    safeIntro: 'A safe 5% Niacinamide routine integrates smoothly into morning and night skincare regimens, serving as a soothing, oil-balancing foundation for active acne treatments.',
+    safeSteps: [
+      ['Cleanse with a gentle face wash', 'Wash face gently with a mild cleanser and pat dry.'],
+      ['Apply 3-4 drops of 5% Niacinamide serum', 'Dispense 3 to 4 drops of 5% Niacinamide serum and pat evenly over face and neck.'],
+      ['Follow with lightweight oil-free moisturizer', 'Apply an oil-free gel-moisturizer to lock in hydration and support barrier ceramides.'],
+      ['Protect with broad-spectrum SPF 50 daytime', 'Finish morning routine with broad-spectrum sunscreen to prevent dark mark recurrence.'],
+      ['Pair with night actives as needed', 'Layer 5% Niacinamide under Adapalene or Azelaic acid at night to cushion against retinoid irritation.']
+    ],
+    mistakes: [
+      'Assuming higher percentage (10% or 20%) equals faster results; high doses often cause redness and breakouts.',
+      'Using multiple products containing Niacinamide simultaneously (cleanser, serum, moisturizer, sunscreen), leading to unintended high total exposure.',
+      'Mistaking 10% Niacinamide irritation breakouts for beneficial "skin purging".',
+      'Applying serum to irritated, broken skin without buffering with a moisturizer.',
+      'Expecting Niacinamide to replace daytime sunscreen when fading post-acne dark spots.'
+    ],
+    dermIntro: 'Consult a dermatologist if your skin experiences severe flushing, persistent burning, hives, or active acne that requires medical prescription care.',
+    dermList: [
+      'Seek evaluation if your skin develops allergic contact dermatitis or persistent flushing.',
+      'Consult a clinician if acne marks are accompanied by deep structural pitted scarring.',
+      'Ask a dermatologist to recommend 5% medical-grade Niacinamide formulations.',
+      'Bring all current serums and creams to calculate your total Niacinamide daily exposure.',
+      'Discuss prescription combinations for stubborn post-inflammatory hyperpigmentation.'
+    ],
+    scanUse: 'Use MyMirror AI skin analysis to measure oiliness levels, pore visibility, and dark mark fading over 4 to 8 weeks in 60 seconds.',
+    faqs: [
+      ['Why is 5% Niacinamide better than 10% for acne-prone skin?', 'Clinical dermatological trials confirm that a 5% Niacinamide concentration delivers maximum barrier repair, ceramide synthesis, sebum regulation, and melanosome transfer inhibition. Over-concentrated 10% or 20% serums frequently trigger nicotinic acid flushing, stinging, and localized micro-inflammation that causes new breakout flares.'],
+      ['Does 5% Niacinamide fade dark acne marks?', 'Yes. 5% Niacinamide inhibits melanosome transfer, significantly fading post-acne brown marks (PIH) over 4 to 8 weeks.'],
+      ['Can I use 5% Niacinamide with Salicylic Acid?', 'Yes. 5% Niacinamide calms inflammation and repairs the barrier, making it an excellent pairing with Salicylic acid.'],
+      ['Does 5% Niacinamide cause skin purging?', 'No. Niacinamide does not increase cell turnover. Breakouts from Niacinamide are due to product irritation or high concentration.'],
+      ['Can I use 5% Niacinamide serum twice a day?', 'Yes. 5% Niacinamide is gentle and suitable for both morning and evening use.'],
+      ['Can I use 5% Niacinamide with Vitamin C?', 'Yes. Modern stable 5% Niacinamide serums can be safely layered with Vitamin C for enhanced brightening.'],
+      ['Does 5% Niacinamide reduce oiliness and pore size?', 'Yes. 5% Niacinamide regulates sebum production, reducing excess shine and making pores appear tighter.'],
+      ['How long does 5% Niacinamide take to show results?', 'Oil control and redness reduction appear within 1 to 2 weeks, while dark mark fading requires 4 to 8 weeks of daily use.']
+    ],
+    sources: [
+      ['British Journal of Dermatology niacinamide study', 'https://pubmed.ncbi.nlm.nih.gov/12100180/'],
+      ['IJDVL niacinamide in dermatology review', 'https://ijdvl.com/niacinamide-in-dermatology/'],
+      ['AAD hyperpigmentation care guidelines', 'https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots']
+    ]
+  },
     {
     id: 'ACR6',
     slug: 'azelaic-acid-for-acne-india',
@@ -412,6 +747,221 @@ const pages = [
 ];
 
 const productDetails = {
+  ACR7: {
+    intro: 'Clindamycin 1% product formats include prescription topical gels, aqueous lotions, and combination active formulas with Benzoyl Peroxide designed for acute inflammatory acne.',
+    formats: [
+      ['1% Topical Gel', 'Lightweight aqueous gel for active red papules and pustules.', 'Acute inflammatory breakouts.', 'Must be paired with Benzoyl Peroxide to prevent resistance.'],
+      ['Clindamycin + Benzoyl Peroxide Combination Gel', 'Fixed-dose combination gel providing antibacterial action without resistance.', 'Moderate to severe inflammatory acne.', 'May bleach fabrics; use at night and protect eyes and lips.'],
+      ['Clindamycin + Adapalene Combination Gel', 'Prescription retinoid plus antibiotic combination for dual acne action.', 'Comedonal and inflammatory acne under medical supervision.', 'Requires gradual introduction to prevent retinoid dryness.']
+    ],
+    checklist: [
+      'Always pair Clindamycin gel with 2.5% Benzoyl Peroxide.',
+      'Use for a maximum of 4 to 8 weeks during active flare-ups.',
+      'Apply a thin layer to clean, completely dry skin.',
+      'Follow with an oil-free moisturizer to protect barrier lipids.',
+      'Taper off once active inflammation has resolved.'
+    ],
+    landscape: 'In India, Clindamycin 1% gels are available in pharmacy listings such as Clindac A, Deriva C, and Persol AC combination products. Selecting a gel vehicle ensures rapid absorption without clogging pores in humid weather.',
+    buyFirst: 'Start with a 1% Clindamycin gel paired with a 2.5% Benzoyl Peroxide wash. Use an oil-free moisturizer to maintain barrier comfort.',
+    products: [
+      {
+        name: 'Benzac AC 2.5% Gel',
+        badge: 'Resistance Prevention Partner',
+        image: '/assets/images/product-examples/benzac-ac-25-gel.jpg',
+        url: 'https://www.1mg.com/drugs/benzac-ac-2.5-gel-678551',
+        detail: 'Essential Benzoyl Peroxide 2.5% gel for pairing with Clindamycin to prevent antibiotic resistance.',
+        caution: 'Use a thin layer; can bleach colored fabrics.'
+      },
+      {
+        name: 'Deriva MS Aqueous Gel',
+        badge: 'Retinoid Maintenance Partner',
+        image: '/assets/images/product-examples/deriva-ms-aqueous-gel.jpg',
+        url: 'https://pharmeasy.in/health-care/products/deriva-ms-aqueous-gel-15gm-214902',
+        detail: 'Adapalene gel example for transitioning off Clindamycin once active inflammation clears.',
+        caution: 'Use night-time sandwich method.'
+      },
+      {
+        name: 'Excela Acne-Prone Moisturizer',
+        badge: 'Barrier Repair Buffer',
+        image: '/assets/images/product-examples/excela-moisturiser.jpg',
+        url: 'https://pharmeasy.in/health-care/products/excela-moisturiser-bottle-of-50gm-pump-208388',
+        detail: 'Lightweight pharmacy moisturizer to prevent flaking during active antibacterial treatment.',
+        caution: 'Apply over dry skin.'
+      }
+    ]
+  },
+  ACR8: {
+    intro: 'Cica moisturizer formats include lightweight gel-creams, soothing emulsions, and barrier recovery balms formulated with Centella Asiatica extracts for sensitive, acne-prone skin.',
+    formats: [
+      ['Soothing Cica Gel-Cream', 'Water-based gel moisturizer with Centella Asiatica and Madecassoside.', 'Oily, acne-prone, and over-exfoliated Indian skin.', 'Ideal for tropical humidity; provides non-greasy hydration.'],
+      ['Cica Emulsion / Fluid', 'Lightweight fluid lotion for sensitive or combination skin types.', 'Daily barrier maintenance and mild redness relief.', 'Layers easily under broad-spectrum sunscreen.'],
+      ['Intensive Cica Barrier Balm', 'Richer cream with ceramides and shea butter.', 'Severe barrier breakdown, peeling, or post-procedure care.', 'Use as a short-term spot balm to avoid heavy pore congestion.']
+    ],
+    checklist: [
+      'Choose oil-free Cica gel-creams for acne-prone skin.',
+      'Look for Madecassoside and Asiaticoside on ingredient lists.',
+      'Apply to slightly damp skin after gentle cleansing.',
+      'Pause all active peeling acids while repairing barrier damage.',
+      'Pair with broad-spectrum SPF 50 during daytime.'
+    ],
+    landscape: 'In India, Cica moisturizers range from K-beauty Centella gels to Indian pharmacy barrier creams. Selecting a non-comedogenic gel-cream texture ensures deep soothing without triggering acne breakouts in humid weather.',
+    buyFirst: 'Choose a lightweight Cica gel-cream and use it twice daily on clean skin for 14 days to fully restore barrier function.',
+    products: [
+      {
+        name: 'Minimalist Vitamin B5 10% Moisturizer',
+        badge: 'Soothing Barrier Gel',
+        image: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg',
+        url: 'https://beminimalist.co/products/vitamin-b5-10-moisturizer',
+        detail: 'Oil-free soothing moisturizer with Panthenol and Copper for barrier repair.',
+        caution: 'Ideal for over-exfoliated skin.'
+      },
+      {
+        name: 'Excela Moisturiser for Acne-Prone Skin',
+        badge: 'Pharmacy Barrier Partner',
+        image: '/assets/images/product-examples/excela-moisturiser.jpg',
+        url: 'https://pharmeasy.in/health-care/products/excela-moisturiser-bottle-of-50gm-pump-208388',
+        detail: 'Dermatologist-recommended non-comedogenic moisturizer for sensitive acne skin.',
+        caution: 'Apply morning and night.'
+      },
+      {
+        name: 'Deconstruct Soothing Cleansing Balm',
+        badge: 'Gentle Cleansing Partner',
+        image: '/assets/images/product-examples/deconstruct-cleansing-balm.jpg',
+        url: 'https://www.thedeconstruct.in/products/soothing-cleansing-balm',
+        detail: 'Gentle cleansing balm for removing sunscreen without stripping fragile barrier lipids.',
+        caution: 'Emulsify thoroughly with lukewarm water.'
+      }
+    ]
+  },
+  ACR9: {
+    intro: 'Alpha Arbutin 2% product formats include hydrating facial serums, tone-correcting emulsions, and multi-active brightening blends designed for hyperpigmentation on melanin-rich skin.',
+    formats: [
+      ['2% Alpha Arbutin + Hyaluronic Acid Serum', 'Water-based serum providing gentle tyrosinase inhibition and hydration.', 'Flat brown post-acne dark marks (PIH) and sun spots.', 'Apply twice daily on clean skin under sunscreen.'],
+      ['Alpha Arbutin + Niacinamide Serum', 'Dual-active serum targeting both melanin synthesis and melanosome transfer.', 'Stubborn PIH and overall skin tone evening.', 'Excellent gentle pairing for sensitive Indian skin.'],
+      ['Alpha Arbutin + Kojic Acid Cream', 'Compounded depigmenting cream for targeted mark care.', 'Localized dark spots under dermatologist guidance.', 'Introduce slowly to monitor skin tolerance.']
+    ],
+    checklist: [
+      'Choose 2% Alpha Arbutin in a water-based serum vehicle.',
+      'Apply 2-3 drops to clean skin twice daily.',
+      'Always finish daytime routine with broad-spectrum SPF 50.',
+      'Pair with 5% Niacinamide for dual-action PIH fading.',
+      'Allow 8 to 12 weeks of consistent use for optimal results.'
+    ],
+    landscape: 'In India, 2% Alpha Arbutin serums are widely available as gentle hydroquinone alternatives. Choosing a water-based formulation with Hyaluronic acid ensures quick absorption without heavy residue in humid weather.',
+    buyFirst: 'Start with a 2% Alpha Arbutin serum used twice daily under a light moisturizer and daytime broad-spectrum sunscreen.',
+    products: [
+      {
+        name: 'Minimalist Tranexamic 3% + Arbutin Serum',
+        badge: 'Tone Evening Serum',
+        image: '/assets/images/product-examples/minimalist-tranexamic-serum.jpg',
+        url: 'https://beminimalist.co/products/tranexamic-3-hpa',
+        detail: 'Targeted serum for fading dark post-acne marks and evening tone on Indian skin.',
+        caution: 'Use daytime SPF 50.'
+      },
+      {
+        name: 'Foxtale Rapid Spot Reduction Drops',
+        badge: 'Brightening Active Drops',
+        image: '/assets/images/product-examples/foxtale-rapid-spot-reduction-drops.jpg',
+        url: 'https://foxtale.in/products/hyperpigmentation-serum-with-tranexamic-acid',
+        detail: 'Gentle spot-fading serum formulated for dark mark reduction.',
+        caution: 'Pat gently on clean skin.'
+      },
+      {
+        name: 'The Derma Co 10% Azelaic Acid Serum',
+        badge: 'Synergistic Active Partner',
+        image: '/assets/images/product-examples/derma-co-tran-zelaic-serum.jpg',
+        url: 'https://thedermaco.com/products/10-azelaic-acid-serum',
+        detail: 'Azelaic acid active serum for complementing Arbutin in dark spot fading.',
+        caution: 'Introduce gradually.'
+      }
+    ]
+  },
+  ACR10: {
+    intro: 'Spearmint tea formats include loose-leaf organic herbal teas, convenient tea bags, and spearmint extracts used as dietary anti-androgenic support for hormonal acne and PCOS.',
+    formats: [
+      ['100% Organic Spearmint Loose-Leaf Tea', 'Pure dried Mentha spicata leaves rich in anti-androgenic polyphenols.', 'Jawline hormonal acne, oily skin, and PCOS support.', 'Steep 1 teaspoon in hot water for 5 to 10 minutes; drink twice daily.'],
+      ['Organic Spearmint Tea Bags', 'Convenient pre-portioned tea bags for daily herbal brewing.', 'Daily hormonal routine integration at home or work.', 'Ensure 100% Mentha spicata without added artificial flavors.'],
+      ['Herbal Spearmint Infusion Blends', 'Blends pairing spearmint with chamomile or green tea.', 'Relaxation and antioxidant support.', 'Verify spearmint content is sufficient for anti-androgenic benefits.']
+    ],
+    checklist: [
+      'Select 100% pure organic Mentha spicata (spearmint).',
+      'Avoid peppermint tea which lacks anti-androgenic polyphenols.',
+      'Drink 1 to 2 cups daily consistently for 60 to 90 days.',
+      'Maintain gentle non-comedogenic topical skincare routine.',
+      'Consult an endocrinologist for comprehensive PCOS evaluation.'
+    ],
+    landscape: 'In India, organic spearmint tea is available from herbal tea brands and online listings. Selecting pure loose-leaf Mentha spicata ensures maximum polyphenol concentration for hormonal acne support.',
+    buyFirst: 'Buy 100% organic spearmint loose-leaf tea and drink 2 cups daily for 60 days alongside your gentle topical skincare routine.',
+    products: [
+      {
+        name: 'Excela Acne-Prone Moisturizer',
+        badge: 'Topical Routine Partner',
+        image: '/assets/images/product-examples/excela-moisturiser.jpg',
+        url: 'https://pharmeasy.in/health-care/products/excela-moisturiser-bottle-of-50gm-pump-208388',
+        detail: 'Non-comedogenic moisturizer to maintain skin barrier while managing hormonal acne.',
+        caution: 'Apply morning and night.'
+      },
+      {
+        name: 'Benzac AC 2.5% Gel',
+        badge: 'Targeted Inflammatory Spot Care',
+        image: '/assets/images/product-examples/benzac-ac-25-gel.jpg',
+        url: 'https://www.1mg.com/drugs/benzac-ac-2.5-gel-678551',
+        detail: 'Topical Benzoyl peroxide 2.5% gel for treating acute jawline pimples as they surface.',
+        caution: 'Use a thin layer on active spots.'
+      },
+      {
+        name: 'Minimalist Vitamin B5 10% Moisturizer',
+        badge: 'Hydrating Barrier Cushion',
+        image: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg',
+        url: 'https://beminimalist.co/products/vitamin-b5-10-moisturizer',
+        detail: 'Lightweight soothing moisturizer for balancing oil and hydration on hormonal skin.',
+        caution: 'Non-greasy finish.'
+      }
+    ]
+  },
+  ACR11: {
+    intro: 'Niacinamide product formats range from optimal 5% daily serums to over-concentrated 10%-20% formulas, multi-active moisturizer creams, and soothing barrier fluids.',
+    formats: [
+      ['5% Niacinamide + Hyaluronic Acid Serum', 'Clinical sweet-spot concentration for barrier repair, oil control, and mark fading.', 'Oily, acne-prone, and sensitive Indian skin phototypes.', 'Apply 3-4 drops twice daily under moisturizer.'],
+      ['5% Niacinamide + 1% Zinc PCA Serum', 'Combines 5% Niacinamide with Zinc PCA for enhanced sebum regulation.', 'Very oily skin, enlarged pores, and recurring T-zone shine.', 'Ideal daily morning serum under sunscreen.'],
+      ['10% to 20% Niacinamide High-Dose Serums', 'Over-concentrated formulations frequently sold in commercial skincare.', 'Resilient non-sensitive skin requiring strong active exposure.', 'May cause flushing, burning, and micro-inflammation on sensitive skin.']
+    ],
+    checklist: [
+      'Choose 5% Niacinamide concentration for optimal tolerance.',
+      'Avoid 10% or higher if your skin experiences redness or stinging.',
+      'Apply 3-4 drops to clean skin morning and evening.',
+      'Layer under Adapalene or Azelaic acid to buffer retinoid dryness.',
+      'Pair morning application with broad-spectrum SPF 50.'
+    ],
+    landscape: 'In India, Niacinamide serums are widely available, but many brands promote 10% or 15% concentrations. Opting for a gentle 5% serum delivers full dermatological benefits without triggering irritation breakouts.',
+    buyFirst: 'Start with a 5% Niacinamide serum used twice daily under an oil-free moisturizer and daytime broad-spectrum sunscreen.',
+    products: [
+      {
+        name: 'Foxtale Rapid Spot Reduction Drops',
+        badge: '5% Niacinamide Active Serum',
+        image: '/assets/images/product-examples/foxtale-rapid-spot-reduction-drops.jpg',
+        url: 'https://foxtale.in/products/hyperpigmentation-serum-with-tranexamic-acid',
+        detail: 'Formulated with optimal Niacinamide and soothing actives for dark spot reduction.',
+        caution: 'Suitable for daily use.'
+      },
+      {
+        name: 'Minimalist Vitamin B5 10% Moisturizer',
+        badge: 'Barrier Repair Partner',
+        image: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg',
+        url: 'https://beminimalist.co/products/vitamin-b5-10-moisturizer',
+        detail: 'Oil-free hydrating moisturizer that layers perfectly over 5% Niacinamide serum.',
+        caution: 'Apply morning and night.'
+      },
+      {
+        name: 'The Derma Co 1% Salicylic Acid Oil-Free Moisturizer',
+        badge: 'Oil Control Partner',
+        image: '/assets/images/product-examples/derma-co-salicylic-moisturizer.jpg',
+        url: 'https://thedermaco.com/products/1-salicylic-acid-oil-free-moisturizer-for-face-with-oat-extract-50g',
+        detail: 'Active oil-free moisturizer for controlling shine and clearing clogged pores.',
+        caution: 'Use under daytime sunscreen.'
+      }
+    ]
+  },
   ACR6: {
     intro: 'Azelaic acid 10% product formats include OTC gels, topical serums, and combination active formulas designed for acne-prone skin and post-inflammatory hyperpigmentation (PIH). Choosing the right format ensures effective delivery without heavy residue in tropical Indian humidity.',
     formats: [
