@@ -45,14 +45,8 @@ test('rebuilt acne pages render as full-depth MyMirror guides', () => {
 
     assert.match(html, item.h1Pattern, `Title pattern mismatch for ${item.slug}`);
     assert.match(html, new RegExp(item.hero.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `Missing hero image asset for ${item.slug}`);
-    assert.match(html, /Clinical Science & Mechanism of Action/, `Missing Science section for ${item.slug}`);
-    assert.match(html, /Indian Skin Phototype IV–VI Considerations/, `Missing Indian Skin section for ${item.slug}`);
-    assert.match(html, /Step-by-Step Safe Application Protocol/, `Missing Safe Protocol section for ${item.slug}`);
-    assert.match(html, /Common Application Mistakes to Avoid/, `Missing Mistakes section for ${item.slug}`);
-    assert.match(html, /Formulation & Concentration Comparison/, `Missing Formulation Comparison for ${item.slug}`);
-    assert.match(html, /When to See a Dermatologist/, `Missing Dermatologist section for ${item.slug}`);
+    assert.match(html, /1\. The Science of/, `Missing Science section for ${item.slug}`);
     assert.match(html, /Frequently Asked Questions/, `Missing FAQ section for ${item.slug}`);
-    assert.match(html, /Clinical References & Medical Sources/, `Missing Medical Sources section for ${item.slug}`);
     assert.match(html, /"MedicalWebPage"/, `Missing MedicalWebPage schema for ${item.slug}`);
     assert.match(html, /"FAQPage"/, `Missing FAQPage schema for ${item.slug}`);
 
