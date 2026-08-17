@@ -4,6 +4,11 @@ import test from 'node:test';
 
 const pages = [
   {
+    slug: 'niacinamide-serums-india',
+    h1Pattern: /Niacinamide serums for acne & dark marks on Indian skin/,
+    hero: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg'
+  },
+  {
     slug: 'pcos-supplements-spearmint-inositol-india',
     h1Pattern: /PCOS supplements & Spearmint tea for hormonal acne on Indian skin/,
     hero: '/assets/images/spearmint-tea-pcos-cup.jpg'
