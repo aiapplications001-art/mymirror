@@ -4,6 +4,11 @@ import test from 'node:test';
 
 const pages = [
   {
+    slug: 'salicylic-acid-face-wash-for-acne-indian-skin',
+    h1Pattern: /Salicylic acid face wash for acne on Indian skin/,
+    hero: '/assets/images/sa-cleanser-foam-lather.jpg'
+  },
+  {
     slug: 'adapalene-gel-for-acne-indian-skin-guide',
     h1Pattern: /Adapalene gel for acne on Indian skin/,
     hero: '/assets/images/adapalene-gel-india-og.jpg'

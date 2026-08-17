@@ -7,6 +7,73 @@ const clusterSlug = 'mymirror-acne-rebuilt-guides';
 
 const pages = [
   {
+    id: 'ACR12',
+    slug: 'salicylic-acid-face-wash-for-acne-indian-skin',
+    title: 'Salicylic Acid Face Wash for Acne on Indian Skin | MyMirror',
+    description: 'Learn how 1% vs 2% Salicylic acid face wash clears blackheads & acne on Indian skin. Compare Saslic DS & Minimalist, plus short-contact rules & barrier care.',
+    ogTitle: 'Salicylic Acid Face Wash for Acne on Indian Skin',
+    h1: 'Salicylic acid face wash for acne on Indian skin: 1% vs 2% guide to clearing pores without barrier burn',
+    eyebrow: 'Cleanser active guide',
+    primaryKeyword: 'salicylic acid face wash for acne indian skin',
+    secondaryKeywords: ['1 vs 2 percent salicylic acid face wash', 'saslic ds vs minimalist salicylic cleanser', 'salicylic acid facewash oily skin india', 'short contact therapy bha cleanser', 'salicylic acid cleanser barrier repair'],
+    heroImage: '/assets/images/sa-cleanser-foam-lather.jpg',
+    heroAlt: 'Lathering 2% Salicylic Acid foaming face wash for deep pore cleansing on Indian skin',
+    heroNote: '1% vs 2% strength, short-contact therapy, or squeaky-clean barrier burn?',
+    heroCopy: 'Salicylic acid (Beta Hydroxy Acid, BHA) is an oil-soluble active ingredient that penetrates deep into sebaceous follicles to dissolve trapped sebum, dead skin cells, and microcomedones. For Indian skin exposed to tropical humidity, pollution, and sweat, a Salicylic acid face wash provides essential daily pore-cleansing. However, using high-strength 2% foaming washes twice daily can strip intercellular lipids, leading to barrier tightness and rebound oiliness. Finding the right concentration and application technique is key to clear skin.',
+    decisionIntro: 'This decision guide helps individuals with oily, combination, or acne-prone Indian skin choose the right Salicylic acid face wash concentration (1% vs 2%), compare pharmacy classics like Cipla Saslic DS against modern barrier-conscious cleansers like Minimalist, master 60-second short-contact therapy, and protect the skin barrier against over-exfoliation.',
+    decisionCards: [
+      ['Best fit', 'Oily skin, open blackheads, closed comedones, clogged T-zones, and mild inflammatory acne papules triggered by sweat and humidity.'],
+      ['Use more caution', 'Severe dry eczema-prone skin, active retinoid burning, open picked pimples, or expecting a cleanser alone to cure deep hormonal cysts.'],
+      ['Short-contact rule', 'Lather the Salicylic acid face wash on damp skin for 60 seconds before rinsing completely to allow deep pore penetration without lipid stripping.']
+    ],
+    indianSkinIntro: 'Indian skin phototypes IV to VI face unique environmental and physiological challenges. High ambient humidity combined with atmospheric dust and pollution accelerates sebum hypersecretion. Because BHA is lipophilic, it easily dissolves intra-follicular lipids. However, Indian skin is particularly prone to post-inflammatory hyperpigmentation (PIH). When aggressive 2% BHA cleansers strip the stratum corneum, skin responds with stinging, flaking, and reactive melanogenesis that leaves dark marks. Choosing a gentle 1% daily cleanser or using 2% with 60-second short-contact therapy keeps pores clear while preserving essential barrier lipids.',
+    indianRows: [
+      ['Lipophilic pore penetration', 'BHA dissolves oil inside sebaceous follicles to clear blackheads and microcomedones.', 'Use once or twice daily based on skin oiliness and tolerance.'],
+      ['1% vs 2% concentration choice', '1% is ideal for daily gentle maintenance; 2% targets stubborn oily breakouts.', 'Start with 1% daily or 2% alternate nights to assess barrier tolerance.'],
+      ['60-second contact therapy', 'Lathering for 60 seconds gives BHA time to act before rinsing off completely.', 'Rinse thoroughly with lukewarm water; never leave foam on for minutes.'],
+      ['PIH prevention via calm barrier', 'Preventing squeaky-clean barrier tightness stops secondary melanocyte irritation.', 'Follow immediately with an oil-free hydrating moisturizer.']
+    ],
+    safeIntro: 'A safe Salicylic acid cleanser routine balances deep follicular cleansing with lipid barrier hydration, preventing dryness, flaking, and irritation breakouts.',
+    safeSteps: [
+      ['Splash face with lukewarm water', 'Wet face with clean lukewarm water to prepare skin for foam application.'],
+      ['Dispense a pea-sized gel cleanser pump', 'Lather a small pump between wet palms until a soft foam forms.'],
+      ['Massage gently over T-zone for 60 seconds', 'Focus foam on oily zones (forehead, nose, chin). Avoid harsh scrubbing or abrasive face brushes.'],
+      ['Rinse thoroughly and pat dry gently', 'Rinse completely with water and pat dry with a clean microfiber towel. Do not rub.'],
+      ['Seal immediately with oil-free moisturizer', 'Apply a lightweight oil-free moisturizer within 60 seconds to trap hydration and prevent barrier tightness.']
+    ],
+    mistakes: [
+      'Using a 2% Salicylic acid face wash twice daily alongside strong AHA peeling toners and retinoids.',
+      'Scrubbing skin aggressively with face brushes or physical scrubs while using active acid cleansers.',
+      'Leaving active foaming cleanser on face for 5 to 10 minutes as a mask, causing severe chemical burns.',
+      'Expecting a wash-off cleanser to fade old brown post-acne dark marks (PIH); it clears pores, not melanin.',
+      'Rinsing face with very hot water which strips skin lipids and increases redness.'
+    ],
+    dermIntro: 'Consult a dermatologist if your acne consists of painful deep cysts, nodular lesions, or severe inflammatory breakouts that fail to improve after 6 weeks of proper cleansing and barrier care.',
+    dermList: [
+      'Seek evaluation for deep painful cysts or nodular acne requiring oral medical therapy.',
+      'Consult a clinician if your skin displays severe burning, peeling, or allergic contact dermatitis.',
+      'Discuss prescription combinations (such as Adapalene or topical Benzoyl Peroxide).',
+      'Bring your current cleanser and routine products to your consultation.',
+      'Ask about professional medical chemical peels for stubborn blackheads and comedonal acne.'
+    ],
+    scanUse: 'Use MyMirror AI skin analysis to track blackhead counts, pore cleanliness, oiliness reduction, and skin barrier hydration over 4 weeks in 60 seconds.',
+    faqs: [
+      ['What is the difference between 1% and 2% Salicylic Acid face wash?', '1% is gentler and ideal for daily use or sensitive skin, while 2% is maximum OTC strength for very oily skin and stubborn blackheads.'],
+      ['How long should I leave Salicylic Acid face wash on my face?', 'Lather on damp skin for 60 seconds (short-contact therapy) before rinsing thoroughly. Do not leave on longer to avoid dryness.'],
+      ['Does Salicylic Acid face wash cause skin purging?', 'Yes. BHA accelerates pore unclogging, which may cause mild temporary purging (small pimples in typical areas) during weeks 2 to 3.'],
+      ['Can I use Salicylic Acid face wash every day?', 'Yes, 1% washes can be used daily. If using 2%, start 3 nights a week and gradually build to daily use as tolerated.'],
+      ['Which is better for Indian skin: Cipla Saslic DS or Minimalist 2% Cleanser?', 'Saslic DS is a potent foaming wash best for very oily skin, while Minimalist provides a more cushioned, non-stripping formula for sensitive skin.'],
+      ['Can I use Salicylic Acid face wash while using Niacinamide serum?', 'Yes. 5% Niacinamide serum helps repair the barrier and balance oil, making it an excellent post-cleansing partner.'],
+      ['Will Salicylic Acid face wash dry out my skin?', 'If overused or paired with hot water, it can cause dryness. Always follow with an oil-free moisturizer within 60 seconds.'],
+      ['Does Salicylic Acid cleanser clear blackheads on the nose?', 'Yes. Because BHA is oil-soluble, it dissolves oxidation and sebum plugs inside nose pores, significantly reducing blackheads.']
+    ],
+    sources: [
+      ['JAAD salicylic acid in dermatology review', 'https://www.jaad.org/article/S0190-9622(03)00018-0/fulltext'],
+      ['IJDVL acne cleanser consensus guidelines', 'https://ijdvl.com/cleansers-in-acne-vulgaris/'],
+      ['AAD acne face wash guidance', 'https://www.aad.org/public/diseases/acne/skin-care/cleanse']
+    ]
+  },
+  {
     id: 'ACR1',
     slug: 'adapalene-gel-for-acne-indian-skin-guide',
     title: 'Adapalene Gel for Acne on Indian Skin | MyMirror',
@@ -344,6 +411,49 @@ const pages = [
 ];
 
 const productDetails = {
+  ACR12: {
+    intro: 'Salicylic acid face wash formats range from gentle 1% gel cleansers to 2% foaming pharmacy washes and soothing BHA formulations with barrier-repairing Panthenol or Aloe.',
+    formats: [
+      ['1% Salicylic Acid Gel Cleanser', 'Gentle low-foam gel cleanser providing mild daily BHA exfoliation.', 'Sensitive, combination, or daily maintenance skin.', 'Provides smooth pore clearing without stripping lipids.'],
+      ['2% Salicylic Acid Foaming Wash (e.g. Saslic DS)', 'High-potency pharmacy foaming wash for deep sebum dissolution.', 'Very oily skin, active blackheads, and T-zone congestion.', 'Use short-contact 60-second method to prevent squeaky tightness.'],
+      ['2% Salicylic Acid + Soothing Actives Cleanser', 'Modern buffered cleanser combining 2% BHA with Panthenol, Zinc, or Cica.', 'Acne-prone skin needing potent BHA without dryness.', 'Ideal for daily evening cleansing under light moisturizer.']
+    ],
+    checklist: [
+      'Choose 1% BHA for daily gentle cleansing or 2% for oily skin.',
+      'Look for sulfate-free, pH-balanced (5.0-5.5) formulations.',
+      'Lather for 60 seconds on damp skin before rinsing completely.',
+      'Follow immediately with an oil-free barrier moisturizer.',
+      'Pair morning routine with broad-spectrum SPF 50 sunscreen.'
+    ],
+    landscape: 'In India, Salicylic acid cleansers are available across pharmacy lines like Cipla Saslic DS and dermatologist brands like Minimalist and The Derma Co. Selecting a non-stripping formula ensures deep pore cleanliness without causing barrier damage.',
+    buyFirst: 'Start with a gentle 1% Salicylic acid gel cleanser or a buffered 2% cleanser used once daily in the evening, followed by an oil-free moisturizer.',
+    products: [
+      {
+        name: 'The Derma Co 1% Salicylic Acid Oil-Free Moisturizer',
+        badge: 'Post-Cleansing Partner',
+        image: '/assets/images/product-examples/derma-co-salicylic-moisturizer.jpg',
+        url: 'https://thedermaco.com/products/1-salicylic-acid-oil-free-moisturizer-for-face-with-oat-extract-50g',
+        detail: 'Active oil-free moisturizer to pair with Salicylic wash for oil control.',
+        caution: 'Apply to damp skin.'
+      },
+      {
+        name: 'Minimalist Vitamin B5 10% Moisturizer',
+        badge: 'Barrier Hydration Cushion',
+        image: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg',
+        url: 'https://beminimalist.co/products/vitamin-b5-10-moisturizer',
+        detail: 'Hydrating soothing moisturizer for preventing post-cleansing tightness.',
+        caution: 'Non-greasy gel texture.'
+      },
+      {
+        name: 'Excela Acne-Prone Moisturizer',
+        badge: 'Pharmacy Lipid Cushion',
+        image: '/assets/images/product-examples/excela-moisturiser.jpg',
+        url: 'https://pharmeasy.in/health-care/products/excela-moisturiser-bottle-of-50gm-pump-208388',
+        detail: 'Non-comedogenic pharmacy moisturizer ideal for acne-prone skin.',
+        caution: 'Use twice daily.'
+      }
+    ]
+  },
   ACR1: {
     intro: 'The most useful adapalene product decision is not which tube looks strongest. It is whether the label, strength, vehicle, and support routine match a slow retinoid introduction. Product names also vary by country and pharmacy channel, so treat examples as a way to read labels, not as endorsements or a substitute for medical advice.',
     formats: [
