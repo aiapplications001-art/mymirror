@@ -43,15 +43,40 @@ Follow with a gentle cleanser: Use a mild, non-stripping second cleanse if your 
 
 Patch the pattern, not only the product: Try the balm on one routine type for two weeks. If new bumps cluster where the balm sits longest, switch before blaming every other product.
 
-### S5_two_week_test: A two-week way to test the change
+### S5_product_formats: Product formats compared
+
+Cleansing balm shopping is really about residue management. Two balms can look identical in a tub but behave completely differently once water is added. Acne-prone skin needs a formula that melts sunscreen, emulsifies into a milky rinse, and does not require long rubbing to feel clean.
+
+- Solid balm or sherbet balm: Scoopable balm that melts into oil on dry skin; examples in the market include K-beauty style cleansing balms and Indian balm removers. Useful for: Water-resistant sunscreen, makeup, and days with heavier pollution or long-wear base products. Watch-outs: Heavy fragrance, waxy residue, and over-massage can be a problem for active acne.
+- Balm-to-foam or balm-to-milk: Hybrid products designed to emulsify more visibly or foam lightly after water is added. Useful for: People who dislike a film after classic balms but still need makeup or sunscreen removal. Watch-outs: Foaming does not automatically mean gentle; judge whether the skin feels tight afterward.
+- Liquid cleansing oil: Oil cleanser in a pump bottle with emulsifiers. Useful for: Users who want the same oil-dissolves-oil idea with easier dosing and less scooping. Watch-outs: Thin oils can run into eyes or hairline; rinse quality still matters.
+- Micellar water or makeup remover: Water-based remover used with cotton or reusable pads. Useful for: Light makeup, targeted eye/lip removal, or people who dislike balm texture. Watch-outs: Friction from pads and leftover surfactant can irritate; rinse if acne-prone skin feels coated.
+
+### S6_product_label_checklist: Product label checklist
+
+- Look for clear instructions to emulsify with water; if the brand only says wipe off, acne-prone skin may feel residue.
+- Check fragrance, essential oils, and strongly scented botanical extracts if your acne is inflamed or your barrier stings.
+- Notice whether the balm is marketed for waterproof makeup, sunscreen, or both; your use case should match the claim.
+- Choose smaller sizes first. A huge jar is not a bargain if it creates closed comedones by week two.
+- Pair the balm with a mild second cleanser only when needed; a stripping second cleanse can undo the benefit.
+
+### S7_product_landscape: Example product landscape
+
+The product landscape now includes classic Korean cleansing balms, Indian balm-to-foam launches, cleansing oils, and micellar waters. Some formulas highlight rice, papaya, charcoal, or brightening ingredients, but acne-prone buyers should care more about rinse behavior and irritation. A balm can be excellent for removing stubborn SPF yet still wrong for daily use if you wear only light indoor sunscreen. The reverse is also true: avoiding all balms can leave water-resistant sunscreen sitting on the skin if your regular cleanser cannot remove it.
+
+### S8_what_to_buy_first: What to buy first
+
+Buy the smallest simple balm or cleansing oil that matches your actual sunscreen and makeup habits. Test it only on nights when there is something substantial to remove. If your face feels waxy after emulsifying and rinsing, change the amount or the formula before adding more acne treatment. If new bumps appear in the same zones after repeated balm nights, stop the balm for two weeks and compare.
+
+### S9_two_week_test: A two-week way to test the change
 
 Change only the step this page is about, take baseline photos, compare the same zones in the same lighting, and treat tolerability as part of success.
 
-### S6_routine_compatibility: How it should fit with the rest of your routine
+### S10_routine_compatibility: How it should fit with the rest of your routine
 
 Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep nights focused on one treatment decision rather than stacking every acne active together.
 
-### S7_mistakes: Mistakes to avoid
+### S11_mistakes: Mistakes to avoid
 
 - Using balm in the morning when there is no makeup or sunscreen film to dissolve.
 - Skipping emulsification and wiping the balm off with a towel.
@@ -59,7 +84,7 @@ Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep
 - Massaging inflamed pimples until they look redder.
 - Using a harsh second cleanser that strips the barrier and causes rebound oiliness.
 
-### S8_dermatologist: When to ask a dermatologist
+### S12_dermatologist: When to ask a dermatologist
 
 Most cleansing decisions are routine decisions, but breakouts after cleansing can still need a dermatologist if they are persistent, painful, or confusing. Bring the product name, ingredient list, and the timeline of when bumps started.
 
@@ -69,7 +94,7 @@ Most cleansing decisions are routine decisions, but breakouts after cleansing ca
 - Bring photos showing the skin before the balm and after two weeks of use.
 - List sunscreen, makeup, cleansing balm, second cleanser, and moisturizer, because residue can come from any layer.
 
-### S9_faq: Questions people ask
+### S13_faq: Questions people ask
 
 Q: Can cleansing balm cause acne?
 A: It can for some people if it leaves residue, contains ingredients your skin dislikes, or encourages too much rubbing. But a well-rinsed balm can also help remove sunscreen that might otherwise sit on the skin.
@@ -95,7 +120,7 @@ A: It depends on what you wear and how your skin reacts. Micellar water can also
 Q: How do I test a cleansing balm safely?
 A: Use it only at night for sunscreen or makeup removal, keep the second cleanser gentle, avoid new actives, and compare photos after two weeks.
 
-### S10_sources: Source basis
+### S14_sources: Source basis
 
 AAD acne skin care habits: https://www.aad.org/public/diseases/acne/skin-care/habits-stop
 AAD face washing guidance: https://www.aad.org/public/everyday-care/skin-care-basics/care/face-washing-101

@@ -343,6 +343,99 @@ const pages = [
   }
 ];
 
+const productDetails = {
+  ACR1: {
+    intro: 'The most useful adapalene product decision is not which tube looks strongest. It is whether the label, strength, vehicle, and support routine match a slow retinoid introduction. Product names also vary by country and pharmacy channel, so treat examples as a way to read labels, not as endorsements or a substitute for medical advice.',
+    formats: [
+      ['Adapalene 0.1% gel', 'Common retinoid format; Differin Gel is a well-known OTC example in some markets, while Indian access may vary by brand and prescription status.', 'People with mostly clogged pores, blackheads, whiteheads, and recurring acne-prone zones who can commit to slow use.', 'Still irritating if overused. A pea-sized full-face amount is very different from a thick spot layer.'],
+      ['Adapalene cream or lotion vehicle', 'Some prescription products use a creamier vehicle instead of a clear gel.', 'Skin that becomes tight or flaky with gels, if a clinician recommends that format.', 'A richer vehicle may feel more comfortable but can still cause retinization and PIH-triggering irritation.'],
+      ['Adapalene plus benzoyl peroxide combination', 'Fixed combinations exist in some prescription acne plans.', 'Inflamed acne where a dermatologist wants both a retinoid and benzoyl peroxide effect in one plan.', 'More irritation potential. Do not build your own aggressive same-night stack unless directed.'],
+      ['Support products around adapalene', 'Gentle cleanser, bland moisturizer, and broad-spectrum sunscreen are part of the product system.', 'Anyone starting a retinoid, especially Indian skin that marks after irritation.', 'Buying adapalene without barrier support often leads to stopping early or creating avoidable PIH.']
+    ],
+    checklist: [
+      'Check that the active says adapalene and note the percentage; do not confuse cosmetic retinol with prescription retinoids.',
+      'Read whether the product is leave-on, prescription-only, or combination therapy; those details change how it should be used.',
+      'Prefer a plain routine around it: gentle cleanser, moisturizer, sunscreen, and no new peels during the start period.',
+      'Look for expiry, storage instructions, and pregnancy or breastfeeding warnings before opening the tube.',
+      'If the product includes another active, assume irritation risk is higher and ask a dermatologist before layering more treatments.'
+    ],
+    landscape: 'In search results and pharmacies you may see international OTC adapalene gels, Indian prescription adapalene gels, and retinoid-adjacent cosmetic products sold with similar acne language. The active ingredient line matters more than the front label. A “retinol night cream” is not the same decision as adapalene. A fixed adapalene-benzoyl peroxide product is also not the same decision as plain adapalene gel. For Indian skin, the practical product choice is usually the simplest medically appropriate format plus a routine that makes irritation less likely.',
+    buyFirst: 'If you do not already own a gentle cleanser, non-stinging moisturizer, and sunscreen you will actually wear, buy those before chasing a stronger retinoid. If adapalene is appropriate for you, choose the lowest sensible entry format and build frequency slowly. Skip bundles that sell multiple acne actives together unless a clinician has mapped the schedule, because the bundle is where many people accidentally create barrier burn.'
+  },
+  ACR2: {
+    intro: 'Cleansing balm shopping is really about residue management. Two balms can look identical in a tub but behave completely differently once water is added. Acne-prone skin needs a formula that melts sunscreen, emulsifies into a milky rinse, and does not require long rubbing to feel clean.',
+    formats: [
+      ['Solid balm or sherbet balm', 'Scoopable balm that melts into oil on dry skin; examples in the market include K-beauty style cleansing balms and Indian balm removers.', 'Water-resistant sunscreen, makeup, and days with heavier pollution or long-wear base products.', 'Heavy fragrance, waxy residue, and over-massage can be a problem for active acne.'],
+      ['Balm-to-foam or balm-to-milk', 'Hybrid products designed to emulsify more visibly or foam lightly after water is added.', 'People who dislike a film after classic balms but still need makeup or sunscreen removal.', 'Foaming does not automatically mean gentle; judge whether the skin feels tight afterward.'],
+      ['Liquid cleansing oil', 'Oil cleanser in a pump bottle with emulsifiers.', 'Users who want the same oil-dissolves-oil idea with easier dosing and less scooping.', 'Thin oils can run into eyes or hairline; rinse quality still matters.'],
+      ['Micellar water or makeup remover', 'Water-based remover used with cotton or reusable pads.', 'Light makeup, targeted eye/lip removal, or people who dislike balm texture.', 'Friction from pads and leftover surfactant can irritate; rinse if acne-prone skin feels coated.']
+    ],
+    checklist: [
+      'Look for clear instructions to emulsify with water; if the brand only says wipe off, acne-prone skin may feel residue.',
+      'Check fragrance, essential oils, and strongly scented botanical extracts if your acne is inflamed or your barrier stings.',
+      'Notice whether the balm is marketed for waterproof makeup, sunscreen, or both; your use case should match the claim.',
+      'Choose smaller sizes first. A huge jar is not a bargain if it creates closed comedones by week two.',
+      'Pair the balm with a mild second cleanser only when needed; a stripping second cleanse can undo the benefit.'
+    ],
+    landscape: 'The product landscape now includes classic Korean cleansing balms, Indian balm-to-foam launches, cleansing oils, and micellar waters. Some formulas highlight rice, papaya, charcoal, or brightening ingredients, but acne-prone buyers should care more about rinse behavior and irritation. A balm can be excellent for removing stubborn SPF yet still wrong for daily use if you wear only light indoor sunscreen. The reverse is also true: avoiding all balms can leave water-resistant sunscreen sitting on the skin if your regular cleanser cannot remove it.',
+    buyFirst: 'Buy the smallest simple balm or cleansing oil that matches your actual sunscreen and makeup habits. Test it only on nights when there is something substantial to remove. If your face feels waxy after emulsifying and rinsing, change the amount or the formula before adding more acne treatment. If new bumps appear in the same zones after repeated balm nights, stop the balm for two weeks and compare.'
+  },
+  ACR3: {
+    intro: 'Oil-free moisturizer is a category, not a single texture. Some are watery gels that vanish quickly; others are gel-creams with silicones, humectants, or barrier ingredients. The best humid-weather product is the one that hydrates enough to keep acne treatment tolerable while still letting sunscreen sit smoothly on top.',
+    formats: [
+      ['Water gel', 'Light gel with humectants such as glycerin or hyaluronic acid; often marketed as oil-free or fresh-feel.', 'Very oily skin, humid mornings, sunscreen layering, and people who hate cream residue.', 'Can feel good for five minutes but leave tightness later if the barrier is damaged.'],
+      ['Gel-cream', 'A slightly cushioned texture that may include dimethicone, panthenol, niacinamide, or light emollients.', 'Combination skin, AC exposure, and routines with mild acne actives.', 'Too much product can pill under sunscreen; use a thin layer and wait before SPF.'],
+      ['Light lotion', 'Fluid moisturizer with more barrier support than a pure gel.', 'Retinoid or benzoyl peroxide nights when skin feels tight or flaky.', 'Not every lotion is heavy, but fragrance or richer oils can bother some acne-prone users.'],
+      ['Barrier repair cream used selectively', 'Richer cream with ceramides, cholesterol, fatty acids, or occlusive support.', 'Short repair windows after irritation, peeling, or over-treatment.', 'May feel too heavy for all-day humid wear; use only where and when needed.']
+    ],
+    checklist: [
+      'Look for oil-free and non-comedogenic as helpful signals, but judge your own skin because labels are not guarantees.',
+      'Prioritize humectants such as glycerin, hyaluronic acid, or panthenol if your face is tight but shiny.',
+      'Consider ceramides or niacinamide when acne actives make the barrier reactive, as long as those ingredients do not sting you.',
+      'Avoid assuming matte equals healthy. A harsh mattifying product can make skin tight, irritated, and more mark-prone.',
+      'Always test the moisturizer under your sunscreen; pilling can lead to under-applying SPF.'
+    ],
+    landscape: 'In India, oil-free moisturizers range from pharmacy gel products to cosmetic gel-creams and acne-focused lotions. Many product pages emphasize “non-sticky,” “matte,” “oil control,” or “hydrating gel.” Those claims are useful only if the formula keeps the skin comfortable after one to three hours and does not disrupt sunscreen. People using adapalene or benzoyl peroxide often need a slightly more supportive night moisturizer than the one they prefer under sunscreen in the morning.',
+    buyFirst: 'Start with one daytime gel or gel-cream that layers well under SPF, then add a separate repair option only if acne actives cause dryness. Do not buy five moisturizers at once; you will lose the signal. If every oil-free product stings, stop chasing texture and treat it as barrier damage or dermatitis until a clinician helps you reset.'
+  },
+  ACR4: {
+    intro: 'Benzoyl peroxide product choice has three levers: strength, contact time, and surface area. A 2.5% gel used consistently can be more sensible than a stronger product that burns the skin and gets abandoned. On Indian skin, preventing treatment irritation matters because irritation itself can become a dark-mark trigger.',
+    formats: [
+      ['2.5% leave-on gel', 'Common entry strength; Indian pharmacy examples include Benzac AC 2.5% gel listings.', 'Occasional inflamed pimples or acne-prone zones where lower irritation is important.', 'Can still dry and bleach fabrics. Use a thin layer and protect surrounding skin.'],
+      ['5% leave-on gel', 'Common stronger gel format; Benzac AC 5% style listings are visible in Indian pharmacies.', 'People who tolerate lower strengths or have clinician-directed use for inflamed acne.', 'Higher strength is not automatically better; burning can create more PIH risk.'],
+      ['Benzoyl peroxide wash or short-contact routine', 'Wash-off formats or clinician-guided short-contact use.', 'People who cannot tolerate leave-on treatment or need broader but briefer contact.', 'Rinsing reduces contact but not all irritation risk; avoid eyes, lips, and broken skin.'],
+      ['Combination acne products', 'Benzoyl peroxide paired with adapalene or antibiotics in prescription plans.', 'Persistent inflammatory acne where a dermatologist wants combination therapy.', 'Do not duplicate ingredients by adding a spot treatment on top of a combination product.']
+    ],
+    checklist: [
+      'Check the percentage before buying; 2.5%, 5%, and 10% are different irritation decisions.',
+      'Confirm whether it is leave-on, wash-off, or a fixed combination product.',
+      'Look for warnings about bleaching fabrics, avoiding eyes and lips, and stopping for severe irritation.',
+      'If you already use adapalene, salicylic acid, peels, or retinoids, plan spacing before adding benzoyl peroxide.',
+      'Avoid applying to picked, open, or raw skin; the product is for acne treatment, not wound care.'
+    ],
+    landscape: 'The Indian product landscape includes familiar benzoyl peroxide gels, acne spot products that may or may not contain benzoyl peroxide, and combination prescriptions. Many “pimple patches,” tea tree gels, sulfur products, or salicylic acid spot treatments compete for the same search intent but are not the same ingredient. Read the active ingredient line, not only the words “spot treatment.” If the front label says acne gel but the active is salicylic acid, your irritation and layering decisions change.',
+    buyFirst: 'For self-managed occasional pimples, start with the lowest practical benzoyl peroxide strength and limited application. Buy white pillowcases or use white towels if fabric bleaching is a concern. If acne is frequent, painful, or leaving marks, the better first purchase may be a dermatologist consultation rather than a stronger tube, because repeated spot treatment does not prevent every new lesion.'
+  },
+  ACR5: {
+    intro: 'Tranexamic acid products are sold as dark-spot serums, pigmentation correctors, ampoules, and multi-active brightening blends. The product decision should start with the mark pattern. A serum can support a calm PIH routine, but it cannot compensate for untreated acne, daily picking, or inconsistent sunscreen.',
+    formats: [
+      ['Tranexamic acid serum', 'Leave-on serum, often around 2–5% in cosmetic products; Minimalist Tranexamic 3% is one visible Indian-market example.', 'Flat brown acne marks when sunscreen is already consistent and the barrier is calm.', 'Results vary and take time; stinging or rash can worsen pigmentation risk.'],
+      ['Tranexamic plus azelaic or kojic blend', 'Multi-active pigmentation correctors such as tranexamic-azelaic style serums.', 'People who tolerate actives and want one product aimed at uneven tone.', 'More ingredients means more variables. Introduce slowly and do not stack with peels at first.'],
+      ['Niacinamide or barrier-support serum', 'Not a tranexamic product, but commonly compared for acne marks and tone.', 'Skin that is irritated, oily, or barrier-compromised before stronger pigment steps.', 'May not be enough for persistent pigmentation, but can make the routine more tolerable.'],
+      ['Dermatologist-led options', 'Prescription pigment plans, procedures, or oral tranexamic acid when medically appropriate.', 'Melasma-like patterns, stubborn PIH, or pigmentation mixed with active acne/scarring.', 'Oral tranexamic acid is not a cosmetic serum and needs medical screening.']
+    ],
+    checklist: [
+      'Check the active percentage and whether tranexamic acid is the main ingredient or one of many brightening claims.',
+      'Look for added acids, retinoids, fragrance, or exfoliants that may make the product less beginner-friendly.',
+      'Buy sunscreen first if you are not already consistent; pigment products without SPF are hard to judge.',
+      'Avoid oral tranexamic acid unless prescribed and medically supervised.',
+      'Track brown PIH separately from red marks, active acne, and depressed scars because each needs a different expectation.'
+    ],
+    landscape: 'Search results mix topical tranexamic serums, tranexamic-azelaic correctors, kojic/alpha-arbutin blends, niacinamide serums, peeling solutions, and melasma medication discussions. That mix can be confusing because the front-end promise is often “dark spots,” but the risk profile is different. For Indian acne marks, the safest product landscape is sunscreen, acne control, barrier support, then one pigment product. If the mark pattern is symmetrical or melasma-like, the product shelf is the wrong place to self-diagnose.',
+    buyFirst: 'Buy or recommit to broad-spectrum sunscreen before buying a pigment serum. If acne is still active, invest effort in preventing new breakouts first. Once the routine is calm, choose one topical tranexamic product and use it consistently for eight to twelve weeks in the same lighting. Avoid buying multiple brightening serums together because irritation can create the exact PIH you are trying to fade.'
+  }
+};
+
 const css = `
     @font-face { font-family:'Kantumruy Pro'; src:url('/fonts/KantumruyPro-VariableFont_wght.ttf') format('truetype'); font-display:swap; }
     @font-face { font-family:'Plus Jakarta Sans'; src:url('/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype'); font-display:swap; }
@@ -455,6 +548,17 @@ function renderList(items) {
   return `<ul class="checklist">${items.map((item) => `<li>${esc(item)}</li>`).join('')}</ul>`;
 }
 
+function renderProductRows(rows) {
+  return rows.map(([format, examples, usefulFor, watch]) => `<tr><td><strong>${esc(format)}</strong></td><td>${esc(examples)}</td><td>${esc(usefulFor)}</td><td>${esc(watch)}</td></tr>`).join('');
+}
+
+function renderProductDepth(page) {
+  const details = productDetails[page.id];
+  if (!details) return '';
+
+  return `<section class="section alt"><div class="wrap"><h2>Product formats compared</h2><p class="lede">${esc(details.intro)}</p><div class="table-wrap"><table><thead><tr><th>Format</th><th>Product examples / label clues</th><th>Useful for</th><th>Watch-outs</th></tr></thead><tbody>${renderProductRows(details.formats)}</tbody></table></div><div class="two" style="margin-top:24px"><article class="note-box"><h2>Product label checklist</h2>${renderList(details.checklist)}</article><article class="note-box"><h2>Example product landscape</h2><p>${esc(details.landscape)}</p><h2>What to buy first</h2><p>${esc(details.buyFirst)}</p></article></div></div></section>`;
+}
+
 function renderFaqs(page) {
   return page.faqs.map(([question, answer]) => `<details><summary>${esc(question)}</summary><p>${esc(answer)}</p></details>`).join('');
 }
@@ -514,6 +618,7 @@ function renderPage(page) {
     <section class="section"><div class="wrap"><h2>How to decide if this page is for you</h2><p class="lede">${esc(page.decisionIntro)}</p><div class="grid">${renderCards(page.decisionCards)}</div><div class="note-box" style="margin-top:24px"><h3>How MyMirror fits in</h3><p>${esc(page.scanUse)}</p><p>Keep the scan as a visible record. It can help you compare active bumps, clogged-looking areas, redness, oiliness, texture, and dark marks. It cannot diagnose acne type, identify a medical allergy, prescribe a drug, or replace urgent care.</p></div></div></section>
     <section class="section alt"><div class="wrap"><h2>What to look for on Indian skin</h2><p class="lede">${esc(page.indianSkinIntro)}</p><div class="table-wrap"><table><thead><tr><th>Signal</th><th>What it can mean</th><th>Safer next move</th></tr></thead><tbody>${renderRows(page.indianRows)}</tbody></table></div></div></section>
     <section class="section"><div class="wrap"><h2>Safe use plan</h2><p class="lede">${esc(page.safeIntro)}</p><div class="steps">${renderSteps(page.safeSteps)}</div></div></section>
+    ${renderProductDepth(page)}
     ${renderExperiment(page)}
     ${renderCompatibility(page)}
     <section class="section alt"><div class="wrap"><div class="two"><article class="note-box"><h2>Mistakes to avoid</h2>${renderList(page.mistakes)}</article><article class="note-box"><h2>When to ask a dermatologist</h2><p>${esc(page.dermIntro)}</p>${renderList(page.dermList)}</article></div></div></section>
@@ -559,12 +664,16 @@ function packet(page) {
       { id: 'S2_decision', heading: 'How to decide if this page is for you', role: 'intent_match', markdown: page.decisionIntro },
       { id: 'S3_indian_skin', heading: 'What to look for on Indian skin', role: 'education', markdown: `${page.indianSkinIntro}\n\n${page.indianRows.map(([a, b, c]) => `- ${a}: ${b} ${c}`).join('\n')}` },
       { id: 'S4_safe_use', heading: 'Safe use plan', role: 'how_to', markdown: `${page.safeIntro}\n\n${page.safeSteps.map(([a, b]) => `${a}: ${b}`).join('\n\n')}` },
-      { id: 'S5_two_week_test', heading: 'A two-week way to test the change', role: 'measurement', markdown: `Change only the step this page is about, take baseline photos, compare the same zones in the same lighting, and treat tolerability as part of success.` },
-      { id: 'S6_routine_compatibility', heading: 'How it should fit with the rest of your routine', role: 'routine_architecture', markdown: 'Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep nights focused on one treatment decision rather than stacking every acne active together.' },
-      { id: 'S7_mistakes', heading: 'Mistakes to avoid', role: 'risk_reduction', markdown: page.mistakes.map((item) => `- ${item}`).join('\n') },
-      { id: 'S8_dermatologist', heading: 'When to ask a dermatologist', role: 'safety', markdown: `${page.dermIntro}\n\n${page.dermList.map((item) => `- ${item}`).join('\n')}` },
-      { id: 'S9_faq', heading: 'Questions people ask', role: 'seo', markdown: page.faqs.map(([q, a]) => `Q: ${q}\nA: ${a}`).join('\n\n') },
-      { id: 'S10_sources', heading: 'Source basis', role: 'trust', markdown: page.sources.map(([label, url]) => `${label}: ${url}`).join('\n') }
+      { id: 'S5_product_formats', heading: 'Product formats compared', role: 'product_education', markdown: `${productDetails[page.id].intro}\n\n${productDetails[page.id].formats.map(([a, b, c, d]) => `- ${a}: ${b} Useful for: ${c} Watch-outs: ${d}`).join('\n')}` },
+      { id: 'S6_product_label_checklist', heading: 'Product label checklist', role: 'buyer_guidance', markdown: productDetails[page.id].checklist.map((item) => `- ${item}`).join('\n') },
+      { id: 'S7_product_landscape', heading: 'Example product landscape', role: 'product_landscape', markdown: productDetails[page.id].landscape },
+      { id: 'S8_what_to_buy_first', heading: 'What to buy first', role: 'purchase_prioritization', markdown: productDetails[page.id].buyFirst },
+      { id: 'S9_two_week_test', heading: 'A two-week way to test the change', role: 'measurement', markdown: `Change only the step this page is about, take baseline photos, compare the same zones in the same lighting, and treat tolerability as part of success.` },
+      { id: 'S10_routine_compatibility', heading: 'How it should fit with the rest of your routine', role: 'routine_architecture', markdown: 'Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep nights focused on one treatment decision rather than stacking every acne active together.' },
+      { id: 'S11_mistakes', heading: 'Mistakes to avoid', role: 'risk_reduction', markdown: page.mistakes.map((item) => `- ${item}`).join('\n') },
+      { id: 'S12_dermatologist', heading: 'When to ask a dermatologist', role: 'safety', markdown: `${page.dermIntro}\n\n${page.dermList.map((item) => `- ${item}`).join('\n')}` },
+      { id: 'S13_faq', heading: 'Questions people ask', role: 'seo', markdown: page.faqs.map(([q, a]) => `Q: ${q}\nA: ${a}`).join('\n\n') },
+      { id: 'S14_sources', heading: 'Source basis', role: 'trust', markdown: page.sources.map(([label, url]) => `${label}: ${url}`).join('\n') }
     ],
     images: [
       { id: 'IMG_HERO', sectionId: 'S1_hero', purpose: 'First-fold hero visual', aspectRatio: '16:9', altText: page.heroAlt, status: 'existing_repo_asset', filePath: page.heroImage }
@@ -663,14 +772,14 @@ Rebuild five thin live acne pages into full-depth, mobile-safe MyMirror pages un
 
 ## Design
 
-Use the newer MyMirror guide structure: compact first fold, readable hero, topic-relevant image, decision cards, Indian-skin safety table, safe-use steps, mistakes, dermatologist escalation guidance, eight FAQs, visible sources, final scan CTA, and mobile sticky CTA.
+Use the newer MyMirror guide structure: compact first fold, readable hero, topic-relevant image, decision cards, Indian-skin safety table, safe-use steps, product-format comparison, product label checklist, example product landscape, what-to-buy-first guidance, mistakes, dermatologist escalation guidance, eight FAQs, visible sources, final scan CTA, and mobile sticky CTA.
 
 ## Constraints
 
 - Do not use the old dark "Clinical Dermatological Guide" template.
 - Do not include unsupported dermatologist-review claims.
 - Do not diagnose, prescribe, or imply the AI scan chooses medication.
-- Keep each page at 1,500+ main-content words and exactly eight FAQs.
+- Keep each page at 1,900+ main-content words and exactly eight FAQs.
 - Use visible editorial source links only.
 `);
 
@@ -690,7 +799,8 @@ Use the newer MyMirror guide structure: compact first fold, readable hero, topic
 - Keep the CTA text \`Start your free AI skin scan\`.
 - Do not include unsupported dermatologist-review claims.
 - Render exactly eight FAQs per page.
-- Keep each rebuilt page at 1,500 to 2,300 main-content words.
+- Keep each rebuilt page at 1,900 to 3,000 main-content words.
+- Include product-format comparison, product label checklist, example product landscape, and what-to-buy-first sections.
 - Use existing repository assets only.
 - Push only to \`main\`.
 

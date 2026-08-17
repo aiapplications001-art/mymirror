@@ -43,15 +43,40 @@ Protect fabrics: Benzoyl peroxide can bleach towels, pillowcases, and collars. L
 
 Use sunscreen daily: Acne marks look worse when sun exposure deepens pigment. SPF helps the marks fade more predictably.
 
-### S5_two_week_test: A two-week way to test the change
+### S5_product_formats: Product formats compared
+
+Benzoyl peroxide product choice has three levers: strength, contact time, and surface area. A 2.5% gel used consistently can be more sensible than a stronger product that burns the skin and gets abandoned. On Indian skin, preventing treatment irritation matters because irritation itself can become a dark-mark trigger.
+
+- 2.5% leave-on gel: Common entry strength; Indian pharmacy examples include Benzac AC 2.5% gel listings. Useful for: Occasional inflamed pimples or acne-prone zones where lower irritation is important. Watch-outs: Can still dry and bleach fabrics. Use a thin layer and protect surrounding skin.
+- 5% leave-on gel: Common stronger gel format; Benzac AC 5% style listings are visible in Indian pharmacies. Useful for: People who tolerate lower strengths or have clinician-directed use for inflamed acne. Watch-outs: Higher strength is not automatically better; burning can create more PIH risk.
+- Benzoyl peroxide wash or short-contact routine: Wash-off formats or clinician-guided short-contact use. Useful for: People who cannot tolerate leave-on treatment or need broader but briefer contact. Watch-outs: Rinsing reduces contact but not all irritation risk; avoid eyes, lips, and broken skin.
+- Combination acne products: Benzoyl peroxide paired with adapalene or antibiotics in prescription plans. Useful for: Persistent inflammatory acne where a dermatologist wants combination therapy. Watch-outs: Do not duplicate ingredients by adding a spot treatment on top of a combination product.
+
+### S6_product_label_checklist: Product label checklist
+
+- Check the percentage before buying; 2.5%, 5%, and 10% are different irritation decisions.
+- Confirm whether it is leave-on, wash-off, or a fixed combination product.
+- Look for warnings about bleaching fabrics, avoiding eyes and lips, and stopping for severe irritation.
+- If you already use adapalene, salicylic acid, peels, or retinoids, plan spacing before adding benzoyl peroxide.
+- Avoid applying to picked, open, or raw skin; the product is for acne treatment, not wound care.
+
+### S7_product_landscape: Example product landscape
+
+The Indian product landscape includes familiar benzoyl peroxide gels, acne spot products that may or may not contain benzoyl peroxide, and combination prescriptions. Many “pimple patches,” tea tree gels, sulfur products, or salicylic acid spot treatments compete for the same search intent but are not the same ingredient. Read the active ingredient line, not only the words “spot treatment.” If the front label says acne gel but the active is salicylic acid, your irritation and layering decisions change.
+
+### S8_what_to_buy_first: What to buy first
+
+For self-managed occasional pimples, start with the lowest practical benzoyl peroxide strength and limited application. Buy white pillowcases or use white towels if fabric bleaching is a concern. If acne is frequent, painful, or leaving marks, the better first purchase may be a dermatologist consultation rather than a stronger tube, because repeated spot treatment does not prevent every new lesion.
+
+### S9_two_week_test: A two-week way to test the change
 
 Change only the step this page is about, take baseline photos, compare the same zones in the same lighting, and treat tolerability as part of success.
 
-### S6_routine_compatibility: How it should fit with the rest of your routine
+### S10_routine_compatibility: How it should fit with the rest of your routine
 
 Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep nights focused on one treatment decision rather than stacking every acne active together.
 
-### S7_mistakes: Mistakes to avoid
+### S11_mistakes: Mistakes to avoid
 
 - Using a thick white dot and leaving it overnight until the skin burns.
 - Applying benzoyl peroxide to raw, picked, or freshly waxed skin.
@@ -59,7 +84,7 @@ Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep
 - Treating fungal-looking, itchy, uniform bumps with benzoyl peroxide for weeks without review.
 - Forgetting that benzoyl peroxide bleaches fabric.
 
-### S8_dermatologist: When to ask a dermatologist
+### S12_dermatologist: When to ask a dermatologist
 
 Benzoyl peroxide is common, but persistent inflamed acne often needs a full plan rather than endless spot treating. A dermatologist can decide whether you need a retinoid, antibiotic combination, hormonal evaluation, or scar-prevention strategy.
 
@@ -69,7 +94,7 @@ Benzoyl peroxide is common, but persistent inflamed acne often needs a full plan
 - Mention pregnancy, allergies, eczema, or other acne medicines before combining treatments.
 - Bring photos and note whether acne is inflamed, comedonal, hormonal-pattern, or product-triggered.
 
-### S9_faq: Questions people ask
+### S13_faq: Questions people ask
 
 Q: Is benzoyl peroxide spot treatment the same as gel?
 A: No. Spot treatment describes where you apply it. Gel describes the formula type. A gel can be used as a spot treatment or as a thin acne-zone layer depending on instructions.
@@ -95,7 +120,7 @@ A: It means applying benzoyl peroxide for a limited time and rinsing it off. It 
 Q: When should I stop using it?
 A: Stop and simplify if you get severe burning, swelling, blistering, crusting, or rash. Seek medical advice if symptoms persist or acne is severe.
 
-### S10_sources: Source basis
+### S14_sources: Source basis
 
 AAD acne treatment overview: https://www.aad.org/public/diseases/acne/derm-treat/treat
 AAD acne in skin of color: https://www.aad.org/public/diseases/acne/derm-treat/skin-color

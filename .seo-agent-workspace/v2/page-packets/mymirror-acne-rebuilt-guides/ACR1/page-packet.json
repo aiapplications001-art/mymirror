@@ -54,37 +54,61 @@
       "markdown": "A safer adapalene plan is intentionally boring. The product is only one part of the routine; moisturizer, sunscreen, dose, and spacing decide whether the skin can stay with it long enough to benefit.\n\nStart with pea-size dosing: Use a pea-sized amount for the whole face, not a pea on every pimple. Avoid eyelids, corners of the nose, lips, and broken skin. More gel usually means more irritation, not faster acne control.\n\nUse the sandwich method if sensitive: Apply moisturizer, then adapalene, then another light moisturizer layer. This can reduce early dryness while still letting you build consistency.\n\nKeep the schedule slow: Try two nights a week for two weeks, then alternate nights if comfortable. Increase only when skin feels normal the next morning.\n\nSeparate harsh actives: Do not stack strong exfoliating acids, scrubs, peels, benzoyl peroxide, or alcohol-heavy toners on the same night unless a dermatologist told you to.\n\nProtect the morning routine: Use a gentle cleanser, moisturizer, and broad-spectrum sunscreen. Without sunscreen, PIH improvement is much harder to judge."
     },
     {
-      "id": "S5_two_week_test",
+      "id": "S5_product_formats",
+      "heading": "Product formats compared",
+      "role": "product_education",
+      "markdown": "The most useful adapalene product decision is not which tube looks strongest. It is whether the label, strength, vehicle, and support routine match a slow retinoid introduction. Product names also vary by country and pharmacy channel, so treat examples as a way to read labels, not as endorsements or a substitute for medical advice.\n\n- Adapalene 0.1% gel: Common retinoid format; Differin Gel is a well-known OTC example in some markets, while Indian access may vary by brand and prescription status. Useful for: People with mostly clogged pores, blackheads, whiteheads, and recurring acne-prone zones who can commit to slow use. Watch-outs: Still irritating if overused. A pea-sized full-face amount is very different from a thick spot layer.\n- Adapalene cream or lotion vehicle: Some prescription products use a creamier vehicle instead of a clear gel. Useful for: Skin that becomes tight or flaky with gels, if a clinician recommends that format. Watch-outs: A richer vehicle may feel more comfortable but can still cause retinization and PIH-triggering irritation.\n- Adapalene plus benzoyl peroxide combination: Fixed combinations exist in some prescription acne plans. Useful for: Inflamed acne where a dermatologist wants both a retinoid and benzoyl peroxide effect in one plan. Watch-outs: More irritation potential. Do not build your own aggressive same-night stack unless directed.\n- Support products around adapalene: Gentle cleanser, bland moisturizer, and broad-spectrum sunscreen are part of the product system. Useful for: Anyone starting a retinoid, especially Indian skin that marks after irritation. Watch-outs: Buying adapalene without barrier support often leads to stopping early or creating avoidable PIH."
+    },
+    {
+      "id": "S6_product_label_checklist",
+      "heading": "Product label checklist",
+      "role": "buyer_guidance",
+      "markdown": "- Check that the active says adapalene and note the percentage; do not confuse cosmetic retinol with prescription retinoids.\n- Read whether the product is leave-on, prescription-only, or combination therapy; those details change how it should be used.\n- Prefer a plain routine around it: gentle cleanser, moisturizer, sunscreen, and no new peels during the start period.\n- Look for expiry, storage instructions, and pregnancy or breastfeeding warnings before opening the tube.\n- If the product includes another active, assume irritation risk is higher and ask a dermatologist before layering more treatments."
+    },
+    {
+      "id": "S7_product_landscape",
+      "heading": "Example product landscape",
+      "role": "product_landscape",
+      "markdown": "In search results and pharmacies you may see international OTC adapalene gels, Indian prescription adapalene gels, and retinoid-adjacent cosmetic products sold with similar acne language. The active ingredient line matters more than the front label. A “retinol night cream” is not the same decision as adapalene. A fixed adapalene-benzoyl peroxide product is also not the same decision as plain adapalene gel. For Indian skin, the practical product choice is usually the simplest medically appropriate format plus a routine that makes irritation less likely."
+    },
+    {
+      "id": "S8_what_to_buy_first",
+      "heading": "What to buy first",
+      "role": "purchase_prioritization",
+      "markdown": "If you do not already own a gentle cleanser, non-stinging moisturizer, and sunscreen you will actually wear, buy those before chasing a stronger retinoid. If adapalene is appropriate for you, choose the lowest sensible entry format and build frequency slowly. Skip bundles that sell multiple acne actives together unless a clinician has mapped the schedule, because the bundle is where many people accidentally create barrier burn."
+    },
+    {
+      "id": "S9_two_week_test",
       "heading": "A two-week way to test the change",
       "role": "measurement",
       "markdown": "Change only the step this page is about, take baseline photos, compare the same zones in the same lighting, and treat tolerability as part of success."
     },
     {
-      "id": "S6_routine_compatibility",
+      "id": "S10_routine_compatibility",
       "heading": "How it should fit with the rest of your routine",
       "role": "routine_architecture",
       "markdown": "Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep nights focused on one treatment decision rather than stacking every acne active together."
     },
     {
-      "id": "S7_mistakes",
+      "id": "S11_mistakes",
       "heading": "Mistakes to avoid",
       "role": "risk_reduction",
       "markdown": "- Using adapalene as a spot treatment instead of a thin full-area acne maintenance layer.\n- Applying it to wet skin, which can increase penetration and irritation.\n- Combining it with a scrub, peel, or high-strength acid because the skin “is not peeling enough.”\n- Calling every breakout a purge even when the skin is burning, swollen, or rashy.\n- Stopping moisturizer because the face feels oily; dehydration can make irritation worse."
     },
     {
-      "id": "S8_dermatologist",
+      "id": "S12_dermatologist",
       "heading": "When to ask a dermatologist",
       "role": "safety",
       "markdown": "A dermatologist can help you decide whether adapalene is the right retinoid, whether you need a different acne plan, and whether dark marks require separate treatment. Bring a simple timeline rather than only a product list.\n\n- Ask for help before use if you are pregnant, trying to conceive, breastfeeding, or using prescription acne medicines.\n- Seek advice for painful nodules, cystic acne, scarring, or acne that affects confidence or sleep.\n- Stop guessing if burning, swelling, crusting, eczema-like patches, or eye irritation appears.\n- Bring photos showing week 0, week 4, and week 8 if you are unsure whether acne is purging or worsening.\n- List every active in your routine, including face washes, toners, peels, spot treatments, and fairness/brightening creams."
     },
     {
-      "id": "S9_faq",
+      "id": "S13_faq",
       "heading": "Questions people ask",
       "role": "seo",
       "markdown": "Q: Can adapalene cause purging?\nA: It can bring existing clogged pores to the surface for some people, especially in usual breakout zones. Purging should not feel like a chemical burn. If the skin is raw, swollen, or rashy, treat that as irritation rather than proof the product is working.\n\nQ: How often should Indian skin start adapalene?\nA: Many people do better starting two or three nights a week, then increasing slowly if the skin feels comfortable. The best schedule is the one your barrier can tolerate consistently.\n\nQ: Can adapalene fade acne marks?\nA: Adapalene may reduce future clogged pores and inflammation, which can reduce new marks. Existing PIH often also needs sun protection, time, and sometimes separate ingredients or prescription care.\n\nQ: Should I use adapalene with benzoyl peroxide?\nA: Some dermatologist-directed routines combine retinoids and benzoyl peroxide, but the combination can irritate. If you are self-managing, separate strong actives and ask a clinician before layering them aggressively.\n\nQ: Can I use moisturizer before adapalene?\nA: Yes. The sandwich method is commonly used to reduce irritation: moisturizer first, a small amount of adapalene, then moisturizer again if needed.\n\nQ: What if my skin burns after adapalene?\nA: Pause the active, simplify to gentle cleanser, moisturizer, and sunscreen, and seek advice if burning, swelling, crusting, or rash continues. Burning is not a required stage.\n\nQ: Is adapalene safe in pregnancy?\nA: Do not start retinoids during pregnancy, while trying to conceive, or while breastfeeding without medical advice. Ask a dermatologist or obstetrician for pregnancy-safe acne options.\n\nQ: When should I expect results?\nA: Acne routines are usually judged over weeks, not days. Many people need eight to twelve weeks to fairly assess a retinoid plan, assuming the skin barrier is tolerating it."
     },
     {
-      "id": "S10_sources",
+      "id": "S14_sources",
       "heading": "Source basis",
       "role": "trust",
       "markdown": "AAD acne treatment overview: https://www.aad.org/public/diseases/acne/derm-treat/treat\nAAD acne in skin of color: https://www.aad.org/public/diseases/acne/derm-treat/skin-color\nFDA adapalene gel label: https://www.accessdata.fda.gov/drugsatfda_docs/label/2016/020380s032lbl.pdf"

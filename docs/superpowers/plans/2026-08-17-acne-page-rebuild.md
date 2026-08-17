@@ -14,7 +14,8 @@
 - Keep the CTA text `Start your free AI skin scan`.
 - Do not include unsupported dermatologist-review claims.
 - Render exactly eight FAQs per page.
-- Keep each rebuilt page at 1,500 to 2,300 main-content words.
+- Keep each rebuilt page at 1,900 to 3,000 main-content words.
+- Include product-format comparison, product label checklist, example product landscape, and what-to-buy-first sections.
 - Use existing repository assets only.
 - Push only to `main`.
 

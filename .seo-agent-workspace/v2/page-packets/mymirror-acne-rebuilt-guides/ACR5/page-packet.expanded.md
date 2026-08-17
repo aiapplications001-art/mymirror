@@ -43,15 +43,40 @@ Protect the barrier: If the serum stings, causes rash, or worsens dryness, pause
 
 Measure in months: Acne marks fade slowly. Judge progress over eight to twelve weeks in the same lighting, not from daily mirror checks.
 
-### S5_two_week_test: A two-week way to test the change
+### S5_product_formats: Product formats compared
+
+Tranexamic acid products are sold as dark-spot serums, pigmentation correctors, ampoules, and multi-active brightening blends. The product decision should start with the mark pattern. A serum can support a calm PIH routine, but it cannot compensate for untreated acne, daily picking, or inconsistent sunscreen.
+
+- Tranexamic acid serum: Leave-on serum, often around 2–5% in cosmetic products; Minimalist Tranexamic 3% is one visible Indian-market example. Useful for: Flat brown acne marks when sunscreen is already consistent and the barrier is calm. Watch-outs: Results vary and take time; stinging or rash can worsen pigmentation risk.
+- Tranexamic plus azelaic or kojic blend: Multi-active pigmentation correctors such as tranexamic-azelaic style serums. Useful for: People who tolerate actives and want one product aimed at uneven tone. Watch-outs: More ingredients means more variables. Introduce slowly and do not stack with peels at first.
+- Niacinamide or barrier-support serum: Not a tranexamic product, but commonly compared for acne marks and tone. Useful for: Skin that is irritated, oily, or barrier-compromised before stronger pigment steps. Watch-outs: May not be enough for persistent pigmentation, but can make the routine more tolerable.
+- Dermatologist-led options: Prescription pigment plans, procedures, or oral tranexamic acid when medically appropriate. Useful for: Melasma-like patterns, stubborn PIH, or pigmentation mixed with active acne/scarring. Watch-outs: Oral tranexamic acid is not a cosmetic serum and needs medical screening.
+
+### S6_product_label_checklist: Product label checklist
+
+- Check the active percentage and whether tranexamic acid is the main ingredient or one of many brightening claims.
+- Look for added acids, retinoids, fragrance, or exfoliants that may make the product less beginner-friendly.
+- Buy sunscreen first if you are not already consistent; pigment products without SPF are hard to judge.
+- Avoid oral tranexamic acid unless prescribed and medically supervised.
+- Track brown PIH separately from red marks, active acne, and depressed scars because each needs a different expectation.
+
+### S7_product_landscape: Example product landscape
+
+Search results mix topical tranexamic serums, tranexamic-azelaic correctors, kojic/alpha-arbutin blends, niacinamide serums, peeling solutions, and melasma medication discussions. That mix can be confusing because the front-end promise is often “dark spots,” but the risk profile is different. For Indian acne marks, the safest product landscape is sunscreen, acne control, barrier support, then one pigment product. If the mark pattern is symmetrical or melasma-like, the product shelf is the wrong place to self-diagnose.
+
+### S8_what_to_buy_first: What to buy first
+
+Buy or recommit to broad-spectrum sunscreen before buying a pigment serum. If acne is still active, invest effort in preventing new breakouts first. Once the routine is calm, choose one topical tranexamic product and use it consistently for eight to twelve weeks in the same lighting. Avoid buying multiple brightening serums together because irritation can create the exact PIH you are trying to fade.
+
+### S9_two_week_test: A two-week way to test the change
 
 Change only the step this page is about, take baseline photos, compare the same zones in the same lighting, and treat tolerability as part of success.
 
-### S6_routine_compatibility: How it should fit with the rest of your routine
+### S10_routine_compatibility: How it should fit with the rest of your routine
 
 Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep nights focused on one treatment decision rather than stacking every acne active together.
 
-### S7_mistakes: Mistakes to avoid
+### S11_mistakes: Mistakes to avoid
 
 - Using tranexamic acid while still picking active acne.
 - Skipping sunscreen because the serum is marketed for dark spots.
@@ -59,7 +84,7 @@ Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep
 - Treating melasma-like patches as ordinary acne marks without medical advice.
 - Expecting deep or old pigmentation to disappear in two weeks.
 
-### S8_dermatologist: When to ask a dermatologist
+### S12_dermatologist: When to ask a dermatologist
 
 A dermatologist can help distinguish PIH, PIE, melasma, acne scars, and other pigment patterns. This matters because the wrong self-treatment can delay useful care or irritate skin that already marks easily.
 
@@ -69,7 +94,7 @@ A dermatologist can help distinguish PIH, PIE, melasma, acne scars, and other pi
 - Bring a list of brightening products, peels, retinoids, and home remedies you have already tried.
 - Use photos from the same lighting to show whether marks are fading, stable, or darkening.
 
-### S9_faq: Questions people ask
+### S13_faq: Questions people ask
 
 Q: Does tranexamic acid work for PIH?
 A: Topical tranexamic acid may support some pigmentation routines, but results vary. PIH also depends on acne control, sun protection, skin tone, depth of pigment, and irritation level.
@@ -95,7 +120,7 @@ A: Red or pink post-acne marks may be PIE rather than PIH. Pigment ingredients m
 Q: Should I exfoliate PIH aggressively?
 A: No. Over-exfoliation can inflame skin and create more marks. Gentle consistency beats repeated irritation.
 
-### S10_sources: Source basis
+### S14_sources: Source basis
 
 AAD dark spots guidance: https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots
 AAD sun protection guidance: https://www.aad.org/public/everyday-care/sun-protection

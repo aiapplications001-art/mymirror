@@ -57,12 +57,16 @@ test('rebuilt acne pages render as full-depth MyMirror guides', async () => {
     assert.match(html, /href="\/scan"[^>]*>Start your free AI skin scan<\/a>/);
     assert.match(html, new RegExp(`<img class="hero-image" src="${page.hero.replaceAll('/', '\\/')}"`));
     assert.match(html, /<script type="application\/ld\+json">/);
-    assert.ok(wordCount(text) >= 1500, `${page.slug} should have at least 1500 main-content words`);
-    assert.ok(wordCount(text) <= 2300, `${page.slug} should stay focused under 2300 main-content words`);
+    assert.ok(wordCount(text) >= 1900, `${page.slug} should have at least 1900 main-content words`);
+    assert.ok(wordCount(text) <= 3000, `${page.slug} should stay focused under 3000 main-content words`);
     assert.equal((html.match(/<details>/g) ?? []).length, 8, `${page.slug} should render 8 FAQs`);
     assert.match(html, /How to decide if this page is for you/);
     assert.match(html, /What to look for on Indian skin/);
     assert.match(html, /Safe use plan/);
+    assert.match(html, /Product formats compared/);
+    assert.match(html, /Product label checklist/);
+    assert.match(html, /Example product landscape/);
+    assert.match(html, /What to buy first/);
     assert.match(html, /Mistakes to avoid/);
     assert.match(html, /When to ask a dermatologist/);
     assert.match(html, /Source basis/);
