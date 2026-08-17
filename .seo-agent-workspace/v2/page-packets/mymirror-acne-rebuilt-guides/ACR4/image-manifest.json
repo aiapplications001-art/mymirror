@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": {
+    "slug": "benzoyl-peroxide-spot-treatment-vs-gel-india",
+    "h1": "Benzoyl peroxide spot treatment vs gel: how to choose without burning Indian skin",
+    "companyName": "MyMirror"
+  },
+  "promptCompanionRequired": false,
+  "assets": [
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "16:9",
+      "altText": "An illustrative tube of benzoyl peroxide acne treatment on a bathroom counter",
+      "status": "existing_repo_asset",
+      "filePath": "/assets/images/benzoyl-peroxide-usa-og.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    },
+    {
+      "id": "IMG_PRODUCT_1",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Benzac AC 2.5% Gel product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.1mg.com/drugs/benzac-ac-2.5-gel-678551",
+      "filePath": "/assets/images/product-examples/benzac-ac-25-gel.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    },
+    {
+      "id": "IMG_PRODUCT_2",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Benzac AC 5% Gel product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.1mg.com/drugs/benzac-ac-5-gel-679396",
+      "filePath": "/assets/images/product-examples/benzac-ac-25-gel.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    },
+    {
+      "id": "IMG_PRODUCT_3",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Persol AC 2.5 Gel product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.1mg.com/drugs/persol-ac-2.5-gel-398087",
+      "filePath": "/assets/images/product-examples/persol-ac-25-gel.jpg",
+      "assetType": "existing_repo_asset",
+      "preferredFormat": "jpg",
+      "licensing": {
+        "status": "existing_repository_asset",
+        "note": "Existing MyMirror repository visual reused; no competitor screenshot, third-party logo, or external brand visual introduced."
+      }
+    }
+  ]
+}

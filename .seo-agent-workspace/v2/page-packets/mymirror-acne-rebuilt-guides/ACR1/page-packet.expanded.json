@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v2",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "acne_decision_guide",
+    "copyStatus": "rebuilt_publish_ready",
+    "createdDate": "2026-08-17"
+  },
+  "seo": {
+    "title": "Adapalene Gel for Acne on Indian Skin | MyMirror",
+    "description": "A cautious Indian-skin guide to adapalene gel for acne: retinization, sandwich method, PIH risk, sunscreen, mistakes, and when to ask a dermatologist.",
+    "slug": "adapalene-gel-for-acne-indian-skin-guide",
+    "h1": "Adapalene gel for acne on Indian skin: how to use it without wrecking your barrier",
+    "primaryKeyword": "adapalene gel for acne Indian skin",
+    "secondaryKeywords": [
+      "adapalene gel",
+      "retinoid acne",
+      "retinization",
+      "PIH Indian skin",
+      "sandwich method"
+    ]
+  },
+  "cta": {
+    "primary": {
+      "label": "Start your free AI skin scan",
+      "destination": "https://mymirror.fit/scan",
+      "microcopy": "Use MyMirror to organize visible acne signals before changing your routine."
+    }
+  },
+  "sections": [
+    {
+      "id": "S1_hero",
+      "heading": "Adapalene gel for acne on Indian skin: how to use it without wrecking your barrier",
+      "role": "conversion",
+      "markdown": "Adapalene can be useful for clogged pores and acne maintenance, but Indian skin often needs a slower start because irritation can leave longer-lasting dark marks."
+    },
+    {
+      "id": "S2_decision",
+      "heading": "How to decide if this page is for you",
+      "role": "intent_match",
+      "markdown": "This page is for people who are considering adapalene, already bought a gel, or are trying to understand why their skin is flaking, purging, or burning. It does not replace a prescription plan. It helps you separate expected retinoid adjustment from avoidable irritation, especially when post-inflammatory hyperpigmentation is a concern."
+    },
+    {
+      "id": "S3_indian_skin",
+      "heading": "What to look for on Indian skin",
+      "role": "education",
+      "markdown": "On medium to deep Indian skin tones, the visible problem after acne is often not only the pimple. It is the brown mark that stays after the inflammation settles. Adapalene can help prevent new clogged pores over time, but if it causes burning, peeling, or repeated inflammation, the routine itself can become a new PIH trigger.\n\n- Retinization: Dryness, mild flaking, and a tight feeling can happen when a retinoid is introduced. Start two or three nights a week and judge tolerance before increasing.\n- Purge vs irritation: A purge tends to look like acne in usual breakout zones; irritation looks more like burning, rashy redness, or raw skin. Pause and simplify if the face stings during gentle cleansing or moisturizer.\n- PIH risk: Inflamed pimples and irritated skin can both leave brown marks on Indian skin. The goal is fewer inflamed events, not maximum peeling.\n- Sun sensitivity: Retinoid routines make sunscreen discipline more important. Daily SPF and shade reduce the chance that dark marks linger or deepen."
+    },
+    {
+      "id": "S4_safe_use",
+      "heading": "Safe use plan",
+      "role": "how_to",
+      "markdown": "A safer adapalene plan is intentionally boring. The product is only one part of the routine; moisturizer, sunscreen, dose, and spacing decide whether the skin can stay with it long enough to benefit.\n\nStart with pea-size dosing: Use a pea-sized amount for the whole face, not a pea on every pimple. Avoid eyelids, corners of the nose, lips, and broken skin. More gel usually means more irritation, not faster acne control.\n\nUse the sandwich method if sensitive: Apply moisturizer, then adapalene, then another light moisturizer layer. This can reduce early dryness while still letting you build consistency.\n\nKeep the schedule slow: Try two nights a week for two weeks, then alternate nights if comfortable. Increase only when skin feels normal the next morning.\n\nSeparate harsh actives: Do not stack strong exfoliating acids, scrubs, peels, benzoyl peroxide, or alcohol-heavy toners on the same night unless a dermatologist told you to.\n\nProtect the morning routine: Use a gentle cleanser, moisturizer, and broad-spectrum sunscreen. Without sunscreen, PIH improvement is much harder to judge."
+    },
+    {
+      "id": "S5_product_formats",
+      "heading": "Product formats compared",
+      "role": "product_education",
+      "markdown": "The most useful adapalene product decision is not which tube looks strongest. It is whether the label, strength, vehicle, and support routine match a slow retinoid introduction. Product names also vary by country and pharmacy channel, so treat examples as a way to read labels, not as endorsements or a substitute for medical advice.\n\n- Adapalene 0.1% gel: Common retinoid format; Differin Gel is a well-known OTC example in some markets, while Indian access may vary by brand and prescription status. Useful for: People with mostly clogged pores, blackheads, whiteheads, and recurring acne-prone zones who can commit to slow use. Watch-outs: Still irritating if overused. A pea-sized full-face amount is very different from a thick spot layer.\n- Adapalene cream or lotion vehicle: Some prescription products use a creamier vehicle instead of a clear gel. Useful for: Skin that becomes tight or flaky with gels, if a clinician recommends that format. Watch-outs: A richer vehicle may feel more comfortable but can still cause retinization and PIH-triggering irritation.\n- Adapalene plus benzoyl peroxide combination: Fixed combinations exist in some prescription acne plans. Useful for: Inflamed acne where a dermatologist wants both a retinoid and benzoyl peroxide effect in one plan. Watch-outs: More irritation potential. Do not build your own aggressive same-night stack unless directed.\n- Support products around adapalene: Gentle cleanser, bland moisturizer, and broad-spectrum sunscreen are part of the product system. Useful for: Anyone starting a retinoid, especially Indian skin that marks after irritation. Watch-outs: Buying adapalene without barrier support often leads to stopping early or creating avoidable PIH."
+    },
+    {
+      "id": "S6_indian_product_examples",
+      "heading": "Indian product examples",
+      "role": "visible_product_examples",
+      "markdown": "Examples only, not endorsements.\n\n- Deriva MS Aqueous Gel: A Tata 1mg-listed adapalene microsphere gel from Glenmark; useful as a label-reading example for 0.1% adapalene. Caution: Prescription/medical-use context. Do not self-start during pregnancy or on irritated skin. Source: https://www.1mg.com/drugs/deriva-ms-aqueous-gel-144224 Image: /assets/images/product-examples/deriva-ms-aqueous-gel.jpg\n- Adaferin Gel: A Galderma India adapalene gel listing; helpful for comparing active ingredient, strength, and instructions. Caution: Use only as directed. Retinoid irritation can worsen PIH if pushed too fast. Source: https://www.1mg.com/drugs/adaferin-gel-123250 Image: /assets/images/product-examples/adaferin-gel.jpg\n- Adapen 0.1% Gel: Another Indian pharmacy adapalene listing; compare vehicle, brand, and substitute notes rather than buying by price alone. Caution: Ask a dermatologist if acne is painful, scarring, or mixed with eczema-like irritation. Source: https://www.1mg.com/drugs/adapen-0.1-w-w-gel-165935 Image: /assets/images/product-examples/adapen-gel.png"
+    },
+    {
+      "id": "S7_product_label_checklist",
+      "heading": "Product label checklist",
+      "role": "buyer_guidance",
+      "markdown": "- Check that the active says adapalene and note the percentage; do not confuse cosmetic retinol with prescription retinoids.\n- Read whether the product is leave-on, prescription-only, or combination therapy; those details change how it should be used.\n- Prefer a plain routine around it: gentle cleanser, moisturizer, sunscreen, and no new peels during the start period.\n- Look for expiry, storage instructions, and pregnancy or breastfeeding warnings before opening the tube.\n- If the product includes another active, assume irritation risk is higher and ask a dermatologist before layering more treatments."
+    },
+    {
+      "id": "S8_product_landscape",
+      "heading": "Example product landscape",
+      "role": "product_landscape",
+      "markdown": "In search results and pharmacies you may see international OTC adapalene gels, Indian prescription adapalene gels, and retinoid-adjacent cosmetic products sold with similar acne language. The active ingredient line matters more than the front label. A “retinol night cream” is not the same decision as adapalene. A fixed adapalene-benzoyl peroxide product is also not the same decision as plain adapalene gel. For Indian skin, the practical product choice is usually the simplest medically appropriate format plus a routine that makes irritation less likely."
+    },
+    {
+      "id": "S9_what_to_buy_first",
+      "heading": "What to buy first",
+      "role": "purchase_prioritization",
+      "markdown": "If you do not already own a gentle cleanser, non-stinging moisturizer, and sunscreen you will actually wear, buy those before chasing a stronger retinoid. If adapalene is appropriate for you, choose the lowest sensible entry format and build frequency slowly. Skip bundles that sell multiple acne actives together unless a clinician has mapped the schedule, because the bundle is where many people accidentally create barrier burn."
+    },
+    {
+      "id": "S10_two_week_test",
+      "heading": "A two-week way to test the change",
+      "role": "measurement",
+      "markdown": "Change only the step this page is about, take baseline photos, compare the same zones in the same lighting, and treat tolerability as part of success."
+    },
+    {
+      "id": "S11_routine_compatibility",
+      "heading": "How it should fit with the rest of your routine",
+      "role": "routine_architecture",
+      "markdown": "Keep mornings anchored around gentle cleansing, moisturizer, and sunscreen. Keep nights focused on one treatment decision rather than stacking every acne active together."
+    },
+    {
+      "id": "S12_mistakes",
+      "heading": "Mistakes to avoid",
+      "role": "risk_reduction",
+      "markdown": "- Using adapalene as a spot treatment instead of a thin full-area acne maintenance layer.\n- Applying it to wet skin, which can increase penetration and irritation.\n- Combining it with a scrub, peel, or high-strength acid because the skin “is not peeling enough.”\n- Calling every breakout a purge even when the skin is burning, swollen, or rashy.\n- Stopping moisturizer because the face feels oily; dehydration can make irritation worse."
+    },
+    {
+      "id": "S13_dermatologist",
+      "heading": "When to ask a dermatologist",
+      "role": "safety",
+      "markdown": "A dermatologist can help you decide whether adapalene is the right retinoid, whether you need a different acne plan, and whether dark marks require separate treatment. Bring a simple timeline rather than only a product list.\n\n- Ask for help before use if you are pregnant, trying to conceive, breastfeeding, or using prescription acne medicines.\n- Seek advice for painful nodules, cystic acne, scarring, or acne that affects confidence or sleep.\n- Stop guessing if burning, swelling, crusting, eczema-like patches, or eye irritation appears.\n- Bring photos showing week 0, week 4, and week 8 if you are unsure whether acne is purging or worsening.\n- List every active in your routine, including face washes, toners, peels, spot treatments, and fairness/brightening creams."
+    },
+    {
+      "id": "S14_faq",
+      "heading": "Questions people ask",
+      "role": "seo",
+      "markdown": "Q: Can adapalene cause purging?\nA: It can bring existing clogged pores to the surface for some people, especially in usual breakout zones. Purging should not feel like a chemical burn. If the skin is raw, swollen, or rashy, treat that as irritation rather than proof the product is working.\n\nQ: How often should Indian skin start adapalene?\nA: Many people do better starting two or three nights a week, then increasing slowly if the skin feels comfortable. The best schedule is the one your barrier can tolerate consistently.\n\nQ: Can adapalene fade acne marks?\nA: Adapalene may reduce future clogged pores and inflammation, which can reduce new marks. Existing PIH often also needs sun protection, time, and sometimes separate ingredients or prescription care.\n\nQ: Should I use adapalene with benzoyl peroxide?\nA: Some dermatologist-directed routines combine retinoids and benzoyl peroxide, but the combination can irritate. If you are self-managing, separate strong actives and ask a clinician before layering them aggressively.\n\nQ: Can I use moisturizer before adapalene?\nA: Yes. The sandwich method is commonly used to reduce irritation: moisturizer first, a small amount of adapalene, then moisturizer again if needed.\n\nQ: What if my skin burns after adapalene?\nA: Pause the active, simplify to gentle cleanser, moisturizer, and sunscreen, and seek advice if burning, swelling, crusting, or rash continues. Burning is not a required stage.\n\nQ: Is adapalene safe in pregnancy?\nA: Do not start retinoids during pregnancy, while trying to conceive, or while breastfeeding without medical advice. Ask a dermatologist or obstetrician for pregnancy-safe acne options.\n\nQ: When should I expect results?\nA: Acne routines are usually judged over weeks, not days. Many people need eight to twelve weeks to fairly assess a retinoid plan, assuming the skin barrier is tolerating it."
+    },
+    {
+      "id": "S15_sources",
+      "heading": "Source basis",
+      "role": "trust",
+      "markdown": "AAD acne treatment overview: https://www.aad.org/public/diseases/acne/derm-treat/treat\nAAD acne in skin of color: https://www.aad.org/public/diseases/acne/derm-treat/skin-color\nFDA adapalene gel label: https://www.accessdata.fda.gov/drugsatfda_docs/label/2016/020380s032lbl.pdf"
+    }
+  ],
+  "images": [
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "purpose": "First-fold hero visual",
+      "aspectRatio": "16:9",
+      "altText": "An illustrative tube of adapalene gel on a bathroom counter",
+      "status": "existing_repo_asset",
+      "filePath": "/assets/images/adapalene-gel-india-og.jpg"
+    },
+    {
+      "id": "IMG_PRODUCT_1",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Deriva MS Aqueous Gel product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.1mg.com/drugs/deriva-ms-aqueous-gel-144224",
+      "filePath": "/assets/images/product-examples/deriva-ms-aqueous-gel.jpg"
+    },
+    {
+      "id": "IMG_PRODUCT_2",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Adaferin Gel product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.1mg.com/drugs/adaferin-gel-123250",
+      "filePath": "/assets/images/product-examples/adaferin-gel.jpg"
+    },
+    {
+      "id": "IMG_PRODUCT_3",
+      "sectionId": "S6_indian_product_examples",
+      "purpose": "Visible Indian product example card",
+      "aspectRatio": "1:1",
+      "altText": "Adapen 0.1% Gel product image",
+      "status": "approved_third_party_product_visual",
+      "sourceUrl": "https://www.1mg.com/drugs/adapen-0.1-w-w-gel-165935",
+      "filePath": "/assets/images/product-examples/adapen-gel.png"
+    }
+  ],
+  "sources": [
+    {
+      "label": "AAD acne treatment overview",
+      "url": "https://www.aad.org/public/diseases/acne/derm-treat/treat"
+    },
+    {
+      "label": "AAD acne in skin of color",
+      "url": "https://www.aad.org/public/diseases/acne/derm-treat/skin-color"
+    },
+    {
+      "label": "FDA adapalene gel label",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2016/020380s032lbl.pdf"
+    },
+    {
+      "label": "Deriva MS Aqueous Gel",
+      "url": "https://www.1mg.com/drugs/deriva-ms-aqueous-gel-144224"
+    },
+    {
+      "label": "Adaferin Gel",
+      "url": "https://www.1mg.com/drugs/adaferin-gel-123250"
+    },
+    {
+      "label": "Adapen 0.1% Gel",
+      "url": "https://www.1mg.com/drugs/adapen-0.1-w-w-gel-165935"
+    }
+  ]
+}
