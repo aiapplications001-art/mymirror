@@ -59,6 +59,16 @@
       "source": "/blog/pimple-vs-zit-inflammatory-papules-pustules-indian-skin/",
       "destination": "/acne/pimple-zit/",
       "permanent": true
+    },
+    {
+      "source": "/acne/azelaic-acid-for-acne-indian-skin",
+      "destination": "/acne/azelaic-acid-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/azelaic-acid-for-acne-indian-skin/",
+      "destination": "/acne/azelaic-acid-for-acne-india/",
+      "permanent": true
     }
   ],
   "rewrites": [
