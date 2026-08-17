@@ -29,11 +29,6 @@ const pages = [
     hero: '/assets/images/salicylic_dropper.jpg'
   },
   {
-    slug: 'azelaic-acid-for-acne-india',
-    h1Pattern: /Azelaic acid 10% for acne on Indian skin/,
-    hero: '/assets/images/azelaic-acid-og-v4.jpg'
-  },
-  {
     slug: 'adapalene-gel-for-acne-indian-skin-guide',
     h1Pattern: /Adapalene gel for acne on Indian skin/,
     hero: '/assets/images/adapalene-gel-india-og.jpg'
