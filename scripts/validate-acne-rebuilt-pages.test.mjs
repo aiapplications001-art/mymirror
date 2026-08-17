@@ -4,6 +4,11 @@ import test from 'node:test';
 
 const pages = [
   {
+    slug: 'clindamycin-gel-for-acne-india',
+    h1Pattern: /Clindamycin gel 1% for acne on Indian skin/,
+    hero: '/assets/images/product-examples/clindamycin-gel-tube.jpg'
+  },
+  {
     slug: 'salicylic-acid-face-wash-for-acne-indian-skin',
     h1Pattern: /Salicylic acid face wash for acne on Indian skin/,
     hero: '/assets/images/sa-cleanser-foam-lather.jpg'
