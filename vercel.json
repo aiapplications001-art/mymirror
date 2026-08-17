@@ -74,6 +74,16 @@
       "source": "/acne/salicylic-acid-face-wash-for-acne-india",
       "destination": "/acne/salicylic-acid-face-wash-for-acne-indian-skin/",
       "permanent": true
+    },
+    {
+      "source": "/acne/salicylic-acid-face-wash-for-acne-indian-skin",
+      "destination": "/acne/salicylic-acid-cleanser-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/salicylic-acid-face-wash-for-acne-indian-skin/",
+      "destination": "/acne/salicylic-acid-cleanser-for-acne-india/",
+      "permanent": true
     }
   ],
   "rewrites": [
