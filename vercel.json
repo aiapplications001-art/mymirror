@@ -192,6 +192,46 @@
     {
       "source": "/scan-log/:path*",
       "destination": "https://face3layerscanner.onrender.com/scan-log/:path*"
+    },
+    {
+      "source": "/acne/benzoyl-peroxide-gel-2.5-vs-5-india/",
+      "destination": "/acne/benzoyl-peroxide-gel-2.5-vs-5-india/index.html"
+    },
+    {
+      "source": "/acne/adapalene-0.1-percent-gel-acne-india/",
+      "destination": "/acne/adapalene-0.1-percent-gel-acne-india/index.html"
+    },
+    {
+      "source": "/acne/double-cleansing-routine-acne-prone-skin-india/",
+      "destination": "/acne/double-cleansing-routine-acne-prone-skin-india/index.html"
+    },
+    {
+      "source": "/acne/fungal-acne-vs-regular-acne-treatment-india/",
+      "destination": "/acne/fungal-acne-vs-regular-acne-treatment-india/index.html"
+    },
+    {
+      "source": "/acne/tranexamic-acid-3-percent-serum-pih-india/",
+      "destination": "/acne/tranexamic-acid-3-percent-serum-pih-india/index.html"
+    },
+    {
+      "source": "/acne/panoxyl-10-percent-benzoyl-peroxide-acne-wash-usa/",
+      "destination": "/acne/panoxyl-10-percent-benzoyl-peroxide-acne-wash-usa/index.html"
+    },
+    {
+      "source": "/acne/cerave-resurfacing-retinol-serum-post-acne-marks-usa/",
+      "destination": "/acne/cerave-resurfacing-retinol-serum-post-acne-marks-usa/index.html"
+    },
+    {
+      "source": "/acne/hydrocolloid-pimple-patches-cystic-acne-usa/",
+      "destination": "/acne/hydrocolloid-pimple-patches-cystic-acne-usa/index.html"
+    },
+    {
+      "source": "/acne/differin-adapalene-0.1-percent-gel-usa/",
+      "destination": "/acne/differin-adapalene-0.1-percent-gel-usa/index.html"
+    },
+    {
+      "source": "/acne/salicylic-acid-body-wash-bacne-usa/",
+      "destination": "/acne/salicylic-acid-body-wash-bacne-usa/index.html"
     }
   ],
   "headers": [
