@@ -4,6 +4,11 @@ import test from 'node:test';
 
 const pages = [
   {
+    slug: 'best-cica-moisturizer-for-acne-prone-skin-india',
+    h1Pattern: /Best Cica moisturizer for acne-prone skin in India/,
+    hero: '/assets/images/cica-moisturizer-gel-pot.jpg'
+  },
+  {
     slug: 'clindamycin-gel-for-acne-india',
     h1Pattern: /Clindamycin gel 1% for acne on Indian skin/,
     hero: '/assets/images/product-examples/clindamycin-gel-tube.jpg'

@@ -7,6 +7,73 @@ const clusterSlug = 'mymirror-acne-rebuilt-guides';
 
 const pages = [
   {
+    id: 'ACR8',
+    slug: 'best-cica-moisturizer-for-acne-prone-skin-india',
+    title: 'Best Cica Moisturizer for Acne Prone Skin India | MyMirror',
+    description: 'Discover how Cica (Centella Asiatica) moisturizers repair damaged skin barriers and calm active acne on Indian skin. Compare non-comedogenic formulas.',
+    ogTitle: 'Best Cica Moisturizer for Acne-Prone Skin in India',
+    h1: 'Best Cica moisturizer for acne-prone skin in India: Centella Asiatica barrier repair guide',
+    eyebrow: 'Moisturizer active guide',
+    primaryKeyword: 'best cica moisturizer for acne prone skin india',
+    secondaryKeywords: ['centella asiatica moisturizer acne india', 'madecassoside gel moisturizer indian skin', 'cica cream for barrier repair acne prone', 'lightweight cica gel for oily acne skin', 'how to repair skin barrier with cica'],
+    heroImage: '/assets/images/cica-moisturizer-gel-pot.jpg',
+    heroAlt: 'Cooling lightweight green Cica gel moisturizer jar for soothing acne-prone Indian skin',
+    heroNote: 'Centella Asiatica soothing, barrier lipid restoration, or heavy non-pore-clogging balm?',
+    heroCopy: 'Centella Asiatica (commonly known as Cica or Gotu Kola in traditional Ayurvedic herbology) contains four active triterpenoids—Madecassoside, Asiaticoside, Madecassic Acid, and Asiatic Acid—that stimulate collagen synthesis, accelerate micro-wound healing, and reduce proinflammatory cytokines. For acne-prone Indian skin suffering from redness, stinging, flaking, and barrier damage caused by retinoids (like Adapalene), Salicylic acid cleansers, or Benzoyl peroxide spot treatments, a Cica moisturizer provides instant cooling hydration without clogging pores. Selecting a lightweight, non-comedogenic gel-cream texture is essential for humid Indian climates to prevent rebound oiliness and maintain a healthy, resilient skin barrier.',
+    decisionIntro: 'This decision guide evaluates Centella Asiatica (Cica) moisturizers for acne-prone Indian skin, explaining how Madecassoside calms active redness, how to differentiate lightweight gel-creams from heavy occlusive balms, how Cica repairs compromised barrier lipids, and how to pair Cica with active acne treatments. When skin is irritated by harsh chemical peels, active retinoids, or aggressive foaming cleansers, barrier breakdown causes increased transepidermal water loss (TEWL). Using a non-comedogenic Cica moisturizer restores barrier lipids, calms stinging sensations, and balances oil production for clear, resilient skin.',
+    decisionCards: [
+      ['Best fit', 'Red, irritated, stinging, or over-exfoliated skin caused by active acne treatments, retinoid purging, or environmental humidity.'],
+      ['Use more caution', 'Expecting a soothing moisturizer alone to eradicate deep bacterial acne or using heavy butter-based Cica balms on extremely oily skin.'],
+      ['Barrier repair rule', 'Choose a water-gel or light gel-cream Cica formula containing Panthenol or Ceramides to restore skin lipids without clogging pores.']
+    ],
+    indianSkinIntro: 'Indian skin phototypes IV to VI are highly susceptible to post-inflammatory hyperpigmentation (PIH) whenever chronic inflammation or barrier damage occurs. Aggressive acne routines using strong exfoliants often strip intercellular lipids, triggering stinging, tight skin, and reactive melanogenesis that darkens post-acne spots. Centella Asiatica suppresses inflammatory IL-6 and TNF-alpha cytokines while restoring stratum corneum hydration. Incorporating a non-comedogenic Cica moisturizer preserves barrier integrity, calms persistent erythema, restores transepidermal water balance, and prevents secondary dark spot formation on Indian skin under hot and humid weather conditions.',
+    indianRows: [
+      ['Madecassoside anti-inflammatory action', 'Downregulates pro-inflammatory cytokines to calm red, swollen acne papules.', 'Apply morning and night after gentle cleansing.'],
+      ['Non-comedogenic gel-cream texture', 'Provides hydration without heavy mineral oils or pore-clogging plant waxes.', 'Ideal for humid Indian summers and monsoon months.'],
+      ['Retinoid burn restoration', 'Soothes stinging and peeling caused by Adapalene or Tretinoin initiation.', 'Layer Cica moisturizer before or after applying active retinoid.'],
+      ['PIH risk reduction', 'Minimizing erythema and barrier damage prevents dark post-acne marks.', 'Pair with broad-spectrum SPF 50 sunscreen daily.']
+    ],
+    safeIntro: 'Incorporate a Centella Asiatica (Cica) moisturizer into your daily routine to repair your skin barrier, calm active redness, and protect intercellular lipids while treating acne with active exfoliants or topical prescription retinoids.',
+    safeSteps: [
+      ['Cleanse with a mild pH-balanced cleanser', 'Wash face gently with lukewarm water and a non-stripping cleanser.'],
+      ['Apply active treatment or serum', 'Apply your prescribed active (such as Adapalene, Niacinamide, or Salicylic acid) onto dry skin.'],
+      ['Dispense a nickel-sized amount of Cica moisturizer', 'Dot the Cica gel-cream across forehead, cheeks, nose, and chin.'],
+      ['Massage gently until fully absorbed', 'Smooth the moisturizer into skin using light upward strokes until a soft hydrated finish remains.'],
+      ['Apply SPF 50 sunscreen every morning', 'Protect your repaired skin barrier from UV radiation and dark spot darkening.']
+    ],
+    mistakes: [
+      'Using thick, heavy occlusive Cica ointments designed for dry body eczema on oily acne-prone faces.',
+      'Stopping all moisturizer use when experiencing acne breakouts, leading to severe rebound oiliness.',
+      'Applying Cica moisturizer onto dirty or unwashed skin, trapping sweat and atmospheric dust inside pores.',
+      'Expecting Centella Asiatica alone to cure deep cystic acne without active dermatological acne treatments.',
+      'Combining new Cica moisturizers with multiple untested active serums at the same time.'
+    ],
+    dermIntro: 'Consult a dermatologist if your skin displays persistent severe inflammation, burning, or non-healing acne lesions.',
+    dermList: [
+      'Seek evaluation for severe chemical burns, severe contact allergies, or chronic facial erythema.',
+      'Discuss prescription barrier-repair creams if OTC moisturizers fail to relieve stinging.',
+      'Obtain professional guidance on pairing Cica creams with oral or topical acne medications.',
+      'Review your complete product ingredient list with your clinician.',
+      'Ask about patch testing if your skin reacts adversely to multiple soothing products.'
+    ],
+    scanUse: 'Use MyMirror AI skin scan to track facial redness reduction, skin barrier hydration levels, and pimple recovery progress over 4 weeks.',
+    faqs: [
+      ['What is Cica in skincare?', 'Cica refers to Centella Asiatica, a medicinal herb rich in soothing Madecassoside and Asiaticoside that calms inflammation and repairs skin barriers.'],
+      ['Is Cica good for acne-prone skin?', 'Yes. Cica reduces red swelling, accelerates pimple healing, and restores skin barriers damaged by strong acne treatments.'],
+      ['Will Cica moisturizer clog pores?', 'Lightweight Cica gel-creams formulated for acne-prone skin are non-comedogenic and will not clog pores.'],
+      ['Can I use Cica moisturizer with Adapalene or Retinol?', 'Yes. Cica is excellent for soothing the redness, dryness, and peeling associated with retinoid initiation.'],
+      ['Is Cica suitable for humid Indian weather?', 'Yes, provided you select a water-gel or oil-free fluid texture rather than a heavy, thick balm.'],
+      ['Does Cica help fade dark acne marks?', 'Cica prevents new dark marks by calming inflammation, but fading old brown melanin spots works best when paired with Niacinamide or Alpha Arbutin.'],
+      ['Can I use Cica moisturizer twice a day?', 'Yes. Apply morning and evening after cleansing or active serums for continuous barrier support.'],
+      ['What is the difference between Cica cream and Cica gel?', 'Cica gels are lightweight, fast-absorbing fluids for oily/combination skin, whereas Cica creams are richer formulas for dry or severely damaged skin.']
+    ],
+    sources: [
+      ['Phytomedicine review on Centella triterpenes and wound healing', 'https://www.sciencedirect.com/journal/phytomedicine'],
+      ['Indian Journal of Dermatology review on barrier repair moisturizers', 'https://e-ijd.org/'],
+      ['JAAD guidelines on non-comedogenic moisturizers in acne care', 'https://www.jaad.org/']
+    ]
+  },
+  {
     id: 'ACR7',
     slug: 'clindamycin-gel-for-acne-india',
     title: 'Clindamycin Gel 1% for Acne on Indian Skin | MyMirror',
@@ -478,6 +545,49 @@ const pages = [
 ];
 
 const productDetails = {
+  ACR8: {
+    intro: 'Cica moisturizers available in India range from ultra-lightweight water-gels to soothing gel-creams infused with Panthenol, Niacinamide, or Ceramides.',
+    formats: [
+      ['Centella Asiatica Water-Gel Moisturizer', 'Ultra-lightweight oil-free gel providing instant cooling hydration.', 'Oily, acne-prone, and monsoon skin.', 'Absorbs instantly without shine or pore clogging.'],
+      ['Cica + Panthenol Soothing Gel-Cream', 'Barrier repair gel-cream combining 5% Panthenol with Madecassoside.', 'Irritated, peeling, or retinoid-treated skin.', 'Calms active redness and stops barrier tightness.'],
+      ['Cica + Ceramide Barrier Cream', 'Nourishing barrier restoration cream for dry or damaged acne-prone skin.', 'Dehydrated acne-prone skin and winter barrier repair.', 'Restores essential intercellular lipids while keeping pores clear.']
+    ],
+    checklist: [
+      'Look for Centella Asiatica, Madecassoside, or Gotu Kola on labels.',
+      'Select gel or gel-cream textures for oily or acne-prone skin.',
+      'Ensure the formula is labeled non-comedogenic and fragrance-free.',
+      'Use after active treatment serums to lock in hydration.',
+      'Pair with daily broad-spectrum SPF 50 sunscreen.'
+    ],
+    landscape: 'In India, Cica moisturizers are available across dermatologist lines like Re’equil, Minimalist, Dot & Key, and pharmacy brands. Selecting a non-greasy gel formula ensures optimal barrier repair without acne flare-ups.',
+    buyFirst: 'Start with a lightweight Centella Asiatica water-gel or a Panthenol-infused Cica gel-cream used twice daily after cleansing.',
+    products: [
+      {
+        name: 'The Derma Co 1% Salicylic Acid Oil-Free Moisturizer',
+        badge: 'Acne Barrier Gel',
+        image: '/assets/images/product-examples/derma-co-salicylic-moisturizer.jpg',
+        url: 'https://thedermaco.com/products/1-salicylic-acid-oil-free-moisturizer-for-face-with-oat-extract-50g',
+        detail: 'Lightweight soothing moisturizer designed for acne-prone skin.',
+        caution: 'Oil-free formula.'
+      },
+      {
+        name: 'Minimalist Vitamin B5 10% Moisturizer',
+        badge: 'Soothing Panthenol Cushion',
+        image: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg',
+        url: 'https://beminimalist.co/products/vitamin-b5-10-moisturizer',
+        detail: 'Hydrating gel moisturizer enriched with Panthenol and Cica.',
+        caution: 'Fast absorbing.'
+      },
+      {
+        name: 'Excela Acne-Prone Moisturizer',
+        badge: 'Pharmacy Hydration Gel',
+        image: '/assets/images/product-examples/excela-moisturiser.jpg',
+        url: 'https://pharmeasy.in/health-care/products/excela-moisturiser-bottle-of-50gm-pump-208388',
+        detail: 'Dermatologist-recommended non-comedogenic moisturizer.',
+        caution: 'Daily barrier support.'
+      }
+    ]
+  },
   ACR7: {
     intro: 'Clindamycin 1% topical formulations in India include single-active gels, BPO combination gels (e.g. Clindamycin + Benzoyl Peroxide), and Adapalene combination gels.',
     formats: [
