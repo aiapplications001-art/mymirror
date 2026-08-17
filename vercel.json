@@ -6,11 +6,6 @@
       "permanent": true
     },
     {
-      "source": "/acne/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
       "source": "/blog/adapalene-before-after-results",
       "destination": "/acne/adapalene-before-after-results/",
       "permanent": true
