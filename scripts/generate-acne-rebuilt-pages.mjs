@@ -8,7 +8,7 @@ const clusterSlug = 'mymirror-acne-rebuilt-guides';
 const pages = [
     {
     id: 'ACR6',
-    slug: 'azelaic-acid-for-acne-indian-skin',
+    slug: 'azelaic-acid-for-acne-india',
     title: 'Azelaic Acid 10% for Acne & PIH on Indian Skin | MyMirror',
     description: 'Discover how 10% Azelaic Acid clears active breakouts and fades dark post-acne marks (PIH) on Indian skin. 4-step Sandwich Protocol for barrier safety.',
     ogTitle: 'Azelaic Acid 10% for Acne & PIH on Indian Skin',

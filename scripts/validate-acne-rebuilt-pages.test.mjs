@@ -4,7 +4,7 @@ import test from 'node:test';
 
 const pages = [
   {
-    slug: 'azelaic-acid-for-acne-indian-skin',
+    slug: 'azelaic-acid-for-acne-india',
     h1Pattern: /Azelaic acid 10% for acne on Indian skin/,
     hero: '/assets/images/azelaic-acid-og-v4.jpg'
   },

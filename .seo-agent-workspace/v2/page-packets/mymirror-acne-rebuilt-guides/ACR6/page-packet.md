@@ -6,7 +6,7 @@ Status: rebuilt publish ready
 
 - Title: Azelaic Acid 10% for Acne & PIH on Indian Skin | MyMirror
 - Meta description: Discover how 10% Azelaic Acid clears active breakouts and fades dark post-acne marks (PIH) on Indian skin. 4-step Sandwich Protocol for barrier safety.
-- Slug: azelaic-acid-for-acne-indian-skin
+- Slug: azelaic-acid-for-acne-india
 - Primary keyword: azelaic acid for acne indian skin
 - Secondary keywords: azelaic acid 10, azelaic acid PIH, sandwich protocol, dicarboxylic acid, acne marks
 
