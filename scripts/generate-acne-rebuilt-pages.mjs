@@ -7,6 +7,73 @@ const clusterSlug = 'mymirror-acne-rebuilt-guides';
 
 const pages = [
   {
+    id: 'ACR9',
+    slug: 'alpha-arbutin-serum-for-dark-spots-india',
+    title: 'Alpha Arbutin 2% Serum for Dark Spots on Indian Skin | MyMirror',
+    description: 'Learn how Alpha Arbutin 2% serum fades post-acne dark spots on Indian skin. Compare tyrosinase inhibitors, safe combinations, & sun protection guidelines.',
+    ogTitle: 'Alpha Arbutin 2% Serum for Dark Spots on Indian Skin',
+    h1: 'Alpha Arbutin 2% serum for post-acne dark spots on Indian skin: tyrosinase inhibition & safety guide',
+    eyebrow: 'Pigmentation active guide',
+    primaryKeyword: 'alpha arbutin serum for dark spots india',
+    secondaryKeywords: ['alpha arbutin 2 percent indian skin pih', 'alpha arbutin vs kojic acid dark spots', 'how to use alpha arbutin serum for post acne marks', 'alpha arbutin and niacinamide serum combination', 'alpha arbutin dark spot fading timeline'],
+    heroImage: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg',
+    heroAlt: 'Alpha Arbutin 2% serum bottle for fading post-acne dark spots on Indian skin',
+    heroNote: '2% Alpha Arbutin concentration, competitive tyrosinase inhibition, or sun protection barrier?',
+    heroCopy: 'Alpha Arbutin (Hydroquinone beta-D-glucopyranoside) is a safe, stable glycosylated hydroquinone derivative that competitively inhibits tyrosinase, the key enzyme responsible for melanin synthesis. For Indian skin phototypes IV to VI, acne inflammation frequently triggers melanocyte hyper-reactivity, resulting in persistent brown and black post-inflammatory hyperpigmentation (PIH). Unlike prescription hydroquinone which risks ochronosis and rebound pigmentation, 2% Alpha Arbutin safely fades dark spots without cytotoxic melanocyte damage. Combining Alpha Arbutin with Niacinamide or Hyaluronic Acid accelerates spot fading while protecting skin health.',
+    decisionIntro: 'This decision guide explains how Alpha Arbutin 2% serum targets post-acne dark spots on Indian skin, how competitive tyrosinase inhibition prevents melanin overproduction, how to combine Alpha Arbutin safely with Niacinamide and Vitamin C, and why daily sun protection is mandatory for visible skin brightening. When acne spots leave persistent melanin deposits on melanin-rich skin phototypes, Alpha Arbutin provides gentle, long-term tone correction without causing rebound hyperpigmentation or chemical burns.',
+    decisionCards: [
+      ['Best fit', 'Post-acne brown dark marks (PIH), sun spots, uneven skin tone, and hyperpigmentation remaining after active acne pimples heal.'],
+      ['Use more caution', 'Expecting Alpha Arbutin alone to cure active inflamed bacterial pimples or using unstable unbuffered arbutin solutions stored in bright light.'],
+      ['Sun protection rule', 'Always apply broad-spectrum SPF 50 sunscreen daily to prevent UV rays from reactivating tyrosinase and darkening fading spots.']
+    ],
+    indianSkinIntro: 'Melanin-rich Indian skin contains larger, more active melanosomes that react aggressively to cutaneous trauma. When an acne papule heals, localized inflammation upregulates tyrosinase transcription, resulting in stubborn dark brown spots (PIH) that linger for months. Hydroquinone derivative 2% Alpha Arbutin slowly releases hydroquinone via enzymatic cleavage at a rate that inhibits melanin formation without destroying melanocytes. Using 2% Alpha Arbutin morning and night reduces dark mark intensity while preserving the natural skin barrier on Indian skin under tropical UV conditions.',
+    indianRows: [
+      ['Competitive tyrosinase inhibition', 'Blocks the enzyme converting L-tyrosine to DOPA, stopping excess melanin synthesis.', 'Apply 2-3 drops onto clean skin morning and night.'],
+      ['Non-cytotoxic safety profile', 'Fades hyperpigmentation without risking exogenous ochronosis or permanent depigmentation.', 'Safe for long-term daily use across 8-12 weeks.'],
+      ['Synergistic Niacinamide pairing', 'Pairs tyrosinase inhibition with melanosome transfer blockage for dual-action brightening.', 'Layer Alpha Arbutin before 5% Niacinamide serum.'],
+      ['UV-induced relapse prevention', 'Preventing solar UV stimulation keeps fading dark spots from returning.', 'Apply broad-spectrum SPF 50 sunscreen every 3-4 hours outdoors.']
+    ],
+    safeIntro: 'Incorporate Alpha Arbutin 2% serum into your daily brightening routine with this structured application method to safely clear post-acne dark marks.',
+    safeSteps: [
+      ['Cleanse face with a gentle pH-balanced wash', 'Wash skin thoroughly with lukewarm water and a gentle non-stripping cleanser. Pat dry.'],
+      ['Dispense 2 to 3 drops of Alpha Arbutin serum', 'Apply drops directly onto face or fingertips. Focus on post-acne dark spots and hyperpigmented areas.'],
+      ['Press gently into skin until absorbed', 'Pat the lightweight water-based serum gently into skin. Allow 60 seconds for full absorption.'],
+      ['Seal with an oil-free moisturizer', 'Apply a hydrating gel or non-comedogenic cream moisturizer to lock in active ingredients.'],
+      ['Apply SPF 50 sunscreen every morning', 'Protect your skin against UV-induced melanin synthesis and post-inflammatory darkening.']
+    ],
+    mistakes: [
+      'Expecting 2% Alpha Arbutin to clear dark marks in 3 days; melanin clearance requires 8 to 12 weeks of epidermal turnover.',
+      'Skipping daily sunscreen, allowing sun exposure to reverse all fading progress achieved by the serum.',
+      'Applying Alpha Arbutin onto open bleeding picked pimples, causing stinging and localized irritation.',
+      'Storing serum bottles in direct sunlight, causing formulation oxidation and chemical degradation.',
+      'Combining multiple high-strength exfoliating acids simultaneously, causing severe barrier inflammation.'
+    ],
+    dermIntro: 'Consult a dermatologist if your dark spots fail to improve after 12 weeks or if you experience unusual skin discoloration.',
+    dermList: [
+      'Seek evaluation for melasma, dermal hyperpigmentation, or deep resistant dark marks requiring medical peels.',
+      'Discuss prescription combinations (such as Tranexamic acid, Azelaic acid, or medical Retinoids).',
+      'Consult a clinician if you notice severe redness, burning, or allergic skin reactions.',
+      'Obtain professional guidance on medical laser therapy for deep post-acne scarring and pigmentation.',
+      'Bring your current serum skincare routine to your clinical appointment.'
+    ],
+    scanUse: 'Use MyMirror AI skin scan to measure post-acne dark mark intensity, track hyperpigmentation fading progress, and assess skin clarity over 8 weeks.',
+    faqs: [
+      ['What does Alpha Arbutin do for skin?', 'Alpha Arbutin inhibits tyrosinase enzyme activity to reduce excess melanin production and fade post-acne dark spots.'],
+      ['Is Alpha Arbutin safe for Indian skin?', 'Yes. Alpha Arbutin is a gentle, safe hydroquinone derivative that effectively treats PIH on Indian skin phototypes IV to VI without risking ochronosis.'],
+      ['How long does Alpha Arbutin take to fade dark spots?', 'Consistent daily use fades dark marks within 8 to 12 weeks as skin undergoes natural cellular turnover.'],
+      ['Can I use Alpha Arbutin with Niacinamide?', 'Yes. Alpha Arbutin (blocks melanin synthesis) and Niacinamide (blocks melanosome transfer) complement each other perfectly.'],
+      ['Should I apply Alpha Arbutin morning or night?', 'You can apply 2% Alpha Arbutin both morning and night under moisturizer and sunscreen.'],
+      ['Does Alpha Arbutin cause skin purging?', 'No. Alpha Arbutin is a melanin inhibitor, not an exfoliating acid or retinoid, so it does not cause purging.'],
+      ['Can I use Alpha Arbutin with Vitamin C?', 'Yes. Combining Alpha Arbutin with Vitamin C provides potent antioxidant protection and enhances skin brightening.'],
+      ['Is 2% Alpha Arbutin better than 1%?', '2% is the clinical standard concentration for effective hyperpigmentation fading without causing skin irritation.']
+    ],
+    sources: [
+      ['Journal of Cosmetic Dermatology review on alpha-arbutin safety and efficacy', 'https://onlinelibrary.wiley.com/journal/14732165'],
+      ['Indian Journal of Dermatology consensus on treating PIH in dark skin phototypes', 'https://e-ijd.org/'],
+      ['JAAD guidelines on topical tyrosinase inhibitors', 'https://www.jaad.org/']
+    ]
+  },
+  {
     id: 'ACR8',
     slug: 'best-cica-moisturizer-for-acne-prone-skin-india',
     title: 'Best Cica Moisturizer for Acne Prone Skin India | MyMirror',
@@ -545,6 +612,49 @@ const pages = [
 ];
 
 const productDetails = {
+  ACR9: {
+    intro: 'Alpha Arbutin 2% formulations in India range from pure water-based hyaluronic serums to multi-active brightening fluids containing Niacinamide or Kojic acid.',
+    formats: [
+      ['Alpha Arbutin 2% + Hyaluronic Acid Serum', 'Lightweight water-based serum providing hydration and dark spot fading.', 'Post-acne dark spots, PIH, and uneven skin tone.', 'Absorbs quickly without sticky residue.'],
+      ['Alpha Arbutin 2% + Niacinamide 5% Brightening Serum', 'Dual-active serum targeting both melanin synthesis and melanosome transfer.', 'Stubborn hyperpigmentation and enlarged pores.', 'Provides comprehensive tone correction for Indian skin.'],
+      ['Alpha Arbutin + Kojic Acid Dark Spot Gel', 'Potent multi-inhibitor gel for localized dark spot treatment.', 'Targeted dark mark care under dermatological guidance.', 'Apply directly onto dark spots before moisturizing.']
+    ],
+    checklist: [
+      'Choose 2% Alpha Arbutin for optimal safety and efficacy.',
+      'Apply to clean skin twice daily before heavy creams.',
+      'Pair with Niacinamide or Vitamin C for enhanced results.',
+      'Apply broad-spectrum SPF 50 sunscreen daily.',
+      'Allow 8 to 12 weeks for complete dark spot clearance.'
+    ],
+    landscape: 'In India, 2% Alpha Arbutin serums (such as Minimalist Alpha Arbutin 2% + HA and The Derma Co 2% Alpha Arbutin) are leading OTC treatments for post-acne dark marks. Using a stable formulation ensures maximum tone correction.',
+    buyFirst: 'Start with a 2% Alpha Arbutin serum paired with Hyaluronic acid used twice daily, followed by an oil-free moisturizer and SPF 50 sunscreen.',
+    products: [
+      {
+        name: 'The Derma Co 1% Salicylic Acid Oil-Free Moisturizer',
+        badge: 'Acne & Spot Hydration',
+        image: '/assets/images/product-examples/derma-co-salicylic-moisturizer.jpg',
+        url: 'https://thedermaco.com/products/1-salicylic-acid-oil-free-moisturizer-for-face-with-oat-extract-50g',
+        detail: 'Lightweight moisturizer ideal for sealing brightening serums.',
+        caution: 'Oil-free texture.'
+      },
+      {
+        name: 'Minimalist Vitamin B5 10% Moisturizer',
+        badge: 'Barrier Repair Gel',
+        image: '/assets/images/product-examples/minimalist-vitamin-b5-moisturizer.jpg',
+        url: 'https://beminimalist.co/products/vitamin-b5-10-moisturizer',
+        detail: 'Panthenol gel moisturizer to maintain skin barrier health.',
+        caution: 'Soothing formula.'
+      },
+      {
+        name: 'Excela Acne-Prone Moisturizer',
+        badge: 'Pharmacy Lipid Support',
+        image: '/assets/images/product-examples/excela-moisturiser.jpg',
+        url: 'https://pharmeasy.in/health-care/products/excela-moisturiser-bottle-of-50gm-pump-208388',
+        detail: 'Non-comedogenic moisturizer recommended for acne-prone skin.',
+        caution: 'Daily application.'
+      }
+    ]
+  },
   ACR8: {
     intro: 'Cica moisturizers available in India range from ultra-lightweight water-gels to soothing gel-creams infused with Panthenol, Niacinamide, or Ceramides.',
     formats: [
