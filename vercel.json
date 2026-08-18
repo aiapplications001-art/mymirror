@@ -109,51 +109,6 @@
       "source": "/acne/salicylic-acid-body-wash-usa",
       "destination": "/acne/salicylic-acid-body-wash-bacne-usa/",
       "permanent": true
-    },
-    {
-      "source": "/acne/glycolic-acid-toner-for-acne-india",
-      "destination": "/acne/glycolic-acid-toner-pigmentation-dark-spots-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/tretinoin-vs-adapalene-acne-india",
-      "destination": "/acne/tretinoin-0.025-cream-acne-purge-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/best-non-comedogenic-moisturizer-india",
-      "destination": "/acne/best-moisturizer-for-oily-acne-prone-skin-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/salicylic-acid-cream-gel-face-india",
-      "destination": "/acne/sebogel-salicylic-acid-niacinamide-gel-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/salicylic-acid-serum-for-blackheads-usa",
-      "destination": "/acne/the-ordinary-salicylic-acid-2-percent-solution-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/best-salicylic-acid-face-wash-usa",
-      "destination": "/acne/paulas-choice-2-percent-bha-liquid-exfoliant-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/cetaphil-cleanser-for-acne-oily-skin-usa",
-      "destination": "/acne/cetaphil-gentle-clear-salicylic-acid-cleanser-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/best-cleansing-balm-for-acne-prone-skin-usa",
-      "destination": "/acne/cosrx-salicylic-acid-daily-gentle-cleanser-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/retinol-cream-usa",
-      "destination": "/acne/best-wrinkle-cream-retinol-anti-aging-usa/",
-      "permanent": true
     }
   ],
   "rewrites": [
