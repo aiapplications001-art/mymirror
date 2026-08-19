@@ -219,16 +219,6 @@
       "source": "/acne/salicylic-acid-body-wash-usa/",
       "destination": "/acne/salicylic-acid-body-wash-bacne-usa/",
       "permanent": true
-    },
-    {
-      "source": "/acne/adapalene-gel-india",
-      "destination": "/acne/adapalene-0.1-percent-gel-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/adapalene-gel-india/",
-      "destination": "/acne/adapalene-0.1-percent-gel-acne-india/",
-      "permanent": true
     }
   ],
   "rewrites": [
