@@ -219,6 +219,56 @@
       "source": "/acne/salicylic-acid-body-wash-usa/",
       "destination": "/acne/salicylic-acid-body-wash-bacne-usa/",
       "permanent": true
+    },
+    {
+      "source": "/acne/azelaic-acid-acne-dark-spots-india",
+      "destination": "/acne/azelaic-acid-for-acne-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/azelaic-acid-acne-dark-spots-india/",
+      "destination": "/acne/azelaic-acid-for-acne-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/how-to-use-salicylic-acid-without-damaging-skin-barrier",
+      "destination": "/acne/how-to-use-salicylic-acid-without-damaging-your-skin-barrier/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/how-to-use-salicylic-acid-without-damaging-skin-barrier/",
+      "destination": "/acne/how-to-use-salicylic-acid-without-damaging-your-skin-barrier/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/sunscreen-for-acne-prone-skin-india",
+      "destination": "/acne/best-sunscreen-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/sunscreen-for-acne-prone-skin-india/",
+      "destination": "/acne/best-sunscreen-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/sebogel-salicylic-acid-niacinamide-gel-india",
+      "destination": "/acne/sebogel-salicylic-acid-niacinamide-gel-review-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/sebogel-salicylic-acid-niacinamide-gel-india/",
+      "destination": "/acne/sebogel-salicylic-acid-niacinamide-gel-review-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/salicylic-acid-for-blackheads-usa",
+      "destination": "/acne/salicylic-acid-serum-for-blackheads-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/salicylic-acid-for-blackheads-usa/",
+      "destination": "/acne/salicylic-acid-serum-for-blackheads-usa/",
+      "permanent": true
     }
   ],
   "rewrites": [
