@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+import re
+import os
+
+with open('/Users/tm030/Documents/mymirror_repo/acne/adapalene-0.1-percent-gel-acne-india/index.html', 'r') as f:
+    ref_content = f.read()
+    
+# Extract CSS from reference
+css_match = re.search(r'<style>([\s\S]*?)</style>', ref_content)
+css_content = css_match.group(1) if css_match else ""
+
+html_output = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Favicons (Cache Busted v3) -->
@@ -32,47 +42,47 @@
 
   <!-- JSON-LD Schema Markup -->
   <script type="application/ld+json">
-  {
+  {{
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Proactiv vs Differin Acne Treatment System USA: Clinical Review",
     "datePublished": "2026-08-21T08:00:00+00:00",
     "dateModified": "2026-08-21T08:00:00+00:00",
-    "author": {
+    "author": {{
       "@type": "Organization",
       "name": "MyMirror Clinical Team"
-    },
-    "publisher": {
+    }},
+    "publisher": {{
       "@type": "Organization",
       "name": "MyMirror Skin Health",
-      "logo": {
+      "logo": {{
         "@type": "ImageObject",
         "url": "https://mymirror.fit/favicon.png"
-      }
-    }
-  }
+      }}
+    }}
+  }}
   </script>
 
   <script type="application/ld+json">
-  {
+  {{
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{
+    "mainEntity": [{{
       "@type": "Question",
       "name": "Can I use Proactiv and Differin together?",
-      "acceptedAnswer": {
+      "acceptedAnswer": {{
         "@type": "Answer",
         "text": "Using Benzoyl Peroxide (Proactiv) and Adapalene (Differin) together can be highly efficacious but may cause severe irritation. It is often recommended to use Proactiv in the morning and Differin at night, rather than layering them simultaneously."
-      }
-    }, {
+      }}
+    }}, {{
       "@type": "Question",
       "name": "Which acts faster: Proactiv or Differin?",
-      "acceptedAnswer": {
+      "acceptedAnswer": {{
         "@type": "Answer",
         "text": "Proactiv (Benzoyl Peroxide) typically reduces inflammatory lesions faster (within 1-2 weeks), whereas Differin takes 4-12 weeks to alter follicular desquamation and show significant clearing."
-      }
-    }]
-  }
+      }}
+    }}]
+  }}
   </script>
 
   <!-- Google Analytics Tracker (Deferred) -->
@@ -84,921 +94,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
   <style>
-
-    /* CSS DESIGN SYSTEM TOKENS */
-    :root {
-      --brand: #EC610E;
-      --brand-dark: #C14800;
-      --brand-light: #FFE1CE;
-      --bg2: #F9F6F3;
-      --border: #E8DDD5;
-      --text-main: #1E293B;
-      --text-muted: #64748B;
-      --card-bg: #FFFFFF;
-      --dark-bg: #121619;
-      --dark-card: #1E2328;
-      --warning-bg: #FFFBEB;
-      --warning-border: #FCD34D;
-      --warning-text: #92400E;
-      --danger-bg: #FEF2F2;
-      --danger-border: #FCA5A5;
-      --danger-text: #991B1B;
-      --success-bg: #F0FDF4;
-      --success-border: #86EFAC;
-      --success-text: #166534;
-      --radius-sm: 8px;
-      --radius-md: 14px;
-      --radius-lg: 20px;
-      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
-      --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.1);
-    }
-
-    /* GLOBAL RESET & BASE STYLES */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      font-size: 16px;
-    }
-
-    body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--text-main);
-      background-color: #FFFFFF;
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Kantumruy Pro', Georgia, serif;
-      font-weight: 700;
-      color: #0F172A;
-      line-height: 1.25;
-    }
-
-    p {
-      margin-bottom: 1.25rem;
-      color: #334155;
-    }
-
-    a {
-      color: var(--brand);
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    a:hover {
-      color: var(--brand-dark);
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    /* TOP HEADER BAR */
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      height: 60px;
-      background: #FFFFFF;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 1.5rem;
-    }
-
-    .brand-logo {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-family: 'Kantumruy Pro', serif;
-      font-weight: 700;
-      font-size: 1.35rem;
-      color: var(--brand-dark);
-      text-decoration: none;
-    }
-
-    .brand-logo span {
-      color: var(--brand);
-    }
-
-    .header-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      color: var(--brand-dark);
-      padding: 6px 14px;
-      border-radius: 9999px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      transition: all 0.2s ease;
-    }
-
-    .header-cta:hover {
-      background: var(--brand-light);
-      border-color: var(--brand);
-    }
-
-    /* TRUST BAR */
-    .trust-bar {
-      background: var(--bg2);
-      border-bottom: 1px solid var(--border);
-      padding: 0.6rem 1rem;
-      text-align: center;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--brand-dark);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-    }
-
-    .trust-badge-icon {
-      width: 18px;
-      height: 18px;
-      fill: var(--brand);
-      display: inline-block;
-    }
-
-    /* STICKY TOC BAR */
-    .sticky-toc-bar {
-      position: sticky;
-      top: 60px;
-      z-index: 90;
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-    }
-
-    .toc-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0.65rem 1.5rem;
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      overflow-x: auto;
-      white-space: nowrap;
-      scrollbar-width: none;
-    }
-
-    .toc-inner::-webkit-scrollbar {
-      display: none;
-    }
-
-    .toc-label {
-      font-weight: 700;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--brand-dark);
-      background: var(--brand-light);
-      padding: 2px 8px;
-      border-radius: 4px;
-    }
-
-    .toc-link {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--text-muted);
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    .toc-link:hover, .toc-link.active {
-      color: var(--brand);
-    }
-
-    /* DARK HERO SECTION */
-    .dark-hero {
-      background: linear-gradient(145deg, #0F1316 0%, #1A2026 100%);
-      color: #F8FAFC;
-      padding: 3.5rem 1.5rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: center;
-    }
-
-    @media (max-width: 991px) {
-      .hero-container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: rgba(236, 97, 14, 0.15);
-      border: 1px solid rgba(236, 97, 14, 0.4);
-      color: #FF8B42;
-      padding: 4px 12px;
-      border-radius: 9999px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 1.25rem;
-    }
-
-    .hero-title {
-      font-size: clamp(2rem, 4vw, 3rem);
-      color: #FFFFFF;
-      margin-bottom: 1.25rem;
-      line-height: 1.15;
-    }
-
-    .hero-subtitle {
-      font-size: 1.1rem;
-      color: #94A3B8;
-      margin-bottom: 2rem;
-      line-height: 1.6;
-    }
-
-    .hero-meta-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-      font-size: 0.875rem;
-      color: #CBD5E1;
-    }
-
-    .hero-meta-item {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-
-    .hero-meta-item svg {
-      width: 16px;
-      height: 16px;
-      fill: #FF8B42;
-    }
-
-    /* ANIMATED PERIMETER-RAIL CTA BUTTON */
-    .perimeter-cta {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.6rem;
-      padding: 16px 32px;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-weight: 700;
-      font-size: 1.05rem;
-      color: #FFFFFF !important;
-      background: #EC610E;
-      border-radius: 9999px;
-      text-decoration: none !important;
-      overflow: hidden;
-      z-index: 1;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      box-shadow: 0 6px 24px rgba(236, 97, 14, 0.4);
-    }
-
-    .perimeter-cta::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: conic-gradient(transparent 0deg, #FFFFFF 90deg, #FFE1CE 180deg, transparent 270deg);
-      animation: rotate-rail 3.5s linear infinite;
-      z-index: -2;
-    }
-
-    .perimeter-cta::after {
-      content: '';
-      position: absolute;
-      inset: 3px;
-      background: linear-gradient(135deg, #EC610E 0%, #C14800 100%);
-      border-radius: 9999px;
-      z-index: -1;
-      transition: background 0.3s ease;
-    }
-
-    @keyframes rotate-rail {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-
-    .perimeter-cta:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 30px rgba(236, 97, 14, 0.6);
-    }
-
-    .hero-image-card {
-      position: relative;
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-    }
-
-    .hero-image-card img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-
-    .hero-image-tag {
-      position: absolute;
-      bottom: 1rem;
-      left: 1rem;
-      right: 1rem;
-      background: rgba(15, 19, 22, 0.88);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      padding: 0.75rem 1rem;
-      border-radius: var(--radius-sm);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 0.825rem;
-      color: #E2E8F0;
-    }
-
-    .hero-tag-accent {
-      color: #FF8B42;
-      font-weight: 700;
-    }
-
-    /* MAIN CONTENT LAYOUT */
-    .main-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 3rem 1.5rem;
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 3rem;
-    }
-
-    @media (max-width: 991px) {
-      .main-container {
-        grid-template-columns: 1fr;
-        padding-bottom: 5rem;
-      }
-      .desktop-sidebar {
-        display: none !important;
-      }
-    }
-
-    .article-content {
-      min-width: 0;
-    }
-
-    .section-block {
-      margin-bottom: 3.5rem;
-      scroll-margin-top: 120px;
-    }
-
-    .section-block h2 {
-      font-size: 1.85rem;
-      margin-bottom: 1rem;
-      position: relative;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid var(--brand-light);
-    }
-
-    .section-block h3 {
-      font-size: 1.35rem;
-      margin: 1.75rem 0 0.75rem 0;
-    }
-
-    /* INFO & WARNING BOXES */
-    .info-box {
-      background: var(--bg2);
-      border-left: 4px solid var(--brand);
-      border-radius: var(--radius-sm);
-      padding: 1.25rem 1.5rem;
-      margin: 1.5rem 0;
-    }
-
-    .info-box h4 {
-      font-size: 1.1rem;
-      color: var(--brand-dark);
-      margin-bottom: 0.5rem;
-    }
-
-    .warning-box {
-      background: var(--danger-bg);
-      border: 1px solid var(--danger-border);
-      border-left: 5px solid #DC2626;
-      border-radius: var(--radius-md);
-      padding: 1.5rem;
-      margin: 1.75rem 0;
-      color: var(--danger-text);
-    }
-
-    .warning-box h4 {
-      font-size: 1.2rem;
-      color: #991B1B;
-      margin-bottom: 0.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .caution-box {
-      background: var(--warning-bg);
-      border: 1px solid var(--warning-border);
-      border-left: 5px solid #D97706;
-      border-radius: var(--radius-md);
-      padding: 1.5rem;
-      margin: 1.75rem 0;
-      color: var(--warning-text);
-    }
-
-    .caution-box h4 {
-      font-size: 1.15rem;
-      color: #92400E;
-      margin-bottom: 0.5rem;
-    }
-
-    /* BENTO GRID */
-    .bento-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
-      margin: 2rem 0;
-    }
-
-    @media (max-width: 640px) {
-      .bento-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .bento-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 1.5rem;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.25s ease;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .bento-card:hover {
-      box-shadow: var(--shadow-md);
-      transform: translateY(-2px);
-      border-color: var(--brand);
-    }
-
-    .bento-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 0.75rem;
-    }
-
-    .bento-tag {
-      font-size: 0.75rem;
-      font-weight: 700;
-      background: var(--brand-light);
-      color: var(--brand-dark);
-      padding: 3px 8px;
-      border-radius: 4px;
-    }
-
-    .bento-title {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .bento-body {
-      font-size: 0.925rem;
-      color: #475569;
-      flex-grow: 1;
-    }
-
-    .bento-footer {
-      margin-top: 1rem;
-      padding-top: 0.75rem;
-      border-top: 1px dashed var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 0.85rem;
-      font-weight: 600;
-    }
-
-    /* RESPONSIVE MATRIX TABLE */
-    .table-container {
-      width: 100%;
-      overflow-x: auto;
-      margin: 2rem 0;
-      border-radius: var(--radius-md);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .matrix-table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #FFFFFF;
-      text-align: left;
-      font-size: 0.925rem;
-    }
-
-    .matrix-table th {
-      background: var(--bg2);
-      color: #0F172A;
-      font-weight: 700;
-      padding: 1rem;
-      border-bottom: 2px solid var(--border);
-    }
-
-    .matrix-table td {
-      padding: 1rem;
-      border-bottom: 1px solid var(--border);
-      color: #334155;
-    }
-
-    .matrix-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .matrix-table td:first-child::before {
-      display: none !important;
-      content: none !important;
-    }
-
-    @media (max-width: 768px) {
-      .table-container {
-        border: none;
-        box-shadow: none;
-      }
-      .matrix-table, .matrix-table tbody, .matrix-table tr, .matrix-table td {
-        display: block;
-        width: 100%;
-      }
-      .matrix-table thead {
-        display: none;
-      }
-      .matrix-table tr {
-        margin-bottom: 1.25rem;
-        background: #FFFFFF;
-        border: 1px solid var(--border);
-        border-radius: var(--radius-md);
-        padding: 1.25rem;
-        box-shadow: var(--shadow-sm);
-      }
-      .matrix-table td {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.75rem 0;
-        border-bottom: 1px solid #F1F5F9;
-        text-align: right;
-      }
-      .matrix-table td:last-child {
-        border-bottom: none;
-      }
-      .matrix-table td::before {
-        content: attr(data-label);
-        font-weight: 700;
-        color: var(--brand-dark);
-        text-align: left;
-        padding-right: 1rem;
-      }
-      .matrix-table td:first-child::before {
-        display: none !important;
-        content: none !important;
-      }
-      .matrix-table td:first-child {
-        font-weight: 800;
-        font-size: 1.15rem;
-        color: #0F172A;
-        border-bottom: 2px solid var(--brand-light);
-        padding-bottom: 0.5rem;
-        margin-bottom: 0.5rem;
-        justify-content: flex-start;
-      }
-    }
-
-    /* INTERACTIVE DECISION TOOL / QUIZ */
-    .quiz-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 2rem;
-      margin: 2.5rem 0;
-      box-shadow: var(--shadow-md);
-    }
-
-    .quiz-title {
-      font-size: 1.5rem;
-      color: var(--brand-dark);
-      margin-bottom: 0.5rem;
-    }
-
-    .quiz-desc {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      margin-bottom: 1.5rem;
-    }
-
-    .quiz-step {
-      margin-bottom: 1.5rem;
-    }
-
-    .quiz-question {
-      font-weight: 700;
-      font-size: 1rem;
-      margin-bottom: 0.75rem;
-      color: #0F172A;
-    }
-
-    .quiz-options {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 0.75rem;
-    }
-
-    .quiz-option-btn {
-      background: #FFFFFF;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 0.85rem 1rem;
-      font-family: inherit;
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: #334155;
-      cursor: pointer;
-      text-align: left;
-      transition: all 0.2s ease;
-    }
-
-    .quiz-option-btn:hover {
-      border-color: var(--brand);
-      background: var(--brand-light);
-      color: var(--brand-dark);
-    }
-
-    .quiz-option-btn.selected {
-      border-color: var(--brand);
-      background: var(--brand);
-      color: #FFFFFF;
-    }
-
-    .quiz-result-box {
-      display: none;
-      background: #FFFFFF;
-      border: 2px solid var(--brand);
-      border-radius: var(--radius-md);
-      padding: 1.5rem;
-      margin-top: 1.5rem;
-      animation: fadeIn 0.3s ease;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .result-badge {
-      display: inline-block;
-      background: var(--brand-light);
-      color: var(--brand-dark);
-      font-weight: 700;
-      font-size: 0.8rem;
-      padding: 3px 10px;
-      border-radius: 9999px;
-      margin-bottom: 0.5rem;
-    }
-
-    /* ACCORDION FAQ */
-    .faq-accordion {
-      margin: 2rem 0;
-    }
-
-    .faq-item {
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      margin-bottom: 1rem;
-      background: #FFFFFF;
-      overflow: hidden;
-      transition: box-shadow 0.2s ease;
-    }
-
-    .faq-item:hover {
-      box-shadow: var(--shadow-sm);
-    }
-
-    .faq-header {
-      width: 100%;
-      background: none;
-      border: none;
-      padding: 1.25rem 1.5rem;
-      text-align: left;
-      font-family: 'Kantumruy Pro', serif;
-      font-weight: 700;
-      font-size: 1.1rem;
-      color: #0F172A;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-
-    .faq-icon {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: var(--bg2);
-      color: var(--brand);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-      font-weight: 700;
-      flex-shrink: 0;
-      transition: transform 0.3s ease, background 0.3s ease;
-    }
-
-    .faq-item.active .faq-icon {
-      transform: rotate(45deg);
-      background: var(--brand-light);
-    }
-
-    .faq-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
-      background: #FAFAFA;
-      border-top: 1px solid transparent;
-    }
-
-    .faq-item.active .faq-body {
-      max-height: 500px;
-      border-color: var(--border);
-      transition: max-height 0.35s ease-in-out;
-    }
-
-    .faq-content {
-      padding: 1.25rem 1.5rem;
-      font-size: 0.95rem;
-      color: #475569;
-    }
-
-    /* DESKTOP SIDEBAR */
-    .desktop-sidebar {
-      position: sticky;
-      top: 130px;
-      height: fit-content;
-    }
-
-    .sidebar-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .sidebar-title {
-      font-size: 1.15rem;
-      margin-bottom: 0.75rem;
-      color: #0F172A;
-    }
-
-    .sidebar-list {
-      list-style: none;
-      font-size: 0.9rem;
-    }
-
-    .sidebar-list li {
-      margin-bottom: 0.75rem;
-      display: flex;
-      align-items: flex-start;
-      gap: 0.5rem;
-    }
-
-    .sidebar-list li::before {
-      content: '✓';
-      color: var(--brand);
-      font-weight: bold;
-    }
-
-    /* STICKY BOTTOM MOBILE CTA BAR */
-    .sticky-bottom-bar {
-      display: none;
-    }
-
-    @media (max-width: 991px) {
-      .sticky-bottom-bar {
-        display: flex;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: #FFFFFF;
-        border-top: 1px solid var(--border);
-        padding: 0.75rem 1rem;
-        z-index: 1000;
-        box-shadow: 0 -4px 16px rgba(0,0,0,0.12);
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .mobile-bar-text {
-        font-size: 0.825rem;
-        color: #334155;
-      }
-
-      .mobile-bar-text strong {
-        display: block;
-        color: #0F172A;
-        font-size: 0.9rem;
-      }
-
-      .mobile-bar-btn {
-        background: var(--brand);
-        color: #FFFFFF;
-        font-weight: 700;
-        font-size: 0.85rem;
-        padding: 10px 18px;
-        border-radius: 9999px;
-        text-decoration: none;
-        box-shadow: 0 4px 12px rgba(236, 97, 14, 0.35);
-      }
-    }
-
-    /* FOOTER */
-    .site-footer {
-      background: #0F1316;
-      color: #94A3B8;
-      padding: 3rem 1.5rem 2rem 1.5rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 0.875rem;
-    }
-
-    .footer-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 2.5rem;
-      margin-bottom: 2rem;
-    }
-
-    @media (max-width: 768px) {
-      .footer-inner {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .footer-brand {
-      color: #FFFFFF;
-      font-family: 'Kantumruy Pro', serif;
-      font-size: 1.4rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .footer-disclaimer {
-      font-size: 0.8rem;
-      line-height: 1.6;
-      color: #64748B;
-      margin-top: 1rem;
-    }
-
-    .footer-bottom {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding-top: 1.5rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      text-align: center;
-      font-size: 0.8rem;
-    }
-  
+{css_content}
   </style>
 </head>
 <body>
@@ -1317,11 +413,11 @@
     </a>
   </div>
   <style>
-    @media (max-width: 991px) {
-      .sticky-bottom-bar {
+    @media (max-width: 991px) {{
+      .sticky-bottom-bar {{
         display: block !important;
-      }
-    }
+      }}
+    }}
   </style>
 
   <!-- FOOTER -->
@@ -1334,53 +430,53 @@
 
   <script>
     // FAQ Accordion
-    document.querySelectorAll('.faq-header').forEach(btn => {
-      btn.addEventListener('click', () => {
+    document.querySelectorAll('.faq-header').forEach(btn => {{
+      btn.addEventListener('click', () => {{
         const item = btn.closest('.faq-item');
         const body = item.querySelector('.faq-body');
         const icon = item.querySelector('.faq-icon');
         
         const isOpen = item.classList.contains('active');
         
-        document.querySelectorAll('.faq-item').forEach(otherItem => {
+        document.querySelectorAll('.faq-item').forEach(otherItem => {{
           otherItem.classList.remove('active');
           otherItem.querySelector('.faq-body').style.maxHeight = null;
           otherItem.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
-        });
+        }});
         
-        if (!isOpen) {
+        if (!isOpen) {{
           item.classList.add('active');
           body.style.maxHeight = body.scrollHeight + "px";
           icon.style.transform = 'rotate(45deg)';
-        }
-      });
-    });
+        }}
+      }});
+    }});
 
     // TOC Active State
     const tocLinks = document.querySelectorAll('.toc-link');
     const sections = document.querySelectorAll('.section-block');
     
-    window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', () => {{
       let current = '';
-      sections.forEach(section => {
+      sections.forEach(section => {{
         const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 120) {
+        if (pageYOffset >= sectionTop - 120) {{
           current = section.getAttribute('id');
-        }
-      });
+        }}
+      }});
 
-      tocLinks.forEach(link => {
+      tocLinks.forEach(link => {{
         link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
+        if (link.getAttribute('href') === `#${{current}}`) {{
           link.classList.add('active');
-          link.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-        }
-      });
-    });
+          link.scrollIntoView({{ behavior: 'smooth', block: 'nearest', inline: 'center' }});
+        }}
+      }});
+    }});
     
     // Quiz Buttons
-    document.querySelectorAll('.quiz-option-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
+    document.querySelectorAll('.quiz-option-btn').forEach(btn => {{
+      btn.addEventListener('click', function() {{
         const siblings = this.parentElement.querySelectorAll('.quiz-option-btn');
         siblings.forEach(s => s.classList.remove('selected'));
         this.classList.add('selected');
@@ -1388,15 +484,21 @@
         this.style.background = 'var(--brand)';
         this.style.color = '#FFFFFF';
         
-        siblings.forEach(s => {
-            if(s !== this) {
+        siblings.forEach(s => {{
+            if(s !== this) {{
                 s.style.borderColor = 'var(--border)';
                 s.style.background = '#FFFFFF';
                 s.style.color = '#334155';
-            }
-        });
-      });
-    });
+            }}
+        }});
+      }});
+    }});
   </script>
 </body>
 </html>
+"""
+
+with open('/Users/tm030/Documents/mymirror_repo/acne/proactiv-vs-differin-acne-treatment-system-usa/index.html', 'w') as f:
+    f.write(html_output)
+
+print("Done")

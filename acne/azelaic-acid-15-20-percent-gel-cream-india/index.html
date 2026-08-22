@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <!-- Favicons (Cache Busted v3) -->
   <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png?v=3">
@@ -90,824 +88,1265 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-        :root {
-            --brand:      #EC610E;
-            --brand-dark: #C14800;
-            --brand-light:#FFE1CE;
-            --bg:         #FFFFFF;
-            --bg-2:       #F9F6F3;
-            --bg-3:       #F2EDE8;
-            --text:       #1A1410;
-            --text-2:     #5C4A3A;
-            --text-3:     #9E8575;
-            --border:     #E8DDD5;
-            --success:    #2D7A4F;
-            --danger:     #C0392B;
-            --info:       #1A5F8A;
-            --bouncy:     cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            --max-article: 720px;
-            --max-content: 1100px;
-            --radius-lg: 16px;
-            --radius-xl: 24px;
-            --transition-base: 0.4s var(--bouncy);
-        }
-
-        /* Auto Dark Mode */
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg:         #120D0A;
-                --bg-2:       #1E1510;
-                --bg-3:       #2A1E17;
-                --text:       #F5EDE6;
-                --text-2:     #C4A898;
-                --text-3:     #7A6055;
-                --border:     #3A2A22;
-                --success:    #4ABA7A;
-                --danger:     #E8554A;
-                --info:       #5BA8D8;
-            }
-        }
-
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 15px; line-height: 1.65;
-            color: var(--text); background: var(--bg);
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3 { font-family: 'Kantumruy Pro', serif; color: var(--text); }
-        h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; line-height: 1.15; letter-spacing: -0.03em; }
-        h2 { font-size: 2rem; font-weight: 600; line-height: 1.2; margin-top: 4rem; margin-bottom: 1.5rem; }
-        h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.35rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
-        p { color: var(--text-2); line-height: 1.65; margin-bottom: 1.5rem; }
-        ul, ol { margin-bottom: 1.5rem; padding-left: 1.5rem; color: var(--text-2); }
-        li { margin-bottom: 0.5rem; }
-        a { color: var(--brand); text-decoration: none; font-weight: 600; }
-        a:hover { text-decoration: underline; }
-
-        .container { max-width: var(--max-content); margin: 0 auto; padding: 0 2rem; }
-
-        /* Sticky Header */
-        .sticky-header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: var(--bg);
-            border-bottom: 1px solid var(--border);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            height: 60px;
-            display: flex;
-            align-items: center;
-        }
-        .header-content {
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
-        .logo { height: 36px; object-fit: contain; }
-        .nav { display: flex; gap: 28px; }
-        .nav-link { color: var(--text); font-weight: 600; font-size: 0.9rem; text-decoration: none; }
-        .nav-link.accent-brain { color: #6366f1; font-weight: 800; }
-        .nav-link.accent-natural { color: #059669; font-weight: 800; }
-        .nav-link.accent-fast { color: #EC610E; font-weight: 800; }
-
-        /* Trust Bar */
-        .trust-bar {
-            background: var(--bg-2);
-            padding: 10px 20px;
-            border-bottom: 1px solid var(--border);
-            font-size: 12px;
-            color: var(--text-3);
-            display: flex;
-            gap: 16px;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .trust-reviewer { color: var(--success); font-weight: 700; }
-
-        /* Split Hero */
-        .hero {
-            background: var(--bg-2);
-            border-bottom: 1px solid var(--border);
-            padding: 4rem 2rem;
-            margin-bottom: 0;
-        }
-        .hero-inner {
-            max-width: var(--max-content);
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-        .hero-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: var(--brand-light);
-            color: var(--brand-dark);
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            padding: 5px 14px;
-            border-radius: 9999px;
-            margin-bottom: 1.5rem;
-        }
-        .hero-image-stack {
-            display: flex;
-            gap: 20px;
-            justify-content: flex-end;
-        }
-        .hero-photo-card {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            align-items: flex-end;
-            width: 200px;
-        }
-        .hero-photo {
-            width: 100%;
-            height: 240px;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .hero-photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .hero-stat-card {
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 14px 18px;
-            width: 100%;
-            min-height: 105px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .stat-num {
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: var(--brand);
-            line-height: 1.1;
-            margin-bottom: 4px;
-            font-family: 'Kantumruy Pro', serif;
-        }
-        .stat-label {
-            font-size: 11px;
-            color: var(--text-2);
-            line-height: 1.4;
-        }
-
-        /* TOC Bar */
-        .toc-bar {
-            background: var(--bg);
-            border-bottom: 1px solid var(--border);
-            padding: 0 2rem;
-            position: sticky;
-            top: 60px;
-            z-index: 90;
-        }
-        .toc-inner {
-            max-width: var(--max-content);
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-        .toc-inner::-webkit-scrollbar {
-            display: none;
-        }
-        .toc-link {
-            white-space: nowrap;
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--text-3);
-            text-decoration: none;
-            padding: 14px 18px;
-            border-bottom: 2px solid transparent;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .toc-link:hover { color: var(--text); border-bottom-color: var(--brand); }
-        .toc-link.active { color: var(--brand); border-bottom-color: var(--brand); }
-        .toc-num {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            background: var(--brand);
-            color: #fff;
-            font-size: 10px;
-            font-weight: 700;
-        }
-
-        /* Two Column Body Layout */
-        .page-body {
-            max-width: var(--max-content);
-            margin: 0 auto;
-            padding: 3rem 2rem 5rem;
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: 3rem;
-            align-items: start;
-        }
-
-        /* Callout Box */
-        .callout {
-            background: var(--bg-3);
-            border-left: 4px solid var(--brand);
-            border-radius: 0 12px 12px 0;
-            padding: 1.5rem;
-            margin: 2.5rem 0;
-            font-size: 0.95rem;
-            color: var(--text);
-        }
-        .callout strong { color: var(--text); }
-        
-        .dark-callout {
-            background: var(--text);
-            border-radius: 30px;
-            padding: 3rem;
-            color: var(--bg);
-            text-align: center;
-            margin: 4rem 0;
-        }
-        .dark-callout h2 { color: var(--bg); margin-top: 0; }
-        .dark-callout p { color: var(--text-3); }
-
-        /* Face AI CTA (V2.1 standard) */
-        .face-ai-cta-wrapper { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin: 2rem 0 0; text-align: left; width: 100%; position: relative; z-index: 50; }
-        .face-ai-btn { 
-            position: relative; 
-            display: inline-flex; 
-            align-items: center;
-            justify-content: center;
-            padding: 18px 44px; 
-            background: #EC610E; 
-            color: #ffffff !important; 
-            text-decoration: none; 
-            font-weight: 800; 
-            font-size: 1.15rem; 
-            border-radius: 9999px; 
-            box-shadow: 0 10px 30px rgba(236,97,14,0.3); 
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-            z-index: 10;
-            overflow: visible;
-        }
-        .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
-        .face-ai-btn-text { position: relative; z-index: 12; }
-        p.face-ai-subtext { color: var(--text-3); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
-
-        .face-ai-energy-rail { 
-            position: absolute; 
-            inset: -3px; 
-            border-radius: 9999px; 
-            pointer-events: none;
-            z-index: 5;
-            padding: 3px;
-            overflow: hidden;
-            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            mask-composite: exclude;
-            -webkit-mask-composite: xor;
-        }
-        
-        .face-ai-energy-rail::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 400%; 
-            height: 400%;
-            background: conic-gradient(from 0deg, transparent 65%, #EC610E 80%, #FFE1CE 95%, #ffffff 100%);
-            animation: energy-loop 3.5s ease-in-out forwards;
-        }
-
-        @keyframes energy-loop {
-            0% { transform: translate(-50%, -50%) rotate(0deg); opacity: 0; }
-            100% { transform: translate(-50%, -50%) rotate(360deg); opacity: 1; }
-        }
-
-        .btn-primary {
-            display: inline-block;
-            padding: 16px 40px;
-            border-radius: 9999px;
-            border: none;
-            background: var(--brand);
-            color: #fff;
-            font-weight: 700;
-            font-size: 16px;
-            cursor: pointer;
-            box-shadow: 0 10px 25px rgba(236,97,14,0.3);
-            transition: var(--transition-base);
-            text-decoration: none;
-        }
-        .btn-primary:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 30px rgba(236,97,14,0.4);
-            background: var(--brand-dark);
-            color: #fff;
-        }
-
-        /* Sidebar Styling */
-        .sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
-        .sidebar-card {
-            background: var(--bg-2);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 1.5rem;
-        }
-        .sidebar-card h4 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 700; margin-bottom: 10px; }
-        .sidebar-card p { font-size: 13px; color: var(--text-2); }
-        .sidebar-list { list-style: none; margin-top: 10px; padding: 0; }
-        .sidebar-list li {
-            font-size: 13px; color: var(--text-2);
-            padding: 6px 0; border-bottom: 1px solid var(--border);
-            display: flex; gap: 8px;
-        }
-        .sidebar-list li:last-child { border-bottom: none; }
-        .sidebar-list li::before { content: '→'; color: var(--brand); font-size: 12px; }
-        .sidebar-list a { color: inherit; text-decoration: none; }
-        .sidebar-list a:hover { color: var(--brand); }
-
-        /* Responsive Comparison Tables V2.1 */
-        .acne-table-wrapper { overflow-x: auto; margin: 2rem 0; border: 1px solid var(--border); border-radius: 12px; }
-        .acne-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-        .acne-table th { background: var(--bg-2); padding: 14px; text-align: left; border-bottom: 2px solid var(--border); font-weight: 700; }
-        .acne-table td { padding: 14px; border-bottom: 1px solid var(--border); color: var(--text-2); }
-        .acne-table tr:last-child td { border-bottom: none; }
-
-        /* Interactive FAQ Accordion */
-        .faq-item {
-            background: var(--bg);
-            border-radius: 16px;
-            margin-bottom: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            border: 1px solid var(--border);
-            transition: all 0.3s ease;
-        }
-        .faq-question {
-            padding: 1.5rem 2rem;
-            font-weight: 700;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: var(--text);
-            font-size: 1.1rem;
-            user-select: none;
-        }
-        .faq-question:hover { color: var(--brand); background: var(--bg-2); }
-        .faq-answer {
-            max-height: 0;
-            padding: 0 2rem;
-            overflow: hidden;
-            transition: all 0.4s ease-out;
-            color: var(--text-2);
-            font-size: 0.95rem;
-            line-height: 1.65;
-        }
-        .faq-item.active-faq .faq-answer {
-            max-height: 500px;
-            padding: 0 2rem 2rem 2rem;
-        }
-        .faq-icon {
-            font-size: 1.5rem;
-            transition: transform 0.3s ease;
-            color: var(--brand);
-        }
-        .faq-item.active-faq .faq-icon {
-            transform: rotate(45deg);
-        }
-
-        /* Reveal Animation */
-        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s var(--bouncy); }
-        .reveal.active { opacity: 1; transform: none; }
-
-        /* Footer */
-        .main-footer {
-            background: var(--bg-2);
-            padding: 4rem 2rem;
-            text-align: center;
-            border-top: 1px solid var(--border);
-            margin-top: 6rem;
-        }
-        .footer-logo { height: 30px; margin-bottom: 1.5rem; opacity: 0.7; }
-        .footer-text { color: var(--text-3); font-size: 0.85rem; }
-
-        @media (max-width: 900px) {
-            .page-body { grid-template-columns: 1fr; }
-            .sidebar { display: none; }
-            .hero-inner { grid-template-columns: 1fr; text-align: center; }
-            .hero-image-stack { display: none; }
-            .hero-content { display: flex; flex-direction: column; align-items: center; }
-        }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; }
-            h2 { font-size: 1.8rem; }
-            .nav { display: none; }
-            
-            /* Table Stack on Mobile */
-            .acne-table, .acne-table tbody, .acne-table tr, .acne-table td { display: block; width: 100%; box-sizing: border-box; }
-            .acne-table thead { display: none; }
-            .acne-table { border: none; margin: 1rem 0; }
-            .acne-table tr { margin-bottom: 1.5rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 4px 15px rgba(0,0,0,0.03); background: var(--bg); }
-            .acne-table td { border-bottom: 1px solid var(--border); padding: 12px 12px 12px 40%; position: relative; min-height: 46px; text-align: right; }
-            .acne-table td:last-child { border-bottom: none; }
-            .acne-table td:first-child::before { display: none !important; content: none !important; }
-      .acne-table td::before { content: attr(data-label); position: absolute; left: 12px; width: 35%; font-weight: 700; color: var(--text); top: 12px; text-align: left; }
-        }
-
-        /* ── STICKY BOTTOM CTA (MOBILE ONLY) ── */
-        .sticky-cta-mobile {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 0.8rem 1.2rem;
-            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
-            z-index: 2000;
-            display: none; /* Hidden on desktop */
-            justify-content: center;
-            align-items: center;
-            border-top: 1px solid var(--border);
-        }
-        @media (prefers-color-scheme: dark) {
-            .sticky-cta-mobile {
-                background: rgba(18, 13, 10, 0.95);
-            }
-        }
-        .sticky-cta-mobile .nav-cta {
-            width: 100%;
-            text-align: center;
-            padding: 12px 0;
-            font-size: 1.05rem;
-            box-shadow: 0 8px 20px rgba(236,97,14,0.3);
-            text-decoration: none;
-            border-radius: 9999px;
-            background: var(--brand);
-            color: #fff;
-            font-weight: 800;
-        }
-        @media (max-width: 768px) {
-            .sticky-cta-mobile {
-                display: flex;
-            }
-            /* Hide hero CTA on mobile to avoid redundancy */
-            .face-ai-cta-wrapper {
-                display: none !important;
-            }
-            /* Hide header nav CTA on mobile when bottom sticky is active */
-            .nav-links .nav-cta, 
-            .nav-inner a[href*="face-map"], 
-            .nav-inner a[href*="scan"] {
-                display: none !important;
-            }
-            body {
-                padding-bottom: 70px;
-            }
-        }
-    </style>
+    
   
-    <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+    
+<style>
+    /* CSS DESIGN SYSTEM TOKENS */
+    :root {
+      --brand: #EC610E;
+      --brand-dark: #C14800;
+      --brand-light: #FFE1CE;
+      --bg2: #F9F6F3;
+      --border: #E8DDD5;
+      --text-main: #1E293B;
+      --text-muted: #64748B;
+      --card-bg: #FFFFFF;
+      --dark-bg: #121619;
+      --dark-card: #1E2328;
+      --warning-bg: #FFFBEB;
+      --warning-border: #FCD34D;
+      --warning-text: #92400E;
+      --danger-bg: #FEF2F2;
+      --danger-border: #FCA5A5;
+      --danger-text: #991B1B;
+      --success-bg: #F0FDF4;
+      --success-border: #86EFAC;
+      --success-text: #166534;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.1);
+    }
+
+    /* GLOBAL RESET & BASE STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-main);
+      background-color: #FFFFFF;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Kantumruy Pro', Georgia, serif;
+      font-weight: 700;
+      color: #0F172A;
+      line-height: 1.25;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: #334155;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--brand-dark);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* TOP HEADER BAR */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: 60px;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Kantumruy Pro', serif;
+      font-weight: 700;
+      font-size: 1.35rem;
+      color: var(--brand-dark);
+      text-decoration: none;
+    }
+
+    .brand-logo span {
+      color: var(--brand);
+    }
+
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      color: var(--brand-dark);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+
+    .header-cta:hover {
+      background: var(--brand-light);
+      border-color: var(--brand);
+    }
+
+    /* TRUST BAR */
+    .trust-bar {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 0.6rem 1rem;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--brand-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .trust-badge-icon {
+      width: 18px;
+      height: 18px;
+      fill: var(--brand);
+      display: inline-block;
+    }
+
+    /* STICKY TOC BAR */
+    .sticky-toc-bar {
+      position: sticky;
+      top: 60px;
+      z-index: 90;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+
+    .toc-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.65rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none;
+    }
+
+    .toc-inner::-webkit-scrollbar {
+      display: none;
+    }
+
+    .toc-label {
+      font-weight: 700;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--brand-dark);
+      background: var(--brand-light);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .toc-link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .toc-link:hover, .toc-link.active {
+      color: var(--brand);
+    }
+
+    /* DARK HERO SECTION */
+    .dark-hero {
+      background: linear-gradient(145deg, #0F1316 0%, #1A2026 100%);
+      color: #F8FAFC;
+      padding: 3.5rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (max-width: 991px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(236, 97, 14, 0.15);
+      border: 1px solid rgba(236, 97, 14, 0.4);
+      color: #FF8B42;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: #FFFFFF;
+      margin-bottom: 1.25rem;
+      line-height: 1.15;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: #94A3B8;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .hero-meta-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      font-size: 0.875rem;
+      color: #CBD5E1;
+    }
+
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-meta-item svg {
+      width: 16px;
+      height: 16px;
+      fill: #FF8B42;
+    }
+
+    /* ANIMATED PERIMETER-RAIL CTA BUTTON */
+    .perimeter-cta {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 16px 32px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #FFFFFF !important;
+      background: #EC610E;
+      border-radius: 9999px;
+      text-decoration: none !important;
+      overflow: hidden;
+      z-index: 1;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 6px 24px rgba(236, 97, 14, 0.4);
+    }
+
+    .perimeter-cta::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(transparent 0deg, #FFFFFF 90deg, #FFE1CE 180deg, transparent 270deg);
+      animation: rotate-rail 3.5s linear infinite;
+      z-index: -2;
+    }
+
+    .perimeter-cta::after {
+      content: '';
+      position: absolute;
+      inset: 3px;
+      background: linear-gradient(135deg, #EC610E 0%, #C14800 100%);
+      border-radius: 9999px;
+      z-index: -1;
+      transition: background 0.3s ease;
+    }
+
+    @keyframes rotate-rail {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .perimeter-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(236, 97, 14, 0.6);
+    }
+
+    .hero-image-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .hero-image-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .hero-image-tag {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+      background: rgba(15, 19, 22, 0.88);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.825rem;
+      color: #E2E8F0;
+    }
+
+    .hero-tag-accent {
+      color: #FF8B42;
+      font-weight: 700;
+    }
+
+    /* MAIN CONTENT LAYOUT */
+    .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 3rem;
+    }
+
+    @media (max-width: 991px) {
+      .main-container {
+        grid-template-columns: 1fr;
+        padding-bottom: 5rem;
+      }
+      .desktop-sidebar {
+        display: none !important;
+      }
+    }
+
+    .article-content {
+      min-width: 0;
+    }
+
+    .section-block {
+      margin-bottom: 3.5rem;
+      scroll-margin-top: 120px;
+    }
+
+    .section-block h2 {
+      font-size: 1.85rem;
+      margin-bottom: 1rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--brand-light);
+    }
+
+    .section-block h3 {
+      font-size: 1.35rem;
+      margin: 1.75rem 0 0.75rem 0;
+    }
+
+    /* INFO & WARNING BOXES */
+    .info-box {
+      background: var(--bg2);
+      border-left: 4px solid var(--brand);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .info-box h4 {
+      font-size: 1.1rem;
+      color: var(--brand-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .warning-box {
+      background: var(--danger-bg);
+      border: 1px solid var(--danger-border);
+      border-left: 5px solid #DC2626;
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin: 1.75rem 0;
+      color: var(--danger-text);
+    }
+
+    .warning-box h4 {
+      font-size: 1.2rem;
+      color: #991B1B;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .caution-box {
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+      border-left: 5px solid #D97706;
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin: 1.75rem 0;
+      color: var(--warning-text);
+    }
+
+    .caution-box h4 {
+      font-size: 1.15rem;
+      color: #92400E;
+      margin-bottom: 0.5rem;
+    }
+
+    /* BENTO GRID */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 640px) {
+      .bento-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .bento-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bento-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+      border-color: var(--brand);
+    }
+
+    .bento-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+    }
+
+    .bento-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .bento-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .bento-body {
+      font-size: 0.925rem;
+      color: #475569;
+      flex-grow: 1;
+    }
+
+    .bento-footer {
+      margin-top: 1rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* RESPONSIVE MATRIX TABLE */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 2rem 0;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #FFFFFF;
+      text-align: left;
+      font-size: 0.925rem;
+    }
+
+    .matrix-table th {
+      background: var(--bg2);
+      color: #0F172A;
+      font-weight: 700;
+      padding: 1rem;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .matrix-table td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border);
+      color: #334155;
+    }
+
+    .matrix-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .matrix-table td:first-child::before {
+      display: none !important;
+      content: none !important;
+    }
+
+    @media (max-width: 768px) {
+      .table-container {
+        border: none;
+        box-shadow: none;
+      }
+      .matrix-table, .matrix-table tbody, .matrix-table tr, .matrix-table td {
+        display: block;
+        width: 100%;
+      }
+      .matrix-table thead {
+        display: none;
+      }
+      .matrix-table tr {
+        margin-bottom: 1.25rem;
+        background: #FFFFFF;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        padding: 1.25rem;
+        box-shadow: var(--shadow-sm);
+      }
+      .matrix-table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #F1F5F9;
+        text-align: right;
+      }
+      .matrix-table td:last-child {
+        border-bottom: none;
+      }
+      .matrix-table td::before {
+        content: attr(data-label);
+        font-weight: 700;
+        color: var(--brand-dark);
+        text-align: left;
+        padding-right: 1rem;
+      }
+      .matrix-table td:first-child::before {
+        display: none !important;
+        content: none !important;
+      }
+      .matrix-table td:first-child {
+        font-weight: 800;
+        font-size: 1.15rem;
+        color: #0F172A;
+        border-bottom: 2px solid var(--brand-light);
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+        justify-content: flex-start;
+      }
+    }
+
+    /* INTERACTIVE DECISION TOOL / QUIZ */
+    .quiz-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      margin: 2.5rem 0;
+      box-shadow: var(--shadow-md);
+    }
+
+    .quiz-title {
+      font-size: 1.5rem;
+      color: var(--brand-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .quiz-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .quiz-step {
+      margin-bottom: 1.5rem;
+    }
+
+    .quiz-question {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+      color: #0F172A;
+    }
+
+    .quiz-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .quiz-option-btn {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #334155;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s ease;
+    }
+
+    .quiz-option-btn:hover {
+      border-color: var(--brand);
+      background: var(--brand-light);
+      color: var(--brand-dark);
+    }
+
+    .quiz-option-btn.selected {
+      border-color: var(--brand);
+      background: var(--brand);
+      color: #FFFFFF;
+    }
+
+    .quiz-result-box {
+      display: none;
+      background: #FFFFFF;
+      border: 2px solid var(--brand);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .result-badge {
+      display: inline-block;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ACCORDION FAQ */
+    .faq-accordion {
+      margin: 2rem 0;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      margin-bottom: 1rem;
+      background: #FFFFFF;
+      overflow: hidden;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .faq-item:hover {
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-header {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      font-family: 'Kantumruy Pro', serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #0F172A;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .faq-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--bg2);
+      color: var(--brand);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      flex-shrink: 0;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+      background: var(--brand-light);
+    }
+
+    .faq-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+      background: #FAFAFA;
+      border-top: 1px solid transparent;
+    }
+
+    .faq-item.active .faq-body {
+      max-height: 500px;
+      border-color: var(--border);
+      transition: max-height 0.35s ease-in-out;
+    }
+
+    .faq-content {
+      padding: 1.25rem 1.5rem;
+      font-size: 0.95rem;
+      color: #475569;
+    }
+
+    /* DESKTOP SIDEBAR */
+    .desktop-sidebar {
+      position: sticky;
+      top: 130px;
+      height: fit-content;
+    }
+
+    .sidebar-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .sidebar-title {
+      font-size: 1.15rem;
+      margin-bottom: 0.75rem;
+      color: #0F172A;
+    }
+
+    .sidebar-list {
+      list-style: none;
+      font-size: 0.9rem;
+    }
+
+    .sidebar-list li {
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .sidebar-list li::before {
+      content: '✓';
+      color: var(--brand);
+      font-weight: bold;
+    }
+
+    /* STICKY BOTTOM MOBILE CTA BAR */
+    .sticky-bottom-bar {
+      display: none;
+    }
+
+    @media (max-width: 991px) {
+      .sticky-bottom-bar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #FFFFFF;
+        border-top: 1px solid var(--border);
+        padding: 0.75rem 1rem;
+        z-index: 1000;
+        box-shadow: 0 -4px 16px rgba(0,0,0,0.12);
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .mobile-bar-text {
+        font-size: 0.825rem;
+        color: #334155;
+      }
+
+      .mobile-bar-text strong {
+        display: block;
+        color: #0F172A;
+        font-size: 0.9rem;
+      }
+
+      .mobile-bar-btn {
+        background: var(--brand);
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 0.85rem;
+        padding: 10px 18px;
+        border-radius: 9999px;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(236, 97, 14, 0.35);
+      }
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background: #0F1316;
+      color: #94A3B8;
+      padding: 3rem 1.5rem 2rem 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.875rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand {
+      color: #FFFFFF;
+      font-family: 'Kantumruy Pro', serif;
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-disclaimer {
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: #64748B;
+      margin-top: 1rem;
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  </style>
 </head>
 <body>
-    <!-- Trust Bar -->
-    <div class="trust-bar">
-        <span>✍️ MyMirror Editorial</span>
-        <span class="trust-reviewer">✓ Reviewed by Dr. Lipy Mehta, Dermatologist</span>
-        <span>Updated August 2026</span>
+  <header class="site-header">
+    <a href="/" class="brand-logo">
+      <img src="https://mymirror.fit/assets/logo-v4.png" alt="MyMirror" style="height: 32px; width: auto;">
+    </a>
+    <a href="https://face3layerscanner.onrender.com/" class="header-cta">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"></path><path d="M17 3h2a2 2 0 0 1 2 2v2"></path><path d="M21 17v2a2 2 0 0 1-2 2h-2"></path><path d="M7 21H5a2 2 0 0 1-2-2v-2"></path><circle cx="12" cy="12" r="3"></circle></svg>
+      Scan Face
+    </a>
+  </header>
+
+  <div class="trust-bar">
+    <svg class="trust-badge-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+    <span>Reviewed by Dr. Lipy Mehta, Dermatologist • Updated August 2026</span>
+  </div>
+
+  <nav class="sticky-toc-bar">
+    <div class="toc-inner">
+      <span class="toc-label">Contents</span>
+      <a href="#section-1" class="toc-link">1. Intro</a>
+      <a href="#section-2" class="toc-link">2. Mechanism</a>
+      <a href="#section-3" class="toc-link">3. 15% vs 20%</a>
+      <a href="#section-4" class="toc-link">4. Indian Brands</a>
+      <a href="#section-5" class="toc-link">5. Routine</a>
+      <a href="#section-6" class="toc-link">6. Side Effects</a>
+      <a href="#section-7" class="toc-link">7. Safety</a>
+      <a href="#section-8" class="toc-link">8. FAQs</a>
     </div>
+  </nav>
 
-    <!-- Header -->
-    <header class="sticky-header">
-        <div class="header-content">
-            <a href="/"><img src="https://mymirror.fit/assets/logo-v4.png" alt="mymirror" class="logo"></a>
-            <nav class="nav">
-                <a href="/acne/types-of-acne/" class="nav-link">Acne Types</a>
-                <a href="/acne/forehead-acne/meaning/" class="nav-link accent-brain">Acne Meaning 🧠</a>
-                <a href="/acne/forehead-acne/home-remedies/" class="nav-link accent-natural">Natural Remedies 🌿</a>
-                <a href="/acne/forehead-acne/fast-treatment/" class="nav-link accent-fast">Fast Fixes ⚡</a>
-            </nav>
+  <section class="dark-hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          Dermatology Clinical Guide (2026)
         </div>
-    </header>
-
-    <!-- Split Hero Section -->
-    <section class="hero">
-        <div class="hero-inner reveal">
-            <div class="hero-content">
-                <span class="hero-tag">CLINICAL GUIDE • INDIA</span>
-                <h1 class="hero-title">The Clinical Guide to Azelaic Acid 15% & 20% in India</h1>
-                <p class="hero-subtitle">A deep dive into formulations like Aziderm, Picspot, and Exazel N for managing Acne, Rosacea, and Hyperpigmentation.</p>
-                
-                <!-- Face AI Skin Analysis CTA (V2.1 Standard) -->
-                <div class="face-ai-cta-wrapper">
-                    <a href="https://face3layerscanner.onrender.com/" class="face-ai-btn">
-                        <span class="face-ai-btn-text">Check Skin Pigmentation</span>
-                        <div class="face-ai-energy-rail"></div>
-                    </a>
-                    <p class="face-ai-subtext">Scan your face in 60s to determine whether active bumps are normal cell turnover purging or a damaged skin barrier.</p>
-                </div>
-            </div>
-            <div class="hero-image-stack">
-                <div class="hero-photo-card">
-                    <div class="hero-photo">
-                        <img src="https://mymirror.fit/assets/images/azelaic_acid_gel_india.jpg" alt="Azelaic acid gel">
-                    </div>
-                    <div class="hero-stat-card">
-                        <span class="stat-num">15%-20%</span>
-                        <span class="stat-label">Clinical concentration range for acne & PIH</span>
-                    </div>
-                </div>
-                <div class="hero-photo-card">
-                    <div class="hero-photo">
-                        <img src="/assets/images/clear_skin_texture.jpg" alt="Clear skin texture">
-                    </div>
-                    <div class="hero-stat-card">
-                        <span class="stat-num">8 Weeks</span>
-                        <span class="stat-label">Minimum treatment cycle for visible PIH reduction</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sticky TOC Bar -->
-    <div class="toc-bar">
-        <div class="toc-inner">
-            <a class="toc-link" href="#introduction"><span class="toc-num">1</span> Introduction</a>
-            <a class="toc-link" href="#mechanism-of-action"><span class="toc-num">2</span> Mechanism of Action</a>
-            <a class="toc-link" href="#concentrations-15-vs-20"><span class="toc-num">3</span> 15% vs. 20%</a>
-            <a class="toc-link" href="#indian-market-brands"><span class="toc-num">4</span> Indian Brands</a>
-            <a class="toc-link" href="#routine-integration"><span class="toc-num">5</span> Routine Integration</a>
-            <a class="toc-link" href="#side-effects-and-management"><span class="toc-num">6</span> Side Effects</a>
-            <a class="toc-link" href="#pregnancy-and-safety"><span class="toc-num">7</span> Safety</a>
-            <a class="toc-link" href="#related-topics"><span class="toc-num">8</span> Related Topics</a>
-        </div>
-    </div>
-
-    <!-- Main Content Layout -->
-    <div class="page-body">
-        <main>
-            <!-- INTRO -->
-            <section id="introduction" class="reveal">
-                <h2>Understanding Azelaic Acid: The Unsung Hero of Dermatology</h2>
-                <p>Azelaic acid, a naturally occurring dicarboxylic acid produced by the yeast <em>Malassezia furfur</em>, has emerged as one of the most versatile and highly prescribed topical agents in modern dermatology. Within the Indian pharmaceutical landscape, its prominence has skyrocketed due to its tri-fold efficacy: it is antimicrobial, comedolytic, and acts as a potent tyrosinase inhibitor.</p>
-                <p>Unlike <a href="/acne/benzoyl-peroxide-guide/">benzoyl peroxide</a>, which primarily targets the bacterial load of <em>Cutibacterium acnes</em> through oxidation, azelaic acid operates through a nuanced mechanism that alters the microenvironment of the pilosebaceous unit. It significantly reduces the production of free fatty acids in sebum and normalizes keratinization, preventing the formation of microcomedones.</p>
-                <p>Furthermore, in the context of the Indian demographic—where Fitzpatrick skin types III to V are predominant—the incidence of Post-Inflammatory Hyperpigmentation (PIH) and melasma is exceedingly high. Azelaic acid selectively targets hyperactive melanocytes by inhibiting the enzyme tyrosinase, making it a cornerstone therapy for pigmentary disorders without the risks of paradoxical hyperpigmentation or exogenous ochronosis associated with long-term <a href="/hyperpigmentation/hydroquinone-risks/">hydroquinone</a> use.</p>
-                <p>This comprehensive guide explores the clinical nuances of 15% and 20% azelaic acid formulations available in India under CDSCO Schedule H regulations, including popular brands like Aziderm, Picspot, and Exazel N. By understanding the pharmacokinetics and formulation science behind these products, patients and practitioners can optimize treatment protocols for diverse dermatological indications.</p>
-            </section>
-
-            <section id="mechanism-of-action" class="reveal">
-                <h2>Clinical Deep Dive: Mechanism of Action</h2>
-                <p>To fully appreciate the therapeutic value of azelaic acid, one must examine its molecular interactions within the epidermis and dermis. Its efficacy is not derived from a single pathway but rather a synergistic array of pharmacological effects.</p>
-                <h3>1. Antimicrobial Properties</h3>
-                <p>Azelaic acid exhibits a profound bacteriostatic effect, which at higher concentrations can become bactericidal. It readily penetrates the bacterial cell wall of <em>Cutibacterium acnes</em> (formerly <em>Propionibacterium acnes</em>) and <em>Staphylococcus epidermidis</em>. Once inside the cell, it disrupts critical cellular processes, specifically targeting the synthesis of vital proteins. Unlike topical antibiotics such as <a href="/acne/clindamycin-phosphate-gel/">clindamycin</a>, there is no documented bacterial resistance to azelaic acid, making it safe for prolonged, indefinite use in chronic acne management.</p>
-                <h3>2. Anti-Keratinizing Activity</h3>
-                <p>Hyperkeratinization—the abnormal shedding of skin cells—is a primary catalyst for comedone formation. Azelaic acid modulates the early and terminal phases of epidermal differentiation. It decreases the thickness of the stratum corneum, normalizes filaggrin expression, and reduces the synthesis of keratohyalin granules. This unblocks the follicular duct, preventing the impaction of sebum and keratin that characterizes comedonal acne.</p>
-                <h3>3. Tyrosinase Inhibition and Melanocyte Regulation</h3>
-                <p>Perhaps its most valued property in the Indian context is its role in managing hyperpigmentation. Azelaic acid acts as a competitive and reversible inhibitor of tyrosinase, the rate-limiting enzyme in melanogenesis. Crucially, its cytotoxic effect is selective; it targets highly active and abnormal melanocytes (such as those found in melasma or post-inflammatory lesions) while sparing normal, healthy melanocytes. This selectivity ensures an even skin tone without the risk of hypopigmentation or depigmentation halos, a significant advantage over other bleaching agents.</p>
-                <h3>4. Anti-Inflammatory Effects</h3>
-                <p>Azelaic acid downregulates a variety of pro-inflammatory mediators. It inhibits the production of reactive oxygen species (ROS) from neutrophils and suppresses the release of interleukins (IL-1, IL-6) and tumor necrosis factor-alpha (TNF-α). This robust anti-inflammatory action is the primary reason azelaic acid is FDA-approved and widely used off-label in India for the management of <a href="/rosacea/treatment-guidelines/">rosacea</a>, particularly the papulopustular subtype, rapidly reducing erythema and inflammatory lesion counts.</p>
-            </section>
-
-            <section id="concentrations-15-vs-20" class="reveal">
-                <h2>15% vs. 20% Concentration: Formulation Matters</h2>
-                <p>In India, azelaic acid is predominantly prescribed in two strengths: 15% and 20%. While one might intuitively assume that the higher concentration is universally superior, the clinical reality is heavily dependent on the vehicle (base formulation) and the specific indication.</p>
-
-                <section class="reveal">
-                    <h3>The 15% Gel Advantage</h3>
-                    <p>Clinical studies have demonstrated that a 15% gel formulation can be as effective, if not more effective, than a 20% cream in certain scenarios. The gel vehicle allows for enhanced penetration of the active ingredient into the stratum corneum and the pilosebaceous unit. It is typically non-comedogenic, lightweight, and cosmetically elegant, making it the preferred choice for oily skin types, inflammatory acne, and rosacea. In India, products like <strong>Aziderm 15% Gel</strong> and <strong>Picspot 15% Gel</strong> are widely prescribed for these exact reasons.</p>
-                </section>
-                <section class="reveal">
-                    <h3>The 20% Cream Powerhouse</h3>
-                    <p>The 20% cream formulations, such as <strong>Aziderm 20% Cream</strong>, offer a higher absolute concentration of the active molecule but are suspended in an emollient base. This base slows down the delivery of the acid, reducing the initial stinging or "tingling" sensation that many patients experience. The 20% cream is exceptionally effective for melasma and stubborn hyperpigmentation, particularly in patients with dry, sensitive, or mature skin whose barrier requires the lipid support provided by the cream vehicle.</p>
-                </section>
-
-                <p>Understanding the distinction between these two is critical. A patient with severe oily acne may find a 20% cream too heavy, leading to congestion, while a patient with dry skin and melasma might find the 15% gel insufficiently moisturizing and potentially irritating. The choice between gel and cream is often a nuanced decision made by a dermatologist, factoring in the patient's holistic skin profile.</p>
-            </section>
-
-            <section id="indian-market-brands" class="reveal">
-                <h2>Deep Dive into Indian Formulations</h2>
-                <p>The Indian pharmaceutical market offers several robust, clinically validated azelaic acid formulations under CDSCO (Central Drugs Standard Control Organisation) Schedule H guidelines, meaning they should technically be sold under a valid prescription.</p>
-
-                <div class="acne-table-wrapper">
-                    <table class="acne-table">
-                        <thead>
-                            <tr>
-                                <th>Brand Name</th>
-                                <th>Manufacturer</th>
-                                <th>Strengths/Vehicles</th>
-                                <th>Key Clinical Use Cases</th>
-                                <th>Formulation Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-label="Brand Name"><strong>Aziderm</strong></td>
-                                <td data-label="Manufacturer">Micro Labs</td>
-                                <td data-label="Strengths/Vehicles">10%, 15%, 20% (Cream & Gel)</td>
-                                <td data-label="Key Clinical Use Cases">Acne vulgaris, Rosacea, Mild PIH</td>
-                                <td data-label="Formulation Notes">The gold standard in India. The gel formulation is highly favored for oily/acne-prone skin.</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Brand Name"><strong>Picspot</strong></td>
-                                <td data-label="Manufacturer">Dr. Reddy's</td>
-                                <td data-label="Strengths/Vehicles">15% (Gel)</td>
-                                <td data-label="Key Clinical Use Cases">Inflammatory acne, Rosacea</td>
-                                <td data-label="Formulation Notes">Excellent spreadability. Often perceived as slightly more cosmetically elegant than Aziderm gel.</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Brand Name"><strong>Exazel N</strong></td>
-                                <td data-label="Manufacturer">Dr. Reddy's</td>
-                                <td data-label="Strengths/Vehicles">20% Azelaic Acid + 4% Niacinamide (Cream)</td>
-                                <td data-label="Key Clinical Use Cases">Melasma, Severe PIH, Acne marks</td>
-                                <td data-label="Formulation Notes">A potent combination therapy. <a href="/ingredients/niacinamide-benefits/">Niacinamide</a> works synergistically to block melanosome transfer, enhancing the depigmenting effect.</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Brand Name"><strong>Ezanic</strong></td>
-                                <td data-label="Manufacturer">Intas Pharmaceuticals</td>
-                                <td data-label="Strengths/Vehicles">10%, 20% (Cream & Gel)</td>
-                                <td data-label="Key Clinical Use Cases">Maintenance therapy, body pigmentation</td>
-                                <td data-label="Formulation Notes">Cost-effective alternative, widely available, effective for larger surface areas like back acne marks.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <p>Among these, <strong>Exazel N</strong> warrants special mention. The addition of 4% Niacinamide creates a multi-pathway approach to treating hyperpigmentation. While Azelaic Acid inhibits the synthesis of melanin via tyrosinase inhibition, Niacinamide prevents the transfer of melanosomes from melanocytes to neighboring keratinocytes. This dual action makes Exazel N a formidable topical treatment for recalcitrant melasma and deep acne scarring, though its thick cream base means it is best suited for evening application or dry skin types.</p>
-            </section>
-
-            <section id="routine-integration" class="reveal">
-                <h2>Routine Integration: Layering Azelaic Acid safely in India</h2>
-                <p>Integrating a potent active like azelaic acid into a skincare routine requires strategy, especially in the harsh, humid, and varied climates of India. Barrier damage is a significant risk when actives are layered haphazardly.</p>
-
-                <h3>The Morning Routine (AM)</h3>
-                <p>Azelaic acid is non-photosensitizing, meaning it does not make your skin more sensitive to the sun. This makes it an excellent morning active. However, its anti-inflammatory properties can cause a characteristic "tingle" or itching sensation upon application.</p>
-                <ul>
-                    <li><strong>Cleanse:</strong> Use a gentle, non-stripping cleanser. Avoid cleansers with high concentrations of AHAs/BHAs (like <a href="/ingredients/salicylic-acid/">salicylic acid</a>) in the same routine initially.</li>
-                    <li><strong>Prep:</strong> Apply a hydrating toner or essence if your skin leans dry. Let it absorb completely. Azelaic acid penetrates deeper and can sting more if applied to damp skin.</li>
-                    <li><strong>Treat:</strong> Apply a pea-sized amount of Azelaic Acid (e.g., Aziderm 15% Gel) to the entire face. Do not spot treat; it works best as a field therapy to prevent future breakouts and normalize overall skin function.</li>
-                    <li><strong>Moisturize:</strong> Follow with a ceramide-rich moisturizer to support the stratum corneum.</li>
-                    <li><strong>Protect:</strong> Unconditionally apply a broad-spectrum sunscreen (SPF 30+ or 50+). While azelaic acid isn't photosensitizing, UV radiation exacerbates the hyperpigmentation and inflammation you are trying to treat.</li>
-                </ul>
-
-                <h3>The Evening Routine (PM) and Advanced Layering</h3>
-                <p>In the evening, azelaic acid can be used alone or layered with other actives, provided the skin is acclimated.</p>
-                <p><strong>Layering with Retinoids (Tretinoin, Adapalene):</strong> The combination of azelaic acid and a retinoid like <a href="/acne/tretinoin-micro-india/">tretinoin</a> is exceptionally potent for severe acne and deep dermal pigmentation. However, both can cause significant irritation. The safest approach is "skin cycling"—using them on alternating nights. Once the skin's tolerance is built up (usually after 8-12 weeks), they can be layered: apply the retinoid first, wait 20 minutes, then apply azelaic acid. This should only be done under dermatological guidance.</p>
-                <p><strong>Layering with Vitamin C:</strong> While theoretically possible, using L-Ascorbic Acid and Azelaic Acid in the same routine can heavily compromise the skin barrier due to low pH levels. It is generally recommended to use <a href="/ingredients/vitamin-c-serums/">Vitamin C</a> in the AM and Azelaic Acid in the PM, or alternating days.</p>
-            </section>
-
-            <section id="side-effects-and-management" class="reveal">
-                <h2>Managing Side Effects: The "Azelaic Itch" and Purging</h2>
-                <p>Despite its excellent safety profile, the initiation of azelaic acid therapy is frequently accompanied by transient cutaneous side effects. The most common is the infamous "Azelaic Itch"—a pricking, stinging, or burning sensation that occurs immediately upon application.</p>
-                <p>This sensation is typically innocuous and mediated by sensory nerve fibers in the skin, not by an allergic reaction or actual barrier destruction. It usually dissipates within 15-30 minutes and significantly diminishes after 2-4 weeks of consistent use as the skin undergoes tachyphylaxis (desensitization) to the active.</p>
-                <h3>Purging vs. Breakouts</h3>
-                <p>Because azelaic acid has comedolytic properties and normalizes skin cell turnover, it can induce a "purge." This is an acceleration of microcomedones coming to the surface as inflammatory lesions. A purge typically lasts 4-6 weeks and occurs in areas where you normally break out. If you are experiencing new breakouts in unusual areas after 8 weeks, it may be a reaction to the vehicle (the cream or gel base) rather than a purge, and you should consult your dermatologist to switch formulations.</p>
-                <h3>Mitigation Strategies</h3>
-                <ul>
-                    <li><strong>The Sandwich Method:</strong> Apply a light moisturizer, then the azelaic acid, then another layer of moisturizer. This buffers the absorption rate and dramatically reduces stinging.</li>
-                    <li><strong>Dry Application:</strong> Ensure the skin is bone-dry before application. Water increases the penetration rate of the acid, exacerbating irritation.</li>
-                    <li><strong>Gradual Titration:</strong> Start by using it every third night, gradually moving to every other night, and finally to daily use over a period of 4-6 weeks.</li>
-                </ul>
-            </section>
-
-            <section id="pregnancy-and-safety" class="reveal">
-                <h2>Safety Profile: Pregnancy, Lactation, and Long-Term Use</h2>
-                <p>One of the most compelling attributes of azelaic acid is its exceptional safety profile. It is classified as an FDA Pregnancy Category B medication, meaning animal reproduction studies have failed to demonstrate a risk to the fetus, and there are no adequate and well-controlled studies in pregnant women. In clinical practice, dermatologists widely consider topical azelaic acid safe for use during pregnancy and lactation, making it a critical tool for managing pregnancy-induced acne and melasma when retinoids (Category X) and <a href="/acne/isotretinoin-accutane/">isotretinoin</a> are strictly contraindicated.</p>
-                <p>Furthermore, because azelaic acid does not induce bacterial resistance and does not cause systemic toxicity or exogenous ochronosis, it can be used indefinitely as a maintenance therapy. For patients with chronic conditions like rosacea or recurrent adult-onset acne, azelaic acid serves as a reliable, long-term cornerstone of their topical regimen.</p>
-            </section>
-            
-            <p>The landscape of dermatological treatments in India is vast, but Azelaic acid remains a steadfast, multi-tasking molecule. Whether navigating the choice between Aziderm 15% gel for inflammatory acne or Exazel N cream for recalcitrant pigmentation, the key to success lies in consistent application, barrier respect, and understanding the specific pharmacological mechanisms at play. Always consult with a board-certified dermatologist to tailor these potent CDSCO Schedule H medications to your unique skin physiology.</p>
-
-            <div class="dark-callout reveal">
-                <h2>Check Active Skincare Ingredient Compatibility</h2>
-                <p>Analyze your routine and prevent barrier damage instantly.</p>
-                <div class="face-ai-cta-wrapper" style="align-items: center; margin-top: 2rem;">
-                    <a href="/tools/ingredient-checker/" class="face-ai-btn">
-                        <span class="face-ai-btn-text">Check Ingredients</span>
-                        <div class="face-ai-energy-rail"></div>
-                    </a>
-                </div>
-            </div>
-
-            <section id="related-topics" class="reveal">
-                <h3>Essential Clinical Topic Clusters</h3>
-                <p>Deepen your treatment knowledge with our related dermatologist protocols:</p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.8rem;">
-                    <a href="/acne/skin-purging-vs-breakout-india/">Skin Purging vs Breakout →</a>
-                    <a href="/acne/adapalene-0.1-percent-gel-acne-india/">Adapalene 0.1% Retinoid Gel →</a>
-                    <a href="/acne/pie-vs-pih-indian-skin/">PIE vs PIH on Brown Skin →</a>
-                    <a href="/acne/best-cica-moisturizer-for-acne-prone-skin-india/">Best Cica Moisturizers →</a>
-                    <a href="/acne/salicylic-acid-face-wash-vs-serum/">BHA Wash vs Serum Guide →</a>
-                    <a href="/acne/benzoyl-peroxide-gel-2.5-vs-5-india/">Benzoyl Peroxide 2.5% vs 5% →</a>
-                    <a href="/acne/niacinamide-serums-india/">Niacinamide Serum Guide →</a>
-                    <a href="/acne/alpha-arbutin-serum-for-dark-spots-india/">Alpha Arbutin Dark Spots →</a>
-                    <a href="/acne/retinol-vs-tretinoin-acne-india/">Retinol vs Tretinoin Guide →</a>
-                    <a href="/acne/bpo-vs-salicylic-vs-adapalene-which-acne/">BPO vs BHA vs Adapalene →</a>
-                </div>
-            </section>
-        </main>
+        <h1 class="hero-title">Azelaic Acid 15% & 20% in India: The Clinical Guide</h1>
+        <p class="hero-subtitle">A deep dive into formulations like Aziderm, Picspot, and Exazel N for managing Acne, Rosacea, and Hyperpigmentation.</p>
         
-        <aside class="sidebar">
-            <div class="sidebar-card" style="background: var(--brand-light); border-color: var(--brand);">
-                <h4>Medical Review</h4>
-                <p>This clinical guide was reviewed by the MyMirror Dermatology Board for accuracy regarding CDSCO Schedule H protocols in India.</p>
-            </div>
-            
-            <div class="sidebar-card">
-                <h4>Quick Stats</h4>
-                <ul class="sidebar-list">
-                    <li>Recommended Concentration: 15% Gel</li>
-                    <li>Use time: AM or PM</li>
-                    <li>Photosensitivity: No</li>
-                    <li>Pregnancy Safe: Yes</li>
-                </ul>
-            </div>
-            
-            <div class="sidebar-card">
-                <h4>When to Consult</h4>
-                <p>If you experience severe burning lasting longer than 30 minutes, or develop hives, discontinue use and consult your dermatologist.</p>
-            </div>
-        </aside>
+        <div class="hero-meta-list">
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+            <span>Tyrosinase Inhibitor</span>
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+            <span>Pregnancy Safe (FDA Cat B)</span>
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+            <span>PIH + Rosacea</span>
+          </div>
+        </div>
+
+        <a href="https://face3layerscanner.onrender.com/" class="perimeter-cta">
+          Analyze Dark Spots: PIE vs PIH ✨
+        </a>
+      </div>
+      
+      <div class="hero-image-card">
+        <img src="https://mymirror.fit/assets/images/azelaic_acid_gel_india.jpg" alt="Azelaic acid gel">
+        <div class="hero-image-tag">
+          <span>Clinical concentration range</span>
+          <span class="hero-tag-accent">15%-20%</span>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Main Footer -->
-    <footer class="main-footer">
-        <img src="https://mymirror.fit/assets/logo-v4.png" alt="MyMirror Logo" class="footer-logo">
-        <p class="footer-text">© 2026 MyMirror. All rights reserved. For informational purposes only.</p>
-    </footer>
+  <div class="main-container">
+    <article class="article-content">
+      <section id="section-1" class="section-block">
+        <h2>Understanding Azelaic Acid: The Unsung Hero of Dermatology</h2>
+        <p>Azelaic acid, a naturally occurring dicarboxylic acid produced by the yeast <em>Malassezia furfur</em>, has emerged as one of the most versatile and highly prescribed topical agents in modern dermatology. Within the Indian pharmaceutical landscape, its prominence has skyrocketed due to its tri-fold efficacy: it is antimicrobial, comedolytic, and acts as a potent tyrosinase inhibitor.</p>
+        <p>Unlike <a href="/acne/benzoyl-peroxide-guide/">benzoyl peroxide</a>, which primarily targets the bacterial load of <em>Cutibacterium acnes</em> through oxidation, azelaic acid operates through a nuanced mechanism that alters the microenvironment of the pilosebaceous unit. It significantly reduces the production of free fatty acids in sebum and normalizes keratinization, preventing the formation of microcomedones.</p>
+        <p>Furthermore, in the context of the Indian demographic—where Fitzpatrick skin types III to V are predominant—the incidence of Post-Inflammatory Hyperpigmentation (PIH) and melasma is exceedingly high. Azelaic acid selectively targets hyperactive melanocytes by inhibiting the enzyme tyrosinase, making it a cornerstone therapy for pigmentary disorders without the risks of paradoxical hyperpigmentation or exogenous ochronosis associated with long-term <a href="/hyperpigmentation/hydroquinone-risks/">hydroquinone</a> use.</p>
+        <p>This comprehensive guide explores the clinical nuances of 15% and 20% azelaic acid formulations available in India under CDSCO Schedule H regulations, including popular brands like Aziderm, Picspot, and Exazel N. By understanding the pharmacokinetics and formulation science behind these products, patients and practitioners can optimize treatment protocols for diverse dermatological indications.</p>
+      </section>
 
-    <!-- Sticky Mobile CTA -->
-    <div class="sticky-cta-mobile">
-        <a href="https://face3layerscanner.onrender.com/" class="nav-cta">Check Skin Pigmentation</a>
+      <section id="section-2" class="section-block">
+        <h2>Clinical Deep Dive: Mechanism of Action</h2>
+        <p>To fully appreciate the therapeutic value of azelaic acid, one must examine its molecular interactions within the epidermis and dermis. Its efficacy is not derived from a single pathway but rather a synergistic array of pharmacological effects.</p>
+        
+        <h3>1. Antimicrobial Properties</h3>
+        <p>Azelaic acid exhibits a profound bacteriostatic effect, which at higher concentrations can become bactericidal. It readily penetrates the bacterial cell wall of <em>Cutibacterium acnes</em> (formerly <em>Propionibacterium acnes</em>) and <em>Staphylococcus epidermidis</em>. Once inside the cell, it disrupts critical cellular processes, specifically targeting the synthesis of vital proteins. Unlike topical antibiotics such as <a href="/acne/clindamycin-phosphate-gel/">clindamycin</a>, there is no documented bacterial resistance to azelaic acid, making it safe for prolonged, indefinite use in chronic acne management.</p>
+        
+        <h3>2. Anti-Keratinizing Activity</h3>
+        <p>Hyperkeratinization—the abnormal shedding of skin cells—is a primary catalyst for comedone formation. Azelaic acid modulates the early and terminal phases of epidermal differentiation. It decreases the thickness of the stratum corneum, normalizes filaggrin expression, and reduces the synthesis of keratohyalin granules. This unblocks the follicular duct, preventing the impaction of sebum and keratin that characterizes comedonal acne.</p>
+        
+        <div class="info-box">
+          <h4>Tyrosinase Inhibition Mechanism</h4>
+          <p>Azelaic acid acts as a competitive and reversible inhibitor of tyrosinase, the rate-limiting enzyme in melanogenesis. Crucially, its cytotoxic effect is selective; it targets highly active and abnormal melanocytes (such as those found in melasma or post-inflammatory lesions) while sparing normal, healthy melanocytes. This selectivity ensures an even skin tone without the risk of hypopigmentation or depigmentation halos, a significant advantage over other bleaching agents.</p>
+        </div>
+
+        <h3>3. Anti-Inflammatory Effects</h3>
+        <p>Azelaic acid downregulates a variety of pro-inflammatory mediators. It inhibits the production of reactive oxygen species (ROS) from neutrophils and suppresses the release of interleukins (IL-1, IL-6) and tumor necrosis factor-alpha (TNF-α). This robust anti-inflammatory action is the primary reason azelaic acid is FDA-approved and widely used off-label in India for the management of <a href="/rosacea/treatment-guidelines/">rosacea</a>, particularly the papulopustular subtype, rapidly reducing erythema and inflammatory lesion counts.</p>
+      </section>
+
+      <section id="section-3" class="section-block">
+        <h2>15% vs. 20% Concentration: Formulation Matters</h2>
+        <p>In India, azelaic acid is predominantly prescribed in two strengths: 15% and 20%. While one might intuitively assume that the higher concentration is universally superior, the clinical reality is heavily dependent on the vehicle (base formulation) and the specific indication.</p>
+
+        <div class="bento-grid">
+          <div class="bento-card">
+            <div class="bento-header">
+              <h4 class="bento-title">10% OTC (Cosmetic)</h4>
+              <span class="bento-tag">Maintenance</span>
+            </div>
+            <div class="bento-body">
+              <p>Cosmetic formulations containing 10% azelaic acid or azelaic acid derivatives. Often formulated with soothing ingredients. Best for maintenance and mild brightening.</p>
+            </div>
+            <div class="bento-footer">
+              <span>Effectiveness: Mild</span>
+              <span>Prescription: No</span>
+            </div>
+          </div>
+          <div class="bento-card">
+            <div class="bento-header">
+              <h4 class="bento-title">15% Rx Strength</h4>
+              <span class="bento-tag">Clinical</span>
+            </div>
+            <div class="bento-body">
+              <p>The standard clinical dose for acne and rosacea. Deeply penetrates the pore to clear impactions. The gel formulation is highly favored in India for its cosmetic elegance.</p>
+            </div>
+            <div class="bento-footer">
+              <span>Effectiveness: High</span>
+              <span>Prescription: Yes</span>
+            </div>
+          </div>
+        </div>
+
+        <h3>The 15% Gel Advantage</h3>
+        <p>Clinical studies have demonstrated that a 15% gel formulation can be as effective, if not more effective, than a 20% cream in certain scenarios. The gel vehicle allows for enhanced penetration of the active ingredient into the stratum corneum and the pilosebaceous unit. It is typically non-comedogenic, lightweight, and cosmetically elegant, making it the preferred choice for oily skin types, inflammatory acne, and rosacea. In India, products like <strong>Aziderm 15% Gel</strong> and <strong>Picspot 15% Gel</strong> are widely prescribed for these exact reasons.</p>
+        
+        <h3>The 20% Cream Powerhouse</h3>
+        <p>The 20% cream formulations, such as <strong>Aziderm 20% Cream</strong>, offer a higher absolute concentration of the active molecule but are suspended in an emollient base. This base slows down the delivery of the acid, reducing the initial stinging or "tingling" sensation that many patients experience. The 20% cream is exceptionally effective for melasma and stubborn hyperpigmentation, particularly in patients with dry, sensitive, or mature skin whose barrier requires the lipid support provided by the cream vehicle.</p>
+        
+        <div class="warning-box">
+          <h4>Warning: Gel vs Cream on Oily Indian Skin</h4>
+          <p>A patient with severe oily acne may find a 20% cream too heavy, leading to congestion and new comedones, while a patient with dry skin and melasma might find the 15% gel insufficiently moisturizing and potentially irritating. Ensure you select the correct vehicle for your specific skin type and environment.</p>
+        </div>
+      </section>
+
+      <section id="section-4" class="section-block">
+        <h2>Deep Dive into Indian Formulations</h2>
+        <p>The Indian pharmaceutical market offers several robust, clinically validated azelaic acid formulations under CDSCO (Central Drugs Standard Control Organisation) Schedule H guidelines, meaning they should technically be sold under a valid prescription.</p>
+
+        <div class="table-container">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>Brand Name</th>
+                <th>Manufacturer</th>
+                <th>Strengths/Vehicles</th>
+                <th>Key Clinical Use Cases</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Brand Name"><strong>Aziderm</strong></td>
+                <td data-label="Manufacturer">Micro Labs</td>
+                <td data-label="Strengths/Vehicles">10%, 15%, 20% (Cream & Gel)</td>
+                <td data-label="Key Clinical Use Cases">Acne vulgaris, Rosacea, Mild PIH</td>
+              </tr>
+              <tr>
+                <td data-label="Brand Name"><strong>Picspot</strong></td>
+                <td data-label="Manufacturer">Dr. Reddy's</td>
+                <td data-label="Strengths/Vehicles">15% (Gel)</td>
+                <td data-label="Key Clinical Use Cases">Inflammatory acne, Rosacea</td>
+              </tr>
+              <tr>
+                <td data-label="Brand Name"><strong>Exazel N</strong></td>
+                <td data-label="Manufacturer">Dr. Reddy's</td>
+                <td data-label="Strengths/Vehicles">20% Azelaic Acid + 4% Niacinamide</td>
+                <td data-label="Key Clinical Use Cases">Melasma, Severe PIH, Acne marks</td>
+              </tr>
+              <tr>
+                <td data-label="Brand Name"><strong>Ezanic</strong></td>
+                <td data-label="Manufacturer">Intas Pharmaceuticals</td>
+                <td data-label="Strengths/Vehicles">10%, 20% (Cream & Gel)</td>
+                <td data-label="Key Clinical Use Cases">Maintenance therapy, body pigmentation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Among these, <strong>Exazel N</strong> warrants special mention. The addition of 4% Niacinamide creates a multi-pathway approach to treating hyperpigmentation. While Azelaic Acid inhibits the synthesis of melanin via tyrosinase inhibition, Niacinamide prevents the transfer of melanosomes from melanocytes to neighboring keratinocytes. This dual action makes Exazel N a formidable topical treatment for recalcitrant melasma and deep acne scarring, though its thick cream base means it is best suited for evening application or dry skin types.</p>
+      </section>
+
+      <section id="section-5" class="section-block">
+        <h2>Routine Integration: Layering Azelaic Acid safely in India</h2>
+        <p>Integrating a potent active like azelaic acid into a skincare routine requires strategy, especially in the harsh, humid, and varied climates of India. Barrier damage is a significant risk when actives are layered haphazardly.</p>
+
+        <h3>The Morning Routine (AM)</h3>
+        <p>Azelaic acid is non-photosensitizing, meaning it does not make your skin more sensitive to the sun. This makes it an excellent morning active. However, its anti-inflammatory properties can cause a characteristic "tingle" or itching sensation upon application.</p>
+        <ul>
+            <li><strong>Cleanse:</strong> Use a gentle, non-stripping cleanser. Avoid cleansers with high concentrations of AHAs/BHAs in the same routine initially.</li>
+            <li><strong>Prep:</strong> Apply a hydrating toner or essence if your skin leans dry. Let it absorb completely.</li>
+            <li><strong>Treat:</strong> Apply a pea-sized amount of Azelaic Acid to the entire face. Do not spot treat.</li>
+            <li><strong>Moisturize:</strong> Follow with a ceramide-rich moisturizer to support the stratum corneum.</li>
+            <li><strong>Protect:</strong> Unconditionally apply a broad-spectrum sunscreen (SPF 30+ or 50+).</li>
+        </ul>
+
+        <h3>The Evening Routine (PM) and Advanced Layering</h3>
+        <p>In the evening, azelaic acid can be used alone or layered with other actives, provided the skin is acclimated.</p>
+        <p><strong>Layering with Retinoids (Tretinoin, Adapalene):</strong> The combination of azelaic acid and a retinoid like <a href="/acne/tretinoin-micro-india/">tretinoin</a> is exceptionally potent for severe acne and deep dermal pigmentation. However, both can cause significant irritation. The safest approach is "skin cycling"—using them on alternating nights. Once the skin's tolerance is built up, they can be layered: apply the retinoid first, wait 20 minutes, then apply azelaic acid.</p>
+        <p><strong>Layering with Vitamin C:</strong> While theoretically possible, using L-Ascorbic Acid and Azelaic Acid in the same routine can heavily compromise the skin barrier due to low pH levels. It is generally recommended to use Vitamin C in the AM and Azelaic Acid in the PM, or alternating days.</p>
+      </section>
+
+      <section id="section-6" class="section-block">
+        <h2>Managing Side Effects: The "Azelaic Itch" and Purging</h2>
+        <p>Despite its excellent safety profile, the initiation of azelaic acid therapy is frequently accompanied by transient cutaneous side effects. The most common is the infamous "Azelaic Itch"—a pricking, stinging, or burning sensation that occurs immediately upon application.</p>
+        
+        <div class="caution-box">
+          <h4>Caution: Initial Stinging & Itching</h4>
+          <p>This sensation is typically innocuous and mediated by sensory nerve fibers in the skin, not by an allergic reaction or actual barrier destruction. It usually dissipates within 15-30 minutes and significantly diminishes after 2-4 weeks of consistent use as the skin undergoes tachyphylaxis (desensitization) to the active. Use the Sandwich Method (moisturizer-active-moisturizer) to mitigate this.</p>
+        </div>
+
+        <h3>Purging vs. Breakouts</h3>
+        <p>Because azelaic acid has comedolytic properties and normalizes skin cell turnover, it can induce a "purge." This is an acceleration of microcomedones coming to the surface as inflammatory lesions. A purge typically lasts 4-6 weeks and occurs in areas where you normally break out. If you are experiencing new breakouts in unusual areas after 8 weeks, it may be a reaction to the vehicle (the cream or gel base) rather than a purge, and you should consult your dermatologist to switch formulations.</p>
+        
+        <h3>Mitigation Strategies</h3>
+        <ul>
+            <li><strong>The Sandwich Method:</strong> Apply a light moisturizer, then the azelaic acid, then another layer of moisturizer. This buffers the absorption rate and dramatically reduces stinging.</li>
+            <li><strong>Dry Application:</strong> Ensure the skin is bone-dry before application. Water increases the penetration rate of the acid, exacerbating irritation.</li>
+            <li><strong>Gradual Titration:</strong> Start by using it every third night, gradually moving to every other night, and finally to daily use over a period of 4-6 weeks.</li>
+        </ul>
+      </section>
+
+      <section id="section-7" class="section-block">
+        <h2>Safety Profile: Pregnancy, Lactation, and Long-Term Use</h2>
+        
+        <div class="info-box">
+          <h4>Pregnancy & Lactation Safety</h4>
+          <p>Azelaic acid is classified as an FDA Pregnancy Category B medication, meaning animal reproduction studies have failed to demonstrate a risk to the fetus, and there are no adequate and well-controlled studies in pregnant women. In clinical practice, dermatologists widely consider topical azelaic acid safe for use during pregnancy and lactation, making it a critical tool for managing pregnancy-induced acne and melasma when retinoids (Category X) and isotretinoin are strictly contraindicated.</p>
+        </div>
+
+        <p>Furthermore, because azelaic acid does not induce bacterial resistance and does not cause systemic toxicity or exogenous ochronosis, it can be used indefinitely as a maintenance therapy. For patients with chronic conditions like rosacea or recurrent adult-onset acne, azelaic acid serves as a reliable, long-term cornerstone of their topical regimen.</p>
+        
+        <p>The landscape of dermatological treatments in India is vast, but Azelaic acid remains a steadfast, multi-tasking molecule. Whether navigating the choice between Aziderm 15% gel for inflammatory acne or Exazel N cream for recalcitrant pigmentation, the key to success lies in consistent application, barrier respect, and understanding the specific pharmacological mechanisms at play. Always consult with a board-certified dermatologist to tailor these potent CDSCO Schedule H medications to your unique skin physiology.</p>
+      </section>
+
+      <section id="section-8" class="section-block">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <div class="faq-header">
+              What is the difference between Azelaic Acid 15% gel and 20% cream?
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-body">
+              <p>The 15% gel formulation is often more bioavailable and penetrates the skin effectively, making it excellent for rosacea and inflammatory acne. The 20% cream provides a higher concentration in an emollient base, suitable for hyperpigmentation and patients who need extra moisturization.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-header">
+              Is Aziderm 20% safe to use daily in India?
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-body">
+              <p>Yes, but it must be introduced gradually. Due to India's varied climate, barrier support with ceramides is crucial. It is a CDSCO Schedule H drug, so usage should ideally be under dermatological supervision.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <aside class="desktop-sidebar">
+      <div class="sidebar-card">
+        <h4 style="font-family: 'Kantumruy Pro', serif; font-size: 1.1rem; color: var(--brand-dark); margin-bottom: 0.75rem;">Medical Review</h4>
+        <p style="font-size: 0.9rem; color: #475569; margin-bottom: 0;">This clinical guide was reviewed by the MyMirror Dermatology Board for accuracy regarding CDSCO Schedule H protocols in India.</p>
+      </div>
+      <div class="sidebar-card">
+        <h4 style="font-family: 'Kantumruy Pro', serif; font-size: 1.1rem; margin-bottom: 0.75rem;">Quick Stats</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: #475569;">
+          <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><svg width="16" height="16" fill="var(--brand)" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Recommended: 15% Gel</li>
+          <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><svg width="16" height="16" fill="var(--brand)" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Use time: AM or PM</li>
+          <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><svg width="16" height="16" fill="var(--brand)" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Photosensitivity: No</li>
+          <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><svg width="16" height="16" fill="var(--brand)" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Pregnancy Safe: Yes</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <div class="sticky-bottom-bar">
+    <a href="https://face3layerscanner.onrender.com/" class="perimeter-cta" style="width: 100%; box-shadow: none;">Analyze Dark Spots: PIE vs PIH ✨</a>
+  </div>
+
+  <footer class="site-footer" style="background: #0F1316; color: #94A3B8; padding: 4rem 1.5rem; text-align: center; border-top: 1px solid #1E293B;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p style="margin-bottom: 1rem; font-family: 'Kantumruy Pro', serif; color: #FFFFFF; font-size: 1.5rem; font-weight: 700;">MyMirror</p>
+      <p style="font-size: 0.85rem;">© 2026 MyMirror. All rights reserved. For informational purposes only.</p>
     </div>
+  </footer>
 
-    <!-- JavaScript -->
-    <script>
-        // Scroll Reveal
-        const revealElements = document.querySelectorAll('.reveal');
-        const revealOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
-        const revealObserver = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
-                entry.target.classList.add('active');
-                observer.unobserve(entry.target);
-            });
-        }, revealOptions);
-        revealElements.forEach(el => revealObserver.observe(el));
-
-        // FAQ Accordion
-        const faqItems = document.querySelectorAll('.faq-item');
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            question.addEventListener('click', () => {
-                const isActive = item.classList.contains('active-faq');
-                faqItems.forEach(faq => faq.classList.remove('active-faq'));
-                if (!isActive) item.classList.add('active-faq');
-            });
-        });
-
-        // TOC Scroll Spy
-        const tocLinks = document.querySelectorAll('.toc-link');
-        const sections = document.querySelectorAll('section[id]');
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 150)) { current = section.getAttribute('id'); }
-            });
+  <script>
+    // TOC Scroll Spy
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll(".section-block");
+      const tocLinks = document.querySelectorAll(".toc-link");
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
             tocLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').includes(current) && current !== '') {
-                    link.classList.add('active');
-                }
+              link.classList.remove("active");
+              if (link.getAttribute("href").substring(1) === entry.target.id) {
+                link.classList.add("active");
+                link.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+              }
             });
+          }
         });
-    </script>
+      }, { rootMargin: "-20% 0px -70% 0px" });
+      
+      sections.forEach(section => observer.observe(section));
+      
+      // FAQ Accordion
+      const faqHeaders = document.querySelectorAll('.faq-header');
+      faqHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+          const item = header.parentElement;
+          const isActive = item.classList.contains('active');
+          
+          document.querySelectorAll('.faq-item').forEach(faq => {
+            faq.classList.remove('active');
+            faq.querySelector('.faq-body').style.maxHeight = null;
+            faq.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+          });
+          
+          if (!isActive) {
+            item.classList.add('active');
+            const body = item.querySelector('.faq-body');
+            body.style.maxHeight = body.scrollHeight + "px";
+            item.querySelector('.faq-icon').style.transform = 'rotate(45deg)';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>

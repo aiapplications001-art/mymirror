@@ -90,793 +90,1251 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-        :root {
-            --brand:      #EC610E;
-            --brand-dark: #C14800;
-            --brand-light:#FFE1CE;
-            --bg:         #FFFFFF;
-            --bg-2:       #F9F6F3;
-            --bg-3:       #F2EDE8;
-            --text:       #1A1410;
-            --text-2:     #5C4A3A;
-            --text-3:     #9E8575;
-            --border:     #E8DDD5;
-            --success:    #2D7A4F;
-            --danger:     #C0392B;
-            --info:       #1A5F8A;
-            --bouncy:     cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            --max-article: 720px;
-            --max-content: 1100px;
-            --radius-lg: 16px;
-            --radius-xl: 24px;
-            --transition-base: 0.4s var(--bouncy);
-        }
+  <style>
+  <style>
+    /* CSS DESIGN SYSTEM TOKENS */
+    :root {
+      --brand: #EC610E;
+      --brand-dark: #C14800;
+      --brand-light: #FFE1CE;
+      --bg2: #F9F6F3;
+      --border: #E8DDD5;
+      --text-main: #1E293B;
+      --text-muted: #64748B;
+      --card-bg: #FFFFFF;
+      --dark-bg: #121619;
+      --dark-card: #1E2328;
+      --warning-bg: #FFFBEB;
+      --warning-border: #FCD34D;
+      --warning-text: #92400E;
+      --danger-bg: #FEF2F2;
+      --danger-border: #FCA5A5;
+      --danger-text: #991B1B;
+      --success-bg: #F0FDF4;
+      --success-border: #86EFAC;
+      --success-text: #166534;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.1);
+    }
 
-        /* Auto Dark Mode */
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg:         #120D0A;
-                --bg-2:       #1E1510;
-                --bg-3:       #2A1E17;
-                --text:       #F5EDE6;
-                --text-2:     #C4A898;
-                --text-3:     #7A6055;
-                --border:     #3A2A22;
-                --success:    #4ABA7A;
-                --danger:     #E8554A;
-                --info:       #5BA8D8;
-            }
-        }
+    /* GLOBAL RESET & BASE STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 15px; line-height: 1.65;
-            color: var(--text); background: var(--bg);
-            overflow-x: hidden;
-        }
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
 
-        h1, h2, h3 { font-family: 'Kantumruy Pro', serif; color: var(--text); }
-        h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; line-height: 1.15; letter-spacing: -0.03em; }
-        h2 { font-size: 2rem; font-weight: 600; line-height: 1.2; margin-top: 4rem; margin-bottom: 1.5rem; }
-        h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.35rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
-        p { color: var(--text-2); line-height: 1.65; margin-bottom: 1.5rem; }
-        ul, ol { margin-bottom: 1.5rem; padding-left: 1.5rem; color: var(--text-2); }
-        li { margin-bottom: 0.5rem; }
-        a { color: var(--brand); text-decoration: none; font-weight: 600; }
-        a:hover { text-decoration: underline; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-main);
+      background-color: #FFFFFF;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
 
-        .container { max-width: var(--max-content); margin: 0 auto; padding: 0 2rem; }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Kantumruy Pro', Georgia, serif;
+      font-weight: 700;
+      color: #0F172A;
+      line-height: 1.25;
+    }
 
-        /* Sticky Header */
-        .sticky-header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: var(--bg);
-            border-bottom: 1px solid var(--border);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            height: 60px;
-            display: flex;
-            align-items: center;
-        }
-        .header-content {
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
-        .logo { height: 36px; object-fit: contain; }
-        .nav { display: flex; gap: 28px; }
-        .nav-link { color: var(--text); font-weight: 600; font-size: 0.9rem; text-decoration: none; }
-        .nav-link.accent-brain { color: #6366f1; font-weight: 800; }
-        .nav-link.accent-natural { color: #059669; font-weight: 800; }
-        .nav-link.accent-fast { color: #EC610E; font-weight: 800; }
+    p {
+      margin-bottom: 1.25rem;
+      color: #334155;
+    }
 
-        /* Trust Bar */
-        .trust-bar {
-            background: var(--bg-2);
-            padding: 10px 20px;
-            border-bottom: 1px solid var(--border);
-            font-size: 12px;
-            color: var(--text-3);
-            display: flex;
-            gap: 16px;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .trust-reviewer { color: var(--success); font-weight: 700; }
+    a {
+      color: var(--brand);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
 
-        /* Split Hero */
-        .hero {
-            background: var(--bg-2);
-            border-bottom: 1px solid var(--border);
-            padding: 4rem 2rem;
-            margin-bottom: 0;
-        }
-        .hero-inner {
-            max-width: var(--max-content);
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-        .hero-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: var(--brand-light);
-            color: var(--brand-dark);
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            padding: 5px 14px;
-            border-radius: 9999px;
-            margin-bottom: 1.5rem;
-        }
-        .hero-image-stack {
-            display: flex;
-            gap: 20px;
-            justify-content: flex-end;
-        }
-        .hero-photo-card {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            align-items: flex-end;
-            width: 200px;
-        }
-        .hero-photo {
-            width: 100%;
-            height: 240px;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .hero-photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .hero-stat-card {
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 14px 18px;
-            width: 100%;
-            min-height: 105px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .stat-num {
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: var(--brand);
-            line-height: 1.1;
-            margin-bottom: 4px;
-            font-family: 'Kantumruy Pro', serif;
-        }
-        .stat-label {
-            font-size: 11px;
-            color: var(--text-2);
-            line-height: 1.4;
-        }
+    a:hover {
+      color: var(--brand-dark);
+    }
 
-        /* TOC Bar */
-        .toc-bar {
-            background: var(--bg);
-            border-bottom: 1px solid var(--border);
-            padding: 0 2rem;
-            position: sticky;
-            top: 60px;
-            z-index: 90;
-        }
-        .toc-inner {
-            max-width: var(--max-content);
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-        .toc-inner::-webkit-scrollbar {
-            display: none;
-        }
-        .toc-link {
-            white-space: nowrap;
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--text-3);
-            text-decoration: none;
-            padding: 14px 18px;
-            border-bottom: 2px solid transparent;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .toc-link:hover { color: var(--text); border-bottom-color: var(--brand); }
-        .toc-link.active { color: var(--brand); border-bottom-color: var(--brand); }
-        .toc-num {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            background: var(--brand);
-            color: #fff;
-            font-size: 10px;
-            font-weight: 700;
-        }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
 
-        /* Two Column Body Layout */
-        .page-body {
-            max-width: var(--max-content);
-            margin: 0 auto;
-            padding: 3rem 2rem 5rem;
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: 3rem;
-            align-items: start;
-        }
+    /* TOP HEADER BAR */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: 60px;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+    }
 
-        /* Callout Box */
-        .callout {
-            background: var(--bg-3);
-            border-left: 4px solid var(--brand);
-            border-radius: 0 12px 12px 0;
-            padding: 1.5rem;
-            margin: 2.5rem 0;
-            font-size: 0.95rem;
-            color: var(--text);
-        }
-        .callout strong { color: var(--text); }
-        
-        .dark-callout {
-            background: var(--text);
-            border-radius: 30px;
-            padding: 3rem;
-            color: var(--bg);
-            text-align: center;
-            margin: 4rem 0;
-        }
-        .dark-callout h2 { color: var(--bg); margin-top: 0; }
-        .dark-callout p { color: var(--text-3); }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Kantumruy Pro', serif;
+      font-weight: 700;
+      font-size: 1.35rem;
+      color: var(--brand-dark);
+      text-decoration: none;
+    }
 
-        /* Face AI CTA (V2.1 standard) */
-        .face-ai-cta-wrapper { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin: 2rem 0 0; text-align: left; width: 100%; position: relative; z-index: 50; }
-        .face-ai-btn { 
-            position: relative; 
-            display: inline-flex; 
-            align-items: center;
-            justify-content: center;
-            padding: 18px 44px; 
-            background: #EC610E; 
-            color: #ffffff !important; 
-            text-decoration: none; 
-            font-weight: 800; 
-            font-size: 1.15rem; 
-            border-radius: 9999px; 
-            box-shadow: 0 10px 30px rgba(236,97,14,0.3); 
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-            z-index: 10;
-            overflow: visible;
-        }
-        .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
-        .face-ai-btn-text { position: relative; z-index: 12; }
-        p.face-ai-subtext { color: var(--text-3); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
+    .brand-logo span {
+      color: var(--brand);
+    }
 
-        .face-ai-energy-rail { 
-            position: absolute; 
-            inset: -3px; 
-            border-radius: 9999px; 
-            pointer-events: none;
-            z-index: 5;
-            padding: 3px;
-            overflow: hidden;
-            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            mask-composite: exclude;
-            -webkit-mask-composite: xor;
-        }
-        
-        .face-ai-energy-rail::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 400%; 
-            height: 400%;
-            background: conic-gradient(from 0deg, transparent 65%, #EC610E 80%, #FFE1CE 95%, #ffffff 100%);
-            animation: energy-loop 3.5s ease-in-out forwards;
-        }
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      color: var(--brand-dark);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
 
-        @keyframes energy-loop {
-            0% { transform: translate(-50%, -50%) rotate(0deg); opacity: 0; }
-            100% { transform: translate(-50%, -50%) rotate(360deg); opacity: 1; }
-        }
+    .header-cta:hover {
+      background: var(--brand-light);
+      border-color: var(--brand);
+    }
 
-        .btn-primary {
-            display: inline-block;
-            padding: 16px 40px;
-            border-radius: 9999px;
-            border: none;
-            background: var(--brand);
-            color: #fff;
-            font-weight: 700;
-            font-size: 16px;
-            cursor: pointer;
-            box-shadow: 0 10px 25px rgba(236,97,14,0.3);
-            transition: var(--transition-base);
-            text-decoration: none;
-        }
-        .btn-primary:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 30px rgba(236,97,14,0.4);
-            background: var(--brand-dark);
-            color: #fff;
-        }
+    /* TRUST BAR */
+    .trust-bar {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 0.6rem 1rem;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--brand-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
 
-        /* Sidebar Styling */
-        .sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
-        .sidebar-card {
-            background: var(--bg-2);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 1.5rem;
-        }
-        .sidebar-card h4 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 700; margin-bottom: 10px; }
-        .sidebar-card p { font-size: 13px; color: var(--text-2); }
-        .sidebar-list { list-style: none; margin-top: 10px; padding: 0; }
-        .sidebar-list li {
-            font-size: 13px; color: var(--text-2);
-            padding: 6px 0; border-bottom: 1px solid var(--border);
-            display: flex; gap: 8px;
-        }
-        .sidebar-list li:last-child { border-bottom: none; }
-        .sidebar-list li::before { content: '→'; color: var(--brand); font-size: 12px; }
-        .sidebar-list a { color: inherit; text-decoration: none; }
-        .sidebar-list a:hover { color: var(--brand); }
+    .trust-badge-icon {
+      width: 18px;
+      height: 18px;
+      fill: var(--brand);
+      display: inline-block;
+    }
 
-        /* Responsive Comparison Tables V2.1 */
-        .acne-table-wrapper { overflow-x: auto; margin: 2rem 0; border: 1px solid var(--border); border-radius: 12px; }
-        .acne-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-        .acne-table th { background: var(--bg-2); padding: 14px; text-align: left; border-bottom: 2px solid var(--border); font-weight: 700; }
-        .acne-table td { padding: 14px; border-bottom: 1px solid var(--border); color: var(--text-2); }
-        .acne-table tr:last-child td { border-bottom: none; }
+    /* STICKY TOC BAR */
+    .sticky-toc-bar {
+      position: sticky;
+      top: 60px;
+      z-index: 90;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
 
-        /* Interactive FAQ Accordion */
-        .faq-item {
-            background: var(--bg);
-            border-radius: 16px;
-            margin-bottom: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            border: 1px solid var(--border);
-            transition: all 0.3s ease;
-        }
-        .faq-question {
-            padding: 1.5rem 2rem;
-            font-weight: 700;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: var(--text);
-            font-size: 1.1rem;
-            user-select: none;
-        }
-        .faq-question:hover { color: var(--brand); background: var(--bg-2); }
-        .faq-answer {
-            max-height: 0;
-            padding: 0 2rem;
-            overflow: hidden;
-            transition: all 0.4s ease-out;
-            color: var(--text-2);
-            font-size: 0.95rem;
-            line-height: 1.65;
-        }
-        .faq-item.active-faq .faq-answer {
-            max-height: 500px;
-            padding: 0 2rem 2rem 2rem;
-        }
-        .faq-icon {
-            font-size: 1.5rem;
-            transition: transform 0.3s ease;
-            color: var(--brand);
-        }
-        .faq-item.active-faq .faq-icon {
-            transform: rotate(45deg);
-        }
+    .toc-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.65rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none;
+    }
 
-        /* Reveal Animation */
-        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s var(--bouncy); }
-        .reveal.active { opacity: 1; transform: none; }
+    .toc-inner::-webkit-scrollbar {
+      display: none;
+    }
 
-        /* Footer */
-        .main-footer {
-            background: var(--bg-2);
-            padding: 4rem 2rem;
-            text-align: center;
-            border-top: 1px solid var(--border);
-            margin-top: 6rem;
-        }
-        .footer-logo { height: 30px; margin-bottom: 1.5rem; opacity: 0.7; }
-        .footer-text { color: var(--text-3); font-size: 0.85rem; }
+    .toc-label {
+      font-weight: 700;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--brand-dark);
+      background: var(--brand-light);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
 
-        @media (max-width: 900px) {
-            .page-body { grid-template-columns: 1fr; }
-            .sidebar { display: none; }
-            .hero-inner { grid-template-columns: 1fr; text-align: center; }
-            .hero-image-stack { display: none; }
-            .hero-content { display: flex; flex-direction: column; align-items: center; }
-        }
+    .toc-link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
 
-        @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; }
-            h2 { font-size: 1.8rem; }
-            .nav { display: none; }
-            
-            /* Table Stack on Mobile */
-            .acne-table, .acne-table tbody, .acne-table tr, .acne-table td { display: block; width: 100%; box-sizing: border-box; }
-            .acne-table thead { display: none; }
-            .acne-table { border: none; margin: 1rem 0; }
-            .acne-table tr { margin-bottom: 1.5rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 4px 15px rgba(0,0,0,0.03); background: var(--bg); }
-            .acne-table td { border-bottom: 1px solid var(--border); padding: 12px 12px 12px 40%; position: relative; min-height: 46px; text-align: right; }
-            .acne-table td:last-child { border-bottom: none; }
-            .acne-table td:first-child::before { display: none !important; content: none !important; }
-      .acne-table td::before { content: attr(data-label); position: absolute; left: 12px; width: 35%; font-weight: 700; color: var(--text); top: 12px; text-align: left; }
-        }
+    .toc-link:hover, .toc-link.active {
+      color: var(--brand);
+    }
 
-        /* ── STICKY BOTTOM CTA (MOBILE ONLY) ── */
-        .sticky-cta-mobile {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 0.8rem 1.2rem;
-            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
-            z-index: 2000;
-            display: none; /* Hidden on desktop */
-            justify-content: center;
-            align-items: center;
-            border-top: 1px solid var(--border);
-        }
-        @media (prefers-color-scheme: dark) {
-            .sticky-cta-mobile {
-                background: rgba(18, 13, 10, 0.95);
-            }
-        }
-        .sticky-cta-mobile .nav-cta {
-            width: 100%;
-            text-align: center;
-            padding: 12px 0;
-            font-size: 1.05rem;
-            box-shadow: 0 8px 20px rgba(236,97,14,0.3);
-            text-decoration: none;
-            border-radius: 9999px;
-            background: var(--brand);
-            color: #fff;
-            font-weight: 800;
-        }
-        @media (max-width: 768px) {
-            .sticky-cta-mobile {
-                display: flex;
-            }
-            /* Hide hero CTA on mobile to avoid redundancy */
-            .face-ai-cta-wrapper {
-                display: none !important;
-            }
-            /* Hide header nav CTA on mobile when bottom sticky is active */
-            .nav-links .nav-cta, 
-            .nav-inner a[href*="face-map"], 
-            .nav-inner a[href*="scan"] {
-                display: none !important;
-            }
-            body {
-                padding-bottom: 70px;
-            }
-        }
-    </style>
-  <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+    /* DARK HERO SECTION */
+    .dark-hero {
+      background: linear-gradient(145deg, #0F1316 0%, #1A2026 100%);
+      color: #F8FAFC;
+      padding: 3.5rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (max-width: 991px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(236, 97, 14, 0.15);
+      border: 1px solid rgba(236, 97, 14, 0.4);
+      color: #FF8B42;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: #FFFFFF;
+      margin-bottom: 1.25rem;
+      line-height: 1.15;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: #94A3B8;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .hero-meta-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      font-size: 0.875rem;
+      color: #CBD5E1;
+    }
+
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-meta-item svg {
+      width: 16px;
+      height: 16px;
+      fill: #FF8B42;
+    }
+
+    /* ANIMATED PERIMETER-RAIL CTA BUTTON */
+    .perimeter-cta {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 16px 32px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #FFFFFF !important;
+      background: #EC610E;
+      border-radius: 9999px;
+      text-decoration: none !important;
+      overflow: hidden;
+      z-index: 1;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 6px 24px rgba(236, 97, 14, 0.4);
+    }
+
+    .perimeter-cta::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(transparent 0deg, #FFFFFF 90deg, #FFE1CE 180deg, transparent 270deg);
+      animation: rotate-rail 3.5s linear infinite;
+      z-index: -2;
+    }
+
+    .perimeter-cta::after {
+      content: '';
+      position: absolute;
+      inset: 3px;
+      background: linear-gradient(135deg, #EC610E 0%, #C14800 100%);
+      border-radius: 9999px;
+      z-index: -1;
+      transition: background 0.3s ease;
+    }
+
+    @keyframes rotate-rail {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .perimeter-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(236, 97, 14, 0.6);
+    }
+
+    .hero-image-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .hero-image-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .hero-image-tag {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+      background: rgba(15, 19, 22, 0.88);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.825rem;
+      color: #E2E8F0;
+    }
+
+    .hero-tag-accent {
+      color: #FF8B42;
+      font-weight: 700;
+    }
+
+    /* MAIN CONTENT LAYOUT */
+    .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 3rem;
+    }
+
+    @media (max-width: 991px) {
+      .main-container {
+        grid-template-columns: 1fr;
+        padding-bottom: 5rem;
+      }
+      .desktop-sidebar {
+        display: none !important;
+      }
+    }
+
+    .article-content {
+      min-width: 0;
+    }
+
+    .section-block {
+      margin-bottom: 3.5rem;
+      scroll-margin-top: 120px;
+    }
+
+    .section-block h2 {
+      font-size: 1.85rem;
+      margin-bottom: 1rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--brand-light);
+    }
+
+    .section-block h3 {
+      font-size: 1.35rem;
+      margin: 1.75rem 0 0.75rem 0;
+    }
+
+    /* INFO & WARNING BOXES */
+    .info-box {
+      background: var(--bg2);
+      border-left: 4px solid var(--brand);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .info-box h4 {
+      font-size: 1.1rem;
+      color: var(--brand-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .warning-box {
+      background: var(--danger-bg);
+      border: 1px solid var(--danger-border);
+      border-left: 5px solid #DC2626;
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin: 1.75rem 0;
+      color: var(--danger-text);
+    }
+
+    .warning-box h4 {
+      font-size: 1.2rem;
+      color: #991B1B;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .caution-box {
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+      border-left: 5px solid #D97706;
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin: 1.75rem 0;
+      color: var(--warning-text);
+    }
+
+    .caution-box h4 {
+      font-size: 1.15rem;
+      color: #92400E;
+      margin-bottom: 0.5rem;
+    }
+
+    /* BENTO GRID */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 640px) {
+      .bento-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .bento-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bento-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+      border-color: var(--brand);
+    }
+
+    .bento-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+    }
+
+    .bento-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .bento-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .bento-body {
+      font-size: 0.925rem;
+      color: #475569;
+      flex-grow: 1;
+    }
+
+    .bento-footer {
+      margin-top: 1rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* RESPONSIVE MATRIX TABLE */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 2rem 0;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #FFFFFF;
+      text-align: left;
+      font-size: 0.925rem;
+    }
+
+    .matrix-table th {
+      background: var(--bg2);
+      color: #0F172A;
+      font-weight: 700;
+      padding: 1rem;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .matrix-table td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border);
+      color: #334155;
+    }
+
+    .matrix-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .matrix-table td:first-child::before {
+      display: none !important;
+      content: none !important;
+    }
+
+    @media (max-width: 768px) {
+      .table-container {
+        border: none;
+        box-shadow: none;
+      }
+      .matrix-table, .matrix-table tbody, .matrix-table tr, .matrix-table td {
+        display: block;
+        width: 100%;
+      }
+      .matrix-table thead {
+        display: none;
+      }
+      .matrix-table tr {
+        margin-bottom: 1.25rem;
+        background: #FFFFFF;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        padding: 1.25rem;
+        box-shadow: var(--shadow-sm);
+      }
+      .matrix-table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #F1F5F9;
+        text-align: right;
+      }
+      .matrix-table td:last-child {
+        border-bottom: none;
+      }
+      .matrix-table td::before {
+        content: attr(data-label);
+        font-weight: 700;
+        color: var(--brand-dark);
+        text-align: left;
+        padding-right: 1rem;
+      }
+      .matrix-table td:first-child::before {
+        display: none !important;
+        content: none !important;
+      }
+      .matrix-table td:first-child {
+        font-weight: 800;
+        font-size: 1.15rem;
+        color: #0F172A;
+        border-bottom: 2px solid var(--brand-light);
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+        justify-content: flex-start;
+      }
+    }
+
+    /* INTERACTIVE DECISION TOOL / QUIZ */
+    .quiz-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      margin: 2.5rem 0;
+      box-shadow: var(--shadow-md);
+    }
+
+    .quiz-title {
+      font-size: 1.5rem;
+      color: var(--brand-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .quiz-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .quiz-step {
+      margin-bottom: 1.5rem;
+    }
+
+    .quiz-question {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+      color: #0F172A;
+    }
+
+    .quiz-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .quiz-option-btn {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #334155;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s ease;
+    }
+
+    .quiz-option-btn:hover {
+      border-color: var(--brand);
+      background: var(--brand-light);
+      color: var(--brand-dark);
+    }
+
+    .quiz-option-btn.selected {
+      border-color: var(--brand);
+      background: var(--brand);
+      color: #FFFFFF;
+    }
+
+    .quiz-result-box {
+      display: none;
+      background: #FFFFFF;
+      border: 2px solid var(--brand);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .result-badge {
+      display: inline-block;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ACCORDION FAQ */
+    .faq-accordion {
+      margin: 2rem 0;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      margin-bottom: 1rem;
+      background: #FFFFFF;
+      overflow: hidden;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .faq-item:hover {
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-header {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      font-family: 'Kantumruy Pro', serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #0F172A;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .faq-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--bg2);
+      color: var(--brand);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      flex-shrink: 0;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+      background: var(--brand-light);
+    }
+
+    .faq-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+      background: #FAFAFA;
+      border-top: 1px solid transparent;
+    }
+
+    .faq-item.active .faq-body {
+      max-height: 500px;
+      border-color: var(--border);
+      transition: max-height 0.35s ease-in-out;
+    }
+
+    .faq-content {
+      padding: 1.25rem 1.5rem;
+      font-size: 0.95rem;
+      color: #475569;
+    }
+
+    /* DESKTOP SIDEBAR */
+    .desktop-sidebar {
+      position: sticky;
+      top: 130px;
+      height: fit-content;
+    }
+
+    .sidebar-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .sidebar-title {
+      font-size: 1.15rem;
+      margin-bottom: 0.75rem;
+      color: #0F172A;
+    }
+
+    .sidebar-list {
+      list-style: none;
+      font-size: 0.9rem;
+    }
+
+    .sidebar-list li {
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .sidebar-list li::before {
+      content: '✓';
+      color: var(--brand);
+      font-weight: bold;
+    }
+
+    /* STICKY BOTTOM MOBILE CTA BAR */
+    .sticky-bottom-bar {
+      display: none;
+    }
+
+    @media (max-width: 991px) {
+      .sticky-bottom-bar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #FFFFFF;
+        border-top: 1px solid var(--border);
+        padding: 0.75rem 1rem;
+        z-index: 1000;
+        box-shadow: 0 -4px 16px rgba(0,0,0,0.12);
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .mobile-bar-text {
+        font-size: 0.825rem;
+        color: #334155;
+      }
+
+      .mobile-bar-text strong {
+        display: block;
+        color: #0F172A;
+        font-size: 0.9rem;
+      }
+
+      .mobile-bar-btn {
+        background: var(--brand);
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 0.85rem;
+        padding: 10px 18px;
+        border-radius: 9999px;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(236, 97, 14, 0.35);
+      }
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background: #0F1316;
+      color: #94A3B8;
+      padding: 3rem 1.5rem 2rem 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.875rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand {
+      color: #FFFFFF;
+      font-family: 'Kantumruy Pro', serif;
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-disclaimer {
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: #64748B;
+      margin-top: 1rem;
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  </style>
+
+  </style>
 </head>
+
 <body>
-    <!-- Trust Bar -->
-    <div class="trust-bar">
-        <span>✍️ MyMirror Editorial</span>
-        <span class="trust-reviewer">✓ Reviewed by Dr. Lipy Mehta, Dermatologist</span>
-        <span>Updated August 2026</span>
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <a href="https://mymirror.fit" class="brand-logo">
+      MyMirror<span>.fit</span>
+    </a>
+    <a href="https://face3layerscanner.onrender.com/" class="header-cta" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+      Free AI Skin Scan
+    </a>
+  </header>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <svg class="trust-badge-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+    Reviewed by Dr. Lipy Mehta, Board-Certified Dermatologist | Updated August 2026
+  </div>
+
+  <!-- STICKY TOC BAR -->
+  <nav class="sticky-toc-bar" aria-label="Table of Contents">
+    <div class="toc-inner">
+      <span class="toc-label">CONTENTS</span>
+      <a href="#section-1" class="toc-link">1. Bacne Science</a>
+      <a href="#section-2" class="toc-link">2. Product Matrix</a>
+      <a href="#section-3" class="toc-link">3. Skincare Routine</a>
+      <a href="#section-4" class="toc-link">4. FAQ</a>
     </div>
+  </nav>
 
-    <!-- Header -->
-    <header class="sticky-header">
-        <div class="header-content">
-            <a href="/"><img src="https://mymirror.fit/assets/logo-v4.png" alt="mymirror" class="logo"></a>
-            <nav class="nav">
-                <a href="/acne/types-of-acne/" class="nav-link">Acne Types</a>
-                <a href="/acne/forehead-acne/meaning/" class="nav-link accent-brain">Acne Meaning 🧠</a>
-                <a href="/acne/forehead-acne/home-remedies/" class="nav-link accent-natural">Natural Remedies 🌿</a>
-                <a href="/acne/forehead-acne/fast-treatment/" class="nav-link accent-fast">Fast Fixes ⚡</a>
-            </nav>
+  <!-- DARK HERO SECTION -->
+  <section class="dark-hero">
+    <div class="hero-container">
+      <div class="hero-text-col">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          Body Acne Clinical Guide (2026)
         </div>
-    </header>
+        <h1 class="hero-title">Definitive Bacne & Body Acne Treatment Routine in India</h1>
+        <p class="hero-subtitle">
+          Combat body acne and sweat folliculitis in India's humid climate. A dermatologist-backed routine featuring Perobar 5%, BHA sprays, and lifestyle hygiene.
+        </p>
+        <div class="hero-meta-list">
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            BPO Body Wash
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            Sweat Folliculitis
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            Friction Prevention
+          </div>
+        </div>
 
-    <!-- Split Hero Section -->
-    <section class="hero">
-        <div class="hero-inner reveal">
-            <div class="hero-content">
-                <span class="hero-tag">CLINICAL GUIDE • INDIA</span>
-                <h1 class="hero-title">The Definitive Bacne & Body Acne Treatment Routine for India</h1>
-                <p class="hero-subtitle">Navigating the complex landscape of body acne—colloquially termed "bacne"—requires a nuanced understanding of dermatological science, particularly within the challenging context of India's unique climatic conditions.</p>
-                
-                <!-- Face AI Skin Analysis CTA (V2.1 Standard) -->
-                <div class="face-ai-cta-wrapper">
-                    <a href="https://face3layerscanner.onrender.com/" class="face-ai-btn">
-                        <span class="face-ai-btn-text">Analyze Body Acne & Bumps</span>
-                        <div class="face-ai-energy-rail"></div>
-                    </a>
-                    <p class="face-ai-subtext">Scan your affected areas to determine whether active bumps are standard body acne or sweat folliculitis.</p>
-                </div>
-            </div>
-            <div class="hero-image-stack">
-                <div class="hero-photo-card">
-                    <div class="hero-photo">
-                        <img src="/assets/images/bacne_treatment_india.jpg" alt="Body Acne Treatment">
-                    </div>
-                    <div class="hero-stat-card">
-                        <span class="stat-num">2.5%-5%</span>
-                        <span class="stat-label">Benzoyl Peroxide body wash concentration for bacne</span>
-                    </div>
-                </div>
-                <div class="hero-photo-card">
-                    <div class="hero-photo" style="height:120px;">
-                        <img src="https://mymirror.fit/assets/images/clear_skin_texture.jpg" alt="Clear skin texture post-treatment">
-                    </div>
-                    <div class="hero-stat-card">
-                        <span class="stat-num">6-8 Weeks</span>
-                        <span class="stat-label">Average clearing timeline for persistent body acne</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- ANIMATED PERIMETER-RAIL CTA BUTTON -->
+        <a href="https://face3layerscanner.onrender.com/" class="perimeter-cta" target="_blank" rel="noopener">
+          <span>Analyze Body Acne & Bumps ✨</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
 
-    <!-- Sticky TOC Bar -->
-    <div class="toc-bar">
-        <div class="toc-inner">
-            <a class="toc-link" href="#pathophysiology"><span class="toc-num">1</span> Pathophysiology</a>
-            <a class="toc-link" href="#clinical-routine"><span class="toc-num">2</span> Clinical Routine</a>
-            <a class="toc-link" href="#lifestyle"><span class="toc-num">3</span> Lifestyle</a>
-            <a class="toc-link" href="#resources"><span class="toc-num">4</span> Resources</a>
-            <a class="toc-link" href="#guidelines"><span class="toc-num">5</span> Guidelines</a>
+      <div class="hero-image-col">
+        <div class="hero-image-card">
+          <img src="https://mymirror.fit/assets/images/bacne_treatment_india.jpg" alt="Body Acne Treatment" width="600" height="338" loading="eager">
+          <div class="hero-image-tag">
+            <span><strong>Clinical Protocol</strong></span>
+            <span class="hero-tag-accent">Body Acne</span>
+          </div>
         </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Main Content Layout -->
-    <div class="page-body">
-        <main>
-            <!-- INTRO -->
-            <section class="reveal">
-                <p>Navigating the complex landscape of body acne—colloquially termed "bacne"—requires a nuanced understanding of dermatological science, particularly within the challenging context of India's unique climatic conditions. The relentless intersection of high humidity, profuse sweating, and mechanical friction from synthetic gym wear creates an ideal microenvironment for pathogenic proliferation. This comprehensive clinical guide dissects the pathophysiology of truncal acne, differentiating it from mimic conditions like sweat folliculitis, and delineates a meticulously formulated, evidence-based treatment routine leveraging potent, accessible therapeutics such as Perobar 5% Soap and Be Bodywise 2% BHA Spray.</p>
-            </section>
-
-            <!-- SECTION 1 -->
-            <section id="pathophysiology" class="reveal">
-                <h2>Pathophysiology of Truncal Acne vs. Facial Acne</h2>
-                <p>The skin on the back and chest is fundamentally distinct from facial skin. It is characterized by a thicker stratum corneum and a higher density of large, active sebaceous glands. This structural reality necessitates more aggressive exfoliation and deeper penetrative active ingredients. When excessive sebum production (seborrhea) combines with abnormal keratinization (hyperkeratosis) within the follicular canal, a microcomedone is formed. In the hypoxic environment of the clogged follicle, <em>Cutibacterium acnes</em> proliferates rapidly, triggering an inflammatory cascade mediated by neutrophils, resulting in inflammatory papules, pustules, and deep-seated nodules.</p>
-                <p>In the Indian context, this classical acne pathogenesis is frequently complicated by environmental factors. High ambient humidity impairs sweat evaporation, leading to hydration-induced swelling of the stratum corneum, which further occludes the ostia of the pilosebaceous units. This phenomenon, coupled with the friction generated by tight-fitting, non-breathable clothing (often exacerbated during athletic activities), culminates in <strong>acne mechanica</strong>.</p>
-                
-                <h3 style="margin-top: 2rem;">Common Truncal Eruptions</h3>
-                <div style="display: flex; flex-direction: column; gap: 1rem;">
-                    <div style="background: var(--bg-2); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border);">
-                        <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem; color: var(--text);">Acne Vulgaris</h4>
-                        <p style="margin-bottom: 0;">Bacterial origin (<em>C. acnes</em>). Presents as a polymorphic eruption: a mix of open comedones (blackheads), closed comedones (whiteheads), and inflammatory lesions. Often deeper and painful.</p>
-                    </div>
-                    <div style="background: var(--bg-2); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border);">
-                        <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem; color: var(--text);">Sweat Folliculitis (Malassezia)</h4>
-                        <p style="margin-bottom: 0;">Fungal/yeast origin, thriving in sweaty conditions. Presents as monomorphic (uniform), pruritic (itchy) erythematous papules. Often lacks comedones.</p>
-                    </div>
-                    <div style="background: var(--bg-2); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border);">
-                        <h4 style="margin-bottom: 0.5rem; font-size: 1.1rem; color: var(--text);">Acne Mechanica</h4>
-                        <p style="margin-bottom: 0;">Triggered by heat, pressure, occlusion, and friction (e.g., backpacks, tight sports bras). Rapidly improves when the mechanical trigger is removed.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SECTION 2 -->
-            <section id="clinical-routine" class="reveal">
-                <h2>The Clinical Body Acne Treatment Routine</h2>
-                
-                <h3>1. Targeted Cleansing: The Foundation of Efficacy</h3>
-                <p>Ordinary body washes are insufficient for truncal acne. Therapeutic cleansing requires active keratolytic and antimicrobial agents. <strong>Benzoyl Peroxide (BPO)</strong> remains the gold standard. Products like <strong>Perobar 5% Soap</strong> offer potent lipophilic penetration. BPO functions via a dual mechanism: it acts as a potent antimicrobial agent by releasing free-radical oxygen species that oxidize bacterial proteins (importantly, without inducing bacterial resistance), and it provides a mild keratolytic effect. </p>
-                <p><em>Clinical Pearl:</em> Apply the BPO soap to affected areas and leave it on for 2-3 minutes before rinsing (short-contact therapy). This allows the active ingredient adequate time to penetrate the thick stratum corneum of the back. Be aware that BPO can bleach fabrics, so thoroughly rinse and use white towels.</p>
-
-                <h3>2. Exfoliation and Chemical Therapeutics</h3>
-                <p>For extensive truncal involvement, topical sprays offer superior biomechanical advantage, allowing application to hard-to-reach areas of the back. The <strong>Be Bodywise 2% BHA (Salicylic Acid) Spray</strong> is an excellent adjunct. Salicylic acid is a lipophilic beta-hydroxy acid, meaning it can readily penetrate lipid-rich sebum to exfoliate the interior of the pore lining, dissolving comedones and exhibiting intrinsic anti-inflammatory properties.</p>
-
-                <h3>3. Managing Post-Inflammatory Hyperpigmentation (PIH)</h3>
-                <p>Due to the higher density of melanocytes in individuals with Fitzpatrick skin types III-VI (common in the Indian demographic), truncal acne often resolves leaving stubborn, dark macules known as PIH. Addressing PIH requires a multi-modal approach suppressing tyrosinase activity and accelerating epidermal turnover. Ingredients such as Niacinamide (vitamin B3), Tranexamic Acid, and Alpha Hydroxy Acids (like Glycolic Acid or Lactic Acid) are highly efficacious.</p>
-
-                <div class="acne-table-wrapper">
-                    <table class="acne-table">
-                        <thead>
-                            <tr>
-                                <th>Active Ingredient</th>
-                                <th>Primary Function</th>
-                                <th>Recommended Indian Product Example</th>
-                                <th>Frequency</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-label="Active Ingredient">Benzoyl Peroxide (5%)</td>
-                                <td data-label="Primary Function">Antimicrobial, keratolytic</td>
-                                <td data-label="Recommended Indian Product Example">Perobar 5% Soap</td>
-                                <td data-label="Frequency">Daily (Short-contact therapy)</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Active Ingredient">Salicylic Acid (2%)</td>
-                                <td data-label="Primary Function">Lipid-soluble exfoliation, comedolytic</td>
-                                <td data-label="Recommended Indian Product Example">Be Bodywise 2% BHA Spray</td>
-                                <td data-label="Frequency">3-4 times a week</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Active Ingredient">Glycolic Acid / Lactic Acid</td>
-                                <td data-label="Primary Function">Surface exfoliation, PIH reduction</td>
-                                <td data-label="Recommended Indian Product Example">Chemist at Play Exfoliating Body Wash</td>
-                                <td data-label="Frequency">Alternating days</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <!-- SECTION 3 -->
-            <section id="lifestyle" class="reveal">
-                <h2>Crucial Lifestyle and Hygiene Interventions</h2>
-                <p>Topical therapeutics will yield suboptimal results if environmental exacerbating factors are not mitigated. In the humid Indian climate, immediate post-perspiration hygiene is paramount. Sweaty gym clothing must be removed immediately, followed by a thorough shower. Delaying cleansing allows sweat and sebum to mix, accelerating bacterial and fungal overgrowth. Opt for loose-fitting, breathable cotton or advanced moisture-wicking fabrics rather than occlusive synthetic materials. Furthermore, frequent changing of bedsheets and towels is critical to prevent reinfection from fomites.</p>
-            </section>
-
-            <!-- SECTION 4 -->
-            <section id="resources" class="reveal">
-                <h2>Internal Resources</h2>
-                <ul>
-                    <li><a href="/acne/hormonal-acne/">Understanding Hormonal Acne</a></li>
-                    <li><a href="/acne/diet-and-acne/">The Impact of Diet on Acne</a></li>
-                    <li><a href="/acne/cystic-acne-treatment/">Deep Cystic Acne Treatments</a></li>
-                    <li><a href="/acne/acne-scars-treatment/">Advanced Acne Scar Revision</a></li>
-                    <li><a href="/acne/sunscreen-for-acne-prone-skin/">Choosing Sunscreens for Acne-Prone Skin</a></li>
-                    <li><a href="/acne/salicylic-acid-benefits/">The Science of Salicylic Acid</a></li>
-                    <li><a href="/acne/benzoyl-peroxide-guide/">A Guide to Benzoyl Peroxide</a></li>
-                    <li><a href="/acne/fungal-acne-vs-bacterial-acne/">Fungal vs. Bacterial Acne</a></li>
-                    <li><a href="/acne/post-inflammatory-hyperpigmentation/">Treating PIH Effectively</a></li>
-                    <li><a href="/acne/skincare-routine-for-acne/">Building a Facial Acne Routine</a></li>
-                    <li><a href="/acne/isotretinoin-accutane/">Isotretinoin Considerations</a></li>
-                    <li><a href="/acne/antibiotics-for-acne/">Oral Antibiotics in Dermatology</a></li>
-                    <li><a href="/acne/chemical-peels/">Chemical Peels for Acne Resurfacing</a></li>
-                    <li><a href="/acne/niacinamide-benefits/">Niacinamide in Dermatology</a></li>
-                    <li><a href="/acne/sebaceous-filaments/">Managing Sebaceous Filaments</a></li>
-                </ul>
-            </section>
-
-            <!-- SECTION 5 -->
-            <section id="guidelines" class="reveal">
-                <h2>Dermatological Clinical Analysis & Patient Application Guidelines</h2>
-                <p>Achieving long-term clearing of active acne lesions while preserving stratum corneum integrity requires strict adherence to evidence-based active dosing protocols. Dermatologists emphasize that over-application of topical keratolytics or antibacterial agents leads to acute trans-epidermal water loss (TEWL), triggering reactive sebum hyper-secretion and exacerbating microcomedone formation.</p>
-
-                <h3>1. Mechanism of Action & Follicular Dynamics</h3>
-                <p>Topical active ingredients target acne through distinct biological pathways. Keratolytic agents like Salicylic Acid (BHA) and Glycolic Acid (AHA) cleave ionic desmosomal bonds holding dead corneocytes together, shedding follicular plugs. Antimicrobial compounds like Benzoyl Peroxide (BPO) release free radical oxygen species that sterilize anaerobic <em>Cutibacterium acnes</em> bacteria without inducing bacterial resistance. Dicarboxylic acids like Azelaic Acid selectively inhibit tyrosinase enzymes to prevent post-inflammatory hyperpigmentation (PIH).</p>
-
-                <h3>2. Barrier Preservation & Retinoid Layering Protocol</h3>
-                <p>To avoid chemical irritation and severe flaking, always follow the <strong>Sandwich Protocol</strong> when layering retinoids or high-strength acids: apply a light hydrating layer of non-comedogenic ceramide lotion, allow 10 minutes for absorption, apply your active treatment, and seal with a barrier moisturizer.</p>
-                <ul>
-                  <li><strong>Morning Routine (AM):</strong> Cleanse with a mild hydrating wash, apply active spot treatment or serum, follow with barrier moisturizer, and complete with broad-spectrum SPF 50+ sunscreen.</li>
-                  <li><strong>Evening Routine (PM):</strong> Double-cleanse to remove UV filters and urban particulate matter, apply targeted treatment on 100% dry skin, and lock in hydration with ceramide-rich creams.</li>
-                </ul>
-
-                <h3>3. Preventing Post-Inflammatory Hyperpigmentation (PIH) on Dark Skin Tones</h3>
-                <p>Melanin-rich skin (Fitzpatrick IV–VI) responds to skin barrier trauma by accelerating melanin synthesis. Never pick, pop, or scratch active inflammatory papules. Use hydrocolloid patches on whiteheads to absorb exudate, and introduce brightening actives like 4% Niacinamide, 2% Alpha Arbutin, or 15% Azelaic Acid once inflammation subsides.</p>
-
-                <h3>4. Clinical Safety Considerations & UV Defense</h3>
-                <p>Active exfoliants and retinoids increase skin sensitivity to ultraviolet radiation (UVB and UVA rays). Exposure to sun rays without adequate broad-spectrum protection degrades collagen, impairs skin repair, and triggers melanin overproduction. Daily broad-spectrum SPF 50 sunscreen application is mandatory for anyone using active acne formulations.</p>
-            </section>
+  <!-- MAIN CONTENT CONTAINER -->
+  <div class="main-container">
+    <article class="article-content">
+        
+        <section id="section-1" class="section-block">
+            <h2>Understanding the Types of Body Breakouts</h2>
+            <p>Body acne, commonly known as bacne, differs structurally and pathologically from facial acne. The skin on the back, chest, and shoulders is thicker with larger sebaceous glands, making it prone to deep-seated inflammation.</p>
             
-            <div class="dark-callout reveal">
-                <h2>Is Your Body Acne Skincare Working?</h2>
-                <p>Many body products actually contain ingredients that feed the yeast causing sweat folliculitis. Stop the guesswork.</p>
-                <p style="margin-bottom: 2rem;"><strong>Scan your affected areas with MyMirror AI</strong> to get a personalized, active-safe routine that clears your skin.</p>
-                <a href="https://face3layerscanner.onrender.com/" class="btn-primary">Start Your Free AI Skin Scan Now</a>
+            <div class="bento-grid" style="margin-top: 1.5rem;">
+                <div class="bento-card">
+                    <div class="bento-header">
+                        <div class="bento-tag">Fungal</div>
+                        <h3 class="bento-title">Fungal Body Acne (Pityrosporum Folliculitis)</h3>
+                    </div>
+                    <div class="bento-body">
+                        <p>Caused by Malassezia yeast overgrowth in hot, humid Indian climates. Presents as uniform, itchy red bumps.</p>
+                    </div>
+                </div>
+                <div class="bento-card">
+                    <div class="bento-header">
+                        <div class="bento-tag">Bacterial</div>
+                        <h3 class="bento-title">Bacterial Bacne</h3>
+                    </div>
+                    <div class="bento-body">
+                        <p>Driven by C. acnes bacteria and excess sebum. Shows up as a mix of blackheads, painful cysts, and whiteheads.</p>
+                    </div>
+                </div>
+                <div class="bento-card">
+                    <div class="bento-header">
+                        <div class="bento-tag">Mechanical</div>
+                        <h3 class="bento-title">Friction Folliculitis (Acne Mechanica)</h3>
+                    </div>
+                    <div class="bento-body">
+                        <p>Triggered by friction and trapped sweat. Common under tight activewear or backpack straps.</p>
+                    </div>
+                </div>
             </div>
-
-        </main>
-
-        <!-- Sidebar Layout -->
-        <aside class="sidebar">
-            <div class="sidebar-card" style="background: var(--brand-light); border-color: rgba(236,97,14,0.2);">
-                <h4 style="color: var(--brand-dark);">💡 Medical Review</h4>
-                <p>All guides on MyMirror are reviewed by board-certified specialists. This body acne protocol is approved by <strong>Dr. Lipy Mehta</strong>.</p>
+            
+            <div class="warning-box">
+                <svg viewBox="0 0 24 24"><path d="M12 5.99L19.53 19H4.47L12 5.99M12 2L1 21h22L12 2zm1 14h-2v2h2v-2zm0-6h-2v4h2v-4z"/></svg>
+                <div class="warning-content">
+                    <div class="warning-title">Gym wear trapping bacteria</div>
+                    <p>Always remove sweaty activewear and shower within 30 minutes of a workout to prevent trapped sweat from macerating the skin barrier and feeding yeast/bacteria.</p>
+                </div>
             </div>
-
-            <div class="sidebar-card">
-                <h4>Quick Timeline Stats</h4>
-                <ul class="sidebar-list">
-                    <li>Purge duration: 4 - 6 weeks</li>
-                    <li>Active solubility: Lipophilic (Oil)</li>
-                    <li>Clearing timeline: 6 - 8 weeks</li>
-                    <li>BPO strength: 2.5% - 5%</li>
-                </ul>
+            
+            <div class="caution-box" style="margin-top: 1.5rem;">
+                <div class="caution-title">Mechanical Trauma Warning</div>
+                <p>Don't scrub active inflamed body acne with loofahs or physical scrubs. This ruptures follicular walls, spreading bacteria and worsening hyperpigmentation.</p>
             </div>
+        </section>
 
-            <div class="sidebar-card" style="background: var(--bg-3);">
-                <h4>When to Consult a Doctor</h4>
-                <p>Seek dermatological advice if your breakouts exhibit:</p>
-                <ul class="sidebar-list">
-                    <li>Painful, deep cysts lasting >4 weeks</li>
-                    <li>Extreme burning or peeling barrier</li>
-                    <li>Breakouts spreading to new clean zones</li>
-                </ul>
+        <section id="section-2" class="section-block">
+            <h2>Clinical Body Acne Therapeutics in India</h2>
+            <p>Formulations designed for the face are often too weak for the thicker stratum corneum of the body. Effective treatment relies on keratolytic agents (salicylic acid) and antimicrobial washes (benzoyl peroxide).</p>
+            
+            <div class="table-container">
+                <table class="matrix-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Active Ingredient</th>
+                            <th>Mechanism</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Product">Perobar 5% Soap</td>
+                            <td data-label="Active Ingredient">Benzoyl Peroxide 5%</td>
+                            <td data-label="Mechanism">Bactericidal oxidation</td>
+                            <td data-label="Best For">Inflamed bacterial bacne, pustules</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Product">Be Bodywise 2% BHA Spray</td>
+                            <td data-label="Active Ingredient">Salicylic Acid 2%</td>
+                            <td data-label="Mechanism">Lipophilic exfoliation</td>
+                            <td data-label="Best For">Clogged pores, reaching back areas</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Product">Saslic DS Foaming Wash</td>
+                            <td data-label="Active Ingredient">Salicylic Acid 2%</td>
+                            <td data-label="Mechanism">Pore clearing & anti-inflammatory</td>
+                            <td data-label="Best For">Sensitive skin, preventative maintenance</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </aside>
+        </section>
+        
+        <section id="section-3" class="section-block">
+            <h2>The Protocol: Treating & Preventing Body Acne</h2>
+            
+            <div class="info-box">
+                <div class="info-title">Shower Protocol (BPO Contact Time)</div>
+                <p>When using Benzoyl Peroxide (BPO) washes like Perobar, lather the product onto the affected areas and leave it on for <strong>3 to 5 minutes</strong> before rinsing. BPO needs this short contact time to penetrate the follicle and release oxygen free radicals to kill C. acnes.</p>
+            </div>
+            
+            <div class="info-box" style="margin-top: 1.5rem;">
+                <div class="info-title">Clothing Fabric Guide</div>
+                <p>Opt for breathable, natural fabrics like 100% cotton or linen for daily wear. If you must wear synthetic activewear, look for antimicrobial or moisture-wicking weaves, and prioritize loose fits.</p>
+            </div>
+            
+            <h3>Targeted Body Skincare Routine</h3>
+            <p>Achieving long-term clearing of active acne lesions while preserving stratum corneum integrity requires strict adherence to evidence-based active dosing protocols. Dermatologists emphasize that over-application of topical keratolytics or antibacterial agents leads to acute trans-epidermal water loss (TEWL).</p>
+            <ul>
+                <li><strong>Cleanse:</strong> Use a BPO wash on inflamed days, and a gentle or BHA wash on maintenance days.</li>
+                <li><strong>Treat:</strong> Spray a 2% BHA solution on hard-to-reach areas post-shower on completely dry skin.</li>
+                <li><strong>Moisturize:</strong> Body skin needs hydration too. Use a lightweight, non-comedogenic lotion (like minimal urea or ceramide lotions) to repair the barrier.</li>
+                <li><strong>Protect:</strong> If affected areas are exposed to the sun, apply a broad-spectrum body sunscreen to prevent Post-Inflammatory Hyperpigmentation (PIH).</li>
+            </ul>
+            
+            <h3>Preventing Post-Inflammatory Hyperpigmentation (PIH)</h3>
+            <p>Melanin-rich skin (Fitzpatrick IV–VI) responds to skin barrier trauma by accelerating melanin synthesis. Never pick, pop, or scratch active inflammatory papules. Introduce brightening actives like 4% Niacinamide or Lactic acid body lotions once inflammation subsides.</p>
+        </section>
+
+        <section id="section-4" class="section-block">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span class="faq-title">Is Perobar 5% soap effective for back acne?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-body">
+                        <div class="faq-content">
+                            Yes, Perobar 5% contains benzoyl peroxide which penetrates deep into the follicles to kill acne-causing bacteria and reduce inflammation, making it highly effective for thicker body skin. Remember to allow it 3-5 minutes of contact time.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span class="faq-title">How does sweat folliculitis differ from acne?</span>
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-body">
+                        <div class="faq-content">
+                            Sweat folliculitis is often caused by Malassezia yeast or bacteria proliferating in hot, sweaty conditions, presenting as uniform, itchy red bumps. Acne presents with a mix of comedones, papules, and pustules.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </article>
+    
+    <aside class="desktop-sidebar">
+      <div class="sidebar-card">
+        <h3 class="sidebar-title">Clinical Review</h3>
+        <p style="font-size: 0.9rem; color: #475569; margin-bottom: 1rem;">
+          All guides are reviewed by board-certified specialists. Approved by <strong>Dr. Lipy Mehta</strong>.
+        </p>
+      </div>
+
+      <div class="sidebar-card">
+        <h3 class="sidebar-title">Quick Stats</h3>
+        <ul class="sidebar-list">
+          <li>Purge duration: 4-6 weeks</li>
+          <li>Active solubility: Lipophilic</li>
+          <li>Clearing timeline: 6-8 weeks</li>
+          <li>BPO strength: 2.5% - 5%</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3 class="sidebar-title">When to Consult a Doctor</h3>
+        <ul class="sidebar-list">
+          <li>Painful, deep cysts >4 weeks</li>
+          <li>Extreme burning or peeling</li>
+          <li>Breakouts spreading</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <div class="sticky-bottom-bar">
+    <div class="mobile-bar-text">
+      Check your Body Acne <strong>Free AI Scan</strong>
     </div>
+    <a href="https://face3layerscanner.onrender.com/" class="mobile-bar-btn" target="_blank" rel="noopener">Start Scan ✨</a>
+  </div>
 
-    <footer class="main-footer">
-        <img src="https://mymirror.fit/assets/logo-v4.png" alt="mymirror" class="footer-logo">
-        <p class="footer-text">&copy; 2026 MyMirror.fit • Science-Based Skin Health for India</p>
-    </footer>
-
-    <!-- Sticky Mobile CTA -->
-    <div class="sticky-cta-mobile">
-        <a href="https://face3layerscanner.onrender.com/" class="nav-cta" target="_blank" rel="noopener">Free AI Skin Analysis ✨</a>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col-brand">
+        <div class="footer-brand">MyMirror<span>.fit</span></div>
+        <p class="footer-disclaimer">
+          MyMirror provides clinical dermatology insights tailored for Indian skin types (Fitzpatrick IV-VI). Information is for educational purposes and should not replace personalized medical consultation.
+        </p>
+      </div>
+      <div class="footer-col-links">
+        <h4 style="color: #fff; margin-bottom: 1rem;">Clinical Guides</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 0.5rem;"><a href="/acne/adapalene-0.1-percent-gel-acne-india/" style="color: #94A3B8; text-decoration: none;">Adapalene 0.1% Gel</a></li>
+          <li style="margin-bottom: 0.5rem;"><a href="/acne/benzoyl-peroxide-guide/" style="color: #94A3B8; text-decoration: none;">Benzoyl Peroxide 2.5%</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="footer-bottom">
+      &copy; 2026 MyMirror.fit. All rights reserved.
+    </div>
+  </footer>
 
-    <script>
-        // Scroll Reveal Animation
-        const obs = new IntersectionObserver(e => e.forEach(x => x.isIntersecting && x.target.classList.add('active')), { threshold: 0.1 });
-        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-
-        // Interactive FAQ Accordions
-        document.querySelectorAll('.faq-question').forEach(q => {
-            q.addEventListener('click', () => {
-                const item = q.parentElement;
-                const isActive = item.classList.contains('active-faq');
-                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active-faq'));
-                if (!isActive) {
-                    item.classList.add('active-faq');
-                }
-            });
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Intersection Observer for scroll animations
+      const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            obs.unobserve(entry.target);
+          }
         });
+      }, observerOptions);
+      document.querySelectorAll('.section-block').forEach(el => observer.observe(el));
 
-        // Scroll Spy for TOC Links
-        const sections = document.querySelectorAll('section[id]');
-        const tocLinks = document.querySelectorAll('.toc-link');
-        window.addEventListener('scroll', () => {
-            let current = "";
-            sections.forEach(s => {
-                const sTop = s.offsetTop;
-                if (pageYOffset >= (sTop - 150)) {
-                    current = s.getAttribute('id');
-                }
-            });
-            tocLinks.forEach(l => {
-                l.classList.remove('active');
-                if (l.getAttribute('href').includes(current)) {
-                    l.classList.add('active');
-                }
-            });
+      // FAQ Accordion
+      const faqHeaders = document.querySelectorAll('.faq-header');
+      faqHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+          const item = header.parentElement;
+          const isActive = item.classList.contains('active');
+          document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+          if(!isActive) item.classList.add('active');
         });
-    </script>
+      });
+
+      // Sticky TOC Scroll Spy
+      const sections = document.querySelectorAll('.section-block');
+      const tocLinks = document.querySelectorAll('.toc-link');
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if(scrollY >= sectionTop - 120) {
+            current = section.getAttribute('id');
+          }
+        });
+        tocLinks.forEach(link => {
+          link.classList.remove('active');
+          if(link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>

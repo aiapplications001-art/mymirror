@@ -134,681 +134,1137 @@
   <!-- Google Analytics Tracker (Deferred) -->
   <script defer src="/assets/site-analytics.js"></script>
 
-  <!-- Fonts -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-  
-    <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <style>
+    /* CSS DESIGN SYSTEM TOKENS */
+    :root {
+      --brand: #EC610E;
+      --brand-dark: #C14800;
+      --brand-light: #FFE1CE;
+      --bg2: #F9F6F3;
+      --border: #E8DDD5;
+      --text-main: #1E293B;
+      --text-muted: #64748B;
+      --card-bg: #FFFFFF;
+      --dark-bg: #121619;
+      --dark-card: #1E2328;
+      --warning-bg: #FFFBEB;
+      --warning-border: #FCD34D;
+      --warning-text: #92400E;
+      --danger-bg: #FEF2F2;
+      --danger-border: #FCA5A5;
+      --danger-text: #991B1B;
+      --success-bg: #F0FDF4;
+      --success-border: #86EFAC;
+      --success-text: #166534;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.1);
+    }
 
-        :root {
-            --brand:      #EC610E;
-            --brand-dark: #C14800;
-            --brand-light:#FFE1CE;
-            --bg:         #FFFFFF;
-            --bg-2:       #F9F6F3;
-            --bg-3:       #F2EDE8;
-            --text:       #1A1410;
-            --text-2:     #5C4A3A;
-            --text-3:     #9E8575;
-            --border:     #E8DDD5;
-            --success:    #2D7A4F;
-            --danger:     #C0392B;
-            --info:       #1A5F8A;
-            --bouncy:     cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            --max-article: 720px;
-            --max-content: 1100px;
-            --radius-lg: 16px;
-            --radius-xl: 24px;
-            --transition-base: 0.4s var(--bouncy);
-        }
+    /* GLOBAL RESET & BASE STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        /* Auto Dark Mode */
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg:         #120D0A;
-                --bg-2:       #1E1510;
-                --bg-3:       #2A1E17;
-                --text:       #F5EDE6;
-                --text-2:     #C4A898;
-                --text-3:     #7A6055;
-                --border:     #3A2A22;
-                --success:    #4ABA7A;
-                --danger:     #E8554A;
-                --info:       #5BA8D8;
-            }
-        }
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
 
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 15px; line-height: 1.65;
-            color: var(--text); background: var(--bg);
-            overflow-x: hidden;
-        }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-main);
+      background-color: #FFFFFF;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
 
-        h1, h2, h3 { font-family: 'Kantumruy Pro', serif; color: var(--text); }
-        h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; line-height: 1.15; letter-spacing: -0.03em; }
-        h2 { font-size: 2rem; font-weight: 600; line-height: 1.2; margin-top: 4rem; margin-bottom: 1.5rem; }
-        h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.35rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
-        p { color: var(--text-2); line-height: 1.65; margin-bottom: 1.5rem; }
-        ul, ol { margin-bottom: 1.5rem; padding-left: 1.5rem; color: var(--text-2); }
-        li { margin-bottom: 0.5rem; }
-        a { color: var(--brand); text-decoration: none; font-weight: 600; }
-        a:hover { text-decoration: underline; }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Kantumruy Pro', Georgia, serif;
+      font-weight: 700;
+      color: #0F172A;
+      line-height: 1.25;
+    }
 
-        .container { max-width: var(--max-content); margin: 0 auto; padding: 0 2rem; }
+    p {
+      margin-bottom: 1.25rem;
+      color: #334155;
+    }
 
-        /* Sticky Header */
-        .sticky-header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: var(--bg);
-            border-bottom: 1px solid var(--border);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            height: 60px;
-            display: flex;
-            align-items: center;
-        }
-        .header-content {
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
-        .logo { height: 36px; object-fit: contain; }
-        .nav { display: flex; gap: 28px; }
-        .nav-link { color: var(--text); font-weight: 600; font-size: 0.9rem; text-decoration: none; }
-        .nav-link.accent-brain { color: #6366f1; font-weight: 800; }
-        .nav-link.accent-natural { color: #059669; font-weight: 800; }
-        .nav-link.accent-fast { color: #EC610E; font-weight: 800; }
+    a {
+      color: var(--brand);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
 
-        /* Trust Bar */
-        .trust-bar {
-            background: var(--bg-2);
-            padding: 10px 20px;
-            border-bottom: 1px solid var(--border);
-            font-size: 12px;
-            color: var(--text-3);
-            display: flex;
-            gap: 16px;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .trust-reviewer { color: var(--success); font-weight: 700; }
+    a:hover {
+      color: var(--brand-dark);
+    }
 
-        /* Split Hero */
-        .hero {
-            background: var(--bg-2);
-            border-bottom: 1px solid var(--border);
-            padding: 4rem 2rem;
-            margin-bottom: 0;
-        }
-        .hero-inner {
-            max-width: var(--max-content);
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-        .hero-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: var(--brand-light);
-            color: var(--brand-dark);
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            padding: 5px 14px;
-            border-radius: 9999px;
-            margin-bottom: 1.5rem;
-        }
-        .hero-image-stack {
-            display: flex;
-            gap: 20px;
-            justify-content: flex-end;
-        }
-        .hero-photo-card {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            align-items: flex-end;
-            width: 200px;
-        }
-        .hero-photo {
-            width: 100%;
-            height: 240px;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        .hero-photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .hero-stat-card {
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 14px 18px;
-            width: 100%;
-            min-height: 105px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .stat-num {
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: var(--brand);
-            line-height: 1.1;
-            margin-bottom: 4px;
-            font-family: 'Kantumruy Pro', serif;
-        }
-        .stat-label {
-            font-size: 11px;
-            color: var(--text-2);
-            line-height: 1.4;
-        }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
 
-        /* TOC Bar */
-        .toc-bar {
-            background: var(--bg);
-            border-bottom: 1px solid var(--border);
-            padding: 0 2rem;
-            position: sticky;
-            top: 60px;
-            z-index: 90;
-        }
-        .toc-inner {
-            max-width: var(--max-content);
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-        .toc-inner::-webkit-scrollbar {
-            display: none;
-        }
-        .toc-link {
-            white-space: nowrap;
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--text-3);
-            text-decoration: none;
-            padding: 14px 18px;
-            border-bottom: 2px solid transparent;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .toc-link:hover { color: var(--text); border-bottom-color: var(--brand); }
-        .toc-link.active { color: var(--brand); border-bottom-color: var(--brand); }
-        .toc-num {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            background: var(--brand);
-            color: #fff;
-            font-size: 10px;
-            font-weight: 700;
-        }
+    /* TOP HEADER BAR */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: 60px;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+    }
 
-        /* Two Column Body Layout */
-        .page-body {
-            max-width: var(--max-content);
-            margin: 0 auto;
-            padding: 3rem 2rem 5rem;
-            display: grid;
-            grid-template-columns: 1fr 300px;
-            gap: 3rem;
-            align-items: start;
-        }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'Kantumruy Pro', serif;
+      font-weight: 700;
+      font-size: 1.35rem;
+      color: var(--brand-dark);
+      text-decoration: none;
+    }
 
-        /* Callout Box */
-        .callout {
-            background: var(--bg-3);
-            border-left: 4px solid var(--brand);
-            border-radius: 0 12px 12px 0;
-            padding: 1.5rem;
-            margin: 2.5rem 0;
-            font-size: 0.95rem;
-            color: var(--text);
-        }
-        .callout strong { color: var(--text); }
-        
-        .dark-callout {
-            background: var(--text);
-            border-radius: 30px;
-            padding: 3rem;
-            color: var(--bg);
-            text-align: center;
-            margin: 4rem 0;
-        }
-        .dark-callout h2 { color: var(--bg); margin-top: 0; }
-        .dark-callout p { color: var(--text-3); }
+    .brand-logo span {
+      color: var(--brand);
+    }
 
-        /* Face AI CTA (V2.1 standard) */
-        .face-ai-cta-wrapper { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; margin: 2rem 0 0; text-align: left; width: 100%; position: relative; z-index: 50; }
-        .face-ai-btn { 
-            position: relative; 
-            display: inline-flex; 
-            align-items: center;
-            justify-content: center;
-            padding: 18px 44px; 
-            background: #EC610E; 
-            color: #ffffff !important; 
-            text-decoration: none; 
-            font-weight: 800; 
-            font-size: 1.15rem; 
-            border-radius: 9999px; 
-            box-shadow: 0 10px 30px rgba(236,97,14,0.3); 
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-            z-index: 10;
-            overflow: visible;
-        }
-        .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
-        .face-ai-btn-text { position: relative; z-index: 12; }
-        p.face-ai-subtext { color: var(--text-3); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px 0 0 0 !important; display: block !important; visibility: visible !important; }
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      color: var(--brand-dark);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
 
-        .face-ai-energy-rail { 
-            position: absolute; 
-            inset: -3px; 
-            border-radius: 9999px; 
-            pointer-events: none;
-            z-index: 5;
-            padding: 3px;
-            overflow: hidden;
-            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            mask-composite: exclude;
-            -webkit-mask-composite: xor;
-        }
-        
-        .face-ai-energy-rail::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 400%; 
-            height: 400%;
-            background: conic-gradient(from 0deg, transparent 65%, #EC610E 80%, #FFE1CE 95%, #ffffff 100%);
-            animation: energy-loop 3.5s ease-in-out forwards;
-        }
+    .header-cta:hover {
+      background: var(--brand-light);
+      border-color: var(--brand);
+    }
 
-        @keyframes energy-loop {
-            0% { transform: translate(-50%, -50%) rotate(0deg); opacity: 0; }
-            100% { transform: translate(-50%, -50%) rotate(360deg); opacity: 1; }
-        }
+    /* TRUST BAR */
+    .trust-bar {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 0.6rem 1rem;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--brand-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
 
-        .btn-primary {
-            display: inline-block;
-            padding: 16px 40px;
-            border-radius: 9999px;
-            border: none;
-            background: var(--brand);
-            color: #fff;
-            font-weight: 700;
-            font-size: 16px;
-            cursor: pointer;
-            box-shadow: 0 10px 25px rgba(236,97,14,0.3);
-            transition: var(--transition-base);
-            text-decoration: none;
-        }
-        .btn-primary:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 30px rgba(236,97,14,0.4);
-            background: var(--brand-dark);
-            color: #fff;
-        }
+    .trust-badge-icon {
+      width: 18px;
+      height: 18px;
+      fill: var(--brand);
+      display: inline-block;
+    }
 
-        /* Sidebar Styling */
-        .sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
-        .sidebar-card {
-            background: var(--bg-2);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 1.5rem;
-        }
-        .sidebar-card h4 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 700; margin-bottom: 10px; }
-        .sidebar-card p { font-size: 13px; color: var(--text-2); }
-        .sidebar-list { list-style: none; margin-top: 10px; padding: 0; }
-        .sidebar-list li {
-            font-size: 13px; color: var(--text-2);
-            padding: 6px 0; border-bottom: 1px solid var(--border);
-            display: flex; gap: 8px;
-        }
-        .sidebar-list li:last-child { border-bottom: none; }
-        .sidebar-list li::before { content: '→'; color: var(--brand); font-size: 12px; }
-        .sidebar-list a { color: inherit; text-decoration: none; }
-        .sidebar-list a:hover { color: var(--brand); }
+    /* STICKY TOC BAR */
+    .sticky-toc-bar {
+      position: sticky;
+      top: 60px;
+      z-index: 90;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
 
-        /* Responsive Comparison Tables V2.1 */
-        .acne-table-wrapper { overflow-x: auto; margin: 2rem 0; border: 1px solid var(--border); border-radius: 12px; }
-        .acne-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-        .acne-table th { background: var(--bg-2); padding: 14px; text-align: left; border-bottom: 2px solid var(--border); font-weight: 700; }
-        .acne-table td { padding: 14px; border-bottom: 1px solid var(--border); color: var(--text-2); }
-        .acne-table tr:last-child td { border-bottom: none; }
+    .toc-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.65rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none;
+    }
 
-        /* Interactive FAQ Accordion */
-        .faq-item {
-            background: var(--bg);
-            border-radius: 16px;
-            margin-bottom: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            border: 1px solid var(--border);
-            transition: all 0.3s ease;
-        }
-        .faq-question {
-            padding: 1.5rem 2rem;
-            font-weight: 700;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: var(--text);
-            font-size: 1.1rem;
-            user-select: none;
-        }
-        .faq-question:hover { color: var(--brand); background: var(--bg-2); }
-        .faq-answer {
-            max-height: 0;
-            padding: 0 2rem;
-            overflow: hidden;
-            transition: all 0.4s ease-out;
-            color: var(--text-2);
-            font-size: 0.95rem;
-            line-height: 1.65;
-        }
-        .faq-item.active-faq .faq-answer {
-            max-height: 500px;
-            padding: 0 2rem 2rem 2rem;
-        }
-        .faq-icon {
-            font-size: 1.5rem;
-            transition: transform 0.3s ease;
-            color: var(--brand);
-        }
-        .faq-item.active-faq .faq-icon {
-            transform: rotate(45deg);
-        }
+    .toc-inner::-webkit-scrollbar {
+      display: none;
+    }
 
-        /* Reveal Animation */
-        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s var(--bouncy); }
-        .reveal.active { opacity: 1; transform: none; }
+    .toc-label {
+      font-weight: 700;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--brand-dark);
+      background: var(--brand-light);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
 
-        /* Footer */
-        .main-footer {
-            background: var(--bg-2);
-            padding: 4rem 2rem;
-            text-align: center;
-            border-top: 1px solid var(--border);
-            margin-top: 6rem;
-        }
-        .footer-logo { height: 30px; margin-bottom: 1.5rem; opacity: 0.7; }
-        .footer-text { color: var(--text-3); font-size: 0.85rem; }
+    .toc-link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
 
-        @media (max-width: 900px) {
-            .page-body { grid-template-columns: 1fr; }
-            .sidebar { display: none; }
-            .hero-inner { grid-template-columns: 1fr; text-align: center; }
-            .hero-image-stack { display: none; }
-            .hero-content { display: flex; flex-direction: column; align-items: center; }
-        }
+    .toc-link:hover, .toc-link.active {
+      color: var(--brand);
+    }
 
-        @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; }
-            h2 { font-size: 1.8rem; }
-            .nav { display: none; }
-            
-            /* Table Stack on Mobile */
-            .acne-table, .acne-table tbody, .acne-table tr, .acne-table td { display: block; width: 100%; box-sizing: border-box; }
-            .acne-table thead { display: none; }
-            .acne-table { border: none; margin: 1rem 0; }
-            .acne-table tr { margin-bottom: 1.5rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 4px 15px rgba(0,0,0,0.03); background: var(--bg); }
-            .acne-table td { border-bottom: 1px solid var(--border); padding: 12px 12px 12px 40%; position: relative; min-height: 46px; text-align: right; }
-            .acne-table td:last-child { border-bottom: none; }
-            .acne-table td:first-child::before { display: none !important; content: none !important; }
-      .acne-table td::before { content: attr(data-label); position: absolute; left: 12px; width: 35%; font-weight: 700; color: var(--text); top: 12px; text-align: left; }
-        }
+    /* DARK HERO SECTION */
+    .dark-hero {
+      background: linear-gradient(145deg, #0F1316 0%, #1A2026 100%);
+      color: #F8FAFC;
+      padding: 3.5rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
 
-        /* ── STICKY BOTTOM CTA (MOBILE ONLY) ── */
-        .sticky-cta-mobile {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 0.8rem 1.2rem;
-            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
-            z-index: 2000;
-            display: none; /* Hidden on desktop */
-            justify-content: center;
-            align-items: center;
-            border-top: 1px solid var(--border);
-        }
-        @media (prefers-color-scheme: dark) {
-            .sticky-cta-mobile {
-                background: rgba(18, 13, 10, 0.95);
-            }
-        }
-        .sticky-cta-mobile .nav-cta {
-            width: 100%;
-            text-align: center;
-            padding: 12px 0;
-            font-size: 1.05rem;
-            box-shadow: 0 8px 20px rgba(236,97,14,0.3);
-            text-decoration: none;
-            border-radius: 9999px;
-            background: var(--brand);
-            color: #fff;
-            font-weight: 800;
-        }
-        @media (max-width: 768px) {
-            .sticky-cta-mobile {
-                display: flex;
-            }
-            /* Hide hero CTA on mobile to avoid redundancy */
-            .face-ai-cta-wrapper {
-                display: none !important;
-            }
-            /* Hide header nav CTA on mobile when bottom sticky is active */
-            .nav-links .nav-cta, 
-            .nav-inner a[href*="face-map"], 
-            .nav-inner a[href*="scan"] {
-                display: none !important;
-            }
-            body {
-                padding-bottom: 70px;
-            }
-        }
-    </style>
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
 
-  <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+    @media (max-width: 991px) {
+      .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(236, 97, 14, 0.15);
+      border: 1px solid rgba(236, 97, 14, 0.4);
+      color: #FF8B42;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: #FFFFFF;
+      margin-bottom: 1.25rem;
+      line-height: 1.15;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      color: #94A3B8;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .hero-meta-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      font-size: 0.875rem;
+      color: #CBD5E1;
+    }
+
+    .hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-meta-item svg {
+      width: 16px;
+      height: 16px;
+      fill: #FF8B42;
+    }
+
+    /* ANIMATED PERIMETER-RAIL CTA BUTTON */
+    .perimeter-cta {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 16px 32px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #FFFFFF !important;
+      background: #EC610E;
+      border-radius: 9999px;
+      text-decoration: none !important;
+      overflow: hidden;
+      z-index: 1;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 6px 24px rgba(236, 97, 14, 0.4);
+    }
+
+    .perimeter-cta::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(transparent 0deg, #FFFFFF 90deg, #FFE1CE 180deg, transparent 270deg);
+      animation: rotate-rail 3.5s linear infinite;
+      z-index: -2;
+    }
+
+    .perimeter-cta::after {
+      content: '';
+      position: absolute;
+      inset: 3px;
+      background: linear-gradient(135deg, #EC610E 0%, #C14800 100%);
+      border-radius: 9999px;
+      z-index: -1;
+      transition: background 0.3s ease;
+    }
+
+    @keyframes rotate-rail {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .perimeter-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(236, 97, 14, 0.6);
+    }
+
+    .hero-image-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .hero-image-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .hero-image-tag {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+      background: rgba(15, 19, 22, 0.88);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.825rem;
+      color: #E2E8F0;
+    }
+
+    .hero-tag-accent {
+      color: #FF8B42;
+      font-weight: 700;
+    }
+
+    /* MAIN CONTENT LAYOUT */
+    .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 3rem;
+    }
+
+    @media (max-width: 991px) {
+      .main-container {
+        grid-template-columns: 1fr;
+        padding-bottom: 5rem;
+      }
+      .desktop-sidebar {
+        display: none !important;
+      }
+    }
+
+    .article-content {
+      min-width: 0;
+    }
+
+    .section-block {
+      margin-bottom: 3.5rem;
+      scroll-margin-top: 120px;
+    }
+
+    .section-block h2 {
+      font-size: 1.85rem;
+      margin-bottom: 1rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--brand-light);
+    }
+
+    .section-block h3 {
+      font-size: 1.35rem;
+      margin: 1.75rem 0 0.75rem 0;
+    }
+
+    /* INFO & WARNING BOXES */
+    .info-box {
+      background: var(--bg2);
+      border-left: 4px solid var(--brand);
+      border-radius: var(--radius-sm);
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .info-box h4 {
+      font-size: 1.1rem;
+      color: var(--brand-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .warning-box {
+      background: var(--danger-bg);
+      border: 1px solid var(--danger-border);
+      border-left: 5px solid #DC2626;
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin: 1.75rem 0;
+      color: var(--danger-text);
+    }
+
+    .warning-box h4 {
+      font-size: 1.2rem;
+      color: #991B1B;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .caution-box {
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+      border-left: 5px solid #D97706;
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin: 1.75rem 0;
+      color: var(--warning-text);
+    }
+
+    .caution-box h4 {
+      font-size: 1.15rem;
+      color: #92400E;
+      margin-bottom: 0.5rem;
+    }
+
+    /* BENTO GRID */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 640px) {
+      .bento-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .bento-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bento-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+      border-color: var(--brand);
+    }
+
+    .bento-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+    }
+
+    .bento-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .bento-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .bento-body {
+      font-size: 0.925rem;
+      color: #475569;
+      flex-grow: 1;
+    }
+
+    .bento-footer {
+      margin-top: 1rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* RESPONSIVE MATRIX TABLE */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 2rem 0;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #FFFFFF;
+      text-align: left;
+      font-size: 0.925rem;
+    }
+
+    .matrix-table th {
+      background: var(--bg2);
+      color: #0F172A;
+      font-weight: 700;
+      padding: 1rem;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .matrix-table td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border);
+      color: #334155;
+    }
+
+    .matrix-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .matrix-table td:first-child::before {
+      display: none !important;
+      content: none !important;
+    }
+
+    @media (max-width: 768px) {
+      .table-container {
+        border: none;
+        box-shadow: none;
+      }
+      .matrix-table, .matrix-table tbody, .matrix-table tr, .matrix-table td {
+        display: block;
+        width: 100%;
+      }
+      .matrix-table thead {
+        display: none;
+      }
+      .matrix-table tr {
+        margin-bottom: 1.25rem;
+        background: #FFFFFF;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        padding: 1.25rem;
+        box-shadow: var(--shadow-sm);
+      }
+      .matrix-table td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #F1F5F9;
+        text-align: right;
+      }
+      .matrix-table td:last-child {
+        border-bottom: none;
+      }
+      .matrix-table td::before {
+        content: attr(data-label);
+        font-weight: 700;
+        color: var(--brand-dark);
+        text-align: left;
+        padding-right: 1rem;
+      }
+      .matrix-table td:first-child::before {
+        display: none !important;
+        content: none !important;
+      }
+      .matrix-table td:first-child {
+        font-weight: 800;
+        font-size: 1.15rem;
+        color: #0F172A;
+        border-bottom: 2px solid var(--brand-light);
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+        justify-content: flex-start;
+      }
+    }
+
+    /* INTERACTIVE DECISION TOOL / QUIZ */
+    .quiz-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      margin: 2.5rem 0;
+      box-shadow: var(--shadow-md);
+    }
+
+    .quiz-title {
+      font-size: 1.5rem;
+      color: var(--brand-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .quiz-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .quiz-step {
+      margin-bottom: 1.5rem;
+    }
+
+    .quiz-question {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+      color: #0F172A;
+    }
+
+    .quiz-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .quiz-option-btn {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #334155;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s ease;
+    }
+
+    .quiz-option-btn:hover {
+      border-color: var(--brand);
+      background: var(--brand-light);
+      color: var(--brand-dark);
+    }
+
+    .quiz-option-btn.selected {
+      border-color: var(--brand);
+      background: var(--brand);
+      color: #FFFFFF;
+    }
+
+    .quiz-result-box {
+      display: none;
+      background: #FFFFFF;
+      border: 2px solid var(--brand);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .result-badge {
+      display: inline-block;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ACCORDION FAQ */
+    .faq-accordion {
+      margin: 2rem 0;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      margin-bottom: 1rem;
+      background: #FFFFFF;
+      overflow: hidden;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .faq-item:hover {
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-header {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      font-family: 'Kantumruy Pro', serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #0F172A;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .faq-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--bg2);
+      color: var(--brand);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      flex-shrink: 0;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+      background: var(--brand-light);
+    }
+
+    .faq-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+      background: #FAFAFA;
+      border-top: 1px solid transparent;
+    }
+
+    .faq-item.active .faq-body {
+      max-height: 500px;
+      border-color: var(--border);
+      transition: max-height 0.35s ease-in-out;
+    }
+
+    .faq-content {
+      padding: 1.25rem 1.5rem;
+      font-size: 0.95rem;
+      color: #475569;
+    }
+
+    /* DESKTOP SIDEBAR */
+    .desktop-sidebar {
+      position: sticky;
+      top: 130px;
+      height: fit-content;
+    }
+
+    .sidebar-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .sidebar-title {
+      font-size: 1.15rem;
+      margin-bottom: 0.75rem;
+      color: #0F172A;
+    }
+
+    .sidebar-list {
+      list-style: none;
+      font-size: 0.9rem;
+    }
+
+    .sidebar-list li {
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .sidebar-list li::before {
+      content: '✓';
+      color: var(--brand);
+      font-weight: bold;
+    }
+
+    /* STICKY BOTTOM MOBILE CTA BAR */
+    .sticky-bottom-bar {
+      display: none;
+    }
+
+    @media (max-width: 991px) {
+      .sticky-bottom-bar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #FFFFFF;
+        border-top: 1px solid var(--border);
+        padding: 0.75rem 1rem;
+        z-index: 1000;
+        box-shadow: 0 -4px 16px rgba(0,0,0,0.12);
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .mobile-bar-text {
+        font-size: 0.825rem;
+        color: #334155;
+      }
+
+      .mobile-bar-text strong {
+        display: block;
+        color: #0F172A;
+        font-size: 0.9rem;
+      }
+
+      .mobile-bar-btn {
+        background: var(--brand);
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 0.85rem;
+        padding: 10px 18px;
+        border-radius: 9999px;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(236, 97, 14, 0.35);
+      }
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background: #0F1316;
+      color: #94A3B8;
+      padding: 3rem 1.5rem 2rem 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.875rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand {
+      color: #FFFFFF;
+      font-family: 'Kantumruy Pro', serif;
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-disclaimer {
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: #64748B;
+      margin-top: 1rem;
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  </style>
 </head>
 <body>
-  <!-- Trust Bar -->
-  <div class="trust-bar">
-    <span>✍️ MyMirror Editorial Team</span>
-    <span class="trust-reviewer">✓ Reviewed by Dr. Lipy Mehta, Board-Certified Dermatologist</span>
-    <span>Updated August 2026</span>
-  </div>
 
-  <!-- Header -->
-    <!-- Sticky Header -->
-  <header class="sticky-header">
-    <div class="header-content">
-      <a href="/"><img src="https://mymirror.fit/assets/logo-v4.png" alt="mymirror" class="logo"></a>
-      <nav class="nav">
-                <a href="/acne/types-of-acne/" class="nav-link">Acne Types</a>
-                <a href="/acne/forehead-acne/meaning/" class="nav-link accent-brain">Acne Meaning 🧠</a>
-                <a href="/acne/forehead-acne/home-remedies/" class="nav-link accent-natural">Natural Remedies 🌿</a>
-                <a href="/acne/forehead-acne/fast-treatment/" class="nav-link accent-fast">Fast Fixes ⚡</a>
-            </nav>
-    </div>
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <a href="https://mymirror.fit" class="brand-logo">
+      MyMirror<span>.fit</span>
+    </a>
+    <a href="https://face3layerscanner.onrender.com/" class="header-cta" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+      Free AI Skin Scan
+    </a>
   </header>
 
-  <!-- Hero Section -->
-    <!-- Split Hero Section -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <span class="hero-tag">CLINICAL GUIDE • AUGUST 2026</span>
-        <h1 class="hero-title">CeraVe Acne Foaming Cream Cleanser 4% BPO Review USA (2026)</h1>
-        <p class="hero-subtitle">Clinical analysis of 4% Benzoyl Peroxide paired with 3 essential ceramides, hyaluronic acid, and niacinamide for gentle acne clearing.</p>
-        
-        <!-- Contextual CTA -->
-        <div class="face-ai-cta-wrapper">
-          <a href="https://face3layerscanner.onrender.com/" class="face-ai-btn">
-            <span class="face-ai-btn-text">Build Your Custom Active Routine</span>
-            <div class="face-ai-energy-rail"></div>
-          </a>
-          <p class="face-ai-subtext">Scan your face in 60s to get a personalized, non-comedogenic regimen tailored to your exact skin type.</p>
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <svg class="trust-badge-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+    Reviewed by Dr. Lipy Mehta, Board-Certified Dermatologist | Updated August 2026
+  </div>
+
+  <!-- STICKY TOC BAR -->
+  <nav class="sticky-toc-bar" aria-label="Table of Contents">
+    <div class="toc-inner">
+      <span class="toc-label">CONTENTS</span>
+      <a href="#section-1" class="toc-link">1. Ingredient Science</a>
+      <a href="#section-2" class="toc-link">2. Product Comparison</a>
+      <a href="#section-3" class="toc-link">3. Treatment Routine</a>
+      <a href="#section-4" class="toc-link">4. Practical Tips</a>
+      <a href="#section-5" class="toc-link">5. Clinical Studies</a>
+      <a href="#section-6" class="toc-link">6. FAQ</a>
+    </div>
+  </nav>
+
+  <!-- DARK HERO SECTION -->
+  <section class="dark-hero">
+    <div class="hero-container">
+      <div class="hero-text-col">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          Clinical Product Review (2026)
         </div>
+        <h1 class="hero-title">CeraVe Acne Foaming Cream Cleanser 4% BPO Review USA (2026)</h1>
+        <p class="hero-subtitle">
+          Clinical analysis of 4% Benzoyl Peroxide paired with 3 essential ceramides, hyaluronic acid, and niacinamide for gentle acne clearing.
+        </p>
+        <div class="hero-meta-list">
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            4% Benzoyl Peroxide
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            3 Essential Ceramides
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            Barrier-Safe
+          </div>
+        </div>
+
+        <!-- ANIMATED PERIMETER-RAIL CTA BUTTON -->
+        <a href="https://face3layerscanner.onrender.com/" class="perimeter-cta" target="_blank" rel="noopener">
+          <span>Build Your Custom Active Routine ✨</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
       </div>
 
-      <div class="hero-image-stack">
-        <div class="hero-photo-card">
-          <div class="hero-photo">
-            <img src="https://mymirror.fit/assets/images/cerave_bpo_cleanser_usa.jpg" alt="CeraVe Acne Foaming Cream Cleanser 4% BPO Review USA (2026)">
-          </div>
-          <div class="hero-stat-card">
-            <div class="stat-num">3 CERAMIDES</div>
-            <div class="stat-label">Skin Barrier Preservation System</div>
+      <div class="hero-image-col">
+        <div class="hero-image-card">
+          <img src="https://mymirror.fit/assets/images/cerave_bpo_cleanser_usa.jpg" alt="CeraVe Acne Foaming Cream Cleanser 4% BPO Review USA (2026)" width="600" height="338" loading="eager">
+          <div class="hero-image-tag">
+            <span><strong>CeraVe 4% BPO</strong> Cleanser</span>
+            <span class="hero-tag-accent">Skin Barrier Safe</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sticky TOC Bar -->
-  <div class="toc-bar">
-    <div class="toc-inner">
-      <a href="#overview" class="toc-link active"><span class="toc-num">1</span> Clinical Overview</a>
-      <a href="#matrix" class="toc-link"><span class="toc-num">2</span> Product Comparison</a>
-      <a href="#protocol" class="toc-link"><span class="toc-num">3</span> Treatment Routine</a>
-      <a href="#faq" class="toc-link"><span class="toc-num">4</span> FAQs</a>
-    </div>
-  </div>
+  <!-- MAIN CONTENT CONTAINER -->
+  <div class="main-container">
+    <article class="article-content">
 
-  <!-- Page Body -->
-  <div class="page-body">
-    <main>
-      <section class="reveal">
+      <!-- SECTION 1 -->
+      <section id="section-1" class="section-block">
         <h2>1. CeraVe 4% BPO Cleanser Ingredient Science</h2>
-        <p>CeraVe Acne Foaming Cream Cleanser combines antibacterial <strong>4% Benzoyl Peroxide</strong> with barrier-restoring lipophilic ceramides. Benzoyl Peroxide operates as an antimicrobial agent that releases reactive oxygen species (ROS) directly inside hair follicles, creating an aerobic environment that sterilizes <em>Cutibacterium acnes</em> bacteria without inducing bacterial resistance.</p>
-        <p>Traditional BPO washes often strip skin lipids, leaving the stratum corneum dry, tight, and vulnerable to trans-epidermal water loss (TEWL). CeraVe addresses this formulation flaw by encapsulating 4% BPO within a cream-to-foam delivery system enriched with <strong>Ceramides 1, 3, and 6-II</strong>, Hyaluronic Acid, and 4% Niacinamide.</p>
-
-        <div class="acne-table-wrapper">
-          <table class="acne-table">
-            <thead>
-              <tr>
-                <th>Ingredient</th>
-                <th>Clinical Action</th>
-                <th>Benefit for Acne Skin</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>4% Benzoyl Peroxide</strong></td>
-                <td>Releases oxygen inside pores</td>
-                <td>Kills 99% of C. acnes bacteria</td>
-              </tr>
-              <tr>
-                <td><strong>Ceramides 1, 3, 6-II</strong></td>
-                <td>Restores intercellular lipids</td>
-                <td>Prevents moisture barrier loss</td>
-              </tr>
-              <tr>
-                <td><strong>Hyaluronic Acid</strong></td>
-                <td>Attracts 1000x weight in water</td>
-                <td>Prevents BPO tight drying sensation</td>
-              </tr>
-              <tr>
-                <td><strong>Niacinamide</strong></td>
-                <td>Soothes inflammatory cytokines</td>
-                <td>Reduces facial redness & swelling</td>
-              </tr>
-            </tbody>
-          </table>
+        <p>
+          CeraVe Acne Foaming Cream Cleanser combines antibacterial <strong>4% Benzoyl Peroxide</strong> with barrier-restoring lipophilic ceramides. Benzoyl Peroxide operates as an antimicrobial agent that releases reactive oxygen species (ROS) directly inside hair follicles, creating an aerobic environment that sterilizes <em>Cutibacterium acnes</em> bacteria without inducing bacterial resistance.
+        </p>
+        <p>
+          Traditional BPO washes often strip skin lipids, leaving the stratum corneum dry, tight, and vulnerable to trans-epidermal water loss (TEWL). CeraVe addresses this formulation flaw by encapsulating 4% BPO within a cream-to-foam delivery system enriched with <strong>Ceramides 1, 3, and 6-II</strong>, Hyaluronic Acid, and 4% Niacinamide.
+        </p>
+        
+        <div class="bento-grid">
+          <div class="bento-card">
+            <div class="bento-header">
+              <span class="bento-title">BPO Kill Action</span>
+              <span class="bento-tag">Acne Clearing</span>
+            </div>
+            <div class="bento-body">
+              <p>Releases reactive oxygen species (ROS) deep inside pores, killing 99% of acne-causing bacteria without leading to antibiotic resistance. Powerful antibacterial sterilization.</p>
+            </div>
+          </div>
+          <div class="bento-card">
+            <div class="bento-header">
+              <span class="bento-title">Ceramide Repair</span>
+              <span class="bento-tag">Barrier Support</span>
+            </div>
+            <div class="bento-body">
+              <p>Ceramides 1, 3, and 6-II act as intercellular "glue" to repair the lipid barrier, while Niacinamide soothes inflammation. Combats the typical drying effects of Benzoyl Peroxide.</p>
+            </div>
+          </div>
         </div>
+
+        <div class="info-box">
+          <h4>Ceramide Barrier Repair Science &amp; MVE Technology</h4>
+          <p>
+            The inclusion of skin-identical Ceramides helps restore intercellular lipids and prevents moisture barrier loss. Furthermore, CeraVe uses MultiVesicular Emulsion (MVE) technology for a controlled release of these hydrating ingredients over time. This continuous hydration phase is critical to preventing the tight drying sensation typical of other BPO cleansers, supporting barrier recovery while clearing acne.
+          </p>
+        </div>
+
       </section>
 
-      <section class="reveal">
-        <h2>2. CeraVe 4% BPO vs PanOxyl 4% & 10% BPO Washes</h2>
-        <p>Choosing between CeraVe Acne Foaming Cream Cleanser and PanOxyl formulations depends on your skin's sensitivity, acne severity, and target area:</p>
-        <p>In clinical trials, 4% Benzoyl Peroxide achieved near-identical bacterial eradication to 10% Benzoyl Peroxide on facial skin after 4 weeks, but with a <strong>65% reduction in erythema (redness) and desquamation (flaking)</strong>. While PanOxyl 10% Foaming Wash remains the gold standard for back and body acne (where skin is thicker), CeraVe 4% BPO is the preferred choice for delicate facial skin.</p>
-
-        <div class="acne-table-wrapper">
-          <table class="acne-table">
+      <!-- SECTION 2 -->
+      <section id="section-2" class="section-block">
+        <h2>2. CeraVe 4% BPO vs PanOxyl 4% &amp; 10% BPO Washes (vs Neutrogena)</h2>
+        <p>
+          Choosing between CeraVe Acne Foaming Cream Cleanser, PanOxyl, and Neutrogena formulations depends on your skin's sensitivity, acne severity, and target area:
+        </p>
+        <p>
+          In clinical trials, 4% Benzoyl Peroxide achieved near-identical bacterial eradication to 10% Benzoyl Peroxide on facial skin after 4 weeks, but with a <strong>65% reduction in erythema (redness) and desquamation (flaking)</strong>. While PanOxyl 10% Foaming Wash remains the gold standard for back and body acne (where skin is thicker), CeraVe 4% BPO is the preferred choice for delicate facial skin.
+        </p>
+        
+        <div class="table-container">
+          <table class="matrix-table">
             <thead>
               <tr>
                 <th>Feature</th>
                 <th>CeraVe 4% BPO Cream Cleanser</th>
                 <th>PanOxyl 4% Creamy Wash</th>
-                <th>PanOxyl 10% Maximum Strength</th>
+                <th>PanOxyl 10% Wash</th>
+                <th>Neutrogena 10% BPO Wash</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>BPO Concentration</strong></td>
-                <td>4% Benzoyl Peroxide</td>
-                <td>4% Benzoyl Peroxide</td>
-                <td>10% Benzoyl Peroxide</td>
+                <td data-label="Feature">BPO Concentration</td>
+                <td data-label="CeraVe 4% BPO">4% Benzoyl Peroxide</td>
+                <td data-label="PanOxyl 4%">4% Benzoyl Peroxide</td>
+                <td data-label="PanOxyl 10%">10% Benzoyl Peroxide</td>
+                <td data-label="Neutrogena 10%">10% Benzoyl Peroxide</td>
               </tr>
               <tr>
-                <td><strong>Barrier Ingredients</strong></td>
-                <td>Ceramides 1, 3, 6-II + Hyaluronic Acid</td>
-                <td>Glycerin & Humectants</td>
-                <td>Minimal hydrating additives</td>
+                <td data-label="Feature">Barrier Ingredients</td>
+                <td data-label="CeraVe 4% BPO">Ceramides 1, 3, 6-II + HA</td>
+                <td data-label="PanOxyl 4%">Glycerin &amp; Humectants</td>
+                <td data-label="PanOxyl 10%">Minimal additives</td>
+                <td data-label="Neutrogena 10%">Basic surfactants</td>
               </tr>
               <tr>
-                <td><strong>Skin Feel</strong></td>
-                <td>Soothing, non-stripping foam</td>
-                <td>Creamy lotion wash</td>
-                <td>Lathering foam gel</td>
+                <td data-label="Feature">Skin Feel</td>
+                <td data-label="CeraVe 4% BPO">Soothing foam</td>
+                <td data-label="PanOxyl 4%">Creamy lotion</td>
+                <td data-label="PanOxyl 10%">Lathering foam gel</td>
+                <td data-label="Neutrogena 10%">Standard lather</td>
               </tr>
               <tr>
-                <td><strong>Best For</strong></td>
-                <td>Sensitive facial acne & routine stacking</td>
-                <td>Mild facial breakouts</td>
-                <td>Severe back/chest acne (Bacne)</td>
+                <td data-label="Feature">Best For</td>
+                <td data-label="CeraVe 4% BPO">Sensitive facial acne &amp; routines</td>
+                <td data-label="PanOxyl 4%">Mild facial breakouts</td>
+                <td data-label="PanOxyl 10%">Severe back/chest acne</td>
+                <td data-label="Neutrogena 10%">Stubborn body acne</td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="reveal">
+      <!-- SECTION 3 -->
+      <section id="section-3" class="section-block">
         <h2>3. How to Pair CeraVe 4% BPO with Retinoids (Differin 0.1% Gel)</h2>
-        <p>One of the most effective dermatologist-recommended OTC routines in the US combines morning <strong>CeraVe 4% BPO Cleanser</strong> with evening <a href="/acne/differin-adapalene-0.1-percent-gel-usa/">Differin (Adapalene 0.1% Gel)</a>. This dual approach mimics prescription Epiduo (Adapalene + BPO), attacking acne via two independent pathways:</p>
+        <p>
+          One of the most effective dermatologist-recommended OTC routines in the US combines morning <strong>CeraVe 4% BPO Cleanser</strong> with evening <a href="/acne/differin-adapalene-0.1-percent-gel-usa/">Differin (Adapalene 0.1% Gel)</a>. This dual approach mimics prescription Epiduo (Adapalene + BPO), attacking acne via two independent pathways:
+        </p>
+        
         <ul>
           <li><strong>Morning AM Routine:</strong> Wash face with CeraVe 4% BPO Cleanser (leave on for 1-2 minutes, then rinse). Apply a lightweight moisturizer and a broad-spectrum SPF 50 sunscreen.</li>
           <li><strong>Evening PM Routine:</strong> Cleanse with a gentle non-active wash. Allow skin to dry completely for 10 minutes. Apply a pea-sized amount of <a href="/acne/differin-adapalene-0.1-percent-gel-usa/">Adapalene 0.1% Gel</a>, followed by <a href="/acne/cerave-resurfacing-retinol-serum-post-acne-marks-usa/">CeraVe Resurfacing Retinol Serum</a> or a barrier-repair cream like <a href="/acne/hero-cosmetics-rescue-balm-post-blemish-cream-usa/">Hero Rescue Balm</a>.</li>
         </ul>
+
+        <div class="warning-box">
+          <h4>Don't pair with AHA/BHA in same routine step</h4>
+          <p>
+            Avoid mixing this BPO cleanser with strong exfoliating acids (like Salicylic, Glycolic, or Lactic Acid) in the same routine step. Layering them can lead to severe barrier damage, redness, and active inflammation. If you must use a BHA, alternate mornings or use the BHA only on specific days.
+          </p>
+        </div>
+        
+        <div class="caution-box">
+          <h4>Patch test first — 4% BPO can still cause contact dermatitis</h4>
+          <p>
+            Even with encapsulated ceramides, 4% Benzoyl Peroxide is an active ingredient. Always patch test on your jawline or inner arm for 24-48 hours before applying it to your entire face to rule out contact dermatitis or an allergic reaction.
+          </p>
+        </div>
       </section>
 
-      <section class="reveal">
+      <!-- SECTION 4 -->
+      <section id="section-4" class="section-block">
         <h2>4. Practical Tips to Prevent Benzoyl Peroxide Fabric Bleaching</h2>
-        <p>Benzoyl peroxide is a potent oxidizing agent that will bleach colored towels, pillowcases, and clothing upon contact. Follow these practical precautions:</p>
+        <p>
+          Benzoyl peroxide is a potent oxidizing agent that will bleach colored towels, pillowcases, and clothing upon contact. Follow these practical precautions:
+        </p>
         <ol>
           <li><strong>Rinse Thoroughly:</strong> Rinse your skin with lukewarm water for at least 30 seconds after cleansing to ensure no BPO residue remains around the hairline or neck.</li>
           <li><strong>Use White Towels:</strong> Keep dedicated white hand towels in your bathroom to pat dry after using CeraVe 4% BPO wash.</li>
@@ -816,143 +1272,231 @@
         </ol>
       </section>
 
-      <section class="reveal" style="margin-top: 3rem; background: var(--bg-2); padding: 2rem; border-radius: 16px; border: 1px solid var(--border);">
-        <h3 style="margin-top:0;">Essential Clinical Topic Clusters</h3>
-        <p style="font-size:0.9rem;">Deepen your treatment knowledge with our related dermatologist protocols:</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.8rem;">
-          <a href="/acne/panoxyl-4-percent-vs-10-percent-acne-wash-usa/">PanOxyl 4% vs 10% Wash →</a>
-          <a href="/acne/differin-adapalene-0.1-percent-gel-usa/">Differin Adapalene 0.1% Gel →</a>
-          <a href="/acne/cerave-resurfacing-retinol-serum-post-acne-marks-usa/">CeraVe Resurfacing Retinol →</a>
-          <a href="/acne/hero-cosmetics-rescue-balm-post-blemish-cream-usa/">Hero Cosmetics Rescue Balm →</a>
-          <a href="/acne/salicylic-acid-body-wash-bacne-usa/">Salicylic Acid Body Wash →</a>
-          <a href="/acne/skin-purging-vs-breakout-india/">Skin Purging vs Breakout →</a>
-          <a href="/acne/benzoyl-peroxide-gel-2.5-vs-5-india/">Benzoyl Peroxide 2.5% vs 5% →</a>
-          <a href="/acne/niacinamide-serums-india/">Niacinamide Serum Guide →</a>
-          <a href="/acne/retinol-vs-tretinoin-acne-india/">Retinol vs Tretinoin Guide →</a>
-          <a href="/acne/bpo-vs-salicylic-vs-adapalene-which-acne/">BPO vs BHA vs Adapalene →</a>
-        </div>
-      </section>
-
-      
-      <section class="reveal">
+      <!-- SECTION 5 -->
+      <section id="section-5" class="section-block">
         <h2>5. Clinical Studies on Ceramide-Encapsulated Benzoyl Peroxide</h2>
-        <p>A 12-week double-blind clinical study published in the <em>Journal of Clinical and Aesthetic Dermatology</em> evaluated the skin barrier impact of 4% Benzoyl Peroxide cleansers formulated with and without essential ceramides. The group using ceramide-fortified 4% BPO demonstrated a <strong>42% reduction in trans-epidermal water loss (TEWL)</strong> and significantly lower self-reported itching compared to standard 4% BPO formulations.</p>
-        <p>By preventing lipid dissolution during cleansing, CeraVe 4% BPO Cream Cleanser enables patients with mild-to-moderate inflammatory acne to maintain daily active compliance without suffering from active barrier collapse or reactive dermatitis.</p>
+        <p>
+          A 12-week double-blind clinical study published in the <em>Journal of Clinical and Aesthetic Dermatology</em> evaluated the skin barrier impact of 4% Benzoyl Peroxide cleansers formulated with and without essential ceramides. The group using ceramide-fortified 4% BPO demonstrated a <strong>42% reduction in trans-epidermal water loss (TEWL)</strong> and significantly lower self-reported itching compared to standard 4% BPO formulations.
+        </p>
+        <p>
+          By preventing lipid dissolution during cleansing, CeraVe 4% BPO Cream Cleanser enables patients with mild-to-moderate inflammatory acne to maintain daily active compliance without suffering from active barrier collapse or reactive dermatitis.
+        </p>
       </section>
 
+      <!-- SECTION 6: FAQ -->
+      <section id="section-6" class="section-block">
+        <h2>6. Frequently Asked Questions</h2>
+        <p>Answers to common queries about using the CeraVe Acne Foaming Cream Cleanser:</p>
+        
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>What makes CeraVe Acne Foaming Cream Cleanser unique?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Unlike traditional drying Benzoyl Peroxide washes, CeraVe 4% BPO Cleanser is formulated with 3 essential ceramides (1, 3, 6-II), Hyaluronic Acid, and Niacinamide to kill acne bacteria while maintaining skin barrier hydration.
+              </div>
+            </div>
+          </div>
 
-      <!-- FAQ Section -->
-      <section id="faq" class="reveal">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-item">
-          <div class="faq-question" onclick="this.parentElement.classList.toggle('active-faq')">
-            <span>What makes CeraVe Acne Foaming Cream Cleanser unique?</span>
-            <span class="faq-icon">+</span>
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Is CeraVe 4% BPO Cleanser safe for daily use?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Yes. Because of its creamy, hydrating base, most users can use it once daily (morning or night). If mild dryness occurs initially, reduce frequency to 2-3 times per week.
+              </div>
+            </div>
           </div>
-          <div class="faq-answer">
-            <p>Unlike traditional drying Benzoyl Peroxide washes, CeraVe 4% BPO Cleanser is formulated with 3 essential ceramides (1, 3, 6-II), Hyaluronic Acid, and Niacinamide to kill acne bacteria while maintaining skin barrier hydration.</p>
+
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Can CeraVe Acne Foaming Cream Cleanser be paired with Differin (Adapalene 0.1%)?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Yes! Use CeraVe 4% BPO Cleanser in the morning to sterilize pores, and apply Differin 0.1% Gel at night on dry skin. This is one of the top OTC acne routines recommended by US dermatologists.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" onclick="this.parentElement.classList.toggle('active-faq')">
-            <span>Is CeraVe 4% BPO Cleanser safe for daily use?</span>
-            <span class="faq-icon">+</span>
+
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Does CeraVe 4% BPO Cleanser clear blackheads?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Benzoyl peroxide primarily targets acne bacteria and inflammatory papules/pustules. For stubborn blackheads and clogged pores, alternate with CeraVe Renewing SA Cleanser (Salicylic Acid).
+              </div>
+            </div>
           </div>
-          <div class="faq-answer">
-            <p>Yes. Because of its creamy, hydrating base, most users can use it once daily (morning or night). If mild dryness occurs initially, reduce frequency to 2-3 times per week.</p>
+
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Will CeraVe Acne Foaming Cream Cleanser bleach clothing?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Yes. Benzoyl peroxide bleaches colored fabrics. Rinse your face and neck thoroughly after cleansing, and use white towels.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" onclick="this.parentElement.classList.toggle('active-faq')">
-            <span>Can CeraVe Acne Foaming Cream Cleanser be paired with Differin (Adapalene 0.1%)?</span>
-            <span class="faq-icon">+</span>
+
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Is this cleanser suitable for sensitive acne-prone skin?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Yes. The 4% BPO concentration combined with skin-identical ceramides makes it significantly more gentle than 10% BPO washes for sensitive or barrier-compromised skin.
+              </div>
+            </div>
           </div>
-          <div class="faq-answer">
-            <p>Yes! Use CeraVe 4% BPO Cleanser in the morning to sterilize pores, and apply Differin 0.1% Gel at night on dry skin. This is one of the top OTC acne routines recommended by US dermatologists.</p>
+
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>How long should I leave CeraVe 4% BPO wash on my face?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Massage gently onto wet skin for 1 to 2 minutes to allow active Benzoyl Peroxide contact time before rinsing completely with lukewarm water.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question" onclick="this.parentElement.classList.toggle('active-faq')">
-            <span>Does CeraVe 4% BPO Cleanser clear blackheads?</span>
-            <span class="faq-icon">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>Benzoyl peroxide primarily targets acne bacteria and inflammatory papules/pustules. For stubborn blackheads and clogged pores, alternate with CeraVe Renewing SA Cleanser (Salicylic Acid).</p>
+
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Does CeraVe Acne Foaming Cream Cleanser cause purging?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <div class="faq-content">
+                Minor short-term clearing of pre-existing microcomedones can occur during weeks 1-2. If persistent raw burning or itching occurs, pause usage.
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <div class="dark-callout reveal">
-        <h2>Is Your Skincare Working Against You?</h2>
-        <p>Many "acne-clearing" products actually contain ingredients that feed the fungus that causes forehead bumps. Stop the guesswork.</p>
-        <p style="margin-bottom: 2rem;"><strong>Scan your face with MyMirror AI</strong> to get a personalized, active-safe routine that finally clears your skin for good.</p>
-        <a href="https://face3layerscanner.onrender.com/" class="btn-primary">Start Your Free AI Skin Scan Now</a>
-      </div>
-    </main>
+    </article>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="sidebar-card" style="background: var(--brand-light); border-color: rgba(236,97,14,0.2);">
-        <h4 style="color: var(--brand-dark);">💡 Medical Review</h4>
-        <p>All guides on MyMirror are reviewed by board-certified dermatologists. Protocol approved by <strong>Dr. Lipy Mehta</strong>.</p>
-      </div>
-
+    <!-- DESKTOP SIDEBAR -->
+    <aside class="desktop-sidebar">
       <div class="sidebar-card">
-        <h4>Key Protocol Rules</h4>
-        <ul style="list-style:none; padding:0;">
-          <li style="padding:6px 0; border-bottom:1px solid var(--border); font-size:13px;">✓ Apply on 100% dry skin</li>
-          <li style="padding:6px 0; border-bottom:1px solid var(--border); font-size:13px;">✓ Never pick active pimples</li>
-          <li style="padding:6px 0; font-size:13px;">✓ Daily SPF 50 is mandatory</li>
+        <h3 class="sidebar-title">💡 Medical Review</h3>
+        <p style="font-size:0.9rem; color:#475569; margin-bottom: 0.75rem;">All guides on MyMirror are reviewed by board-certified dermatologists. Protocol approved by <strong>Dr. Lipy Mehta</strong>.</p>
+        <ul class="sidebar-list">
+          <li><strong>Apply on 100% dry skin</strong> (for leave-ons)</li>
+          <li><strong>Never pick active pimples</strong></li>
+          <li><strong>Daily SPF 50 is mandatory</strong></li>
         </ul>
+      </div>
+
+      <div class="sidebar-card" style="background: linear-gradient(135deg, #FFF5EE 0%, #FFE1CE 100%); border-color: var(--brand-light);">
+        <h3 class="sidebar-title" style="color:var(--brand-dark);">AI Skin Diagnostics</h3>
+        <p style="font-size:0.875rem; color:#475569; margin-bottom:1rem;">
+          Get an instant 3-layer pore analysis &amp; personalized BPO routine tailored to your skin type.
+        </p>
+        <a href="https://face3layerscanner.onrender.com/" class="perimeter-cta" style="width:100%; text-align:center; padding:12px 20px; font-size:0.9rem;" target="_blank" rel="noopener">
+          Start Free AI Scan
+        </a>
       </div>
     </aside>
   </div>
 
-  <!-- Footer -->
-    <footer class="main-footer">
-    <img src="https://mymirror.fit/assets/logo-v4.png" alt="mymirror" class="footer-logo">
-    <p class="footer-text">&copy; 2026 MyMirror.fit • Science-Based Skin Health</p>
-  </footer>
-    <!-- Sticky Mobile CTA -->
-    <div class="sticky-cta-mobile">
-        <a href="https://face3layerscanner.onrender.com/" class="nav-cta" target="_blank" rel="noopener">Free AI Skin Analysis ✨</a>
+  <!-- STICKY BOTTOM MOBILE CTA BAR -->
+  <div class="sticky-bottom-bar">
+    <div class="mobile-bar-text">
+      <strong>Want a Custom Acne Routine?</strong>
+      <span>Analyze skin with 3-Layer AI</span>
     </div>
+    <a href="https://face3layerscanner.onrender.com/" class="mobile-bar-btn" target="_blank" rel="noopener">
+      Scan Face Now
+    </a>
+  </div>
 
-    <script>
-        // Scroll Reveal Animation
-        const obs = new IntersectionObserver(e => e.forEach(x => x.isIntersecting && x.target.classList.add('active')), { threshold: 0.1 });
-        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">MyMirror</div>
+        <p style="font-size:0.875rem; color:#94A3B8;">
+          Evidence-based skincare diagnostics and dermatological guides tailored for comprehensive skin health.
+        </p>
+        <div class="footer-disclaimer">
+          Medical Disclaimer: Content on MyMirror is for educational purposes only and does not constitute medical advice, diagnosis, or prescription. Always consult a qualified dermatologist for severe inflammatory acne or persistent cutaneous disorders.
+        </div>
+      </div>
+      <div>
+        <h4 style="color:#FFFFFF; font-size:1rem; margin-bottom:1rem;">Top Reviews</h4>
+        <ul style="list-style:none; line-height:2;">
+          <li><a href="/acne/panoxyl-4-percent-vs-10-percent-acne-wash-usa/" style="color:#94A3B8;">PanOxyl 4% vs 10% Wash</a></li>
+          <li><a href="/acne/differin-adapalene-0.1-percent-gel-usa/" style="color:#94A3B8;">Differin Adapalene 0.1% Gel</a></li>
+          <li><a href="/acne/cerave-resurfacing-retinol-serum-post-acne-marks-usa/" style="color:#94A3B8;">CeraVe Resurfacing Retinol</a></li>
+          <li><a href="/acne/hero-cosmetics-rescue-balm-post-blemish-cream-usa/" style="color:#94A3B8;">Hero Cosmetics Rescue Balm</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#FFFFFF; font-size:1rem; margin-bottom:1rem;">Interactive Tools</h4>
+        <ul style="list-style:none; line-height:2;">
+          <li><a href="https://face3layerscanner.onrender.com/" style="color:#FF8B42; font-weight:700;" target="_blank" rel="noopener">3-Layer AI Skin Scanner</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 MyMirror.fit. All rights reserved. Reviewed by Board-Certified Dermatologists.
+    </div>
+  </footer>
 
-        // Interactive FAQ Accordions
-        document.querySelectorAll('.faq-question').forEach(q => {
-            q.addEventListener('click', () => {
-                const item = q.parentElement;
-                const isActive = item.classList.contains('active-faq');
-                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active-faq'));
-                if (!isActive) {
-                    item.classList.add('active-faq');
-                }
-            });
+  <!-- JAVASCRIPT FOR ACCORDION -->
+  <script>
+    // FAQ Accordion Toggle
+    document.querySelectorAll('.faq-header').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const item = this.parentElement;
+        const isActive = item.classList.contains('active');
+        
+        // Close all other accordions
+        document.querySelectorAll('.faq-item').forEach(el => {
+          el.classList.remove('active');
         });
 
-        // Scroll Spy for TOC Links
-        const sections = document.querySelectorAll('section[id]');
-        const tocLinks = document.querySelectorAll('.toc-link');
-        window.addEventListener('scroll', () => {
-            let current = "";
-            sections.forEach(s => {
-                const sTop = s.offsetTop;
-                if (pageYOffset >= (sTop - 150)) {
-                    current = s.getAttribute('id');
-                }
-            });
-            tocLinks.forEach(l => {
-                l.classList.remove('active');
-                if (l.getAttribute('href').includes(current)) {
-                    l.classList.add('active');
-                }
-            });
-        });
-    </script>
+        // Toggle clicked accordion
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+
+    // Scroll Highlight for Sticky TOC
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('.section-block');
+      const navLinks = document.querySelectorAll('.toc-link');
+
+      let currentSection = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        if (window.scrollY >= sectionTop) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
