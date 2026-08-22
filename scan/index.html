@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant AI Skin Scan | MyMirror</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QR2SPD4MZM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QR2SPD4MZM');
+    </script>
+    <script>
+        window.MEDIAPIPE_FACE_MESH_VERSION = '0.4.1633559619';
+        window.MEDIAPIPE_CAMERA_UTILS_VERSION = '0.3.1675466862';
+        window.MEDIAPIPE_DRAWING_UTILS_VERSION = '0.3.1675466124';
+    </script>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4.1633559619/face_mesh.js" as="script" crossorigin="anonymous">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4.1633559619/face_mesh_solution_packed_assets_loader.js" as="script" crossorigin="anonymous">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4.1633559619/face_mesh_solution_simd_wasm_bin.js" as="script" crossorigin="anonymous">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4.1633559619/face_mesh_solution_packed_assets.data" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4.1633559619/face_mesh_solution_simd_wasm_bin.wasm" as="fetch" type="application/wasm" crossorigin="anonymous">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4.1633559619/face_mesh.binarypb" as="fetch" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- MediaPipe Face Mesh -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4.1633559619/face_mesh.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3.1675466862/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3.1675466124/drawing_utils.js" crossorigin="anonymous"></script>
+</head>
+<body class="home-active">
+    <div class="background-overlay"></div>
+
+    <!-- mymirror brand header — keeps scanner feeling like one product -->
+    <header class="mm-header">
+        <a href="https://mymirror.fit" target="_blank" rel="noopener">
+            <img src="/assets/logo-v4.png" alt="mymirror">
+            <span class="mm-tool-label">Skin Analysis</span>
+        </a>
+    </header>
+
+    <div class="container">
+        <main>
+            <!-- INITIALIZATION / START VIEW -->
+            <div id="setupView" class="view-panel setup-panel">
+                <div class="launch-copy">
+                    <div id="setupKicker" class="launch-kicker">mymirror skin scan</div>
+                    <h1 id="setupTitle" class="launch-title">Free AI Skin Analysis</h1>
+                    <p class="instruction">Scan your face to understand visible acne zones, oiliness, marks, texture, and skin-age signals in about 60 seconds.</p>
+                    <button id="startScanner" class="premium-btn">START FREE SKIN ANALYSIS</button>
+                    <p class="cta-note">Camera opens next. No app install.</p>
+
+                    <div class="trust-chips" aria-label="Scan trust signals">
+                        <span>Private camera scan</span>
+                        <span>No signup required</span>
+                        <span>You review before analysis</span>
+                    </div>
+                </div>
+
+                <div class="launch-visual" aria-label="Skin scan report preview">
+                    <div class="face-preview">
+                        <div class="scan-frame">
+                            <div class="face-oval">
+                                <span class="face-nose"></span>
+                                <span class="face-mouth"></span>
+                                <span class="mesh-line mesh-brow"></span>
+                                <span class="mesh-line mesh-cheek"></span>
+                                <span class="zone-dot dot-forehead"></span>
+                                <span class="zone-dot dot-cheek-left"></span>
+                                <span class="zone-dot dot-cheek-right"></span>
+                                <span class="zone-dot dot-chin"></span>
+                            </div>
+                            <div class="scan-line"></div>
+                        </div>
+                    </div>
+
+                    <div class="sample-result-card">
+                        <div class="sample-header">
+                            <span>Report preview</span>
+                            <strong>Generated after scan</strong>
+                        </div>
+                        <div class="sample-metrics">
+                            <div>
+                                <span>Score cards</span>
+                                <strong>6 pillars</strong>
+                            </div>
+                            <div>
+                                <span>Region review</span>
+                                <strong>Face crops</strong>
+                            </div>
+                            <div>
+                                <span>Care map</span>
+                                <strong>Next steps</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scan-steps" aria-label="Scan steps">
+                    <div>
+                        <span>1</span>
+                        <strong>Position your face</strong>
+                    </div>
+                    <div>
+                        <span>2</span>
+                        <strong>15-second private scan</strong>
+                    </div>
+                    <div>
+                        <span>3</span>
+                        <strong>Get your skin report</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SCANNER VIEW -->
+            <div id="scannerView" class="view-panel hidden">
+                <div class="video-container">
+                    <div class="video-frame">
+                        <video id="video" autoplay muted playsinline></video>
+                        <canvas id="overlay"></canvas>
+
+                        <div id="scanStatus" class="scan-status-overlay">
+                            <div class="status-chip">
+                                <span class="status-indicator"></span>
+                                <span id="statusText">INITIALIZING...</span>
+                            </div>
+                        </div>
+
+                        <!-- Linear Progress Overlay -->
+                        <div id="analysisOverlay" class="analysis-layer hidden">
+                            <div class="linear-timer-container">
+                                <div class="timer-meta">
+                                    <span class="label">ANALYZING FACIAL MARKERS</span>
+                                    <span id="timerText" class="time-val">15.0s</span>
+                                </div>
+                                <div class="progress-bar-bg">
+                                    <div id="progressBarFill" class="progress-bar-fill"></div>
+                                </div>
+                                <div class="shimmer-text">Deeply analyzing your facial markers...</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Instruction overlay: outside video-frame so overflow:hidden cannot clip it -->
+                    <div id="instructionOverlay" class="instruction-overlay hidden"></div>
+
+                    <!-- NEW: LIVE REGION PREVIEW ROW -->
+                    <div id="liveRegionRow" class="live-region-row hidden">
+                        <div class="live-region-item" data-state="0">
+                            <canvas id="live-Forehead"></canvas>
+                            <div class="refining-indicator">FINDING</div>
+                            <div class="live-biometric-badge">BPM: <span id="liveBPM">--</span></div>
+                            <span>FOREHEAD</span>
+                        </div>
+                        <div class="live-region-item" data-state="0">
+                            <canvas id="live-Nose"></canvas>
+                            <div class="refining-indicator">FINDING</div>
+                            <span>NOSE</span>
+                        </div>
+                        <div class="live-region-item" data-state="0">
+                            <canvas id="live-Left-Cheek"></canvas>
+                            <div class="refining-indicator">FINDING</div>
+                            <span>L. CHEEK</span>
+                        </div>
+                        <div class="live-region-item" data-state="0">
+                            <canvas id="live-Right-Cheek"></canvas>
+                            <div class="refining-indicator">FINDING</div>
+                            <span>R. CHEEK</span>
+                        </div>
+                        <div class="live-region-item" data-state="0">
+                            <canvas id="live-Chin"></canvas>
+                            <div class="refining-indicator">FINDING</div>
+                            <span>CHIN</span>
+                        </div>
+                        <div class="live-region-item" data-state="0">
+                            <canvas id="live-Jawline"></canvas>
+                            <div class="refining-indicator">FINDING</div>
+                            <span>JAWLINE</span>
+                        </div>
+                    </div>
+                    <div id="regionReadyCount" class="region-ready-count hidden">Building region checklist</div>
+
+                    <!-- Mobile-only: compact region quality list replaces live tiles -->
+                    <div id="mobileScanProgress" class="mobile-scan-progress hidden">
+                        <div class="msp-item" data-region="live-Forehead" data-state="0">
+                            <span class="msp-dot"></span>
+                            <span class="msp-name">FOREHEAD</span>
+                            <span class="msp-state">FINDING</span>
+                        </div>
+                        <div class="msp-item" data-region="live-Nose" data-state="0">
+                            <span class="msp-dot"></span>
+                            <span class="msp-name">NOSE</span>
+                            <span class="msp-state">FINDING</span>
+                        </div>
+                        <div class="msp-item" data-region="live-Left-Cheek" data-state="0">
+                            <span class="msp-dot"></span>
+                            <span class="msp-name">L. CHEEK</span>
+                            <span class="msp-state">FINDING</span>
+                        </div>
+                        <div class="msp-item" data-region="live-Right-Cheek" data-state="0">
+                            <span class="msp-dot"></span>
+                            <span class="msp-name">R. CHEEK</span>
+                            <span class="msp-state">FINDING</span>
+                        </div>
+                        <div class="msp-item" data-region="live-Chin" data-state="0">
+                            <span class="msp-dot"></span>
+                            <span class="msp-name">CHIN</span>
+                            <span class="msp-state">FINDING</span>
+                        </div>
+                        <div class="msp-item" data-region="live-Jawline" data-state="0">
+                            <span class="msp-dot"></span>
+                            <span class="msp-name">JAWLINE</span>
+                            <span class="msp-state">FINDING</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEW: REGION CONFIRMATION VIEW -->
+            <div id="regionConfirmationView" class="view-panel hidden">
+                <div class="processing-header">
+                    <h2>Verify <span class="accent">Regions</span></h2>
+                </div>
+                
+                <div id="regionImagesGrid" class="region-images-grid">
+                    <!-- Crops will be injected here -->
+                </div>
+
+                <div class="confirmation-actions">
+                    <button id="confirmRegionsBtn" class="premium-btn">CONFIRM & PROCEED</button>
+                    <button id="retryScanBtn" class="text-btn">BACK TO SCAN</button>
+                </div>
+            </div>
+
+            <!-- NEW ANALYSIS/LOADING VIEW -->
+            <div id="analysisView" class="view-panel hidden">
+                <div class="processing-header">
+                    <div class="dna-spinner" style="margin: 0 auto 15px auto;"></div>
+                    <h2>Facial Topography <span class="accent">Mapped</span></h2>
+                    <p class="tagline">Building your AI skin report. This can take up to 30 seconds.</p>
+                </div>
+                
+                <div class="vitals-snapshot hidden" aria-hidden="true">
+                    <div class="v-snap-card">
+                        <span class="v-label">HEART RATE</span>
+                        <span id="previewBPM" class="v-val">--</span>
+                        <span class="v-unit">BPM</span>
+                    </div>
+                    <div class="v-snap-card">
+                        <span class="v-label">RESPIRATION</span>
+                        <span id="previewResp" class="v-val">--</span>
+                        <span class="v-unit">BR/M</span>
+                    </div>
+                    <div class="v-snap-card">
+                        <span class="v-label">BLINK RATE</span>
+                        <span id="previewBlink" class="v-val">--</span>
+                        <span class="v-unit">BLINKS/M</span>
+                    </div>
+                </div>
+
+                <div class="deep-scan-notice">
+                    <div class="analysis-stage-list" aria-label="Report build stages">
+                        <span class="analysis-stage active" data-analysis-stage="0">Crops verified</span>
+                        <span class="analysis-stage" data-analysis-stage="1">AI review</span>
+                        <span class="analysis-stage" data-analysis-stage="2">Care map</span>
+                    </div>
+                    <div class="analysis-status-row">
+                        <p id="dynamicLoadingText">Preparing your verified face crops...</p>
+                        <strong id="analysisTimeHint">Up to 30 sec</strong>
+                    </div>
+                    <div class="mini-progress-bg"><div id="deepProgressFill" class="mini-progress-fill"></div></div>
+                </div>
+            </div>
+
+            <!-- RESULTS VIEW -->
+            <section id="resultsSection" class="view-panel hidden">
+                <div class="results-header">
+                    <h2>Your Skin Scan Results</h2>
+                    <button id="resetBtn" class="text-btn">RESCAN</button>
+                </div>
+                
+                <div class="results-container">
+                    <div id="resultsGrid" class="results-grid">
+                        <!-- Score cards will be injected here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2026 MyMirror AI Skin Scan. Private & Secure.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

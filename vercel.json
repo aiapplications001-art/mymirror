@@ -266,18 +266,8 @@
       "permanent": true
     },
     {
-      "source": "/scan",
-      "destination": "https://face3layerscanner.onrender.com/",
-      "permanent": true
-    },
-    {
-      "source": "/scan/",
-      "destination": "https://face3layerscanner.onrender.com/",
-      "permanent": true
-    },
-    {
-      "source": "/scan/:path*",
-      "destination": "https://face3layerscanner.onrender.com/:path*",
+      "source": "/acne/salicylic-acid-for-blackheads-usa/",
+      "destination": "/acne/salicylic-acid-serum-for-blackheads-usa/",
       "permanent": true
     }
   ],
