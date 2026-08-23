@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "image-manifest.v1",
+  "page": "can-you-analyse-my-face",
+  "assets": [
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "filePath": "/assets/skin-analysis/online-skin-analysis-hero-v2.png",
+      "altText": "A person using a phone for a private MyMirror face analysis",
+      "status": "existing_brand_asset"
+    }
+  ]
+}

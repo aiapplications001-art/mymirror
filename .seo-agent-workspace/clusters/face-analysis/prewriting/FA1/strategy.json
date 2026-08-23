@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "prewriting-strategy.v1",
+  "pageId": "FA1",
+  "cluster": "face-analysis",
+  "slug": "can-you-analyse-my-face",
+  "pageType": "informational_decision_guide",
+  "primaryKeyword": "can you analyse my face and tell me what problems I have",
+  "audience": "People looking for a private, practical way to organise visible facial-skin concerns before changing their routine.",
+  "tone": {
+    "primary": "calm, transparent, practical",
+    "selectionBasis": "User-approved page direction and CTA"
+  },
+  "contentDepth": {
+    "minimumWords": 1500,
+    "maximumWords": 1900
+  },
+  "cta": {
+    "destination": "/scan",
+    "label": "Start your free skin analysis now",
+    "firstFoldRequired": true,
+    "mobileStickyRequired": true
+  },
+  "pageStructure": {
+    "intentPattern": "informational",
+    "structureVariant": "educational_guide",
+    "uniqueComponent": "five-area face map with a visible-signal-to-next-step matrix",
+    "sections": [
+      "hero",
+      "quick_answer",
+      "face_map",
+      "photo_quality",
+      "signal_matrix",
+      "trust_boundary",
+      "escalation",
+      "photo_checklist",
+      "faq",
+      "final_cta"
+    ]
+  },
+  "sources": [
+    "https://mymirror.fit/",
+    "https://www.aad.org/public/fad/digital-health/taking-pictures-skin",
+    "https://www.aad.org/public/diseases/acne/really-acne/stubborn-acne",
+    "https://www.nhs.uk/conditions/moles/"
+  ],
+  "status": "approved_for_drafting"
+}

@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v2",
+    "companyName": "MyMirror",
+    "pageId": "FA1",
+    "market": "India",
+    "pageType": "informational_decision_guide",
+    "createdDate": "2026-08-23"
+  },
+  "seo": {
+    "title": "Can You Analyse My Face? A Calm Face Scan | MyMirror",
+    "description": "Can MyMirror analyse your face? Start a free face scan to organise visible acne, oiliness, marks and texture—without treating a selfie as a diagnosis.",
+    "slug": "can-you-analyse-my-face",
+    "h1": "Can you analyse my face and tell me what you’re seeing?",
+    "primaryKeyword": "can you analyse my face and tell me what problems I have"
+  },
+  "cta": {
+    "primary": {
+      "label": "Start your free skin analysis now",
+      "destination": "/scan"
+    }
+  },
+  "images": [
+    {
+      "id": "IMG_HERO",
+      "sectionId": "S1_hero",
+      "filePath": "/assets/skin-analysis/online-skin-analysis-hero-v2.png",
+      "altText": "A person using a phone for a private MyMirror face analysis",
+      "status": "existing_brand_asset"
+    }
+  ],
+  "sources": [
+    "https://mymirror.fit/",
+    "https://www.aad.org/public/fad/digital-health/taking-pictures-skin",
+    "https://www.aad.org/public/diseases/acne/really-acne/stubborn-acne",
+    "https://www.nhs.uk/conditions/moles/"
+  ]
+}
