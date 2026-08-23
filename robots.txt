@@ -1,3 +1,33 @@
+# MyMirror.fit - Global & US Search Engine & AI Crawler Protocol
+# https://mymirror.fit/robots.txt
+
 User-agent: *
 Allow: /
+Disallow: /.vercel/
+Disallow: /local-preview/
+Disallow: /scratch/
+
+# Explicit Permissions for AI Search Engines & Medical Citation Engines
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap Index
 Sitemap: https://mymirror.fit/sitemap.xml
+
+# Canonical Host Directive
+Host: https://mymirror.fit
