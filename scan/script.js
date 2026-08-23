@@ -318,11 +318,20 @@ function observeAnalyticsOnce(element, eventName, params = {}) {
 async function sendLogToServer(scanMeta) {
     try {
         const payload = { scanMeta, entries: LOG_ENTRIES };
-        const res = await fetch('/scan-log/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
-        });
+        let res;
+        try {
+            res = await fetch('https://face3layerscanner.onrender.com/scan-log', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+        } catch (_) {
+            res = await fetch('/scan-log/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+        }
         const json = await res.json();
         if (json.success) {
             LOG.ok('Log saved to server', { filename: json.filename });
@@ -2642,11 +2651,21 @@ async function proceedToAnalysis() {
         LOG.info('Sending POST /analyze-face...');
         fetchStart = Date.now();
 
-        const response = await fetch('/analyze-face/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
-        });
+        let response;
+        try {
+            response = await fetch('https://face3layerscanner.onrender.com/analyze-face', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+        } catch (netErr) {
+            LOG.warn('Direct fetch failed, trying local proxy fallback...', { error: netErr });
+            response = await fetch('/analyze-face/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+        }
 
         const fetchMs = Date.now() - fetchStart;
         LOG.ok(`Response received in ${fetchMs}ms`, { status: response.status, ok: response.ok });
