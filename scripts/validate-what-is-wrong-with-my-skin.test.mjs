@@ -16,7 +16,7 @@ test('the skin concern guide provides a long-form, scan-ready self-triage experi
   assert.match(html, /Help your MyMirror scan see the clearest picture/);
   assert.doesNotMatch(html, /Take a useful photo, not a flattering one/);
   assert.match(html, /what-is-wrong-with-my-skin-hero-v1\.png/);
-  assert.match(html, /padding:44px max\(40px,calc\(\(100vw - 1160px\)\/2\)\) 44px 40px/);
+  assert.match(html, /padding:44px 40px 44px max\(40px,calc\(\(100vw - 1160px\)\/2\)\)/);
   assert.match(html, /When a scan is not the right next step/);
   assert.equal((html.match(/<details>/g) || []).length, 8);
   assert.ok(html.match(/<main[\s\S]*<\/main>/)?.[0].replace(/<[^>]+>/g, ' ').trim().split(/\s+/).length > 1500);
