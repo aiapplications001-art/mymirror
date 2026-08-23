@@ -1,0 +1,12 @@
+{
+  "pageId": "SC1",
+  "visuals": [
+    {
+      "role": "hero",
+      "asset": "/assets/skin-analysis/online-skin-analysis-hero-v2.png",
+      "ownership": "existing first-party MyMirror asset",
+      "alt": "Person holding a phone to begin a private MyMirror skin analysis"
+    }
+  ],
+  "thirdPartyAssets": false
+}
