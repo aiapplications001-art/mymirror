@@ -3,9 +3,9 @@
   "visuals": [
     {
       "role": "hero",
-      "asset": "/assets/skin-analysis/online-skin-analysis-hero-v2.png",
-      "ownership": "existing first-party MyMirror asset",
-      "alt": "Person holding a phone to begin a private MyMirror skin analysis"
+      "asset": "/assets/skin-analysis/what-is-wrong-with-my-skin-hero-v1.png",
+      "ownership": "first-party MyMirror image generated for SC1",
+      "alt": "Woman using a phone to begin a private MyMirror skin analysis at home"
     }
   ],
   "thirdPartyAssets": false
