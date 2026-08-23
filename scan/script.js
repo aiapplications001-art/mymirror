@@ -318,7 +318,7 @@ function observeAnalyticsOnce(element, eventName, params = {}) {
 async function sendLogToServer(scanMeta) {
     try {
         const payload = { scanMeta, entries: LOG_ENTRIES };
-        const res = await fetch('/scan-log', {
+        const res = await fetch('/scan-log/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
@@ -2642,7 +2642,7 @@ async function proceedToAnalysis() {
         LOG.info('Sending POST /analyze-face...');
         fetchStart = Date.now();
 
-        const response = await fetch('/analyze-face', {
+        const response = await fetch('/analyze-face/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)

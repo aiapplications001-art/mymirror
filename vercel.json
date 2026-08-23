@@ -277,6 +277,18 @@
       "destination": "https://face3layerscanner.onrender.com/analyze-face"
     },
     {
+      "source": "/analyze-face/",
+      "destination": "https://face3layerscanner.onrender.com/analyze-face"
+    },
+    {
+      "source": "/scan-log",
+      "destination": "https://face3layerscanner.onrender.com/scan-log"
+    },
+    {
+      "source": "/scan-log/",
+      "destination": "https://face3layerscanner.onrender.com/scan-log"
+    },
+    {
       "source": "/scan-log/:path*",
       "destination": "https://face3layerscanner.onrender.com/scan-log/:path*"
     }
