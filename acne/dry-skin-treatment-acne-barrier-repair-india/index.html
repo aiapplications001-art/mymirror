@@ -150,30 +150,49 @@
     }
     .trust-reviewer { color: var(--success); font-weight: 700; }
 
-    /* PHOTO HERO (SECTION 9.8) */
-    .photo-hero {
-      position: relative; width: 100%; min-height: 440px; height: 55vh;
-      display: flex; align-items: flex-end; overflow: hidden; background: #120D0A;
+    /* DARK HERO SECTION */
+    .dark-hero {
+      background: linear-gradient(145deg, #180D0A 0%, #2D1710 100%); color: #F5EDE6; padding: 3.5rem 1.5rem; position: relative; overflow: hidden;
     }
-    .photo-hero-bg {
-      position: absolute; inset: 0; background: url('/assets/images/dry_skin_treatment_india.jpg') center 25%/cover no-repeat;
+    .hero-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+    @media (max-width: 991px) { .hero-container { grid-template-columns: 1fr; gap: 2rem; } }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(236, 97, 14, 0.15); border: 1px solid rgba(236, 97, 14, 0.4);
+      color: #FF8B42; padding: 4px 14px; border-radius: 9999px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1.25rem;
     }
-    .photo-hero-overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(to top, rgba(18,13,10,0.92) 0%, rgba(18,13,10,0.45) 50%, rgba(18,13,10,0.1) 100%);
+    .hero-title { font-size: clamp(1.8rem, 4vw, 2.75rem); color: #FFFFFF; margin-bottom: 1.25rem; line-height: 1.18; }
+    .hero-subtitle { font-size: 1.05rem; color: #C4A898; margin-bottom: 2rem; line-height: 1.6; }
+    .hero-meta-list { display: flex; flex-wrap: wrap; gap: 1.25rem; margin-bottom: 2rem; font-size: 0.875rem; color: #E8DDD5; }
+    .hero-meta-item { display: flex; align-items: center; gap: 0.4rem; }
+    .hero-meta-item svg { width: 16px; height: 16px; fill: #FF8B42; }
+
+    /* PERIMETER CTA */
+    .perimeter-cta {
+      position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
+      padding: 16px 32px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 1.05rem;
+      color: #FFFFFF !important; background: #EC610E; border-radius: 9999px; text-decoration: none !important;
+      overflow: hidden; z-index: 1; transition: transform 0.25s var(--bouncy), box-shadow 0.25s ease; box-shadow: 0 6px 24px rgba(236, 97, 14, 0.4);
     }
-    .photo-hero-content {
-      position: relative; z-index: 2; padding: 0 2rem 3.5rem; max-width: 960px; margin: 0 auto; width: 100%;
+    .perimeter-cta::before {
+      content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+      background: conic-gradient(transparent 0deg, #FFFFFF 90deg, #FFE1CE 180deg, transparent 270deg);
+      animation: rotate-rail 3.5s linear infinite; z-index: -2;
     }
-    .photo-hero-badge {
-      display: inline-block; padding: 4px 14px; border-radius: 9999px; font-size: 0.75rem; font-weight: 700;
-      background: var(--brand); color: #FFFFFF; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 1rem;
+    .perimeter-cta::after {
+      content: ''; position: absolute; inset: 3px; background: linear-gradient(135deg, #EC610E 0%, #C14800 100%); border-radius: 9999px; z-index: -1;
     }
-    .photo-hero-title {
-      font-size: clamp(2rem, 5vw, 3.2rem); color: #FFFFFF; font-family: 'Kantumruy Pro', serif;
-      line-height: 1.15; text-shadow: 0 2px 20px rgba(0,0,0,0.5); margin-bottom: 1rem;
+    @keyframes rotate-rail { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    .perimeter-cta:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(236, 97, 14, 0.6); }
+
+    .hero-image-card {
+      position: relative; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 20px 40px rgba(0,0,0,0.5);
     }
-    .photo-hero-sub { color: rgba(255,255,255,0.9); font-size: 1.1rem; max-width: 720px; line-height: 1.5; }
+    .hero-image-card img { width: 100%; height: auto; object-fit: cover; }
+    .hero-image-tag {
+      position: absolute; bottom: 1rem; left: 1rem; right: 1rem; background: rgba(24, 13, 10, 0.9); backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15); padding: 0.75rem 1rem; border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: space-between; font-size: 0.825rem; color: #F5EDE6;
+    }
 
     /* STICKY TOC BAR */
     .sticky-toc-bar {
@@ -296,16 +315,48 @@
     <span>Updated August 2026</span>
   </div>
 
-  <!-- PHOTO HERO SECTION (SECTION 9.8) -->
-  <section class="photo-hero">
-    <div class="photo-hero-bg"></div>
-    <div class="photo-hero-overlay"></div>
-    <div class="photo-hero-content">
-      <span class="photo-hero-badge">Clinical Barrier Hub (2026)</span>
-      <h1 class="photo-hero-title">Dry Skin Treatment & Acne Barrier Repair in India</h1>
-      <p class="photo-hero-sub">
-        Dry, flaking skin and compromised barrier function cause sticky micro-comedones and inflammation. Discover non-comedogenic ceramide lipid repair, humectant physics, and hard water defense.
-      </p>
+  <!-- DARK HERO SECTION -->
+  <section class="dark-hero">
+    <div class="hero-container">
+      <div class="hero-text-col">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          Clinical Barrier Hub (2026)
+        </div>
+        <h1 class="hero-title">Dry Skin Treatment & Acne Barrier Repair in India</h1>
+        <p class="hero-subtitle">
+          Dry, flaking skin and compromised barrier function cause sticky micro-comedones and inflammation. Discover non-comedogenic ceramide lipid repair, humectant physics, and hard water defense.
+        </p>
+        <div class="hero-meta-list">
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            1:1:1 Ceramide Ratio
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            Non-Comedogenic Repair
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            TEWL Reduction
+          </div>
+        </div>
+
+        <a href="https://mymirror.fit/scan/" class="perimeter-cta" target="_blank" rel="noopener">
+          <span>Scan Barrier Health & Dry Skin ✨</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+
+      <div class="hero-image-col">
+        <div class="hero-image-card">
+          <img src="/assets/images/dry_skin_treatment_india.jpg" alt="Clinical photography of dry skin treatment and barrier repair" width="600" height="338" loading="eager">
+          <div class="hero-image-tag">
+            <span><strong>Dry Skin & Barrier Repair</strong> in India</span>
+            <span style="color: #FF8B42; font-weight: 700;">Clinical Protocol</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -362,7 +413,7 @@
           <div id="remedyStage" class="remedy-stage">
             <div class="remedy-stage-grid">
               <div id="remedyContent">
-                <span style="display:inline-block;padding:4px 12px;border-radius:9999px;font-size:0.75rem;font-weight:700;background:#2D7A4F;color:#fff;margin-bottom:0.75rem;">Natural botanical Stage</span>
+                <span style="display:inline-block;padding:4px 12px;border-radius:9999px;font-size:0.75rem;font-weight:700;background:#2D7A4F;color:#fff;margin-bottom:0.75rem;">Natural Botanical Stage</span>
                 <h3 style="font-size:1.35rem;margin-bottom:0.75rem;">Centella Asiatica (Cica) & Squalane</h3>
                 <p style="font-size:0.9rem;color:#1A1410;">
                   Purified Centella Asiatica (Cica) provides anti-inflammatory triterpenoids (Madecassoside) that soothe burning dryness without oleic oil triggers. Plant-derived Squalane mimics natural human skin lipids, sealing moisture without clogging acne-prone pores.
@@ -407,7 +458,7 @@
           </div>
 
           <div class="bento-card-v2">
-            <span style="display:inline-block;padding:4px 12px;border-radius:9999px;font-size:0.75rem;font-weight:700;background:# fee2e2;color:#C0392B;margin-bottom:0.75rem;">Pillar 3 • Occlusives</span>
+            <span style="display:inline-block;padding:4px 12px;border-radius:9999px;font-size:0.75rem;font-weight:700;background:#fee2e2;color:#C0392B;margin-bottom:0.75rem;">Pillar 3 • Occlusives</span>
             <h3 style="font-size:1.15rem;margin-bottom:0.5rem;">Emollient Seals</h3>
             <p style="font-size:0.875rem;">
               Lightweight Dimethicone and Squalane lock in humectant moisture without pore congestion.
@@ -573,11 +624,11 @@
 
       <div class="sidebar-card">
         <h4 class="sidebar-title">Quick Dry Skin Rules</h4>
-        <ul class="sidebar-list">
-          <li>Apply humectants on damp skin</li>
-          <li>Use 1:1:1 Ceramide creams</li>
-          <li>Wash with RO/filtered water</li>
-          <li>Avoid coconut oil on face</li>
+        <ul style="list-style: none; font-size: 0.875rem; line-height: 1.8;">
+          <li>✓ Apply humectants on damp skin</li>
+          <li>✓ Use 1:1:1 Ceramide creams</li>
+          <li>✓ Wash with RO/filtered water</li>
+          <li>✓ Avoid coconut oil on face</li>
         </ul>
       </div>
 
