@@ -249,20 +249,19 @@
     .bento-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); border-color: var(--brand); }
 
     /* PRODUCT SHOWCASE CARDS */
-    .product-showcase-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2.5rem 0; }
-    @media (max-width: 991px) { .product-showcase-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 640px) { .product-showcase-grid { grid-template-columns: 1fr; } }
+    .product-showcase-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.75rem; margin: 2.5rem 0; }
+    @media (max-width: 768px) { .product-showcase-grid { grid-template-columns: 1fr; } }
     
     .product-card {
-      background: #FFFFFF; border: 1px solid var(--border); border-radius: 20px; padding: 1.5rem;
+      background: #FFFFFF; border: 1px solid var(--border); border-radius: 20px; padding: 1.75rem;
       box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s var(--bouncy);
     }
     .product-card:hover { border-color: var(--brand); box-shadow: var(--shadow-md); transform: translateY(-6px); }
-    .product-badge-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
+    .product-badge-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
     .brand-pill { font-size: 0.75rem; font-weight: 800; text-transform: uppercase; background: var(--brand-light); color: var(--brand-dark); padding: 4px 12px; border-radius: 9999px; }
     .nykaa-rating { font-size: 0.85rem; font-weight: 700; color: #D97706; background: #FFFBEB; border: 1px solid #FCD34D; padding: 3px 10px; border-radius: 20px; }
-    .product-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text); }
-    .product-reason { font-size: 0.85rem; color: var(--text-2); margin-bottom: 1rem; line-height: 1.5; }
+    .product-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text); }
+    .product-reason { font-size: 0.875rem; color: var(--text-2); margin-bottom: 1rem; line-height: 1.5; }
     
     .product-meta-list { list-style: none; font-size: 0.825rem; margin-bottom: 1.25rem; }
     .product-meta-list li { margin-bottom: 0.4rem; display: flex; align-items: flex-start; gap: 6px; }
@@ -514,12 +513,12 @@
           <!-- PRODUCT 1 -->
           <div class="product-card">
             <div>
-              <div class="product-image-wrap" style="width: 100%; height: 180px; border-radius: 14px; overflow: hidden; margin-bottom: 1rem; background: #F9F6F3; border: 1px solid var(--border);">
+              <div class="product-image-wrap" style="width: 100%; height: 200px; border-radius: 14px; overflow: hidden; margin-bottom: 1.25rem; background: #F9F6F3; border: 1px solid var(--border);">
                 <img src="/assets/images/salicylic_dropper.jpg" alt="Minimalist 2% Salicylic Acid Serum product photo" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
               </div>
               <div class="product-badge-row">
                 <span class="brand-pill">Minimalist • 2% BHA</span>
-                <span class="nykaa-rating">⭐ 4.7 / 5</span>
+                <span class="nykaa-rating">⭐ 4.7 / 5 (Nykaa)</span>
               </div>
               <h3 class="product-title">Minimalist 2% Salicylic Acid Serum</h3>
               <p class="product-reason">
@@ -540,12 +539,12 @@
           <!-- PRODUCT 2 -->
           <div class="product-card">
             <div>
-              <div class="product-image-wrap" style="width: 100%; height: 180px; border-radius: 14px; overflow: hidden; margin-bottom: 1rem; background: #F9F6F3; border: 1px solid var(--border);">
+              <div class="product-image-wrap" style="width: 100%; height: 200px; border-radius: 14px; overflow: hidden; margin-bottom: 1.25rem; background: #F9F6F3; border: 1px solid var(--border);">
                 <img src="/assets/images/niacinamide_dropper.jpg" alt="Minimalist 5% Niacinamide Serum product photo" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
               </div>
               <div class="product-badge-row">
                 <span class="brand-pill">Minimalist • 5% Niacinamide</span>
-                <span class="nykaa-rating">⭐ 4.8 / 5</span>
+                <span class="nykaa-rating">⭐ 4.8 / 5 (Nykaa)</span>
               </div>
               <h3 class="product-title">Minimalist 5% Niacinamide Serum</h3>
               <p class="product-reason">
@@ -566,12 +565,12 @@
           <!-- PRODUCT 3 -->
           <div class="product-card">
             <div>
-              <div class="product-image-wrap" style="width: 100%; height: 180px; border-radius: 14px; overflow: hidden; margin-bottom: 1rem; background: #F9F6F3; border: 1px solid var(--border);">
+              <div class="product-image-wrap" style="width: 100%; height: 200px; border-radius: 14px; overflow: hidden; margin-bottom: 1.25rem; background: #F9F6F3; border: 1px solid var(--border);">
                 <img src="/assets/images/sebogel-pharmacy-bha.jpg" alt="Sebogel BHA Niacinamide Gel product photo" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
               </div>
               <div class="product-badge-row">
                 <span class="brand-pill">Sebogel • 2-in-1 Pharmacy Gel</span>
-                <span class="nykaa-rating">⭐ 4.6 / 5</span>
+                <span class="nykaa-rating">⭐ 4.6 / 5 (Nykaa)</span>
               </div>
               <h3 class="product-title">Sebogel Salicylic Acid + Niacinamide Gel</h3>
               <p class="product-reason">
