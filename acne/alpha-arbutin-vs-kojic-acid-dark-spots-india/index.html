@@ -266,18 +266,18 @@
     <a class="nav-logo" href="/"><img fetchpriority="high" decoding="async" src="/acne/forehead-acne/logo-v4.png" alt="MyMirror"></a>
     <ul style="display:flex;gap:16px;list-style:none;align-items:center;">
       <li><a href="/acne/" style="text-decoration:none;font-size:13px;font-weight:600;color:var(--text-2);">Knowledge Hub</a></li>
-      <li><a href="https://mymirror.fit/analyze-face" class="nav-cta" target="_blank" rel="noopener">Free Skin Scan →</a></li>
+      <li><a href="https://mymirror.fit/scan/" class="nav-cta" target="_blank" rel="noopener">Free Skin Scan →</a></li>
     </ul>
   </div>
 </nav>
 
 <section class="hero">
-  <div class="hero-inner">
+  <div class="hero-inner reveal">
     <div class="hero-text">
       <div class="hero-tag">🧪 Tyrosinase Inhibitor Guide · Indian Hyperpigmentation</div>
       <h1>Alpha Arbutin vs. Kojic Acid for Dark Spots in India</h1>
       <p class="hero-sub">A comprehensive clinical evaluation comparing 2% Alpha Arbutin vs 1%–2% Kojic Acid for fading stubborn Post-Inflammatory Hyperpigmentation (PIH) and melasma on Fitzpatrick IV–VI Indian skin.</p>
-      <a href="https://mymirror.fit/analyze-face" class="btn-hero" target="_blank" rel="noopener">🔬 Scan My Dark Spot Type — Free</a>
+      <a href="https://mymirror.fit/scan/" class="btn-hero" target="_blank" rel="noopener">🔬 Scan My Dark Spot Type — Free</a>
       <p class="hero-meta">Glycosylated hydroquinone vs copper chelation · 3-ingredient decision chart · 4 mechanisms · 6 products reviewed · 12-week protocol</p>
     </div>
     <div class="hero-image-wrap">
@@ -302,7 +302,7 @@
   <main>
 
     <!-- SECTION 1: TYROSINASE MECHANICS -->
-    <section class="content-section" id="what-it-does">
+    <section class="content-section reveal" id="what-it-does">
       <div class="section-header">
         <div class="section-num">1</div>
         <h2>The Molecular Biochemistry of Dark Spot Fading in Indian Skin</h2>
@@ -345,7 +345,7 @@
     </section>
 
     <!-- SECTION 2: DECISION CHART -->
-    <section class="content-section" id="strength-chart">
+    <section class="content-section reveal" id="strength-chart">
       <div class="section-header">
         <div class="section-num">2</div>
         <h2>Pigmentation Active Decision Chart — Alpha Arbutin vs Kojic Acid vs Hydroquinone</h2>
@@ -410,7 +410,7 @@
     </section>
 
     <!-- SECTION 3: COMPARISON MATRIX -->
-    <section class="content-section" id="vs-comparison">
+    <section class="content-section reveal" id="vs-comparison">
       <div class="section-header">
         <div class="section-num">3</div>
         <h2>Clinical Comparison Matrix: Alpha Arbutin vs Kojic Acid</h2>
@@ -458,7 +458,7 @@
     </section>
 
     <!-- SECTION 4: INDIA PRODUCTS -->
-    <section class="content-section" id="products">
+    <section class="content-section reveal" id="products">
       <div class="section-header">
         <div class="section-num">4</div>
         <h2>Best Dermatologist-Evaluated Products Available in India</h2>
@@ -510,7 +510,7 @@
     </section>
 
     <!-- SECTION 5: 12-WEEK ROUTINE -->
-    <section class="content-section" id="routine">
+    <section class="content-section reveal" id="routine">
       <div class="section-header">
         <div class="section-num">5</div>
         <h2>The 12-Week Post-Acne Hyperpigmentation Protocol</h2>
@@ -542,7 +542,7 @@
     </section>
 
     <!-- SECTION 6: FAQ -->
-    <section class="content-section faq-section" id="faq">
+    <section class="content-section reveal faq-section" id="faq">
       <div class="section-header">
         <div class="section-num">6</div>
         <h2>Frequently Asked Questions</h2>
@@ -590,7 +590,7 @@
     <div class="sidebar-cta">
       <h4>🔬 Analyze Skin Pigmentation</h4>
       <p>Upload a photo to analyze your dark spot depth and receive an evidence-based routine.</p>
-      <a href="https://mymirror.fit/analyze-face" class="btn-white" target="_blank" rel="noopener">Scan Dark Spots →</a>
+      <a href="https://mymirror.fit/scan/" class="btn-white" target="_blank" rel="noopener">Scan Dark Spots →</a>
     </div>
 
     <div class="sidebar-card">
@@ -607,10 +607,33 @@
 <footer>
   <p style="font-weight:700;color:var(--text-2);margin-bottom:8px;">MyMirror Evidence-Based Dermatology Hub</p>
   <p>© 2026 MyMirror. All rights reserved. Reviewed August 2026 by Dr. Lipy Mehta.</p>
-  <p><a href="/" style="color:var(--brand);">Home</a> · <a href="/acne/" style="color:var(--brand);">Acne Knowledge Hub</a> · <a href="https://mymirror.fit/analyze-face" style="color:var(--brand);">AI Skin Scanner</a></p>
+  <p><a href="/" style="color:var(--brand);">Home</a> · <a href="/acne/" style="color:var(--brand);">Acne Knowledge Hub</a> · <a href="https://mymirror.fit/scan/" style="color:var(--brand);">AI Skin Scanner</a></p>
 </footer>
 
 <script>
+  // Setup reveal animations
+  const revealElements = document.querySelectorAll('.reveal');
+  
+  const revealOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+  
+  const revealObserver = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        return;
+      } else {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, revealOptions);
+  
+  revealElements.forEach(el => {
+    revealObserver.observe(el);
+  });
+
   document.querySelectorAll('.faq-q').forEach(q => {
     q.addEventListener('click', () => {
       const a = q.nextElementSibling;
