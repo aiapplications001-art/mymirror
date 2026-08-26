@@ -31,7 +31,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
@@ -79,18 +79,11 @@
       --border: #E8DDD5;
       --border-subtle: #F0E6DF;
       --bg-body: #FFFFFF;
-      --bg2: #F9F6F3;
-      --bg3: #F2EDE8;
-      --bg-hero: #0a0a0c;
-      --bg-hero-end: #1a1410;
-      --bg-table-head: #2D231E;
-      --bg-first-col: #FDFCFB;
-      --radius: 16px;
-      --radius-sm: 10px;
+      --bg2: #F4EFEA;
+      --radius: 20px;
+      --radius-sm: 12px;
       --font-head: 'Kantumruy Pro', sans-serif;
       --font-body: 'Plus Jakarta Sans', sans-serif;
-      --shadow-sm: 0 4px 20px rgba(26,20,16,0.05);
-      --shadow-md: 0 10px 30px rgba(236,97,14,0.08);
       --danger: #D32F2F;
       --danger-bg: #FFEBEE;
       --success: #2E7D32;
@@ -98,624 +91,354 @@
     }
 
     html { scroll-behavior: smooth; }
-
-    body {
-      font-family: var(--font-body);
-      background: var(--bg2);
-      color: var(--text-primary);
-      line-height: 1.7;
-      font-size: 16px;
-      overflow-x: hidden;
-    }
+    body { font-family: var(--font-body); background: var(--bg2); color: var(--text-primary); line-height: 1.7; font-size: 16px; overflow-x: hidden; }
 
     /* NAV */
     .nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-      background: rgba(10,10,12,0.92);
-      backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+      background: rgba(10,10,12,0.92); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
       border-bottom: 1px solid rgba(255,255,255,0.08);
       display: flex; align-items: center; justify-content: space-between;
       padding: 0 2rem; height: 60px;
     }
     .nav-logo img { height: 32px; width: auto; display: block; filter: brightness(0) invert(1); }
-    .nav-cta {
-      background: var(--brand); color: #fff; border: none;
-      padding: 0.45rem 1.1rem; border-radius: 999px;
-      font-family: var(--font-body); font-weight: 600; font-size: 0.85rem;
-      cursor: pointer; text-decoration: none;
-      transition: background 0.2s, transform 0.2s;
-    }
-    .nav-cta:hover { background: var(--brand-dark); transform: scale(1.04); }
+    .nav-cta { background: var(--brand); color: #fff; border: none; padding: 0.45rem 1.1rem; border-radius: 999px; font-weight: 600; font-size: 0.85rem; text-decoration: none; }
 
     /* TRUST BAR */
-    .trust-bar {
-      background: var(--brand-light);
-      border-bottom: 1px solid var(--border);
-      text-align: center; padding: 0.6rem 1rem;
-      font-size: 0.82rem; color: var(--text-secondary);
-      letter-spacing: 0.01em; margin-top: 60px;
-      font-weight: 500;
-    }
+    .trust-bar { background: var(--brand-light); border-bottom: 1px solid var(--border); text-align: center; padding: 0.6rem 1rem; font-size: 0.82rem; color: var(--text-secondary); margin-top: 60px; font-weight: 500; }
     .trust-bar span { color: var(--brand-dark); font-weight: 700; }
 
-    /* HERO */
-    .hero {
-      background: linear-gradient(135deg, var(--bg-hero) 0%, var(--bg-hero-end) 100%);
-      padding: 4.5rem 2rem 4rem; text-align: center;
-      position: relative; overflow: hidden; color: #fff;
+    /* CENTERED DASHBOARD HERO ARCHITECTURE */
+    .hero-dash {
+      background: linear-gradient(180deg, #0a0a0c 0%, #1c1511 100%);
+      padding: 4.5rem 1.5rem 3.5rem; color: #fff; text-align: center; position: relative;
     }
-    .hero::before {
-      content: ''; position: absolute; inset: 0;
-      background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(236,97,14,0.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero-tag {
-      display: inline-block; background: rgba(236,97,14,0.18);
-      border: 1px solid rgba(236,97,14,0.35); color: #FF9A5C;
-      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em;
-      text-transform: uppercase; padding: 0.35rem 0.95rem;
-      border-radius: 999px; margin-bottom: 1.2rem;
-    }
-    .hero h1 {
-      font-family: var(--font-head); font-size: clamp(1.8rem, 4.2vw, 3.1rem);
-      font-weight: 700; line-height: 1.25; max-width: 860px; margin: 0 auto 1.2rem;
-      background: linear-gradient(135deg, #ffffff 30%, #FFE1CE 100%);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-    }
-    .hero-sub { color: #D5C4B5; font-size: 1.05rem; max-width: 660px; margin: 0 auto 2rem; font-weight: 400; }
+    .hero-dash-inner { max-width: 860px; margin: 0 auto; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(236,97,14,0.18); border: 1px solid rgba(236,97,14,0.4); color: #FF9A5C; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; padding: 0.35rem 1rem; border-radius: 999px; margin-bottom: 1.2rem; }
+    .hero-dash h1 { font-family: var(--font-head); font-size: clamp(2rem, 4vw, 3.4rem); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; background: linear-gradient(135deg, #fff 30%, #FFE1CE 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero-dash p { color: #D5C4B5; font-size: 1.08rem; max-width: 680px; margin: 0 auto 2rem; }
 
-    /* PERIMETER-RAIL AI CTA */
-    .ai-cta-wrap {
-      display: inline-flex; flex-direction: column;
-      align-items: center; gap: 10px; margin-bottom: 0.5rem;
+    /* DASHBOARD WIDGET BAR */
+    .dash-widget-bar {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius); padding: 1.2rem; margin-top: 2rem; text-align: left;
     }
-    .ai-cta-btn {
-      position: relative; display: inline-flex;
-      align-items: center; justify-content: center; gap: 0.6rem;
-      padding: 0.85rem 2rem; border-radius: 999px;
-      background: var(--brand); color: #fff;
-      font-family: var(--font-body); font-weight: 800; font-size: 1rem;
-      text-decoration: none; white-space: nowrap;
-      box-shadow: 0 10px 30px rgba(236,97,14,0.4);
-      transition: transform 0.3s, box-shadow 0.3s;
-      z-index: 1;
-    }
-    .ai-cta-btn:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(236,97,14,0.6); }
-    .ai-cta-btn .icon { font-size: 1.2rem; }
-    .ai-cta-rail {
-      position: absolute; inset: -3px; border-radius: 999px;
-      padding: 3px; pointer-events: none; z-index: 0;
-      overflow: hidden;
-      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      mask-composite: exclude;
-      -webkit-mask-composite: xor;
-    }
-    .ai-cta-rail::before {
-      content: '';
-      position: absolute; top: 50%; left: 50%;
-      width: 400%; height: 400%;
-      background: conic-gradient(from 0deg, transparent 60%, #EC610E 75%, #FFE1CE 90%, #fff 100%);
-      animation: energy-loop 3.5s ease-in-out infinite;
-    }
-    @keyframes energy-loop {
-      0%   { transform: translate(-50%, -50%) rotate(0deg);   opacity: 0.3; }
-      50%  { opacity: 1; }
-      100% { transform: translate(-50%, -50%) rotate(720deg); opacity: 0.3; }
-    }
-    .ai-cta-note { font-size: 0.78rem; color: #A08D7E; display: block; text-align: center; }
+    @media (max-width: 700px) { .dash-widget-bar { grid-template-columns: 1fr; } }
+    .widget-item label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: #FF9A5C; font-weight: 700; display: block; }
+    .widget-item val { font-family: var(--font-head); font-size: 1.1rem; font-weight: 700; color: #fff; }
+
+    /* CONIC AI CTA */
+    .ai-cta-btn { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.85rem 2rem; border-radius: 999px; background: var(--brand); color: #fff; font-weight: 800; font-size: 1rem; text-decoration: none; box-shadow: 0 10px 30px rgba(236,97,14,0.4); }
 
     /* STICKY TOC */
-    .toc-bar {
-      position: sticky; top: 60px; z-index: 900;
-      background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-      overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none;
-      box-shadow: var(--shadow-sm);
-    }
-    .toc-bar::-webkit-scrollbar { display: none; }
-    .toc-inner { display: flex; gap: 0; min-width: max-content; padding: 0 1.5rem; max-width: 1180px; margin: 0 auto; }
-    .toc-link {
-      color: var(--text-secondary); text-decoration: none; font-size: 0.8rem;
-      font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase;
-      padding: 0.85rem 1.1rem; border-bottom: 3px solid transparent;
-      transition: color 0.2s, border-color 0.2s; white-space: nowrap;
-    }
+    .toc-bar { position: sticky; top: 60px; z-index: 900; background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); overflow-x: auto; scrollbar-width: none; }
+    .toc-inner { display: flex; gap: 0; min-width: max-content; padding: 0 1.5rem; max-width: 1200px; margin: 0 auto; }
+    .toc-link { color: var(--text-secondary); text-decoration: none; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; padding: 0.85rem 1.1rem; border-bottom: 3px solid transparent; }
     .toc-link:hover, .toc-link.active { color: var(--brand); border-bottom-color: var(--brand); }
 
-    /* LAYOUT */
-    .page-wrap {
-      max-width: 1180px; margin: 0 auto; padding: 3rem 1.5rem;
-      display: grid; grid-template-columns: 1fr 300px; gap: 2.5rem; align-items: start;
-    }
-    @media (max-width: 960px) {
-      .page-wrap { grid-template-columns: 1fr; padding: 2rem 1rem; }
-      .sidebar { display: none; }
-    }
+    /* LAB DASHBOARD GRID LAYOUT ARCHITECTURE */
+    .lab-layout { max-width: 1200px; margin: 0 auto; padding: 3rem 1.5rem; display: flex; flex-direction: column; gap: 2.5rem; }
 
-    /* SECTIONS */
-    .content-col section {
-      background: var(--bg-body); border-radius: var(--radius);
-      border: 1px solid var(--border); padding: 2rem;
-      margin-bottom: 2.5rem; opacity: 0; transform: translateY(24px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-      box-shadow: var(--shadow-sm);
-    }
-    .content-col section.revealed { opacity: 1; transform: none; }
-    @media (max-width: 600px) {
-      .content-col section { padding: 1.3rem; margin-bottom: 1.8rem; }
-    }
+    .dash-panel { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 2.2rem; box-shadow: 0 6px 24px rgba(0,0,0,0.04); }
+    @media (max-width: 600px) { .dash-panel { padding: 1.4rem; } }
 
-    h2 {
-      font-family: var(--font-head); font-size: clamp(1.3rem, 2.5vw, 1.8rem);
-      font-weight: 700; color: var(--text-primary); margin-bottom: 1.2rem;
-      padding-bottom: 0.6rem; border-bottom: 2px solid var(--brand-light);
-      line-height: 1.3;
-    }
-    h3 { font-family: var(--font-head); font-size: 1.15rem; font-weight: 600; color: var(--brand-dark); margin: 1.5rem 0 0.6rem; }
-    p { color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.98rem; }
-    strong { color: var(--text-primary); font-weight: 700; }
-    em { color: var(--brand-dark); font-style: normal; font-weight: 600; }
-    ul, ol { margin-left: 1.5rem; margin-bottom: 1.2rem; color: var(--text-secondary); }
-    li { margin-bottom: 0.5rem; }
+    h2 { font-family: var(--font-head); font-size: clamp(1.4rem, 2.5vw, 1.9rem); font-weight: 700; color: var(--text-primary); margin-bottom: 1.2rem; border-bottom: 2px solid var(--brand-light); padding-bottom: 0.5rem; }
+    p { color: var(--text-secondary); margin-bottom: 1rem; }
 
-    .hero-img-box {
-      width: 100%; border-radius: var(--radius); overflow: hidden;
-      margin: 1.5rem 0 2rem; border: 1px solid var(--border);
-    }
-    .hero-img-box img { width: 100%; height: auto; display: block; object-fit: cover; }
+    /* BESPOKE STRUCTURAL MODULE 1: INGREDIENT AUDIT DASHBOARD PANELS */
+    .audit-terminal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0; }
+    @media (max-width: 768px) { .audit-terminal-grid { grid-template-columns: 1fr; } }
+    .terminal-panel { border-radius: var(--radius); padding: 1.6rem; border: 1px solid var(--border); }
+    .terminal-panel.red { background: #FFF5F5; border-color: #FFCDD2; }
+    .terminal-panel.green { background: #F1F8E9; border-color: #C8E6C9; }
+    .term-title { font-family: var(--font-head); font-weight: 700; font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; justify-content: space-between; }
+    .terminal-panel.red .term-title { color: var(--danger); }
+    .terminal-panel.green .term-title { color: var(--success); }
+    .term-badge { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 999px; color: #fff; }
+    .terminal-panel.red .term-badge { background: var(--danger); }
+    .terminal-panel.green .term-badge { background: var(--success); }
+    .term-list { list-style: none; margin: 0; padding: 0; font-size: 0.92rem; color: var(--text-secondary); }
+    .term-list li { margin-bottom: 0.6rem; padding-left: 1.4rem; position: relative; }
+    .terminal-panel.red .term-list li::before { content: '🛑'; position: absolute; left: 0; font-size: 0.8rem; }
+    .terminal-panel.green .term-list li::before { content: '🛡️'; position: absolute; left: 0; font-size: 0.8rem; }
 
-    .highlight-box {
-      background: var(--bg2); border: 1px solid var(--border);
-      border-left: 4px solid var(--brand); border-radius: var(--radius-sm);
-      padding: 1.1rem 1.3rem; margin: 1.3rem 0;
-      color: var(--text-secondary); font-size: 0.95rem;
-    }
-    .highlight-box strong { color: var(--brand-dark); }
+    /* BESPOKE STRUCTURAL MODULE 2: SCALP-TO-FACE TRANSMISSION FLOW BOX */
+    .flow-box { background: linear-gradient(135deg, #1A1410 0%, #2D231E 100%); color: #fff; border-radius: var(--radius); padding: 2rem; margin: 1.5rem 0; border: 1px solid var(--brand); }
+    .flow-box h3 { font-family: var(--font-head); color: #FFE1CE; font-size: 1.2rem; margin-bottom: 0.8rem; }
+    .flow-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.2rem; }
+    @media (max-width: 700px) { .flow-steps { grid-template-columns: 1fr; } }
+    .flow-step-card { background: rgba(255,255,255,0.08); border-radius: var(--radius-sm); padding: 1rem; border: 1px solid rgba(255,255,255,0.1); }
+    .flow-step-card num { display: block; color: var(--brand); font-weight: 800; font-size: 1.2rem; margin-bottom: 0.3rem; }
+    .flow-step-card p { font-size: 0.85rem; color: #D5C4B5; margin: 0; }
 
-    /* BESPOKE STRUCTURAL ELEMENT 2: RED LIGHT / GREEN LIGHT INGREDIENT CARDS */
-    .audit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin: 1.5rem 0; }
-    @media (max-width: 640px) { .audit-grid { grid-template-columns: 1fr; } }
-    .audit-card { border-radius: var(--radius); padding: 1.4rem; border: 1px solid var(--border); }
-    .audit-card.unsafe { background: var(--danger-bg); border-color: #FFCDD2; }
-    .audit-card.safe { background: var(--success-bg); border-color: #C8E6C9; }
-    .audit-header { font-family: var(--font-head); font-weight: 700; font-size: 1.05rem; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.5rem; }
-    .audit-card.unsafe .audit-header { color: var(--danger); }
-    .audit-card.safe .audit-header { color: var(--success); }
-    .audit-list { list-style: none; margin: 0; padding: 0; font-size: 0.9rem; color: var(--text-secondary); }
-    .audit-list li { margin-bottom: 0.4rem; padding-left: 1.2rem; position: relative; }
-    .audit-card.unsafe .audit-list li::before { content: '❌'; position: absolute; left: 0; font-size: 0.75rem; }
-    .audit-card.safe .audit-list li::before { content: '✅'; position: absolute; left: 0; font-size: 0.75rem; }
+    /* BESPOKE STRUCTURAL MODULE 3: 5-STEP SHAMPOO MASK PROTOCOL CIRCULAR NODES */
+    .protocol-nodes { display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0; }
+    .node-row { display: flex; align-items: center; gap: 1.5rem; background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 1.2rem; }
+    .node-circle { width: 44px; height: 44px; border-radius: 50%; background: var(--brand); color: #fff; font-weight: 800; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .node-info h4 { font-family: var(--font-head); font-weight: 700; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.2rem; }
+    .node-info p { font-size: 0.9rem; color: var(--text-secondary); margin: 0; }
 
-    /* MATRIX TABLE */
-    .table-wrap {
-      overflow-x: auto; border-radius: var(--radius);
-      border: 1px solid var(--border); margin: 1.5rem 0;
-      box-shadow: var(--shadow-sm);
-    }
-    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; background: #fff; }
-    thead tr { background: var(--bg-table-head); }
-    thead th {
-      padding: 1rem 1.1rem; text-align: left; font-family: var(--font-head);
-      font-weight: 600; font-size: 0.85rem; letter-spacing: 0.05em;
-      text-transform: uppercase; color: #FFFFFF; border-bottom: 2px solid var(--brand);
-    }
-    tbody tr { border-bottom: 1px solid var(--border); transition: background 0.18s; }
-    tbody tr:last-child { border-bottom: none; }
-    tbody tr:hover { background: var(--bg2); }
-    tbody td { padding: 0.95rem 1.1rem; color: var(--text-secondary); vertical-align: top; }
-    tbody td:first-child { font-weight: 700; color: var(--text-primary); background: var(--bg-first-col); white-space: nowrap; }
-
-    @media (max-width: 680px) {
-      .table-wrap table, thead, tbody, th, td, tr { display: block; }
-      thead { display: none; }
-      tbody tr { margin-bottom: 1.2rem; border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.6rem; background: #fff; box-shadow: var(--shadow-sm); }
-      tbody td { padding: 0.6rem 0.8rem; display: flex; flex-direction: column; gap: 0.2rem; border-bottom: 1px solid var(--border-subtle); }
-      tbody td:last-child { border-bottom: none; }
-      tbody td:first-child { background: var(--bg-first-col); border-radius: 6px; color: var(--brand-dark); font-size: 1rem; }
-      tbody td::before { content: attr(data-label); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--brand); opacity: 0.9; }
-    }
-
-    /* BENTO GRID */
-    .bento-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin: 1.5rem 0; }
-    @media (max-width: 640px) { .bento-grid { grid-template-columns: 1fr; } }
-    .bento-card {
-      background: var(--bg2); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 1.4rem;
-      position: relative; overflow: hidden;
-      transition: transform 0.22s, border-color 0.22s, box-shadow 0.22s;
-      display: flex; flex-direction: column; justify-content: space-between;
-    }
-    .bento-card::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-      background: linear-gradient(90deg, var(--brand), var(--brand-dark));
-    }
-    .bento-card:hover { transform: translateY(-4px); border-color: var(--brand); box-shadow: var(--shadow-md); }
-    .bento-num {
-      width: 32px; height: 32px; border-radius: 50%; background: var(--brand-light);
-      color: var(--brand-dark); font-weight: 700; font-size: 0.9rem;
-      display: flex; align-items: center; justify-content: center; margin-bottom: 0.8rem;
-    }
-    .bento-title { font-family: var(--font-head); font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem; }
-    .bento-desc { font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 0.8rem; line-height: 1.6; }
-    .bento-tag {
-      align-self: flex-start; display: inline-block; background: #fff;
-      border: 1px solid var(--border); color: var(--brand-dark); font-size: 0.75rem;
-      font-weight: 700; padding: 0.25rem 0.7rem; border-radius: 999px;
-    }
-
-    /* PRODUCT SHOWCASE */
-    .product-showcase-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin: 1.5rem 0; }
-    @media (max-width: 640px) { .product-showcase-grid { grid-template-columns: 1fr; } }
-    .product-card { background: var(--bg2); border-radius: var(--radius); border: 1px solid var(--border); padding: 1.5rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; align-items: center; text-align: text-center; }
-    .product-image-wrapper { width: 100%; height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 12px; margin-bottom: 1rem; background: #FFF; border: 1px solid var(--border-subtle); }
-    .product-image-wrapper img { max-height: 100%; max-width: 100%; object-fit: contain; }
-    .product-title { font-family: var(--font-head); font-weight: 700; font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem; text-align: center; }
-    .product-specs { font-size: 0.875rem; color: var(--text-tertiary); margin-bottom: 1rem; text-align: center; }
-    .product-badge { background: var(--brand-light); color: var(--brand-dark); font-weight: 700; font-size: 0.75rem; padding: 0.25rem 0.75rem; border-radius: 999px; text-transform: uppercase; margin-bottom: 1rem; }
+    /* PRODUCT CARDS */
+    .prod-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0; }
+    @media (max-width: 640px) { .prod-grid { grid-template-columns: 1fr; } }
+    .prod-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; text-align: center; }
+    .prod-img { width: 100%; height: 180px; display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 12px; margin-bottom: 1rem; border: 1px solid var(--border-subtle); }
+    .prod-img img { max-height: 90%; max-width: 90%; object-fit: contain; }
+    .prod-title { font-family: var(--font-head); font-weight: 700; font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.3rem; }
 
     /* FAQ ACCORDION */
-    .faq-list { display: flex; flex-direction: column; gap: 0.8rem; margin: 1.2rem 0; }
-    .faq-item { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; transition: border-color 0.2s; }
-    .faq-item:hover { border-color: var(--brand); }
-    .faq-q {
-      width: 100%; background: none; border: none; display: flex;
-      align-items: center; justify-content: space-between; gap: 1rem;
-      padding: 1.1rem 1.3rem; cursor: pointer; text-align: left;
-      color: var(--text-primary); font-family: var(--font-body);
-      font-size: 0.98rem; font-weight: 700; transition: background 0.18s;
-    }
+    .faq-list { display: flex; flex-direction: column; gap: 0.8rem; }
+    .faq-item { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; }
+    .faq-q { width: 100%; background: none; border: none; display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 1.3rem; cursor: pointer; text-align: left; color: var(--text-primary); font-weight: 700; font-size: 0.98rem; }
     .faq-q:hover { background: var(--brand-light); }
-    .faq-arrow {
-      flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%;
-      background: var(--brand-light); display: flex; align-items: center;
-      justify-content: center; transition: transform 0.25s; color: var(--brand-dark); font-size: 0.9rem;
-    }
+    .faq-arrow { flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--brand-light); display: flex; align-items: center; justify-content: center; color: var(--brand-dark); font-size: 0.9rem; transition: transform 0.25s; }
     .faq-item.open .faq-arrow { transform: rotate(180deg); }
     .faq-body { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
-    .faq-body-inner {
-      padding: 1rem 1.3rem 1.2rem; font-size: 0.93rem; color: var(--text-secondary);
-      border-top: 1px solid var(--border); background: #fff; line-height: 1.65;
-    }
+    .faq-body-inner { padding: 1rem 1.3rem 1.2rem; font-size: 0.93rem; color: var(--text-secondary); border-top: 1px solid var(--border); background: #fff; }
 
-    /* SIDEBAR */
-    .sidebar { position: sticky; top: 125px; }
-    .sidebar-card {
-      background: var(--bg-body); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 1.4rem; margin-bottom: 1.2rem;
-      box-shadow: var(--shadow-sm);
-    }
-    .sidebar-card h4 {
-      font-family: var(--font-head); font-size: 0.88rem; font-weight: 700;
-      letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 1rem;
-    }
-    .sidebar-toc-link {
-      display: block; color: var(--text-secondary); text-decoration: none;
-      font-size: 0.88rem; padding: 0.5rem 0; border-bottom: 1px solid var(--border-subtle);
-      transition: color 0.18s, padding-left 0.18s; font-weight: 500;
-    }
-    .sidebar-toc-link:last-child { border-bottom: none; }
-    .sidebar-toc-link:hover { color: var(--brand); padding-left: 6px; }
-
-    .sidebar-ai-cta {
-      background: linear-gradient(135deg, #1A1410 0%, #2D231E 100%);
-      border: 1px solid var(--brand); border-radius: var(--radius);
-      padding: 1.4rem; text-align: center; color: #fff; box-shadow: var(--shadow-md);
-    }
-    .sidebar-ai-cta h5 { font-family: var(--font-head); font-size: 1.1rem; color: #FFE1CE; margin-bottom: 0.5rem; }
-    .sidebar-ai-cta p { font-size: 0.85rem; color: #D5C4B5; margin-bottom: 1.1rem; }
-    .sidebar-ai-cta a {
-      display: block; background: var(--brand); color: #fff;
-      text-decoration: none; font-weight: 700; font-size: 0.9rem;
-      padding: 0.75rem 1rem; border-radius: 999px; transition: background 0.2s, transform 0.2s;
-    }
-    .sidebar-ai-cta a:hover { background: var(--brand-dark); transform: scale(1.02); }
-
-    /* STICKY MOBILE CTA BAR */
-    .mobile-cta-bar {
-      display: none;
-      position: fixed; bottom: 0; left: 0; right: 0; z-index: 999;
-      background: rgba(26,20,16,0.96); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-      border-top: 1px solid var(--brand); padding: 0.75rem 1rem;
-      align-items: center; justify-content: space-between; gap: 0.8rem;
-    }
-    .mobile-cta-text { color: #fff; font-size: 0.8rem; font-weight: 600; line-height: 1.3; }
-    .mobile-cta-text span { color: #FF9A5C; display: block; font-size: 0.7rem; font-weight: 400; }
-    .mobile-cta-btn {
-      background: var(--brand); color: #fff; text-decoration: none;
-      font-weight: 700; font-size: 0.85rem; padding: 0.6rem 1.2rem;
-      border-radius: 999px; white-space: nowrap; flex-shrink: 0;
-    }
-    @media (max-width: 960px) {
-      .mobile-cta-bar { display: flex; }
-      body { padding-bottom: 65px; }
-    }
+    /* MOBILE BOTTOM BAR */
+    .mobile-cta-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; background: rgba(26,20,16,0.96); border-top: 1px solid var(--brand); padding: 0.75rem 1rem; align-items: center; justify-content: space-between; }
+    .mobile-cta-text { color: #fff; font-size: 0.8rem; font-weight: 600; }
+    .mobile-cta-text span { color: #FF9A5C; display: block; font-size: 0.7rem; }
+    .mobile-cta-btn { background: var(--brand); color: #fff; text-decoration: none; font-weight: 700; font-size: 0.85rem; padding: 0.6rem 1.2rem; border-radius: 999px; }
+    @media (max-width: 960px) { .mobile-cta-bar { display: flex; } body { padding-bottom: 65px; } }
 
     /* FOOTER */
-    .footer {
-      background: #0a0a0c; border-top: 1px solid rgba(255,255,255,0.1);
-      padding: 3.5rem 2rem 2.5rem; text-align: center; color: #fff;
-    }
+    .footer { background: #0a0a0c; border-top: 1px solid rgba(255,255,255,0.1); padding: 3.5rem 2rem 2.5rem; text-align: center; color: #fff; }
     .footer-logo img { height: 32px; margin-bottom: 1.2rem; filter: brightness(0) invert(1); }
-    .footer p { font-size: 0.84rem; color: #9E8575; max-width: 620px; margin: 0 auto 0.8rem; line-height: 1.6; }
-    .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 1.3rem; margin: 1.2rem 0; }
-    .footer-links a { color: #D5C4B5; text-decoration: none; font-size: 0.84rem; transition: color 0.18s; }
-    .footer-links a:hover { color: var(--brand); }
+    .footer p { font-size: 0.84rem; color: #9E8575; max-width: 620px; margin: 0 auto 0.8rem; }
+    .footer-links { display: flex; justify-content: center; gap: 1.3rem; margin: 1.2rem 0; flex-wrap: wrap; }
+    .footer-links a { color: #D5C4B5; text-decoration: none; font-size: 0.84rem; }
     .footer-copy { font-size: 0.78rem; color: #7A6A5A; margin-top: 1.8rem; }
   </style>
 </head>
 <body>
 
   <!-- STICKY NAV -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <a class="nav-logo" href="https://mymirror.fit/" aria-label="MyMirror Home">
+  <nav class="nav">
+    <a class="nav-logo" href="https://mymirror.fit/">
       <img src="/acne/forehead-acne/logo-v4.png" alt="MyMirror Logo" />
     </a>
-    <a class="nav-cta" href="https://mymirror.fit/analyze-face" id="nav-ai-cta" target="_blank" rel="noopener">
-      🪞 Scan My Skin Free
-    </a>
+    <a class="nav-cta" href="https://mymirror.fit/analyze-face" target="_blank" rel="noopener">🪞 Scan My Skin Free</a>
   </nav>
 
   <!-- TRUST BAR -->
-  <div class="trust-bar" role="complementary" aria-label="Editorial trust notice">
+  <div class="trust-bar">
     Reviewed by <span>Dr. Lipy Mehta, Board-Certified Dermatologist</span> | Updated August 2026
   </div>
 
-  <!-- HERO SECTION -->
-  <header class="hero" role="banner">
-    <div class="hero-tag">Malassezia Protocol · Humid Indian Climate (Fitzpatrick IV–VI)</div>
-    <h1>Fungal Acne (Malassezia Folliculitis) Clearing Routine</h1>
-    <p class="hero-sub">Dermatologist protocol targeting yeast overgrowth, lipid feeding chain audits, and Ketoconazole 2% short-contact therapy.</p>
-    <div class="ai-cta-wrap">
-      <a class="ai-cta-btn" href="https://mymirror.fit/analyze-face" id="hero-ai-cta" target="_blank" rel="noopener">
-        <div class="ai-cta-rail" aria-hidden="true"></div>
-        <span class="icon">🤖</span> Get Your Free AI Skin Analysis
+  <!-- CENTERED DASHBOARD HERO ARCHITECTURE -->
+  <header class="hero-dash">
+    <div class="hero-dash-inner">
+      <span class="hero-badge">🔬 Malassezia Lab Dashboard</span>
+      <h1>Fungal Acne (Malassezia Folliculitis) Clearing Protocol</h1>
+      <p>Clinical protocol targeting yeast overgrowth, lipid feeding chain audits, and Ketoconazole 2% contact therapy in humid Indian climates.</p>
+      <a class="ai-cta-btn" href="https://mymirror.fit/analyze-face" target="_blank" rel="noopener">
+        <span>🤖</span> Scan Forehead Bumps Free
       </a>
-      <span class="ai-cta-note">Scan forehead bumps for fungal vs bacterial acne in 60 seconds</span>
+
+      <div class="dash-widget-bar">
+        <div class="widget-item">
+          <label>Primary Pathogen</label>
+          <val>Malassezia Yeast</val>
+        </div>
+        <div class="widget-item">
+          <label>Lipid Feeding Chain</label>
+          <val>C12 – C24 Fatty Acids</val>
+        </div>
+        <div class="widget-item">
+          <label>Gold Standard Active</label>
+          <val>Ketoconazole 2%</val>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- STICKY TOC BAR -->
-  <div class="toc-bar" id="toc-bar" role="navigation" aria-label="Table of contents">
+  <!-- STICKY TOC -->
+  <div class="toc-bar" id="toc-bar">
     <div class="toc-inner">
-      <a class="toc-link" href="#fungal-science">Yeast Biology</a>
-      <a class="toc-link" href="#diagnostic">Fungal vs Bacterial</a>
-      <a class="toc-link" href="#audit">Lipid Ingredient Audit</a>
-      <a class="toc-link" href="#shampoo-mask">Ketoconazole Protocol</a>
-      <a class="toc-link" href="#products">Anti-Fungal Actives</a>
+      <a class="toc-link" href="#biology">Yeast Biology</a>
+      <a class="toc-link" href="#audit">Ingredient Audit</a>
+      <a class="toc-link" href="#flow">Scalp Transmission</a>
+      <a class="toc-link" href="#mask">Shampoo Protocol</a>
+      <a class="toc-link" href="#products">Fungal-Safe Actives</a>
       <a class="toc-link" href="#faq">FAQ</a>
     </div>
   </div>
 
-  <!-- MAIN CONTENT WRAPPER -->
-  <div class="page-wrap">
-    <main class="content-col" id="main-content">
-      <section id="fungal-science">
-        <h2>Biology of Malassezia Yeast Overgrowth in Humid Climates</h2>
-        <div class="hero-img-box">
-          <img src="https://mymirror.fit/assets/images/fungal-acne-malassezia-routine-india.jpg" alt="Fungal Acne Malassezia Folliculitis Protocol for Indian Skin" width="800" height="450" loading="eager" />
+  <!-- LAB DASHBOARD GRID LAYOUT ARCHITECTURE -->
+  <main class="lab-layout">
+    <section class="dash-panel" id="biology">
+      <h2>Biology of Malassezia Yeast Overgrowth</h2>
+      <p><strong>Fungal Acne</strong> (technically <em>Malassezia folliculitis</em> or <em>Pityrosporum folliculitis</em>) is an opportunistic fungal infection caused by an overgrowth of <em>Malassezia globosa</em> yeast inside hair follicles.</p>
+
+      <p>Unlike bacterial acne vulgaris, Malassezia yeasts produce lipase enzymes that digest human sebum into free fatty acids. In warm, humid Indian weather, excess sweat and oil cause yeast populations to explode, producing intensely itchy, uniform 1–2mm papules across the forehead and chest.</p>
+    </section>
+
+    <section class="dash-panel" id="audit">
+      <h2>Malassezia Lipid Feeding Audit Dashboard</h2>
+      <p>Malassezia yeast feeds exclusively on organic fatty acids and esters with carbon chain lengths between <strong>C12 and C24</strong>. Audit your skincare labels against these terminal panels:</p>
+
+      <div class="audit-terminal-grid">
+        <div class="terminal-panel red">
+          <div class="term-title">
+            <span>UNSAFE (Feeds Fungal Yeast)</span>
+            <span class="term-badge">Avoid Completely</span>
+          </div>
+          <ul class="term-list">
+            <li>Polysorbate 20, 40, 60, 80</li>
+            <li>Lauric, Myristic, Palmitic &amp; Oleic Acids</li>
+            <li>Coconut Oil, Olive Oil, Argan Oil, Rosehip Oil</li>
+            <li>Shea Butter &amp; Mango Butter</li>
+            <li>Esters ending in "-ate" (e.g. Isopropyl Palmitate)</li>
+          </ul>
         </div>
-        <p><strong>Fungal Acne</strong> (technically <em>Pityrosporum folliculitis</em> or <em>Malassezia folliculitis</em>) is not true acne vulgaris. It is an opportunistic fungal infection caused by an overgrowth of <em>Malassezia globosa</em> and <em>Malassezia restricta</em> yeasts inside hair follicles.</p>
 
-        <h3>1. High Humidity &amp; Sebum Hyper-secretion</h3>
-        <p>Malassezia yeasts thrive in warm, humid Indian weather (monsoon and summer). They produce lipolytic enzymes that break down human sebum into free fatty acids, triggering intense follicular inflammation and uniform monomorphic papules.</p>
-
-        <h3>2. Scalp-to-Face Migration</h3>
-        <p>Dandruff (seborrheic dermatitis) on the scalp acts as the primary reservoir for Malassezia yeast. Sweat washes fungal spores down onto the forehead, chest, and upper back.</p>
-
-        <div class="highlight-box">
-          <strong>Key Clinical Insight:</strong> Applying topical antibiotics like Clindamycin or Erythromycin to fungal acne kills protective resident skin bacteria, giving Malassezia yeast free reign to proliferate rapidly across the forehead.
+        <div class="terminal-panel green">
+          <div class="term-title">
+            <span>FUNGAL-SAFE SHIELD</span>
+            <span class="term-badge">100% Safe</span>
+          </div>
+          <ul class="term-list">
+            <li>Mineral Oil &amp; Petrolatum (Pure Hydrocarbons)</li>
+            <li>Squalane Oil (100% Pure Plant-Derived)</li>
+            <li>Caprylic/Capric Triglyceride (MCT Oil C8/C10)</li>
+            <li>Hyaluronic Acid, Glycerin &amp; Panthenol</li>
+            <li>Salicylic Acid (BHA) &amp; Azelaic Acid 15%</li>
+          </ul>
         </div>
-      </section>
-
-      <section id="diagnostic">
-        <h2>Diagnostic Table: Fungal Acne vs. Bacterial Acne Vulgaris</h2>
-        <p>Use this clinical comparison table to accurately identify Malassezia folliculitis on your forehead and chest:</p>
-
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Diagnostic Marker</th>
-                <th>Fungal Acne (Malassezia)</th>
-                <th>Bacterial Acne Vulgaris</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-label="Marker">Lesion Appearance</td>
-                <td data-label="Fungal">Monomorphic (uniform 1-2mm tiny red bumps, no open blackheads).</td>
-                <td data-label="Bacterial">Polymorphic (mixture of blackheads, whiteheads, pustules, cysts).</td>
-              </tr>
-              <tr>
-                <td data-label="Marker">Sensation</td>
-                <td data-label="Fungal">Intensely itchy, especially during sweating or heat exposure.</td>
-                <td data-label="Bacterial">Painful or tender to touch, rarely intensely itchy.</td>
-              </tr>
-              <tr>
-                <td data-label="Marker">Primary Location</td>
-                <td data-label="Fungal">Upper forehead hairline, chest, shoulders, and upper back.</td>
-                <td data-label="Bacterial">Cheeks, jawline, chin, and lower face.</td>
-              </tr>
-              <tr>
-                <td data-label="Marker">Antibiotic Response</td>
-                <td data-label="Fungal">Worsens rapidly after topical or oral antibiotic therapy.</td>
-                <td data-label="Bacterial">Improves with topical Clindamycin or Benzoyl Peroxide.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section id="audit">
-        <h2>Malassezia Lipid Feeding Audit: Safe vs. Unsafe Skincare</h2>
-        <p>Malassezia yeast feeds exclusively on organic fatty acids with carbon chain lengths between <strong>C12 and C24</strong>. Review your skincare ingredient lists against this audit:</p>
-
-        <div class="audit-grid">
-          <div class="audit-card unsafe">
-            <div class="audit-header">🚨 UNSAFE (Feeds Malassezia Yeast)</div>
-            <ul class="audit-list">
-              <li>Polysorbate 20, 40, 60, 80</li>
-              <li>Lauric, Myristic, Palmitic &amp; Oleic Acids</li>
-              <li>Coconut Oil, Olive Oil, Argan Oil, Shea Butter</li>
-              <li>Isopropyl Myristate &amp; Glyceryl Stearate</li>
-              <li>Esters ending in "-ate" (e.g. Ethylhexyl Palmitate)</li>
-            </ul>
-          </div>
-
-          <div class="audit-card safe">
-            <div class="audit-header">✅ SAFE (Fungal-Safe Actives)</div>
-            <ul class="audit-list">
-              <li>Mineral Oil &amp; Petrolatum (Hydrocarbons)</li>
-              <li>Squalane Oil (100% Pure Plant-Derived)</li>
-              <li>Caprylic/Capric Triglyceride (MCT Oil C8/C10)</li>
-              <li>Hyaluronic Acid, Niacinamide &amp; Centella</li>
-              <li>Salicylic Acid (BHA) &amp; Azelaic Acid 15%</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="shampoo-mask">
-        <h2>Ketoconazole 2% Short-Contact Mask Protocol</h2>
-        <p>Short-contact anti-fungal shampoo therapy is the gold-standard dermatologist treatment for clearing forehead fungal bumps:</p>
-
-        <div class="bento-grid">
-          <div class="bento-card">
-            <div>
-              <div class="bento-num">1</div>
-              <div class="bento-title">Lather Ketoconazole 2%</div>
-              <p class="bento-desc">Dispense a coin-sized amount of Ketoconazole 2% anti-dandruff shampoo into wet hands and lather thoroughly.</p>
-            </div>
-            <span class="bento-tag">Step 1: Lather</span>
-          </div>
-
-          <div class="bento-card">
-            <div>
-              <div class="bento-num">2</div>
-              <div class="bento-title">5-Minute Contact Time</div>
-              <p class="bento-desc">Gently smooth the foam over the forehead, hairline, or chest. Leave on for exactly 5 minutes to destroy yeast cell walls.</p>
-            </div>
-            <span class="bento-tag">Step 2: 5-Min Timer</span>
-          </div>
-
-          <div class="bento-card">
-            <div>
-              <div class="bento-num">3</div>
-              <div class="bento-title">Rinse &amp; Treat Scalp</div>
-              <p class="bento-desc">Rinse thoroughly with lukewarm water. Use the same shampoo on your scalp twice weekly to eliminate the yeast reservoir.</p>
-            </div>
-            <span class="bento-tag">Step 3: Dual Rinse</span>
-          </div>
-
-          <div class="bento-card">
-            <div>
-              <div class="bento-num">4</div>
-              <div class="bento-title">Fungal-Safe Hydration</div>
-              <p class="bento-desc">Seal skin with a 100% oil-free, fungal-safe gel moisturizer containing Hyaluronic Acid or Cica to soothe dryness.</p>
-            </div>
-            <span class="bento-tag">Step 4: Safe Hydration</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="products">
-        <h2>Recommended Fungal-Safe Formulations</h2>
-        <p>Dermatologist-evaluated anti-fungal products and safe barrier gels available in India:</p>
-
-        <div class="product-showcase-grid">
-          <div class="product-card">
-            <div class="product-image-wrapper">
-              <img src="/assets/images/cica-moisturizer-gel-pot.jpg" alt="Ketoconazole 2% Anti-Dandruff Shampoo">
-            </div>
-            <div class="product-badge">Rx Anti-Fungal</div>
-            <div class="product-title">Nizoral / Scalpe+ Ketoconazole 2% Shampoo</div>
-            <div class="product-specs">2% Ketoconazole + ZPTO | 100ml</div>
-            <p style="font-size: 0.9rem; color: var(--text-secondary);">First-line short-contact anti-fungal wash that eradicates Malassezia yeast on scalp and forehead.</p>
-          </div>
-
-          <div class="product-card">
-            <div class="product-image-wrapper">
-              <img src="/assets/images/azelaic_acid_gel_india.jpg" alt="Exazel-N 15% Azelaic Acid Gel">
-            </div>
-            <div class="product-badge">Yeast Inhibitor</div>
-            <div class="product-title">Exazel-N 15% Azelaic Acid Gel</div>
-            <div class="product-specs">15% Azelaic Acid + 4% Niacinamide | 30g</div>
-            <p style="font-size: 0.9rem; color: var(--text-secondary);">Dual-action gel that inhibits Malassezia thioredoxin reductase enzyme while fading post-fungal red spots.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">
-              Why does anti-bacterial acne medication fail to clear fungal acne?
-              <span class="faq-arrow" aria-hidden="true">▾</span>
-            </button>
-            <div class="faq-body">
-              <div class="faq-body-inner">
-                Fungal acne is caused by Malassezia yeast overgrowth inside hair follicles, not Cutibacterium acnes bacteria. Applying topical antibiotics (like Clindamycin) wipes out friendly skin bacteria, allowing Malassezia yeast to proliferate unchecked.
-              </div>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">
-              How do I use Ketoconazole 2% shampoo as a face mask for fungal acne?
-              <span class="faq-arrow" aria-hidden="true">▾</span>
-            </button>
-            <div class="faq-body">
-              <div class="faq-body-inner">
-                Lather Ketoconazole 2% shampoo between wet palms, apply evenly to the affected forehead or chest areas, leave on for exactly 5 minutes as short-contact therapy, then rinse thoroughly. Repeat 3 times weekly.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- SIDEBAR -->
-    <aside class="sidebar" aria-label="Sidebar navigation and quick access">
-      <div class="sidebar-card">
-        <h4>On This Page</h4>
-        <a class="sidebar-toc-link" href="#fungal-science">Yeast Biology</a>
-        <a class="sidebar-toc-link" href="#diagnostic">Fungal vs Bacterial</a>
-        <a class="sidebar-toc-link" href="#audit">Lipid Ingredient Audit</a>
-        <a class="sidebar-toc-link" href="#shampoo-mask">Ketoconazole Protocol</a>
-        <a class="sidebar-toc-link" href="#products">Top Formulations</a>
-        <a class="sidebar-toc-link" href="#faq">Frequently Asked Questions</a>
       </div>
+    </section>
 
-      <div class="sidebar-ai-cta">
-        <h5>AI Skin Scanner</h5>
-        <p>Unsure whether your forehead bumps are fungal yeast or bacterial whiteheads? Get instant dermatological analysis.</p>
-        <a href="https://mymirror.fit/analyze-face" id="sidebar-ai-cta" target="_blank" rel="noopener">🤖 Scan My Skin Free</a>
+    <section class="dash-panel" id="flow">
+      <h2>Scalp-to-Face Transmission Flow</h2>
+      <p>Dandruff (seborrheic dermatitis) on the scalp acts as the primary reservoir for Malassezia yeast spores:</p>
+
+      <div class="flow-box">
+        <h3>Vector Pathway: Scalp Reservoir to Forehead Breakout</h3>
+        <div class="flow-steps">
+          <div class="flow-step-card">
+            <num>01</num>
+            <p><strong>Scalp Proliferation:</strong> Malassezia yeast multiplies in scalp sebum, causing dandruff flakes and scalp itching.</p>
+          </div>
+          <div class="flow-step-card">
+            <num>02</num>
+            <p><strong>Sweat Migration:</strong> Sweat washes fungal spores down hair follicles onto the forehead, hairline, and neck.</p>
+          </div>
+          <div class="flow-step-card">
+            <num>03</num>
+            <p><strong>Follicular Occlusion:</strong> Heavy skincare creams lock spores inside pores, triggering monomorphic fungal papules.</p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="sidebar-card" style="margin-top:1.2rem;">
-        <h4>Key Takeaways</h4>
-        <a class="sidebar-toc-link" href="#fungal-science" style="color:var(--text-tertiary);font-size:0.82rem;">🍄 Caused by Malassezia Yeast</a>
-        <a class="sidebar-toc-link" href="#audit" style="color:var(--text-tertiary);font-size:0.82rem;">🚫 Avoid C12-C24 Oils &amp; Esters</a>
-        <a class="sidebar-toc-link" href="#shampoo-mask" style="color:var(--text-tertiary);font-size:0.82rem;">🧴 5-Min Ketoconazole 2% Mask</a>
+    <section class="dash-panel" id="mask">
+      <h2>Ketoconazole 2% Short-Contact Mask Protocol</h2>
+      <p>Follow these 4 circular step nodes to execute the dermatologist short-contact anti-fungal treatment:</p>
+
+      <div class="protocol-nodes">
+        <div class="node-row">
+          <div class="node-circle">1</div>
+          <div class="node-info">
+            <h4>Lather Ketoconazole 2% Shampoo</h4>
+            <p>Dispense a coin-sized amount of 2% Ketoconazole shampoo into wet palms and foam gently.</p>
+          </div>
+        </div>
+
+        <div class="node-row">
+          <div class="node-circle">2</div>
+          <div class="node-info">
+            <h4>Apply Foam to Forehead &amp; Chest</h4>
+            <p>Smooth foam over affected forehead bumps. Leave on for exactly 5 minutes as short-contact therapy.</p>
+          </div>
+        </div>
+
+        <div class="node-row">
+          <div class="node-circle">3</div>
+          <div class="node-info">
+            <h4>Rinse &amp; Treat Scalp Simultaneously</h4>
+            <p>Rinse thoroughly with lukewarm water. Use the same shampoo on your scalp twice weekly to kill the yeast reservoir.</p>
+          </div>
+        </div>
+
+        <div class="node-row">
+          <div class="node-circle">4</div>
+          <div class="node-info">
+            <h4>Hydrate with Fungal-Safe Gel</h4>
+            <p>Apply a 100% oil-free, fungal-safe gel moisturizer containing Hyaluronic Acid or Cica to lock in hydration.</p>
+          </div>
+        </div>
       </div>
-    </aside>
-  </div>
+    </section>
 
-  <!-- STICKY MOBILE CTA BAR -->
-  <div class="mobile-cta-bar" role="complementary" aria-label="Mobile call to action">
+    <section class="dash-panel" id="products">
+      <h2>Recommended Fungal-Safe Products</h2>
+      <p>Dermatologist-evaluated anti-fungal treatments available in India:</p>
+
+      <div class="prod-grid">
+        <div class="prod-card">
+          <div class="prod-img">
+            <img src="/assets/images/cica-moisturizer-gel-pot.jpg" alt="Ketoconazole 2% Anti-Dandruff Shampoo">
+          </div>
+          <div class="prod-title">Nizoral / Scalpe+ Ketoconazole 2% Shampoo</div>
+          <p style="font-size:0.88rem; color:var(--text-secondary);">First-line short-contact anti-fungal wash that eradicates Malassezia yeast.</p>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-img">
+            <img src="/assets/images/azelaic_acid_gel_india.jpg" alt="Exazel-N 15% Azelaic Acid Gel">
+          </div>
+          <div class="prod-title">Exazel-N 15% Azelaic Acid Gel</div>
+          <p style="font-size:0.88rem; color:var(--text-secondary);">15% Azelaic Acid gel that inhibits Malassezia enzymes and calms red fungal spots.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="dash-panel" id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">
+            Why does anti-bacterial acne medication fail to clear fungal acne?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              Fungal acne is caused by Malassezia yeast overgrowth inside hair follicles, not Cutibacterium acnes bacteria. Applying topical antibiotics (like Clindamycin) wipes out friendly skin bacteria, allowing Malassezia yeast to proliferate unchecked.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            How do I use Ketoconazole 2% shampoo as a face mask for fungal acne?
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              Lather Ketoconazole 2% shampoo between wet palms, apply evenly to the affected forehead or chest areas, leave on for exactly 5 minutes as short-contact therapy, then rinse thoroughly. Repeat 3 times weekly.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MOBILE BOTTOM BAR -->
+  <div class="mobile-cta-bar">
     <div class="mobile-cta-text">
       Analyze Your Skin Status
-      <span>Instant AI Dermatological Analysis</span>
+      <span>Instant AI Skin Scanner</span>
     </div>
     <a class="mobile-cta-btn" href="https://mymirror.fit/analyze-face" target="_blank" rel="noopener">Scan Free 🪞</a>
   </div>
 
   <!-- FOOTER -->
-  <footer class="footer" role="contentinfo">
-    <div class="footer-brand"><img src="/acne/forehead-acne/logo-v4.png" alt="MyMirror Logo" style="height: 28px; width: auto; display: block; margin: 0 auto 1rem; filter: brightness(0) invert(1);"></div>
-    <p>MyMirror provides evidence-based skincare insights tailored specifically for Indian skin. All content is reviewed by board-certified dermatologists. This information is intended for educational purposes and does not substitute professional medical consultation.</p>
+  <footer class="footer">
+    <div class="footer-brand"><img src="/acne/forehead-acne/logo-v4.png" alt="MyMirror Logo" style="height:28px; filter:brightness(0) invert(1);"></div>
+    <p>MyMirror provides evidence-based skincare insights tailored specifically for Indian skin. All content is reviewed by board-certified dermatologists. Information is educational and does not substitute medical advice.</p>
     <div class="footer-links">
       <a href="https://mymirror.fit/">Home</a>
       <a href="https://mymirror.fit/acne/">Acne Hub</a>
@@ -726,53 +449,36 @@
     <p class="footer-copy">© 2026 MyMirror. All rights reserved. Reviewed August 2026 by Dr. Lipy Mehta.</p>
   </footer>
 
-  <!-- INTERACTIVE JS -->
   <script>
-    // Scroll-reveal animations
-    const sections = document.querySelectorAll('.content-col section');
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.08 });
-    sections.forEach(s => revealObserver.observe(s));
-
-    // Sticky TOC Active highlighting
-    const tocLinks = document.querySelectorAll('.toc-link');
-    const sectionEls = document.querySelectorAll('section[id]');
-    const tocObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const id = entry.target.id;
-          tocLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
-        }
-      });
-    }, { rootMargin: '-25% 0px -60% 0px' });
-    sectionEls.forEach(s => tocObserver.observe(s));
-
     // FAQ Accordion
     document.querySelectorAll('.faq-q').forEach(btn => {
       btn.addEventListener('click', () => {
         const item = btn.closest('.faq-item');
         const body = item.querySelector('.faq-body');
         const isOpen = item.classList.contains('open');
-
         document.querySelectorAll('.faq-item').forEach(i => {
           i.classList.remove('open');
-          i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
           i.querySelector('.faq-body').style.maxHeight = '0';
         });
-
         if (!isOpen) {
           item.classList.add('open');
-          btn.setAttribute('aria-expanded', 'true');
           body.style.maxHeight = body.scrollHeight + 'px';
         }
       });
     });
+
+    // TOC Active Highlight
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const sections = document.querySelectorAll('section[id]');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          tocLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
+        }
+      });
+    }, { rootMargin: '-20% 0px -60% 0px' });
+    sections.forEach(s => observer.observe(s));
   </script>
 </body>
 </html>
