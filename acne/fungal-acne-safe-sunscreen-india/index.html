@@ -66,6 +66,27 @@
             "@type": "Answer",
             "text": "No. It is an overgrowth of yeast that is already naturally present on everyone's skin. The goal is to balance the microbiome, not 'kill' the fungus entirely."
           }
+        }, {
+          "@type": "Question",
+          "name": "How long does it take for fungal acne to clear?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With a strict fungal-safe routine (no esters or fatty acids) and an anti-fungal active (like Ketoconazole or Clotrimazole), symptoms can dramatically improve within 1 to 2 weeks."
+          }
+        }, {
+          "@type": "Question",
+          "name": "Are mineral sunscreens automatically fungal acne safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No! The UV filters (Zinc Oxide or Titanium Dioxide) are safe, but the cream base carrying those filters often contains heavy esters like Isopropyl Myristate to make the thick paste easier to spread. You must check the full ingredient list."
+          }
+        }, {
+          "@type": "Question",
+          "name": "Does sweating make fungal acne worse?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Malassezia yeast thrives in hot, humid, and sweaty environments. This is why fungal acne is incredibly common in India during the summer and monsoon seasons, especially along the hairline and forehead."
+          }
         }]
       }
     ]
@@ -133,6 +154,18 @@
         .btn-hero-premium:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(236,97,14,0.5); text-decoration: none; }
         .hero-image-wrap-premium { width: 100%; border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.18); box-shadow: 0 16px 40px rgba(0,0,0,0.6), 0 0 30px rgba(124,58,237,0.25); transition: transform 0.3s ease; }
         .hero-image-wrap-premium:hover { transform: translateY(-4px); }
+
+        /* FAQ Accordion CSS */
+        .faq-section { margin-bottom: 4rem; }
+        .faq-accordion-item { border: 1px solid #E2E8F0; border-radius: 12px; margin-bottom: 10px; overflow: hidden; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
+        .faq-q { padding: 18px 20px; font-weight: 700; font-size: 16px; background: #F8FAFC; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: #1e293b; user-select: none; transition: background 0.2s; }
+        .faq-q:hover { background: #f1f5f9; }
+        .faq-q::after { content: "+"; font-size: 22px; color: #EC610E; flex-shrink: 0; margin-left: 12px; transition: transform 0.3s ease; }
+        .faq-q.open::after { content: "−"; transform: rotate(180deg); }
+        .faq-a { display: none; padding: 20px; background: #fff; border-top: 1px solid #E2E8F0; }
+        .faq-a.open { display: block; animation: fadeIn 0.3s ease; }
+        .faq-a p { margin-bottom: 0; font-size: 15.5px; color: #475569; line-height: 1.6; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
 
         @media (max-width: 900px) { 
             .intro-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -301,17 +334,45 @@
         <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.7;">*Note: Acne-UV is clinically safe for most, but some hyper-sensitive fungal acne users may prefer anhydrous gels like UV Doux.</p>
     </section>
 
-    <section class="reveal" style="margin-top: 4rem;">
-        <h2 style="text-align: center; margin-bottom: 2rem;">Clinical FAQ</h2>
+    <section class="reveal faq-section" style="margin-top: 4rem;">
+        <h2 style="text-align: center; margin-bottom: 2.5rem;">Clinical FAQ</h2>
         <div style="max-width: 850px; margin: 0 auto;">
-            <div class="faq-item" style="border: 1px solid var(--color-border); border-radius: 20px; padding: 1.5rem; margin-bottom: 1.5rem; background: white;">
-                <p style="color: var(--color-text-primary); font-weight: 800; font-size: 1.1rem; margin-bottom: 0.5rem;">Q: Can I use an oil-cleanser with fungal acne?</p>
-                <p style="color: var(--color-text-secondary); font-size: 1rem; line-height: 1.6;">A: NO. Standard oils like Olive or Coconut feed the yeast. Use a <strong>Fungal-Safe Micellar Water</strong> or an oil-free gel cleanser twice to remove sunscreen.</p>
+            
+            <div class="faq-accordion-item">
+                <div class="faq-q">Can I use an oil-cleanser with fungal acne?</div>
+                <div class="faq-a">
+                    <p>NO. Standard oils like Olive or Coconut feed the yeast. Use a <strong>Fungal-Safe Micellar Water</strong> or an oil-free gel cleanser twice to remove sunscreen.</p>
+                </div>
             </div>
-            <div class="faq-item" style="border: 1px solid var(--color-border); border-radius: 20px; padding: 1.5rem; background: white;">
-                <p style="color: var(--color-text-primary); font-weight: 800; font-size: 1.1rem; margin-bottom: 0.5rem;">Q: Is Fungal Acne contagious?</p>
-                <p style="color: var(--color-text-secondary); font-size: 1rem; line-height: 1.6;">A: No. It is an overgrowth of yeast that is already naturally present on everyone's skin. The goal is to balance the microbiome, not "kill" the fungus entirely.</p>
+            
+            <div class="faq-accordion-item">
+                <div class="faq-q">Is Fungal Acne contagious?</div>
+                <div class="faq-a">
+                    <p>No. It is an overgrowth of yeast that is already naturally present on everyone's skin. The goal is to balance the microbiome, not "kill" the fungus entirely.</p>
+                </div>
             </div>
+            
+            <div class="faq-accordion-item">
+                <div class="faq-q">How long does it take for fungal acne to clear?</div>
+                <div class="faq-a">
+                    <p>With a strict fungal-safe routine (no esters or fatty acids) and an anti-fungal active (like Ketoconazole or Clotrimazole), symptoms can dramatically improve within <strong>1 to 2 weeks</strong>. However, maintaining a safe routine is required to prevent relapse.</p>
+                </div>
+            </div>
+
+            <div class="faq-accordion-item">
+                <div class="faq-q">Are mineral sunscreens automatically fungal acne safe?</div>
+                <div class="faq-a">
+                    <p>No! The UV filters (Zinc Oxide or Titanium Dioxide) are safe, but the <strong>cream base</strong> carrying those filters often contains heavy esters like Isopropyl Myristate or Glyceryl Stearate to make the thick mineral paste easier to spread. You must check the full ingredient list.</p>
+                </div>
+            </div>
+
+            <div class="faq-accordion-item">
+                <div class="faq-q">Does sweating make fungal acne worse?</div>
+                <div class="faq-a">
+                    <p>Yes. Malassezia yeast thrives in hot, humid, and sweaty environments. This is why fungal acne is incredibly common in India during the summer and monsoon seasons, especially along the hairline and forehead.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -330,5 +391,19 @@
 </footer>
 
 <script src="/assets/js/forehead-acne.js"></script>
+<script>
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const isOpen = q.classList.contains('open');
+      if (!isOpen) {
+        q.classList.add('open');
+        q.nextElementSibling.classList.add('open');
+      } else {
+        q.classList.remove('open');
+        q.nextElementSibling.classList.remove('open');
+      }
+    });
+  });
+</script>
 </body>
 </html>
