@@ -60,7 +60,45 @@
           "@type": "Organization",
           "name": "MyMirror",
           "url": "https://mymirror.fit"
-        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "What is skinimalism and why is it better for acne?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Skinimalism focuses on using a few high-quality, targeted products rather than a 10-step routine. For acne-prone skin, fewer products mean less chance of clogged pores, barrier damage, and ingredient conflicts."
+          }
+        }, {
+          "@type": "Question",
+          "name": "Can I really clear my acne with just a ₹1500 routine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! The most clinically proven acne treatments (like Salicylic Acid or Adapalene) are very affordable. You only need a gentle cleanser, a targeted active, and a basic moisturizer/sunscreen."
+          }
+        }, {
+          "@type": "Question",
+          "name": "What happens when you over-layer skincare products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Over-layering multiple serums and acids can destroy your skin barrier. A damaged barrier loses water rapidly and cannot fight off p. acnes bacteria, leading to massive inflammatory breakouts."
+          }
+        }, {
+          "@type": "Question",
+          "name": "How do I know if my skin barrier is damaged?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common signs include tight/shiny skin that still produces oil, stinging when applying basic moisturizers, increased redness, and sudden breakouts of tiny whiteheads."
+          }
+        }, {
+          "@type": "Question",
+          "name": "Should I use Salicylic Acid or Niacinamide first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In a minimalist routine, you ideally shouldn't layer them at the same time to avoid irritation. If you must use both, apply the BHA (Salicylic Acid) first, wait a few minutes, then apply Niacinamide."
+          }
+        }]
       }
     ]
   }
@@ -502,6 +540,18 @@
       font-size: 1rem;
       box-shadow: 0 4px 16px rgba(236, 97, 14, 0.5);
     }
+    
+    /* FAQ Accordion CSS */
+    .faq-section { margin: 4rem 0 2rem; }
+    .faq-accordion-item { border: 1px solid #E2E8F0; border-radius: 12px; margin-bottom: 10px; overflow: hidden; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
+    .faq-q { padding: 18px 20px; font-weight: 700; font-size: 16px; background: #F8FAFC; cursor: pointer; display: flex; justify-content: space-between; align-items: center; color: #1e293b; user-select: none; transition: background 0.2s; }
+    .faq-q:hover { background: #f1f5f9; }
+    .faq-q::after { content: "+"; font-size: 22px; color: #EC610E; flex-shrink: 0; margin-left: 12px; transition: transform 0.3s ease; }
+    .faq-q.open::after { content: "−"; transform: rotate(180deg); }
+    .faq-a { display: none; padding: 20px; background: #fff; border-top: 1px solid #E2E8F0; }
+    .faq-a.open { display: block; animation: fadeIn 0.3s ease; }
+    .faq-a p { margin-bottom: 0; font-size: 15.5px; color: #475569; line-height: 1.6; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
   </style>
 
   <script defer src="/assets/site-analytics.js"></script>
@@ -733,6 +783,49 @@
         </div>
       </section>
 
+      <!-- CLINICAL FAQ -->
+      <section class="section-block faq-section" id="faq">
+        <h2 style="text-align: center; margin-bottom: 2.5rem; border-bottom: none;">Clinical FAQ</h2>
+        <div style="max-width: 850px; margin: 0 auto;">
+            
+            <div class="faq-accordion-item">
+                <div class="faq-q">What is skinimalism and why is it better for acne?</div>
+                <div class="faq-a">
+                    <p>Skinimalism (skin minimalism) focuses on using a few high-quality, targeted products rather than a 10-step routine. For acne-prone skin, fewer products mean less chance of clogged pores, barrier damage, and ingredient conflicts.</p>
+                </div>
+            </div>
+            
+            <div class="faq-accordion-item">
+                <div class="faq-q">Can I really clear my acne with just a ₹1500 routine?</div>
+                <div class="faq-a">
+                    <p>Yes! The most clinically proven acne treatments (like Salicylic Acid or Adapalene) are very affordable at local pharmacies. You only need a gentle cleanser, a targeted active, and a basic moisturizer/sunscreen. Expensive does not mean more effective.</p>
+                </div>
+            </div>
+            
+            <div class="faq-accordion-item">
+                <div class="faq-q">What happens when you over-layer skincare products?</div>
+                <div class="faq-a">
+                    <p>Over-layering multiple serums and acids can completely destroy your skin barrier (stratum corneum). A damaged barrier loses water rapidly and cannot fight off p. acnes bacteria, leading to massive inflammatory breakouts and stinging skin.</p>
+                </div>
+            </div>
+
+            <div class="faq-accordion-item">
+                <div class="faq-q">How do I know if my skin barrier is damaged?</div>
+                <div class="faq-a">
+                    <p>Common signs include tight/shiny skin that still produces oil, stinging when applying basic moisturizers, increased redness, and sudden breakouts of tiny whiteheads. If you experience this, you need to stop all actives immediately.</p>
+                </div>
+            </div>
+
+            <div class="faq-accordion-item">
+                <div class="faq-q">Should I use Salicylic Acid or Niacinamide first?</div>
+                <div class="faq-a">
+                    <p>In a minimalist routine, you ideally shouldn't layer them at the same time to avoid irritation. If you must use both, apply the BHA (Salicylic Acid) first, wait a few minutes, then apply Niacinamide.</p>
+                </div>
+            </div>
+
+        </div>
+      </section>
+
     </article>
 
     <!-- SIDEBAR -->
@@ -787,6 +880,22 @@
         l.classList.remove('active');
         if(l.getAttribute('href') === `#${current}`) {
           l.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+  <!-- FAQ Accordion Script -->
+  <script>
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const isOpen = q.classList.contains('open');
+        if (!isOpen) {
+          q.classList.add('open');
+          q.nextElementSibling.classList.add('open');
+        } else {
+          q.classList.remove('open');
+          q.nextElementSibling.classList.remove('open');
         }
       });
     });
