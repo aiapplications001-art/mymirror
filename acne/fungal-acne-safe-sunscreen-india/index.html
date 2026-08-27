@@ -73,7 +73,7 @@
 
     
     <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
-  <style>
+    <style>
         :root {
             --glass: rgba(255, 255, 255, 0.75);
             --fungal-green: #f0fdf4;
@@ -96,13 +96,28 @@
         .blacklist-box { background: var(--danger-soft); border: 2px solid #fecaca; padding: 2.5rem; border-radius: 30px; margin: 2rem 0; }
         .safe-list-box { background: var(--fungal-green); border: 2px solid #bbf7d0; padding: 2.5rem; border-radius: 30px; margin: 2rem 0; }
 
+        /* Premium Product Grid */
+        .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 2rem; }
+        .premium-card { background: #fff; border: 1px solid var(--color-border); border-radius: 24px; padding: 2rem; display: flex; flex-direction: column; box-shadow: 0 10px 30px rgba(0,0,0,0.04); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; }
+        .premium-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .premium-card-img { height: 220px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; background: #f8fafc; border-radius: 16px; padding: 1.5rem; }
+        .premium-card-img img { max-height: 100%; max-width: 100%; object-fit: contain; mix-blend-mode: multiply; }
+        .premium-card h4 { font-size: 1.25rem; font-weight: 800; margin-bottom: 0.75rem; color: #1e293b; line-height: 1.3; }
+        .premium-card p { font-size: 0.95rem; color: #475569; line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1; }
+        .premium-card .buy-btn { background: #ec610e; color: #fff; padding: 14px 20px; border-radius: 12px; text-align: center; font-weight: 700; text-decoration: none; transition: background 0.2s; width: 100%; display: block; }
+        .premium-card .buy-btn:hover { background: #d05309; }
+        
+        .pill-cloud { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1rem; }
+        .ingredient-pill { padding: 6px 14px; border: 1px solid; border-radius: 20px; font-size: 0.9rem; font-weight: 600; background: white; }
+
         @media (max-width: 900px) { 
             .intro-grid { grid-template-columns: 1fr; gap: 2rem; }
             .toc-panel { order: -1; }
+            .product-grid { grid-template-columns: 1fr; }
         }
     </style>
-    <meta name="twitter:title" content="Best Fungal Acne Safe Sunscreens in India: 2026 Clinical List | MyMirror">
-    <meta name="twitter:description" content="Struggling with itchy forehead bumps? Find 100% fungal acne safe sunscreens in India. Expert guide on avoiding esters and fatty acids for Malassezia skin.">
+    <meta name="twitter:title" content="4 Best Fungal Acne Safe Sunscreens in India (2026) | 100% Malassezia Safe">
+    <meta name="twitter:description" content="Discover the top 4 dermatologist-approved, 100% Malassezia (fungal acne) safe sunscreens in India. Zero esters, zero fatty acids, no white cast.">
     <meta name="twitter:card" content="summary_large_image">
   
                 
@@ -211,11 +226,11 @@
         <div class="blacklist-box">
             <p>If you have fungal acne, check your label for these 5 common triggers found in 90% of Indian sunscreens:</p>
             <div class="pill-cloud">
-                <div class="ingredient-pill" style="border-color: #ef4444;">❌ Isopropyl Palmitate / Myristate</div>
-                <div class="ingredient-pill" style="border-color: #ef4444;">❌ Polysorbate 20 / 80</div>
-                <div class="ingredient-pill" style="border-color: #ef4444;">❌ Ethylhexyl Palmitate</div>
-                <div class="ingredient-pill" style="border-color: #ef4444;">❌ Glyceryl Stearate</div>
-                <div class="ingredient-pill" style="border-color: #ef4444;">❌ Galactomyces Ferment</div>
+                <div class="ingredient-pill" style="border-color: #ef4444; color: #b91c1c;">❌ Isopropyl Palmitate / Myristate</div>
+                <div class="ingredient-pill" style="border-color: #ef4444; color: #b91c1c;">❌ Polysorbate 20 / 80</div>
+                <div class="ingredient-pill" style="border-color: #ef4444; color: #b91c1c;">❌ Ethylhexyl Palmitate</div>
+                <div class="ingredient-pill" style="border-color: #ef4444; color: #b91c1c;">❌ Glyceryl Stearate</div>
+                <div class="ingredient-pill" style="border-color: #ef4444; color: #b91c1c;">❌ Galactomyces Ferment</div>
             </div>
         </div>
     </section>
@@ -223,36 +238,38 @@
     <section class="reveal" style="margin-top: 4rem;">
         <h2>Top 4 100% Fungal-Safe Picks in India</h2>
         
-        <div class="expert-pick-card">
-            <div class="pick-img"><img src="/acne/fungal-acne-safe-sunscreen-india/images/uv-doux.webp" alt="UV Doux Silicone Sunscreen Gel" style="max-width: 130px; mix-blend-mode: multiply;"></div>
-            <div class="pick-content">
+        <div class="product-grid">
+            <div class="premium-card">
+                <div class="premium-card-img">
+                    <img src="/acne/fungal-acne-safe-sunscreen-india/images/uv-doux.webp" alt="UV Doux Silicone Sunscreen Gel">
+                </div>
                 <h4>1. UV Doux Silicone Sunscreen Gel (SPF 50)</h4>
                 <p>The Anhydrous (waterless) silicone base avoids all common fungal triggers. It is the #1 prescription for Malassezia patients in India.</p>
                 <a href="https://www.1mg.com/otc/uv-doux-spf-50-silicone-sunscreen-gel-otc333649" target="_blank" rel="noopener" class="buy-btn">View on 1mg →</a>
             </div>
-        </div>
 
-        <div class="expert-pick-card">
-            <div class="pick-img"><img src="/acne/best-gel-sunscreen-for-oily-skin-under-500/images/wishcare.webp" alt="WishCare Niacinamide Fluid" style="max-width: 130px; mix-blend-mode: multiply;"></div>
-            <div class="pick-content">
+            <div class="premium-card">
+                <div class="premium-card-img">
+                    <img src="/acne/best-gel-sunscreen-for-oily-skin-under-500/images/wishcare.webp" alt="WishCare Niacinamide Fluid">
+                </div>
                 <h4>2. Ipca Acne-UV Gel (SPF 50)</h4>
                 <p>A purely clinical formula designed to be non-comedogenic and ester-minimal. Widely vetted by the Indian Skincare Reddit community.</p>
                 <a href="https://www.apollopharmacy.in/otc/acne-uv-spf-50-gel-50g" target="_blank" rel="noopener" class="buy-btn">View on Apollo Pharmacy →</a>
             </div>
-        </div>
 
-        <div class="expert-pick-card">
-            <div class="pick-img"><img src="/acne/fungal-acne-safe-sunscreen-india/images/fixderma.webp" alt="Fixderma Shadow Gel" style="max-width: 130px; mix-blend-mode: multiply;"></div>
-            <div class="pick-content">
+            <div class="premium-card">
+                <div class="premium-card-img">
+                    <img src="/acne/fungal-acne-safe-sunscreen-india/images/fixderma.webp" alt="Fixderma Shadow Gel">
+                </div>
                 <h4>3. Fixderma Shadow SPF 50+ Gel</h4>
                 <p>An incredibly lightweight fluid gel that avoids heavy fatty acids. Best for those who want a zero-residue, invisible finish.</p>
                 <a href="https://www.1mg.com/otc/fixderma-shadow-spf-50-sunscreen-spray-otc712833" target="_blank" rel="noopener" class="buy-btn">View on 1mg →</a>
             </div>
-        </div>
 
-        <div class="expert-pick-card">
-            <div class="pick-img"><img src="/acne/fungal-acne-safe-sunscreen-india/images/la-shield.jpg" alt="La Shield Fisico" style="max-width: 130px; mix-blend-mode: multiply;"></div>
-            <div class="pick-content">
+            <div class="premium-card">
+                <div class="premium-card-img">
+                    <img src="/acne/fungal-acne-safe-sunscreen-india/images/la-shield.jpg" alt="La Shield Fisico">
+                </div>
                 <h4>4. La Shield Fisico Matte Sunscreen (SPF 50+)</h4>
                 <p>A 100% mineral sunscreen with Zinc Oxide. Malassezia-safe and ideal for those with highly sensitive or reactive acne-prone skin.</p>
                 <a href="https://www.apollopharmacy.in/otc/la-shield-fisico-spf-50-gel-50g" target="_blank" rel="noopener" class="buy-btn">View on Apollo Pharmacy →</a>
