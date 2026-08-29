@@ -315,6 +315,21 @@
       .hero{padding:2.5rem 1.25rem 3rem}
       h2{font-size:1.45rem}
     }
+  
+    /* Standard Homepage-Aligned Footer */
+    footer.site-footer{background:#121619;color:#FFFFFF;padding:3.5rem 1.5rem 2rem;border-top:1px solid rgba(255,255,255,0.1)}
+    .footer-inner{max-width:1120px;margin:0 auto}
+    .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+    .footer-brand-col img{height:28px;width:auto;display:block;filter:brightness(0) invert(1);opacity:0.95;margin-bottom:1rem}
+    .footer-col h4{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;color:var(--brand-light, #FFE1CE);margin-bottom:1rem}
+    .footer-col ul{list-style:none}
+    .footer-col li{margin-bottom:0.6rem}
+    .footer-col a{color:rgba(255,255,255,0.7);font-size:13px;font-weight:400;text-decoration:none;transition:color 0.2s}
+    .footer-col a:hover{color:#FFFFFF;text-decoration:underline}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:1.5rem;text-align:center;font-size:12px;color:rgba(255,255,255,0.5);line-height:1.6}
+    @media(max-width:960px){.footer-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.footer-grid{grid-template-columns:1fr}}
+
   </style>
 </head>
 <body>
@@ -871,12 +886,59 @@
   </aside>
 </div>
 
-<!-- Footer -->
-<footer>
-  <p style="font-weight:700;color:var(--text-2);margin-bottom:8px;">MyMirror Evidence-Based Dermatology Hub</p>
-  <p>© 2026 MyMirror. All rights reserved. Reviewed August 2026 by Dr. Lipy Mehta, Board-Certified Dermatologist.</p>
-  <p><a href="/" style="color:var(--brand);">Home</a> · <a href="/acne/" style="color:var(--brand);">Acne Knowledge Hub</a> · <a href="https://mymirror.fit/analyze-face" style="color:var(--brand);">AI Skin Scanner</a></p>
+
+<!-- Standard Homepage-Aligned Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <img src="/assets/logo-v4.png" alt="MyMirror" style="height:28px;width:auto;display:block;filter:brightness(0) invert(1);opacity:0.95;margin-bottom:1rem;">
+        <p style="font-size:13px;color:rgba(255,255,255,0.7);line-height:1.6;max-width:280px;">
+          Evidence-based, dermatologist-reviewed skincare intelligence for Fitzpatrick Skin Types III–VI across Indian urban metros.
+        </p>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Acne Intelligence</h4>
+        <ul>
+          <li><a href="https://mymirror.fit/scan/">Start Free AI Skin Scan ✨</a></li>
+          <li><a href="/acne/skin-cycling-routine-for-acne-prone-indian-skin/">Skin Cycling 4-Night Protocol</a></li>
+          <li><a href="/acne/hard-water-acne-treatment-india/">Hard Water City TDS Guide</a></li>
+          <li><a href="/acne/topical-steroid-damaged-skin-betnovate-panderm-recovery-india/">Steroid TSDF Recovery Guide</a></li>
+          <li><a href="/acne/adapalene-0.1-gel-for-acne-india/">Adapalene 0.1% Master Guide</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Clinical Protocols</h4>
+        <ul>
+          <li><a href="/acne/1-vs-2-percent-salicylic-acid/">1% vs 2% Salicylic Acid Guide</a></li>
+          <li><a href="/acne/pie-vs-pih-indian-skin/">PIE vs PIH Dark Spots Guide</a></li>
+          <li><a href="/acne/acne-purging-vs-breakout-skin-barrier-damage-india/">Purging vs Barrier Breakdown</a></li>
+          <li><a href="/acne/hormonal-acne-pcos-periods-india/">PCOS &amp; Hormonal Acne Guide</a></li>
+          <li><a href="/acne/">Browse All Guides (470+ Articles)</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>MyMirror</h4>
+        <ul>
+          <li><a href="https://mymirror.fit/">Home</a></li>
+          <li><a href="https://mymirror.fit/scan/">Face Care Map</a></li>
+          <li><a href="mailto:support@mymirror.fit">Medical Editorial Contact</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>MyMirror provides dermatologist-reviewed educational information to help you understand visible skin patterns. It does not replace individualized clinical diagnosis or medical prescription.</p>
+      <p style="margin-top:8px;">© 2026 MyMirror. All rights reserved. <a href="/privacy" style="color:inherit;text-decoration:underline;">Privacy Policy</a> · <a href="/terms" style="color:inherit;text-decoration:underline;">Terms</a></p>
+    </div>
+  </div>
 </footer>
+
 
 <script>
   // Interactive Accordion FAQ
