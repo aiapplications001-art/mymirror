@@ -294,7 +294,32 @@
     .sidebar-cta h4{color:#fff;margin-bottom:0.5rem;font-size:0.92rem;text-transform:none;letter-spacing:0}
     .sidebar-cta p{color:rgba(255,255,255,0.88);font-size:12.5px;margin-bottom:1rem;line-height:1.5}
     .btn-white{display:block;padding:10px 14px;background:#fff;color:var(--brand);border-radius:9999px;font-weight:800;font-size:13px;text-align:center;text-decoration:none;transition:all 0.2s}
-    .btn-white:hover{text-decoration:none;transform:translateY(-1px);background:#FFF5EE}
+    /* Collapsed Interlinks Directory */
+    .interlinks-section{max-width:1120px;margin:0 auto 3.5rem;padding:0 1.5rem}
+    .interlinks-details{background:var(--bg);border:1.5px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,0.03);transition:all 0.3s ease}
+    .interlinks-details[open]{border-color:var(--brand);box-shadow:0 8px 24px rgba(236,97,14,0.08)}
+    .interlinks-summary{background:var(--bg-2);padding:1.15rem 1.5rem;font-weight:700;font-size:14.5px;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;list-style:none;transition:background 0.2s}
+    .interlinks-summary::-webkit-details-marker{display:none}
+    .interlinks-summary:hover{background:var(--brand-mid);color:var(--brand)}
+    .summary-left{display:flex;align-items:center;gap:10px}
+    .summary-icon{font-size:1.2rem}
+    .summary-badge{background:var(--brand-light);color:var(--brand-dark);padding:3px 10px;border-radius:9999px;font-size:11px;font-weight:800}
+    .summary-toggle{font-size:18px;color:var(--brand);font-weight:700;transition:transform 0.2s}
+    .interlinks-details[open] .summary-toggle{transform:rotate(180deg)}
+    .interlinks-content{padding:1.5rem;background:var(--bg)}
+    .interlinks-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+    .interlinks-col h4{font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:0.05em;color:var(--text-3);margin-bottom:0.75rem;padding-bottom:6px;border-bottom:1.5px solid var(--border)}
+    .interlinks-list{list-style:none}
+    .interlinks-list li{margin-bottom:0.5rem}
+    .interlinks-list a{font-size:12.5px;color:var(--text-2);font-weight:600;text-decoration:none;display:flex;align-items:flex-start;gap:6px;line-height:1.45;transition:all 0.15s}
+    .interlinks-list a::before{content:'•';color:var(--brand);font-weight:900}
+    .interlinks-list a:hover{color:var(--brand);transform:translateX(3px);text-decoration:none}
+    @media(max-width:960px){
+      .interlinks-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:600px){
+      .interlinks-grid{grid-template-columns:1fr}
+    }
 
     /* Standard Homepage-Aligned Footer */
     footer.site-footer{background:#121619;color:#FFFFFF;padding:3.5rem 1.5rem 2rem;border-top:1px solid rgba(255,255,255,0.1)}
@@ -1033,6 +1058,77 @@
     </div>
   </aside>
 </div>
+
+<!-- COLLAPSED INTERLINKS & TOPICAL DIRECTORY -->
+<section class="interlinks-section" id="pigmentation-directory">
+  <details class="interlinks-details">
+    <summary class="interlinks-summary">
+      <div class="summary-left">
+        <span class="summary-icon">📁</span>
+        <span>Explore All Guides &amp; Topics Associated to Pigmentation</span>
+        <span class="summary-badge">24 Clinical Guides</span>
+      </div>
+      <span class="summary-toggle">▼</span>
+    </summary>
+    <div class="interlinks-content">
+      <div class="interlinks-grid">
+        
+        <!-- COLUMN 1: FACIAL ZONES -->
+        <div class="interlinks-col">
+          <h4>Facial Zones &amp; Conditions</h4>
+          <ul class="interlinks-list">
+            <li><a href="/pigmentation/butterfly-melasma-cheeks-nose-treatment-india/">Butterfly Melasma on Cheeks &amp; Nose</a></li>
+            <li><a href="/pigmentation/upper-lip-pigmentation-dark-mustache-shadow-india/">Upper Lip Pigmentation (Mustache Shadow)</a></li>
+            <li><a href="/pigmentation/forehead-pigmentation-dark-patch-causes-treatment-india/">Forehead Pigmentation &amp; Two-Tone Face</a></li>
+            <li><a href="/pigmentation/pigmentation-around-mouth-chin-treatment-india/">Pigmentation Around Mouth &amp; Chin</a></li>
+            <li><a href="/pigmentation/lip-pigmentation-dark-lips-causes-treatment-india/">Dark Lips &amp; Lip Pigmentation Balms</a></li>
+            <li><a href="/pigmentation/dark-circles-under-eyes-causes-treatment-india/">Under-Eye Dark Circles Protocol</a></li>
+            <li><a href="/pigmentation/commuter-pollution-pigmentation-smog-skin-india/">Commuter Smog &amp; Traffic Melanosis</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 2: TOPICAL ACTIVES -->
+        <div class="interlinks-col">
+          <h4>Topical Brightening Chemistry</h4>
+          <ul class="interlinks-list">
+            <li><a href="/pigmentation/alpha-arbutin-vs-kojic-acid-dark-spots-india/">Alpha Arbutin 2% vs. Kojic Acid 2%</a></li>
+            <li><a href="/pigmentation/tranexamic-acid-for-melasma-hyperpigmentation-india/">Tranexamic Acid for Melasma &amp; Spots</a></li>
+            <li><a href="/pigmentation/hydroquinone-2-vs-4-percent-melasma-ochronosis-india/">Hydroquinone 2% vs. 4% (3-Month Rule)</a></li>
+            <li><a href="/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/">Glycolic Acid 6% vs. 12% Cream (Glyco-6)</a></li>
+            <li><a href="/acne/azelaic-acid-10-vs-20-acne-marks-indian-skin/">Azelaic Acid 10% vs. 20% for PIH Marks</a></li>
+            <li><a href="/acne/niacinamide-10-percent-vs-5-percent-serum-india/">Niacinamide 10% vs. 5% Melanosome Block</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 3: INTERNAL PATHOLOGY -->
+        <div class="interlinks-col">
+          <h4>Internal Blood &amp; Body Tests</h4>
+          <ul class="interlinks-list">
+            <li><a href="/pigmentation/blood-tests-for-skin-pigmentation-melasma-india/">Pigmentation Blood Tests (6-Panel Workup)</a></li>
+            <li><a href="/pigmentation/liver-function-gut-health-pigmentation-india/">Liver &amp; Gut Health Tests for Pigment</a></li>
+            <li><a href="/pigmentation/acanthosis-nigricans-dark-neck-face-treatment-india/">Acanthosis Nigricans (Dark Neck &amp; Insulin)</a></li>
+            <li><a href="/pigmentation/glutathione-for-skin-pigmentation-india/">Glutathione Oral 500mg vs. IV Truth</a></li>
+            <li><a href="/acne/zinc-for-acne-supplement-india/">Oral Zinc &amp; Post-Inflammatory Healing</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 4: CLINICAL PROCEDURES & ROUTINES -->
+        <div class="interlinks-col">
+          <h4>Procedures &amp; Routine Protocols</h4>
+          <ul class="interlinks-list">
+            <li><a href="/pigmentation/chemical-peels-for-pigmentation-melasma-indian-skin/">Chemical Peels for Melasma on Indian Skin</a></li>
+            <li><a href="/pigmentation/post-acne-dark-marks-pih-treatment-india/">Post-Acne Marks: Red PIE vs. Brown PIH</a></li>
+            <li><a href="/pigmentation/sun-tan-removal-detan-treatment-indian-skin/">Safe Sun Tan Removal &amp; De-Tanning</a></li>
+            <li><a href="/acne/skin-cycling-routine-for-acne-prone-indian-skin/">Skin Cycling 4-Night Protocol</a></li>
+            <li><a href="/acne/acne-diet-india/">Diet for Clear Skin &amp; Pigmentation</a></li>
+            <li><a href="https://mymirror.fit/scan/">AI Face Scan &amp; Pigment Mapping</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </details>
+</section>
 
 <!-- Standard Homepage-Aligned Footer -->
 <footer class="site-footer">
