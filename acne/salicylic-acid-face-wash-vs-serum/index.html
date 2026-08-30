@@ -277,18 +277,19 @@
     .flip-card:hover .flip-card-front{border-color:var(--brand);box-shadow:0 12px 30px rgba(236,97,14,0.22)}
     
     /* Front of Card */
-    .flip-card-front{background:#121619;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;z-index:2;-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}
+    .flip-card-front{background:#121619;color:#fff;display:flex;flex-direction:column;justify-content:space-between;z-index:2;-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}
     .card-img-wrap{position:absolute;inset:0;width:100%;height:100%}
     .card-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;display:block}
-    .flip-card:hover .card-img-wrap img{transform:scale(1.05)}
-    .card-img-gradient{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.05) 0%,rgba(14,19,23,0.4) 40%,rgba(14,19,23,0.96) 100%)}
+    .flip-card:hover .card-img-wrap img{transform:scale(1.04)}
+    .card-img-gradient{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.2) 0%,rgba(14,19,23,0.3) 40%,rgba(10,14,18,0.95) 100%)}
     
-    .card-front-content{position:relative;z-index:2;padding:1.4rem 1.35rem;display:flex;flex-direction:column;gap:6px}
-    .card-front-badge{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:800;text-transform:uppercase;background:var(--brand);color:#fff;padding:4px 10px;border-radius:9999px;width:fit-content;box-shadow:0 2px 8px rgba(0,0,0,0.3)}
-    .card-front-title{font-size:1.22rem;font-weight:800;color:#FFFFFF;font-family:'Kantumruy Pro',serif;line-height:1.25;margin:2px 0 0;text-shadow:0 2px 6px rgba(0,0,0,0.8)}
-    .card-front-desc{font-size:13px;color:rgba(255,255,255,0.85);line-height:1.45;margin:0;text-shadow:0 1px 4px rgba(0,0,0,0.6)}
-    .btn-flip-trigger{display:inline-flex;align-items:center;gap:6px;background:#FFFFFF;color:var(--brand-dark);font-size:13px;font-weight:800;padding:8px 16px;border-radius:9999px;margin-top:6px;box-shadow:0 4px 14px rgba(0,0,0,0.35);transition:all 0.2s;width:fit-content}
-    .flip-card:hover .btn-flip-trigger{background:var(--brand);color:#fff}
+    .card-front-top-badge{position:relative;z-index:3;margin:14px 14px 0;align-self:flex-start;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:800;text-transform:uppercase;background:rgba(0,0,0,0.75);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#FFF;padding:5px 12px;border-radius:9999px;box-shadow:0 4px 12px rgba(0,0,0,0.5)}
+    
+    .card-front-content{position:relative;z-index:3;background:rgba(12,16,20,0.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1.5px solid rgba(255,255,255,0.18);padding:1.25rem 1.25rem;display:flex;flex-direction:column;gap:8px;border-radius:0 0 16px 16px}
+    .card-front-title{font-size:1.25rem;font-weight:800;color:#FFFFFF !important;font-family:'Kantumruy Pro',serif;line-height:1.25;margin:0;text-shadow:0 2px 4px rgba(0,0,0,0.8)}
+    .card-front-desc{font-size:13.5px;color:#F1F5F9 !important;line-height:1.5;margin:0;text-shadow:0 1px 3px rgba(0,0,0,0.8);font-weight:500}
+    .btn-flip-trigger{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:#EC610E;color:#FFFFFF !important;font-size:13px;font-weight:800;padding:9px 18px;border-radius:9999px;margin-top:4px;box-shadow:0 4px 14px rgba(236,97,14,0.45);transition:all 0.2s;width:fit-content;text-shadow:none}
+    .flip-card:hover .btn-flip-trigger{background:#FF7728;transform:translateY(-1px)}
     
     /* Back of Card */
     .flip-card-back{background:#FFFFFF;color:var(--text);-webkit-transform:rotateY(180deg);transform:rotateY(180deg);padding:1.45rem 1.35rem;display:flex;flex-direction:column;justify-content:space-between;border:2.5px solid var(--brand);box-shadow:0 12px 32px rgba(236,97,14,0.18);z-index:1}
@@ -646,8 +647,8 @@
                   <img src="/assets/images/matcher-surface-oil.jpg" alt="Surface Oil and Sensitive Indian Skin" loading="lazy" decoding="async">
                   <div class="card-img-gradient"></div>
                 </div>
+                <div class="card-front-top-badge">🌿 Profile A</div>
                 <div class="card-front-content">
-                  <div class="card-front-badge">🌿 Profile A</div>
                   <h4 class="card-front-title">Surface Oil &amp; Sensitive Skin</h4>
                   <p class="card-front-desc">Greasy T-zone shine, mild surface texture, or currently using Adapalene/Retinoids.</p>
                   <span class="btn-flip-trigger">Tap to Reveal Match 🔄</span>
@@ -685,8 +686,8 @@
                   <img src="/assets/images/matcher-blackheads.jpg" alt="Stubborn Blackheads and Large Open Pores" loading="lazy" decoding="async">
                   <div class="card-img-gradient"></div>
                 </div>
+                <div class="card-front-top-badge">🍓 Profile B</div>
                 <div class="card-front-content">
-                  <div class="card-front-badge">🍓 Profile B</div>
                   <h4 class="card-front-title">Stubborn Nose &amp; Chin Blackheads</h4>
                   <p class="card-front-desc">Hardened oxidized keratin plugs and enlarged clogged pores that face washes didn't clear.</p>
                   <span class="btn-flip-trigger">Tap to Reveal Match 🔄</span>
@@ -724,8 +725,8 @@
                   <img src="/assets/images/matcher-heavy-sebum.jpg" alt="Resilient Heavy Sebum and Smog Congestion" loading="lazy" decoding="async">
                   <div class="card-img-gradient"></div>
                 </div>
+                <div class="card-front-top-badge">⚡ Profile C</div>
                 <div class="card-front-content">
-                  <div class="card-front-badge">⚡ Profile C</div>
                   <h4 class="card-front-title">Resilient Heavy Sebum &amp; Smog</h4>
                   <p class="card-front-desc">Thick, extremely oily skin by midday, heavy metro pollution exposure, and zero sensitivity.</p>
                   <span class="btn-flip-trigger">Tap to Reveal Match 🔄</span>
@@ -763,8 +764,8 @@
                   <img src="/assets/images/matcher-blind-cysts.jpg" alt="Deep Blind Hormonal Cysts Jawline" loading="lazy" decoding="async">
                   <div class="card-img-gradient"></div>
                 </div>
+                <div class="card-front-top-badge">⚠️ Profile D</div>
                 <div class="card-front-content">
-                  <div class="card-front-badge">⚠️ Profile D</div>
                   <h4 class="card-front-title">Deep Blind Hormonal Cysts</h4>
                   <p class="card-front-desc">Painful, throbbing subcutaneous bumps along the jawline with no open surface pore head.</p>
                   <span class="btn-flip-trigger">Tap to Reveal Match 🔄</span>
