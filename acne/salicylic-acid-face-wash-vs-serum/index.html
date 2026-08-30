@@ -269,7 +269,7 @@
     .decision-tool-sub{color:var(--text-2);font-size:15px;margin-bottom:0;line-height:1.6}
     
     .flip-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:1.5rem}
-    .flip-card{background-color:transparent;-webkit-perspective:1200px;perspective:1200px;height:460px;cursor:pointer;position:relative}
+    .flip-card{background-color:transparent;-webkit-perspective:1200px;perspective:1200px;height:500px;cursor:pointer;position:relative}
     .flip-card-inner{position:relative;width:100%;height:100%;text-align:left;-webkit-transition:-webkit-transform 0.6s cubic-bezier(0.4,0.2,0.2,1);transition:transform 0.6s cubic-bezier(0.4,0.2,0.2,1);-webkit-transform-style:preserve-3d;transform-style:preserve-3d;border-radius:18px;will-change:transform}
     .flip-card.flipped .flip-card-inner{-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}
     
@@ -285,26 +285,26 @@
     
     .card-front-top-badge{position:relative;z-index:3;margin:14px 14px 0;align-self:flex-start;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:800;text-transform:uppercase;background:rgba(0,0,0,0.75);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#FFF;padding:5px 12px;border-radius:9999px;box-shadow:0 4px 12px rgba(0,0,0,0.5)}
     
-    .card-front-content{position:relative;z-index:3;background:rgba(12,16,20,0.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1.5px solid rgba(255,255,255,0.18);padding:1.25rem 1.25rem;display:flex;flex-direction:column;gap:8px;border-radius:0 0 16px 16px}
-    .card-front-title{font-size:1.25rem;font-weight:800;color:#FFFFFF !important;font-family:'Kantumruy Pro',serif;line-height:1.25;margin:0;text-shadow:0 2px 4px rgba(0,0,0,0.8)}
-    .card-front-desc{font-size:13.5px;color:#F1F5F9 !important;line-height:1.5;margin:0;text-shadow:0 1px 3px rgba(0,0,0,0.8);font-weight:500}
-    .btn-flip-trigger{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:#EC610E;color:#FFFFFF !important;font-size:13px;font-weight:800;padding:9px 18px;border-radius:9999px;margin-top:4px;box-shadow:0 4px 14px rgba(236,97,14,0.45);transition:all 0.2s;width:fit-content;text-shadow:none}
+    .card-front-content{position:relative;z-index:3;background:rgba(12,16,20,0.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1.5px solid rgba(255,255,255,0.18);padding:1.15rem 1.15rem;display:flex;flex-direction:column;gap:6px;border-radius:0 0 16px 16px}
+    .card-front-title{font-size:1.22rem;font-weight:800;color:#FFFFFF !important;font-family:'Kantumruy Pro',serif;line-height:1.25;margin:0;text-shadow:0 2px 4px rgba(0,0,0,0.8)}
+    .card-front-desc{font-size:13px;color:#F1F5F9 !important;line-height:1.45;margin:0;text-shadow:0 1px 3px rgba(0,0,0,0.8);font-weight:500}
+    .btn-flip-trigger{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:#EC610E;color:#FFFFFF !important;font-size:12.5px;font-weight:800;padding:8px 16px;border-radius:9999px;margin-top:2px;box-shadow:0 4px 14px rgba(236,97,14,0.45);transition:all 0.2s;width:fit-content;text-shadow:none}
     .flip-card:hover .btn-flip-trigger{background:#FF7728;transform:translateY(-1px)}
     
     /* Back of Card */
-    .flip-card-back{background:#FFFFFF;color:var(--text);-webkit-transform:rotateY(180deg);transform:rotateY(180deg);padding:1.45rem 1.35rem;display:flex;flex-direction:column;justify-content:space-between;border:2.5px solid var(--brand);box-shadow:0 12px 32px rgba(236,97,14,0.18);z-index:1}
+    .flip-card-back{background:#FFFFFF;color:var(--text);-webkit-transform:rotateY(180deg);transform:rotateY(180deg);padding:1.2rem 1.15rem;display:flex;flex-direction:column;justify-content:space-between;border:2.5px solid var(--brand);box-shadow:0 12px 32px rgba(236,97,14,0.18);z-index:1;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
     .card-back-header{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
-    .card-back-title{font-size:1.18rem;font-weight:800;color:var(--text);line-height:1.3;margin:4px 0 0;font-family:'Kantumruy Pro',serif}
-    .btn-flip-close{background:var(--bg-2);border:1px solid var(--border);color:var(--text);border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-size:14px;cursor:pointer;flex-shrink:0;transition:all 0.2s;line-height:1}
+    .card-back-title{font-size:1.15rem;font-weight:800;color:var(--text);line-height:1.25;margin:3px 0 0;font-family:'Kantumruy Pro',serif}
+    .btn-flip-close{background:var(--bg-2);border:1px solid var(--border);color:var(--text);border-radius:50%;width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-size:13px;cursor:pointer;flex-shrink:0;transition:all 0.2s;line-height:1}
     .btn-flip-close:hover{background:var(--brand-light);color:var(--brand-dark);border-color:var(--brand)}
     
-    .card-back-metrics{display:flex;flex-direction:column;gap:6px;background:var(--bg-2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin:8px 0}
-    .metric-row{display:flex;justify-content:space-between;font-size:12.5px;line-height:1.4;border-bottom:1px dashed rgba(232,221,213,0.8);padding-bottom:3px}
+    .card-back-metrics{display:flex;flex-direction:column;gap:5px;background:var(--bg-2);border:1px solid var(--border);border-radius:10px;padding:8px 10px;margin:6px 0}
+    .metric-row{display:flex;justify-content:space-between;font-size:12px;line-height:1.35;border-bottom:1px dashed rgba(232,221,213,0.8);padding-bottom:2px}
     .metric-row:last-child{border-bottom:none;padding-bottom:0}
-    .m-lbl{font-weight:800;color:var(--text-3)}
+    .m-lbl{font-weight:800;color:var(--text-3);flex-shrink:0}
     .m-val{font-weight:700;color:var(--text);text-align:right}
-    .card-back-desc{font-size:13px;color:var(--text-2);line-height:1.5;margin:0}
-    .btn-flip-back{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--bg-2);border:1.5px solid var(--border);color:var(--text);font-size:12.5px;font-weight:800;padding:8px 16px;border-radius:9999px;cursor:pointer;transition:all 0.2s;margin-top:6px}
+    .card-back-desc{font-size:12.5px;color:var(--text-2);line-height:1.45;margin:0}
+    .btn-flip-back{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:var(--bg-2);border:1.5px solid var(--border);color:var(--text);font-size:12px;font-weight:800;padding:7px 14px;border-radius:9999px;cursor:pointer;transition:all 0.2s;margin-top:6px}
     .btn-flip-back:hover{background:var(--brand-light);color:var(--brand-dark);border-color:var(--brand)}
     
     /* Disable front clicks when flipped and back clicks when not flipped */
@@ -315,7 +315,7 @@
     
     @media(max-width:768px){
       .flip-grid{grid-template-columns:1fr}
-      .flip-card{height:440px}
+      .flip-card{height:520px}
     }
 
     /* Product Grid */
