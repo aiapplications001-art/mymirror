@@ -200,13 +200,16 @@
     .flip-card:not(.flipped) .flip-card-front { visibility: visible; pointer-events: auto; }
 
     /* Product Cards */
-    .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 1.75rem 0; }
-    .product-card { border: 1px solid var(--border); border-radius: 14px; padding: 1.35rem; background: var(--bg); transition: all 0.2s; }
-    .product-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.06); transform: translateY(-3px); border-color: var(--brand); }
-    .prod-name { font-weight: 800; font-size: 16px; color: var(--text); margin-bottom: 4px; }
-    .prod-conc { font-size: 12px; color: var(--brand-dark); font-weight: 700; background: var(--brand-light); padding: 2px 10px; border-radius: 9999px; display: inline-block; margin-bottom: 8px; }
-    .prod-claim { font-size: 14.5px; color: var(--text-2); line-height: 1.6; }
-    .prod-verdict { margin-top: 8px; font-size: 14px; color: var(--text-3); border-top: 1px solid var(--border); padding-top: 6px; }
+    .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 1.75rem 0; }
+    .product-card { border: 1.5px solid var(--border); border-radius: 16px; padding: 1.4rem; background: var(--bg-2); transition: all 0.3s var(--ease); display: flex; flex-direction: column; }
+    .product-card:hover { box-shadow: 0 10px 28px rgba(236,97,14,0.12); transform: translateY(-4px); border-color: var(--brand); }
+    .product-img-box { position: relative; width: 100%; height: 190px; background: #FFFFFF; border-radius: 12px; overflow: hidden; margin-bottom: 14px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; }
+    .product-img-box img { width: 100%; height: 100%; object-fit: contain; padding: 12px; transition: transform 0.4s ease; display: block; }
+    .product-card:hover .product-img-box img { transform: scale(1.06); }
+    .prod-name { font-weight: 800; font-size: 17px; color: var(--text); margin-bottom: 4px; font-family: 'Kantumruy Pro', serif; }
+    .prod-conc { font-size: 12px; color: var(--brand-dark); font-weight: 700; background: var(--brand-light); padding: 3px 10px; border-radius: 9999px; display: inline-block; margin-bottom: 10px; width: fit-content; }
+    .prod-claim { font-size: 14.5px; color: var(--text-2); line-height: 1.6; margin-bottom: 8px; }
+    .prod-verdict { margin-top: auto; font-size: 13.5px; color: var(--text-3); border-top: 1px solid var(--border); padding-top: 8px; }
     .prod-verdict strong { color: var(--success); }
 
     /* FAQ */
@@ -606,46 +609,81 @@
       <p>We evaluated 32 formulations against 4 critical parameters: <strong>TEWL reduction, zero white cast on Indian skin (Fitzpatrick III–VI), photostability, and non-pilling texture</strong>. Here are the top 7 verified performers:</p>
 
       <div class="product-grid">
+        <!-- PRODUCT 1 -->
         <div class="product-card">
+          <div class="product-img-box">
+            <img src="/assets/images/prod-fixderma-shadow.jpg" alt="Fixderma Shadow SPF 50+ Cream moisturizing sunscreen for dry flaking skin" loading="lazy" decoding="async">
+          </div>
           <div class="prod-name">Fixderma Shadow SPF 50+ Cream</div>
           <span class="prod-conc">SPF 50+ PA++++ • Fixderma Pharma</span>
-          <p class="prod-claim"><strong>Highlights:</strong> Rich emollient moisturizing base with Octinoxate, Avobenzone, and Benzophenone-4. Extremely nourishing for winter flaking.</p>
-          <div class="prod-verdict"><strong>Best For:</strong> Very dry, mature, or scaly winter skin.</div>
+          <p class="prod-claim"><strong>Highlights:</strong> Rich emollient moisturizing cream base that creates an immediate lipid moisture shield over dry patches. Non-greasy finish that eliminates flaking.</p>
+          <div class="prod-verdict"><strong>Best For:</strong> Very dry, scaly winter skin &amp; mature dry complexions.</div>
         </div>
 
+        <!-- PRODUCT 2 -->
         <div class="product-card">
+          <div class="product-img-box">
+            <img src="/assets/images/prod-minimalist-sunscreen.jpg" alt="Minimalist SPF 50 Multi-Vitamin Sunscreen for sensitive dry skin" loading="lazy" decoding="async">
+          </div>
           <div class="prod-name">Minimalist SPF 50 Multi-Vitamin</div>
           <span class="prod-conc">SPF 50 PA++++ • Minimalist</span>
-          <p class="prod-claim"><strong>Highlights:</strong> Powered by Uvinul A Plus, Tinosorb S, and Uvinul T 150 alongside Vitamins A, B3, B5, E, and F. Zero white cast and zero eye stinging.</p>
-          <div class="prod-verdict"><strong>Best For:</strong> Retinoid users &amp; sensitive dry skin.</div>
+          <p class="prod-claim"><strong>Highlights:</strong> Powered by Uvinul A Plus, Tinosorb S, and Uvinul T 150 infused with Pro-Vitamin B5 (Panthenol), Vitamin F, and Niacinamide. 100% invisible with zero eye stinging.</p>
+          <div class="prod-verdict"><strong>Best For:</strong> Retinoid users, compromised barrier &amp; sensitive dry skin.</div>
         </div>
 
+        <!-- PRODUCT 3 -->
         <div class="product-card">
+          <div class="product-img-box">
+            <img src="/assets/images/prod-episoft-ac.jpg" alt="Episoft AC Moisturizer with Micro-encapsulated SPF 30 sunscreen" loading="lazy" decoding="async">
+          </div>
           <div class="prod-name">Episoft AC Moisturizer SPF 30</div>
           <span class="prod-conc">SPF 30 Micro-Encapsulated • Glenmark</span>
-          <p class="prod-claim"><strong>Highlights:</strong> 2-in-1 moisturizer-plus-sunscreen prescribed by Indian dermatologists. Provides deep barrier hydration with zero pore-clogging.</p>
-          <div class="prod-verdict"><strong>Best For:</strong> Dry skin prone to occasional breakouts.</div>
+          <p class="prod-claim"><strong>Highlights:</strong> Dermatologist-favorite 2-in-1 morning moisturizer and sunscreen. Micro-encapsulated UV filters prevent direct skin contact, providing zero-sting daily protection.</p>
+          <div class="prod-verdict"><strong>Best For:</strong> Dry skin prone to occasional hormonal acne &amp; rosacea.</div>
         </div>
 
+        <!-- PRODUCT 4 -->
         <div class="product-card">
+          <div class="product-img-box">
+            <img src="/assets/images/prod-aqualogica-dewy.jpg" alt="Aqualogica Radiance Dewy Sunscreen with Hyaluronic Acid and Watermelon" loading="lazy" decoding="async">
+          </div>
           <div class="prod-name">Aqualogica Radiance Dewy Sunscreen</div>
           <span class="prod-conc">SPF 50+ PA++++ • Aqualogica</span>
-          <p class="prod-claim"><strong>Highlights:</strong> Water-light fluid infused with Hyaluronic Acid and Watermelon extract. Delivers an immediate glass-skin luminous glow without stickiness.</p>
-          <div class="prod-verdict"><strong>Best For:</strong> Dehydrated skin wanting a radiant dewy finish.</div>
+          <p class="prod-claim"><strong>Highlights:</strong> Water-burst fluid texture loaded with Multi-Molecular Hyaluronic Acid and Niacinamide. Imparts an immediate glass-skin luminous glow without stickiness or heaviness.</p>
+          <div class="prod-verdict"><strong>Best For:</strong> Dehydrated, lackluster skin craving a luminous dewy finish.</div>
         </div>
 
+        <!-- PRODUCT 5 -->
         <div class="product-card">
+          <div class="product-img-box">
+            <img src="/assets/images/prod-dot-key-cica.jpg" alt="Dot and Key Cica Calming Sunscreen with Hyaluronic Acid" loading="lazy" decoding="async">
+          </div>
           <div class="prod-name">Dot &amp; Key Cica Calming Sunscreen</div>
           <span class="prod-conc">SPF 50+ PA++++ • Dot &amp; Key</span>
-          <p class="prod-claim"><strong>Highlights:</strong> Cica, Niacinamide, and Hyaluronic Acid blend that soothes red irritated dry patches while offering broad-spectrum defense.</p>
-          <div class="prod-verdict"><strong>Best For:</strong> Sensitive dry skin prone to redness and heat flushing.</div>
+          <p class="prod-claim"><strong>Highlights:</strong> Super-calming Centella Asiatica, Niacinamide, and Hyaluronic Acid emulsion that quenches parched skin while soothing solar redness and heat flushes.</p>
+          <div class="prod-verdict"><strong>Best For:</strong> Redness-prone dry skin &amp; post-procedure recovery.</div>
         </div>
 
+        <!-- PRODUCT 6 -->
         <div class="product-card">
+          <div class="product-img-box">
+            <img src="/assets/images/prod-bioderma-photoderm.jpg" alt="Bioderma Photoderm Max Creme SPF 50 plus dry skin sunscreen" loading="lazy" decoding="async">
+          </div>
           <div class="prod-name">Bioderma Photoderm Max Crème SPF 50+</div>
           <span class="prod-conc">SPF 50+ UVA 42 • NAOS Pharma</span>
-          <p class="prod-claim"><strong>Highlights:</strong> Cellular Bioprotection patent with Tinosorb S and Tinosorb M. Incredible moisture retention for dry, photodamaged skin.</p>
-          <div class="prod-verdict"><strong>Best For:</strong> Intense outdoor sun exposure &amp; anti-aging.</div>
+          <p class="prod-claim"><strong>Highlights:</strong> Cellular Bioprotection patent with high-potency Tinosorb S and Tinosorb M. Delivers deep 8-hour continuous hydration for severely photodamaged dry skin.</p>
+          <div class="prod-verdict"><strong>Best For:</strong> Extreme outdoor UV exposure, trekking &amp; anti-aging protection.</div>
+        </div>
+
+        <!-- PRODUCT 7 -->
+        <div class="product-card">
+          <div class="product-img-box">
+            <img src="/assets/images/prod-reequil-sunscreen.jpg" alt="Reequil Oxybenzone and OMC Free Sunscreen for sensitive dry skin" loading="lazy" decoding="async">
+          </div>
+          <div class="prod-name">Re'equil Oxybenzone &amp; OMC Free Sunscreen</div>
+          <span class="prod-conc">SPF 50 PA+++ • Re'equil</span>
+          <p class="prod-claim"><strong>Highlights:</strong> Gentle lotion formulated without old-school irritating filters (Oxybenzone/Octinoxate). Enriched with Coral Reef-safe organic filters that soothe dry reactive skin.</p>
+          <div class="prod-verdict"><strong>Best For:</strong> Sensitive, allergy-prone dry skin &amp; daily commuter defense.</div>
         </div>
       </div>
     </section>
