@@ -97,8 +97,9 @@
     .hero-banner-caption span { background: var(--brand); color: #fff; font-size: 10.5px; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; }
     
     /* Sticky TOC Bar */
-    .toc-bar { background: var(--bg); border-bottom: 1px solid var(--border); position: sticky; top: 64px; z-index: 900; overflow-x: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
-    .toc-inner { max-width: 1140px; margin: 0 auto; display: flex; padding: 0 1rem; }
+    .toc-bar { background: var(--bg); border-bottom: 1px solid var(--border); position: sticky; top: 64px; z-index: 900; overflow-x: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.03); scrollbar-width: none; }
+    .toc-bar::-webkit-scrollbar { display: none; }
+    .toc-inner { max-width: 1140px; margin: 0 auto; display: flex; justify-content: center; align-items: center; padding: 0 1rem; }
     .toc-link { white-space: nowrap; font-size: 13.5px; font-weight: 700; color: var(--text-3); text-decoration: none; padding: 14px 16px; border-bottom: 3px solid transparent; display: flex; align-items: center; gap: 8px; transition: all 0.2s; }
     .toc-link:hover, .toc-link.active { color: var(--brand); border-bottom-color: var(--brand); }
     .toc-num { background: var(--brand); color: #fff; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; }
@@ -194,6 +195,7 @@
       .hero-inner { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
       .hero-content { align-items: center; }
       .hero-chips, .hero-cta-group, .meta-row { justify-content: center; }
+      .toc-inner { justify-content: flex-start; }
       .page-body { grid-template-columns: 1fr; gap: 2.5rem; }
       .bento-grid, .check-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -239,8 +241,11 @@
       </div>
 
       <div class="hero-cta-group">
-        <a href="#treatment-protocol" class="btn-hero-primary">View 3-Step Routine ↓</a>
-        <a href="#ingredient-audit" class="btn-hero-secondary">Check Fungal-Safe Serums ➔</a>
+        <a href="/scan/" class="btn-hero-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8M8 12h8"/></svg>
+          Start Free AI Face Scan
+        </a>
+        <a href="#treatment-protocol" class="btn-hero-secondary">View 3-Step Routine ↓</a>
       </div>
 
       <div class="meta-row">
@@ -254,10 +259,12 @@
 
     <!-- Right Hero Graphic / Custom Studio Photography -->
     <div class="hero-banner-wrap">
-      <img src="/assets/images/mandelic-acid-fungal-acne-malassezia-og.jpg" alt="Clinical laboratory setting with Mandelic Acid 10 percent serum, almonds, and clear serum droplet in petri dish" width="800" height="450" />
-      <div class="hero-banner-caption">
-        <span>Antimycotic Assay</span> Mandelic Acid 10% with Botanical Bitter Almond Extracts
-      </div>
+      <a href="/scan/" style="display:block; text-decoration:none; color:inherit;">
+        <img src="/assets/images/mandelic-acid-fungal-acne-malassezia-og.jpg" alt="Clinical laboratory setting with Mandelic Acid 10 percent serum, almonds, and clear serum droplet in petri dish" width="800" height="450" />
+        <div class="hero-banner-caption">
+          <span>AI Face Scan</span> Analyze your bumps with AI Face Scanner ➔
+        </div>
+      </a>
     </div>
   </div>
 </section>

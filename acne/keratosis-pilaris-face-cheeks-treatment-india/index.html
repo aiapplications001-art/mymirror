@@ -97,8 +97,9 @@
     .hero-banner-caption span { background: var(--brand); color: #fff; font-size: 10.5px; font-weight: 800; padding: 2px 8px; border-radius: 4px; text-transform: uppercase; }
 
     /* TOC Bar */
-    .toc-bar { background: var(--bg); border-bottom: 1px solid var(--border); position: sticky; top: 64px; z-index: 900; overflow-x: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
-    .toc-inner { max-width: 1140px; margin: 0 auto; display: flex; padding: 0 1rem; }
+    .toc-bar { background: var(--bg); border-bottom: 1px solid var(--border); position: sticky; top: 64px; z-index: 900; overflow-x: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.03); scrollbar-width: none; }
+    .toc-bar::-webkit-scrollbar { display: none; }
+    .toc-inner { max-width: 1140px; margin: 0 auto; display: flex; justify-content: center; align-items: center; padding: 0 1rem; }
     .toc-link { white-space: nowrap; font-size: 13.5px; font-weight: 700; color: var(--text-3); text-decoration: none; padding: 14px 16px; border-bottom: 3px solid transparent; display: flex; align-items: center; gap: 8px; transition: all 0.2s; }
     .toc-link:hover { color: var(--brand); border-bottom-color: var(--brand); }
     .toc-num { background: var(--brand); color: #fff; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; }
@@ -185,6 +186,7 @@
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
       .hero-chips, .hero-cta-group, .meta-row { justify-content: center; }
+      .toc-inner { justify-content: flex-start; }
       .page-body { grid-template-columns: 1fr; gap: 2.5rem; }
       .bento-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -230,8 +232,11 @@
       </div>
 
       <div class="hero-cta-group">
-        <a href="#diagnostic-matrix" class="btn-hero-primary">Check the Diagnostic Matrix ↓</a>
-        <a href="#keratolytic-blueprint" class="btn-hero-secondary">See Urea vs Lactic Acid ➔</a>
+        <a href="/scan/" class="btn-hero-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8M8 12h8"/></svg>
+          Start Free AI Face Scan
+        </a>
+        <a href="#diagnostic-matrix" class="btn-hero-secondary">Check Diagnostic Matrix ↓</a>
       </div>
 
       <div class="meta-row">
@@ -244,10 +249,12 @@
     </div>
 
     <div class="hero-banner-wrap">
-      <img src="/assets/images/keratosis-pilaris-face-cheeks-indian-skin-og.jpg" alt="Clinical lactic acid and hydrating keratolytic serum dropper bottle on bathroom counter for facial keratosis pilaris treatment" width="800" height="450" />
-      <div class="hero-banner-caption">
-        <span>Clinical Keratolytic Protocol</span> Hydrating Lactic Acid &amp; Urea Therapy for Rough Cheek Bumps
-      </div>
+      <a href="/scan/" style="display:block; text-decoration:none; color:inherit;">
+        <img src="/assets/images/keratosis-pilaris-face-cheeks-indian-skin-og.jpg" alt="Clinical lactic acid and hydrating keratolytic serum dropper bottle on bathroom counter for facial keratosis pilaris treatment" width="800" height="450" />
+        <div class="hero-banner-caption">
+          <span>AI Face Scan</span> Analyze rough cheek bumps vs acne with AI ➔
+        </div>
+      </a>
     </div>
   </div>
 </section>
