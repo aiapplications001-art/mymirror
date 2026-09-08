@@ -1,6 +1,66 @@
 {
   "redirects": [
     {
+      "source": "/acne/alpha-arbutin-vs-kojic-acid-dark-spots-india",
+      "destination": "/pigmentation/alpha-arbutin-vs-kojic-acid-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/alpha-arbutin-vs-kojic-acid-dark-spots-india/",
+      "destination": "/pigmentation/alpha-arbutin-vs-kojic-acid-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glyco-6-vs-glyco-12-cream-india",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glyco-6-vs-glyco-12-cream-india/",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glycolic-acid-6-percent-vs-12-percent-cream-india",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tranexamic-acid-3-percent-serum-pih-india",
+      "destination": "/pigmentation/tranexamic-acid-for-melasma-hyperpigmentation-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tranexamic-acid-3-percent-serum-pih-india/",
+      "destination": "/pigmentation/tranexamic-acid-for-melasma-hyperpigmentation-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tranexamic-acid-for-pih-indian-skin",
+      "destination": "/pigmentation/tranexamic-acid-for-melasma-hyperpigmentation-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tranexamic-acid-for-pih-indian-skin/",
+      "destination": "/pigmentation/tranexamic-acid-for-melasma-hyperpigmentation-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tranexamic-acid-serum-for-melasma-india",
+      "destination": "/pigmentation/tranexamic-acid-for-melasma-hyperpigmentation-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tranexamic-acid-serum-for-melasma-india/",
+      "destination": "/pigmentation/tranexamic-acid-for-melasma-hyperpigmentation-india/",
+      "permanent": true
+    },
+    {
       "source": "/blog/adapalene-before-after-results",
       "destination": "/acne/adapalene-before-after-results/",
       "permanent": true
