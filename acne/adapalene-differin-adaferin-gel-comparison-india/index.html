@@ -184,6 +184,11 @@
     .face-ai-btn:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(236,97,14,0.45); }
     p.face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 13.5px !important; font-style: italic; max-width: 480px; line-height: 1.4; margin: 8px auto 0 auto !important; }
   </style>
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
 
   <script defer src="/assets/site-analytics.js"></script>
   <link rel="preload" as="image" href="/assets/differin-gel.jpg">
@@ -211,7 +216,7 @@
   </nav>
 
   <section class="hero">
-    <div class="hero-inner reveal">
+    <div class="hero-inner">
       <h1><span style="color:var(--color-brand);">Adapalene vs. Differin vs. Adaferin:</span><br /><em>Which One Should You Buy in India?</em></h1>
       <p>Galderma distributes both Differin and Adaferin at vastly different price tags across Indian pharmacies. Let us walk through the chemistry differences, real pharmacy prices, and how to start without stripping your skin barrier.</p>
       
@@ -481,19 +486,34 @@
   </footer>
 
   <script>
-    const obs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting) { x.target.classList.add('active'); obs.unobserve(x.target); } }), { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    if ('IntersectionObserver' in window) {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach((x) => {
+          if (x.isIntersecting) {
+            x.target.classList.add('active');
+            obs.unobserve(x.target);
+          }
+        });
+      }, { threshold: 0.05 });
+      document.querySelectorAll('.reveal').forEach((el) => obs.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach((el) => el.classList.add('active'));
+    }
 
     const tocLinks = document.querySelectorAll('.toc-link');
-    const sections = document.querySelectorAll('.content-section');
+    const sections = document.querySelectorAll('.content-section[id]');
     window.addEventListener('scroll', () => {
       let current = '';
-      sections.forEach(s => { if(pageYOffset >= s.offsetTop - 150) current = s.getAttribute('id'); });
-      tocLinks.forEach(l => {
-        l.classList.remove('active');
-        if(l.getAttribute('href') === ) l.classList.add('active');
+      sections.forEach((s) => {
+        if (window.pageYOffset >= s.offsetTop - 160) current = s.getAttribute('id');
       });
-    });
+      tocLinks.forEach((l) => {
+        l.classList.remove('active');
+        if (current && l.getAttribute('href') === '#' + current) {
+          l.classList.add('active');
+        }
+      });
+    }, { passive: true });
   </script>
   <div class="sticky-cta-mobile">
     <a href="https://mymirror.fit/scan/" class="nav-cta" target="_blank" rel="noopener">Free AI Skin Analysis ✨</a>
