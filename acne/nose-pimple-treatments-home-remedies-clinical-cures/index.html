@@ -80,8 +80,15 @@
     .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(236,97,14,0.18); border: 1px solid rgba(236,97,14,0.4); color: #FFB58A; font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 16px; border-radius: 9999px; margin-bottom: 1.25rem; }
     .hero h1 { font-size: clamp(2.1rem, 4.5vw, 3.2rem); font-weight: 800; line-height: 1.15; margin-bottom: 1.25rem; letter-spacing: -0.03em; color: #FFFFFF; font-family: 'Kantumruy Pro', serif; }
     .hero h1 span { color: var(--brand); }
-    .hero p { color: rgba(255,255,255,0.85); font-size: 1.15rem; line-height: 1.65; max-width: 740px; margin: 0 auto 2rem; }
+    .hero p { color: rgba(255,255,255,0.85); font-size: 1.15rem; line-height: 1.65; max-width: 740px; margin: 0 auto 1.5rem; }
     
+    .hero-cta-group { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 0.8rem; flex-wrap: wrap; }
+    .btn-hero-primary { background: var(--brand); color: #fff !important; font-size: 15px; font-weight: 800; padding: 14px 28px; border-radius: 9999px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.25s var(--ease); box-shadow: 0 6px 24px rgba(236,97,14,0.45); }
+    .btn-hero-primary:hover { background: var(--brand-dark); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(236,97,14,0.6); }
+    .btn-hero-secondary { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.22); color: #fff !important; font-size: 14px; font-weight: 700; padding: 13px 22px; border-radius: 9999px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: all 0.25s var(--ease); }
+    .btn-hero-secondary:hover { background: rgba(255,255,255,0.16); border-color: rgba(255,255,255,0.4); transform: translateY(-2px); }
+    .hero-cta-subtext { font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 2rem; }
+
     .hero-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 2rem; }
     .hero-chip { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #fff; font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 9999px; }
 
@@ -265,6 +272,8 @@
       .sidebar { display: none; }
       .bento-grid, .product-grid, .flip-grid, .footer-grid, .remedy-grid { grid-template-columns: 1fr; }
       .flip-card { height: 520px; }
+      .hero-cta-group { flex-direction: column; width: 100%; gap: 10px; }
+      .btn-hero-primary, .btn-hero-secondary { width: 100%; max-width: 340px; justify-content: center; }
     }
   </style>
   <script defer src="/assets/site-analytics.js"></script>
@@ -298,6 +307,15 @@
     <h1>Pimple on Nose: How to Shrink <span>Painful Blind Bumps Fast</span></h1>
     <p>A throbbing nose bump is impossible to ignore. Learn why the <strong>Danger Triangle</strong> makes popping lethal, how to identify whether your bump is inside or outside the nostril, and the dermatologist 24–48h acute recovery protocol with top Indian pharmacy picks.</p>
     
+    <div class="hero-cta-group">
+      <a href="https://mymirror.fit/scan/" class="btn-hero-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8M8 12h8"/></svg>
+        <span>🤖 Scan Nasal Breakout Free</span>
+      </a>
+      <a href="#acute-protocol" class="btn-hero-secondary">Explore 24–48h Protocol ↓</a>
+    </div>
+    <p class="hero-cta-subtext">Free 60-second AI scan to evaluate nasal congestion, infection risk, and personalized remedies.</p>
+
     <div class="hero-chips">
       <span class="hero-chip">⚠️ Danger Triangle Safety</span>
       <span class="hero-chip">👃 Nasal Vestibulitis Fix</span>
