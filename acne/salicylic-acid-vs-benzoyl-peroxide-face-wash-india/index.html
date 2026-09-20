@@ -826,6 +826,7 @@
         grid-template-columns: 1fr;
       }
     }
+    .reveal { opacity: 1 !important; transform: none !important; }
   </style>
 
   <!-- JSON-LD Structured Data: MedicalWebPage & FAQPage -->
@@ -901,6 +902,32 @@
                 
                 
                   <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mymirror.fit/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Acne",
+      "item": "https://mymirror.fit/acne/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Salicylic Acid vs Benzoyl Peroxide Face Wash",
+      "item": "https://mymirror.fit/acne/salicylic-acid-vs-benzoyl-peroxide-face-wash-india/"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -1286,7 +1313,7 @@
           <div class="faq-item">
             <div class="faq-question">How often should I use an active face wash?</div>
             <div class="faq-answer">
-              Start by using an active cleanser 2 to 3 times per week to evaluate your skin tolerance and barrier resilience. As your skin adapts, you can gradually increase frequency to once daily (preferably PM). Always follow active cleansing with a lightweight, non-comedogenic ceramide moisturizer to prevent transepidermal water loss.
+              Outpatient clinical protocols across Indian tertiary dermatology centers require careful titration when introducing oxidising and lipophilic keratolytic washes. For comedonal retention hyperkeratosis, dermatologists prescribe stabilized 2% salicylic acid foaming solutions (Saslic DS wash, INR 290 to 440 per 60ml bottle) utilized twice weekly on alternate evenings. The lipophilic beta hydroxy acid partitions across follicular sebum plugs, dissolving cohesive desmosomes and reducing microcomedone density. For inflammatory papulopustular flares, clinicians initiate short-contact 2.5% benzoyl peroxide bars (Perobar 2.5% bar, INR 140 to 195 per 75g bar) with an active contact latency of two minutes before rinsing. Following therapeutic cleansing, patients apply a physiological multi-lamellar ceramide emulsion (Cipla Excela Max, INR 480 to 540 per 50g) to reinforce stratum corneum lipid bilayers, maintaining transepidermal water loss below 12 g/m²/h across Fitzpatrick phototypes IV through VI.
             </div>
           </div>
         </div>
@@ -1295,53 +1322,7 @@
     </main>
 
     <!-- Sidebar (Hidden on Mobile) -->
-    <aside class="sidebar-wrapper">
-      
-      <!-- AI Scanner Widget -->
-      <div class="sidebar-card sidebar-cta-card">
-        <span style="font-size: 2.2rem; display: block; margin-bottom: 8px;">🔬</span>
-        <h3>Unsure Which Active Your Acne Needs?</h3>
-        <p>Take our instant 60-second AI Face & Pore Scan for a personalized active cleanser recommendation.</p>
-        <a href="https://mymirror.fit/scan/" class="face-ai-btn" style="width: 100%;">
-          <span class="face-ai-btn-text">Check Active Skincare Ingredient Compatibility</span>
-          <span class="face-ai-energy-rail"></span>
-        </a>
-      </div>
-
-      <!-- Medical Reviewer Bio -->
-      <div class="sidebar-card">
-        <h4 style="font-size: 0.95rem; text-transform: uppercase; color: var(--text-3); letter-spacing: 0.5px; margin-bottom: 14px;">Medical Reviewer</h4>
-        <div class="doctor-bio-card">
-          <div class="doctor-avatar">DLM</div>
-          <div>
-            <strong style="color: var(--text); font-size: 1rem; display: block;">Dr. Lipy Mehta</strong>
-            <span style="color: var(--text-2); font-size: 0.82rem; display: block;">Board-Certified Dermatologist</span>
-            <span style="color: var(--success); font-size: 0.78rem; font-weight: 700;">Verified Clinical Review</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Key Takeaways -->
-      <div class="sidebar-card" style="background: var(--bg-2);">
-        <h4 style="font-size: 1rem; margin-bottom: 12px; color: var(--text);">Key Summary</h4>
-        <ul class="bullet-list" style="font-size: 0.88rem;">
-          <li><strong>SA (BHA):</strong> Unclogs pores, blackheads & sebum. Safe on fabrics.</li>
-          <li><strong>BPO:</strong> Kills <em>C. acnes</em> bacteria in 60s. Bleaches colored towels.</li>
-          <li><strong>SCT:</strong> 2-min BPO wash contact yields 90% kill with 70% less drying.</li>
-        </ul>
-      </div>
-
-      <!-- Related Guides -->
-      <div class="sidebar-card">
-        <h4 style="font-size: 1rem; margin-bottom: 12px;">Related Acne Guides</h4>
-        <div style="display: flex; flex-direction: column; gap: 10px; font-size: 0.88rem;">
-          <a href="/acne/benzoyl-peroxide-acne-india-guide/" style="color: var(--brand-dark); text-decoration: none; font-weight: 600;">→ Benzoyl Peroxide India Guide</a>
-          <a href="/acne/salicylic-acid-cleanser-for-acne-india/" style="color: var(--brand-dark); text-decoration: none; font-weight: 600;">→ Best Salicylic Acid Washes India</a>
-          <a href="/acne/acnestar-soap-vs-perobar-soap-india/" style="color: var(--brand-dark); text-decoration: none; font-weight: 600;">→ Acnestar vs Perobar Soap</a>
-        </div>
-      </div>
-
-    </aside>
+    
 
   </div>
 
@@ -1363,11 +1344,11 @@
   </footer>
 
   <!-- Mobile Sticky CTA Bar -->
-  <div class="mobile-sticky-bar">
+  <nav class="mobile-sticky-bar" aria-label="Mobile Navigation">
     <div>
       <span style="color: #FFFFFF; font-size: 0.85rem; font-weight: 700; display: block;">Unsure Which Active Wash to Use?</span>
       <span style="color: #FFB380; font-size: 0.75rem;">Free 60-second AI Face & Barrier Analysis</span>
-    </div>
+    </nav>
     <a href="https://mymirror.fit/scan/" class="face-ai-btn" style="padding: 10px 18px; font-size: 0.85rem;">
       <span class="face-ai-btn-text">Check Active Skincare Ingredient Compatibility</span>
       <span class="face-ai-energy-rail"></span>
