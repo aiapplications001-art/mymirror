@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
   <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png?v=3">
   <link rel="shortcut icon" href="/favicon.ico?v=3">
   <meta charset="UTF-8" />
@@ -254,7 +258,7 @@
       position: relative;
       background: linear-gradient(135deg, #0d0a08 0%, #1c1510 50%, #2a1a0e 100%);
       color: #FFF;
-      padding: 4.5rem 1.5rem 4rem;
+      padding: 4.5rem 24px 4rem;
       text-align: center;
       overflow: hidden;
     }
@@ -705,36 +709,29 @@
 
     /* ── HIGH-CONTRAST PREMIUM TABLE STYLES (§9.15) ── */
     .acne-table-wrapper {
-      margin: 2rem 0 1rem;
+      margin: 2rem 0 1.5rem;
       border: 2px solid var(--border-dark);
       border-radius: var(--radius-lg);
-      overflow-x: auto !important;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
       box-shadow: 0 6px 24px rgba(26, 20, 16, 0.05);
       background: #FFFFFF;
+      width: 100%;
+      box-sizing: border-box;
     }
     .acne-table {
-      width: 100% !important;
-      margin: 0 !important;
-      border-collapse: collapse !important;
-      border-spacing: 0 !important;
+      width: 100%;
+      margin: 0;
+      border-collapse: collapse;
+      border-spacing: 0;
       font-size: 13.5px;
       color: var(--text-primary);
       text-align: left;
     }
     .acne-table tr {
-      background: transparent !important;
-      box-shadow: none !important;
-      transform: none !important;
-    }
-    .acne-table {
-      width: 100% !important;
-      min-width: 680px !important;
-      margin: 0 !important;
-      border-collapse: collapse !important;
-      border-spacing: 0 !important;
-      font-size: 13.5px;
-      color: var(--text-primary);
-      text-align: left;
+      background: transparent;
+      box-shadow: none;
+      transform: none;
     }
     .acne-table th {
       background: #2D231E;
@@ -752,22 +749,14 @@
       border-radius: 0 !important;
     }
     .acne-table td {
-      padding: 12px 14px;
-      border-bottom: 1px solid var(--border);
-      vertical-align: top;
-      color: var(--text-primary);
-      line-height: 1.55;
-      word-break: normal !important;
-      overflow-wrap: break-word !important;
-      border-radius: 0 !important;
-    }
-    .acne-table td {
       padding: 14px 18px;
       border-bottom: 1px solid var(--border);
       vertical-align: top;
       color: var(--text-primary);
       line-height: 1.6;
       border-radius: 0 !important;
+      word-break: normal !important;
+      overflow-wrap: break-word !important;
     }
     .acne-table tr:last-child td {
       border-bottom: none;
@@ -785,7 +774,10 @@
       font-size: 13px;
     }
 
-    @media (min-width: 641px) {
+    @media (min-width: 769px) {
+      .acne-table {
+        min-width: 640px;
+      }
       .acne-table td:first-child {
         font-weight: 700;
         color: #2D231E;
@@ -796,64 +788,6 @@
       .acne-table th:first-child {
         border-right: 1px solid #3D312A;
         min-width: 130px;
-      }
-    }
-
-    /* Mobile responsive card grid (Widths <= 640px) */
-    @media (max-width: 640px) {
-      .acne-table-wrapper {
-        border: none;
-        box-shadow: none;
-        background: transparent;
-        margin: 1.5rem 0;
-      }
-      .acne-table, 
-      .acne-table thead, 
-      .acne-table tbody, 
-      .acne-table th, 
-      .acne-table td, 
-      .acne-table tr {
-        display: block;
-        width: 100% !important;
-      }
-      .acne-table thead { display: none; }
-      .acne-table tr {
-        background: #FFFFFF !important;
-        border: 2px solid var(--border-dark) !important;
-        border-radius: 16px !important;
-        padding: 18px;
-        margin-bottom: 16px;
-        box-shadow: 0 4px 15px rgba(26, 20, 16, 0.04) !important;
-      }
-      .acne-table td {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        padding: 8px 0;
-        border-bottom: 1px solid var(--border);
-        text-align: left;
-      }
-      .acne-table td:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
-      }
-      .acne-table tr td:first-child {
-        font-size: 15px;
-        font-weight: 800;
-        color: #2D231E;
-        border-bottom: 2px solid var(--border);
-        padding-top: 0;
-        padding-bottom: 8px;
-        margin-bottom: 4px;
-      }
-      .acne-table tr td:first-child::before { display: none; }
-      .acne-table td::before {
-        content: attr(data-label);
-        font-size: 10.5px;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: var(--text-muted);
-        font-weight: 800;
       }
     }
 
@@ -1192,84 +1126,10 @@
       }
     }
 
-    /* Table Horizontal Scroll + Responsive Card Grid */
-    .acne-table-wrapper {
-      margin: 2rem 0 1rem;
-      border: 2px solid var(--border-dark);
-      border-radius: var(--radius-lg);
-      overflow-x: auto !important;
-      -webkit-overflow-scrolling: touch;
-      box-shadow: 0 6px 24px rgba(26, 20, 16, 0.05);
-      background: #FFFFFF;
-      width: 100%;
-      max-width: 100%;
-      box-sizing: border-box;
-    }
-
-    @media (max-width: 768px) {
-      .acne-table-wrapper {
-        border: none !important;
-        box-shadow: none !important;
-        background: transparent !important;
-        margin: 1.5rem 0 !important;
-      }
-      .acne-table, 
-      .acne-table thead, 
-      .acne-table tbody, 
-      .acne-table th, 
-      .acne-table td, 
-      .acne-table tr {
-        display: block !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-      }
-      .acne-table thead { display: none !important; }
-      .acne-table tr {
-        background: #FFFFFF !important;
-        border: 2px solid var(--border-dark) !important;
-        border-radius: 16px !important;
-        padding: 16px !important;
-        margin-bottom: 16px !important;
-        box-shadow: 0 4px 15px rgba(26, 20, 16, 0.04) !important;
-      }
-      .acne-table td {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 4px !important;
-        padding: 8px 0 !important;
-        border-bottom: 1px solid var(--border) !important;
-        text-align: left !important;
-        width: 100% !important;
-        word-break: break-word !important;
-      }
-      .acne-table td:last-child {
-        border-bottom: none !important;
-        padding-bottom: 0 !important;
-      }
-      .acne-table tr td:first-child {
-        font-size: 15px !important;
-        font-weight: 800 !important;
-        color: #2D231E !important;
-        border-bottom: 2px solid var(--border) !important;
-        padding-top: 0 !important;
-        padding-bottom: 8px !important;
-        margin-bottom: 4px !important;
-      }
-      .acne-table tr td:first-child::before { display: none !important; }
-      .acne-table td::before {
-        content: attr(data-label) !important;
-        font-size: 10.5px !important;
-        text-transform: uppercase !important;
-        letter-spacing: 0.08em !important;
-        color: var(--text-muted) !important;
-        font-weight: 800 !important;
-      }
-    }
-
-
+    /* Responsive Layout & Mobile Table Cards */
     @media (max-width: 768px) {
       .page-wrapper {
-        padding: 1.5rem 20px 3.5rem !important;
+        padding: 1.75rem 24px 3.5rem !important;
         gap: 24px !important;
       }
       .section-card {
@@ -1286,19 +1146,93 @@
         grid-template-columns: 1fr !important;
         gap: 16px !important;
       }
+      .acne-table-wrapper {
+        border: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        margin: 1.5rem 0 !important;
+        overflow: visible !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .acne-table {
+        display: block !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+      }
+      .acne-table thead {
+        display: none !important;
+      }
+      .acne-table tbody {
+        display: block !important;
+        width: 100% !important;
+        min-width: 0 !important;
+      }
+      .acne-table tr {
+        display: block !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        background: #FFFFFF !important;
+        border: 2px solid var(--border-dark) !important;
+        border-radius: 16px !important;
+        padding: 16px !important;
+        margin-bottom: 16px !important;
+        box-shadow: 0 4px 15px rgba(26, 20, 16, 0.04) !important;
+      }
+      .acne-table td {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 4px !important;
+        padding: 8px 0 !important;
+        border-bottom: 1px solid var(--border) !important;
+        border-right: none !important;
+        text-align: left !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        word-break: break-word !important;
+        background: transparent !important;
+      }
+      .acne-table td:last-child {
+        border-bottom: none !important;
+        padding-bottom: 0 !important;
+      }
+      .acne-table tr td:first-child {
+        font-size: 15px !important;
+        font-weight: 800 !important;
+        color: #2D231E !important;
+        border-bottom: 2px solid var(--border) !important;
+        padding-top: 0 !important;
+        padding-bottom: 8px !important;
+        margin-bottom: 4px !important;
+        background: transparent !important;
+      }
+      .acne-table tr td:first-child::before {
+        display: none !important;
+      }
+      .acne-table td::before {
+        content: attr(data-label) !important;
+        font-size: 10.5px !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.08em !important;
+        color: var(--text-muted) !important;
+        font-weight: 800 !important;
+      }
     }
     @media (max-width: 480px) {
       .page-wrapper {
-        padding: 1.25rem 16px 3rem !important;
+        padding: 1.25rem 20px 3rem !important;
       }
       .section-card {
-        padding: 1.5rem 1rem !important;
+        padding: 1.5rem 1.15rem !important;
       }
       .roadmap-container, .qualification-container, .faq-container {
-        padding: 1.5rem 1rem !important;
+        padding: 1.5rem 1.15rem !important;
       }
     }
-
   </style>
 </head>
 <body>
@@ -1374,8 +1308,8 @@
           <nav class="visual-img-card">
             <img src="/assets/images/blood_vials.jpg" alt="Phlebotomy blood test tubes for clinical dermatological workup" class="visual-img" loading="lazy">
             <div class="visual-caption">Phlebotomy evaluation isolates systemic triggers behind persistent adult acne.</div>
-          </div>
           </nav>
+        </div>
         <p>Relying exclusively on surface creams for adult hormonal acne creates a cycle of chronic epidermal barrier breakdown. Topical retinoids increase stratum corneum turnover, but they cannot attenuate elevated circulating insulin, downregulate androgen receptor expression, or correct systemic ferritin depletion. Targeted phlebotomy transforms refractory acne management into root-cause medicine. Instead of ordering non-specific 80-parameter executive health checkups that cost upwards of INR 6,000, dermatologists prioritize a focused panel evaluating the metabolic axis, ovarian and adrenal androgens, micronutrient wound-healing regulators, and pre-isotretinoin hepatic safety.</p>
       </section>
 
@@ -1422,8 +1356,8 @@
           <nav class="visual-img-card">
             <img src="/assets/images/insulin-acne.jpg" alt="Metabolic insulin and IGF-1 signaling pathway triggering follicular sebum" class="visual-img" loading="lazy">
             <div class="visual-caption">Insulin spikes directly downregulate SHBG and accelerate sebaceous gland output.</div>
-          </div>
           </nav>
+        </div>
         <p>At Apollo Diagnostics, Dr. Lal PathLabs, and Thyrocare, fasting serum insulin quantification via chemiluminescent immunoassay (CLIA, INR 380 to 550) paired with fasting plasma glucose (Grey-top sodium fluoride tube, INR 60 to 90) allows calculation of the Homeostatic Model Assessment for Insulin Resistance: HOMA-IR = (Fasting Glucose mg/dL x Fasting Insulin uIU/mL) / 405. While commercial laboratories report a normal fasting insulin range up to 25.0 uIU/mL, clinical dermatologists recognize that values above 6.0 uIU/mL actively stimulate sebaceous lipogenesis. Elevated insulin directly downregulates hepatic production of Sex Hormone-Binding Globulin (SHBG), elevating circulating free testosterone. Simultaneously, insulin stimulates Insulin-Like Growth Factor 1 (IGF-1) secretion, which signals sebocytes to produce thick, wax-ester-rich sebum that obstructs the follicular infundibulum. For patients with HOMA-IR exceeding 1.8, initiating myo-inositol plus D-chiro-inositol (Ovasitol or Chicnutrix, INR 950 to 1,450 per month) alongside low-glycemic dietary modifications reduced inflammatory nodule counts by 58% at twelve-week follow-up reviews.</p>
 
         <!-- Design System §9.15 High-Contrast Table -->
@@ -1484,8 +1418,8 @@
           <nav class="visual-img-card">
             <img src="/assets/images/hormone-ratio-acne.jpg" alt="Hormone ratio and LH to FSH blood test analysis for PCOS" class="visual-img" loading="lazy">
             <div class="visual-caption">Cycle-timed hormone tests differentiate ovarian PCOS from adrenal stress pathways.</div>
-          </div>
           </nav>
+        </div>
         <p>Adrenal acne is completely different. If you work long corporate hours in Gurgaon or Bangalore, drink multiple coffees, and sleep five hours a night, your adrenal glands produce excess DHEA-S and cortisol. These patients have regular periods and normal ovarian testosterone, but their DHEA-S is sky-high. Birth control pills do not fix adrenal acne; you need stress management, better sleep, and herbs like Ashwagandha KSM-66 (INR 550 per bottle). And if your periods are regular but you still break out every month, test progesterone on Day 21. If it falls below 6 ng/mL, it means you did not ovulate, leaving testosterone completely unopposed.</p>
 
         <!-- Design System §9.15 High-Contrast Table -->
@@ -1560,8 +1494,8 @@
           <nav class="visual-img-card">
             <img src="/assets/images/zinc-acne.jpg" alt="Serum zinc and ferritin testing for acne wound healing" class="visual-img" loading="lazy">
             <div class="visual-caption">Zinc modulates 5-alpha reductase; ferritin fuels collagen synthesis and scar fading.</div>
-          </div>
           </nav>
+        </div>
         <p>Zinc acts as your skin's built-in oil regulator. It calms down 5-alpha reductase—the enzyme that converts testosterone into oil-producing DHT—and stops white blood cells from creating throbbing red pimples. Always ask your lab for a plain red-top glass tube when testing zinc, because ordinary rubber caps contain zinc coatings that ruin the test results. We aim for 90 to 120 ug/dL; taking Zinconia 50mg (INR 60 per strip) noticeably calms inflamed bumps within two months. High-sensitivity CRP (hs-CRP, INR 380) tracks systemic inflammation; levels over 1.5 mg/L show your immune system is overreacting across your entire body.</p>
 
         <!-- Design System §9.15 High-Contrast Table -->
@@ -1617,8 +1551,8 @@
           <nav class="visual-img-card">
             <img src="/assets/images/b12-acne.jpg" alt="Vitamin B12 porphyrin acne reaction and supplement flare" class="visual-img" loading="lazy">
             <div class="visual-caption">Cyanocobalamin induces C. acnes porphyrin synthesis, creating forehead pustules.</div>
-          </div>
           </nav>
+        </div>
         <p>Biotin gummies create a different problem. Biotin and Vitamin B5 share the exact same intestinal transporter (SMVT). Flooding your gut with 5,000 to 10,000 mcg of biotin blocks B5 absorption completely. Without Vitamin B5, your sebaceous glands cannot metabolize lipids normally, resulting in thick, waxy sebum that plugs pores into cystic bumps along your chin. Stopping the hair gummies clears the flare in four weeks. Meanwhile, for Vitamin D, 72% of our urban patients test below 20 ng/mL; we target 50 to 80 ng/mL using Calcirol 60,000 IU sachets (Cadila, INR 42 each) taken weekly with whole milk for two months.</p>
       </section>
 
@@ -1634,8 +1568,8 @@
           <nav class="visual-img-card">
             <img src="/assets/images/thyroid-acne.jpg" alt="Thyroid axis TSH Free T3 Free T4 laboratory workup" class="visual-img" loading="lazy">
             <div class="visual-caption">Thyroid regulation governs stratum corneum turnover and follicular desquamation.</div>
-          </div>
           </nav>
+        </div>
         <p>Before writing a prescription for oral isotretinoin (Tretiva or Isotroin 10mg/20mg, Cipla, INR 220 to 350 per strip), lab tests are non-negotiable. Isotretinoin is processed by your liver and raises blood lipids. Your dermatologist must confirm three baselines: SGPT and SGOT below 35 U/L to verify liver clearance, fasting triglycerides below 150 mg/dL, and a strictly negative quantitative serum beta-hCG test for female patients within 7 days of starting therapy. We repeat liver enzymes and lipid profiles at week 4 and week 12; if triglycerides climb above 300 mg/dL or liver enzymes jump three times normal, we pause or lower the dose immediately.</p>
 
         <!-- Design System §9.15 High-Contrast Table -->
@@ -1689,8 +1623,8 @@
           <nav class="visual-img-card">
             <img src="/assets/images/heavy-metal-acne.jpg" alt="Commercial heavy metal test kit and non-validated diagnostic audits" class="visual-img" loading="lazy">
             <div class="visual-caption">Non-validated direct-to-consumer kits market unnecessary tests without clinical evidence.</div>
-          </div>
           </nav>
+        </div>
         <p><strong>Hair Tissue Mineral Analysis (Cost: INR 4,500 to 9,000):</strong> Companies market hair testing to detect heavy metal poisoning (arsenic, lead, mercury) allegedly causing chronic cystic acne. However, external hair shafts absorb heavy metals and trace minerals from airborne pollution, municipal tap water (often high in TDS across Delhi NCR, Bengaluru, and Chennai), and chemical hair treatments. Hair testing lacks physiological validity; if systemic heavy metal intoxication is genuinely suspected, it must be evaluated via whole blood ICP-MS or 24-hour urinary clearance at certified toxicology centers.</p>
         <p><strong>Direct-to-Consumer Stool Microbiome Kits (Cost: INR 12,000 to 25,000):</strong> While the gut-skin axis is scientifically verified, consumer microbiome 16S rRNA sequencing cannot differentiate between transient commensal flora and clinically significant dysbiosis in acne. At present, these tests lack validated clinical guidelines to dictate specific probiotic strain selection.</p>
       </section>
@@ -1736,8 +1670,8 @@
           <nav class="visual-img-card">
             <img src="/assets/images/pharmacy_tubes.jpg" alt="Indian diagnostic lab testing and pharmacy medication tubes" class="visual-img" loading="lazy">
             <div class="visual-caption">Booking bundled NABL packages saves over 60% compared to booking individual tests.</div>
-          </div>
           </nav>
+        </div>
         <p>How you prepare for your blood draw determines whether your results are accurate. Do a strict 10 to 12-hour overnight fast, drinking plain water only. Never have morning tea or coffee before the test; caffeine spikes your cortisol and glucose. Book your phlebotomist for 8:00 AM to 8:30 AM so your hormone levels match standard morning reference curves. And remember: stop all biotin hair gummies and B-complex supplements for 3 full days beforehand, because biotin scrambles automated lab immunoassays and gives false thyroid readings.</p>
 
         <!-- Design System §9.15 High-Contrast Table -->
