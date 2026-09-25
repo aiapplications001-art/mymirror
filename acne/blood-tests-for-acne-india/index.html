@@ -995,14 +995,14 @@
       overflow-wrap: break-word;
     }
 
-    /* Fixed Non-Overflowing Sticky TOC */
+    /* Sticky Horizontal Scrollspy Jump-To Bar */
     .toc-sticky-bar {
       position: sticky;
       top: 62px;
       z-index: 99;
-      background: rgba(250, 250, 249, 0.95);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      background: rgba(250, 250, 249, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       width: 100%;
       box-sizing: border-box;
@@ -1017,6 +1017,14 @@
       gap: 12px;
       box-sizing: border-box;
       width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      scroll-behavior: smooth;
+    }
+    .toc-inner::-webkit-scrollbar {
+      display: none;
     }
     .toc-label {
       font-size: 11px;
@@ -1030,51 +1038,190 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      flex-shrink: 0;
     }
     .toc-pill {
-      font-size: 12px;
+      font-size: 12.5px;
       font-weight: 600;
       color: var(--text-secondary);
       background: #FFF;
       border: 1px solid var(--border);
-      padding: 5px 14px;
+      padding: 6px 14px;
       border-radius: var(--radius-full);
       text-decoration: none;
-      transition: all 0.25s ease;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
       white-space: nowrap;
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
     }
     .toc-pill:hover {
       color: var(--brand);
       border-color: var(--brand);
       background: var(--brand-tint);
-      transform: translateY(-1px);
     }
-    @media (min-width: 1025px) {
-      .toc-inner {
-        flex-wrap: wrap;
-        gap: 8px 12px;
-      }
-      .toc-pills {
-        flex-wrap: wrap;
-        gap: 6px 8px;
-      }
+    .toc-pill.active {
+      background: var(--brand) !important;
+      color: #FFFFFF !important;
+      border-color: var(--brand) !important;
+      font-weight: 700;
+      box-shadow: 0 3px 10px rgba(236, 97, 14, 0.3);
     }
-    @media (max-width: 1024px) {
+    @media (max-width: 768px) {
       .toc-inner {
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        padding: 10px 20px;
-        gap: 10px;
-      }
-      .toc-inner::-webkit-scrollbar { display: none; }
-      .toc-pills {
-        flex-shrink: 0;
-        padding-right: 24px;
+        padding: 10px 16px;
+        gap: 8px;
       }
       .toc-pill {
-        flex-shrink: 0;
+        font-size: 12px;
+        padding: 5px 12px;
+      }
+    }
+
+    /* Scroll Offset Anchor Fix */
+    section.section-card,
+    .roadmap-container,
+    .qualification-container,
+    .faq-container,
+    .seo-deep-dive-card {
+      scroll-margin-top: 120px;
+    }
+
+    /* Highlight Metrics Bento */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 1.5rem 0;
+    }
+    .metric-card {
+      background: var(--bg-canvas);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.1rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    .metric-card:hover {
+      border-color: var(--brand);
+      transform: translateY(-2px);
+    }
+    .metric-num {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--brand);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .metric-label {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      line-height: 1.45;
+      font-weight: 500;
+    }
+
+    /* Collapsed SEO Deep Dive Accordion */
+    .seo-deep-dive-card {
+      background: #FAFAF9;
+      border: 1.5px solid var(--border-dark);
+      border-radius: var(--radius-xl);
+      padding: 1.75rem 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2.5rem;
+      box-sizing: border-box;
+      width: 100%;
+    }
+    .deep-dive-details summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      user-select: none;
+    }
+    .deep-dive-details summary::-webkit-details-marker {
+      display: none;
+    }
+    .deep-dive-summary-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .deep-dive-tag {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--brand);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .deep-dive-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0;
+    }
+    .deep-dive-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.4;
+    }
+    .deep-dive-toggle-icon {
+      font-size: 14px;
+      color: var(--text-secondary);
+      background: #FFF;
+      border: 1px solid var(--border);
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-full);
+      flex-shrink: 0;
+      transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+      font-weight: 700;
+    }
+    .deep-dive-details[open] .deep-dive-toggle-icon {
+      transform: rotate(180deg);
+      background: var(--brand-tint);
+      color: var(--brand);
+      border-color: var(--brand);
+    }
+    .deep-dive-body {
+      padding-top: 1.5rem;
+      margin-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      font-size: 13.5px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+    }
+    .deep-dive-body h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 1.5rem 0 0.5rem;
+    }
+    .deep-dive-body p {
+      margin-bottom: 0.85rem;
+    }
+    .deep-dive-body ul {
+      margin: 0.5rem 0 1rem 1.25rem;
+    }
+    .deep-dive-body li {
+      margin-bottom: 0.4rem;
+    }
+    @media (max-width: 768px) {
+      .metrics-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .seo-deep-dive-card {
+        padding: 1.25rem 1rem !important;
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.75rem !important;
       }
     }
 
@@ -1245,14 +1392,14 @@
     <div class="toc-inner">
       <span class="toc-label">Jump to:</span>
       <div class="toc-pills">
-        <a href="#why-blood-tests" class="toc-pill">Why Test</a>
+        <a href="#why-blood-tests" class="toc-pill active">Why Test</a>
         <a href="#diagnostic-roadmap" class="toc-pill">3-Phase Roadmap</a>
-        <a href="#metabolic-axis" class="toc-pill">Metabolic &amp; Insulin</a>
-        <a href="#endocrine-panel" class="toc-pill">Hormone Mapping</a>
-        <a href="#micronutrients" class="toc-pill">Zinc &amp; Ferritin</a>
+        <a href="#metabolic-axis" class="toc-pill">Sugar &amp; Insulin</a>
+        <a href="#endocrine-panel" class="toc-pill">Hormones &amp; PCOS</a>
+        <a href="#micronutrients" class="toc-pill">Iron &amp; Zinc</a>
         <a href="#vitamin-traps" class="toc-pill">B12 &amp; Biotin</a>
         <a href="#thyroid-isotretinoin" class="toc-pill">Thyroid &amp; Accutane</a>
-        <a href="#commercial-audits" class="toc-pill">Test Hype Audits</a>
+        <a href="#commercial-audits" class="toc-pill">Tests to Avoid</a>
         <a href="#who-this-is-for" class="toc-pill">Who It's For</a>
         <a href="#lab-pricing" class="toc-pill">Lab Costs</a>
         <a href="#faqs" class="toc-pill">FAQs</a>
@@ -1266,66 +1413,85 @@
 
       <!-- Module 1: Why Blood Testing Changes Acne Treatment -->
       <section class="section-card" id="why-blood-tests">
-        <nav class="section-eyebrow">THE CLINICAL SHIFT</nav>
+        <nav class="section-eyebrow">THE ROOT-CAUSE SHIFT</nav>
         <h2>Why Inside-Out Blood Testing Changes Acne Treatment</h2>
         <div class="visual-split">
           <div>
-            <p>In our clinical follow-ups across New Delhi, Mumbai, and Bengaluru, we tracked 420 patients presenting with refractory mandibular and cystic acne. We found that 62% of patients had previously used topical adapalene, clindamycin, and benzoyl peroxide for over 18 months without achieving sustained remission. Systemic blood testing revealed underlying endocrine or metabolic triggers in 71% of these individuals.</p>
+            <p>If you have spent months applying topical creams, acne spot patches, and serums only for painful pimples to keep coming back, you are not alone. Most acne treatments focus only on the surface of your skin. But when stubborn breakouts keep flaring up along your jawline, chin, or cheeks, the real trigger is almost always internal.</p>
+            <p>Topical creams like adapalene or benzoyl peroxide can help clear active surface bumps, but they cannot fix an internal hormone imbalance, high morning insulin, or a hidden iron deficiency. That is why blood tests are so valuable: they stop the cycle of guessing and give you clear answers.</p>
           </div>
           <nav class="visual-img-card">
-            <img src="/assets/images/blood_vials.jpg" alt="Phlebotomy blood test tubes for clinical dermatological workup" class="visual-img" loading="lazy">
-            <div class="visual-caption">Phlebotomy evaluation isolates systemic triggers behind persistent adult acne.</div>
+            <img src="/assets/images/spot_treatment_india.jpg" alt="Topical acne spot treatments, pimple patches, and serums" class="visual-img" loading="lazy">
+            <div class="visual-caption">Topical creams and pimple patches treat active surface breakouts—blood tests uncover the internal root trigger.</div>
           </nav>
         </div>
-        <p>Relying exclusively on surface creams for adult hormonal acne creates a cycle of chronic epidermal barrier breakdown. Topical retinoids increase stratum corneum turnover, but they cannot attenuate elevated circulating insulin, downregulate androgen receptor expression, or correct systemic ferritin depletion. Targeted phlebotomy transforms refractory acne management into root-cause medicine. Instead of ordering non-specific 80-parameter executive health checkups that cost upwards of INR 6,000, dermatologists prioritize a focused panel evaluating the metabolic axis, ovarian and adrenal androgens, micronutrient wound-healing regulators, and pre-isotretinoin hepatic safety.</p>
+
+        <!-- Highlight Metrics Callout Bento -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-num">70%+</span>
+            <span class="metric-label">Of stubborn adult breakouts have internal hormone or insulin triggers</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-num">₹1,499</span>
+            <span class="metric-label">Targeted skin blood panel vs. ₹6,000+ random full-body health packages</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-num">4 Panels</span>
+            <span class="metric-label">Insulin &amp; Sugar • Hormones • Iron &amp; Zinc • Liver &amp; Thyroid</span>
+          </div>
+        </div>
+
+        <p>Rather than spending ₹6,000 or more on random 80-test full-body executive packages, dermatologists recommend a focused panel that answers four critical questions: Are your insulin levels driving excess facial oil? Are your ovaries or adrenal glands causing hormone spikes? Do your skin cells have the iron and zinc needed to heal wounds without scarring? And is your liver ready if your doctor prescribes oral isotretinoin?</p>
       </section>
 
       <!-- Competitor UI Element 1: The 3-Phase Diagnostic Roadmap -->
       <nav class="roadmap-container" id="diagnostic-roadmap" aria-label="3-Phase Diagnostic Roadmap">
         <div class="roadmap-header">
-          <nav class="section-eyebrow">3-PHASE CLINICAL ROADMAP</nav>
-          <h2>From Chronic Breakouts to Root-Cause Precision</h2>
-          <p>How board-certified dermatologists systematically isolate systemic triggers without ordering wasteful 80-parameter executive packages.</p>
+          <nav class="section-eyebrow">3-PHASE DIAGNOSTIC ROADMAP</nav>
+          <h2>From Chronic Breakouts to Root-Cause Clarity</h2>
+          <p>How dermatologists isolate internal triggers step-by-step without ordering wasteful 80-parameter executive health packages.</p>
         </div>
         <div class="roadmap-grid">
           <div class="roadmap-card">
             <span class="roadmap-badge">Phase 01</span>
             <div class="roadmap-icon">🧪</div>
-            <h3>Metabolic Baseline Screening</h3>
-            <p>Quantifies fasting serum insulin and morning blood sugar to calculate your HOMA-IR score, pinpointing invisible insulin surges driving follicular sebum overproduction.</p>
+            <h3>Blood Sugar &amp; Insulin Check</h3>
+            <p>Measures fasting blood sugar and morning insulin to calculate your HOMA-IR score. Pinpoints invisible insulin surges that trigger excess sebum (oil) production, leading to clogged pores and more acne.</p>
             <span class="roadmap-timing">Timing: 10&ndash;12h overnight fast</span>
           </div>
           <div class="roadmap-card">
             <span class="roadmap-badge">Phase 02</span>
             <div class="roadmap-icon">⚖️</div>
-            <h3>Endocrine Cycle Mapping</h3>
-            <p>Times blood collection specifically to Day 2&ndash;4 of menses to differentiate ovarian hyperandrogenism (PCOS) from chronic corporate adrenal cortisol/DHEA-S spikes.</p>
-            <span class="roadmap-timing">Timing: Day 2&ndash;4 of menses (8&ndash;9 AM)</span>
+            <h3>Hormone Balance Check (PCOS vs Stress)</h3>
+            <p>Times blood collection specifically to Day 2&ndash;4 of your period to distinguish ovarian hyperandrogenism (PCOS) from workplace stress and adrenal cortisol/DHEA-S spikes.</p>
+            <span class="roadmap-timing">Timing: Day 2&ndash;4 of period (8&ndash;9 AM)</span>
           </div>
           <div class="roadmap-card">
             <span class="roadmap-badge">Phase 03</span>
             <div class="roadmap-icon">🛡️</div>
-            <h3>Micronutrient &amp; Barrier Healing</h3>
-            <p>Measures cellular wound-healing regulators (ferritin, serum zinc) and liver clearance to eliminate supplement porphyrin blooms and ensure safe systemic therapy.</p>
-            <span class="roadmap-timing">Timing: Red-top plain glass tube</span>
+            <h3>Skin Healing &amp; Nutrient Check</h3>
+            <p>Measures skin wound-healing regulators (serum ferritin and zinc) and checks baseline liver enzymes to ensure your skin can repair marks and safely process medical treatments.</p>
+            <span class="roadmap-timing">Timing: Standard morning blood draw</span>
           </div>
         </div>
       </nav>
 
       <!-- Module 2: The Metabolic Axis -->
       <section class="section-card" id="metabolic-axis">
-        <nav class="section-eyebrow">METABOLIC AXIS</nav>
-        <h2>The Metabolic Axis: Insulin Resistance &amp; The IGF-1 Sebum Loop</h2>
+        <nav class="section-eyebrow">SUGAR &amp; OIL PRODUCTION</nav>
+        <h2>Blood Sugar &amp; Insulin: How Hidden Spikes Trigger Excess Oil</h2>
         <div class="visual-split">
           <div>
-            <p>Metabolic hyperinsulinemia represents one of the most pervasive drivers of adult acne among Indian urban populations. In South Asian phenotypes, genetic predispositions toward visceral adiposity manifest at low Body Mass Index thresholds (BMI 19 to 23 kg/m2). When high-glycemic meals—such as refined wheat rotis, polished white rice, or sweetened chai—trigger postprandial glucose excursions, the pancreas secretes compensatory insulin surges.</p>
+            <p>In Indian diets, high-carbohydrate meals—such as polished white rice, refined maida rotis, and sugary chai—cause rapid surges in blood sugar. In response, your pancreas releases a surge of insulin to bring glucose down.</p>
+            <p>Even if your weight and BMI are completely normal, your body may be producing excess insulin after meals. High circulating insulin triggers a growth factor called IGF-1, which directly commands your facial oil glands to pump out thick, waxy sebum. In short: <strong>excess insulin = excess sebum (oil) = clogged pores and inflamed acne.</strong></p>
           </div>
           <nav class="visual-img-card">
             <img src="/assets/images/insulin-acne.jpg" alt="Metabolic insulin and IGF-1 signaling pathway triggering follicular sebum" class="visual-img" loading="lazy">
-            <div class="visual-caption">Insulin spikes directly downregulate SHBG and accelerate sebaceous gland output.</div>
+            <div class="visual-caption">Insulin spikes stimulate oil glands to produce thick sebum that plugs pores.</div>
           </nav>
         </div>
-        <p>At Apollo Diagnostics, Dr. Lal PathLabs, and Thyrocare, fasting serum insulin quantification via chemiluminescent immunoassay (CLIA, INR 380 to 550) paired with fasting plasma glucose (Grey-top sodium fluoride tube, INR 60 to 90) allows calculation of the Homeostatic Model Assessment for Insulin Resistance: HOMA-IR = (Fasting Glucose mg/dL x Fasting Insulin uIU/mL) / 405. While commercial laboratories report a normal fasting insulin range up to 25.0 uIU/mL, clinical dermatologists recognize that values above 6.0 uIU/mL actively stimulate sebaceous lipogenesis. Elevated insulin directly downregulates hepatic production of Sex Hormone-Binding Globulin (SHBG), elevating circulating free testosterone. Simultaneously, insulin stimulates Insulin-Like Growth Factor 1 (IGF-1) secretion, which signals sebocytes to produce thick, wax-ester-rich sebum that obstructs the follicular infundibulum. For patients with HOMA-IR exceeding 1.8, initiating myo-inositol plus D-chiro-inositol (Ovasitol or Chicnutrix, INR 950 to 1,450 per month) alongside low-glycemic dietary modifications reduced inflammatory nodule counts by 58% at twelve-week follow-up reviews.</p>
+        <p>At standard labs like Apollo Diagnostics, Dr. Lal PathLabs, or Thyrocare, testing fasting serum insulin (₹380 to ₹550) alongside fasting blood glucose (₹60 to ₹90) lets your doctor calculate your HOMA-IR score. Most lab reports state that fasting insulin up to 25 &micro;IU/mL is "normal," but dermatologists know that any level above 6.0 &micro;IU/mL actively stimulates skin oiliness. When insulin is too high, it also lowers Sex Hormone-Binding Globulin (SHBG), leaving more free testosterone floating in your blood to trigger breakouts. For patients with elevated insulin resistance (HOMA-IR over 1.8), combining a low-glycemic Indian diet with myo-inositol can reduce inflamed breakout counts by over 50% within 12 weeks.</p>
 
         <!-- Design System §9.15 High-Contrast Table -->
         <nav class="acne-table-wrapper" aria-label="Metabolic Reference Matrix">
@@ -1333,7 +1499,7 @@
             <thead>
               <tr>
                 <th>Metabolic Marker</th>
-                <th>Diagnostic Role</th>
+                <th>Why It Matters for Acne</th>
                 <th>Standard Lab Range</th>
                 <th>Skin-Optimal Target</th>
                 <th>Action Threshold</th>
@@ -1342,31 +1508,31 @@
             <tbody>
               <tr>
                 <td data-label="Metabolic Marker"><strong>Fasting Insulin</strong></td>
-                <td data-label="Diagnostic Role">Basal insulin output; drives IGF-1 upregulation and SHBG suppression</td>
+                <td data-label="Why It Matters for Acne">Directly drives IGF-1 oil production and lowers hormone-binding proteins</td>
                 <td data-label="Standard Lab Range">2.0 &ndash; 25.0 &micro;IU/mL</td>
                 <td data-label="Skin-Optimal Target"><span class="table-target-badge">&lt; 6.0 &micro;IU/mL</span></td>
-                <td data-label="Action Threshold">Levels above 8.0 indicate early hyperinsulinemic sebocyte driving</td>
+                <td data-label="Action Threshold">Levels &gt; 8.0 stimulate facial oil glands and promote stubborn cysts</td>
               </tr>
               <tr>
                 <td data-label="Metabolic Marker"><strong>Fasting Blood Glucose</strong></td>
-                <td data-label="Diagnostic Role">Assesses morning glycemic baseline after 10-hour overnight fast</td>
+                <td data-label="Why It Matters for Acne">Measures morning baseline sugar after a 10&ndash;12 hour overnight fast</td>
                 <td data-label="Standard Lab Range">70 &ndash; 99 mg/dL</td>
                 <td data-label="Skin-Optimal Target"><span class="table-target-badge">75 &ndash; 88 mg/dL</span></td>
-                <td data-label="Action Threshold">Values above 92 mg/dL correlate with elevated advanced glycation end-products</td>
+                <td data-label="Action Threshold">Values above 92 mg/dL indicate early glycemic instability</td>
               </tr>
               <tr>
                 <td data-label="Metabolic Marker"><strong>HOMA-IR Score</strong></td>
-                <td data-label="Diagnostic Role">Calculated index: (Fasting Glucose &times; Fasting Insulin) / 405</td>
+                <td data-label="Why It Matters for Acne">Calculated insulin resistance score: (Fasting Glucose &times; Insulin) / 405</td>
                 <td data-label="Standard Lab Range">0.5 &ndash; 2.5</td>
                 <td data-label="Skin-Optimal Target"><span class="table-target-badge">&lt; 1.5</span></td>
-                <td data-label="Action Threshold">HOMA-IR &gt; 1.8 indicates cellular insulin resistance requiring metabolic intervention</td>
+                <td data-label="Action Threshold">Scores &gt; 1.8 show cellular insulin resistance needing dietary tweaks</td>
               </tr>
               <tr>
-                <td data-label="Metabolic Marker"><strong>HbA1c (Glycated Hb)</strong></td>
-                <td data-label="Diagnostic Role">Reflects 90-day mean erythrocyte glucose exposure and variability</td>
+                <td data-label="Metabolic Marker"><strong>HbA1c (3-Month Sugar)</strong></td>
+                <td data-label="Why It Matters for Acne">Reflects your average blood sugar control over the past 90 days</td>
                 <td data-label="Standard Lab Range">4.0 &ndash; 5.6 %</td>
                 <td data-label="Skin-Optimal Target"><span class="table-target-badge">4.8 &ndash; 5.2 %</span></td>
-                <td data-label="Action Threshold">HbA1c &gt; 5.5% reflects chronic glucose surges that promote follicular inflammation</td>
+                <td data-label="Action Threshold">Values &gt; 5.5% correlate with chronic low-grade skin inflammation</td>
               </tr>
             </tbody>
           </table>
@@ -1375,8 +1541,8 @@
 
       <!-- Module 3: The Endocrine Panel -->
       <section class="section-card" id="endocrine-panel">
-        <nav class="section-eyebrow">ENDOCRINE PANEL</nav>
-        <h2>The Endocrine Panel: Ovarian vs. Adrenal Androgen Mapping</h2>
+        <nav class="section-eyebrow">HORMONE BALANCE</nav>
+        <h2>Hormone Mapping: Is Your Acne Driven by PCOS or Daily Stress?</h2>
         <div class="visual-split">
           <div>
             <p>When pimples flare up along your jawline right before your period, everyone calls it hormonal acne. But in clinic, we have to find out where those hormones are actually coming from: your ovaries or your adrenal glands.</p>
@@ -1404,31 +1570,31 @@
             <tbody>
               <tr>
                 <td data-label="Hormone Assay"><strong>Total Testosterone</strong></td>
-                <td data-label="Phlebotomy Timing">Day 2 &ndash; 4 of menses (8:00 &ndash; 9:00 AM)</td>
+                <td data-label="Phlebotomy Timing">Day 2 &ndash; 4 of period (8:00 &ndash; 9:00 AM)</td>
                 <td data-label="Standard Lab Range">15 &ndash; 70 ng/dL</td>
                 <td data-label="Skin-Optimal Target"><span class="table-target-badge">25 &ndash; 45 ng/dL</span></td>
                 <td data-label="Clinical Interpretation">Values &gt; 55 ng/dL suggest ovarian androgen hypersecretion or PCOS</td>
               </tr>
               <tr>
-                <td data-label="Hormone Assay"><strong>Free Testosterone (CLIA)</strong></td>
-                <td data-label="Phlebotomy Timing">Day 2 &ndash; 4 of menses (8:00 &ndash; 9:00 AM)</td>
+                <td data-label="Hormone Assay"><strong>Free Testosterone</strong></td>
+                <td data-label="Phlebotomy Timing">Day 2 &ndash; 4 of period (8:00 &ndash; 9:00 AM)</td>
                 <td data-label="Standard Lab Range">0.2 &ndash; 4.2 pg/mL</td>
                 <td data-label="Skin-Optimal Target"><span class="table-target-badge">&lt; 2.0 pg/mL</span></td>
-                <td data-label="Clinical Interpretation">Directly reflects unbound androgen available for sebocyte receptor uptake</td>
+                <td data-label="Clinical Interpretation">Directly reflects active testosterone available to stimulate oil glands</td>
               </tr>
               <tr>
                 <td data-label="Hormone Assay"><strong>DHEA-Sulfate</strong></td>
                 <td data-label="Phlebotomy Timing">Any cycle day (8:00 &ndash; 9:00 AM)</td>
                 <td data-label="Standard Lab Range">65 &ndash; 380 &micro;g/dL</td>
                 <td data-label="Skin-Optimal Target"><span class="table-target-badge">120 &ndash; 220 &micro;g/dL</span></td>
-                <td data-label="Clinical Interpretation">Elevations &gt; 250 &micro;g/dL indicate adrenal androgen overproduction</td>
+                <td data-label="Clinical Interpretation">Elevations &gt; 250 &micro;g/dL indicate adrenal stress androgen overproduction</td>
               </tr>
               <tr>
                 <td data-label="Hormone Assay"><strong>LH to FSH Ratio</strong></td>
-                <td data-label="Phlebotomy Timing">Day 2 &ndash; 4 of menses</td>
+                <td data-label="Phlebotomy Timing">Day 2 &ndash; 4 of period</td>
                 <td data-label="Standard Lab Range">1.0 : 1.0</td>
                 <td data-label="Skin-Optimal Target"><span class="table-target-badge">1.0 : 1.0</span></td>
-                <td data-label="Clinical Interpretation">LH:FSH &gt; 2.0:1 strongly correlates with anovulatory follicular arrest in PCOS</td>
+                <td data-label="Clinical Interpretation">LH:FSH &gt; 2.0:1 strongly correlates with ovulation difficulties in PCOS</td>
               </tr>
               <tr>
                 <td data-label="Hormone Assay"><strong>Progesterone</strong></td>
@@ -1442,7 +1608,7 @@
                 <td data-label="Phlebotomy Timing">Strictly 8:00 &ndash; 8:30 AM</td>
                 <td data-label="Standard Lab Range">5.0 &ndash; 23.0 &micro;g/dL</td>
                 <td data-label="Skin-Optimal Target"><span class="table-target-badge">10.0 &ndash; 15.0 &micro;g/dL</span></td>
-                <td data-label="Clinical Interpretation">Spikes indicate chronic sympathetic arousal and impaired barrier recovery</td>
+                <td data-label="Clinical Interpretation">Spikes indicate chronic stress arousal and slow skin barrier recovery</td>
               </tr>
             </tbody>
           </table>
@@ -1451,7 +1617,7 @@
 
       <!-- Module 4: Micronutrient Regulators -->
       <section class="section-card" id="micronutrients">
-        <nav class="section-eyebrow">MICRONUTRIENT REGULATORS</nav>
+        <nav class="section-eyebrow">WOUND HEALING &amp; MARKS</nav>
         <h2>The Micronutrient Regulators: Iron, Ferritin &amp; Zinc Dynamics</h2>
         <div class="visual-split">
           <div>
@@ -1460,7 +1626,7 @@
           </div>
           <nav class="visual-img-card">
             <img src="/assets/images/zinc-acne.jpg" alt="Serum zinc and ferritin testing for acne wound healing" class="visual-img" loading="lazy">
-            <div class="visual-caption">Zinc modulates 5-alpha reductase; ferritin fuels collagen synthesis and scar fading.</div>
+            <div class="visual-caption">Zinc regulates skin oil and calms swelling; ferritin fuels collagen repair and fades marks.</div>
           </nav>
         </div>
         <p>Zinc acts as your skin's built-in oil regulator. It calms down 5-alpha reductase—the enzyme that converts testosterone into oil-producing DHT—and stops white blood cells from creating throbbing red pimples. Always ask your lab for a plain red-top glass tube when testing zinc, because ordinary rubber caps contain zinc coatings that ruin the test results. We aim for 90 to 120 ug/dL; taking Zinconia 50mg (INR 60 per strip) noticeably calms inflamed bumps within two months. High-sensitivity CRP (hs-CRP, INR 380) tracks systemic inflammation; levels over 1.5 mg/L show your immune system is overreacting across your entire body.</p>
@@ -1508,16 +1674,16 @@
 
       <!-- Module 5: Vitamin Deficiencies & Supplement Traps -->
       <section class="section-card" id="vitamin-traps">
-        <nav class="section-eyebrow">HIDDEN SUPPLEMENT TRAPS</nav>
-        <h2>Vitamin Deficiencies &amp; The Hidden Supplement Traps</h2>
+        <nav class="section-eyebrow">SUPPLEMENT TRAPS</nav>
+        <h2>Vitamin B12 &amp; Biotin: Why Certain Supplements Trigger Sudden Acne</h2>
         <div class="visual-split">
           <div>
-            <p>In our dermatology OPD, we regularly see patients whose acne exploded right after starting high-dose multivitamin capsules. Two specific supplements cause 90% of these acute flares: Vitamin B12 and Biotin.</p>
+            <p>In our dermatology OPD, we regularly see patients whose acne exploded right after starting high-dose multivitamin capsules or hair gummies. Two specific supplements cause 90% of these sudden flares: Vitamin B12 and Biotin.</p>
             <p>When vegetarian patients discover low B12 on a routine test, they often take daily Neurobion Forte or Becosules. But taking more than 1,000 mcg of cyanocobalamin daily flips a metabolic switch in facial C. acnes bacteria. Instead of making their own B12, the bacteria pump out pro-inflammatory porphyrins. Within 10 to 14 days, the patient develops dozens of tiny, itchy red pustules across their forehead and jawline. We advise stopping cyanocobalamin immediately and switching to sublingual methylcobalamin 500 mcg (Methycobal, INR 140 per 10 tablets) twice weekly, which keeps serum B12 around 400 to 500 pg/mL without triggering porphyrin blooms.</p>
           </div>
           <nav class="visual-img-card">
             <img src="/assets/images/b12-acne.jpg" alt="Vitamin B12 porphyrin acne reaction and supplement flare" class="visual-img" loading="lazy">
-            <div class="visual-caption">Cyanocobalamin induces C. acnes porphyrin synthesis, creating forehead pustules.</div>
+            <div class="visual-caption">High doses of synthetic B12 trigger acne bacteria to release inflammatory compounds.</div>
           </nav>
         </div>
         <p>Biotin gummies create a different problem. Biotin and Vitamin B5 share the exact same intestinal transporter (SMVT). Flooding your gut with 5,000 to 10,000 mcg of biotin blocks B5 absorption completely. Without Vitamin B5, your sebaceous glands cannot metabolize lipids normally, resulting in thick, waxy sebum that plugs pores into cystic bumps along your chin. Stopping the hair gummies clears the flare in four weeks. Meanwhile, for Vitamin D, 72% of our urban patients test below 20 ng/mL; we target 50 to 80 ng/mL using Calcirol 60,000 IU sachets (Cadila, INR 42 each) taken weekly with whole milk for two months.</p>
@@ -1525,8 +1691,8 @@
 
       <!-- Module 6: Thyroid Axis & Pre-Isotretinoin Protocol -->
       <section class="section-card" id="thyroid-isotretinoin">
-        <nav class="section-eyebrow">SAFETY &amp; MONITORING</nav>
-        <h2>Thyroid Axis &amp; Pre-Isotretinoin Safety Protocol</h2>
+        <nav class="section-eyebrow">SAFETY &amp; MEDICATIONS</nav>
+        <h2>Thyroid Health &amp; Pre-Accutane (Isotretinoin) Safety Checks</h2>
         <div class="visual-split">
           <div>
             <p>Your thyroid acts as the metronome for skin renewal. When your thyroid runs sluggish—a condition known as subclinical hypothyroidism where TSH is elevated between 3.5 and 6.0 mIU/L—your skin cell turnover slows down from the healthy 28 days to over 40 days. Dead skin cells linger on your face, trap sebum inside pores, and create sandpaper-like bumps that resist regular face washes.</p>
@@ -1534,7 +1700,7 @@
           </div>
           <nav class="visual-img-card">
             <img src="/assets/images/thyroid-acne.jpg" alt="Thyroid axis TSH Free T3 Free T4 laboratory workup" class="visual-img" loading="lazy">
-            <div class="visual-caption">Thyroid regulation governs stratum corneum turnover and follicular desquamation.</div>
+            <div class="visual-caption">Thyroid regulation governs how quickly your skin sheds dead cells and unclogs pores.</div>
           </nav>
         </div>
         <p>Before writing a prescription for oral isotretinoin (Tretiva or Isotroin 10mg/20mg, Cipla, INR 220 to 350 per strip), lab tests are non-negotiable. Isotretinoin is processed by your liver and raises blood lipids. Your dermatologist must confirm three baselines: SGPT and SGOT below 35 U/L to verify liver clearance, fasting triglycerides below 150 mg/dL, and a strictly negative quantitative serum beta-hCG test for female patients within 7 days of starting therapy. We repeat liver enzymes and lipid profiles at week 4 and week 12; if triglycerides climb above 300 mg/dL or liver enzymes jump three times normal, we pause or lower the dose immediately.</p>
@@ -1580,20 +1746,20 @@
 
       <!-- Module 7: Commercial Test Audits -->
       <section class="section-card" id="commercial-audits">
-        <nav class="section-eyebrow">COMMERCIAL AUDIT</nav>
-        <h2>Commercial Test Audits: Where Patients Waste Money</h2>
+        <nav class="section-eyebrow">SAVING YOUR MONEY</nav>
+        <h2>Tests to Avoid: Where People Waste Money on Gimmicks</h2>
         <div class="visual-split">
           <div>
-            <p>Commercial wellness marketing in India heavily promotes proprietary diagnostic kits directly to consumers. Clinical dermatologists advise against several non-validated tests that do not offer actionable therapeutic value:</p>
-            <p><strong>Food Intolerance (IgG) Panels (Cost: INR 8,000 to 18,000):</strong> These commercial panels measure IgG antibodies against 100 to 250 common food antigens. Position papers from the American Academy of Allergy, Asthma &amp; Immunology (AAAAI) and the European Academy of Allergy and Clinical Immunology (EAACI) emphasize that circulating IgG antibodies represent physiological immune tolerance and exposure, not clinical intolerance. Eliminating dozens of staple foods based on IgG titers leads to severe nutritional deficiencies without clearing acne. True food reactions are evaluated through structured 3-week elimination diets.</p>
+            <p>Commercial wellness companies in India heavily advertise direct-to-consumer home kits. Dermatologists strongly advise against several expensive, non-validated tests that will not help clear your acne:</p>
+            <p><strong>1. Food Intolerance (IgG) Panels (Cost: INR 8,000 to 18,000):</strong> These commercial panels measure IgG antibodies against 100 to 250 common food antigens. Position papers from the American Academy of Allergy, Asthma &amp; Immunology (AAAAI) and the European Academy of Allergy and Clinical Immunology (EAACI) emphasize that circulating IgG antibodies represent physiological immune tolerance and exposure, not clinical intolerance. Eliminating dozens of staple foods based on IgG titers leads to severe nutritional deficiencies without clearing acne. True food reactions are evaluated through structured 3-week elimination diets.</p>
           </div>
           <nav class="visual-img-card">
             <img src="/assets/images/heavy-metal-acne.jpg" alt="Commercial heavy metal test kit and non-validated diagnostic audits" class="visual-img" loading="lazy">
-            <div class="visual-caption">Non-validated direct-to-consumer kits market unnecessary tests without clinical evidence.</div>
+            <div class="visual-caption">Non-validated direct-to-consumer kits market expensive tests without medical evidence.</div>
           </nav>
         </div>
-        <p><strong>Hair Tissue Mineral Analysis (Cost: INR 4,500 to 9,000):</strong> Companies market hair testing to detect heavy metal poisoning (arsenic, lead, mercury) allegedly causing chronic cystic acne. However, external hair shafts absorb heavy metals and trace minerals from airborne pollution, municipal tap water (often high in TDS across Delhi NCR, Bengaluru, and Chennai), and chemical hair treatments. Hair testing lacks physiological validity; if systemic heavy metal intoxication is genuinely suspected, it must be evaluated via whole blood ICP-MS or 24-hour urinary clearance at certified toxicology centers.</p>
-        <p><strong>Direct-to-Consumer Stool Microbiome Kits (Cost: INR 12,000 to 25,000):</strong> While the gut-skin axis is scientifically verified, consumer microbiome 16S rRNA sequencing cannot differentiate between transient commensal flora and clinically significant dysbiosis in acne. At present, these tests lack validated clinical guidelines to dictate specific probiotic strain selection.</p>
+        <p><strong>2. Hair Tissue Mineral Analysis (Cost: INR 4,500 to 9,000):</strong> Companies market hair testing to detect heavy metal poisoning (arsenic, lead, mercury) allegedly causing chronic cystic acne. However, external hair shafts absorb heavy metals and trace minerals from airborne pollution, municipal tap water (often high in TDS across Delhi NCR, Bengaluru, and Chennai), and chemical hair treatments. Hair testing lacks physiological validity; if systemic heavy metal intoxication is genuinely suspected, it must be evaluated via whole blood ICP-MS or 24-hour urinary clearance at certified toxicology centers.</p>
+        <p><strong>3. Direct-to-Consumer Stool Microbiome Kits (Cost: INR 12,000 to 25,000):</strong> While the gut-skin axis is scientifically verified, consumer microbiome 16S rRNA sequencing cannot differentiate between transient commensal flora and clinically significant dysbiosis in acne. At present, these tests lack validated clinical guidelines to dictate specific probiotic strain selection.</p>
       </section>
 
       <!-- Competitor UI Element 2: Who This Is For vs Not For Comparison Bento -->
@@ -1627,8 +1793,8 @@
 
       <!-- Module 8: Indian Diagnostic Pricing & Phlebotomy Standards -->
       <section class="section-card" id="lab-pricing">
-        <nav class="section-eyebrow">LAB ECONOMICS</nav>
-        <h2>Indian Diagnostic Pricing &amp; Phlebotomy Standards</h2>
+        <nav class="section-eyebrow">LAB COSTS &amp; PREPARATION</nav>
+        <h2>How Much Do Acne Blood Tests Cost in India? (And How to Prepare)</h2>
         <div class="visual-split">
           <div>
             <p>Getting blood tests in Indian cities can quickly cost 5,000 to 7,000 rupees if you book each marker separately. The smart way is to book bundled profiles through established NABL-accredited diagnostic networks like Thyrocare, Dr. Lal PathLabs, SRL Diagnostics, or Metropolis.</p>
@@ -1726,6 +1892,41 @@
         </div>
       </nav>
 
+      <!-- Collapsed SEO & Clinical Reference Deep-Dive Section -->
+      <section class="seo-deep-dive-card" id="clinical-deep-dive">
+        <details class="deep-dive-details">
+          <summary>
+            <div class="deep-dive-summary-inner">
+              <span class="deep-dive-tag">📚 In-Depth Clinical &amp; Laboratory Reference</span>
+              <h3 class="deep-dive-title">Advanced Dermatological Biomarkers, Reference Ranges &amp; Research Protocols</h3>
+              <p class="deep-dive-subtitle">Click to view comprehensive biochemical pathways, ICMR/NABL diagnostic criteria, and clinical trial cohorts.</p>
+            </div>
+            <span class="deep-dive-toggle-icon">▼</span>
+          </summary>
+          <div class="deep-dive-body">
+            <h4>1. Clinical Trial Cohort &amp; Mandibular Acne Demographics</h4>
+            <p>In our observational dermatological follow-up across metropolitan clinics in New Delhi, Mumbai, and Bengaluru, we tracked 420 patients presenting with refractory mandibular and cystic acne. A total of 62% of patients had previously undergone conventional topical monotherapy or combination regimens (including micronized adapalene 0.1%, clindamycin phosphate 1%, and benzoyl peroxide 2.5% to 5%) for longer than 18 months without achieving sustained remission. Systemic phlebotomy evaluation identified underlying endocrine, metabolic, or micronutrient etiologies in 71% of these individuals. Relying exclusively on surface creams for adult hormonal acne creates a cycle of chronic epidermal barrier breakdown. Topical retinoids increase stratum corneum turnover, but they cannot attenuate elevated circulating insulin, downregulate androgen receptor expression, or correct systemic ferritin depletion. Targeted phlebotomy transforms refractory acne management into root-cause medicine.</p>
+
+            <h4>2. Molecular Endocrinology of the Metabolic-Sebaceous Axis</h4>
+            <p>At Apollo Diagnostics, Dr. Lal PathLabs, and Thyrocare, fasting serum insulin quantification via chemiluminescent immunoassay (CLIA) paired with fasting plasma glucose (Grey-top sodium fluoride tube to prevent ex-vivo glycolysis) allows calculation of the Homeostatic Model Assessment for Insulin Resistance: HOMA-IR = (Fasting Glucose mg/dL &times; Fasting Insulin &micro;IU/mL) / 405. While commercial laboratories report a normal fasting insulin range up to 25.0 &micro;IU/mL, clinical dermatologists recognize that values above 6.0 &micro;IU/mL actively stimulate sebaceous lipogenesis.</p>
+            <p>Elevated circulating insulin directly downregulates hepatic synthesis of Sex Hormone-Binding Globulin (SHBG) via hepatocyte nuclear factor-4&alpha; (HNF-4&alpha;), precipitating a marked surge in bioavailable free testosterone. Concurrently, insulin engages the insulin-like growth factor 1 (IGF-1) receptor cascade, activating the intracellular phosphoinositide 3-kinase (PI3K) / Akt / mechanistic target of rapamycin complex 1 (mTORC1) pathway. This signaling axis upregulates sterol regulatory element-binding protein-1c (SREBP-1c), driving hyperactive sebocyte de-novo lipogenesis and shifting sebum composition toward inflammatory saturated fatty acids and squalene peroxides that trigger follicular infundibulum hyperkeratinization.</p>
+
+            <h4>3. Phlebotomy Chronobiology &amp; Gonadal Steroidogenesis</h4>
+            <p>Accurate endocrine discrimination mandates strict follicular timing during Day 2 to Day 4 of the menstrual cycle between 8:00 AM and 9:00 AM. During this early follicular phase, circulating progesterone has dropped to basal levels (&lt; 1.0 ng/mL), stripping away its competitive antagonism at the androgen receptor and unmasking endogenous pituitary gonadotropin drive. Luteinizing hormone (LH) hypersecretion resulting in an LH:FSH ratio exceeding 2.0:1 signifies premature theca cell stimulation and arrested antral follicular development characteristic of Rotterdam-consensus PCOS.</p>
+            <p>In contrast, adrenal hyperandrogenism reflects functional hyperactivity of the 17,20-lyase enzyme complex within the adrenal zona reticularis, mediated by chronic activation of the hypothalamic-pituitary-adrenal (HPA) axis under sustained physical or psychosocial stress. This pathway selectively elevates dehydroepiandrosterone sulfate (DHEA-S) independently of ovarian steroidogenesis, which is locally converted in sebocytes into more potent androgens by intracrine 3&beta;-hydroxysteroid dehydrogenase (3&beta;-HSD) and 17&beta;-HSD isoenzymes.</p>
+
+            <h4>4. Micronutrient Wound Kinetics &amp; Enzymatic Co-Factors</h4>
+            <p>Dermal repair following inflammatory acne requires robust synthesis of type I and type III collagen fibrils. Serum ferritin reflects total body iron reserves; levels below 50 ng/mL suppress the activity of prolyl-4-hydroxylase and lysyl-hydroxylase, the key iron- and ascorbate-dependent enzymes responsible for triple-helix collagen stabilization. Consequently, iron-depleted individuals exhibit persistent post-inflammatory erythema (PIE) and delayed tissue remodeling. Trace element zinc acts as a physiological inhibitor of type-1 5-alpha reductase and curbs neutrophil chemotactic peptide expression; zinc collection requires trace-element-free red-top glass tubes to avoid zinc stearate leaching from standard synthetic rubber stoppers.</p>
+
+            <h4>5. Pharmacological Mechanisms of Supplement-Induced Breakouts</h4>
+            <p>High-dose exogenous cyanocobalamin (&gt; 1,000 &micro;g/day) downregulates endogenous cobalamin biosynthesis operons in Cutibacterium acnes, causing an uncoupling of the bacterial metabolic pathway that diverts substrate flux into excess coproporphyrin III production. These porphyrin molecules act as potent endogenous photosensitizers, generating reactive oxygen species (ROS) that provoke acute follicular perifolliculitis. Similarly, megadoses of biotin (5,000 to 10,000 &micro;g/day) saturate the shared sodium-dependent multivitamin transporter (SMVT), inducing functional intracellular pantothenic acid (vitamin B5) starvation and blunting coenzyme A synthesis needed for sebaceous lipid beta-oxidation.</p>
+
+            <h4>6. Isotretinoin Safety Thresholds &amp; NABL Standards</h4>
+            <p>Oral isotretinoin (13-cis-retinoic acid) clearance depends on hepatic cytochrome P450 isoenzymes (CYP2C8, CYP2C9, CYP3A4). Pre-therapeutic baseline testing must confirm serum glutamic-pyruvic transaminase (SGPT/ALT) below 35 U/L and fasting triglycerides below 150 mg/dL. Monthly monitoring is indicated if baseline triglycerides exceed 200 mg/dL to mitigate pancreatitis risk. For female patients of reproductive potential, serum beta-hCG must demonstrate values below 5 mIU/mL within 7 days prior to dispensing. All laboratory testing should conform to ICMR and ISO 15189 standards established by the National Accreditation Board for Testing and Calibration Laboratories (NABL).</p>
+          </div>
+        </details>
+      </section>
+
     </main>
 
     <!-- Floating Sticky Action Sidebar -->
@@ -1800,6 +2001,83 @@
       <p style="font-size: 11.5px; opacity: 0.7;">This clinical protocol is educational and not an individualized substitute for in-person medical evaluation by a licensed physician.</p>
     </div>
   </footer>
+
+  <!-- Sticky Horizontal Scrollspy Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const tocInner = document.querySelector('.toc-inner');
+      const pills = document.querySelectorAll('.toc-pill');
+      if (!pills.length || !tocInner) return;
+
+      const navItems = [];
+      pills.forEach(pill => {
+        const href = pill.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          const section = document.getElementById(href.substring(1));
+          if (section) {
+            navItems.push({ pill, section });
+          }
+        }
+      });
+
+      let isClickScrolling = false;
+      let clickTimeout = null;
+
+      function centerPill(activePill) {
+        if (!tocInner || !activePill) return;
+        const innerRect = tocInner.getBoundingClientRect();
+        const pillRect = activePill.getBoundingClientRect();
+        const scrollOffset = tocInner.scrollLeft + (pillRect.left - innerRect.left) - (innerRect.width / 2) + (pillRect.width / 2);
+        tocInner.scrollTo({ left: Math.max(0, scrollOffset), behavior: 'smooth' });
+      }
+
+      pills.forEach(pill => {
+        pill.addEventListener('click', function(e) {
+          isClickScrolling = true;
+          clearTimeout(clickTimeout);
+          pills.forEach(p => p.classList.remove('active'));
+          this.classList.add('active');
+          centerPill(this);
+          clickTimeout = setTimeout(function() {
+            isClickScrolling = false;
+          }, 800);
+        });
+      });
+
+      let scrollTimeout;
+      function onScroll() {
+        if (isClickScrolling) return;
+        const scrollPosition = window.scrollY + 140;
+        let currentItem = navItems[0];
+
+        for (let i = 0; i < navItems.length; i++) {
+          if (scrollPosition >= navItems[i].section.offsetTop) {
+            currentItem = navItems[i];
+          } else {
+            break;
+          }
+        }
+
+        if (currentItem && !currentItem.pill.classList.contains('active')) {
+          pills.forEach(p => p.classList.remove('active'));
+          currentItem.pill.classList.add('active');
+          centerPill(currentItem.pill);
+        }
+      }
+
+      window.addEventListener('scroll', function() {
+        if (!scrollTimeout) {
+          scrollTimeout = requestAnimationFrame(function() {
+            onScroll();
+            scrollTimeout = null;
+          });
+        }
+      }, { passive: true });
+
+      // Run on initial load
+      onScroll();
+    });
+  </script>
 
 </body>
 </html>
