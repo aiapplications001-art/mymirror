@@ -338,54 +338,6 @@
       color: rgba(255, 255, 255, 0.6);
     }
 
-    /* Sticky TOC Strip */
-    .toc-sticky-bar {
-      position: sticky;
-      top: 62px;
-      z-index: 99;
-      background: var(--bg-tertiary);
-      border-bottom: 1px solid var(--border);
-      padding: 12px 24px;
-      overflow-x: auto;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
-    .toc-inner {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .toc-label {
-      font-size: 11.5px;
-      font-weight: 800;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-    .toc-pills {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .toc-pill {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text-secondary);
-      background: #FFF;
-      border: 1px solid var(--border);
-      padding: 5px 14px;
-      border-radius: var(--radius-full);
-      text-decoration: none;
-      transition: all 0.25s ease;
-    }
-    .toc-pill:hover {
-      color: var(--brand);
-      border-color: var(--brand);
-      background: var(--brand-tint);
-      transform: translateY(-1px);
-    }
 
     /* Main Layout Grid */
     .page-wrapper {
@@ -719,12 +671,26 @@
       width: 100%;
       box-sizing: border-box;
     }
+    .acne-table-wrapper::-webkit-scrollbar {
+      height: 6px;
+    }
+    .acne-table-wrapper::-webkit-scrollbar-track {
+      background: var(--bg-secondary);
+      border-radius: 3px;
+    }
+    .acne-table-wrapper::-webkit-scrollbar-thumb {
+      background: var(--border-dark);
+      border-radius: 3px;
+    }
+    .acne-table-wrapper::-webkit-scrollbar-thumb:hover {
+      background: var(--brand);
+    }
     .acne-table {
       width: 100%;
       margin: 0;
       border-collapse: collapse;
       border-spacing: 0;
-      font-size: 13.5px;
+      font-size: 13px;
       color: var(--text-primary);
       text-align: left;
     }
@@ -738,22 +704,24 @@
       font-family: 'Plus Jakarta Sans', sans-serif;
       font-weight: 700;
       color: #FFFFFF;
-      padding: 12px 14px;
+      padding: 10px 12px;
       border-bottom: 2px solid #1A1410;
       text-transform: uppercase;
       font-size: 11px;
       letter-spacing: 0.05em;
       vertical-align: middle;
-      white-space: nowrap !important;
+      white-space: normal !important;
+      line-height: 1.35;
       word-break: normal !important;
       border-radius: 0 !important;
     }
     .acne-table td {
-      padding: 14px 18px;
+      padding: 11px 12px;
       border-bottom: 1px solid var(--border);
       vertical-align: top;
       color: var(--text-primary);
-      line-height: 1.6;
+      line-height: 1.55;
+      font-size: 13px;
       border-radius: 0 !important;
       word-break: normal !important;
       overflow-wrap: break-word !important;
@@ -769,25 +737,26 @@
       background: #E8F5E9;
       color: var(--success);
       font-weight: 700;
-      padding: 2px 8px;
+      padding: 2px 7px;
       border-radius: var(--radius-sm);
-      font-size: 13px;
+      font-size: 12.5px;
+      white-space: nowrap;
     }
 
     @media (min-width: 769px) {
       .acne-table {
-        min-width: 640px;
+        min-width: 580px;
       }
       .acne-table td:first-child {
         font-weight: 700;
         color: #2D231E;
         background: #FDFCFB !important;
         border-right: 1px solid var(--border);
-        min-width: 130px;
+        min-width: 115px;
       }
       .acne-table th:first-child {
         border-right: 1px solid #3D312A;
-        min-width: 130px;
+        min-width: 115px;
       }
     }
 
@@ -1029,31 +998,26 @@
     /* Fixed Non-Overflowing Sticky TOC */
     .toc-sticky-bar {
       position: sticky;
-      top: 60px;
+      top: 62px;
       z-index: 99;
       background: rgba(250, 250, 249, 0.95);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--border);
       width: 100%;
-      overflow: hidden;
+      box-sizing: border-box;
       padding: 0;
     }
     .toc-inner {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 12px 24px;
+      padding: 10px 24px;
       display: flex;
       align-items: center;
       gap: 12px;
-      overflow-x: auto;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-      width: 100%;
       box-sizing: border-box;
+      width: 100%;
     }
-    .toc-inner::-webkit-scrollbar { display: none; }
     .toc-label {
       font-size: 11px;
       font-weight: 800;
@@ -1066,7 +1030,6 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      flex-shrink: 0;
     }
     .toc-pill {
       font-size: 12px;
@@ -1078,13 +1041,41 @@
       border-radius: var(--radius-full);
       text-decoration: none;
       transition: all 0.25s ease;
-      flex-shrink: 0;
+      white-space: nowrap;
     }
     .toc-pill:hover {
       color: var(--brand);
       border-color: var(--brand);
       background: var(--brand-tint);
       transform: translateY(-1px);
+    }
+    @media (min-width: 1025px) {
+      .toc-inner {
+        flex-wrap: wrap;
+        gap: 8px 12px;
+      }
+      .toc-pills {
+        flex-wrap: wrap;
+        gap: 6px 8px;
+      }
+    }
+    @media (max-width: 1024px) {
+      .toc-inner {
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 10px 20px;
+        gap: 10px;
+      }
+      .toc-inner::-webkit-scrollbar { display: none; }
+      .toc-pills {
+        flex-shrink: 0;
+        padding-right: 24px;
+      }
+      .toc-pill {
+        flex-shrink: 0;
+      }
     }
 
     /* Section Card and Layout Safeguards */
@@ -1608,7 +1599,7 @@
       <!-- Competitor UI Element 2: Who This Is For vs Not For Comparison Bento -->
       <nav class="qualification-container" id="who-this-is-for" aria-label="Who This Is For vs Not For">
         <div class="qualification-header">
-          <nav class="section-eyebrow">CLINICAL SELECTION CRITERIA</span>
+          <span class="section-eyebrow">CLINICAL SELECTION CRITERIA</span>
           <h2>Is Systemic Laboratory Testing Right for You?</h2>
           <p>Root-cause diagnostics are high-yield when topical treatments hit a biological ceiling, but unnecessary for simple mild surface congestion.</p>
         </div>
@@ -1688,7 +1679,7 @@
       <!-- Competitor UI Element 3: Interactive FAQ Accordion -->
       <nav class="faq-container" id="faqs" aria-label="Frequently Asked Questions">
         <div class="faq-header">
-          <nav class="section-eyebrow">CLINICAL QUESTIONS</span>
+          <span class="section-eyebrow">CLINICAL QUESTIONS</span>
           <h2>Frequently Asked Questions</h2>
           <p>Key clinical recommendations regarding phlebotomy timing, fasting protocols, and laboratory interference.</p>
         </div>
@@ -1732,8 +1723,8 @@
               <p>At NABL-accredited diagnostic labs like Thyrocare, Dr. Lal PathLabs, SRL, and Metropolis, bundled metabolic and hormone skin packages generally cost between INR 1,499 and INR 2,800. Individual specialized tests like DHEA-S or Free Testosterone cost between INR 350 and INR 700 each.</p>
             </div>
           </details>
-        </nav>
-      </section>
+        </div>
+      </nav>
 
     </main>
 
