@@ -460,141 +460,129 @@
       font-size: 14px;
       color: var(--text-secondary);
     }
-    .roadmap-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      align-items: stretch;
-    }
-    @media (max-width: 980px) {
-      .roadmap-grid { grid-template-columns: 1fr; gap: 24px; }
-    }
-    .roadmap-card {
-      background: #FFF;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.6rem;
+    .roadmap-strips {
       display: flex;
       flex-direction: column;
+      gap: 16px;
+    }
+    .strip-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.4rem 1.6rem;
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 28px;
+      align-items: center;
       box-shadow: var(--shadow-sm);
       transition: all 0.3s var(--bouncy);
     }
-    .roadmap-card:hover {
-      transform: translateY(-5px);
+    .strip-card:hover {
+      transform: translateY(-3px);
       box-shadow: var(--shadow-md);
       border-color: var(--border-dark);
     }
-    .roadmap-card-top {
+    .strip-left {
+      border-right: 1px solid var(--border);
+      padding-right: 22px;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 12px;
+      flex-direction: column;
+      gap: 6px;
     }
-    .roadmap-badge {
-      font-size: 10.5px;
+    .strip-phase-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2px;
+    }
+    .strip-phase-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
       font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
       color: var(--brand);
       background: var(--brand-tint);
       border: 1px solid var(--brand-light);
-      padding: 3px 10px;
+      padding: 3px 9px;
       border-radius: var(--radius-full);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
     }
-    .roadmap-icon { font-size: 24px; line-height: 1; }
-    .roadmap-card h3 {
+    .strip-phase-icon {
+      font-size: 22px;
+      line-height: 1;
+    }
+    .strip-left h3 {
       font-family: 'Plus Jakarta Sans', sans-serif;
       font-size: 1.15rem;
       font-weight: 700;
       color: var(--text-primary);
-      margin-bottom: 12px;
       line-height: 1.35;
+      margin: 2px 0 4px;
     }
-    .roadmap-test-highlight {
+    .strip-test-tag {
       background: #FFF8F3;
       border: 1px solid var(--brand-light);
       border-left: 3px solid var(--brand);
+      padding: 6px 10px;
       border-radius: var(--radius-sm);
-      padding: 10px 12px;
-      margin-bottom: 12px;
-    }
-    .roadmap-test-label {
-      display: block;
-      font-size: 10px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--brand-dark);
-      margin-bottom: 3px;
-    }
-    .roadmap-test-names {
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 700;
       color: var(--text-primary);
       line-height: 1.4;
-      display: block;
+      margin-bottom: 4px;
     }
-    .roadmap-outcome-box {
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
+    .strip-outcome {
+      font-size: 11.5px;
+      line-height: 1.4;
+      color: #1E5C38;
       background: var(--success-bg);
       border: 1px solid #C8E6C9;
       border-radius: var(--radius-sm);
-      padding: 8px 12px;
-      font-size: 12px;
-      line-height: 1.45;
-      color: #1E5C38;
-      margin-bottom: 14px;
+      padding: 5px 9px;
     }
-    .roadmap-outcome-tag {
-      font-size: 10px;
+    .strip-right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 24px;
+    }
+    .strip-item {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .strip-item-title {
+      font-size: 10.5px;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: var(--success);
-    }
-    .roadmap-bullet-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      flex-grow: 1;
-    }
-    .roadmap-bullet-list li {
-      font-size: 12.5px;
-      line-height: 1.55;
-      color: var(--text-secondary);
-      position: relative;
-      padding-left: 16px;
-    }
-    .roadmap-bullet-list li::before {
-      content: "•";
-      position: absolute;
-      left: 3px;
-      top: 0;
-      font-size: 14px;
-      color: var(--brand);
-      font-weight: 900;
-    }
-    .roadmap-bullet-list li strong {
       color: var(--text-primary);
-      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 4px;
     }
-    .roadmap-bullet-list li.timing-item {
-      background: var(--bg-tertiary);
-      border-radius: var(--radius-sm);
-      padding: 9px 10px 9px 24px;
-      margin-top: auto;
-      border-left: 2px solid var(--text-muted);
+    .strip-item-desc {
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: var(--text-secondary);
     }
-    .roadmap-bullet-list li.timing-item::before {
-      content: "⏱";
-      left: 6px;
-      top: 7px;
-      font-size: 11px;
+    @media (max-width: 900px) {
+      .strip-card {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 1.25rem 1.15rem;
+      }
+      .strip-left {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding-right: 0;
+        padding-bottom: 14px;
+      }
+      .strip-right {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
     }
 
     /* Reference UI 2: Qualification Matrix (Who This Is For / Not For) */
@@ -1332,12 +1320,9 @@
         border-radius: 18px !important;
         margin-bottom: 1.75rem !important;
       }
-      .roadmap-grid, .qual-grid, .visual-split {
+      .qual-grid, .visual-split {
         grid-template-columns: 1fr !important;
         gap: 16px !important;
-      }
-      .roadmap-card {
-        padding: 1.25rem 1.15rem !important;
       }
       .acne-table-wrapper {
         border: none !important;
@@ -1531,72 +1516,101 @@
           <h2>From Chronic Breakouts to Root-Cause Clarity</h2>
           <p>How dermatologists isolate internal triggers step-by-step without ordering wasteful 80-parameter executive health packages.</p>
         </div>
-        <div class="roadmap-grid">
-          <div class="roadmap-card">
-            <div class="roadmap-card-top">
-              <span class="roadmap-badge">Phase 01 · Metabolic Axis</span>
-              <span class="roadmap-icon">🧪</span>
+        <div class="roadmap-strips">
+
+          <!-- Phase 01 -->
+          <div class="strip-card">
+            <div class="strip-left">
+              <div class="strip-phase-row">
+                <span class="strip-phase-badge">Phase 01 · Metabolic Root</span>
+                <span class="strip-phase-icon">🧪</span>
+              </div>
+              <h3>Blood Sugar &amp; Insulin Check</h3>
+              <div class="strip-test-tag"><strong>Highlighted Tests:</strong> Fasting Glucose + Serum Insulin (HOMA-IR)</div>
+              <div class="strip-outcome">🎯 <strong>Key Outcome:</strong> Pinpoints silent insulin surges driving heavy facial oil.</div>
             </div>
-            <h3>Blood Sugar &amp; Insulin Check</h3>
-            <div class="roadmap-test-highlight">
-              <span class="roadmap-test-label">Highlighted Tests Upfront</span>
-              <strong class="roadmap-test-names">Fasting Blood Glucose + Fasting Serum Insulin (HOMA-IR)</strong>
+            <div class="strip-right">
+              <div class="strip-item">
+                <span class="strip-item-title">🔍 What It Checks For</span>
+                <span class="strip-item-desc">Fasting blood sugar, baseline serum insulin, and cell-level insulin sensitivity.</span>
+              </div>
+              <div class="strip-item">
+                <span class="strip-item-title">💡 What It Suggests</span>
+                <span class="strip-item-desc">Fasting insulin &gt; 6.0 &micro;IU/mL or HOMA-IR &gt; 1.8 indicates active insulin resistance.</span>
+              </div>
+              <div class="strip-item">
+                <span class="strip-item-title">⚡ How It Impacts Skin</span>
+                <span class="strip-item-desc">Spikes IGF-1 to pump out thick waxy sebum that plugs pores and fuels acne.</span>
+              </div>
+              <div class="strip-item">
+                <span class="strip-item-title">⏱ Timing &amp; Preparation</span>
+                <span class="strip-item-desc">10&ndash;12h overnight fast · Draw at 8:00&ndash;9:30 AM before morning tea, coffee, or food.</span>
+              </div>
             </div>
-            <div class="roadmap-outcome-box">
-              <span class="roadmap-outcome-tag">🎯 Key Outcome</span>
-              <span>Pinpoints silent insulin surges that drive excess facial oil and pore clogging.</span>
-            </div>
-            <ul class="roadmap-bullet-list">
-              <li><strong>What it checks for:</strong> Fasting blood glucose, baseline serum insulin, and cell-level insulin sensitivity.</li>
-              <li><strong>What it suggests:</strong> Fasting insulin &gt; 6.0 &micro;IU/mL or HOMA-IR &gt; 1.8 reveals hidden insulin resistance, even in lean patients with normal HbA1c.</li>
-              <li><strong>How it impacts skin:</strong> High insulin triggers IGF-1 to pump out thick waxy sebum. Correcting insulin cuts off the biological fuel feeding acne inflammation.</li>
-              <li class="timing-item"><strong>Timing &amp; Prep:</strong> Strict 10&ndash;12h overnight fast (plain water only). Morning blood draw between 8:00 AM &ndash; 9:30 AM before caffeine or breakfast.</li>
-            </ul>
           </div>
 
-          <div class="roadmap-card">
-            <div class="roadmap-card-top">
-              <span class="roadmap-badge">Phase 02 · Hormonal Axis</span>
-              <span class="roadmap-icon">⚖️</span>
+          <!-- Phase 02 -->
+          <div class="strip-card">
+            <div class="strip-left">
+              <div class="strip-phase-row">
+                <span class="strip-phase-badge">Phase 02 · Hormonal Root</span>
+                <span class="strip-phase-icon">⚖️</span>
+              </div>
+              <h3>Hormones: PCOS vs Stress</h3>
+              <div class="strip-test-tag"><strong>Highlighted Tests:</strong> Total/Free Testosterone, LH:FSH, DHEA-S, Progesterone</div>
+              <div class="strip-outcome">🎯 <strong>Key Outcome:</strong> Differentiates ovarian PCOS from work-stress cortisol flares.</div>
             </div>
-            <h3>Hormone Mapping (PCOS vs Stress)</h3>
-            <div class="roadmap-test-highlight">
-              <span class="roadmap-test-label">Highlighted Tests Upfront</span>
-              <strong class="roadmap-test-names">Total &amp; Free Testosterone, LH:FSH Ratio, DHEA-S, Day 21 Progesterone</strong>
+            <div class="strip-right">
+              <div class="strip-item">
+                <span class="strip-item-title">🔍 What It Checks For</span>
+                <span class="strip-item-desc">Ovarian androgen output, LH/FSH balance, and adrenal DHEA-S stress levels.</span>
+              </div>
+              <div class="strip-item">
+                <span class="strip-item-title">💡 What It Suggests</span>
+                <span class="strip-item-desc">LH:FSH &gt; 2:1 confirms PCOS; high DHEA-S with regular cycles confirms stress overdrive.</span>
+              </div>
+              <div class="strip-item">
+                <span class="strip-item-title">⚡ How It Impacts Skin</span>
+                <span class="strip-item-desc">Directs targeted therapy (spironolactone vs stress care), avoiding failed birth control trials.</span>
+              </div>
+              <div class="strip-item">
+                <span class="strip-item-title">⏱ Timing &amp; Preparation</span>
+                <span class="strip-item-desc">Draw on Day 2&ndash;4 of natural period (8&ndash;9 AM) · Progesterone drawn on Day 21.</span>
+              </div>
             </div>
-            <div class="roadmap-outcome-box">
-              <span class="roadmap-outcome-tag">🎯 Key Outcome</span>
-              <span>Differentiates ovarian PCOS from corporate stress and adrenal hormone flares.</span>
-            </div>
-            <ul class="roadmap-bullet-list">
-              <li><strong>What it checks for:</strong> Ovarian androgen output, pituitary cycle balance (LH, FSH), adrenal stress steroids (DHEA-S), and ovulation sufficiency.</li>
-              <li><strong>What it suggests:</strong> LH:FSH &gt; 2:1 with high free testosterone confirms ovarian PCOS. High DHEA-S with regular periods confirms adrenal stress overdrive.</li>
-              <li><strong>How it impacts skin:</strong> Directs targeted therapy—anti-androgens (spironolactone/myo-inositol) for PCOS vs cortisol protocols for adrenal acne, avoiding failed birth control pills.</li>
-              <li class="timing-item"><strong>Timing &amp; Prep:</strong> Baseline panel drawn strictly on Day 2&ndash;4 of natural period (8:00 AM &ndash; 9:00 AM). Mid-luteal progesterone on Day 21.</li>
-            </ul>
           </div>
 
-          <div class="roadmap-card">
-            <div class="roadmap-card-top">
-              <span class="roadmap-badge">Phase 03 · Tissue Repair &amp; Safety</span>
-              <span class="roadmap-icon">🛡️</span>
+          <!-- Phase 03 -->
+          <div class="strip-card">
+            <div class="strip-left">
+              <div class="strip-phase-row">
+                <span class="strip-phase-badge">Phase 03 · Tissue Healing &amp; Safety</span>
+                <span class="strip-phase-icon">🛡️</span>
+              </div>
+              <h3>Skin Healing &amp; Safety Baseline</h3>
+              <div class="strip-test-tag"><strong>Highlighted Tests:</strong> Serum Ferritin, Zinc, hs-CRP, Liver LFT, Lipids</div>
+              <div class="strip-outcome">🎯 <strong>Key Outcome:</strong> Speeds up mark healing and confirms prescription medication safety.</div>
             </div>
-            <h3>Skin Healing &amp; Medication Safety</h3>
-            <div class="roadmap-test-highlight">
-              <span class="roadmap-test-label">Highlighted Tests Upfront</span>
-              <strong class="roadmap-test-names">Serum Ferritin, Serum Zinc, hs-CRP, Liver LFT (SGPT/SGOT), Lipid Profile</strong>
+            <div class="strip-right">
+              <div class="strip-item">
+                <span class="strip-item-title">🔍 What It Checks For</span>
+                <span class="strip-item-desc">Cellular iron stores (ferritin), oil regulator (zinc), and liver metabolic clearance.</span>
+              </div>
+              <div class="strip-item">
+                <span class="strip-item-title">💡 What It Suggests</span>
+                <span class="strip-item-desc">Ferritin &lt; 50 ng/mL stalls collagen healing; zinc &lt; 90 &micro;g/dL weakens acne resistance.</span>
+              </div>
+              <div class="strip-item">
+                <span class="strip-item-title">⚡ How It Impacts Skin</span>
+                <span class="strip-item-desc">Cuts dark mark recovery time in half; validates liver safety before oral isotretinoin.</span>
+              </div>
+              <div class="strip-item">
+                <span class="strip-item-title">⏱ Timing &amp; Preparation</span>
+                <span class="strip-item-desc">Morning draw · 10h fast for lipids · Pause biotin hair gummies 72h prior.</span>
+              </div>
             </div>
-            <div class="roadmap-outcome-box">
-              <span class="roadmap-outcome-tag">🎯 Key Outcome</span>
-              <span>Speeds up dark mark recovery and verifies clearance before prescription medications.</span>
-            </div>
-            <ul class="roadmap-bullet-list">
-              <li><strong>What it checks for:</strong> Deep cellular iron stores (ferritin), oil-regulating minerals (zinc), systemic inflammation (hs-CRP), and liver metabolic clearance.</li>
-              <li><strong>What it suggests:</strong> Ferritin &lt; 50 ng/mL stalls collagen wound healing and prolongs dark marks; zinc &lt; 90 &micro;g/dL impairs immune defense; elevated SGPT signals liver stress.</li>
-              <li><strong>How it impacts skin:</strong> Restoring ferritin and zinc cuts post-acne mark healing time in half. Confirms liver safety before prescribing oral isotretinoin (Accutane).</li>
-              <li class="timing-item"><strong>Timing &amp; Prep:</strong> Standard morning draw. Strict 10-hour fast if lipid panel included. Pause biotin hair gummies 72h beforehand to avoid false lab assay errors.</li>
-            </ul>
           </div>
+
         </div>
       </nav>
 
