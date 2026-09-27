@@ -1,23 +1,103 @@
 {
   "redirects": [
     {
-      "source": "/acne/best-retinol-anti-aging-serum-india",
-      "destination": "/acne/anti-wrinkle-anti-aging-serum-india/",
+      "source": "/acne/adapalene-0.1-gel-for-acne-india",
+      "destination": "/acne/adapalene-0.1-percent-gel-acne-india/",
       "permanent": true
     },
     {
-      "source": "/acne/best-retinol-anti-aging-serum-india/",
-      "destination": "/acne/anti-wrinkle-anti-aging-serum-india/",
+      "source": "/acne/adapalene-0.1-gel-for-acne-india/",
+      "destination": "/acne/adapalene-0.1-percent-gel-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/alpha-arbutin-serum-for-acne-dark-spots-indian-skin",
+      "destination": "/acne/alpha-arbutin-serum-for-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/alpha-arbutin-serum-for-acne-dark-spots-indian-skin/",
+      "destination": "/acne/alpha-arbutin-serum-for-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/alpha-arbutin-vs-kojic-acid-dark-spots-india",
+      "destination": "/pigmentation/alpha-arbutin-vs-kojic-acid-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/alpha-arbutin-vs-kojic-acid-dark-spots-india/",
+      "destination": "/pigmentation/alpha-arbutin-vs-kojic-acid-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/anti-aging-serum-usa",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/anti-aging-serum-usa/",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/anti-wrinkle-anti-aging-serum-india",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/anti-wrinkle-anti-aging-serum-india/",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
       "permanent": true
     },
     {
       "source": "/acne/anti-wrinkle-serum-retinol-peptides-usa",
-      "destination": "/acne/anti-wrinkle-serum-usa/",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
       "permanent": true
     },
     {
       "source": "/acne/anti-wrinkle-serum-retinol-peptides-usa/",
-      "destination": "/acne/anti-wrinkle-serum-usa/",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/anti-wrinkle-serum-usa",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/anti-wrinkle-serum-usa/",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/argireline-liquid-botox-wrinkle-serum-usa",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/argireline-liquid-botox-wrinkle-serum-usa/",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/argireline-peptide-wrinkle-treatment-india",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/argireline-peptide-wrinkle-treatment-india/",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/azelaic-acid-acne-dark-spots-india",
+      "destination": "/acne/azelaic-acid-for-acne-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/azelaic-acid-acne-dark-spots-india/",
+      "destination": "/acne/azelaic-acid-for-acne-dark-spots-india/",
       "permanent": true
     },
     {
@@ -41,13 +121,83 @@
       "permanent": true
     },
     {
-      "source": "/acne/laser-treatment-acne-scars-cost-usa",
-      "destination": "/acne/best-acne-scar-treatment-laser-usa/",
+      "source": "/acne/benzoyl-peroxide-2.5-vs-5-gel-india",
+      "destination": "/acne/benzoyl-peroxide-gel-2.5-vs-5-india/",
       "permanent": true
     },
     {
-      "source": "/acne/laser-treatment-acne-scars-cost-usa/",
-      "destination": "/acne/best-acne-scar-treatment-laser-usa/",
+      "source": "/acne/benzoyl-peroxide-2.5-vs-5-gel-india/",
+      "destination": "/acne/benzoyl-peroxide-gel-2.5-vs-5-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/benzoyl-peroxide-face-wash-india",
+      "destination": "/acne/best-benzoyl-peroxide-face-wash-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/benzoyl-peroxide-face-wash-india/",
+      "destination": "/acne/best-benzoyl-peroxide-face-wash-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/benzoyl-peroxide-face-wash-usa",
+      "destination": "/acne/best-benzoyl-peroxide-face-wash-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/benzoyl-peroxide-face-wash-usa/",
+      "destination": "/acne/best-benzoyl-peroxide-face-wash-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-acne-scar-treatment-usa",
+      "destination": "/acne/best-acne-scar-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-acne-scar-treatment-usa/",
+      "destination": "/acne/best-acne-scar-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-bakuchiol-serum-usa",
+      "destination": "/acne/best-retinol-serum-for-beginners-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-bakuchiol-serum-usa/",
+      "destination": "/acne/best-retinol-serum-for-beginners-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-benzoyl-peroxide-face-wash-usa",
+      "destination": "/acne/best-benzoyl-peroxide-face-wash-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-benzoyl-peroxide-face-wash-usa/",
+      "destination": "/acne/best-benzoyl-peroxide-face-wash-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-blackhead-remover-usa",
+      "destination": "/acne/best-blackhead-remover-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-blackhead-remover-usa/",
+      "destination": "/acne/best-blackhead-remover-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-centella-asiatica-cica-serum-usa",
+      "destination": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-centella-asiatica-cica-serum-usa/",
+      "destination": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/",
       "permanent": true
     },
     {
@@ -61,6 +211,96 @@
       "permanent": true
     },
     {
+      "source": "/acne/best-dark-spot-corrector-usa",
+      "destination": "/acne/best-serum-for-pimples-and-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-dark-spot-corrector-usa/",
+      "destination": "/acne/best-serum-for-pimples-and-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-dark-spot-remover-for-face-india",
+      "destination": "/acne/best-serum-for-pimples-and-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-dark-spot-remover-for-face-india/",
+      "destination": "/acne/best-serum-for-pimples-and-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-eye-wrinkle-cream-usa",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-eye-wrinkle-cream-usa/",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-face-wash-for-acne-scars-india",
+      "destination": "/acne/best-face-wash-for-oily-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-face-wash-for-acne-scars-india/",
+      "destination": "/acne/best-face-wash-for-oily-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-face-wash-for-oily-acne-prone-skin-usa",
+      "destination": "/acne/best-face-wash-for-oily-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-face-wash-for-oily-acne-prone-skin-usa/",
+      "destination": "/acne/best-face-wash-for-oily-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-face-wash-for-pimples-and-dark-spots-india",
+      "destination": "/acne/best-face-wash-for-oily-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-face-wash-for-pimples-and-dark-spots-india/",
+      "destination": "/acne/best-face-wash-for-oily-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-glycolic-acid-toner-usa",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-glycolic-acid-toner-usa/",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-hyaluronic-acid-serum-for-acne-india",
+      "destination": "/acne/best-hyaluronic-acid-serum-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-hyaluronic-acid-serum-for-acne-india/",
+      "destination": "/acne/best-hyaluronic-acid-serum-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-hyaluronic-acid-serum-usa",
+      "destination": "/acne/best-hyaluronic-acid-serum-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-hyaluronic-acid-serum-usa/",
+      "destination": "/acne/best-hyaluronic-acid-serum-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/best-kojic-acid-cream-melasma-india",
       "destination": "/acne/kojic-acid-dermatologist-cream-pigmentation-india/",
       "permanent": true
@@ -68,6 +308,26 @@
     {
       "source": "/acne/best-kojic-acid-cream-melasma-india/",
       "destination": "/acne/kojic-acid-dermatologist-cream-pigmentation-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-mens-face-wash-pimples-dark-spots",
+      "destination": "/acne/best-face-wash-for-oily-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-mens-face-wash-pimples-dark-spots/",
+      "destination": "/acne/best-face-wash-for-oily-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-moisturizer-for-dry-skin-usa",
+      "destination": "/acne/best-moisturizer-for-dry-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-moisturizer-for-dry-skin-usa/",
+      "destination": "/acne/best-moisturizer-for-dry-skin-india/",
       "permanent": true
     },
     {
@@ -81,6 +341,76 @@
       "permanent": true
     },
     {
+      "source": "/acne/best-niacinamide-serum-for-acne-india",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-niacinamide-serum-for-acne-india/",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-non-comedogenic-moisturizer-europe",
+      "destination": "/acne/best-non-comedogenic-moisturizer-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-non-comedogenic-moisturizer-europe/",
+      "destination": "/acne/best-non-comedogenic-moisturizer-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-non-comedogenic-moisturizer-usa",
+      "destination": "/acne/best-non-comedogenic-moisturizer-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-non-comedogenic-moisturizer-usa/",
+      "destination": "/acne/best-non-comedogenic-moisturizer-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-pore-minimizer-serum-usa",
+      "destination": "/pigmentation/orange-peel-skin-texture-enlarged-pores-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-pore-minimizer-serum-usa/",
+      "destination": "/pigmentation/orange-peel-skin-texture-enlarged-pores-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-retinol-anti-aging-serum-india",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-retinol-anti-aging-serum-india/",
+      "destination": "/acne/best-anti-wrinkle-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-retinol-serum-for-beginners-usa",
+      "destination": "/acne/best-retinol-serum-for-beginners-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-retinol-serum-for-beginners-usa/",
+      "destination": "/acne/best-retinol-serum-for-beginners-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-salicylic-acid-face-wash-india",
+      "destination": "/acne/salicylic-acid-cleanser-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-salicylic-acid-face-wash-india/",
+      "destination": "/acne/salicylic-acid-cleanser-for-acne-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/best-salicylic-acid-face-wash-usa",
       "destination": "/acne/paulas-choice-2-percent-bha-liquid-exfoliant-usa/",
       "permanent": true
@@ -88,6 +418,16 @@
     {
       "source": "/acne/best-salicylic-acid-face-wash-usa/",
       "destination": "/acne/paulas-choice-2-percent-bha-liquid-exfoliant-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-vitamin-c-serum-dark-spots-usa",
+      "destination": "/acne/vitamin-c-serum-causing-breakouts-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-vitamin-c-serum-dark-spots-usa/",
+      "destination": "/acne/vitamin-c-serum-causing-breakouts-acne-prone-skin-india/",
       "permanent": true
     },
     {
@@ -101,13 +441,13 @@
       "permanent": true
     },
     {
-      "source": "/acne/pimple-under-the-skin-usa",
-      "destination": "/acne/blind-pimple-under-skin-treatment-usa/",
+      "source": "/acne/blind-pimple-under-skin-treatment-usa",
+      "destination": "/acne/pimple-under-skin-treatment-india/",
       "permanent": true
     },
     {
-      "source": "/acne/pimple-under-the-skin-usa/",
-      "destination": "/acne/blind-pimple-under-skin-treatment-usa/",
+      "source": "/acne/blind-pimple-under-skin-treatment-usa/",
+      "destination": "/acne/pimple-under-skin-treatment-india/",
       "permanent": true
     },
     {
@@ -121,6 +461,46 @@
       "permanent": true
     },
     {
+      "source": "/acne/centella-asiatica-cica-for-acne-india",
+      "destination": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/centella-asiatica-cica-for-acne-india/",
+      "destination": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/centella-asiatica-cica-vs-niacinamide-acne-redness-india",
+      "destination": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/centella-asiatica-cica-vs-niacinamide-acne-redness-india/",
+      "destination": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/ceramide-moisturizer-for-acne-prone-skin-usa",
+      "destination": "/acne/best-ceramide-moisturizer-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/ceramide-moisturizer-for-acne-prone-skin-usa/",
+      "destination": "/acne/best-ceramide-moisturizer-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/ceramides-for-acne-prone-skin",
+      "destination": "/acne/best-ceramide-moisturizer-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/ceramides-for-acne-prone-skin/",
+      "destination": "/acne/best-ceramide-moisturizer-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/cerave-moisturizing-cream-dry-skin-india",
       "destination": "/acne/cerave-moisturizer-skin-barrier-india/",
       "permanent": true
@@ -131,6 +511,16 @@
       "permanent": true
     },
     {
+      "source": "/acne/cerave-moisturizing-cream-usa",
+      "destination": "/acne/best-moisturizer-for-dry-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/cerave-moisturizing-cream-usa/",
+      "destination": "/acne/best-moisturizer-for-dry-skin-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/cerave-renewing-sa-cleanser-bumpy-skin-usa",
       "destination": "/acne/cerave-sa-cleanser-for-rough-bumpy-skin-usa/",
       "permanent": true
@@ -138,6 +528,16 @@
     {
       "source": "/acne/cerave-renewing-sa-cleanser-bumpy-skin-usa/",
       "destination": "/acne/cerave-sa-cleanser-for-rough-bumpy-skin-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/cerave-resurfacing-retinol-serum-usa",
+      "destination": "/acne/cerave-resurfacing-retinol-serum-post-acne-marks-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/cerave-resurfacing-retinol-serum-usa/",
+      "destination": "/acne/cerave-resurfacing-retinol-serum-post-acne-marks-usa/",
       "permanent": true
     },
     {
@@ -161,13 +561,23 @@
       "permanent": true
     },
     {
-      "source": "/acne/saslic-ds-foaming-face-wash-india",
-      "destination": "/acne/cipla-saslic-ds-salicylic-acid-foaming-wash-india/",
+      "source": "/acne/cica-soothing-moisturizer-for-acne-barrier-repair-india",
+      "destination": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/",
       "permanent": true
     },
     {
-      "source": "/acne/saslic-ds-foaming-face-wash-india/",
-      "destination": "/acne/cipla-saslic-ds-salicylic-acid-foaming-wash-india/",
+      "source": "/acne/cica-soothing-moisturizer-for-acne-barrier-repair-india/",
+      "destination": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/clindamycin-gel-for-acne-indian-skin",
+      "destination": "/acne/clindamycin-gel-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/clindamycin-gel-for-acne-indian-skin/",
+      "destination": "/acne/clindamycin-gel-for-acne-india/",
       "permanent": true
     },
     {
@@ -181,6 +591,16 @@
       "permanent": true
     },
     {
+      "source": "/acne/crows-feet-treatment-usa",
+      "destination": "/acne/marionette-lines-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/crows-feet-treatment-usa/",
+      "destination": "/acne/marionette-lines-treatment-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/cynomycin-50mg-100mg-capsule-acne-india",
       "destination": "/acne/minocycline-100mg-tablets-acne-treatment-india/",
       "permanent": true
@@ -188,6 +608,36 @@
     {
       "source": "/acne/cynomycin-50mg-100mg-capsule-acne-india/",
       "destination": "/acne/minocycline-100mg-tablets-acne-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/dark-spot-corrector-serum-usa",
+      "destination": "/acne/best-serum-for-pimples-and-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/dark-spot-corrector-serum-usa/",
+      "destination": "/acne/best-serum-for-pimples-and-dark-spots-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/differin-0.1-adapalene-gel-usa",
+      "destination": "/acne/adapalene-0.1-percent-gel-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/differin-0.1-adapalene-gel-usa/",
+      "destination": "/acne/adapalene-0.1-percent-gel-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/differin-adapalene-0.1-percent-gel-usa",
+      "destination": "/acne/adapalene-0.1-percent-gel-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/differin-adapalene-0.1-percent-gel-usa/",
+      "destination": "/acne/adapalene-0.1-percent-gel-acne-india/",
       "permanent": true
     },
     {
@@ -201,6 +651,16 @@
       "permanent": true
     },
     {
+      "source": "/acne/differin-gel-usa",
+      "destination": "/acne/adapalene-0.1-percent-gel-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/differin-gel-usa/",
+      "destination": "/acne/adapalene-0.1-percent-gel-acne-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/differin-resurfacing-scar-gel-review-usa",
       "destination": "/acne/differin-resurfacing-scars-gel-glycolic-acid-usa/",
       "permanent": true
@@ -208,6 +668,16 @@
     {
       "source": "/acne/differin-resurfacing-scar-gel-review-usa/",
       "destination": "/acne/differin-resurfacing-scars-gel-glycolic-acid-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/double-cleansing-acne-prone-skin-india",
+      "destination": "/acne/double-cleansing-routine-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/double-cleansing-acne-prone-skin-india/",
+      "destination": "/acne/double-cleansing-routine-acne-prone-skin-india/",
       "permanent": true
     },
     {
@@ -231,23 +701,203 @@
       "permanent": true
     },
     {
+      "source": "/acne/food-intolerance-test-for-acne-india",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/food-intolerance-test-for-acne-india/",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/forehead-acne-cheat-sheet",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/forehead-acne-cheat-sheet/",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/forehead-acne-dandruff",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/forehead-acne-dandruff/",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/forehead-acne-organ-connection",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/forehead-acne-organ-connection/",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/forehead-acne/fast-treatment",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/forehead-acne/fast-treatment/",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/forehead-acne/home-remedies",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/forehead-acne/home-remedies/",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/forehead-acne/meaning",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/forehead-acne/meaning/",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/forehead-pimples-cause-and-treatment-india",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/forehead-pimples-cause-and-treatment-india/",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/fungal-acne-vs-regular-acne-india",
+      "destination": "/acne/fungal-acne-vs-regular-acne-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/fungal-acne-vs-regular-acne-india/",
+      "destination": "/acne/fungal-acne-vs-regular-acne-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glyco-6-vs-glyco-12-cream-india",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glyco-6-vs-glyco-12-cream-india/",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glycolic-acid-6-percent-vs-12-percent-cream-india",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glycolic-acid-face-wash-for-pigmentation-india",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glycolic-acid-face-wash-for-pigmentation-india/",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glycolic-acid-for-acne-scars-dark-spots-india",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glycolic-acid-for-acne-scars-dark-spots-india/",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glycolic-acid-toner-for-acne-india",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glycolic-acid-toner-for-acne-india/",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glycolic-acid-toner-for-pigmentation-india",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glycolic-acid-toner-for-pigmentation-india/",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glycolic-acid-toner-peel-acne-scars-india",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/glycolic-acid-toner-peel-acne-scars-india/",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/glycolic-acid-toner-pigmentation-dark-spots-india",
-      "destination": "/acne/glycolic-acid-toner-for-acne-india/",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
       "permanent": true
     },
     {
       "source": "/acne/glycolic-acid-toner-pigmentation-dark-spots-india/",
-      "destination": "/acne/glycolic-acid-toner-for-acne-india/",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
       "permanent": true
     },
     {
-      "source": "/acne/hero-rescue-balm-post-blemish-cream-usa",
-      "destination": "/acne/hero-cosmetics-rescue-balm-post-blemish-cream-usa/",
+      "source": "/acne/gut-microbiome-test-for-acne-india",
+      "destination": "/acne/blood-tests-for-acne-india/",
       "permanent": true
     },
     {
-      "source": "/acne/hero-rescue-balm-post-blemish-cream-usa/",
-      "destination": "/acne/hero-cosmetics-rescue-balm-post-blemish-cream-usa/",
+      "source": "/acne/gut-microbiome-test-for-acne-india/",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/health-checkup-package-for-acne-india",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/health-checkup-package-for-acne-india/",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/heavy-metal-test-for-acne-india",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/heavy-metal-test-for-acne-india/",
+      "destination": "/acne/blood-tests-for-acne-india/",
       "permanent": true
     },
     {
@@ -271,13 +921,63 @@
       "permanent": true
     },
     {
-      "source": "/indian-acne-diet-guide",
-      "destination": "/acne/indian-acne-diet-guide/",
+      "source": "/acne/hero-rescue-balm-post-blemish-cream-usa",
+      "destination": "/acne/hero-cosmetics-rescue-balm-post-blemish-cream-usa/",
       "permanent": true
     },
     {
-      "source": "/indian-acne-diet-guide/",
-      "destination": "/acne/indian-acne-diet-guide/",
+      "source": "/acne/hero-rescue-balm-post-blemish-cream-usa/",
+      "destination": "/acne/hero-cosmetics-rescue-balm-post-blemish-cream-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/how-to-use-hypochlorous-acid-spray-gym-workout-acne-india",
+      "destination": "/acne/hypochlorous-acid-spray-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/how-to-use-hypochlorous-acid-spray-gym-workout-acne-india/",
+      "destination": "/acne/hypochlorous-acid-spray-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/how-to-use-salicylic-acid-without-damaging-skin-barrier",
+      "destination": "/acne/how-to-use-salicylic-acid-without-damaging-your-skin-barrier/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/how-to-use-salicylic-acid-without-damaging-skin-barrier/",
+      "destination": "/acne/how-to-use-salicylic-acid-without-damaging-your-skin-barrier/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/hydrocolloid-pimple-patches-cystic-acne-usa",
+      "destination": "/acne/best-pimple-patch-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/hydrocolloid-pimple-patches-cystic-acne-usa/",
+      "destination": "/acne/best-pimple-patch-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/hydrocolloid-pimple-patches-usa",
+      "destination": "/acne/best-pimple-patch-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/hydrocolloid-pimple-patches-usa/",
+      "destination": "/acne/best-pimple-patch-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/inflammatory-markers-test-for-acne-india",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/inflammatory-markers-test-for-acne-india/",
+      "destination": "/acne/blood-tests-for-acne-india/",
       "permanent": true
     },
     {
@@ -291,6 +991,26 @@
       "permanent": true
     },
     {
+      "source": "/acne/insulin-resistance-test-for-acne-india",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/insulin-resistance-test-for-acne-india/",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/iron-deficiency-test-for-acne-india",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/iron-deficiency-test-for-acne-india/",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/la-roche-posay-effaclar-duo-bpo-lha-usa",
       "destination": "/acne/la-roche-posay-effaclar-duo-acne-treatment-usa/",
       "permanent": true
@@ -298,6 +1018,36 @@
     {
       "source": "/acne/la-roche-posay-effaclar-duo-bpo-lha-usa/",
       "destination": "/acne/la-roche-posay-effaclar-duo-acne-treatment-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/laser-treatment-acne-scars-cost-usa",
+      "destination": "/acne/best-acne-scar-treatment-laser-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/laser-treatment-acne-scars-cost-usa/",
+      "destination": "/acne/best-acne-scar-treatment-laser-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/lipid-profile-test-for-acne-india",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/lipid-profile-test-for-acne-india/",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/liver-function-test-for-acne-india",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/liver-function-test-for-acne-india/",
+      "destination": "/acne/blood-tests-for-acne-india/",
       "permanent": true
     },
     {
@@ -311,6 +1061,16 @@
       "permanent": true
     },
     {
+      "source": "/acne/marionette-lines-treatment-usa",
+      "destination": "/acne/marionette-lines-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/marionette-lines-treatment-usa/",
+      "destination": "/acne/marionette-lines-treatment-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/minimalist-10-vitamin-c-serum-review-india",
       "destination": "/acne/minimalist-10-percent-vitamin-c-serum-acne-marks-india/",
       "permanent": true
@@ -318,6 +1078,16 @@
     {
       "source": "/acne/minimalist-10-vitamin-c-serum-review-india/",
       "destination": "/acne/minimalist-10-percent-vitamin-c-serum-acne-marks-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/minimalist-vs-skinvest-vs-derma-co-hypochlorous-acid-spray-india",
+      "destination": "/acne/hypochlorous-acid-spray-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/minimalist-vs-skinvest-vs-derma-co-hypochlorous-acid-spray-india/",
+      "destination": "/acne/hypochlorous-acid-spray-for-acne-india/",
       "permanent": true
     },
     {
@@ -338,6 +1108,116 @@
     {
       "source": "/acne/neutrogena-stubborn-acne-3.5-bpo-cleanser-usa/",
       "destination": "/acne/neutrogena-stubborn-acne-benzoyl-peroxide-wash-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-10-percent-vs-5-percent-serum-india",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-10-percent-vs-5-percent-serum-india/",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-10-vs-5-percent-purging-india",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-10-vs-5-percent-purging-india/",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-5-percent-serum-for-acne-marks-india",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-5-percent-serum-for-acne-marks-india/",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-acne-dark-spots-india",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-acne-dark-spots-india/",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-moisturizer-for-acne-india",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-moisturizer-for-acne-india/",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-purging-or-breakout",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-purging-or-breakout/",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-purging-vs-skin-barrier-damage-india",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-purging-vs-skin-barrier-damage-india/",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-serum-for-pores-usa",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/niacinamide-serum-for-pores-usa/",
+      "destination": "/acne/niacinamide-serums-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/nighttime-routine-forehead-acne-prevention",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/nighttime-routine-forehead-acne-prevention/",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/nodule-vs-cyst",
+      "destination": "/acne/nodule-cyst/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/nodule-vs-cyst/",
+      "destination": "/acne/nodule-cyst/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/panoxyl-10-percent-acne-wash-usa",
+      "destination": "/acne/panoxyl-10-percent-benzoyl-peroxide-acne-wash-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/panoxyl-10-percent-acne-wash-usa/",
+      "destination": "/acne/panoxyl-10-percent-benzoyl-peroxide-acne-wash-usa/",
       "permanent": true
     },
     {
@@ -381,6 +1261,86 @@
       "permanent": true
     },
     {
+      "source": "/acne/pimple-on-forehead-hindi",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/pimple-on-forehead-hindi/",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/pimple-patch-usa",
+      "destination": "/acne/best-pimple-patch-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/pimple-patch-usa/",
+      "destination": "/acne/best-pimple-patch-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/pimple-under-the-skin-usa",
+      "destination": "/acne/pimple-under-skin-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/pimple-under-the-skin-usa/",
+      "destination": "/acne/pimple-under-skin-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/post-acne-mark-removal-forehead-india",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/post-acne-mark-removal-forehead-india/",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/progesterone-estrogen-test-for-acne-india",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/progesterone-estrogen-test-for-acne-india/",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/retinol-vs-tretinoin-acne-india",
+      "destination": "/acne/best-retinol-serum-for-beginners-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/retinol-vs-tretinoin-acne-india/",
+      "destination": "/acne/best-retinol-serum-for-beginners-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/salicylic-acid-body-wash-usa",
+      "destination": "/acne/salicylic-acid-body-wash-bacne-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/salicylic-acid-body-wash-usa/",
+      "destination": "/acne/salicylic-acid-body-wash-bacne-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/salicylic-acid-face-wash-for-acne-india",
+      "destination": "/acne/salicylic-acid-cleanser-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/salicylic-acid-face-wash-for-acne-india/",
+      "destination": "/acne/salicylic-acid-cleanser-for-acne-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/salicylic-acid-face-wash-for-acne-indian-skin",
       "destination": "/acne/salicylic-acid-cleanser-for-acne-india/",
       "permanent": true
@@ -391,12 +1351,12 @@
       "permanent": true
     },
     {
-      "source": "/acne/the-ordinary-salicylic-acid-2-percent-solution-usa",
+      "source": "/acne/salicylic-acid-for-blackheads-usa",
       "destination": "/acne/salicylic-acid-serum-for-blackheads-usa/",
       "permanent": true
     },
     {
-      "source": "/acne/the-ordinary-salicylic-acid-2-percent-solution-usa/",
+      "source": "/acne/salicylic-acid-for-blackheads-usa/",
       "destination": "/acne/salicylic-acid-serum-for-blackheads-usa/",
       "permanent": true
     },
@@ -408,6 +1368,16 @@
     {
       "source": "/acne/salicylix-sf6-sf12-ointment-uses-india/",
       "destination": "/acne/salicylix-sf6-sf12-salicylic-acid-ointment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/saslic-ds-foaming-face-wash-india",
+      "destination": "/acne/cipla-saslic-ds-salicylic-acid-foaming-wash-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/saslic-ds-foaming-face-wash-india/",
+      "destination": "/acne/cipla-saslic-ds-salicylic-acid-foaming-wash-india/",
       "permanent": true
     },
     {
@@ -431,63 +1401,163 @@
       "permanent": true
     },
     {
+      "source": "/acne/sebogel-salicylic-acid-niacinamide-gel-india",
+      "destination": "/acne/sebogel-salicylic-acid-niacinamide-gel-review-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/sebogel-salicylic-acid-niacinamide-gel-india/",
+      "destination": "/acne/sebogel-salicylic-acid-niacinamide-gel-review-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/small-pimples-forehead-men",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/small-pimples-forehead-men/",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/smile-lines-treatment-usa",
+      "destination": "/acne/marionette-lines-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/smile-lines-treatment-usa/",
+      "destination": "/acne/marionette-lines-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/snail-mucin-for-acne-prone-skin-usa",
+      "destination": "/acne/snail-mucin-for-oily-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/snail-mucin-for-acne-prone-skin-usa/",
+      "destination": "/acne/snail-mucin-for-oily-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/spearmint-tea-for-hormonal-acne-pcos-india",
+      "destination": "/acne/pcos-supplements-spearmint-inositol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/spearmint-tea-for-hormonal-acne-pcos-india/",
+      "destination": "/acne/pcos-supplements-spearmint-inositol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/stop-forehead-acne-hair-products-india",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/stop-forehead-acne-hair-products-india/",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/stress-acne-forehead-cortisol-india",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/stress-acne-forehead-cortisol-india/",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/stress-hormone-test-for-acne-india",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/stress-hormone-test-for-acne-india/",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/sunscreen-for-acne-prone-skin-india",
+      "destination": "/acne/best-sunscreen-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/sunscreen-for-acne-prone-skin-india/",
+      "destination": "/acne/best-sunscreen-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/the-ordinary-glycolic-acid-7-percent-toning-solution-usa",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/the-ordinary-glycolic-acid-7-percent-toning-solution-usa/",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/the-ordinary-glycolic-acid-7-toner-usa",
-      "destination": "/acne/the-ordinary-glycolic-acid-7-percent-toning-solution-usa/",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
       "permanent": true
     },
     {
       "source": "/acne/the-ordinary-glycolic-acid-7-toner-usa/",
-      "destination": "/acne/the-ordinary-glycolic-acid-7-percent-toning-solution-usa/",
+      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/the-ordinary-salicylic-acid-2-percent-solution-usa",
+      "destination": "/acne/salicylic-acid-serum-for-blackheads-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/the-ordinary-salicylic-acid-2-percent-solution-usa/",
+      "destination": "/acne/salicylic-acid-serum-for-blackheads-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/thyroid-test-for-acne-india",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/thyroid-test-for-acne-india/",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tower-28-sos-daily-rescue-facial-spray-hypochlorous-usa",
+      "destination": "/acne/hypochlorous-acid-spray-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tower-28-sos-daily-rescue-facial-spray-hypochlorous-usa/",
+      "destination": "/acne/hypochlorous-acid-spray-for-acne-india/",
       "permanent": true
     },
     {
       "source": "/acne/tower-28-sos-spray-hypochlorous-acid-usa",
-      "destination": "/acne/tower-28-sos-daily-rescue-facial-spray-hypochlorous-usa/",
+      "destination": "/acne/hypochlorous-acid-spray-for-acne-india/",
       "permanent": true
     },
     {
       "source": "/acne/tower-28-sos-spray-hypochlorous-acid-usa/",
-      "destination": "/acne/tower-28-sos-daily-rescue-facial-spray-hypochlorous-usa/",
+      "destination": "/acne/hypochlorous-acid-spray-for-acne-india/",
       "permanent": true
     },
     {
-      "source": "/acne/zitsticka-killa-patch-review-usa",
-      "destination": "/acne/zitsticka-killa-microdart-pimple-patch-usa/",
+      "source": "/acne/tranexamic-acid-3-percent-serum-india",
+      "destination": "/pigmentation/tranexamic-acid-for-melasma-hyperpigmentation-india/",
       "permanent": true
     },
     {
-      "source": "/acne/zitsticka-killa-patch-review-usa/",
-      "destination": "/acne/zitsticka-killa-microdart-pimple-patch-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/alpha-arbutin-vs-kojic-acid-dark-spots-india",
-      "destination": "/pigmentation/alpha-arbutin-vs-kojic-acid-dark-spots-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/alpha-arbutin-vs-kojic-acid-dark-spots-india/",
-      "destination": "/pigmentation/alpha-arbutin-vs-kojic-acid-dark-spots-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/glyco-6-vs-glyco-12-cream-india",
-      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/glyco-6-vs-glyco-12-cream-india/",
-      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/glycolic-acid-6-percent-vs-12-percent-cream-india",
-      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/glycolic-acid-6-percent-vs-12-percent-cream-india/",
-      "destination": "/pigmentation/glycolic-acid-6-percent-vs-12-percent-cream-india/",
+      "source": "/acne/tranexamic-acid-3-percent-serum-india/",
+      "destination": "/pigmentation/tranexamic-acid-for-melasma-hyperpigmentation-india/",
       "permanent": true
     },
     {
@@ -521,6 +1591,66 @@
       "permanent": true
     },
     {
+      "source": "/acne/treat-blind-pimple-on-forehead-india",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/treat-blind-pimple-on-forehead-india/",
+      "destination": "/acne/forehead-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/ut-treatment-guide",
+      "destination": "/acne/nose-pimple-treatments-home-remedies-clinical-cures/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/ut-treatment-guide/",
+      "destination": "/acne/nose-pimple-treatments-home-remedies-clinical-cures/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/vitamin-b12-acne-test-india",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/vitamin-b12-acne-test-india/",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/vitamin-deficiency-acne-tests-india",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/vitamin-deficiency-acne-tests-india/",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/zinc-test-for-acne-india",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/zinc-test-for-acne-india/",
+      "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/zitsticka-killa-patch-review-usa",
+      "destination": "/acne/zitsticka-killa-microdart-pimple-patch-usa/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/zitsticka-killa-patch-review-usa/",
+      "destination": "/acne/zitsticka-killa-microdart-pimple-patch-usa/",
+      "permanent": true
+    },
+    {
       "source": "/blog/adapalene-before-after-results",
       "destination": "/acne/adapalene-before-after-results/",
       "permanent": true
@@ -541,26 +1671,6 @@
       "permanent": true
     },
     {
-      "source": "/acne/ut-treatment-guide",
-      "destination": "/acne/nose-pimple-treatments-home-remedies-clinical-cures/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/ut-treatment-guide/",
-      "destination": "/acne/nose-pimple-treatments-home-remedies-clinical-cures/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/nodule-vs-cyst",
-      "destination": "/acne/nodule-cyst/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/nodule-vs-cyst/",
-      "destination": "/acne/nodule-cyst/",
-      "permanent": true
-    },
-    {
       "source": "/blog/pimple-vs-zit-inflammatory-papules-pustules-indian-skin",
       "destination": "/acne/pimple-zit/",
       "permanent": true
@@ -571,593 +1681,13 @@
       "permanent": true
     },
     {
-      "source": "/acne/best-salicylic-acid-face-wash-india",
-      "destination": "/acne/salicylic-acid-face-wash-for-acne-indian-skin/",
+      "source": "/indian-acne-diet-guide",
+      "destination": "/acne/indian-acne-diet-guide/",
       "permanent": true
     },
     {
-      "source": "/acne/best-salicylic-acid-face-wash-india/",
-      "destination": "/acne/salicylic-acid-face-wash-for-acne-indian-skin/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/salicylic-acid-face-wash-for-acne-india",
-      "destination": "/acne/salicylic-acid-face-wash-for-acne-indian-skin/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/salicylic-acid-face-wash-for-acne-india/",
-      "destination": "/acne/salicylic-acid-face-wash-for-acne-indian-skin/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/clindamycin-gel-for-acne-indian-skin",
-      "destination": "/acne/clindamycin-gel-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/clindamycin-gel-for-acne-indian-skin/",
-      "destination": "/acne/clindamycin-gel-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/cica-soothing-moisturizer-for-acne-barrier-repair-india",
-      "destination": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/cica-soothing-moisturizer-for-acne-barrier-repair-india/",
-      "destination": "/acne/best-cica-moisturizer-for-acne-prone-skin-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/alpha-arbutin-serum-for-acne-dark-spots-indian-skin",
-      "destination": "/acne/alpha-arbutin-serum-for-dark-spots-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/alpha-arbutin-serum-for-acne-dark-spots-indian-skin/",
-      "destination": "/acne/alpha-arbutin-serum-for-dark-spots-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/spearmint-tea-for-hormonal-acne-pcos-india",
-      "destination": "/acne/pcos-supplements-spearmint-inositol-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/spearmint-tea-for-hormonal-acne-pcos-india/",
-      "destination": "/acne/pcos-supplements-spearmint-inositol-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-5-percent-serum-for-acne-marks-india",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-5-percent-serum-for-acne-marks-india/",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/benzoyl-peroxide-2.5-vs-5-gel-india",
-      "destination": "/acne/benzoyl-peroxide-gel-2.5-vs-5-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/benzoyl-peroxide-2.5-vs-5-gel-india/",
-      "destination": "/acne/benzoyl-peroxide-gel-2.5-vs-5-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/adapalene-0.1-gel-for-acne-india",
-      "destination": "/acne/adapalene-0.1-percent-gel-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/adapalene-0.1-gel-for-acne-india/",
-      "destination": "/acne/adapalene-0.1-percent-gel-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/double-cleansing-acne-prone-skin-india",
-      "destination": "/acne/double-cleansing-routine-acne-prone-skin-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/double-cleansing-acne-prone-skin-india/",
-      "destination": "/acne/double-cleansing-routine-acne-prone-skin-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/fungal-acne-vs-regular-acne-india",
-      "destination": "/acne/fungal-acne-vs-regular-acne-treatment-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/fungal-acne-vs-regular-acne-india/",
-      "destination": "/acne/fungal-acne-vs-regular-acne-treatment-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/tranexamic-acid-3-percent-serum-india",
-      "destination": "/acne/tranexamic-acid-3-percent-serum-pih-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/tranexamic-acid-3-percent-serum-india/",
-      "destination": "/acne/tranexamic-acid-3-percent-serum-pih-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/panoxyl-10-percent-acne-wash-usa",
-      "destination": "/acne/panoxyl-10-percent-benzoyl-peroxide-acne-wash-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/panoxyl-10-percent-acne-wash-usa/",
-      "destination": "/acne/panoxyl-10-percent-benzoyl-peroxide-acne-wash-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/cerave-resurfacing-retinol-serum-usa",
-      "destination": "/acne/cerave-resurfacing-retinol-serum-post-acne-marks-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/cerave-resurfacing-retinol-serum-usa/",
-      "destination": "/acne/cerave-resurfacing-retinol-serum-post-acne-marks-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/hydrocolloid-pimple-patches-usa",
-      "destination": "/acne/hydrocolloid-pimple-patches-cystic-acne-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/hydrocolloid-pimple-patches-usa/",
-      "destination": "/acne/hydrocolloid-pimple-patches-cystic-acne-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/differin-0.1-adapalene-gel-usa",
-      "destination": "/acne/differin-adapalene-0.1-percent-gel-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/differin-0.1-adapalene-gel-usa/",
-      "destination": "/acne/differin-adapalene-0.1-percent-gel-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/salicylic-acid-body-wash-usa",
-      "destination": "/acne/salicylic-acid-body-wash-bacne-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/salicylic-acid-body-wash-usa/",
-      "destination": "/acne/salicylic-acid-body-wash-bacne-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/azelaic-acid-acne-dark-spots-india",
-      "destination": "/acne/azelaic-acid-for-acne-dark-spots-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/azelaic-acid-acne-dark-spots-india/",
-      "destination": "/acne/azelaic-acid-for-acne-dark-spots-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/how-to-use-salicylic-acid-without-damaging-skin-barrier",
-      "destination": "/acne/how-to-use-salicylic-acid-without-damaging-your-skin-barrier/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/how-to-use-salicylic-acid-without-damaging-skin-barrier/",
-      "destination": "/acne/how-to-use-salicylic-acid-without-damaging-your-skin-barrier/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/sunscreen-for-acne-prone-skin-india",
-      "destination": "/acne/best-sunscreen-for-acne-prone-skin-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/sunscreen-for-acne-prone-skin-india/",
-      "destination": "/acne/best-sunscreen-for-acne-prone-skin-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/sebogel-salicylic-acid-niacinamide-gel-india",
-      "destination": "/acne/sebogel-salicylic-acid-niacinamide-gel-review-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/sebogel-salicylic-acid-niacinamide-gel-india/",
-      "destination": "/acne/sebogel-salicylic-acid-niacinamide-gel-review-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/salicylic-acid-for-blackheads-usa",
-      "destination": "/acne/salicylic-acid-serum-for-blackheads-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/salicylic-acid-for-blackheads-usa/",
-      "destination": "/acne/salicylic-acid-serum-for-blackheads-usa/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/forehead-pimples-cause-and-treatment-india",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/forehead-pimples-cause-and-treatment-india/",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/forehead-acne/home-remedies",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/forehead-acne/home-remedies/",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/forehead-acne/meaning",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/forehead-acne/meaning/",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/forehead-acne/fast-treatment",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/forehead-acne/fast-treatment/",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/forehead-acne-dandruff",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/forehead-acne-dandruff/",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/forehead-acne-cheat-sheet",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/forehead-acne-cheat-sheet/",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/forehead-acne-organ-connection",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/forehead-acne-organ-connection/",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/small-pimples-forehead-men",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/small-pimples-forehead-men/",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/nighttime-routine-forehead-acne-prevention",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/nighttime-routine-forehead-acne-prevention/",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/post-acne-mark-removal-forehead-india",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/post-acne-mark-removal-forehead-india/",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/stop-forehead-acne-hair-products-india",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/stop-forehead-acne-hair-products-india/",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/stress-acne-forehead-cortisol-india",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/stress-acne-forehead-cortisol-india/",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/pimple-on-forehead-hindi",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/pimple-on-forehead-hindi/",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/treat-blind-pimple-on-forehead-india",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/treat-blind-pimple-on-forehead-india/",
-      "destination": "/acne/forehead-acne/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-10-percent-vs-5-percent-serum-india",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-10-percent-vs-5-percent-serum-india/",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-purging-vs-skin-barrier-damage-india",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-purging-vs-skin-barrier-damage-india/",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-moisturizer-for-acne-india",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-moisturizer-for-acne-india/",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-purging-or-breakout",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-purging-or-breakout/",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-10-vs-5-percent-purging-india",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-10-vs-5-percent-purging-india/",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/best-niacinamide-serum-for-acne-india",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/best-niacinamide-serum-for-acne-india/",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-serum-for-pores-usa",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-serum-for-pores-usa/",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-acne-dark-spots-india",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/niacinamide-acne-dark-spots-india/",
-      "destination": "/acne/niacinamide-serums-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/iron-deficiency-test-for-acne-india",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/iron-deficiency-test-for-acne-india/",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/zinc-test-for-acne-india",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/zinc-test-for-acne-india/",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/vitamin-deficiency-acne-tests-india",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/vitamin-deficiency-acne-tests-india/",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/food-intolerance-test-for-acne-india",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/food-intolerance-test-for-acne-india/",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/health-checkup-package-for-acne-india",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/health-checkup-package-for-acne-india/",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/thyroid-test-for-acne-india",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/thyroid-test-for-acne-india/",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/stress-hormone-test-for-acne-india",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/stress-hormone-test-for-acne-india/",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/vitamin-b12-acne-test-india",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/vitamin-b12-acne-test-india/",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/inflammatory-markers-test-for-acne-india",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/inflammatory-markers-test-for-acne-india/",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/progesterone-estrogen-test-for-acne-india",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/progesterone-estrogen-test-for-acne-india/",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/insulin-resistance-test-for-acne-india",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/insulin-resistance-test-for-acne-india/",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/liver-function-test-for-acne-india",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/liver-function-test-for-acne-india/",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/lipid-profile-test-for-acne-india",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/lipid-profile-test-for-acne-india/",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/heavy-metal-test-for-acne-india",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/heavy-metal-test-for-acne-india/",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/gut-microbiome-test-for-acne-india",
-      "destination": "/acne/blood-tests-for-acne-india/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/gut-microbiome-test-for-acne-india/",
-      "destination": "/acne/blood-tests-for-acne-india/",
+      "source": "/indian-acne-diet-guide/",
+      "destination": "/acne/indian-acne-diet-guide/",
       "permanent": true
     }
   ],
