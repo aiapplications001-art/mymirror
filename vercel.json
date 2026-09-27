@@ -276,17 +276,17 @@
       "permanent": true
     },
     {
-      "source": "/acne/benzoyl-peroxide-vs-salicylic-acid/",
-      "destination": "/acne/salicylic-acid-vs-benzoyl-peroxide-acne-india/",
-      "permanent": true
-    },
-    {
       "source": "/acne/benzoyl-peroxide-vs-salicylic-acid-acne-india",
       "destination": "/acne/salicylic-acid-vs-benzoyl-peroxide-acne-india/",
       "permanent": true
     },
     {
       "source": "/acne/benzoyl-peroxide-vs-salicylic-acid-acne-india/",
+      "destination": "/acne/salicylic-acid-vs-benzoyl-peroxide-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/benzoyl-peroxide-vs-salicylic-acid/",
       "destination": "/acne/salicylic-acid-vs-benzoyl-peroxide-acne-india/",
       "permanent": true
     },
@@ -1042,12 +1042,52 @@
     },
     {
       "source": "/acne/double-cleansing-acne-prone-skin-india",
-      "destination": "/acne/double-cleansing-routine-acne-prone-skin-india/",
+      "destination": "/acne/cleansing-balm-for-acne-prone-skin-india/",
       "permanent": true
     },
     {
       "source": "/acne/double-cleansing-acne-prone-skin-india/",
-      "destination": "/acne/double-cleansing-routine-acne-prone-skin-india/",
+      "destination": "/acne/cleansing-balm-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/double-cleansing-for-acne-prone-skin-india",
+      "destination": "/acne/cleansing-balm-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/double-cleansing-for-acne-prone-skin-india/",
+      "destination": "/acne/cleansing-balm-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/double-cleansing-oily-acne-prone-skin-india",
+      "destination": "/acne/cleansing-balm-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/double-cleansing-oily-acne-prone-skin-india/",
+      "destination": "/acne/cleansing-balm-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/double-cleansing-oily-acne-skin-india",
+      "destination": "/acne/cleansing-balm-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/double-cleansing-oily-acne-skin-india/",
+      "destination": "/acne/cleansing-balm-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/double-cleansing-routine-acne-prone-skin-india",
+      "destination": "/acne/cleansing-balm-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/double-cleansing-routine-acne-prone-skin-india/",
+      "destination": "/acne/cleansing-balm-for-acne-prone-skin-india/",
       "permanent": true
     },
     {
