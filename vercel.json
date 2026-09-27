@@ -21,6 +21,16 @@
       "permanent": true
     },
     {
+      "source": "/acne/acne-diet-india",
+      "destination": "/acne/hormonal-acne-diet-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/acne-diet-india/",
+      "destination": "/acne/hormonal-acne-diet-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/acne-marks-vs-acne-scars-difference-india",
       "destination": "/acne/best-acne-scar-treatment-india/",
       "permanent": true
@@ -842,22 +852,22 @@
     },
     {
       "source": "/acne/chin-acne-breakouts-hormonal-treatment-usa",
-      "destination": "/acne/hormonal-chin-acne-treatment-routine-india/",
+      "destination": "/acne/cystic-chin-pimple/",
       "permanent": true
     },
     {
       "source": "/acne/chin-acne-breakouts-hormonal-treatment-usa/",
-      "destination": "/acne/hormonal-chin-acne-treatment-routine-india/",
+      "destination": "/acne/cystic-chin-pimple/",
       "permanent": true
     },
     {
       "source": "/acne/chin-breakouts-hormonal-acne-usa",
-      "destination": "/acne/hormonal-chin-acne-treatment-routine-india/",
+      "destination": "/acne/cystic-chin-pimple/",
       "permanent": true
     },
     {
       "source": "/acne/chin-breakouts-hormonal-acne-usa/",
-      "destination": "/acne/hormonal-chin-acne-treatment-routine-india/",
+      "destination": "/acne/cystic-chin-pimple/",
       "permanent": true
     },
     {
@@ -908,6 +918,16 @@
     {
       "source": "/acne/crows-feet-treatment-usa/",
       "destination": "/acne/marionette-lines-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/cycle-synced-skincare-predicting-breakouts",
+      "destination": "/acne/hormonal-acne-pcos-periods-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/cycle-synced-skincare-predicting-breakouts/",
+      "destination": "/acne/hormonal-acne-pcos-periods-india/",
       "permanent": true
     },
     {
@@ -1381,6 +1401,16 @@
       "permanent": true
     },
     {
+      "source": "/acne/hormonal-chin-acne-treatment-routine-india",
+      "destination": "/acne/cystic-chin-pimple/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/hormonal-chin-acne-treatment-routine-india/",
+      "destination": "/acne/cystic-chin-pimple/",
+      "permanent": true
+    },
+    {
       "source": "/acne/how-to-repair-damaged-skin-barrier-acne-india",
       "destination": "/acne/skin-barrier-repair-acne-india/",
       "permanent": true
@@ -1431,6 +1461,21 @@
       "permanent": true
     },
     {
+      "source": "/acne/indian-acne-diet-guide",
+      "destination": "/acne/hormonal-acne-diet-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/indian-acne-diet-guide/",
+      "destination": "/acne/hormonal-acne-diet-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/indian-acne-diet-guide/checklist.html",
+      "destination": "/acne/hormonal-acne-diet-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/inflammatory-markers-test-for-acne-india",
       "destination": "/acne/blood-tests-for-acne-india/",
       "permanent": true
@@ -1468,6 +1513,16 @@
     {
       "source": "/acne/iron-deficiency-test-for-acne-india/",
       "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/jawline-acne-treatment-india",
+      "destination": "/acne/jawline-acne-meaning-hormonal-vs-product/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/jawline-acne-treatment-india/",
+      "destination": "/acne/jawline-acne-meaning-hormonal-vs-product/",
       "permanent": true
     },
     {
@@ -2462,12 +2517,12 @@
     },
     {
       "source": "/indian-acne-diet-guide",
-      "destination": "/acne/indian-acne-diet-guide/",
+      "destination": "/acne/hormonal-acne-diet-india/",
       "permanent": true
     },
     {
       "source": "/indian-acne-diet-guide/",
-      "destination": "/acne/indian-acne-diet-guide/",
+      "destination": "/acne/hormonal-acne-diet-india/",
       "permanent": true
     },
     {
