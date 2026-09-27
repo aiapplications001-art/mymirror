@@ -167,29 +167,27 @@
       --brand-light: #FFE1CE;
       --brand-tint: #FFF6F0;
       --bg-primary: #FFFFFF;
-      --bg-secondary: #F9F6F3;
-      --bg-tertiary: #F2EDE8;
+      --bg-secondary: #FBF9F7;
+      --bg-tertiary: #F4EFEA;
       --text-primary: #1A1410;
-      --text-secondary: #5C4A3A;
-      --text-muted: #9E8575;
-      --border: #E8DDD5;
-      --border-dark: #D9C8BC;
-      --success: #2D7A4F;
-      --success-bg: #E8F5E9;
-      --danger: #C0392B;
-      --danger-bg: #FDF2F2;
-      --info: #1A5F8A;
-      --info-bg: #EBF5FB;
-      --radius-sm: 8px;
-      --radius-md: 14px;
-      --radius-lg: 20px;
-      --radius-xl: 24px;
+      --text-secondary: #524237;
+      --text-muted: #8C786A;
+      --border: #E8E2DC;
+      --border-dark: #D4CBC3;
+      --success: #257042;
+      --success-bg: #EDF7F0;
+      --danger: #B83226;
+      --danger-bg: #FDF3F2;
+      --info: #1B587D;
+      --info-bg: #EEF6FB;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-xl: 20px;
       --radius-full: 9999px;
-      --shadow-sm: 0 4px 15px rgba(26, 20, 16, 0.04);
-      --shadow-md: 0 10px 30px rgba(26, 20, 16, 0.06);
-      --shadow-hover: 0 15px 40px rgba(26, 20, 16, 0.1);
-      --bouncy: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      --max-width: 1200px;
+      --shadow-subtle: 0 1px 3px rgba(26, 20, 16, 0.04), 0 4px 12px rgba(26, 20, 16, 0.03);
+      --shadow-hover: 0 4px 16px rgba(26, 20, 16, 0.08);
+      --max-width: 1180px;
     }
 
     html {
@@ -221,22 +219,21 @@
       color: var(--text-secondary);
       font-size: 15px;
       line-height: 1.75;
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.2rem;
     }
     p:last-child { margin-bottom: 0; }
-    strong { color: var(--text-primary); }
+    strong { color: var(--text-primary); font-weight: 700; }
 
     /* Sticky Navigation Header */
     .site-header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
-      height: 62px;
+      height: 60px;
       display: flex;
       align-items: center;
       width: 100%;
@@ -251,33 +248,31 @@
       justify-content: space-between;
       align-items: center;
     }
-    .logo-img { height: 32px; width: auto; display: block; }
+    .logo-img { height: 30px; width: auto; display: block; }
     .header-cta-btn {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 8px 20px;
+      padding: 7px 18px;
       background: var(--brand);
       color: #FFF;
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 700;
       text-decoration: none;
       border-radius: var(--radius-full);
-      box-shadow: 0 4px 14px rgba(236, 97, 14, 0.25);
-      transition: all 0.3s var(--bouncy);
+      transition: all 0.2s ease;
     }
     .header-cta-btn:hover {
       background: var(--brand-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(236, 97, 14, 0.35);
+      transform: translateY(-1px);
     }
 
     /* Trust Bar */
     .trust-bar {
       background: var(--bg-secondary);
       border-bottom: 1px solid var(--border);
-      padding: 12px 24px;
-      font-size: 12.5px;
+      padding: 10px 24px;
+      font-size: 12px;
       color: var(--text-secondary);
       display: flex;
       justify-content: center;
@@ -295,14 +290,14 @@
       font-weight: 600;
     }
     .trust-badge-green { color: var(--success); font-weight: 700; }
-    .trust-separator { color: var(--border-dark); opacity: 0.6; }
+    .trust-separator { color: var(--border-dark); opacity: 0.7; }
 
-    /* Dark Photo Hero */
+    /* Clean Notion-Styled Dark Hero */
     .hero {
       position: relative;
-      background: linear-gradient(135deg, #0d0a08 0%, #1c1510 50%, #2a1a0e 100%);
+      background: linear-gradient(145deg, #120E0B 0%, #1E1712 55%, #2B1D14 100%);
       color: #FFF;
-      padding: 4.5rem 24px 4rem;
+      padding: 4.25rem 24px 3.75rem;
       text-align: center;
       overflow: hidden;
       width: 100%;
@@ -315,106 +310,94 @@
       left: 0;
       right: 0;
       bottom: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at 50% 30%, rgba(236, 97, 14, 0.15) 0%, transparent 70%);
+      background: radial-gradient(circle at 50% 20%, rgba(236, 97, 14, 0.16) 0%, transparent 65%);
       pointer-events: none;
     }
     .hero-container {
       position: relative;
       z-index: 2;
-      max-width: 880px;
+      max-width: 860px;
       margin: 0 auto;
     }
     .hero-eyebrow {
-      display: inline-block;
-      padding: 6px 18px;
-      background: rgba(236, 97, 14, 0.15);
-      border: 1px solid rgba(236, 97, 14, 0.4);
-      color: #FFA566;
-      font-size: 11.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      background: rgba(236, 97, 14, 0.14);
+      border: 1px solid rgba(236, 97, 14, 0.35);
+      color: #FFA768;
+      font-size: 11px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       border-radius: var(--radius-full);
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
     }
     .hero h1 {
-      font-size: clamp(2rem, 4.2vw, 3.2rem);
+      font-size: clamp(2rem, 4.2vw, 3.1rem);
       font-weight: 700;
       color: #FFF;
       line-height: 1.18;
       letter-spacing: -0.03em;
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.15rem;
     }
     .hero p {
       color: rgba(255, 255, 255, 0.88);
-      font-size: clamp(1rem, 1.8vw, 1.15rem);
+      font-size: clamp(0.98rem, 1.7vw, 1.12rem);
       line-height: 1.65;
-      max-width: 760px;
-      margin: 0 auto 2.25rem;
-    }
-    .hero-cta-group {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
+      max-width: 740px;
+      margin: 0 auto 2rem;
     }
     .hero-cta-btn {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      padding: 15px 36px;
+      gap: 6px;
+      padding: 13px 32px;
       background: var(--brand);
       color: #FFF;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700;
       text-decoration: none;
       border-radius: var(--radius-full);
-      box-shadow: 0 10px 25px rgba(236, 97, 14, 0.35);
-      transition: all 0.4s var(--bouncy);
+      box-shadow: 0 8px 20px rgba(236, 97, 14, 0.3);
+      transition: all 0.25s ease;
     }
     .hero-cta-btn:hover {
       background: #FF7528;
-      transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 14px 30px rgba(236, 97, 14, 0.5);
+      transform: translateY(-2px);
     }
     .hero-subtext {
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.65);
+      display: block;
+      font-size: 11.5px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-top: 8px;
     }
 
-    /* Sticky Horizontal Scrollspy Jump-To Bar */
+    /* Sticky Horizontal TOC Bar */
     .toc-sticky-bar {
       position: sticky;
-      top: 62px;
+      top: 60px;
       z-index: 99;
-      background: rgba(250, 250, 249, 0.96);
+      background: rgba(250, 250, 249, 0.95);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       width: 100%;
       box-sizing: border-box;
-      padding: 0;
     }
     .toc-inner {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 10px 24px;
+      padding: 9px 24px;
       display: flex;
       align-items: center;
-      gap: 12px;
-      box-sizing: border-box;
-      width: 100%;
+      gap: 10px;
       overflow-x: auto;
       white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
       scrollbar-width: none;
-      scroll-behavior: smooth;
     }
-    .toc-inner::-webkit-scrollbar {
-      display: none;
-    }
+    .toc-inner::-webkit-scrollbar { display: none; }
     .toc-label {
       font-size: 11px;
       font-weight: 800;
@@ -426,23 +409,19 @@
     .toc-pills {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       flex-shrink: 0;
     }
     .toc-pill {
-      font-size: 12.5px;
+      font-size: 12px;
       font-weight: 600;
       color: var(--text-secondary);
       background: #FFF;
       border: 1px solid var(--border);
-      padding: 6px 14px;
+      padding: 5px 12px;
       border-radius: var(--radius-full);
       text-decoration: none;
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-      white-space: nowrap;
-      flex-shrink: 0;
-      display: inline-flex;
-      align-items: center;
+      transition: all 0.2s ease;
     }
     .toc-pill:hover {
       color: var(--brand);
@@ -454,35 +433,15 @@
       color: #FFFFFF !important;
       border-color: var(--brand) !important;
       font-weight: 700;
-      box-shadow: 0 3px 10px rgba(236, 97, 14, 0.3);
-    }
-    @media (max-width: 768px) {
-      .toc-inner {
-        padding: 10px 16px;
-        gap: 8px;
-      }
-      .toc-pill {
-        font-size: 12px;
-        padding: 5px 12px;
-      }
     }
 
-    /* Scroll Offset Anchor Fix */
-    section.section-card,
-    .roadmap-container,
-    .qualification-container,
-    .faq-container,
-    .seo-deep-dive-card {
-      scroll-margin-top: 120px;
-    }
-
-    /* Main Layout Grid */
+    /* Layout Grid */
     .page-wrapper {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 3rem 24px 5rem;
+      padding: 2.75rem 24px 5rem;
       display: grid;
-      grid-template-columns: 1fr 320px;
+      grid-template-columns: 1fr 310px;
       gap: 32px;
       align-items: start;
       box-sizing: border-box;
@@ -491,747 +450,425 @@
     @media (max-width: 1024px) {
       .page-wrapper {
         grid-template-columns: 1fr !important;
-        padding: 2.25rem 24px 4rem !important;
+        padding: 2rem 20px 4rem !important;
         gap: 28px !important;
       }
     }
 
-    /* Content Area */
     .content-stream { min-width: 0; }
 
-    /* Section Styling */
-    .section-card {
+    /* Section Wrapper */
+    .section-block {
       background: #FFF;
       border: 1px solid var(--border);
-      border-radius: var(--radius-xl);
-      padding: 2.5rem;
-      margin-bottom: 2.5rem;
-      box-shadow: var(--shadow-sm);
-      transition: box-shadow 0.3s ease;
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      margin-bottom: 2.25rem;
+      box-shadow: var(--shadow-subtle);
       box-sizing: border-box;
-      width: 100%;
-      max-width: 100%;
-      overflow: hidden;
-    }
-    .section-card:hover {
-      box-shadow: var(--shadow-md);
+      scroll-margin-top: 110px;
     }
     @media (max-width: 640px) {
-      .section-card { padding: 1.5rem; border-radius: var(--radius-lg); }
+      .section-block { padding: 1.5rem 1.15rem; }
     }
 
-    .section-eyebrow {
+    .section-tag {
       display: inline-block;
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
       color: var(--brand);
       background: var(--brand-tint);
       border: 1px solid var(--brand-light);
-      padding: 4px 12px;
+      padding: 3px 10px;
       border-radius: var(--radius-full);
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.65rem;
     }
 
-    .section-card h2 {
-      font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+    .section-block h2 {
+      font-size: clamp(1.5rem, 2.3vw, 1.95rem);
       font-weight: 700;
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.15rem;
       color: var(--text-primary);
+    }
+
+    /* ── NOTION-STYLE UI ELEMENT 1: Clean Callout Boxes ── */
+    .notion-callout {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 1.15rem 1.35rem;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      margin: 1.35rem 0;
+    }
+    .notion-callout-icon {
+      font-size: 22px;
+      line-height: 1.1;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+    .notion-callout-body {
+      flex: 1;
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: var(--text-secondary);
+    }
+    .notion-callout-body strong {
+      color: var(--text-primary);
+    }
+    .notion-callout-body ul {
+      margin: 6px 0 0 16px;
+      padding: 0;
+    }
+    .notion-callout-body li {
+      margin-bottom: 4px;
+    }
+    .notion-callout-warn {
+      background: var(--danger-bg);
+      border-color: #F8D7DA;
+    }
+    .notion-callout-brand {
+      background: var(--brand-tint);
+      border-color: var(--brand-light);
+    }
+
+    /* ── NOTION-STYLE UI ELEMENT 2: Tagged Property Bento Cards ── */
+    .notion-bento-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin: 1.5rem 0;
+    }
+    @media (max-width: 768px) {
+      .notion-bento-grid {
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+      }
+    }
+
+    .notion-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.35rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+      transition: all 0.2s ease;
+    }
+    .notion-card:hover {
+      border-color: var(--brand);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+    .notion-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+    .notion-card-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .notion-tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+    .notion-pill-tag {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .tag-green { background: var(--success-bg); color: var(--success); }
+    .tag-orange { background: var(--brand-tint); color: var(--brand); border: 1px solid var(--brand-light); }
+    .tag-blue { background: var(--info-bg); color: var(--info); }
+    .tag-red { background: var(--danger-bg); color: var(--danger); }
+    .tag-gray { background: var(--bg-tertiary); color: var(--text-secondary); }
+
+    /* Notion-like Property Table Rows */
+    .notion-props {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 4px;
+      font-size: 13px;
+    }
+    .notion-prop-item {
+      display: grid;
+      grid-template-columns: 85px 1fr;
+      gap: 8px;
+      padding: 4px 0;
+      border-top: 1px solid #F5EFEB;
+      line-height: 1.5;
+    }
+    .notion-prop-item:first-child { border-top: none; }
+    .notion-prop-name {
+      color: var(--text-muted);
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .notion-prop-val {
+      color: var(--text-secondary);
+      font-size: 12.5px;
+    }
+    .notion-prop-val strong { color: var(--text-primary); }
+
+    /* ── NOTION-STYLE UI ELEMENT 3: Side-by-Side Head-to-Head Comparison ── */
+    .notion-comparison-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 1.5rem 0;
+    }
+    @media (max-width: 768px) {
+      .notion-comparison-split { grid-template-columns: 1fr !important; }
+    }
+    .notion-compare-box {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.35rem 1.4rem;
+      background: #FFF;
+    }
+    .notion-compare-box.box-winner {
+      border-color: #BBE1C8;
+      background: #F8FCF9;
+    }
+    .notion-compare-box.box-warning {
+      border-color: #F8CDCD;
+      background: #FDF9F9;
+    }
+    .notion-compare-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .notion-check-list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .notion-check-list li {
+      font-size: 13px;
+      line-height: 1.55;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      color: var(--text-secondary);
+    }
+
+    /* ── NOTION-STYLE UI ELEMENT 4: Numbered Step Timelines ── */
+    .notion-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 1.5rem 0;
+    }
+    .notion-step-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      background: #FFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.15rem 1.35rem;
+      transition: border-color 0.2s ease;
+    }
+    .notion-step-item:hover {
+      border-color: var(--brand);
+    }
+    .notion-step-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: var(--brand-tint);
+      color: var(--brand);
+      border: 1px solid var(--brand-light);
+      font-weight: 800;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .notion-step-body {
+      flex: 1;
+    }
+    .notion-step-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+    .notion-step-header h4 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .notion-step-desc {
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--text-secondary);
+      margin: 0;
     }
 
     /* Section Visual Split */
     .visual-split {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
-      gap: 24px;
+      gap: 22px;
       align-items: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.4rem;
     }
     @media (max-width: 768px) {
       .visual-split { grid-template-columns: 1fr !important; }
     }
-
     .visual-img-card {
       position: relative;
-      border-radius: var(--radius-lg);
+      border-radius: var(--radius-md);
       overflow: hidden;
       border: 1px solid var(--border);
       background: var(--bg-tertiary);
-      box-shadow: var(--shadow-sm);
     }
     .visual-img {
       width: 100%;
-      height: 220px;
+      height: 210px;
       object-fit: cover;
       display: block;
-      transition: transform 0.5s var(--bouncy);
-    }
-    .visual-img-card:hover .visual-img {
-      transform: scale(1.04);
     }
     .visual-caption {
-      padding: 8px 12px;
+      padding: 7px 10px;
       background: var(--bg-secondary);
-      font-size: 11.5px;
+      font-size: 11px;
       color: var(--text-muted);
       border-top: 1px solid var(--border);
       text-align: center;
     }
 
-    /* Highlight Metrics Bento */
-    .metrics-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
+    /* ── NOTION-STYLE DATABASE TABLE ── */
+    .notion-table-wrap {
       margin: 1.5rem 0;
-    }
-    .metric-card {
-      background: var(--bg-secondary);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      padding: 1.1rem 1.25rem;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      transition: border-color 0.2s ease, transform 0.2s ease;
-    }
-    .metric-card:hover {
-      border-color: var(--brand);
-      transform: translateY(-2px);
-    }
-    .metric-num {
-      font-size: 1.75rem;
-      font-weight: 800;
-      color: var(--brand);
-      line-height: 1.1;
-      letter-spacing: -0.02em;
-    }
-    .metric-label {
-      font-size: 12.5px;
-      color: var(--text-secondary);
-      line-height: 1.45;
-      font-weight: 500;
-    }
-    @media (max-width: 768px) {
-      .metrics-grid {
-        grid-template-columns: 1fr;
-        gap: 10px;
-      }
-    }
-
-    /* Reference UI 1: 3-Phase Roadmap */
-    .roadmap-container {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-xl);
-      padding: 2.5rem;
-      margin-bottom: 2.5rem;
-    }
-    .roadmap-header {
-      text-align: center;
-      max-width: 680px;
-      margin: 0 auto 2rem;
-    }
-    .roadmap-header h2 {
-      font-size: clamp(1.6rem, 2.5vw, 2rem);
-      margin: 0.5rem 0 0.5rem;
-    }
-    .roadmap-header p {
-      font-size: 14px;
-      color: var(--text-secondary);
-    }
-    .roadmap-strips {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .strip-card {
-      background: #FFFFFF;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.4rem 1.6rem;
-      display: grid;
-      grid-template-columns: 340px 1fr;
-      gap: 28px;
-      align-items: center;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s var(--bouncy);
-    }
-    .strip-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--border-dark);
-    }
-    .strip-left {
-      border-right: 1px solid var(--border);
-      padding-right: 22px;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .strip-phase-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 2px;
-    }
-    .strip-phase-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 11px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--brand);
-      background: var(--brand-tint);
-      border: 1px solid var(--brand-light);
-      padding: 3px 9px;
-      border-radius: var(--radius-full);
-    }
-    .strip-phase-icon {
-      font-size: 22px;
-      line-height: 1;
-    }
-    .strip-left h3 {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      line-height: 1.35;
-      margin: 2px 0 4px;
-    }
-    .strip-test-tag {
-      background: #FFF8F3;
-      border: 1px solid var(--brand-light);
-      border-left: 3px solid var(--brand);
-      padding: 6px 10px;
-      border-radius: var(--radius-sm);
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--text-primary);
-      line-height: 1.4;
-      margin-bottom: 4px;
-    }
-    .strip-outcome {
-      font-size: 11.5px;
-      line-height: 1.4;
-      color: #1E5C38;
-      background: var(--success-bg);
-      border: 1px solid #C8E6C9;
-      border-radius: var(--radius-sm);
-      padding: 5px 9px;
-    }
-    .strip-right {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px 24px;
-    }
-    .strip-item {
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-    }
-    .strip-item-title {
-      font-size: 10.5px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--text-primary);
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-    .strip-item-desc {
-      font-size: 12.5px;
-      line-height: 1.5;
-      color: var(--text-secondary);
-    }
-    @media (max-width: 900px) {
-      .strip-card {
-        grid-template-columns: 1fr;
-        gap: 16px;
-        padding: 1.25rem 1.15rem;
-      }
-      .strip-left {
-        border-right: none;
-        border-bottom: 1px solid var(--border);
-        padding-right: 0;
-        padding-bottom: 14px;
-      }
-      .strip-right {
-        grid-template-columns: 1fr;
-        gap: 10px;
-      }
-    }
-
-    /* Targeted Detail Callout Cards */
-    .test-target-cards {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      margin: 1.5rem 0 2rem;
-    }
-    .test-target-card {
-      background: #FFFFFF;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.4rem 1.6rem;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s var(--bouncy);
-      border-left: 4px solid var(--brand);
-    }
-    .test-target-card:hover {
-      box-shadow: var(--shadow-md);
-      border-color: var(--border-dark);
-      border-left-color: var(--brand-dark);
-    }
-    .test-target-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 12px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--border);
-    }
-    .test-target-title {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .test-target-title h4 {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--text-primary);
-    }
-    .test-price-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 12px;
-      font-weight: 800;
-      color: #1E5C38;
-      background: var(--success-bg);
-      border: 1px solid #C8E6C9;
-      padding: 4px 10px;
-      border-radius: var(--radius-full);
-    }
-    .test-warning-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 12px;
-      font-weight: 800;
-      color: var(--danger);
-      background: var(--danger-bg);
-      border: 1px solid #FFCDD2;
-      padding: 4px 10px;
-      border-radius: var(--radius-full);
-    }
-    .test-target-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px 24px;
-    }
-    @media (max-width: 768px) {
-      .test-target-grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
-      .test-target-card {
-        padding: 1.25rem 1rem;
-      }
-    }
-    .test-spec-item {
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-    }
-    .test-spec-label {
-      font-size: 10.5px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--text-primary);
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-    .test-spec-value {
-      font-size: 13px;
-      line-height: 1.55;
-      color: var(--text-secondary);
-    }
-    .test-spec-value strong {
-      color: var(--text-primary);
-      font-weight: 700;
-    }
-
-    /* Reference UI 2: Bento Qualification Matrix */
-    .qualification-container {
-      background: #FFF;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-xl);
-      padding: 2.5rem;
-      margin-bottom: 2.5rem;
-      box-shadow: var(--shadow-sm);
-    }
-    .qualification-header {
-      text-align: center;
-      max-width: 680px;
-      margin: 0 auto 2rem;
-    }
-    .qualification-header h2 {
-      font-size: clamp(1.6rem, 2.5vw, 2rem);
-      margin: 0.5rem 0 0.5rem;
-    }
-    .qualification-header p {
-      font-size: 14px;
-      color: var(--text-secondary);
-    }
-    .qual-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    @media (max-width: 768px) {
-      .qual-grid { grid-template-columns: 1fr; }
-    }
-    .qual-card {
-      border-radius: var(--radius-lg);
-      padding: 1.75rem;
-      border: 1px solid;
-    }
-    .qual-card.qual-for {
-      background: #F4FAF6;
-      border-color: #C8E6C9;
-    }
-    .qual-card.qual-not {
-      background: #FDF7F7;
-      border-color: #FFCDD2;
-    }
-    .qual-tag {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 4px 12px;
-      border-radius: var(--radius-full);
-      margin-bottom: 1rem;
-    }
-    .qual-for .qual-tag {
-      background: #E8F5E9;
-      color: var(--success);
-      border: 1px solid #A5D6A7;
-    }
-    .qual-not .qual-tag {
-      background: #FFEBEE;
-      color: var(--danger);
-      border: 1px solid #EF9A9A;
-    }
-    .qual-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .qual-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: 13.5px;
-      line-height: 1.6;
-      color: var(--text-secondary);
-    }
-    .qual-for .bullet {
-      color: var(--success);
-      font-weight: 800;
-      font-size: 16px;
-      line-height: 1.2;
-    }
-    .qual-not .bullet {
-      color: var(--danger);
-      font-weight: 800;
-      font-size: 16px;
-      line-height: 1.2;
-    }
-
-    /* Pro Tip Callout */
-    .pro-tip-callout {
-      background: var(--bg-tertiary);
-      border-left: 4px solid var(--brand);
-      border-radius: 0 var(--radius-md) var(--radius-md) 0;
-      padding: 1.25rem 1.5rem;
-      margin: 1.5rem 0;
-    }
-    .pro-tip-badge {
-      font-size: 11px;
-      font-weight: 800;
-      color: var(--brand-dark);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-bottom: 4px;
-    }
-    .pro-tip-callout p {
-      font-size: 14px;
-      line-height: 1.65;
-      color: var(--text-primary);
-      margin: 0;
-    }
-
-    /* Warning Box */
-    .warning-callout {
-      background: #FFF8F6;
-      border-left: 4px solid var(--danger);
-      border-radius: 0 var(--radius-md) var(--radius-md) 0;
-      padding: 1.25rem 1.5rem;
-      margin: 1.5rem 0;
-    }
-    .warning-badge {
-      font-size: 11px;
-      font-weight: 800;
-      color: var(--danger);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-bottom: 4px;
-    }
-    .warning-callout p {
-      font-size: 14px;
-      line-height: 1.65;
-      color: var(--text-primary);
-      margin: 0;
-    }
-
-    /* ── HIGH-CONTRAST PREMIUM TABLE STYLES ── */
-    .acne-table-wrapper {
-      margin: 2rem 0 1.5rem;
-      border: 2px solid var(--border-dark);
-      border-radius: var(--radius-lg);
       overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      box-shadow: 0 6px 24px rgba(26, 20, 16, 0.05);
       background: #FFFFFF;
       width: 100%;
       box-sizing: border-box;
     }
-    .acne-table-wrapper::-webkit-scrollbar { height: 6px; }
-    .acne-table-wrapper::-webkit-scrollbar-track { background: var(--bg-secondary); border-radius: 3px; }
-    .acne-table-wrapper::-webkit-scrollbar-thumb { background: var(--border-dark); border-radius: 3px; }
-    .acne-table-wrapper::-webkit-scrollbar-thumb:hover { background: var(--brand); }
-    .acne-table {
+    .notion-table {
       width: 100%;
-      margin: 0;
       border-collapse: collapse;
-      border-spacing: 0;
       font-size: 13px;
-      color: var(--text-primary);
       text-align: left;
     }
-    .acne-table tr {
-      background: transparent;
-      box-shadow: none;
-      transform: none;
-    }
-    .acne-table th {
+    .notion-table th {
       background: #2D231E;
       font-family: 'Plus Jakarta Sans', sans-serif;
       font-weight: 700;
       color: #FFFFFF;
       padding: 10px 12px;
       border-bottom: 2px solid #1A1410;
-      text-transform: uppercase;
       font-size: 11px;
+      text-transform: uppercase;
       letter-spacing: 0.05em;
-      vertical-align: middle;
-      white-space: normal !important;
-      line-height: 1.35;
-      word-break: normal !important;
-      border-radius: 0 !important;
     }
-    .acne-table td {
+    .notion-table td {
       padding: 11px 12px;
       border-bottom: 1px solid var(--border);
-      vertical-align: top;
+      vertical-align: middle;
       color: var(--text-primary);
-      line-height: 1.55;
       font-size: 13px;
-      border-radius: 0 !important;
-      word-break: normal !important;
-      overflow-wrap: break-word !important;
+      line-height: 1.5;
     }
-    .acne-table tr:last-child td { border-bottom: none; }
-    .acne-table tr:hover td { background-color: #FDFCFB; }
-    .table-target-badge {
-      display: inline-block;
-      background: #E8F5E9;
-      color: var(--success);
-      font-weight: 700;
-      padding: 2px 7px;
-      border-radius: var(--radius-sm);
-      font-size: 12px;
-      white-space: nowrap;
-    }
-    .table-danger-badge {
-      display: inline-block;
-      background: #FFEBEE;
-      color: var(--danger);
-      font-weight: 700;
-      padding: 2px 7px;
-      border-radius: var(--radius-sm);
-      font-size: 12px;
-      white-space: nowrap;
-    }
-
-    @media (min-width: 769px) {
-      .acne-table { min-width: 580px; }
-      .acne-table td:first-child {
-        font-weight: 700;
-        color: #2D231E;
-        background: #FDFCFB !important;
-        border-right: 1px solid var(--border);
-        min-width: 120px;
-      }
-      .acne-table th:first-child {
-        border-right: 1px solid #3D312A;
-        min-width: 120px;
-      }
-    }
+    .notion-table tr:last-child td { border-bottom: none; }
+    .notion-table tr:hover td { background-color: #FAF8F6; }
 
     @media (max-width: 768px) {
-      .page-wrapper {
-        padding: 1.75rem 24px 3.5rem !important;
-        gap: 24px !important;
+      .notion-table-wrap {
+        border: none;
+        background: transparent;
       }
-      .section-card {
-        padding: 1.75rem 1.25rem !important;
-        border-radius: 18px !important;
-        margin-bottom: 1.75rem !important;
+      .notion-table { display: block; width: 100%; }
+      .notion-table thead { display: none; }
+      .notion-table tbody { display: block; width: 100%; }
+      .notion-table tr {
+        display: block;
+        width: 100%;
+        background: #FFF;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 14px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
       }
-      .roadmap-container, .qualification-container, .faq-container {
-        padding: 1.75rem 1.25rem !important;
-        border-radius: 18px !important;
-        margin-bottom: 1.75rem !important;
+      .notion-table td {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        padding: 7px 0;
+        border-bottom: 1px solid #F5EFEB;
+        text-align: left;
+        width: 100%;
       }
-      .acne-table-wrapper {
-        border: none !important;
-        box-shadow: none !important;
-        background: transparent !important;
-        margin: 1.5rem 0 !important;
-        overflow: visible !important;
-        width: 100% !important;
-        max-width: 100% !important;
+      .notion-table td:last-child { border-bottom: none; }
+      .notion-table tr td:first-child {
+        font-size: 15px;
+        font-weight: 800;
+        border-bottom: 2px solid var(--border);
+        padding-bottom: 6px;
       }
-      .acne-table {
-        display: block !important;
-        width: 100% !important;
-        min-width: 0 !important;
-        max-width: 100% !important;
-        margin: 0 !important;
-      }
-      .acne-table thead { display: none !important; }
-      .acne-table tbody {
-        display: block !important;
-        width: 100% !important;
-        min-width: 0 !important;
-      }
-      .acne-table tr {
-        display: block !important;
-        width: 100% !important;
-        min-width: 0 !important;
-        box-sizing: border-box !important;
-        background: #FFFFFF !important;
-        border: 2px solid var(--border-dark) !important;
-        border-radius: 16px !important;
-        padding: 16px !important;
-        margin-bottom: 16px !important;
-        box-shadow: 0 4px 15px rgba(26, 20, 16, 0.04) !important;
-      }
-      .acne-table td {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 4px !important;
-        padding: 8px 0 !important;
-        border-bottom: 1px solid var(--border) !important;
-        border-right: none !important;
-        text-align: left !important;
-        width: 100% !important;
-        min-width: 0 !important;
-        box-sizing: border-box !important;
-        word-break: break-word !important;
-        background: transparent !important;
-      }
-      .acne-table td:last-child {
-        border-bottom: none !important;
-        padding-bottom: 0 !important;
-      }
-      .acne-table tr td:first-child {
-        font-size: 15px !important;
-        font-weight: 800 !important;
-        color: #2D231E !important;
-        border-bottom: 2px solid var(--border) !important;
-        padding-top: 0 !important;
-        padding-bottom: 8px !important;
-        margin-bottom: 4px !important;
-        background: transparent !important;
-      }
-      .acne-table tr td:first-child::before { display: none !important; }
-      .acne-table td::before {
-        content: attr(data-label) !important;
-        font-size: 10.5px !important;
-        text-transform: uppercase !important;
-        letter-spacing: 0.08em !important;
-        color: var(--text-muted) !important;
-        font-weight: 800 !important;
+      .notion-table tr td:first-child::before { display: none; }
+      .notion-table td::before {
+        content: attr(data-label);
+        font-size: 10.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--text-muted);
+        font-weight: 700;
       }
     }
 
-    /* Reference UI 3: Interactive FAQ Accordion */
-    .faq-container {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-xl);
-      padding: 2.5rem;
-      margin-bottom: 2.5rem;
-    }
-    .faq-header {
-      text-align: center;
-      max-width: 680px;
-      margin: 0 auto 2rem;
-    }
-    .faq-header h2 {
-      font-size: clamp(1.6rem, 2.5vw, 2rem);
-      margin: 0.5rem 0 0.5rem;
-    }
-    .faq-header p {
-      font-size: 14px;
-      color: var(--text-secondary);
-    }
-    .faq-accordion {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .faq-item {
+    /* ── NOTION-STYLE TOGGLE LIST ACCORDION ── */
+    .notion-toggle-item {
       background: #FFF;
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
+      margin-bottom: 10px;
       overflow: hidden;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s ease;
+      transition: border-color 0.2s ease;
     }
-    .faq-item:hover { border-color: var(--border-dark); }
-    .faq-item summary {
-      padding: 1.25rem 1.5rem;
+    .notion-toggle-item:hover { border-color: var(--border-dark); }
+    .notion-toggle-item summary {
+      padding: 1.1rem 1.35rem;
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       color: var(--text-primary);
       cursor: pointer;
@@ -1241,229 +878,122 @@
       user-select: none;
       list-style: none;
     }
-    .faq-item summary::-webkit-details-marker { display: none; }
-    .faq-toggle-icon {
-      font-size: 20px;
-      font-weight: 400;
-      color: var(--brand);
-      line-height: 1;
-      transition: transform 0.3s var(--bouncy);
-    }
-    .faq-item[open] .faq-toggle-icon { transform: rotate(45deg); }
-    .faq-content {
-      padding: 0 1.5rem 1.25rem;
-      border-top: 1px solid var(--border);
-      background: #FFF;
-    }
-    .faq-content p {
-      font-size: 14px;
-      line-height: 1.7;
-      color: var(--text-secondary);
-      margin-top: 1rem;
-    }
-
-    /* Collapsed SEO Deep Dive Accordion */
-    .seo-deep-dive-card {
-      background: #FAFAF9;
-      border: 1.5px solid var(--border-dark);
-      border-radius: var(--radius-xl);
-      padding: 1.75rem 2rem;
-      margin-top: 2rem;
-      margin-bottom: 2.5rem;
-      box-sizing: border-box;
-      width: 100%;
-    }
-    .deep-dive-details summary {
-      cursor: pointer;
-      list-style: none;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      user-select: none;
-    }
-    .deep-dive-details summary::-webkit-details-marker { display: none; }
-    .deep-dive-summary-inner {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-    .deep-dive-tag {
-      font-size: 11px;
-      font-weight: 800;
-      color: var(--brand);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-    .deep-dive-title {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin: 0;
-    }
-    .deep-dive-subtitle {
+    .notion-toggle-item summary::-webkit-details-marker { display: none; }
+    .notion-toggle-arrow {
       font-size: 13px;
-      color: var(--text-muted);
-      margin: 0;
-      line-height: 1.4;
-    }
-    .deep-dive-toggle-icon {
-      font-size: 14px;
-      color: var(--text-secondary);
-      background: #FFF;
-      border: 1px solid var(--border);
-      width: 36px;
-      height: 36px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: var(--radius-full);
-      flex-shrink: 0;
-      transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
-      font-weight: 700;
-    }
-    .deep-dive-details[open] .deep-dive-toggle-icon {
-      transform: rotate(180deg);
-      background: var(--brand-tint);
       color: var(--brand);
-      border-color: var(--brand);
+      font-weight: 700;
+      transition: transform 0.2s ease;
     }
-    .deep-dive-body {
-      padding-top: 1.5rem;
-      margin-top: 1.25rem;
-      border-top: 1px solid var(--border);
+    .notion-toggle-item[open] .notion-toggle-arrow { transform: rotate(90deg); }
+    .notion-toggle-content {
+      padding: 0 1.35rem 1.15rem;
+      border-top: 1px solid #F5EFEB;
+      background: #FFF;
+    }
+    .notion-toggle-content p {
       font-size: 13.5px;
       line-height: 1.7;
       color: var(--text-secondary);
-    }
-    .deep-dive-body h4 {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin: 1.5rem 0 0.5rem;
-    }
-    .deep-dive-body p { margin-bottom: 0.85rem; }
-    .deep-dive-body ul { margin: 0.5rem 0 1rem 1.25rem; }
-    .deep-dive-body li { margin-bottom: 0.4rem; }
-    @media (max-width: 768px) {
-      .seo-deep-dive-card {
-        padding: 1.25rem 1rem !important;
-        margin-top: 1.5rem !important;
-        margin-bottom: 1.75rem !important;
-      }
+      margin-top: 0.85rem;
     }
 
-    /* Sticky Floating Sidebar */
+    /* Sticky Sidebar */
     .sidebar-wrapper {
       position: sticky;
-      top: 120px;
+      top: 110px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 18px;
     }
     .sidebar-card {
       background: #FFF;
       border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem;
-      box-shadow: var(--shadow-sm);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-subtle);
     }
     .sidebar-card-title {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 1.05rem;
+      font-size: 14px;
       font-weight: 800;
       color: var(--text-primary);
-      margin-bottom: 1rem;
+      margin-bottom: 12px;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
-    .sidebar-checklist {
+    .sidebar-list {
       list-style: none;
       padding: 0;
       margin: 0;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
     }
-    .sidebar-checklist li {
-      font-size: 13px;
-      line-height: 1.55;
+    .sidebar-list li {
+      font-size: 12.5px;
+      line-height: 1.5;
       color: var(--text-secondary);
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      border-bottom: 1px solid #F2EDE8;
     }
-    .sidebar-checklist li:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-    .sidebar-checklist strong {
-      color: var(--text-primary);
-      display: block;
-      margin-bottom: 2px;
-    }
+    .sidebar-list li:last-child { border-bottom: none; padding-bottom: 0; }
+    .sidebar-list strong { color: var(--text-primary); display: block; margin-bottom: 1px; }
 
-    /* Consultation Sidebar Card */
     .sidebar-consult-card {
-      background: linear-gradient(145deg, #FFF5EE 0%, #FFEFE5 100%);
-      border: 1.5px solid var(--brand-light);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem;
+      background: linear-gradient(145deg, #FFF6F0 0%, #FFEFE5 100%);
+      border: 1px solid var(--brand-light);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
       text-align: center;
-      box-shadow: var(--shadow-sm);
     }
     .sidebar-consult-card h3 {
       font-family: 'Kantumruy Pro', Georgia, serif;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       color: var(--brand-dark);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
     }
     .sidebar-consult-card p {
-      font-size: 13px;
-      line-height: 1.6;
+      font-size: 12.5px;
+      line-height: 1.55;
       color: var(--text-secondary);
-      margin-bottom: 1.25rem;
+      margin-bottom: 1rem;
     }
     .sidebar-consult-btn {
       display: block;
       width: 100%;
-      padding: 12px 20px;
+      padding: 10px 16px;
       background: var(--brand);
       color: #FFF;
-      font-size: 13.5px;
+      font-size: 13px;
       font-weight: 700;
       text-decoration: none;
       border-radius: var(--radius-full);
-      box-shadow: 0 4px 14px rgba(236, 97, 14, 0.25);
-      transition: all 0.3s var(--bouncy);
+      box-shadow: 0 4px 12px rgba(236, 97, 14, 0.22);
+      transition: all 0.2s ease;
     }
     .sidebar-consult-btn:hover {
       background: var(--brand-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(236, 97, 14, 0.35);
+      transform: translateY(-1px);
     }
 
     /* Footer */
     .footer-bar {
       background: #120D0A;
       color: #A39084;
-      padding: 3rem 1.5rem;
+      padding: 2.75rem 1.5rem;
       text-align: center;
-      font-size: 13px;
+      font-size: 12.5px;
       border-top: 1px solid #2A1E17;
       margin-top: 4rem;
       width: 100%;
       box-sizing: border-box;
     }
-    .footer-bar p {
-      color: #A39084;
-      font-size: 13px;
-      margin-bottom: 8px;
-    }
-    .footer-bar a {
-      color: #FFA566;
-      text-decoration: none;
-    }
+    .footer-bar p { color: #A39084; margin-bottom: 6px; }
+    .footer-bar a { color: #FFA566; text-decoration: none; }
   </style>
 </head>
 <body>
@@ -1472,7 +1002,7 @@
   <nav class="site-header" aria-label="Main Site Navigation">
     <div class="header-inner">
       <a href="https://mymirror.fit/" class="nav-logo" title="MyMirror Skin Health">
-        <img src="/assets/logo-v4.png" alt="MyMirror" class="logo-img" width="112" height="32">
+        <img src="/assets/logo-v4.png" alt="MyMirror" class="logo-img" width="112" height="30">
       </a>
       <a href="https://mymirror.fit/scan/" class="header-cta-btn">
         <span>Free Skin Analysis &rarr;</span>
@@ -1480,27 +1010,28 @@
     </div>
   </nav>
 
-  <!-- Editorial & Medical Trust Bar -->
+  <!-- Medical Review & Authority Trust Bar -->
   <nav class="trust-bar" aria-label="Medical Review & Authority">
-    <span class="trust-badge-dot">✍️ MyMirror Medical Editorial</span>
+    <span class="trust-badge-dot">✍️ MyMirror Clinical Editorial</span>
     <span class="trust-separator">•</span>
-    <span class="trust-badge-dot trust-badge-green">✓ Medically Reviewed by Dr. Lipy Mehta, Board-Certified Dermatologist</span>
+    <span class="trust-badge-dot trust-badge-green">✓ Medically Reviewed by Dr. Lipy Mehta, MD Dermatology</span>
     <span class="trust-separator">•</span>
-    <span class="trust-badge-dot">Clinical Reference: Indian CDSCO &amp; IADVL Guidelines (2026)</span>
+    <span class="trust-badge-dot">Indian CDSCO &amp; IADVL Formulatory Standards (2026)</span>
   </nav>
 
-  <!-- Dark Diagnostic Hero Section -->
+  <!-- Notion-Styled Dark Hero Section -->
   <header class="hero">
     <div class="hero-container">
-      <nav class="hero-eyebrow">Clinical Formulation Protocol &middot; India 2026</nav>
+      <div class="hero-eyebrow">
+        <span>🧴</span>
+        <span>Formulation Master Guide &middot; India 2026</span>
+      </div>
       <h1>Niacinamide Serums in India: The Clinical Master Guide</h1>
-      <p>Why 5% beats 10% for Indian skin, how to avoid heat-induced summer flushing, the biological truth about purging, and a dermatologist's blueprint for clearing oil, pores, and dark marks.</p>
-      <nav class="hero-cta-group">
-        <a href="https://mymirror.fit/scan/" class="hero-cta-btn">
-          <span>Start Free AI Skin Analysis &rarr;</span>
-        </a>
-        <span class="hero-subtext">3-minute clinical photo assessment &middot; 100% confidential</span>
-      </nav>
+      <p>Why 5% beats 10% for Indian skin, the biological truth about purging, an interactive pharmacy vs. OTC decision matrix, and dermatologist layering blueprints.</p>
+      <a href="https://mymirror.fit/scan/" class="hero-cta-btn">
+        <span>Start Free AI Skin Analysis &rarr;</span>
+      </a>
+      <span class="hero-subtext">3-minute photo assessment &middot; Reviewed by board-certified dermatologists</span>
     </div>
   </header>
 
@@ -1509,16 +1040,14 @@
     <div class="toc-inner">
       <span class="toc-label">Jump to:</span>
       <div class="toc-pills">
-        <a href="#why-niacinamide" class="toc-pill active">Why Niacinamide</a>
-        <a href="#treatment-roadmap" class="toc-pill">3-Phase Roadmap</a>
-        <a href="#5-vs-10-percent" class="toc-pill">5% vs 10% Myth</a>
-        <a href="#purging-truth" class="toc-pill">Purging Truth</a>
-        <a href="#pih-dark-marks" class="toc-pill">PIH &amp; Dark Marks</a>
-        <a href="#top-indian-serums" class="toc-pill">Top Indian Serums</a>
-        <a href="#layering-rules" class="toc-pill">Layering Rules</a>
-        <a href="#mistakes-to-avoid" class="toc-pill">Mistakes to Avoid</a>
-        <a href="#who-this-is-for" class="toc-pill">Who It's For</a>
-        <a href="#faq-section" class="toc-pill">FAQs</a>
+        <a href="#quick-takeaway" class="toc-pill active">Summary</a>
+        <a href="#serum-finder" class="toc-pill">Skin Matcher</a>
+        <a href="#5-vs-10-percent" class="toc-pill">5% vs 10%</a>
+        <a href="#purging-checker" class="toc-pill">Purge or React?</a>
+        <a href="#pharmacy-comparison" class="toc-pill">Top Formulations</a>
+        <a href="#routine-layering" class="toc-pill">Layering Guide</a>
+        <a href="#summer-rules" class="toc-pill">Summer Protocol</a>
+        <a href="#faqs" class="toc-pill">FAQs</a>
       </div>
     </div>
   </nav>
@@ -1527,1191 +1056,613 @@
   <div class="page-wrapper">
     <main class="content-stream">
 
-      <!-- Module 1: Why Niacinamide is the Multitasking Anchor -->
-      <section class="section-card" id="why-niacinamide">
-        <nav class="section-eyebrow">THE CELLULAR MECHANISM</nav>
-        <h2>Why Niacinamide is the True Workhorse of Indian Skincare</h2>
+      <!-- Section 1: The 30-Second Clinical Takeaway (Notion Callout Box) -->
+      <section class="section-block" id="quick-takeaway">
+        <span class="section-tag">30-SECOND DERMATOLOGY BRIEF</span>
+        <h2>The Niacinamide Reality Check</h2>
         <div class="visual-split">
           <div>
-            <p>In Indian climates—where scorching 40°C summers, extreme humidity, and high particulate urban pollution (PM 2.5) place perpetual stress on the epidermal moisture barrier—most aggressive acne treatments do more harm than good. Harsh foaming washes and unbuffered acids strip away natural lipids, leaving skin dehydrated yet paradoxically producing excess grease.</p>
-            <p>Niacinamide (Vitamin B3) is neither an exfoliating acid nor an antibacterial bleaching agent. It is a vital precursor to two foundational cellular coenzymes: <strong>NAD+ and NADPH</strong>. When applied topically, it repairs the skin's lipid barrier, signals sebaceous glands to calm down oil output, and blocks excess melanin from darkening post-acne marks.</p>
+            <p>Niacinamide (Vitamin B3) is neither an acid nor a peeling chemical. It is an essential cellular nutrient that fuels <strong>NAD+ and NADPH coenzymes</strong> inside skin cells, repairing damaged lipid moisture barriers and regulating sebaceous gland oil output.</p>
+            <p>In Indian weather—where humidity and high summer temperatures already stress the skin—using the right concentration is the difference between glass skin and inflamed contact dermatitis.</p>
           </div>
-          <nav class="visual-img-card">
-            <img src="/assets/images/niacinamide-dropper-texture.jpg" alt="Pure lightweight niacinamide serum dispensed from a dropper bottle" class="visual-img" loading="lazy">
-            <div class="visual-caption">Lightweight, water-soluble niacinamide (Vitamin B3) strengthens ceramide synthesis without clogging Indian skin pores.</div>
-          </nav>
-        </div>
-
-        <!-- Highlight Metrics Callout Bento -->
-        <div class="metrics-grid">
-          <div class="metric-card">
-            <span class="metric-num">5%</span>
-            <span class="metric-label">The clinical gold-standard strength (maximum benefit, zero flushing)</span>
-          </div>
-          <div class="metric-card">
-            <span class="metric-num">68%</span>
-            <span class="metric-label">Reduction in post-acne melanosome pigment transfer to surface skin</span>
-          </div>
-          <div class="metric-card">
-            <span class="metric-num">₹240+</span>
-            <span class="metric-label">Affordable Indian pharmacy formulations vs ₹1,500+ imported brands</span>
+          <div class="visual-img-card">
+            <img src="/assets/images/niacinamide-dropper-texture.jpg" alt="Water-soluble niacinamide serum dispensed from glass dropper bottle" class="visual-img" loading="lazy">
+            <div class="visual-caption">Pure water-soluble niacinamide reinforces ceramides without suffocating oily Indian pores.</div>
           </div>
         </div>
 
-        <p>Unlike retinoids or benzoyl peroxide, niacinamide does not cause photo-sensitivity, peeling, or initial purging. It acts as an epidermal stabilizer. Whether your goal is calming oily T-zone shine in Mumbai humidity, fading deep brown spots on melanin-rich Fitzpatrick IV–VI skin, or buffering irritation from prescription tretinoin, niacinamide is the most versatile daily active in modern dermatology.</p>
+        <!-- Notion-Style Callout Block -->
+        <div class="notion-callout notion-callout-brand">
+          <span class="notion-callout-icon">💡</span>
+          <div class="notion-callout-body">
+            <strong>3 Golden Clinical Rules for Indian Skin:</strong>
+            <ul>
+              <li><strong>5% is the sweet spot:</strong> Human clinical trials prove 2% to 5% delivers 100% of barrier and pigment-fading benefits. 10% formulas trigger heat-induced facial flushing.</li>
+              <li><strong>Niacinamide never purges:</strong> It has zero exfoliating properties. If you develop itchy red bumps, your skin is suffering irritant dermatitis—stop immediately.</li>
+              <li><strong>Pat, don't rub:</strong> Vigorous rubbing creates friction with cosmetic thickeners, causing white frothing and rubbery pilling under sunscreen.</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <!-- Competitor UI Element 1: 3-Phase Treatment Roadmap -->
-      <nav class="roadmap-container" id="treatment-roadmap" aria-label="3-Phase Treatment Roadmap">
-        <div class="roadmap-header">
-          <nav class="section-eyebrow">3-PHASE CLINICAL ROADMAP</nav>
-          <h2>From Barrier Breakdown to Crystal Clarity</h2>
-          <p>How dermatologists introduce and escalate niacinamide step-by-step for lasting acne control without triggering irritant dermatitis.</p>
+      <!-- Section 2: Notion-Style Product & Strength Finder (Bento Grid) -->
+      <section class="section-block" id="serum-finder">
+        <span class="section-tag">AT-A-GLANCE SELECTOR</span>
+        <h2>Find Your Ideal Niacinamide Formulation</h2>
+        <p>Match your primary skin concern to the exact clinical strength, vehicle texture, and vetted Indian formulation:</p>
+
+        <!-- Notion Bento Grid -->
+        <div class="notion-bento-grid">
+
+          <!-- Card 1: Oily & Blackheads -->
+          <div class="notion-card">
+            <div class="notion-card-header">
+              <span class="notion-card-title">🛢️ Oily &amp; Congested</span>
+              <span class="notion-pill-tag tag-green">₹240 · Pharmacy Hero</span>
+            </div>
+            <div class="notion-tag-row">
+              <span class="notion-pill-tag tag-orange">6% Niacinamide</span>
+              <span class="notion-pill-tag tag-blue">2% Salicylic Acid (BHA)</span>
+            </div>
+            <div class="notion-props">
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Target</span>
+                <span class="notion-prop-val">Blackheads, enlarged pores, midday forehead shine</span>
+              </div>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Pick</span>
+                <span class="notion-prop-val"><strong>Apex Sebogel</strong> (30g tube)</span>
+              </div>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Finish</span>
+                <span class="notion-prop-val">Oil-free matte gel, fast absorption</span>
+              </div>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Routine</span>
+                <span class="notion-prop-val">PM application 3–4 nights weekly</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Sensitive & Retinoid Buffer -->
+          <div class="notion-card">
+            <div class="notion-card-header">
+              <span class="notion-card-title">🛡️ Retinoid Buffer</span>
+              <span class="notion-pill-tag tag-green">₹320 · Pharmacy Gentleness</span>
+            </div>
+            <div class="notion-tag-row">
+              <span class="notion-pill-tag tag-orange">4% Niacinamide</span>
+              <span class="notion-pill-tag tag-blue">D-Panthenol (Pro-Vit B5)</span>
+            </div>
+            <div class="notion-props">
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Target</span>
+                <span class="notion-prop-val">Peeling, redness, flaking from Adapalene/Tretinoin</span>
+              </div>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Pick</span>
+                <span class="notion-prop-val"><strong>Niamax D Gel</strong> (20g tube)</span>
+              </div>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Finish</span>
+                <span class="notion-prop-val">Cooling pharmaceutical soothing gel</span>
+              </div>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Routine</span>
+                <span class="notion-prop-val">AM &amp; PM before prescription retinoids</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Post-Acne Dark Spots (PIH) -->
+          <div class="notion-card">
+            <div class="notion-card-header">
+              <span class="notion-card-title">✨ Dark Spots &amp; PIH</span>
+              <span class="notion-pill-tag tag-orange">₹599 · Daily OTC</span>
+            </div>
+            <div class="notion-tag-row">
+              <span class="notion-pill-tag tag-green">5% Niacinamide</span>
+              <span class="notion-pill-tag tag-gray">Bifida Ferment + HA</span>
+            </div>
+            <div class="notion-props">
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Target</span>
+                <span class="notion-prop-val">Stubborn brown post-acne marks on Fitzpatrick IV–VI</span>
+              </div>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Pick</span>
+                <span class="notion-prop-val"><strong>Minimalist 5% Niacinamide</strong> (30ml)</span>
+              </div>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Finish</span>
+                <span class="notion-prop-val">Water-light fluid, zero pilling under sunscreen</span>
+              </div>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Routine</span>
+                <span class="notion-prop-val">Daily AM under SPF 50 + PM daily</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Damaged Barrier / Peeling -->
+          <div class="notion-card">
+            <div class="notion-card-header">
+              <span class="notion-card-title">🩹 Damaged Barrier</span>
+              <span class="notion-pill-tag tag-blue">₹699 · Barrier Care</span>
+            </div>
+            <div class="notion-tag-row">
+              <span class="notion-pill-tag tag-orange">3% Niacinamide</span>
+              <span class="notion-pill-tag tag-green">Ceramide 3:1:1 Complex</span>
+            </div>
+            <div class="notion-props">
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Target</span>
+                <span class="notion-prop-val">Stinging from water, over-exfoliation, salon peel burn</span>
+              </div>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Pick</span>
+                <span class="notion-prop-val"><strong>FormulaRx Barrier Relief</strong> (50g)</span>
+              </div>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Finish</span>
+                <span class="notion-prop-val">Light nourishing barrier lotion</span>
+              </div>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Routine</span>
+                <span class="notion-prop-val">Primary moisturizer AM &amp; PM</span>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="roadmap-strips">
+      </section>
 
-          <!-- Phase 01 -->
-          <div class="strip-card">
-            <div class="strip-left">
-              <div class="strip-phase-row">
-                <span class="strip-phase-badge">Phase 01 · Weeks 1–4</span>
-                <span class="strip-phase-icon">🛡️</span>
-              </div>
-              <h3>Barrier Repair &amp; Sebum Normalization</h3>
-              <div class="strip-test-tag"><strong>Highlighted Protocol:</strong> 2% to 5% Gentle Niacinamide Serum (Alternate Nights &rarr; Nightly)</div>
-              <div class="strip-outcome">🎯 <strong>Key Outcome:</strong> Halts stinging, tightens pore walls, and curtails midday grease.</div>
-            </div>
-            <div class="strip-right">
-              <div class="strip-item">
-                <span class="strip-item-title">🔍 What It Targets</span>
-                <span class="strip-item-desc">Compromised lipid moisture barrier, high transepidermal water loss (TEWL), and overactive sebocytes.</span>
-              </div>
-              <div class="strip-item">
-                <span class="strip-item-title">💡 What To Expect</span>
-                <span class="strip-item-desc">Zero burning or tingling. Midday forehead shine drops by 35% without dry flaking.</span>
-              </div>
-              <div class="strip-item">
-                <span class="strip-item-title">⚡ How It Impacts Skin</span>
-                <span class="strip-item-desc">Fuels ceramide and free fatty acid synthesis, building a resilient shield against pollution and Indian humidity.</span>
-              </div>
-              <div class="strip-item">
-                <span class="strip-item-title">⏱ Application Rules</span>
-                <span class="strip-item-desc">Apply 2–3 drops to clean, slightly damp skin. Lock in immediately with a light ceramide moisturizer.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Phase 02 -->
-          <div class="strip-card">
-            <div class="strip-left">
-              <div class="strip-phase-row">
-                <span class="strip-phase-badge">Phase 02 · Weeks 5–8</span>
-                <span class="strip-phase-icon">✨</span>
-              </div>
-              <h3>Melanosome Blockade &amp; Mark Fading</h3>
-              <div class="strip-test-tag"><strong>Highlighted Protocol:</strong> 5% Niacinamide + Tranexamic Acid / Alpha Arbutin Synergy (AM + PM)</div>
-              <div class="strip-outcome">🎯 <strong>Key Outcome:</strong> Fades stubborn brown acne stains (PIH) and lingering redness (PIE).</div>
-            </div>
-            <div class="strip-right">
-              <div class="strip-item">
-                <span class="strip-item-title">🔍 What It Targets</span>
-                <span class="strip-item-desc">Melanosome transfer from deep melanocytes up into surrounding surface keratinocyte skin cells.</span>
-              </div>
-              <div class="strip-item">
-                <span class="strip-item-title">💡 What To Expect</span>
-                <span class="strip-item-desc">Dark acne mark borders soften. Fresh post-breakout stains fade in 2–3 weeks instead of 6 months.</span>
-              </div>
-              <div class="strip-item">
-                <span class="strip-item-title">⚡ How It Impacts Skin</span>
-                <span class="strip-item-desc">Blocks up to 68% of pigment transfer without bleaching or lightening surrounding normal skin tone.</span>
-              </div>
-              <div class="strip-item">
-                <span class="strip-item-title">⏱ Application Rules</span>
-                <span class="strip-item-desc">Use daily under SPF 50 sunscreen in the morning; pair with azelaic acid or barrier lotion at night.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Phase 03 -->
-          <div class="strip-card">
-            <div class="strip-left">
-              <div class="strip-phase-row">
-                <span class="strip-phase-badge">Phase 03 · Weeks 9–12+</span>
-                <span class="strip-phase-icon">🧬</span>
-              </div>
-              <h3>Retinoid Buffering &amp; Follicular Remodeling</h3>
-              <div class="strip-test-tag"><strong>Highlighted Protocol:</strong> Niacinamide Pre-Buffer before Adapalene 0.1% or Tretinoin 0.025%</div>
-              <div class="strip-outcome">🎯 <strong>Key Outcome:</strong> Eliminates retinoid peeling while accelerating cellular turnover.</div>
-            </div>
-            <div class="strip-right">
-              <div class="strip-item">
-                <span class="strip-item-title">🔍 What It Targets</span>
-                <span class="strip-item-desc">Deep microcomedone plugs, stubborn cystic recurrence, and uneven post-acne dermal texture.</span>
-              </div>
-              <div class="strip-item">
-                <span class="strip-item-title">💡 What To Expect</span>
-                <span class="strip-item-desc">Silky, glass-like skin texture without the raw, red peeling dermatitis common with retinoid starts.</span>
-              </div>
-              <div class="strip-item">
-                <span class="strip-item-title">⚡ How It Impacts Skin</span>
-                <span class="strip-item-desc">Elevates intracellular ATP and cellular repair enzymes, neutralizing retinoid-induced epidermal irritation.</span>
-              </div>
-              <div class="strip-item">
-                <span class="strip-item-title">⏱ Application Rules</span>
-                <span class="strip-item-desc">Apply niacinamide first, wait 5 minutes until dry to touch, then apply pea-sized retinoid.</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </nav>
-
-      <!-- Module 2: The 5% vs 10% Concentration Trap -->
-      <section class="section-card" id="5-vs-10-percent">
-        <nav class="section-eyebrow">CONCENTRATION REALITY CHECK</nav>
-        <h2>The 5% vs 10% Trap: Why Higher is NOT Better for Indian Skin</h2>
+      <!-- Section 3: Head-to-Head 5% vs 10% Debate (Notion Comparison Split) -->
+      <section class="section-block" id="5-vs-10-percent">
+        <span class="section-tag">CONCENTRATION DEBATE</span>
+        <h2>5% vs 10%: The Indian Climate Reality</h2>
         <div class="visual-split">
           <div>
-            <p>Over the past five years, beauty marketing has convinced Indian consumers that higher active percentages automatically deliver faster results. Today, drugstore and online shelves are flooded with 10%, 12%, and even 20% niacinamide serums.</p>
-            <p>In dermatological science, this assumption is completely false. Landmark clinical trials (including Hakozaki et al. and Draelos et al.) clearly prove that <strong>2% to 5% niacinamide achieves 100% of maximum biological efficacy</strong>. Increasing the strength to 10% yields zero extra benefits, but dramatically escalates the risk of severe facial flushing and barrier irritation.</p>
+            <p>Why do cosmetic brands promote 10% or 12% if dermatologists recommend 5%? The answer is simple: marketing competition. In retail skincare, consumers assume "double the percentage equals double the speed."</p>
+            <p>In dermatological biochemistry, this is false. <strong>The skin's biological receptor sites for niacinamide are completely saturated at 5%</strong>. Anything higher does not increase pigment fading, but introduces severe risks in hot Indian weather.</p>
           </div>
-          <nav class="visual-img-card">
-            <img src="/assets/images/niacinamide-purging-barrier-damage-india.jpg" alt="Clinical comparison showing facial flushing and barrier damage caused by high concentration 10% niacinamide" class="visual-img" loading="lazy">
-            <div class="visual-caption">In Indian summer heat (>35°C), 10% serums hydrolyze into free nicotinic acid, triggering severe facial flushing and rash.</div>
-          </nav>
+          <div class="visual-img-card">
+            <img src="/assets/images/niacinamide-purging-barrier-damage-india.jpg" alt="Clinical demonstration of facial flushing and barrier irritation from 10 percent niacinamide in hot weather" class="visual-img" loading="lazy">
+            <div class="visual-caption">Heat (>35°C) hydrolyzes 10% niacinamide into free nicotinic acid, triggering sudden vasodilation and flushing.</div>
+          </div>
         </div>
 
-        <!-- Targeted Formulation Cards -->
-        <div class="test-target-cards">
+        <!-- Notion Side-by-Side Comparison Box -->
+        <div class="notion-comparison-split">
           
-          <!-- 5% Card -->
-          <div class="test-target-card">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>🟢</span>
-                <h4>5% Niacinamide Concentration (The Dermatologist Sweet Spot)</h4>
-              </div>
-              <span class="test-price-badge">💰 Price: ₹350 &ndash; ₹599 (Minimalist / Sebogel / Niamax D)</span>
+          <div class="notion-compare-box box-winner">
+            <div class="notion-compare-title">
+              <span>🟢</span>
+              <span>5% Concentration (Dermatologist Standard)</span>
             </div>
-            <div class="test-target-grid">
-              <div class="test-spec-item">
-                <span class="test-spec-label">🎯 The Reason (Why Pick)</span>
-                <span class="test-spec-value">Gold-standard clinical concentration supported by peer-reviewed human trials. Fully saturates cellular enzyme pathways without overloading receptors.</span>
+            <span class="notion-pill-tag tag-green">Maximum Efficacy · 0% Flushing Risk</span>
+            <ul class="notion-check-list">
+              <li><span>✓ <strong>Peak Ceramide Synthesis:</strong> Stimulates serine palmitoyltransferase (SPT) for maximum barrier lipid production.</span></li>
+              <li><span>✓ <strong>35–50% Sebum Reduction:</strong> Normalizes oil without causing rebound dryness or tight skin.</span></li>
+              <li><span>✓ <strong>68% Melanosome Block:</strong> Traps pigment inside melanocytes before it stains surface skin.</span></li>
+              <li><span>✓ <strong>Tropical Heat Stability:</strong> Remains stable and non-irritating even at 40°C Indian summer temperatures.</span></li>
+              <li><span>✓ <strong>Retinoid Buffer:</strong> Safe to apply directly under Adapalene or Tretinoin.</span></li>
+            </ul>
+          </div>
+
+          <div class="notion-compare-box box-warning">
+            <div class="notion-compare-title">
+              <span>🟡</span>
+              <span>10% Concentration (Marketing Trap)</span>
+            </div>
+            <span class="notion-pill-tag tag-red">High Barrier Stress · Summer Flushing</span>
+            <ul class="notion-check-list">
+              <li><span>✕ <strong>Nicotinic Acid Breakdown:</strong> Under heat and humidity, converts into free nicotinic acid on skin.</span></li>
+              <li><span>✕ <strong>GPR109A Flushing:</strong> Triggers sudden capillary dilation, prickling warmth, and bright red splotches.</span></li>
+              <li><span>✕ <strong>Zero Additional Alpha:</strong> Peer-reviewed trials prove 10% achieves zero extra pigment fading over 5%.</span></li>
+              <li><span>✕ <strong>Pilling &amp; Frothing:</strong> High gum vehicles foam white when rubbed and peel into flakes under sunscreen.</span></li>
+              <li><span>✕ <strong>Frequent Flare-Ups:</strong> Common cause of micro-papular contact dermatitis mistaken for "purging."</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section 4: Notion-Style Symptom Triage: Purging or Barrier Reaction? -->
+      <section class="section-block" id="purging-checker">
+        <span class="section-tag">SYMPTOM TRIAGE</span>
+        <h2>Is Your Skin Purging or Having a Barrier Reaction?</h2>
+        <p>If you recently introduced a niacinamide serum and woke up with bumps, use this clinical triage to make the right decision:</p>
+
+        <div class="visual-split">
+          <div>
+            <p><strong>Niacinamide cannot biologically cause purging.</strong> True active purging requires keratolytic agents (retinoids, salicylic acid, glycolic acid) that accelerate cellular desquamation and force deep microcomedones to surface quickly.</p>
+            <p>If you are using niacinamide alone without any exfoliating acids, any eruption is <strong>irritant contact dermatitis or pore-clogging vehicle reaction</strong>.</p>
+          </div>
+          <div class="visual-img-card">
+            <img src="/assets/images/niacinamide-mechanism.jpg" alt="Cross section of pore infundibulum and sebaceous unit" class="visual-img" loading="lazy">
+            <div class="visual-caption">Niacinamide regulates sebum fluidity at the follicle wall but lacks exfoliating acid actions.</div>
+          </div>
+        </div>
+
+        <!-- Notion Callout Comparison -->
+        <div class="notion-bento-grid">
+          
+          <div class="notion-card" style="border-left: 3px solid #4CAF50;">
+            <div class="notion-card-header">
+              <span class="notion-card-title">🔄 True Active Purge</span>
+              <span class="notion-pill-tag tag-green">Temporary &amp; Expected</span>
+            </div>
+            <div class="notion-props">
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Cause</span>
+                <span class="notion-prop-val">You are pairing Niacinamide with a <strong>Retinoid (Tretinoin)</strong> or <strong>Salicylic Acid (BHA)</strong>.</span>
               </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⚡ Skin Impact</span>
-                <span class="test-spec-value">Rebuilds lipid ceramides, soothes inflammation, refines pores, and suppresses melanin transfer with <strong>0% risk of contact dermatitis or flushing</strong>.</span>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Bumps</span>
+                <span class="notion-prop-val">Small whiteheads strictly in your <strong>usual breakout areas</strong> (nose, chin, forehead).</span>
               </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">📈 Effectiveness</span>
-                <span class="test-spec-value"><strong>35% to 50% drop in excess surface sebum</strong> within 4 weeks. High patient tolerance across all Indian skin types (dry, sensitive, oily).</span>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Duration</span>
+                <span class="notion-prop-val">Heals in 4–5 days; entire phase clears completely within 4 to 6 weeks.</span>
               </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⏱ Protocol &amp; Layering</span>
-                <span class="test-spec-value">Safe for twice-daily (AM + PM) use year-round. Layers effortlessly under sunscreen and buffers prescription retinoids perfectly.</span>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Action</span>
+                <span class="notion-prop-val"><strong>Continue routine gently.</strong> Do not pick, scrub, or apply alcohol toners.</span>
               </div>
             </div>
           </div>
 
-          <!-- 10% Card -->
-          <div class="test-target-card" style="border-left-color: var(--danger);">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>🔴</span>
-                <h4>10% to 20% Niacinamide Serums (The Marketing &amp; Flushing Trap)</h4>
-              </div>
-              <span class="test-warning-badge">⚠️ High Risk for Indian Weather: ₹550 &ndash; ₹1,200</span>
+          <div class="notion-card" style="border-left: 3px solid var(--danger);">
+            <div class="notion-card-header">
+              <span class="notion-card-title">⚠️ Irritant Barrier Reaction</span>
+              <span class="notion-pill-tag tag-red">STOP IMMEDIATELY</span>
             </div>
-            <div class="test-target-grid">
-              <div class="test-spec-item">
-                <span class="test-spec-label">🎯 The Reason (Why Be Cautious)</span>
-                <span class="test-spec-value">Created by cosmetic brands for marketing "strength" wars. Exceeds the skin's biological absorption capacity and floods epidermal receptors.</span>
+            <div class="notion-props">
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Cause</span>
+                <span class="notion-prop-val">High 10% strength, nicotinic acid hydrolysis, or heavy comedogenic silicones.</span>
               </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⚡ Skin Impact</span>
-                <span class="test-spec-value">In Indian heat (>35°C), hydrolyzes into free nicotinic acid, binding to GPR109A receptors to cause <strong>burning facial flushing, red blotches, and prickly heat bumps</strong>.</span>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Bumps</span>
+                <span class="notion-prop-val">Clusters of tiny itchy red bumps, sandpapery rash, or cystic boils on <strong>cheeks and neck</strong>.</span>
               </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">📈 Effectiveness</span>
-                <span class="test-spec-value"><strong>0% additional pigment or sebum reduction</strong> compared to 5%, but up to 4&times; higher rates of acute barrier breakdown and secondary breakouts.</span>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Duration</span>
+                <span class="notion-prop-val">Will <strong>never</strong> improve with continued use. Worsens into stubborn brown marks (PIH).</span>
               </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⏱ Protocol &amp; Layering</span>
-                <span class="test-spec-value">Limit to 2&ndash;3 nights weekly on resilient skin only. Never layer with direct acids (AHA/BHA) or retinoids without heavy moisturizer buffering.</span>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Action</span>
+                <span class="notion-prop-val"><strong>Pause serum immediately.</strong> Wash with cool water and apply a ceramide lotion for 7 days.</span>
               </div>
             </div>
           </div>
 
         </div>
+      </section>
 
-        <!-- Superiority Matrix Table -->
-        <div class="acne-table-wrapper">
-          <table class="acne-table">
+      <!-- Section 5: Notion-Style Database Table: Indian Formulations -->
+      <section class="section-block" id="pharmacy-comparison">
+        <span class="section-tag">FORMULATION DATABASE</span>
+        <h2>Top Indian Formulations: Pharmacy vs OTC</h2>
+        <div class="visual-split">
+          <div>
+            <p>Indian pharmacies stock incredible, medical-grade formulations manufactured under strict pharmaceutical manufacturing licenses for a fraction of the cost of direct-to-consumer cosmetic brands.</p>
+            <p>Below is our comparative clinical audit of the most popular pharmacy and online niacinamide serums available across India:</p>
+          </div>
+          <div class="visual-img-card">
+            <img src="/assets/images/sebogel-salicylic-niacinamide-gel.png" alt="Apex Sebogel tube with salicylic acid and niacinamide for oily acne skin in India" class="visual-img" loading="lazy">
+            <div class="visual-caption">Apex Sebogel: 6% Niacinamide + 2% Salicylic Acid at ₹240 for 30g.</div>
+          </div>
+        </div>
+
+        <!-- Notion Database Table -->
+        <div class="notion-table-wrap">
+          <table class="notion-table">
             <thead>
               <tr>
-                <th>Strength</th>
-                <th>Sebum Control</th>
-                <th>Pigment Fading (PIH)</th>
-                <th>Barrier Synthesis</th>
-                <th>Flushing &amp; Irritation Risk</th>
-                <th>Clinical Verdict</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-label="Strength"><strong>2% Niacinamide</strong></td>
-                <td data-label="Sebum Control">Mild (15–20% oil reduction)</td>
-                <td data-label="Pigment Fading">Gradual (over 10–12 weeks)</td>
-                <td data-label="Barrier Synthesis"><span class="table-target-badge">Optimal (Boosts ceramides)</span></td>
-                <td data-label="Flushing Risk">Near Zero (Extremely gentle)</td>
-                <td data-label="Verdict">Excellent for ultra-sensitive, rosacea, or dry skin.</td>
-              </tr>
-              <tr>
-                <td data-label="Strength"><strong>5% Niacinamide</strong></td>
-                <td data-label="Sebum Control"><span class="table-target-badge">Peak (35–50% oil reduction)</span></td>
-                <td data-label="Pigment Fading"><span class="table-target-badge">Rapid (40–68% fade in 6–8 wks)</span></td>
-                <td data-label="Barrier Synthesis"><span class="table-target-badge">Maximum Ceramide Synthesis</span></td>
-                <td data-label="Flushing Risk">&lt; 1% in hot weather</td>
-                <td data-label="Verdict"><strong>Gold Standard.</strong> Recommended by 95% of dermatologists.</td>
-              </tr>
-              <tr>
-                <td data-label="Strength"><strong>10% Niacinamide</strong></td>
-                <td data-label="Sebum Control">Peak (Identical to 5%)</td>
-                <td data-label="Pigment Fading">Identical to 5% (Plateau reached)</td>
-                <td data-label="Barrier Synthesis">Neutral to Negative (Stresses cells)</td>
-                <td data-label="Flushing Risk"><span class="table-danger-badge">High (Nicotinic acid hydrolysis)</span></td>
-                <td data-label="Verdict">High risk of barrier irritation; offers no extra benefits over 5%.</td>
-              </tr>
-              <tr>
-                <td data-label="Strength"><strong>15% – 20% Serums</strong></td>
-                <td data-label="Sebum Control">Excessive (Causes rebound oil)</td>
-                <td data-label="Pigment Fading">Delayed due to secondary inflammation</td>
-                <td data-label="Barrier Synthesis">Severe Barrier Disruption</td>
-                <td data-label="Flushing Risk"><span class="table-danger-badge">Critical (Severe contact dermatitis)</span></td>
-                <td data-label="Verdict">Contraindicated for Indian skin; causes chemical burns and rash.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- Module 3: The Purging Myth -->
-      <section class="section-card" id="purging-truth">
-        <nav class="section-eyebrow">DIAGNOSTIC TRUTH</nav>
-        <h2>The "Purging" Myth: Why Niacinamide Never Causes Purging</h2>
-        <div class="visual-split">
-          <div>
-            <p>One of the most destructive misconceptions promoted on social media is the idea that when your face erupts in red bumps after starting a niacinamide serum, your skin is just "purging toxins" and you must keep applying it.</p>
-            <p>From a biological standpoint, <strong>niacinamide cannot cause purging</strong>. An ingredient can only trigger true active purging if it possesses keratolytic properties—meaning it physically accelerates stratum corneum cellular turnover (like retinoids, glycolic acid, or salicylic acid). Niacinamide has zero keratolytic action.</p>
-          </div>
-          <nav class="visual-img-card">
-            <img src="/assets/images/niacinamide-mechanism.jpg" alt="Anatomy of pore hair follicle and sebaceous gland illustrating why niacinamide cannot purge" class="visual-img" loading="lazy">
-            <div class="visual-caption">Niacinamide lacks exfoliating properties. Sudden breakouts indicate irritant contact dermatitis or pore-clogging formula ingredients.</div>
-          </nav>
-        </div>
-
-        <!-- Targeted Purge vs Irritation Cards -->
-        <div class="test-target-cards">
-          
-          <div class="test-target-card">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>🔬</span>
-                <h4>True Active Purging (Retinoids / Salicylic Acid / Glycolic Acid)</h4>
-              </div>
-              <span class="test-price-badge">Normal Biological Process (3–6 Weeks)</span>
-            </div>
-            <div class="test-target-grid">
-              <div class="test-spec-item">
-                <span class="test-spec-label">🎯 What Is Happening</span>
-                <span class="test-spec-value">Accelerated skin cell turnover brings pre-existing clogged pores (microcomedones) to the surface much faster than normal.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⚡ How Bumps Look &amp; Feel</span>
-                <span class="test-spec-value">Small whiteheads or minor papules located strictly in your <strong>usual breakout areas</strong> (e.g., chin, nose creases, T-zone). Bumps heal quickly in 4–6 days.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">📈 Clinical Timeline</span>
-                <span class="test-spec-value">Peaks around week 2–3, then subsides completely by week 6, leaving behind clearer, smoother skin.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⏱ What You Should Do</span>
-                <span class="test-spec-value">Continue your treatment gently. Keep skin hydrated with ceramides; never pick, scratch, or pop the emerging bumps.</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="test-target-card" style="border-left-color: var(--danger);">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>⚠️</span>
-                <h4>Niacinamide Reaction (Irritant Dermatitis / Clogged Vehicle)</h4>
-              </div>
-              <span class="test-warning-badge">Barrier Breakdown: STOP IMMEDIATELY</span>
-            </div>
-            <div class="test-target-grid">
-              <div class="test-spec-item">
-                <span class="test-spec-label">🎯 What Is Happening</span>
-                <span class="test-spec-value">The high concentration (10%), free nicotinic acid, or heavy cosmetic vehicle (silicones, thickeners, zinc stearate) is irritating or clogging pores.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⚡ How Bumps Look &amp; Feel</span>
-                <span class="test-spec-value">Clusters of tiny itchy red bumps, rough sandpapery rash, or deep painful cystic boils in <strong>areas where you never normally break out</strong> (cheeks, neck).</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">📈 Clinical Timeline</span>
-                <span class="test-spec-value">Will <strong>NEVER</strong> get better with continued use. Pushing through destroys your epidermal barrier and triggers severe, stubborn brown marks (PIH).</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⏱ What You Should Do</span>
-                <span class="test-spec-value">Stop using the serum immediately. Wash face with cool water, apply a basic ceramide moisturizer, and pause all active treatments for 7 to 10 days.</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="warning-callout">
-          <div class="warning-badge">DERMATOLOGIST CLINICAL WARNING</div>
-          <p>If you experience itching, burning warmth, or tiny uniform red bumps after applying a 10% niacinamide serum, your skin is not "purging." It is reacting with irritant contact dermatitis. Discontinue use immediately to prevent post-inflammatory hyperpigmentation.</p>
-        </div>
-      </section>
-
-      <!-- Module 4: PIH & Dark Marks -->
-      <section class="section-card" id="pih-dark-marks">
-        <nav class="section-eyebrow">PIGMENTATION DECODED</nav>
-        <h2>Fading Post-Acne Marks: Brown Spots (PIH) vs Red Marks (PIE)</h2>
-        <div class="visual-split">
-          <div>
-            <p>On Indian skin (Fitzpatrick types IV, V, and VI), every inflammatory acne bump leaves behind a stubborn calling card that often lasts longer than the pimple itself. However, treating these marks effectively requires understanding the difference between two completely different skin issues.</p>
-            <p><strong>Post-Inflammatory Hyperpigmentation (PIH)</strong> consists of brown or black melanin deposits trapped in epidermal cells. <strong>Post-Inflammatory Erythema (PIE)</strong> consists of dilated, damaged micro-capillaries trapped in inflamed dermis. Niacinamide uniquely tackles both pathways simultaneously.</p>
-          </div>
-          <nav class="visual-img-card">
-            <img src="/assets/images/niacinamide-gel-cream-swatch.jpg" alt="Smooth soothing gel cream texture swatch for post acne mark treatment" class="visual-img" loading="lazy">
-            <div class="visual-caption">Niacinamide blocks melanosome transfer into surface skin cells while soothing inflamed red microcapillaries.</div>
-          </nav>
-        </div>
-
-        <!-- Targeted Mark Treatment Cards -->
-        <div class="test-target-cards">
-          
-          <div class="test-target-card">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>🟤</span>
-                <h4>Brown &amp; Black Marks (PIH &ndash; Melanosome Pooling)</h4>
-              </div>
-              <span class="test-price-badge">Target: Melanosome Transfer Blockade</span>
-            </div>
-            <div class="test-target-grid">
-              <div class="test-spec-item">
-                <span class="test-spec-label">🎯 The Biological Cause</span>
-                <span class="test-spec-value">Indian skin has hyper-reactive melanocytes. Following acne inflammation, melanocytes dump melanin-packed granules (melanosomes) into surrounding keratinocytes.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⚡ How Niacinamide Works</span>
-                <span class="test-spec-value">Inhibits the physical dendritic transfer of melanosomes by <strong>35% to 68%</strong>. Pigment stays trapped inside melanocytes where it degrades naturally, without staining the surface.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">📈 Fading Timeline</span>
-                <span class="test-spec-value">Visible 40%+ fading within 6 to 8 weeks. Fresh brown marks disappear in under a month when paired with daily broad-spectrum SPF 50.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⏱ Best Synergy Regimen</span>
-                <span class="test-spec-value">5% Niacinamide in the AM under sunscreen. Pair with <strong>Tranexamic Acid 3%</strong> or <strong>Azelaic Acid 10%</strong> in the PM for synergistic melanin clearance.</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="test-target-card">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>🔴</span>
-                <h4>Red &amp; Pink Marks (PIE &ndash; Vascular Capillary Dilation)</h4>
-              </div>
-              <span class="test-price-badge">Target: Microvascular Anti-Inflammatory</span>
-            </div>
-            <div class="test-target-grid">
-              <div class="test-spec-item">
-                <span class="test-spec-label">🎯 The Biological Cause</span>
-                <span class="test-spec-value">Microscopic blood vessel damage and chronic capillary swelling following cystic acne trauma or manual pimple popping. Contains zero melanin.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⚡ How Niacinamide Works</span>
-                <span class="test-spec-value">Downregulates pro-inflammatory cytokines (IL-6, IL-8, TNF-&alpha;), calms vessel endothelial swelling, and restores healthy capillary wall tone.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">📈 Fading Timeline</span>
-                <span class="test-spec-value">Redness subsides 2&times; faster than untreated skin—often showing significant calming within 14 to 21 days.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⏱ Best Synergy Regimen</span>
-                <span class="test-spec-value">Pair 5% Niacinamide with soothing Centella Asiatica (Cica), Panthenol (Pro-Vitamin B5), or gentle Azelaic Acid 10%. Avoid physical scrubs.</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Mark Treatment Protocol Table -->
-        <div class="acne-table-wrapper">
-          <table class="acne-table">
-            <thead>
-              <tr>
-                <th>Condition</th>
-                <th>Underlying Pathology</th>
-                <th>Niacinamide Mechanism</th>
-                <th>Synergy Ingredient</th>
-                <th>Clinical Timeline</th>
-                <th>Common Mistake</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-label="Condition"><strong>PIH (Brown Marks)</strong></td>
-                <td data-label="Pathology">Epidermal melanin pigment pooling in keratinocytes</td>
-                <td data-label="Mechanism"><span class="table-target-badge">Blocks Melanosome Transfer</span></td>
-                <td data-label="Synergy">Tranexamic Acid 3%, Alpha Arbutin 2%</td>
-                <td data-label="Timeline">6 to 8 weeks</td>
-                <td data-label="Mistake">Skipping SPF 50 sunscreen (UV reactivates melanocytes).</td>
-              </tr>
-              <tr>
-                <td data-label="Condition"><strong>PIE (Red Marks)</strong></td>
-                <td data-label="Pathology">Dilated dermis micro-capillaries &amp; vascular inflammation</td>
-                <td data-label="Mechanism"><span class="table-target-badge">Suppresses IL-6 &amp; IL-8 Cytokines</span></td>
-                <td data-label="Synergy">Azelaic Acid 10%, Panthenol (B5), Centella</td>
-                <td data-label="Timeline">3 to 5 weeks</td>
-                <td data-label="Mistake">Using harsh glycolic scrubs that burst capillaries further.</td>
-              </tr>
-              <tr>
-                <td data-label="Condition"><strong>Enlarged Pores</strong></td>
-                <td data-label="Pathology">Follicular wall laxity &amp; waxy sebum buildup</td>
-                <td data-label="Mechanism"><span class="table-target-badge">Reduces Sebum Secretion Rate</span></td>
-                <td data-label="Synergy">Salicylic Acid 2% (BHA), Zinc PCA 1%</td>
-                <td data-label="Timeline">4 to 6 weeks</td>
-                <td data-label="Mistake">Using pore strips that tear follicular collagen walls.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- Module 5: Top Indian Formulations Reviewed -->
-      <section class="section-card" id="top-indian-serums">
-        <nav class="section-eyebrow">FORMULATION AUDIT</nav>
-        <h2>Top Indian Niacinamide Formulations: Pharmacy vs OTC</h2>
-        <div class="visual-split">
-          <div>
-            <p>The Indian skincare market offers two distinct worlds: trendy direct-to-consumer cosmetic brands sold on beauty apps, and time-tested pharmaceutical gels manufactured by licensed Indian laboratories and sold over pharmacy counters.</p>
-            <p>While cosmetic serums often cost ₹600 to ₹1,500, Indian pharmacies dispense exceptional medical-grade formulations (like Sebogel and Niamax D) for just ₹240 to ₹380. Here is an honest clinical evaluation of the most popular options available in India today.</p>
-          </div>
-          <nav class="visual-img-card">
-            <img src="/assets/images/sebogel-salicylic-niacinamide-gel.png" alt="Apex Sebogel tube combining salicylic acid and niacinamide for oily acne skin in India" class="visual-img" loading="lazy">
-            <div class="visual-caption">Pharmacy hero Apex Sebogel combines 6% Niacinamide with 2% Salicylic Acid for fast blackhead and acne relief at ₹240.</div>
-          </nav>
-        </div>
-
-        <!-- Targeted Product Review Cards -->
-        <div class="test-target-cards">
-          
-          <!-- Product 1: Minimalist 5% -->
-          <div class="test-target-card">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>⭐</span>
-                <h4>Minimalist 5% Niacinamide + Bifida Ferment + Hyaluronic Acid</h4>
-              </div>
-              <span class="test-price-badge">💰 Price: ₹599 for 30ml (OTC / Online)</span>
-            </div>
-            <div class="test-target-grid">
-              <div class="test-spec-item">
-                <span class="test-spec-label">🎯 Best For</span>
-                <span class="test-spec-value">Sensitive, dry-to-combination, or barrier-compromised skin. First-time niacinamide users.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⚡ Formulation &amp; Texture</span>
-                <span class="test-spec-value">Water-light serum enriched with Bifida Ferment Lysate (microbiome balance) and Hyaluronic Acid. Sinks in immediately with <strong>zero pilling or stickiness</strong>.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">📈 Dermatologist Rating</span>
-                <span class="test-spec-value"><strong>4.9 / 5</strong> &middot; Gold-standard OTC pick in India. Extremely high tolerability and stable in tropical climates.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⏱ How To Use</span>
-                <span class="test-spec-value">Dispense 2&ndash;3 drops morning and evening onto cleansed skin. Layer under sunscreen or evening moisturizer.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Product 2: Apex Sebogel -->
-          <div class="test-target-card">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>🏆</span>
-                <h4>Apex Sebogel (2% Salicylic Acid + 6% Niacinamide Gel)</h4>
-              </div>
-              <span class="test-price-badge">💰 Price: ₹240 &ndash; ₹290 for 30g (Indian Pharmacy)</span>
-            </div>
-            <div class="test-target-grid">
-              <div class="test-spec-item">
-                <span class="test-spec-label">🎯 Best For</span>
-                <span class="test-spec-value">Extremely oily skin, stubborn blackheads, whiteheads, and active teenage or adult pustular breakouts.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⚡ Formulation &amp; Texture</span>
-                <span class="test-spec-value">Transparent oil-free gel. Combines lipophilic Salicylic Acid 2% (penetrates and flushes pores) with Niacinamide 6% (soothes redness and controls grease).</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">📈 Dermatologist Rating</span>
-                <span class="test-spec-value"><strong>4.8 / 5</strong> &middot; The ultimate Indian pharmacy budget powerhouse for active acne. Fast-acting and clinically reliable.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⏱ How To Use</span>
-                <span class="test-spec-value">Apply a thin layer at night over oily zones. Can cause mild dryness; always follow with a non-comedogenic gel moisturizer.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Product 3: Niamax D Gel -->
-          <div class="test-target-card">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>💧</span>
-                <h4>Niamax D Gel (4% Niacinamide + D-Panthenol Gel)</h4>
-              </div>
-              <span class="test-price-badge">💰 Price: ₹320 &ndash; ₹380 for 20g (Indian Pharmacy)</span>
-            </div>
-            <div class="test-target-grid">
-              <div class="test-spec-item">
-                <span class="test-spec-label">🎯 Best For</span>
-                <span class="test-spec-value">Reactive skin, rosacea-prone skin, and buffering prescription retinoids (Tretinoin/Adapalene).</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⚡ Formulation &amp; Texture</span>
-                <span class="test-spec-value">Cooling pharmaceutical gel with 4% pure niacinamide and D-Panthenol (Vitamin B5). Restores moisture barrier without any comedogenic oils.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">📈 Dermatologist Rating</span>
-                <span class="test-spec-value"><strong>4.8 / 5</strong> &middot; Prescription-grade gentleness. Zero fragrances, zero irritating emulsifiers, zero burning.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⏱ How To Use</span>
-                <span class="test-spec-value">Apply a pea-sized amount AM and PM. Fantastic non-greasy matte base under makeup and broad-spectrum sunscreen.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Product 4: FormulaRx Barrier Relief -->
-          <div class="test-target-card">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>🛡️</span>
-                <h4>FormulaRx Barrier Relief (3% Niacinamide + Ceramide NP + Peptides)</h4>
-              </div>
-              <span class="test-price-badge">💰 Price: ₹699 for 50g (OTC / Barrier Care)</span>
-            </div>
-            <div class="test-target-grid">
-              <div class="test-spec-item">
-                <span class="test-spec-label">🎯 Best For</span>
-                <span class="test-spec-value">Dry, flaky, stinging, or over-exfoliated skin damaged by salon chemical peels or harsh acne washes.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⚡ Formulation &amp; Texture</span>
-                <span class="test-spec-value">Lightweight cream-lotion hybrid featuring physiological 3:1:1 lipid complex (ceramides, cholesterol, fatty acids) alongside 3% niacinamide.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">📈 Dermatologist Rating</span>
-                <span class="test-spec-value"><strong>4.7 / 5</strong> &middot; Outstanding recovery lotion for damaged skin barriers. Soothes peeling in under 72 hours.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⏱ How To Use</span>
-                <span class="test-spec-value">Use as your primary daily moisturizer morning and evening. Especially beneficial as the final step over evening treatments.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Product 5: The Ordinary 10% (Cautionary) -->
-          <div class="test-target-card" style="border-left-color: var(--danger);">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>⚠️</span>
-                <h4>The Ordinary Niacinamide 10% + Zinc 1% (Cautionary Evaluation)</h4>
-              </div>
-              <span class="test-warning-badge">Caution: Pilling &amp; Flushing Risk (₹550–₹600)</span>
-            </div>
-            <div class="test-target-grid">
-              <div class="test-spec-item">
-                <span class="test-spec-label">🎯 Best For</span>
-                <span class="test-spec-value">Extremely thick, resilient, oily skin that has previously tolerated high concentrations without redness.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⚡ Formulation &amp; Texture</span>
-                <span class="test-spec-value">Dense viscous fluid. High gum content leads to frequent <strong>white frothing and pilling</strong> under sunscreen. Zinc PCA controls oil effectively.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">📈 Dermatologist Rating</span>
-                <span class="test-spec-value"><strong>3.6 / 5</strong> &middot; Highly polarizing for Indian skin. High incidence of heat-induced flushing and micro-papular reactions in summer.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⏱ How To Use</span>
-                <span class="test-spec-value">Start 2 nights weekly. Pat gently; never rub vigorously. If stinging or burning redness occurs, discontinue immediately.</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Indian Serum Comparison Table -->
-        <div class="acne-table-wrapper">
-          <table class="acne-table">
-            <thead>
-              <tr>
-                <th>Product Name</th>
+                <th>Product</th>
                 <th>Strength &amp; Actives</th>
-                <th>Primary Skin Match</th>
+                <th>Best For</th>
                 <th>Finish / Feel</th>
-                <th>Price Range</th>
-                <th>Clinical Verdict</th>
+                <th>Price</th>
+                <th>Verdict</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td data-label="Product"><strong>Minimalist 5%</strong></td>
-                <td data-label="Actives">5% Niacinamide + Bifida + HA</td>
-                <td data-label="Skin Match">Sensitive, Dry &amp; Normal</td>
-                <td data-label="Finish">Water-light, Zero Pilling</td>
+                <td data-label="Actives">5% Niacinamide + Bifida Ferment + HA</td>
+                <td data-label="Best For">Sensitive, dry &amp; combination skin</td>
+                <td data-label="Finish">Water-light, zero pilling</td>
                 <td data-label="Price">₹599 (30ml)</td>
-                <td data-label="Verdict"><span class="table-target-badge">Top Daily Recommendation</span></td>
+                <td data-label="Verdict"><span class="notion-pill-tag tag-green">Gold Standard Daily</span></td>
               </tr>
               <tr>
                 <td data-label="Product"><strong>Apex Sebogel</strong></td>
-                <td data-label="Actives">6% Niacinamide + 2% BHA</td>
-                <td data-label="Skin Match">Oily, Congested &amp; Blackheads</td>
-                <td data-label="Finish">Matte Gel, Quick Dry</td>
+                <td data-label="Actives">6% Niacinamide + 2% Salicylic Acid</td>
+                <td data-label="Best For">Oily skin, blackheads &amp; acne bumps</td>
+                <td data-label="Finish">Matte gel, dries quickly</td>
                 <td data-label="Price">₹240 (30g)</td>
-                <td data-label="Verdict"><span class="table-target-badge">Best Pharmacy Value Pick</span></td>
+                <td data-label="Verdict"><span class="notion-pill-tag tag-orange">Top Pharmacy Value</span></td>
               </tr>
               <tr>
                 <td data-label="Product"><strong>Niamax D Gel</strong></td>
-                <td data-label="Actives">4% Niacinamide + Panthenol</td>
-                <td data-label="Skin Match">Sensitized, Red &amp; Rosacea</td>
-                <td data-label="Finish">Cooling Hydrating Gel</td>
+                <td data-label="Actives">4% Niacinamide + D-Panthenol (B5)</td>
+                <td data-label="Best For">Retinoid buffer, rosacea, redness</td>
+                <td data-label="Finish">Cooling gentle gel</td>
                 <td data-label="Price">₹320 (20g)</td>
-                <td data-label="Verdict"><span class="table-target-badge">Best Retinoid Buffer</span></td>
+                <td data-label="Verdict"><span class="notion-pill-tag tag-blue">Best Retinoid Buffer</span></td>
               </tr>
               <tr>
                 <td data-label="Product"><strong>FormulaRx Relief</strong></td>
-                <td data-label="Actives">3% Niacinamide + Ceramides</td>
-                <td data-label="Skin Match">Damaged Barrier, Peeling</td>
-                <td data-label="Finish">Nourishing Lotion</td>
+                <td data-label="Actives">3% Niacinamide + Ceramides 3:1:1</td>
+                <td data-label="Best For">Damaged, peeling, stinging barrier</td>
+                <td data-label="Finish">Nourishing light lotion</td>
                 <td data-label="Price">₹699 (50g)</td>
-                <td data-label="Verdict"><span class="table-target-badge">Best Barrier Repair</span></td>
+                <td data-label="Verdict"><span class="notion-pill-tag tag-green">Best Barrier Repair</span></td>
               </tr>
               <tr>
                 <td data-label="Product"><strong>The Ordinary 10%</strong></td>
-                <td data-label="Actives">10% Niacinamide + 1% Zinc</td>
-                <td data-label="Skin Match">Very Resilient Oily Skin</td>
-                <td data-label="Finish">Viscous, Prone to Pilling</td>
+                <td data-label="Actives">10% Niacinamide + 1% Zinc PCA</td>
+                <td data-label="Best For">Resilient, very oily thick skin</td>
+                <td data-label="Finish">Viscous fluid, pills easily</td>
                 <td data-label="Price">₹550 (30ml)</td>
-                <td data-label="Verdict"><span class="table-danger-badge">High Summer Flushing Risk</span></td>
+                <td data-label="Verdict"><span class="notion-pill-tag tag-red">Caution: Summer Flush</span></td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <!-- Module 6: Layering Masterclass -->
-      <section class="section-card" id="layering-rules">
-        <nav class="section-eyebrow">CLINICAL PAIRING GUIDE</nav>
-        <h2>The Layering Masterclass: Combining Niacinamide with Other Actives</h2>
+      <!-- Section 6: Notion-Style Step-by-Step Layering Routine -->
+      <section class="section-block" id="routine-layering">
+        <span class="section-tag">STEP-BY-STEP WORKFLOW</span>
+        <h2>How to Layer Niacinamide in Your Daily Routine</h2>
         <div class="visual-split">
           <div>
-            <p>One of niacinamide's greatest biological strengths is its exceptional biochemical compatibility. Unlike direct exfoliating acids (which cannot be layered together without burning the skin), niacinamide works synergistically with nearly every major dermatological active.</p>
-            <p>In fact, dermatologists frequently prescribe niacinamide specifically to <strong>buffer and protect the skin</strong> from the drying side effects of powerful acne prescriptions like adapalene, tretinoin, and benzoyl peroxide.</p>
+            <p>Because niacinamide is non-acidic and water-soluble, it can be combined safely with almost every active. Dermatologists frequently use it as a <strong>protective buffer</strong> to make prescription retinoids easier to tolerate.</p>
+            <p>Follow these sequential routines for optimal results:</p>
           </div>
-          <nav class="visual-img-card">
+          <div class="visual-img-card">
             <img src="/assets/images/niacinamide-with-adapalene-tretinoin-india-og.jpg" alt="Clinical layering protocol combining niacinamide with adapalene and tretinoin for acne treatment" class="visual-img" loading="lazy">
-            <div class="visual-caption">Applying 5% Niacinamide before prescription retinoids reduces flaking and erythema by up to 60%.</div>
-          </nav>
+            <div class="visual-caption">Applying 5% Niacinamide 5 minutes before retinoids reduces peeling and flaking by up to 60%.</div>
+          </div>
         </div>
 
-        <!-- Targeted Layering Blueprint Cards -->
-        <div class="test-target-cards">
+        <!-- Notion Timeline Steps -->
+        <div class="notion-timeline">
           
-          <!-- Combo 1: Retinoids -->
-          <div class="test-target-card">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>🧬</span>
-                <h4>Pairing 1: Niacinamide + Retinoids (Adapalene 0.1% / Tretinoin 0.025%)</h4>
+          <!-- Step 1 -->
+          <div class="notion-step-item">
+            <div class="notion-step-num">01</div>
+            <div class="notion-step-body">
+              <div class="notion-step-header">
+                <h4>Morning Routine (AM) &middot; Defense &amp; Mark Fading</h4>
+                <span class="notion-pill-tag tag-orange">Every Morning</span>
               </div>
-              <span class="test-price-badge">🛡️ Dermatologist Gold Standard Synergy</span>
-            </div>
-            <div class="test-target-grid">
-              <div class="test-spec-item">
-                <span class="test-spec-label">🎯 Why This Pair Works</span>
-                <span class="test-spec-value">Retinoids increase skin cell turnover but frequently cause peeling, burning, and red flaking. Niacinamide stimulates ceramide production, directly shielding against retinoid dermatitis.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⚡ Clinical Impact</span>
-                <span class="test-spec-value"><strong>Cuts retinoid peeling by 60%</strong>. Allows patients to escalate to nightly retinoid application 4 weeks earlier without barrier breakdown.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">📈 Exact Application Sequence</span>
-                <span class="test-spec-value">Wash face &rarr; Apply 5% Niacinamide &rarr; Wait 5 minutes until fully dry &rarr; Apply pea-sized Adapalene or Tretinoin &rarr; Ceramide moisturizer.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⏱ Best Timing</span>
-                <span class="test-spec-value">Evening (PM) routine only. Retinoids degrade in morning sunlight.</span>
-              </div>
+              <p class="notion-step-desc">
+                <strong>Gentle Cleanser &rarr; 5% Niacinamide (2–3 drops patted in) &rarr; Light Gel Moisturizer &rarr; SPF 50 Sunscreen.</strong><br>
+                Niacinamide acts as an antioxidant shield against urban pollution (PM 2.5) and blocks melanosome transfer, while daily sunscreen prevents UV from triggering melanin production.
+              </p>
             </div>
           </div>
 
-          <!-- Combo 2: Vitamin C -->
-          <div class="test-target-card">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>☀️</span>
-                <h4>Pairing 2: Niacinamide + Vitamin C (L-Ascorbic Acid vs Derivatives)</h4>
+          <!-- Step 2 -->
+          <div class="notion-step-item">
+            <div class="notion-step-num">02</div>
+            <div class="notion-step-body">
+              <div class="notion-step-header">
+                <h4>Evening Routine A (PM) &middot; Retinoid Buffering Night</h4>
+                <span class="notion-pill-tag tag-blue">3–4 Nights Weekly</span>
               </div>
-              <span class="test-price-badge">Debunking the 1960s Myth</span>
-            </div>
-            <div class="test-target-grid">
-              <div class="test-spec-item">
-                <span class="test-spec-label">🎯 The Science</span>
-                <span class="test-spec-value">The old myth that Vitamin C and Niacinamide cancel each other out stems from a 1960s test-tube study using unbuffered chemicals boiled at 120°C. In modern skin formulations, they are completely compatible.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⚡ Clinical Impact</span>
-                <span class="test-spec-value">Forms an antioxidant power shield against urban pollution (PM 2.5) and ultraviolet radiation. Accelerates fading of stubborn brown sun spots.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">📈 Exact Application Sequence</span>
-                <span class="test-spec-value">If using pure L-Ascorbic Acid (low pH): apply Vitamin C first, wait 2 minutes, then apply Niacinamide. If skin is sensitive, split them: Vitamin C in the AM, Niacinamide in the PM.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⏱ Best Timing</span>
-                <span class="test-spec-value">Morning (AM) routine under daily broad-spectrum SPF 50 sunscreen.</span>
-              </div>
+              <p class="notion-step-desc">
+                <strong>Cleanser &rarr; 4% to 5% Niacinamide (Wait 5 min until dry) &rarr; Pea-sized Adapalene 0.1% or Tretinoin 0.025% &rarr; Ceramide Cream.</strong><br>
+                Pre-buffering with niacinamide boosts stratum corneum ceramides, preventing the dreaded "retinoid uglies" (raw peeling, stinging, and redness).
+              </p>
             </div>
           </div>
 
-          <!-- Combo 3: Salicylic Acid -->
-          <div class="test-target-card">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>🌪️</span>
-                <h4>Pairing 3: Niacinamide + Salicylic Acid (2% BHA)</h4>
+          <!-- Step 3 -->
+          <div class="notion-step-item">
+            <div class="notion-step-num">03</div>
+            <div class="notion-step-body">
+              <div class="notion-step-header">
+                <h4>Evening Routine B (PM) &middot; BHA Blackhead Exfoliation Night</h4>
+                <span class="notion-pill-tag tag-green">2 Nights Weekly</span>
               </div>
-              <span class="test-price-badge">The Pores &amp; Blackheads Power Duo</span>
-            </div>
-            <div class="test-target-grid">
-              <div class="test-spec-item">
-                <span class="test-spec-label">🎯 Why This Pair Works</span>
-                <span class="test-spec-value">Salicylic Acid is oil-soluble—it flows directly into oily pore linings to dissolve dead keratinocytes and sticky sebum. Niacinamide follows behind to soothe redness and normalize oil flow.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⚡ Clinical Impact</span>
-                <span class="test-spec-value"><strong>Reduces visible pore clogging and blackheads by 74%</strong> within 6 weeks without the rebound oiliness typical of BHA alone.</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">📈 Exact Application Sequence</span>
-                <span class="test-spec-value">Apply BHA toner/serum 2–3 nights weekly &rarr; follow with 5% Niacinamide serum &rarr; light gel moisturizer. (Or use pre-blended Apex Sebogel).</span>
-              </div>
-              <div class="test-spec-item">
-                <span class="test-spec-label">⏱ Best Timing</span>
-                <span class="test-spec-value">Evening (PM) routine 2 to 3 times weekly.</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Compatibility Guide Table -->
-        <div class="acne-table-wrapper">
-          <table class="acne-table">
-            <thead>
-              <tr>
-                <th>Active Ingredient</th>
-                <th>Compatible?</th>
-                <th>Best Routine</th>
-                <th>Wait Time</th>
-                <th>Key Precaution</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-label="Active"><strong>Adapalene / Tretinoin</strong></td>
-                <td data-label="Compatible"><span class="table-target-badge">Highly Compatible (Synergistic)</span></td>
-                <td data-label="Routine">PM: Niacinamide first, then Retinoid</td>
-                <td data-label="Wait Time">5 minutes until dry</td>
-                <td data-label="Precaution">Never skip moisturizer on sensitive skin.</td>
-              </tr>
-              <tr>
-                <td data-label="Active"><strong>Salicylic Acid (BHA)</strong></td>
-                <td data-label="Compatible"><span class="table-target-badge">Highly Compatible</span></td>
-                <td data-label="Routine">PM: BHA first &rarr; Niacinamide</td>
-                <td data-label="Wait Time">2 minutes</td>
-                <td data-label="Precaution">Limit BHA to 3 nights weekly to avoid dryness.</td>
-              </tr>
-              <tr>
-                <td data-label="Active"><strong>Azelaic Acid (10–15%)</strong></td>
-                <td data-label="Compatible"><span class="table-target-badge">Outstanding for PIH / Rosacea</span></td>
-                <td data-label="Routine">AM or PM: Niacinamide &rarr; Azelaic</td>
-                <td data-label="Wait Time">1–2 minutes</td>
-                <td data-label="Precaution">Use 5% niacinamide to prevent tingling.</td>
-              </tr>
-              <tr>
-                <td data-label="Active"><strong>Pure Vitamin C (LAA)</strong></td>
-                <td data-label="Compatible"><span class="table-target-badge">Compatible (Split AM/PM if sensitive)</span></td>
-                <td data-label="Routine">AM: Vit C first, or Vit C AM / Niac PM</td>
-                <td data-label="Wait Time">3–5 minutes</td>
-                <td data-label="Precaution">Low pH can cause temporary flushing on sensitive skin.</td>
-              </tr>
-              <tr>
-                <td data-label="Active"><strong>Benzoyl Peroxide (2.5%)</strong></td>
-                <td data-label="Compatible"><span class="table-target-badge">Compatible (Great Buffer)</span></td>
-                <td data-label="Routine">AM or PM: Niacinamide &rarr; BPO gel</td>
-                <td data-label="Wait Time">3 minutes</td>
-                <td data-label="Precaution">BPO bleaches colored pillowcases and clothing.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- Module 7: 6 Critical Mistakes Indian Patients Make -->
-      <section class="section-card" id="mistakes-to-avoid">
-        <nav class="section-eyebrow">AVOID THESE PITFALLS</nav>
-        <h2>6 Critical Mistakes Indian Patients Make with Niacinamide</h2>
-        <p>Even the best serum will fail or cause breakouts if applied incorrectly. Avoid these six widespread missteps:</p>
-
-        <div class="test-target-cards">
-          
-          <div class="test-target-card" style="border-left-color: var(--danger);">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>❌</span>
-                <h4>Mistake 1: Starting Straight with 10% or 20% Concentrations</h4>
-              </div>
-              <span class="test-warning-badge">Overloads Skin Receptors</span>
-            </div>
-            <div class="test-spec-value">
-              Influenced by social media ads, beginners often jump directly to 10% or 20% formulas. This causes immediate barrier irritation, contact dermatitis, and pustular breakouts. <strong>The Fix:</strong> Always start with a gentle, clinically proven 5% serum (such as Minimalist 5% or Niamax D).
-            </div>
-          </div>
-
-          <div class="test-target-card" style="border-left-color: var(--danger);">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>❌</span>
-                <h4>Mistake 2: Storing Serums on Sunny Indian Windowsills or Hot Bathrooms</h4>
-              </div>
-              <span class="test-warning-badge">Triggers Chemical Hydrolysis</span>
-            </div>
-            <div class="test-spec-value">
-              When niacinamide is stored in hot Indian rooms (>35°C) or exposed to direct sunlight, it hydrolyzes into free nicotinic acid (niacin). Applying this degraded serum causes intense capillary flushing and burning redness. <strong>The Fix:</strong> Keep your serum in a cool, dark drawer below 25°C.
-            </div>
-          </div>
-
-          <div class="test-target-card" style="border-left-color: var(--danger);">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>❌</span>
-                <h4>Mistake 3: Rubbing Vigorously Until It Foams and Pills</h4>
-              </div>
-              <span class="test-warning-badge">Causes White Residue &amp; Flakes</span>
-            </div>
-            <div class="test-spec-value">
-              Rubbing niacinamide serums into the skin vigorously agitates the xanthan gum or cellulose thickeners, causing the product to turn into a white soapy froth and pill into rubbery flakes under sunscreen. <strong>The Fix:</strong> Dispense 2–3 drops onto your fingers and pat or press gently into skin.
-            </div>
-          </div>
-
-          <div class="test-target-card" style="border-left-color: var(--danger);">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>❌</span>
-                <h4>Mistake 4: Believing in the "Purge" and Pushing Through Chemical Burns</h4>
-              </div>
-              <span class="test-warning-badge">Permanent PIH Stains</span>
-            </div>
-            <div class="test-spec-value">
-              Continuing to apply serum while your face is itchy, stinging, and covered in tiny red bumps will not "clear out toxins." It breaks down your epidermal stratum corneum, creating dark brown hyperpigmentation marks. <strong>The Fix:</strong> Discontinue immediately if red itchy bumps emerge.
-            </div>
-          </div>
-
-          <div class="test-target-card" style="border-left-color: var(--danger);">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>❌</span>
-                <h4>Mistake 5: Accidental "Mega-Dosing" from Layering Multiple Products</h4>
-              </div>
-              <span class="test-warning-badge">Hidden 15%+ Overdose</span>
-            </div>
-            <div class="test-spec-value">
-              Because niacinamide is trendy, brands put it into everything: cleansers, toners, serums, moisturizers, and sunscreens. Layering 4 different niacinamide products creates an accidental cumulative dose of 15%+, causing chronic low-grade barrier stress. <strong>The Fix:</strong> Keep niacinamide in only ONE dedicated serum or moisturizer step.
-            </div>
-          </div>
-
-          <div class="test-target-card" style="border-left-color: var(--danger);">
-            <div class="test-target-header">
-              <div class="test-target-title">
-                <span>❌</span>
-                <h4>Mistake 6: Skipping Daily Sunscreen Because "Niacinamide Fades Marks"</h4>
-              </div>
-              <span class="test-warning-badge">Negates All Progress</span>
-            </div>
-            <div class="test-spec-value">
-              Niacinamide blocks melanosome transfer, but UV rays from the Indian sun trigger melanin production at the factory level. Skipping sunscreen allows UV to overpower niacinamide's blockade. <strong>The Fix:</strong> Apply a broad-spectrum SPF 50 PA++++ sunscreen every single morning without exception.
+              <p class="notion-step-desc">
+                <strong>Cleanser &rarr; Apex Sebogel (2% BHA + 6% Niacinamide) thin layer on oily zones &rarr; Light Moisturizer.</strong><br>
+                Salicylic acid dissolves oil plugs inside pore linings while niacinamide keeps inflammation down. Never layer retinoids on the same night as BHA.
+              </p>
             </div>
           </div>
 
         </div>
       </section>
 
-      <!-- Competitor UI Element 2: Bento Qualification Matrix -->
-      <nav class="qualification-container" id="who-this-is-for" aria-label="Qualification Matrix">
-        <div class="qualification-header">
-          <nav class="section-eyebrow">CLINICAL TRIAGE MATRIX</nav>
-          <h2>Who Niacinamide Is For vs When You Need Prescription Care</h2>
-          <p>Find out whether a topical niacinamide serum is sufficient for your skin concerns, or if underlying medical acne care is required.</p>
+      <!-- Section 7: Summer & Storage Protocol for India -->
+      <section class="section-block" id="summer-rules">
+        <span class="section-tag">CLIMATE ADAPTATION</span>
+        <h2>The Indian Summer Protocol: Heat, Storage &amp; Frothing</h2>
+        
+        <div class="notion-callout notion-callout-warn">
+          <span class="notion-callout-icon">☀️</span>
+          <div class="notion-callout-body">
+            <strong>Why Serums Turn Into Burning Chemicals in Indian Summers:</strong>
+            <p>During peak summer (April to July) across North and Central India, indoor temperatures routinely exceed 35°C to 40°C. When a niacinamide serum is stored on a sunny windowsill or in a hot bathroom, the amide bond undergoes hydrolysis, converting into <strong>free nicotinic acid</strong>. Applying hydrolyzed serum triggers severe capillary dilation, burning, and red splotches.</p>
+          </div>
         </div>
-        <div class="qual-grid">
 
-          <!-- FOR YOU -->
-          <div class="qual-card qual-for">
-            <span class="qual-tag">✓ THIS GUIDE &amp; SERUM IS FOR YOU IF</span>
-            <ul class="qual-list">
-              <li>
-                <span class="bullet">✓</span>
-                <span><strong>Oily T-Zone &amp; Stretched Pores:</strong> You experience heavy midday forehead and nose shine in humid Indian weather and want to normalize sebum without stripping moisture.</span>
-              </li>
-              <li>
-                <span class="bullet">✓</span>
-                <span><strong>Post-Acne Dark Marks:</strong> You have stubborn brown spots (PIH) or lingering red/pink marks (PIE) left behind after pimples resolve.</span>
-              </li>
-              <li>
-                <span class="bullet">✓</span>
-                <span><strong>Retinoid Irritation:</strong> You are using adapalene or tretinoin and struggling with peeling, flaking, redness, and compromised barrier function.</span>
-              </li>
-              <li>
-                <span class="bullet">✓</span>
-                <span><strong>Looking for Budget Pharmacy Care:</strong> You want clinically proven, dermatologist-trusted Indian formulations (like Sebogel or Niamax D) under ₹350 rather than overpriced imported brands.</span>
-              </li>
-              <li>
-                <span class="bullet">✓</span>
-                <span><strong>Sensitive or Red Skin:</strong> You cannot tolerate strong exfoliating acids (glycolic or high-strength salicylic acid) and need a gentle active that calms inflammation.</span>
-              </li>
-            </ul>
+        <div class="notion-bento-grid">
+          
+          <div class="notion-card">
+            <span class="notion-card-title">❄️ Safe Storage Rule</span>
+            <div class="notion-props">
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Location</span>
+                <span class="notion-prop-val">Store inside a dark bedroom drawer or cupboard below 25°C.</span>
+              </div>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Never</span>
+                <span class="notion-prop-val">Never leave on a bathroom sill, car glove compartment, or direct sunlight.</span>
+              </div>
+            </div>
           </div>
 
-          <!-- NOT FOR YOU -->
-          <div class="qual-card qual-not">
-            <span class="qual-tag">✕ THIS IS NOT SUFFICIENT / SUITABLE IF</span>
-            <ul class="qual-list">
-              <li>
-                <span class="bullet">✕</span>
-                <span><strong>Severe Nodulocystic Acne:</strong> You have deep, painful, fluid-filled cystic lumps along your jawline. These require oral isotretinoin or prescription anti-androgens, not topical cosmetic serums.</span>
-              </li>
-              <li>
-                <span class="bullet">✕</span>
-                <span><strong>Hormonal PCOS Acne:</strong> Your breakouts flare predictably before irregular periods alongside excess facial hair. You need an internal endocrine panel (LH, FSH, Free Testosterone) and metabolic evaluation.</span>
-              </li>
-              <li>
-                <span class="bullet">✕</span>
-                <span><strong>Active Fungal Acne Flare:</strong> You have uniform itchy forehead bumps (Malassezia folliculitis) and your serum contains polysorbates, ferments, or plant oils that feed fungal yeast.</span>
-              </li>
-              <li>
-                <span class="bullet">✕</span>
-                <span><strong>You Expect Overnight Eradication:</strong> Niacinamide works at the cellular enzyme level over 4 to 8 weeks. It is not an overnight chemical bleaching cream.</span>
-              </li>
-              <li>
-                <span class="bullet">✕</span>
-                <span><strong>Known Niacinamide Allergy:</strong> You have a medically diagnosed hypersensitivity to topical nicotinamide and experience systemic hives or contact dermatitis even with 2% formulations.</span>
-              </li>
-            </ul>
+          <div class="notion-card">
+            <span class="notion-card-title">💧 The "Pat Don't Rub" Technique</span>
+            <div class="notion-props">
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Why Froth?</span>
+                <span class="notion-prop-val">Vigorous rubbing agitates xanthan gum thickeners into a white foam.</span>
+              </div>
+              <div class="notion-prop-item">
+                <span class="notion-prop-name">Correct</span>
+                <span class="notion-prop-val">Dispense 2–3 drops onto fingertips and press gently into skin. Zero pilling.</span>
+              </div>
+            </div>
           </div>
 
         </div>
-      </nav>
+      </section>
 
-      <!-- Competitor UI Element 3: Interactive FAQ Accordion -->
-      <nav class="faq-container" id="faq-section" aria-label="Frequently Asked Questions">
-        <div class="faq-header">
-          <nav class="section-eyebrow">DERMATOLOGIST Q&amp;A</nav>
-          <h2>Frequently Asked Questions on Niacinamide for Indian Skin</h2>
-          <p>Clear, direct answers reviewed by board-certified dermatologists.</p>
-        </div>
-        <div class="faq-accordion">
+      <!-- Section 8: Notion-Style Toggle FAQ Accordion -->
+      <section class="section-block" id="faqs">
+        <span class="section-tag">EXPERT ANSWERS</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Direct dermatological guidance on using niacinamide on Indian skin:</p>
 
-          <details class="faq-item">
-            <summary>
-              <span>How long does it take for a 5% niacinamide serum to fade dark acne marks in India?</span>
-              <span class="faq-toggle-icon">+</span>
-            </summary>
-            <div class="faq-content">
-              <p>For Indian Fitzpatrick skin types (IV–VI), clinical trials show that 5% niacinamide reduces post-inflammatory hyperpigmentation (PIH) by 35% to 68% over 6 to 8 weeks of daily morning and evening use. Fresh red marks (PIE) fade even faster—typically within 3 to 4 weeks—when paired with strict daily broad-spectrum SPF 50 sunscreen.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>
-              <span>Can I use niacinamide serum every single day, or does my skin need a rest?</span>
-              <span class="faq-toggle-icon">+</span>
-            </summary>
-            <div class="faq-content">
-              <p>At physiological concentrations of 2% to 5%, niacinamide is a restorative, non-acidic cellular nutrient that can be used twice daily (morning and evening) 365 days a year. It does not cause sun sensitivity or thin the skin barrier. However, if you are using an unbuffered 10% formula, limit application to once daily or 3 nights a week to avoid barrier irritation.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>
-              <span>Why does my niacinamide serum turn white or start frothing when I rub it on my face?</span>
-              <span class="faq-toggle-icon">+</span>
-            </summary>
-            <div class="faq-content">
-              <p>Frothing or white foaming happens when high-molecular-weight thickeners (such as xanthan gum or hydroxyethylcellulose) in the serum mix with skin surface friction and residual dampness. It does not mean the product has gone bad. To prevent frothing, dispense 2 to 3 drops onto your fingertips and pat or press gently into your skin instead of rubbing vigorously.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>
-              <span>Is niacinamide safe to use during pregnancy and breastfeeding in India?</span>
-              <span class="faq-toggle-icon">+</span>
-            </summary>
-            <div class="faq-content">
-              <p>Yes. Topical niacinamide (Vitamin B3) is rated Pregnancy Category B and is widely recommended by dermatologists as a completely safe alternative to retinoids and salicylic acid for managing pregnancy acne, facial oiliness, and melasma.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>
-              <span>Can I use niacinamide serum if I have active fungal acne (Malassezia folliculitis)?</span>
-              <span class="faq-toggle-icon">+</span>
-            </summary>
-            <div class="faq-content">
-              <p>Yes, pure niacinamide powder itself does not feed Malassezia yeast. However, you must carefully audit the inactive vehicle ingredients in the serum. Avoid formulas containing polysorbates (Polysorbate 20, 60, 80), fatty acid esters, galactomyces ferment filtrates, or natural botanical oils that fuel fungal yeast growth.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>
-              <span>Why does my skin flush bright red and sting after applying a 10% serum in hot weather?</span>
-              <span class="faq-toggle-icon">+</span>
-            </summary>
-            <div class="faq-content">
-              <p>When 10% niacinamide is exposed to high ambient heat (>35°C) and humidity typical of Indian summers, a portion of the molecule hydrolyzes into free nicotinic acid (niacin). Nicotinic acid binds directly to GPR109A receptors on facial blood vessels, causing sudden, dramatic capillary dilation (flushing), intense warmth, and prickling redness. Switching to a stable 5% formula prevents this reaction.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>
-              <span>Is pharmacy Sebogel better than Minimalist 5% or The Ordinary 10%?</span>
-              <span class="faq-toggle-icon">+</span>
-            </summary>
-            <div class="faq-content">
-              <p>It depends on your primary skin concern. For oily, congested skin with active blackheads and whiteheads, Apex Sebogel (₹240) combines 2% salicylic acid with 6% niacinamide to actively unclog pores. For sensitive, dry-to-combination, or mark-prone skin, Minimalist 5% (₹599) is superior because it builds the barrier without acid exfoliation. The Ordinary 10% is potent but frequently causes pilling and flushing in hot Indian climates.</p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>
-              <span>Can niacinamide shrink my enlarged facial pores permanently?</span>
-              <span class="faq-toggle-icon">+</span>
-            </summary>
-            <div class="faq-content">
-              <p>Pore size is largely determined by genetics and collagen architecture, so no topical ingredient can permanently erase pores. However, niacinamide visually tightens stretched pores by up to 40% by normalizing sebum flow, preventing sticky oil plugs from stretching the follicular wall, and boosting surrounding collagen elasticity.</p>
-            </div>
-          </details>
-
-        </div>
-      </nav>
-
-      <!-- Collapsed SEO & Clinical Reference Deep-Dive Section -->
-      <section class="seo-deep-dive-card" id="clinical-deep-dive">
-        <details class="deep-dive-details">
+        <details class="notion-toggle-item">
           <summary>
-            <div class="deep-dive-summary-inner">
-              <span class="deep-dive-tag">📚 Advanced Dermatological Pharmacology</span>
-              <h3 class="deep-dive-title">Molecular Mechanisms, Kinetics &amp; Clinical Trial Citations</h3>
-              <p class="deep-dive-subtitle">Click to view comprehensive biochemical pathways, GPR109A receptor dynamics, and peer-reviewed trials.</p>
-            </div>
-            <span class="deep-dive-toggle-icon">▼</span>
+            <span>How long does it take for 5% niacinamide to fade dark acne marks in India?</span>
+            <span class="notion-toggle-arrow">▶</span>
           </summary>
-          <div class="deep-dive-body">
-            <h4>1. Molecular Coenzyme Cascades (NAD+ / NADH Synthesis)</h4>
-            <p>Niacinamide (nicotinamide, pyridine-3-carboxamide) serves as an essential precursor in the salvage pathway for the synthesis of nicotinamide adenine dinucleotide (NAD+) and nicotinamide adenine dinucleotide phosphate (NADP+). Within human epidermal keratinocytes, nicotinamide phosphoribosyltransferase (NAMPT) catalyzes the condensation of nicotinamide with 5-phosphoribosyl-1-pyrophosphate to produce nicotinamide mononucleotide (NMN), which is subsequently adenylated by NMNAT enzymes into NAD+. Elevated intracellular NAD+ pools fuel Poly(ADP-ribose) polymerases (PARPs) and sirtuins (SIRT1), enhancing genomic DNA repair following ultraviolet (UVB) damage and maintaining epidermal bioenergetics under environmental stress.</p>
-
-            <h4>2. The Nicotinic Acid Hydrolysis Kinetics &amp; GPR109A Flushing Pathway</h4>
-            <p>In hot and humid tropical climates (ambient temperatures exceeding 35°C, common during Indian summers), high-concentration aqueous formulations (10% to 20%) undergo base-catalyzed hydrolysis of the amide functional group, converting nicotinamide into free nicotinic acid (niacin). When applied to facial skin, free nicotinic acid binds with high affinity to G-protein coupled receptor 109A (GPR109A, hydroxycarboxylic acid receptor 2 / HCAR2) located on epidermal Langerhans cells and dermal vascular endothelial cells. Receptor activation stimulates cytosolic phospholipase A2 (cPLA2), liberating arachidonic acid and precipitating rapid synthesis of prostaglandin D2 (PGD2) and prostaglandin E2 (PGE2). These prostaglandins bind to DP1 and EP2/EP4 vascular receptors, inducing immediate cutaneous vasodilation, intense erythema (flushing), and transient burning sensation commonly mistaken for allergic contact dermatitis.</p>
-
-            <h4>3. Melanosome Transfer Blockade Mechanisms (Hakozaki et al. Protocols)</h4>
-            <p>Unlike hydroquinone or kojic acid, which act by competitively inhibiting the rate-limiting enzyme tyrosinase, niacinamide exerts zero inhibitory effect on tyrosinase catalytic activity or melanin synthesis inside human melanocytes. Instead, pioneering in-vitro and clinical trials by Hakozaki et al. (British Journal of Dermatology, 2002) demonstrated that 2% to 5% niacinamide inhibits the physical dendritic transfer of mature stage-IV melanosomes from melanocytes into surrounding keratinocytes by 35% to 68%. This mechanism is mediated via downregulation of the protease-activated receptor 2 (PAR-2) cleavage pathway. Consequently, pigment remains compartmentalized and undergoes natural intracellular degradation, making niacinamide uniquely safe for Fitzpatrick skin types IV–VI without risk of post-inflammatory hypopigmentation or exogenous ochronosis.</p>
-
-            <h4>4. Epidermal Sphingolipid &amp; Ceramide Upregulation</h4>
-            <p>Double-blind clinical evaluations by Gehring (2004) and Bissett et al. (2005) established that topical application of 2% to 5% niacinamide stimulates de-novo synthesis of total ceramides (specifically ceramide 1, 3, and 6-II), glucosylceramides, and free fatty acids in human stratum corneum. This effect is driven by the transcriptional upregulation of serine palmitoyltransferase (SPT), the rate-limiting enzyme in de-novo sphingolipid biosynthesis. In clinical corneometry assessments, this results in a sustained 27% reduction in Transepidermal Water Loss (TEWL) and significantly elevated stratum corneum hydration compared to vehicle control.</p>
-
-            <h4>5. Sebocyte Lipogenesis &amp; PPAR-&gamma; Regulation</h4>
-            <p>Draelos et al. (Journal of Cosmetic and Laser Therapy, 2006) demonstrated that topical 2% to 4% niacinamide significantly lowers sebum excretion rates (SER) and casual sebum levels in adult subjects over a 4-week evaluation period. Mechanistically, niacinamide modulates peroxisome proliferator-activated receptor gamma (PPAR-&gamma;) and downregulates sterol regulatory element-binding protein-1c (SREBP-1c) in sebocytes. This blunts de-novo lipogenesis, reduces the proportion of comedogenic wax esters and squalene peroxides, and prevents follicular infundibulum hyperkeratinization.</p>
-
-            <h4>6. Retinoid Synergy &amp; Tolerability Optimization</h4>
-            <p>Co-administration of 4% to 5% niacinamide alongside topical retinoids (such as adapalene 0.1% or tretinoin 0.025%) provides marked clinical synergy. Topical retinoids disrupt the stratum corneum during early therapeutic phases by accelerating desquamation and downregulating desmoglein-1, producing erythema and xerosis. Pre-treatment with niacinamide fortifies intercellular lamellar bilayer architecture and upregulates filaggrin synthesis, mitigating retinoid-induced barrier impairment by up to 60% while permitting unhindered retinoid receptor (RAR/RXR) activation within follicular keratinocytes.</p>
+          <div class="notion-toggle-content">
+            <p>For Indian Fitzpatrick skin types (IV–VI), clinical trials show that 5% niacinamide reduces post-inflammatory hyperpigmentation (PIH) by 35% to 68% over 6 to 8 weeks of daily morning and evening use. Fresh red marks (PIE) fade even faster—typically within 3 to 4 weeks—when paired with strict daily broad-spectrum SPF 50 sunscreen.</p>
           </div>
         </details>
+
+        <details class="notion-toggle-item">
+          <summary>
+            <span>Can I use niacinamide serum every single day, or does my skin need a rest?</span>
+            <span class="notion-toggle-arrow">▶</span>
+          </summary>
+          <div class="notion-toggle-content">
+            <p>At physiological concentrations of 2% to 5%, niacinamide is a restorative, non-acidic cellular nutrient that can be used twice daily (morning and evening) 365 days a year. It does not cause sun sensitivity or thin the skin barrier. However, if you are using an unbuffered 10% formula, limit application to once daily or 3 nights a week to avoid barrier irritation.</p>
+          </div>
+        </details>
+
+        <details class="notion-toggle-item">
+          <summary>
+            <span>Why does my niacinamide serum turn white or start frothing when I rub it on my face?</span>
+            <span class="notion-toggle-arrow">▶</span>
+          </summary>
+          <div class="notion-toggle-content">
+            <p>Frothing or white foaming happens when high-molecular-weight thickeners (such as xanthan gum or hydroxyethylcellulose) in the serum mix with skin surface friction and residual dampness. It does not mean the product has gone bad. To prevent frothing, dispense 2 to 3 drops onto your fingertips and pat or press gently into your skin instead of rubbing vigorously.</p>
+          </div>
+        </details>
+
+        <details class="notion-toggle-item">
+          <summary>
+            <span>Is niacinamide safe to use during pregnancy and breastfeeding in India?</span>
+            <span class="notion-toggle-arrow">▶</span>
+          </summary>
+          <div class="notion-toggle-content">
+            <p>Yes. Topical niacinamide (Vitamin B3) is rated Pregnancy Category B and is widely recommended by dermatologists as a completely safe alternative to retinoids and salicylic acid for managing pregnancy acne, facial oiliness, and melasma.</p>
+          </div>
+        </details>
+
+        <details class="notion-toggle-item">
+          <summary>
+            <span>Can I use niacinamide serum if I have active fungal acne (Malassezia folliculitis)?</span>
+            <span class="notion-toggle-arrow">▶</span>
+          </summary>
+          <div class="notion-toggle-content">
+            <p>Yes, pure niacinamide powder itself does not feed Malassezia yeast. However, you must carefully audit the inactive vehicle ingredients in the serum. Avoid formulas containing polysorbates (Polysorbate 20, 60, 80), fatty acid esters, galactomyces ferment filtrates, or natural botanical oils that fuel fungal yeast growth.</p>
+          </div>
+        </details>
+
+        <details class="notion-toggle-item">
+          <summary>
+            <span>Why does my skin flush bright red and sting after applying a 10% serum in hot weather?</span>
+            <span class="notion-toggle-arrow">▶</span>
+          </summary>
+          <div class="notion-toggle-content">
+            <p>When 10% niacinamide is exposed to high ambient heat (>35°C) and humidity typical of Indian summers, a portion of the molecule hydrolyzes into free nicotinic acid (niacin). Nicotinic acid binds directly to GPR109A receptors on facial blood vessels, causing sudden, dramatic capillary dilation (flushing), intense warmth, and prickling redness. Switching to a stable 5% formula prevents this reaction.</p>
+          </div>
+        </details>
+
+        <details class="notion-toggle-item">
+          <summary>
+            <span>Is pharmacy Sebogel better than Minimalist 5% or The Ordinary 10%?</span>
+            <span class="notion-toggle-arrow">▶</span>
+          </summary>
+          <div class="notion-toggle-content">
+            <p>It depends on your primary skin concern. For oily, congested skin with active blackheads and whiteheads, Apex Sebogel (₹240) combines 2% salicylic acid with 6% niacinamide to actively unclog pores. For sensitive, dry-to-combination, or mark-prone skin, Minimalist 5% (₹599) is superior because it builds the barrier without acid exfoliation. The Ordinary 10% is potent but frequently causes pilling and flushing in hot Indian climates.</p>
+          </div>
+        </details>
+
+        <details class="notion-toggle-item">
+          <summary>
+            <span>Can niacinamide shrink my enlarged facial pores permanently?</span>
+            <span class="notion-toggle-arrow">▶</span>
+          </summary>
+          <div class="notion-toggle-content">
+            <p>Pore size is largely determined by genetics and collagen architecture, so no topical ingredient can permanently erase pores. However, niacinamide visually tightens stretched pores by up to 40% by normalizing sebum flow, preventing sticky oil plugs from stretching the follicular wall, and boosting surrounding collagen elasticity.</p>
+          </div>
+        </details>
+
       </section>
 
     </main>
 
-    <!-- Floating Sticky Action Sidebar -->
-    <nav class="sidebar-wrapper" aria-label="Sidebar Navigation">
+    <!-- Floating Sticky Sidebar -->
+    <nav class="sidebar-wrapper" aria-label="Sidebar Actions">
 
       <!-- Fast Clinical Rules Card -->
       <div class="sidebar-card">
-        <h3 class="sidebar-card-title">⚡ Fast Clinical Rules</h3>
-        <ul class="sidebar-checklist">
+        <h3 class="sidebar-card-title">⚡ Clinical Cheat Sheet</h3>
+        <ul class="sidebar-list">
           <li>
-            <strong>5% is the Dermatological Maximum</strong>
-            2% to 5% provides 100% of barrier and pigment benefits without the flushing risk of 10%.
+            <strong>5% is the Upper Limit</strong>
+            Clinical plateau is reached at 5%. 10% increases summer flushing without adding alpha.
           </li>
           <li>
-            <strong>Never Suffer a "Purge"</strong>
-            Niacinamide lacks exfoliating acids. Itchy red bumps mean barrier irritation; stop immediately.
+            <strong>Never Tolerate a "Purge"</strong>
+            Niacinamide lacks acid exfoliation. Itchy bumps mean barrier irritation; pause use immediately.
           </li>
           <li>
-            <strong>Pat Gently, Do Not Rub</strong>
-            Vigorous rubbing causes cosmetic thickeners to turn into white foam and pill under sunscreen.
+            <strong>Pat, Don't Rub</strong>
+            Eliminates white frothing and rubbery pilling under morning sunscreen.
           </li>
           <li>
-            <strong>Store Away from Heat (&lt;25°C)</strong>
-            Indian summer heat hydrolyzes 10% formulas into nicotinic acid, causing intense burning flush.
-          </li>
-          <li>
-            <strong>Pair with Daily SPF 50</strong>
-            UV radiation triggers melanin factories. Niacinamide cannot stop pigment if UV is unblocked.
+            <strong>Store Below 25°C</strong>
+            Indian summer heat hydrolyzes aqueous formulas into flushing-inducing nicotinic acid.
           </li>
         </ul>
       </div>
 
-      <!-- Indian Pharmacy Quick Picks -->
+      <!-- Quick Pharmacy Price Guide -->
       <div class="sidebar-card">
-        <h3 class="sidebar-card-title">💊 Pharmacy Quick Picks</h3>
-        <ul class="sidebar-checklist">
+        <h3 class="sidebar-card-title">💊 Pharmacy Quick Index</h3>
+        <ul class="sidebar-list">
           <li>
             <strong>Apex Sebogel (₹240)</strong>
-            2% Salicylic + 6% Niacinamide for oily acne and blackheads.
+            6% Niacinamide + 2% BHA for active blackheads.
           </li>
           <li>
             <strong>Niamax D Gel (₹320)</strong>
-            4% Niacinamide + D-Panthenol for sensitive barrier repair.
+            4% Niacinamide + Panthenol for retinoid buffering.
           </li>
           <li>
             <strong>Minimalist 5% (₹599)</strong>
-            Gold-standard daily OTC serum with Bifida ferment.
+            Bifida ferment serum for post-acne marks.
           </li>
         </ul>
       </div>
 
-      <!-- Consultation CTA Card -->
+      <!-- Dermatology Consultation Card -->
       <div class="sidebar-consult-card">
         <h3>Dermatology Consult</h3>
         <p>Unsure which niacinamide formulation matches your acne grade? Get an AI scan reviewed by board-certified dermatologists.</p>
@@ -2776,7 +1727,7 @@
       let scrollTimeout;
       function onScroll() {
         if (isClickScrolling) return;
-        const scrollPosition = window.scrollY + 140;
+        const scrollPosition = window.scrollY + 130;
         let currentItem = navItems[0];
 
         for (let i = 0; i < navItems.length; i++) {
@@ -2803,7 +1754,6 @@
         }
       }, { passive: true });
 
-      // Run on initial load
       onScroll();
     });
   </script>
