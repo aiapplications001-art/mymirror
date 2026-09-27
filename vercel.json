@@ -1471,7 +1471,17 @@
       "permanent": true
     },
     {
+      "source": "/acne/indian-acne-diet-guide/checklist",
+      "destination": "/acne/hormonal-acne-diet-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/indian-acne-diet-guide/checklist.html",
+      "destination": "/acne/hormonal-acne-diet-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/indian-acne-diet-guide/checklist/",
       "destination": "/acne/hormonal-acne-diet-india/",
       "permanent": true
     },
