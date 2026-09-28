@@ -1656,6 +1656,16 @@
       "permanent": true
     },
     {
+      "source": "/acne/minimalist-acne-routine",
+      "destination": "/acne/acne-routine-under-500-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/minimalist-acne-routine/",
+      "destination": "/acne/acne-routine-under-500-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/minimalist-vs-skinvest-vs-derma-co-hypochlorous-acid-spray-india",
       "destination": "/acne/hypochlorous-acid-spray-for-acne-india/",
       "permanent": true
@@ -2286,6 +2296,16 @@
       "permanent": true
     },
     {
+      "source": "/acne/student-acne-routine-under-1000",
+      "destination": "/acne/acne-routine-under-500-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/student-acne-routine-under-1000/",
+      "destination": "/acne/acne-routine-under-500-india/",
+      "permanent": true
+    },
+    {
       "source": "/acne/sunscreen-for-acne-prone-skin-india",
       "destination": "/acne/best-sunscreen-for-acne-prone-skin-india/",
       "permanent": true
@@ -2293,6 +2313,16 @@
     {
       "source": "/acne/sunscreen-for-acne-prone-skin-india/",
       "destination": "/acne/best-sunscreen-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/teen-acne-routine-under-500",
+      "destination": "/acne/acne-routine-under-500-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/teen-acne-routine-under-500/",
+      "destination": "/acne/acne-routine-under-500-india/",
       "permanent": true
     },
     {
@@ -2453,6 +2483,16 @@
     {
       "source": "/acne/vitamin-deficiency-acne-tests-india/",
       "destination": "/acne/blood-tests-for-acne-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/why-teenagers-get-acne",
+      "destination": "/acne/teenage-acne-india-parents-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/why-teenagers-get-acne/",
+      "destination": "/acne/teenage-acne-india-parents-guide/",
       "permanent": true
     },
     {
