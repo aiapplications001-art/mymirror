@@ -82,17 +82,40 @@
     .nav-links { display: flex; gap: 1.5rem; list-style: none; }
     .nav-links a { font-size: 13px; font-weight: 600; color: var(--txt2); text-decoration: none; }
     .nav-links a:hover { color: var(--brand); }
-    .hero { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 3.5rem 2rem; text-align: center; }
-    .hero-inner { max-width: 860px; margin: 0 auto; }
-    .hero-tag {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: var(--brand-light); color: var(--brand-dark);
-      font-size: 11px; font-weight: 800; letter-spacing: 0.06em;
-      text-transform: uppercase; padding: 5px 14px; border-radius: 9999px;
-      margin-bottom: 1.25rem;
+    
+    /* 2-Column Hero Layout */
+    .hero { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 3rem 1.5rem; text-align: left; }
+    .hero-container { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: 1.18fr 0.82fr; gap: 2.5rem; align-items: center; }
+    .hero-content { min-width: 0; }
+    .hero-tag { display: inline-flex; align-items: center; gap: 6px; background: var(--brand-light); color: var(--brand-dark); font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 14px; border-radius: 9999px; margin-bottom: 1rem; }
+    .hero h1 { font-family: 'Kantumruy Pro', serif; font-size: clamp(1.85rem, 3.2vw, 2.6rem); font-weight: 700; line-height: 1.25; margin-bottom: 1rem; color: var(--txt); }
+    .hero-sub { color: var(--txt2); font-size: 1.05rem; line-height: 1.65; margin-bottom: 1.25rem; }
+    .hero-actions { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+    .hero-media { display: flex; align-items: center; justify-content: center; }
+    .hero-image-box { width: 100%; max-width: 480px; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 32px rgba(45,35,30,0.12); border: 1px solid var(--border); background: #fff; aspect-ratio: 4 / 3; }
+    .hero-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    /* Pocket-Money Pharmacy Routine Step Cards */
+    .section-lead { font-size: 15px; line-height: 1.7; color: var(--txt2); margin-bottom: 1.5rem; }
+    .routine-steps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0; }
+    .routine-step-card { background: #FFFFFF; border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; display: flex; flex-direction: column; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
+    .routine-step-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+    .step-visual { background: radial-gradient(circle at center, #F8F5F2 0%, #FFFFFF 70%); border-radius: 12px; height: 190px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; padding: 12px; border: 1px solid rgba(232, 221, 213, 0.5); }
+    .step-product-img { max-height: 100%; max-width: 100%; height: auto; width: auto; object-fit: contain; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.08)); transition: transform 0.25s ease; }
+    .routine-step-card:hover .step-product-img { transform: scale(1.05); }
+    .step-tag { display: inline-block; padding: 4px 10px; border-radius: 99px; font-size: 11px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; background: #F3EBE5; color: var(--brand-dark); margin-bottom: 0.6rem; width: fit-content; }
+    .step-details h3 { font-size: 1.05rem; line-height: 1.45; font-weight: 700; color: var(--txt); margin: 0 0 0.6rem 0; }
+    .step-details p { font-size: 13.5px; line-height: 1.65; color: var(--txt2); margin-bottom: 0; }
+
+    @media (max-width: 860px) {
+      .hero { padding: 2.5rem 1rem; text-align: center; }
+      .hero-container { grid-template-columns: 1fr; gap: 2rem; }
+      .hero-actions { justify-content: center; }
+      .hero-image-box { margin: 0 auto; max-width: 400px; }
+      .routine-steps-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+      .step-visual { height: 170px; }
     }
-    h1 { font-family: 'Kantumruy Pro', serif; font-size: clamp(2rem, 3.8vw, 2.85rem); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; color: var(--txt); }
-    .hero-sub { color: var(--txt2); font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.5rem; }
+
     .face-ai-btn {
       display: inline-flex; align-items: center; justify-content: center;
       background: var(--brand); color: #fff; padding: 14px 34px;
@@ -276,13 +299,22 @@
 </header>
 
 <section class="hero">
-<div class="hero-inner">
-<span class="hero-tag">Clinical Adolescent Manual</span>
-<h1>Why Teenagers Get Acne: Pubertal Hormones, Student Triggers &amp; Clinical Care</h1>
-<p class="hero-sub">Authoritative pediatric dermatology protocol investigating pubertal adrenarche, androgen-mediated sebocyte lipogenesis, board exam stress, and affordable Indian pharmacy skincare routines.</p>
-<a class="face-ai-btn" href="https://mymirror.fit/scan/">Run Clinical Adolescent Acne Diagnostic Scan</a>
-<p style="color:var(--txt3);font-size:0.85rem;margin-top:0.8rem;">Quantitative contact dermoscopy evaluates infundibular follicular plugging, microbial colonization, and post-inflammatory hyperpigmentation in 60 seconds.</p>
-</div>
+  <div class="hero-container">
+    <div class="hero-content">
+      <span class="hero-tag">Clinical Adolescent Manual</span>
+      <h1>Why Teenagers Get Acne: Pubertal Hormones, Student Triggers &amp; Clinical Care</h1>
+      <p class="hero-sub">Teenage breakouts are driven by pubertal hormones, exam stress, and sweat—never poor hygiene. This guide explains why adolescent acne occurs and details affordable Indian pharmacy routines under INR 500 to 1000.</p>
+      <div class="hero-actions">
+        <a class="face-ai-btn" href="https://mymirror.fit/scan/">Run Clinical Adolescent Acne Diagnostic Scan</a>
+      </div>
+      <p style="color:var(--txt3);font-size:0.85rem;margin-top:0.8rem;">Clinical dermoscopy assesses facial microcomedones, follicular plugging, and post-inflammatory hyperpigmentation in 60 seconds.</p>
+    </div>
+    <div class="hero-media">
+      <div class="hero-image-box">
+        <img src="/assets/images/teen-acne-hero.webp" alt="Indian teenager with clear healthy skin" class="hero-img" width="480" height="360" loading="eager"/>
+      </div>
+    </div>
+  </div>
 </section>
 
 <div class="toc-bar">
@@ -409,9 +441,52 @@
 <!-- SECTION 5: STEPWISE PHARMACY ROUTINE -->
 <section class="content-section" id="routine">
 <h2>The Pocket-Money Pharmacy Routine: Stepwise Skincare Under INR 500 to 1000</h2>
+<p class="section-lead">In outpatient dermatological practice across India, board-certified dermatologists prescribe short-contact bactericidal washes to eliminate deep follicular Cutibacterium acnes colonization while avoiding textile bleaching:</p>
+<div class="routine-steps-grid">
+<div class="routine-step-card">
+  <div class="step-visual">
+    <img src="/assets/images/perobar-clean-cutout.webp" alt="Perobar 2.5% Soap Bar" class="step-product-img"/>
+  </div>
+  <div class="step-details">
+    <div class="step-tag">Step 1 &bull; Active Cleansing</div>
+    <h3>Applying a 2.5% to 5% benzoyl peroxide wash (Perobar 2.5% bar, INR 140 to 195)</h3>
+    <p>with a three-minute active contact latency induces rapid lipoperoxidation of bacterial cell membranes without selecting for resistant strains. For comedonal and hyperkeratotic facial lesions, patients incorporate a 2% salicylic acid wash (Saslic DS wash, INR 290 to 440 per bottle) to dissolve oxidized squalene and desquamate cohesive corneocyte plugs.</p>
+  </div>
+</div>
 
-<p>In outpatient dermatological practice across India, board-certified dermatologists prescribe short-contact bactericidal washes to eliminate deep follicular Cutibacterium acnes colonization while avoiding textile bleaching. Applying a 2.5% to 5% benzoyl peroxide wash (Perobar 2.5% bar, INR 140 to 195) with a three-minute active contact latency induces rapid lipoperoxidation of bacterial cell membranes without selecting for resistant strains. For comedonal and hyperkeratotic facial lesions, patients incorporate a 2% salicylic acid wash (Saslic DS wash, INR 290 to 440 per bottle) to dissolve oxidized squalene and desquamate cohesive corneocyte plugs. Nighttime topical retinoid therapy utilizes adapalene 0.1% microsphere gel (Deriva-MS, INR 280 to 380 per 15g tube), which selectively binds nuclear retinoic acid receptors (RAR-beta and RAR-gamma) within follicular infundibula, downregulating toll-like receptor 2 (TLR-2) and suppressing post-inflammatory hyperpigmentation. Following therapeutic cleansing, applying a physiological 3:1:1 multi-lamellar ceramide emulsion (Cipla Excela Max, INR 480 to 540 per 50g) reinforces intercellular lipid bilayers, maintaining transepidermal water loss below 12 g/m²/h across the delicate facial skin plane. Clinical protocols demonstrate high compliance when incorporating ceramide moisturizers alongside active washes.</p>
+<div class="routine-step-card">
+  <div class="step-visual">
+    <img src="/assets/images/deriva-ms-clean-cutout.webp" alt="Deriva-MS Adapalene Gel" class="step-product-img"/>
+  </div>
+  <div class="step-details">
+    <div class="step-tag">Step 2 &bull; PM Retinoid Therapy</div>
+    <h3>Nighttime topical retinoid therapy utilizes adapalene 0.1% microsphere gel (Deriva-MS, INR 280 to 380 per 15g tube),</h3>
+    <p>which selectively binds nuclear retinoic acid receptors (RAR-beta and RAR-gamma) within follicular infundibula, downregulating toll-like receptor 2 (TLR-2) and suppressing post-inflammatory hyperpigmentation.</p>
+  </div>
+</div>
 
+<div class="routine-step-card">
+  <div class="step-visual">
+    <img src="/assets/images/excela-clean-cutout.webp" alt="Cipla Excela Max Emulsion" class="step-product-img"/>
+  </div>
+  <div class="step-details">
+    <div class="step-tag">Step 3 &bull; Barrier Hydration</div>
+    <h3>Following therapeutic cleansing, applying a physiological 3:1:1 multi-lamellar ceramide emulsion (Cipla Excela Max, INR 480 to 540 per 50g)</h3>
+    <p>reinforces intercellular lipid bilayers, maintaining transepidermal water loss below 12 g/m²/h across the delicate facial skin plane.</p>
+  </div>
+</div>
+
+<div class="routine-step-card">
+  <div class="step-visual">
+    <img src="/assets/images/la-shield-clean-cutout.webp" alt="La Shield SPF 50 Sunscreen" class="step-product-img"/>
+  </div>
+  <div class="step-details">
+    <div class="step-tag">Step 4 &bull; AM Photoprotection</div>
+    <h3>Daily broad-spectrum sunscreen protects against ultraviolet radiation and marks.</h3>
+    <p>Clinical protocols demonstrate high compliance when incorporating ceramide moisturizers alongside active washes.</p>
+  </div>
+</div>
+</div>
 </section>
 
 <!-- SECTION 6: SHOPPING MATRIX -->
