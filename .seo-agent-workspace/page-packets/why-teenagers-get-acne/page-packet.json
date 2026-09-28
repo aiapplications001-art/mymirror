@@ -1,0 +1,47 @@
+{
+  "slug": "why-teenagers-get-acne",
+  "title": "Why Teenagers Get Acne: Pubertal Hormones, Student Triggers & Clinical Care in India",
+  "meta_description": "Comprehensive clinical guide to teenage acne in India: pubertal adrenarche, board exam stress, sweaty uniforms, diet swaps, and dermatologist pharmacy routines under ₹500 - ₹1000.",
+  "canonical_url": "https://mymirror.fit/acne/why-teenagers-get-acne/",
+  "keywords": [
+    "why teenagers get acne",
+    "teenage acne treatment india",
+    "puberty pimples causes and solutions",
+    "teen acne routine under 500 inr",
+    "exam stress acne students india",
+    "teenage acne parents guide india",
+    "adapalene for teenage acne india",
+    "benzoyl peroxide 2.5 percent teen acne"
+  ],
+  "internal_links": [
+    {
+      "anchor": "Clinical Classification of Acne Types",
+      "url": "/acne/types-of-acne/"
+    },
+    {
+      "anchor": "Forehead Acne & Hair Oil Guide",
+      "url": "/acne/forehead-acne/"
+    },
+    {
+      "anchor": "Teen Acne Routine Under ₹500",
+      "url": "/acne/acne-routine-under-500-india/"
+    },
+    {
+      "anchor": "Best Pimple Patch in India",
+      "url": "/acne/best-pimple-patch-india/"
+    }
+  ],
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Why Teenagers Get Acne: Pubertal Hormones, Student Triggers & Clinical Care in India",
+    "description": "Comprehensive clinical pediatric dermatology manual evaluating adolescent endocrine drivers, student lifestyle triggers, parental red flags, and affordable Indian pharmacy skincare protocols.",
+    "reviewedBy": {
+      "@type": "Person",
+      "name": "Dr. Lipy Mehta",
+      "jobTitle": "Board-Certified Dermatologist"
+    },
+    "url": "https://mymirror.fit/acne/why-teenagers-get-acne/",
+    "image": "https://mymirror.fit/assets/images/why-teenagers-get-acne-og.jpg"
+  }
+}
