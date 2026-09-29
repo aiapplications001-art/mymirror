@@ -1846,23 +1846,13 @@
       "permanent": true
     },
     {
-      "source": "/acne/nodule-cyst",
-      "destination": "/acne/cystic-chin-pimple/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/nodule-cyst/",
-      "destination": "/acne/cystic-chin-pimple/",
-      "permanent": true
-    },
-    {
       "source": "/acne/nodule-vs-cyst",
-      "destination": "/acne/cystic-chin-pimple/",
+      "destination": "/acne/nodule-cyst/",
       "permanent": true
     },
     {
       "source": "/acne/nodule-vs-cyst/",
-      "destination": "/acne/cystic-chin-pimple/",
+      "destination": "/acne/nodule-cyst/",
       "permanent": true
     },
     {
