@@ -2624,6 +2624,16 @@
       "source": "/pigmentation/uneven-skin-tone-on-face-causes-treatment-india/",
       "destination": "/pigmentation/dermatologist-treatments-uneven-face-skin-india/",
       "permanent": true
+    },
+    {
+      "source": "/acne/types-of-pimples-on-face-identification-guide-india",
+      "destination": "/acne/types-of-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/types-of-pimples-on-face-identification-guide-india/",
+      "destination": "/acne/types-of-acne/",
+      "permanent": true
     }
   ],
   "rewrites": [
