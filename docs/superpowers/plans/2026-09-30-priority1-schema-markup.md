@@ -66,17 +66,17 @@ Run: `python3 scratch/inject_schemas_43.py`
 - Deploy: `git push mymirror main`
 - Indexing: `python3 submit_indexing.py`
 
-- [ ] **Step 1: Run schema validation test suite**
+- [x] **Step 1: Run schema validation test suite**
 Run: `python3 scratch/test_schemas_43.py`
 Expected: PASS (43/43 valid schemas).
-- [ ] **Step 2: Verify git diff and commit**
+- [x] **Step 2: Verify git diff and commit**
 ```bash
 git add acne/ index.html privacy/ scan/ terms/ face-map*.html
 git commit -m "feat(seo): inject comprehensive MedicalWebPage, BreadcrumbList, and E-E-A-T schemas on 43 core pages"
 ```
-- [ ] **Step 3: Push changes to main branch**
+- [x] **Step 3: Push changes to main branch**
 Run: `git push mymirror main`
-- [ ] **Step 4: Submit priority updated pages to Google Indexing API**
+- [x] **Step 4: Submit priority updated pages to Google Indexing API**
 Run: `python3 submit_indexing.py`
-- [ ] **Step 5: Verify live edge response on Vercel**
+- [x] **Step 5: Verify live edge response on Vercel**
 Verify that live HTML served by Vercel edge contains valid JSON-LD schemas.
