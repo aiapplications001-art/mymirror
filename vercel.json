@@ -1,6 +1,86 @@
 {
   "redirects": [
     {
+      "source": "/acne/back-acne-mumbai",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/back-acne-mumbai/",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/back-acne-delhi",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/back-acne-delhi/",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/back-acne-bangalore",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/back-acne-bangalore/",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/back-acne-bengaluru",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/back-acne-bengaluru/",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/back-acne-pune",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/back-acne-pune/",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/back-acne-hyderabad",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/back-acne-hyderabad/",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/back-acne-chennai",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/back-acne-chennai/",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/back-acne-kolkata",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/back-acne-kolkata/",
+      "destination": "/acne/back-acne/",
+      "permanent": true
+    },
+    {
       "source": "/acne/accutane-usa",
       "destination": "/acne/isotretinoin-10mg-20mg-acne-india/",
       "permanent": true
