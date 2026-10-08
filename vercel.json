@@ -12,12 +12,12 @@
     },
     {
       "source": "/contact",
-      "destination": "/#faq",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/contact/",
-      "destination": "/#faq",
+      "destination": "/",
       "permanent": true
     },
     {
@@ -878,16 +878,6 @@
     {
       "source": "/hyperpigmentation/hydroquinone-risks/",
       "destination": "/pigmentation/hydroquinone-2-vs-4-percent-melasma-ochronosis-india/",
-      "permanent": true
-    },
-    {
-      "source": "/indian-acne-diet-guide/https://mymirror.fit/acne/hormonal-acne-diet-india",
-      "destination": "/acne/hormonal-acne-diet-india/",
-      "permanent": true
-    },
-    {
-      "source": "/indian-acne-diet-guide/https://mymirror.fit/acne/hormonal-acne-diet-india/",
-      "destination": "/acne/hormonal-acne-diet-india/",
       "permanent": true
     },
     {
