@@ -223,7 +223,7 @@
 
     /* Sticky TOC Bar */
     .toc-bar { background: var(--bg); border-bottom: 1px solid var(--border); position: sticky; top: 64px; z-index: 900; overflow-x: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
-    .toc-inner { max-width: 1140px; margin: 0 auto; display: flex; padding: 0 1rem; }
+    .toc-inner { max-width: 1140px; margin: 0 auto; display: flex; justify-content: center; align-items: center; padding: 0 1rem; }
     .toc-link { white-space: nowrap; font-size: 13.5px; font-weight: 700; color: var(--text-3); text-decoration: none; padding: 14px 16px; border-bottom: 3px solid transparent; display: flex; align-items: center; gap: 8px; transition: all 0.2s; }
     .toc-link:hover, .toc-link.active { color: var(--brand); border-bottom-color: var(--brand); }
     .toc-num { background: var(--brand); color: #fff; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; }
@@ -260,13 +260,108 @@
     .bento-card h4 { font-size: 1.15rem; margin-top: 0; margin-bottom: 0.5rem; }
     .bento-card p { font-size: 15px; margin-bottom: 0; }
 
-    /* Tables */
-    .table-wrap { overflow-x: auto; margin: 2rem 0; border: 1px solid var(--border); border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.03); }
-    table { width: 100%; border-collapse: collapse; text-align: left; font-size: 15.5px; }
-    th { background: var(--bg-2); padding: 14px 16px; font-weight: 800; font-size: 14px; text-transform: uppercase; letter-spacing: 0.03em; border-bottom: 2px solid var(--border); color: var(--text); }
-    td { padding: 13px 16px; border-bottom: 1px solid var(--border); color: var(--text-2); vertical-align: top; }
+    /* Enhanced Tables */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 2.25rem 0;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(26,20,16,0.05);
+      background: var(--bg);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 14.5px;
+      min-width: 640px;
+    }
+    th {
+      background: #261C14;
+      color: #FFFFFF;
+      padding: 14px 16px;
+      font-family: 'Kantumruy Pro', serif;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-bottom: 2px solid #1A1410;
+      white-space: nowrap;
+    }
+    td {
+      padding: 15px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-2);
+      vertical-align: top;
+      line-height: 1.6;
+    }
     tr:last-child td { border-bottom: none; }
-    tr:hover td { background: rgba(236,97,14,0.03); }
+    tr:hover td { background: rgba(236,97,14,0.02); }
+    td strong { color: var(--text); }
+    .table-title { display: block; font-size: 15px; font-weight: 800; color: var(--text); line-height: 1.3; }
+    .brand-sub { display: block; font-size: 12px; font-weight: 600; color: var(--text-3); margin-top: 3px; }
+    .price-pill { display: inline-flex; font-size: 12.5px; font-weight: 800; color: var(--text); background: var(--bg-2); padding: 4px 10px; border-radius: 8px; border: 1px solid var(--border); white-space: nowrap; }
+    .badge-blue { background: #DBEAFE; color: #1D4ED8; }
+
+    @media (min-width: 769px) {
+      td:first-child { background: #FDFCFB; border-right: 1px solid var(--border); }
+      th:first-child { border-right: 1px solid #3D312A; }
+    }
+
+    @media (max-width: 768px) {
+      .table-wrap {
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        margin: 1.5rem 0;
+        overflow: visible;
+      }
+      table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100% !important;
+        min-width: 0 !important;
+      }
+      thead {
+        display: none;
+      }
+      tr {
+        background: #FFFFFF !important;
+        border: 2px solid var(--border) !important;
+        border-radius: 16px !important;
+        padding: 16px !important;
+        margin-bottom: 18px;
+        box-shadow: 0 4px 16px rgba(26,20,16,0.04) !important;
+      }
+      td {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 9px 0;
+        border-bottom: 1px solid var(--bg-3);
+        text-align: left;
+      }
+      td:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      tr td:first-child {
+        border-bottom: 2px solid var(--border);
+        padding-top: 0;
+        padding-bottom: 10px;
+        margin-bottom: 6px;
+      }
+      tr td:first-child::before {
+        display: none !important;
+      }
+      td::before {
+        content: attr(data-label);
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--text-3);
+        font-weight: 800;
+      }
+    }
 
     /* Badges */
     .badge { display: inline-flex; align-items: center; gap: 4px; font-size: 11.5px; font-weight: 800; padding: 3px 10px; border-radius: 9999px; text-transform: uppercase; letter-spacing: 0.04em; }
@@ -589,46 +684,46 @@
         <table>
           <thead>
             <tr>
-              <th>Lesion Subtype</th>
-              <th>Anatomical Depth</th>
-              <th>Pus / Fluid Sac</th>
-              <th>Pain &amp; Texture</th>
-              <th>Safe to Extract?</th>
-              <th>Gold-Standard Clinical Protocol</th>
+              <th>Chin Bump Type</th>
+              <th>Depth in Skin</th>
+              <th>Has a Visible Head / Pus?</th>
+              <th>How It Feels &amp; Looks</th>
+              <th>Safe to Pop or Squeeze?</th>
+              <th>Recommended Clinical Protocol</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>True Acne Cyst</strong></td>
-              <td>Deep Lower Dermis (2–3mm)</td>
-              <td>Yes (Enclosed fluid/pus sac)</td>
-              <td>Throbbing, fluctuating soft dome</td>
-              <td><span class="badge badge-red">❌ Never</span></td>
-              <td>Ice freeze + Benzoyl Peroxide 2.5% SCT or ILK injection</td>
+              <td data-label="Chin Bump Type"><strong class="table-title">True Acne Cyst</strong><span class="brand-sub">Closed deep fluid sac</span></td>
+              <td data-label="Depth in Skin">Deep Lower Dermis (2–3mm under surface)</td>
+              <td data-label="Visible Head / Pus?"><span class="badge badge-purple">Yes (Enclosed Fluid Sac)</span><span style="font-size:12.5px; color:var(--text-3); display:block; margin-top:3px;">No surface exit or whitehead</span></td>
+              <td data-label="How It Feels &amp; Looks">Throbbing, tender, soft dome that feels squishy or fluid-filled under the skin</td>
+              <td data-label="Safe to Pop?"><span class="badge badge-red">❌ Never (Zero Exit Pore)</span><span style="font-size:12px; color:var(--danger); display:block; margin-top:4px;">Squeezing ruptures the sac sideways into surrounding tissue, causing severe scarring and deep dark marks (PIH).</span></td>
+              <td data-label="Recommended Protocol"><strong>Cold Ice Compress (5 mins)</strong> + <strong>Benzoyl Peroxide 2.5%</strong> short-contact therapy. For sudden large cysts, see a dermatologist for an in-clinic cortisone shot.</td>
             </tr>
             <tr>
-              <td><strong>Inflammatory Nodule</strong></td>
-              <td>Deep Dermis &amp; Hypodermis</td>
-              <td>No (Solid cellular knot)</td>
-              <td>Hard, stone-like tender lump</td>
-              <td><span class="badge badge-red">❌ Never</span></td>
-              <td>Oral Anti-androgens / Isotretinoin / Azelaic 15%</td>
+              <td data-label="Chin Bump Type"><strong class="table-title">Acne Nodule</strong><span class="brand-sub">Hard solid cellular knot</span></td>
+              <td data-label="Depth in Skin">Deep Dermis &amp; Hypodermis (3–4mm)</td>
+              <td data-label="Visible Head / Pus?"><span class="badge badge-orange">No Fluid Sac</span><span style="font-size:12.5px; color:var(--text-3); display:block; margin-top:3px;">Solid knot of inflammatory cells</span></td>
+              <td data-label="How It Feels &amp; Looks">Hard, stone-like tender lump with no soft center; deeply painful when touched</td>
+              <td data-label="Safe to Pop?"><span class="badge badge-red">❌ Never (Zero Fluid to Drain)</span><span style="font-size:12px; color:var(--danger); display:block; margin-top:4px;">Pinching damages skin tissue and cartilage without draining anything.</span></td>
+              <td data-label="Recommended Protocol"><strong>Azelaic Acid 15%–20%</strong> at night + warm salt compress. For recurring nodules, doctor-prescribed oral anti-androgens or low-dose Isotretinoin.</td>
             </tr>
             <tr>
-              <td><strong>Inflamed Pustule / Papule</strong></td>
-              <td>Superficial Epidermis (&lt;1mm)</td>
-              <td>Yes (Visible yellow/white head)</td>
-              <td>Mild surface tenderness</td>
-              <td><span class="badge badge-orange">⚠️ Hydrocolloid Only</span></td>
-              <td>Salicylic Acid 2% BHA + Microdart patch</td>
+              <td data-label="Chin Bump Type"><strong class="table-title">Regular Pimple (Pustule)</strong><span class="brand-sub">Surface whitehead</span></td>
+              <td data-label="Depth in Skin">Superficial Epidermis (&lt;1mm)</td>
+              <td data-label="Visible Head / Pus?"><span class="badge badge-green">Yes (Visible Head)</span><span style="font-size:12.5px; color:var(--text-3); display:block; margin-top:3px;">Yellow or white center at surface</span></td>
+              <td data-label="How It Feels &amp; Looks">Mild surface redness and tenderness; clearly visible raised whitehead or pink bump</td>
+              <td data-label="Safe to Pop?"><span class="badge badge-orange">⚠️ Hydrocolloid Patch Only</span><span style="font-size:12px; color:var(--text-3); display:block; margin-top:4px;">Never squeeze with bare fingers; apply a hydrocolloid patch to safely absorb pus overnight.</span></td>
+              <td data-label="Recommended Protocol"><strong>Salicylic Acid 2% (BHA)</strong> spot gel + <strong>Microdart / Hydrocolloid Patch</strong> to flatten overnight without scarring.</td>
             </tr>
             <tr>
-              <td><strong>Pityrosporum Folliculitis</strong></td>
-              <td>Superficial Hair Follicle</td>
-              <td>Tiny uniform papules</td>
-              <td>Itchy, no central head</td>
-              <td><span class="badge badge-red">❌ Never</span></td>
-              <td>Ketoconazole 2% Wash (Antifungal, not anti-bacterial)</td>
+              <td data-label="Chin Bump Type"><strong class="table-title">Fungal Acne (Folliculitis)</strong><span class="brand-sub">Yeast-driven follicle bumps</span></td>
+              <td data-label="Depth in Skin">Superficial Hair Follicle</td>
+              <td data-label="Visible Head / Pus?"><span class="badge badge-blue">Tiny Uniform Bumps</span><span style="font-size:12.5px; color:var(--text-3); display:block; margin-top:3px;">Clusters of 1–2mm itchy bumps</span></td>
+              <td data-label="How It Feels &amp; Looks">Consistently itchy, uniform small pink bumps with no central head; flares in humid, sweaty weather</td>
+              <td data-label="Safe to Pop?"><span class="badge badge-red">❌ Never (Spreads Yeast)</span><span style="font-size:12px; color:var(--danger); display:block; margin-top:4px;">Squeezing spreads fungal spores into adjacent follicles.</span></td>
+              <td data-label="Recommended Protocol"><strong>2% Ketoconazole Wash</strong> (lather for 3–5 mins, 2x weekly). Standard bacterial acne washes (benzoyl peroxide) won't work on fungal yeast.</td>
             </tr>
           </tbody>
         </table>
@@ -910,51 +1005,51 @@
               <th>Active Molecule</th>
               <th>When to Reach for It</th>
               <th>Typical Price</th>
-              <th>Doctor's Clinical Take</th>
+              <th>Doctor's Clinical Take &amp; How to Use</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>Persol AC 2.5% Gel</strong> (Wallace)</td>
-              <td>Benzoyl Peroxide 2.5%</td>
-              <td>Fresh, red throbbing bump</td>
-              <td>₹180–220</td>
-              <td>Our go-to bacterial killer. Dab a pea-size amount on the bump for 20 minutes as short-contact therapy to save your pillowcases from bleaching.</td>
+              <td data-label="Treatment &amp; Brand"><strong class="table-title">Persol AC 2.5% Gel</strong><span class="brand-sub">Wallace Pharmaceuticals · Spot Gel</span></td>
+              <td data-label="Active Molecule"><span class="badge badge-orange">Benzoyl Peroxide 2.5%</span></td>
+              <td data-label="When to Reach for It"><strong>Fresh, red throbbing bump</strong><span style="font-size:12.5px; color:var(--text-3); display:block; margin-top:2px;">Rapid bacterial kill &amp; acute swelling reduction</span></td>
+              <td data-label="Typical Price"><span class="price-pill">₹180–₹220</span></td>
+              <td data-label="Doctor's Clinical Take">Our top topical pick for active cysts. Use as <strong>Short-Contact Therapy (SCT)</strong>: dab a pea-sized dot directly onto the bump, leave on for 15–20 minutes, then rinse off. This kills bacteria effectively without irritating your skin barrier or bleaching pillowcases.</td>
             </tr>
             <tr>
-              <td><strong>Aziderm 15% / 20% Gel</strong> (Micro Labs)</td>
-              <td>Azelaic Acid 15%</td>
-              <td>Swelling &amp; dark spot defense</td>
-              <td>₹280–360</td>
-              <td>Ideal for Indian skin tones. It dials down localized redness while stopping melanocytes from dumping stubborn brown pigment into the dermis.</td>
+              <td data-label="Treatment &amp; Brand"><strong class="table-title">Aziderm 15% / 20% Gel</strong><span class="brand-sub">Micro Labs · Treatment Gel</span></td>
+              <td data-label="Active Molecule"><span class="badge badge-purple">Azelaic Acid 15%–20%</span></td>
+              <td data-label="When to Reach for It"><strong>Swelling &amp; Dark Spot (PIH) Defense</strong><span style="font-size:12.5px; color:var(--text-3); display:block; margin-top:2px;">Stops post-acne dark marks on Indian skin</span></td>
+              <td data-label="Typical Price"><span class="price-pill">₹280–₹360</span></td>
+              <td data-label="Doctor's Clinical Take">Gold standard for Indian skin tones. It dials down localized redness and deep swelling while preventing hyper-reactive pigment cells from dumping stubborn brown pigment (PIH) into the skin. Apply a thin layer across the chin at night.</td>
             </tr>
             <tr>
-              <td><strong>Adaferin 0.1% Gel</strong> (Galderma)</td>
-              <td>Adapalene 0.1%</td>
-              <td>Long-term pore unclogging</td>
-              <td>₹280–340</td>
-              <td>A gentle third-generation retinoid that keeps sticky dead skin cells from gluing up the follicle collar, preventing repeat hormonal nodules.</td>
+              <td data-label="Treatment &amp; Brand"><strong class="table-title">Adaferin 0.1% Gel</strong><span class="brand-sub">Galderma / Sun Pharma · Night Gel</span></td>
+              <td data-label="Active Molecule"><span class="badge badge-green">Adapalene 0.1%</span></td>
+              <td data-label="When to Reach for It"><strong>Long-term pore unclogging</strong><span style="font-size:12.5px; color:var(--text-3); display:block; margin-top:2px;">Prevents repeat hormonal jawline cysts</span></td>
+              <td data-label="Typical Price"><span class="price-pill">₹280–₹340</span></td>
+              <td data-label="Doctor's Clinical Take">A gentle retinoid that keeps pores clear and speeds healthy cell renewal. Prevents sticky dead skin cells from gluing up pores, stopping repeat hormonal nodules from forming. Use 2–3 nights weekly on completely dry skin.</td>
             </tr>
             <tr>
-              <td><strong>Sebogel</strong> (Ad-Kare)</td>
-              <td>Salicylic 2% + Nicotinamide 6%</td>
-              <td>Daytime oil control &amp; redness</td>
-              <td>₹240–300</td>
-              <td>Niacinamide calms swelling around the jawline while salicylic acid dissolves oily debris along the rim of the pore.</td>
+              <td data-label="Treatment &amp; Brand"><strong class="table-title">Sebogel</strong><span class="brand-sub">Ad-Kare · Daytime Gel</span></td>
+              <td data-label="Active Molecule"><span class="badge badge-blue">Salicylic 2% + Nicotinamide 6%</span></td>
+              <td data-label="When to Reach for It"><strong>Daytime oil control &amp; redness</strong><span style="font-size:12.5px; color:var(--text-3); display:block; margin-top:2px;">Calms surface irritation without drying</span></td>
+              <td data-label="Typical Price"><span class="price-pill">₹240–₹300</span></td>
+              <td data-label="Doctor's Clinical Take">Excellent daytime spot gel. 6% Niacinamide calms swelling and strengthens the barrier around the jawline, while 2% Salicylic Acid clears oily debris along the pore rim. Apply before sunscreen.</td>
             </tr>
             <tr>
-              <td><strong>Micro-Tip Patches</strong> (Derma Co)</td>
-              <td>Hyaluronic + Salicylic Needles</td>
-              <td>Early blind bump with no head</td>
-              <td>₹450–550</td>
-              <td>Dissolving micro-pyramids physically deliver actives roughly 400 microns down toward the inflamed core overnight.</td>
+              <td data-label="Treatment &amp; Brand"><strong class="table-title">Micro-Dart Pimple Patches</strong><span class="brand-sub">The Derma Co / Sanfe · Overnight Patch</span></td>
+              <td data-label="Active Molecule"><span class="badge badge-orange">Dissolving Micro-Needles (HA + BHA)</span></td>
+              <td data-label="When to Reach for It"><strong>Early blind bump with no head</strong><span style="font-size:12.5px; color:var(--text-3); display:block; margin-top:2px;">Delivers actives deep into early inflammation</span></td>
+              <td data-label="Typical Price"><span class="price-pill">₹450–₹550</span></td>
+              <td data-label="Doctor's Clinical Take">Self-dissolving microscopic needles physically deliver anti-inflammatory actives roughly 400 microns down toward the inflamed core overnight. Also prevents you from touching or picking at the ache.</td>
             </tr>
             <tr>
-              <td><strong>Intralesional Cortisone Shot</strong></td>
-              <td>Diluted Triamcinolone Acetonide</td>
-              <td>Huge, throbbing emergency cyst</td>
-              <td>₹800–1,500 / shot</td>
-              <td>Performed in-clinic by a dermatologist. Shuts down acute inflammation and flattens a massive cyst within 24 to 48 hours without leaving a scar.</td>
+              <td data-label="Treatment &amp; Brand"><strong class="table-title">Cortisone Injection (ILK)</strong><span class="brand-sub">In-Clinic Procedure · Dermatologist Only</span></td>
+              <td data-label="Active Molecule"><span class="badge badge-red">Diluted Triamcinolone (Steroid)</span></td>
+              <td data-label="When to Reach for It"><strong>Huge, throbbing emergency cyst</strong><span style="font-size:12.5px; color:var(--text-3); display:block; margin-top:2px;">Fast pain relief &amp; scar prevention</span></td>
+              <td data-label="Typical Price"><span class="price-pill">₹800–₹1,500 / shot</span></td>
+              <td data-label="Doctor's Clinical Take">Emergency in-clinic treatment performed by a certified dermatologist. Shuts down acute inflammation and flattens a massive cyst within 24 to 48 hours without leaving a scar. Never attempt to drain or inject at home.</td>
             </tr>
           </tbody>
         </table>
