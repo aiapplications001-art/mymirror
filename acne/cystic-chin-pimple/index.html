@@ -201,25 +201,35 @@
     .nav-links a:hover { color: var(--brand); background: var(--bg-2); }
 
     /* Hero */
-    .hero { background: linear-gradient(135deg, #0A0D0F 0%, #171E24 100%); color: #fff; padding: 3.5rem 1.5rem 4rem; text-align: center; position: relative; }
-    .hero-inner { max-width: 860px; margin: 0 auto; }
-    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(236,97,14,0.18); border: 1px solid rgba(236,97,14,0.4); color: #FFB58A; font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 16px; border-radius: 9999px; margin-bottom: 1.25rem; }
-    .hero h1 { font-size: clamp(2.1rem, 4.5vw, 3.2rem); font-weight: 800; line-height: 1.15; margin-bottom: 1.25rem; letter-spacing: -0.03em; color: #FFFFFF; }
+    .hero { background: #FAF7F4; border-bottom: 1px solid var(--border); color: var(--text); padding: 3rem 1.5rem 3.5rem; text-align: center; position: relative; }
+    .hero-inner { max-width: 960px; margin: 0 auto; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--brand-light); border: 1px solid rgba(236,97,14,0.3); color: var(--brand-dark); font-size: 11.5px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 16px; border-radius: 9999px; margin-bottom: 1rem; }
+    .hero h1 { font-size: clamp(2rem, 4.2vw, 2.9rem); font-weight: 800; line-height: 1.18; margin-bottom: 0.85rem; letter-spacing: -0.03em; color: var(--text); font-family: 'Kantumruy Pro', serif; }
     .hero h1 span { color: var(--brand); }
-    .hero p { color: rgba(255,255,255,0.85); font-size: 1.15rem; line-height: 1.65; max-width: 740px; margin: 0 auto 1.5rem; }
+    .hero p.hero-subtext { color: var(--text-2); font-size: 1.05rem; line-height: 1.65; max-width: 760px; margin: 0 auto 1.75rem; }
+
+    /* Hero Takeaway Grid (Why It Forms & Clears + Best Product) */
+    .hero-takeaway-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 0 auto 2rem; text-align: left; }
+    .hero-takeaway-card { background: #FFFFFF; border: 1.5px solid var(--border); border-radius: 16px; padding: 1.5rem; box-shadow: 0 4px 18px rgba(26, 20, 16, 0.04); display: flex; flex-direction: column; }
+    .takeaway-badge { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--brand); margin-bottom: 0.5rem; }
+    .hero-takeaway-card h3 { font-family: 'Kantumruy Pro', serif; font-size: 1.22rem; font-weight: 700; color: var(--text); margin-bottom: 0.65rem; line-height: 1.35; }
+    .pharma-tag { font-size: 12px; font-weight: 600; color: var(--text-3); display: inline-block; }
+    .hero-takeaway-card p { font-size: 0.9rem; color: var(--text-2); line-height: 1.6; margin-bottom: 0.6rem; }
+    .hero-takeaway-card p:last-child { margin-bottom: 0; }
+    .hero-takeaway-list { list-style: none; padding: 0; margin: 0; font-size: 0.88rem; color: var(--text-2); display: flex; flex-direction: column; gap: 0.5rem; }
+    .hero-takeaway-list li { line-height: 1.55; position: relative; padding-left: 15px; }
+    .hero-takeaway-list li::before { content: '•'; position: absolute; left: 0; color: var(--brand); font-weight: bold; font-size: 14px; }
+    .hero-takeaway-list strong { color: var(--text); }
     
     .hero-cta-group { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 0.8rem; flex-wrap: wrap; }
-    .btn-hero-primary { background: var(--brand); color: #fff !important; font-size: 15px; font-weight: 800; padding: 14px 28px; border-radius: 9999px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.25s var(--ease); box-shadow: 0 6px 24px rgba(236,97,14,0.45); }
-    .btn-hero-primary:hover { background: var(--brand-dark); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(236,97,14,0.6); }
-    .btn-hero-secondary { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.22); color: #fff !important; font-size: 14px; font-weight: 700; padding: 13px 22px; border-radius: 9999px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: all 0.25s var(--ease); }
-    .btn-hero-secondary:hover { background: rgba(255,255,255,0.16); border-color: rgba(255,255,255,0.4); transform: translateY(-2px); }
-    .hero-cta-subtext { font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 2rem; }
-
-    .hero-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 2rem; }
-    .hero-chip { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #fff; font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 9999px; }
+    .btn-hero-primary { background: var(--brand); color: #fff !important; font-size: 15px; font-weight: 800; padding: 14px 28px; border-radius: 9999px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.25s var(--ease); box-shadow: 0 6px 24px rgba(236,97,14,0.35); }
+    .btn-hero-primary:hover { background: var(--brand-dark); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(236,97,14,0.5); }
+    .btn-hero-secondary { background: #FFFFFF; border: 1.5px solid var(--border); color: var(--text) !important; font-size: 14px; font-weight: 700; padding: 13px 22px; border-radius: 9999px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: all 0.25s var(--ease); box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+    .btn-hero-secondary:hover { background: var(--bg-2); border-color: var(--brand); color: var(--brand) !important; transform: translateY(-2px); }
+    .hero-cta-subtext { font-size: 13px; color: var(--text-3); margin-bottom: 1.75rem; }
 
     /* Meta Row */
-    .meta-row { display: flex; align-items: center; justify-content: center; gap: 1.5rem; font-size: 13px; color: rgba(255,255,255,0.7); flex-wrap: wrap; }
+    .meta-row { display: flex; align-items: center; justify-content: center; gap: 1.5rem; font-size: 13px; color: var(--text-3); flex-wrap: wrap; }
 
     /* Sticky TOC Bar */
     .toc-bar { background: var(--bg); border-bottom: 1px solid var(--border); position: sticky; top: 64px; z-index: 900; overflow-x: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
@@ -538,7 +548,7 @@
     @media (max-width: 900px) {
       .page-body { grid-template-columns: 1fr; padding: 2.5rem 1rem; }
       .sidebar { display: none; }
-      .bento-grid, .product-grid, .flip-grid, .footer-grid, .quick-answer-grid { grid-template-columns: 1fr; }
+      .bento-grid, .product-grid, .flip-grid, .footer-grid, .quick-answer-grid, .hero-takeaway-grid { grid-template-columns: 1fr; }
       .flip-card { height: 520px; }
       .hero-cta-group { flex-direction: column; width: 100%; gap: 10px; }
       .btn-hero-primary, .btn-hero-secondary { width: 100%; max-width: 340px; justify-content: center; }
@@ -576,30 +586,54 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-badge">Dermatologist-Reviewed Clinical Protocol</div>
-    <h1>Cystic Acne on Chin: <span>Why It Forms &amp; How to Clear It</span></h1>
-    <p>A throbbing underground lump with no head cannot be washed or scrubbed away. Understand the follicular rupture kinetics, hormone-androgen receptors, and the acute 24–48h dermatologist protocol for Indian skin.</p>
+    <div class="hero-badge">Dermatologist Clinical Guide · Indian Skin Phototypes</div>
+    <h1>Cystic Acne on Chin:<br><span>Why It Forms &amp; How to Clear It</span></h1>
+    <p class="hero-subtext">A throbbing underground lump with no head cannot be popped or scrubbed away. Here is why chin cysts form, how to flatten them fast without scarring, and the best dermatologist-approved pharmacy products in India.</p>
     
+    <!-- Upfront Answer & Best Product Grid -->
+    <div class="hero-takeaway-grid">
+      <!-- Card 1: Why It Forms & How to Clear It -->
+      <div class="hero-takeaway-card">
+        <div class="takeaway-badge">⚡ Root Cause &amp; Clearing Protocol</div>
+        <h3>Why Chin Cysts Form &amp; How to Clear Them</h3>
+        <p><strong>Why It Forms:</strong> The chin and jawline carry the highest density of androgen hormone receptors on the face. Pre-period hormonal surges trigger thick, sticky oil. Because lower-face pores have narrow openings, trapped oil and bacteria rupture 2–3mm deep underground, creating an enclosed, blind fluid sac with no surface pore opening.</p>
+        <ul class="hero-takeaway-list">
+          <li><strong>Never Squeeze or Pick:</strong> There is no surface opening. Squeezing forces infection deeper into healthy tissue, causing permanent indented scars and severe dark spots (PIH).</li>
+          <li><strong>Ice for 5 Minutes:</strong> Wrap an ice cube in a clean cloth to shrink acute swelling and numb throbbing pain.</li>
+          <li><strong>Kill Deep Bacteria:</strong> Apply 2.5% Benzoyl Peroxide for 15–20 minutes to rapidly kill bacteria without barrier burns.</li>
+          <li><strong>Prevent Future Bumps:</strong> Use nighttime retinoids (Adapalene 0.1%) or Azelaic Acid to stop sticky cells from clogging pores.</li>
+        </ul>
+      </div>
+
+      <!-- Card 2: What Is the Best Product & Why -->
+      <div class="hero-takeaway-card">
+        <div class="takeaway-badge">⭐ Recommended Product &amp; Why</div>
+        <h3>Persol AC 2.5% Gel <span class="pharma-tag">(by Wallace Pharma · ~₹180–₹220)</span></h3>
+        <p><strong>Why It’s the Best Product:</strong> 2.5% micronized Benzoyl Peroxide introduces oxygen straight into deep pores, killing anaerobic acne bacteria (*C. acnes*) as effectively as 5% or 10% gels, but with far less burning, peeling, or barrier damage on Indian skin.</p>
+        <ul class="hero-takeaway-list">
+          <li><strong>How to Use (Short-Contact Method):</strong> Dab a pea-sized dot directly onto the cyst, leave it on for <strong>15–20 minutes</strong>, then wash off. This kills bacteria effectively without irritating your skin barrier or bleaching pillowcases.</li>
+          <li><strong>Doctor's Tip for Dark Marks:</strong> Pair with <strong>Aziderm 15% Gel</strong> (~₹280–₹360) on alternate nights. Azelaic acid prevents the hyperactive dark brown pigment marks (PIH) that typically linger on Indian skin after cysts flatten.</li>
+          <li><strong>Emergency Large Cysts:</strong> For a massive, throbbing cyst before an event, visit a dermatologist for an in-clinic <strong>cortisone injection</strong> to flatten it within 24–48 hours without scarring.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CTA & Meta Row -->
     <div class="hero-cta-group">
-      <a href="https://mymirror.fit/scan/" class="btn-hero-primary">
+      <a href="https://mymirror.fit/scan/" class="btn-hero-primary" target="_blank" rel="noopener">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8M8 12h8"/></svg>
-        <span>🤖 Scan Chin Breakout Free</span>
+        <span>Scan Chin Breakout Free ✨</span>
       </a>
       <a href="#acute-protocol" class="btn-hero-secondary">Explore 24–48h Protocol ↓</a>
     </div>
     <p class="hero-cta-subtext">Free 60-second AI scan to evaluate chin breakout severity, hormonal cues, and targeted treatments.</p>
 
-    <div class="hero-chips">
-      <span class="hero-chip">🔬 Deep Dermal Rupture</span>
-      <span class="hero-chip">🧊 24–48h Acute Ice Freeze</span>
-      <span class="hero-chip">🎴 3D Clinical Flip Cards</span>
-      <span class="hero-chip">🧴 Top Indian Pharma Picks</span>
-    </div>
-
     <div class="meta-row">
-      <span>🩺 Medical Review: Dr. Lipy Mehta</span>
+      <span>🩺 Medical Review: Dr. Lipy Mehta, Dermatologist</span>
+      <span>•</span>
       <span>⏱️ 10 Min Read</span>
-      <span>🏷️ Fitzpatrick Types III–VI Guidance</span>
+      <span>•</span>
+      <span>🏷️ Safe for Indian Skin (Types III–VI)</span>
     </div>
   </div>
 </section>
