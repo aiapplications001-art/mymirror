@@ -409,21 +409,15 @@
     .faq-a { padding: 0 18px 16px; font-size: 0.9rem; color: var(--txt2); line-height: 1.65; display: none; }
     .faq-item.open .faq-a { display: block; }
 
-    /* SIDEBAR (Sticky Throughout Scroll) */
+    /* SIDEBAR (Sticky Throughout Scroll - No Independent Scroll) */
     .sidebar {
       position: -webkit-sticky;
       position: sticky;
-      top: 115px;
-      height: fit-content;
-      max-height: calc(100vh - 125px);
-      overflow-y: auto;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
+      top: 100px;
       display: flex;
       flex-direction: column;
       gap: 1.25rem;
     }
-    .sidebar::-webkit-scrollbar { display: none; }
     .sidebar-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 18px; padding: 1.5rem; }
     .sidebar-card.highlight { background: var(--brand-light); border-color: rgba(236,97,14,0.25); }
     .sidebar-card h4 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--txt); }
