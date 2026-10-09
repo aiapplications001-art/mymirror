@@ -89,12 +89,172 @@
 
     .highlight-box { background: var(--color-brand-light); border-left: 4px solid var(--color-brand); padding: 1.5rem; border-radius: 0 16px 16px 0; margin: 2rem 0; }
     
-    /* ── TABLE STYLES ── */
-    .acne-table-wrapper { overflow-x: auto; margin: 2rem 0; border: 1px solid var(--color-border); border-radius: 12px; }
-    .acne-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-    .acne-table th { background: var(--color-bg-secondary); padding: 12px; text-align: left; border-bottom: 2px solid var(--color-border); }
-    .acne-table td { padding: 12px; border-bottom: 1px solid var(--color-border); }
-    .acne-table tr:last-child td { border-bottom: none; }
+    /* ── HIGH-CONTRAST PREMIUM TABLE STYLES (Design System Section 9.15) ── */
+    .acne-table-wrapper {
+      margin: 2.5rem 0;
+      border: 2px solid #D9C8BC;
+      border-radius: 16px;
+      overflow-x: auto;
+      box-shadow: 0 6px 24px rgba(26, 20, 16, 0.05);
+      background: #FFFFFF;
+    }
+    .acne-table {
+      width: 100% !important;
+      min-width: 680px;
+      margin: 0 !important;
+      border-collapse: collapse !important;
+      border-spacing: 0 !important;
+      font-size: 14px;
+      color: #1A1410;
+      text-align: left;
+    }
+    .acne-table tr {
+      background: transparent !important;
+      box-shadow: none !important;
+      transform: none !important;
+    }
+    .acne-table th {
+      background: #2D231E;
+      font-family: 'Kantumruy Pro', serif;
+      font-weight: 700;
+      color: #FFFFFF;
+      padding: 14px 20px;
+      border-bottom: 2px solid #1A1410;
+      text-transform: uppercase;
+      font-size: 11.5px;
+      letter-spacing: 0.1em;
+      vertical-align: top;
+      border-radius: 0 !important;
+      white-space: nowrap;
+    }
+    .acne-table td {
+      padding: 16px 20px;
+      border-bottom: 1px solid #E8DDD5;
+      vertical-align: top;
+      color: #1A1410;
+      line-height: 1.6;
+      border-radius: 0 !important;
+    }
+    .acne-table tr:last-child td {
+      border-bottom: none;
+    }
+    .acne-table tr:hover td {
+      background-color: #FDFCFB;
+    }
+    .acne-table td strong {
+      color: inherit;
+    }
+
+    @media (min-width: 769px) {
+      .acne-table td {
+        background: #FFFFFF;
+      }
+      .acne-table td:first-child {
+        font-weight: 700;
+        color: #2D231E;
+        white-space: nowrap;
+        width: 170px;
+        background: #FDFCFB !important;
+        border-right: 1px solid #E8DDD5;
+        text-align: left;
+        border-radius: 0 !important;
+      }
+      .acne-table th:first-child {
+        border-right: 1px solid #3D312A;
+        width: 170px;
+        text-align: left;
+        border-radius: 0 !important;
+      }
+    }
+
+    /* ── PRODUCT SHOWCASE CARDS (Section 5) ── */
+    .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 2rem 0; }
+    .product-card {
+      background: #FFFFFF;
+      border: 1px solid var(--color-border);
+      border-radius: 20px;
+      padding: 1.5rem;
+      transition: all 0.4s var(--ease-bouncy);
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 15px rgba(26, 20, 16, 0.03);
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 32px rgba(236, 97, 14, 0.1);
+      border-color: var(--color-brand);
+    }
+    .product-img-box {
+      width: 100%;
+      height: 200px;
+      background: var(--color-bg-secondary);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 1.2rem;
+      border: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+    }
+    .product-img-box img {
+      max-height: 170px;
+      width: auto;
+      max-width: 90%;
+      object-fit: contain;
+      margin: 0 !important;
+      border-radius: 8px !important;
+      box-shadow: none !important;
+      transition: transform 0.4s ease;
+    }
+    .product-card:hover .product-img-box img {
+      transform: scale(1.05);
+    }
+    .prod-badge {
+      display: inline-block;
+      align-self: flex-start;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--color-brand-light);
+      color: var(--color-brand-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .prod-name {
+      font-family: 'Kantumruy Pro', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 4px;
+      line-height: 1.35;
+    }
+    .prod-vehicle {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--color-text-tertiary);
+      margin-bottom: 8px;
+      display: block;
+    }
+    .prod-desc {
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+      margin-bottom: 12px;
+      flex-grow: 1;
+    }
+    .prod-verdict {
+      margin-top: auto;
+      font-size: 13px;
+      color: var(--color-text-secondary);
+      border-top: 1px dashed var(--color-border);
+      padding-top: 10px;
+    }
+    .prod-verdict strong {
+      color: var(--color-success);
+    }
 
     /* ── SIDEBAR ── */
     .sidebar { display: flex; flex-direction: column; gap: 2rem; }
@@ -139,15 +299,74 @@
       .trust-bar { flex-direction: column; gap: 5px; text-align: center; }
       .toc-inner { justify-content: flex-start; }
       
-      /* Card Layout for Table */
-      .acne-table, .acne-table tbody, .acne-table tr, .acne-table td { display: block; width: 100%; box-sizing: border-box; }
-      .acne-table thead { display: none; }
-      .acne-table { border: none; margin: 1rem 0; }
-      .acne-table tr { margin-bottom: 1.5rem; border-radius: 12px; border: 1px solid var(--color-border); box-shadow: 0 4px 15px rgba(0,0,0,0.03); background: var(--color-bg-primary); }
-      .acne-table td { border-bottom: 1px solid var(--color-border); padding: 1rem 1rem 1rem 45%; position: relative; min-height: 50px; }
-      .acne-table td:last-child { border-bottom: none; }
-      .acne-table td:first-child::before { display: none !important; content: none !important; }
-      .acne-table td::before { content: attr(data-label); position: absolute; left: 1rem; width: 40%; font-weight: 700; color: var(--color-text-secondary); top: 1rem; }
+      .product-grid { grid-template-columns: 1fr; }
+      
+      /* Mobile Card Layout for Acne Table (Design System Section 9.15) */
+      .acne-table-wrapper {
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        margin: 1.5rem 0;
+        overflow: visible;
+      }
+      .acne-table, 
+      .acne-table thead, 
+      .acne-table tbody, 
+      .acne-table th, 
+      .acne-table td, 
+      .acne-table tr {
+        display: block;
+        width: 100% !important;
+        min-width: 0 !important;
+      }
+      .acne-table thead {
+        display: none;
+      }
+      .acne-table tr {
+        background: #FFFFFF !important;
+        border: 2px solid #D9C8BC !important;
+        border-radius: 16px !important;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 15px rgba(26,20,16,0.04) !important;
+      }
+      .acne-table td {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding: 10px 0;
+        border-bottom: 1px solid #F2EDE8;
+        text-align: left;
+        border-radius: 0 !important;
+        min-height: auto;
+      }
+      .acne-table td:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      .acne-table tr td:first-child {
+        font-size: 16px;
+        font-weight: 800;
+        color: #2D231E;
+        border-bottom: 2px solid #E8DDD5;
+        padding-top: 0;
+        padding-bottom: 10px;
+        margin-bottom: 6px;
+        border-radius: 0 !important;
+      }
+      .acne-table tr td:first-child::before {
+        display: none !important;
+      }
+      .acne-table td::before {
+        content: attr(data-label);
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #5C4A3A;
+        font-weight: 800;
+        position: static !important;
+        width: auto !important;
+      }
     }
   
     /* Face AI CTA Styling - Premium Perimeter Rail Animation */
@@ -232,43 +451,135 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Adapalene Results: Week 1 to 12 Before and After (Indian Skin) | MyMirror",
-    "description": "See real Adapalene results on Indian skin: Week 1 to 12 photo timeline, when purging stops, Differin vs Deriva comparisons, and how acne clears.",
-    "author": {
-      "@type": "Organization",
-      "name": "MyMirror Editorial Team"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "MyMirror Skin Health",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://mymirror.fit/favicon.png"
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://mymirror.fit/acne/adapalene-before-after-results/#webpage",
+        "url": "https://mymirror.fit/acne/adapalene-before-after-results/",
+        "name": "Adapalene Results: Week 1 to 12 Before and After | MyMirror",
+        "headline": "Adapalene Results: Week 1 to 12 Before and After (Indian Skin)",
+        "description": "See real Adapalene results on Indian skin: Week 1 to 12 photo timeline, when purging stops, Differin vs Deriva comparisons, and how acne clears.",
+        "image": "https://mymirror.fit/assets/adapalene-before-after-1.webp",
+        "datePublished": "2026-04-15",
+        "dateModified": "2026-10-09",
+        "medicalAudience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Patient"
+        },
+        "aspect": [
+          "Treatment",
+          "Prognosis",
+          "Overview"
+        ],
+        "reviewedBy": {
+          "@type": "Person",
+          "name": "Dr. Lipy Mehta",
+          "jobTitle": "Consultant Dermatologist"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "MyMirror Skin Health",
+          "url": "https://mymirror.fit",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mymirror.fit/favicon.png"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mymirror.fit/acne/adapalene-before-after-results/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://mymirror.fit/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Acne Hub",
+            "item": "https://mymirror.fit/acne/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Adapalene Before & After Results",
+            "item": "https://mymirror.fit/acne/adapalene-before-after-results/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://mymirror.fit/acne/adapalene-before-after-results/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long does adapalene take to show meaningful clinical results?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most individuals observe measurable changes in acne density around week 8, with full therapeutic clearing reaching maturity between weeks 10 and 12. Because it operates by normalizing deep follicular turnover rather than merely peeling surface skin, giving the medication three full months of regular application is necessary to evaluate its true efficacy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does adapalene trigger an initial skin purge before clearing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, approximately 60% of patients experience a retinoid purge across weeks 1 to 4. As follicular desquamation accelerates, pre-existing microcomedones mature and rise to the skin surface in clusters. This phase can be managed by applying moisturizer prior to the retinoid and spacing applications every other evening until tolerance improves."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I combine Vitamin C with adapalene?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, by segregating them across your morning and night routines. Apply your antioxidant Vitamin C serum in the morning after gentle cleansing to defend against environmental oxidation, and reserve your Adapalene for nightly application on completely dry skin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is adapalene 0.3% more effective than the standard 0.1% strength?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Adapalene 0.3% provides enhanced follicular comedolysis for refractory cystic and nodular acne, but its increased potency also raises the incidence of erythema and localized xerosis. Dermatologists generally recommend starting with 0.1% to build baseline tolerance before considering a higher-strength step-up."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can adapalene help fade dark marks and post-inflammatory hyperpigmentation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "By hastening the shedding of melanin-laden keratinocytes from the stratum corneum, Adapalene visibly shortens the clearance window of post-acne marks. Pair it with daily sunscreen to stop new melanin production from undoing these improvements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I continue using adapalene throughout Indian summers and monsoons?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Adapalene remains safe throughout the year in Indian weather. During high-humidity monsoons, choose a water-based gel rather than a heavy cream, and apply a lightweight broad-spectrum matte sunscreen every morning before sun exposure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should adapalene be applied every single night from the beginning?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Beginning nightly application immediately often causes intense barrier irritation. Start by applying twice weekly for the first fortnight, advance to alternate nights in week 3, and only transition to nightly use once your skin displays zero lingering stinging or excessive peeling."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does topical adapalene completely resolve deep hormonal chin cysts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Adapalene prevents the pore impactions that allow deep cysts to develop, but severe hormonal acne driven by endocrine fluctuations along the jawline may require systemic therapies such as oral anti-androgens or combined antibiotic gels alongside topical retinoids."
+            }
+          }
+        ]
       }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://mymirror.fit/acne/adapalene-before-after-results/"
-    },
-    "image": "https://mymirror.fit/assets/adapalene-before-after-1.webp",
-    "datePublished": "2026-04-15",
-    "dateModified": "2026-10-08"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      { "@type": "Question", "name": "How long does adapalene take to show results?", "acceptedAnswer": { "@type": "Answer", "text": "Results typically take 8 to 12 weeks of consistent use." } },
-      { "@type": "Question", "name": "Does adapalene make acne worse before it gets better?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, it often causes a purging phase during the first 1-4 weeks." } },
-      { "@type": "Question", "name": "Can I use adapalene with Vitamin C?", "acceptedAnswer": { "@type": "Answer", "text": "It is generally recommended to use Vitamin C in the morning and adapalene at night." } },
-      { "@type": "Question", "name": "Is adapalene 0.3% better than 0.1%?", "acceptedAnswer": { "@type": "Answer", "text": "0.3% is stronger and may be prescribed for more stubborn acne, but it also carries a higher risk of irritation." } },
-      { "@type": "Question", "name": "Does adapalene remove dark spots/PIH?", "acceptedAnswer": { "@type": "Answer", "text": "Adapalene increases cell turnover, which can help fade PIH over time." } },
-      { "@type": "Question", "name": "Can I use adapalene during Indian summer/monsoon?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but daily broad-spectrum sun protection is essential, particularly during intense summer heat." } },
-      { "@type": "Question", "name": "Should I use adapalene every night?", "acceptedAnswer": { "@type": "Answer", "text": "Start 2-3 times a week and gradually build up to nightly use as your skin tolerates it." } },
-      { "@type": "Question", "name": "Does adapalene work on hormonal acne?", "acceptedAnswer": { "@type": "Answer", "text": "It helps keep pores clear, but severe hormonal acne often requires additional treatments." } }
     ]
   }
   </script>
@@ -443,22 +754,53 @@
         </div>
         <p>Pharmacies and clinics across India dispense several branded formulations containing pharmaceutical Adapalene. While active pharmaceutical profiles remain equivalent, differences in vehicles directly alter skin comfort and compliance:</p>
 
-        <div class="bento-grid">
-          <div class="bento-card">
-            <h3>Differin Gel (Galderma)</h3>
-            <p>The benchmark international formulation utilizing an aqueous, alcohol-free vehicle. It absorbs without greasy residue, making it ideal for combination or oily T-zones during humid monsoons.</p>
+        <div class="product-grid">
+          <!-- 1. Differin Gel -->
+          <div class="product-card">
+            <div class="product-img-box">
+              <img src="/assets/differin-gel.jpg" alt="Differin Gel 0.1% Adapalene Acne Treatment Galderma" loading="lazy" width="400" height="400">
+            </div>
+            <span class="prod-badge">International Benchmark</span>
+            <h3 class="prod-name">Differin 0.1% Gel (Galderma)</h3>
+            <span class="prod-vehicle">Vehicle: Aqueous Alcohol-Free Gel</span>
+            <p class="prod-desc">The benchmark international formulation utilizing a non-comedogenic, alcohol-free aqueous vehicle. Absorbs rapidly without greasy residue, making it ideal for oily and combination T-zones during humid Indian monsoons.</p>
+            <div class="prod-verdict"><strong>Best For:</strong> First-line comedonal clearing & oily skin</div>
           </div>
-          <div class="bento-card">
-            <h3>Differin Cream Formulation</h3>
-            <p>Formulated with emollients to buffer trans-epidermal water loss. Patients with dry, eczema-prone skin or those residing in dry northern winter climates find the cream vehicle significantly less drying.</p>
+
+          <!-- 2. Adaferin Gel -->
+          <div class="product-card">
+            <div class="product-img-box">
+              <img src="/assets/adaferin-gel.webp" alt="Adaferin 0.1% Gel Adapalene Indian Formulation" loading="lazy" width="400" height="400">
+            </div>
+            <span class="prod-badge">Indian Rx Standard</span>
+            <h3 class="prod-name">Adaferin 0.1% Gel (Ranbaxy / Sun Pharma)</h3>
+            <span class="prod-vehicle">Vehicle: Smooth Pharmaceutical Aqueous Base</span>
+            <p class="prod-desc">Widely prescribed across Indian dermatology practices. Delivers pure 0.1% micronized adapalene at an accessible price point, providing identical active receptor affinity with minimal vehicle drag.</p>
+            <div class="prod-verdict"><strong>Best For:</strong> First-time retinoid users on a budget</div>
           </div>
-          <div class="bento-card">
-            <h3>Deriva MS / Adaferin (Indian Formulations)</h3>
-            <p>Widely prescribed Indian brands manufactured by Glenmark and Ranbaxy. Deriva MS incorporates micro-sponge technology, which meters active release throughout the night, reducing initial surface sting.</p>
+
+          <!-- 3. Deriva MS -->
+          <div class="product-card">
+            <div class="product-img-box">
+              <img src="/assets/images/deriva-ms-clean-cutout.webp" alt="Deriva MS Aqueous Gel Microsponge Adapalene Glenmark" loading="lazy" width="400" height="400">
+            </div>
+            <span class="prod-badge">Microsponge Technology</span>
+            <h3 class="prod-name">Deriva MS Aqueous Gel (Glenmark)</h3>
+            <span class="prod-vehicle">Vehicle: Micro-Sponge Controlled Release (0.1% / 0.3%)</span>
+            <p class="prod-desc">Patented microsponge system entraps adapalene in porous microscopic spheres, metering sustained follicular delivery throughout the night to significantly curb initial surface sting, redness, and peeling.</p>
+            <div class="prod-verdict"><strong>Best For:</strong> Sensitive Indian skin & minimizing retinoid dermatitis</div>
           </div>
-          <div class="bento-card">
-            <h3>Post-Acne Scar Re-texturizing Gels</h3>
-            <p>Specialty adjunct gels containing bakuchiol or peptides combined with mild exfoliating agents aid secondary dermal recovery once active lesions have resolved completely.</p>
+
+          <!-- 4. Deriva CMS -->
+          <div class="product-card">
+            <div class="product-img-box">
+              <img src="/assets/images/deriva-cms-gel.webp" alt="Deriva CMS Gel Adapalene and Clindamycin Phosphate" loading="lazy" width="400" height="400">
+            </div>
+            <span class="prod-badge">Dual Active Synergist</span>
+            <h3 class="prod-name">Deriva CMS Gel (Glenmark)</h3>
+            <span class="prod-vehicle">Vehicle: Adapalene 0.1% + Clindamycin 1% Gel</span>
+            <p class="prod-desc">Dual-action prescription gel combining comedolytic adapalene with topical antibiotic clindamycin phosphate. Rapidly flattens inflamed, pus-filled pustules while clearing deep follicular plugs.</p>
+            <div class="prod-verdict"><strong>Best For:</strong> Inflamed pustular breakouts & acute inflammatory acne</div>
           </div>
         </div>
       </section>
@@ -502,21 +844,55 @@
           <table class="acne-table">
             <thead>
               <tr>
-                <th>Feature</th>
-                <th>0.1% (Differin/Adaferin)</th>
-                <th>0.3% (Deriva MS)</th>
+                <th>Clinical Dimension</th>
+                <th>0.1% Aqueous Gel (Differin / Adaferin)</th>
+                <th>0.3% Microsponge (Deriva MS)</th>
+                <th>Adapalene + Clindamycin (Deriva CMS)</th>
+                <th>Adapalene + BPO (Epiduo)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td data-label="Feature">Best For</td>
-                <td data-label="0.1%">Mild to moderate acne, beginners</td>
-                <td data-label="0.3%">Stubborn, severe acne, experienced users</td>
+                <td data-label="Dimension">Active Strength</td>
+                <td data-label="0.1% Aqueous">0.1% micronized adapalene</td>
+                <td data-label="0.3% Microsponge">0.3% high-potency adapalene</td>
+                <td data-label="Adapalene + Clinda">0.1% adapalene + 1% clindamycin</td>
+                <td data-label="Adapalene + BPO">0.1% or 0.3% adapalene + 2.5% BPO</td>
               </tr>
               <tr>
-                <td data-label="Feature">Irritation Potential</td>
-                <td data-label="0.1%">Low to Moderate</td>
-                <td data-label="0.3%">Moderate to High</td>
+                <td data-label="Dimension">Formulation Vehicle</td>
+                <td data-label="0.1% Aqueous">Alcohol-free aqueous carbomer base</td>
+                <td data-label="0.3% Microsponge">Porous micro-sponge time-release matrix</td>
+                <td data-label="Adapalene + Clinda">Hydroalcoholic dual-gel base</td>
+                <td data-label="Adapalene + BPO">Aqueous suspension gel</td>
+              </tr>
+              <tr>
+                <td data-label="Dimension">Target Acne Type</td>
+                <td data-label="0.1% Aqueous">Comedonal acne, closed comedones & mild papules</td>
+                <td data-label="0.3% Microsponge">Stubborn, refractory comedones & thick sebum plugs</td>
+                <td data-label="Adapalene + Clinda">Inflammatory pustules & infected papulopustular acne</td>
+                <td data-label="Adapalene + BPO">Deep hormonal cystic acne & painful inflamed nodules</td>
+              </tr>
+              <tr>
+                <td data-label="Dimension">Purging Severity Risk</td>
+                <td data-label="0.1% Aqueous">Low to Moderate (peaks weeks 2–4, clears by week 6)</td>
+                <td data-label="0.3% Microsponge">Moderate (mitigated by slow micro-sponge release)</td>
+                <td data-label="Adapalene + Clinda">Low (antibiotic curbs bacterial flare-ups)</td>
+                <td data-label="Adapalene + BPO">Moderate to High (frequent initial erythema and peeling)</td>
+              </tr>
+              <tr>
+                <td data-label="Dimension">Barrier Buffer Strategy</td>
+                <td data-label="0.1% Aqueous">Light ceramide moisturizer 10 mins before or after</td>
+                <td data-label="0.3% Microsponge">Full sandwich buffering (moisturizer → retinoid → cica balm)</td>
+                <td data-label="Adapalene + Clinda">Light barrier emulsion; avoid co-applying AHA/BHA</td>
+                <td data-label="Adapalene + BPO">Rich ceramide cream required; daily SPF 50 non-negotiable</td>
+              </tr>
+              <tr>
+                <td data-label="Dimension">Clearance Window</td>
+                <td data-label="0.1% Aqueous">8 to 12 weeks for marked follicular clearance</td>
+                <td data-label="0.3% Microsponge">6 to 10 weeks under clinical supervision</td>
+                <td data-label="Adapalene + Clinda">3 to 6 weeks for pustules (antibiotic capped at 12 wks)</td>
+                <td data-label="Adapalene + BPO">4 to 8 weeks for significant cyst flattening</td>
               </tr>
             </tbody>
           </table>
