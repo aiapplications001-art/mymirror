@@ -56,38 +56,53 @@
 
     /* ── NAV ── */
     nav { background: var(--color-bg-primary); border-bottom: 1px solid var(--color-border); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; height: 60px; display: flex; align-items: center; }
-    .nav-inner { max-width: 1100px; margin: 0 auto; width: 100%; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .nav-inner { max-width: 1140px; margin: 0 auto; width: 100%; padding: 0 1.25rem; display: flex; justify-content: space-between; align-items: center; }
     .nav-logo img { height: 28px;  margin: 0; box-shadow: none; border-radius: 0; background: transparent; }
     .nav-links { display: flex; gap: 10px; list-style: none; }
     .nav-links a { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-decoration: none; padding: 6px 12px; border-radius: 6px; }
 
     /* ── HERO ── */
-    .hero { background: linear-gradient(135deg, #0a0a0c 0%, #1a1410 100%); color: #fff; text-align: center; padding: 3rem 2rem 4rem; margin-bottom: 0 !important; }
-    .hero h1 { font-family: 'Kantumruy Pro', serif; font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.04em; color: #fff; }
-    .hero p { color: rgba(255,255,255,0.8); font-size: 1.25rem; max-width: 800px; margin: 0 auto 3rem; }
+    .hero { background: #FAF7F4; border-bottom: 1px solid var(--color-border); color: var(--color-text-primary); text-align: center; padding: 2.75rem 1.25rem 3rem; margin-bottom: 0 !important; }
+    .hero-inner { max-width: 960px; margin: 0 auto; padding: 0; }
+    .hero-tag { display: inline-flex; align-items: center; gap: 6px; background: var(--color-brand-light); color: var(--color-brand-dark); font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 14px; border-radius: 9999px; margin-bottom: 1rem; }
+    .hero h1 { font-family: 'Kantumruy Pro', serif; font-size: clamp(2rem, 4vw, 2.85rem); font-weight: 700; line-height: 1.2; margin-bottom: 0.85rem; letter-spacing: -0.03em; color: var(--color-text-primary); }
+    .hero-subtext { color: var(--color-text-secondary); font-size: 1.05rem; max-width: 720px; margin: 0 auto 2rem; line-height: 1.6; }
+
+    /* Upfront Answer Grid */
+    .hero-takeaway-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 0 auto 2rem; text-align: left; }
+    .hero-takeaway-card { background: #FFFFFF; border: 1px solid var(--color-border); border-radius: 16px; padding: 1.5rem; box-shadow: 0 4px 16px rgba(26, 20, 16, 0.04); display: flex; flex-direction: column; }
+    .takeaway-badge { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-brand); margin-bottom: 0.5rem; }
+    .hero-verdict-card h3 { font-family: 'Kantumruy Pro', serif; font-size: 1.2rem; font-weight: 700; color: var(--color-text-primary); margin-bottom: 0.5rem; line-height: 1.35; }
+    .pharma-tag { font-size: 12px; font-weight: 600; color: var(--color-text-tertiary); display: inline-block; }
+    .hero-verdict-card p { font-size: 0.88rem; color: var(--color-text-secondary); line-height: 1.6; margin: 0; }
+    .hero-timeline-card h3 { font-family: 'Kantumruy Pro', serif; font-size: 1.2rem; font-weight: 700; color: var(--color-text-primary); margin-bottom: 0.5rem; line-height: 1.35; }
+    .hero-timeline-list { list-style: none; padding: 0; margin: 0; font-size: 0.88rem; color: var(--color-text-secondary); display: flex; flex-direction: column; gap: 0.5rem; }
+    .hero-timeline-list li { line-height: 1.55; position: relative; padding-left: 14px; }
+    .hero-timeline-list li::before { content: '•'; position: absolute; left: 0; color: var(--color-brand); font-weight: bold; }
+    .hero-timeline-list strong { color: var(--color-text-primary); }
 
     /* ── TOC ── */
-    .toc-bar { background: var(--color-bg-primary); border-bottom: 1px solid var(--color-border); position: sticky; top: 60px; z-index: 900; overflow-x: auto; }
-    .toc-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: center; padding: 0 2rem; }
+    .toc-bar { background: var(--color-bg-primary); border-bottom: 1px solid var(--color-border); position: sticky; top: 60px; z-index: 900; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .toc-inner { max-width: 1140px; margin: 0 auto; display: flex; justify-content: flex-start; padding: 0 1.25rem; }
     .toc-link { white-space: nowrap; font-size: 12px; font-weight: 600; color: var(--color-text-tertiary); text-decoration: none; padding: 14px 18px; border-bottom: 2px solid transparent; display: flex; align-items: center; gap: 8px; }
     .toc-link.active { color: var(--color-brand); border-bottom-color: var(--color-brand); }
     .toc-num { background: var(--color-brand); color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; }
 
     /* ── MAIN LAYOUT ── */
-    .page-body { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; display: grid; grid-template-columns: 1fr 300px; gap: 4rem; align-items: start; }
+    .page-body { max-width: 1140px; margin: 0 auto; padding: 2.75rem 1.25rem 4rem; display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 2.5rem; align-items: start; }
     
     /* ── CONTENT STYLES ── */
-    .content-section { margin-bottom: 5rem; }
-    .section-header { display: flex; align-items: center; gap: 14px; margin-bottom: 2rem; }
+    .content-section { margin-bottom: 4.5rem; scroll-margin-top: 130px; }
+    .section-header { display: flex; align-items: center; gap: 14px; margin-bottom: 1.75rem; }
     .section-num { width: 36px; height: 36px; border-radius: 50%; background: var(--color-brand); color: #fff; font-family: 'Kantumruy Pro', serif; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .section-title { font-family: 'Kantumruy Pro', serif; font-size: 1.8rem; font-weight: 700; }
+    .section-title { font-family: 'Kantumruy Pro', serif; font-size: 1.8rem; font-weight: 700; color: var(--color-text-primary); }
     
-    .bento-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 2rem 0; }
-    .bento-card { background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: 20px; padding: 2.5rem; transition: all 0.4s var(--ease-bouncy); }
-    .bento-card:hover { transform: translateY(-8px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-    .bento-card h3 { font-size: 1.4rem; margin-bottom: 1rem; color: var(--color-text-primary); }
+    .bento-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 1.75rem 0; }
+    .bento-card { background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: 18px; padding: 1.5rem 1.75rem; transition: all 0.4s var(--ease-bouncy); }
+    .bento-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+    .bento-card h3 { font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--color-text-primary); }
 
-    .highlight-box { background: var(--color-brand-light); border-left: 4px solid var(--color-brand); padding: 1.5rem; border-radius: 0 16px 16px 0; margin: 2rem 0; }
+    .highlight-box { background: var(--color-brand-light); border-left: 4px solid var(--color-brand); padding: 1.25rem 1.5rem; border-radius: 0 14px 14px 0; margin: 1.75rem 0; }
     
     /* ── HIGH-CONTRAST PREMIUM TABLE STYLES (Design System Section 9.15) ── */
     .acne-table-wrapper {
@@ -278,10 +293,10 @@
     .hamburger-btn.open span:nth-child(3) { transform: rotate(-45deg); }
 
     @media (max-width: 900px) {
-      .page-body { grid-template-columns: 1fr; }
+      .page-body { grid-template-columns: minmax(0, 1fr); padding: 2rem 1rem 3rem; gap: 2rem; }
       .sidebar { display: none; }
       .bento-grid { grid-template-columns: 1fr; }
-      .nav-inner { align-items: center; flex-direction: row; justify-content: space-between; gap: 0; padding: 1rem 1.5rem; }
+      .nav-inner { align-items: center; flex-direction: row; justify-content: space-between; gap: 0; padding: 1rem 1rem; }
       nav { position: relative; height: auto; }
       .toc-bar { top: 0; }
       .hamburger-btn { display: flex; }
@@ -292,13 +307,18 @@
     }
 
     @media (max-width: 768px) {
-      .page-body { padding: 2rem 1.5rem; gap: 2rem; }
-      .hero { background: linear-gradient(135deg, #0a0a0c 0%, #1a1410 100%); color: #fff; text-align: center; padding: 3rem 2rem 4rem; margin-bottom: 0 !important; }
-      .hero h1 { font-size: 1.8rem; }
-      .hero p { font-size: 1rem; margin-bottom: 1rem; }
+      .hero { padding: 2rem 1rem 2.25rem; }
+      .hero .face-ai-cta-wrapper { display: flex !important; }
+      .hero-takeaway-grid { grid-template-columns: 1fr; gap: 1rem; margin-bottom: 1.5rem; }
+      .hero-takeaway-card { padding: 1.25rem; }
+      .hero h1 { font-size: 1.75rem; }
+      .hero-subtext { font-size: 0.95rem; margin-bottom: 1.5rem; }
       .trust-bar { flex-direction: column; gap: 5px; text-align: center; }
-      .toc-inner { justify-content: flex-start; }
-      
+      .toc-inner { justify-content: flex-start; padding: 0 1rem; }
+      .page-body { padding: 1.5rem 0.85rem 2.5rem; gap: 1.5rem; }
+      .bento-card { padding: 1.25rem !important; }
+      .product-card { padding: 1.25rem !important; }
+      .highlight-box { padding: 1rem 1.15rem !important; }
       .product-grid { grid-template-columns: 1fr; }
       
       /* Mobile Card Layout for Acne Table (Design System Section 9.15) */
@@ -326,15 +346,15 @@
         background: #FFFFFF !important;
         border: 2px solid #D9C8BC !important;
         border-radius: 16px !important;
-        padding: 20px;
-        margin-bottom: 20px;
+        padding: 14px !important;
+        margin-bottom: 18px;
         box-shadow: 0 4px 15px rgba(26,20,16,0.04) !important;
       }
       .acne-table td {
         display: flex;
         flex-direction: column;
         gap: 6px;
-        padding: 10px 0;
+        padding: 8px 0;
         border-bottom: 1px solid #F2EDE8;
         text-align: left;
         border-radius: 0 !important;
@@ -345,12 +365,12 @@
         padding-bottom: 0;
       }
       .acne-table tr td:first-child {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 800;
         color: #2D231E;
         border-bottom: 2px solid #E8DDD5;
         padding-top: 0;
-        padding-bottom: 10px;
+        padding-bottom: 8px;
         margin-bottom: 6px;
         border-radius: 0 !important;
       }
@@ -390,7 +410,7 @@
     }
     .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
     .face-ai-btn-text { position: relative; z-index: 12; }
-    p.face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px auto 0 auto !important; display: block !important; visibility: visible !important; }
+    p.face-ai-subtext { color: var(--color-text-secondary) !important; font-size: 13.5px !important; font-style: italic; font-weight: 500 !important; max-width: 520px; line-height: 1.45; margin: 10px auto 0 auto !important; display: block !important; visibility: visible !important; }
     
     .face-ai-energy-rail { 
       position: absolute; 
@@ -434,8 +454,80 @@
     }
 
     @media (max-width: 768px) {
-      .face-ai-btn { padding: 16px 32px; font-size: 1rem; width: 100%; max-width: 340px; }
-      p.face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px auto 0 auto !important; display: block !important; visibility: visible !important; }
+      .face-ai-btn { padding: 16px 28px; font-size: 0.98rem; width: 100%; max-width: 340px; }
+      p.face-ai-subtext { color: var(--color-text-secondary) !important; font-size: 13px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px auto 0 auto !important; display: block !important; visibility: visible !important; }
+    }
+
+    /* ── UPDATED SITE FOOTER ── */
+    .site-footer {
+      background: #0F1316;
+      color: #94A3B8;
+      padding: 3.5rem 1.25rem 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.875rem;
+      margin-top: 4rem;
+    }
+    .footer-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 2.5rem;
+    }
+    .footer-brand {
+      color: #FFFFFF;
+      font-family: 'Kantumruy Pro', serif;
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+    .footer-disclaimer {
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: #64748B;
+      margin-top: 1.25rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 1rem;
+    }
+    .footer-col h4 {
+      font-family: 'Kantumruy Pro', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 1rem;
+    }
+    .footer-col a {
+      color: #94A3B8;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-col a:hover {
+      color: var(--color-brand) !important;
+    }
+    .footer-bottom {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .footer-bottom-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: #64748B;
+    }
+    @media (max-width: 768px) {
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .footer-bottom-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
 
   
@@ -527,7 +619,7 @@
             "name": "Does adapalene trigger an initial skin purge before clearing?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, approximately 60% of patients experience a retinoid purge across weeks 1 to 4. As follicular desquamation accelerates, pre-existing microcomedones mature and rise to the skin surface in clusters. This phase can be managed by applying moisturizer prior to the retinoid and spacing applications every other evening until tolerance improves."
+              "text": "Yes, approximately 60% of patients experience a retinoid purge across weeks 1 to 4. As cell turnover accelerates, pre-existing clogged pores and tiny hidden bumps rise to the skin surface in clusters. This phase can be managed by applying moisturizer prior to the retinoid and spacing applications every other evening until tolerance improves."
             }
           },
           {
@@ -623,27 +715,36 @@
 
   <section class="hero">
     <div class="hero-inner">
-      <h1><span style="color:var(--color-brand);">The Ultimate Adapalene Gel Journey:</span><br /><em>Before and After Results for Indian Skin</em></h1>
-      <p>Discover real before and after <a href="/acne/adapalene-differin-adaferin-gel-comparison-india/" style="color: inherit; text-decoration: none;">adapalene</a> gel transformations. Learn how <a href="/acne/adapalene-differin-adaferin-gel-comparison-india/" style="color: inherit; text-decoration: none;">Adapalene</a>, Differin, and combinations with Clindamycin or Benzoyl Peroxide clear stubborn acne.</p>
+      <div class="hero-tag">Clinical Treatment Guide · Indian Skin Phototypes</div>
+      <h1>Adapalene Gel Journey:<br><span style="color:var(--color-brand);">Before and After Results for Indian Skin</span></h1>
+      <p class="hero-subtext">Real photographic timelines, purging milestones, and dermatologist protocols for clearing stubborn acne and post-inflammatory marks on brown skin.</p>
       
-      <!-- Clinical Overview Summary -->
-      <div style="background: rgba(255,255,255,0.05); border-left: 4px solid var(--color-brand); padding: 1.5rem; text-align: left; margin: 2rem auto; max-width: 700px; border-radius: 0 16px 16px 0; font-size: 0.95rem;">
-        <strong style="color: var(--color-brand-light); display: block; margin-bottom: 8px;">Clinical Summary: What to Expect</strong>
-        <p style="margin: 0; color: rgba(255,255,255,0.9); font-size: 0.92rem; line-height: 1.6;">
-          During the opening 2 to 4 weeks, retinoid-induced flaking and temporary purging are typical as microcomedones migrate upward. Visible reduction in active pustules generally sets in between weeks 6 and 8, while notable textural smoothing and post-acne mark lightening become evident across weeks 10 to 12.
-        </p>
-      
+      <!-- Upfront Answer & Timeline Overview -->
+      <div class="hero-takeaway-grid">
+        <div class="hero-takeaway-card hero-verdict-card">
+          <div class="takeaway-badge">⭐ Recommended Gel for Beginners</div>
+          <h3>Differin / Adaferin 0.1% Gel <span class="pharma-tag">(by Sun Pharma / Galderma)</span></h3>
+          <p>The top recommended budget gel for first-time retinoid users on a budget (~₹350–₹450). Formulated with 0.1% micronized Adapalene in a gentle, alcohol-free aqueous gel base that clears clogged pores without feeling greasy during humid Indian weather.</p>
+        </div>
+
+        <div class="hero-takeaway-card hero-timeline-card">
+          <div class="takeaway-badge">⏱️ Realistic Clearing Milestones</div>
+          <ul class="hero-timeline-list">
+            <li><strong>Weeks 1 to 4:</strong> Mild temporary flaking and purging as trapped oil and tiny hidden bumps clear out.</li>
+            <li><strong>Weeks 6 to 8:</strong> Visible reduction in active acne or active pimples as inflammation subsides.</li>
+            <li><strong>Weeks 10 to 12+:</strong> Notable texture smoothing and post-acne mark lightening become evident.</li>
+          </ul>
+        </div>
+      </div>
+
       <!-- Face AI Skin Analysis CTA -->
-      <div class="face-ai-cta-wrapper" style="transition-delay: 0.5s; margin-top: 2.5rem;">
-        <a href="https://mymirror.fit/scan/" class="face-ai-btn">
-          <span class="face-ai-btn-text">Check Retinoid Tolerance & Skin Barrier</span>
+      <div class="face-ai-cta-wrapper">
+        <a href="https://mymirror.fit/scan/" class="face-ai-btn" target="_blank" rel="noopener">
+          <span class="face-ai-btn-text">Check Retinoid Tolerance with AI Scan ✨</span>
           <div class="face-ai-energy-rail"></div>
         </a>
-        <p class="face-ai-subtext">Scan your face to detect flaking, redness, and micro-peeling before increasing your Adapalene or Tretinoin dosage.</p>
+        <p class="face-ai-subtext">Scan your face to detect redness, flaking, and barrier micro-peeling before stepping up your Adapalene routine.</p>
       </div>
-</div>
-
-      <a href="#timeline" style="display:inline-block; padding:16px 42px; background:var(--color-brand); color:#fff; border-radius:9999px; text-decoration:none; font-weight:800; box-shadow: 0 10px 30px rgba(236,97,14,0.3); transition: 0.3s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">See the Timeline →</a>
     </div>
   </section>
 
@@ -693,8 +794,8 @@
             <span style="color: var(--color-text-secondary); font-size: 0.92rem;">Melanin-rich Indian skin regularly suffers from hyperkeratinization, wherein sticky corneocytes clog the follicle orifice. Adapalene commands proper epithelial shedding so dead cells detach smoothly instead of accumulating into plugs.</span>
           </div>
           <div style="padding: 1rem 1.2rem; background: var(--color-bg-secondary); border-radius: 12px; border-left: 3px solid var(--color-brand);">
-            <strong style="display:block; margin-bottom: 4px; color: var(--color-text-primary);">Microcomedone Precursor Arrest</strong>
-            <span style="color: var(--color-text-secondary); font-size: 0.92rem;">Every visible whitehead or papule began weeks earlier as an invisible microcomedone. Adapalene resolves these microscopic impactions before cutibacterium acnes bacteria can proliferate.</span>
+            <strong style="display:block; margin-bottom: 4px; color: var(--color-text-primary);">Clearing Hidden Clogged Pores Early (Pre-Acne Bumps)</strong>
+            <span style="color: var(--color-text-secondary); font-size: 0.92rem;">Every visible pimple or whitehead began weeks earlier as an invisible microscopic pore clog (micro-bump). Adapalene clears these tiny impactions deep inside the pore before acne-causing bacteria can trigger inflammation.</span>
           </div>
           <div style="padding: 1rem 1.2rem; background: var(--color-bg-secondary); border-radius: 12px; border-left: 3px solid var(--color-brand);">
             <strong style="display:block; margin-bottom: 4px; color: var(--color-text-primary);">Downregulation of Inflammatory Cascades</strong>
@@ -715,16 +816,16 @@
 
         <div class="bento-grid">
           <div class="bento-card">
-            <h3 style="color: var(--color-danger);">Phase 1 (Weeks 1 to 4): Follicular Retinization & Purging</h3>
-            <p>During the first month, accelerated cell kinetics push existing sub-surface microcomedones outward at once. You may experience transient erythema, localized peeling around the perioral angles, and an influx of tiny surface papules. In dermatological practice, this flare indicates receptor activation rather than an adverse allergic reaction.</p>
+            <h3 style="color: var(--color-danger);">Phase 1 (Weeks 1 to 4): Cell Renewal & Temporary Purging</h3>
+            <p>During the first month, accelerated cell turnover pushes existing sub-surface clogged pores and tiny hidden bumps outward at once. You may experience temporary mild redness, light peeling around the mouth and nose, and an initial wave of surface pimples. In dermatology, this purge signals that the medicine is actively clearing deep pores rather than causing an allergic reaction.</p>
           </div>
           <div class="bento-card">
-            <h3 style="color: var(--color-warning);">Phase 2 (Weeks 5 to 8): Inflammatory Quieting & Barrier Stabilization</h3>
-            <p>By the second month, inflammatory flares noticeably calm down. The rate of new lesion formation drops, open and closed comedones diminish, and the moisture barrier adapts to the daily retinoid stimulus with less tightness and dryness.</p>
+            <h3 style="color: var(--color-warning);">Phase 2 (Weeks 5 to 8): Visible Reduction in Active Acne & Pimples</h3>
+            <p>By weeks 6 to 8, visible reduction in active acne or active pimples sets in. Inflammatory breakouts noticeably calm down, the formation rate of new pimples drops significantly, and skin tolerance improves with far less flaking or tightness as your skin barrier adapts.</p>
           </div>
           <div class="bento-card" style="grid-column: span 2;">
-            <h3 style="color: var(--color-success);">Phase 3 (Weeks 9 to 12+): Textural Refinement & Epidermal Clarity</h3>
-            <p>At the close of three months, patients observe tangible structural remodeling. Follicular ostia look cleaner, stubborn rough patches soften, and residual post-inflammatory hyperpigmentation begins shedding steadily under sustained epithelial turnover. Patients struggling with persistent <a href="/acne/cystic-chin-pimple/" style="color: inherit; text-decoration: none;">hormonal or cystic acne</a> who transition under medical supervision to 0.3% gels report marked reduction in deep-tissue induration.</p>
+            <h3 style="color: var(--color-success);">Phase 3 (Weeks 9 to 12+): Texture Smoothing & Fading Dark Marks</h3>
+            <p>Between weeks 10 and 12, notable texture smoothing and post-acne mark lightening become evident. Rough texture softens, pores appear cleaner, and stubborn post-inflammatory hyperpigmentation sheds steadily under renewed cell turnover. For persistent <a href="/acne/cystic-chin-pimple/" style="color: inherit; text-decoration: none;">hormonal or cystic acne</a>, dermatologists may evaluate stepping up to 0.3% formulations.</p>
           </div>
         </div>
         
@@ -936,7 +1037,7 @@
             <span>Does adapalene trigger an initial skin purge before clearing?</span>
             <span class="faq-icon">+</span>
           </div>
-          <div class="faq-answer"><p>Yes, approximately 60% of patients experience a retinoid purge across weeks 1 to 4. As follicular desquamation accelerates, pre-existing microcomedones mature and rise to the skin surface in clusters. This phase can be managed by applying moisturizer prior to the retinoid and spacing applications every other evening until tolerance improves.</p></div>
+          <div class="faq-answer"><p>Yes, approximately 60% of patients experience a retinoid purge across weeks 1 to 4. As cell turnover accelerates, pre-existing clogged pores and tiny hidden bumps rise to the skin surface in clusters. This phase can be managed by applying moisturizer prior to the retinoid and spacing applications every other evening until tolerance improves.</p></div>
         </div>
         
         <div class="faq-item">
@@ -1054,8 +1155,45 @@
 
   </div>
 
-  <footer style="padding: 4rem 2rem; background: var(--color-bg-tertiary); text-align: center; border-top: 1px solid var(--color-border);">
-    <p>© 2026 MyMirror · Science-backed Skincare Guidance</p>
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand-col">
+        <div class="footer-brand">
+          <img src="/assets/logo-v4.png" alt="MyMirror" style="height: 26px; width: auto; display: block; filter: brightness(0) invert(1); opacity: 0.9;">
+        </div>
+        <p style="font-size:0.875rem; color:#94A3B8; line-height: 1.6; margin-top: 0.75rem;">
+          Evidence-based skincare diagnostics and dermatological guides tailored for Indian skin phototypes (Fitzpatrick III–V).
+        </p>
+        <div class="footer-disclaimer">
+          Medical Disclaimer: Content on MyMirror is for educational purposes only and does not constitute medical advice, diagnosis, or prescription. Always consult a qualified dermatologist for severe inflammatory acne or persistent cutaneous disorders.
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Popular Acne Guides</h4>
+        <ul style="list-style:none; line-height:2.1; padding:0; margin:0;">
+          <li><a href="/acne/adapalene-differin-adaferin-gel-comparison-india/">Differin vs Adaferin Guide</a></li>
+          <li><a href="/acne/adapalene-purging-timeline/">Adapalene Purging Timeline</a></li>
+          <li><a href="/acne/salicylic-acid-cream-gel-face-india/">Salicylic Acid Gels India</a></li>
+          <li><a href="/acne/pie-vs-pih-indian-skin/">PIE vs PIH on Brown Skin</a></li>
+          <li><a href="/acne/best-cica-moisturizer-for-acne-prone-skin-india/">Cica Barrier Repair Creams</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Interactive Tools &amp; AI</h4>
+        <ul style="list-style:none; line-height:2.1; padding:0; margin:0;">
+          <li><a href="https://mymirror.fit/scan/" style="color:#EC610E; font-weight:700;" target="_blank" rel="noopener">3-Layer AI Face Scanner ✨</a></li>
+          <li><a href="/acne/face-map/">Acne Face Mapping</a></li>
+          <li><a href="/acne/acne-routine-under-500-india/">Acne Routine Under ₹500</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <span>© 2026 MyMirror.fit · All rights reserved.</span>
+        <span>Reviewed by Dr. Lipy Mehta, Consultant Dermatologist</span>
+      </div>
+    </div>
   </footer>
 
   <script>
