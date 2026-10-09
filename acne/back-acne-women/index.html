@@ -256,14 +256,31 @@
     .nav-links a:hover { color: var(--brand); }
 
     /* HERO SECTION */
-    .hero { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 3.5rem 1.5rem 3rem; text-align: left; }
-    .hero-container { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 2.5rem; align-items: center; }
+    .hero { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 2.2rem 1.5rem 2.2rem; text-align: left; }
+    .hero-container { max-width: 1140px; margin: 0 auto; }
+    .hero-top-row { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 2.5rem; align-items: center; margin-bottom: 1.8rem; }
     .hero-content { min-width: 0; }
-    .hero-tag { display: inline-flex; align-items: center; gap: 6px; background: var(--brand-light); color: var(--brand-dark); font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 14px; border-radius: 9999px; margin-bottom: 1rem; }
-    .hero h1 { font-family: 'Kantumruy Pro', serif; font-size: clamp(1.9rem, 3.4vw, 2.7rem); font-weight: 700; line-height: 1.25; margin-bottom: 1rem; color: var(--txt); }
-    .hero-sub { color: var(--txt2); font-size: 1.05rem; line-height: 1.65; margin-bottom: 1.5rem; }
+    .hero-tag { display: inline-flex; align-items: center; gap: 6px; background: var(--brand-light); color: var(--brand-dark); font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 9999px; margin-bottom: 0.8rem; }
+    .hero h1 { font-family: 'Kantumruy Pro', serif; font-size: clamp(1.85rem, 3.2vw, 2.6rem); font-weight: 700; line-height: 1.25; margin-bottom: 0.8rem; color: var(--txt); }
+    .hero-sub { color: var(--txt2); font-size: 1rem; line-height: 1.6; margin-bottom: 1.2rem; }
     
-    .hero-takeaway-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.8rem; }
+    .hero-actions { margin-bottom: 0.4rem; }
+    .face-ai-btn {
+      position: relative; display: inline-flex; align-items: center; justify-content: center;
+      padding: 13px 28px; background: var(--brand); color: #fff !important;
+      text-decoration: none; font-weight: 800; font-size: 0.95rem; border-radius: 9999px;
+      box-shadow: 0 8px 24px rgba(236,97,14,0.3); transition: all 0.3s var(--ease);
+    }
+    .face-ai-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(236,97,14,0.45); }
+    .face-ai-subtext { font-size: 0.82rem; color: var(--txt3); margin-top: 0.5rem; }
+
+    .hero-media { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .hero-image-box { width: 100%; max-width: 440px; border-radius: 18px; overflow: hidden; box-shadow: 0 12px 32px rgba(45,35,30,0.12); border: 1px solid var(--border); background: #fff; }
+    .hero-img { width: 100%; height: auto; display: block; }
+    .hero-img-caption { padding: 9px 12px; font-size: 11.5px; color: var(--txt2); background: #FFF9F5; text-align: center; border-top: 1px solid var(--border); }
+    .hero-img-caption strong { color: var(--brand-dark); }
+
+    .hero-takeaway-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
     .hero-takeaway-card {
       background: #FFFFFF; border: 1.5px solid var(--border); border-radius: 14px; padding: 1.1rem 1.2rem;
       box-shadow: 0 4px 14px rgba(0,0,0,0.04);
@@ -280,21 +297,6 @@
     .hero-takeaway-card p { font-size: 0.84rem; color: var(--txt2); line-height: 1.5; margin-bottom: 6px; }
     .hero-takeaway-card ul { padding-left: 1.1rem; font-size: 0.82rem; color: var(--txt2); line-height: 1.5; }
     .hero-takeaway-card li { margin-bottom: 3px; }
-
-    .hero-media { display: flex; flex-direction: column; align-items: center; justify-content: center; }
-    .hero-image-box { width: 100%; max-width: 460px; border-radius: 18px; overflow: hidden; box-shadow: 0 12px 32px rgba(45,35,30,0.12); border: 1px solid var(--border); background: #fff; }
-    .hero-img { width: 100%; height: auto; display: block; }
-    .hero-img-caption { padding: 10px 14px; font-size: 12px; color: var(--txt2); background: #FFF9F5; text-align: center; border-top: 1px solid var(--border); }
-    .hero-img-caption strong { color: var(--brand-dark); }
-
-    .face-ai-btn {
-      position: relative; display: inline-flex; align-items: center; justify-content: center;
-      padding: 13px 28px; background: var(--brand); color: #fff !important;
-      text-decoration: none; font-weight: 800; font-size: 0.95rem; border-radius: 9999px;
-      box-shadow: 0 8px 24px rgba(236,97,14,0.3); transition: all 0.3s var(--ease);
-    }
-    .face-ai-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(236,97,14,0.45); }
-    .face-ai-subtext { font-size: 0.82rem; color: var(--txt3); margin-top: 0.6rem; }
 
     /* TOC BAR */
     .toc-bar { background: var(--bg); border-bottom: 1px solid var(--border); position: sticky; top: 60px; z-index: 900; overflow-x: auto; }
@@ -440,9 +442,9 @@
 
     /* RESPONSIVE */
     @media (max-width: 960px) {
-      .hero-container { grid-template-columns: 1fr; }
+      .hero-top-row { grid-template-columns: 1fr; gap: 1.5rem; }
       .hero-takeaway-grid { grid-template-columns: 1fr; }
-      .hero-media { width: 100%; margin-top: 1.5rem; }
+      .hero-media { width: 100%; margin-top: 0.5rem; }
       .page-body { grid-template-columns: 1fr; }
       .sidebar { display: none; }
       .triggers-comparison-grid { grid-template-columns: 1fr; }
@@ -478,52 +480,55 @@
 <!-- HERO SECTION: Upfront Answer & Dorsal Skin Visual -->
 <header class="hero">
   <div class="hero-container">
-    <div class="hero-content">
-      <span class="hero-tag">Clinical Guide • Women's Health</span>
-      <h1>Back Acne in Women: Real Causes, Hormonal Triggers &amp; Best Treatments</h1>
-      <p class="hero-sub">
-        Waking up with painful, inflamed bumps across your upper back or along your sports bra band is exhausting. Back acne in women is biologically unique: the skin across your upper back and spine is <strong>up to three times thicker</strong> than facial skin, with deep pores sensitive to both internal hormones and workout friction. Here is why it forms and how to clear it fast.
-      </p>
+    <div class="hero-top-row">
+      <div class="hero-content">
+        <span class="hero-tag">Clinical Guide • Women's Health</span>
+        <h1>Back Acne in Women: Real Causes, Hormonal Triggers &amp; Best Treatments</h1>
+        <p class="hero-sub">
+          Waking up with painful, inflamed bumps across your upper back or along your sports bra band is exhausting. Back acne in women is biologically unique: the skin across your upper back and spine is <strong>up to three times thicker</strong> than facial skin, with deep pores sensitive to both internal hormones and workout friction. Here is why it forms and how to clear it fast.
+        </p>
 
-      <!-- Upfront Answer & Best Treatment Grid -->
-      <div class="hero-takeaway-grid">
-        <!-- Card 1: Why Back Acne Occurs -->
-        <div class="hero-takeaway-card">
-          <span class="takeaway-badge">⚡ Why Back Acne Occurs</span>
-          <h3>The 2 Primary Triggers</h3>
-          <p>Back acne in women is driven by two main triggers acting on 3x thicker skin:</p>
-          <ul>
-            <li><strong>Biological Trigger:</strong> Pre-period androgen spikes or PCOS stimulate deep oil glands along your spine to pump heavy, sticky sebum.</li>
-            <li><strong>Mechanical Friction &amp; Sweat:</strong> Tight sports bras, workout sweat, and hair conditioner residue clog pores and trap bacteria.</li>
-          </ul>
+        <!-- CTA in 1st Fold -->
+        <div class="hero-actions">
+          <a class="face-ai-btn" href="https://mymirror.fit/scan/">Analyze Your Skin Pattern in 60s ✨</a>
         </div>
-
-        <!-- Card 2: Best Treatment & Clearing Strategy -->
-        <div class="hero-takeaway-card highlight">
-          <span class="takeaway-badge">🧴 Best Treatment Upfront</span>
-          <h3>The Gold Standard Protocol</h3>
-          <p>Because back skin is thick, leave-on contact time is essential:</p>
-          <ul>
-            <li><strong>#1 Cleanser:</strong> <strong>Perobar 2.5% or 5% bar (₹140–₹195)</strong> for red bumps, or <strong>Saslic DS 2% wash (₹290–₹440)</strong> for blackheads.</li>
-            <li><strong>The 3-Minute Rule:</strong> Leave the lather on wet skin for 3 full minutes before rinsing off.</li>
-            <li><strong>Reverse Shower:</strong> Condition hair first, clip up, and wash back last!</li>
-          </ul>
-        </div>
+        <p class="face-ai-subtext">Clinical analysis helps distinguish hormonal acne, sports bra friction, and sweat yeast overgrowth.</p>
       </div>
 
-      <div class="hero-actions">
-        <a class="face-ai-btn" href="https://mymirror.fit/scan/">Analyze Your Skin Pattern in 60s ✨</a>
+      <!-- Right Media: Dorsal Skin Thickness Diagram -->
+      <div class="hero-media">
+        <div class="hero-image-box">
+          <img class="hero-img" src="/assets/images/dorsal-skin-thickness-comparison.webp" alt="Facial skin versus back dorsal spine skin thickness comparison diagram showing 3x thicker barrier and deep oil glands"/>
+          <div class="hero-img-caption">
+            <strong>The 3x Thickness Rule:</strong> Facial skin (1x thin) vs. Upper Back &amp; Spine Skin (3x thicker stratum corneum with deep oil glands).
+          </div>
+        </div>
       </div>
-      <p class="face-ai-subtext">Clinical analysis helps distinguish hormonal acne, sports bra friction, and sweat yeast overgrowth.</p>
     </div>
 
-    <!-- Right Media: Dorsal Skin Thickness Diagram -->
-    <div class="hero-media">
-      <div class="hero-image-box">
-        <img class="hero-img" src="/assets/images/dorsal-skin-thickness-comparison.webp" alt="Facial skin versus back dorsal spine skin thickness comparison diagram showing 3x thicker barrier and deep oil glands"/>
-        <div class="hero-img-caption">
-          <strong>The 3x Thickness Rule:</strong> Facial skin (1x thin) vs. Upper Back &amp; Spine Skin (3x thicker stratum corneum with deep oil glands).
-        </div>
+    <!-- Upfront Answer & Best Treatment Grid -->
+    <div class="hero-takeaway-grid">
+      <!-- Card 1: Why Back Acne Occurs -->
+      <div class="hero-takeaway-card">
+        <span class="takeaway-badge">⚡ Why Back Acne Occurs</span>
+        <h3>The 2 Primary Triggers</h3>
+        <p>Back acne in women is driven by two main triggers acting on 3x thicker skin:</p>
+        <ul>
+          <li><strong>Biological Trigger:</strong> Pre-period androgen spikes or PCOS stimulate deep oil glands along your spine to pump heavy, sticky sebum.</li>
+          <li><strong>Mechanical Friction &amp; Sweat:</strong> Tight sports bras, workout sweat, and hair conditioner residue clog pores and trap bacteria.</li>
+        </ul>
+      </div>
+
+      <!-- Card 2: Best Treatment & Clearing Strategy -->
+      <div class="hero-takeaway-card highlight">
+        <span class="takeaway-badge">🧴 Best Treatment Upfront</span>
+        <h3>The Gold Standard Protocol</h3>
+        <p>Because back skin is thick, leave-on contact time is essential:</p>
+        <ul>
+          <li><strong>#1 Cleanser:</strong> <strong>Perobar 2.5% or 5% bar (₹140–₹195)</strong> for red bumps, or <strong>Saslic DS 2% wash (₹290–₹440)</strong> for blackheads.</li>
+          <li><strong>The 3-Minute Rule:</strong> Leave the lather on wet skin for 3 full minutes before rinsing off.</li>
+          <li><strong>Reverse Shower:</strong> Condition hair first, clip up, and wash back last!</li>
+        </ul>
       </div>
     </div>
   </div>
