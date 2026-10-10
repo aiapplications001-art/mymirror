@@ -356,10 +356,19 @@
       max-width: 1140px; margin: 0 auto; padding: 0 1.5rem;
       width: 100%; display: flex; align-items: center; justify-content: space-between;
     }
-    .nav-logo img { height: 32px; width: auto; display: block; }
+    .nav-logo img { height: 30px; width: auto; display: block; }
     .nav-links { display: flex; gap: 1.2rem; list-style: none; }
     .nav-links a { font-size: 13px; font-weight: 600; color: var(--txt2); text-decoration: none; transition: color 0.2s; }
     .nav-links a:hover { color: var(--brand); }
+    .nav-cta-btn {
+      display: inline-flex; align-items: center; gap: 4px;
+      background: var(--brand); color: #fff !important;
+      font-size: 12px; font-weight: 700; padding: 7px 15px;
+      border-radius: 9999px; text-decoration: none;
+      box-shadow: 0 4px 12px rgba(236,97,14,0.25);
+      white-space: nowrap; transition: all 0.2s;
+    }
+    .nav-cta-btn:hover { background: var(--brand-dark); transform: translateY(-1px); }
 
     /* HERO SECTION */
     .hero { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 2.4rem 1.5rem 2.4rem; text-align: left; }
@@ -629,6 +638,11 @@
 
     /* RESPONSIVE MEDIA QUERIES */
     @media (max-width: 900px) {
+      .trust-bar { font-size: 11px; padding: 6px 1rem; gap: 6px; }
+      .nav-links { display: none; }
+      .nav-inner { padding: 0 1rem; }
+      .nav-logo img { height: 26px; }
+      .nav-cta-btn { font-size: 11px; padding: 6px 12px; }
       .hero-top-row { grid-template-columns: 1fr; gap: 2rem; }
       .page-body { grid-template-columns: 1fr; gap: 2.5rem; }
       .sidebar { display: none; }
@@ -672,6 +686,7 @@
       <li><a href="/acne/best-ceramide-moisturizer-acne-prone-skin-india/">Ceramide Guide</a></li>
       <li><a href="/acne/best-cerave-moisturizing-cream-dupes-india/">CeraVe Dupes</a></li>
     </ul>
+    <a class="nav-cta-btn" href="https://mymirror.fit/scan/">AI Skin Scan ✨</a>
   </div>
 </nav>
 
