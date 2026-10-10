@@ -473,6 +473,27 @@
     .sc-4 { background: #EF4444; }
     .sc-5 { background: #991B1B; }
 
+    /* COLOR CODED SCORE PILLS (MATCHING SCALE BAR EXACTLY) */
+    .score-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 12px;
+      border-radius: 9999px;
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+      text-transform: uppercase;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .score-pill.sc-0 { background: #059669; color: #FFFFFF; }
+    .score-pill.sc-1 { background: #10B981; color: #FFFFFF; }
+    .score-pill.sc-2 { background: #EAB308; color: #78350F; }
+    .score-pill.sc-3 { background: #F97316; color: #FFFFFF; }
+    .score-pill.sc-4 { background: #EF4444; color: #FFFFFF; }
+    .score-pill.sc-5 { background: #991B1B; color: #FFFFFF; }
+
     /* HIGH-CONTRAST DATA TABLE */
     .table-wrapper {
       margin: 1.8rem 0; border: 1px solid var(--border); border-radius: 18px;
@@ -492,7 +513,7 @@
     }
     .product-review-card:hover { border-color: var(--brand); box-shadow: 0 8px 28px rgba(236,97,14,0.08); }
     .product-review-top { display: grid; grid-template-columns: 120px 1fr; gap: 1.6rem; align-items: center; margin-bottom: 1.4rem; }
-    .product-thumb-box { width: 120px; height: 120px; background: var(--bg2); border-radius: 14px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; padding: 10px; }
+    .product-thumb-box { width: 120px; height: 120px; background: #FFFFFF; border-radius: 14px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; padding: 10px; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.02); }
     .product-thumb { max-width: 100%; max-height: 100%; object-fit: contain; }
     .product-headline h3 { font-family: 'Kantumruy Pro', serif; font-size: 1.35rem; font-weight: 700; color: var(--txt); margin-bottom: 4px; }
     .product-badges { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
@@ -844,49 +865,49 @@
           <tbody>
             <tr>
               <td><strong>Pure Glycerin</strong></td>
-              <td>0 / 5 (Completely Safe)</td>
+              <td><span class="score-pill sc-0">Score 0 · Will Not Clog</span></td>
               <td>Light water gels, pharmacy lotions</td>
               <td>Gold-standard hydrator. Pulls water into skin cells without adding any oil.</td>
             </tr>
             <tr>
               <td><strong>Hyaluronic Acid</strong></td>
-              <td>0 / 5 (Completely Safe)</td>
+              <td><span class="score-pill sc-0">Score 0 · Will Not Clog</span></td>
               <td>Pond's Super Light Gel, Sebamed</td>
               <td>Holds 1,000x its weight in water; weightless and sweat-friendly.</td>
             </tr>
             <tr>
               <td><strong>Niacinamide (Vitamin B3)</strong></td>
-              <td>0 / 5 (Completely Safe)</td>
+              <td><span class="score-pill sc-0">Score 0 · Will Not Clog</span></td>
               <td>Minimalist B5, Cipla Excela</td>
               <td>Regulates excess oil production and prevents post-acne dark spots.</td>
             </tr>
             <tr>
               <td><strong>Pure Squalane (Plant-Derived)</strong></td>
-              <td>1 / 5 (Very Low Risk)</td>
+              <td><span class="score-pill sc-1">Score 1 · Very Low Risk</span></td>
               <td>Lightweight facial gel-creams</td>
               <td>Mimics natural skin lipids without oxidizing in sunlight or clogging pores.</td>
             </tr>
             <tr>
               <td><strong>Caprylic/Capric Triglycerides</strong></td>
-              <td>2 / 5 (Borderline in Humidity)</td>
+              <td><span class="score-pill sc-2">Score 2 · Mild Risk</span></td>
               <td>Standard daily lotions</td>
               <td>Acceptable in dry North Indian winters; can feel heavy during muggy monsoons.</td>
             </tr>
             <tr>
               <td><strong>Pure Coconut Oil</strong></td>
-              <td>4 / 5 (High Risk)</td>
+              <td><span class="score-pill sc-4">Score 4 · High Risk</span></td>
               <td>Traditional home remedies, cold creams</td>
               <td>Heavy lauric fatty acids form a pore-choking seal. Keep on hair, never on face!</td>
             </tr>
             <tr>
               <td><strong>Isopropyl Myristate / Palmitate</strong></td>
-              <td>4–5 / 5 (Severe Pore Clogger)</td>
+              <td><span class="score-pill sc-5">Score 5 · Severe Clog</span></td>
               <td>Cheap commercial body lotions</td>
               <td>Synthetic slip esters that slide into pores and glue dead skin into hard bumps.</td>
             </tr>
             <tr>
               <td><strong>Wheat Germ Oil / Laureth-4</strong></td>
-              <td>5 / 5 (Extremely Clogging)</td>
+              <td><span class="score-pill sc-5">Score 5 · Severe Clog</span></td>
               <td>Thick night creams &amp; rich balms</td>
               <td>Guaranteed to cause closed comedones on acne-prone skin within 10 days.</td>
             </tr>
@@ -1212,7 +1233,12 @@
           <div class="bento-card-header">
             <span class="bento-pill brand">Pick #7 · ₹350–₹450</span>
           </div>
-          <h3>Re'equil Oil-Free Moisturiser</h3>
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+            <div style="width:48px; height:48px; background:#fff; border-radius:10px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center; padding:4px; flex-shrink:0;">
+              <img src="/assets/reequil-moisturizer.webp" alt="Re'equil Oil-Free Moisturiser" style="max-height:100%; max-width:100%; object-fit:contain;" />
+            </div>
+            <h3 style="margin-bottom:0; font-size:1.15rem;">Re'equil Oil-Free Moisturiser</h3>
+          </div>
           <p>
             Formulated specifically for coastal humidity, replacing heavy cosmetic oils with betaine, hyaluronic acid, and mattifying silica. Dries to a powdery velvety finish that never pills under sunscreen or melts into midday sweat.
           </p>
@@ -1242,7 +1268,12 @@
           <div class="bento-card-header">
             <span class="bento-pill brand">Pick #10 · ₹499–₹599</span>
           </div>
-          <h3>Dot &amp; Key 72-Hour Probiotic Gel Crème</h3>
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+            <div style="width:48px; height:48px; background:#fff; border-radius:10px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center; padding:4px; flex-shrink:0;">
+              <img src="/assets/images/prod-clean-dot-key-cica.webp" alt="Dot & Key Probiotic Gel" style="max-height:100%; max-width:100%; object-fit:contain;" />
+            </div>
+            <h3 style="margin-bottom:0; font-size:1.15rem;">Dot &amp; Key 72-Hour Probiotic Gel Crème</h3>
+          </div>
           <p>
             Combines lactobacillus ferment lysates with hydrolyzed rice water to nourish beneficial skin flora and balance surface bacteria after prolonged acne flare-ups. Light dewy finish that excludes heavy plant butters.
           </p>
@@ -1363,6 +1394,13 @@
       <p class="section-lead">
         Roughly 60% of people who start prescription Adapalene or Tretinoin quit within the first three weeks because of severe peeling, redness, and stinging. Using the <strong>"Dermatologist Sandwich Method"</strong> cuts irritation by up to 60% without weakening acne results:
       </p>
+
+      <div style="text-align:center; margin:1.8rem 0 2rem;">
+        <img src="/assets/images/tretinoin_sandwich_method_india.jpg" alt="The Dermatologist Tretinoin and Retinoid Sandwich Protocol Illustrated" style="width:100%; max-width:680px; border-radius:18px; border:1.5px solid var(--border); box-shadow:0 8px 25px rgba(0,0,0,0.06); display:inline-block;" />
+        <div style="font-size:12px; color:var(--txt3); margin-top:8px;">
+          <strong>Clinical Buffer Protocol:</strong> Applying a non-comedogenic water gel 10 minutes before your retinoid creates a protective cushion that eliminates peeling without blunting drug efficacy.
+        </div>
+      </div>
 
       <div class="protocol-card">
         <div class="protocol-step">
