@@ -367,7 +367,10 @@
 
     /* STICKY TOC BAR */
     .toc-bar { background: var(--bg); border-bottom: 1px solid var(--border); position: sticky; top: 60px; z-index: 900; overflow-x: auto; }
-    .toc-inner { max-width: 1140px; margin: 0 auto; display: flex; justify-content: flex-start; padding: 0 1.5rem; gap: 1.2rem; }
+    .toc-inner { max-width: 1140px; margin: 0 auto; display: flex; justify-content: center; padding: 0 1.5rem; gap: 1.2rem; }
+    @media (max-width: 1140px) {
+      .toc-inner { justify-content: flex-start; }
+    }
     .toc-link { white-space: nowrap; font-size: 13px; font-weight: 600; color: var(--txt3); text-decoration: none; padding: 12px 0; border-bottom: 2px solid transparent; transition: all 0.2s; }
     .toc-link:hover, .toc-link.active { color: var(--brand); border-bottom-color: var(--brand); }
 
