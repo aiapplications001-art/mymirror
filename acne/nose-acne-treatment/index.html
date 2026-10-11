@@ -106,12 +106,12 @@
         {
           "@type": "HowToStep",
           "name": "Apply a Warm Compress",
-          "text": "Soak a clean washcloth or cotton pad in warm (not hot) water. Press it gently against the outside of your nose for 5 to 10 minutes, twice a day. This boosts blood circulation to relieve pressure and encourage natural drainage."
+          "text": "Soak a clean washcloth or cotton pad in warm water. Press it gently against the outside of your nose for 5 to 10 minutes, twice a day, to relieve pressure and encourage natural drainage."
         },
         {
           "@type": "HowToStep",
-          "name": "Apply a Gentle Antibacterial Spot Gel or Hydrocolloid Patch",
-          "text": "For red, inflamed bumps on the outer skin, apply a tiny dab of 2.5% Benzoyl Peroxide gel or cover it with an acne hydrocolloid patch. Patches protect the bump from accidental touching and absorb fluid gently."
+          "name": "Apply a Gentle Spot Gel or Hydrocolloid Patch",
+          "text": "For red, inflamed bumps on the outer skin, apply a tiny dab of 2.5% Benzoyl Peroxide gel or cover it with an acne hydrocolloid patch to protect it from fingers."
         },
         {
           "@type": "HowToStep",
@@ -121,7 +121,7 @@
         {
           "@type": "HowToStep",
           "name": "Clear Nose Tip Blackheads with 2% Salicylic Acid",
-          "text": "For rough, dark blackheads on the nose tip, wash with a 2% Salicylic Acid cleanser daily. Avoid pore strips or metal extractors which tear delicate skin capillaries and enlarge pores."
+          "text": "For rough, dark blackheads on the nose tip, wash with a 2% Salicylic Acid cleanser daily. Avoid pore strips or metal extractors."
         }
       ]
     },
@@ -240,49 +240,49 @@
     }
     .nav-cta-btn:hover { background: var(--brand-dark); transform: translateY(-1px); }
 
-    /* HERO SECTION */
-    .hero { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 2.4rem 1.5rem 2.4rem; text-align: left; }
+    /* HERO SECTION (Compact 1st Fold with Upfront Action) */
+    .hero { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 1.8rem 1.5rem 2rem; text-align: left; }
     .hero-container { max-width: 1140px; margin: 0 auto; }
-    .hero-top-row { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 2.5rem; align-items: center; margin-bottom: 1.8rem; }
+    .hero-top-row { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 2rem; align-items: start; margin-bottom: 1.5rem; }
     .hero-content { min-width: 0; }
-    .hero-tag { display: inline-flex; align-items: center; gap: 6px; background: var(--brand-light); color: var(--brand-dark); font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 9999px; margin-bottom: 0.8rem; }
-    .hero h1 { font-family: 'Kantumruy Pro', serif; font-size: clamp(1.85rem, 3.2vw, 2.5rem); font-weight: 700; line-height: 1.25; margin-bottom: 0.8rem; color: var(--txt); }
-    .hero-sub { color: var(--txt2); font-size: 1.02rem; line-height: 1.65; margin-bottom: 1.2rem; }
+    .hero-tag { display: inline-flex; align-items: center; gap: 6px; background: var(--brand-light); color: var(--brand-dark); font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 9999px; margin-bottom: 0.6rem; }
+    .hero h1 { font-family: 'Kantumruy Pro', serif; font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; color: var(--txt); }
+    .hero-sub { color: var(--txt2); font-size: 1rem; line-height: 1.6; margin-bottom: 1rem; }
 
-    /* UPFRONT 30-SECOND VERDICT BOX (Direct Answer in 1st Fold) */
-    .upfront-verdict-card {
-      background: #FFFFFF; border: 2px solid var(--brand); border-radius: 18px;
-      padding: 1.3rem 1.5rem; margin-bottom: 1.3rem; box-shadow: 0 6px 20px rgba(236,97,14,0.08);
-    }
-    .verdict-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-    .verdict-badge {
-      background: var(--brand); color: #fff; font-size: 11px; font-weight: 800;
-      text-transform: uppercase; padding: 3px 8px; border-radius: 6px; letter-spacing: 0.05em;
-    }
-    .verdict-title { font-size: 1.05rem; font-weight: 700; color: var(--txt); }
-    .verdict-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 7px; }
-    .verdict-list li { font-size: 0.88rem; color: var(--txt2); line-height: 1.55; padding-left: 22px; position: relative; }
-    .verdict-list li::before {
-      content: '✓'; position: absolute; left: 0; color: var(--brand); font-weight: 800; font-size: 13px;
-    }
-    .verdict-list li strong { color: var(--txt); }
-    
-    /* 1st Fold CTA Group */
-    .hero-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 0.9rem; }
+    /* 1st Fold CTA Group - PLACED DIRECTLY BELOW TITLE & SUBHEAD */
+    .hero-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 1.1rem; }
     .face-ai-btn {
       position: relative; display: inline-flex; align-items: center; justify-content: center;
-      padding: 13px 28px; background: var(--brand); color: #fff !important;
-      text-decoration: none; font-weight: 800; font-size: 0.95rem; border-radius: 9999px;
+      padding: 12px 26px; background: var(--brand); color: #fff !important;
+      text-decoration: none; font-weight: 800; font-size: 0.92rem; border-radius: 9999px;
       box-shadow: 0 8px 24px rgba(236,97,14,0.3); transition: all 0.3s var(--ease);
     }
     .face-ai-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(236,97,14,0.45); }
     .hero-jump-btn {
       display: inline-flex; align-items: center; justify-content: center;
-      padding: 12px 22px; background: #fff; color: var(--txt);
-      text-decoration: none; font-weight: 700; font-size: 0.9rem; border-radius: 9999px;
+      padding: 11px 20px; background: #fff; color: var(--txt);
+      text-decoration: none; font-weight: 700; font-size: 0.88rem; border-radius: 9999px;
       border: 1.5px solid var(--border); transition: all 0.2s;
     }
     .hero-jump-btn:hover { border-color: var(--brand); color: var(--brand); background: #FFF9F5; }
+
+    /* UPFRONT 30-SECOND VERDICT BOX (Compact & Scannable) */
+    .upfront-verdict-card {
+      background: #FFFFFF; border: 2px solid var(--brand); border-radius: 16px;
+      padding: 1.1rem 1.3rem; margin-bottom: 0.8rem; box-shadow: 0 6px 18px rgba(236,97,14,0.07);
+    }
+    .verdict-header { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; }
+    .verdict-badge {
+      background: var(--brand); color: #fff; font-size: 10.5px; font-weight: 800;
+      text-transform: uppercase; padding: 2px 7px; border-radius: 6px; letter-spacing: 0.05em;
+    }
+    .verdict-title { font-size: 1rem; font-weight: 700; color: var(--txt); }
+    .verdict-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+    .verdict-list li { font-size: 0.86rem; color: var(--txt2); line-height: 1.5; padding-left: 20px; position: relative; }
+    .verdict-list li::before {
+      content: '✓'; position: absolute; left: 0; color: var(--brand); font-weight: 800; font-size: 13px;
+    }
+    .verdict-list li strong { color: var(--txt); }
     
     .hero-meta-row { display: flex; align-items: center; gap: 14px; font-size: 12px; color: var(--txt3); flex-wrap: wrap; margin-top: 0.4rem; }
     .hero-meta-row span { display: inline-flex; align-items: center; gap: 4px; }
@@ -502,7 +502,7 @@
   </div>
 </nav>
 
-<!-- HERO SECTION (Upfront 30-Second Diagnosis in 1st Fold) -->
+<!-- HERO SECTION (Upfront 1st Fold with CTAs & Quick Triage) -->
 <header class="hero">
   <div class="hero-container">
     <div class="hero-top-row">
@@ -510,8 +510,18 @@
         <span class="hero-tag">Dermatology Guide · Nose &amp; T-Zone Care</span>
         <h1>Pimple on Nose or Inside Nostril: Causes, Danger Triangle &amp; Safe Treatment</h1>
         <p class="hero-sub">
-          Few breakouts hurt as sharply as a pimple on your nose tip or inside your nostril. Here is why it hurts so much, the critical Danger Triangle rules against squeezing, and how to safely clear it without scarring.
+          Why nose pimples hurt so sharply, the critical Danger Triangle rules against squeezing, and safe steps to clear them without scars.
         </p>
+
+        <!-- 1st Fold CTA Group (VISIBLE IMMEDIATELY UPFRONT) -->
+        <div class="hero-actions">
+          <a class="face-ai-btn" href="https://mymirror.fit/scan/">
+            Scan Your Nose Acne With AI →
+          </a>
+          <a class="hero-jump-btn" href="#triage-table">
+            View Comparison Table ↓
+          </a>
+        </div>
 
         <!-- UPFRONT 30-SECOND VERDICT BOX -->
         <div class="upfront-verdict-card">
@@ -521,27 +531,18 @@
           </div>
           <ul class="verdict-list">
             <li>
-              <strong>Painful, throbbing bump INSIDE your nostril?</strong> → <strong>Hair Root Infection (Nasal Vestibulitis)</strong>. Usually caused by nose picking, plucking hairs, or rough tissue wiping. <em>Never squeeze inside your nose!</em> <strong>Fix:</strong> Hold a warm wet cloth against the outside for 10 minutes + apply a doctor-prescribed antibacterial ointment (like Mupirocin / T-Bact).
+              <strong>Painful sore INSIDE your nostril?</strong> → <strong>Hair Root Infection (Vestibulitis)</strong>. <em>Never squeeze!</em> Apply warm damp compress + antibacterial ointment (Mupirocin / T-Bact).
             </li>
             <li>
-              <strong>Hard, red, painful "blind" bump under the skin on the outside?</strong> → <strong>Deep Cyst in the Danger Triangle</strong>. The skin is stretched tight over cartilage, which is why it throbs. <em>Strictly zero popping!</em> <strong>Fix:</strong> Apply a warm compress twice daily + dab 2.5% Benzoyl Peroxide gel or cover with an acne patch.
+              <strong>Hard, throbbing blind bump on outside?</strong> → <strong>Deep Cyst in Danger Triangle</strong>. <em>Strictly zero popping!</em> Warm compress + 2.5% Benzoyl Peroxide or acne patch.
             </li>
             <li>
-              <strong>Dark dots or rough sandpaper texture on the tip?</strong> → <strong>Blackheads &amp; Sebaceous Filaments</strong>. Natural oil collecting in wide pores. <em>Never use harsh peel-off pore strips!</em> <strong>Fix:</strong> Wash daily with a gentle 2% Salicylic Acid foaming wash (like Saslic DS) to dissolve oil plugs.
+              <strong>Dark dots or rough texture on nose tip?</strong> → <strong>Blackheads &amp; Oil Plugs</strong>. <em>No pore strips!</em> Wash with 2% Salicylic Acid to dissolve oil.
             </li>
             <li>
-              <strong>Bumps on the bridge right where your glasses sit?</strong> → <strong>Friction Bumps (Acne Mechanica)</strong>. Eyeglass pads trap sweat and rub skin. <strong>Fix:</strong> Wipe your glasses nose pads with an alcohol wipe daily.
+              <strong>Bumps where your glasses sit?</strong> → <strong>Friction Bumps (Acne Mechanica)</strong>. Clean eyeglass nose pads daily with an alcohol wipe.
             </li>
           </ul>
-        </div>
-
-        <div class="hero-actions">
-          <a class="face-ai-btn" href="https://mymirror.fit/scan/">
-            Scan Your Nose Acne With AI →
-          </a>
-          <a class="hero-jump-btn" href="#triage-table">
-            View Quick Comparison Table ↓
-          </a>
         </div>
 
         <div class="hero-meta-row">
@@ -585,13 +586,14 @@
 <!-- STICKY TABLE OF CONTENTS -->
 <div class="toc-bar">
   <div class="toc-inner">
-    <a class="toc-link" href="#triage-table">1. Quick Decision Table</a>
-    <a class="toc-link" href="#why-it-hurts">2. Why It Hurts So Much</a>
-    <a class="toc-link" href="#danger-triangle">3. The Danger Triangle</a>
-    <a class="toc-link" href="#zones">4. The 4 Nose Breakout Zones</a>
-    <a class="toc-link" href="#treatments">5. Safe Treatment Steps</a>
+    <a class="toc-link" href="#triage-table">1. Decision Table</a>
+    <a class="toc-link" href="#why-it-hurts">2. Why It Hurts</a>
+    <a class="toc-link" href="#danger-triangle">3. Danger Triangle</a>
+    <a class="toc-link" href="#zones">4. Breakout Zones</a>
+    <a class="toc-link" href="#treatments">5. Safe Steps</a>
     <a class="toc-link" href="#dos-donts">6. Do's and Don'ts</a>
-    <a class="toc-link" href="#faqs">7. Common Questions</a>
+    <a class="toc-link" href="#hindi-guide">7. हिंदी सलाह (Hindi)</a>
+    <a class="toc-link" href="#faqs">8. FAQs</a>
   </div>
 </div>
 
@@ -782,7 +784,7 @@
           <div class="step-info">
             <h4>Apply a Warm Compress for 5–10 Minutes</h4>
             <p>
-              Soak a clean cotton washcloth in pleasantly warm (not scalding) water. Press it gently against the outside of your nose for 5 to 10 minutes, 2 to 3 times a day. The warmth boosts healthy blood flow, calms the throbbing pain, and helps your immune system clear the swelling naturally.
+              Soak a clean cotton washcloth in pleasantly warm water. Press it gently against the outside of your nose for 5 to 10 minutes, 2 to 3 times a day. The warmth boosts healthy blood flow, calms the throbbing pain, and helps your immune system clear the swelling naturally.
             </p>
           </div>
         </div>
@@ -871,12 +873,38 @@
       </div>
     </section>
 
-    <!-- SECTION 7: FAQS -->
+    <!-- SECTION 7: HINDI GUIDANCE (RESTORED SECTION) -->
+    <section class="content-section" id="hindi-guide">
+      <span class="section-tag">हिंदी मार्गदर्शन · सरल सलाह</span>
+      <h2 class="section-title">नाक के पिंपल्स का सही इलाज (सरल हिंदी सलाह)</h2>
+      <p class="section-lead">
+        नाक पर होने वाले दाने बहुत ज्यादा दर्द इसलिए करते हैं क्योंकि यहां की चमड़ी सीधे कार्टिलेज (मुलायम हड्डी) से चिपकी होती है, जिससे नसों पर बहुत ज्यादा दबाव पड़ता है।
+      </p>
+
+      <div class="info-callout" style="background: #FFFDFB; border-left: 4px solid var(--brand); border-radius: 14px; padding: 1.5rem;">
+        <ul style="padding-left: 1.2rem; margin: 0; line-height: 1.9; color: var(--txt2); font-size: 0.95rem;">
+          <li style="margin-bottom: 12px;">
+            <strong>अंदर का पिंपल कभी न दबाएं:</strong> नाक के अंदर का दाना (नेजल वेस्टिब्युलाइटिस) बैक्टीरिया के कारण होता है। नाक के इस हिस्से की नसें सीधे दिमाग की नसों से जुड़ी होती हैं। इसे दबाने या फोड़ने से इन्फेक्शन फैलने का खतरा होता है। इस पर केवल हल्के गर्म पानी की सिकाई करें और डॉक्टर की सलाह से म्यूपिरोसिन (Mupirocin / T-Bact 2%) ऑइंटमेंट लगाएं।
+          </li>
+          <li style="margin-bottom: 12px;">
+            <strong>ब्लैकहेड्स के लिए क्या करें?</strong> कभी भी मेटल ब्लैकहेड रिमूवर से जोर से न दबाएं, इससे नाक पर हमेशा के लिए लाल नसें (ब्रोकन कैपिलरी) उभर आती हैं। 2% सैलिसिलिक एसिड (Salicylic Acid) फेस वॉश का इस्तेमाल करें जो रोमछिद्रों के अंदर जमे तेल को बिना त्वचा खींचे घोलकर साफ करता है।
+          </li>
+          <li style="margin-bottom: 12px;">
+            <strong>चश्मे की सफाई:</strong> अगर आपकी नाक की हड्डी पर चश्मा पहनने वाली जगह दाने होते हैं, तो हर 2 दिन में अपने चश्मे के नोज़ पैड्स को सैनिटाइजर या हल्के साबुन से साफ करें।
+          </li>
+          <li>
+            <strong>घरेलू नुस्खों से बचें:</strong> नाक के दानों पर कभी भी लौंग का तेल, अदरक का रस या डेटॉल न लगाएं। इनसे भारतीय त्वचा पर गंभीर केमिकल बर्न और हमेशा के लिए काले धब्बे पड़ जाते हैं।
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 8: FAQS -->
     <section class="content-section" id="faqs">
-      <span class="section-tag">Section 7 · Common Questions</span>
+      <span class="section-tag">Section 8 · Common Clinical Questions</span>
       <h2 class="section-title">Frequently Asked Questions</h2>
       <p class="section-lead">
-        Clear, plain-English answers to common questions about nose pimples:
+        Evidence-based answers to urgent clinical questions regarding nose pain, infection risks, and safe healing:
       </p>
 
       <div class="faq-container">
