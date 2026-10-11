@@ -671,7 +671,7 @@
 
     /* Video Embed Container */
     .video-embed-box {
-      background: #fff;
+      background: #FFFFFF;
       border: 1.5px solid var(--border);
       border-radius: 16px;
       overflow: hidden;
@@ -680,8 +680,9 @@
     }
     .video-aspect {
       position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000;
       overflow: hidden;
     }
     .video-aspect iframe {
@@ -690,7 +691,31 @@
       left: 0;
       width: 100%;
       height: 100%;
-      border: none;
+      border: 0;
+      display: block;
+    }
+    .video-action-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px;
+      background: var(--bg3);
+      border-top: 1px solid var(--border);
+      font-size: 12.5px;
+      color: var(--text2);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .video-direct-btn {
+      color: var(--brand);
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .video-direct-btn:hover {
+      text-decoration: underline;
     }
     .video-notes {
       padding: 1.25rem 1.4rem;
@@ -859,7 +884,7 @@
       "description": "Board-certified dermatologists Dr. Shah and Dr. Maxfield break down how azelaic acid works, who benefits most, and how it pairs with soothing ingredients like niacinamide.",
       "thumbnailUrl": "https://i.ytimg.com/vi/PAgoujMiWTg/hqdefault.jpg",
       "uploadDate": "2023-01-20",
-      "embedUrl": "https://www.youtube-nocookie.com/embed/PAgoujMiWTg"
+      "embedUrl": "https://www.youtube.com/embed/PAgoujMiWTg"
     },
     {
       "@context": "https://schema.org",
@@ -1433,12 +1458,20 @@
         <div class="video-embed-box">
           <div class="video-aspect">
             <iframe
-              src="https://www.youtube-nocookie.com/embed/PAgoujMiWTg"
+              src="https://www.youtube.com/embed/PAgoujMiWTg"
               title="The TRUTH About Azelaic Acid | Dermatologists Explain"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              width="100%"
+              height="100%"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen>
             </iframe>
+          </div>
+          <div class="video-action-bar">
+            <span>Video by <strong>Doctorly</strong> (Dermatologists Dr. Shah &amp; Dr. Maxfield)</span>
+            <a class="video-direct-btn" href="https://www.youtube.com/watch?v=PAgoujMiWTg" target="_blank" rel="noopener noreferrer">
+              Watch on YouTube (14 mins) ↗
+            </a>
           </div>
           <div class="video-notes">
             <h4>Key Clinical Highlights from the Discussion:</h4>
@@ -1449,6 +1482,17 @@
               <li>• <strong>Pairing with Niacinamide:</strong> Using soothing barrier ingredients alongside azelaic acid reduces surface dryness significantly.</li>
             </ul>
           </div>
+        </div>
+
+        <!-- Companion Indian Routine Video Card -->
+        <div style="background:var(--bg2);border:1.5px solid var(--border);border-radius:14px;padding:1.1rem 1.3rem;margin-top:16px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;">
+          <div>
+            <div style="font-weight:700;font-size:13.5px;color:var(--text);margin-bottom:3px;">Indian Pharmacy Guide: Aziderm 10% Night Routine</div>
+            <div style="font-size:12.5px;color:var(--text2);line-height:1.45;">Watch Dr. Aanchal Panth MD explain how to introduce pharmacy azelaic acid cream step-by-step.</div>
+          </div>
+          <a href="https://www.youtube.com/watch?v=mvk6kFtsK58" target="_blank" rel="noopener noreferrer" style="background:#fff;border:1.5px solid var(--border);color:var(--brand);font-weight:700;font-size:12px;padding:7px 15px;border-radius:9999px;text-decoration:none;white-space:nowrap;">
+            Watch Dr. Aanchal (7 mins) ↗
+          </a>
         </div>
       </section>
 
