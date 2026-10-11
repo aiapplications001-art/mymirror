@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instant AI Skin Scan & Face Mapping | MyMirror</title>
-    <meta name="description" content="Start your free AI skin scan: Instantly map facial acne zones, analyze active breakout patterns, and get a dermatologist-aligned routine in 60 seconds.">
+    <title>A Smarter First Step for Your Skin | Free AI Skin Scan | MyMirror</title>
+    <meta name="description" content="Get your Skin Score + 6-zone face analysis with one quick scan. Forehead, nose, cheeks, chin, and jawline. Free scan, no app, no signup, 15-second scan.">
     <link rel="canonical" href="https://mymirror.fit/scan/">
+
+    <!-- Favicons (Cache Busted v4) -->
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png?v=4">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png?v=4">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png?v=4">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=4">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=4">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=4">
+    <link rel="shortcut icon" href="/favicon.ico?v=4">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mymirror.fit/scan/">
-    <meta property="og:title" content="Instant AI Skin Scan & Face Mapping | MyMirror">
-    <meta property="og:description" content="Start your free AI skin scan: Instantly map facial acne zones, analyze active breakout patterns, and get a dermatologist-aligned routine in 60 seconds.">
+    <meta property="og:title" content="A Smarter First Step for Your Skin | Free AI Skin Scan | MyMirror">
+    <meta property="og:description" content="Get your Skin Score + 6-zone face analysis with one quick scan. Forehead, nose, cheeks, chin, and jawline. Free scan, no app, no signup, 15-second scan.">
     <meta property="og:image" content="https://mymirror.fit/assets/images/mymirror-og.jpg">
     <meta property="og:image:secure_url" content="https://mymirror.fit/assets/images/mymirror-og.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="MyMirror Free AI Skin Scan and 6-Zone Face Analysis">
     <meta property="og:site_name" content="MyMirror">
 
     <!-- WhatsApp Web Legacy Image Link Fallback -->
@@ -24,9 +35,10 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Instant AI Skin Scan & Face Mapping | MyMirror">
-    <meta name="twitter:description" content="Start your free AI skin scan: Instantly map facial acne zones, analyze active breakout patterns, and get a dermatologist-aligned routine in 60 seconds.">
+    <meta name="twitter:title" content="A Smarter First Step for Your Skin | Free AI Skin Scan | MyMirror">
+    <meta name="twitter:description" content="Get your Skin Score + 6-zone face analysis with one quick scan. Forehead, nose, cheeks, chin, and jawline. Free scan, no app, no signup, 15-second scan.">
     <meta name="twitter:image" content="https://mymirror.fit/assets/images/mymirror-og.jpg">
+    <meta name="twitter:image:alt" content="MyMirror Free AI Skin Scan and 6-Zone Face Analysis">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QR2SPD4MZM"></script>
     <script>
@@ -63,8 +75,8 @@
       "@type": "WebApplication",
       "@id": "https://mymirror.fit/scan/#webpage",
       "url": "https://mymirror.fit/scan/",
-      "name": "Instant AI Skin Scan & Face Mapping",
-      "description": "Start your free AI skin scan: Instantly map facial acne zones, analyze active breakout patterns, and get a dermatologist-aligned routine in 60 seconds.",
+      "name": "Free AI Skin Scan & 6-Zone Face Analysis",
+      "description": "Get your Skin Score and 6-zone face analysis with one quick scan: Forehead, Nose, Left Cheek, Right Cheek, Chin, and Jawline.",
       "applicationCategory": "HealthApplication",
       "operatingSystem": "All",
       "image": "https://mymirror.fit/assets/images/mymirror-og.jpg"
@@ -105,72 +117,41 @@
     <div class="container">
         <main>
             <!-- INITIALIZATION / START VIEW -->
-            <div id="setupView" class="view-panel setup-panel">
-                <div class="launch-copy">
-                    <div id="setupKicker" class="launch-kicker">mymirror skin scan</div>
-                    <h1 id="setupTitle" class="launch-title">Free AI Skin Analysis</h1>
-                    <p class="instruction">Scan your face to understand visible acne zones, oiliness, marks, texture, and skin-age signals in about 60 seconds.</p>
-                    <button id="startScanner" class="premium-btn">START FREE SKIN ANALYSIS</button>
-                    <p class="cta-note">Camera opens next. No app install.</p>
+            <div id="setupView" class="view-panel setup-panel minimal-setup">
+                <div class="minimal-scan-hero">
+                    <span id="setupKicker" class="hidden" style="display:none;" aria-hidden="true"></span>
+                    <h1 id="setupTitle" class="minimal-title">A smarter first step for your skin.</h1>
+                    <p class="instruction minimal-subtitle">Get your Skin Score + 6-zone face analysis with one quick scan.</p>
 
-                    <div class="trust-chips" aria-label="Scan trust signals">
-                        <span>Private camera scan</span>
-                        <span>No signup required</span>
-                        <span>You review before analysis</span>
-                    </div>
-                </div>
-
-                <div class="launch-visual" aria-label="Skin scan report preview">
-                    <div class="face-preview">
-                        <div class="scan-frame">
-                            <div class="face-oval">
-                                <span class="face-nose"></span>
-                                <span class="face-mouth"></span>
-                                <span class="mesh-line mesh-brow"></span>
-                                <span class="mesh-line mesh-cheek"></span>
-                                <span class="zone-dot dot-forehead"></span>
-                                <span class="zone-dot dot-cheek-left"></span>
-                                <span class="zone-dot dot-cheek-right"></span>
-                                <span class="zone-dot dot-chin"></span>
-                            </div>
-                            <div class="scan-line"></div>
-                        </div>
+                    <div class="minimal-zones-bar" aria-label="6 analysis zones">
+                        <span>Forehead</span>
+                        <span class="sep">·</span>
+                        <span>Nose</span>
+                        <span class="sep">·</span>
+                        <span>Left Cheek</span>
+                        <span class="sep">·</span>
+                        <span>Right Cheek</span>
+                        <span class="sep">·</span>
+                        <span>Chin</span>
+                        <span class="sep">·</span>
+                        <span>Jawline</span>
                     </div>
 
-                    <div class="sample-result-card">
-                        <div class="sample-header">
-                            <span>Report preview</span>
-                            <strong>Generated after scan</strong>
-                        </div>
-                        <div class="sample-metrics">
-                            <div>
-                                <span>Score cards</span>
-                                <strong>6 pillars</strong>
-                            </div>
-                            <div>
-                                <span>Region review</span>
-                                <strong>Face crops</strong>
-                            </div>
-                            <div>
-                                <span>Care map</span>
-                                <strong>Next steps</strong>
-                            </div>
-                        </div>
+                    <div class="minimal-trust-bar" aria-label="Scan features">
+                        <span>Free scan</span>
+                        <span class="sep">·</span>
+                        <span>No app</span>
+                        <span class="sep">·</span>
+                        <span>No signup</span>
+                        <span class="sep">·</span>
+                        <span>15-second scan</span>
+                        <span class="sep">·</span>
+                        <span>No data stored</span>
                     </div>
-                </div>
 
-                <div class="scan-steps" aria-label="Scan steps">
-                    <div>
-                        <span>1</span>
-                        <strong>Position your face</strong>
-                    </div>
-                    <div>
-                        <span>2</span>
-                        <strong>15-second private scan</strong>
-                    </div>
-                    <div>
-                        <span>3</span>
-                        <strong>Get your skin report</strong>
+                    <div class="minimal-action-wrap">
+                        <button id="startScanner" class="premium-btn minimal-start-btn">START MY FREE SKIN SCAN</button>
+                        <p class="cta-note minimal-cta-note">Get your report in one click. View, download or share anytime.</p>
                     </div>
                 </div>
             </div>

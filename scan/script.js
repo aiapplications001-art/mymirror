@@ -595,50 +595,8 @@ const DEFAULT_SETUP_INSTRUCTION = setupInstruction?.textContent || 'Scan your fa
 const DEFAULT_START_BUTTON_TEXT = startBtn?.textContent || 'START SKIN SCAN';
 
 function applyLandingContext() {
-    if (!setupTitle || !setupInstruction || !setupKicker) return;
-
-    const params = new URLSearchParams(window.location.search);
-    const sourceText = [
-        params.get('source'),
-        params.get('topic'),
-        params.get('utm_content'),
-        params.get('utm_campaign'),
-        document.referrer
-    ].filter(Boolean).join(' ').toLowerCase();
-
-    const contexts = [
-        {
-            match: ['forehead'],
-            kicker: 'forehead acne scan',
-            title: 'Check Your Forehead Acne Pattern',
-            body: 'Scan your face to map visible forehead activity, oiliness, marks, texture, and skin-age signals in about 60 seconds.'
-        },
-        {
-            match: ['teen', 'teenager'],
-            kicker: 'teen acne scan',
-            title: 'Understand Your Acne Zones',
-            body: 'Scan your face to see visible breakout zones, oiliness, marks, texture, and skin-age signals in about 60 seconds.'
-        },
-        {
-            match: ['men', 'male'],
-            kicker: 'men skin scan',
-            title: 'Free Skin Analysis for Men',
-            body: 'Scan your face to understand visible acne zones, oiliness, post-shave irritation, texture, and marks in about 60 seconds.'
-        },
-        {
-            match: ['pcos', 'pregnancy'],
-            kicker: 'sensitive skin scan',
-            title: 'Map Your Visible Skin Signals',
-            body: 'Scan your face to understand visible breakout zones, marks, oiliness, texture, and sensitivity signals in about 60 seconds.'
-        }
-    ];
-
-    const context = contexts.find(c => c.match.some(term => sourceText.includes(term)));
-    if (!context) return;
-
-    setupKicker.textContent = context.kicker;
-    setupTitle.textContent = context.title;
-    setupInstruction.textContent = context.body;
+    // Minimal scan page: preserve exact unified copy
+    return;
 }
 
 // SCAN STATE
