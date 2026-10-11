@@ -424,6 +424,225 @@
     .callout-warn { background: #FFFBEB; border-color: var(--warn); color: #78350F; }
     .callout h4 { margin-bottom: 6px; font-size: 1rem; font-weight: 700; }
 
+
+    /* UPFRONT CONCENTRATION STRIP IN 1ST FOLD TRIAGE */
+    .triage-conc-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin: 10px 0 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed var(--border);
+    }
+    .triage-conc-pill {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      padding: 7px 9px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: 1.5px solid transparent;
+    }
+    .triage-conc-pill:hover { transform: translateY(-1px); }
+    .triage-conc-pill.pill-sweet { background: #ECFDF5; border-color: #10B981; }
+    .triage-conc-pill.pill-sweet .pill-badge { color: #047857; font-weight: 800; font-size: 11.5px; }
+    .triage-conc-pill.pill-clinical { background: #FFFBEB; border-color: #F59E0B; }
+    .triage-conc-pill.pill-clinical .pill-badge { color: #B45309; font-weight: 800; font-size: 11.5px; }
+    .triage-conc-pill.pill-danger { background: #FEF2F2; border-color: #EF4444; }
+    .triage-conc-pill.pill-danger .pill-badge { color: #B91C1C; font-weight: 800; font-size: 11.5px; }
+    .triage-conc-pill .pill-text { font-size: 10.5px; color: var(--txt2); font-weight: 600; line-height: 1.25; }
+
+    /* HIGHLIGHTED CONCENTRATION SPOTLIGHT CARDS */
+    .concentration-spotlight-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 1.8rem 0 2.2rem;
+    }
+    .conc-spotlight-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.35rem 1.4rem;
+      border: 2px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .conc-spotlight-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .conc-spotlight-10 {
+      border-color: #10B981;
+      background: linear-gradient(180deg, #F0FDF4 0%, #FFFFFF 26%);
+    }
+    .conc-spotlight-15 {
+      border-color: #F59E0B;
+      background: linear-gradient(180deg, #FFFBEB 0%, #FFFFFF 26%);
+    }
+    .conc-spotlight-20 {
+      border-color: #EF4444;
+      background: linear-gradient(180deg, #FEF2F2 0%, #FFFFFF 26%);
+    }
+    .conc-spotlight-5 {
+      border-color: #94A3B8;
+      background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 26%);
+    }
+    .conc-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .conc-num {
+      font-family: 'Kantumruy Pro', serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .conc-spotlight-10 .conc-num { color: #047857; }
+    .conc-spotlight-15 .conc-num { color: #B45309; }
+    .conc-spotlight-20 .conc-num { color: #B91C1C; }
+    .conc-spotlight-5 .conc-num { color: #475569; }
+    .conc-badge {
+      font-size: 10.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 9999px;
+      letter-spacing: 0.04em;
+    }
+    .conc-badge-sweet { background: #10B981; color: #fff; }
+    .conc-badge-clinical { background: #F59E0B; color: #fff; }
+    .conc-badge-danger { background: #EF4444; color: #fff; }
+    .conc-badge-gentle { background: #64748B; color: #fff; }
+    .conc-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--txt);
+      margin: 4px 0 8px;
+    }
+    .conc-desc {
+      font-size: 13.5px;
+      color: var(--txt2);
+      line-height: 1.55;
+      margin-bottom: 12px;
+      flex-grow: 1;
+    }
+    .conc-key-metrics {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      border-top: 1px dashed var(--border);
+      padding-top: 10px;
+      font-size: 12.5px;
+      line-height: 1.4;
+    }
+    .conc-metric-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+    .conc-metric-label {
+      font-weight: 700;
+      color: var(--txt);
+      min-width: 95px;
+    }
+    .conc-metric-val {
+      color: var(--txt2);
+    }
+
+    /* ACTIVE MOLECULE IN-DEPTH CARDS */
+    .molecule-card-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .molecule-card {
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 1.4rem 1.6rem;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.03);
+    }
+    .molecule-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    .molecule-title {
+      font-family: 'Kantumruy Pro', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--txt);
+      margin: 0;
+    }
+    .molecule-tag {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      letter-spacing: 0.04em;
+    }
+    .mol-tag-laa { background: #FEF3C7; color: #92400E; border: 1px solid #FCD34D; }
+    .mol-tag-eaa { background: #ECFDF5; color: #065F46; border: 1px solid #A7F3D0; }
+    .mol-tag-sap { background: #EFF6FF; color: #1E40AF; border: 1px solid #BFDBFE; }
+    .molecule-overview {
+      font-size: 14.5px;
+      color: var(--txt2);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    .molecule-detail-box {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+    .molecule-detail-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 8px;
+      font-size: 13.5px;
+      line-height: 1.5;
+    }
+    .molecule-detail-row:last-child {
+      margin-bottom: 0;
+    }
+    .molecule-detail-row strong {
+      min-width: 140px;
+      color: var(--txt);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .molecule-detail-row span, .molecule-detail-row div {
+      color: var(--txt2);
+    }
+    .example-pills {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+    .example-pill {
+      background: #fff;
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--txt);
+    }
+
     /* STEP CARDS */
     .routine-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 1.5rem 0 2rem; }
     .routine-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: 1.2rem; }
@@ -563,6 +782,10 @@
     /* RESPONSIVE BREAKPOINTS */
     @media (max-width: 950px) {
       .hero-top-row { grid-template-columns: 1fr; }
+      .triage-conc-strip { grid-template-columns: 1fr; }
+      .concentration-spotlight-grid { grid-template-columns: 1fr; }
+      .molecule-detail-row { flex-direction: column; gap: 4px; }
+      .molecule-detail-row strong { min-width: auto; }
       .hero-photo { max-width: 440px; }
       .layout-grid { grid-template-columns: 1fr; }
       .sidebar-col { display: none; }
@@ -629,6 +852,23 @@
             <span class="verdict-badge">Quick Summary</span>
             <span class="verdict-title">The 30-Second Vitamin C Triage</span>
           </div>
+
+          <!-- UPFRONT CONCENTRATION HIGHLIGHT STRIP (1st Fold) -->
+          <div class="triage-conc-strip">
+            <a href="#conc-10" class="triage-conc-pill pill-sweet">
+              <span class="pill-badge">🟢 10% Sweet Spot</span>
+              <span class="pill-text">Beginners &amp; Sensitive Skin</span>
+            </a>
+            <a href="#conc-15" class="triage-conc-pill pill-clinical">
+              <span class="pill-badge">🟡 15% Clinical</span>
+              <span class="pill-text">Deep Stubborn PIH Marks</span>
+            </a>
+            <a href="#conc-20" class="triage-conc-pill pill-danger">
+              <span class="pill-badge">🔴 20% Caution</span>
+              <span class="pill-text">High Purge &amp; Irritation Risk</span>
+            </a>
+          </div>
+
           <ul class="verdict-list">
             <li class="verdict-item">
               <strong class="tag-highlight">⭐ Best Concentration:</strong>
@@ -648,7 +888,7 @@
 
       <!-- Hero Photo -->
       <div class="hero-photo">
-        <img src="/assets/images/vitamin-c-serum-for-acne-scars-india-og.jpg" alt="Dermatologist examining dark spots and acne scars" width="480" height="252" loading="eager"/>
+        <img src="/assets/images/vitamin-c-serum-for-acne-scars-india-og.jpg" alt="Young Indian woman examining post-acne dark spots on cheek with amber Vitamin C serum bottle on marble vanity" width="480" height="252" loading="eager"/>
       </div>
     </div>
   </div>
@@ -685,50 +925,275 @@
           Indian skin has reactive pigment cells. When a serum is too strong, it causes micro-inflammation. Your skin responds to that irritation by producing extra dark pigment. Here is how dermatologists break down the percentages:
         </p>
 
-        <div class="routine-grid">
-          <div class="routine-card">
-            <span class="routine-badge">10% Concentration · The Sweet Spot</span>
-            <h3 class="routine-title">Best for Beginners &amp; Sensitive Skin</h3>
-            <p class="routine-desc">
-              Strong enough to block melanin production and brighten dark spots. Gentle enough not to sting or damage your moisture barrier. This is the safest starting point for Indian skin.
+        <!-- HIGHLIGHTED CONCENTRATION SPOTLIGHT CARDS -->
+        <div class="concentration-spotlight-grid">
+          
+          <!-- 10% CARD -->
+          <div class="conc-spotlight-card conc-spotlight-10" id="conc-10">
+            <div class="conc-card-top">
+              <span class="conc-num">10%</span>
+              <span class="conc-badge conc-badge-sweet">🟢 The Sweet Spot · Best for Indian Skin</span>
+            </div>
+            <h3 class="conc-title">Best for Beginners, Oily Skin &amp; Mild Marks</h3>
+            <p class="conc-desc">
+              Strong enough to block melanin production and brighten dark spots without stinging or compromising your moisture barrier. This is the safest starting point for Indian skin.
             </p>
+            <div class="conc-key-metrics">
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Target Marks:</span>
+                <span class="conc-metric-val">Post-acne brown spots (PIH), dull complexion, sensitive skin</span>
+              </div>
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Fade Speed:</span>
+                <span class="conc-metric-val">Noticeable brightening within 6 to 8 weeks</span>
+              </div>
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Irritation Risk:</span>
+                <span class="conc-metric-val">Near zero stinging or purging</span>
+              </div>
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Top Benchmark:</span>
+                <span class="conc-metric-val">Minimalist 10% Vitamin C + Centella</span>
+              </div>
+            </div>
           </div>
 
-          <div class="routine-card">
-            <span class="routine-badge">15% Concentration · Clinical Strength</span>
-            <h3 class="routine-title">For Stubborn Brown Marks (PIH)</h3>
-            <p class="routine-desc">
-              Clinical strength found in pharmacy brands like Cipla VC 15. It delivers faster fading on deep brown marks, but requires a calm, healthy skin barrier.
+          <!-- 15% CARD -->
+          <div class="conc-spotlight-card conc-spotlight-15" id="conc-15">
+            <div class="conc-card-top">
+              <span class="conc-num">15%</span>
+              <span class="conc-badge conc-badge-clinical">🟡 Clinical Strength · Deep Marks</span>
+            </div>
+            <h3 class="conc-title">For Stubborn, Deep Brown Marks (PIH)</h3>
+            <p class="conc-desc">
+              Clinical strength found in pharmacy brands. It delivers faster fading on deep brown marks, but requires a calm, healthy skin barrier to avoid redness.
             </p>
+            <div class="conc-key-metrics">
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Target Marks:</span>
+                <span class="conc-metric-val">Stubborn hyperpigmentation lasting more than 3 months</span>
+              </div>
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Fade Speed:</span>
+                <span class="conc-metric-val">Faster fading in 4 to 6 weeks</span>
+              </div>
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Irritation Risk:</span>
+                <span class="conc-metric-val">Mild initial tingling; requires healthy barrier</span>
+              </div>
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Top Benchmark:</span>
+                <span class="conc-metric-val">Cipla VC 15 (Pharmacy Gold Standard)</span>
+              </div>
+            </div>
           </div>
 
-          <div class="routine-card">
-            <span class="routine-badge">20%+ Concentration · High Irritation Risk</span>
-            <h3 class="routine-title">Not Recommended for Acne-Prone Skin</h3>
-            <p class="routine-desc">
-              Absorption plateaus around 20%, but irritation increases sharply. On oily or sensitive skin, 20% serums frequently trigger purging-like bumps and redness.
+          <!-- 20%+ CARD -->
+          <div class="conc-spotlight-card conc-spotlight-20" id="conc-20">
+            <div class="conc-card-top">
+              <span class="conc-num">20%+</span>
+              <span class="conc-badge conc-badge-danger">🔴 High Irritation Risk · Avoid on Acne</span>
+            </div>
+            <h3 class="conc-title">Why Higher Is Not Better for Acne-Prone Skin</h3>
+            <p class="conc-desc">
+              Biological skin absorption hits a ceiling at 20%. Any extra acid sits unabsorbed on the skin surface, triggering contact irritation, closed bumps, and worse dark marks.
             </p>
+            <div class="conc-key-metrics">
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Target Marks:</span>
+                <span class="conc-metric-val">Not recommended for acne-prone or sensitive skin</span>
+              </div>
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Clinical Ceiling:</span>
+                <span class="conc-metric-val">Absorption plateaus at 20%; higher yields no added alpha</span>
+              </div>
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Irritation Risk:</span>
+                <span class="conc-metric-val">Very high; frequent cause of barrier breakdown &amp; purging</span>
+              </div>
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Doctor Verdict:</span>
+                <span class="conc-metric-val">Stick to 10% to 15% for safer, steady pigmentation fading</span>
+              </div>
+            </div>
           </div>
 
-          <div class="routine-card">
-            <span class="routine-badge">5% Concentration · Ultra Gentle</span>
-            <h3 class="routine-title">For Rosacea or Reactive Skin</h3>
-            <p class="routine-desc">
-              Very mild antioxidant formula. Great for introducing sensitive skin to Vitamin C, but takes three to four months to visibly lighten dark post-acne marks.
+          <!-- 5% CARD -->
+          <div class="conc-spotlight-card conc-spotlight-5" id="conc-5">
+            <div class="conc-card-top">
+              <span class="conc-num">5%</span>
+              <span class="conc-badge conc-badge-gentle">⚪ Ultra Gentle · Reactive Skin</span>
+            </div>
+            <h3 class="conc-title">For Rosacea or Severely Reactive Skin</h3>
+            <p class="conc-desc">
+              Mild antioxidant formula designed to introduce sensitive faces to Vitamin C without any tingling. Safe for barrier recovery, but slower on old dark marks.
             </p>
+            <div class="conc-key-metrics">
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Target Marks:</span>
+                <span class="conc-metric-val">Easily flushed skin, damaged barrier, rosacea</span>
+              </div>
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Fade Speed:</span>
+                <span class="conc-metric-val">Gradual fading over 12 to 16 weeks</span>
+              </div>
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Irritation Risk:</span>
+                <span class="conc-metric-val">Zero tingling or redness</span>
+              </div>
+              <div class="conc-metric-row">
+                <span class="conc-metric-label">Best Use:</span>
+                <span class="conc-metric-val">Building skin tolerance before stepping up to 10%</span>
+              </div>
+            </div>
           </div>
+
         </div>
 
-        <h3>Understanding the Molecule on the Label</h3>
+        <h3>The 3 Active Molecules: Popular Examples, When to Apply &amp; How to Use Each</h3>
         <p>
-          Not all serums use the same chemical active. Knowing the difference between the three most common forms helps you choose the right bottle:
+          Not all serums use the same chemical active. Walking down an aisle, you will see three main forms listed on ingredient boxes: Pure L-Ascorbic Acid, 3-O-Ethyl Ascorbic Acid, and Sodium Ascorbyl Phosphate. Choosing the right molecule matters just as much as picking the right percentage:
         </p>
 
-        <ul>
-          <li><strong>Pure L-Ascorbic Acid (LAA):</strong> The purest, most biologically active form. It works fast. But it needs an acidic pH and oxidizes quickly in warm Indian weather. Store it in a cool, dark cabinet or fridge.</li>
-          <li><strong>3-O-Ethyl Ascorbic Acid (EAA):</strong> A modern, stable derivative loved by Indian dermatologists and community testers. It does not degrade in heat. It does not turn orange. It converts into active Vitamin C in the skin with minimal stinging.</li>
-          <li><strong>Sodium Ascorbyl Phosphate (SAP):</strong> A gentle derivative with natural antibacterial benefits. It is great if you still get occasional small pimples while treating older marks.</li>
-        </ul>
+        <div class="molecule-card-list">
+          
+          <!-- MOLECULE 1: LAA -->
+          <div class="molecule-card" id="molecule-laa">
+            <div class="molecule-card-header">
+              <h4 class="molecule-title">1. Pure L-Ascorbic Acid (LAA) · Biological Gold Standard</h4>
+              <span class="molecule-tag mol-tag-laa">Pure Active · Low pH Acid</span>
+            </div>
+            <p class="molecule-overview">
+              The purest, most biologically active form of Vitamin C. It requires zero conversion inside your skin cells. It halts melanin production immediately. However, it requires a very low acidic pH (3.0 to 3.5) to penetrate, and it oxidizes rapidly when exposed to warm Indian air and sunlight.
+            </p>
+            <div class="molecule-detail-box">
+              <div class="molecule-detail-row">
+                <strong>🏷️ Popular Examples in India:</strong>
+                <div>
+                  <div class="example-pills">
+                    <span class="example-pill">Cipla VC 15 Serum (15% Pure LAA)</span>
+                    <span class="example-pill">Minimalist 16% Vitamin C (LAA + Ferulic)</span>
+                    <span class="example-pill">The Ordinary Vitamin C Suspension 23% / 30%</span>
+                    <span class="example-pill">Geek &amp; Gorgeous C-Glow 15%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="molecule-detail-row">
+                <strong>⏰ When to Apply:</strong>
+                <span><strong>Nighttime (PM) is strongly recommended for Indian weather.</strong> Why at night? Daytime heat triggers facial sweat. Sweat has a neutral pH (6.0+) that neutralizes the acid formula, destabilizing the serum and causing intense stinging and yellowing. Applying at night in a cool, calm room gives LAA 6 to 8 hours of uninterrupted dermal absorption without sweat interference.</span>
+              </div>
+              <div class="molecule-detail-row">
+                <strong>📋 How to Use &amp; Conditions:</strong>
+                <span><strong>Must apply on 100% bone-dry skin.</strong> Wash your face and wait five full minutes. Damp skin pulls the low-pH acid in too fast, causing burning. Always store the bottle tightly closed inside a dark cupboard or refrigerator door. Discard once it turns dark amber. Never layer with AHA/BHA exfoliants or Retinol on the same evening.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOLECULE 2: EAA -->
+          <div class="molecule-card" id="molecule-eaa">
+            <div class="molecule-card-header">
+              <h4 class="molecule-title">2. 3-O-Ethyl Ascorbic Acid (EAA) · Heat-Stable All-Weather Favorite</h4>
+              <span class="molecule-tag mol-tag-eaa">Stabilized Derivative · Zero Stinging</span>
+            </div>
+            <p class="molecule-overview">
+              A modern, heat-stable derivative loved by Indian dermatologists and community testers. An ethyl group shields the molecule from degrading in heat and light. Once absorbed into the skin, natural enzymes release active Vitamin C right beside pigment cells with minimal stinging. It does not turn orange or stain clothes.
+            </p>
+            <div class="molecule-detail-box">
+              <div class="molecule-detail-row">
+                <strong>🏷️ Popular Examples in India:</strong>
+                <div>
+                  <div class="example-pills">
+                    <span class="example-pill">Minimalist 10% Vitamin C + 0.5% Centella</span>
+                    <span class="example-pill">Plum 15% Vitamin C Face Serum</span>
+                    <span class="example-pill">Deconstruct 10% Vitamin C + 0.5% Ferulic</span>
+                    <span class="example-pill">Foxtale Daily Glow Vitamin C Serum</span>
+                  </div>
+                </div>
+              </div>
+              <div class="molecule-detail-row">
+                <strong>⏰ When to Apply:</strong>
+                <span><strong>Morning (AM) is the ideal time.</strong> EAA provides excellent daytime antioxidant defense. It neutralizes free radicals caused by intense sunlight, pollution, and blue light before they can darken your acne marks. Always follow with broad-spectrum sunscreen.</span>
+              </div>
+              <div class="molecule-detail-row">
+                <strong>📋 How to Use &amp; Conditions:</strong>
+                <span>Apply 3 to 4 drops directly after morning washing. Because EAA works at a comfortable skin-friendly pH (4.5 to 5.5), you do not need to wait for skin to bone-dry. It requires no refrigeration and can sit safely on your bathroom vanity shelf in hot, humid weather (Mumbai, Chennai, Delhi) without spoiling.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MOLECULE 3: SAP -->
+          <div class="molecule-card" id="molecule-sap">
+            <div class="molecule-card-header">
+              <h4 class="molecule-title">3. Sodium Ascorbyl Phosphate (SAP) · Gentle &amp; Anti-Acne Antibacterial</h4>
+              <span class="molecule-tag mol-tag-sap">Gentle Salt · Antimicrobial</span>
+            </div>
+            <p class="molecule-overview">
+              A gentle, water-soluble salt derivative of Vitamin C. Clinical studies show SAP has direct antibacterial action against <em>Cutibacterium acnes</em> (the bacteria that causes breakouts) while preventing sebum oil oxidation. It is ideal if you still get occasional new pimples while treating older dark marks.
+            </p>
+            <div class="molecule-detail-box">
+              <div class="molecule-detail-row">
+                <strong>🏷️ Popular Examples in India:</strong>
+                <div>
+                  <div class="example-pills">
+                    <span class="example-pill">Mad Hippie Vitamin C Serum (Clinical Benchmark)</span>
+                    <span class="example-pill">Sesderma C-Vit Liposomal Serum</span>
+                    <span class="example-pill">Dr. Sheth's Centella &amp; Vitamin C Serum</span>
+                    <span class="example-pill">Derma Essentia Vitamin C Serum</span>
+                  </div>
+                </div>
+              </div>
+              <div class="molecule-detail-row">
+                <strong>⏰ When to Apply:</strong>
+                <span><strong>Morning, Night, or Twice Daily (AM &amp; PM).</strong> Because SAP is completely non-irritating and neutral in pH, you can use it twice a day safely without increasing sun sensitivity or peeling.</span>
+              </div>
+              <div class="molecule-detail-row">
+                <strong>📋 How to Use &amp; Conditions:</strong>
+                <span><strong>Best for active acne, oily skin, and redness.</strong> If pure acidic serums give you small red bumps, switch to SAP. Apply 3 to 4 drops after cleansing. Operates at a neutral pH (6.0 to 7.0), causing zero tingling. Pairs seamlessly with Niacinamide, Salicylic acid face washes, and lightweight barrier lotions.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- QUICK COMPARISON TABLE FOR THE 3 MOLECULES -->
+        <div class="table-card">
+          <div class="table-scroll">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th>Molecule Form</th>
+                  <th>Popular Indian Brands</th>
+                  <th>Best Time to Use</th>
+                  <th>Ideal Skin Condition</th>
+                  <th>Storage &amp; Critical Rule</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Pure L-Ascorbic Acid (LAA)</strong></td>
+                  <td>Cipla VC 15, Minimalist 16%, The Ordinary 23%</td>
+                  <td><span class="pill-orange">🌙 Nighttime (PM)</span></td>
+                  <td>Resilient skin with stubborn brown marks; zero active breakouts</td>
+                  <td>Apply on 100% dry skin. Store in fridge/dark drawer. Discard if amber.</td>
+                </tr>
+                <tr>
+                  <td><strong>3-O-Ethyl Ascorbic Acid (EAA)</strong></td>
+                  <td>Minimalist 10%, Plum 15%, Deconstruct 10%</td>
+                  <td><span class="pill-green">☀️ Morning (AM)</span></td>
+                  <td>All skin types; daily marks fading in hot or humid climates</td>
+                  <td>Room temperature shelf is fine. Does not oxidize quickly. Follow with SPF 50.</td>
+                </tr>
+                <tr>
+                  <td><strong>Sodium Ascorbyl Phosphate (SAP)</strong></td>
+                  <td>Mad Hippie, Sesderma C-Vit, Dr. Sheth's Centella</td>
+                  <td><span class="pill-green">☀️ AM and/or 🌙 PM</span></td>
+                  <td>Active acne, oily skin, small pimples forming alongside old marks</td>
+                  <td>Neutral pH. Fights acne bacteria. Safe to layer with Niacinamide.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </section>
 
       <!-- SECTION 2: DIET VS TOPICAL -->
