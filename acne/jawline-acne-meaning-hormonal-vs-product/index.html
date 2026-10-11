@@ -604,6 +604,67 @@
     .diag-table tr:hover td { background: #FCFAF8; }
     .diag-table tr:last-child td { border-bottom: none; }
 
+    /* Champi 4-Block Visual Grid */
+    .champi-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin: 2rem 0;
+    }
+    .champi-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .champi-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .champi-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 1px solid var(--border);
+    }
+    .champi-card-body {
+      padding: 1.3rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .champi-card-badge {
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--brand-dark);
+      background: var(--brand-light);
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 8px;
+      align-self: flex-start;
+    }
+    .champi-card h4 {
+      font-family: 'Kantumruy Pro', serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .champi-card p {
+      font-size: 0.88rem;
+      color: var(--text2);
+      line-height: 1.55;
+      margin: 0;
+    }
+
     /* Bento Grid for Concepts */
     .bento-grid {
       display: grid;
@@ -657,28 +718,6 @@
     .alert-box.blue {
       border-left-color: var(--blue);
       background: var(--blue-light);
-    }
-
-    /* Infographic Box */
-    .infographic-box {
-      border-radius: var(--radius);
-      overflow: hidden;
-      margin: 2rem 0;
-      border: 1px solid var(--border);
-      background: var(--bg2);
-    }
-    .infographic-box img {
-      width: 100%;
-      height: auto;
-      max-height: 380px;
-      object-fit: cover;
-      display: block;
-    }
-    .infographic-caption {
-      padding: 1rem 1.4rem;
-      font-size: 0.88rem;
-      color: var(--text2);
-      line-height: 1.5;
     }
 
     /* Video Embed Box */
@@ -803,6 +842,10 @@
       body { padding-bottom: 60px; }
       .hero-ai-card { text-align: center; justify-content: center; }
       .hero-ai-info { text-align: center; }
+    }
+
+    @media (max-width: 720px) {
+      .champi-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -966,47 +1009,67 @@
         </div>
       </section>
 
-      <!-- Section 3: The Indian Hair Oil Trap (Champi) -->
+      <!-- Section 3: The Indian Hair Oil Trap (Champi) - 4 Visual Blocks -->
       <section class="guide-section" id="champi-trap">
         <div class="section-num-title">
           <span class="num-bubble">3</span>
           <h2 class="section-title">The Hair Oil (Champi) Trap: Why Jawline Acne Happens on One Side</h2>
         </div>
         <p class="section-intro">
-          In India, regular scalp oiling (champi) with coconut, almond, mustard, or castor oil is a beloved self-care ritual. But sleeping with hair oil overnight is one of the leading hidden causes of persistent jawline and sideburn breakouts.
+          In India, regular scalp oiling (champi) with coconut, almond, mustard, or castor oil is a beloved self-care ritual. But sleeping with hair oil overnight is one of the leading hidden causes of persistent jawline and sideburn breakouts. Here are the 4 key stages:
         </p>
 
-        <div class="infographic-box">
-          <img src="/assets/images/hormonal_jawline_acne.jpg" alt="Distribution of jawline and chin acne showing hormonal U-zone vs hair oil migration"/>
-          <div class="infographic-caption">
-            <strong>The Distribution Pattern:</strong> Notice how hair oil comedones cluster near the earlobes, sideburns, and angle of the jaw, while internal hormonal acne sits lower along the chin bone.
-          </div>
-        </div>
-
-        <div class="bento-grid">
-          <div class="bento-card">
-            <span class="bento-icon">🥥</span>
-            <h4>The Pillowcase Transfer</h4>
-            <p>
-              Heavy plant oils do not stay on your scalp. As you toss and turn, oil rubs off onto your cotton pillowcase. When you sleep on your side, your jawline presses directly into an oil-soaked fabric for 8 hours.
-            </p>
-          </div>
-
-          <div class="bento-card">
-            <span class="bento-icon">🔒</span>
-            <h4>Comedogenic Traps</h4>
-            <p>
-              Coconut and mustard oils have high comedogenic ratings. Once transferred to facial skin, they blend with dead skin cells and create tiny microscopic plugs that turn into bumpy closed comedones within 48 hours.
-            </p>
+        <!-- 4 Visual Blocks with Cohesive Infographics -->
+        <div class="champi-grid">
+          
+          <!-- Block 1 -->
+          <div class="champi-card">
+            <img src="/assets/images/hormonal_jawline_acne.jpg" alt="Facial distribution diagram contrasting jawline hormonal acne with hair oil migration"/>
+            <div class="champi-card-body">
+              <span class="champi-card-badge">Stage 1: Surface Mapping</span>
+              <h4>The Facial Distribution Pattern</h4>
+              <p>
+                Hair oil breakouts cluster near your sideburns, earlobes, and the angle of your jaw on the side you sleep on. True hormonal acne sits lower along your chin bone and the corners of your mouth.
+              </p>
+            </div>
           </div>
 
-          <div class="bento-card">
-            <span class="bento-icon">💡</span>
-            <h4>How to Oil Hair Safely</h4>
-            <p>
-              You do not need to quit champi! Apply oil 2 hours before washing your hair instead of sleeping with it overnight. Tie hair back loosely, and wash your pillowcase twice a week with gentle detergent.
-            </p>
+          <!-- Block 2 -->
+          <div class="champi-card">
+            <img src="/assets/images/champi-hair-oil-acne-diagram.jpg" alt="Diagram showing hair oil transferring from hair and pillowcase onto jawline skin"/>
+            <div class="champi-card-body">
+              <span class="champi-card-badge">Stage 2: Nighttime Migration</span>
+              <h4>The Pillowcase Transfer Mechanism</h4>
+              <p>
+                Heavy coconut, almond, and castor oils do not stay on your scalp. As you toss and turn, oil soaks into your cotton pillowcase. Pressing your cheek into an oil-soaked pillow for 8 hours transfers thick plant lipids straight into your pores.
+              </p>
+            </div>
           </div>
+
+          <!-- Block 3 -->
+          <div class="champi-card">
+            <img src="/assets/images/non-comedogenic-pore-clogging-diagram.jpg" alt="Cross-section diagram of comedogenic oils blocking hair follicles and creating closed comedones"/>
+            <div class="champi-card-body">
+              <span class="champi-card-badge">Stage 3: Follicular Occlusion</span>
+              <h4>Comedogenic Pore Clogging</h4>
+              <p>
+                Coconut and mustard oils have high comedogenic ratings. Once on facial skin, they bind with dead skin cells and natural sebum, forming hard keratin plugs (closed comedones) that turn into bumpy, textured skin within 48 hours.
+              </p>
+            </div>
+          </div>
+
+          <!-- Block 4 -->
+          <div class="champi-card">
+            <img src="/assets/images/scalp-follicle-healthy-vs-clogged-diagram.jpg" alt="Comparison diagram of healthy clear skin follicle versus blocked follicle with safe routine"/>
+            <div class="champi-card-body">
+              <span class="champi-card-badge">Stage 4: Safe Oiling Protocol</span>
+              <h4>How to Oil Hair Safely Without Breakouts</h4>
+              <p>
+                You do not need to quit champi! Apply hair oil 2 hours before shampooing instead of sleeping with it overnight. Tie your hair back loosely, and wash your pillowcase twice a week with gentle detergent.
+              </p>
+            </div>
+          </div>
+
         </div>
       </section>
 
