@@ -183,6 +183,8 @@
       --yellow-light: #fef3c7;
       --blue: #0369a1;
       --blue-light: #e0f2fe;
+      --red: #b91c1c;
+      --red-light: #fef2f2;
       --radius: 18px;
       --ease: cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -268,14 +270,21 @@
       font-size: 12px !important;
     }
 
-    /* Hero Section with AI Banner CTA */
+    /* HERO SECTION (Compact 2-Column Split Theme - in sync with Vitamin C guide) */
     .hero {
-      background: linear-gradient(180deg, #FBF8F5 0%, #FFFFFF 100%);
+      background: var(--bg2);
       border-bottom: 1px solid var(--border);
-      padding: 3.5rem 1.5rem 3rem;
-      text-align: center;
+      padding: 2rem 1.5rem 2.2rem;
+      text-align: left;
     }
-    .hero-container { max-width: 860px; margin: 0 auto; }
+    .hero-container { max-width: 1140px; margin: 0 auto; }
+    .hero-top-row {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 2rem;
+      align-items: start;
+    }
+    .hero-content { min-width: 0; }
     .hero-tag {
       display: inline-flex;
       align-items: center;
@@ -284,114 +293,187 @@
       color: var(--brand-dark);
       font-size: 11px;
       font-weight: 800;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 5px 14px;
+      padding: 4px 12px;
       border-radius: 9999px;
-      margin-bottom: 1.25rem;
+      margin-bottom: 0.6rem;
     }
     .hero h1 {
       font-family: 'Kantumruy Pro', serif;
-      font-size: clamp(2rem, 4.4vw, 3.1rem);
+      font-size: clamp(1.8rem, 3.2vw, 2.35rem);
       font-weight: 700;
-      line-height: 1.15;
-      letter-spacing: -0.03em;
-      margin-bottom: 1.25rem;
+      line-height: 1.25;
+      margin-bottom: 0.5rem;
       color: var(--text);
     }
-    .hero p {
+    .hero-sub {
       color: var(--text2);
-      font-size: 1.05rem;
+      font-size: 0.98rem;
       line-height: 1.6;
-      max-width: 740px;
-      margin: 0 auto 1.75rem;
+      margin-bottom: 1rem;
     }
 
-    /* AI Banner Group */
-    .hero-ai-card {
-      background: #FFFFFF;
-      border: 2px solid var(--brand);
-      border-radius: var(--radius);
-      padding: 1.4rem 1.8rem;
-      margin: 1.5rem auto 2rem;
-      max-width: 720px;
-      box-shadow: 0 8px 30px rgba(236,97,14,0.12);
-      text-align: left;
+    /* 1st Fold CTA Group */
+    .hero-actions {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 1.5rem;
+      gap: 12px;
       flex-wrap: wrap;
+      margin-bottom: 1.1rem;
     }
-    .hero-ai-info { flex: 1; min-width: 260px; }
-    .hero-ai-badge {
-      display: inline-block;
-      font-size: 10px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      background: var(--brand-light);
-      color: var(--brand-dark);
-      padding: 3px 8px;
-      border-radius: 4px;
-      margin-bottom: 6px;
-    }
-    .hero-ai-title {
-      font-family: 'Kantumruy Pro', serif;
-      font-weight: 700;
-      font-size: 1.05rem;
-      color: var(--text);
-      margin-bottom: 4px;
-    }
-    .hero-ai-desc {
-      font-size: 0.88rem;
-      color: var(--text2);
-      line-height: 1.45;
-    }
-    .hero-ai-btn {
+    .face-ai-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
+      padding: 12px 26px;
       background: var(--brand);
       color: #fff !important;
       text-decoration: none;
       font-weight: 800;
-      font-size: 0.95rem;
-      padding: 13px 26px;
+      font-size: 0.92rem;
       border-radius: 9999px;
-      box-shadow: 0 6px 20px rgba(236,97,14,0.35);
-      transition: all 0.2s;
-      flex-shrink: 0;
+      box-shadow: 0 8px 24px rgba(236,97,14,0.3);
+      transition: all 0.3s var(--ease);
     }
-    .hero-ai-btn:hover {
-      background: var(--brand-dark);
+    .face-ai-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(236,97,14,0.5);
-    }
-
-    .hero-jump-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 1rem;
+      box-shadow: 0 12px 30px rgba(236,97,14,0.45);
     }
     .hero-jump-btn {
-      background: var(--bg2);
-      border: 1px solid var(--border);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 20px;
+      background: #fff;
       color: var(--text);
       text-decoration: none;
-      font-size: 12px;
       font-weight: 700;
-      padding: 7px 16px;
+      font-size: 0.88rem;
       border-radius: 9999px;
-      transition: background 0.2s;
+      border: 1.5px solid var(--border);
+      transition: all 0.2s;
     }
     .hero-jump-btn:hover {
-      background: var(--bg3);
-      color: var(--brand-dark);
+      border-color: var(--brand);
+      color: var(--brand);
+      background: #FFF9F5;
     }
+
+    /* UPFRONT 30-SECOND VERDICT BOX */
+    .upfront-verdict-card {
+      background: #FFFFFF;
+      border: 2px solid var(--brand);
+      border-radius: 16px;
+      padding: 1.1rem 1.3rem;
+      margin-bottom: 0.5rem;
+      box-shadow: 0 6px 18px rgba(236,97,14,0.07);
+    }
+    .verdict-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .verdict-badge {
+      background: var(--brand);
+      color: #fff;
+      font-size: 10.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 6px;
+      letter-spacing: 0.05em;
+    }
+    .verdict-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    /* TRIAGE 3-PILL STRIP */
+    .triage-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin: 10px 0 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed var(--border);
+    }
+    .triage-pill {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      padding: 7px 9px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: 1.5px solid transparent;
+    }
+    .triage-pill:hover { transform: translateY(-1px); }
+    .triage-pill.pill-hormonal { background: var(--red-light); border-color: var(--red); }
+    .triage-pill.pill-hormonal .pill-badge { color: var(--red); font-weight: 800; font-size: 11.5px; }
+    .triage-pill.pill-product { background: var(--blue-light); border-color: var(--blue); }
+    .triage-pill.pill-product .pill-badge { color: var(--blue); font-weight: 800; font-size: 11.5px; }
+    .triage-pill.pill-friction { background: var(--yellow-light); border-color: var(--yellow); }
+    .triage-pill.pill-friction .pill-badge { color: var(--yellow); font-weight: 800; font-size: 11.5px; }
+    .triage-pill .pill-text { font-size: 10.5px; color: var(--text2); font-weight: 600; line-height: 1.25; }
+
+    .verdict-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+    .verdict-item { display: flex; align-items: baseline; gap: 8px; font-size: 13.5px; line-height: 1.45; }
+    .verdict-item strong { min-width: 130px; font-weight: 700; }
+    .tag-highlight { color: #D97706; font-weight: 800; }
+    .tag-safe { color: #059669; font-weight: 800; }
+    .tag-danger { color: #DC2626; font-weight: 800; }
+
+    /* HERO PHOTO (Right column) */
+    .hero-photo {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .hero-photo img { width: 100%; height: auto; display: block; object-fit: cover; }
+
+    /* STICKY HORIZONTAL TABLE OF CONTENTS BAR */
+    .toc-bar {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 60px;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      padding: 0.75rem 0;
+    }
+    .toc-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .toc-inner::-webkit-scrollbar { display: none; }
+    .toc-link {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      color: var(--text2);
+      font-size: 12.5px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .toc-link:hover { border-color: var(--brand); color: var(--brand); background: #fff; }
 
     /* Main Grid Layout */
     .page-layout {
@@ -408,7 +490,7 @@
     /* Sticky Desktop Sidebar */
     .sidebar-panel {
       position: sticky;
-      top: 80px;
+      top: 130px;
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
@@ -469,7 +551,7 @@
     /* Content Typography & Sections */
     .guide-section {
       margin-bottom: 4.5rem;
-      scroll-margin-top: 80px;
+      scroll-margin-top: 120px;
     }
     .section-num-title {
       display: flex;
@@ -835,13 +917,14 @@
     .footer-links a:hover { color: #fff; }
 
     /* Mobile Responsive Overrides */
-    @media (max-width: 900px) {
+    @media (max-width: 950px) {
+      .hero-top-row { grid-template-columns: 1fr; }
+      .hero-photo { max-width: 440px; }
+      .triage-strip { grid-template-columns: 1fr; }
       .page-layout { grid-template-columns: 1fr; gap: 2rem; }
       .sidebar-panel { display: none; }
       .sticky-mobile-cta { display: block; }
       body { padding-bottom: 60px; }
-      .hero-ai-card { text-align: center; justify-content: center; }
-      .hero-ai-info { text-align: center; }
     }
 
     @media (max-width: 720px) {
@@ -872,38 +955,90 @@
     </div>
   </header>
 
-  <!-- Hero Section with AI Diagnostic Banner -->
-  <section class="hero">
+  <!-- HERO SECTION (In sync with Vitamin C guide theme: 2-column split, 30s triage card, hero photo) -->
+  <header class="hero">
     <div class="hero-container">
-      <span class="hero-tag">Jawline Acne Diagnosis</span>
-      <h1>Jawline Acne Meaning: Is It Hormonal or Caused by Your Hair &amp; Skin Products?</h1>
-      <p>
-        Waking up with painful, throbbing lumps along your jawline or clusters of small bumps on your chin? Here is how to tell internal hormone flares from hair oil migration (the champi effect), heavy creams, and helmet friction.
-      </p>
+      <div class="hero-top-row">
+        
+        <!-- Left Column: Copy, CTAs, 30-Second Triage Card -->
+        <div class="hero-content">
+          <span class="hero-tag">Clinical Guide · Jawline &amp; Hormonal Acne</span>
+          <h1>Jawline Acne Meaning: Is It Hormonal or Caused by Products?</h1>
+          <p class="hero-sub">
+            Waking up with painful, throbbing lumps along your jawline or clusters of small bumps on your chin? Here is how to tell internal hormone flares from hair oil migration (the champi effect), heavy creams, and helmet friction.
+          </p>
 
-      <!-- AI Facial Diagnostic Card Upfront -->
-      <div class="hero-ai-card">
-        <div class="hero-ai-info">
-          <span class="hero-ai-badge">MyMirror Face AI Diagnostic</span>
-          <div class="hero-ai-title">Are Your Jawline Bumps Hormonal, Clogged Pores, or Friction?</div>
-          <div class="hero-ai-desc">
-            Take a quick photo in daylight. Our facial AI evaluates bump depth, sebum patterns along your jawline, and inflammatory redness in 60 seconds.
+          <!-- 1st Fold Action Group -->
+          <div class="hero-actions">
+            <a class="face-ai-btn" href="https://mymirror.fit/scan/">
+              Analyze Your Jawline with AI →
+            </a>
+            <a class="hero-jump-btn" href="#comparison-matrix">
+              View Diagnostic Comparison ↓
+            </a>
+          </div>
+
+          <!-- 30-Second Jawline Triage Card -->
+          <div class="upfront-verdict-card">
+            <div class="verdict-header">
+              <span class="verdict-badge">Quick Summary</span>
+              <span class="verdict-title">The 30-Second Jawline Triage</span>
+            </div>
+
+            <!-- Triage Strip -->
+            <div class="triage-strip">
+              <a href="#quick-diagnosis" class="triage-pill pill-hormonal">
+                <span class="pill-badge">🔴 Hormonal U-Zone</span>
+                <span class="pill-text">Deep, throbbing, cyclic cysts</span>
+              </a>
+              <a href="#champi-trap" class="triage-pill pill-product">
+                <span class="pill-badge">🔵 Champi Hair Oil</span>
+                <span class="pill-text">Pillow transfer &amp; sideburn clogs</span>
+              </a>
+              <a href="#comparison-matrix" class="triage-pill pill-friction">
+                <span class="pill-badge">🟡 Helmet / Friction</span>
+                <span class="pill-text">Red marks along chin straps</span>
+              </a>
+            </div>
+
+            <ul class="verdict-list">
+              <li class="verdict-item">
+                <strong class="tag-highlight">⭐ Primary Culprit:</strong>
+                <span>Androgen receptor sensitivity in jawline oil glands vs overnight hair oil migration.</span>
+              </li>
+              <li class="verdict-item">
+                <strong class="tag-safe">🧴 Fast Fix for Oil Bumps:</strong>
+                <span>Stop overnight champi + wash with 2% Salicylic Acid cleanser 3 times weekly.</span>
+              </li>
+              <li class="verdict-item">
+                <strong class="tag-danger">🛑 Cyst Warning:</strong>
+                <span>Never squeeze blind jawline cysts—it drives infection deeper and triggers dark marks.</span>
+              </li>
+            </ul>
           </div>
         </div>
-        <a href="https://mymirror.fit/scan/" class="hero-ai-btn">
-          <span>Start Free Face Scan</span> →
-        </a>
-      </div>
 
-      <!-- Quick Jump Shortcuts -->
-      <div class="hero-jump-links">
-        <a href="#quick-diagnosis" class="hero-jump-btn">⚡ 30-Second Diagnosis</a>
-        <a href="#comparison-matrix" class="hero-jump-btn">📊 Diagnostic Comparison Table</a>
-        <a href="#champi-trap" class="hero-jump-btn">🥥 The Hair Oil Trap</a>
-        <a href="#treatment-guide" class="hero-jump-btn">🧴 How to Clear It</a>
+        <!-- Right Column: Hero Photo -->
+        <div class="hero-photo">
+          <img src="/assets/images/jawline-acne-hormonal-product-og.jpg" alt="Woman examining jawline acne and chin blemishes in mirror" width="480" height="252" loading="eager"/>
+        </div>
+
       </div>
     </div>
-  </section>
+  </header>
+
+  <!-- STICKY HORIZONTAL TABLE OF CONTENTS BAR -->
+  <nav aria-label="Table of contents" class="toc-bar">
+    <div class="toc-inner">
+      <a class="toc-link" href="#quick-diagnosis">1. 30-Second Diagnosis</a>
+      <a class="toc-link" href="#comparison-matrix">2. Hormonal vs Products Matrix</a>
+      <a class="toc-link" href="#champi-trap">3. The Hair Oil Trap</a>
+      <a class="toc-link" href="#doctor-video">4. Doctor Video</a>
+      <a class="toc-link" href="#treatment-guide">5. Step-by-Step Protocol</a>
+      <a class="toc-link" href="#faq">6. Common Questions</a>
+      <a class="toc-link" href="#ai-scan">7. Free AI Face Scan</a>
+    </div>
+  </nav>
 
   <!-- Main Content Layout -->
   <div class="page-layout">
