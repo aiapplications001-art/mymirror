@@ -195,6 +195,8 @@
 </script>
 
 <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
     :root {
       --bg:           #FBF8F5;
       --bg2:          #F4EFEA;
@@ -428,28 +430,113 @@
     .faq-item.active .faq-a { max-height: 350px; padding-bottom: 14px; }
     .faq-a p { margin-bottom: 0; font-size: 13.5px; color: var(--txt2); line-height: 1.6; }
 
-    /* STICKY SIDEBAR (NO INTERNAL SCROLL) */
-    .sidebar-col { position: sticky; top: 120px; display: flex; flex-direction: column; gap: 16px; }
+    /* STICKY SIDEBAR (NO INTERNAL SCROLL & PERFECT CONTAINER FIT) */
+    .sidebar-col {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+      width: 100%;
+      max-width: 300px;
+      box-sizing: border-box;
+    }
+    .sidebar-cta {
+      background: linear-gradient(135deg, var(--brand-dark) 0%, var(--brand) 100%);
+      color: #fff;
+      border-radius: 18px;
+      padding: 1.4rem 1.2rem;
+      text-align: center;
+      box-sizing: border-box;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(236,97,14,0.18);
+    }
+    .sidebar-cta h4 {
+      font-size: 1.05rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      font-weight: 800;
+    }
+    .sidebar-cta p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 12px;
+      line-height: 1.45;
+    }
+    .sidebar-cta a {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      background: #fff;
+      color: var(--brand-dark) !important;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 9999px;
+      font-weight: 800;
+      font-size: 13px;
+      transition: all 0.2s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+    .sidebar-cta a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
     .side-card {
-      background: #fff; border: 1px solid var(--border); border-radius: 14px;
-      padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.25rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      box-sizing: border-box;
+      overflow: hidden;
     }
-    .side-card h4 { font-size: 0.95rem; font-weight: 800; margin-bottom: 8px; color: var(--txt); }
-    .side-card p { font-size: 12.5px; color: var(--txt2); margin-bottom: 10px; line-height: 1.5; }
-    .side-btn {
-      display: block; width: 100%; text-align: center;
-      background: var(--brand); color: #fff !important; font-weight: 700;
-      font-size: 12.5px; padding: 9px 12px; border-radius: 8px; text-decoration: none;
-      box-shadow: 0 3px 10px rgba(236,97,14,0.2); transition: all 0.2s;
+    .side-card.highlight {
+      background: var(--brand-light);
+      border-color: rgba(236,97,14,0.25);
     }
-    .side-btn:hover { background: var(--brand-dark); transform: translateY(-1px); }
-    .side-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+    .side-card h4 {
+      font-size: 0.95rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: var(--brand-dark);
+    }
+    .side-card p {
+      font-size: 12.5px;
+      color: var(--txt2);
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .side-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .side-list li {
+      font-size: 12.5px;
+      color: var(--txt2);
+      line-height: 1.45;
+    }
     .side-list li a {
-      font-size: 12.5px; color: var(--txt2); text-decoration: none;
-      display: flex; align-items: center; gap: 6px; transition: color 0.2s;
+      font-size: 12.5px;
+      color: var(--txt2);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
     }
-    .side-list li a:hover { color: var(--brand); }
-    .side-list li a::before { content: "•"; color: var(--brand); font-weight: bold; }
+    .side-list li a:hover {
+      color: var(--brand);
+    }
+    .side-list li a::before {
+      content: "•";
+      color: var(--brand);
+      font-weight: bold;
+    }
 
     /* FOOTER & ACCORDION DIRECTORY */
     .site-footer {
@@ -933,20 +1020,20 @@
 
     <!-- STICKY SIDEBAR (DESKTOP) -->
     <aside class="sidebar-col">
-      <div class="side-card">
+      <div class="sidebar-cta">
         <h4>Free AI Skin Analysis</h4>
-        <p>Get a precise map of your forehead pimples and baby-safe product recommendations in 60 seconds.</p>
-        <a class="side-btn" href="https://mymirror.fit/scan/">Scan Your Skin Free →</a>
+        <p>Get a precise map of your forehead pimples and baby-safe routine recommendations in 60 seconds.</p>
+        <a href="https://mymirror.fit/scan/">Scan Your Skin Free ✨</a>
       </div>
 
-      <div class="side-card">
-        <h4>Pregnancy Safety Rules</h4>
+      <div class="side-card highlight">
+        <h4>⚡ Pregnancy Safety Summary</h4>
         <ul class="side-list">
-          <li><a>Zero Retinoids / Accutane</a></li>
-          <li><a>Azelaic acid 10%–15% is safe</a></li>
-          <li><a>Mineral SPF prevents dark marks</a></li>
-          <li><a>No overnight hair oils on hairline</a></li>
-          <li><a>Verify actives with your OB-GYN</a></li>
+          <li><strong>Retinoids:</strong> Strict zero (Teratogenic)</li>
+          <li><strong>Safe Active:</strong> Azelaic Acid 10%–15%</li>
+          <li><strong>Sun Protection:</strong> Mineral Zinc Oxide SPF</li>
+          <li><strong>Scalp Champi:</strong> Max 30 min, keep off hairline</li>
+          <li><strong>Doctor Rule:</strong> Verify all actives with OB-GYN</li>
         </ul>
       </div>
 
