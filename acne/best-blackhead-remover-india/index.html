@@ -129,7 +129,7 @@
       {
         "@type": "VideoObject",
         "@id": "https://mymirror.fit/acne/best-blackhead-remover-india/#video-obj",
-        "name": "How to Remove Blackheads & Whiteheads | Causes & Treatment | Dr. Aanchal Panth MD",
+        "name": "How to Remove Blackheads & Whiteheads | Causes & Dermatologist Treatment | Dr. Aanchal MD",
         "description": "Board-certified dermatologist Dr. Aanchal Panth MD explains how to treat blackheads and whiteheads using Salicylic Acid and retinoids while avoiding skin-damaging DIY remedies.",
         "thumbnailUrl": "https://i.ytimg.com/vi/l1HM3QMrtT4/hqdefault.jpg",
         "uploadDate": "2021-08-15",
@@ -584,11 +584,34 @@
     .winner-showcase {
       background: linear-gradient(180deg, #FFF9F5 0%, #FFFFFF 100%);
       border: 2px solid var(--brand);
-      border-radius: 16px;
-      padding: 1.5rem 1.6rem;
+      border-radius: 18px;
+      padding: 1.6rem 1.8rem;
       margin: 1.8rem 0;
       box-shadow: 0 8px 24px rgba(236,97,14,0.06);
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 1.5rem;
+      align-items: center;
     }
+    .winner-img-box {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+      height: 100%;
+      min-height: 180px;
+    }
+    .winner-img-box img {
+      max-width: 100%;
+      max-height: 170px;
+      object-fit: contain;
+      display: block;
+    }
+    .winner-content { min-width: 0; }
     .winner-showcase h3 {
       font-family: 'Kantumruy Pro', serif;
       font-size: 1.3rem;
@@ -598,6 +621,16 @@
     }
     .winner-showcase-pills { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
     .winner-showcase-desc { font-size: 14px; line-height: 1.6; color: var(--txt2); }
+
+    @media (max-width: 640px) {
+      .winner-showcase {
+        grid-template-columns: 1fr;
+      }
+      .winner-img-box {
+        max-width: 150px;
+        margin: 0 auto 0.5rem;
+      }
+    }
 
     /* DOCTOR VIDEO CONTAINER */
     .video-container {
@@ -1068,7 +1101,15 @@
               </thead>
               <tbody>
                 <tr class="winner-row">
-                  <td><strong>Minimalist Salicylic Acid Serum</strong> ⭐</td>
+                  <td>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                      <img src="/assets/images/minimalist-2-salicylic-acid-serum.webp" alt="Minimalist 2% Salicylic Acid" width="38" height="52" style="object-fit: contain; border-radius: 6px; background: #fff; padding: 2px; border: 1px solid #E2E8F0;"/>
+                      <div>
+                        <strong>Minimalist Salicylic Acid Serum</strong> ⭐
+                        <div style="font-size: 11px; color: var(--brand); font-weight: 700;">#1 OVERALL WINNER</div>
+                      </div>
+                    </div>
+                  </td>
                   <td>Salicylic acid</td>
                   <td>2%</td>
                   <td>Glycolic acid, lactic acid, glycerin, sodium hyaluronate, EGCG</td>
@@ -1232,7 +1273,15 @@
               </thead>
               <tbody>
                 <tr class="winner-row">
-                  <td><strong>Adaferin Gel</strong> ⭐</td>
+                  <td>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                      <img src="/assets/adaferin-gel.webp" alt="Adaferin Gel Adapalene 0.1%" width="38" height="52" style="object-fit: contain; border-radius: 6px; background: #fff; padding: 2px; border: 1px solid #E2E8F0;"/>
+                      <div>
+                        <strong>Adaferin Gel</strong> ⭐
+                        <div style="font-size: 11px; color: var(--brand); font-weight: 700;">CLINICAL GOLD STANDARD</div>
+                      </div>
+                    </div>
+                  </td>
                   <td>Adapalene 0.1%</td>
                   <td>No second active listed</td>
                   <td>Acne retinoid directly suited to recurring blackheads and whiteheads</td>
@@ -1325,37 +1374,47 @@
 
         <!-- BHA WINNERS -->
         <div class="winner-showcase">
-          <span class="tag-pill pill-green">🏆 #1 Best Salicylic Acid for Blackheads</span>
-          <h3>Minimalist 2% Salicylic Acid Serum (Overall Winner)</h3>
-          <div class="winner-showcase-pills">
-            <span class="tag-pill pill-slate">2% Pure BHA</span>
-            <span class="tag-pill pill-slate">EGCG Green Tea Extract</span>
-            <span class="tag-pill pill-slate">Hyaluronic Acid</span>
-            <span class="tag-pill pill-slate">Fragrance-Free</span>
+          <div class="winner-img-box">
+            <img src="/assets/images/minimalist-2-salicylic-acid-serum.webp" alt="Minimalist 2% Salicylic Acid Face Serum bottle" width="140" height="190" loading="lazy"/>
           </div>
-          <p class="winner-showcase-desc">
-            <strong>Why it wins:</strong> Minimalist delivers a clean, fragrance-free 2% BHA in an aloe vera base. The addition of EGCG helps reduce sebum oxidation, while hyaluronic acid prevents flaking. It effectively dissolves the oily core of blackheads within 3 to 4 weeks of consistent use.
-          </p>
-          <p class="winner-showcase-desc" style="margin-top: 6px;">
-            <strong>The Sensitive Skin Alternative:</strong> Because Minimalist includes minor amounts of glycolic and lactic acid, users with easily flushed skin should pick <strong>Plum 2% Encapsulated Salicylic Acid</strong> or <strong>Deconstruct 2% Liposomal BHA + 3% Niacinamide</strong>. Plum's encapsulated delivery cushions the acid release, while Deconstruct provides pure oil control without competing AHAs.
-          </p>
+          <div class="winner-content">
+            <span class="tag-pill pill-green">🏆 #1 Best Salicylic Acid for Blackheads</span>
+            <h3>Minimalist 2% Salicylic Acid Serum (Overall Winner)</h3>
+            <div class="winner-showcase-pills">
+              <span class="tag-pill pill-slate">2% Pure BHA</span>
+              <span class="tag-pill pill-slate">EGCG Green Tea Extract</span>
+              <span class="tag-pill pill-slate">Hyaluronic Acid</span>
+              <span class="tag-pill pill-slate">Fragrance-Free</span>
+            </div>
+            <p class="winner-showcase-desc">
+              <strong>Why it wins:</strong> Minimalist delivers a clean, fragrance-free 2% BHA in an aloe vera base. The addition of EGCG helps reduce sebum oxidation, while hyaluronic acid prevents flaking. It effectively dissolves the oily core of blackheads within 3 to 4 weeks of consistent use.
+            </p>
+            <p class="winner-showcase-desc" style="margin-top: 6px;">
+              <strong>The Sensitive Skin Alternative:</strong> Because Minimalist includes minor amounts of glycolic and lactic acid, users with easily flushed skin should pick <strong>Plum 2% Encapsulated Salicylic Acid</strong> or <strong>Deconstruct 2% Liposomal BHA + 3% Niacinamide</strong>. Plum's encapsulated delivery cushions the acid release, while Deconstruct provides pure oil control without competing AHAs.
+            </p>
+          </div>
         </div>
 
         <!-- RETINOID WINNERS -->
         <div class="winner-showcase">
-          <span class="tag-pill pill-orange">💊 #1 Best Retinoid for Recurring Blackheads</span>
-          <h3>Adaferin Gel (Adapalene 0.1%) · Clinical Gold Standard</h3>
-          <div class="winner-showcase-pills">
-            <span class="tag-pill pill-slate">Prescription Adapalene</span>
-            <span class="tag-pill pill-slate">Targeted Follicular Action</span>
-            <span class="tag-pill pill-slate">Dermatologist Recommended</span>
+          <div class="winner-img-box">
+            <img src="/assets/adaferin-gel.webp" alt="Adaferin Gel Adapalene 0.1% tube" width="140" height="190" loading="lazy"/>
           </div>
-          <p class="winner-showcase-desc">
-            <strong>Why it wins:</strong> If blackheads keep reforming every month, Salicylic Acid alone is only playing defense. Adapalene 0.1% is a third-generation retinoid specifically engineered for comedones. It selectively targets the microcomedone inside the pore, preventing dead skin cells from clumping together. It is more stable in light and less irritating than traditional tretinoin.
-          </p>
-          <p class="winner-showcase-desc" style="margin-top: 6px;">
-            <strong>The Over-the-Counter Beginner Pick:</strong> If you do not have a doctor prescription and want an over-the-counter starting point, <strong>Re'equil 0.1% Retinol Night Cream</strong> or <strong>Minimalist 0.3% Retinol</strong> offers a gentle cosmetic entry to build skin tolerance.
-          </p>
+          <div class="winner-content">
+            <span class="tag-pill pill-orange">💊 #1 Best Retinoid for Recurring Blackheads</span>
+            <h3>Adaferin Gel (Adapalene 0.1%) · Clinical Gold Standard</h3>
+            <div class="winner-showcase-pills">
+              <span class="tag-pill pill-slate">Prescription Adapalene</span>
+              <span class="tag-pill pill-slate">Targeted Follicular Action</span>
+              <span class="tag-pill pill-slate">Dermatologist Recommended</span>
+            </div>
+            <p class="winner-showcase-desc">
+              <strong>Why it wins:</strong> If blackheads keep reforming every month, Salicylic Acid alone is only playing defense. Adapalene 0.1% is a third-generation retinoid specifically engineered for comedones. It selectively targets the microcomedone inside the pore, preventing dead skin cells from clumping together. It is more stable in light and less irritating than traditional tretinoin.
+            </p>
+            <p class="winner-showcase-desc" style="margin-top: 6px;">
+              <strong>The Over-the-Counter Beginner Pick:</strong> If you do not have a doctor prescription and want an over-the-counter starting point, <strong>Re'equil 0.1% Retinol Night Cream</strong> or <strong>Minimalist 0.3% Retinol</strong> offers a gentle cosmetic entry to build skin tolerance.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -1380,7 +1439,7 @@
           <div class="video-info">
             <h4>How to Remove Blackheads &amp; Whiteheads | Dr. Aanchal Panth MD</h4>
             <p>
-              Dr. Panth explains what really causes blackheads, why physical extraction and pore strips cause permanent damage on Indian skin, and how to safely use Salicylic Acid and retinoids.
+              Learn why blackheads form from oxidized oil, why popping them causes permanent scars, and how to safely use Salicylic Acid and retinoids for clear pores.
             </p>
           </div>
         </div>
