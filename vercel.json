@@ -51,16 +51,6 @@
       "permanent": true
     },
     {
-      "source": "/analyze-face",
-      "destination": "/scan/",
-      "permanent": true
-    },
-    {
-      "source": "/analyze-face/",
-      "destination": "/scan/",
-      "permanent": true
-    },
-    {
       "source": "/privacy-policy",
       "destination": "/privacy/",
       "permanent": true

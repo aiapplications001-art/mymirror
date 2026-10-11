@@ -343,6 +343,13 @@ async function sendLogToServer(scanMeta) {
     return null;
 }
 
+function prewarmBackend() {
+    try {
+        fetch('https://face3layerscanner.onrender.com/', { method: 'GET', mode: 'no-cors' }).catch(() => {});
+        fetch('/analyze-face/', { method: 'OPTIONS' }).catch(() => {});
+    } catch (_) {}
+}
+
 const STARTUP_DIAG = {
     sessionId: DIAGNOSTIC_SESSION_ID,
     pageLoadedPerf: typeof performance !== 'undefined' ? performance.now() : 0,
@@ -1042,6 +1049,7 @@ function startScanner() {
     trackAnalyticsEvent('start_scan_click', { session_stage: 'home' });
     trackAnalyticsStage('camera', 'camera_start_requested');
     LOG.section('startScanner() — start skin scan button clicked');
+    prewarmBackend();
     startBtn.disabled = true;
     startBtn.textContent = DEFAULT_START_BUTTON_TEXT;
     if (setupInstruction) setupInstruction.textContent = DEFAULT_SETUP_INSTRUCTION;
@@ -2616,6 +2624,14 @@ async function proceedToAnalysis() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)
             });
+            if (!response.ok && response.status >= 500) {
+                LOG.warn('Direct fetch returned server error, trying local proxy fallback...', { status: response.status });
+                response = await fetch('/analyze-face/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+            }
         } catch (netErr) {
             LOG.warn('Direct fetch failed, trying local proxy fallback...', { error: netErr });
             response = await fetch('/analyze-face/', {
@@ -4138,4 +4154,5 @@ window.addEventListener('DOMContentLoaded', () => {
 
     initFaceMesh();
     scheduleFaceMeshWarmup();
+    prewarmBackend();
 });
