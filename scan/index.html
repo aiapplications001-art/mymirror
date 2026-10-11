@@ -118,40 +118,40 @@
         <main>
             <!-- INITIALIZATION / START VIEW -->
             <div id="setupView" class="view-panel setup-panel minimal-setup">
-                <div class="minimal-scan-hero">
+                <div class="minimal-card-wrap">
                     <span id="setupKicker" class="hidden" style="display:none;" aria-hidden="true"></span>
-                    <h1 id="setupTitle" class="minimal-title">A smarter first step for your skin.</h1>
-                    <p class="instruction minimal-subtitle">Get your Skin Score + 6-zone face analysis with one quick scan.</p>
+                    <h1 id="setupTitle" class="minimal-title">A <span class="highlight-gradient">smarter first step</span> for your skin.</h1>
+                    <p class="instruction minimal-subtitle">Get your <strong>Skin Score</strong> + <strong>6-zone face analysis</strong> with one quick scan.</p>
 
-                    <div class="minimal-zones-bar" aria-label="6 analysis zones">
-                        <span>Forehead</span>
-                        <span class="sep">·</span>
-                        <span>Nose</span>
-                        <span class="sep">·</span>
-                        <span>Left Cheek</span>
-                        <span class="sep">·</span>
-                        <span>Right Cheek</span>
-                        <span class="sep">·</span>
-                        <span>Chin</span>
-                        <span class="sep">·</span>
-                        <span>Jawline</span>
+                    <div class="minimal-zones-container" aria-label="6 analysis zones">
+                        <span class="zone-pill"><span class="zone-pulse"></span>Forehead</span>
+                        <span class="zone-pill"><span class="zone-pulse"></span>Nose</span>
+                        <span class="zone-pill"><span class="zone-pulse"></span>Left Cheek</span>
+                        <span class="zone-pill"><span class="zone-pulse"></span>Right Cheek</span>
+                        <span class="zone-pill"><span class="zone-pulse"></span>Chin</span>
+                        <span class="zone-pill"><span class="zone-pulse"></span>Jawline</span>
                     </div>
 
                     <div class="minimal-trust-bar" aria-label="Scan features">
-                        <span>Free scan</span>
-                        <span class="sep">·</span>
-                        <span>No app</span>
-                        <span class="sep">·</span>
-                        <span>No signup</span>
-                        <span class="sep">·</span>
-                        <span>15-second scan</span>
-                        <span class="sep">·</span>
-                        <span>No data stored</span>
+                        <span class="trust-item"><span class="check-icon">✓</span> Free scan</span>
+                        <span class="dot-sep">•</span>
+                        <span class="trust-item"><span class="check-icon">✓</span> No app</span>
+                        <span class="dot-sep">•</span>
+                        <span class="trust-item"><span class="check-icon">✓</span> No signup</span>
+                        <span class="dot-sep">•</span>
+                        <span class="trust-item"><span class="check-icon">✓</span> 15-second scan</span>
+                        <span class="dot-sep">•</span>
+                        <span class="trust-item"><span class="check-icon">✓</span> No data stored</span>
                     </div>
 
                     <div class="minimal-action-wrap">
-                        <button id="startScanner" class="premium-btn minimal-start-btn">START MY FREE SKIN SCAN</button>
-                        <p class="cta-note minimal-cta-note">Get your report in one click. View, download or share anytime.</p>
+                        <button id="startScanner" class="premium-btn minimal-start-btn">
+                            <span>START MY FREE SKIN SCAN</span>
+                            <span class="btn-arrow" aria-hidden="true">→</span>
+                        </button>
+                        <p class="cta-note minimal-cta-note">
+                            <span class="cta-note-icon">⚡</span> Get your report in one click. View, download or share anytime.
+                        </p>
                     </div>
                 </div>
             </div>
