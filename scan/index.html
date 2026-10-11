@@ -118,41 +118,64 @@
         <main>
             <!-- INITIALIZATION / START VIEW -->
             <div id="setupView" class="view-panel setup-panel minimal-setup">
-                <div class="minimal-card-wrap">
+                <div class="minimal-grid-container">
                     <span id="setupKicker" class="hidden" style="display:none;" aria-hidden="true"></span>
-                    <h1 id="setupTitle" class="minimal-title">A <span class="highlight-gradient">smarter first step</span> for your skin.</h1>
-                    <p class="instruction minimal-subtitle">Get your <strong>Skin Score</strong> + <strong>6-zone face analysis</strong> with one quick scan.</p>
 
-                    <div class="minimal-zones-container" aria-label="6 analysis zones">
-                        <span class="zone-pill"><span class="zone-pulse"></span>Forehead</span>
-                        <span class="zone-pill"><span class="zone-pulse"></span>Nose</span>
-                        <span class="zone-pill"><span class="zone-pulse"></span>Left Cheek</span>
-                        <span class="zone-pill"><span class="zone-pulse"></span>Right Cheek</span>
-                        <span class="zone-pill"><span class="zone-pulse"></span>Chin</span>
-                        <span class="zone-pill"><span class="zone-pulse"></span>Jawline</span>
+                    <!-- Left Column: Copy & Actions -->
+                    <div class="minimal-copy-col">
+                        <h1 id="setupTitle" class="minimal-title">A <span class="highlight-gradient">smarter first step</span> for your skin.</h1>
+                        <p class="instruction minimal-subtitle">Get your <strong>Skin Score</strong> + <strong>6-zone face analysis</strong> with one quick scan.</p>
+
+                        <!-- 6-Zone Pills Grid -->
+                        <div class="minimal-zones-container" aria-label="6 analysis zones">
+                            <span class="zone-pill"><span class="zone-pulse"></span>Forehead</span>
+                            <span class="zone-pill"><span class="zone-pulse"></span>Nose</span>
+                            <span class="zone-pill"><span class="zone-pulse"></span>Left Cheek</span>
+                            <span class="zone-pill"><span class="zone-pulse"></span>Right Cheek</span>
+                            <span class="zone-pill"><span class="zone-pulse"></span>Chin</span>
+                            <span class="zone-pill"><span class="zone-pulse"></span>Jawline</span>
+                        </div>
+
+                        <!-- Trust Strip -->
+                        <div class="minimal-trust-bar" aria-label="Scan features">
+                            <span class="trust-item"><span class="check-icon">✓</span> Free scan</span>
+                            <span class="dot-sep">•</span>
+                            <span class="trust-item"><span class="check-icon">✓</span> No app</span>
+                            <span class="dot-sep">•</span>
+                            <span class="trust-item"><span class="check-icon">✓</span> No signup</span>
+                            <span class="dot-sep">•</span>
+                            <span class="trust-item"><span class="check-icon">✓</span> 15-second scan</span>
+                            <span class="dot-sep">•</span>
+                            <span class="trust-item"><span class="check-icon">✓</span> No data stored</span>
+                        </div>
+
+                        <!-- CTA Action -->
+                        <div class="minimal-action-wrap">
+                            <button id="startScanner" class="premium-btn minimal-start-btn">
+                                <span>START MY FREE SKIN SCAN</span>
+                                <span class="btn-arrow" aria-hidden="true">→</span>
+                            </button>
+                            <p class="cta-note minimal-cta-note">
+                                <span class="cta-note-icon">⚡</span> Get your report in one click. View, download or share anytime.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="minimal-trust-bar" aria-label="Scan features">
-                        <span class="trust-item"><span class="check-icon">✓</span> Free scan</span>
-                        <span class="dot-sep">•</span>
-                        <span class="trust-item"><span class="check-icon">✓</span> No app</span>
-                        <span class="dot-sep">•</span>
-                        <span class="trust-item"><span class="check-icon">✓</span> No signup</span>
-                        <span class="dot-sep">•</span>
-                        <span class="trust-item"><span class="check-icon">✓</span> 15-second scan</span>
-                        <span class="dot-sep">•</span>
-                        <span class="trust-item"><span class="check-icon">✓</span> No data stored</span>
+                    <!-- Right Column: Animated Face Scan Visual (Same as homepage) -->
+                    <div class="minimal-visual-col">
+                        <div class="scan-visual-card">
+                            <video autoplay loop muted playsinline preload="auto" poster="/assets/images/facial_scan_once_poster.jpg">
+                                <source src="/assets/images/facial_scan_once.webm" type="video/webm">
+                                <source src="/assets/images/facial_scan_once.mp4" type="video/mp4">
+                                <img src="/assets/images/face_scan_animation.gif" alt="MyMirror AI Facial Scan">
+                            </video>
+                            <div class="scan-live-badge">
+                                <span class="live-indicator-dot"></span>
+                                <span>REAL-TIME 6-ZONE SCAN</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="minimal-action-wrap">
-                        <button id="startScanner" class="premium-btn minimal-start-btn">
-                            <span>START MY FREE SKIN SCAN</span>
-                            <span class="btn-arrow" aria-hidden="true">→</span>
-                        </button>
-                        <p class="cta-note minimal-cta-note">
-                            <span class="cta-note-icon">⚡</span> Get your report in one click. View, download or share anytime.
-                        </p>
-                    </div>
                 </div>
             </div>
 
