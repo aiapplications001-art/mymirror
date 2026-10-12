@@ -217,7 +217,7 @@
       padding-bottom: 70px;
     }
     h1, h2, h3 { font-family: 'Kantumruy Pro', serif; color: var(--text); }
-    h1 { font-size: clamp(2rem, 4vw, 2.9rem); font-weight: 600; line-height: 1.15; letter-spacing: -0.03em; }
+    h1 { font-size: clamp(1.85rem, 3.5vw, 2.7rem); font-weight: 600; line-height: 1.18; letter-spacing: -0.03em; }
     h2 { font-size: 1.85rem; font-weight: 600; line-height: 1.25; margin-top: 3.5rem; margin-bottom: 1.2rem; }
     h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.25rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.8rem; }
     p { color: var(--text-2); line-height: 1.7; margin-bottom: 1.4rem; }
@@ -245,76 +245,106 @@
 
     /* Trust Bar */
     .trust-bar {
-      background: var(--bg-2); padding: 10px 20px;
+      background: var(--bg-2); padding: 8px 16px;
       border-bottom: 1px solid var(--border); font-size: 12px;
       color: var(--text-3); display: flex; gap: 14px;
       align-items: center; justify-content: center; text-align: center; flex-wrap: wrap;
     }
     .trust-reviewer { color: var(--success); font-weight: 700; }
 
-    /* Hero */
+    /* Hero: 1st Fold Desktop Layout */
     .hero {
       background: var(--bg-2); border-bottom: 1px solid var(--border);
-      padding: 3.5rem 2rem 2.5rem;
+      padding: 2.2rem 2rem 2rem;
     }
     .hero-inner {
       max-width: var(--max-content); margin: 0 auto;
-      display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2.5rem; align-items: center;
+      display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 2rem; align-items: start;
     }
     .hero-tag {
       display: inline-flex; align-items: center; gap: 6px;
       background: var(--brand-light); color: var(--brand-dark);
       font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
-      text-transform: uppercase; padding: 5px 14px; border-radius: 9999px; margin-bottom: 1.2rem;
+      text-transform: uppercase; padding: 4px 12px; border-radius: 9999px; margin-bottom: 0.9rem;
     }
-    .hero-subtitle { font-size: 1.05rem; color: var(--text-2); margin: 1rem 0 1.8rem; line-height: 1.6; }
+    .hero-subtitle { font-size: 0.98rem; color: var(--text-2); margin: 0.75rem 0 1.2rem; line-height: 1.55; }
 
-    /* Upfront Protocol Card */
+    /* Hero CTA Row (1st Fold Desktop) */
+    .hero-actions {
+      display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 1.1rem 0 0.4rem;
+    }
+    .btn-primary {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 14px 30px; border-radius: 9999px; border: none;
+      background: var(--brand); color: #fff !important; font-weight: 800; font-size: 14.5px;
+      cursor: pointer; box-shadow: 0 8px 22px rgba(236,97,14,0.3); transition: var(--transition-base); text-decoration: none;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px); box-shadow: 0 12px 28px rgba(236,97,14,0.45);
+      background: var(--brand-dark); color: #fff; text-decoration: none;
+    }
+    .hero-jump-btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 13px 22px; border-radius: 9999px; border: 1px solid var(--border);
+      background: var(--bg); color: var(--text); font-weight: 700; font-size: 13.5px;
+      text-decoration: none; transition: all 0.2s ease;
+    }
+    .hero-jump-btn:hover {
+      border-color: var(--brand); color: var(--brand); text-decoration: none; background: var(--bg-2);
+    }
+    .hero-cta-subtext {
+      font-size: 12.5px !important; color: var(--text-3); margin: 0 0 1.2rem 0 !important; line-height: 1.4;
+    }
+
+    /* Metric Strip on Left Column */
+    .hero-metric-strip {
+      display: flex; flex-direction: column; gap: 8px; margin-top: 0.9rem;
+      padding-top: 0.9rem; border-top: 1px solid var(--border);
+    }
+    .hero-metric-pill {
+      display: flex; align-items: center; gap: 10px; background: var(--bg);
+      padding: 7px 12px; border-radius: 8px; border: 1px solid var(--border);
+      font-size: 12px; color: var(--text-2);
+    }
+    .pill-badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 3px 8px; border-radius: 5px; font-weight: 800; font-size: 12px; flex-shrink: 0;
+    }
+    .pill-badge.bad { background: #FDE8E8; color: #C0392B; }
+    .pill-badge.good { background: #DEF7EC; color: #046C4E; }
+
+    /* Upfront Summary Card on Right Column */
     .upfront-card {
-      background: var(--bg);
-      border: 2px solid var(--brand);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem;
+      background: var(--bg); border: 2px solid var(--brand);
+      border-radius: var(--radius-lg); padding: 1.35rem 1.4rem;
       box-shadow: 0 8px 24px rgba(236,97,14,0.08);
-      margin: 1.5rem 0;
+      display: flex; flex-direction: column; gap: 0.85rem;
+    }
+    .upfront-card-header {
+      display: flex; align-items: center; justify-content: space-between;
     }
     .upfront-badge {
       display: inline-flex; align-items: center; gap: 6px;
       background: #FDF2E9; color: #C0392B;
-      font-size: 12px; font-weight: 800; text-transform: uppercase;
-      letter-spacing: 0.05em; padding: 4px 10px; border-radius: 6px; margin-bottom: 0.8rem;
+      font-size: 11px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 0.05em; padding: 4px 10px; border-radius: 6px;
     }
-    .upfront-card h3 {
-      font-size: 1.15rem; color: var(--text); margin: 0 0 0.8rem 0;
-    }
+    .upfront-time { font-size: 11.5px; font-weight: 700; color: var(--text-3); }
+    .upfront-card h3 { font-size: 1.08rem; color: var(--text); margin: 0; }
     .upfront-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;
     }
     .upfront-box {
-      background: var(--bg-2); border-radius: 10px; padding: 0.85rem 1rem;
+      background: var(--bg-2); border-radius: 9px; padding: 0.75rem 0.85rem;
       border: 1px solid var(--border);
     }
-    .upfront-box strong { display: block; font-size: 13px; color: var(--text); margin-bottom: 4px; }
-    .upfront-box span { font-size: 12.5px; color: var(--text-2); line-height: 1.4; display: block; }
-
-    /* Hero Side Stat Cards */
-    .hero-side-card {
-      background: var(--bg); border: 1px solid var(--border);
-      border-radius: var(--radius-lg); padding: 1.5rem;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.04);
-      display: flex; flex-direction: column; gap: 1rem;
+    .upfront-box strong { display: block; font-size: 12.5px; color: var(--text); margin-bottom: 3px; }
+    .upfront-box span { font-size: 11.8px; color: var(--text-2); line-height: 1.35; display: block; }
+    .upfront-card-footer {
+      background: var(--bg-2); border-left: 3px solid var(--brand);
+      padding: 8px 12px; border-radius: 0 8px 8px 0; font-size: 12px;
+      color: var(--text-2); line-height: 1.4;
     }
-    .metric-row { display: flex; align-items: flex-start; gap: 14px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
-    .metric-row:last-child { border-bottom: none; padding-bottom: 0; }
-    .metric-badge {
-      width: 44px; height: 44px; border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 18px; font-weight: 800; flex-shrink: 0;
-    }
-    .metric-badge.bad { background: #FDE8E8; color: #C0392B; }
-    .metric-badge.good { background: #DEF7EC; color: #046C4E; }
-    .metric-info strong { display: block; font-size: 14px; color: var(--text); margin-bottom: 2px; }
-    .metric-info span { font-size: 12px; color: var(--text-2); line-height: 1.4; }
 
     /* Sticky TOC Bar */
     .toc-bar {
@@ -400,12 +430,6 @@
     }
     .dark-callout h2 { color: var(--bg); margin-top: 0; font-size: 1.7rem; }
     .dark-callout p { color: var(--text-3); max-width: 600px; margin: 0.5rem auto 1.8rem; }
-    .btn-primary {
-      display: inline-block; padding: 16px 36px; border-radius: 9999px; border: none;
-      background: var(--brand); color: #fff; font-weight: 700; font-size: 15px;
-      cursor: pointer; box-shadow: 0 10px 25px rgba(236,97,14,0.3); transition: var(--transition-base); text-decoration: none;
-    }
-    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(236,97,14,0.4); background: var(--brand-dark); color: #fff; text-decoration: none; }
 
     /* FAQ Accordion */
     .faq-item { background: var(--bg); border-radius: 14px; margin-bottom: 12px; overflow: hidden; border: 1px solid var(--border); }
@@ -454,8 +478,8 @@
     @media (max-width: 900px) {
       .page-body { grid-template-columns: 1fr; padding: 2rem 1.2rem; }
       .sidebar { display: none; }
-      .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
-      .hero { padding: 2.5rem 1.2rem; }
+      .hero-inner { grid-template-columns: 1fr; gap: 1.8rem; }
+      .hero { padding: 2rem 1.2rem; }
       .toc-bar { padding: 0 1rem; }
       .upfront-grid { grid-template-columns: 1fr; }
       .mobile-scan-bar { display: flex; }
@@ -483,73 +507,66 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section (1st Fold Desktop Optimized) -->
   <section class="hero">
     <div class="hero-inner">
+      <!-- Left Column: Title, Subtitle, and 1st-Fold CTA -->
       <div class="hero-content">
         <span class="hero-tag">Dermatology Safety Guide</span>
         <h1 class="hero-title">At-Home Dermarolling for Acne Scars: Why Doctors Advise Against It</h1>
         <p class="hero-subtitle">Rolling needles across your face at home can lead to microscopic skin tears, spreading acne bacteria, and stubborn dark marks on Indian skin. Here is what actually happens and what helps scars heal safely.</p>
 
-        <!-- Upfront 10-Second Summary Card -->
-        <div class="upfront-card">
-          <div class="upfront-badge">Immediate Takeaway</div>
-          <h3>The 10-Second Summary for Beginners</h3>
-          <p style="margin-bottom: 0.5rem; font-size: 14px;">If you are thinking of buying a ₹500 dermaroller online to get rid of acne scars at home, dermatologists recommend pausing. Here is why:</p>
-          <div class="upfront-grid">
-            <div class="upfront-box">
-              <strong>1. Rolling Wheels Tear the Skin</strong>
-              <span>Needles enter and exit at an angle like fishhooks, creating jagged cuts instead of clean punctures.</span>
-            </div>
-            <div class="upfront-box">
-              <strong>2. Bacteria Spreads Fast</strong>
-              <span>Alcohol baths do not sterilize needle roots. Rolling over one hidden pimple spreads germs across your face.</span>
-            </div>
-            <div class="upfront-box">
-              <strong>3. High Dark Mark Risk</strong>
-              <span>Indian skin reacts to needle friction by dumping excess pigment, leaving dark track marks (PIH).</span>
-            </div>
-            <div class="upfront-box">
-              <strong>4. Short Needles Cannot Fill Pits</strong>
-              <span>At-home needles (0.5mm) only scratch the surface. Pitted scars require deep collagen remodeling (1.5mm to 2mm).</span>
-            </div>
-          </div>
+        <!-- 1st Fold CTA Action Row -->
+        <div class="hero-actions">
+          <a href="https://mymirror.fit/scan/" class="btn-primary">
+            <span>Scan Your Skin for Free →</span>
+          </a>
+          <a href="#scar-types-treatments" class="hero-jump-btn">
+            <span>Compare Scars Table ↓</span>
+          </a>
         </div>
+        <p class="hero-cta-subtext">Free 60-second AI check: identifies surface marks vs. deep pitted scars.</p>
 
-        <div style="margin-top: 1.5rem;">
-          <a href="https://mymirror.fit/scan/" class="btn-primary">Scan Your Skin for Free</a>
-          <p style="font-size: 13px; color: var(--text-3); margin-top: 8px;">Check whether your marks are surface pigment or deep indented scars in 60 seconds.</p>
+        <!-- Mechanical Angle Quick Metric Strip -->
+        <div class="hero-metric-strip">
+          <div class="hero-metric-pill">
+            <span class="pill-badge bad">45°</span>
+            <span><strong>Home Roller Angle:</strong> Enters diagonally and tears skin tissue on exit</span>
+          </div>
+          <div class="hero-metric-pill">
+            <span class="pill-badge good">90°</span>
+            <span><strong>Clinical Pen Angle:</strong> Motorized vertical puncture with zero dragging</span>
+          </div>
         </div>
       </div>
 
-      <div class="hero-side-card">
-        <div class="metric-row">
-          <div class="metric-badge bad">45°</div>
-          <div class="metric-info">
-            <strong>Dermaroller Entry Angle</strong>
-            <span>Needles enter diagonally, drag through the surface, and pull backward on exit.</span>
+      <!-- Right Column: Upfront 10-Second Takeaway Card (Also 1st Fold Desktop) -->
+      <div class="upfront-card">
+        <div class="upfront-card-header">
+          <span class="upfront-badge">Immediate Takeaway</span>
+          <span class="upfront-time">10-Sec Read</span>
+        </div>
+        <h3>The 10-Second Summary for Beginners:</h3>
+        <div class="upfront-grid">
+          <div class="upfront-box">
+            <strong>1. Rolling Wheels Tear Skin</strong>
+            <span>Needles enter diagonally like fishhooks, creating jagged cuts instead of clean holes.</span>
+          </div>
+          <div class="upfront-box">
+            <strong>2. Bacteria Spreads Fast</strong>
+            <span>Alcohol cannot sterilize needle joints. Puncturing one pimple spreads acne across your face.</span>
+          </div>
+          <div class="upfront-box">
+            <strong>3. High Dark Mark Risk</strong>
+            <span>Indian skin reacts to needle friction by dumping excess melanin pigment (PIH).</span>
+          </div>
+          <div class="upfront-box">
+            <strong>4. Short Needles Cannot Fill Pits</strong>
+            <span>Home 0.5mm needles only touch the surface; scars need deep 1.5mm–2mm collagen work.</span>
           </div>
         </div>
-        <div class="metric-row">
-          <div class="metric-badge good">90°</div>
-          <div class="metric-info">
-            <strong>Clinical Pen Entry Angle</strong>
-            <span>Motorized medical pens puncture vertically straight up and down with zero dragging.</span>
-          </div>
-        </div>
-        <div class="metric-row">
-          <div class="metric-badge bad">0%</div>
-          <div class="metric-info">
-            <strong>Home Sterility Level</strong>
-            <span>Kitchen sanitizing and rubbing alcohol cannot eliminate bacteria locked in roller joints.</span>
-          </div>
-        </div>
-        <div class="metric-row">
-          <div class="metric-badge good">100%</div>
-          <div class="metric-info">
-            <strong>Clinic Single-Use Cartridges</strong>
-            <span>Doctors use fresh, sealed medical-grade needle packs that get thrown away after each session.</span>
-          </div>
+        <div class="upfront-card-footer">
+          <span>🩺 <strong>Doctor Verdict:</strong> Skip manual rollers. Use gentle actives (azelaic acid/retinoids) for marks, and consult a doctor for deep pitted scars.</span>
         </div>
       </div>
     </div>
