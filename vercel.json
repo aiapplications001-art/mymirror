@@ -92,12 +92,12 @@
     },
     {
       "source": "/acne/face-map.html",
-      "destination": "/acne/face-map/",
+      "destination": "/skin-analysis/what-is-wrong-with-my-skin/",
       "permanent": true
     },
     {
       "source": "/acne/face-map.html/",
-      "destination": "/acne/face-map/",
+      "destination": "/skin-analysis/what-is-wrong-with-my-skin/",
       "permanent": true
     },
     {
@@ -122,12 +122,12 @@
     },
     {
       "source": "/acne/accutane-isotretinoin",
-      "destination": "/acne/isotretinoin-10mg-20mg-acne-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
       "permanent": true
     },
     {
       "source": "/acne/accutane-isotretinoin/",
-      "destination": "/acne/isotretinoin-10mg-20mg-acne-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
       "permanent": true
     },
     {
@@ -262,12 +262,12 @@
     },
     {
       "source": "/acne/benzoyl-peroxide-vs-antibiotics-for-p-acnes",
-      "destination": "/acne/benzoyl-peroxide-vs-clindamycin-acne-india/",
+      "destination": "/acne/clindamycin-and-tretinoin-together-guide-india/",
       "permanent": true
     },
     {
       "source": "/acne/benzoyl-peroxide-vs-antibiotics-for-p-acnes/",
-      "destination": "/acne/benzoyl-peroxide-vs-clindamycin-acne-india/",
+      "destination": "/acne/clindamycin-and-tretinoin-together-guide-india/",
       "permanent": true
     },
     {
@@ -302,12 +302,12 @@
     },
     {
       "source": "/acne/cheek-acne-causes-solutions",
-      "destination": "/acne/cheek-acne/",
+      "destination": "/acne/cheek-acne-meaning/",
       "permanent": true
     },
     {
       "source": "/acne/cheek-acne-causes-solutions/",
-      "destination": "/acne/cheek-acne/",
+      "destination": "/acne/cheek-acne-meaning/",
       "permanent": true
     },
     {
@@ -352,12 +352,12 @@
     },
     {
       "source": "/acne/combination-therapy",
-      "destination": "/acne/clindamycin-benzoyl-peroxide-acne-guide-india/",
+      "destination": "/acne/clindamycin-and-tretinoin-together-guide-india/",
       "permanent": true
     },
     {
       "source": "/acne/combination-therapy/",
-      "destination": "/acne/clindamycin-benzoyl-peroxide-acne-guide-india/",
+      "destination": "/acne/clindamycin-and-tretinoin-together-guide-india/",
       "permanent": true
     },
     {
@@ -452,12 +452,12 @@
     },
     {
       "source": "/acne/gym-monsoon-acne-preventing-sweat-pimples-in-indian-humidity",
-      "destination": "/acne/post-workout-acne-prevention-india/",
+      "destination": "/acne/whey-protein-acne-gym-breakout-treatment-india/",
       "permanent": true
     },
     {
       "source": "/acne/gym-monsoon-acne-preventing-sweat-pimples-in-indian-humidity/",
-      "destination": "/acne/post-workout-acne-prevention-india/",
+      "destination": "/acne/whey-protein-acne-gym-breakout-treatment-india/",
       "permanent": true
     },
     {
@@ -572,12 +572,12 @@
     },
     {
       "source": "/acne/isotretinoin-clinical-guidelines",
-      "destination": "/acne/isotretinoin-10mg-20mg-acne-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
       "permanent": true
     },
     {
       "source": "/acne/isotretinoin-clinical-guidelines/",
-      "destination": "/acne/isotretinoin-10mg-20mg-acne-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
       "permanent": true
     },
     {
@@ -692,12 +692,12 @@
     },
     {
       "source": "/acne/retino-a-0-025-cream-review-india",
-      "destination": "/acne/tretinoin-0.025-cream-acne-purge-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
       "permanent": true
     },
     {
       "source": "/acne/retino-a-0-025-cream-review-india/",
-      "destination": "/acne/tretinoin-0.025-cream-acne-purge-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
       "permanent": true
     },
     {
@@ -802,12 +802,12 @@
     },
     {
       "source": "/acne/the-champi-breakout-clearing-forehead-acne-from-hair-oil",
-      "destination": "/acne/why-teenagers-get-acne/",
+      "destination": "/acne/acne-routine-under-500-india/",
       "permanent": true
     },
     {
       "source": "/acne/the-champi-breakout-clearing-forehead-acne-from-hair-oil/",
-      "destination": "/acne/why-teenagers-get-acne/",
+      "destination": "/acne/acne-routine-under-500-india/",
       "permanent": true
     },
     {
@@ -822,32 +822,32 @@
     },
     {
       "source": "/acne/tretinoin-cream-gel",
-      "destination": "/acne/tretinoin-0.025-cream-acne-purge-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
       "permanent": true
     },
     {
       "source": "/acne/tretinoin-cream-gel/",
-      "destination": "/acne/tretinoin-0.025-cream-acne-purge-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
       "permanent": true
     },
     {
       "source": "/acne/tretinoin-micro-india",
-      "destination": "/acne/tretinoin-0.025-cream-acne-purge-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
       "permanent": true
     },
     {
       "source": "/acne/tretinoin-micro-india/",
-      "destination": "/acne/tretinoin-0.025-cream-acne-purge-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
       "permanent": true
     },
     {
       "source": "/acne/tretinoin-purge-guide",
-      "destination": "/acne/tretinoin-purging-vs-breakout-guide-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
       "permanent": true
     },
     {
       "source": "/acne/tretinoin-purge-guide/",
-      "destination": "/acne/tretinoin-purging-vs-breakout-guide-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
       "permanent": true
     },
     {
@@ -892,12 +892,12 @@
     },
     {
       "source": "/pigmentation/dark-lips-hyperpigmentation-causes-treatment-india",
-      "destination": "/pigmentation/lip-pigmentation-dark-lips-causes-treatment-india/",
+      "destination": "/pigmentation/pigmentation-around-mouth-chin-treatment-india/",
       "permanent": true
     },
     {
       "source": "/pigmentation/dark-lips-hyperpigmentation-causes-treatment-india/",
-      "destination": "/pigmentation/lip-pigmentation-dark-lips-causes-treatment-india/",
+      "destination": "/pigmentation/pigmentation-around-mouth-chin-treatment-india/",
       "permanent": true
     },
     {
@@ -942,12 +942,12 @@
     },
     {
       "source": "/pigmentation/steroid-induced-pigmentation-redness-face-india",
-      "destination": "/pigmentation/steroid-induced-facial-pigmentation-betnovate-rebound-india/",
+      "destination": "/acne/topical-steroid-damaged-skin-betnovate-panderm-recovery-india/",
       "permanent": true
     },
     {
       "source": "/pigmentation/steroid-induced-pigmentation-redness-face-india/",
-      "destination": "/pigmentation/steroid-induced-facial-pigmentation-betnovate-rebound-india/",
+      "destination": "/acne/topical-steroid-damaged-skin-betnovate-panderm-recovery-india/",
       "permanent": true
     },
     {
@@ -1082,12 +1082,12 @@
     },
     {
       "source": "/acne/accutane-usa",
-      "destination": "/acne/isotretinoin-10mg-20mg-acne-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
       "permanent": true
     },
     {
       "source": "/acne/accutane-usa/",
-      "destination": "/acne/isotretinoin-10mg-20mg-acne-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
       "permanent": true
     },
     {
@@ -1622,12 +1622,12 @@
     },
     {
       "source": "/acne/best-moisturizer-for-dry-skin-usa",
-      "destination": "/acne/best-moisturizer-for-dry-skin-india/",
+      "destination": "/acne/best-face-wash-for-dry-skin-india/",
       "permanent": true
     },
     {
       "source": "/acne/best-moisturizer-for-dry-skin-usa/",
-      "destination": "/acne/best-moisturizer-for-dry-skin-india/",
+      "destination": "/acne/best-face-wash-for-dry-skin-india/",
       "permanent": true
     },
     {
@@ -1872,12 +1872,12 @@
     },
     {
       "source": "/acne/cerave-moisturizing-cream-usa",
-      "destination": "/acne/best-moisturizer-for-dry-skin-india/",
+      "destination": "/acne/best-face-wash-for-dry-skin-india/",
       "permanent": true
     },
     {
       "source": "/acne/cerave-moisturizing-cream-usa/",
-      "destination": "/acne/best-moisturizer-for-dry-skin-india/",
+      "destination": "/acne/best-face-wash-for-dry-skin-india/",
       "permanent": true
     },
     {
@@ -2542,12 +2542,12 @@
     },
     {
       "source": "/acne/how-to-use-salicylic-acid-without-damaging-skin-barrier",
-      "destination": "/acne/how-to-use-salicylic-acid-without-damaging-your-skin-barrier/",
+      "destination": "/acne/salicylic-acid-spot-treatment-purging-guide-india/",
       "permanent": true
     },
     {
       "source": "/acne/how-to-use-salicylic-acid-without-damaging-skin-barrier/",
-      "destination": "/acne/how-to-use-salicylic-acid-without-damaging-your-skin-barrier/",
+      "destination": "/acne/salicylic-acid-spot-treatment-purging-guide-india/",
       "permanent": true
     },
     {
@@ -2927,12 +2927,12 @@
     },
     {
       "source": "/acne/nodule-vs-cyst",
-      "destination": "/acne/nodule-cyst/",
+      "destination": "/acne/cystic-chin-pimple/",
       "permanent": true
     },
     {
       "source": "/acne/nodule-vs-cyst/",
-      "destination": "/acne/nodule-cyst/",
+      "destination": "/acne/cystic-chin-pimple/",
       "permanent": true
     },
     {
@@ -3557,12 +3557,12 @@
     },
     {
       "source": "/acne/ut-treatment-guide",
-      "destination": "/acne/nose-pimple-treatments-home-remedies-clinical-cures/",
+      "destination": "/acne/pimple-on-nose-treatment-india/",
       "permanent": true
     },
     {
       "source": "/acne/ut-treatment-guide/",
-      "destination": "/acne/nose-pimple-treatments-home-remedies-clinical-cures/",
+      "destination": "/acne/pimple-on-nose-treatment-india/",
       "permanent": true
     },
     {
@@ -3637,12 +3637,12 @@
     },
     {
       "source": "/blog/pimple-vs-zit-inflammatory-papules-pustules-indian-skin",
-      "destination": "/acne/pimple-zit/",
+      "destination": "/acne/types-of-acne/",
       "permanent": true
     },
     {
       "source": "/blog/pimple-vs-zit-inflammatory-papules-pustules-indian-skin/",
-      "destination": "/acne/pimple-zit/",
+      "destination": "/acne/types-of-acne/",
       "permanent": true
     },
     {
@@ -3703,6 +3703,531 @@
     {
       "source": "/acne/types-of-pimples-on-face-identification-guide-india/",
       "destination": "/acne/types-of-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/nodule-cyst",
+      "destination": "/acne/cystic-chin-pimple/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/nodule-cyst/",
+      "destination": "/acne/cystic-chin-pimple/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-moisturizer-for-dry-skin-india",
+      "destination": "/acne/best-face-wash-for-dry-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-moisturizer-for-dry-skin-india/",
+      "destination": "/acne/best-face-wash-for-dry-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-cerave-moisturizing-cream-dupes-india",
+      "destination": "/acne/best-face-wash-for-dry-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-cerave-moisturizing-cream-dupes-india/",
+      "destination": "/acne/best-face-wash-for-dry-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/cheek-acne-comparison",
+      "destination": "/acne/cheek-acne-meaning/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/cheek-acne-comparison/",
+      "destination": "/acne/cheek-acne-meaning/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/cheek-acne",
+      "destination": "/acne/cheek-acne-meaning/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/cheek-acne/",
+      "destination": "/acne/cheek-acne-meaning/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/indian-acne-diet-guide/checklist.html/",
+      "destination": "/acne/hormonal-acne-diet-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/teenage-acne-india-parents-guide",
+      "destination": "/acne/acne-routine-under-500-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/teenage-acne-india-parents-guide/",
+      "destination": "/acne/acne-routine-under-500-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/why-teenagers-get-acne",
+      "destination": "/acne/acne-routine-under-500-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/why-teenagers-get-acne/",
+      "destination": "/acne/acne-routine-under-500-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/clindamycin-benzoyl-peroxide-acne-guide-india",
+      "destination": "/acne/clindamycin-and-tretinoin-together-guide-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/clindamycin-benzoyl-peroxide-acne-guide-india/",
+      "destination": "/acne/clindamycin-and-tretinoin-together-guide-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/benzoyl-peroxide-vs-clindamycin-acne-india",
+      "destination": "/acne/clindamycin-and-tretinoin-together-guide-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/benzoyl-peroxide-vs-clindamycin-acne-india/",
+      "destination": "/acne/clindamycin-and-tretinoin-together-guide-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/benzoyl-peroxide-and-tretinoin-together-guide-india",
+      "destination": "/acne/benzoyl-peroxide-and-retinol-together-guide-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/benzoyl-peroxide-and-tretinoin-together-guide-india/",
+      "destination": "/acne/benzoyl-peroxide-and-retinol-together-guide-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/nose-pimple-treatments-home-remedies-clinical-cures",
+      "destination": "/acne/pimple-on-nose-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/nose-pimple-treatments-home-remedies-clinical-cures/",
+      "destination": "/acne/pimple-on-nose-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/nose-acne-treatment",
+      "destination": "/acne/pimple-on-nose-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/nose-acne-treatment/",
+      "destination": "/acne/pimple-on-nose-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/pimple-inside-nose-causes-dangers-treatment-india",
+      "destination": "/acne/pimple-on-nose-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/pimple-inside-nose-causes-dangers-treatment-india/",
+      "destination": "/acne/pimple-on-nose-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/homemade-rice-water-for-acne-india",
+      "destination": "/acne/best-rice-water-toners-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/homemade-rice-water-for-acne-india/",
+      "destination": "/acne/best-rice-water-toners-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/rice-water-for-acne-prone-skin-india",
+      "destination": "/acne/best-rice-water-toners-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/rice-water-for-acne-prone-skin-india/",
+      "destination": "/acne/best-rice-water-toners-for-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/scalp-acne-treatment-india",
+      "destination": "/acne/scalp-folliculitis-shampoo-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/scalp-acne-treatment-india/",
+      "destination": "/acne/scalp-folliculitis-shampoo-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/side-effects-of-aloe-vera-on-face-india",
+      "destination": "/acne/side-effects-of-applying-turmeric-on-face-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/side-effects-of-aloe-vera-on-face-india/",
+      "destination": "/acne/side-effects-of-applying-turmeric-on-face-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-acne-homemade-face-pack",
+      "destination": "/acne/side-effects-of-applying-turmeric-on-face-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-acne-homemade-face-pack/",
+      "destination": "/acne/side-effects-of-applying-turmeric-on-face-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/aloe-vera-gel-for-acne-prone-skin-india",
+      "destination": "/acne/side-effects-of-applying-turmeric-on-face-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/aloe-vera-gel-for-acne-prone-skin-india/",
+      "destination": "/acne/side-effects-of-applying-turmeric-on-face-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/aloe-vera-for-acne-india",
+      "destination": "/acne/side-effects-of-applying-turmeric-on-face-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/aloe-vera-for-acne-india/",
+      "destination": "/acne/side-effects-of-applying-turmeric-on-face-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tretinoin-for-acne-scars-guide",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tretinoin-for-acne-scars-guide/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tretinoin-0.025-cream-acne-purge-india",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tretinoin-0.025-cream-acne-purge-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tretinoin-purging-vs-breakout-guide-india",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tretinoin-purging-vs-breakout-guide-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tretinoin-not-working-reasons-india",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tretinoin-not-working-reasons-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tretinoin-without-peeling-routine-guide-india",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/tretinoin-without-peeling-routine-guide-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/isotretinoin-10mg-20mg-acne-india",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/isotretinoin-10mg-20mg-acne-india/",
+      "destination": "/acne/tretinoin-peeling-barrier-recovery-protocol-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/how-to-layer-vitamin-c-serum-indian-skincare-routine",
+      "destination": "/acne/vitamin-c-serum-causing-breakouts-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/how-to-layer-vitamin-c-serum-indian-skincare-routine/",
+      "destination": "/acne/vitamin-c-serum-causing-breakouts-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/10-vs-15-vs-20-percent-vitamin-c-serum-india",
+      "destination": "/acne/vitamin-c-serum-causing-breakouts-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/10-vs-15-vs-20-percent-vitamin-c-serum-india/",
+      "destination": "/acne/vitamin-c-serum-causing-breakouts-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-vitamin-c-serum-for-face-india",
+      "destination": "/acne/vitamin-c-serum-causing-breakouts-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/best-vitamin-c-serum-for-face-india/",
+      "destination": "/acne/vitamin-c-serum-causing-breakouts-acne-prone-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/pimple-zit",
+      "destination": "/acne/types-of-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/pimple-zit/",
+      "destination": "/acne/types-of-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/chemical-peel-vs-laser-uneven-skin-tone-india",
+      "destination": "/pigmentation/chemical-exfoliation-uneven-skin-texture-tone-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/chemical-peel-vs-laser-uneven-skin-tone-india/",
+      "destination": "/pigmentation/chemical-exfoliation-uneven-skin-texture-tone-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/chemical-peels-for-pigmentation-melasma-indian-skin",
+      "destination": "/pigmentation/chemical-exfoliation-uneven-skin-texture-tone-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/chemical-peels-for-pigmentation-melasma-indian-skin/",
+      "destination": "/pigmentation/chemical-exfoliation-uneven-skin-texture-tone-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/upper-lip-pigmentation-dark-mustache-shadow-india",
+      "destination": "/pigmentation/pigmentation-around-mouth-chin-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/upper-lip-pigmentation-dark-mustache-shadow-india/",
+      "destination": "/pigmentation/pigmentation-around-mouth-chin-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/lip-pigmentation-dark-lips-causes-treatment-india",
+      "destination": "/pigmentation/pigmentation-around-mouth-chin-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/lip-pigmentation-dark-lips-causes-treatment-india/",
+      "destination": "/pigmentation/pigmentation-around-mouth-chin-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/chin-jawline-pigmentation-causes-treatment-india",
+      "destination": "/pigmentation/pigmentation-around-mouth-chin-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/chin-jawline-pigmentation-causes-treatment-india/",
+      "destination": "/pigmentation/pigmentation-around-mouth-chin-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/best-cleanser-combination-skin-oily-t-zone-dry-cheeks-india",
+      "destination": "/pigmentation/flaky-skin-around-nose-oily-t-zone-combination-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/best-cleanser-combination-skin-oily-t-zone-dry-cheeks-india/",
+      "destination": "/pigmentation/flaky-skin-around-nose-oily-t-zone-combination-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/combination-skin-uneven-texture-oily-t-zone-dry-cheeks-india",
+      "destination": "/pigmentation/flaky-skin-around-nose-oily-t-zone-combination-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/combination-skin-uneven-texture-oily-t-zone-dry-cheeks-india/",
+      "destination": "/pigmentation/flaky-skin-around-nose-oily-t-zone-combination-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/zone-mapping-skincare-routine-combination-skin-india",
+      "destination": "/pigmentation/flaky-skin-around-nose-oily-t-zone-combination-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/zone-mapping-skincare-routine-combination-skin-india/",
+      "destination": "/pigmentation/flaky-skin-around-nose-oily-t-zone-combination-skin-india/",
+      "permanent": true
+    },
+    {
+      "source": "/skin-analysis/can-you-analyse-my-face",
+      "destination": "/skin-analysis/what-is-wrong-with-my-skin/",
+      "permanent": true
+    },
+    {
+      "source": "/skin-analysis/can-you-analyse-my-face/",
+      "destination": "/skin-analysis/what-is-wrong-with-my-skin/",
+      "permanent": true
+    },
+    {
+      "source": "/skin-analysis/online-skin-analysis",
+      "destination": "/skin-analysis/what-is-wrong-with-my-skin/",
+      "permanent": true
+    },
+    {
+      "source": "/skin-analysis/online-skin-analysis/",
+      "destination": "/skin-analysis/what-is-wrong-with-my-skin/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/face-map",
+      "destination": "/skin-analysis/what-is-wrong-with-my-skin/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/face-map/",
+      "destination": "/skin-analysis/what-is-wrong-with-my-skin/",
+      "permanent": true
+    },
+    {
+      "source": "/face-map-experiment.html",
+      "destination": "/skin-analysis/what-is-wrong-with-my-skin/",
+      "permanent": true
+    },
+    {
+      "source": "/face-map-experiment.html/",
+      "destination": "/skin-analysis/what-is-wrong-with-my-skin/",
+      "permanent": true
+    },
+    {
+      "source": "/face-map-experiment-v1.html",
+      "destination": "/skin-analysis/what-is-wrong-with-my-skin/",
+      "permanent": true
+    },
+    {
+      "source": "/face-map-experiment-v1.html/",
+      "destination": "/skin-analysis/what-is-wrong-with-my-skin/",
+      "permanent": true
+    },
+    {
+      "source": "/skin-analysis/milia-on-face",
+      "destination": "/acne/milia-on-face-treatment-removal-india/",
+      "permanent": true
+    },
+    {
+      "source": "/skin-analysis/milia-on-face/",
+      "destination": "/acne/milia-on-face-treatment-removal-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/texture-smoothing-skincare-routine-india",
+      "destination": "/pigmentation/orange-peel-skin-texture-enlarged-pores-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/texture-smoothing-skincare-routine-india/",
+      "destination": "/pigmentation/orange-peel-skin-texture-enlarged-pores-india/",
+      "permanent": true
+    },
+    {
+      "source": "/skin-analysis/pores-on-face",
+      "destination": "/pigmentation/orange-peel-skin-texture-enlarged-pores-india/",
+      "permanent": true
+    },
+    {
+      "source": "/skin-analysis/pores-on-face/",
+      "destination": "/pigmentation/orange-peel-skin-texture-enlarged-pores-india/",
+      "permanent": true
+    },
+    {
+      "source": "/skin-analysis/uneven-skin-texture-causes",
+      "destination": "/pigmentation/orange-peel-skin-texture-enlarged-pores-india/",
+      "permanent": true
+    },
+    {
+      "source": "/skin-analysis/uneven-skin-texture-causes/",
+      "destination": "/pigmentation/orange-peel-skin-texture-enlarged-pores-india/",
+      "permanent": true
+    },
+    {
+      "source": "/skin-analysis/tanning-vs-pigmentation-face",
+      "destination": "/pigmentation/sun-tan-removal-detan-treatment-indian-skin/",
+      "permanent": true
+    },
+    {
+      "source": "/skin-analysis/tanning-vs-pigmentation-face/",
+      "destination": "/pigmentation/sun-tan-removal-detan-treatment-indian-skin/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/men-acne-faq",
+      "destination": "/acne/why-men-get-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/men-acne-faq/",
+      "destination": "/acne/why-men-get-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/sweat-acne-school-sports-india",
+      "destination": "/acne/whey-protein-acne-gym-breakout-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/sweat-acne-school-sports-india/",
+      "destination": "/acne/whey-protein-acne-gym-breakout-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/post-workout-acne-prevention-india",
+      "destination": "/acne/whey-protein-acne-gym-breakout-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/post-workout-acne-prevention-india/",
+      "destination": "/acne/whey-protein-acne-gym-breakout-treatment-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/steroid-induced-facial-pigmentation-betnovate-rebound-india",
+      "destination": "/acne/topical-steroid-damaged-skin-betnovate-panderm-recovery-india/",
+      "permanent": true
+    },
+    {
+      "source": "/pigmentation/steroid-induced-facial-pigmentation-betnovate-rebound-india/",
+      "destination": "/acne/topical-steroid-damaged-skin-betnovate-panderm-recovery-india/",
       "permanent": true
     }
   ],
