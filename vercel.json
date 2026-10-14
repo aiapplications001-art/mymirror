@@ -3706,16 +3706,6 @@
       "permanent": true
     },
     {
-      "source": "/acne/nodule-cyst",
-      "destination": "/acne/cystic-chin-pimple/",
-      "permanent": true
-    },
-    {
-      "source": "/acne/nodule-cyst/",
-      "destination": "/acne/cystic-chin-pimple/",
-      "permanent": true
-    },
-    {
       "source": "/acne/best-moisturizer-for-dry-skin-india",
       "destination": "/acne/best-face-wash-for-dry-skin-india/",
       "permanent": true
