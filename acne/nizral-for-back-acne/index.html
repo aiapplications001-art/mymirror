@@ -73,60 +73,69 @@
       padding: 0 1.5rem;
     }
 
-    /* Minimalist Navbar */
+    /* Standard MyMirror Sticky Header with Original Logo */
     header.site-header {
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(12px);
+      background: var(--bg);
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
-      z-index: 50;
-      padding: 1rem 0;
-    }
-    .header-inner {
+      z-index: 1000;
+      height: 64px;
       display: flex;
+      align-items: center;
+    }
+    .nav-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
       justify-content: space-between;
-      align-items: center;
     }
-    .brand-logo {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      text-decoration: none;
-      color: var(--text);
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 1.35rem;
-      letter-spacing: -0.03em;
-    }
-    .brand-logo .badge-dot {
-      width: 8px;
-      height: 8px;
-      background: var(--accent);
-      border-radius: 50%;
-      display: inline-block;
-    }
-    .header-actions {
+    .nav-logo {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      text-decoration: none;
     }
-    .header-btn {
+    .nav-logo img {
+      height: 32px;
+      width: auto;
+      display: block;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .nav-link {
+      color: var(--text);
+      font-weight: 600;
+      font-size: 13.5px;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    .nav-link:hover { color: var(--accent); }
+    .nav-link.accent {
+      color: var(--accent);
+      font-weight: 800;
+    }
+    .nav-cta {
       background: var(--text);
-      color: #fff;
-      padding: 0.55rem 1.15rem;
+      color: #fff !important;
+      padding: 0.5rem 1.15rem;
       border-radius: 8px;
       font-weight: 600;
-      font-size: 0.875rem;
+      font-size: 0.85rem;
       text-decoration: none;
       transition: all 0.15s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
     }
-    .header-btn:hover {
-      background: #2A2A2A;
+    .nav-cta:hover {
+      background: #2B2B2B;
       transform: translateY(-1px);
+    }
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
     }
 
     /* Breadcrumbs */
@@ -954,17 +963,21 @@
 </head>
 
 <body>
-  <!-- Header -->
+  <!-- Standard MyMirror Sticky Header with Original Logo -->
   <header class="site-header">
-    <div class="container header-inner">
-      <a href="/" class="brand-logo">
-        MyMirror<span class="badge-dot"></span>
+    <div class="nav-inner">
+      <a class="nav-logo" href="/" aria-label="MyMirror Home">
+        <img src="/acne/forehead-acne/logo-v4.png" alt="MyMirror Logo">
       </a>
-      <div class="header-actions">
-        <a href="/scan/" class="header-btn">
-          Free Skin Scan →
-        </a>
-      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="/">Knowledge Hub</a>
+        <a class="nav-link" href="/acne/types-of-acne/">Acne Types</a>
+        <a class="nav-link" href="/acne/back-acne-faq/">Back Acne Guide</a>
+        <a class="nav-link accent" href="https://mymirror.fit/scan/">Face Scan AI</a>
+      </nav>
+      <a href="/scan/" class="nav-cta">
+        Free Skin Scan →
+      </a>
     </div>
   </header>
 
@@ -1373,7 +1386,9 @@
   <!-- Minimalist Footer -->
   <footer class="site-footer">
     <div class="container footer-flex">
-      <div style="font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; color: var(--text);">MyMirror</div>
+      <a href="/" class="nav-logo" aria-label="MyMirror Home">
+        <img src="/acne/forehead-acne/logo-v4.png" alt="MyMirror Logo" style="height: 28px; width: auto;">
+      </a>
       <p style="max-width: 550px; margin: 0; line-height: 1.5;">Evidence-based dermatological decision tools and clear skin routines for Indian skin.</p>
       <p style="font-size: 0.75rem; color: var(--text-soft); margin-top: 0.5rem;">© 2026 MyMirror. For educational purposes only. Always consult a qualified dermatologist for chronic skin conditions.</p>
     </div>
