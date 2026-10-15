@@ -48,9 +48,10 @@
       --text: #111111;
       --text-muted: #666664;
       --text-soft: #888884;
-      --accent: #0066FF;
-      --accent-soft: #EEF4FF;
-      --highlight: #FFE58F;
+      --accent: #EC610E;
+      --accent-dark: #C14800;
+      --accent-soft: #FFF3EB;
+      --highlight: #FFE1CE;
       --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
       --radius: 12px;
@@ -121,7 +122,7 @@
       font-weight: 800;
     }
     .nav-cta {
-      background: var(--text);
+      background: var(--accent);
       color: #fff !important;
       padding: 0.5rem 1.15rem;
       border-radius: 8px;
@@ -131,7 +132,7 @@
       transition: all 0.15s ease;
     }
     .nav-cta:hover {
-      background: #2B2B2B;
+      background: var(--accent-dark);
       transform: translateY(-1px);
     }
     @media (max-width: 640px) {
@@ -183,7 +184,7 @@
       padding: 0.35rem 0.85rem;
       background: var(--accent-soft);
       color: var(--accent);
-      border: 1px solid #D1E2FF;
+      border: 1px solid #FED7AA;
       border-radius: 999px;
       font-size: 0.775rem;
       font-weight: 700;
@@ -229,7 +230,7 @@
       margin-bottom: 1.75rem;
     }
     .btn-solid-black {
-      background: var(--text);
+      background: var(--accent);
       color: #fff;
       font-weight: 700;
       font-size: 0.95rem;
@@ -240,12 +241,12 @@
       align-items: center;
       gap: 0.5rem;
       transition: all 0.15s ease;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 14px rgba(236, 97, 14, 0.28);
     }
     .btn-solid-black:hover {
-      background: #2B2B2B;
+      background: var(--accent-dark);
       transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      box-shadow: 0 6px 18px rgba(236, 97, 14, 0.38);
     }
     .btn-outline {
       background: #fff;
@@ -323,9 +324,9 @@
       transition: all 0.15s ease;
     }
     .v-tab-btn.active {
-      background: var(--text);
+      background: var(--accent);
       color: #fff;
-      border-color: var(--text);
+      border-color: var(--accent);
     }
     .visual-card-media {
       padding: 1rem;
@@ -511,7 +512,7 @@
     }
     .check-calc-result {
       background: var(--accent-soft);
-      border: 1px solid #C7DCFF;
+      border: 1px solid #FED7AA;
       border-radius: 10px;
       padding: 1.25rem;
       margin-top: 1.25rem;
@@ -801,7 +802,7 @@
       display: block;
       width: 100%;
       text-align: center;
-      background: var(--text);
+      background: var(--accent);
       color: #fff;
       font-weight: 700;
       padding: 0.85rem;
@@ -895,7 +896,7 @@
             "@type": "HowToStep",
             "position": 2,
             "name": "Lather Nizral 2%",
-            "text": "Smooth a 10-rupee coin sized pool of blue lather across your shoulders and back."
+            "text": "Smooth a 10-rupee coin sized pool of medicated lather across your shoulders and back."
           },
           {
             "@type": "HowToStep",
@@ -1075,7 +1076,7 @@
               <span class="bento-tag">Contact Time</span>
             </div>
             <h3>The 5-Minute Dwell Rule</h3>
-            <p>Back skin is 3x thicker than facial skin with follicles buried deep under keratin. A quick 10-second rinse washes the antifungal medicine down the drain before it penetrates. You must let the blue lather sit on your skin for 3 to 5 full minutes while brushing your teeth.</p>
+            <p>Back skin is 3x thicker than facial skin with follicles buried deep under keratin. A quick 10-second rinse washes the antifungal medicine down the drain before it penetrates. You must let the medicated lather sit on your skin for 3 to 5 full minutes while brushing your teeth.</p>
           </div>
         </div>
 
@@ -1197,7 +1198,7 @@
         <div class="step-box">
           <span class="step-badge">02</span>
           <h4>Lather Nizral 2%</h4>
-          <p>Pour a 10-rupee coin sized pool of blue shampoo into damp hands. Lather directly over your shoulders and back.</p>
+          <p>Pour a 10-rupee coin sized pool of medicated shampoo into damp hands. Lather directly over your shoulders and back.</p>
         </div>
 
         <div class="step-box">
@@ -1430,9 +1431,9 @@
       } else if (checked <= 2) {
         out.innerHTML = `<div class="calc-title" style="color: #4B5563;">Mild Likelihood of Fungal Bacne (${checked}/6 symptoms)</div><p class="calc-desc">You likely have a mix of friction or mild bacterial congestion. Try showering within 15 minutes of workouts and use a gentle 2% salicylic acid wash.</p>`;
       } else if (checked <= 4) {
-        out.innerHTML = `<div class="calc-title" style="color: #0066FF;">Moderate to High Fungal Likelihood (${checked}/6 symptoms)</div><p class="calc-desc">Your breakouts strongly match Malassezia folliculitis. Begin the <strong>5-Minute Nizral 2% protocol 2 times weekly</strong> and switch to forward-hair rinsing.</p>`;
+        out.innerHTML = `<div class="calc-title" style="color: #EC610E;">Moderate to High Fungal Likelihood (${checked}/6 symptoms)</div><p class="calc-desc">Your breakouts strongly match Malassezia folliculitis. Begin the <strong>5-Minute Nizral 2% protocol 2 times weekly</strong> and switch to forward-hair rinsing.</p>`;
       } else {
-        out.innerHTML = `<div class="calc-title" style="color: #0066FF;">Classic Fungal Folliculitis Confirmed (${checked}/6 symptoms)</div><p class="calc-desc">Your breakouts exhibit textbook yeast symptoms. Use <strong>Nizral 2% (or Scalpe Plus) 3 times weekly</strong> for 3 weeks, avoid coconut hair oil completely, and wear 100% loose cotton.</p>`;
+        out.innerHTML = `<div class="calc-title" style="color: #EC610E;">Classic Fungal Folliculitis Confirmed (${checked}/6 symptoms)</div><p class="calc-desc">Your breakouts exhibit textbook yeast symptoms. Use <strong>Nizral 2% (or Scalpe Plus) 3 times weekly</strong> for 3 weeks, avoid coconut hair oil completely, and wear 100% loose cotton.</p>`;
       }
     }
   </script>
