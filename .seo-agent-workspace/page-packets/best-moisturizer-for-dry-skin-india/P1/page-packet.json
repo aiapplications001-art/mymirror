@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v1",
+    "sourcePrewritingPageId": "P1",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "product_guide",
+    "createdDate": "2026-10-15",
+    "updatedDate": "2026-10-16"
+  },
+  "seo": {
+    "title": "Best Moisturizer for Dry Skin in India: 5 Pharmacy Picks (2026 Dermatologist Guide)",
+    "description": "Discover the best pharmacy moisturizers for dry, tight, flaking skin in India. Compare Bioderma, Cetaphil, Physiogel, Re'equil & Venusia with doctor tips.",
+    "slug": "best-moisturizer-for-dry-skin-india",
+    "canonical": "https://mymirror.fit/acne/best-moisturizer-for-dry-skin-india/",
+    "h1": "Best Moisturizer for Dry Skin in India: 5 Pharmacy Creams That Stop Flaking",
+    "secondaryKeywords": [
+      "best moisturizer for dry skin india",
+      "chemist moisturizers for dry skin",
+      "dry skin barrier repair cream india",
+      "bioderma atoderm creme india",
+      "cetaphil moisturising cream dry skin",
+      "physiogel daily moisture therapy",
+      "reequil ceramide moisturizer"
+    ],
+    "ogTitle": "Best Moisturizer for Dry Skin in India: 5 Pharmacy Picks (2026 Dermatologist Guide)",
+    "ogDescription": "Discover the best pharmacy moisturizers for dry, tight, flaking skin in India. Compare Bioderma, Cetaphil, Physiogel, Re'equil & Venusia with doctor tips.",
+    "ogImage": "https://mymirror.fit/assets/images/best-moisturizer-for-dry-skin-india-og.jpg",
+    "twitterImage": "https://mymirror.fit/assets/images/best-moisturizer-for-dry-skin-india-og.jpg"
+  },
+  "authorship": {
+    "author": {
+      "name": "MyMirror Clinical Editorial Team",
+      "descriptor": "Dermatology & Skin Science Team"
+    },
+    "reviewedBy": {
+      "name": "Dr. Lipy Mehta",
+      "descriptor": "Consultant Dermatologist & Aesthetic Physician \u2022 MBBS, MD Dermatology"
+    },
+    "reviewedByVisible": true
+  },
+  "audit": {
+    "formulaicSlopScore": 0.0,
+    "linguisticSlopScore": 0.0,
+    "schemaTypes": [
+      "MedicalWebPage",
+      "BreadcrumbList",
+      "ItemList",
+      "HowTo",
+      "VideoObject",
+      "FAQPage"
+    ]
+  }
+}
