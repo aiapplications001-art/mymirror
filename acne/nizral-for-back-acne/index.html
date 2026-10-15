@@ -35,26 +35,24 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* MyMirror Brand Identity: Signature Warm Orange + Crisp Clean Surfaces */
+    /* Tally-inspired 2-Color Minimalist Palette: Crisp Paper White + Obsidian Black + Electric Cobalt Highlight */
     :root {
-      --brand: #EC610E;
-      --brand-dark: #C14800;
-      --brand-light: #FFE1CE;
-      --brand-mid: #FFF3EB;
       --bg: #FFFFFF;
-      --bg2: #F9F6F3;
-      --bg3: #F2EDE8;
-      --txt: #1A1410;
-      --txt2: #5C4A3A;
-      --txt3: #9E8575;
-      --border: #E8DDD5;
-      --border-dark: #1A1410;
-      --success: #059669;
+      --bg-subtle: #FBFBFA;
+      --bg-card: #F7F7F5;
+      --border: #E8E8E5;
+      --border-dark: #111111;
+      --text: #111111;
+      --text-muted: #666664;
+      --text-soft: #888884;
+      --accent: #0066FF;
+      --accent-soft: #EEF4FF;
+      --highlight: #FFE58F;
       --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-display: 'Kantumruy Pro', serif;
+      --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
       --radius: 12px;
     }
 
@@ -63,7 +61,7 @@
     body {
       font-family: var(--font-body);
       background-color: var(--bg);
-      color: var(--txt);
+      color: var(--text);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
@@ -75,69 +73,60 @@
       padding: 0 1.5rem;
     }
 
-    /* Standard MyMirror Sticky Header with Original Logo */
+    /* Minimalist Navbar */
     header.site-header {
-      background: var(--bg);
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
-      z-index: 1000;
-      height: 64px;
-      display: flex;
-      align-items: center;
+      z-index: 50;
+      padding: 1rem 0;
     }
-    .nav-inner {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      width: 100%;
+    .header-inner {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-    }
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-    }
-    .nav-logo img {
-      height: 32px;
-      width: auto;
-      display: block;
-    }
-    .nav-links {
-      display: flex;
-      gap: 20px;
       align-items: center;
     }
-    .nav-link {
-      color: var(--txt);
-      font-weight: 600;
-      font-size: 13.5px;
+    .brand-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
       text-decoration: none;
-      transition: color 0.15s ease;
-    }
-    .nav-link:hover { color: var(--brand); }
-    .nav-link.accent {
-      color: var(--brand);
-      font-weight: 800;
-    }
-    .nav-cta {
-      background: var(--brand);
-      color: #fff !important;
-      padding: 0.5rem 1.15rem;
-      border-radius: 999px;
+      color: var(--text);
+      font-family: var(--font-display);
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 1.35rem;
+      letter-spacing: -0.03em;
+    }
+    .brand-logo .badge-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .header-btn {
+      background: var(--text);
+      color: #fff;
+      padding: 0.55rem 1.15rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.875rem;
       text-decoration: none;
-      transition: all 0.2s ease;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
     }
-    .nav-cta:hover {
-      background: var(--brand-dark);
+    .header-btn:hover {
+      background: #2A2A2A;
       transform: translateY(-1px);
-    }
-    @media (max-width: 640px) {
-      .nav-links { display: none; }
     }
 
     /* Breadcrumbs */
@@ -146,24 +135,24 @@
       align-items: center;
       gap: 0.4rem;
       font-size: 0.8rem;
-      color: var(--txt3);
+      color: var(--text-soft);
       padding: 0.35rem 0.75rem;
-      background: var(--bg2);
+      background: var(--bg-card);
       border-radius: 999px;
-      margin: 1.75rem 0 0.75rem 0;
+      margin: 2rem 0 1rem 0;
       width: fit-content;
     }
     .breadcrumbs a {
-      color: var(--txt2);
+      color: var(--text-muted);
       text-decoration: none;
       font-weight: 500;
     }
-    .breadcrumbs a:hover { color: var(--brand); }
-    .breadcrumbs span.separator { color: var(--border); }
+    .breadcrumbs a:hover { color: var(--text); }
+    .breadcrumbs span.separator { color: #C5C5C0; }
 
-    /* Product-Led First Fold Hero (Side-by-Side on Desktop) */
+    /* Tally-Style First Fold Hero */
     .hero-section {
-      padding: 0.75rem 0 2.5rem 0;
+      padding: 1rem 0 3rem 0;
     }
     .hero-grid {
       display: grid;
@@ -183,43 +172,44 @@
       align-items: center;
       gap: 0.45rem;
       padding: 0.35rem 0.85rem;
-      background: var(--brand-mid);
-      color: var(--brand-dark);
-      border: 1px solid var(--brand-light);
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid #D1E2FF;
       border-radius: 999px;
       font-size: 0.775rem;
-      font-weight: 800;
-      letter-spacing: 0.05em;
+      font-weight: 700;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
     }
 
     h1.hero-title {
-      font-size: 2.65rem;
-      line-height: 1.18;
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      color: var(--txt);
-      margin-bottom: 1rem;
+      font-size: 2.75rem;
+      line-height: 1.15;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--text);
+      margin-bottom: 1.25rem;
       font-family: var(--font-display);
     }
     @media (max-width: 640px) {
-      h1.hero-title { font-size: 2.05rem; }
+      h1.hero-title { font-size: 2.15rem; }
     }
 
-    /* Brand Orange Marker Highlight */
+    /* Tally Marker Highlighter */
     mark.highlight {
-      background: linear-gradient(180deg, transparent 65%, var(--brand-light) 65%);
+      background: linear-gradient(180deg, transparent 65%, var(--highlight) 65%);
       color: inherit;
-      padding: 0 0.2rem;
+      padding: 0 0.15rem;
       border-radius: 2px;
     }
 
     .hero-lead {
-      font-size: 1.075rem;
-      color: var(--txt2);
+      font-size: 1.15rem;
+      color: var(--text-muted);
       line-height: 1.55;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.75rem;
+      font-weight: 400;
     }
 
     .hero-cta-group {
@@ -227,57 +217,53 @@
       flex-wrap: wrap;
       gap: 0.85rem;
       align-items: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.75rem;
     }
-    .btn-brand-primary {
-      position: relative;
-      background: var(--brand);
-      color: #fff !important;
-      font-weight: 800;
+    .btn-solid-black {
+      background: var(--text);
+      color: #fff;
+      font-weight: 700;
       font-size: 0.95rem;
       padding: 0.85rem 1.6rem;
-      border-radius: 999px;
+      border-radius: 9px;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      box-shadow: 0 6px 20px rgba(236, 97, 14, 0.28);
-      transition: all 0.2s ease;
-      overflow: hidden;
+      transition: all 0.15s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
-    .btn-brand-primary:hover {
-      background: var(--brand-dark);
+    .btn-solid-black:hover {
+      background: #2B2B2B;
       transform: translateY(-2px);
-      box-shadow: 0 10px 24px rgba(236, 97, 14, 0.38);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
     }
-    .btn-brand-outline {
+    .btn-outline {
       background: #fff;
-      color: var(--txt);
-      border: 1px solid var(--border);
-      font-weight: 700;
+      color: var(--text);
+      border: 1px solid var(--border-dark);
+      font-weight: 600;
       font-size: 0.95rem;
       padding: 0.85rem 1.4rem;
-      border-radius: 999px;
+      border-radius: 9px;
       text-decoration: none;
       transition: all 0.15s ease;
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
     }
-    .btn-brand-outline:hover {
-      border-color: var(--brand);
-      color: var(--brand);
-      background: var(--bg2);
+    .btn-outline:hover {
+      background: var(--bg-card);
       transform: translateY(-1px);
     }
 
-    /* Trust Proof List */
+    /* Trust Checklist Row */
     .hero-proof-list {
       display: flex;
       flex-wrap: wrap;
       gap: 1.25rem;
       font-size: 0.85rem;
-      color: var(--txt2);
+      color: var(--text-muted);
       padding-top: 1.25rem;
       border-top: 1px solid var(--border);
     }
@@ -288,22 +274,22 @@
       font-weight: 600;
     }
     .hero-proof-item span.check {
-      color: var(--brand);
+      color: var(--accent);
       font-weight: 800;
     }
 
-    /* Right Column: Visual Diagnosis Card with Interactive Selector */
+    /* Right Column: Hero Visual Card with Interactive Selector */
     .hero-visual-card {
       background: #fff;
-      border: 2px solid var(--txt);
+      border: 2px solid var(--border-dark);
       border-radius: 16px;
-      box-shadow: 6px 6px 0px var(--brand);
+      box-shadow: 6px 6px 0px var(--border-dark);
       overflow: hidden;
       display: flex;
       flex-direction: column;
     }
     .visual-card-topbar {
-      background: var(--bg2);
+      background: var(--bg-card);
       padding: 0.75rem 1rem;
       border-bottom: 1px solid var(--border);
       display: flex;
@@ -322,15 +308,15 @@
       border-radius: 6px;
       padding: 0.35rem 0.7rem;
       font-size: 0.75rem;
-      font-weight: 700;
+      font-weight: 600;
       cursor: pointer;
-      color: var(--txt2);
+      color: var(--text-muted);
       transition: all 0.15s ease;
     }
     .v-tab-btn.active {
-      background: var(--brand);
+      background: var(--text);
       color: #fff;
-      border-color: var(--brand);
+      border-color: var(--text);
     }
     .visual-card-media {
       padding: 1rem;
@@ -345,10 +331,10 @@
     }
     .visual-card-caption {
       padding: 0.85rem 1.25rem 1.25rem 1.25rem;
-      background: var(--bg2);
+      background: var(--bg-subtle);
       border-top: 1px solid var(--border);
       font-size: 0.875rem;
-      color: var(--txt);
+      color: var(--text);
     }
     .diag-dynamic-box {
       display: flex;
@@ -358,20 +344,19 @@
     .diag-dynamic-box h4 {
       font-size: 0.95rem;
       font-weight: 800;
-      color: var(--brand-dark);
+      color: var(--text);
       display: flex;
       align-items: center;
       gap: 0.4rem;
-      font-family: var(--font-body);
     }
     .diag-dynamic-box p {
       font-size: 0.85rem;
-      color: var(--txt2);
+      color: var(--text-muted);
       margin: 0;
       line-height: 1.45;
     }
 
-    /* Bento Grid (4 Core Takeaways) */
+    /* Bento Grid (Tally-Style 4 Cards) */
     .bento-section {
       padding: 3rem 0;
       border-top: 1px solid var(--border);
@@ -381,14 +366,14 @@
       font-weight: 800;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: var(--brand);
+      color: var(--accent);
       margin-bottom: 0.5rem;
     }
     .section-headline {
       font-size: 2rem;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: -0.03em;
-      color: var(--txt);
+      color: var(--text);
       font-family: var(--font-display);
       margin-bottom: 1.75rem;
     }
@@ -403,7 +388,7 @@
       }
     }
     .bento-card {
-      background: var(--bg2);
+      background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: 1.75rem;
@@ -413,9 +398,9 @@
       transition: all 0.2s ease;
     }
     .bento-card:hover {
-      border-color: var(--brand);
+      border-color: var(--text);
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(236, 97, 14, 0.06);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
     }
     .bento-card-header {
       display: flex;
@@ -436,24 +421,24 @@
     }
     .bento-tag {
       font-size: 0.75rem;
-      font-weight: 800;
+      font-weight: 700;
       padding: 0.25rem 0.6rem;
       border-radius: 6px;
-      background: var(--brand-mid);
-      border: 1px solid var(--brand-light);
-      color: var(--brand-dark);
+      background: #fff;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
     }
     .bento-card h3 {
       font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--txt);
+      font-weight: 800;
+      color: var(--text);
       letter-spacing: -0.02em;
       margin-bottom: 0.6rem;
       font-family: var(--font-display);
     }
     .bento-card p {
       font-size: 0.925rem;
-      color: var(--txt2);
+      color: var(--text-muted);
       line-height: 1.55;
       margin: 0;
     }
@@ -465,9 +450,9 @@
     }
     .interactive-checklist {
       background: #fff;
-      border: 2px solid var(--txt);
+      border: 2px solid var(--border-dark);
       border-radius: 16px;
-      box-shadow: 6px 6px 0px var(--brand);
+      box-shadow: 6px 6px 0px var(--border-dark);
       padding: 2rem;
       margin-top: 1.5rem;
     }
@@ -487,37 +472,37 @@
       padding: 1rem;
       border: 1px solid var(--border);
       border-radius: 8px;
-      background: var(--bg2);
+      background: var(--bg-subtle);
       cursor: pointer;
       user-select: none;
       transition: all 0.15s ease;
     }
     .check-item:hover {
-      border-color: var(--brand);
+      border-color: var(--text);
       background: #fff;
     }
     .check-item input[type="checkbox"] {
       width: 18px;
       height: 18px;
       margin-top: 2px;
-      accent-color: var(--brand);
+      accent-color: var(--accent);
       cursor: pointer;
     }
     .check-label strong {
       display: block;
       font-size: 0.925rem;
-      color: var(--txt);
+      color: var(--text);
       margin-bottom: 0.2rem;
     }
     .check-label span {
       font-size: 0.8rem;
-      color: var(--txt2);
+      color: var(--text-muted);
       line-height: 1.4;
       display: block;
     }
     .check-calc-result {
-      background: var(--brand-mid);
-      border: 1px solid var(--brand-light);
+      background: var(--accent-soft);
+      border: 1px solid #C7DCFF;
       border-radius: 10px;
       padding: 1.25rem;
       margin-top: 1.25rem;
@@ -528,11 +513,11 @@
     .calc-title {
       font-size: 0.95rem;
       font-weight: 800;
-      color: var(--brand-dark);
+      color: var(--accent);
     }
     .calc-desc {
       font-size: 0.875rem;
-      color: var(--txt2);
+      color: var(--text);
       margin: 0;
     }
 
@@ -555,23 +540,23 @@
       text-align: left;
     }
     table.tally-table th {
-      background: var(--bg2);
-      color: var(--txt);
+      background: var(--bg-card);
+      color: var(--text);
       font-weight: 700;
       padding: 1rem 1.2rem;
       border-bottom: 1px solid var(--border);
-      font-size: 0.825rem;
+      font-size: 0.85rem;
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
     table.tally-table td {
       padding: 1rem 1.2rem;
       border-bottom: 1px solid var(--border);
-      color: var(--txt2);
+      color: var(--text);
       vertical-align: top;
     }
     table.tally-table tr:last-child td { border-bottom: none; }
-    table.tally-table tr:hover td { background: var(--bg2); }
+    table.tally-table tr:hover td { background: var(--bg-subtle); }
     .badge-pill-table {
       font-size: 0.725rem;
       font-weight: 700;
@@ -581,7 +566,6 @@
       border: 1px solid var(--border);
       display: inline-block;
       margin-top: 0.25rem;
-      color: var(--brand-dark);
     }
 
     /* Routine 4-Step Cards */
@@ -599,7 +583,7 @@
       .steps-row { grid-template-columns: repeat(4, 1fr); }
     }
     .step-box {
-      background: var(--bg2);
+      background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: 1.25rem;
@@ -610,18 +594,18 @@
     }
     .step-badge {
       font-family: var(--font-display);
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--brand);
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text);
     }
     .step-box h4 {
       font-size: 0.95rem;
       font-weight: 700;
-      color: var(--txt);
+      color: var(--text);
     }
     .step-box p {
       font-size: 0.825rem;
-      color: var(--txt2);
+      color: var(--text-muted);
       line-height: 1.5;
       margin: 0;
     }
@@ -637,8 +621,8 @@
       height: 0;
       overflow: hidden;
       border-radius: 16px;
-      border: 2px solid var(--txt);
-      box-shadow: 6px 6px 0px var(--brand);
+      border: 2px solid var(--border-dark);
+      box-shadow: 6px 6px 0px var(--border-dark);
       margin-top: 1.5rem;
     }
     .video-frame iframe {
@@ -661,7 +645,7 @@
       overflow: hidden;
       transition: border-color 0.15s ease;
     }
-    .tally-faq-item:hover { border-color: var(--brand); }
+    .tally-faq-item:hover { border-color: var(--text); }
     .tally-faq-item details { width: 100%; }
     .tally-faq-item summary {
       padding: 1.15rem 1.4rem;
@@ -672,7 +656,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: var(--txt);
+      color: var(--text);
       user-select: none;
     }
     .tally-faq-item summary::-webkit-details-marker { display: none; }
@@ -680,23 +664,23 @@
       content: '↓';
       font-size: 1rem;
       font-weight: 800;
-      color: var(--brand);
+      color: var(--text-soft);
       transition: transform 0.2s ease;
     }
     .tally-faq-item details[open] summary::after {
       content: '↑';
-      color: var(--brand-dark);
+      color: var(--accent);
     }
     .tally-faq-body {
       padding: 0 1.4rem 1.4rem 1.4rem;
       font-size: 0.925rem;
-      color: var(--txt2);
+      color: var(--text-muted);
       line-height: 1.6;
     }
 
-    /* Reviewer Banner */
+    /* Bottom Reviewer Card */
     .reviewer-banner {
-      background: var(--bg2);
+      background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: 1.5rem;
@@ -720,17 +704,17 @@
     .reviewer-info h4 {
       font-size: 0.95rem;
       font-weight: 700;
-      color: var(--txt);
+      color: var(--text);
       margin-bottom: 0.25rem;
     }
     .reviewer-info p {
       font-size: 0.825rem;
-      color: var(--txt2);
+      color: var(--text-muted);
       margin: 0;
       line-height: 1.45;
     }
 
-    /* Internal Navigation Cards */
+    /* Internal Links Grid */
     .nav-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -752,21 +736,21 @@
       transition: all 0.15s ease;
     }
     .nav-card:hover {
-      border-color: var(--brand);
+      border-color: var(--text);
       transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(236, 97, 14, 0.08);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.04);
     }
     .nav-card span.meta {
       font-size: 0.725rem;
       font-weight: 700;
       text-transform: uppercase;
-      color: var(--brand);
+      color: var(--accent);
       letter-spacing: 0.05em;
     }
     .nav-card h4 {
       font-size: 0.9rem;
       font-weight: 700;
-      color: var(--txt);
+      color: var(--text);
       margin: 0;
     }
 
@@ -775,9 +759,9 @@
       border-top: 1px solid var(--border);
       padding: 3rem 0;
       margin-top: 4rem;
-      background: var(--bg2);
+      background: var(--bg-subtle);
       font-size: 0.85rem;
-      color: var(--txt2);
+      color: var(--text-muted);
     }
     .footer-flex {
       display: flex;
@@ -794,7 +778,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: rgba(255, 255, 255, 0.96);
+      background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(8px);
       border-top: 1px solid var(--border);
       padding: 0.75rem 1rem;
@@ -808,14 +792,13 @@
       display: block;
       width: 100%;
       text-align: center;
-      background: var(--brand);
+      background: var(--text);
       color: #fff;
       font-weight: 700;
       padding: 0.85rem;
-      border-radius: 999px;
+      border-radius: 9px;
       text-decoration: none;
       font-size: 0.925rem;
-      box-shadow: 0 4px 12px rgba(236, 97, 14, 0.25);
     }
   </style>
 
@@ -971,21 +954,17 @@
 </head>
 
 <body>
-  <!-- Standard MyMirror Sticky Header with Original Logo -->
+  <!-- Header -->
   <header class="site-header">
-    <div class="nav-inner">
-      <a class="nav-logo" href="/" aria-label="MyMirror Home">
-        <img src="/acne/forehead-acne/logo-v4.png" alt="MyMirror Logo">
+    <div class="container header-inner">
+      <a href="/" class="brand-logo">
+        MyMirror<span class="badge-dot"></span>
       </a>
-      <nav class="nav-links">
-        <a class="nav-link" href="/">Knowledge Hub</a>
-        <a class="nav-link" href="/acne/types-of-acne/">Acne Types</a>
-        <a class="nav-link" href="/acne/back-acne-faq/">Back Acne Guide</a>
-        <a class="nav-link accent" href="https://mymirror.fit/scan/">Face Scan AI</a>
-      </nav>
-      <a href="/scan/" class="nav-cta">
-        Free Skin Scan →
-      </a>
+      <div class="header-actions">
+        <a href="/scan/" class="header-btn">
+          Free Skin Scan →
+        </a>
+      </div>
     </div>
   </header>
 
@@ -996,10 +975,10 @@
       <span class="separator">/</span>
       <a href="/acne/">Acne Hub</a>
       <span class="separator">/</span>
-      <span style="color: var(--txt);">Nizral for Bacne</span>
+      <span style="color: var(--text);">Nizral for Bacne</span>
     </nav>
 
-    <!-- 1st Fold Hero: 2-Column Product-Led Layout in MyMirror Orange Theme -->
+    <!-- 1st Fold Hero: 2-Column Product-Led Layout -->
     <section class="hero-section">
       <div class="hero-grid">
         <!-- Left: Punchy Headlines & Actions -->
@@ -1017,10 +996,10 @@
           </p>
 
           <div class="hero-cta-group">
-            <a href="/scan/" class="btn-brand-primary">
+            <a href="/scan/" class="btn-solid-black">
               Run Free AI Skin Scan →
             </a>
-            <a href="#shower-protocol" class="btn-brand-outline">
+            <a href="#shower-protocol" class="btn-outline">
               See 5-Min Shower Rule ↓
             </a>
           </div>
@@ -1069,7 +1048,7 @@
       </div>
     </section>
 
-    <!-- Bento Grid (4 Core Takeaways) -->
+    <!-- Bento Grid (Tally-Style 4 Cards) -->
     <section class="bento-section">
       <div class="section-eyebrow">The 4 Core Rules</div>
       <h2 class="section-headline">Everything you need to know in 30 seconds</h2>
@@ -1104,7 +1083,7 @@
           <div>
             <div class="bento-card-header">
               <div class="icon-box">🥥</div>
-              <span class="bento-tag">Hair Oil Caution</span>
+              <span class="bento-tag">Diet &amp; Hair Oil</span>
             </div>
             <h3>The Sunday Champi Trap</h3>
             <p>Pure coconut oil is over 50% Lauric Acid—the exact 12-carbon lipid that <em>Malassezia</em> yeast feeds on in laboratory petri dishes. Washing oily hair backward under the shower coats your back follicles with fuel, sparking breakout explosions.</p>
@@ -1129,7 +1108,7 @@
     <section class="diagnostic-section">
       <div class="section-eyebrow">Interactive Self-Check</div>
       <h2 class="section-headline">Is your back breakout fungal or bacterial?</h2>
-      <p style="color: var(--txt2); font-size: 1rem;">Tap the symptoms that match your back breakouts to get an instant clinical likelihood score:</p>
+      <p style="color: var(--text-muted); font-size: 1rem;">Tap the symptoms that match your back breakouts to get an instant clinical likelihood score:</p>
 
       <div class="interactive-checklist">
         <div class="checklist-grid">
@@ -1193,7 +1172,7 @@
     <section id="shower-protocol" class="routine-section">
       <div class="section-eyebrow">Step-by-Step Protocol</div>
       <h2 class="section-headline">The 5-Minute Shower Routine</h2>
-      <p style="color: var(--txt2); font-size: 1rem;">Follow this sequence 2 to 3 times weekly for 3 weeks:</p>
+      <p style="color: var(--text-muted); font-size: 1rem;">Follow this sequence 2 to 3 times weekly for 3 weeks:</p>
 
       <div class="steps-row">
         <div class="step-box">
@@ -1224,7 +1203,7 @@
       <div style="margin-top: 2rem; text-align: center;">
         <picture>
           <source srcset="/assets/images/nizral-bacne-shower-routine-protocol.webp" type="image/webp">
-          <img src="/assets/images/nizral-bacne-shower-routine-protocol.jpg" alt="5-Minute Nizral Shower Protocol for Bacne" style="max-width: 100%; height: auto; border-radius: 12px; border: 2px solid var(--txt); box-shadow: 6px 6px 0px var(--brand);">
+          <img src="/assets/images/nizral-bacne-shower-routine-protocol.jpg" alt="5-Minute Nizral Shower Protocol for Bacne" style="max-width: 100%; height: auto; border-radius: 12px; border: 2px solid var(--border-dark); box-shadow: 6px 6px 0px var(--border-dark);">
         </picture>
       </div>
     </section>
@@ -1233,7 +1212,7 @@
     <section class="table-section">
       <div class="section-eyebrow">Pharmacy Decision Matrix</div>
       <h2 class="section-headline">Nizral 2% vs. Scalpe Plus vs. Ketomac 2%</h2>
-      <p style="color: var(--txt2); font-size: 1rem; margin-bottom: 1.5rem;">How India's top 3 ketoconazole washes compare at the chemist counter:</p>
+      <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 1.5rem;">How India's top 3 ketoconazole washes compare at the chemist counter:</p>
 
       <div class="table-card">
         <table class="tally-table">
@@ -1249,32 +1228,32 @@
           <tbody>
             <tr>
               <td>
-                <strong style="color: var(--txt);">Nizral 2% Solution</strong><br>
+                <strong>Nizral 2% Solution</strong><br>
                 <span class="badge-pill-table">Janssen / J&amp;J</span>
               </td>
               <td>Ketoconazole 2% w/v</td>
               <td>Mild lather, gentle fragrance, non-stripping on barrier.</td>
-              <td><strong style="color: var(--brand-dark);">₹320</strong> (50ml)</td>
+              <td><strong>₹320</strong> (50ml)</td>
               <td><strong>The Gold Standard:</strong> Best for sensitive or dry-leaning skin that reacts to harsh washes.</td>
             </tr>
             <tr>
               <td>
-                <strong style="color: var(--txt);">Scalpe Plus / Pro</strong><br>
+                <strong>Scalpe Plus / Pro</strong><br>
                 <span class="badge-pill-table">Glenmark Pharma</span>
               </td>
               <td>Ketoconazole 2% + Zinc Pyrithione (ZPTO) 1%</td>
               <td>Thicker cooling lather with dual anti-yeast defense.</td>
-              <td><strong style="color: var(--brand-dark);">₹285</strong> (75ml)</td>
+              <td><strong>₹285</strong> (75ml)</td>
               <td><strong>Athletes &amp; Heavy Sweaters:</strong> ZPTO adds extra protection if you also have scalp dandruff.</td>
             </tr>
             <tr>
               <td>
-                <strong style="color: var(--txt);">Ketomac 2% Wash</strong><br>
+                <strong>Ketomac 2% Wash</strong><br>
                 <span class="badge-pill-table">Torque Pharma</span>
               </td>
               <td>Ketoconazole 2% w/v</td>
               <td>High foaming; can feel drying if left on over 5 minutes.</td>
-              <td><strong style="color: var(--brand-dark);">₹195</strong> (100ml)</td>
+              <td><strong>₹195</strong> (100ml)</td>
               <td><strong>Best Budget Value:</strong> High volume bottle for covering large surface areas on the back.</td>
             </tr>
           </tbody>
@@ -1286,7 +1265,7 @@
     <section class="video-section">
       <div class="section-eyebrow">Dermatologist Clinical Guide</div>
       <h2 class="section-headline">Doctorly: Treating Body Acne &amp; Folliculitis</h2>
-      <p style="color: var(--txt2); font-size: 1rem;">Board-certified dermatologists explain why contact time matters when treating truncal acne:</p>
+      <p style="color: var(--text-muted); font-size: 1rem;">Board-certified dermatologists explain why contact time matters when treating truncal acne:</p>
 
       <div class="video-frame">
         <iframe 
@@ -1299,7 +1278,7 @@
       </div>
     </section>
 
-    <!-- FAQ Accordions (Clean MyMirror Minimalist) -->
+    <!-- FAQ Accordions (Tally Minimalist) -->
     <section class="faq-section">
       <div class="section-eyebrow">Common Questions</div>
       <h2 class="section-headline">Frequently asked questions</h2>
@@ -1394,11 +1373,9 @@
   <!-- Minimalist Footer -->
   <footer class="site-footer">
     <div class="container footer-flex">
-      <a href="/" class="nav-logo" aria-label="MyMirror Home">
-        <img src="/acne/forehead-acne/logo-v4.png" alt="MyMirror Logo" style="height: 28px; width: auto;">
-      </a>
+      <div style="font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; color: var(--text);">MyMirror</div>
       <p style="max-width: 550px; margin: 0; line-height: 1.5;">Evidence-based dermatological decision tools and clear skin routines for Indian skin.</p>
-      <p style="font-size: 0.75rem; color: var(--txt3); margin-top: 0.5rem;">© 2026 MyMirror. For educational purposes only. Always consult a qualified dermatologist for chronic skin conditions.</p>
+      <p style="font-size: 0.75rem; color: var(--text-soft); margin-top: 0.5rem;">© 2026 MyMirror. For educational purposes only. Always consult a qualified dermatologist for chronic skin conditions.</p>
     </div>
   </footer>
 
@@ -1436,11 +1413,11 @@
       if (checked === 0) {
         out.innerHTML = `<div class="calc-title">Select your symptoms above</div><p class="calc-desc">Check the boxes that apply to your skin to view your tailored pharmacy protocol.</p>`;
       } else if (checked <= 2) {
-        out.innerHTML = `<div class="calc-title" style="color: #5C4A3A;">Mild Likelihood of Fungal Bacne (${checked}/6 symptoms)</div><p class="calc-desc">You likely have a mix of friction or mild bacterial congestion. Try showering within 15 minutes of workouts and use a gentle 2% salicylic acid wash.</p>`;
+        out.innerHTML = `<div class="calc-title" style="color: #4B5563;">Mild Likelihood of Fungal Bacne (${checked}/6 symptoms)</div><p class="calc-desc">You likely have a mix of friction or mild bacterial congestion. Try showering within 15 minutes of workouts and use a gentle 2% salicylic acid wash.</p>`;
       } else if (checked <= 4) {
-        out.innerHTML = `<div class="calc-title" style="color: #EC610E;">Moderate to High Fungal Likelihood (${checked}/6 symptoms)</div><p class="calc-desc">Your breakouts strongly match Malassezia folliculitis. Begin the <strong>5-Minute Nizral 2% protocol 2 times weekly</strong> and switch to forward-hair rinsing.</p>`;
+        out.innerHTML = `<div class="calc-title" style="color: #0066FF;">Moderate to High Fungal Likelihood (${checked}/6 symptoms)</div><p class="calc-desc">Your breakouts strongly match Malassezia folliculitis. Begin the <strong>5-Minute Nizral 2% protocol 2 times weekly</strong> and switch to forward-hair rinsing.</p>`;
       } else {
-        out.innerHTML = `<div class="calc-title" style="color: #C14800;">Classic Fungal Folliculitis Confirmed (${checked}/6 symptoms)</div><p class="calc-desc">Your breakouts exhibit textbook yeast symptoms. Use <strong>Nizral 2% (or Scalpe Plus) 3 times weekly</strong> for 3 weeks, avoid coconut hair oil completely, and wear 100% loose cotton.</p>`;
+        out.innerHTML = `<div class="calc-title" style="color: #0066FF;">Classic Fungal Folliculitis Confirmed (${checked}/6 symptoms)</div><p class="calc-desc">Your breakouts exhibit textbook yeast symptoms. Use <strong>Nizral 2% (or Scalpe Plus) 3 times weekly</strong> for 3 weeks, avoid coconut hair oil completely, and wear 100% loose cotton.</p>`;
       }
     }
   </script>
