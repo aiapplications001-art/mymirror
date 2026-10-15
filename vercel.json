@@ -4180,7 +4180,6 @@
       "destination": "/pigmentation/sun-tan-removal-detan-treatment-indian-skin/",
       "permanent": true
     },
-
     {
       "source": "/acne/sweat-acne-school-sports-india",
       "destination": "/acne/whey-protein-acne-gym-breakout-treatment-india/",
@@ -4209,6 +4208,26 @@
     {
       "source": "/pigmentation/steroid-induced-facial-pigmentation-betnovate-rebound-india/",
       "destination": "/acne/topical-steroid-damaged-skin-betnovate-panderm-recovery-india/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/nizral-for-bacne",
+      "destination": "/acne/nizral-for-back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/nizral-for-bacne/",
+      "destination": "/acne/nizral-for-back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/nizral-bacne",
+      "destination": "/acne/nizral-for-back-acne/",
+      "permanent": true
+    },
+    {
+      "source": "/acne/nizral-bacne/",
+      "destination": "/acne/nizral-for-back-acne/",
       "permanent": true
     }
   ],
