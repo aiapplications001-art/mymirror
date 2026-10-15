@@ -267,6 +267,14 @@
       border-color: var(--text);
       background: var(--bg-card);
     }
+    .btn-outline.highlight-btn {
+      border-color: var(--accent);
+      color: var(--accent-dark);
+      background: var(--accent-soft);
+    }
+    .btn-outline.highlight-btn:hover {
+      background: #FFE1CE;
+    }
 
     .hero-meta-strip {
       display: flex;
@@ -436,6 +444,70 @@
       margin-top: 1rem;
       border: 1px solid var(--border);
       display: block;
+    }
+
+    /* Video Embed Card */
+    .video-embed-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+      margin-bottom: 2rem;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #000;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-footer-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+      padding-top: 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+    .video-caption-text {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      flex: 1;
+      min-width: 260px;
+    }
+    .video-caption-text strong {
+      color: var(--text);
+    }
+    .video-yt-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 0.4rem 0.85rem;
+      background: #fff;
+      border: 1px solid #FED7AA;
+      border-radius: 6px;
+      transition: all 0.15s ease;
+    }
+    .video-yt-link:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent);
     }
 
     /* Product Cards */
@@ -615,26 +687,6 @@
       font-size: 0.9rem;
       color: var(--text-muted);
       line-height: 1.55;
-    }
-
-    /* Video Embed Container */
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      margin: 2rem 0;
-      background: #000;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
     }
 
     /* Accordion FAQ */
@@ -841,6 +893,7 @@
           </p>
           <div class="hero-cta-group">
             <a href="#pharmacy-picks" class="btn-solid-orange">View Top 5 Pharmacy Creams ↓</a>
+            <a href="#dermatologist-video" class="btn-outline highlight-btn"><span>▶</span> Watch Doctor Video (9 Min)</a>
             <a href="#skin-test" class="btn-outline">Check Dryness Severity</a>
           </div>
           <div class="hero-meta-strip">
@@ -849,8 +902,8 @@
               <span>Medically Reviewed by Dr. Lipy Mehta</span>
             </div>
             <div class="hero-meta-item">
-              <span>🧪</span>
-              <span>Fragrance-Free Formulations</span>
+              <span>🎬</span>
+              <a href="#dermatologist-video" style="color:inherit;text-decoration:none;"><strong>Dermatologist Video</strong> Included</a>
             </div>
             <div class="hero-meta-item">
               <span>🏷️</span>
@@ -942,6 +995,38 @@
             <p>Expensive department store creams often charge for fancy packaging and heavy perfume that stings damaged skin. Indian pharmacy creams give you medical-grade ceramides, shea butter, and squalane at fair prices.</p>
           </div>
           <img src="/assets/images/best-pharmacy-moisturizers-dry-skin-india.webp" alt="Indian pharmacy moisturizers comparison showing price points and tube sizes" width="600" height="335" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Prominent Expert Video Section: Positioned Right After Core Mechanics -->
+    <section class="content-section" id="dermatologist-video" style="scroll-margin-top: 80px;">
+      <div class="section-eyebrow">Dermatologist Video Guide</div>
+      <h2 class="section-heading">Doctor Recommendations for Dry Skin in India</h2>
+      <p class="section-subhead">
+        Watch Dr. Aanchal Panth (MD Dermatology, AIIMS Alumnus) explain how to choose the right cream texture and avoid common mistakes that worsen skin dryness.
+      </p>
+
+      <div class="video-embed-card">
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/4V2wJ465Zyk?rel=0"
+            title="Moisturisers for Dry Skin Recommendations by Dr. Aanchal MD Dermatologist"
+            width="100%"
+            height="100%"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="video-footer-bar">
+          <div class="video-caption-text">
+            <strong>Key Dermatologist Takeaway:</strong> Apply rich cream on damp skin within 60 seconds of washing. Avoid light gel lotions meant for oily skin.
+          </div>
+          <a href="https://www.youtube.com/watch?v=4V2wJ465Zyk" target="_blank" rel="noopener noreferrer" class="video-yt-link">
+            Open in YouTube ↗
+          </a>
         </div>
       </div>
     </section>
@@ -1189,25 +1274,6 @@
             <p class="calc-desc">Check the statements above that match your skin feeling right now to view your personalized care plan.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Expert Video Section -->
-    <section class="content-section">
-      <div class="section-eyebrow">Dermatologist Video Guide</div>
-      <h2 class="section-heading">Doctor Recommendations for Dry Skin in India</h2>
-      <p class="section-subhead">
-        Watch Dr. Aanchal Panth (MD Dermatology) explain how to choose the right moisturizer texture and avoid the most common application mistakes.
-      </p>
-
-      <div class="video-container">
-        <iframe
-          src="https://www.youtube.com/embed/4V2wJ465Zyk"
-          title="Moisturisers for Dry Skin by Dr. Aanchal MD Dermatologist"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
       </div>
     </section>
 
