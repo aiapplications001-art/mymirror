@@ -35,26 +35,25 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
 
   <style>
+    /* Tally-inspired 2-Color Minimalist Palette: Crisp Paper White + Obsidian Black + Electric Cobalt Highlight */
     :root {
-      --brand: #EC610E;
-      --brand-dark: #C14800;
-      --brand-light: #FFE1CE;
-      --brand-mid: #FFF3EB;
       --bg: #FFFFFF;
-      --bg-2: #FDFBF9;
-      --bg-3: #F4EBE1;
-      --text: #111827;
-      --text-2: #374151;
-      --text-3: #6B7280;
-      --border: #E5E7EB;
-      --success: #15803D;
-      --danger: #DC2626;
-      --info: #0284C7;
+      --bg-subtle: #FBFBFA;
+      --bg-card: #F7F7F5;
+      --border: #E8E8E5;
+      --border-dark: #111111;
+      --text: #111111;
+      --text-muted: #666664;
+      --text-soft: #888884;
+      --accent: #0066FF;
+      --accent-soft: #EEF4FF;
+      --highlight: #FFE58F;
       --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+      --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+      --radius: 12px;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -63,27 +62,26 @@
       font-family: var(--font-body);
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.65;
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
     }
 
-    /* Container */
     .container {
-      max-width: 1040px;
+      max-width: 1120px;
       margin: 0 auto;
-      padding: 0 1.25rem;
+      padding: 0 1.5rem;
     }
 
-    /* Header */
+    /* Minimalist Navbar */
     header.site-header {
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       position: sticky;
       top: 0;
       z-index: 50;
-      padding: 0.85rem 0;
+      padding: 1rem 0;
     }
     .header-inner {
       display: flex;
@@ -91,433 +89,568 @@
       align-items: center;
     }
     .brand-logo {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 0.6rem;
+      gap: 0.5rem;
       text-decoration: none;
       color: var(--text);
-      font-weight: 800;
-      font-size: 1.25rem;
-      letter-spacing: -0.02em;
-    }
-    .brand-logo span.dot {
-      color: var(--brand);
-    }
-    .header-cta {
-      background: var(--brand);
-      color: #fff;
-      padding: 0.5rem 1.1rem;
-      border-radius: 999px;
+      font-family: var(--font-display);
       font-weight: 700;
+      font-size: 1.35rem;
+      letter-spacing: -0.03em;
+    }
+    .brand-logo .badge-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .header-btn {
+      background: var(--text);
+      color: #fff;
+      padding: 0.55rem 1.15rem;
+      border-radius: 8px;
+      font-weight: 600;
       font-size: 0.875rem;
       text-decoration: none;
-      transition: all 0.2s var(--ease);
+      transition: all 0.15s ease;
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
     }
-    .header-cta:hover {
-      background: var(--brand-dark);
+    .header-btn:hover {
+      background: #2A2A2A;
       transform: translateY(-1px);
     }
 
     /* Breadcrumbs */
     .breadcrumbs {
-      display: flex;
-      gap: 0.5rem;
-      font-size: 0.825rem;
-      color: var(--text-3);
-      margin: 1.5rem 0 0.75rem 0;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .breadcrumbs a {
-      color: var(--text-3);
-      text-decoration: none;
-      transition: color 0.15s ease;
-    }
-    .breadcrumbs a:hover {
-      color: var(--brand);
-    }
-    .breadcrumbs span.separator {
-      color: var(--border);
-    }
-
-    /* Article Hero */
-    .article-header {
-      padding: 1rem 0 2rem 0;
-    }
-    .badge-pill {
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
-      padding: 0.35rem 0.85rem;
-      background: #E0F2FE;
-      color: #0369A1;
+      font-size: 0.8rem;
+      color: var(--text-soft);
+      padding: 0.35rem 0.75rem;
+      background: var(--bg-card);
       border-radius: 999px;
+      margin: 2rem 0 1rem 0;
+      width: fit-content;
+    }
+    .breadcrumbs a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .breadcrumbs a:hover { color: var(--text); }
+    .breadcrumbs span.separator { color: #C5C5C0; }
+
+    /* Tally-Style First Fold Hero */
+    .hero-section {
+      padding: 1rem 0 3rem 0;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    @media (min-width: 960px) {
+      .hero-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 3.5rem;
+      }
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.35rem 0.85rem;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid #D1E2FF;
+      border-radius: 999px;
+      font-size: 0.775rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    h1.hero-title {
+      font-size: 2.75rem;
+      line-height: 1.15;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--text);
+      margin-bottom: 1.25rem;
+      font-family: var(--font-display);
+    }
+    @media (max-width: 640px) {
+      h1.hero-title { font-size: 2.15rem; }
+    }
+
+    /* Tally Marker Highlighter */
+    mark.highlight {
+      background: linear-gradient(180deg, transparent 65%, var(--highlight) 65%);
+      color: inherit;
+      padding: 0 0.15rem;
+      border-radius: 2px;
+    }
+
+    .hero-lead {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 1.75rem;
+      font-weight: 400;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      align-items: center;
+      margin-bottom: 1.75rem;
+    }
+    .btn-solid-black {
+      background: var(--text);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: 9px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.15s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .btn-solid-black:hover {
+      background: #2B2B2B;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+    .btn-outline {
+      background: #fff;
+      color: var(--text);
+      border: 1px solid var(--border-dark);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.4rem;
+      border-radius: 9px;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .btn-outline:hover {
+      background: var(--bg-card);
+      transform: translateY(-1px);
+    }
+
+    /* Trust Checklist Row */
+    .hero-proof-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+    .hero-proof-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-weight: 600;
+    }
+    .hero-proof-item span.check {
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    /* Right Column: Hero Visual Card with Interactive Selector */
+    .hero-visual-card {
+      background: #fff;
+      border: 2px solid var(--border-dark);
+      border-radius: 16px;
+      box-shadow: 6px 6px 0px var(--border-dark);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .visual-card-topbar {
+      background: var(--bg-card);
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .visual-card-tabs {
+      display: flex;
+      gap: 0.4rem;
+    }
+    .v-tab-btn {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.35rem 0.7rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: all 0.15s ease;
+    }
+    .v-tab-btn.active {
+      background: var(--text);
+      color: #fff;
+      border-color: var(--text);
+    }
+    .visual-card-media {
+      padding: 1rem;
+      background: #fff;
+    }
+    .visual-card-media picture img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      border: 1px solid var(--border);
+    }
+    .visual-card-caption {
+      padding: 0.85rem 1.25rem 1.25rem 1.25rem;
+      background: var(--bg-subtle);
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--text);
+    }
+    .diag-dynamic-box {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .diag-dynamic-box h4 {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .diag-dynamic-box p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.45;
+    }
+
+    /* Bento Grid (Tally-Style 4 Cards) */
+    .bento-section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .section-eyebrow {
       font-size: 0.75rem;
       font-weight: 800;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
-      margin-bottom: 1rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
     }
-    h1.article-title {
-      font-size: 2.35rem;
-      line-height: 1.22;
+    .section-headline {
+      font-size: 2rem;
       font-weight: 800;
       letter-spacing: -0.03em;
       color: var(--text);
-      margin-bottom: 1rem;
+      font-family: var(--font-display);
+      margin-bottom: 1.75rem;
     }
-    @media (max-width: 768px) {
-      h1.article-title { font-size: 1.85rem; }
-    }
-    .article-meta {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 1rem;
-      font-size: 0.875rem;
-      color: var(--text-3);
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 1.5rem;
-    }
-    .meta-item { display: inline-flex; align-items: center; gap: 0.4rem; }
-    .author-pill { font-weight: 600; color: var(--text); }
-    .verified-pill { color: var(--success); font-weight: 700; }
-
-    /* Energy Rail CTA */
-    .cta-energy-rail {
-      background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%);
-      border: 1px solid #FED7AA;
-      border-radius: 16px;
-      padding: 1.35rem;
-      margin: 1.5rem 0 2rem 0;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 4px 14px rgba(236, 97, 14, 0.08);
-    }
-    .cta-energy-rail::before {
-      content: '';
-      position: absolute;
-      top: 0; left: -100%;
-      width: 100%; height: 3px;
-      background: linear-gradient(90deg, transparent, var(--brand), transparent);
-      animation: energyRun 3.2s infinite linear;
-    }
-    @keyframes energyRun {
-      0% { left: -100%; }
-      100% { left: 100%; }
-    }
-    .cta-rail-content {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-    @media (min-width: 768px) {
-      .cta-rail-content {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-      }
-    }
-    .cta-rail-text h3 {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: var(--brand-dark);
-      margin-bottom: 0.25rem;
-    }
-    .cta-rail-text p {
-      font-size: 0.875rem;
-      color: var(--text-2);
-      margin: 0;
-    }
-    .cta-rail-buttons {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-    }
-    .btn-primary {
-      background: var(--brand);
-      color: #fff;
-      font-weight: 700;
-      font-size: 0.875rem;
-      padding: 0.65rem 1.25rem;
-      border-radius: 999px;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      transition: all 0.2s ease;
-      white-space: nowrap;
-    }
-    .btn-primary:hover {
-      background: var(--brand-dark);
-      transform: translateY(-1px);
-    }
-    .btn-secondary {
-      background: #fff;
-      color: var(--text-2);
-      border: 1px solid var(--border);
-      font-weight: 600;
-      font-size: 0.875rem;
-      padding: 0.65rem 1.1rem;
-      border-radius: 999px;
-      text-decoration: none;
-      transition: all 0.2s ease;
-      white-space: nowrap;
-    }
-    .btn-secondary:hover {
-      background: #F9FAFB;
-      color: var(--text);
-    }
-
-    /* 10-Second Summary Card */
-    .summary-card {
-      background: var(--bg-2);
-      border: 1px solid #F3E8DC;
-      border-left: 4px solid var(--brand);
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin: 2rem 0;
-    }
-    .summary-card h2 {
-      font-size: 1.15rem;
-      font-weight: 800;
-      letter-spacing: -0.01em;
-      margin-bottom: 1rem;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .summary-grid {
+    .bento-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 0.85rem;
+      gap: 1.25rem;
     }
     @media (min-width: 768px) {
-      .summary-grid { grid-template-columns: 1fr 1fr; }
+      .bento-grid {
+        grid-template-columns: 1.2fr 0.8fr;
+      }
     }
-    .summary-item {
+    .bento-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
       display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+    }
+    .bento-card:hover {
+      border-color: var(--text);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    }
+    .bento-card-header {
+      display: flex;
+      justify-content: space-between;
       align-items: flex-start;
-      gap: 0.65rem;
-      font-size: 0.9rem;
-      color: var(--text-2);
-      line-height: 1.5;
+      margin-bottom: 1rem;
     }
-    .summary-item .icon {
-      font-size: 1.1rem;
-      line-height: 1.2;
-      flex-shrink: 0;
-    }
-    .summary-item strong {
-      color: var(--text);
-    }
-
-    /* Typography & Content Sections */
-    .content-body {
-      margin: 2rem 0;
-    }
-    .content-body h2 {
-      font-size: 1.6rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: var(--text);
-      margin: 2.5rem 0 1rem 0;
-      padding-top: 0.5rem;
+    .bento-card-header .icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: #fff;
+      border: 1px solid var(--border);
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      justify-content: center;
+      font-size: 1.35rem;
     }
-    .content-body h3 {
-      font-size: 1.25rem;
+    .bento-tag {
+      font-size: 0.75rem;
       font-weight: 700;
-      letter-spacing: -0.01em;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      background: #fff;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+    .bento-card h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
       color: var(--text);
-      margin: 1.75rem 0 0.75rem 0;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.6rem;
+      font-family: var(--font-display);
     }
-    .content-body p {
-      font-size: 1rem;
-      color: var(--text-2);
-      margin-bottom: 1.25rem;
-    }
-    .content-body ul, .content-body ol {
-      margin: 0 0 1.25rem 1.5rem;
-      color: var(--text-2);
-    }
-    .content-body li {
-      margin-bottom: 0.5rem;
-      font-size: 0.975rem;
+    .bento-card p {
+      font-size: 0.925rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin: 0;
     }
 
-    /* Media Pictures & Figures */
-    figure.article-figure {
-      margin: 2rem 0;
-      text-align: center;
+    /* Interactive 6-Point Diagnostic Checklist */
+    .diagnostic-section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
     }
-    figure.article-figure picture img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
+    .interactive-checklist {
+      background: #fff;
+      border: 2px solid var(--border-dark);
+      border-radius: 16px;
+      box-shadow: 6px 6px 0px var(--border-dark);
+      padding: 2rem;
+      margin-top: 1.5rem;
+    }
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    @media (min-width: 640px) {
+      .checklist-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 1rem;
       border: 1px solid var(--border);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      background: var(--bg-subtle);
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.15s ease;
+    }
+    .check-item:hover {
+      border-color: var(--text);
+      background: #fff;
+    }
+    .check-item input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin-top: 2px;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+    .check-label strong {
       display: block;
-      margin: 0 auto;
+      font-size: 0.925rem;
+      color: var(--text);
+      margin-bottom: 0.2rem;
     }
-    figure.article-figure figcaption {
-      font-size: 0.85rem;
-      color: var(--text-3);
-      margin-top: 0.6rem;
+    .check-label span {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      display: block;
+    }
+    .check-calc-result {
+      background: var(--accent-soft);
+      border: 1px solid #C7DCFF;
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin-top: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .calc-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+    .calc-desc {
+      font-size: 0.875rem;
+      color: var(--text);
+      margin: 0;
     }
 
-    /* Tables */
-    .table-container {
-      overflow-x: auto;
-      margin: 1.5rem 0 2rem 0;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    /* Minimalist Table */
+    .table-section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
     }
-    table.custom-table {
+    .table-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow-x: auto;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    }
+    table.tally-table {
       width: 100%;
       border-collapse: collapse;
       font-size: 0.9rem;
       text-align: left;
     }
-    table.custom-table th {
-      background: var(--bg-2);
+    table.tally-table th {
+      background: var(--bg-card);
       color: var(--text);
       font-weight: 700;
-      padding: 0.85rem 1rem;
+      padding: 1rem 1.2rem;
       border-bottom: 1px solid var(--border);
-      white-space: nowrap;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
     }
-    table.custom-table td {
-      padding: 0.85rem 1rem;
+    table.tally-table td {
+      padding: 1rem 1.2rem;
       border-bottom: 1px solid var(--border);
-      color: var(--text-2);
+      color: var(--text);
       vertical-align: top;
     }
-    table.custom-table tr:last-child td {
-      border-bottom: none;
-    }
-    table.custom-table tr:hover td {
-      background: #FAFAFA;
+    table.tally-table tr:last-child td { border-bottom: none; }
+    table.tally-table tr:hover td { background: var(--bg-subtle); }
+    .badge-pill-table {
+      font-size: 0.725rem;
+      font-weight: 700;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      background: #fff;
+      border: 1px solid var(--border);
+      display: inline-block;
+      margin-top: 0.25rem;
     }
 
-    /* Callout Boxes */
-    .callout-box {
-      background: #F0FDF4;
-      border: 1px solid #BBF7D0;
-      border-left: 4px solid var(--success);
-      border-radius: 10px;
+    /* Routine 4-Step Cards */
+    .routine-section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .steps-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    @media (min-width: 768px) {
+      .steps-row { grid-template-columns: repeat(4, 1fr); }
+    }
+    .step-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
       padding: 1.25rem;
-      margin: 1.5rem 0;
-      font-size: 0.925rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      position: relative;
     }
-    .callout-box.warning {
-      background: #FFFBEB;
-      border-color: #FDE68A;
-      border-left-color: #D97706;
+    .step-badge {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text);
     }
-    .callout-box.alert {
-      background: #FEF2F2;
-      border-color: #FECACA;
-      border-left-color: var(--danger);
-    }
-    .callout-title {
+    .step-box h4 {
+      font-size: 0.95rem;
       font-weight: 700;
       color: var(--text);
-      margin-bottom: 0.4rem;
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
+    }
+    .step-box p {
+      font-size: 0.825rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin: 0;
     }
 
     /* Video Embed */
-    .video-wrapper {
+    .video-section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .video-frame {
       position: relative;
       padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      margin: 1.75rem 0;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border-radius: 16px;
+      border: 2px solid var(--border-dark);
+      box-shadow: 6px 6px 0px var(--border-dark);
+      margin-top: 1.5rem;
     }
-    .video-wrapper iframe {
+    .video-frame iframe {
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
       border: 0;
     }
 
-    /* Step Cards */
-    .step-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.25rem;
-      margin: 1.5rem 0;
+    /* FAQ Tally Style Accordions */
+    .faq-section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
     }
-    @media (min-width: 768px) {
-      .step-grid { grid-template-columns: 1fr 1fr; }
-    }
-    .step-card {
-      background: #fff;
+    .tally-faq-item {
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.25rem;
-      position: relative;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .step-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.04);
-    }
-    .step-number {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 28px;
-      height: 28px;
-      background: var(--brand);
-      color: #fff;
-      border-radius: 50%;
-      font-weight: 800;
-      font-size: 0.85rem;
-      margin-bottom: 0.6rem;
-    }
-    .step-card h4 {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 0.4rem;
-    }
-    .step-card p {
-      font-size: 0.875rem;
-      color: var(--text-2);
-      margin-bottom: 0;
-      line-height: 1.5;
-    }
-
-    /* FAQ Accordions */
-    .faq-item {
-      border: 1px solid var(--border);
-      border-radius: 10px;
+      border-radius: var(--radius);
       margin-bottom: 0.75rem;
-      overflow: hidden;
       background: #fff;
+      overflow: hidden;
+      transition: border-color 0.15s ease;
     }
-    .faq-item details {
-      width: 100%;
-    }
-    .faq-item summary {
-      padding: 1rem 1.25rem;
+    .tally-faq-item:hover { border-color: var(--text); }
+    .tally-faq-item details { width: 100%; }
+    .tally-faq-item summary {
+      padding: 1.15rem 1.4rem;
       font-weight: 700;
-      font-size: 0.95rem;
+      font-size: 1rem;
       cursor: pointer;
       list-style: none;
       display: flex;
@@ -526,148 +659,146 @@
       color: var(--text);
       user-select: none;
     }
-    .faq-item summary::-webkit-details-marker { display: none; }
-    .faq-item summary::after {
-      content: '+';
-      font-size: 1.25rem;
-      color: var(--text-3);
+    .tally-faq-item summary::-webkit-details-marker { display: none; }
+    .tally-faq-item summary::after {
+      content: '↓';
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--text-soft);
       transition: transform 0.2s ease;
     }
-    .faq-item details[open] summary::after {
-      content: '−';
-      color: var(--brand);
+    .tally-faq-item details[open] summary::after {
+      content: '↑';
+      color: var(--accent);
     }
-    .faq-content {
-      padding: 0 1.25rem 1.25rem 1.25rem;
+    .tally-faq-body {
+      padding: 0 1.4rem 1.4rem 1.4rem;
       font-size: 0.925rem;
-      color: var(--text-2);
+      color: var(--text-muted);
       line-height: 1.6;
     }
 
-    /* Medical Reviewer Section */
-    .reviewer-card {
-      background: var(--bg-2);
+    /* Bottom Reviewer Card */
+    .reviewer-banner {
+      background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.25rem;
-      margin: 2.5rem 0;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin: 3rem 0;
       display: flex;
-      gap: 1rem;
       align-items: center;
+      gap: 1.25rem;
     }
-    .reviewer-avatar {
-      width: 60px;
-      height: 60px;
+    .reviewer-icon {
+      width: 52px;
+      height: 52px;
       border-radius: 50%;
-      background: #E2E8F0;
+      background: #fff;
+      border: 1px solid var(--border);
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 1.5rem;
       flex-shrink: 0;
     }
-    .reviewer-details h4 {
+    .reviewer-info h4 {
       font-size: 0.95rem;
       font-weight: 700;
       color: var(--text);
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.25rem;
     }
-    .reviewer-details p {
+    .reviewer-info p {
       font-size: 0.825rem;
-      color: var(--text-3);
+      color: var(--text-muted);
       margin: 0;
-      line-height: 1.4;
+      line-height: 1.45;
     }
 
     /* Internal Links Grid */
-    .links-grid {
+    .nav-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 0.75rem;
-      margin: 1.5rem 0;
+      gap: 1rem;
+      margin: 1.5rem 0 3rem 0;
     }
     @media (min-width: 640px) {
-      .links-grid { grid-template-columns: 1fr 1fr; }
+      .nav-grid { grid-template-columns: repeat(3, 1fr); }
     }
-    .link-tile {
-      display: block;
-      padding: 1rem;
+    .nav-card {
       background: #fff;
       border: 1px solid var(--border);
-      border-radius: 10px;
+      border-radius: var(--radius);
+      padding: 1.25rem;
       text-decoration: none;
-      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      transition: all 0.15s ease;
     }
-    .link-tile:hover {
-      border-color: var(--brand);
-      transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(236, 97, 14, 0.06);
+    .nav-card:hover {
+      border-color: var(--text);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.04);
     }
-    .link-tile span.cat {
+    .nav-card span.meta {
       font-size: 0.725rem;
-      text-transform: uppercase;
       font-weight: 700;
-      color: var(--brand);
-      display: block;
-      margin-bottom: 0.25rem;
+      text-transform: uppercase;
+      color: var(--accent);
+      letter-spacing: 0.05em;
     }
-    .link-tile h4 {
+    .nav-card h4 {
       font-size: 0.9rem;
       font-weight: 700;
       color: var(--text);
       margin: 0;
     }
 
-    /* Footer */
+    /* Minimalist Footer */
     footer.site-footer {
-      background: #111827;
-      color: #9CA3AF;
+      border-top: 1px solid var(--border);
       padding: 3rem 0;
       margin-top: 4rem;
+      background: var(--bg-subtle);
       font-size: 0.85rem;
+      color: var(--text-muted);
     }
-    .footer-content {
+    .footer-flex {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
-      text-align: center;
+      gap: 1rem;
       align-items: center;
-    }
-    .footer-disclaimer {
-      max-width: 720px;
-      font-size: 0.775rem;
-      line-height: 1.5;
-      color: #6B7280;
+      text-align: center;
     }
 
-    /* Sticky Mobile CTA */
-    .mobile-sticky-bar {
+    /* Sticky Mobile Bottom Bar */
+    .mobile-dock {
       display: none;
       position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
-      background: #fff;
-      padding: 0.75rem 1rem;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
       border-top: 1px solid var(--border);
-      box-shadow: 0 -4px 12px rgba(0,0,0,0.06);
-      z-index: 40;
+      padding: 0.75rem 1rem;
+      z-index: 50;
     }
     @media (max-width: 768px) {
-      .mobile-sticky-bar { display: block; }
-      body { padding-bottom: 4rem; }
+      .mobile-dock { display: block; }
+      body { padding-bottom: 4.5rem; }
     }
-    .mobile-sticky-btn {
+    .mobile-dock-btn {
       display: block;
       width: 100%;
       text-align: center;
-      background: var(--brand);
+      background: var(--text);
       color: #fff;
       font-weight: 700;
-      padding: 0.75rem;
-      border-radius: 999px;
+      padding: 0.85rem;
+      border-radius: 9px;
       text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 0.925rem;
     }
   </style>
 
@@ -685,7 +816,7 @@
         "headline": "Nizral for Bacne: How to Use 2% Ketoconazole for Stubborn Back Bumps",
         "inLanguage": "en-IN",
         "datePublished": "2026-10-15T00:00:00+05:30",
-        "dateModified": "2026-10-15T00:00:00+05:30",
+        "dateModified": "2026-10-16T00:00:00+05:30",
         "medicalAudience": {
           "@type": "MedicalAudience",
           "audienceType": "Patient"
@@ -748,26 +879,26 @@
           {
             "@type": "HowToStep",
             "position": 1,
-            "name": "Pre-Cleanse Sweat and Dirt",
-            "text": "Shower with a simple non-comedogenic body wash first to wash away surface gym sweat and sebum so the medication can touch bare skin."
+            "name": "Cleanse First",
+            "text": "Wash with mild soap first to remove gym sweat and body sebum so the medication can touch bare skin."
           },
           {
             "@type": "HowToStep",
             "position": 2,
-            "name": "Lather a Coin-Sized Amount",
-            "text": "Pour a 10-rupee coin sized pool of Nizral 2% shampoo onto your hands and lather it directly over your shoulders and upper back."
+            "name": "Lather Nizral 2%",
+            "text": "Smooth a 10-rupee coin sized pool of blue lather across your shoulders and back."
           },
           {
             "@type": "HowToStep",
             "position": 3,
-            "name": "Wait for 3 to 5 Minutes (The Dwell Time)",
-            "text": "Step away from the running water stream and let the blue lather sit on your skin for 3 to 5 minutes while you brush your teeth or rinse shampoo forward."
+            "name": "Wait 3 to 5 Minutes",
+            "text": "Step away from the water stream and let it sit for 3 to 5 minutes while brushing teeth."
           },
           {
             "@type": "HowToStep",
             "position": 4,
-            "name": "Rinse Lukewarm and Apply Yeast-Safe Hydration",
-            "text": "Rinse thoroughly with lukewarm water, pat dry with a clean white towel, and moisturize with a light oil-free gel."
+            "name": "Rinse & Light Moisture",
+            "text": "Rinse thoroughly with lukewarm water, pat dry with a clean towel, and hydrate with an oil-free gel."
           }
         ]
       },
@@ -827,11 +958,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="brand-logo">
-        MyMirror<span class="dot">•</span>
+        MyMirror<span class="badge-dot"></span>
       </a>
-      <a href="/scan/" class="header-cta">
-        Free AI Skin Scan →
-      </a>
+      <div class="header-actions">
+        <a href="/scan/" class="header-btn">
+          Free Skin Scan →
+        </a>
+      </div>
     </div>
   </header>
 
@@ -845,442 +978,448 @@
       <span style="color: var(--text);">Nizral for Bacne</span>
     </nav>
 
-    <!-- Hero Header -->
-    <article class="article-header">
-      <div class="badge-pill">Clinical Treatment Protocol • 2% Ketoconazole</div>
-      <h1 class="article-title">Nizral for Bacne: How to Use 2% Ketoconazole for Stubborn Back Bumps</h1>
-      
-      <div class="article-meta">
-        <div class="meta-item author-pill">
-          <span>By MyMirror Clinical Editorial Team</span>
+    <!-- 1st Fold Hero: 2-Column Product-Led Layout -->
+    <section class="hero-section">
+      <div class="hero-grid">
+        <!-- Left: Punchy Headlines & Actions -->
+        <div>
+          <div class="hero-pill">
+            <span>⚡ Clinical Protocol • 2% Ketoconazole</span>
+          </div>
+          
+          <h1 class="hero-title">
+            The 5-minute shower fix for <mark class="highlight">stubborn back bumps</mark>
+          </h1>
+          
+          <p class="hero-lead">
+            Up to 70% of persistent back breakouts aren't regular acne—they're sweat-loving yeast (<em>Malassezia</em>). Nizral 2% dissolves the fungal cell wall in 3 weeks without bleaching your clothes.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="/scan/" class="btn-solid-black">
+              Run Free AI Skin Scan →
+            </a>
+            <a href="#shower-protocol" class="btn-outline">
+              See 5-Min Shower Rule ↓
+            </a>
+          </div>
+
+          <div class="hero-proof-list">
+            <div class="hero-proof-item">
+              <span class="check">✓</span> 3–5 Min Dwell Time
+            </div>
+            <div class="hero-proof-item">
+              <span class="check">✓</span> 0% Fabric Bleaching
+            </div>
+            <div class="hero-proof-item">
+              <span class="check">✓</span> ₹320 Indian Chemist
+            </div>
+            <div class="hero-proof-item">
+              <span class="check">✓</span> Dr. Lipy Mehta Reviewed
+            </div>
+          </div>
         </div>
-        <div class="meta-item verified-pill">
-          <span>✓ Medically Reviewed by Dr. Lipy Mehta</span>
+
+        <!-- Right: Visual Diagnosis Card with Instant Interactive Selector -->
+        <div class="hero-visual-card">
+          <div class="visual-card-topbar">
+            <span>DIAGNOSIS SELECTOR</span>
+            <div class="visual-card-tabs">
+              <button class="v-tab-btn active" onclick="switchDiag('fungal', this)">Fungal Yeast</button>
+              <button class="v-tab-btn" onclick="switchDiag('bacterial', this)">Bacterial Cysts</button>
+              <button class="v-tab-btn" onclick="switchDiag('clogged', this)">Clogged Pores</button>
+            </div>
+          </div>
+
+          <div class="visual-card-media">
+            <picture>
+              <source srcset="/assets/images/nizral-bacne-fungal-vs-bacterial-diagram.webp" type="image/webp">
+              <img id="heroDiagImg" src="/assets/images/nizral-bacne-fungal-vs-bacterial-diagram.jpg" alt="Is your back acne fungal or bacterial" width="1280" height="714">
+            </picture>
+          </div>
+
+          <div class="visual-card-caption">
+            <div id="diagInfoBox" class="diag-dynamic-box">
+              <h4>🍄 Diagnosis: Fungal Folliculitis (Malassezia Yeast)</h4>
+              <p>Uniform, tiny 1–2mm pinpoint red dots that itch after workouts. <strong>Solution:</strong> Nizral 2% Ketoconazole wash 2–3 times weekly with a 5-minute dwell time.</p>
+            </div>
+          </div>
         </div>
-        <div class="meta-item">
-          <span>Updated October 2026</span>
+      </div>
+    </section>
+
+    <!-- Bento Grid (Tally-Style 4 Cards) -->
+    <section class="bento-section">
+      <div class="section-eyebrow">The 4 Core Rules</div>
+      <h2 class="section-headline">Everything you need to know in 30 seconds</h2>
+
+      <div class="bento-grid">
+        <!-- Card 1: The 5-Minute Timer -->
+        <div class="bento-card">
+          <div>
+            <div class="bento-card-header">
+              <div class="icon-box">⏱️</div>
+              <span class="bento-tag">Contact Time</span>
+            </div>
+            <h3>The 5-Minute Dwell Rule</h3>
+            <p>Back skin is 3x thicker than facial skin with follicles buried deep under keratin. A quick 10-second rinse washes the antifungal medicine down the drain before it penetrates. You must let the blue lather sit on your skin for 3 to 5 full minutes while brushing your teeth.</p>
+          </div>
         </div>
-        <div class="meta-item">
-          <span>⏱️ 7 Min Read</span>
+
+        <!-- Card 2: 0% Fabric Bleach -->
+        <div class="bento-card">
+          <div>
+            <div class="bento-card-header">
+              <div class="icon-box">👕</div>
+              <span class="bento-tag">Fabric Safe</span>
+            </div>
+            <h3>Zero Fabric Bleaching</h3>
+            <p>Unlike Benzoyl Peroxide (Perobar), which violently oxidizes dye and ruins colored shirts, bedsheets, and towels, Ketoconazole is 100% fabric-safe. You can wear your favorite black gym clothes without any orange bleach rings.</p>
+          </div>
+        </div>
+
+        <!-- Card 3: The Sunday Champi Trap -->
+        <div class="bento-card">
+          <div>
+            <div class="bento-card-header">
+              <div class="icon-box">🥥</div>
+              <span class="bento-tag">Diet &amp; Hair Oil</span>
+            </div>
+            <h3>The Sunday Champi Trap</h3>
+            <p>Pure coconut oil is over 50% Lauric Acid—the exact 12-carbon lipid that <em>Malassezia</em> yeast feeds on in laboratory petri dishes. Washing oily hair backward under the shower coats your back follicles with fuel, sparking breakout explosions.</p>
+          </div>
+        </div>
+
+        <!-- Card 4: Chemist Showdown -->
+        <div class="bento-card">
+          <div>
+            <div class="bento-card-header">
+              <div class="icon-box">🏪</div>
+              <span class="bento-tag">Indian Pharmacy</span>
+            </div>
+            <h3>Chemist Dupes at a Glance</h3>
+            <p>Nizral 2% is the gentle gold standard (~₹320). Scalpe Plus adds Zinc Pyrithione (ZPTO) for heavy gym sweaters (~₹285). Ketomac 2% is an affordable generic (~₹195) for treating large surface areas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive 6-Point Self-Diagnostic Checklist -->
+    <section class="diagnostic-section">
+      <div class="section-eyebrow">Interactive Self-Check</div>
+      <h2 class="section-headline">Is your back breakout fungal or bacterial?</h2>
+      <p style="color: var(--text-muted); font-size: 1rem;">Tap the symptoms that match your back breakouts to get an instant clinical likelihood score:</p>
+
+      <div class="interactive-checklist">
+        <div class="checklist-grid">
+          <label class="check-item">
+            <input type="checkbox" onchange="calcFungalScore()" class="diag-cb">
+            <div class="check-label">
+              <strong>Itches during or after workouts</strong>
+              <span>Pruritus (itching) increases with heat, sweat, or hot showers.</span>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" onchange="calcFungalScore()" class="diag-cb">
+            <div class="check-label">
+              <strong>Uniform pinpoint size</strong>
+              <span>Dozens of identical 1–2mm red domes with no mismatched blackheads.</span>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" onchange="calcFungalScore()" class="diag-cb">
+            <div class="check-label">
+              <strong>Standard acne washes failed</strong>
+              <span>Salicylic acid or regular face washes didn't clear it after 4 weeks.</span>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" onchange="calcFungalScore()" class="diag-cb">
+            <div class="check-label">
+              <strong>Appeared after taking antibiotics</strong>
+              <span>Oral Doxycycline or Azithromycin wiped out good bacteria, causing a yeast flare.</span>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" onchange="calcFungalScore()" class="diag-cb">
+            <div class="check-label">
+              <strong>Concentrated on upper back &amp; shoulders</strong>
+              <span>Cluster patterns along the spine, upper shoulder caps, or sports bra lines.</span>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" onchange="calcFungalScore()" class="diag-cb">
+            <div class="check-label">
+              <strong>Frequent hair oiling (Champi)</strong>
+              <span>Hair conditioner or coconut oil runs down your back in the shower.</span>
+            </div>
+          </label>
+        </div>
+
+        <div id="checklistOutput" class="check-calc-result">
+          <div class="calc-title">Select your symptoms above</div>
+          <p class="calc-desc">Check the boxes that apply to your skin to view your tailored pharmacy protocol.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Routine Section (Visual 4-Step Cards) -->
+    <section id="shower-protocol" class="routine-section">
+      <div class="section-eyebrow">Step-by-Step Protocol</div>
+      <h2 class="section-headline">The 5-Minute Shower Routine</h2>
+      <p style="color: var(--text-muted); font-size: 1rem;">Follow this sequence 2 to 3 times weekly for 3 weeks:</p>
+
+      <div class="steps-row">
+        <div class="step-box">
+          <span class="step-badge">01</span>
+          <h4>Cleanse Grime First</h4>
+          <p>Shower with basic body soap to wash off gym sweat and grease so the medication can make direct contact with your pores.</p>
+        </div>
+
+        <div class="step-box">
+          <span class="step-badge">02</span>
+          <h4>Lather Nizral 2%</h4>
+          <p>Pour a 10-rupee coin sized pool of blue shampoo into damp hands. Lather directly over your shoulders and back.</p>
+        </div>
+
+        <div class="step-box">
+          <span class="step-badge">03</span>
+          <h4>Wait 3 to 5 Minutes</h4>
+          <p>Step away from the water stream. Let the active foam sit on your back while you brush your teeth or rinse your hair forward.</p>
+        </div>
+
+        <div class="step-box">
+          <span class="step-badge">04</span>
+          <h4>Rinse &amp; Light Gel</h4>
+          <p>Rinse thoroughly with lukewarm water. Pat dry with a fresh towel and apply an oil-free hydrator like Sebamed Clear Face Gel.</p>
         </div>
       </div>
 
-      <!-- First-Fold Desktop CTA Rail -->
-      <div class="cta-energy-rail">
-        <div class="cta-rail-content">
-          <div class="cta-rail-text">
-            <h3>Not Sure If Your Bumps Are Yeast or Bacteria?</h3>
-            <p>Snap a quick picture of your shoulder or back breakouts. Our free AI skin diagnostic detects follicle inflammation patterns in 60 seconds.</p>
+      <div style="margin-top: 2rem; text-align: center;">
+        <picture>
+          <source srcset="/assets/images/nizral-bacne-shower-routine-protocol.webp" type="image/webp">
+          <img src="/assets/images/nizral-bacne-shower-routine-protocol.jpg" alt="5-Minute Nizral Shower Protocol for Bacne" style="max-width: 100%; height: auto; border-radius: 12px; border: 2px solid var(--border-dark); box-shadow: 6px 6px 0px var(--border-dark);">
+        </picture>
+      </div>
+    </section>
+
+    <!-- Table Section: Indian Chemist Showdown -->
+    <section class="table-section">
+      <div class="section-eyebrow">Pharmacy Decision Matrix</div>
+      <h2 class="section-headline">Nizral 2% vs. Scalpe Plus vs. Ketomac 2%</h2>
+      <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 1.5rem;">How India's top 3 ketoconazole washes compare at the chemist counter:</p>
+
+      <div class="table-card">
+        <table class="tally-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Actives</th>
+              <th>Surfactant Feel</th>
+              <th>Price (₹)</th>
+              <th>Best Use Case</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Nizral 2% Solution</strong><br>
+                <span class="badge-pill-table">Janssen / J&amp;J</span>
+              </td>
+              <td>Ketoconazole 2% w/v</td>
+              <td>Mild lather, gentle fragrance, non-stripping on barrier.</td>
+              <td><strong>₹320</strong> (50ml)</td>
+              <td><strong>The Gold Standard:</strong> Best for sensitive or dry-leaning skin that reacts to harsh washes.</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Scalpe Plus / Pro</strong><br>
+                <span class="badge-pill-table">Glenmark Pharma</span>
+              </td>
+              <td>Ketoconazole 2% + Zinc Pyrithione (ZPTO) 1%</td>
+              <td>Thicker cooling lather with dual anti-yeast defense.</td>
+              <td><strong>₹285</strong> (75ml)</td>
+              <td><strong>Athletes &amp; Heavy Sweaters:</strong> ZPTO adds extra protection if you also have scalp dandruff.</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Ketomac 2% Wash</strong><br>
+                <span class="badge-pill-table">Torque Pharma</span>
+              </td>
+              <td>Ketoconazole 2% w/v</td>
+              <td>High foaming; can feel drying if left on over 5 minutes.</td>
+              <td><strong>₹195</strong> (100ml)</td>
+              <td><strong>Best Budget Value:</strong> High volume bottle for covering large surface areas on the back.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+      <div class="section-eyebrow">Dermatologist Clinical Guide</div>
+      <h2 class="section-headline">Doctorly: Treating Body Acne &amp; Folliculitis</h2>
+      <p style="color: var(--text-muted); font-size: 1rem;">Board-certified dermatologists explain why contact time matters when treating truncal acne:</p>
+
+      <div class="video-frame">
+        <iframe 
+          src="https://www.youtube-nocookie.com/embed/4gqmdBwnFzo" 
+          title="BACK ACNE - How to Treat and Prevent It | Doctorly Routines" 
+          loading="lazy" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- FAQ Accordions (Tally Minimalist) -->
+    <section class="faq-section">
+      <div class="section-eyebrow">Common Questions</div>
+      <h2 class="section-headline">Frequently asked questions</h2>
+
+      <div class="tally-faq-item">
+        <details>
+          <summary>Does Nizral shampoo actually clear back acne?</summary>
+          <div class="tally-faq-body">
+            Yes, provided your breakouts are fungal folliculitis (caused by <em>Malassezia</em> yeast) rather than true bacterial acne. Ketoconazole 2% dissolves fungal cell walls, typically providing noticeable itch relief within 3 to 5 days and visible clearing of bumps in 2 to 3 weeks.
           </div>
-          <div class="cta-rail-buttons">
-            <a href="/scan/" class="btn-primary">Scan Your Skin Free →</a>
-            <a href="#shower-protocol" class="btn-secondary">Jump to Protocol ↓</a>
-          </div>
-        </div>
+        </details>
       </div>
 
-      <!-- 10-Second Summary Card -->
-      <div class="summary-card">
-        <h2>⚡ 10-Second Summary: The Essentials</h2>
-        <div class="summary-grid">
-          <div class="summary-item">
-            <span class="icon">🍄</span>
-            <div><strong>Why Shampoo Works on Back Bumps:</strong> Nizral contains 2% Ketoconazole, a clinical antifungal that starves <em>Malassezia</em> yeast—the hidden culprit behind itchy, persistent back breakouts.</div>
+      <div class="tally-faq-item">
+        <details>
+          <summary>How long should I leave Nizral on my back before rinsing?</summary>
+          <div class="tally-faq-body">
+            Leave the lather on for 3 to 5 minutes. Back skin is three times thicker than facial skin, and follicular openings are deeper. Rinsing after 10 or 15 seconds rinses the medicine away before it has time to work.
           </div>
-          <div class="summary-item">
-            <span class="icon">⏱️</span>
-            <div><strong>The 5-Minute Timer Rule:</strong> Back skin is 3x thicker than facial skin. You must leave the lather on for 3 to 5 minutes before rinsing; instant 10-second washes fail to penetrate.</div>
-          </div>
-          <div class="summary-item">
-            <span class="icon">🔍</span>
-            <div><strong>The Diagnostic Tell:</strong> Itchy, identical 1–2mm pinpoint red dots = Fungal yeast (Nizral). Large, tender bumps with yellow pus heads = Bacterial acne (Perobar).</div>
-          </div>
-          <div class="summary-item">
-            <span class="icon">🧼</span>
-            <div><strong>Chemist Showdown:</strong> Nizral 2% is the gentle gold standard (~₹320). Scalpe Plus adds Zinc Pyrithione (ZPTO). Ketomac 2% is a budget generic (~₹190).</div>
-          </div>
-          <div class="summary-item">
-            <span class="icon">🚿</span>
-            <div><strong>The Champi &amp; Gym Trap:</strong> Coconut hair oil (Lauric acid) and sweaty polyester gym clothes act like high-octane fuel for fungal back breakouts.</div>
-          </div>
-          <div class="summary-item">
-            <span class="icon">🧴</span>
-            <div><strong>Yeast-Safe Hydration:</strong> Never put heavy body butter on post-Nizral skin. Hydrate with light, fungal-safe gel moisturizers like Sebamed Clear Face Gel or Excela.</div>
-          </div>
-        </div>
+        </details>
       </div>
 
-      <div class="content-body">
-        <p>If you have spent months lathering expensive salicylic acid washes or harsh antibacterial soaps across your shoulders with zero improvement, you are not alone. In warm, humid Indian climates, up to 70% of persistent, itchy "back acne" isn't regular acne at all.</p>
-        
-        <p>It is <strong>Malassezia folliculitis</strong>—an overgrowth of natural skin yeast that thrives in sweaty, occluded hair follicles. Because yeast is a fungal organism, standard bacterial acne treatments like clindamycin or mild cleansers simply do not work. In fact, standard acne washes can dry out your healthy skin barrier while the yeast continues to multiply unchecked.</p>
-
-        <p>That is where <strong>Nizral 2% Shampoo</strong> comes in. While originally formulated for scalp dandruff, dermatologists worldwide recommend this affordable Indian pharmacy staple as a wash-off body treatment for fungal bacne. Below is the clinical guide on how it works, how to use it safely in the shower, and how to avoid the common mistakes that cause flare-ups.</p>
-
-        <!-- Differentiating Section 1 -->
-        <h2>🔍 1. The 6-Question Self-Check: Is Your Back Breakout Fungal or Bacterial?</h2>
-        <p>Before you lather an antifungal shampoo across your body, make sure you are treating the right condition. While bacterial acne and fungal folliculitis look similar from a distance, their symptoms are noticeably different upon close inspection.</p>
-
-        <figure class="article-figure">
-          <picture>
-            <source srcset="/assets/images/nizral-bacne-fungal-vs-bacterial-diagram.webp" type="image/webp">
-            <img src="/assets/images/nizral-bacne-fungal-vs-bacterial-diagram.jpg" alt="Visual comparison showing fungal acne vs bacterial acne on the back" width="1280" height="714" loading="lazy">
-          </picture>
-          <figcaption>Figure 1: Visual comparison between uniform itchy fungal folliculitis and irregular bacterial cysts.</figcaption>
-        </figure>
-
-        <div class="table-container">
-          <table class="custom-table">
-            <thead>
-              <tr>
-                <th>Self-Check Question</th>
-                <th>Fungal Folliculitis (Malassezia Yeast)</th>
-                <th>Bacterial Acne (C. acnes)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>1. Does it itch?</strong></td>
-                <td><strong>Yes, intensely.</strong> Flares up and itches after workouts, hot showers, or heavy sweating.</td>
-                <td>Rarely itches; feels sore, tender, or throbbing when pressed.</td>
-              </tr>
-              <tr>
-                <td><strong>2. What do the bumps look like?</strong></td>
-                <td><strong>Identical (monomorphic).</strong> Dozens of tiny 1–2mm red domes or pinpoint whiteheads with no blackheads.</td>
-                <td><strong>Irregular (polymorphic).</strong> Mixed sizes: blackheads, whiteheads, surface pustules, and deep cysts.</td>
-              </tr>
-              <tr>
-                <td><strong>3. Where is it located?</strong></td>
-                <td>Upper back, shoulder caps, center of the chest, and along the upper hairline.</td>
-                <td>Spans the entire back, lower spine, jawline, and chest.</td>
-              </tr>
-              <tr>
-                <td><strong>4. Did standard acne washes help?</strong></td>
-                <td>No. Benzoyl peroxide or salicylic acid provided little to no relief after 4 weeks.</td>
-                <td>Yes. Benzoyl peroxide reduces swelling and flattens pus within 7–10 days.</td>
-              </tr>
-              <tr>
-                <td><strong>5. Did it start after taking antibiotics?</strong></td>
-                <td>Frequently. Oral antibiotics (like Doxycycline or Azithromycin) wipe out bacteria, allowing yeast to bloom.</td>
-                <td>Improves temporarily while on oral antibiotics.</td>
-              </tr>
-              <tr>
-                <td><strong>6. The Best Pharmacy Treatment</strong></td>
-                <td><strong>Nizral 2% Ketoconazole Wash</strong></td>
-                <td><strong>Perobar 5% Benzoyl Peroxide Bar</strong></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="callout-box">
-          <div class="callout-title">💡 The Quick Rule of Thumb</div>
-          If your back breakout looks like someone took a tiny red ballpoint pen and dotted your upper shoulders with identical itchy spots after a sweaty gym session, you are dealing with fungal folliculitis. Nizral is designed specifically for this.
-        </div>
-
-        <!-- Section 2: The Science -->
-        <h2>🔬 2. Why Does a Dandruff Shampoo Clear Back Pimples?</h2>
-        <p>The skin on your back has the highest density of sebaceous (oil) glands on your entire body. Sitting inside every hair follicle is a microscopic community of organisms, including <em>Malassezia</em> yeast. In healthy skin, this yeast coexists peacefully with your skin's friendly bacteria.</p>
-
-        <p>However, when sweat, body warmth, and natural sebum get trapped under tight clothes or gym shirts, the hair follicle becomes an incubator. <em>Malassezia</em> consumes the fatty acids in your sebum and reproduces rapidly. As the yeast colony expands inside the follicle pore, it creates intense inflammation, leading to hundreds of tiny red, itchy bumps.</p>
-
-        <p><strong>How Ketoconazole Stops It:</strong><br>
-        Ketoconazole is a broad-spectrum imidazole antifungal. It works by halting the synthesis of <em>ergosterol</em>—the essential lipid molecules that form the outer protective wall of fungal yeast cells. Without ergosterol, the yeast cell membrane weakens, springs microscopic leaks, and dissolves. Because bacteria do not have ergosterol in their cell walls, ketoconazole leaves your beneficial skin flora unharmed while systematically eliminating the yeast overgrowth.</p>
-
-        <!-- Section 3: Step-by-Step Shower Protocol -->
-        <h2 id="shower-protocol">🚿 3. The 5-Minute Nizral Shower Protocol (Step-by-Step)</h2>
-        <p>Applying an active shampoo to your back requires a different approach than using a standard shower gel. The most common reason people say "Nizral didn't work for me" is that they lathered it up and rinsed it off within 15 seconds.</p>
-
-        <figure class="article-figure">
-          <picture>
-            <source srcset="/assets/images/nizral-bacne-shower-routine-protocol.webp" type="image/webp">
-            <img src="/assets/images/nizral-bacne-shower-routine-protocol.jpg" alt="Step by step 5-minute Nizral shower protocol for back acne" width="1280" height="714" loading="lazy">
-          </picture>
-          <figcaption>Figure 2: The 4-step dermatological shower protocol with the essential 5-minute dwell timer.</figcaption>
-        </figure>
-
-        <div class="step-grid">
-          <div class="step-card">
-            <div class="step-number">1</div>
-            <h4>Cleanse First with Mild Soap</h4>
-            <p>Start your shower with a basic, non-comedogenic body wash. This removes surface sweat, gym dirt, and excess sebum so the medicated wash doesn't get blocked by grease.</p>
+      <div class="tally-faq-item">
+        <details>
+          <summary>Can I leave Nizral on my back overnight like a cream?</summary>
+          <div class="tally-faq-body">
+            No, absolutely not. Nizral is formulated as a rinse-off surfactant shampoo. Leaving it on your skin overnight can trigger severe contact dermatitis, raw patches, and chemical peeling. Always wash it off after 5 minutes.
           </div>
-          <div class="step-card">
-            <div class="step-number">2</div>
-            <h4>Lather a 10-Rupee Coin Amount</h4>
-            <p>Pour a coin-sized amount of Nizral 2% into damp palms. Lather it into a rich foam and smooth it directly over your shoulders, shoulder blades, and upper spine.</p>
-          </div>
-          <div class="step-card">
-            <div class="step-number">3</div>
-            <h4>The 5-Minute Dwell Timer</h4>
-            <p>Step away from the water stream. Let the lather sit undisturbed on your skin for <strong>3 to 5 full minutes</strong>. Use this window to brush your teeth, wash your face, or shave.</p>
-          </div>
-          <div class="step-card">
-            <div class="step-number">4</div>
-            <h4>Rinse &amp; Apply Yeast-Safe Hydration</h4>
-            <p>Rinse thoroughly with lukewarm water. Pat dry with a fresh clean towel. Within 3 minutes, apply a light oil-free hydrator like Sebamed Clear Face Gel or Cipla Excela.</p>
-          </div>
-        </div>
-
-        <div class="callout-box warning">
-          <div class="callout-title">⚠️ The Frequency Rule</div>
-          Use Nizral on your back <strong>2 to 3 times per week</strong> for the first 3 weeks. Do not use it every single day; daily surfactant use can disrupt your skin barrier, leading to dry, flaky skin and rebound irritation. Once your back clears, taper down to <strong>once a week</strong> for ongoing maintenance.
-        </div>
-
-        <!-- Differentiating Section 2: Chemist Showdown -->
-        <h2>🏪 4. Indian Pharmacy Showdown: Nizral 2% vs. Scalpe Plus vs. Ketomac</h2>
-        <p>When you walk into an Indian chemist or browse Tata 1mg, Apollo Pharmacy, or Netmeds, you will see multiple ketoconazole-based washes. Here is how they compare so you get the right bottle for your skin type.</p>
-
-        <div class="table-container">
-          <table class="custom-table">
-            <thead>
-              <tr>
-                <th>Brand / Product</th>
-                <th>Active Ingredients</th>
-                <th>Surfactant Feel</th>
-                <th>Approx. Price</th>
-                <th>Best For</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Nizral 2% Solution</strong><br><em>(Johnson &amp; Johnson / Janssen)</em></td>
-                <td>Ketoconazole 2% w/v</td>
-                <td>Gentle lather, mild fragrance, non-stripping on body skin.</td>
-                <td>₹320 (50ml)</td>
-                <td><strong>The Gold Standard.</strong> Best for sensitive, reactive, or dry-leaning skin that gets irritated easily.</td>
-              </tr>
-              <tr>
-                <td><strong>Scalpe Plus / Scalpe Pro</strong><br><em>(Glenmark Pharmaceuticals)</em></td>
-                <td>Ketoconazole 2% + Zinc Pyrithione (ZPTO) 1%</td>
-                <td>Slightly creamier lather with cooling sensation.</td>
-                <td>₹285 (75ml)</td>
-                <td><strong>Heavy Sweaters &amp; Athletes.</strong> ZPTO adds extra antifungal and antibacterial defense if you have concurrent scalp dandruff.</td>
-              </tr>
-              <tr>
-                <td><strong>Ketomac 2% Wash</strong><br><em>(Torque Pharmaceuticals)</em></td>
-                <td>Ketoconazole 2% w/v</td>
-                <td>High-foaming cleansing base; can feel slightly drying if left &gt;5 mins.</td>
-                <td>₹195 (100ml)</td>
-                <td><strong>Best Budget Pick.</strong> High volume and economical for treating large surface areas across the entire back.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p><strong>The Chemist Takeaway:</strong> If you have sensitive or easily inflamed skin, insist on original Nizral 2%. If you sweat heavily every day at the gym or play outdoor sports, Scalpe Plus provides the added benefit of Zinc Pyrithione to keep follicles clear.</p>
-
-        <!-- Differentiating Section 3: The Champi & Gym Greenhouse Trap -->
-        <h2>🥥 5. The "Champi &amp; Gym Sweat" Trap: What Feeds Fungal Bacne</h2>
-        <p>Understanding what feeds the yeast is just as important as knowing how to kill it. <em>Malassezia</em> is a lipid-dependent organism. Unlike human skin cells, it cannot synthesize its own fatty acids; it must steal lipids with 11- to 24-carbon chains to survive and multiply.</p>
-
-        <h3>1. The Sunday Coconut Hair Champi Mistake</h3>
-        <p>In Indian households, weekly hair oiling with pure coconut oil (<em>Parachute</em>, mustard oil, or castor oil) is a cherished tradition. However, coconut oil is composed of over 50% <strong>Lauric Acid (a 12-carbon fatty acid)</strong>. In microbiological laboratories, researchers deliberately add lauric acid to petri dishes because it is the single most potent growth stimulant for <em>Malassezia</em>.</p>
-        
-        <p>When you leave hair oil on overnight or wash it out under the shower, the oily water runs straight down the middle of your spine. The coconut lipids coat your back follicles, sparking a massive fungal outbreak within 24 to 48 hours.</p>
-        
-        <div class="callout-box warning">
-          <div class="callout-title">🧴 How to Oil Your Hair Safely</div>
-          If you want to oil your scalp, use <strong>100% Pure Squalane Oil</strong> or <strong>MCT Oil without Lauric Acid (C8/C10 Caprylic/Capric triglycerides)</strong>. These are the only two oils that fungal yeast cannot metabolize. When washing out regular hair oil, always wash your back with Nizral as the final step of your shower.
-        </div>
-
-        <h3>2. The Synthetic Gym T-Shirt Greenhouse</h3>
-        <p>Synthetic gym wear made of 100% polyester, spandex, or nylon feels light, but it repels moisture and traps body heat against your skin. This creates a warm, humid environment at 37°C that enables yeast to double its population every 90 minutes. Sitting in your sweaty gym shirt during your drive home or while running errands gives the yeast hours to settle into your follicles.</p>
-        <ul>
-          <li><strong>The 15-Minute Rule:</strong> Strip out of sweaty gym gear within 15 minutes of finishing your workout.</li>
-          <li><strong>Wear Breathable Cotton:</strong> Choose loose-fitting cotton shirts for gym sessions in humid weather.</li>
-          <li><strong>Shower Immediately:</strong> If you cannot shower right away at the gym, wipe your upper back with a damp cotton towel or an oil-free hypochlorous acid spray.</li>
-        </ul>
-
-        <!-- Video Section -->
-        <h2>🎥 6. Dermatologist Advice: Treating Body Breakouts</h2>
-        <p>Watch dermatologists Dr. Shah and Dr. Maxfield (Doctorly) break down the biological differences between back acne and folliculitis, explaining why wash-off treatments need adequate contact time to work.</p>
-
-        <div class="video-wrapper">
-          <iframe 
-            src="https://www.youtube-nocookie.com/embed/4gqmdBwnFzo" 
-            title="BACK ACNE - How to Treat and Prevent It | Doctorly Routines" 
-            loading="lazy" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
-        </div>
-
-        <!-- Decision Matrix -->
-        <h2>⚖️ 7. Active Decision Matrix: Nizral vs. Perobar vs. Saslic DS</h2>
-        <p>Not every back breakout requires Nizral. Use this guide to match your active ingredient to your exact skin symptoms:</p>
-
-        <div class="table-container">
-          <table class="custom-table">
-            <thead>
-              <tr>
-                <th>Active Ingredient</th>
-                <th>Indian Pharmacy Pick</th>
-                <th>Target Pathology</th>
-                <th>Fabric Bleaching?</th>
-                <th>Best For</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Ketoconazole 2%</strong></td>
-                <td>Nizral 2% Solution (~₹320)</td>
-                <td><em>Malassezia</em> Fungal Yeast</td>
-                <td><strong>No.</strong> Fabric-safe.</td>
-                <td>Itchy, uniform pinpoint red bumps after sweating.</td>
-              </tr>
-              <tr>
-                <td><strong>Benzoyl Peroxide 5%</strong></td>
-                <td>Perobar 5% Cleansing Bar (~₹140)</td>
-                <td><em>Cutibacterium acnes</em> Bacteria</td>
-                <td><strong>Yes.</strong> Bleaches colored towels.</td>
-                <td>Painful, swollen red cystic pimples with yellow pus heads.</td>
-              </tr>
-              <tr>
-                <td><strong>Salicylic Acid 2%</strong></td>
-                <td>Saslic DS Foaming Wash (~₹410)</td>
-                <td>Dead Keratin &amp; Sebum Plugs</td>
-                <td><strong>No.</strong> Fabric-safe.</td>
-                <td>Rough bumpy texture, blackheads, and clogged back pores.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- Post-Shower Hydration -->
-        <h2>💧 8. Fungal-Safe Barrier Moisturizers for Your Back</h2>
-        <p>A common mistake when treating bacne is skipping moisturizer altogether. When you use an active shampoo like Nizral 2–3 times a week, your skin barrier can lose essential moisture. If your skin becomes parched, your sebaceous glands overcompensate by pumping out even more oil, refueling the yeast cycle.</p>
-        
-        <p>The secret is using <strong>yeast-safe, ester-free hydration</strong>. Standard body lotions contain shea butter, isopropyl myristate, and fatty acid esters (like glyceryl stearate) that feed <em>Malassezia</em>. Instead, use one of these clean Indian pharmacy options:</p>
-
-        <ul>
-          <li><strong>Sebamed Clear Face Care Gel (~₹450):</strong> Formulated with pure hyaluronic acid and aloe vera at pH 5.5. Completely oil-free, ester-free, and 100% safe for fungal-prone skin.</li>
-          <li><strong>Cipla Excela Max Barrier Hydrating Lotion (~₹490):</strong> Lightweight, non-greasy lotion designed for acne-prone skin that absorbs quickly without clogging back follicles.</li>
-          <li><strong>Suganda 5% Niacinamide Calming Serum (~₹550):</strong> Helps regulate sebum production on the upper back while fading dark marks left behind by past breakouts.</li>
-        </ul>
-
-        <!-- Common Mistakes -->
-        <h2>🚫 9. Common Mistakes to Avoid</h2>
-        <ul>
-          <li><strong>Leaving Nizral on Overnight:</strong> Nizral is a shampoo containing cleansing surfactants (sodium laureth sulfate). Leaving it on your back like an ointment will cause chemical burns, redness, and peeling. Always rinse within 3 to 5 minutes.</li>
-          <li><strong>Using Plastic Shower Loofahs:</strong> Damp shower loofahs are ideal breeding grounds for bacteria and mold. Scrubbing inflamed back bumps micro-tears the skin and worsens hyperpigmentation. Use your hands to lather.</li>
-          <li><strong>Stopping Too Early:</strong> Don't stop the moment your bumps disappear. Yeast spores survive inside deep follicles. Continue using Nizral once a week as a preventive measure.</li>
-          <li><strong>Rinsing Hair Conditioner Down the Spine:</strong> Rich hair conditioners contain heavy silicones and quaternary ammonium compounds that block back pores. Rinse your conditioner with your head flipped forward over the tub.</li>
-        </ul>
-
-        <!-- FAQs -->
-        <h2>❓ Frequently Asked Questions</h2>
-
-        <div class="faq-item">
-          <details>
-            <summary>Does Nizral shampoo actually clear back acne?</summary>
-            <div class="faq-content">
-              Yes, provided your breakouts are fungal folliculitis (caused by <em>Malassezia</em> yeast) rather than true bacterial acne. Ketoconazole 2% dissolves fungal cell walls, typically providing noticeable itch relief within 3 to 5 days and visible clearing of bumps in 2 to 3 weeks.
-            </div>
-          </details>
-        </div>
-
-        <div class="faq-item">
-          <details>
-            <summary>How long should I leave Nizral on my back before rinsing?</summary>
-            <div class="faq-content">
-              Leave the lather on for 3 to 5 minutes. Back skin is three times thicker than facial skin, and follicular openings are deeper. Rinsing after 10 or 15 seconds rinses the medicine away before it has time to work.
-            </div>
-          </details>
-        </div>
-
-        <div class="faq-item">
-          <details>
-            <summary>Can I leave Nizral on my back overnight like a cream?</summary>
-            <div class="faq-content">
-              No, absolutely not. Nizral is formulated as a rinse-off surfactant shampoo. Leaving it on your skin overnight can trigger severe contact dermatitis, raw patches, and chemical peeling. Always wash it off after 5 minutes.
-            </div>
-          </details>
-        </div>
-
-        <div class="faq-item">
-          <details>
-            <summary>Will Nizral bleach my shirts or bedsheets like Benzoyl Peroxide?</summary>
-            <div class="faq-content">
-              No. Unlike benzoyl peroxide (Perobar), ketoconazole is not an oxidizing bleaching agent. It is completely fabric-safe and will not bleach or stain colored gym shirts, white towels, or bed linen.
-            </div>
-          </details>
-        </div>
-
-        <div class="faq-item">
-          <details>
-            <summary>Can I use Nizral on my face for forehead bumps?</summary>
-            <div class="faq-content">
-              Yes, you can use it as a 3-minute wash-off mask on your forehead and hairline 2 times per week. However, keep it away from the delicate eye area and mouth, and follow up immediately with a fungal-safe moisturizer.
-            </div>
-          </details>
-        </div>
-
-        <div class="faq-item">
-          <details>
-            <summary>What should I do if Nizral doesn't work after 3 weeks?</summary>
-            <div class="faq-content">
-              If your breakouts do not improve after 3 weeks of consistent use, consult a dermatologist. You may have deep bacterial cystic acne requiring oral retinoids, or severe folliculitis that requires a short course of oral prescription antifungals like Fluconazole or Itraconazole.
-            </div>
-          </details>
-        </div>
-
-        <!-- Medical Reviewer Section -->
-        <div class="reviewer-card">
-          <div class="reviewer-avatar">🩺</div>
-          <div class="reviewer-details">
-            <h4>Medically Reviewed by Dr. Lipy Mehta</h4>
-            <p>Consultant Dermatologist &amp; Aesthetic Physician • MBBS, MD (Dermatology, Venereology &amp; Leprosy). Reviewed for clinical accuracy and treatment safety standards according to the Indian Association of Dermatologists, Venereologists and Leprologists (IADVL) guidelines.</p>
-          </div>
-        </div>
-
-        <!-- References Section -->
-        <h3>Clinical References &amp; Further Reading</h3>
-        <ul style="font-size: 0.85rem; color: var(--text-3); line-height: 1.6;">
-          <li>Rubenstein, R. M., &amp; Malerich, S. A. (2014). Malassezia (Pityrosporum) Folliculitis. <em>The Journal of Clinical and Aesthetic Dermatology</em>, 7(3), 37–41.</li>
-          <li>Suzuki, C., et al. (2016). Topical antifungal treatments for Malassezia folliculitis: A comparative clinical evaluation. <em>Journal of Dermatology</em>, 43(8), 920–924.</li>
-          <li>Gaitan, S. L., et al. (2019). Contact dwell time and efficacy of topical ketoconazole washes for truncal pityrosporum folliculitis. <em>Journal of the American Academy of Dermatology</em>, 80(3), 814–817.</li>
-        </ul>
-
-        <!-- Related Guides -->
-        <h2>Explore Related Acne Guides</h2>
-        <div class="links-grid">
-          <a href="/acne/back-acne-faq/" class="link-tile">
-            <span class="cat">Back Acne Guide</span>
-            <h4>Back Acne FAQs: Shower Rules, Real Causes &amp; Solutions →</h4>
-          </a>
-          <a href="/acne/fungal-acne-safe-sunscreen-india/" class="link-tile">
-            <span class="cat">Sun Protection</span>
-            <h4>Best Fungal Acne Safe Sunscreens in India (2026) →</h4>
-          </a>
-          <a href="/acne/1-vs-2-percent-salicylic-acid/" class="link-tile">
-            <span class="cat">Active Showdown</span>
-            <h4>1% vs 2% Salicylic Acid Face Wash: Which Clears Acne Faster? →</h4>
-          </a>
-          <a href="/acne/best-fungal-acne-safe-moisturizer-india/" class="link-tile">
-            <span class="cat">Hydration</span>
-            <h4>Best Fungal Acne Safe Moisturizers in India (Zero Esters) →</h4>
-          </a>
-        </div>
+        </details>
       </div>
-    </article>
+
+      <div class="tally-faq-item">
+        <details>
+          <summary>Will Nizral bleach my shirts or bedsheets like Benzoyl Peroxide?</summary>
+          <div class="tally-faq-body">
+            No. Unlike benzoyl peroxide (Perobar), ketoconazole is not an oxidizing bleaching agent. It is completely fabric-safe and will not bleach or stain colored gym shirts, white towels, or bed linen.
+          </div>
+        </details>
+      </div>
+
+      <div class="tally-faq-item">
+        <details>
+          <summary>Can I use Nizral on my face for forehead bumps?</summary>
+          <div class="tally-faq-body">
+            Yes, you can use it as a 3-minute wash-off mask on your forehead and hairline 2 times per week. However, keep it away from the delicate eye area and mouth, and follow up immediately with a fungal-safe moisturizer.
+          </div>
+        </details>
+      </div>
+
+      <div class="tally-faq-item">
+        <details>
+          <summary>What should I do if Nizral doesn't work after 3 weeks?</summary>
+          <div class="tally-faq-body">
+            If your breakouts do not improve after 3 weeks of consistent use, consult a dermatologist. You may have deep bacterial cystic acne requiring oral retinoids, or severe folliculitis that requires a short course of oral prescription antifungals like Fluconazole or Itraconazole.
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Medical Reviewer Banner -->
+    <div class="reviewer-banner">
+      <div class="reviewer-icon">🩺</div>
+      <div class="reviewer-info">
+        <h4>Medically Reviewed by Dr. Lipy Mehta</h4>
+        <p>Consultant Dermatologist &amp; Aesthetic Physician • MBBS, MD Dermatology. Reviewed for clinical safety standards and evidence-based efficacy under IADVL guidelines.</p>
+      </div>
+    </div>
+
+    <!-- Related Navigation Cards -->
+    <div class="section-eyebrow">Related Guides</div>
+    <div class="nav-grid">
+      <a href="/acne/back-acne-faq/" class="nav-card">
+        <span class="meta">Back Acne Hub</span>
+        <h4>Back Acne FAQs: Shower Rules &amp; Real Causes →</h4>
+      </a>
+      <a href="/acne/fungal-acne-safe-sunscreen-india/" class="nav-card">
+        <span class="meta">Sunscreen</span>
+        <h4>Best Fungal Acne Safe Sunscreens in India →</h4>
+      </a>
+      <a href="/acne/1-vs-2-percent-salicylic-acid/" class="nav-card">
+        <span class="meta">Active Showdown</span>
+        <h4>1% vs 2% Salicylic Acid Face Wash Compared →</h4>
+      </a>
+    </div>
   </main>
 
-  <!-- Sticky Mobile CTA -->
-  <div class="mobile-sticky-bar">
-    <a href="/scan/" class="mobile-sticky-btn">Free AI Back &amp; Skin Scan →</a>
+  <!-- Sticky Mobile Dock -->
+  <div class="mobile-dock">
+    <a href="/scan/" class="mobile-dock-btn">Run Free AI Skin Scan →</a>
   </div>
 
-  <!-- Footer -->
+  <!-- Minimalist Footer -->
   <footer class="site-footer">
-    <div class="container footer-content">
-      <div style="font-weight: 800; font-size: 1.15rem; color: #fff;">MyMirror</div>
-      <p style="max-width: 500px; margin: 0;">Evidence-based dermatological guides, clinical routines, and AI skin diagnostics for healthy Indian skin.</p>
-      <div class="footer-disclaimer">
-        Disclaimer: The information provided on MyMirror is for educational and informational purposes only and does not substitute professional medical advice, diagnosis, or treatment. Always consult a qualified dermatologist for chronic or severe skin conditions.
-      </div>
-      <p style="color: #6B7280; font-size: 0.75rem;">© 2026 MyMirror. All rights reserved.</p>
+    <div class="container footer-flex">
+      <div style="font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; color: var(--text);">MyMirror</div>
+      <p style="max-width: 550px; margin: 0; line-height: 1.5;">Evidence-based dermatological decision tools and clear skin routines for Indian skin.</p>
+      <p style="font-size: 0.75rem; color: var(--text-soft); margin-top: 0.5rem;">© 2026 MyMirror. For educational purposes only. Always consult a qualified dermatologist for chronic skin conditions.</p>
     </div>
   </footer>
+
+  <!-- Interactive Script for First-Fold Diagnostics -->
+  <script>
+    const diagData = {
+      fungal: {
+        title: "🍄 Diagnosis: Fungal Folliculitis (Malassezia Yeast)",
+        desc: "Uniform, tiny 1–2mm pinpoint red dots that itch after workouts or hot showers. <strong>Solution:</strong> Nizral 2% Ketoconazole wash 2–3 times weekly with a 5-minute dwell time.",
+        img: "/assets/images/nizral-bacne-fungal-vs-bacterial-diagram.jpg"
+      },
+      bacterial: {
+        title: "🔴 Diagnosis: Inflammatory Bacterial Acne (C. acnes)",
+        desc: "Mismatched bump sizes, tender red cysts, and yellow pus heads that throb when pressed. <strong>Solution:</strong> Perobar 5% Benzoyl Peroxide Bar (leave on 2 mins, dry with white towels).",
+        img: "/assets/images/nizral-bacne-fungal-vs-bacterial-diagram.jpg"
+      },
+      clogged: {
+        title: "⬛ Diagnosis: Comedonal Texture & Blackheads",
+        desc: "Rough sandpaper texture, clogged pores along the spine without active redness or itching. <strong>Solution:</strong> Saslic DS 2% Salicylic Acid wash daily to dissolve sebum plugs.",
+        img: "/assets/images/nizral-bacne-fungal-vs-bacterial-diagram.jpg"
+      }
+    };
+
+    function switchDiag(type, btn) {
+      document.querySelectorAll('.v-tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const data = diagData[type];
+      const box = document.getElementById('diagInfoBox');
+      box.innerHTML = `<h4>${data.title}</h4><p>${data.desc}</p>`;
+    }
+
+    function calcFungalScore() {
+      const checked = document.querySelectorAll('.diag-cb:checked').length;
+      const out = document.getElementById('checklistOutput');
+      if (checked === 0) {
+        out.innerHTML = `<div class="calc-title">Select your symptoms above</div><p class="calc-desc">Check the boxes that apply to your skin to view your tailored pharmacy protocol.</p>`;
+      } else if (checked <= 2) {
+        out.innerHTML = `<div class="calc-title" style="color: #4B5563;">Mild Likelihood of Fungal Bacne (${checked}/6 symptoms)</div><p class="calc-desc">You likely have a mix of friction or mild bacterial congestion. Try showering within 15 minutes of workouts and use a gentle 2% salicylic acid wash.</p>`;
+      } else if (checked <= 4) {
+        out.innerHTML = `<div class="calc-title" style="color: #0066FF;">Moderate to High Fungal Likelihood (${checked}/6 symptoms)</div><p class="calc-desc">Your breakouts strongly match Malassezia folliculitis. Begin the <strong>5-Minute Nizral 2% protocol 2 times weekly</strong> and switch to forward-hair rinsing.</p>`;
+      } else {
+        out.innerHTML = `<div class="calc-title" style="color: #0066FF;">Classic Fungal Folliculitis Confirmed (${checked}/6 symptoms)</div><p class="calc-desc">Your breakouts exhibit textbook yeast symptoms. Use <strong>Nizral 2% (or Scalpe Plus) 3 times weekly</strong> for 3 weeks, avoid coconut hair oil completely, and wear 100% loose cotton.</p>`;
+      }
+    }
+  </script>
 </body>
 </html>
