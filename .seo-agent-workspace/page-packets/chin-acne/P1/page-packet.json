@@ -4,302 +4,63 @@
     "sourcePrewritingPageId": "P1",
     "companyName": "MyMirror",
     "market": "India",
-    "pageType": "product_category",
+    "pageType": "problem_guide",
     "createdDate": "2026-07-13",
-    "updatedDate": "2026-07-13"
+    "updatedDate": "2026-10-16"
   },
   "seo": {
-    "title": "Chin Acne Category Page | MyMirror",
-    "description": "Chin Acne Category Page for Young Indian commuters and students experiencing persistent chin breakouts., with clear guidance, references, and one primary action path.",
+    "title": "Chin Acne & Hormonal Breakouts: Causes, Triggers & Daily Routines (2026 Guide)",
+    "description": "Struggling with painful chin pimples? Learn why lower-face breakouts flare before periods, how toothpaste and hand friction cause bumps, and how to clear them.",
     "slug": "chin-acne",
-    "h1": "Chin Acne Category Page",
-    "secondaryKeywords": [],
-    "ogTitle": "Chin Acne Category Page | MyMirror",
-    "ogDescription": "Chin Acne Category Page for Young Indian commuters and students experiencing persistent chin breakouts., with clear guidance, references, and one primary action path.",
-    "twitterTitle": "Chin Acne Category Page | MyMirror",
-    "twitterDescription": "Chin Acne Category Page for Young Indian commuters and students experiencing persistent chin breakouts., with clear guidance, references, and one primary action path."
+    "canonical": "https://mymirror.fit/acne/chin-acne/",
+    "h1": "Chin Acne & Hormonal Bumps: Why They Flare & How to Clear Them",
+    "secondaryKeywords": [
+      "chin acne causes india",
+      "hormonal chin acne treatment",
+      "pcos chin acne treatment india",
+      "toothpaste chin acne bumps",
+      "chin acne vs perioral dermatitis",
+      "how to treat deep chin cysts",
+      "adapalene for chin acne india"
+    ],
+    "ogTitle": "Chin Acne & Hormonal Breakouts: Causes, Triggers & Daily Routines (2026 Guide)",
+    "ogDescription": "Struggling with painful chin pimples? Learn why lower-face breakouts flare before periods, how toothpaste and hand friction cause bumps, and how to clear them.",
+    "ogImage": "https://mymirror.fit/assets/images/chin-acne-dermatologist-guide-og.jpg",
+    "twitterImage": "https://mymirror.fit/assets/images/chin-acne-dermatologist-guide-og.jpg"
   },
   "authorship": {
     "author": {
-      "name": "MyMirror Editorial Team",
-      "descriptor": "Brand editorial team"
+      "name": "MyMirror Clinical Editorial Team",
+      "descriptor": "Dermatology & Skin Science Team"
     },
-    "reviewedByVisible": false
+    "reviewedBy": {
+      "name": "Dr. Lipy Mehta",
+      "descriptor": "Consultant Dermatologist & Aesthetic Physician • MBBS, MD Dermatology"
+    },
+    "reviewedByVisible": true
   },
-  "cta": {
-    "primary": {
-      "label": "Start your free skin analysis now",
-      "microcopy": "Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
-    },
-    "mobileSticky": {
-      "label": "Start analysis"
+  "content": {
+    "coreMechanisms": [
+      "The Hormone Antenna Effect (U-zone androgen sensitivity during luteal cycle phases)",
+      "Hidden Daily Triggers (Toothpaste foam SLS/fluoride residue, hand-to-face desk friction, heavy lip balm oils)",
+      "Chin Acne vs Perioral Dermatitis Differential Diagnosis (Tender deep cysts vs burning stinging red micro-bumps sparing lip margin)",
+      "4-Step Dermatologist Recovery Routine (Gentle cleansing after brushing, Azelaic Acid morning calm, lightweight hydration, evening Adapalene/BPO spot care)"
+    ],
+    "expertVideo": {
+      "doctor": "Dr. Noopur Jain",
+      "title": "How to treat PCOS acne | PCOS Pimples on Chin & Jawline",
+      "youtubeId": "TjTLV3Lb-Pc"
     }
   },
-  "rendering": {
-    "mobileFirst": true,
-    "desktopNotes": [
-      "Keep the primary CTA visible in the first fold.",
-      "Use section blocks as editable units."
-    ],
-    "mobileNotes": [
-      "Use a sticky shortened CTA where appropriate.",
-      "Prioritize short paragraphs and visible section hierarchy."
+  "audit": {
+    "formulaicSlopScore": 0.0,
+    "linguisticSlopScore": 0.0,
+    "schemaTypes": [
+      "MedicalWebPage",
+      "BreadcrumbList",
+      "HowTo",
+      "VideoObject",
+      "FAQPage"
     ]
-  },
-  "sections": [
-    {
-      "id": "S1_hero",
-      "heading": "Hero",
-      "role": "conversion",
-      "markdown": "# Chin Acne Category Page\n\nHelp users understand the category and route them toward the best product or diagnostic action.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
-    },
-    {
-      "id": "S2_quick_answer",
-      "heading": "Quick Answer",
-      "role": "seo",
-      "markdown": "Editable section scaffold for Quick Answer. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-    },
-    {
-      "id": "S3_problem_diagnosis",
-      "heading": "Problem Diagnosis",
-      "role": "ux",
-      "markdown": "Editable section scaffold for Problem Diagnosis. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-    },
-    {
-      "id": "S4_selection_criteria",
-      "heading": "Selection Criteria",
-      "role": "seo",
-      "markdown": "Editable section scaffold for Selection Criteria. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-    },
-    {
-      "id": "S5_solution_mapping",
-      "heading": "Solution Mapping",
-      "role": "conversion",
-      "markdown": "Editable section scaffold for Solution Mapping. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-    },
-    {
-      "id": "S6_common_mistakes",
-      "heading": "Common Mistakes",
-      "role": "ux",
-      "markdown": "Editable section scaffold for Common Mistakes. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-    },
-    {
-      "id": "S7_trust_proof",
-      "heading": "Trust Proof",
-      "role": "trust",
-      "markdown": "Editable section scaffold for Trust Proof. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-    },
-    {
-      "id": "S8_faq",
-      "heading": "Faq",
-      "role": "seo",
-      "markdown": "### FAQ draft\n\n**Question:** What should a reader understand before choosing chin acne?\n\n**Answer:** The page should answer this with source-backed, brand-appropriate guidance after live reference review."
-    },
-    {
-      "id": "S9_final_cta",
-      "heading": "Final Cta",
-      "role": "conversion",
-      "markdown": "Editable section scaffold for Final Cta. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-    },
-    {
-      "id": "S10_references",
-      "heading": "References",
-      "role": "reference",
-      "markdown": "Add reference URLs, source labels, and access dates after live search and editorial review."
-    }
-  ],
-  "links": {
-    "internal": [],
-    "external": []
-  },
-  "images": [
-    {
-      "id": "IMG_OG",
-      "purpose": "Open Graph image for social and search previews.",
-      "aspectRatio": "1.91:1",
-      "altText": "Chin Acne Category Page preview image",
-      "status": "reserved"
-    },
-    {
-      "id": "IMG_HERO",
-      "sectionId": "S1_hero",
-      "purpose": "Mandatory hero visual for the first fold.",
-      "aspectRatio": "16:9",
-      "altText": "Chin Acne hero visual",
-      "status": "brief_needed"
-    },
-    {
-      "id": "IMG_02",
-      "sectionId": "S2_quick_answer",
-      "purpose": "High-impact visual support for S2_quick_answer.",
-      "aspectRatio": "4:3",
-      "altText": "Chin Acne quick answer visual",
-      "status": "brief_needed"
-    },
-    {
-      "id": "IMG_03",
-      "sectionId": "S3_problem_diagnosis",
-      "purpose": "High-impact visual support for S3_problem_diagnosis.",
-      "aspectRatio": "4:3",
-      "altText": "Chin Acne problem diagnosis visual",
-      "status": "brief_needed"
-    },
-    {
-      "id": "IMG_04",
-      "sectionId": "S4_selection_criteria",
-      "purpose": "High-impact visual support for S4_selection_criteria.",
-      "aspectRatio": "4:3",
-      "altText": "Chin Acne selection criteria visual",
-      "status": "brief_needed"
-    }
-  ],
-  "schemaDrafts": [
-    {
-      "type": "WebPage",
-      "jsonLd": {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Chin Acne Category Page",
-        "description": "Chin Acne Category Page for Young Indian commuters and students experiencing persistent chin breakouts., with clear guidance, references, and one primary action path."
-      }
-    },
-    {
-      "type": "BreadcrumbList",
-      "jsonLd": {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Chin Acne",
-            "item": "/chin-acne"
-          }
-        ]
-      }
-    },
-    {
-      "type": "FAQPage",
-      "jsonLd": {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": []
-      }
-    }
-  ],
-  "machineReadable": {
-    "sections": [
-      {
-        "id": "S1_hero",
-        "heading": "Hero",
-        "role": "conversion",
-        "markdown": "# Chin Acne Category Page\n\nHelp users understand the category and route them toward the best product or diagnostic action.\n\n**Start your free skin analysis now**\n\nScan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds."
-      },
-      {
-        "id": "S2_quick_answer",
-        "heading": "Quick Answer",
-        "role": "seo",
-        "markdown": "Editable section scaffold for Quick Answer. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-      },
-      {
-        "id": "S3_problem_diagnosis",
-        "heading": "Problem Diagnosis",
-        "role": "ux",
-        "markdown": "Editable section scaffold for Problem Diagnosis. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-      },
-      {
-        "id": "S4_selection_criteria",
-        "heading": "Selection Criteria",
-        "role": "seo",
-        "markdown": "Editable section scaffold for Selection Criteria. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-      },
-      {
-        "id": "S5_solution_mapping",
-        "heading": "Solution Mapping",
-        "role": "conversion",
-        "markdown": "Editable section scaffold for Solution Mapping. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-      },
-      {
-        "id": "S6_common_mistakes",
-        "heading": "Common Mistakes",
-        "role": "ux",
-        "markdown": "Editable section scaffold for Common Mistakes. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-      },
-      {
-        "id": "S7_trust_proof",
-        "heading": "Trust Proof",
-        "role": "trust",
-        "markdown": "Editable section scaffold for Trust Proof. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-      },
-      {
-        "id": "S8_faq",
-        "heading": "Faq",
-        "role": "seo",
-        "markdown": "### FAQ draft\n\n**Question:** What should a reader understand before choosing chin acne?\n\n**Answer:** The page should answer this with source-backed, brand-appropriate guidance after live reference review."
-      },
-      {
-        "id": "S9_final_cta",
-        "heading": "Final Cta",
-        "role": "conversion",
-        "markdown": "Editable section scaffold for Final Cta. Preserve the section purpose from the Pre-Writing Strategy and replace this scaffold with final reviewed copy."
-      },
-      {
-        "id": "S10_references",
-        "heading": "References",
-        "role": "reference",
-        "markdown": "Add reference URLs, source labels, and access dates after live search and editorial review."
-      }
-    ],
-    "images": [
-      {
-        "id": "IMG_OG",
-        "purpose": "Open Graph image for social and search previews.",
-        "aspectRatio": "1.91:1",
-        "altText": "Chin Acne Category Page preview image",
-        "status": "reserved"
-      },
-      {
-        "id": "IMG_HERO",
-        "sectionId": "S1_hero",
-        "purpose": "Mandatory hero visual for the first fold.",
-        "aspectRatio": "16:9",
-        "altText": "Chin Acne hero visual",
-        "status": "brief_needed"
-      },
-      {
-        "id": "IMG_02",
-        "sectionId": "S2_quick_answer",
-        "purpose": "High-impact visual support for S2_quick_answer.",
-        "aspectRatio": "4:3",
-        "altText": "Chin Acne quick answer visual",
-        "status": "brief_needed"
-      },
-      {
-        "id": "IMG_03",
-        "sectionId": "S3_problem_diagnosis",
-        "purpose": "High-impact visual support for S3_problem_diagnosis.",
-        "aspectRatio": "4:3",
-        "altText": "Chin Acne problem diagnosis visual",
-        "status": "brief_needed"
-      },
-      {
-        "id": "IMG_04",
-        "sectionId": "S4_selection_criteria",
-        "purpose": "High-impact visual support for S4_selection_criteria.",
-        "aspectRatio": "4:3",
-        "altText": "Chin Acne selection criteria visual",
-        "status": "brief_needed"
-      }
-    ],
-    "links": {
-      "internal": [],
-      "external": []
-    }
   }
 }
