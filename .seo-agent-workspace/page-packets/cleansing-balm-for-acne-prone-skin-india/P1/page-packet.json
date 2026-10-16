@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v1",
+    "sourcePrewritingPageId": "P1",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "product_guide",
+    "createdDate": "2026-08-09",
+    "updatedDate": "2026-10-16"
+  },
+  "seo": {
+    "title": "5 Best Cleansing Balms for Acne-Prone Skin in India (2026 Dermatologist Guide)",
+    "description": "Discover the best cleansing balms for acne-prone skin in India. Non-comedogenic, oil-free rinse formulas that melt waterproof sunscreen without clogging pores.",
+    "slug": "cleansing-balm-for-acne-prone-skin-india",
+    "canonical": "https://mymirror.fit/acne/cleansing-balm-for-acne-prone-skin-india/",
+    "h1": "Best Cleansing Balms for Acne-Prone Skin in India",
+    "secondaryKeywords": [
+      "cleansing balm for acne prone skin india",
+      "best cleansing balm oily skin india",
+      "double cleansing for acne prone skin india",
+      "non comedogenic cleansing balm india",
+      "deconstruct cleansing balm acne",
+      "plum green tea cleansing balm acne prone skin",
+      "how to double cleanse acne prone skin"
+    ],
+    "ogTitle": "5 Best Cleansing Balms for Acne-Prone Skin in India (2026 Dermatologist Guide)",
+    "ogDescription": "Discover the best cleansing balms for acne-prone skin in India. Non-comedogenic, oil-free rinse formulas that melt waterproof sunscreen without clogging pores.",
+    "ogImage": "https://mymirror.fit/assets/images/cleansing-balm-for-acne-prone-skin-india-og.jpg",
+    "twitterImage": "https://mymirror.fit/assets/images/cleansing-balm-for-acne-prone-skin-india-og.jpg"
+  },
+  "authorship": {
+    "author": {
+      "name": "MyMirror Clinical Editorial Team",
+      "descriptor": "Dermatology & Skin Science Team"
+    },
+    "reviewedBy": {
+      "name": "Dr. Lipy Mehta",
+      "descriptor": "Consultant Dermatologist & Aesthetic Physician • MBBS, MD Dermatology"
+    },
+    "reviewedByVisible": true
+  },
+  "content": {
+    "coreMechanism": "The Like Dissolves Like principle, 60-Second Emulsification Rule, and Non-Comedogenic vs Pore-Clogging Lipid Differentiation",
+    "recommendations": [
+      {
+        "name": "Deconstruct Soothing Cleansing Balm",
+        "price": "₹499 / 50g",
+        "bestFor": "Daily waterproof sunscreen removal, congested pores",
+        "actives": "0.1% Bisabolol, Oat Kernel Oil, Caprylic Triglyceride"
+      },
+      {
+        "name": "Plum Green Tea Cleansing Balm",
+        "price": "₹545 / 90g",
+        "bestFor": "Oily skin with occasional hormonal breakouts",
+        "actives": "Green Tea Extract, Plant-derived emollients"
+      },
+      {
+        "name": "The Pink Foundry Clarifying Cleansing Balm",
+        "price": "₹650 / 50g",
+        "bestFor": "Active pimples, redness, comedonal bumpiness",
+        "actives": "Centella Asiatica, Tea Tree Extract, Squalane"
+      },
+      {
+        "name": "Clinique Take The Day Off Cleansing Balm",
+        "price": "₹1,200 / 30ml",
+        "bestFor": "Waterproof eye makeup, sensitive skin barrier",
+        "actives": "Safflower Seed Oil, High-efficiency PEG emulsifiers"
+      },
+      {
+        "name": "Beauty of Joseon Radiance Cleansing Balm",
+        "price": "₹1,050 / 100ml",
+        "bestFor": "Dry peeling skin from retinoids, sensitive barrier",
+        "actives": "Rice Bran Water, Fermented Grain Filtrates, Oat"
+      }
+    ]
+  },
+  "audit": {
+    "formulaicSlopScore": 0.0,
+    "linguisticSlopScore": 0.0,
+    "schemaTypes": [
+      "MedicalWebPage",
+      "BreadcrumbList",
+      "ItemList",
+      "HowTo",
+      "VideoObject",
+      "FAQPage"
+    ]
+  }
+}
