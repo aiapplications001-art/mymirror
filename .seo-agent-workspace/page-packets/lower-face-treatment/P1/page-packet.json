@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v1",
+    "sourcePrewritingPageId": "P1",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "treatment_guide",
+    "createdDate": "2026-10-17",
+    "updatedDate": "2026-10-17"
+  },
+  "seo": {
+    "title": "How to Treat Lower-Face Acne: Chin & Jawline Routine (2026 Guide)",
+    "description": "Clear persistent chin and jawline breakouts on Indian skin. Learn gentle active pairings, ice vs warm compress tricks, barrier repair, and doctor picks.",
+    "slug": "lower-face-treatment",
+    "canonical": "https://mymirror.fit/acne/lower-face-treatment/",
+    "h1": "How to Treat Lower-Face Acne: Chin & Jawline Clearing Guide",
+    "secondaryKeywords": [
+      "how to treat lower face acne",
+      "lower face acne treatment india",
+      "chin and jawline acne treatment",
+      "hormonal lower face breakouts",
+      "azelaic acid for chin acne marks",
+      "salicylic acid vs benzoyl peroxide for chin acne",
+      "jawline acne causes and cure"
+    ],
+    "ogTitle": "How to Treat Lower-Face Acne: Chin & Jawline Routine (2026 Guide)",
+    "ogDescription": "Clear persistent chin and jawline breakouts on Indian skin. Learn gentle active pairings, ice vs warm compress tricks, barrier repair, and doctor picks.",
+    "ogImage": "https://mymirror.fit/assets/images/lower-face-treatment-guide-og.jpg",
+    "twitterImage": "https://mymirror.fit/assets/images/lower-face-treatment-guide-og.jpg"
+  },
+  "authorship": {
+    "author": {
+      "name": "MyMirror Clinical Editorial Team",
+      "descriptor": "Dermatology & Skin Science Team"
+    },
+    "reviewedBy": {
+      "name": "Dr. Lipy Mehta",
+      "descriptor": "Consultant Dermatologist & Aesthetic Physician • MBBS, MD Dermatology"
+    },
+    "reviewedByVisible": true
+  },
+  "content": {
+    "coreMechanisms": [
+      "The U-Zone Sensitivity & Androgen Receptor Clusters",
+      "Everyday Trigger Checklist (Toothpaste SLS, pillow friction, hair oil drift)",
+      "Blemish-to-Active Matchmaker (BHA for texture, BPO for pus, Azelaic for marks, Retinoids for blind cysts)",
+      "Thermal Therapy (Ice constriction for throbbing knots vs Warm soak for fluid pimples)",
+      "Barrier Repair Priority (Hydration gels & ceramides over physical scrubs)"
+    ],
+    "recommendations": [
+      {
+        "name": "Minimalist 2% Salicylic Acid Cleanser",
+        "price": "₹299 / 100ml",
+        "bestFor": "Tiny closed bumps & chin texture",
+        "actives": "2% Salicylic Acid, LHA, Zinc PCA",
+        "image": "/assets/images/prod-minimalist-2-sa-cleanser.webp"
+      },
+      {
+        "name": "Aziderm 10% Azelaic Acid Gel",
+        "price": "₹315 / 15g",
+        "bestFor": "Redness, sensitivity & post-acne dark marks",
+        "actives": "10% Micronized Azelaic Acid",
+        "image": "/assets/images/prod-aziderm-10-gel.webp"
+      },
+      {
+        "name": "Benzac AC 2.5% Gel",
+        "price": "₹150 / 30g",
+        "bestFor": "Tender inflamed pimples with white fluid",
+        "actives": "2.5% Micronized Benzoyl Peroxide",
+        "image": "/assets/images/prod-benzac-ac-2-5-gel.webp"
+      },
+      {
+        "name": "Sebogel Salicylic Acid & Niacinamide Gel",
+        "price": "₹240 / 30g",
+        "bestFor": "Oily jawline congestion with soothing support",
+        "actives": "2% Salicylic Acid, 6% Niacinamide",
+        "image": "/assets/images/prod-sebogel-acne-gel.webp"
+      },
+      {
+        "name": "Minimalist Marula & Ceramide Barrier Cream",
+        "price": "₹399 / 50g",
+        "bestFor": "Compromised barrier, stinging & peeling skin",
+        "actives": "0.3% Ceramide Complex, Centella, Marula Oil",
+        "image": "/assets/images/prod-minimalist-ceramide-cream.webp"
+      }
+    ],
+    "expertVideo": {
+      "doctor": "Dr. Aanchal Panth MD",
+      "title": "Hormonal Acne | Resistant Acne | Treatment | Dr. Aanchal Panth",
+      "youtubeId": "03-fYUjebc0"
+    }
+  },
+  "audit": {
+    "formulaicSlopScore": 0.0,
+    "linguisticSlopScore": 0.0,
+    "schemaTypes": [
+      "MedicalWebPage",
+      "BreadcrumbList",
+      "ItemList",
+      "HowTo",
+      "VideoObject",
+      "FAQPage"
+    ]
+  }
+}
