@@ -317,15 +317,12 @@
     .cal-logo {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
       text-decoration: none;
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 1.25rem;
-      color: var(--text);
     }
-    .cal-logo span {
-      color: var(--accent);
+    .cal-logo img {
+      height: 30px;
+      width: auto;
+      display: block;
     }
     .cal-nav-links {
       display: flex;
@@ -1348,6 +1345,9 @@
       .cal-nav-links {
         display: none;
       }
+      .cal-logo img {
+        height: 24px;
+      }
     }
   </style>
 </head>
@@ -1363,8 +1363,8 @@
   <!-- Cal.com Minimalist Navigation -->
   <header class="cal-header">
     <div class="cal-header-inner">
-      <a href="/" class="cal-logo">
-        MyMirror<span>.fit</span>
+      <a href="/" class="cal-logo" aria-label="MyMirror Home">
+        <img src="/assets/logo-v4.png" alt="MyMirror" width="130" height="30">
       </a>
       <ul class="cal-nav-links">
         <li><a href="/acne/">Acne Guides</a></li>
@@ -2202,6 +2202,9 @@
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-col">
+        <div style="margin-bottom: 1.25rem;">
+          <img src="/assets/logo-v4.png" alt="MyMirror" width="130" height="30" style="height: 28px; width: auto; display: block;">
+        </div>
         <h5>MyMirror Clinical Dermatology</h5>
         <p>Evidence-based skin guidance designed for Indian skin phototypes, hormonal cycles, and lifestyle factors. Content reviewed by board-certified dermatologists.</p>
         <p style="margin-top: 0.75rem; font-size: 0.82rem; color: var(--text-soft);">Medical Disclaimer: This guide is for educational purposes only and is not a substitute for formal clinical consultation with a registered dermatologist or gynecologist.</p>
