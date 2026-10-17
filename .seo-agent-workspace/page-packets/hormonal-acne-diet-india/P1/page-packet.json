@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v1",
+    "sourcePrewritingPageId": "P1",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "dietary_guide",
+    "createdDate": "2026-10-17",
+    "updatedDate": "2026-10-17"
+  },
+  "seo": {
+    "title": "Hormonal Acne Diet India: Indian Kitchen Food Swaps (2026 Guide)",
+    "description": "Clear hormonal and PCOS acne using everyday Indian kitchen foods. Learn simple low-GI swaps, dairy truths, seed cycling, spearmint tea, and doctor tips.",
+    "slug": "hormonal-acne-diet-india",
+    "canonical": "https://mymirror.fit/acne/hormonal-acne-diet-india/",
+    "h1": "Hormonal Acne Diet in India: Indian Kitchen Swaps & 7-Day Plan",
+    "secondaryKeywords": [
+      "hormonal acne diet india",
+      "pcos acne diet plan indian food",
+      "indian food for hormonal acne",
+      "best diet for hormonal acne in india",
+      "foods to avoid for acne in india",
+      "spearmint tea for acne india",
+      "whey protein acne alternatives india",
+      "low gi indian foods for acne"
+    ],
+    "ogTitle": "Hormonal Acne Diet India: Indian Kitchen Food Swaps (2026 Guide)",
+    "ogDescription": "Clear hormonal and PCOS acne using everyday Indian kitchen foods. Learn simple low-GI swaps, dairy truths, seed cycling, spearmint tea, and doctor tips.",
+    "ogImage": "https://mymirror.fit/assets/images/hormonal-acne-diet-india-og.jpg",
+    "twitterImage": "https://mymirror.fit/assets/images/hormonal-acne-diet-india-og.jpg"
+  },
+  "authorship": {
+    "author": {
+      "name": "MyMirror Clinical Editorial Team",
+      "descriptor": "Dermatology & Skin Nutrition Team"
+    },
+    "reviewedBy": {
+      "name": "Dr. Lipy Mehta",
+      "descriptor": "Consultant Dermatologist & Aesthetic Physician \u2022 MBBS, MD Dermatology"
+    },
+    "reviewedByVisible": true
+  },
+  "content": {
+    "coreMechanisms": [
+      "The Sugar-Insulin-Androgen Cascade (How quick carbs trigger thick sebum)",
+      "Indian Kitchen Low-GI Swaps (Millets, jowar, bajra, besan over refined maida)",
+      "The Real Truth About Dairy and Whey (Skim milk spikes vs gentle fermented dahi)",
+      "Anti-Androgen Superfoods (Spearmint tea, pumpkin seeds, flaxseeds, methi, amla)",
+      "Practical 7-Day Meal Blueprint (Culturally familiar, balanced, non-restrictive)"
+    ],
+    "video": {
+      "title": "Anti Acne Diet | Can milk flare up acne? | Best Diet for ACNE - Dr. Rajdeep Mysore",
+      "youtubeId": "cQii-Plai14",
+      "uploadDate": "2023-07-09T04:30:19-07:00"
+    }
+  }
+}
