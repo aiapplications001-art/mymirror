@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v1",
+    "sourcePrewritingPageId": "P1",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "treatment_guide",
+    "createdDate": "2026-10-17",
+    "updatedDate": "2026-10-17"
+  },
+  "seo": {
+    "title": "Pimple Under Skin (Blind Pimple) Treatment & Care in India (2026) | MyMirror",
+    "description": "How to treat a painful pimple under the skin (blind pimple). Learn why deep bumps hurt, how to safely draw them out without popping, and top pharmacy solutions in India.",
+    "slug": "pimple-under-skin-treatment-india",
+    "canonical": "https://mymirror.fit/acne/pimple-under-skin-treatment-india/",
+    "h1": "Pimple Under Skin (Blind Pimple) Treatment & Care in India",
+    "secondaryKeywords": [
+      "pimple under skin treatment india",
+      "blind pimple treatment",
+      "how to treat pimple under skin",
+      "how to draw out a blind pimple",
+      "painful bump under skin face",
+      "under skin acne treatment india",
+      "blind pimple home remedies",
+      "best cream for blind pimple india"
+    ],
+    "ogTitle": "Pimple Under Skin (Blind Pimple) Treatment & Care in India (2026) | MyMirror",
+    "ogDescription": "How to treat a painful pimple under the skin (blind pimple). Learn why deep bumps hurt, how to safely draw them out without popping, and top pharmacy solutions in India.",
+    "ogImage": "https://mymirror.fit/assets/images/pimple-under-skin-og.jpg",
+    "twitterImage": "https://mymirror.fit/assets/images/pimple-under-skin-og.jpg"
+  },
+  "authorship": {
+    "author": {
+      "name": "MyMirror Clinical Editorial Team",
+      "descriptor": "Dermatology & Skin Science Team"
+    },
+    "reviewedBy": {
+      "name": "Dr. Lipy Mehta",
+      "descriptor": "Consultant Dermatologist & Aesthetic Physician \u2022 MBBS, MD Dermatology"
+    },
+    "reviewedByVisible": true
+  },
+  "content": {
+    "coreMechanisms": [
+      "What is a Pimple Under the Skin (Deep dermis inflammation near sensory nerves without surface pore opening)",
+      "Surface Pimple vs Blind Pimple Differentiation (Whitehead vs tender under-skin marble)",
+      "4-Step Clinical Protocol (Ice compress for 24-48 hrs, warm compress from Day 2, targeted spot active, hydrocolloid shield)",
+      "The Golden Rules: What NOT to Do (Zero squeezing, no needle piercing, avoiding harsh kitchen pastes)",
+      "Indian Pharmacy Spot Treatments (Benzac AC 2.5%, Sebogel 2% SA, Aziderm 10% Azelaic Acid, Microdart patches)",
+      "When to Seek In-Clinic Care (Intralesional cortisone injection for rapid 24-48 hour flattening)",
+      "Post-Pimple Mark Care (Preventing dark brown PIH on Indian skin)",
+      "Comprehensive 8-Question FAQ Accordion"
+    ],
+    "video": {
+      "title": "CYSTIC ACNE Q&A | DR DRAY",
+      "youtubeId": "weJVasOX84k",
+      "uploadDate": "2019-11-08T09:00:11-08:00"
+    },
+    "recommendations": [
+      {
+        "name": "Benzac AC 2.5% Gel",
+        "price": "\u20b9160 / 30g",
+        "bestFor": "Inflamed deep bacterial bumps & early red swelling",
+        "actives": "2.5% Micronized Benzoyl Peroxide",
+        "image": "/assets/images/prod-benzac-ac-2-5-gel.webp"
+      },
+      {
+        "name": "Sebogel Salicylic & Niacinamide Gel",
+        "price": "\u20b9240 / 30g",
+        "bestFor": "Clearing the pore rim & soothing surface redness",
+        "actives": "2% Salicylic Acid, 6% Niacinamide",
+        "image": "/assets/images/prod-sebogel-acne-gel.webp"
+      },
+      {
+        "name": "Aziderm 10% Gel",
+        "price": "\u20b9315 / 15g",
+        "bestFor": "Preventing stubborn dark brown marks (PIH) after swelling subsides",
+        "actives": "10% Azelaic Acid",
+        "image": "/assets/images/prod-aziderm-10-gel.webp"
+      },
+      {
+        "name": "Microdart Pimple Patches",
+        "price": "\u20b9299 - \u20b9399 / pack",
+        "bestFor": "Delivering active ingredients deeper into early blind bumps & preventing touching",
+        "actives": "Hyaluronic Acid, Salicylic Acid, Tea Tree",
+        "image": "/assets/images/blind-pimple-nodule-cyst-dos-and-donts.webp"
+      }
+    ]
+  }
+}
