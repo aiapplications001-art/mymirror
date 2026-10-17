@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "schemaVersion": "page-packet.v1",
+    "sourcePrewritingPageId": "P1",
+    "companyName": "MyMirror",
+    "market": "India",
+    "pageType": "faq_guide",
+    "createdDate": "2026-10-17",
+    "updatedDate": "2026-10-17"
+  },
+  "seo": {
+    "title": "Peeth Ke Pimple (Back Acne) Kaise Hatayein: Doctor Guide & FAQs (2026)",
+    "description": "Peeth ke pimple kyu nikalte hain aur inhe kaise hatayein? Janein 3-minute shower rule, pharmacy soaps (Perobar, Saslic, Nizral) aur doctor-approved tips.",
+    "slug": "back-acne-faq-hindi",
+    "canonical": "https://mymirror.fit/acne/back-acne-faq-hindi/",
+    "h1": "Peeth Ke Pimple (Back Acne) Kaise Hatayein: Doctor Guide & FAQs",
+    "secondaryKeywords": [
+      "peeth ke pimple kaise hataye",
+      "back acne faq hindi",
+      "peeth par dane ka ilaj",
+      "bacne treatment in hindi",
+      "back acne body wash india",
+      "peeth ke daag kaise mitaye",
+      "peeth ke dane ki medicine",
+      "perobar soap for back acne",
+      "fungal acne back in hindi"
+    ],
+    "ogTitle": "Peeth Ke Pimple (Back Acne) Kaise Hatayein: Doctor Guide & FAQs (2026)",
+    "ogDescription": "Peeth ke pimple kyu nikalte hain aur inhe kaise hatayein? Janein 3-minute shower rule, pharmacy soaps (Perobar, Saslic, Nizral) aur doctor-approved tips.",
+    "ogImage": "https://mymirror.fit/assets/images/back-acne-faq-hindi-og.jpg",
+    "twitterImage": "https://mymirror.fit/assets/images/back-acne-faq-hindi-og.jpg"
+  },
+  "authorship": {
+    "author": {
+      "name": "MyMirror Clinical Editorial Team",
+      "descriptor": "Dermatology & Skin Science Team"
+    },
+    "reviewedBy": {
+      "name": "Dr. Lipy Mehta",
+      "descriptor": "Consultant Dermatologist & Aesthetic Physician \u2022 MBBS, MD Dermatology"
+    },
+    "reviewedByVisible": true
+  },
+  "content": {
+    "coreMechanisms": [
+      "Peeth Par Pimple Kyu Hote Hain (Moti skin, zyada oil glands, aur sweat-friction)",
+      "Bacterial Bacne vs Fungal Bacne (Kaise pehchanein laal pus dane vs khujli wale ek barabar daane)",
+      "The 3-Minute Shower Rule (Wash hair first, apply foam, wait 3 minutes before rinsing)",
+      "Top Indian Pharmacy Soaps & Washes (Perobar 2.5%, Saslic DS 2%, Nizral 2%)",
+      "Loofah & Scrubbing Danger (Plastic loofah micro-cuts aur dark spots ka sabse bada kaaran)",
+      "Gym & Workout Bacne Prevention (20-minute shower rule, breathable 100% cotton clothing)",
+      "Post-Acne Dark Spots Treatment (Lactic acid 10% lotion, Kojic acid, Azelaic acid 10%)",
+      "8 Essential Hinglish FAQs for Clear Back Skin"
+    ],
+    "video": {
+      "title": "Back acne | how to treat | what to avoid | Dr Aanchal Panth",
+      "youtubeId": "CyEO1QjWbzo",
+      "uploadDate": "2024-01-18T23:19:27-08:00"
+    },
+    "recommendations": [
+      {
+        "name": "Perobar 2.5% Soap",
+        "price": "\u20b9150 / 75g",
+        "bestFor": "Laal, dard bhare bacterial pimples aur pus wale dane",
+        "actives": "2.5% Benzoyl Peroxide",
+        "image": "/assets/images/prod-benzac-ac-2-5-gel.webp"
+      },
+      {
+        "name": "Saslic DS Foaming Body Wash",
+        "price": "\u20b9420 / 100ml",
+        "bestFor": "Pores mein phasa paseena, dead skin aur blackheads",
+        "actives": "2% Salicylic Acid",
+        "image": "/assets/images/prod-minimalist-2-sa-cleanser.webp"
+      },
+      {
+        "name": "Nizral 2% Anti-Dandruff & Fungal Wash",
+        "price": "\u20b9330 / 100ml",
+        "bestFor": "Chote, ek barabar khujli wale fungal dane (Malassezia)",
+        "actives": "2% Ketoconazole",
+        "image": "/assets/images/card-fungal-chest-bacne.jpg"
+      },
+      {
+        "name": "Aziderm 10% Gel",
+        "price": "\u20b9315 / 15g",
+        "bestFor": "Peeth ke puraane kaale daag aur redness hatane ke liye",
+        "actives": "10% Azelaic Acid",
+        "image": "/assets/images/prod-aziderm-10-gel.webp"
+      }
+    ]
+  }
+}
