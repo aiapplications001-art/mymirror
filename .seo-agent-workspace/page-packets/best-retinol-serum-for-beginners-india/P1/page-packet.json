@@ -6,7 +6,7 @@
     "market": "India",
     "pageType": "product_guide",
     "createdDate": "2026-08-09",
-    "updatedDate": "2026-10-16"
+    "updatedDate": "2026-10-17"
   },
   "seo": {
     "title": "Best Retinol Serum for Beginners in India: 5 Doctor-Approved Picks (2026 Guide)",
@@ -35,7 +35,7 @@
     },
     "reviewedBy": {
       "name": "Dr. Lipy Mehta",
-      "descriptor": "Consultant Dermatologist & Aesthetic Physician \u2022 MBBS, MD Dermatology"
+      "descriptor": "Consultant Dermatologist & Aesthetic Physician • MBBS, MD Dermatology"
     },
     "reviewedByVisible": true
   },
@@ -44,33 +44,38 @@
     "recommendations": [
       {
         "name": "Re'equil 0.1% Retinol Night Cream",
-        "price": "\u20b9595 / 50g",
+        "price": "₹595 / 50g",
         "bestFor": "First-time beginner starter dose",
-        "actives": "0.1% Encapsulated Retinol"
+        "actives": "0.1% Encapsulated Retinol",
+        "image": "/assets/images/prod-reequil-0-1-retinol-night-cream.webp"
       },
       {
         "name": "Minimalist Granactive Retinoid 2%",
-        "price": "\u20b9699 / 30ml",
+        "price": "₹699 / 30ml",
         "bestFor": "Sensitive skin, zero irritation",
-        "actives": "2% Granactive Retinoid (HPR)"
+        "actives": "2% Granactive Retinoid (HPR)",
+        "image": "/assets/images/prod-minimalist-granactive-retinoid-2.webp"
       },
       {
         "name": "Minimalist 0.3% Retinol in Squalane",
-        "price": "\u20b9599 / 30ml",
+        "price": "₹599 / 30ml",
         "bestFor": "Normal to dry skin with fine lines",
-        "actives": "0.3% Pure Retinol, Squalane"
+        "actives": "0.3% Pure Retinol, Squalane",
+        "image": "/assets/images/prod-minimalist-0-3-retinol-in-squalane.webp"
       },
       {
         "name": "The Formula RX Retinol + Peptide Cream",
-        "price": "\u20b9699 / 30g",
+        "price": "₹699 / 30g",
         "bestFor": "Early fine lines with barrier buffer",
-        "actives": "0.2% Encapsulated Retinol, Peptides, Ceramides"
+        "actives": "0.2% Encapsulated Retinol, Peptides, Ceramides",
+        "image": "/assets/images/prod-the-formula-rx-retinol-peptide-cream.webp"
       },
       {
         "name": "Olay Regenerist Retinol 24 Night Serum",
-        "price": "\u20b9799 / 30ml",
+        "price": "₹799 / 30ml",
         "bestFor": "Dark spots, dull tone, and PIH",
-        "actives": "Retinol Complex, Niacinamide"
+        "actives": "Retinol Complex, Niacinamide",
+        "image": "/assets/images/prod-olay-regenerist-retinol-24-night-serum.webp"
       }
     ]
   },

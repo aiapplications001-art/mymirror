@@ -561,13 +561,46 @@
     .product-grid-details {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 1.25rem;
+      gap: 1.5rem;
       margin: 1.25rem 0;
+      align-items: start;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 900px) {
       .product-grid-details {
-        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-columns: 210px 1.3fr 1fr;
       }
+    }
+    @media (min-width: 640px) and (max-width: 899px) {
+      .product-grid-details {
+        grid-template-columns: 180px 1fr;
+      }
+      .product-specs {
+        grid-column: 1 / -1;
+      }
+    }
+    .product-img-box {
+      width: 100%;
+      height: 210px;
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    }
+    .product-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 8px;
+      transition: transform 0.35s ease;
+      display: block;
+    }
+    .product-card:hover .product-img-box img {
+      transform: scale(1.05);
     }
     .product-desc {
       font-size: 0.95rem;
@@ -1046,6 +1079,9 @@
             <div class="product-price-tag">₹595 <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-soft);">/ 50g</span></div>
           </div>
           <div class="product-grid-details">
+            <div class="product-img-box">
+              <img src="/assets/images/prod-reequil-0-1-retinol-night-cream.webp" alt="Re'equil 0.1% Retinol Night Cream 50g tube with micro-encapsulated retinol" width="210" height="210" loading="lazy">
+            </div>
             <div class="product-desc">
               <p>Re'equil 0.1% Retinol Night Cream is widely recommended by Indian dermatologists as the ideal entry point. It uses micro-encapsulated pure retinol, which slowly releases active molecules throughout the night rather than flooding the skin all at once. This slow release prevents the typical red flushing and stinging associated with beginner retinoid use.</p>
               <div class="product-verdict-box">
@@ -1072,6 +1108,9 @@
             <div class="product-price-tag">₹699 <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-soft);">/ 30ml</span></div>
           </div>
           <div class="product-grid-details">
+            <div class="product-img-box">
+              <img src="/assets/images/prod-minimalist-granactive-retinoid-2.webp" alt="Minimalist Granactive Retinoid 2% 30ml dropper bottle for sensitive skin" width="210" height="210" loading="lazy">
+            </div>
             <div class="product-desc">
               <p>Minimalist Granactive Retinoid uses 2% Hydroxypinacolone Retinoate (HPR), a fourth-generation retinoid ester. Unlike regular retinol, HPR binds directly to retinoic acid receptors in the skin without needing to convert first. This direct binding delivers rapid cellular renewal and collagen signaling without the customary redness, flaking, or stinging.</p>
               <div class="product-verdict-box">
@@ -1098,6 +1137,9 @@
             <div class="product-price-tag">₹599 <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-soft);">/ 30ml</span></div>
           </div>
           <div class="product-grid-details">
+            <div class="product-img-box">
+              <img src="/assets/images/prod-minimalist-0-3-retinol-in-squalane.webp" alt="Minimalist 0.3% Retinol in Squalane 30ml amber glass dropper bottle" width="210" height="210" loading="lazy">
+            </div>
             <div class="product-desc">
               <p>If you have already used a gentle retinoid or have resilient normal-to-dry skin, Minimalist 0.3% in Squalane provides an effective step up. Pure squalane acts as an emollient buffer that cushions the skin barrier against moisture loss, while pure 0.3% retinol works on fine lines, rough patches, and persistent whiteheads.</p>
               <div class="product-verdict-box">
@@ -1124,6 +1166,9 @@
             <div class="product-price-tag">₹699 <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-soft);">/ 30g</span></div>
           </div>
           <div class="product-grid-details">
+            <div class="product-img-box">
+              <img src="/assets/images/prod-the-formula-rx-retinol-peptide-cream.webp" alt="The Formula RX Retinol and Peptide Cream 30g pump bottle for barrier support" width="210" height="210" loading="lazy">
+            </div>
             <div class="product-desc">
               <p>The Formula RX combines low-dose encapsulated retinol with signaling peptides and barrier-strengthening ceramides. This formula is built to address early signs of aging and uneven skin texture while preventing the skin barrier from breaking down. It has a soothing lotion texture that absorbs quickly without tackiness.</p>
               <div class="product-verdict-box">
@@ -1150,6 +1195,9 @@
             <div class="product-price-tag">₹799 <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-soft);">/ 30ml</span></div>
           </div>
           <div class="product-grid-details">
+            <div class="product-img-box">
+              <img src="/assets/images/prod-olay-regenerist-retinol-24-night-serum.webp" alt="Olay Regenerist Retinol 24 Night Serum 30ml purple glass dropper bottle" width="210" height="210" loading="lazy">
+            </div>
             <div class="product-desc">
               <p>Olay Retinol 24 combines a retinoid complex (retinol + retinyl propionate) with high-purity niacinamide (vitamin B3). Niacinamide strengthens the skin's lipid envelope and stimulates ceramide synthesis, counteracting any potential dryness caused by the retinoid. It is completely fragrance-free and dye-free.</p>
               <div class="product-verdict-box">
