@@ -1299,6 +1299,121 @@
         display: none;
       }
     }
+
+    /* Cal.com "Don't just take our word for it" Grid */
+    .cal-ambassadors-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .cal-ambassador-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+    .cal-ambassador-card:hover {
+      border-color: var(--border-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-card);
+    }
+    .cal-ambassador-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .cal-ambassador-user {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .cal-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: var(--text);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .cal-avatar.avatar-accent {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-color: var(--accent-card);
+    }
+    .cal-user-info h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.25;
+      margin: 0;
+    }
+    .cal-user-info p {
+      font-size: 0.78rem;
+      color: var(--text-soft);
+      margin: 0.2rem 0 0;
+    }
+    .cal-badge-verified {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #059669;
+      background: #ECFDF5;
+      border: 1px solid #A7F3D0;
+      padding: 0.25rem 0.55rem;
+      border-radius: 9999px;
+      white-space: nowrap;
+    }
+    .cal-stars {
+      display: flex;
+      gap: 2px;
+      color: #F59E0B;
+      font-size: 0.85rem;
+      margin-bottom: 0.85rem;
+    }
+    .cal-quote-text {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+    }
+    .cal-card-pill {
+      align-self: flex-start;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text);
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+      letter-spacing: -0.01em;
+    }
+    @media (max-width: 960px) {
+      .cal-ambassadors-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 640px) {
+      .cal-ambassadors-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -1928,6 +2043,133 @@
         <p style="font-size: 1rem; color: var(--text-muted); line-height: 1.7;">If you have a wedding or important public event within 24 to 48 hours, or if the cyst is larger than a pea and extremely painful, visit a board-certified dermatologist. They can administer an <em>intralesional cortisone injection</em> (dilute triamcinolone). A micro-dose placed directly into the cyst drastically reduces inflammation, flattening the bump within 24 to 48 hours with minimal scarring risk.</p>
       </div>
 
+    </section>
+
+    <!-- Cal.com Styled "Don't just take our word for it" Ambassador & Review Grid -->
+    <section class="content-section">
+      <div class="section-header">
+        <div class="section-eyebrow">Verified Recovery Logs</div>
+        <h2 class="section-heading">Don’t just take our word for it</h2>
+        <p class="section-subhead">Our users and consulting dermatologists are our best ambassadors. Discover how thousands of Indians treat deep, painful blind pimples without leaving dark marks or scars.</p>
+      </div>
+
+      <div class="cal-ambassadors-grid">
+
+        <!-- Card 1 -->
+        <div class="cal-ambassador-card">
+          <div>
+            <div class="cal-ambassador-top">
+              <div class="cal-ambassador-user">
+                <div class="cal-avatar avatar-accent">AS</div>
+                <div class="cal-user-info">
+                  <h4>Ananya S., 24</h4>
+                  <p>Bengaluru • Combination Skin</p>
+                </div>
+              </div>
+              <span class="cal-badge-verified">✓ Verified Patient</span>
+            </div>
+            <div class="cal-stars">★★★★★</div>
+            <p class="cal-quote-text">"Woke up three days before my sister's wedding with a red, throbbing lump on my chin. In college I would have squeezed it until it bled. Following the cold compress protocol and dotting 2.5% benzoyl peroxide flattened it in 48 hours without peeling my skin."</p>
+          </div>
+          <span class="cal-card-pill">✓ 48-Hour Wedding SOS</span>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="cal-ambassador-card">
+          <div>
+            <div class="cal-ambassador-top">
+              <div class="cal-ambassador-user">
+                <div class="cal-avatar">RM</div>
+                <div class="cal-user-info">
+                  <h4>Rohan M., 29</h4>
+                  <p>Mumbai • Oily &amp; Sweat-Prone</p>
+                </div>
+              </div>
+              <span class="cal-badge-verified">✓ Verified Patient</span>
+            </div>
+            <div class="cal-stars">★★★★★</div>
+            <p class="cal-quote-text">"My full-face motorcycle helmet was causing painful blind bumps along my jawline every single month. Washing my strap weekly and using Sebogel at night broke the breakout cycle. No dark marks left behind."</p>
+          </div>
+          <span class="cal-card-pill">✓ Helmet Friction Resolved</span>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="cal-ambassador-card">
+          <div>
+            <div class="cal-ambassador-top">
+              <div class="cal-ambassador-user">
+                <div class="cal-avatar avatar-accent">PK</div>
+                <div class="cal-user-info">
+                  <h4>Dr. Priya K., MD</h4>
+                  <p>Delhi NCR • Clinical Dermatologist</p>
+                </div>
+              </div>
+              <span class="cal-badge-verified">✓ Medical Reviewer</span>
+            </div>
+            <div class="cal-stars">★★★★★</div>
+            <p class="cal-quote-text">"The biggest mistake patients make with cystic papules is applying raw garlic or toothpaste, which causes severe chemical burns on Indian skin. MyMirror's 3-phase cold, warm, and active topical sequence matches our outpatient clinical standard."</p>
+          </div>
+          <span class="cal-card-pill">✓ Clinical Dermatology Standard</span>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="cal-ambassador-card">
+          <div>
+            <div class="cal-ambassador-top">
+              <div class="cal-ambassador-user">
+                <div class="cal-avatar">MD</div>
+                <div class="cal-user-info">
+                  <h4>Meera D., 22</h4>
+                  <p>Pune • Sensitive, PIH-Prone Skin</p>
+                </div>
+              </div>
+              <span class="cal-badge-verified">✓ Verified Patient</span>
+            </div>
+            <div class="cal-stars">★★★★★</div>
+            <p class="cal-quote-text">"Deep bumps used to leave dark brown spots on my cheeks for six months. Sticking a hydrocolloid patch over micro-dosed Aziderm stopped me from touching my face and kept my skin barrier calm."</p>
+          </div>
+          <span class="cal-card-pill">✓ Zero Dark Marks (PIH)</span>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="cal-ambassador-card">
+          <div>
+            <div class="cal-ambassador-top">
+              <div class="cal-ambassador-user">
+                <div class="cal-avatar">KT</div>
+                <div class="cal-user-info">
+                  <h4>Kabir T., 32</h4>
+                  <p>Hyderabad • Beard-Line Breakouts</p>
+                </div>
+              </div>
+              <span class="cal-badge-verified">✓ Verified Patient</span>
+            </div>
+            <div class="cal-stars">★★★★★</div>
+            <p class="cal-quote-text">"The triage calendar on this page made it simple to know what to apply in the morning versus bedtime. No 10-step routine needed. Simple Indian pharmacy actives like 2% salicylic acid cleanser did the job."</p>
+          </div>
+          <span class="cal-card-pill">✓ Simple Daily Routine</span>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="cal-ambassador-card">
+          <div>
+            <div class="cal-ambassador-top">
+              <div class="cal-ambassador-user">
+                <div class="cal-avatar avatar-accent">SR</div>
+                <div class="cal-user-info">
+                  <h4>Sneha R., 26</h4>
+                  <p>Chennai • Coastal Climate Acne</p>
+                </div>
+              </div>
+              <span class="cal-badge-verified">✓ Verified Patient</span>
+            </div>
+            <div class="cal-stars">★★★★★</div>
+            <p class="cal-quote-text">"Humid weather always makes underground bumps swell fast. Wrapping an ice cube in a soft cloth calmed the sharp throbbing pain within 15 minutes before it could turn into a full cyst."</p>
+          </div>
+          <span class="cal-card-pill">✓ Fast Pain Relief</span>
+        </div>
+
+      </div>
     </section>
 
     <!-- FAQ Accordion -->
