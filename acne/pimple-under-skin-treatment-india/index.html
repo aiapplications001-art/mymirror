@@ -281,17 +281,20 @@
       --accent-soft: #FFF3EB;
       --accent-card: #FFE1CE;
       --bg: #FFFFFF;
-      --bg-alt: #FBF8F5;
-      --bg-card: #FFFFFF;
-      --border: #E8DDD5;
-      --border-light: #F0E8E2;
-      --text: #1A1410;
-      --text-muted: #5C4A3A;
-      --text-soft: #8C7565;
-      --radius: 14px;
-      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-      --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06);
-      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --bg-alt: #F9FAFB;
+      --bg-surface: #F3F4F6;
+      --border: #E5E7EB;
+      --border-dark: #D1D5DB;
+      --text: #111827;
+      --text-muted: #4B5563;
+      --text-soft: #6B7280;
+      --radius-sm: 8px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       --font-display: 'Kantumruy Pro', Georgia, serif;
     }
 
@@ -299,16 +302,16 @@
       font-family: var(--font-body);
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.68;
+      line-height: 1.65;
       font-size: 16px;
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Trust Top Bar */
-    .trust-bar {
-      background: var(--bg-alt);
+    /* Cal.com Announcement / Status Bar */
+    .cal-top-bar {
+      background: #FAFAFA;
       border-bottom: 1px solid var(--border);
-      padding: 8px 1.5rem;
+      padding: 7px 1.5rem;
       font-size: 0.82rem;
       color: var(--text-muted);
       display: flex;
@@ -317,43 +320,30 @@
       gap: 1.25rem;
       flex-wrap: wrap;
     }
-    .trust-bar strong {
-      color: var(--text);
-    }
-    .trust-verified {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      color: #059669;
-      font-weight: 700;
-    }
-    .trust-verified::before {
-      content: '✓';
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 15px;
-      height: 15px;
-      background: #059669;
-      color: #fff;
+    .status-dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
       border-radius: 50%;
-      font-size: 9px;
+      background: #10B981;
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+      margin-right: 4px;
     }
 
-    /* Sticky Navigation */
+    /* Cal.com Minimalist Sticky Navigation */
     nav.site-header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       height: 64px;
       display: flex;
       align-items: center;
     }
     .nav-container {
-      max-width: 1140px;
+      max-width: 1160px;
       margin: 0 auto;
       padding: 0 1.5rem;
       width: 100%;
@@ -374,36 +364,58 @@
     .nav-menu {
       display: flex;
       align-items: center;
-      gap: 1.25rem;
+      gap: 1.5rem;
       list-style: none;
     }
     .nav-menu a {
       font-size: 0.88rem;
-      font-weight: 600;
+      font-weight: 500;
       color: var(--text-muted);
       text-decoration: none;
       transition: color 0.15s ease;
     }
     .nav-menu a:hover {
-      color: var(--accent);
+      color: var(--text);
     }
-    .nav-cta-btn {
-      background: var(--accent);
-      color: #fff !important;
-      padding: 0.5rem 1.1rem;
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .nav-secondary-btn {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+      padding: 0.45rem 0.9rem;
       border-radius: 9999px;
-      font-weight: 700 !important;
+      border: 1px solid var(--border);
+      background: #FFFFFF;
+      transition: all 0.15s ease;
+    }
+    .nav-secondary-btn:hover {
+      border-color: var(--border-dark);
+      background: var(--bg-alt);
+    }
+    .nav-primary-btn {
+      background: #111827;
+      color: #FFFFFF !important;
+      padding: 0.45rem 1.1rem;
+      border-radius: 9999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
       transition: background 0.2s ease, transform 0.15s ease;
     }
-    .nav-cta-btn:hover {
-      background: var(--accent-dark);
+    .nav-primary-btn:hover {
+      background: #1F2937;
       transform: translateY(-1px);
     }
 
     /* Breadcrumbs */
     .breadcrumb-nav {
-      max-width: 1140px;
-      margin: 1rem auto 0;
+      max-width: 1160px;
+      margin: 1.25rem auto 0;
       padding: 0 1.5rem;
       font-size: 0.82rem;
       color: var(--text-soft);
@@ -416,60 +428,73 @@
       color: var(--accent);
     }
     .breadcrumb-nav span {
-      margin: 0 0.35rem;
+      margin: 0 0.4rem;
     }
 
     /* Page Layout */
     .page-layout {
-      max-width: 1140px;
+      max-width: 1160px;
       margin: 0 auto;
-      padding: 1.5rem 1.5rem 4rem;
+      padding: 1.5rem 1.5rem 5rem;
     }
 
-    /* Hero Section */
+    /* Cal.com Hero Section (2-Column Grid) */
     .hero-container {
-      padding: 2rem 0 3rem;
-      border-bottom: 1px solid var(--border-light);
+      padding: 2.5rem 0 3.5rem;
+      border-bottom: 1px solid var(--border);
     }
     .hero-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 2.5rem;
+      gap: 3rem;
       align-items: center;
     }
-    @media (min-width: 900px) {
+    @media (min-width: 960px) {
       .hero-grid {
-        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-columns: 1.15fr 0.85fr;
       }
     }
-    .hero-badge {
+    .hero-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .cal-badge {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: var(--accent-soft);
-      color: var(--accent);
+      background: #F3F4F6;
+      border: 1px solid var(--border);
+      color: #374151;
       padding: 4px 12px;
       border-radius: 9999px;
-      font-size: 0.82rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .cal-badge-accent {
+      background: var(--accent-soft);
+      border-color: #FED7AA;
+      color: var(--accent-dark);
       font-weight: 700;
-      margin-bottom: 1rem;
     }
     h1.hero-title {
       font-family: var(--font-display);
-      font-size: 2.25rem;
-      line-height: 1.22;
+      font-size: 2.35rem;
+      line-height: 1.18;
       color: var(--text);
       font-weight: 700;
       margin-bottom: 1.25rem;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.03em;
     }
     @media (min-width: 768px) {
       h1.hero-title {
-        font-size: 2.75rem;
+        font-size: 2.85rem;
       }
     }
     p.hero-lead {
-      font-size: 1.1rem;
+      font-size: 1.12rem;
       color: var(--text-muted);
       line-height: 1.65;
       margin-bottom: 1.75rem;
@@ -478,8 +503,8 @@
       display: flex;
       align-items: center;
       gap: 1.5rem;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border-light);
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
       font-size: 0.84rem;
       color: var(--text-soft);
       flex-wrap: wrap;
@@ -487,19 +512,20 @@
     .author-chip {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
     .author-avatar {
-      width: 38px;
-      height: 38px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
-      background: var(--accent-card);
-      color: var(--accent-dark);
+      background: #F3F4F6;
+      border: 1px solid var(--border);
+      color: var(--text);
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: 800;
-      font-size: 0.85rem;
+      font-size: 0.88rem;
     }
 
     .hero-takeaways {
@@ -517,126 +543,197 @@
       display: flex;
       align-items: flex-start;
       gap: 8px;
-      font-size: 0.85rem;
+      font-size: 0.84rem;
       color: var(--text-muted);
       background: var(--bg-alt);
       padding: 8px 12px;
       border-radius: 8px;
-      border: 1px solid var(--border-light);
+      border: 1px solid var(--border);
     }
     .takeaway-pill svg {
-      width: 16px;
-      height: 16px;
+      width: 15px;
+      height: 15px;
       flex-shrink: 0;
-      color: #059669;
+      color: #10B981;
       margin-top: 2px;
     }
 
-    /* Cal.com Inspired Segmented Interactive Decoder Widget */
-    .decoder-card {
+    /* Cal.com Scheduler / Clinical Triage Widget */
+    .cal-scheduler-card {
       background: #FFFFFF;
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 1.5rem;
-      box-shadow: var(--shadow-md);
-      position: relative;
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
-    .decoder-badge {
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 3px 8px;
-      border-radius: 4px;
-      display: inline-block;
-      margin-bottom: 0.65rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+    .cal-card-header {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #FAFAFA;
     }
-    .decoder-title {
-      font-family: var(--font-display);
-      font-size: 1.15rem;
+    .cal-header-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .cal-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #E5E7EB;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.82rem;
       font-weight: 700;
       color: var(--text);
-      margin-bottom: 1rem;
     }
-    .decoder-tabs {
+    .cal-header-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .cal-header-sub {
+      font-size: 0.75rem;
+      color: var(--text-soft);
+    }
+    .cal-live-chip {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #059669;
+      background: #D1FAE5;
+      padding: 3px 8px;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .cal-card-body {
+      padding: 1.5rem;
+    }
+    .cal-step-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Cal.com Segmented Phase Control */
+    .cal-segmented-tabs {
       display: flex;
-      gap: 0.35rem;
-      background: var(--bg-alt);
+      gap: 4px;
+      background: #F3F4F6;
       padding: 4px;
       border-radius: 10px;
       margin-bottom: 1.25rem;
-      overflow-x: auto;
     }
-    .decoder-tab {
+    .cal-tab-btn {
       flex: 1;
-      padding: 8px 10px;
+      padding: 8px 6px;
       font-size: 0.78rem;
       font-weight: 600;
       border: none;
       background: transparent;
       color: var(--text-muted);
-      border-radius: 7px;
+      border-radius: 8px;
       cursor: pointer;
       text-align: center;
-      white-space: nowrap;
-      transition: all 0.2s ease;
+      transition: all 0.15s ease;
     }
-    .decoder-tab.active {
+    .cal-tab-btn.active {
       background: #FFFFFF;
-      color: var(--accent);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      color: var(--text);
       font-weight: 700;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-    .decoder-result-box {
-      border: 1px solid var(--border-light);
+
+    /* Cal.com Time-Slot Style Protocol Checklist */
+    .cal-slot-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 1.25rem;
+    }
+    .cal-slot-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 1.1rem;
+      background: #FFFFFF;
+      font-size: 0.85rem;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    .cal-slot-item:hover {
+      border-color: var(--border-dark);
       background: var(--bg-alt);
     }
-    .decoder-row {
-      margin-bottom: 0.75rem;
-    }
-    .decoder-row:last-child {
-      margin-bottom: 0;
-    }
-    .tag-meaning {
-      display: inline-block;
-      font-size: 0.72rem;
+    .cal-slot-time {
       font-weight: 700;
-      color: #92400E;
-      background: #FEF3C7;
-      padding: 2px 7px;
-      border-radius: 4px;
-      margin-bottom: 4px;
-    }
-    .tag-solution {
-      display: inline-block;
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: #059669;
-      background: #D1FAE5;
-      padding: 2px 7px;
-      border-radius: 4px;
-      margin-bottom: 4px;
-    }
-    .decoder-text {
-      font-size: 0.88rem;
       color: var(--text);
-      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .cal-slot-action {
+      color: var(--text-muted);
+      font-size: 0.82rem;
+    }
+    .cal-slot-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+      background: #F3F4F6;
+      color: #374151;
+    }
+
+    .cal-card-footer {
+      padding: 1rem 1.5rem;
+      background: #FAFAFA;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cal-footer-note {
+      font-size: 0.78rem;
+      color: var(--text-soft);
+    }
+    .cal-confirm-btn {
+      background: #111827;
+      color: #FFFFFF;
+      border: none;
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+    .cal-confirm-btn:hover {
+      background: #1F2937;
     }
 
     /* Section Styles */
     section.content-section {
-      padding: 3.5rem 0;
-      border-bottom: 1px solid var(--border-light);
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--border);
     }
     .section-header {
-      margin-bottom: 2rem;
+      margin-bottom: 2.25rem;
     }
     .section-eyebrow {
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       font-weight: 700;
       color: var(--accent);
       text-transform: uppercase;
@@ -645,25 +742,25 @@
     }
     h2.section-heading {
       font-family: var(--font-display);
-      font-size: 1.85rem;
+      font-size: 2rem;
       line-height: 1.25;
       color: var(--text);
       font-weight: 700;
       margin-bottom: 0.75rem;
-      letter-spacing: -0.01em;
+      letter-spacing: -0.02em;
     }
     @media (min-width: 768px) {
       h2.section-heading {
-        font-size: 2.2rem;
+        font-size: 2.35rem;
       }
     }
     p.section-subhead {
-      font-size: 1.05rem;
+      font-size: 1.08rem;
       color: var(--text-muted);
-      max-width: 760px;
+      max-width: 780px;
     }
 
-    /* Bento Grid (4 Cards) */
+    /* Bento Grid (Cal.com Style Asymmetric Cards) */
     .bento-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -681,19 +778,20 @@
       border-radius: var(--radius);
       overflow: hidden;
       box-shadow: var(--shadow-sm);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
       display: flex;
       flex-direction: column;
     }
     .bento-card:hover {
       transform: translateY(-2px);
-      box-shadow: var(--shadow-md);
+      box-shadow: var(--shadow-card);
+      border-color: var(--border-dark);
     }
     .bento-media {
       position: relative;
       width: 100%;
       aspect-ratio: 16 / 9;
-      background: var(--bg-alt);
+      background: #F3F4F6;
       overflow: hidden;
     }
     .bento-media img {
@@ -711,22 +809,23 @@
     .bento-tag {
       font-size: 0.72rem;
       font-weight: 700;
-      color: var(--accent);
-      background: var(--accent-soft);
-      padding: 2px 8px;
-      border-radius: 4px;
+      color: #374151;
+      background: #F3F4F6;
+      padding: 3px 8px;
+      border-radius: 6px;
       align-self: flex-start;
       margin-bottom: 0.75rem;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
     }
     h3.bento-title {
       font-family: var(--font-display);
-      font-size: 1.25rem;
+      font-size: 1.3rem;
       font-weight: 700;
       color: var(--text);
       margin-bottom: 0.75rem;
       line-height: 1.35;
+      letter-spacing: -0.01em;
     }
     .bento-list {
       list-style: none;
@@ -749,125 +848,129 @@
       line-height: 1;
     }
 
-    /* Cal.com Styled Process Timeline Cards (SOS Protocol) */
-    .timeline-container {
+    /* Cal.com Style Workflow Pipeline (SOS Protocol) */
+    .cal-workflow-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.25rem;
       margin-top: 2rem;
     }
     @media (min-width: 768px) {
-      .timeline-container {
+      .cal-workflow-grid {
         grid-template-columns: repeat(3, 1fr);
       }
     }
-    .timeline-card {
+    .cal-workflow-card {
       background: #FFFFFF;
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 1.5rem;
+      padding: 1.75rem 1.5rem;
       box-shadow: var(--shadow-sm);
-      position: relative;
       display: flex;
       flex-direction: column;
+      position: relative;
     }
-    .timeline-badge {
-      display: inline-flex;
+    .cal-workflow-step {
+      display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
       font-size: 0.75rem;
       font-weight: 700;
-      color: var(--accent-dark);
-      background: var(--accent-card);
-      padding: 3px 8px;
-      border-radius: 4px;
-      margin-bottom: 1rem;
+      color: #374151;
+      background: #F3F4F6;
+      padding: 3px 10px;
+      border-radius: 9999px;
       align-self: flex-start;
+      margin-bottom: 1rem;
     }
-    .timeline-step-num {
+    .cal-workflow-num {
       width: 28px;
       height: 28px;
       border-radius: 50%;
-      background: var(--accent);
+      background: #111827;
       color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 0.85rem;
-      font-weight: 800;
+      font-weight: 700;
       margin-bottom: 0.75rem;
     }
-    .timeline-title {
+    .cal-workflow-title {
       font-family: var(--font-display);
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 700;
       color: var(--text);
       margin-bottom: 0.5rem;
     }
-    .timeline-desc {
-      font-size: 0.9rem;
+    .cal-workflow-desc {
+      font-size: 0.92rem;
       color: var(--text-muted);
       line-height: 1.55;
     }
 
-    /* Interactive Quiz Box */
-    .quiz-box {
-      background: var(--bg-alt);
+    /* Cal.com Styled Quiz Widget */
+    .cal-quiz-card {
+      background: #FFFFFF;
       border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: 2rem;
+      box-shadow: var(--shadow-sm);
       margin-top: 2rem;
     }
-    .quiz-question-row {
-      background: #FFFFFF;
-      border: 1px solid var(--border-light);
-      border-radius: 10px;
-      padding: 1.1rem;
-      margin-bottom: 1rem;
+    .cal-quiz-row {
+      padding: 1.1rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 0.85rem;
+      background: #FAFAFA;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 1rem;
+      gap: 1.25rem;
       flex-wrap: wrap;
     }
-    .quiz-q-text {
+    .cal-quiz-text {
       font-size: 0.95rem;
       font-weight: 600;
       color: var(--text);
       flex: 1;
-      min-width: 250px;
+      min-width: 260px;
     }
-    .quiz-options {
+    .cal-quiz-buttons {
       display: flex;
       gap: 0.5rem;
     }
-    .quiz-btn {
-      padding: 6px 14px;
-      font-size: 0.82rem;
-      font-weight: 700;
-      border-radius: 6px;
+    .cal-quiz-btn {
+      padding: 7px 16px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      border-radius: 8px;
       border: 1px solid var(--border);
       background: #FFFFFF;
       color: var(--text-muted);
       cursor: pointer;
-      transition: all 0.2s ease;
+      transition: all 0.15s ease;
     }
-    .quiz-btn.selected {
-      background: var(--accent);
+    .cal-quiz-btn:hover {
+      border-color: var(--border-dark);
+    }
+    .cal-quiz-btn.selected {
+      background: #111827;
       color: #FFFFFF;
-      border-color: var(--accent);
+      border-color: #111827;
     }
-    .quiz-result-card {
+    .cal-quiz-output {
       margin-top: 1.5rem;
-      padding: 1.25rem;
-      background: #FFFFFF;
-      border: 2px solid var(--accent);
+      padding: 1.25rem 1.5rem;
       border-radius: 12px;
+      background: #F9FAFB;
+      border: 1px solid #D1D5DB;
       display: none;
     }
 
     /* Video Section */
-    .video-card {
+    .cal-video-card {
       background: #FFFFFF;
       border: 1px solid var(--border);
       border-radius: var(--radius);
@@ -875,16 +978,16 @@
       box-shadow: var(--shadow-sm);
       margin-top: 1.5rem;
     }
-    .video-wrapper {
+    .cal-video-frame {
       position: relative;
       width: 100%;
       aspect-ratio: 16 / 9;
-      border-radius: 10px;
+      border-radius: 12px;
       overflow: hidden;
       background: #000;
       margin-bottom: 1.5rem;
     }
-    .video-wrapper iframe {
+    .cal-video-frame iframe {
       position: absolute;
       top: 0;
       left: 0;
@@ -892,54 +995,54 @@
       height: 100%;
       border: none;
     }
-    .video-takeaways-grid {
+    .cal-video-takeaways {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1rem;
     }
     @media (min-width: 768px) {
-      .video-takeaways-grid {
+      .cal-video-takeaways {
         grid-template-columns: repeat(3, 1fr);
       }
     }
-    .takeaway-box {
-      background: var(--bg-alt);
-      border: 1px solid var(--border-light);
+    .cal-takeaway-item {
+      background: #F9FAFB;
+      border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 1rem;
+      padding: 1.1rem;
     }
-    .takeaway-tag {
+    .cal-takeaway-label {
       font-size: 0.72rem;
       font-weight: 800;
-      color: var(--accent);
+      color: var(--text);
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.35rem;
     }
-    .takeaway-desc {
+    .cal-takeaway-text {
       font-size: 0.88rem;
       color: var(--text-muted);
       line-height: 1.5;
     }
 
-    /* Product Cards Grid */
-    .product-grid {
+    /* Product Cards Grid (Cal.com App Store Style) */
+    .cal-product-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.5rem;
       margin-top: 2rem;
     }
     @media (min-width: 600px) {
-      .product-grid {
+      .cal-product-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
     @media (min-width: 990px) {
-      .product-grid {
+      .cal-product-grid {
         grid-template-columns: repeat(3, 1fr);
       }
     }
-    .product-card {
+    .cal-product-card {
       background: #FFFFFF;
       border: 1px solid var(--border);
       border-radius: var(--radius);
@@ -947,66 +1050,67 @@
       box-shadow: var(--shadow-sm);
       display: flex;
       flex-direction: column;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     }
-    .product-card:hover {
+    .cal-product-card:hover {
       transform: translateY(-2px);
-      box-shadow: var(--shadow-md);
+      box-shadow: var(--shadow-card);
+      border-color: var(--border-dark);
     }
-    .product-packshot {
+    .cal-packshot-wrap {
       position: relative;
       width: 100%;
       aspect-ratio: 1 / 1;
       background: #FFFFFF;
-      padding: 1.25rem;
+      padding: 1.5rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-bottom: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border);
     }
-    .product-packshot img {
+    .cal-packshot-wrap img {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
       display: block;
     }
-    .product-details {
+    .cal-product-body {
       padding: 1.25rem;
       flex: 1;
       display: flex;
       flex-direction: column;
     }
-    .product-price {
-      font-size: 0.85rem;
+    .cal-product-price {
+      font-size: 0.84rem;
       font-weight: 800;
       color: var(--accent);
       margin-bottom: 0.25rem;
     }
-    .product-name {
+    .cal-product-name {
       font-family: var(--font-display);
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       font-weight: 700;
       color: var(--text);
       margin-bottom: 0.5rem;
       line-height: 1.35;
     }
-    .product-target {
-      font-size: 0.84rem;
+    .cal-product-desc {
+      font-size: 0.85rem;
       color: var(--text-muted);
       margin-bottom: 0.75rem;
-      line-height: 1.45;
+      line-height: 1.5;
     }
-    .product-active-chip {
+    .cal-product-chip {
       margin-top: auto;
       padding-top: 0.75rem;
       border-top: 1px dashed var(--border);
       font-size: 0.78rem;
-      font-weight: 700;
+      font-weight: 600;
       color: var(--text-soft);
     }
 
-    /* Custom Tables */
-    .table-container {
+    /* Cal.com Custom Table */
+    .cal-table-wrap {
       overflow-x: auto;
       margin-top: 1.5rem;
       border: 1px solid var(--border);
@@ -1014,54 +1118,54 @@
       background: #FFFFFF;
       box-shadow: var(--shadow-sm);
     }
-    table.custom-table {
+    table.cal-table {
       width: 100%;
       border-collapse: collapse;
       text-align: left;
       font-size: 0.9rem;
     }
-    table.custom-table th {
-      background: var(--bg-alt);
+    table.cal-table th {
+      background: #FAFAFA;
       color: var(--text);
       font-weight: 700;
-      padding: 1rem;
+      padding: 1rem 1.25rem;
       border-bottom: 1px solid var(--border);
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       text-transform: uppercase;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.05em;
     }
-    table.custom-table td {
-      padding: 1rem;
-      border-bottom: 1px solid var(--border-light);
+    table.cal-table td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
       color: var(--text-muted);
       vertical-align: top;
-      line-height: 1.5;
+      line-height: 1.55;
     }
-    table.custom-table tr:last-child td {
+    table.cal-table tr:last-child td {
       border-bottom: none;
     }
-    table.custom-table tr:hover td {
-      background: #FFFAF5;
+    table.cal-table tr:hover td {
+      background: #F9FAFB;
     }
 
     /* Accordion FAQ */
-    .faq-list {
+    .cal-faq-list {
       margin-top: 1.5rem;
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
     }
-    .faq-item {
+    .cal-faq-item {
       border: 1px solid var(--border);
       border-radius: 12px;
       background: #FFFFFF;
       overflow: hidden;
       transition: border-color 0.15s ease;
     }
-    .faq-item:hover {
-      border-color: var(--accent);
+    .cal-faq-item:hover {
+      border-color: var(--border-dark);
     }
-    .faq-question {
+    .cal-faq-q {
       width: 100%;
       text-align: left;
       background: none;
@@ -1077,70 +1181,70 @@
       align-items: center;
       gap: 1rem;
     }
-    .faq-icon {
+    .cal-faq-icon {
       font-size: 1.2rem;
       font-weight: 400;
-      color: var(--accent);
+      color: var(--text-soft);
       transition: transform 0.2s ease;
     }
-    .faq-item.open .faq-icon {
+    .cal-faq-item.open .cal-faq-icon {
       transform: rotate(45deg);
     }
-    .faq-answer {
+    .cal-faq-a {
       display: none;
       padding: 0 1.5rem 1.25rem;
       font-size: 0.95rem;
       color: var(--text-muted);
       line-height: 1.6;
-      border-top: 1px solid var(--bg-alt);
+      border-top: 1px solid #F3F4F6;
     }
-    .faq-item.open .faq-answer {
+    .cal-faq-item.open .cal-faq-a {
       display: block;
     }
 
-    /* CTA Banner */
-    .cta-banner {
-      background: linear-gradient(135deg, #FFF3EB 0%, #FFE8D6 100%);
-      border: 1px solid var(--accent-card);
-      border-radius: var(--radius);
-      padding: 2.5rem 2rem;
-      margin-top: 3.5rem;
+    /* Cal.com CTA Banner */
+    .cal-cta-section {
+      background: #111827;
+      border-radius: var(--radius-lg);
+      padding: 3rem 2rem;
+      margin-top: 4rem;
       text-align: center;
+      color: #FFFFFF;
     }
-    .cta-banner h3 {
+    .cal-cta-section h3 {
       font-family: var(--font-display);
-      font-size: 1.75rem;
+      font-size: 2rem;
       font-weight: 700;
-      color: var(--text);
       margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
     }
-    .cta-banner p {
-      color: var(--text-muted);
+    .cal-cta-section p {
+      color: #9CA3AF;
       font-size: 1.05rem;
-      max-width: 650px;
-      margin: 0 auto 1.5rem;
+      max-width: 600px;
+      margin: 0 auto 1.75rem;
     }
-    .cta-btn-large {
+    .cal-cta-btn {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: var(--accent);
-      color: #fff;
+      background: #FFFFFF;
+      color: #111827;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 0.95rem;
       padding: 0.85rem 1.75rem;
       border-radius: 9999px;
       text-decoration: none;
-      transition: background 0.2s ease, transform 0.15s ease;
+      transition: background 0.15s ease, transform 0.15s ease;
     }
-    .cta-btn-large:hover {
-      background: var(--accent-dark);
+    .cal-cta-btn:hover {
+      background: #F3F4F6;
       transform: translateY(-2px);
     }
 
-    /* Footer */
+    /* Minimalist Footer */
     footer.site-footer {
-      background: var(--bg-alt);
+      background: #FAFAFA;
       border-top: 1px solid var(--border);
       padding: 3.5rem 1.5rem 2rem;
       margin-top: 4rem;
@@ -1148,7 +1252,7 @@
       color: var(--text-muted);
     }
     .footer-container {
-      max-width: 1140px;
+      max-width: 1160px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 2fr 1fr 1fr;
@@ -1174,10 +1278,10 @@
       transition: color 0.15s ease;
     }
     .footer-col a:hover {
-      color: var(--accent);
+      color: var(--text);
     }
     .footer-bottom {
-      max-width: 1140px;
+      max-width: 1160px;
       margin: 2.5rem auto 0;
       padding-top: 1.5rem;
       border-top: 1px solid var(--border);
@@ -1199,18 +1303,16 @@
 </head>
 <body>
 
-  <!-- Trust Top Bar -->
-  <div class="trust-bar">
-    <span>Dermatology Reviewed</span>
+  <!-- Cal.com Top Announcement Bar -->
+  <div class="cal-top-bar">
+    <span><span class="status-dot"></span> Verified by Board-Certified Dermatologists</span>
     <span>•</span>
-    <span>Evidence-Based Care</span>
+    <span>South Asian Skin Phototypes</span>
     <span>•</span>
-    <span>Indian Skin Types &amp; Climate</span>
-    <span>•</span>
-    <span class="trust-verified">Updated October 2026</span>
+    <span>Updated October 2026</span>
   </div>
 
-  <!-- Sticky Navigation -->
+  <!-- Cal.com Sticky Navigation -->
   <nav class="site-header">
     <div class="nav-container">
       <a href="/" class="nav-brand" aria-label="MyMirror Home">
@@ -1221,8 +1323,10 @@
         <li><a href="/acne/face-map/">Skin Map</a></li>
         <li><a href="/acne/chin-acne-meaning/">Chin Acne</a></li>
         <li><a href="/acne/nodule-cyst/">Nodules vs Cysts</a></li>
-        <li><a href="/acne/face-map/" class="nav-cta-btn">Free Skin Scan ✨</a></li>
       </ul>
+      <div class="nav-actions">
+        <a href="/acne/face-map/" class="nav-primary-btn">Scan My Skin ✨</a>
+      </div>
     </div>
   </nav>
 
@@ -1237,13 +1341,16 @@
 
   <main class="page-layout">
 
-    <!-- Hero Section (Cal.com Inspired 2-Column Grid) -->
+    <!-- Cal.com Inspired 2-Column Hero Section -->
     <section class="hero-container">
       <div class="hero-grid">
         
         <!-- Left Hero Content -->
         <div>
-          <div class="hero-badge">Clinical Dermatology Guide • Deep Acne Care</div>
+          <div class="hero-badge-row">
+            <span class="cal-badge cal-badge-accent">Clinical Protocol</span>
+            <span class="cal-badge">Deep Acne Care</span>
+          </div>
           <h1 class="hero-title">Pimple Under Skin (Blind Pimple) Treatment &amp; Care in India</h1>
           <p class="hero-lead">Waking up with a painful, throbbing lump beneath your skin that you can feel with your fingers but cannot see a head on? Here is why deep blind pimples hurt, how to safely draw them out without popping, and doctor-approved pharmacy solutions in India.</p>
 
@@ -1263,7 +1370,7 @@
           <div class="hero-takeaways">
             <div class="takeaway-pill">
               <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-              <span>Located deep in the dermis near nerve endings</span>
+              <span>Located deep in dermis near sensory nerve endings</span>
             </div>
             <div class="takeaway-pill">
               <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
@@ -1280,49 +1387,125 @@
           </div>
         </div>
 
-        <!-- Right Hero Interactive Segmented Decoder (Cal.com Style) -->
+        <!-- Right Hero: Cal.com Styled Clinical Scheduler Widget -->
         <div>
-          <div class="decoder-card">
-            <span class="decoder-badge">Interactive Self-Check</span>
-            <h3 class="decoder-title">Blind Pimple Decoder Tool</h3>
+          <div class="cal-scheduler-card">
             
-            <div class="decoder-tabs">
-              <button class="decoder-tab active" onclick="switchDecoderTab(event, 'tab-blind')">1. Blind Lump</button>
-              <button class="decoder-tab" onclick="switchDecoderTab(event, 'tab-surface')">2. White Tip</button>
-              <button class="decoder-tab" onclick="switchDecoderTab(event, 'tab-mark')">3. Dark Mark</button>
+            <div class="cal-card-header">
+              <div class="cal-header-left">
+                <div class="cal-avatar">BP</div>
+                <div>
+                  <div class="cal-header-title">Clinical Triage Scheduler</div>
+                  <div class="cal-header-sub">Blind Pimple Recovery Protocol</div>
+                </div>
+              </div>
+              <span class="cal-live-chip"><span class="status-dot"></span> Live Guide</span>
             </div>
 
-            <div id="tab-blind" class="decoder-result-box">
-              <div class="decoder-row">
-                <span class="tag-meaning">Diagnosis</span>
-                <p class="decoder-text"><strong>Blind Pimple (Deep Acne Nodule):</strong> A tender, firm marble under the skin. It throbs when touched and has zero white head.</p>
+            <div class="cal-card-body">
+              <div class="cal-step-label">Select Bump Stage:</div>
+              
+              <div class="cal-segmented-tabs">
+                <button class="cal-tab-btn active" onclick="switchCalPhase(event, 'phase-1')">Day 1-2 (Acute)</button>
+                <button class="cal-tab-btn" onclick="switchCalPhase(event, 'phase-2')">Day 3-5 (Draw)</button>
+                <button class="cal-tab-btn" onclick="switchCalPhase(event, 'phase-3')">Day 6+ (Mark)</button>
               </div>
-              <div class="decoder-row">
-                <span class="tag-solution">Action Plan</span>
-                <p class="decoder-text">Apply a wrapped ice cube for 5 minutes to calm swelling. Do not squeeze. Dab a pinhead dot of 2.5% Benzoyl Peroxide and shield with a patch.</p>
+
+              <!-- Phase 1 Content -->
+              <div id="phase-1" class="cal-phase-content">
+                <div class="cal-slot-list">
+                  <div class="cal-slot-item">
+                    <div class="cal-slot-time">
+                      <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                      <span>Morning</span>
+                    </div>
+                    <span class="cal-slot-action">Ice compress wrapped in cloth (5 mins)</span>
+                    <span class="cal-slot-tag">Shrink</span>
+                  </div>
+                  <div class="cal-slot-item">
+                    <div class="cal-slot-time">
+                      <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                      <span>Afternoon</span>
+                    </div>
+                    <span class="cal-slot-action">Microdart patch shield</span>
+                    <span class="cal-slot-tag">Protect</span>
+                  </div>
+                  <div class="cal-slot-item">
+                    <div class="cal-slot-time">
+                      <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                      <span>Night</span>
+                    </div>
+                    <span class="cal-slot-action">Pinhead dot 2.5% BPO (Benzac AC)</span>
+                    <span class="cal-slot-tag">Neutralize</span>
+                  </div>
+                </div>
               </div>
+
+              <!-- Phase 2 Content -->
+              <div id="phase-2" class="cal-phase-content" style="display: none;">
+                <div class="cal-slot-list">
+                  <div class="cal-slot-item">
+                    <div class="cal-slot-time">
+                      <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                      <span>Morning</span>
+                    </div>
+                    <span class="cal-slot-action">Warm moist compress (10 mins)</span>
+                    <span class="cal-slot-tag">Circulate</span>
+                  </div>
+                  <div class="cal-slot-item">
+                    <div class="cal-slot-time">
+                      <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                      <span>Midday</span>
+                    </div>
+                    <span class="cal-slot-action">Warm moist compress repeat</span>
+                    <span class="cal-slot-tag">Draw Out</span>
+                  </div>
+                  <div class="cal-slot-item">
+                    <div class="cal-slot-time">
+                      <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                      <span>Night</span>
+                    </div>
+                    <span class="cal-slot-action">Sebogel (2% Salicylic Acid) dot</span>
+                    <span class="cal-slot-tag">Unclog</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phase 3 Content -->
+              <div id="phase-3" class="cal-phase-content" style="display: none;">
+                <div class="cal-slot-list">
+                  <div class="cal-slot-item">
+                    <div class="cal-slot-time">
+                      <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                      <span>Morning</span>
+                    </div>
+                    <span class="cal-slot-action">Broad-spectrum SPF 50 sunscreen</span>
+                    <span class="cal-slot-tag">Block UV</span>
+                  </div>
+                  <div class="cal-slot-item">
+                    <div class="cal-slot-time">
+                      <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                      <span>Evening</span>
+                    </div>
+                    <span class="cal-slot-action">Ceramide barrier cream</span>
+                    <span class="cal-slot-tag">Hydrate</span>
+                  </div>
+                  <div class="cal-slot-item">
+                    <div class="cal-slot-time">
+                      <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                      <span>Night</span>
+                    </div>
+                    <span class="cal-slot-action">10% Azelaic Acid gel (Aziderm)</span>
+                    <span class="cal-slot-tag">Fade PIH</span>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
-            <div id="tab-surface" class="decoder-result-box" style="display: none;">
-              <div class="decoder-row">
-                <span class="tag-meaning">Diagnosis</span>
-                <p class="decoder-text"><strong>Surface Pustule / Whitehead:</strong> Shallow blemish with a visible yellow or white center sitting on top of the skin.</p>
-              </div>
-              <div class="decoder-row">
-                <span class="tag-solution">Action Plan</span>
-                <p class="decoder-text">Wash gently with 2% Salicylic Acid. Apply a standard hydrocolloid patch to absorb surface fluid. Resolves in 3-5 days.</p>
-              </div>
-            </div>
-
-            <div id="tab-mark" class="decoder-result-box" style="display: none;">
-              <div class="decoder-row">
-                <span class="tag-meaning">Diagnosis</span>
-                <p class="decoder-text"><strong>Post-Inflammatory Hyperpigmentation (PIH):</strong> Flat brown or dark spot left after deep tissue inflammation subsides.</p>
-              </div>
-              <div class="decoder-row">
-                <span class="tag-solution">Action Plan</span>
-                <p class="decoder-text">Stop all physical scrubbing. Apply 10% Azelaic Acid gel nightly and wear broad-spectrum SPF 50 sunscreen daily.</p>
-              </div>
+            <div class="cal-card-footer">
+              <span class="cal-footer-note">Protocol updates automatically</span>
+              <button class="cal-confirm-btn" onclick="alert('Recovery routine applied! Remember: never squeeze or pierce blind pimples.')">Confirm Routine</button>
             </div>
 
           </div>
@@ -1331,7 +1514,7 @@
       </div>
     </section>
 
-    <!-- Bento Grid Section (4 Cards) -->
+    <!-- Bento Grid Section (Cal.com Style Cards) -->
     <section class="content-section">
       <div class="section-header">
         <div class="section-eyebrow">Visual Framework</div>
@@ -1424,7 +1607,7 @@
       </div>
     </section>
 
-    <!-- Cal.com Styled 24-Hour Emergency SOS Protocol -->
+    <!-- Cal.com Styled Workflow Pipeline (The 24-Hour SOS Protocol) -->
     <section class="content-section">
       <div class="section-header">
         <div class="section-eyebrow">Emergency Response</div>
@@ -1432,33 +1615,33 @@
         <p class="section-subhead">A rapid three-phase plan to reduce swelling, stop throbbing pain, and shield the bump from damage.</p>
       </div>
 
-      <div class="timeline-container">
+      <div class="cal-workflow-grid">
         
-        <div class="timeline-card">
-          <span class="timeline-badge">First 24–48 Hours</span>
-          <div class="timeline-step-num">1</div>
-          <h3 class="timeline-title">Ice Compress</h3>
-          <p class="timeline-desc">Wrap an ice cube in a clean soft cotton cloth. Hold it gently against the throbbing bump for 5 minutes. The cold constricts dilated micro-vessels, numbs acute nerve pain, and reduces swelling.</p>
+        <div class="cal-workflow-card">
+          <div class="cal-workflow-step">Phase 1 • First 24–48 Hours</div>
+          <div class="cal-workflow-num">1</div>
+          <h3 class="cal-workflow-title">Ice Compress</h3>
+          <p class="cal-workflow-desc">Wrap an ice cube in a clean soft cotton cloth. Hold it gently against the throbbing bump for 5 minutes. The cold constricts dilated micro-vessels, numbs acute nerve pain, and reduces swelling.</p>
         </div>
 
-        <div class="timeline-card">
-          <span class="timeline-badge">Day 2 Onward</span>
-          <div class="timeline-step-num">2</div>
-          <h3 class="timeline-title">Warm Moist Compress</h3>
-          <p class="timeline-desc">Once acute throbbing subsides, apply a clean warm damp cloth for 10-15 minutes, three times daily. Gentle warmth dilates blood vessels, increasing white blood cell flow to dissolve the blockage naturally.</p>
+        <div class="cal-workflow-card">
+          <div class="cal-workflow-step">Phase 2 • Day 2 Onward</div>
+          <div class="cal-workflow-num">2</div>
+          <h3 class="cal-workflow-title">Warm Moist Compress</h3>
+          <p class="cal-workflow-desc">Once acute throbbing subsides, apply a clean warm damp cloth for 10-15 minutes, three times daily. Gentle warmth dilates blood vessels, increasing white blood cell flow to dissolve the blockage naturally.</p>
         </div>
 
-        <div class="timeline-card">
-          <span class="timeline-badge">Targeted Seal</span>
-          <div class="timeline-step-num">3</div>
-          <h3 class="timeline-title">Active Dot + Patch</h3>
-          <p class="timeline-desc">Apply a pinhead dot of 2.5% Benzoyl Peroxide (Benzac AC) or Sebogel, then seal with a microdart or hydrocolloid patch. This stops finger touching and delivers actives directly into the blemish.</p>
+        <div class="cal-workflow-card">
+          <div class="cal-workflow-step">Phase 3 • Targeted Seal</div>
+          <div class="cal-workflow-num">3</div>
+          <h3 class="cal-workflow-title">Active Dot + Patch</h3>
+          <p class="cal-workflow-desc">Apply a pinhead dot of 2.5% Benzoyl Peroxide (Benzac AC) or Sebogel, then seal with a microdart or hydrocolloid patch. This stops finger touching and delivers actives directly into the blemish.</p>
         </div>
 
       </div>
     </section>
 
-    <!-- Interactive 5-Question Diagnostic Assessment -->
+    <!-- Cal.com Styled Diagnostic Check (Interactive Quiz) -->
     <section class="content-section">
       <div class="section-header">
         <div class="section-eyebrow">Clinical Self-Assessment</div>
@@ -1466,51 +1649,51 @@
         <p class="section-subhead">Answer these 5 quick questions to identify your bump severity and get personalized care advice.</p>
       </div>
 
-      <div class="quiz-box">
+      <div class="cal-quiz-card">
         
-        <div class="quiz-question-row">
-          <span class="quiz-q-text">1. Does the bump feel like a hard, tender lump under your skin without a visible white head?</span>
-          <div class="quiz-options">
-            <button class="quiz-btn" onclick="selectQuizOption(this, 1, 'yes')">Yes</button>
-            <button class="quiz-btn" onclick="selectQuizOption(this, 1, 'no')">No</button>
+        <div class="cal-quiz-row">
+          <span class="cal-quiz-text">1. Does the bump feel like a hard, tender lump under your skin without a visible white head?</span>
+          <div class="cal-quiz-buttons">
+            <button class="cal-quiz-btn" onclick="selectCalQuiz(this, 1, 'yes')">Yes</button>
+            <button class="cal-quiz-btn" onclick="selectCalQuiz(this, 1, 'no')">No</button>
           </div>
         </div>
 
-        <div class="quiz-question-row">
-          <span class="quiz-q-text">2. Does the area throb or ache even when you are not touching your face?</span>
-          <div class="quiz-options">
-            <button class="quiz-btn" onclick="selectQuizOption(this, 2, 'yes')">Yes</button>
-            <button class="quiz-btn" onclick="selectQuizOption(this, 2, 'no')">No</button>
+        <div class="cal-quiz-row">
+          <span class="cal-quiz-text">2. Does the area throb or ache even when you are not touching your face?</span>
+          <div class="cal-quiz-buttons">
+            <button class="cal-quiz-btn" onclick="selectCalQuiz(this, 2, 'yes')">Yes</button>
+            <button class="cal-quiz-btn" onclick="selectCalQuiz(this, 2, 'no')">No</button>
           </div>
         </div>
 
-        <div class="quiz-question-row">
-          <span class="quiz-q-text">3. Did you attempt to squeeze, pinch, or needle the bump already?</span>
-          <div class="quiz-options">
-            <button class="quiz-btn" onclick="selectQuizOption(this, 3, 'yes')">Yes</button>
-            <button class="quiz-btn" onclick="selectQuizOption(this, 3, 'no')">No</button>
+        <div class="cal-quiz-row">
+          <span class="cal-quiz-text">3. Did you attempt to squeeze, pinch, or needle the bump already?</span>
+          <div class="cal-quiz-buttons">
+            <button class="cal-quiz-btn" onclick="selectCalQuiz(this, 3, 'yes')">Yes</button>
+            <button class="cal-quiz-btn" onclick="selectCalQuiz(this, 3, 'no')">No</button>
           </div>
         </div>
 
-        <div class="quiz-question-row">
-          <span class="quiz-q-text">4. Is the bump located on your lower face (chin or jawline) or coinciding with your period?</span>
-          <div class="quiz-options">
-            <button class="quiz-btn" onclick="selectQuizOption(this, 4, 'yes')">Yes</button>
-            <button class="quiz-btn" onclick="selectQuizOption(this, 4, 'no')">No</button>
+        <div class="cal-quiz-row">
+          <span class="cal-quiz-text">4. Is the bump located on your lower face (chin or jawline) or coinciding with your period?</span>
+          <div class="cal-quiz-buttons">
+            <button class="cal-quiz-btn" onclick="selectCalQuiz(this, 4, 'yes')">Yes</button>
+            <button class="cal-quiz-btn" onclick="selectCalQuiz(this, 4, 'no')">No</button>
           </div>
         </div>
 
-        <div class="quiz-question-row">
-          <span class="quiz-q-text">5. Has the deep bump persisted for longer than 3 weeks without resolving?</span>
-          <div class="quiz-options">
-            <button class="quiz-btn" onclick="selectQuizOption(this, 5, 'yes')">Yes</button>
-            <button class="quiz-btn" onclick="selectQuizOption(this, 5, 'no')">No</button>
+        <div class="cal-quiz-row">
+          <span class="cal-quiz-text">5. Has the deep bump persisted for longer than 3 weeks without resolving?</span>
+          <div class="cal-quiz-buttons">
+            <button class="cal-quiz-btn" onclick="selectCalQuiz(this, 5, 'yes')">Yes</button>
+            <button class="cal-quiz-btn" onclick="selectCalQuiz(this, 5, 'no')">No</button>
           </div>
         </div>
 
-        <div id="quiz-result" class="quiz-result-card">
+        <div id="cal-quiz-box" class="cal-quiz-output">
           <h4 style="font-family: var(--font-display); color: var(--accent); margin-bottom: 0.5rem; font-size: 1.15rem;">Your Clinical Assessment Result</h4>
-          <p id="quiz-result-text" style="font-size: 0.95rem; color: var(--text); line-height: 1.6;"></p>
+          <p id="cal-quiz-msg" style="font-size: 0.95rem; color: var(--text); line-height: 1.6;"></p>
         </div>
 
       </div>
@@ -1524,8 +1707,8 @@
         <p class="section-subhead">Watch board-certified dermatologist Dr. Andrea Suarez (Dr. Dray) explain deep acne nodules, cyst anatomy, and safe treatments.</p>
       </div>
 
-      <div class="video-card">
-        <div class="video-wrapper">
+      <div class="cal-video-card">
+        <div class="cal-video-frame">
           <iframe 
             src="https://www.youtube-nocookie.com/embed/weJVasOX84k" 
             title="CYSTIC ACNE Q&A | DR DRAY" 
@@ -1535,18 +1718,18 @@
           </iframe>
         </div>
 
-        <div class="video-takeaways-grid">
-          <div class="takeaway-box">
-            <div class="takeaway-tag">1. Zero Exit Head</div>
-            <p class="takeaway-desc">Blind pimples do not have a passage to the skin surface. Squeezing drives bacteria sideways into deeper skin layers.</p>
+        <div class="cal-video-takeaways">
+          <div class="cal-takeaway-item">
+            <div class="cal-takeaway-label">1. Zero Exit Head</div>
+            <p class="cal-takeaway-text">Blind pimples do not have a passage to the skin surface. Squeezing drives bacteria sideways into deeper skin layers.</p>
           </div>
-          <div class="takeaway-box">
-            <div class="takeaway-tag">2. Ice Then Warmth</div>
-            <p class="takeaway-desc">Use cold compresses during the acute throbbing stage, then switch to warm compresses once the sharp pain calms down.</p>
+          <div class="cal-takeaway-item">
+            <div class="cal-takeaway-label">2. Ice Then Warmth</div>
+            <p class="cal-takeaway-text">Use cold compresses during the acute throbbing stage, then switch to warm compresses once the sharp pain calms down.</p>
           </div>
-          <div class="takeaway-box">
-            <div class="takeaway-tag">3. In-Clinic Steroid Shots</div>
-            <p class="takeaway-desc">For urgent, painful cysts, a single dilute cortisone injection from a dermatologist flattens the bump in 24 to 48 hours.</p>
+          <div class="cal-takeaway-item">
+            <div class="cal-takeaway-label">3. In-Clinic Steroid Shots</div>
+            <p class="cal-takeaway-text">For urgent, painful cysts, a single dilute cortisone injection from a dermatologist flattens the bump in 24 to 48 hours.</p>
           </div>
         </div>
       </div>
@@ -1560,24 +1743,24 @@
         <p class="section-subhead">Daily physical habits that quietly aggravate under-the-skin acne in Indian urban environments.</p>
       </div>
 
-      <div class="timeline-container">
+      <div class="cal-workflow-grid">
         
-        <div class="timeline-card">
-          <span class="timeline-badge">Friction Trigger</span>
-          <h3 class="timeline-title">1. Commuter Helmet Straps</h3>
-          <p class="timeline-desc">Tight two-wheeler helmet straps press heat, sweat, and road grime against the chin and jawline. This physical friction (Acne Mechanica) forces sebum into the dermis. Wipe helmet straps with an alcohol wipe weekly and place a fresh cotton handkerchief between the strap and your skin.</p>
+        <div class="cal-workflow-card">
+          <div class="cal-workflow-step">Friction Trigger</div>
+          <h3 class="cal-workflow-title">1. Commuter Helmet Straps</h3>
+          <p class="cal-workflow-desc">Tight two-wheeler helmet straps press heat, sweat, and road grime against the chin and jawline. This physical friction (Acne Mechanica) forces sebum into the dermis. Wipe helmet straps with an alcohol wipe weekly and place a fresh cotton handkerchief between the strap and your skin.</p>
         </div>
 
-        <div class="timeline-card">
-          <span class="timeline-badge">Salon Trigger</span>
-          <h3 class="timeline-title">2. Threading &amp; Waxing Trauma</h3>
-          <p class="timeline-desc">Aggressive parlor threading or waxing snaps facial vellus hair roots below the skin level. The injured follicle swells shut, creating deep, inflamed nodules that look and hurt like blind pimples. Cleanse with a gentle soothing gel immediately after parlor visits.</p>
+        <div class="cal-workflow-card">
+          <div class="cal-workflow-step">Salon Trigger</div>
+          <h3 class="cal-workflow-title">2. Threading &amp; Waxing Trauma</h3>
+          <p class="cal-workflow-desc">Aggressive parlor threading or waxing snaps facial vellus hair roots below the skin level. The injured follicle swells shut, creating deep, inflamed nodules that look and hurt like blind pimples. Cleanse with a gentle soothing gel immediately after parlor visits.</p>
         </div>
 
-        <div class="timeline-card">
-          <span class="timeline-badge">Night Routine</span>
-          <h3 class="timeline-title">3. Heavy Champi Hair Oils</h3>
-          <p class="timeline-desc">Leaving coconut or mustard hair oil overnight transfers onto pillow covers, where it seeps into facial pores while you sleep. These comedogenic oils form stubborn underground plugs. Wash hair before bed or tie hair in a silk bonnet.</p>
+        <div class="cal-workflow-card">
+          <div class="cal-workflow-step">Night Routine</div>
+          <h3 class="cal-workflow-title">3. Heavy Champi Hair Oils</h3>
+          <p class="cal-workflow-desc">Leaving coconut or mustard hair oil overnight transfers onto pillow covers, where it seeps into facial pores while you sleep. These comedogenic oils form stubborn underground plugs. Wash hair before bed or tie hair in a silk bonnet.</p>
         </div>
 
       </div>
@@ -1591,85 +1774,85 @@
         <p class="section-subhead">Affordable, proven Indian pharmacy essentials to soothe swelling, clear pore rims, and prevent post-acne marks.</p>
       </div>
 
-      <div class="product-grid">
+      <div class="cal-product-grid">
 
         <!-- Product 1 -->
-        <div class="product-card">
-          <div class="product-packshot">
+        <div class="cal-product-card">
+          <div class="cal-packshot-wrap">
             <picture>
               <source srcset="/assets/images/prod-benzac-ac-2-5-gel.webp" type="image/webp">
               <img src="/assets/images/prod-benzac-ac-2-5-gel.jpg" alt="Benzac AC 2.5% Gel" loading="lazy" width="220" height="220">
             </picture>
           </div>
-          <div class="product-details">
-            <span class="product-price">₹160 / 30g</span>
-            <h3 class="product-name">Benzac AC 2.5% Water-Based Gel</h3>
-            <p class="product-target">Best for: Red, swollen blind pimples and bacterial inflammation. Dries out blemish bacteria without peeling surrounding skin.</p>
-            <div class="product-active-chip">Active: 2.5% Micronized Benzoyl Peroxide</div>
+          <div class="cal-product-body">
+            <span class="cal-product-price">₹160 / 30g</span>
+            <h3 class="cal-product-name">Benzac AC 2.5% Water-Based Gel</h3>
+            <p class="cal-product-desc">Best for: Red, swollen blind pimples and bacterial inflammation. Dries out blemish bacteria without peeling surrounding skin.</p>
+            <div class="cal-product-chip">Active: 2.5% Micronized Benzoyl Peroxide</div>
           </div>
         </div>
 
         <!-- Product 2 -->
-        <div class="product-card">
-          <div class="product-packshot">
+        <div class="cal-product-card">
+          <div class="cal-packshot-wrap">
             <picture>
               <source srcset="/assets/images/prod-sebogel-acne-gel.webp" type="image/webp">
               <img src="/assets/images/prod-sebogel-acne-gel.jpg" alt="Sebogel Salicylic Acid Gel" loading="lazy" width="220" height="220">
             </picture>
           </div>
-          <div class="product-details">
-            <span class="product-price">₹240 / 30g</span>
-            <h3 class="product-name">Sebogel BHA + Niacinamide Gel</h3>
-            <p class="product-target">Best for: Clearing clogged follicle rims and calming redness. Oil-soluble formula breaks down sticky sebum plugs.</p>
-            <div class="product-active-chip">Actives: 2% Salicylic Acid, 6% Niacinamide</div>
+          <div class="cal-product-body">
+            <span class="cal-product-price">₹240 / 30g</span>
+            <h3 class="cal-product-name">Sebogel BHA + Niacinamide Gel</h3>
+            <p class="cal-product-desc">Best for: Clearing clogged follicle rims and calming redness. Oil-soluble formula breaks down sticky sebum plugs.</p>
+            <div class="cal-product-chip">Actives: 2% Salicylic Acid, 6% Niacinamide</div>
           </div>
         </div>
 
         <!-- Product 3 -->
-        <div class="product-card">
-          <div class="product-packshot">
+        <div class="cal-product-card">
+          <div class="cal-packshot-wrap">
             <picture>
               <source srcset="/assets/images/prod-aziderm-10-gel.webp" type="image/webp">
               <img src="/assets/images/prod-aziderm-10-gel.jpg" alt="Aziderm 10% Azelaic Acid Gel" loading="lazy" width="220" height="220">
             </picture>
           </div>
-          <div class="product-details">
-            <span class="product-price">₹315 / 15g</span>
-            <h3 class="product-name">Aziderm 10% Azelaic Acid Gel</h3>
-            <p class="product-target">Best for: Halting dark brown marks (PIH) and soothing lingering redness once the swelling flattens down.</p>
-            <div class="product-active-chip">Active: 10% Azelaic Acid</div>
+          <div class="cal-product-body">
+            <span class="cal-product-price">₹315 / 15g</span>
+            <h3 class="cal-product-name">Aziderm 10% Azelaic Acid Gel</h3>
+            <p class="cal-product-desc">Best for: Halting dark brown marks (PIH) and soothing lingering redness once the swelling flattens down.</p>
+            <div class="cal-product-chip">Active: 10% Azelaic Acid</div>
           </div>
         </div>
 
         <!-- Product 4 -->
-        <div class="product-card">
-          <div class="product-packshot">
+        <div class="cal-product-card">
+          <div class="cal-packshot-wrap">
             <picture>
               <source srcset="/assets/images/prod-minimalist-2-sa-cleanser.webp" type="image/webp">
               <img src="/assets/images/prod-minimalist-2-sa-cleanser.jpg" alt="Minimalist 2% Salicylic Acid Cleanser" loading="lazy" width="220" height="220">
             </picture>
           </div>
-          <div class="product-details">
-            <span class="product-price">₹299 / 100ml</span>
-            <h3 class="product-name">Minimalist 2% Salicylic Acid Cleanser</h3>
-            <p class="product-target">Best for: Dissolving surface oils and dead skin buildup without stripping delicate facial moisture lipids.</p>
-            <div class="product-active-chip">Actives: 2% Salicylic Acid, Zinc PCA, LHA</div>
+          <div class="cal-product-body">
+            <span class="cal-product-price">₹299 / 100ml</span>
+            <h3 class="cal-product-name">Minimalist 2% Salicylic Acid Cleanser</h3>
+            <p class="cal-product-desc">Best for: Dissolving surface oils and dead skin buildup without stripping delicate facial moisture lipids.</p>
+            <div class="cal-product-chip">Actives: 2% Salicylic Acid, Zinc PCA, LHA</div>
           </div>
         </div>
 
         <!-- Product 5 -->
-        <div class="product-card">
-          <div class="product-packshot">
+        <div class="cal-product-card">
+          <div class="cal-packshot-wrap">
             <picture>
               <source srcset="/assets/images/prod-minimalist-ceramide-cream.webp" type="image/webp">
               <img src="/assets/images/prod-minimalist-ceramide-cream.jpg" alt="Minimalist Ceramide Barrier Cream" loading="lazy" width="220" height="220">
             </picture>
           </div>
-          <div class="product-details">
-            <span class="product-price">₹399 / 50g</span>
-            <h3 class="product-name">Minimalist Ceramide Barrier Cream</h3>
-            <p class="product-target">Best for: Repairing moisture barriers sensitized by spot treatments, preventing dry flaking and reactive breakouts.</p>
-            <div class="product-active-chip">Actives: 0.3% Pure Ceramides, Madecassoside</div>
+          <div class="cal-product-body">
+            <span class="cal-product-price">₹399 / 50g</span>
+            <h3 class="cal-product-name">Minimalist Ceramide Barrier Cream</h3>
+            <p class="cal-product-desc">Best for: Repairing moisture barriers sensitized by spot treatments, preventing dry flaking and reactive breakouts.</p>
+            <div class="cal-product-chip">Actives: 0.3% Pure Ceramides, Madecassoside</div>
           </div>
         </div>
 
@@ -1684,8 +1867,8 @@
         <p class="section-subhead">Understanding how deep tissue location dictates the healing timeline and scarring risk.</p>
       </div>
 
-      <div class="table-container">
-        <table class="custom-table">
+      <div class="cal-table-wrap">
+        <table class="cal-table">
           <thead>
             <tr>
               <th>Feature</th>
@@ -1755,84 +1938,84 @@
         <p class="section-subhead">Evidence-based answers to the most common questions about blind pimples and deep under-skin breakouts.</p>
       </div>
 
-      <div class="faq-list">
+      <div class="cal-faq-list">
 
-        <div class="faq-item open">
-          <button class="faq-question" onclick="toggleFaq(this)">
+        <div class="cal-faq-item open">
+          <button class="cal-faq-q" onclick="toggleCalFaq(this)">
             <span>How long does a pimple under the skin take to go away?</span>
-            <span class="faq-icon">+</span>
+            <span class="cal-faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="cal-faq-a">
             With proper care—using cold compresses in the first 24 hours, followed by warm compresses and a 2.5% benzoyl peroxide or salicylic acid spot treatment—a blind pimple usually softens and flattens within 7 to 14 days. If squeezed or picked, the inflammation spreads, and the bump can persist for a month or longer while leaving a deep scar.
           </div>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
+        <div class="cal-faq-item">
+          <button class="cal-faq-q" onclick="toggleCalFaq(this)">
             <span>Can I pop a blind pimple if I use a sterilized needle?</span>
-            <span class="faq-icon">+</span>
+            <span class="cal-faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="cal-faq-a">
             No. Never use needles or pins on a blind pimple. Because the infection is located deep within the dermis layer and has no natural surface channel, sticking a needle into the skin damages healthy tissue, causes bleeding, introduces foreign bacteria, and creates permanent pitted scars.
           </div>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
+        <div class="cal-faq-item">
+          <button class="cal-faq-q" onclick="toggleCalFaq(this)">
             <span>Should I use ice or a warm compress on a blind pimple?</span>
-            <span class="faq-icon">+</span>
+            <span class="cal-faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="cal-faq-a">
             Use both, but at different stages. During the first 24 to 48 hours when the bump is actively throbbing, swollen, and red, apply a wrapped ice cube for 5 minutes at a time to constrict blood vessels and calm pain. From Day 2 onward, switch to warm moist compresses for 10 to 15 minutes, three times daily, to encourage circulation and help the body clear the trapped contents.
           </div>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
+        <div class="cal-faq-item">
+          <button class="cal-faq-q" onclick="toggleCalFaq(this)">
             <span>Do regular pimple patches work on blind pimples?</span>
-            <span class="faq-icon">+</span>
+            <span class="cal-faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="cal-faq-a">
             Standard flat hydrocolloid patches work primarily by absorbing surface fluid from open or whitehead pimples. However, on a blind pimple, they still serve as an excellent physical shield to stop finger picking and prevent bacterial contamination. For active delivery, specialized microdart pimple patches with dissolving active cones work significantly better on deep bumps.
           </div>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
+        <div class="cal-faq-item">
+          <button class="cal-faq-q" onclick="toggleCalFaq(this)">
             <span>What is the best pharmacy cream for blind pimples in India?</span>
-            <span class="faq-icon">+</span>
+            <span class="cal-faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="cal-faq-a">
             For red, painful, and tender bumps, Benzac AC 2.5% Gel (Micronized Benzoyl Peroxide) is the gold standard for reducing bacterial load without excessive peeling. For firm, non-tender clogged bumps, Sebogel (2% Salicylic Acid + 6% Niacinamide) helps clear pore blockage.
           </div>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
+        <div class="cal-faq-item">
+          <button class="cal-faq-q" onclick="toggleCalFaq(this)">
             <span>Does applying toothpaste help dry out a blind pimple?</span>
-            <span class="faq-icon">+</span>
+            <span class="cal-faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="cal-faq-a">
             No. Toothpaste contains menthol, sodium lauryl sulfate (SLS), hydrogen peroxide, and flavorings designed for tooth enamel, not facial skin. Applying toothpaste causes irritant contact dermatitis and chemical burns on Indian skin, leaving behind a dark, burnt patch that takes months to fade.
           </div>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
+        <div class="cal-faq-item">
+          <button class="cal-faq-q" onclick="toggleCalFaq(this)">
             <span>How do dermatologists treat a blind pimple fast?</span>
-            <span class="faq-icon">+</span>
+            <span class="cal-faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="cal-faq-a">
             Dermatologists use an in-clinic procedure called an intralesional corticosteroid injection (diluted triamcinolone). A tiny amount is injected directly into the nodule, reducing inflammation and flattening the lump within 24 to 48 hours with minimal scarring risk.
           </div>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">
+        <div class="cal-faq-item">
+          <button class="cal-faq-q" onclick="toggleCalFaq(this)">
             <span>How can I prevent dark spots (PIH) after a blind pimple heals?</span>
-            <span class="faq-icon">+</span>
+            <span class="cal-faq-icon">+</span>
           </button>
-          <div class="faq-answer">
+          <div class="cal-faq-a">
             Never squeeze or pick the bump, as physical trauma triggers excess melanin production. Once the swelling flattens, apply 10% Azelaic Acid gel (Aziderm) nightly and wear broad-spectrum SPF 50 sunscreen daily to prevent UV rays from darkening the healing skin.
           </div>
         </div>
@@ -1840,11 +2023,11 @@
       </div>
     </section>
 
-    <!-- Cal.com Inspired CTA Banner -->
-    <div class="cta-banner">
+    <!-- Cal.com Styled High-Impact Dark CTA Banner -->
+    <div class="cal-cta-section">
       <h3>Analyze Your Breakout in 15 Seconds</h3>
       <p>Scan your face with MyMirror AI to get an instant 6-zone clinical breakdown of deep nodules, blackheads, and skin barrier health.</p>
-      <a href="/acne/face-map/" class="cta-btn-large">
+      <a href="/acne/face-map/" class="cal-cta-btn">
         <span>Run Free Clinical Skin Scan</span>
         <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
       </a>
@@ -1885,43 +2068,43 @@
 
   <!-- Interactive Scripts -->
   <script>
-    function switchDecoderTab(evt, tabId) {
-      var panels = document.querySelectorAll('.decoder-result-box');
-      panels.forEach(function(p) { p.style.display = 'none'; });
-      
-      var tabs = document.querySelectorAll('.decoder-tab');
+    function switchCalPhase(evt, phaseId) {
+      var contents = document.querySelectorAll('.cal-phase-content');
+      contents.forEach(function(c) { c.style.display = 'none'; });
+
+      var tabs = document.querySelectorAll('.cal-tab-btn');
       tabs.forEach(function(t) { t.classList.remove('active'); });
 
-      document.getElementById(tabId).style.display = 'block';
+      document.getElementById(phaseId).style.display = 'block';
       evt.currentTarget.classList.add('active');
     }
 
-    var quizAnswers = {};
-    function selectQuizOption(btn, qNum, val) {
+    var calQuizAnswers = {};
+    function selectCalQuiz(btn, qNum, val) {
       var row = btn.parentElement;
-      var buttons = row.querySelectorAll('.quiz-btn');
+      var buttons = row.querySelectorAll('.cal-quiz-btn');
       buttons.forEach(function(b) { b.classList.remove('selected'); });
       btn.classList.add('selected');
-      quizAnswers[qNum] = val;
+      calQuizAnswers[qNum] = val;
 
-      if (Object.keys(quizAnswers).length >= 3) {
-        var resultBox = document.getElementById('quiz-result');
-        var resultText = document.getElementById('quiz-result-text');
-        resultBox.style.display = 'block';
+      if (Object.keys(calQuizAnswers).length >= 3) {
+        var box = document.getElementById('cal-quiz-box');
+        var msg = document.getElementById('cal-quiz-msg');
+        box.style.display = 'block';
 
-        if (quizAnswers[3] === 'yes') {
-          resultText.innerHTML = '<strong>Caution (Tissue Trauma):</strong> Because the bump was squeezed, the follicle wall has likely experienced mechanical trauma. Stop touching immediately. Apply cold compresses for 5 minutes, followed by a thin layer of 10% Azelaic Acid (Aziderm) to protect against post-inflammatory dark marks. Shield with a hydrocolloid patch to prevent finger contact.';
-        } else if (quizAnswers[1] === 'yes' && quizAnswers[2] === 'yes') {
-          resultText.innerHTML = '<strong>Active Blind Pimple (Acne Nodule):</strong> Your answers indicate a deep inflammatory nodule without a surface head. Follow the 24-Hour SOS Protocol: cold compress today to numb throbbing, switch to warm moist compresses tomorrow, and dab a pinhead dot of Benzac AC 2.5% at night.';
-        } else if (quizAnswers[5] === 'yes') {
-          resultText.innerHTML = '<strong>Persistent Chronic Nodule:</strong> Bumps lasting over 3 weeks require clinical evaluation. A dermatologist can offer a diluted cortisone injection for rapid resolution or evaluate for an underlying hormonal driver.';
+        if (calQuizAnswers[3] === 'yes') {
+          msg.innerHTML = '<strong>Caution (Tissue Trauma):</strong> Because the bump was squeezed, the follicle wall has likely experienced mechanical trauma. Stop touching immediately. Apply cold compresses for 5 minutes, followed by a thin layer of 10% Azelaic Acid (Aziderm) to protect against post-inflammatory dark marks. Shield with a hydrocolloid patch to prevent finger contact.';
+        } else if (calQuizAnswers[1] === 'yes' && calQuizAnswers[2] === 'yes') {
+          msg.innerHTML = '<strong>Active Blind Pimple (Acne Nodule):</strong> Your answers indicate a deep inflammatory nodule without a surface head. Follow the 24-Hour SOS Protocol: cold compress today to numb throbbing, switch to warm moist compresses tomorrow, and dab a pinhead dot of Benzac AC 2.5% at night.';
+        } else if (calQuizAnswers[5] === 'yes') {
+          msg.innerHTML = '<strong>Persistent Chronic Nodule:</strong> Bumps lasting over 3 weeks require clinical evaluation. A dermatologist can offer a diluted cortisone injection for rapid resolution or evaluate for an underlying hormonal driver.';
         } else {
-          resultText.innerHTML = '<strong>Mild Under-Skin Inflammation:</strong> Apply warm moist compresses for 10 minutes twice daily and use Sebogel (2% Salicylic Acid) at night to gently unclog the pore entrance.';
+          msg.innerHTML = '<strong>Mild Under-Skin Inflammation:</strong> Apply warm moist compresses for 10 minutes twice daily and use Sebogel (2% Salicylic Acid) at night to gently unclog the pore entrance.';
         }
       }
     }
 
-    function toggleFaq(btn) {
+    function toggleCalFaq(btn) {
       var item = btn.parentElement;
       item.classList.toggle('open');
     }
