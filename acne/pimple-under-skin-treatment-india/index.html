@@ -1300,14 +1300,73 @@
       }
     }
 
-    /* Cal.com "Don't just take our word for it" Grid */
-    .cal-ambassadors-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+    /* Cal.com "Don't just take our word for it" Horizontal Scroll Carousel */
+    .cal-ambassadors-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
       gap: 1.5rem;
-      margin-top: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .cal-carousel-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .cal-carousel-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: #FFFFFF;
+      color: var(--text);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .cal-carousel-btn:hover {
+      border-color: var(--text);
+      background: var(--text);
+      color: #FFFFFF;
+      transform: translateY(-1px);
+    }
+    .cal-carousel-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    .cal-carousel-track {
+      display: flex;
+      gap: 1.25rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      cursor: grab;
+      user-select: none;
+      padding: 0.5rem 0.25rem 1.5rem;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .cal-carousel-track::-webkit-scrollbar {
+      display: none;
+    }
+    .cal-carousel-track.grabbing {
+      cursor: grabbing;
+      scroll-behavior: auto;
+      scroll-snap-type: none;
     }
     .cal-ambassador-card {
+      flex: 0 0 380px;
+      width: 380px;
+      min-width: 380px;
+      max-width: calc(100vw - 3rem);
+      scroll-snap-align: start;
       background: #FFFFFF;
       border: 1px solid var(--border);
       border-radius: var(--radius);
@@ -1315,8 +1374,9 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
       position: relative;
+      box-sizing: border-box;
     }
     .cal-ambassador-card:hover {
       border-color: var(--border-dark);
@@ -1404,14 +1464,20 @@
       border-radius: 9999px;
       letter-spacing: -0.01em;
     }
-    @media (max-width: 960px) {
-      .cal-ambassadors-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    .cal-carousel-hint {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--text-soft);
     }
     @media (max-width: 640px) {
-      .cal-ambassadors-grid {
-        grid-template-columns: 1fr;
+      .cal-ambassador-card {
+        flex: 0 0 84vw;
+        width: 84vw;
+        min-width: 84vw;
+        padding: 1.35rem;
       }
     }
   </style>
@@ -2045,130 +2111,146 @@
 
     </section>
 
-    <!-- Cal.com Styled "Don't just take our word for it" Ambassador & Review Grid -->
+    <!-- Cal.com Styled "Don't just take our word for it" Ambassador & Review Scrollable Slider -->
     <section class="content-section">
-      <div class="section-header">
-        <div class="section-eyebrow">Verified Recovery Logs</div>
-        <h2 class="section-heading">Don’t just take our word for it</h2>
-        <p class="section-subhead">Our users and consulting dermatologists are our best ambassadors. Discover how thousands of Indians treat deep, painful blind pimples without leaving dark marks or scars.</p>
+      <div class="cal-ambassadors-header">
+        <div class="section-header" style="margin-bottom: 0;">
+          <div class="section-eyebrow">Verified Recovery Logs</div>
+          <h2 class="section-heading">Don’t just take our word for it</h2>
+          <p class="section-subhead">Our users and consulting dermatologists are our best ambassadors. Discover how thousands of Indians treat deep, painful blind pimples without leaving dark marks or scars.</p>
+        </div>
+        <div class="cal-carousel-controls">
+          <button class="cal-carousel-btn" onclick="slideAmbassadors(-1)" aria-label="Previous story">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button class="cal-carousel-btn" onclick="slideAmbassadors(1)" aria-label="Next story">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
       </div>
 
-      <div class="cal-ambassadors-grid">
+      <div class="cal-carousel-wrapper">
+        <div class="cal-carousel-track" id="cal-ambassadors-track">
 
-        <!-- Card 1 -->
-        <div class="cal-ambassador-card">
-          <div>
-            <div class="cal-ambassador-top">
-              <div class="cal-ambassador-user">
-                <div class="cal-avatar avatar-accent">AS</div>
-                <div class="cal-user-info">
-                  <h4>Ananya S., 24</h4>
-                  <p>Bengaluru • Combination Skin</p>
+          <!-- Card 1 -->
+          <div class="cal-ambassador-card">
+            <div>
+              <div class="cal-ambassador-top">
+                <div class="cal-ambassador-user">
+                  <div class="cal-avatar avatar-accent">AS</div>
+                  <div class="cal-user-info">
+                    <h4>Ananya S., 24</h4>
+                    <p>Bengaluru • Combination Skin</p>
+                  </div>
                 </div>
+                <span class="cal-badge-verified">✓ Verified Patient</span>
               </div>
-              <span class="cal-badge-verified">✓ Verified Patient</span>
+              <div class="cal-stars">★★★★★</div>
+              <p class="cal-quote-text">"Woke up three days before my sister's wedding with a red, throbbing lump on my chin. In college I would have squeezed it until it bled. Following the cold compress protocol and dotting 2.5% benzoyl peroxide flattened it in 48 hours without peeling my skin."</p>
             </div>
-            <div class="cal-stars">★★★★★</div>
-            <p class="cal-quote-text">"Woke up three days before my sister's wedding with a red, throbbing lump on my chin. In college I would have squeezed it until it bled. Following the cold compress protocol and dotting 2.5% benzoyl peroxide flattened it in 48 hours without peeling my skin."</p>
+            <span class="cal-card-pill">✓ 48-Hour Wedding SOS</span>
           </div>
-          <span class="cal-card-pill">✓ 48-Hour Wedding SOS</span>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="cal-ambassador-card">
-          <div>
-            <div class="cal-ambassador-top">
-              <div class="cal-ambassador-user">
-                <div class="cal-avatar">RM</div>
-                <div class="cal-user-info">
-                  <h4>Rohan M., 29</h4>
-                  <p>Mumbai • Oily &amp; Sweat-Prone</p>
+          <!-- Card 2 -->
+          <div class="cal-ambassador-card">
+            <div>
+              <div class="cal-ambassador-top">
+                <div class="cal-ambassador-user">
+                  <div class="cal-avatar">RM</div>
+                  <div class="cal-user-info">
+                    <h4>Rohan M., 29</h4>
+                    <p>Mumbai • Oily &amp; Sweat-Prone</p>
+                  </div>
                 </div>
+                <span class="cal-badge-verified">✓ Verified Patient</span>
               </div>
-              <span class="cal-badge-verified">✓ Verified Patient</span>
+              <div class="cal-stars">★★★★★</div>
+              <p class="cal-quote-text">"My full-face motorcycle helmet was causing painful blind bumps along my jawline every single month. Washing my strap weekly and using Sebogel at night broke the breakout cycle. No dark marks left behind."</p>
             </div>
-            <div class="cal-stars">★★★★★</div>
-            <p class="cal-quote-text">"My full-face motorcycle helmet was causing painful blind bumps along my jawline every single month. Washing my strap weekly and using Sebogel at night broke the breakout cycle. No dark marks left behind."</p>
+            <span class="cal-card-pill">✓ Helmet Friction Resolved</span>
           </div>
-          <span class="cal-card-pill">✓ Helmet Friction Resolved</span>
-        </div>
 
-        <!-- Card 3 -->
-        <div class="cal-ambassador-card">
-          <div>
-            <div class="cal-ambassador-top">
-              <div class="cal-ambassador-user">
-                <div class="cal-avatar avatar-accent">PK</div>
-                <div class="cal-user-info">
-                  <h4>Dr. Priya K., MD</h4>
-                  <p>Delhi NCR • Clinical Dermatologist</p>
+          <!-- Card 3 -->
+          <div class="cal-ambassador-card">
+            <div>
+              <div class="cal-ambassador-top">
+                <div class="cal-ambassador-user">
+                  <div class="cal-avatar avatar-accent">PK</div>
+                  <div class="cal-user-info">
+                    <h4>Dr. Priya K., MD</h4>
+                    <p>Delhi NCR • Clinical Dermatologist</p>
+                  </div>
                 </div>
+                <span class="cal-badge-verified">✓ Medical Reviewer</span>
               </div>
-              <span class="cal-badge-verified">✓ Medical Reviewer</span>
+              <div class="cal-stars">★★★★★</div>
+              <p class="cal-quote-text">"The biggest mistake patients make with cystic papules is applying raw garlic or toothpaste, which causes severe chemical burns on Indian skin. MyMirror's 3-phase cold, warm, and active topical sequence matches our outpatient clinical standard."</p>
             </div>
-            <div class="cal-stars">★★★★★</div>
-            <p class="cal-quote-text">"The biggest mistake patients make with cystic papules is applying raw garlic or toothpaste, which causes severe chemical burns on Indian skin. MyMirror's 3-phase cold, warm, and active topical sequence matches our outpatient clinical standard."</p>
+            <span class="cal-card-pill">✓ Clinical Dermatology Standard</span>
           </div>
-          <span class="cal-card-pill">✓ Clinical Dermatology Standard</span>
-        </div>
 
-        <!-- Card 4 -->
-        <div class="cal-ambassador-card">
-          <div>
-            <div class="cal-ambassador-top">
-              <div class="cal-ambassador-user">
-                <div class="cal-avatar">MD</div>
-                <div class="cal-user-info">
-                  <h4>Meera D., 22</h4>
-                  <p>Pune • Sensitive, PIH-Prone Skin</p>
+          <!-- Card 4 -->
+          <div class="cal-ambassador-card">
+            <div>
+              <div class="cal-ambassador-top">
+                <div class="cal-ambassador-user">
+                  <div class="cal-avatar">MD</div>
+                  <div class="cal-user-info">
+                    <h4>Meera D., 22</h4>
+                    <p>Pune • Sensitive, PIH-Prone Skin</p>
+                  </div>
                 </div>
+                <span class="cal-badge-verified">✓ Verified Patient</span>
               </div>
-              <span class="cal-badge-verified">✓ Verified Patient</span>
+              <div class="cal-stars">★★★★★</div>
+              <p class="cal-quote-text">"Deep bumps used to leave dark brown spots on my cheeks for six months. Sticking a hydrocolloid patch over micro-dosed Aziderm stopped me from touching my face and kept my skin barrier calm."</p>
             </div>
-            <div class="cal-stars">★★★★★</div>
-            <p class="cal-quote-text">"Deep bumps used to leave dark brown spots on my cheeks for six months. Sticking a hydrocolloid patch over micro-dosed Aziderm stopped me from touching my face and kept my skin barrier calm."</p>
+            <span class="cal-card-pill">✓ Zero Dark Marks (PIH)</span>
           </div>
-          <span class="cal-card-pill">✓ Zero Dark Marks (PIH)</span>
-        </div>
 
-        <!-- Card 5 -->
-        <div class="cal-ambassador-card">
-          <div>
-            <div class="cal-ambassador-top">
-              <div class="cal-ambassador-user">
-                <div class="cal-avatar">KT</div>
-                <div class="cal-user-info">
-                  <h4>Kabir T., 32</h4>
-                  <p>Hyderabad • Beard-Line Breakouts</p>
+          <!-- Card 5 -->
+          <div class="cal-ambassador-card">
+            <div>
+              <div class="cal-ambassador-top">
+                <div class="cal-ambassador-user">
+                  <div class="cal-avatar">KT</div>
+                  <div class="cal-user-info">
+                    <h4>Kabir T., 32</h4>
+                    <p>Hyderabad • Beard-Line Breakouts</p>
+                  </div>
                 </div>
+                <span class="cal-badge-verified">✓ Verified Patient</span>
               </div>
-              <span class="cal-badge-verified">✓ Verified Patient</span>
+              <div class="cal-stars">★★★★★</div>
+              <p class="cal-quote-text">"The triage calendar on this page made it simple to know what to apply in the morning versus bedtime. No 10-step routine needed. Simple Indian pharmacy actives like 2% salicylic acid cleanser did the job."</p>
             </div>
-            <div class="cal-stars">★★★★★</div>
-            <p class="cal-quote-text">"The triage calendar on this page made it simple to know what to apply in the morning versus bedtime. No 10-step routine needed. Simple Indian pharmacy actives like 2% salicylic acid cleanser did the job."</p>
+            <span class="cal-card-pill">✓ Simple Daily Routine</span>
           </div>
-          <span class="cal-card-pill">✓ Simple Daily Routine</span>
-        </div>
 
-        <!-- Card 6 -->
-        <div class="cal-ambassador-card">
-          <div>
-            <div class="cal-ambassador-top">
-              <div class="cal-ambassador-user">
-                <div class="cal-avatar avatar-accent">SR</div>
-                <div class="cal-user-info">
-                  <h4>Sneha R., 26</h4>
-                  <p>Chennai • Coastal Climate Acne</p>
+          <!-- Card 6 -->
+          <div class="cal-ambassador-card">
+            <div>
+              <div class="cal-ambassador-top">
+                <div class="cal-ambassador-user">
+                  <div class="cal-avatar avatar-accent">SR</div>
+                  <div class="cal-user-info">
+                    <h4>Sneha R., 26</h4>
+                    <p>Chennai • Coastal Climate Acne</p>
+                  </div>
                 </div>
+                <span class="cal-badge-verified">✓ Verified Patient</span>
               </div>
-              <span class="cal-badge-verified">✓ Verified Patient</span>
+              <div class="cal-stars">★★★★★</div>
+              <p class="cal-quote-text">"Humid weather always makes underground bumps swell fast. Wrapping an ice cube in a soft cloth calmed the sharp throbbing pain within 15 minutes before it could turn into a full cyst."</p>
             </div>
-            <div class="cal-stars">★★★★★</div>
-            <p class="cal-quote-text">"Humid weather always makes underground bumps swell fast. Wrapping an ice cube in a soft cloth calmed the sharp throbbing pain within 15 minutes before it could turn into a full cyst."</p>
+            <span class="cal-card-pill">✓ Fast Pain Relief</span>
           </div>
-          <span class="cal-card-pill">✓ Fast Pain Relief</span>
-        </div>
 
+        </div>
+      </div>
+      <div class="cal-carousel-hint">
+        <span>← Drag cards or click arrows to explore all stories</span>
+        <span>6 Verified Clinical Triage Logs</span>
       </div>
     </section>
 
@@ -2350,6 +2432,45 @@
       var item = btn.parentElement;
       item.classList.toggle('open');
     }
+
+    function slideAmbassadors(dir) {
+      var track = document.getElementById('cal-ambassadors-track');
+      if (!track) return;
+      var cardWidth = 400;
+      track.scrollBy({ left: cardWidth * dir, behavior: 'smooth' });
+    }
+
+    (function() {
+      var track = document.getElementById('cal-ambassadors-track');
+      if (!track) return;
+      var isDown = false;
+      var startX, scrollLeft;
+
+      track.addEventListener('mousedown', function(e) {
+        isDown = true;
+        track.classList.add('grabbing');
+        startX = e.pageX - track.offsetLeft;
+        scrollLeft = track.scrollLeft;
+      });
+
+      track.addEventListener('mouseleave', function() {
+        isDown = false;
+        track.classList.remove('grabbing');
+      });
+
+      track.addEventListener('mouseup', function() {
+        isDown = false;
+        track.classList.remove('grabbing');
+      });
+
+      track.addEventListener('mousemove', function(e) {
+        if (!isDown) return;
+        e.preventDefault();
+        var x = e.pageX - track.offsetLeft;
+        var walk = (x - startX) * 1.5;
+        track.scrollLeft = scrollLeft - walk;
+      });
+    })();
   </script>
 </body>
 </html>
