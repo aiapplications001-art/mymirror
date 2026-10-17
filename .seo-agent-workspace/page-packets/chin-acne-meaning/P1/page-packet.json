@@ -45,12 +45,53 @@
       "The 3 Types of Chin Bumps (Blind hormonal cysts, toothpaste irritation, clogged pores)",
       "The 4 Everyday Triggers (Hand-to-chin resting, toothpaste SLS runoff, phone screen bacteria, insulin surges)",
       "Clinical Do and Don\u2019t Rules (No popping blind lumps, ice compress relief, gentle chemical exfoliation)",
-      "Hormone vs Lifestyle Diagnostic Checklist (When to suspect PCOS or chronic stress cortisol)"
+      "Hormone vs Lifestyle Diagnostic Checklist (When to suspect PCOS or chronic stress cortisol)",
+      "The 28-Day Menstrual Skin Cycle (How estrogen, progesterone, and androgens trigger pre-period breakouts)",
+      "The 24-Hour SOS Emergency Rescue Plan (Ice compress, targeted active dab, and hydrocolloid patch)",
+      "Indian Climate & Lifestyle Triggers (Helmet chin straps, facial threading folliculitis, night champi oils)",
+      "Doctor-Approved Pharmacy Topicals (Salicylic acid, azelaic acid, micronized benzoyl peroxide)"
     ],
     "video": {
       "title": "How to treat PCOS acne | PCOS Pimples on Chin & Jawline | Dr Noopur Jain",
       "youtubeId": "TjTLV3Lb-Pc",
       "uploadDate": "2025-08-06T06:00:58-07:00"
-    }
+    },
+    "recommendations": [
+      {
+        "name": "Minimalist 2% Salicylic Acid Cleanser",
+        "price": "\u20b9299 / 100ml",
+        "bestFor": "Rough blackheads & friction plugs on chin",
+        "actives": "2% Salicylic Acid, LHA, Zinc PCA",
+        "image": "/acne/chin-acne-meaning/images/prod-minimalist-2-sa-cleanser.webp"
+      },
+      {
+        "name": "Aziderm 10% Azelaic Acid Gel",
+        "price": "\u20b9315 / 15g",
+        "bestFor": "Pre-period hormonal bumps & fading brown dark marks",
+        "actives": "10% Azelaic Acid",
+        "image": "/acne/chin-acne-meaning/images/prod-aziderm-10-gel.webp"
+      },
+      {
+        "name": "Benzac AC 2.5% Gel",
+        "price": "\u20b9160 / 30g",
+        "bestFor": "Inflamed red pimples & bacterial swelling",
+        "actives": "2.5% Micronized Benzoyl Peroxide",
+        "image": "/acne/chin-acne-meaning/images/prod-benzac-ac-2-5-gel.webp"
+      },
+      {
+        "name": "Sebogel Salicylic & Niacinamide Gel",
+        "price": "\u20b9240 / 30g",
+        "bestFor": "Balancing oiliness & smoothing chin texture",
+        "actives": "2% Salicylic Acid, 6% Niacinamide",
+        "image": "/acne/chin-acne-meaning/images/prod-sebogel-acne-gel.webp"
+      },
+      {
+        "name": "Minimalist Marula & Ceramide Barrier Cream",
+        "price": "\u20b9399 / 50g",
+        "bestFor": "Repairing skin stripped by toothpaste foam or harsh scrubs",
+        "actives": "0.3% Pure Ceramides, Madecassoside, Marula Oil",
+        "image": "/acne/chin-acne-meaning/images/prod-minimalist-ceramide-cream.webp"
+      }
+    ]
   }
 }
