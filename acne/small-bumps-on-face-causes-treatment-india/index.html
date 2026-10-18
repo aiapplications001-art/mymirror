@@ -578,6 +578,126 @@
       margin-bottom: 2rem;
     }
 
+    /* 3-Column Differential Grid */
+    .cal-differential-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    .cal-diff-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+    .cal-diff-card:hover {
+      box-shadow: var(--shadow-lift);
+      border-color: #D1D5DB;
+    }
+    .diff-pill {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.75rem;
+      width: fit-content;
+    }
+    .diff-pill.comedones {
+      background: #EFF6FF;
+      color: #1E40AF;
+      border: 1px solid #DBEAFE;
+    }
+    .diff-pill.fungal {
+      background: #FEF3C7;
+      color: #92400E;
+      border: 1px solid #FDE68A;
+    }
+    .diff-pill.milia {
+      background: #FEE2E2;
+      color: #991B1B;
+      border: 1px solid #FECACA;
+    }
+    .cal-diff-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.85rem;
+    }
+    .diff-point-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      font-size: 0.825rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+    }
+    .diff-point-list strong {
+      color: var(--text);
+    }
+    .diff-rx-box {
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 0.85rem;
+      font-size: 0.8rem;
+    }
+    .diff-rx-badge {
+      font-weight: 700;
+      display: block;
+      margin-top: 0.25rem;
+    }
+
+    /* 4-Stage Progression Grid */
+    .cal-stages-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+    }
+    .cal-stage-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+    }
+    .stage-badge {
+      font-family: var(--font-mono);
+      font-size: 0.725rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.75rem;
+      width: fit-content;
+    }
+    .stage-badge.s1 { background: #EFF6FF; color: #1E40AF; }
+    .stage-badge.s2 { background: #FEF3C7; color: #92400E; }
+    .stage-badge.s3 { background: #FFF7ED; color: #C2410C; }
+    .stage-badge.s4 { background: #ECFDF5; color: #065F46; }
+    .cal-stage-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .cal-stage-card p {
+      font-size: 0.825rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
     /* Tally.so-Inspired Interactive Diagnostic Tool */
     .tally-tool-box {
       background: #FFFFFF;
@@ -1262,6 +1382,12 @@
       .hero-grid {
         grid-template-columns: 1fr;
       }
+      .cal-differential-grid {
+        grid-template-columns: 1fr;
+      }
+      .cal-stages-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
       .cal-workflow-grid {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -1275,6 +1401,9 @@
     @media (max-width: 640px) {
       .hero-title {
         font-size: 2.15rem;
+      }
+      .cal-stages-grid {
+        grid-template-columns: 1fr;
       }
       .cal-bento-grid {
         grid-template-columns: 1fr;
@@ -1424,9 +1553,67 @@
       </div>
     </section>
 
-    <!-- Visual Infographic 1: Main Differential Diagnosis -->
-    <section class="section-wrap" style="text-align: center;">
-      <img src="/assets/images/small-bumps-differential-comedones-fungal-milia.webp" alt="Differential Diagnosis: Closed Comedones vs Fungal Acne vs Milia Infographic" style="width: 100%; max-width: 1060px; height: auto; border-radius: 18px; border: 1px solid var(--border); box-shadow: var(--shadow-card);">
+    <!-- Differential Diagnosis Grid (Native Responsive Component) -->
+    <section class="section-wrap">
+      <span class="section-eyebrow">Clinical Differential</span>
+      <h2 class="section-heading">The 3 Types of Small Bumps on Face: Comparison</h2>
+      <p class="section-subhead">Different bumps look similar under bathroom lighting but have completely different root causes and treatments.</p>
+
+      <div class="cal-differential-grid">
+        <!-- Card 1: Closed Comedones -->
+        <div class="cal-diff-card">
+          <div>
+            <span class="diff-pill comedones">Keratin &amp; Sebum Plug</span>
+            <h3>Closed Comedones (Whiteheads)</h3>
+            <div class="diff-point-list">
+              <div><strong>Core Cause:</strong> Sebum and dead skin cells plug the hair follicle entrance under intact skin.</div>
+              <div><strong>Sensation:</strong> Non-itchy, rough sandpaper texture when running hands over face.</div>
+              <div><strong>Typical Location:</strong> Cheeks, forehead, chin, and around the nose.</div>
+              <div><strong>Inside the Bump:</strong> A firm, waxy plug of oxidized sebum and cellular keratin.</div>
+            </div>
+          </div>
+          <div class="diff-rx-box">
+            <span>First-Line Treatment:</span>
+            <span class="diff-rx-badge" style="color: #1E40AF;">2% Salicylic Acid (Sebogel) + Adapalene</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Fungal Acne -->
+        <div class="cal-diff-card">
+          <div>
+            <span class="diff-pill fungal">Yeast Overgrowth</span>
+            <h3>Fungal Acne (Folliculitis)</h3>
+            <div class="diff-point-list">
+              <div><strong>Core Cause:</strong> Malassezia yeast overgrowth in follicles fed by sweat and lipids.</div>
+              <div><strong>Sensation:</strong> Intense prickly itch that flares up after workouts or during monsoon humidity.</div>
+              <div><strong>Typical Location:</strong> Hairline, upper forehead, temples, and upper chest.</div>
+              <div><strong>Inside the Bump:</strong> Clear fluid or a sterile inflammatory papule (no waxy plug).</div>
+            </div>
+          </div>
+          <div class="diff-rx-box">
+            <span>First-Line Treatment:</span>
+            <span class="diff-rx-badge" style="color: #92400E;">Ketoconazole 2% Wash (5-min lather)</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Milia Cysts -->
+        <div class="cal-diff-card">
+          <div>
+            <span class="diff-pill milia">Keratin Pearl Seed</span>
+            <h3>Milia Cysts</h3>
+            <div class="diff-point-list">
+              <div><strong>Core Cause:</strong> Trapped keratin flakes form tiny epidermal cysts under thin skin.</div>
+              <div><strong>Sensation:</strong> Zero pain, zero itching; strictly a cosmetic texture concern.</div>
+              <div><strong>Typical Location:</strong> Directly under the lower eyelids, temples, and upper cheeks.</div>
+              <div><strong>Inside the Bump:</strong> A rock-hard miniature ball of keratin; impossible to squeeze.</div>
+            </div>
+          </div>
+          <div class="diff-rx-box">
+            <span>First-Line Treatment:</span>
+            <span class="diff-rx-badge" style="color: #991B1B;">Gentle Retinoid or In-Clinic Unroofing</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Tally.so-Inspired Interactive Diagnostic Tool -->
@@ -1546,9 +1733,37 @@
       </div>
     </section>
 
-    <!-- Visual Infographic 2: Follicle Plugging Mechanics -->
-    <section class="section-wrap" style="text-align: center;">
-      <img src="/assets/images/comedone-follicle-plugging-mechanics.webp" alt="How Closed Comedones Form: Follicle Plugging Mechanics" style="width: 100%; max-width: 1060px; height: auto; border-radius: 18px; border: 1px solid var(--border); box-shadow: var(--shadow-card);">
+    <!-- Pathophysiology Mechanics Grid (Native Responsive Component) -->
+    <section class="section-wrap">
+      <span class="section-eyebrow">Under The Skin</span>
+      <h2 class="section-heading">How Closed Comedones Form: 4-Stage Progression</h2>
+      <p class="section-subhead">Understanding how an invisible microscopic pore clog turns into visible, persistent bumpy texture.</p>
+
+      <div class="cal-stages-grid">
+        <div class="cal-stage-card">
+          <span class="stage-badge s1">Stage 1</span>
+          <h3>Retention Keratosis</h3>
+          <p>Dead skin cells lining the follicle neck fail to shed naturally due to sluggish epidermal turnover, accumulating at the pore opening.</p>
+        </div>
+
+        <div class="cal-stage-card">
+          <span class="stage-badge s2">Stage 2</span>
+          <h3>Microcomedone Formation</h3>
+          <p>Fresh sebum produced by sebaceous glands mixes with sticky retained keratin scales, creating an invisible sub-surface plug.</p>
+        </div>
+
+        <div class="cal-stage-card">
+          <span class="stage-badge s3">Stage 3</span>
+          <h3>Closed Pore Dome</h3>
+          <p>Because the pore opening remains covered by an intact stratum corneum layer, air cannot enter and the waxy plug accumulates underneath.</p>
+        </div>
+
+        <div class="cal-stage-card">
+          <span class="stage-badge s4">Stage 4</span>
+          <h3>Visible Textured Bump</h3>
+          <p>The trapped pocket pushes upward, creating a 1&ndash;3mm flesh-colored bump that feels like sandpaper under direct light.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Tally.so-Inspired Interactive Checklist -->

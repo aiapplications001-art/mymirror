@@ -402,19 +402,19 @@
       align-items: center;
       margin-bottom: 3.5rem;
     }
-    .section-eyebrow, .tally-slash-pill {
-      display: inline-block;
-      font-family: var(--font-mono);
-      font-size: 0.725rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--brand);
+    .tally-slash-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
       background: var(--brand-light);
-      padding: 0.25rem 0.65rem;
-      border-radius: 6px;
-      margin-bottom: 0.85rem;
-      border: 1px solid rgba(236, 97, 14, 0.18);
+      color: var(--brand);
+      font-family: var(--font-mono);
+      font-size: 0.775rem;
+      font-weight: 600;
+      padding: 0.3rem 0.75rem;
+      border-radius: 9999px;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(236, 97, 14, 0.2);
     }
     .hero-title {
       font-family: var(--font-display);
@@ -574,6 +574,263 @@
       color: var(--text-muted);
       margin-bottom: 1.75rem;
       max-width: 780px;
+    }
+
+    /* Quick 2-Column Comparison Grid */
+    .cal-quick-compare-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    .cal-compare-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .cal-compare-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lift);
+    }
+    .cal-compare-card.bha-theme {
+      border-top: 4px solid #EC610E;
+    }
+    .cal-compare-card.aha-theme {
+      border-top: 4px solid #2563EB;
+    }
+    .compare-card-header {
+      margin-bottom: 1.25rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .compare-tag-pill {
+      font-family: var(--font-mono);
+      font-size: 0.725rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    .compare-tag-pill.bha {
+      background: #FFF3EB;
+      color: #C14800;
+      border: 1px solid #FFE1CE;
+    }
+    .compare-tag-pill.aha {
+      background: #EFF6FF;
+      color: #1E40AF;
+      border: 1px solid #DBEAFE;
+    }
+    .compare-card-header h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+    .compare-subtext {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .compare-stat-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+    }
+    .compare-stat-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.85rem;
+      gap: 1rem;
+      border-bottom: 1px dashed var(--border-subtle);
+      padding-bottom: 0.5rem;
+    }
+    .compare-stat-row:last-child {
+      border-bottom: none;
+    }
+    .stat-label {
+      font-weight: 600;
+      color: var(--text);
+      flex-shrink: 0;
+    }
+    .stat-value {
+      color: var(--text-muted);
+      text-align: right;
+    }
+    .compare-summary-box {
+      background: var(--surface-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem;
+      font-size: 0.825rem;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .compare-summary-box strong {
+      color: var(--text);
+    }
+
+    /* 2-Column Mechanism Visual Architecture */
+    .cal-mechanism-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    .cal-mechanism-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+    }
+    .mechanism-card-head {
+      margin-bottom: 1.25rem;
+    }
+    .mechanism-card-head h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-top: 0.4rem;
+    }
+    .mechanism-visual-box {
+      background: #FAF8F5;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .mechanism-visual-box svg {
+      width: 100%;
+      max-width: 380px;
+      height: auto;
+      display: block;
+    }
+    .mechanism-bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      padding: 0;
+      margin: 0;
+    }
+    .mechanism-bullet-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.85rem;
+      line-height: 1.55;
+      color: var(--text-muted);
+    }
+    .mechanism-bullet-item strong {
+      color: var(--text);
+    }
+    .mechanism-bullet-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+    .mechanism-bullet-dot.bha-dot {
+      background: #EC610E;
+    }
+    .mechanism-bullet-dot.aha-dot {
+      background: #2563EB;
+    }
+
+    /* 3-Column Decision Grid */
+    .cal-decision-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    .cal-decision-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+    .cal-decision-card:hover {
+      box-shadow: var(--shadow-lift);
+      border-color: #D1D5DB;
+    }
+    .decision-pill {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.75rem;
+    }
+    .decision-pill.p-active {
+      background: #FFF3EB;
+      color: #C14800;
+      border: 1px solid #FFE1CE;
+    }
+    .decision-pill.p-marks {
+      background: #EFF6FF;
+      color: #1E40AF;
+      border: 1px solid #DBEAFE;
+    }
+    .decision-pill.p-combo {
+      background: #F0FDF4;
+      color: #166534;
+      border: 1px solid #DCFCE7;
+    }
+    .cal-decision-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.65rem;
+      line-height: 1.35;
+    }
+    .decision-meta-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      font-size: 0.8125rem;
+      margin-bottom: 1.25rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+    .decision-meta-list strong {
+      color: var(--text);
+    }
+    .decision-recommendation-box {
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 0.85rem;
+      font-size: 0.8rem;
+    }
+    .decision-product-badge {
+      font-weight: 700;
+      color: var(--brand);
+      display: block;
+      margin-top: 0.25rem;
     }
 
     /* Visual Infographics */
@@ -1194,6 +1451,15 @@
       .hero-grid {
         grid-template-columns: 1fr;
       }
+      .cal-quick-compare-grid {
+        grid-template-columns: 1fr;
+      }
+      .cal-mechanism-grid {
+        grid-template-columns: 1fr;
+      }
+      .cal-decision-grid {
+        grid-template-columns: 1fr;
+      }
       .cal-workflow-grid {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -1355,9 +1621,85 @@
       </aside>
     </section>
 
-    <!-- Visual Infographic 1: Overview Banner -->
-    <section class="section-wrap" style="text-align: center;">
-      <img src="/assets/images/salicylic-acid-vs-glycolic-acid-acne-marks-og.webp" alt="Salicylic Acid BHA vs Glycolic Acid AHA Comparison Chart for Indian Skin" style="width: 100%; max-width: 1060px; height: auto; border-radius: 18px; border: 1px solid var(--border); box-shadow: var(--shadow-card);">
+    <!-- Quick Comparison Grid (Native Responsive Component) -->
+    <section class="section-wrap">
+      <span class="section-eyebrow">Quick Comparison</span>
+      <h2 class="section-heading">Salicylic Acid vs Glycolic Acid at a Glance</h2>
+      <p class="section-subhead">Match your active ingredient to where the skin problem is located: deep inside the oily pore canal, or on the flat skin surface.</p>
+
+      <div class="cal-quick-compare-grid">
+        <!-- Card 1: Salicylic Acid (BHA) -->
+        <div class="cal-compare-card bha-theme">
+          <div class="compare-card-header">
+            <span class="compare-tag-pill bha">Oil-Soluble BHA</span>
+            <h3>Salicylic Acid (2%)</h3>
+            <p class="compare-subtext">The Deep Pore Sweeper</p>
+          </div>
+          
+          <div class="compare-stat-list">
+            <div class="compare-stat-row">
+              <span class="stat-label">Primary Target:</span>
+              <span class="stat-value">Active Pimples, Blackheads &amp; Oily T-Zone</span>
+            </div>
+            <div class="compare-stat-row">
+              <span class="stat-label">Depth of Action:</span>
+              <span class="stat-value">Penetrates deep inside oily pore canal</span>
+            </div>
+            <div class="compare-stat-row">
+              <span class="stat-label">Skin Feel:</span>
+              <span class="stat-value">Mild tingle; anti-inflammatory calming</span>
+            </div>
+            <div class="compare-stat-row">
+              <span class="stat-label">Starting Frequency:</span>
+              <span class="stat-value">3&ndash;4 times weekly (Foam Wash or Gel)</span>
+            </div>
+            <div class="compare-stat-row">
+              <span class="stat-label">Top Pharmacy Pick:</span>
+              <span class="stat-value">Saslic DS Wash (₹440) / Sebogel (₹240)</span>
+            </div>
+          </div>
+          
+          <div class="compare-summary-box">
+            <strong>When to Pick This:</strong> If you can feel raised, tender, or oily bumps when you run your fingers across your cheeks, forehead, or chin.
+          </div>
+        </div>
+
+        <!-- Card 2: Glycolic Acid (AHA) -->
+        <div class="cal-compare-card aha-theme">
+          <div class="compare-card-header">
+            <span class="compare-tag-pill aha">Water-Soluble AHA</span>
+            <h3>Glycolic Acid (6%)</h3>
+            <p class="compare-subtext">The Surface Texture Polisher</p>
+          </div>
+          
+          <div class="compare-stat-list">
+            <div class="compare-stat-row">
+              <span class="stat-label">Primary Target:</span>
+              <span class="stat-value">Flat Post-Acne Dark Marks (PIH) &amp; Rough Texture</span>
+            </div>
+            <div class="compare-stat-row">
+              <span class="stat-label">Depth of Action:</span>
+              <span class="stat-value">Works strictly on the outer stratum corneum</span>
+            </div>
+            <div class="compare-stat-row">
+              <span class="stat-label">Skin Feel:</span>
+              <span class="stat-value">Noticeable prickle; speeds up surface peeling</span>
+            </div>
+            <div class="compare-stat-row">
+              <span class="stat-label">Starting Frequency:</span>
+              <span class="stat-value">1&ndash;2 nights weekly (never daily on Indian skin)</span>
+            </div>
+            <div class="compare-stat-row">
+              <span class="stat-label">Top Pharmacy Pick:</span>
+              <span class="stat-value">Glyco-6 Cream (₹260)</span>
+            </div>
+          </div>
+          
+          <div class="compare-summary-box">
+            <strong>When to Pick This:</strong> If your active pimples have already flattened, leaving behind flat brown, purple, or dark spots that will not fade.
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Tally.so-Inspired Interactive Matchmaker -->
@@ -1431,14 +1773,107 @@
       </div>
     </section>
 
-    <!-- Visual Infographic 2: Oil vs Water Action Diagram -->
+    <!-- Native Mechanism Architecture Component -->
     <section id="science" class="section-wrap">
       <span class="section-eyebrow">How It Works</span>
       <h2 class="section-heading">How They Work: Inside the Pore vs On the Surface</h2>
       <p class="section-subhead">Understanding the simple chemistry difference between oil solubility and water solubility.</p>
 
-      <div class="infographic-container">
-        <img src="/assets/images/bha-oil-vs-aha-water-pore-action.webp" alt="How Salicylic Acid Penetrates Pores vs Glycolic Acid Shedding Surface Marks" loading="lazy">
+      <div class="cal-mechanism-grid">
+        <!-- Mechanism 1: Salicylic Acid BHA -->
+        <div class="cal-mechanism-card">
+          <div class="mechanism-card-head">
+            <span class="compare-tag-pill bha">Salicylic Acid (BHA)</span>
+            <h3>Deep Pore Canal Penetration</h3>
+          </div>
+
+          <div class="mechanism-visual-box">
+            <svg viewBox="0 0 360 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Cross-section diagram of Salicylic Acid penetrating oily pore canal">
+              <!-- Skin Surface -->
+              <rect x="10" y="20" width="340" height="36" rx="6" fill="#FFE9DA" stroke="#FDBA74" stroke-width="1.5"></rect>
+              <text x="25" y="42" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#9A3412">Epidermis (Skin Surface)</text>
+              
+              <!-- Pore Channel -->
+              <path d="M 140 56 L 155 170 Q 180 185 205 170 L 220 56 Z" fill="#FFF3EB" stroke="#EA580C" stroke-width="2"></path>
+              
+              <!-- Sebum / Keratin Plug -->
+              <ellipse cx="180" cy="115" rx="26" ry="30" fill="#D97706" opacity="0.85"></ellipse>
+              <text x="162" y="119" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#FFFFFF">PLUG</text>
+              
+              <!-- BHA Molecule Penetration Arrows -->
+              <path d="M 180 10 L 180 75" stroke="#EA580C" stroke-width="3" stroke-linecap="round"></path>
+              <polygon points="175,75 185,75 180,85" fill="#EA580C"></polygon>
+              
+              <text x="195" y="32" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#C2410C">Oil-Soluble BHA Dives In &rarr;</text>
+              <text x="50" y="150" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600" fill="#6B7280">Sebaceous Gland</text>
+              <path d="M 130 145 L 150 140" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="2 2"></path>
+            </svg>
+          </div>
+
+          <ul class="mechanism-bullet-list">
+            <li class="mechanism-bullet-item">
+              <span class="mechanism-bullet-dot bha-dot"></span>
+              <div><strong>Oil-Solubility Advantage:</strong> Sebum acts as a shield against water. Salicylic acid dissolves through oil effortlessly, following sebum down to the root of the pore.</div>
+            </li>
+            <li class="mechanism-bullet-item">
+              <span class="mechanism-bullet-dot bha-dot"></span>
+              <div><strong>Clears Anaerobic Pockets:</strong> Loosens trapped dead cells so oxygen reaches the pore base, halting acne bacteria from multiplying.</div>
+            </li>
+            <li class="mechanism-bullet-item">
+              <span class="mechanism-bullet-dot bha-dot"></span>
+              <div><strong>Soothes Throbbing Pimples:</strong> Related to aspirin, it calms the vascular swelling and redness around tender active papules.</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mechanism 2: Glycolic Acid AHA -->
+        <div class="cal-mechanism-card">
+          <div class="mechanism-card-head">
+            <span class="compare-tag-pill aha">Glycolic Acid (AHA)</span>
+            <h3>Surface Stratum Shedding</h3>
+          </div>
+
+          <div class="mechanism-visual-box">
+            <svg viewBox="0 0 360 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Diagram of Glycolic Acid ungluing melanin-stained surface dead cells">
+              <!-- Stratum Corneum Layer -->
+              <rect x="10" y="20" width="340" height="42" rx="6" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1.5"></rect>
+              <text x="25" y="45" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#1E40AF">Stratum Corneum with Dark Marks (PIH)</text>
+              
+              <!-- Melanin Stained Cells -->
+              <circle cx="60" cy="35" r="7" fill="#78350F"></circle>
+              <circle cx="120" cy="38" r="8" fill="#78350F"></circle>
+              <circle cx="190" cy="34" r="7" fill="#78350F"></circle>
+              <circle cx="260" cy="37" r="8" fill="#78350F"></circle>
+              <circle cx="310" cy="33" r="6" fill="#78350F"></circle>
+              
+              <!-- Glycolic Sweep Dissolving Bonds -->
+              <path d="M 20 8 L 310 8" stroke="#2563EB" stroke-width="3" stroke-linecap="round"></path>
+              <polygon points="310,3 322,8 310,13" fill="#2563EB"></polygon>
+              <text x="35" y="90" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#1D4ED8">&uarr; AHA Melts Cellular Glue Bonds</text>
+              
+              <!-- Exfoliating Flakes Detaching -->
+              <rect x="70" y="120" width="45" height="18" rx="3" fill="#E0F2FE" stroke="#38BDF8" transform="rotate(-10 70 120)"></rect>
+              <rect x="160" y="115" width="50" height="18" rx="3" fill="#E0F2FE" stroke="#38BDF8" transform="rotate(8 160 115)"></rect>
+              <rect x="250" y="125" width="45" height="18" rx="3" fill="#E0F2FE" stroke="#38BDF8" transform="rotate(-6 250 125)"></rect>
+              <text x="110" y="165" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600" fill="#475569">Stained Dead Cells Shed Naturally</text>
+            </svg>
+          </div>
+
+          <ul class="mechanism-bullet-list">
+            <li class="mechanism-bullet-item">
+              <span class="mechanism-bullet-dot aha-dot"></span>
+              <div><strong>Smallest Molecular Size:</strong> With just 2 carbon atoms, glycolic acid slips between tightly packed surface skin cells faster than lactic or mandelic acid.</div>
+            </li>
+            <li class="mechanism-bullet-item">
+              <span class="mechanism-bullet-dot aha-dot"></span>
+              <div><strong>Dissolves Cellular Glue:</strong> It breaks down corneodesmosomes, the microscopic glue holding melanin-stained dead cells, revealing fresh clear skin.</div>
+            </li>
+            <li class="mechanism-bullet-item">
+              <span class="mechanism-bullet-dot aha-dot"></span>
+              <div><strong>Water-Soluble Limitation:</strong> It cannot penetrate oily sebum. Applying glycolic acid over deep active pimples irritates skin without fixing trapped pore oil.</div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -1546,14 +1981,63 @@
       </div>
     </section>
 
-    <!-- Visual Infographic 3: Decision Guide -->
+    <!-- Native Decision Deck Component -->
     <section id="guide" class="section-wrap">
       <span class="section-eyebrow">Decision Guide</span>
       <h2 class="section-heading">Which Active Ingredient Does Your Skin Need Today?</h2>
-      <p class="section-subhead">Use this visual guide to pair your current skin state with the right pharmacy formula.</p>
+      <p class="section-subhead">Pair your current skin state with the right clinical active without trial-and-error irritation.</p>
 
-      <div class="infographic-container">
-        <img src="/assets/images/salicylic-vs-glycolic-decision-guide.webp" alt="Visual Decision Guide for Choosing Salicylic Acid or Glycolic Acid in India" loading="lazy">
+      <div class="cal-decision-grid">
+        <!-- Decision 1: Active Breakouts -->
+        <div class="cal-decision-card">
+          <div>
+            <span class="decision-pill p-active">Active Breakouts</span>
+            <h3>"I Have Active Pimples &amp; Blackheads"</h3>
+            <div class="decision-meta-list">
+              <div><strong>What you see:</strong> Red bumps, tender swelling, black dots on nose, or oily midday shine.</div>
+              <div><strong>The root problem:</strong> Excess sebum trapped inside the pore canal, fostering bacterial proliferation.</div>
+              <div><strong>Clinical target:</strong> Oil-soluble intra-follicular cleansing to clear out plugs.</div>
+            </div>
+          </div>
+          <div class="decision-recommendation-box">
+            <span>Recommended Formulation:</span>
+            <span class="decision-product-badge">Salicylic Acid 2% (Saslic DS / Sebogel)</span>
+          </div>
+        </div>
+
+        <!-- Decision 2: Post-Acne Marks -->
+        <div class="cal-decision-card">
+          <div>
+            <span class="decision-pill p-marks">Leftover Marks</span>
+            <h3>"Pimples Stopped, But Dark Spots Remain"</h3>
+            <div class="decision-meta-list">
+              <div><strong>What you see:</strong> Flat brown, purple, or dark marks on cheeks after old pimples healed.</div>
+              <div><strong>The root problem:</strong> Melanin pigment deposits trapped in stubborn surface skin layers.</div>
+              <div><strong>Clinical target:</strong> Accelerated surface shedding to lift hyperpigmentation without peeling.</div>
+            </div>
+          </div>
+          <div class="decision-recommendation-box">
+            <span>Recommended Formulation:</span>
+            <span class="decision-product-badge" style="color: #2563EB;">Glycolic Acid 6% (Glyco-6 Cream)</span>
+          </div>
+        </div>
+
+        <!-- Decision 3: Combination -->
+        <div class="cal-decision-card">
+          <div>
+            <span class="decision-pill p-combo">Combination Routine</span>
+            <h3>"I Have Both Breakouts AND Dark Marks"</h3>
+            <div class="decision-meta-list">
+              <div><strong>What you see:</strong> New pimples forming alongside old brown marks from previous weeks.</div>
+              <div><strong>The common mistake:</strong> Never apply both active acids in the same minute or routine.</div>
+              <div><strong>Clinical target:</strong> Time-split regimen (Salicylic wash in AM; Glycolic cream 2 nights/wk).</div>
+            </div>
+          </div>
+          <div class="decision-recommendation-box">
+            <span>Recommended Strategy:</span>
+            <span class="decision-product-badge" style="color: #166534;">Time-Split Alternating Protocol</span>
+          </div>
+        </div>
       </div>
     </section>
 
