@@ -1505,7 +1505,45 @@
         text-align: center;
       }
     }
-  </style>
+  
+    .mobile-sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #FFFFFF;
+      border-top: 1px solid var(--border);
+      padding: 10px 16px;
+      z-index: 1000;
+      box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .mobile-sticky-cta a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+      background: var(--brand);
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px;
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(236,97,14,0.3);
+    }
+    @media (max-width: 768px) {
+      .mobile-sticky-cta {
+        display: block;
+      }
+      body {
+        padding-bottom: 64px;
+      }
+    }
+
+</style>
 </head>
 <body>
 
@@ -1533,7 +1571,7 @@
         <li><a href="#faq">FAQ</a></li>
       </ul>
       <a href="https://mymirror.fit/scan/" class="cal-btn-primary" target="_blank" rel="noopener">
-        <span>AI Skin Scan</span>
+        <span>Start Free AI Scan ✨</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </nav>
@@ -1553,13 +1591,16 @@
         </p>
 
         <div class="hero-cta-group">
-          <a href="#matchmaker" class="cal-btn-primary" style="padding: 0.75rem 1.6rem; font-size: 0.95rem;">
-            <span>Take 60-Second Matchmaker</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <a href="https://mymirror.fit/scan/" class="cal-btn-primary" style="padding: 0.85rem 1.8rem; font-size: 0.95rem; box-shadow: 0 4px 14px rgba(236,97,14,0.3);">
+            <span>Start Free AI Skin Scan</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <a href="#routine" style="font-size: 0.9rem; font-weight: 600; color: var(--text); text-decoration: none; padding: 0.75rem 1rem;">
-            View Safe Routine &darr;
+          <a href="#matchmaker" style="font-size: 0.9rem; font-weight: 600; color: var(--text); text-decoration: none; padding: 0.75rem 1.2rem; border: 1px solid var(--border); border-radius: var(--radius-full); background: var(--surface);">
+            Take 60s Matchmaker &darr;
           </a>
+        </div>
+        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: -1.25rem; margin-bottom: 1.5rem;">
+          60-second face map · No app download · Instant analysis
         </div>
 
         <div class="hero-trust-row">
@@ -2495,6 +2536,12 @@
       });
     }
   </script>
+
+
+  <!-- Mobile Sticky CTA -->
+  <div class=mobile-sticky-cta>
+    <a href=https://mymirror.fit/scan/>Start Free AI Skin Scan ✨</a>
+  </div>
 
 </body>
 </html>

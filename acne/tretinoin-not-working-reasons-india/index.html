@@ -1460,7 +1460,45 @@
       .footer-inner { grid-template-columns: 1fr; }
       .trouble-result-box { flex-direction: column; align-items: flex-start; }
     }
-  </style>
+  
+    .mobile-sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #FFFFFF;
+      border-top: 1px solid var(--border);
+      padding: 10px 16px;
+      z-index: 1000;
+      box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .mobile-sticky-cta a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+      background: var(--brand);
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px;
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(236,97,14,0.3);
+    }
+    @media (max-width: 768px) {
+      .mobile-sticky-cta {
+        display: block;
+      }
+      body {
+        padding-bottom: 64px;
+      }
+    }
+
+</style>
 </head>
 <body>
 
@@ -1486,7 +1524,7 @@
           <li><a href="#faqs">FAQs</a></li>
         </ul>
       </nav>
-      <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20consult%20a%20dermatologist%20for%20my%20tretinoin%20routine" class="nav-btn" target="_blank" rel="noopener">Consult Doctor</a>
+      <a href="https://mymirror.fit/scan/" class="nav-btn">Start Free AI Scan ✨</a>
     </div>
   </header>
 
@@ -1501,11 +1539,14 @@
             Started tretinoin hoping for smooth, glowing skin, but now facing red peeling patches, flaking, or even more breakouts? Before giving up, find out what is happening beneath your skin barrier and how to fix your routine.
           </p>
           <div class="hero-actions">
-            <a href="#troubleshooter" class="btn-primary">
-              Diagnose My Routine
+            <a href="https://mymirror.fit/scan/" class="btn-primary" style="box-shadow: 0 4px 14px rgba(236, 97, 14, 0.3);">
+              Start Free AI Skin Scan
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="#quick-check" class="btn-secondary">Purge or Bad Reaction?</a>
+            <a href="#troubleshooter" class="btn-secondary">Diagnose My Routine &darr;</a>
+          </div>
+          <div style="font-size: 12.5px; color: var(--text-light); margin-top: 10px;">
+            60-second face map · Retinoid barrier check · Privacy protected
           </div>
         </div>
 
@@ -1539,8 +1580,8 @@
             </div>
           </div>
 
-          <a href="https://wa.me/919999999999?text=Hi%2C%20I%20would%20like%20to%20book%20a%20skin%20consultation%20with%20Dr%20Lipy%20Mehta" class="cal-book-btn" target="_blank" rel="noopener">
-            Confirm WhatsApp Slot
+          <a href="https://mymirror.fit/scan/" class="cal-book-btn">
+            Start Free AI Skin Scan →
           </a>
         </div>
       </div>
@@ -2161,8 +2202,8 @@
         <p>
           Book a 1-on-1 virtual consultation with a verified board-certified dermatologist. Get your retinoid strength, formulation base, and barrier routine customized for your exact skin type.
         </p>
-        <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20consult%20a%20dermatologist%20for%20my%20tretinoin%20routine" class="btn-primary" target="_blank" rel="noopener">
-          Talk to a Dermatologist
+        <a href="https://mymirror.fit/scan/" class="btn-primary">
+          Start Free AI Skin Scan
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
@@ -2257,5 +2298,11 @@
       }
     }
   </script>
+
+  <!-- Mobile Sticky CTA -->
+  <div class=mobile-sticky-cta>
+    <a href=https://mymirror.fit/scan/>Start Free AI Skin Scan ✨</a>
+  </div>
+
 </body>
 </html>
