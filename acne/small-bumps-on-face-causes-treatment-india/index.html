@@ -852,6 +852,14 @@
       border-radius: var(--radius);
       padding: 1.5rem;
       position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .workflow-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
     }
     .workflow-num-badge {
       font-family: var(--font-mono);
@@ -859,10 +867,21 @@
       font-weight: 700;
       background: var(--brand-light);
       color: var(--brand);
-      padding: 0.2rem 0.55rem;
+      padding: 0.25rem 0.6rem;
       border-radius: 6px;
       display: inline-block;
-      margin-bottom: 0.85rem;
+    }
+    .cal-workflow-icon-wrap {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .cal-workflow-icon-wrap svg {
+      display: block;
     }
     .cal-workflow-card h4 {
       font-size: 1.05rem;
@@ -1491,25 +1510,33 @@
       <div class="cal-bento-grid">
         
         <div class="cal-bento-card">
-          <div class="bento-icon-box" style="background: #EFF6FF; color: #2563EB;">🔒</div>
+          <div class="bento-icon-box" style="background: #EFF6FF; color: #2563EB;" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          </div>
           <h4>1. Retention Hyperkeratosis &amp; Closed Pore Entrances</h4>
           <p>Unlike open blackheads where the follicle opening dilates and oxidizes in air, closed comedones form when dead epidermal cells (corneocytes) fail to detach. They mix with thick squalene sebum, doming the overlying stratum corneum into a microscopic closed vault.</p>
         </div>
 
         <div class="cal-bento-card">
-          <div class="bento-icon-box" style="background: #FEF3C7; color: #D97706;">🥥</div>
+          <div class="bento-icon-box" style="background: #FEF3C7; color: #D97706;" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+          </div>
           <h4>2. The Champi &amp; Coconut Oil Yeast Trigger</h4>
           <p>Traditional overnight hair oiling (champi) with pure coconut, almond, or mustard oil transfers heavy fatty acids onto the forehead while sleeping. Coconut oil contains high levels of lauric and myristic acids, which Malassezia yeast feed upon voraciously, sparking widespread fungal folliculitis.</p>
         </div>
 
         <div class="cal-bento-card">
-          <div class="bento-icon-box" style="background: #FEE2E2; color: #DC2626;">🪨</div>
+          <div class="bento-icon-box" style="background: #FEE2E2; color: #DC2626;" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4" fill="currentColor"></circle></svg>
+          </div>
           <h4>3. Trapped Keratin Seeds: How Milia Form</h4>
           <p>Milia are not acne lesions and contain zero sebum. They are tiny epidermal inclusion cysts formed when dead skin flakes become entrapped beneath fragile, thin skin—most commonly around the orbital eye area from rich, heavy eye creams or after sun damage.</p>
         </div>
 
         <div class="cal-bento-card">
-          <div class="bento-icon-box" style="background: #FFF7ED; color: #EA580C;">⚠️</div>
+          <div class="bento-icon-box" style="background: #FFF7ED; color: #EA580C;" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          </div>
           <h4>4. Why Walnut Face Scrubs Multiply Bumps</h4>
           <p>Physical scrubs with jagged crushed walnut shells or apricot kernels lacerate the delicate epithelial domes covering closed comedones. This introduces surface bacteria into the trapped sebum plug, transforming painless microscopic bumps into painful inflammatory pustules.</p>
         </div>
@@ -1665,11 +1692,6 @@
       </div>
     </section>
 
-    <!-- Visual Infographic 3: 4-Week Protocol -->
-    <section class="section-wrap" style="text-align: center;">
-      <img src="/assets/images/small-bumps-elimination-routine-india.webp" alt="4-Week Clinical Protocol to Clear Small Bumps on Face in India" style="width: 100%; max-width: 1060px; height: auto; border-radius: 18px; border: 1px solid var(--border); box-shadow: var(--shadow-card);">
-    </section>
-
     <!-- 4-Phase Recovery Workflow Grid -->
     <section id="protocol" class="section-wrap">
       <div class="tally-slash-pill">/action-protocol</div>
@@ -1679,25 +1701,54 @@
       <div class="cal-workflow-grid">
         
         <div class="cal-workflow-card">
-          <span class="workflow-num-badge">Phase 01: Week 1</span>
+          <div class="workflow-header-row">
+            <span class="workflow-num-badge">Phase 01 • Week 1</span>
+            <div class="cal-workflow-icon-wrap" style="background: #FFF3EB; color: #EC610E;" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+              </svg>
+            </div>
+          </div>
           <h4>Intra-Follicular Decongestion</h4>
           <p>Introduce Sebogel (2% Salicylic Acid) 3 nights a week. Salicylic acid is oil-soluble, penetrating deep into the sebum-filled pore to break desmosomal bonds holding dead keratin scales together.</p>
         </div>
 
         <div class="cal-workflow-card">
-          <span class="workflow-num-badge">Phase 02: Week 2</span>
+          <div class="workflow-header-row">
+            <span class="workflow-num-badge">Phase 02 • Week 2</span>
+            <div class="cal-workflow-icon-wrap" style="background: #FEF3C7; color: #D97706;" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+          </div>
           <h4>Yeast Suppression &amp; Champi Halt</h4>
           <p>For forehead bumps, lather with Nizral 2% shampoo twice a week, allowing the ketoconazole foam to sit for 5 minutes before rinsing. Stop all coconut and almond hair oils immediately.</p>
         </div>
 
         <div class="cal-workflow-card">
-          <span class="workflow-num-badge">Phase 03: Week 3</span>
+          <div class="workflow-header-row">
+            <span class="workflow-num-badge">Phase 03 • Week 3</span>
+            <div class="cal-workflow-icon-wrap" style="background: #EFF6FF; color: #2563EB;" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"></path>
+              </svg>
+            </div>
+          </div>
           <h4>Cellular Turnover Normalization</h4>
           <p>Begin applying a pea-sized dot of Adapalene 0.1% on alternate nights over moisturizer. Adapalene binds to nuclear retinoic acid receptors, normalizing epithelial differentiation to prevent new microcomedones.</p>
         </div>
 
         <div class="cal-workflow-card">
-          <span class="workflow-num-badge">Phase 04: Week 4+</span>
+          <div class="workflow-header-row">
+            <span class="workflow-num-badge">Phase 04 • Week 4+</span>
+            <div class="cal-workflow-icon-wrap" style="background: #ECFDF5; color: #059669;" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+          </div>
           <h4>Non-Comedogenic Hydration</h4>
           <p>Support stratum corneum hydration with oil-free gel creams containing niacinamide and hyaluronic acid. Protect healing skin with 100% mineral zinc oxide sunscreen to prevent post-acne marks.</p>
         </div>
