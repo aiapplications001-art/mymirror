@@ -655,6 +655,109 @@
       margin-top: 0.25rem;
     }
 
+    /* 2-Column Pore Mechanics Visual Architecture */
+    .cal-pore-mechanics-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .cal-pore-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+    }
+    .cal-pore-card.healthy-theme {
+      border-top: 4px solid #10B981;
+    }
+    .cal-pore-card.blocked-theme {
+      border-top: 4px solid #EA580C;
+    }
+    .pore-card-head {
+      margin-bottom: 1.25rem;
+    }
+    .pore-tag-pill {
+      font-family: var(--font-mono);
+      font-size: 0.725rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      width: fit-content;
+    }
+    .pore-tag-pill.healthy {
+      background: #ECFDF5;
+      color: #065F46;
+      border: 1px solid #A7F3D0;
+    }
+    .pore-tag-pill.blocked {
+      background: #FFF7ED;
+      color: #C2410C;
+      border: 1px solid #FFEDD5;
+    }
+    .pore-card-head h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-top: 0.4rem;
+    }
+    .pore-visual-box {
+      background: #FAF8F5;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .pore-visual-box svg {
+      width: 100%;
+      max-width: 380px;
+      height: auto;
+      display: block;
+    }
+    .pore-bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      padding: 0;
+      margin: 0;
+    }
+    .pore-bullet-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.85rem;
+      line-height: 1.55;
+      color: var(--text-muted);
+    }
+    .pore-bullet-item strong {
+      color: var(--text);
+    }
+    .pore-bullet-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+    .pore-bullet-dot.healthy-dot {
+      background: #10B981;
+    }
+    .pore-bullet-dot.blocked-dot {
+      background: #EA580C;
+    }
+
     /* 4-Stage Progression Grid */
     .cal-stages-grid {
       display: grid;
@@ -1385,6 +1488,9 @@
       .cal-differential-grid {
         grid-template-columns: 1fr;
       }
+      .cal-pore-mechanics-grid {
+        grid-template-columns: 1fr;
+      }
       .cal-stages-grid {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -1733,34 +1839,141 @@
       </div>
     </section>
 
-    <!-- Pathophysiology Mechanics Grid (Native Responsive Component) -->
+    <!-- Pathophysiology Mechanics Architecture (Native Responsive Component) -->
     <section class="section-wrap">
       <span class="section-eyebrow">Under The Skin</span>
-      <h2 class="section-heading">How Closed Comedones Form: 4-Stage Progression</h2>
-      <p class="section-subhead">Understanding how an invisible microscopic pore clog turns into visible, persistent bumpy texture.</p>
+      <h2 class="section-heading">How Small Bumps Form Under Your Skin (And Why They Won't Pop)</h2>
+      <p class="section-subhead">See what happens inside a healthy pore versus a clogged closed comedone, and why squeezing only causes red, angry pimples.</p>
 
+      <!-- 2-Panel Visual Anatomy Comparison -->
+      <div class="cal-pore-mechanics-grid">
+        <!-- Panel 1: Healthy Pore -->
+        <div class="cal-pore-card healthy-theme">
+          <div class="pore-card-head">
+            <span class="pore-tag-pill healthy">Smooth Skin</span>
+            <h3>Normal Open Pore (Clear Flow)</h3>
+          </div>
+
+          <div class="pore-visual-box">
+            <svg viewBox="0 0 360 210" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Cross-section diagram of a healthy open pore where oil flows freely">
+              <!-- Left Epidermis Block -->
+              <rect x="10" y="25" width="135" height="38" rx="6" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.5"></rect>
+              <text x="25" y="48" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#065F46">Epidermis (Smooth)</text>
+              
+              <!-- Right Epidermis Block -->
+              <rect x="215" y="25" width="135" height="38" rx="6" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.5"></rect>
+              <text x="230" y="48" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#065F46">Clear Surface</text>
+              
+              <!-- Open Pore Funnel -->
+              <path d="M 145 25 L 160 175 Q 180 185 200 175 L 215 25" fill="#F0FDF4" stroke="#10B981" stroke-width="2"></path>
+              
+              <!-- Oil Gland (Sebaceous Gland) -->
+              <path d="M 120 120 Q 90 135 110 160 Q 140 160 160 135 Z" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"></path>
+              <text x="45" y="145" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600" fill="#4B5563">Oil Gland</text>
+              <path d="M 95 142 L 115 142" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="2 2"></path>
+              
+              <!-- Fresh Sebum Droplets Rising & Out -->
+              <circle cx="180" cy="140" r="5" fill="#F59E0B"></circle>
+              <circle cx="180" cy="95" r="5" fill="#F59E0B"></circle>
+              <circle cx="180" cy="50" r="5" fill="#F59E0B"></circle>
+              <path d="M 180 165 L 180 15" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"></path>
+              <polygon points="175,15 185,15 180,5" fill="#10B981"></polygon>
+              <text x="195" y="16" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#047857">&uarr; Oil Flows Freely</text>
+              <text x="80" y="198" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600" fill="#059669">Unblocked Pore &bull; Zero Sandpaper Texture</text>
+            </svg>
+          </div>
+
+          <ul class="pore-bullet-list">
+            <li class="pore-bullet-item">
+              <span class="pore-bullet-dot healthy-dot"></span>
+              <div><strong>Natural Oil Exit:</strong> Sebum flows smoothly out of the pore to keep your face moisturized and protect your natural moisture barrier.</div>
+            </li>
+            <li class="pore-bullet-item">
+              <span class="pore-bullet-dot healthy-dot"></span>
+              <div><strong>Effortless Shedding:</strong> Dead surface cells loosen and wash away naturally during cleansing, preventing build-up inside the pore canal.</div>
+            </li>
+            <li class="pore-bullet-item">
+              <span class="pore-bullet-dot healthy-dot"></span>
+              <div><strong>Silky Smooth Feel:</strong> Because the follicle opening is clear and unclogged, your skin feels completely smooth, flat, and soft under your fingers.</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Panel 2: Closed Comedone -->
+        <div class="cal-pore-card blocked-theme">
+          <div class="pore-card-head">
+            <span class="pore-tag-pill blocked">Textured Bumps</span>
+            <h3>Closed Comedone (Sealed Under Skin)</h3>
+          </div>
+
+          <div class="pore-visual-box">
+            <svg viewBox="0 0 360 210" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Cross-section diagram of a closed comedone trapped beneath intact skin">
+              <!-- Continuous Intact Epidermis Domed Upward -->
+              <path d="M 10 50 Q 180 15 350 50 L 350 80 Q 180 45 10 80 Z" fill="#FFE9DA" stroke="#FDBA74" stroke-width="1.5"></path>
+              <text x="25" y="70" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#9A3412">Intact Skin Roof (Closed)</text>
+              <text x="235" y="70" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#C2410C">Sealed Shut</text>
+              
+              <!-- Blocked Sub-Surface Pore Funnel -->
+              <path d="M 135 65 L 150 175 Q 180 185 210 175 L 225 65 Z" fill="#FFF3EB" stroke="#EA580C" stroke-width="2"></path>
+              
+              <!-- Trapped Solid Waxy Plug -->
+              <ellipse cx="180" cy="115" rx="30" ry="34" fill="#D97706" opacity="0.9"></ellipse>
+              <text x="150" y="112" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#FFFFFF">WAXY PLUG</text>
+              <text x="142" y="125" font-family="Plus Jakarta Sans, sans-serif" font-size="9" font-weight="600" fill="#FEF3C7">(Oil + Dead Cells)</text>
+              
+              <!-- Pressure Dome Push Arrow -->
+              <path d="M 180 80 L 180 40" stroke="#EA580C" stroke-width="2.5" stroke-linecap="round"></path>
+              <polygon points="175,40 185,40 180,30" fill="#EA580C"></polygon>
+              <text x="195" y="32" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#EA580C">&uarr; Domes Skin (1-2mm Bump)</text>
+              
+              <!-- Rupture Warning when squeezed -->
+              <path d="M 148 135 L 115 155" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 2"></path>
+              <polygon points="113,150 115,160 123,157" fill="#DC2626"></polygon>
+              <text x="20" y="175" font-family="Plus Jakarta Sans, sans-serif" font-size="9" font-weight="700" fill="#DC2626">Squeezing tears wall &rarr; Red pimple!</text>
+              <text x="90" y="198" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600" fill="#9A3412">No Surface Opening &bull; Trapped Without Air</text>
+            </svg>
+          </div>
+
+          <ul class="pore-bullet-list">
+            <li class="pore-bullet-item">
+              <span class="pore-bullet-dot blocked-dot"></span>
+              <div><strong>Sealed Roof (No Air):</strong> Unlike blackheads (which are open to air and oxidize black), closed comedones are trapped under an intact layer of skin. They stay flesh-colored or pale.</div>
+            </li>
+            <li class="pore-bullet-item">
+              <span class="pore-bullet-dot blocked-dot"></span>
+              <div><strong>The Waxy Clog:</strong> Dead skin flakes fail to shed and mix with thick sebum, forming a firm waxy plug that gets trapped inside the follicle neck.</div>
+            </li>
+            <li class="pore-bullet-item">
+              <span class="pore-bullet-dot blocked-dot"></span>
+              <div><strong>Why Squeezing Fails:</strong> Because there is no opening on top, pressing with your fingers ruptures the pore wall underneath, pushing bacteria into surrounding skin and creating an angry red pimple that leaves a dark scar.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 4-Stage Progression Timeline -->
       <div class="cal-stages-grid">
         <div class="cal-stage-card">
-          <span class="stage-badge s1">Stage 1</span>
-          <h3>Retention Keratosis</h3>
-          <p>Dead skin cells lining the follicle neck fail to shed naturally due to sluggish epidermal turnover, accumulating at the pore opening.</p>
+          <span class="stage-badge s1">Step 1</span>
+          <h3>Dead Skin Flakes Stick</h3>
+          <p>Dead surface cells fail to shed naturally. Instead of washing away, they clump together around the narrow pore neck.</p>
         </div>
 
         <div class="cal-stage-card">
-          <span class="stage-badge s2">Stage 2</span>
-          <h3>Microcomedone Formation</h3>
-          <p>Fresh sebum produced by sebaceous glands mixes with sticky retained keratin scales, creating an invisible sub-surface plug.</p>
+          <span class="stage-badge s2">Step 2</span>
+          <h3>The Waxy Seed Forms</h3>
+          <p>Fresh oil from sebaceous glands gets trapped behind the stuck skin flakes, hardening into an invisible microscopic plug.</p>
         </div>
 
         <div class="cal-stage-card">
-          <span class="stage-badge s3">Stage 3</span>
-          <h3>Closed Pore Dome</h3>
-          <p>Because the pore opening remains covered by an intact stratum corneum layer, air cannot enter and the waxy plug accumulates underneath.</p>
+          <span class="stage-badge s3">Step 3</span>
+          <h3>Trapped Under Intact Skin</h3>
+          <p>The plug grows, but the pore mouth remains covered by an intact layer of skin. Without air exposure, it stays pale rather than turning black.</p>
         </div>
 
         <div class="cal-stage-card">
-          <span class="stage-badge s4">Stage 4</span>
-          <h3>Visible Textured Bump</h3>
+          <span class="stage-badge s4">Step 4</span>
+          <h3>The Sandpaper Bump</h3>
           <p>The trapped pocket pushes upward, creating a 1&ndash;3mm flesh-colored bump that feels like sandpaper under direct light.</p>
         </div>
       </div>
