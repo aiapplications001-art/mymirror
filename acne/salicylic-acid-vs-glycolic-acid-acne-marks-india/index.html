@@ -709,18 +709,20 @@
       background: #FAF8F5;
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 1.25rem;
+      padding: 0;
       margin-bottom: 1.25rem;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
-    .mechanism-visual-box svg {
+    .mechanism-visual-box img {
       width: 100%;
-      max-width: 380px;
       height: auto;
       display: block;
+      object-fit: cover;
+      border-radius: var(--radius);
     }
     .mechanism-bullet-list {
       list-style: none;
@@ -1784,44 +1786,25 @@
         <div class="cal-mechanism-card">
           <div class="mechanism-card-head">
             <span class="compare-tag-pill bha">Salicylic Acid (BHA)</span>
-            <h3>Deep Pore Canal Penetration</h3>
+            <h3>Inside the Pore: Dissolves Oil &amp; Plugs</h3>
           </div>
 
           <div class="mechanism-visual-box">
-            <svg viewBox="0 0 360 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Cross-section diagram of Salicylic Acid penetrating oily pore canal">
-              <!-- Skin Surface -->
-              <rect x="10" y="20" width="340" height="36" rx="6" fill="#FFE9DA" stroke="#FDBA74" stroke-width="1.5"></rect>
-              <text x="25" y="42" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#9A3412">Epidermis (Skin Surface)</text>
-              
-              <!-- Pore Channel -->
-              <path d="M 140 56 L 155 170 Q 180 185 205 170 L 220 56 Z" fill="#FFF3EB" stroke="#EA580C" stroke-width="2"></path>
-              
-              <!-- Sebum / Keratin Plug -->
-              <ellipse cx="180" cy="115" rx="26" ry="30" fill="#D97706" opacity="0.85"></ellipse>
-              <text x="162" y="119" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#FFFFFF">PLUG</text>
-              
-              <!-- BHA Molecule Penetration Arrows -->
-              <path d="M 180 10 L 180 75" stroke="#EA580C" stroke-width="3" stroke-linecap="round"></path>
-              <polygon points="175,75 185,75 180,85" fill="#EA580C"></polygon>
-              
-              <text x="195" y="32" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#C2410C">Oil-Soluble BHA Dives In &rarr;</text>
-              <text x="50" y="150" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600" fill="#6B7280">Sebaceous Gland</text>
-              <path d="M 130 145 L 150 140" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="2 2"></path>
-            </svg>
+            <img src="/assets/images/salicylic-acid-pore-action-flat-diagram.webp" alt="Simple 2D diagram of Salicylic Acid penetrating inside an oily pore canal and dissolving sebum plug" width="500" height="375" loading="lazy">
           </div>
 
           <ul class="mechanism-bullet-list">
             <li class="mechanism-bullet-item">
               <span class="mechanism-bullet-dot bha-dot"></span>
-              <div><strong>Oil-Solubility Advantage:</strong> Sebum acts as a shield against water. Salicylic acid dissolves through oil effortlessly, following sebum down to the root of the pore.</div>
+              <div><strong>Dives Past Skin Grease:</strong> Water-based washes slide right off skin oil. Because salicylic acid loves oil (lipophilic), it sinks straight down into the pore where clogs start.</div>
             </li>
             <li class="mechanism-bullet-item">
               <span class="mechanism-bullet-dot bha-dot"></span>
-              <div><strong>Clears Anaerobic Pockets:</strong> Loosens trapped dead cells so oxygen reaches the pore base, halting acne bacteria from multiplying.</div>
+              <div><strong>Clears the Breeding Ground:</strong> It breaks down the sticky sebum glue holding dead cells together, flushing out the pocket where acne bacteria grow.</div>
             </li>
             <li class="mechanism-bullet-item">
               <span class="mechanism-bullet-dot bha-dot"></span>
-              <div><strong>Soothes Throbbing Pimples:</strong> Related to aspirin, it calms the vascular swelling and redness around tender active papules.</div>
+              <div><strong>Calms Redness Fast:</strong> Chemically related to aspirin, it soothes swollen, tender bumps overnight so they don't leave deep dark scars.</div>
             </li>
           </ul>
         </div>
@@ -1830,47 +1813,25 @@
         <div class="cal-mechanism-card">
           <div class="mechanism-card-head">
             <span class="compare-tag-pill aha">Glycolic Acid (AHA)</span>
-            <h3>Surface Stratum Shedding</h3>
+            <h3>On the Surface: Lifts Away Dark Marks</h3>
           </div>
 
           <div class="mechanism-visual-box">
-            <svg viewBox="0 0 360 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Diagram of Glycolic Acid ungluing melanin-stained surface dead cells">
-              <!-- Stratum Corneum Layer -->
-              <rect x="10" y="20" width="340" height="42" rx="6" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1.5"></rect>
-              <text x="25" y="45" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#1E40AF">Stratum Corneum with Dark Marks (PIH)</text>
-              
-              <!-- Melanin Stained Cells -->
-              <circle cx="60" cy="35" r="7" fill="#78350F"></circle>
-              <circle cx="120" cy="38" r="8" fill="#78350F"></circle>
-              <circle cx="190" cy="34" r="7" fill="#78350F"></circle>
-              <circle cx="260" cy="37" r="8" fill="#78350F"></circle>
-              <circle cx="310" cy="33" r="6" fill="#78350F"></circle>
-              
-              <!-- Glycolic Sweep Dissolving Bonds -->
-              <path d="M 20 8 L 310 8" stroke="#2563EB" stroke-width="3" stroke-linecap="round"></path>
-              <polygon points="310,3 322,8 310,13" fill="#2563EB"></polygon>
-              <text x="35" y="90" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#1D4ED8">&uarr; AHA Melts Cellular Glue Bonds</text>
-              
-              <!-- Exfoliating Flakes Detaching -->
-              <rect x="70" y="120" width="45" height="18" rx="3" fill="#E0F2FE" stroke="#38BDF8" transform="rotate(-10 70 120)"></rect>
-              <rect x="160" y="115" width="50" height="18" rx="3" fill="#E0F2FE" stroke="#38BDF8" transform="rotate(8 160 115)"></rect>
-              <rect x="250" y="125" width="45" height="18" rx="3" fill="#E0F2FE" stroke="#38BDF8" transform="rotate(-6 250 125)"></rect>
-              <text x="110" y="165" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600" fill="#475569">Stained Dead Cells Shed Naturally</text>
-            </svg>
+            <img src="/assets/images/glycolic-acid-surface-peel-flat-diagram.webp" alt="Simple 2D diagram of Glycolic Acid sweeping across skin surface to unglue and lift dark pigment cells" width="500" height="375" loading="lazy">
           </div>
 
           <ul class="mechanism-bullet-list">
             <li class="mechanism-bullet-item">
               <span class="mechanism-bullet-dot aha-dot"></span>
-              <div><strong>Smallest Molecular Size:</strong> With just 2 carbon atoms, glycolic acid slips between tightly packed surface skin cells faster than lactic or mandelic acid.</div>
+              <div><strong>Un-glues Stained Skin Cells:</strong> Melanin pigment gets trapped inside stubborn dead cells. Glycolic acid dissolves the microscopic glue connecting them, helping dark marks shed faster.</div>
             </li>
             <li class="mechanism-bullet-item">
               <span class="mechanism-bullet-dot aha-dot"></span>
-              <div><strong>Dissolves Cellular Glue:</strong> It breaks down corneodesmosomes, the microscopic glue holding melanin-stained dead cells, revealing fresh clear skin.</div>
+              <div><strong>Smallest Molecule Speed:</strong> Having the tiniest molecular size among AHAs, it glides across the top stratum corneum layer to polish rough, uneven texture.</div>
             </li>
             <li class="mechanism-bullet-item">
               <span class="mechanism-bullet-dot aha-dot"></span>
-              <div><strong>Water-Soluble Limitation:</strong> It cannot penetrate oily sebum. Applying glycolic acid over deep active pimples irritates skin without fixing trapped pore oil.</div>
+              <div><strong>Stops at the Pore Opening:</strong> Because it is water-soluble, it cannot cut through oily pore plugs. It polishes the surface, but won't unclog deep cystic bumps.</div>
             </li>
           </ul>
         </div>
