@@ -692,6 +692,129 @@
       color: var(--text);
     }
 
+
+    /* Visual Comparison 2-Card Grid */
+    .visual-compare-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .visual-compare-card {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .visual-compare-card.purge-card {
+      border-color: #86EFAC;
+      background: #FCFDFB;
+    }
+
+    .visual-compare-card.reaction-card {
+      border-color: #FCA5A5;
+      background: #FEFBFB;
+    }
+
+    .card-badge-header {
+      margin-bottom: 16px;
+    }
+
+    .card-badge-header h3 {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text);
+      margin-top: 6px;
+    }
+
+    .badge-tag {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      display: inline-block;
+    }
+
+    .badge-tag.green {
+      background: #DCFCE7;
+      color: #15803D;
+    }
+
+    .badge-tag.red {
+      background: #FEE2E2;
+      color: #B91C1C;
+    }
+
+    .visual-img-frame {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      margin-bottom: 20px;
+      background: #FAF8F5;
+    }
+
+    .visual-img-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .visual-summary-line {
+      background: var(--surface-subtle);
+      border-left: 3px solid var(--success);
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 13.5px;
+      margin-bottom: 16px;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .visual-summary-line.danger {
+      border-left-color: var(--danger);
+    }
+
+    .visual-points-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    .visual-points-list li {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+
+    .visual-points-list li::before {
+      content: "•";
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    .purge-card .visual-points-list li::before {
+      color: var(--success);
+    }
+
+    .reaction-card .visual-points-list li::before {
+      color: var(--danger);
+    }
+
+    .visual-points-list li strong {
+      color: var(--text);
+    }
+
     /* 2D Flat Minimalist Visual Section */
     .flat-visual-card {
       background: var(--surface);
@@ -1319,6 +1442,7 @@
     @media (max-width: 992px) {
       .hero-grid { grid-template-columns: 1fr; }
       .assessment-grid { grid-template-columns: 1fr; }
+      .visual-compare-grid { grid-template-columns: 1fr; }
       .visual-columns { grid-template-columns: 1fr; }
       .reasons-bento { grid-template-columns: 1fr 1fr; }
       .protocol-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1468,45 +1592,63 @@
         </div>
       </div>
     </section>
-
     <!-- 2D Minimalist Visual Mechanism -->
     <section class="section-block">
       <div class="container">
-        <span class="section-eyebrow">VISUAL COMPARISON</span>
-        <h2 class="section-title">Purging vs Barrier Reaction: What It Looks Like</h2>
+        <span class="section-eyebrow">CLEAR SKIN DIAGNOSTIC</span>
+        <h2 class="section-title">Purging vs Barrier Reaction: See the Visual Difference</h2>
         <p class="section-desc">
-          Understanding the difference between micro-clogs moving upward versus a stripped skin barrier helps you make the right choice today.
+          Compare what is happening under your skin right now. One is a temporary step toward clear pores; the other is a cry for barrier relief.
         </p>
 
-        <div class="flat-visual-card">
-          <div class="visual-image-wrapper">
-            <img src="/assets/images/tretinoin-purge-vs-breakout-flat-diagram.webp" alt="Flat 2D diagram comparing true tretinoin purging with barrier damage reaction" width="1080" height="608" loading="lazy">
+        <div class="visual-compare-grid">
+          <!-- Column 1: True Purge -->
+          <div class="visual-compare-card purge-card">
+            <div class="card-badge-header">
+              <span class="badge-tag green">TEMPORARY HEALING PHASE</span>
+              <h3>True Tretinoin Purging</h3>
+            </div>
+            <div class="visual-img-frame">
+              <img src="/assets/images/tretinoin-true-purge-flat-diagram.webp" alt="2D diagram of a healthy hair follicle pore with micro-clogs gently moving up and out" width="540" height="405" loading="lazy">
+            </div>
+            <div class="visual-card-content">
+              <div class="visual-summary-line">
+                <strong>What You See:</strong> Small whiteheads or surface bumps popping up in your usual oily zones (chin, nose, forehead).
+              </div>
+              <ul class="visual-points-list">
+                <li><strong>The Mechanism:</strong> Tretinoin speeds skin renewal from 28 days to 14 days, sweeping old micro-clogs out into the open all at once.</li>
+                <li><strong>Speed of Clearing:</strong> Each individual bump comes to a head and dries up within 3 to 7 days, much faster than regular cystic acne.</li>
+                <li><strong>Skin Comfort:</strong> Your face feels slightly dry, but splashing plain room-temperature water does not cause intense burning.</li>
+                <li><strong>Action Plan:</strong> Do not quit! Keep buffering with moisturizer and give your skin 12 full weeks to complete the turnover cycle.</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="visual-columns">
-            <div class="visual-col">
-              <h4>
-                <span style="color:#15803D;">●</span>
-                True Tretinoin Purging
-              </h4>
-              <p>
-                Tretinoin speeds up skin cell renewal from 28 days down to 14 days. This acceleration sweeps out micro-clogs that were already hiding deep inside your pores. These bumps were already formed beneath your skin; tretinoin is simply clearing them out all at once so fresh, unblemished skin can surface.
-              </p>
+          <!-- Column 2: Barrier Damage / Reaction -->
+          <div class="visual-compare-card reaction-card">
+            <div class="card-badge-header">
+              <span class="badge-tag red">ROUTINE SABOTAGED</span>
+              <h3>Barrier Damage or Clogged Base</h3>
             </div>
-
-            <div class="visual-col">
-              <h4>
-                <span style="color:#B91C1C;">●</span>
-                Barrier Damage &amp; Base Clogging
-              </h4>
-              <p>
-                When tretinoin is applied on damp skin or in a heavy cream base on oily skin, the protective lipid barrier breaks down. Moisture escapes, irritants penetrate freely, and the heavy excipients clog pores. This produces genuine irritant breakouts that will not stop until the routine is adjusted.
-              </p>
+            <div class="visual-img-frame">
+              <img src="/assets/images/tretinoin-barrier-damage-flat-diagram.webp" alt="2D diagram of a damaged skin barrier with surface flaking cracks, inflammation blush, and swollen clogged pore" width="540" height="405" loading="lazy">
+            </div>
+            <div class="visual-card-content">
+              <div class="visual-summary-line danger">
+                <strong>What You See:</strong> Painful, swollen red bumps spreading to brand new areas where you never had acne before (cheeks, jawline, temples).
+              </div>
+              <ul class="visual-points-list">
+                <li><strong>The Mechanism:</strong> Applying on damp skin creates microscopic cracks in the lipid shield; heavy cream binders (isopropyl myristate) trap oil.</li>
+                <li><strong>Speed of Clearing:</strong> Bumps stay swollen, red, and painful for weeks without coming to a head, accompanied by flaking patches.</li>
+                <li><strong>Skin Comfort:</strong> Putting on plain water, face wash, or simple lotion triggers an intense stinging or burning sensation.</li>
+                <li><strong>Action Plan:</strong> Pause tretinoin for 3 to 5 days, switch from Cream to Gel, and restore your barrier with the sandwich method.</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
+
 
     <!-- The 7 Big Reasons Bento Grid -->
     <section id="reasons" class="section-block">
