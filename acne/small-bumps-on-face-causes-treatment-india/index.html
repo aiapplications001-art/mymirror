@@ -712,18 +712,20 @@
       background: #FAF8F5;
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 1.25rem;
+      padding: 0;
       margin-bottom: 1.25rem;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
-    .pore-visual-box svg {
+    .pore-visual-box img {
       width: 100%;
-      max-width: 380px;
       height: auto;
       display: block;
+      object-fit: cover;
+      border-radius: var(--radius);
     }
     .pore-bullet-list {
       list-style: none;
@@ -1855,32 +1857,7 @@
           </div>
 
           <div class="pore-visual-box">
-            <svg viewBox="0 0 360 210" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Cross-section diagram of a healthy open pore where oil flows freely">
-              <!-- Left Epidermis Block -->
-              <rect x="10" y="25" width="135" height="38" rx="6" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.5"></rect>
-              <text x="25" y="48" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#065F46">Epidermis (Smooth)</text>
-              
-              <!-- Right Epidermis Block -->
-              <rect x="215" y="25" width="135" height="38" rx="6" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.5"></rect>
-              <text x="230" y="48" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#065F46">Clear Surface</text>
-              
-              <!-- Open Pore Funnel -->
-              <path d="M 145 25 L 160 175 Q 180 185 200 175 L 215 25" fill="#F0FDF4" stroke="#10B981" stroke-width="2"></path>
-              
-              <!-- Oil Gland (Sebaceous Gland) -->
-              <path d="M 120 120 Q 90 135 110 160 Q 140 160 160 135 Z" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"></path>
-              <text x="45" y="145" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600" fill="#4B5563">Oil Gland</text>
-              <path d="M 95 142 L 115 142" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="2 2"></path>
-              
-              <!-- Fresh Sebum Droplets Rising & Out -->
-              <circle cx="180" cy="140" r="5" fill="#F59E0B"></circle>
-              <circle cx="180" cy="95" r="5" fill="#F59E0B"></circle>
-              <circle cx="180" cy="50" r="5" fill="#F59E0B"></circle>
-              <path d="M 180 165 L 180 15" stroke="#10B981" stroke-width="2.5" stroke-linecap="round"></path>
-              <polygon points="175,15 185,15 180,5" fill="#10B981"></polygon>
-              <text x="195" y="16" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#047857">&uarr; Oil Flows Freely</text>
-              <text x="80" y="198" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600" fill="#059669">Unblocked Pore &bull; Zero Sandpaper Texture</text>
-            </svg>
+            <img src="/assets/images/normal-healthy-pore-anatomy-cross-section.webp" alt="Clinical 3D anatomical cross-section of a normal healthy open pore with unobstructed sebum flow" width="500" height="375" loading="lazy">
           </div>
 
           <ul class="pore-bullet-list">
@@ -1907,31 +1884,7 @@
           </div>
 
           <div class="pore-visual-box">
-            <svg viewBox="0 0 360 210" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Cross-section diagram of a closed comedone trapped beneath intact skin">
-              <!-- Continuous Intact Epidermis Domed Upward -->
-              <path d="M 10 50 Q 180 15 350 50 L 350 80 Q 180 45 10 80 Z" fill="#FFE9DA" stroke="#FDBA74" stroke-width="1.5"></path>
-              <text x="25" y="70" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#9A3412">Intact Skin Roof (Closed)</text>
-              <text x="235" y="70" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#C2410C">Sealed Shut</text>
-              
-              <!-- Blocked Sub-Surface Pore Funnel -->
-              <path d="M 135 65 L 150 175 Q 180 185 210 175 L 225 65 Z" fill="#FFF3EB" stroke="#EA580C" stroke-width="2"></path>
-              
-              <!-- Trapped Solid Waxy Plug -->
-              <ellipse cx="180" cy="115" rx="30" ry="34" fill="#D97706" opacity="0.9"></ellipse>
-              <text x="150" y="112" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#FFFFFF">WAXY PLUG</text>
-              <text x="142" y="125" font-family="Plus Jakarta Sans, sans-serif" font-size="9" font-weight="600" fill="#FEF3C7">(Oil + Dead Cells)</text>
-              
-              <!-- Pressure Dome Push Arrow -->
-              <path d="M 180 80 L 180 40" stroke="#EA580C" stroke-width="2.5" stroke-linecap="round"></path>
-              <polygon points="175,40 185,40 180,30" fill="#EA580C"></polygon>
-              <text x="195" y="32" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#EA580C">&uarr; Domes Skin (1-2mm Bump)</text>
-              
-              <!-- Rupture Warning when squeezed -->
-              <path d="M 148 135 L 115 155" stroke="#DC2626" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 2"></path>
-              <polygon points="113,150 115,160 123,157" fill="#DC2626"></polygon>
-              <text x="20" y="175" font-family="Plus Jakarta Sans, sans-serif" font-size="9" font-weight="700" fill="#DC2626">Squeezing tears wall &rarr; Red pimple!</text>
-              <text x="90" y="198" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="600" fill="#9A3412">No Surface Opening &bull; Trapped Without Air</text>
-            </svg>
+            <img src="/assets/images/closed-comedone-follicle-plug-cross-section.webp" alt="Clinical 3D anatomical cross-section of a closed comedone with trapped waxy plug sealed beneath intact skin" width="500" height="375" loading="lazy">
           </div>
 
           <ul class="pore-bullet-list">
