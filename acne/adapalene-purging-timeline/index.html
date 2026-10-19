@@ -53,7 +53,7 @@
         "description": "Clinical overview of the retinoid purging timeline, retinization reactions, and barrier management on Fitzpatrick IV-VI Indian skin types.",
         "inLanguage": "en-IN",
         "datePublished": "2026-06-28T10:00:00+05:30",
-        "dateModified": "2026-10-19T08:30:00+05:30",
+        "dateModified": "2026-10-19T09:00:00+05:30",
         "author": {
           "@type": "Organization",
           "name": "MyMirror Skin Science"
@@ -298,14 +298,6 @@
       margin-right: 6px;
       box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
     }
-    .cal-topbar a {
-      color: #D155DB;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .cal-topbar a:hover {
-      color: #FFFFFF;
-    }
 
     /* Cal.com Header */
     .cal-header {
@@ -322,11 +314,13 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 1.5rem;
     }
     .cal-logo {
       display: flex;
       align-items: center;
       text-decoration: none;
+      flex-shrink: 0;
     }
     .cal-logo img {
       height: 30px;
@@ -336,14 +330,17 @@
     .cal-nav-links {
       display: flex;
       align-items: center;
-      gap: 1.25rem;
+      gap: 1.5rem;
       list-style: none;
+      margin: 0;
+      padding: 0;
     }
     .cal-nav-links a {
       font-size: 0.875rem;
-      font-weight: 500;
+      font-weight: 600;
       color: var(--text-muted);
       text-decoration: none;
+      white-space: nowrap;
       transition: color 0.15s ease;
     }
     .cal-nav-links a:hover {
@@ -353,13 +350,15 @@
       background: var(--brand);
       color: #FFFFFF;
       font-size: 0.875rem;
-      font-weight: 600;
-      padding: 0.55rem 1.15rem;
+      font-weight: 700;
+      padding: 0.6rem 1.3rem;
       border-radius: 9999px;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
       gap: 6px;
+      white-space: nowrap;
+      flex-shrink: 0;
       border: 1px solid transparent;
       transition: all 0.15s ease;
       cursor: pointer;
@@ -417,7 +416,7 @@
       align-items: center;
       gap: 1rem;
       flex-wrap: wrap;
-      margin-bottom: 2rem;
+      margin-bottom: 1.75rem;
     }
     .hero-trust-row {
       display: flex;
@@ -434,8 +433,8 @@
       gap: 6px;
     }
 
-    /* Cal.com Scheduler Widget Card */
-    .cal-scheduler-card {
+    /* Hero Doctor & Checkpoint Summary Card */
+    .hero-summary-card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
@@ -475,64 +474,47 @@
       font-size: 0.8rem;
       color: var(--text-muted);
     }
-    .cal-card-title {
-      font-size: 0.925rem;
+    .summary-milestones-title {
+      font-size: 0.875rem;
       font-weight: 700;
       margin-bottom: 0.85rem;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
-    .slot-days-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.5rem;
-      margin-bottom: 1.25rem;
-    }
-    .slot-day-btn {
-      background: var(--surface-subtle);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 0.65rem 0.4rem;
-      text-align: center;
-      font-size: 0.775rem;
-      cursor: pointer;
-      transition: all 0.15s ease;
-    }
-    .slot-day-btn.active, .slot-day-btn:hover {
-      background: #111827;
-      color: #FFFFFF;
-      border-color: #111827;
-    }
-    .slot-day-btn span {
-      display: block;
-      font-size: 0.6875rem;
-      opacity: 0.8;
-      margin-top: 2px;
-    }
-    .time-slot-list {
+    .summary-checkpoints-list {
+      list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.65rem;
       margin-bottom: 1.25rem;
     }
-    .time-slot-btn {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 0.55rem 0.85rem;
+    .summary-checkpoint-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-size: 0.8125rem;
-      font-weight: 600;
+      font-size: 0.825rem;
+      padding: 0.55rem 0.75rem;
+      background: var(--surface-subtle);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+    }
+    .summary-checkpoint-week {
+      font-weight: 700;
       color: var(--text);
-      cursor: pointer;
-      text-decoration: none;
-      transition: all 0.15s ease;
     }
-    .time-slot-btn:hover {
-      border-color: var(--brand);
-      color: var(--brand);
-      background: var(--brand-light);
+    .summary-checkpoint-tag {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
     }
+    .tag-shock { background: #FEE2E2; color: #991B1B; }
+    .tag-peak { background: #FFEDD5; color: #9A3412; }
+    .tag-turn { background: #FEF9C3; color: #854D0E; }
+    .tag-clear { background: #DCFCE7; color: #166534; }
 
     /* Section Wrappers */
     .section-wrap {
@@ -1441,7 +1423,7 @@
       font-size: 0.775rem;
     }
 
-    /* Mobile Sticky CTA */
+    /* Mobile Sticky CTA Bar */
     .mobile-sticky-cta {
       display: none;
       position: fixed;
@@ -1471,6 +1453,13 @@
       box-shadow: 0 4px 12px rgba(236,97,14,0.3);
     }
 
+    /* Responsive Breakdown - Prevents header text overlap & mobile CTA clutter */
+    @media (max-width: 1024px) {
+      .cal-nav-links {
+        display: none; /* Hide desktop nav links on tablet/small screens */
+      }
+    }
+
     @media (max-width: 900px) {
       .hero-grid {
         grid-template-columns: 1fr;
@@ -1493,8 +1482,33 @@
       .footer-inner {
         grid-template-columns: 1fr 1fr;
       }
-      .cal-nav-links {
+    }
+
+    @media (max-width: 768px) {
+      /* Clean header on mobile: hide nav button so only logo appears */
+      .cal-header .cal-btn-primary {
         display: none;
+      }
+      .cal-nav-container {
+        justify-content: center;
+        padding: 0.75rem 1rem;
+      }
+      /* On mobile, remove the duplicate primary CTA in hero to prevent multiple button clutter */
+      .hero-cta-group .btn-hero-primary {
+        display: none;
+      }
+      .hero-cta-group {
+        margin-bottom: 1.25rem;
+      }
+      .hero-cta-group a {
+        width: 100%;
+        text-align: center;
+      }
+      .mobile-sticky-cta {
+        display: block; /* Sole primary conversion CTA on mobile */
+      }
+      body {
+        padding-bottom: 70px;
       }
     }
 
@@ -1509,12 +1523,6 @@
       }
       .footer-inner {
         grid-template-columns: 1fr;
-      }
-      .mobile-sticky-cta {
-        display: block;
-      }
-      body {
-        padding-bottom: 64px;
       }
     }
   </style>
@@ -1536,13 +1544,10 @@
         <img src="/assets/logo-v4.png" alt="MyMirror" width="130" height="30">
       </a>
       <ul class="cal-nav-links">
-        <li><a href="#matchmaker">Purge Matchmaker</a></li>
-        <li><a href="#science">How It Works</a></li>
-        <li><a href="#rules">Indian Skin Rules</a></li>
         <li><a href="#timeline">12-Week Roadmap</a></li>
-        <li><a href="#table">Brand Comparison</a></li>
-        <li><a href="#routine">Sandwich Routine</a></li>
-        <li><a href="#products">Pharmacy Stack</a></li>
+        <li><a href="#science">How It Works</a></li>
+        <li><a href="#routine">Sandwich Method</a></li>
+        <li><a href="#table">Brand Guide</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
       <a href="https://mymirror.fit/scan/" class="cal-btn-primary" target="_blank" rel="noopener">
@@ -1566,16 +1571,13 @@
         </p>
 
         <div class="hero-cta-group">
-          <a href="https://mymirror.fit/scan/" class="cal-btn-primary" style="padding: 0.85rem 1.8rem; font-size: 0.95rem; box-shadow: 0 4px 14px rgba(236,97,14,0.3);">
+          <a href="https://mymirror.fit/scan/" class="cal-btn-primary btn-hero-primary" style="padding: 0.85rem 1.8rem; font-size: 0.95rem; box-shadow: 0 4px 14px rgba(236,97,14,0.3);">
             <span>Start Free AI Skin Scan</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <a href="#matchmaker" style="font-size: 0.9rem; font-weight: 600; color: var(--text); text-decoration: none; padding: 0.75rem 1.2rem; border: 1px solid var(--border); border-radius: var(--radius-full); background: var(--surface);">
-            Take 60s Matchmaker &darr;
+          <a href="#timeline" style="font-size: 0.9rem; font-weight: 600; color: var(--text); text-decoration: none; padding: 0.75rem 1.2rem; border: 1px solid var(--border); border-radius: var(--radius-full); background: var(--surface);">
+            View 12-Week Roadmap &darr;
           </a>
-        </div>
-        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: -1.25rem; margin-bottom: 1.5rem;">
-          60-second face map · No app download · Instant analysis
         </div>
 
         <div class="hero-trust-row">
@@ -1585,7 +1587,7 @@
           </div>
           <div class="trust-badge-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Indian Skin Phototypes IV–VI</span>
+            <span>Indian Skin Types IV–VI</span>
           </div>
           <div class="trust-badge-item">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
@@ -1594,8 +1596,8 @@
         </div>
       </div>
 
-      <!-- Cal.com Instant Triage Scheduler Widget -->
-      <aside class="cal-scheduler-card" aria-label="Consultation Scheduler">
+      <!-- Hero Doctor & Timeline Checkpoint Summary Card -->
+      <aside class="hero-summary-card" aria-label="Clinical Protocol Summary">
         <div class="doctor-profile-header">
           <div class="doctor-avatar">LM</div>
           <div class="doctor-meta">
@@ -1604,38 +1606,33 @@
           </div>
         </div>
 
-        <h3 class="cal-card-title">Select Consultation Day</h3>
-        <div class="slot-days-grid">
-          <button type="button" class="slot-day-btn active" onclick="selectSlotDay(this)">
-            <strong>Today</strong>
-            <span>4 Slots</span>
-          </button>
-          <button type="button" class="slot-day-btn" onclick="selectSlotDay(this)">
-            <strong>Tomorrow</strong>
-            <span>6 Slots</span>
-          </button>
-          <button type="button" class="slot-day-btn" onclick="selectSlotDay(this)">
-            <strong>Day After</strong>
-            <span>8 Slots</span>
-          </button>
+        <div class="summary-milestones-title">
+          <span>🩺</span>
+          <span>12-Week Milestone Summary</span>
         </div>
 
-        <h3 class="cal-card-title">Available Time Slots</h3>
-        <div class="time-slot-list">
-          <a href="https://mymirror.fit/scan/" class="time-slot-btn" target="_blank" rel="noopener">
-            <span>05:30 PM &bull; Retinoid Purge Evaluation</span>
-            <span>Select &rarr;</span>
-          </a>
-          <a href="https://mymirror.fit/scan/" class="time-slot-btn" target="_blank" rel="noopener">
-            <span>06:45 PM &bull; Barrier Breakdown Triage</span>
-            <span>Select &rarr;</span>
-          </a>
-          <a href="https://mymirror.fit/scan/" class="time-slot-btn" target="_blank" rel="noopener">
-            <span>08:00 PM &bull; Indian Skin Buffering Plan</span>
-            <span>Select &rarr;</span>
-          </a>
+        <div class="summary-checkpoints-list">
+          <div class="summary-checkpoint-row">
+            <span class="summary-checkpoint-week">Weeks 1 to 2</span>
+            <span class="summary-checkpoint-tag tag-shock">Retinization Shock (Dryness)</span>
+          </div>
+          <div class="summary-checkpoint-row">
+            <span class="summary-checkpoint-week">Weeks 3 to 5</span>
+            <span class="summary-checkpoint-tag tag-peak">Purge Peak (Whiteheads)</span>
+          </div>
+          <div class="summary-checkpoint-row">
+            <span class="summary-checkpoint-week">Weeks 6 to 8</span>
+            <span class="summary-checkpoint-tag tag-turn">Turning Point (Bumps Dry Up)</span>
+          </div>
+          <div class="summary-checkpoint-row">
+            <span class="summary-checkpoint-week">Weeks 9 to 12</span>
+            <span class="summary-checkpoint-tag tag-clear">Clearance (Smooth Barrier)</span>
+          </div>
         </div>
-        <p style="font-size: 0.75rem; color: var(--text-light); text-align: center;">Verified digital tele-consultations across India via MyMirror Clinic.</p>
+
+        <p style="font-size: 0.775rem; color: var(--text-muted); line-height: 1.5; margin: 0; text-align: center;">
+          Speed up adaptation by following the sandwich buffer method and twice-weekly initial application.
+        </p>
       </aside>
     </section>
 
@@ -1720,6 +1717,122 @@
       </div>
     </section>
 
+    <!-- Native Mechanism Architecture Component with 2D Visual Diagrams -->
+    <section id="science" class="section-wrap">
+      <span class="section-eyebrow">How It Works</span>
+      <h2 class="section-heading">How Adapalene Acts: Inside the Pore vs On the Barrier</h2>
+      <p class="section-subhead">Understanding the simple cellular mechanism between follicular clearing and stratum corneum adaptation.</p>
+
+      <div class="cal-mechanism-grid">
+        <!-- Mechanism 1: Cellular Escalator Inside the Pore -->
+        <div class="cal-mechanism-card">
+          <div class="mechanism-card-head">
+            <span class="compare-tag-pill bha">Inside the Pore</span>
+            <h3>Accelerated Microcomedone Expulsion</h3>
+          </div>
+
+          <div class="mechanism-visual-box">
+            <img src="/assets/images/adapalene-purge-pore-action-flat-diagram.webp" alt="Simple 2D flat diagram of a hair follicle pore channel accelerating microcomedone plugs upward under adapalene" width="500" height="375" loading="lazy">
+          </div>
+
+          <ul class="mechanism-bullet-list">
+            <li class="mechanism-bullet-item">
+              <span class="mechanism-bullet-dot bha-dot"></span>
+              <div><strong>Binds to Nuclear Receptors:</strong> Adapalene selectively targets RAR-beta and RAR-gamma receptors in basal keratinocytes, telling pores to shed cells faster.</div>
+            </li>
+            <li class="mechanism-bullet-item">
+              <span class="mechanism-bullet-dot bha-dot"></span>
+              <div><strong>Compacts 90 Days into 14 Days:</strong> Pre-existing microcomedone plugs that would take 3 months to surface are propelled upward all at once.</div>
+            </li>
+            <li class="mechanism-bullet-item">
+              <span class="mechanism-bullet-dot bha-dot"></span>
+              <div><strong>Prevents Future Micro-Plugs:</strong> By normalizing cell desquamation, adapalene keeps pore canals open so new acne cannot form underground.</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mechanism 2: Stratum Corneum Adaptation -->
+        <div class="cal-mechanism-card">
+          <div class="mechanism-card-head">
+            <span class="compare-tag-pill aha">On the Barrier</span>
+            <h3>Retinization vs Barrier Breakdown</h3>
+          </div>
+
+          <div class="mechanism-visual-box">
+            <img src="/assets/images/adapalene-barrier-damage-flat-diagram.webp" alt="Simple 2D flat diagram of a damaged skin barrier showing cracked stratum corneum and inflamed swelling" width="500" height="375" loading="lazy">
+          </div>
+
+          <ul class="mechanism-bullet-list">
+            <li class="mechanism-bullet-item">
+              <span class="mechanism-bullet-dot aha-dot"></span>
+              <div><strong>Lipid Desynchronization:</strong> During weeks 1 to 2, skin cells divide faster than natural ceramides can glue them, causing temporary surface flaking.</div>
+            </li>
+            <li class="mechanism-bullet-item">
+              <span class="mechanism-bullet-dot aha-dot"></span>
+              <div><strong>Microscopic Cracks Cause Stinging:</strong> If active gel is applied to damp skin, it penetrates too deep, splitting surface lipids and provoking pain with water.</div>
+            </li>
+            <li class="mechanism-bullet-item">
+              <span class="mechanism-bullet-dot aha-dot"></span>
+              <div><strong>Restoration via Buffering:</strong> Layering a lightweight ceramide moisturizer first cushions the epidermis without weakening follicular clearance.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12-Week Roadmap Stepper -->
+    <section id="timeline" class="section-wrap">
+      <span class="section-eyebrow">12-Week Progression</span>
+      <h2 class="section-heading">The 12-Week Adapalene Purging Timeline</h2>
+      <p class="section-subhead">Step-by-step milestones showing what your skin is experiencing and how to pace application:</p>
+
+      <div class="cal-workflow-grid">
+        <div class="cal-workflow-card">
+          <div class="workflow-header-row">
+            <span class="workflow-num-badge">Phase 01 &bull; Weeks 1–2</span>
+            <div class="cal-workflow-icon-wrap" style="background: #FEE2E2; color: #991B1B;" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+          </div>
+          <h4>Retinization Shock</h4>
+          <p>Surface lipid levels dip temporarily. Expect dry flaking around the mouth and nose folds. Apply strictly 2 nights per week with sandwich buffering.</p>
+        </div>
+
+        <div class="cal-workflow-card">
+          <div class="workflow-header-row">
+            <span class="workflow-num-badge">Phase 02 &bull; Weeks 3–5</span>
+            <div class="cal-workflow-icon-wrap" style="background: #FFEDD5; color: #9A3412;" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/></svg>
+            </div>
+          </div>
+          <h4>The Purging Peak</h4>
+          <p>Underground microcomedones mature into surface whiteheads simultaneously. Blemishes peak. Stick with plain hydrocolloid patches and avoid picking.</p>
+        </div>
+
+        <div class="cal-workflow-card">
+          <div class="workflow-header-row">
+            <span class="workflow-num-badge">Phase 03 &bull; Weeks 6–8</span>
+            <div class="cal-workflow-icon-wrap" style="background: #FEF9C3; color: #854D0E;" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+          </div>
+          <h4>The Turning Point</h4>
+          <p>Pore congestion backlog clears. New spots become small and resolve within 48 hours. Skin feels soft. Step up application to alternate nights.</p>
+        </div>
+
+        <div class="cal-workflow-card">
+          <div class="workflow-header-row">
+            <span class="workflow-num-badge">Phase 04 &bull; Weeks 9–12</span>
+            <div class="cal-workflow-icon-wrap" style="background: #DCFCE7; color: #166534;" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+          </div>
+          <h4>True Structural Clearance</h4>
+          <p>Overall inflammatory acne drops by 60% to 80%. Surface texture across cheeks feels distinctly smooth, exhibiting balanced sebum and light reflection.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Tally.so-Inspired Interactive Matchmaker -->
     <section id="matchmaker" class="section-wrap">
       <span class="section-eyebrow">Interactive Matchmaker</span>
@@ -1794,69 +1907,6 @@
       </div>
     </section>
 
-    <!-- Native Mechanism Architecture Component with 2D Visual Diagrams -->
-    <section id="science" class="section-wrap">
-      <span class="section-eyebrow">How It Works</span>
-      <h2 class="section-heading">How Adapalene Acts: Inside the Pore vs On the Barrier</h2>
-      <p class="section-subhead">Understanding the simple cellular mechanism between follicular clearing and stratum corneum adaptation.</p>
-
-      <div class="cal-mechanism-grid">
-        <!-- Mechanism 1: Cellular Escalator Inside the Pore -->
-        <div class="cal-mechanism-card">
-          <div class="mechanism-card-head">
-            <span class="compare-tag-pill bha">Inside the Pore</span>
-            <h3>Accelerated Microcomedone Expulsion</h3>
-          </div>
-
-          <div class="mechanism-visual-box">
-            <img src="/assets/images/adapalene-purge-pore-action-flat-diagram.webp" alt="Simple 2D flat diagram of a hair follicle pore channel accelerating microcomedone plugs upward under adapalene" width="500" height="375" loading="lazy">
-          </div>
-
-          <ul class="mechanism-bullet-list">
-            <li class="mechanism-bullet-item">
-              <span class="mechanism-bullet-dot bha-dot"></span>
-              <div><strong>Binds to Nuclear Receptors:</strong> Adapalene selectively targets RAR-beta and RAR-gamma receptors in basal keratinocytes, telling pores to shed cells faster.</div>
-            </li>
-            <li class="mechanism-bullet-item">
-              <span class="mechanism-bullet-dot bha-dot"></span>
-              <div><strong>Compacts 90 Days into 14 Days:</strong> Pre-existing microcomedone plugs that would take 3 months to surface are propelled upward all at once.</div>
-            </li>
-            <li class="mechanism-bullet-item">
-              <span class="mechanism-bullet-dot bha-dot"></span>
-              <div><strong>Prevents Future Micro-Plugs:</strong> By normalizing cell desquamation, adapalene keeps pore canals open so new acne cannot form underground.</div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Mechanism 2: Stratum Corneum Adaptation -->
-        <div class="cal-mechanism-card">
-          <div class="mechanism-card-head">
-            <span class="compare-tag-pill aha">On the Barrier</span>
-            <h3>Retinization vs Barrier Breakdown</h3>
-          </div>
-
-          <div class="mechanism-visual-box">
-            <img src="/assets/images/adapalene-barrier-damage-flat-diagram.webp" alt="Simple 2D flat diagram of a damaged skin barrier showing cracked stratum corneum and inflamed swelling" width="500" height="375" loading="lazy">
-          </div>
-
-          <ul class="mechanism-bullet-list">
-            <li class="mechanism-bullet-item">
-              <span class="mechanism-bullet-dot aha-dot"></span>
-              <div><strong>Lipid Desynchronization:</strong> During weeks 1 to 2, skin cells divide faster than natural ceramides can glue them, causing temporary surface flaking.</div>
-            </li>
-            <li class="mechanism-bullet-item">
-              <span class="mechanism-bullet-dot aha-dot"></span>
-              <div><strong>Microscopic Cracks Cause Stinging:</strong> If active gel is applied to damp skin, it penetrates too deep, splitting surface lipids and provoking pain with water.</div>
-            </li>
-            <li class="mechanism-bullet-item">
-              <span class="mechanism-bullet-dot aha-dot"></span>
-              <div><strong>Restoration via Buffering:</strong> Layering a lightweight ceramide moisturizer first cushions the epidermis without weakening follicular clearance.</div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
     <!-- Bento Grid: 4 Golden Rules for Indian Skin -->
     <section id="rules" class="section-wrap">
       <span class="section-eyebrow">Indian Skin Guidelines</span>
@@ -1897,59 +1947,6 @@
           <p>Accelerated cell division brings fresh, unpigmented epidermal cells to the surface. Without broad-spectrum UV protection, outdoor daylight triggers rapid pigment overproduction, leaving dark blotches.</p>
         </div>
 
-      </div>
-    </section>
-
-    <!-- 12-Week Roadmap Stepper -->
-    <section id="timeline" class="section-wrap">
-      <span class="section-eyebrow">12-Week Progression</span>
-      <h2 class="section-heading">The 12-Week Adapalene Purging Timeline</h2>
-      <p class="section-subhead">Step-by-step milestones showing what your skin is experiencing and how to pace application:</p>
-
-      <div class="cal-workflow-grid">
-        <div class="cal-workflow-card">
-          <div class="workflow-header-row">
-            <span class="workflow-num-badge">Phase 01 &bull; Weeks 1–2</span>
-            <div class="cal-workflow-icon-wrap" style="background: #FEE2E2; color: #991B1B;" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
-            </div>
-          </div>
-          <h4>Retinization Shock</h4>
-          <p>Surface lipid levels dip temporarily. Expect dry flaking around the mouth and nose folds. Apply strictly 2 nights per week with sandwich buffering.</p>
-        </div>
-
-        <div class="cal-workflow-card">
-          <div class="workflow-header-row">
-            <span class="workflow-num-badge">Phase 02 &bull; Weeks 3–5</span>
-            <div class="cal-workflow-icon-wrap" style="background: #FFEDD5; color: #9A3412;" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/></svg>
-            </div>
-          </div>
-          <h4>The Purging Peak</h4>
-          <p>Underground microcomedones mature into surface whiteheads simultaneously. Blemishes peak. Stick with plain hydrocolloid patches and avoid picking.</p>
-        </div>
-
-        <div class="cal-workflow-card">
-          <div class="workflow-header-row">
-            <span class="workflow-num-badge">Phase 03 &bull; Weeks 6–8</span>
-            <div class="cal-workflow-icon-wrap" style="background: #FEF9C3; color: #854D0E;" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            </div>
-          </div>
-          <h4>The Turning Point</h4>
-          <p>Pore congestion backlog clears. New spots become small and resolve within 48 hours. Skin feels soft. Step up application to alternate nights.</p>
-        </div>
-
-        <div class="cal-workflow-card">
-          <div class="workflow-header-row">
-            <span class="workflow-num-badge">Phase 04 &bull; Weeks 9–12</span>
-            <div class="cal-workflow-icon-wrap" style="background: #DCFCE7; color: #166534;" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-          </div>
-          <h4>True Structural Clearance</h4>
-          <p>Overall inflammatory acne drops by 60% to 80%. Surface texture across cheeks feels distinctly smooth, exhibiting balanced sebum and light reflection.</p>
-        </div>
       </div>
     </section>
 
@@ -2440,12 +2437,6 @@
 
   <!-- Interactive JavaScript -->
   <script>
-    // Slot Day Selector
-    function selectSlotDay(btn) {
-      document.querySelectorAll('.slot-day-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-    }
-
     // Tally.so Matchmaker Logic
     const tallyAnswers = { 1: null, 2: null, 3: null };
 
@@ -2532,7 +2523,7 @@
     }
   </script>
 
-  <!-- Mobile Sticky CTA -->
+  <!-- Mobile Sticky CTA (Single primary CTA on mobile) -->
   <div class="mobile-sticky-cta">
     <a href="https://mymirror.fit/scan/">Start Free AI Skin Scan ✨</a>
   </div>
