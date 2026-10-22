@@ -392,6 +392,108 @@
       font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.65rem; border-radius: 50px;
     }
 
+    /* ───── PRODUCT CARDS (Kids & Pre-Teens) ───── */
+    .kids-prod-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 1024px) { .kids-prod-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .kids-prod-grid { grid-template-columns: 1fr; } }
+
+    .kids-prod-card {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .kids-prod-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+      border-color: #FDBA74;
+    }
+    .kids-prod-img-box {
+      width: 100%;
+      height: 180px;
+      background: #FAF8F5;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    .kids-prod-img-box img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+    .kids-prod-card:hover .kids-prod-img-box img {
+      transform: scale(1.05);
+    }
+    .kids-prod-step {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background: var(--brand);
+      color: #fff;
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 0.2rem 0.55rem;
+      border-radius: 50px;
+      letter-spacing: 0.02em;
+    }
+    .kids-prod-badge {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: rgba(17,24,39,0.7);
+      color: #fff;
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 0.2rem 0.5rem;
+      border-radius: 50px;
+      backdrop-filter: blur(4px);
+    }
+    .kids-prod-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+      line-height: 1.35;
+    }
+    .kids-prod-role {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--brand);
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .kids-prod-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      flex-grow: 1;
+      margin-bottom: 0.75rem;
+    }
+    .kids-prod-highlight {
+      background: var(--surface-subtle);
+      border-left: 2px solid var(--brand);
+      padding: 0.45rem 0.65rem;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.75rem;
+      color: var(--text);
+      font-weight: 600;
+    }
+
     /* ───── VIDEO EMBED ───── */
     .video-wrap {
       position: relative; padding-bottom: 56.25%; height: 0;
@@ -923,36 +1025,95 @@
     <div class="reveal">
       <span class="section-label">Parents &amp; Students</span>
       <h2 class="section-title">Safe Skincare for Kids &amp; Pre-Teens (Ages 10–14)</h2>
-      <p class="section-body">Younger skin is thinner and more sensitive than adult skin. The same face wash that works for a 17-year-old can cause redness and irritation on a 10-year-old. Here is the dermatologist-safe approach.</p>
+      <p class="section-body">Younger skin is thinner and more sensitive than adult skin. The same face wash that works for a 17-year-old can cause redness and irritation on a 10-year-old. Here are the 4 dermatologist-approved daily essentials built for younger skin barriers.</p>
+    </div>
+
+    <!-- Product Cards Grid -->
+    <div class="kids-prod-grid reveal">
+      <div class="kids-prod-card">
+        <div class="kids-prod-img-box">
+          <span class="kids-prod-step">Step 1: Cleanse</span>
+          <span class="kids-prod-badge">Derm Favorite</span>
+          <img src="/assets/images/prod-clean-cetaphil-gentle.webp"
+               alt="Cetaphil Gentle Skin Cleanser for kids and pre-teens"
+               loading="lazy" width="180" height="180">
+        </div>
+        <h3 class="kids-prod-name">Cetaphil Gentle Skin Cleanser</h3>
+        <div class="kids-prod-role">Soap-Free Daily Wash</div>
+        <p class="kids-prod-desc">Non-foaming lotion cleanser that washes away sweat and school dust without stripping natural lipids or stinging young eyes.</p>
+        <div class="kids-prod-highlight">✨ Ideal for: Sensitive pre-teen skin &amp; daily sweat rinse</div>
+      </div>
+
+      <div class="kids-prod-card">
+        <div class="kids-prod-img-box">
+          <span class="kids-prod-step">Step 1 (Oily/Sweaty)</span>
+          <span class="kids-prod-badge">pH 5.5 Formula</span>
+          <img src="/assets/images/prod-clean-sebamed-cleanser.webp"
+               alt="Sebamed Clear Face Cleansing Foam pH 5.5"
+               loading="lazy" width="180" height="180">
+        </div>
+        <h3 class="kids-prod-name">Sebamed Clear Face Foam</h3>
+        <div class="kids-prod-role">pH-Balanced Foam Wash</div>
+        <p class="kids-prod-desc">Maintains the skin's natural protective acid mantle at pH 5.5. Helps clear sweat-induced hairline bumps without drying chemicals.</p>
+        <div class="kids-prod-highlight">✨ Ideal for: Forehead sweat bumps after sports</div>
+      </div>
+
+      <div class="kids-prod-card">
+        <div class="kids-prod-img-box">
+          <span class="kids-prod-step">Step 2: Hydrate</span>
+          <span class="kids-prod-badge">Oil-Free Gel</span>
+          <img src="/assets/ponds-gel.webp"
+               alt="Pond's Super Light Gel Oil-Free Moisturiser"
+               loading="lazy" width="180" height="180">
+        </div>
+        <h3 class="kids-prod-name">Pond's Super Light Gel</h3>
+        <div class="kids-prod-role">Breathable Water Gel</div>
+        <p class="kids-prod-desc">Infused with Hyaluronic Acid and Vitamin E. Delivers weightless hydration that absorbs immediately without feeling heavy or sticky in humidity.</p>
+        <div class="kids-prod-highlight">✨ Ideal for: Zero pore-clogging; non-greasy finish</div>
+      </div>
+
+      <div class="kids-prod-card">
+        <div class="kids-prod-img-box">
+          <span class="kids-prod-step">Step 3: Protect</span>
+          <span class="kids-prod-badge">Sweat Resistant</span>
+          <img src="/assets/images/prod-clean-reequil-sunscreen.webp"
+               alt="Re'equil Ultra Matte Dry Touch Sunscreen SPF 50"
+               loading="lazy" width="180" height="180">
+        </div>
+        <h3 class="kids-prod-name">Re'equil Ultra Matte SPF 50</h3>
+        <div class="kids-prod-role">Outdoor Sports Sunscreen</div>
+        <p class="kids-prod-desc">Velvety dry-touch silicone formula that stays put during PE class, cricket, or football matches. Will not run with sweat into eyes.</p>
+        <div class="kids-prod-highlight">✨ Ideal for: School sports outdoors; zero white cast</div>
+      </div>
     </div>
 
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem;" class="reveal">
       <div style="background: #F0F9FF; border: 1.5px solid #BAE6FD; border-radius: var(--radius-lg); padding: 1.5rem;">
-        <h3 style="font-size: 1rem; margin-bottom: 0.75rem;">✅ Gentler Brands for 10–14 Year Olds</h3>
+        <h3 style="font-size: 1rem; margin-bottom: 0.75rem;">✅ Pre-Teen Skin Rules (Ages 10–14)</h3>
         <ul style="font-size: 0.88rem; color: var(--text-muted); padding-left: 1.2rem; line-height: 2;">
-          <li><strong>Cetaphil Gentle Cleanser</strong> — gold standard for early congestion</li>
-          <li><strong>Sebamed Kids pH 5.5</strong> — sensitive skin friendly</li>
-          <li><strong>Hey Teen</strong> — built for Indian teen skin</li>
-          <li><strong>Tuco Kids</strong> — sulphate-free for ages 9+</li>
+          <li><strong>Cetaphil Gentle Cleanser</strong> — gold standard for initial congestion</li>
+          <li><strong>Sebamed Kids pH 5.5</strong> — protects delicate skin barrier</li>
+          <li><strong>Hey Teen &amp; Tuco Kids</strong> — gentle, sulphate-free Indian student picks</li>
+          <li><strong>Stick to non-comedogenic</strong> water-based formulations</li>
         </ul>
       </div>
       <div style="background: #FFF7ED; border: 1.5px solid #FED7AA; border-radius: var(--radius-lg); padding: 1.5rem;">
         <h3 style="font-size: 1rem; margin-bottom: 0.75rem;">🚫 What to Avoid at This Age</h3>
         <ul style="font-size: 0.88rem; color: var(--text-muted); padding-left: 1.2rem; line-height: 2;">
-          <li>Walnut or apricot scrubs (causes micro-tears)</li>
-          <li>10% Benzoyl Peroxide (too harsh, causes peeling)</li>
+          <li>Walnut or apricot scrubs (causes physical micro-tears)</li>
+          <li>10% Benzoyl Peroxide (too harsh, triggers chemical peeling)</li>
           <li>High-strength tretinoin without prescription</li>
-          <li>Heavy coconut oil champi left overnight</li>
+          <li>Heavy coconut oil champi left overnight on forehead</li>
         </ul>
       </div>
     </div>
 
     <div style="background: #F0FDF4; border: 1.5px solid #86EFAC; border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;" class="reveal">
-      <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">👶 The Simple Three (Morning Routine)</h3>
+      <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">👶 The "Simple Three" Daily Routine</h3>
       <p style="font-size: 0.9rem; color: var(--text-muted);">
-        <strong>1. Cleanse:</strong> Mild foaming wash (Cetaphil / Sebamed) &nbsp;→&nbsp;
-        <strong>2. Moisturise:</strong> Oil-free gel (Ponds Light / Sebamed) &nbsp;→&nbsp;
-        <strong>3. Protect:</strong> SPF 30+ non-greasy sunscreen
+        <strong>1. Cleanse:</strong> Mild gentle wash (Cetaphil / Sebamed) right after sports &nbsp;→&nbsp;
+        <strong>2. Moisturise:</strong> Oil-free gel (Pond's Light Gel) to calm redness &nbsp;→&nbsp;
+        <strong>3. Protect:</strong> SPF 30–50 matte sunscreen before heading outside
       </p>
     </div>
   </div>
