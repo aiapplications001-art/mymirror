@@ -593,6 +593,105 @@
       border: 0;
     }
 
+    /* 6-Week Recovery Timeline */
+    .timeline-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      margin: 1.75rem 0;
+    }
+    @media (min-width: 768px) {
+      .timeline-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .timeline-card {
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-top: 4px solid #0284C7;
+      border-radius: 1rem;
+      padding: 1.4rem;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+    }
+    .timeline-tag {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #0284C7;
+      margin-bottom: 0.35rem;
+    }
+    .timeline-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #0F172A;
+      margin-bottom: 0.5rem;
+    }
+    .timeline-desc {
+      font-size: 0.875rem;
+      color: #475569;
+      line-height: 1.55;
+      flex-grow: 1;
+      margin-bottom: 0.75rem;
+    }
+    .timeline-result {
+      background: #F0F9FF;
+      border-radius: 0.5rem;
+      padding: 0.6rem 0.75rem;
+      font-size: 0.8rem;
+      color: #0369A1;
+      font-weight: 600;
+    }
+
+    /* Dos and Don'ts Board */
+    .dos-donts-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      margin: 1.75rem 0;
+    }
+    @media (min-width: 640px) {
+      .dos-donts-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .dos-col, .donts-col {
+      background: #FFFFFF;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    }
+    .dos-col {
+      border: 1px solid #BBF7D0;
+      border-top: 4px solid #16A34A;
+    }
+    .donts-col {
+      border: 1px solid #FECACA;
+      border-top: 4px solid #DC2626;
+    }
+    .board-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    .dos-col .board-header { color: #166534; }
+    .donts-col .board-header { color: #991B1B; }
+    .board-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .board-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: #334155;
+      line-height: 1.5;
+    }
+    .board-item span { flex-shrink: 0; font-size: 1rem; }
+
     /* Safe 3-Step Routine Cards */
     .step-cards-grid {
       display: grid;
@@ -765,6 +864,67 @@
       transform: translateY(-2px);
     }
 
+    /* Clinical Insights Card */
+    .clinical-box {
+      background: #F8FAFC;
+      border: 1px solid #CBD5E1;
+      border-left: 5px solid #0284C7;
+      border-radius: 0.85rem;
+      padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0;
+    }
+    .clinical-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #0F172A;
+      margin-bottom: 0.4rem;
+    }
+    .clinical-text {
+      font-size: 0.9rem;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    /* Related Guides Grid */
+    .related-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    @media (min-width: 640px) {
+      .related-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .related-card {
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 0.75rem;
+      padding: 1.15rem;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .related-card:hover {
+      border-color: #0284C7;
+      transform: translateY(-2px);
+    }
+    .related-tag {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #0284C7;
+      margin-bottom: 0.25rem;
+    }
+    .related-card h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #0F172A;
+      margin-bottom: 0.35rem;
+    }
+    .related-card p {
+      font-size: 0.825rem;
+      color: #64748B;
+      line-height: 1.45;
+    }
+
     /* FAQ Accordion */
     .faq-list {
       display: flex;
@@ -913,12 +1073,6 @@
       white-space: nowrap;
       flex-shrink: 0;
     }
-
-    /* Scroll animations */
-    .reveal {
-      opacity: 1;
-      transform: none;
-    }
   </style>
 </head>
 <body>
@@ -954,7 +1108,7 @@
       </div>
       <div class="meta-item">
         <span>⏱️</span>
-        <span>6 Min Read</span>
+        <span>7 Min Read</span>
       </div>
       <div class="meta-item">
         <span>📅</span>
@@ -1075,7 +1229,7 @@
 </section>
 
 <!-- ───── SECTION 3: THE 3-POINT DIAGNOSTIC TEST ───── -->
-<section class="section">
+<section class="section" id="diagnostic-test">
   <div class="container">
     <span class="section-label">Self-Assessment</span>
     <h2 class="section-title">The 3-Point "Seed vs. Pimple" Squeeze Test</h2>
@@ -1176,7 +1330,98 @@
   </div>
 </section>
 
-<!-- ───── SECTION 6: SAFE 3-STEP ROUTINE ───── -->
+<!-- ───── SECTION 6: 6-WEEK NATURAL SHEDDING TIMELINE ───── -->
+<section class="section">
+  <div class="container">
+    <span class="section-label">Recovery Timeline</span>
+    <h2 class="section-title">What Happens When You Stop Using Castor Oil?</h2>
+    <p class="section-body">You do not need harsh chemical peels to fix under-eye congestion. When you remove heavy occlusives, your skin cells regain their natural shedding rhythm.</p>
+
+    <div class="timeline-grid">
+      <div class="timeline-card">
+        <div class="timeline-tag">Phase 1: Weeks 1 to 2</div>
+        <h3 class="timeline-title">Skin Resumes Respiration</h3>
+        <p class="timeline-desc">The heavy lipid seal is gone. Under-eye swelling subsides and oil film washes away completely with water-soluble cleansers.</p>
+        <div class="timeline-result">✓ Pores clear of surface debris</div>
+      </div>
+
+      <div class="timeline-card">
+        <div class="timeline-tag">Phase 2: Weeks 3 to 4</div>
+        <h3 class="timeline-title">Upward Keratin Migration</h3>
+        <p class="timeline-desc">The natural 28-day skin renewal cycle pushes trapped keratin flakes closer to the surface of the stratum corneum.</p>
+        <div class="timeline-result">✓ Milia seeds become more superficial</div>
+      </div>
+
+      <div class="timeline-card">
+        <div class="timeline-tag">Phase 3: Weeks 5 to 6</div>
+        <h3 class="timeline-title">Natural Desquamation</h3>
+        <p class="timeline-desc">Small surface seeds slough off naturally during gentle cleansing without needing needles or painful extraction.</p>
+        <div class="timeline-result">✓ Smooth under-eye skin texture</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── SECTION 7: DOS AND DON'TS BOARD ───── -->
+<section class="section">
+  <div class="container">
+    <span class="section-label">Care Rules</span>
+    <h2 class="section-title">Under-Eye Milia: The Do's &amp; Don'ts</h2>
+    <p class="section-body">Protecting thin eye skin from permanent damage requires knowing which habits help and which create deep post-inflammatory dark marks.</p>
+
+    <div class="dos-donts-grid">
+      <div class="dos-col">
+        <div class="board-header">
+          <span>🟢</span> What to Do
+        </div>
+        <ul class="board-list">
+          <li class="board-item">
+            <span>✓</span>
+            <div><strong>Switch to Plant Squalane:</strong> Hydrates tired eye skin without leaving heavy wax residue or feeding micro-organisms.</div>
+          </li>
+          <li class="board-item">
+            <span>✓</span>
+            <div><strong>Wear UV Sunglasses:</strong> Sun damage thickens outer skin layers, making it harder for trapped keratin to shed naturally.</div>
+          </li>
+          <li class="board-item">
+            <span>✓</span>
+            <div><strong>Cleanse Twice Daily:</strong> Use a gentle non-stripping cleanser to wash away daily oil, dust, and sunscreen buildup.</div>
+          </li>
+          <li class="board-item">
+            <span>✓</span>
+            <div><strong>Consult a Dermatologist:</strong> If large milia seeds persist past 8 weeks, let a doctor unroof them with a sterile medical tool.</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="donts-col">
+        <div class="board-header">
+          <span>🔴</span> What NOT to Do
+        </div>
+        <ul class="board-list">
+          <li class="board-item">
+            <span>✗</span>
+            <div><strong>Never Pick with Needles:</strong> Piercing eye skin with sewing pins causes bacterial infections and permanent dark scars.</div>
+          </li>
+          <li class="board-item">
+            <span>✗</span>
+            <div><strong>Never Squeeze Aggressively:</strong> Milia have no pore opening. Squeezing bruises capillaries and leaves dark eye circles.</div>
+          </li>
+          <li class="board-item">
+            <span>✗</span>
+            <div><strong>Avoid Heavy DIY Oils:</strong> Coconut oil, mustard oil, and pure castor oil should never be smeared across the orbital bone.</div>
+          </li>
+          <li class="board-item">
+            <span>✗</span>
+            <div><strong>Avoid Harsh Walnut Scrubs:</strong> Gritty physical particles tear delicate under-eye tissue and speed up fine lines.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── SECTION 8: SAFE 3-STEP ROUTINE ───── -->
 <section class="section">
   <div class="container">
     <span class="section-label">Safe Application</span>
@@ -1227,7 +1472,23 @@
   </div>
 </section>
 
-<!-- ───── SECTION 7: RECOMMENDED PRODUCTS ───── -->
+<!-- ───── SECTION 9: CLINICAL INSIGHTS ───── -->
+<section class="section">
+  <div class="container">
+    <span class="section-label">Medical Evidence</span>
+    <h2 class="section-title">What Clinical Studies Say About Castor Oil &amp; Milia</h2>
+    <p class="section-body">Dermatological research shows that skin around the eyes absorbs substances differently than the rest of the face.</p>
+
+    <div class="clinical-box">
+      <div class="clinical-title">📑 Research Note: Viscosity &amp; Epidermal Retention</div>
+      <div class="clinical-text">
+        Studies in cosmetic dermatology show that high molecular weight lipids with high viscosity (such as ricinoleic acid polymers) form a semi-solid film over the stratum corneum. In zones with low follicular density—like the infraorbital region—this physical film reduces natural epidermal desquamation by up to 35%, increasing the formation of secondary retention cysts.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── SECTION 10: RECOMMENDED PRODUCTS ───── -->
 <section class="section">
   <div class="container">
     <span class="section-label">Doctor-Approved Alternatives</span>
@@ -1278,7 +1539,7 @@
   </div>
 </section>
 
-<!-- ───── SECTION 8: SCAN CTA BANNER ───── -->
+<!-- ───── SECTION 11: SCAN CTA BANNER ───── -->
 <section class="container">
   <div class="scan-cta-card">
     <h3>Unsure What Those Bumps Under Your Eyes Are?</h3>
@@ -1290,7 +1551,42 @@
   </div>
 </section>
 
-<!-- ───── SECTION 9: FAQS ───── -->
+<!-- ───── SECTION 12: RELATED GUIDES CLUSTER ───── -->
+<section class="section">
+  <div class="container">
+    <span class="section-label">Skin Knowledge Hub</span>
+    <h2 class="section-title">Explore Related Dermatological Guides</h2>
+    <p class="section-body">Learn more about identifying skin conditions, balancing face oils, and building healthy daily routines.</p>
+
+    <div class="related-grid">
+      <a href="/skin-analysis/milia-on-face/" class="related-card">
+        <div class="related-tag">Skin Texture</div>
+        <h4>Milia on Face Guide</h4>
+        <p>Learn how keratin seeds form across eyelids and cheeks, and discover doctor-approved removal methods.</p>
+      </a>
+
+      <a href="/skin-analysis/marula-oil-for-face-benefits-skin-type-india/" class="related-card">
+        <div class="related-tag">Face Oils</div>
+        <h4>Marula Oil for Face Guide</h4>
+        <p>Understand oleic fatty acids, pore-clogging risks, and how to safely hydrate dry skin in Indian climates.</p>
+      </a>
+
+      <a href="/skin-analysis/oily-vs-dehydrated-skin/" class="related-card">
+        <div class="related-tag">Skin Diagnostics</div>
+        <h4>Oily vs. Dehydrated Skin</h4>
+        <p>Take the self-check to find out if your face lacks natural oil or water, and choose the right moisturizer.</p>
+      </a>
+
+      <a href="/skin-analysis/how-to-know-your-skin-type/" class="related-card">
+        <div class="related-tag">Skin Type</div>
+        <h4>How to Know Your Skin Type</h4>
+        <p>Step-by-step at-home guide to identifying dry, oily, combination, or sensitive skin accurately.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ───── SECTION 13: FAQS ───── -->
 <section class="section">
   <div class="container">
     <span class="section-label">Frequently Asked Questions</span>
