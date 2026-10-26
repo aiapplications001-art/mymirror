@@ -153,991 +153,614 @@
   }
   </script>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
-
   <style>
+    :root {
+      --brand: #EC610E;
+      --brand-dark: #C94E05;
+      --brand-light: #FFF3EB;
+      --surface: #FFFFFF;
+      --surface-subtle: #F9FAFB;
+      --text: #1F2937;
+      --text-muted: #4B5563;
+      --border: #E5E7EB;
+      --radius: 12px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-card: 0 4px 16px rgba(0,0,0,0.07);
+      --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; font-size: 16px; -webkit-text-size-adjust: 100%; }
+    html { scroll-behavior: smooth; }
     body {
-      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-      color: #1E293B;
-      background: #FAFAFA;
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
-    img { max-width: 100%; height: auto; display: block; }
-    a { color: inherit; text-decoration: none; }
-
-    /* Layout Container */
-    .container { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 1.25rem; }
-
-    /* Header Nav */
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid #E2E8F0;
-    }
-    .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 64px;
-    }
-    .brand-logo {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .brand-logo img {
-      height: 34px;
-      width: auto;
-    }
-    .nav-cta-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.375rem;
-      background: #0284C7;
-      color: #FFFFFF;
-      font-weight: 700;
-      font-size: 0.875rem;
-      padding: 0.55rem 1.15rem;
-      border-radius: 9999px;
-      transition: background 0.2s ease, transform 0.15s ease;
-      box-shadow: 0 2px 6px rgba(2, 132, 199, 0.25);
-    }
-    .nav-cta-btn:hover {
-      background: #0369A1;
-      transform: translateY(-1px);
-    }
-
-    /* Hero Section */
-    .hero {
-      padding: 3rem 0 2.5rem;
-      background: linear-gradient(180deg, #F0F9FF 0%, #FAFAFA 100%);
-    }
-    .hero-badge-wrap {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
-      flex-wrap: wrap;
-    }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 0.25rem 0.65rem;
-      border-radius: 9999px;
-    }
-    .badge-primary { background: #E0F2FE; color: #0284C7; }
-    .badge-doctor { background: #DCFCE7; color: #166534; }
-
-    .hero-title {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(2rem, 4.2vw, 3.1rem);
-      font-weight: 700;
-      line-height: 1.2;
-      color: #0F172A;
-      margin-bottom: 1.15rem;
-    }
-    .hero-subtitle {
-      font-size: 1.125rem;
-      color: #475569;
-      max-width: 820px;
+      font-family: var(--font-body);
+      color: var(--text);
+      background: #FFFFFF;
       line-height: 1.65;
-      margin-bottom: 1.5rem;
+      -webkit-font-smoothing: antialiased;
     }
 
-    .hero-meta {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      flex-wrap: wrap;
-      font-size: 0.875rem;
-      color: #64748B;
-      margin-bottom: 2rem;
-    }
-    .meta-item {
-      display: flex;
-      align-items: center;
-      gap: 0.35rem;
-    }
-
-    .hero-image-wrap {
-      border-radius: 1.25rem;
-      overflow: hidden;
-      box-shadow: 0 16px 36px -10px rgba(15, 23, 42, 0.12);
-      border: 1px solid #E2E8F0;
-      margin-bottom: 2.25rem;
-      background: #FFFFFF;
-    }
-    .hero-image-wrap img {
+    .container {
       width: 100%;
-      height: auto;
-      aspect-ratio: 3 / 2;
-      object-fit: cover;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
     }
 
-    /* Quick Verdict Box */
-    .verdict-box {
-      background: #FFFFFF;
-      border: 2px solid #BAE6FD;
-      border-radius: 1rem;
-      padding: 1.5rem;
-      margin-bottom: 3rem;
-      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.08);
+    /* ───── HEADER ───── */
+    .cal-header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 0.85rem 0;
     }
-    .verdict-title {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 1.15rem;
-      font-weight: 800;
-      color: #0369A1;
-      margin-bottom: 1rem;
+    .cal-nav-container {
+      display: flex; align-items: center; justify-content: space-between;
+      max-width: 1140px; margin: 0 auto; padding: 0 1.25rem;
     }
-    .verdict-grid {
+    .cal-logo img { height: 32px; width: auto; display: block; }
+    .cal-nav-links { display: flex; gap: 1.5rem; list-style: none; align-items: center; }
+    .cal-nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+    .cal-nav-links a:hover { color: var(--brand); }
+    .cal-btn-primary {
+      background: var(--brand); color: #fff;
+      padding: 0.55rem 1.15rem; border-radius: 50px;
+      text-decoration: none; font-weight: 700; font-size: 0.85rem;
+      transition: background 0.2s, transform 0.15s;
+      display: inline-block;
+    }
+    .cal-btn-primary:hover { background: var(--brand-dark); transform: translateY(-1px); }
+    @media (max-width: 768px) { .cal-nav-links { display: none; } }
+
+    /* ───── TRUST BAR ───── */
+    .trust-bar {
+      background: #F8FAFC; border-bottom: 1px solid var(--border);
+      padding: 0.65rem 0; font-size: 0.82rem; color: var(--text-muted);
+    }
+    .trust-inner {
+      display: flex; gap: 1.5rem; justify-content: center;
+      flex-wrap: wrap; align-items: center;
+    }
+    .trust-badge { display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 600; }
+
+    /* ───── HERO SECTION ───── */
+    .hero-section {
+      padding: 3.5rem 0 2.5rem;
+      background: linear-gradient(180deg, #FFF9F5 0%, #FFFFFF 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-grid {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-    @media (min-width: 640px) {
-      .verdict-grid { grid-template-columns: 1fr 1fr; }
-    }
-    .verdict-col {
-      background: #F8FAFC;
-      border-radius: 0.75rem;
-      padding: 1rem 1.25rem;
-      border-left: 4px solid #CBD5E1;
-    }
-    .verdict-col.good { border-left-color: #16A34A; }
-    .verdict-col.bad { border-left-color: #DC2626; }
-    .verdict-label {
-      font-weight: 700;
-      font-size: 0.95rem;
-      margin-bottom: 0.4rem;
-      display: flex;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3rem;
       align-items: center;
-      gap: 0.35rem;
     }
-    .verdict-col.good .verdict-label { color: #166534; }
-    .verdict-col.bad .verdict-label { color: #991B1B; }
-    .verdict-text { font-size: 0.9rem; color: #475569; }
+    @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 2rem; } }
 
-    /* Section Global */
-    .section {
-      padding: 2.75rem 0;
-      border-top: 1px solid #E2E8F0;
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--brand-light); color: var(--brand);
+      padding: 0.35rem 0.9rem; border-radius: 50px;
+      font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.05em; margin-bottom: 1rem;
     }
+    .hero-h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.8vw, 2.75rem);
+      font-weight: 800; line-height: 1.2;
+      color: var(--text); margin-bottom: 1rem;
+    }
+    .hero-h1 em {
+      font-style: normal;
+      background: linear-gradient(135deg, #EA580C, #C2410C);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-subtext {
+      font-size: 1.05rem; color: var(--text-muted);
+      line-height: 1.65; margin-bottom: 1.75rem;
+    }
+
+    .hero-quick-triage {
+      background: #FFFFFF; border: 1.5px solid #FED7AA;
+      border-radius: var(--radius); padding: 1.25rem 1.4rem;
+      box-shadow: var(--shadow-sm); margin-bottom: 1.75rem;
+    }
+    .hero-quick-triage-title {
+      font-weight: 700; font-size: 0.95rem; color: #9A3412;
+      margin-bottom: 0.65rem; display: flex; align-items: center; gap: 0.5rem;
+    }
+    .hero-quick-triage ul { list-style: none; display: flex; flex-direction: column; gap: 0.45rem; }
+    .hero-quick-triage li { font-size: 0.88rem; color: var(--text); line-height: 1.5; }
+
+    .hero-cta-group { display: flex; flex-direction: column; gap: 0.65rem; align-items: flex-start; }
+    .btn-hero-primary {
+      background: var(--brand); color: #fff;
+      padding: 0.85rem 1.85rem; border-radius: 50px;
+      text-decoration: none; font-weight: 800; font-size: 1rem;
+      box-shadow: 0 4px 14px rgba(236,97,14,0.35);
+      transition: background 0.2s, transform 0.15s;
+      display: inline-block;
+    }
+    .btn-hero-primary:hover { background: var(--brand-dark); transform: translateY(-2px); }
+    .hero-cta-note { font-size: 0.78rem; color: #64748B; font-weight: 500; }
+
+    /* Hero Visual Card */
+    .hero-visual-card {
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg); overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+    .hero-visual-top {
+      position: relative; overflow: hidden; background: #FFF7ED;
+    }
+    .hero-visual-top img {
+      width: 100%; height: auto; display: block; object-fit: cover;
+    }
+    .hero-visual-badge {
+      position: absolute; bottom: 12px; left: 12px;
+      background: rgba(17, 24, 39, 0.85); color: #fff;
+      padding: 0.35rem 0.75rem; border-radius: 6px;
+      font-size: 0.75rem; font-weight: 700;
+      backdrop-filter: blur(4px);
+    }
+    .doctor-card-header {
+      padding: 1.15rem 1.4rem; background: var(--surface-subtle);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 0.85rem;
+    }
+    .doctor-avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: #FED7AA; color: #9A3412; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; border: 2px solid #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .doctor-info .doctor-name { font-weight: 700; font-size: 0.95rem; color: var(--text); }
+    .doctor-info .doctor-title { font-size: 0.78rem; color: var(--text-muted); }
+    .doctor-card-body { padding: 1.25rem 1.4rem; }
+    .doctor-finding {
+      font-size: 0.88rem; color: #374151; line-height: 1.6;
+      font-style: italic; margin-bottom: 1rem;
+    }
+    .doctor-stats {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem;
+      border-top: 1px dashed var(--border); padding-top: 1rem;
+    }
+    .doc-stat { text-align: center; }
+    .doc-stat-num { font-size: 1rem; font-weight: 800; color: var(--brand); }
+    .doc-stat-label { font-size: 0.68rem; color: #64748B; font-weight: 600; text-transform: uppercase; margin-top: 0.2rem; }
+
+    /* ───── BREADCRUMB ───── */
+    .breadcrumb {
+      padding: 1rem 0; font-size: 0.82rem; color: var(--text-muted);
+    }
+    .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--brand); }
+    .breadcrumb span { color: var(--brand); font-weight: 600; }
+
+    /* ───── SECTIONS ───── */
+    .section { padding: 3.75rem 0; }
+    .section-alt { background: var(--surface-subtle); }
+
     .section-label {
       display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #0284C7;
-      margin-bottom: 0.4rem;
+      background: var(--brand-light); color: var(--brand);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em;
+      text-transform: uppercase; border-radius: 50px;
+      padding: 0.3rem 0.9rem; margin-bottom: 0.75rem;
     }
     .section-title {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(1.6rem, 3vw, 2.25rem);
-      font-weight: 700;
-      color: #0F172A;
-      line-height: 1.25;
-      margin-bottom: 1rem;
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 800; line-height: 1.25;
+      color: var(--text); margin-bottom: 0.75rem;
     }
-    .section-body {
-      font-size: 1.05rem;
-      color: #334155;
-      line-height: 1.7;
-      margin-bottom: 1.5rem;
-    }
+    .section-body { font-size: 1rem; color: var(--text-muted); max-width: 720px; line-height: 1.7; }
 
-    /* Anatomy Cards */
-    .anatomy-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.25rem;
-      margin: 1.75rem 0;
+    /* ───── CARDS GRID ───── */
+    .card-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+    @media (max-width: 850px) { .card-grid-3 { grid-template-columns: 1fr; } }
+    .feature-card {
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg); padding: 1.65rem;
+      box-shadow: var(--shadow-sm);
     }
-    @media (min-width: 768px) {
-      .anatomy-grid { grid-template-columns: repeat(3, 1fr); }
-    }
-    .anatomy-card {
-      background: #FFFFFF;
-      border: 1px solid #E2E8F0;
-      border-radius: 1rem;
-      padding: 1.4rem;
-      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .anatomy-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
-    }
-    .anatomy-icon {
-      font-size: 2rem;
-      margin-bottom: 0.75rem;
-      display: inline-block;
-    }
-    .anatomy-heading {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #0F172A;
-      margin-bottom: 0.5rem;
-    }
-    .anatomy-desc {
-      font-size: 0.9rem;
-      color: #475569;
-      line-height: 1.55;
-    }
+    .feature-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .feature-card p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
 
-    /* Native Responsive Comparison Cards: Facial & Under-Eye Oils */
+    /* ───── OIL COMPARISON LIST ───── */
     .oil-compare-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-      margin: 1.75rem 0;
+      display: flex; flex-direction: column; gap: 1.25rem;
+      margin-top: 2.25rem; max-width: 860px; margin-left: auto; margin-right: auto;
     }
     .oil-compare-card {
-      background: #FFFFFF;
-      border-radius: 1rem;
-      border: 1px solid #E2E8F0;
-      border-left: 5px solid #0284C7;
-      padding: 1.35rem 1.5rem;
-      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
-      transition: transform 0.15s ease;
+      background: #FFFFFF; border: 1.5px solid var(--border);
+      border-left: 5px solid; border-radius: var(--radius-lg);
+      padding: 1.4rem 1.6rem; box-shadow: var(--shadow-sm);
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    .oil-compare-card:hover {
-      transform: translateY(-2px);
-    }
+    .oil-compare-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-card); }
     .oil-card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 0.6rem;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.5rem;
     }
-    .oil-card-title {
-      font-size: 1.15rem;
-      font-weight: 800;
-      color: #0F172A;
-    }
-    .oil-badge {
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 0.25rem 0.6rem;
-      border-radius: 9999px;
-    }
-    .oil-card-desc {
-      font-size: 0.925rem;
-      color: #475569;
-      margin-bottom: 0.85rem;
-      line-height: 1.55;
-    }
+    .oil-card-title { font-size: 1.1rem; font-weight: 800; color: var(--text); }
+    .oil-badge { font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 50px; }
+    .oil-card-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 0.75rem; }
     .oil-card-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 0.6rem;
-      font-size: 0.875rem;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;
+      font-size: 0.85rem; border-top: 1px dashed var(--border); padding-top: 0.75rem;
     }
-    @media (min-width: 640px) {
-      .oil-card-grid { grid-template-columns: 1fr 1fr; }
-    }
-    .oil-best, .oil-avoid {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.4rem;
-      background: #F8FAFC;
-      padding: 0.55rem 0.85rem;
-      border-radius: 0.5rem;
-      color: #334155;
-    }
-    .oil-best span { color: #16A34A; }
-    .oil-avoid span { color: #DC2626; }
+    @media (max-width: 650px) { .oil-card-grid { grid-template-columns: 1fr; } }
+    .oil-best { color: #166534; font-weight: 600; display: flex; align-items: flex-start; gap: 0.4rem; }
+    .oil-avoid { color: #991B1B; font-weight: 600; display: flex; align-items: flex-start; gap: 0.4rem; }
 
-    /* The Diagnostic Box */
+    /* ───── INTERACTIVE DIAGNOSTIC BOX ───── */
     .diagnostic-box {
-      background: #FFFFFF;
-      border: 2px solid #BAE6FD;
-      border-radius: 1.25rem;
-      padding: 1.75rem;
-      box-shadow: 0 6px 18px rgba(2, 132, 199, 0.08);
-      margin: 1.75rem 0;
+      background: #FFFFFF; border: 2px solid #FDBA74;
+      border-radius: var(--radius-lg); padding: 2rem;
+      margin-top: 2.25rem; box-shadow: var(--shadow-card);
     }
     .diagnostic-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-bottom: 1.25rem;
-      padding-bottom: 0.75rem;
-      border-bottom: 1px solid #E2E8F0;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;
+      border-bottom: 1px dashed var(--border); padding-bottom: 1rem;
     }
-    .diagnostic-title {
-      font-size: 1.25rem;
-      font-weight: 800;
-      color: #0369A1;
-    }
+    .diagnostic-title { font-size: 1.25rem; font-weight: 800; color: #9A3412; }
     .diagnostic-pill {
-      background: #E0F2FE;
-      color: #0284C7;
-      font-size: 0.8rem;
-      font-weight: 700;
-      padding: 0.25rem 0.75rem;
-      border-radius: 9999px;
+      background: #FEF3C7; color: #92400E; font-size: 0.75rem;
+      font-weight: 700; padding: 0.3rem 0.8rem; border-radius: 50px;
     }
     .test-steps-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.25rem;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;
     }
-    @media (min-width: 768px) {
-      .test-steps-grid { grid-template-columns: repeat(3, 1fr); }
-    }
+    @media (max-width: 850px) { .test-steps-grid { grid-template-columns: 1fr; } }
     .test-step-item {
-      background: #F8FAFC;
-      border-radius: 0.75rem;
-      padding: 1.2rem;
-      border-top: 3px solid #0284C7;
+      background: #FFF7ED; border-radius: var(--radius); padding: 1.15rem;
     }
     .test-step-num {
-      width: 28px;
-      height: 28px;
-      background: #0284C7;
-      color: #FFFFFF;
-      border-radius: 9999px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.875rem;
-      font-weight: 800;
-      margin-bottom: 0.75rem;
+      width: 28px; height: 28px; border-radius: 50%; background: var(--brand);
+      color: #fff; font-weight: 800; font-size: 0.85rem;
+      display: flex; align-items: center; justify-content: center; margin-bottom: 0.5rem;
     }
-    .test-step-item h4 {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #0F172A;
-      margin-bottom: 0.4rem;
+    .test-step-item h4 { font-size: 0.92rem; font-weight: 700; margin-bottom: 0.35rem; }
+    .test-step-item p { font-size: 0.82rem; color: #78350F; line-height: 1.5; }
+
+    /* ───── COMPARISON TABLE ───── */
+    .table-wrap {
+      overflow-x: auto; margin-top: 2rem; border-radius: var(--radius-lg);
+      border: 1.5px solid var(--border); box-shadow: var(--shadow-sm);
     }
-    .test-step-item p {
-      font-size: 0.875rem;
-      color: #475569;
+    table { width: 100%; border-collapse: collapse; background: var(--surface); }
+    th {
+      background: var(--surface-subtle); padding: 1rem 1.25rem;
+      font-size: 0.82rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.05em; color: var(--text-muted);
+      border-bottom: 1.5px solid var(--border); text-align: left;
+    }
+    td {
+      padding: 1rem 1.25rem; font-size: 0.88rem;
+      border-bottom: 1px solid var(--border); color: var(--text);
       line-height: 1.5;
     }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #FFFBF7; }
 
-    /* Comparison Table Container */
-    .table-wrap {
-      overflow-x: auto;
-      border-radius: 0.75rem;
-      border: 1px solid #E2E8F0;
-      background: #FFFFFF;
-      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
-      margin: 1.75rem 0;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-      font-size: 0.925rem;
-    }
-    thead {
-      background: #0F172A;
-      color: #FFFFFF;
-    }
-    th, td {
-      padding: 1rem 1.15rem;
-      border-bottom: 1px solid #E2E8F0;
-      vertical-align: top;
-    }
-    th {
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      white-space: nowrap;
-    }
-    tbody tr:last-child td { border-bottom: none; }
-    tbody tr:hover { background: #F8FAFC; }
-
-    /* YouTube Video Embed */
+    /* ───── VIDEO CONTAINER ───── */
     .video-wrap {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      border-radius: 1rem;
-      box-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.12);
-      border: 1px solid #E2E8F0;
-      margin: 1.75rem 0;
-      background: #000000;
+      max-width: 680px; margin: 2rem auto 0;
+      border-radius: var(--radius-lg); overflow: hidden;
+      border: 1.5px solid var(--border); box-shadow: var(--shadow-card);
+      aspect-ratio: 16 / 9; background: #000;
     }
-    .video-wrap iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
+    .video-wrap iframe { width: 100%; height: 100%; border: none; }
 
-    /* 6-Week Recovery Timeline */
+    /* ───── TIMELINE ───── */
     .timeline-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.25rem;
-      margin: 1.75rem 0;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem;
     }
-    @media (min-width: 768px) {
-      .timeline-grid { grid-template-columns: repeat(3, 1fr); }
-    }
+    @media (max-width: 850px) { .timeline-grid { grid-template-columns: 1fr; } }
     .timeline-card {
-      background: #FFFFFF;
-      border: 1px solid #E2E8F0;
-      border-top: 4px solid #0284C7;
-      border-radius: 1rem;
-      padding: 1.4rem;
-      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
-      display: flex;
-      flex-direction: column;
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-top: 4px solid var(--brand); border-radius: var(--radius-lg);
+      padding: 1.5rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;
     }
     .timeline-tag {
-      font-size: 0.75rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      color: #0284C7;
-      margin-bottom: 0.35rem;
+      font-size: 0.72rem; font-weight: 800; text-transform: uppercase;
+      color: var(--brand); margin-bottom: 0.35rem;
     }
-    .timeline-title {
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: #0F172A;
-      margin-bottom: 0.5rem;
-    }
-    .timeline-desc {
-      font-size: 0.875rem;
-      color: #475569;
-      line-height: 1.55;
-      flex-grow: 1;
-      margin-bottom: 0.75rem;
-    }
+    .timeline-title { font-size: 1.05rem; font-weight: 800; color: var(--text); margin-bottom: 0.45rem; }
+    .timeline-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; flex-grow: 1; margin-bottom: 0.75rem; }
     .timeline-result {
-      background: #F0F9FF;
-      border-radius: 0.5rem;
-      padding: 0.6rem 0.75rem;
-      font-size: 0.8rem;
-      color: #0369A1;
-      font-weight: 600;
+      background: var(--brand-light); border-radius: var(--radius);
+      padding: 0.55rem 0.75rem; font-size: 0.8rem; color: #9A3412; font-weight: 600;
     }
 
-    /* Dos and Don'ts Board */
+    /* ───── DOS AND DON'TS ───── */
     .dos-donts-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.25rem;
-      margin: 1.75rem 0;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem;
     }
-    @media (min-width: 640px) {
-      .dos-donts-grid { grid-template-columns: 1fr 1fr; }
-    }
+    @media (max-width: 700px) { .dos-donts-grid { grid-template-columns: 1fr; } }
     .dos-col, .donts-col {
-      background: #FFFFFF;
-      border-radius: 1rem;
-      padding: 1.5rem;
-      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+      background: var(--surface); border-radius: var(--radius-lg);
+      padding: 1.6rem; box-shadow: var(--shadow-sm);
     }
-    .dos-col {
-      border: 1px solid #BBF7D0;
-      border-top: 4px solid #16A34A;
-    }
-    .donts-col {
-      border: 1px solid #FECACA;
-      border-top: 4px solid #DC2626;
-    }
+    .dos-col { border: 1.5px solid #BBF7D0; border-top: 4px solid #16A34A; }
+    .donts-col { border: 1.5px solid #FECACA; border-top: 4px solid #DC2626; }
     .board-header {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 1.15rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 1.1rem; font-weight: 800; margin-bottom: 1rem;
     }
     .dos-col .board-header { color: #166534; }
     .donts-col .board-header { color: #991B1B; }
-    .board-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
-    }
-    .board-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.5rem;
-      font-size: 0.9rem;
-      color: #334155;
-      line-height: 1.5;
-    }
+    .board-list { list-style: none; display: flex; flex-direction: column; gap: 0.85rem; }
+    .board-item { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.88rem; color: var(--text); line-height: 1.5; }
     .board-item span { flex-shrink: 0; font-size: 1rem; }
 
-    /* Safe 3-Step Routine Cards */
+    /* ───── STEP CARDS GRID ───── */
     .step-cards-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.25rem;
-      margin: 1.75rem 0;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.25rem;
     }
-    @media (min-width: 768px) {
-      .step-cards-grid { grid-template-columns: repeat(3, 1fr); }
-    }
+    @media (max-width: 850px) { .step-cards-grid { grid-template-columns: 1fr; } }
     .step-card {
-      background: #FFFFFF;
-      border: 1px solid #E2E8F0;
-      border-radius: 1rem;
-      padding: 1.4rem;
-      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
-      display: flex;
-      flex-direction: column;
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg); padding: 1.75rem 1.5rem;
+      box-shadow: var(--shadow-sm); display: flex; flex-direction: column;
+      transition: transform 0.2s, border-color 0.2s;
     }
-    .step-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 0.85rem;
-    }
+    .step-card:hover { transform: translateY(-3px); border-color: #FDBA74; }
+    .step-top { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1rem; }
     .step-number {
-      width: 32px;
-      height: 32px;
-      border-radius: 9999px;
-      background: #0284C7;
-      color: #FFFFFF;
-      font-weight: 800;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.95rem;
+      width: 40px; height: 40px; border-radius: 50%; background: var(--brand);
+      color: #fff; font-size: 1.1rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 2px 8px rgba(236,97,14,0.3); flex-shrink: 0;
     }
     .step-badge {
-      font-size: 0.725rem;
-      font-weight: 700;
-      padding: 0.2rem 0.55rem;
-      border-radius: 9999px;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em;
+      text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 6px;
     }
-    .step-title {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: #0F172A;
-      margin-bottom: 0.45rem;
-    }
+    .step-title { font-size: 1.05rem; font-weight: 800; color: var(--text); margin-bottom: 0.5rem; }
     .step-text {
-      font-size: 0.875rem;
-      color: #475569;
-      line-height: 1.55;
-      margin-bottom: 0.85rem;
-      flex-grow: 1;
+      font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;
+      margin-bottom: 1.25rem; flex-grow: 1;
     }
     .step-tip {
-      background: #F1F5F9;
-      border-radius: 0.5rem;
-      padding: 0.65rem 0.8rem;
-      font-size: 0.8rem;
-      color: #334155;
+      background: #F0FDF4; border: 1px solid #BBF7D0; border-radius: var(--radius);
+      padding: 0.75rem 0.9rem; font-size: 0.82rem; color: #166534; line-height: 1.5;
     }
-    .step-tip strong { color: #0F172A; display: block; margin-bottom: 0.2rem; }
-
-    /* Product Grid */
-    .product-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-      margin: 2rem 0;
-    }
-    @media (min-width: 640px) {
-      .product-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (min-width: 1024px) {
-      .product-grid { grid-template-columns: repeat(4, 1fr); }
-    }
-    .product-card {
-      background: #FFFFFF;
-      border: 1px solid #E2E8F0;
-      border-radius: 1rem;
-      padding: 1.25rem;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 4px 10px rgba(15, 23, 42, 0.03);
-      transition: transform 0.2s ease;
-    }
-    .product-card:hover { transform: translateY(-3px); }
-    .product-thumb {
-      height: 170px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1rem;
-      background: #F8FAFC;
-      border-radius: 0.75rem;
-      padding: 0.75rem;
-    }
-    .product-thumb img {
-      max-height: 100%;
-      width: auto;
-      object-fit: contain;
-    }
-    .product-tag {
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #0284C7;
-      margin-bottom: 0.25rem;
-    }
-    .product-name {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: #0F172A;
-      margin-bottom: 0.35rem;
-      line-height: 1.35;
-    }
-    .product-desc {
-      font-size: 0.825rem;
-      color: #64748B;
-      line-height: 1.45;
-      margin-bottom: 0.75rem;
-      flex-grow: 1;
-    }
-    .product-price {
-      font-weight: 800;
-      font-size: 0.95rem;
-      color: #0F172A;
+    .step-tip strong {
+      display: block; font-size: 0.75rem; text-transform: uppercase;
+      letter-spacing: 0.04em; margin-bottom: 0.2rem;
     }
 
-    /* Scan CTA Banner */
-    .scan-cta-card {
-      background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
-      border-radius: 1.25rem;
-      padding: 2.25rem 1.75rem;
-      color: #FFFFFF;
-      text-align: center;
-      margin: 3rem 0;
-      box-shadow: 0 12px 30px rgba(2, 132, 199, 0.25);
-    }
-    .scan-cta-card h3 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(1.5rem, 2.8vw, 2.1rem);
-      margin-bottom: 0.75rem;
-      color: #FFFFFF;
-    }
-    .scan-cta-card p {
-      font-size: 1rem;
-      max-width: 650px;
-      margin: 0 auto 1.5rem;
-      opacity: 0.92;
-      line-height: 1.6;
-    }
-    .scan-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: #FFFFFF;
-      color: #0284C7;
-      font-weight: 800;
-      font-size: 1rem;
-      padding: 0.85rem 2rem;
-      border-radius: 9999px;
-      transition: background 0.2s, transform 0.15s;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
-    }
-    .scan-btn:hover {
-      background: #F0F9FF;
-      transform: translateY(-2px);
-    }
-
-    /* Clinical Insights Card */
+    /* ───── CLINICAL BOX ───── */
     .clinical-box {
-      background: #F8FAFC;
-      border: 1px solid #CBD5E1;
-      border-left: 5px solid #0284C7;
-      border-radius: 0.85rem;
-      padding: 1.25rem 1.5rem;
-      margin: 1.75rem 0;
+      background: var(--surface-subtle); border: 1.5px solid var(--border);
+      border-left: 5px solid var(--brand); border-radius: var(--radius);
+      padding: 1.25rem 1.5rem; margin-top: 1.75rem;
     }
-    .clinical-title {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: #0F172A;
-      margin-bottom: 0.4rem;
+    .clinical-title { font-size: 1rem; font-weight: 800; color: var(--text); margin-bottom: 0.4rem; }
+    .clinical-text { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
+
+    /* ───── PRODUCT CARDS ───── */
+    .prod-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-top: 2rem; }
+    @media (max-width: 950px) { .prod-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 550px) { .prod-grid { grid-template-columns: 1fr; } }
+    .prod-card {
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg); padding: 1.4rem;
+      display: flex; flex-direction: column; box-shadow: var(--shadow-sm);
+      transition: transform 0.2s, border-color 0.2s;
     }
-    .clinical-text {
-      font-size: 0.9rem;
-      color: #475569;
-      line-height: 1.6;
+    .prod-card:hover { transform: translateY(-3px); border-color: #FDBA74; }
+    .prod-img-box {
+      background: #F8FAFC; border-radius: var(--radius);
+      padding: 1rem; text-align: center; margin-bottom: 1rem;
+    }
+    .prod-img-box img {
+      max-height: 130px; width: auto; max-width: 100%;
+      object-fit: contain; margin: 0 auto; display: block;
+    }
+    .prod-tag {
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.05em; color: var(--brand); margin-bottom: 0.35rem;
+    }
+    .prod-name { font-size: 0.98rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .prod-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.55; flex-grow: 1; margin-bottom: 0.85rem; }
+    .prod-role {
+      background: var(--surface-subtle); border-left: 2px solid var(--brand);
+      padding: 0.4rem 0.65rem; font-size: 0.75rem; font-weight: 600;
+      border-radius: 0 4px 4px 0; color: var(--text);
     }
 
-    /* Related Guides Grid */
-    .related-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-      margin: 1.5rem 0;
+    /* ───── CTA SECTION ───── */
+    .cta-banner {
+      background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%);
+      border: 2px solid #FDBA74; border-radius: var(--radius-lg);
+      padding: 3rem 2rem; text-align: center; margin: 4rem auto 2rem;
+      max-width: 860px; box-shadow: var(--shadow-card);
     }
-    @media (min-width: 640px) {
-      .related-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    .related-card {
-      background: #FFFFFF;
-      border: 1px solid #E2E8F0;
-      border-radius: 0.75rem;
-      padding: 1.15rem;
-      transition: border-color 0.2s, transform 0.15s;
-    }
-    .related-card:hover {
-      border-color: #0284C7;
-      transform: translateY(-2px);
-    }
-    .related-tag {
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #0284C7;
-      margin-bottom: 0.25rem;
-    }
-    .related-card h4 {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: #0F172A;
-      margin-bottom: 0.35rem;
-    }
-    .related-card p {
-      font-size: 0.825rem;
-      color: #64748B;
-      line-height: 1.45;
-    }
+    .cta-banner h2 { font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; margin-bottom: 0.75rem; }
+    .cta-banner p { font-size: 0.98rem; color: var(--text-muted); max-width: 580px; margin: 0 auto 1.5rem; }
 
-    /* FAQ Accordion */
-    .faq-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin: 1.75rem 0;
-    }
+    /* ───── FAQ ACCORDION ───── */
+    .faq-list { max-width: 820px; margin: 2rem auto 0; display: flex; flex-direction: column; gap: 0.85rem; }
     .faq-item {
-      background: #FFFFFF;
-      border: 1px solid #E2E8F0;
-      border-radius: 0.85rem;
-      padding: 1.25rem 1.5rem;
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: var(--radius); overflow: hidden;
+      box-shadow: var(--shadow-sm);
     }
-    .faq-question {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #0F172A;
-      margin-bottom: 0.5rem;
+    .faq-item details { width: 100%; }
+    .faq-item summary {
+      padding: 1.15rem 1.4rem; font-weight: 700; font-size: 0.95rem;
+      cursor: pointer; list-style: none; display: flex;
+      justify-content: space-between; align-items: center;
+      user-select: none;
     }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; font-size: 1.3rem; font-weight: 400; color: var(--brand); }
+    .faq-item details[open] summary::after { content: "−"; }
     .faq-answer {
-      font-size: 0.925rem;
-      color: #475569;
-      line-height: 1.65;
+      padding: 0 1.4rem 1.25rem; font-size: 0.88rem; color: var(--text-muted);
+      line-height: 1.65; border-top: 1px solid #F3F4F6; padding-top: 0.85rem;
     }
 
-    /* Reviewer Box */
-    .reviewer-card {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      background: #FFFFFF;
-      border: 1px solid #E2E8F0;
-      border-radius: 1rem;
-      padding: 1.25rem;
-      margin: 2rem 0;
-    }
-    .reviewer-avatar {
-      width: 64px;
-      height: 64px;
-      border-radius: 9999px;
-      background: #E0F2FE;
-      color: #0284C7;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 1.4rem;
-      flex-shrink: 0;
-    }
-    .reviewer-info h4 {
-      font-size: 1rem;
-      font-weight: 800;
-      color: #0F172A;
-      margin-bottom: 0.15rem;
-    }
-    .reviewer-info p {
-      font-size: 0.825rem;
-      color: #64748B;
-      line-height: 1.4;
-    }
-
-    /* Site Footer */
-    .site-footer {
-      background: #0F172A;
-      color: #94A3B8;
-      padding: 3rem 0 5.5rem;
-      font-size: 0.875rem;
-      border-top: 1px solid #1E293B;
-    }
-    .footer-inner {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      margin-bottom: 2rem;
-    }
-    @media (min-width: 640px) {
-      .footer-inner { grid-template-columns: 2fr 1fr 1fr; }
-    }
-    .footer-brand h4 {
-      color: #FFFFFF;
-      font-size: 1.15rem;
-      margin-bottom: 0.5rem;
-    }
-    .footer-brand p {
-      line-height: 1.5;
-      font-size: 0.825rem;
-    }
-    .footer-col h5 {
-      color: #FFFFFF;
-      font-size: 0.9rem;
-      margin-bottom: 0.75rem;
-    }
-    .footer-links {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-    }
-    .footer-links a:hover { color: #FFFFFF; }
-    .footer-bottom {
-      border-top: 1px solid #1E293B;
-      padding-top: 1.5rem;
-      text-align: center;
-      font-size: 0.8rem;
-    }
-
-    /* Mobile Sticky CTA */
-    .mobile-sticky-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 40;
-      background: rgba(255, 255, 255, 0.98);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border-top: 1px solid #E2E8F0;
-      padding: 0.75rem 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.75rem;
-    }
-    @media (min-width: 769px) {
-      .mobile-sticky-bar { display: none; }
-    }
-    .mobile-sticky-info {
-      font-size: 0.8rem;
-      line-height: 1.25;
-    }
-    .mobile-sticky-info strong {
-      color: #0F172A;
+    /* ───── RELATED GUIDES ───── */
+    .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-top: 2rem; }
+    @media (max-width: 650px) { .related-grid { grid-template-columns: 1fr; } }
+    .related-card {
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: var(--radius); padding: 1.25rem;
+      text-decoration: none; color: inherit; transition: transform 0.2s, border-color 0.2s;
       display: block;
     }
-    .mobile-sticky-info span {
-      color: #64748B;
-      font-size: 0.725rem;
+    .related-card:hover { transform: translateY(-2px); border-color: var(--brand); }
+    .related-tag { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--brand); margin-bottom: 0.3rem; }
+    .related-card h4 { font-size: 0.98rem; font-weight: 700; margin-bottom: 0.35rem; color: var(--text); }
+    .related-card p { font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; }
+
+    /* ───── FOOTER ───── */
+    .cal-footer {
+      background: #111827; color: #9CA3AF;
+      padding: 3.5rem 0 2rem; margin-top: 4rem; font-size: 0.85rem;
     }
-    .mobile-sticky-btn {
-      background: #0284C7;
-      color: #FFFFFF;
-      font-weight: 700;
-      font-size: 0.85rem;
-      padding: 0.6rem 1.2rem;
-      border-radius: 9999px;
-      white-space: nowrap;
-      flex-shrink: 0;
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem;
+      margin-bottom: 2.5rem;
     }
+    @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; } }
+    .footer-col h4 { color: #fff; font-size: 0.92rem; font-weight: 700; margin-bottom: 0.85rem; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+    .footer-col a { color: #9CA3AF; text-decoration: none; }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom {
+      border-top: 1px solid #374151; padding-top: 1.75rem;
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-bottom p { font-size: 0.78rem; }
+    .footer-bottom a { color: #9CA3AF; text-decoration: none; font-size: 0.78rem; }
+    .footer-bottom a:hover { color: #fff; }
+
+    /* ───── MOBILE STICKY CTA ───── */
+    .mobile-sticky-cta {
+      display: none; position: fixed; bottom: 0; left: 0; right: 0;
+      background: var(--brand); padding: 0.9rem 1.5rem;
+      text-align: center; z-index: 200;
+      box-shadow: 0 -4px 16px rgba(236,97,14,0.3);
+    }
+    .mobile-sticky-cta a {
+      color: #fff; font-weight: 800; font-size: 1rem;
+      text-decoration: none; display: block;
+    }
+    @media (max-width: 768px) { .mobile-sticky-cta { display: block; } }
   </style>
 </head>
 <body>
 
 <!-- ───── HEADER ───── -->
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="/" class="brand-logo" aria-label="MyMirror Home">
-      <img src="/assets/logo-v4.png" alt="MyMirror Logo" width="130" height="34">
+<header class="cal-header">
+  <nav class="cal-nav-container" aria-label="Main navigation">
+    <a href="/" class="cal-logo">
+      <img src="/assets/logo-v4.png" alt="MyMirror Logo" width="140" height="36">
     </a>
-    <a href="/scan/" class="nav-cta-btn">
-      <span>Free Face Scan</span>
-      <span>→</span>
-    </a>
-  </div>
+    <ul class="cal-nav-links">
+      <li><a href="/skin-analysis/">Skin Analysis</a></li>
+      <li><a href="/acne/">Acne Guides</a></li>
+      <li><a href="/pigmentation/">Pigmentation</a></li>
+    </ul>
+    <a href="https://mymirror.fit/scan/" class="cal-btn-primary">Start Free AI Scan ✨</a>
+  </nav>
 </header>
 
+<!-- ───── TRUST BAR ───── -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <span class="trust-badge">🧪 Facial Oils Desk</span>
+    <span class="trust-badge">🩺 Reviewed by Dr. Lipy Mehta, MD</span>
+    <span class="trust-badge">📅 Updated October 2026</span>
+  </div>
+</div>
+
 <!-- ───── HERO SECTION ───── -->
-<section class="hero">
+<section class="hero-section">
   <div class="container">
-    <div class="hero-badge-wrap">
-      <span class="badge badge-primary">Dermatology Guide</span>
-      <span class="badge badge-doctor">Reviewed by Dr. Lipy Mehta, MD</span>
-    </div>
+    <div class="hero-grid">
+      <div>
+        <div class="hero-badge">💧 Eye Care &amp; Milia Protocol</div>
+        <h1 class="hero-h1">Castor Oil on Face &amp; Under Eyes: <em>Miracle Hydrator or Milia Trap?</em></h1>
+        <p class="hero-subtext">Online trends claim thick castor oil wipes away under-eye hollows, wrinkles, and dark circles. But thousands wake up with tiny, hard white seeds that refuse to pop. Here is what happens when heavy ricinoleic acid meets the thinnest skin on your body.</p>
 
-    <h1 class="hero-title">Castor Oil on Face &amp; Under Eyes: Miracle Hydrator or Milia Seed Trap?</h1>
-    <p class="hero-subtitle">Online trends claim thick castor oil wipes away under-eye hollows, wrinkles, and dark circles. But thousands wake up with tiny, hard white seeds that refuse to pop. Here is what happens when heavy ricinoleic acid meets the thinnest skin on your body.</p>
-
-    <div class="hero-meta">
-      <div class="meta-item">
-        <span>🩺</span>
-        <span>Medically Reviewed by <strong>Dr. Lipy Mehta, MD</strong></span>
-      </div>
-      <div class="meta-item">
-        <span>⏱️</span>
-        <span>7 Min Read</span>
-      </div>
-      <div class="meta-item">
-        <span>📅</span>
-        <span>Updated October 2026</span>
-      </div>
-    </div>
-
-    <div class="hero-image-wrap">
-      <img src="/assets/images/castor-oil-face-hero.webp" alt="Amber dropper bottle with pure golden castor oil and pipette" width="1200" height="800" loading="eager">
-    </div>
-
-    <!-- Quick Verdict Callout -->
-    <div class="verdict-box">
-      <div class="verdict-title">
-        <span>⚡</span> The Quick Dermatologist Verdict
-      </div>
-      <div class="verdict-grid">
-        <div class="verdict-col good">
-          <div class="verdict-label">🟢 Safe For</div>
-          <div class="verdict-text">Dry, chapped lips, rough nail cuticles, cracked heels, and outer eyelash hair conditioning. Excellent protective shield on thick body skin.</div>
+        <!-- Immediate Triage Checklist in Hero -->
+        <div class="hero-quick-triage">
+          <div class="hero-quick-triage-title">⚡ 3 Golden Rules Before Touching the Dropper</div>
+          <ul>
+            <li>🤏 <strong>Lash Spoolie Only:</strong> Never smear raw castor oil across eyelid skin; apply strictly to lash hair tips.</li>
+            <li>💧 <strong>1 to 4 Dilution:</strong> If applying to dry cheek zones, always blend one drop into four drops of squalane first.</li>
+            <li>🛑 <strong>Never Squeeze Milia:</strong> Milia seeds have no pore opening. Squeezing tears thin eye skin and leaves dark scars.</li>
+          </ul>
         </div>
-        <div class="verdict-col bad">
-          <div class="verdict-label">🔴 High Risk For</div>
-          <div class="verdict-text">Delicate under-eye areas, oily T-zones, and acne-prone skin. It traps shedding dead skin cells, forming unpoppable keratin pearls known as milia.</div>
+
+        <div class="hero-cta-group">
+          <a href="https://mymirror.fit/scan/" class="btn-hero-primary">Start Free AI Skin Scan ✨</a>
+          <span class="hero-cta-note">Scan your lipid barrier &amp; pore clogging risk in 60s · Free &amp; private</span>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card -->
+      <div class="hero-visual-card">
+        <div class="hero-visual-top">
+          <img src="/assets/images/castor-oil-face-hero.webp"
+               alt="Amber dropper bottle dispensing pure golden castor oil"
+               width="600" height="400">
+          <span class="hero-visual-badge">Cold-Pressed Pure Castor Oil</span>
+        </div>
+        <div class="doctor-card-header">
+          <div class="doctor-avatar">LM</div>
+          <div class="doctor-info">
+            <div class="doctor-name">Dr. Lipy Mehta, MD</div>
+            <div class="doctor-title">Dermatologist · MyMirror Medical Advisor</div>
+          </div>
+        </div>
+        <div class="doctor-card-body">
+          <div class="doctor-finding">
+            "Castor oil works well on thick body skin like cracked heels and dry lips. But placing this heavy ricinoleic occlusive over thin under-eye skin traps shedding dead cells, creating stubborn keratin pearls known as milia."
+          </div>
+          <div class="doctor-stats">
+            <div class="doc-stat">
+              <div class="doc-stat-num">90%</div>
+              <div class="doc-stat-label">Ricinoleic</div>
+            </div>
+            <div class="doc-stat">
+              <div class="doc-stat-num">0.5mm</div>
+              <div class="doc-stat-label">Eye Skin</div>
+            </div>
+            <div class="doc-stat">
+              <div class="doc-stat-num">High</div>
+              <div class="doc-stat-label">Milia Risk</div>
+            </div>
+            <div class="doc-stat">
+              <div class="doc-stat-num">Never</div>
+              <div class="doc-stat-label">Squeeze</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- ───── BREADCRUMB ───── -->
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a> »
+    <a href="/skin-analysis/">Skin Analysis</a> »
+    <span>Castor Oil Under Eyes &amp; Milia Guide</span>
+  </nav>
+</div>
 
 <!-- ───── SECTION 1: WHY UNDER-EYE SKIN IS DIFFERENT ───── -->
 <section class="section">
@@ -1146,30 +769,30 @@
     <h2 class="section-title">Why Under-Eye Skin Cannot Handle Heavy Oils</h2>
     <p class="section-body">Your facial skin is not uniform. The skin directly beneath your lower lash line is built completely differently from your cheeks or forehead, making it vulnerable to heavy plant oils.</p>
 
-    <div class="anatomy-grid">
-      <div class="anatomy-card">
-        <div class="anatomy-icon">🔬</div>
-        <h3 class="anatomy-heading">Paper-Thin Barrier</h3>
-        <p class="anatomy-desc">Under-eye skin measures barely 0.5 millimeters thick—about one-quarter the thickness of your cheek skin. It has fewer epidermal layers to absorb thick products.</p>
+    <div class="card-grid-3">
+      <div class="feature-card">
+        <div class="feature-icon">🔬</div>
+        <h3>Paper-Thin Barrier</h3>
+        <p>Under-eye skin measures barely 0.5 millimeters thick—about one-quarter the thickness of your cheek skin. It has fewer epidermal layers to absorb thick products.</p>
       </div>
 
-      <div class="anatomy-card">
-        <div class="anatomy-icon">🚫</div>
-        <h3 class="anatomy-heading">Almost Zero Oil Glands</h3>
-        <p class="anatomy-desc">Unlike your nose or forehead, your eyelid region possesses virtually no sebaceous glands. It cannot metabolize, spread, or break down dense lipid coats.</p>
+      <div class="feature-card">
+        <div class="feature-icon">🚫</div>
+        <h3>Almost Zero Oil Glands</h3>
+        <p>Unlike your nose or forehead, your eyelid region possesses virtually no sebaceous glands. It cannot metabolize, spread, or break down dense lipid coats.</p>
       </div>
 
-      <div class="anatomy-card">
-        <div class="anatomy-icon">🍯</div>
-        <h3 class="anatomy-heading">Ricinoleic Acid Thickness</h3>
-        <p class="anatomy-desc">Castor oil contains nearly 90% ricinoleic acid. This unique fatty acid has extreme viscosity, acting like glue that seals shedding dead cells into tiny pockets.</p>
+      <div class="feature-card">
+        <div class="feature-icon">🍯</div>
+        <h3>Ricinoleic Acid Thickness</h3>
+        <p>Castor oil contains nearly 90% ricinoleic acid. This unique fatty acid has extreme viscosity, acting like glue that seals shedding dead cells into tiny pockets.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ───── SECTION 2: OILS COMPARISON DECK ───── -->
-<section class="section">
+<section class="section section-alt">
   <div class="container">
     <span class="section-label">Oil Breakdown</span>
     <h2 class="section-title">Face Oils Compared: Weight, Pores &amp; Eye Safety</h2>
@@ -1265,7 +888,7 @@
 </section>
 
 <!-- ───── SECTION 4: COMPARISON TABLE ───── -->
-<section class="section">
+<section class="section section-alt">
   <div class="container">
     <span class="section-label">Clinical Differentiation</span>
     <h2 class="section-title">Milia vs. Lookalikes: What Are Those White Bumps?</h2>
@@ -1331,7 +954,7 @@
 </section>
 
 <!-- ───── SECTION 6: 6-WEEK NATURAL SHEDDING TIMELINE ───── -->
-<section class="section">
+<section class="section section-alt">
   <div class="container">
     <span class="section-label">Recovery Timeline</span>
     <h2 class="section-title">What Happens When You Stop Using Castor Oil?</h2>
@@ -1422,7 +1045,7 @@
 </section>
 
 <!-- ───── SECTION 8: SAFE 3-STEP ROUTINE ───── -->
-<section class="section">
+<section class="section section-alt">
   <div class="container">
     <span class="section-label">Safe Application</span>
     <h2 class="section-title">How to Safely Use Castor Oil Without Growing Milia</h2>
@@ -1489,67 +1112,64 @@
 </section>
 
 <!-- ───── SECTION 10: RECOMMENDED PRODUCTS ───── -->
-<section class="section">
+<section class="section section-alt">
   <div class="container">
     <span class="section-label">Doctor-Approved Alternatives</span>
     <h2 class="section-title">Safer Hydrators for Indian Skin &amp; Under Eyes</h2>
     <p class="section-body">Looking to smooth fine lines, soften texture, or hydrate tired eyes without triggering milia seeds? These lightweight formulas provide hydration with zero heavy wax residue.</p>
 
-    <div class="product-grid">
-      <div class="product-card">
-        <div class="product-thumb">
+    <div class="prod-grid">
+      <div class="prod-card">
+        <div class="prod-img-box">
           <img src="/assets/images/prod-minimalist-0-3-retinol-in-squalane.webp" alt="Minimalist Retinol in Squalane" width="160" height="160" loading="lazy">
         </div>
-        <span class="product-tag">Cell Turnover</span>
-        <h3 class="product-name">Minimalist 0.3% Retinol in Squalane</h3>
-        <p class="product-desc">Gentle beginner-friendly retinoid carried in light squalane. Encourages skin renewal to prevent and dissolve small milia seeds.</p>
-        <div class="product-price">₹599</div>
+        <div class="prod-tag">Cell Turnover</div>
+        <div class="prod-name">Minimalist 0.3% Retinol</div>
+        <div class="prod-desc">Gentle beginner-friendly retinoid carried in light squalane. Encourages skin renewal to prevent and dissolve small milia seeds.</div>
+        <div class="prod-role">MRP ₹599 · Night Use</div>
       </div>
 
-      <div class="product-card">
-        <div class="product-thumb">
+      <div class="prod-card">
+        <div class="prod-img-box">
           <img src="/assets/images/prod-minimalist-ceramide-cream.webp" alt="Minimalist Ceramide Moisturizer" width="160" height="160" loading="lazy">
         </div>
-        <span class="product-tag">Barrier Care</span>
-        <h3 class="product-name">Minimalist 0.3% Ceramide Cream</h3>
-        <p class="product-desc">Replenishes essential barrier lipids without sticky mineral heaviness. Keeps skin bouncy and sealed safely.</p>
-        <div class="product-price">₹599</div>
+        <div class="prod-tag">Barrier Care</div>
+        <div class="prod-name">Minimalist 0.3% Ceramide</div>
+        <div class="prod-desc">Replenishes essential barrier lipids without sticky mineral heaviness. Keeps skin bouncy and sealed safely.</div>
+        <div class="prod-role">MRP ₹599 · Daily Hydrator</div>
       </div>
 
-      <div class="product-card">
-        <div class="product-thumb">
+      <div class="prod-card">
+        <div class="prod-img-box">
           <img src="/assets/images/prod-clean-cetaphil-gentle.webp" alt="Cetaphil Gentle Skin Cleanser" width="160" height="160" loading="lazy">
         </div>
-        <span class="product-tag">Gentle Cleanse</span>
-        <h3 class="product-name">Cetaphil Gentle Skin Cleanser</h3>
-        <p class="product-desc">Non-foaming water-soluble cleanser that washes away excess facial oils without stripping your moisture barrier.</p>
-        <div class="product-price">₹335</div>
+        <div class="prod-tag">Gentle Cleanse</div>
+        <div class="prod-name">Cetaphil Gentle Cleanser</div>
+        <div class="prod-desc">Non-foaming water-soluble cleanser that washes away excess facial oils without stripping your moisture barrier.</div>
+        <div class="prod-role">MRP ₹335 · Morning &amp; Night</div>
       </div>
 
-      <div class="product-card">
-        <div class="product-thumb">
+      <div class="prod-card">
+        <div class="prod-img-box">
           <img src="/assets/images/prod-clean-reequil-fruit-aha.webp" alt="Reequil Fruit AHA Face Wash" width="160" height="160" loading="lazy">
         </div>
-        <span class="product-tag">Mild Exfoliation</span>
-        <h3 class="product-name">Re'equil Fruit AHA Face Wash</h3>
-        <p class="product-desc">Gentle fruit acid wash that softens dull dead skin cells across cheeks and forehead without harsh scrubbing.</p>
-        <div class="product-price">₹450</div>
+        <div class="prod-tag">Mild Exfoliation</div>
+        <div class="prod-name">Re'equil Fruit AHA Wash</div>
+        <div class="prod-desc">Gentle fruit acid wash that softens dull dead skin cells across cheeks and forehead without harsh scrubbing.</div>
+        <div class="prod-role">MRP ₹450 · 2x Weekly</div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ───── SECTION 11: SCAN CTA BANNER ───── -->
-<section class="container">
-  <div class="scan-cta-card">
-    <h3>Unsure What Those Bumps Under Your Eyes Are?</h3>
+<div class="container">
+  <div class="cta-banner">
+    <h2>Unsure What Those Bumps Under Your Eyes Are?</h2>
     <p>Upload a clear photo to the MyMirror AI diagnostic scanner. Our multi-layer skin analysis checks your barrier moisture score and identifies whether your bumps are milia, clogged pores, or simple dryness in under 10 seconds.</p>
-    <a href="/scan/" class="scan-btn">
-      <span>Start Free Face Scan</span>
-      <span>→</span>
-    </a>
+    <a href="https://mymirror.fit/scan/" class="btn-hero-primary">Start Free AI Skin Scan ✨</a>
   </div>
-</section>
+</div>
 
 <!-- ───── SECTION 12: RELATED GUIDES CLUSTER ───── -->
 <section class="section">
@@ -1587,60 +1207,71 @@
 </section>
 
 <!-- ───── SECTION 13: FAQS ───── -->
-<section class="section">
+<section class="section section-alt">
   <div class="container">
     <span class="section-label">Frequently Asked Questions</span>
     <h2 class="section-title">Common Questions About Castor Oil on Face</h2>
 
     <div class="faq-list">
       <div class="faq-item">
-        <h3 class="faq-question">Does castor oil cause milia under the eyes?</h3>
-        <p class="faq-answer">Yes, castor oil frequently triggers milia when applied to under-eye skin. Castor oil is 90% ricinoleic acid, making it thick and sticky. Because under-eye skin is four times thinner than cheek skin and lacks oil glands, this heavy layer traps dead skin cells beneath the surface, forming hard keratin seeds.</p>
+        <details>
+          <summary>Does castor oil cause milia under the eyes?</summary>
+          <div class="faq-answer">
+            Yes, castor oil frequently triggers milia when applied to under-eye skin. Castor oil is 90% ricinoleic acid, making it thick and sticky. Because under-eye skin is four times thinner than cheek skin and lacks oil glands, this heavy layer traps dead skin cells beneath the surface, forming hard keratin seeds.
+          </div>
+        </details>
       </div>
 
       <div class="faq-item">
-        <h3 class="faq-question">Can castor oil clear dark circles?</h3>
-        <p class="faq-answer">Castor oil does not fade genetic dark circles or visible blood vessels. It provides surface shine and temporary plumping by trapping moisture, but cannot remove melanin pigment or fix structural hollows under the eyes.</p>
+        <details>
+          <summary>Can castor oil clear dark circles?</summary>
+          <div class="faq-answer">
+            Castor oil does not fade genetic dark circles or visible blood vessels. It provides surface shine and temporary plumping by trapping moisture, but cannot remove melanin pigment or fix structural hollows under the eyes.
+          </div>
+        </details>
       </div>
 
       <div class="faq-item">
-        <h3 class="faq-question">Can I squeeze or pop milia at home?</h3>
-        <p class="faq-answer">Never squeeze or use needles on milia at home. Unlike acne pimples, milia have a solid roof of skin covering them. Squeezing tears thin eye tissue, causing permanent dark marks and scars on Indian skin. A dermatologist can safely unroof them with a sterile medical tool.</p>
+        <details>
+          <summary>Can I squeeze or pop milia at home?</summary>
+          <div class="faq-answer">
+            Never squeeze or use needles on milia at home. Unlike acne pimples, milia have a solid roof of skin covering them. Squeezing tears thin eye tissue, causing permanent dark marks and scars on Indian skin. A dermatologist can safely unroof them with a sterile medical tool.
+          </div>
+        </details>
       </div>
 
       <div class="faq-item">
-        <h3 class="faq-question">What is the safe way to use castor oil for eyelashes?</h3>
-        <p class="faq-answer">Dip a clean mascara spoolie into castor oil, wipe away excess on a tissue, and brush the outer tips of your lashes. Keep the oil at least two millimeters away from your eyelid skin and lash roots to stop it from seeping into your eyes or pores overnight.</p>
+        <details>
+          <summary>What is the safe way to use castor oil for eyelashes?</summary>
+          <div class="faq-answer">
+            Dip a clean mascara spoolie into castor oil, wipe away excess on a tissue, and brush the outer tips of your lashes. Keep the oil at least two millimeters away from your eyelid skin and lash roots to stop it from seeping into your eyes or pores overnight.
+          </div>
+        </details>
       </div>
 
       <div class="faq-item">
-        <h3 class="faq-question">What should I use under my eyes instead of castor oil?</h3>
-        <p class="faq-answer">For fine lines and dehydration under eyes, use pure 100% plant squalane oil or a lightweight caffeine and peptide serum. Squalane is non-sticky, absorbs fast, and does not feed bacteria or trap dead keratin cells.</p>
-      </div>
-    </div>
-
-    <!-- Reviewer Info Box -->
-    <div class="reviewer-card">
-      <div class="reviewer-avatar">🩺</div>
-      <div class="reviewer-info">
-        <h4>Medically Reviewed by Dr. Lipy Mehta, MD</h4>
-        <p>Consultant Dermatologist &amp; Aesthetic Physician. Certified MBBS, MD in Dermatology, Venereology &amp; Leprosy. Specializing in clinical barrier recovery, pigment disorders, and acne therapies for Indian skin.</p>
+        <details>
+          <summary>What should I use under my eyes instead of castor oil?</summary>
+          <div class="faq-answer">
+            For fine lines and dehydration under eyes, use pure 100% plant squalane oil or a lightweight caffeine and peptide serum. Squalane is non-sticky, absorbs fast, and does not feed bacteria or trap dead keratin cells.
+          </div>
+        </details>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ───── SITE FOOTER ───── -->
-<footer class="site-footer">
+<footer class="cal-footer">
   <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
+    <div class="footer-grid">
+      <div class="footer-col">
         <h4>MyMirror</h4>
         <p>AI-powered clinical skin diagnostics and personalized dermatological guidance designed for Indian skin types.</p>
       </div>
       <div class="footer-col">
-        <h5>Quick Links</h5>
-        <ul class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/scan/">AI Skin Scan</a></li>
           <li><a href="/skin-analysis/">Skin Analysis Guides</a></li>
@@ -1648,8 +1279,17 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Legal &amp; Trust</h5>
-        <ul class="footer-links">
+        <h4>Skin Guides</h4>
+        <ul>
+          <li><a href="/skin-analysis/milia-on-face/">Milia Removal</a></li>
+          <li><a href="/skin-analysis/marula-oil-for-face-benefits-skin-type-india/">Marula Oil</a></li>
+          <li><a href="/skin-analysis/oily-vs-dehydrated-skin/">Skin Dehydration</a></li>
+          <li><a href="/skin-analysis/how-to-know-your-skin-type/">Skin Typing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
           <li><a href="/privacy/">Privacy Policy</a></li>
           <li><a href="/terms/">Terms of Use</a></li>
           <li><a href="/sitemap.xml">Sitemap</a></li>
@@ -1658,17 +1298,14 @@
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 MyMirror. All rights reserved. Medical guidance on this website is for educational purposes and does not replace in-person consultation with a qualified doctor.</p>
+      <a href="/privacy/">Privacy &amp; Terms</a>
     </div>
   </div>
 </footer>
 
 <!-- ───── MOBILE STICKY CTA ───── -->
-<div class="mobile-sticky-bar">
-  <div class="mobile-sticky-info">
-    <strong>Unsure About Eye Bumps?</strong>
-    <span>Analyze your skin in 10s</span>
-  </div>
-  <a href="/scan/" class="mobile-sticky-btn">Free Face Scan →</a>
+<div class="mobile-sticky-cta">
+  <a href="https://mymirror.fit/scan/">Start Free AI Skin Scan ✨</a>
 </div>
 
 </body>
