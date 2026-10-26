@@ -406,6 +406,70 @@
     .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem; }
     .feature-card p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
 
+    /* ───── OIL COMPARISON LIST (RESPONSIVE HTML) ───── */
+    .oil-compare-list {
+      display: flex; flex-direction: column; gap: 1.25rem;
+      margin-top: 2.25rem; max-width: 860px; margin-left: auto; margin-right: auto;
+    }
+    .oil-compare-card {
+      background: #FFFFFF; border: 1.5px solid var(--border);
+      border-left: 5px solid; border-radius: var(--radius-lg);
+      padding: 1.4rem 1.6rem; box-shadow: var(--shadow-sm);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .oil-compare-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-card); }
+    .oil-card-header {
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.5rem;
+    }
+    .oil-card-title { font-size: 1.1rem; font-weight: 800; color: var(--text); }
+    .oil-badge { font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 50px; }
+    .oil-card-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 0.75rem; }
+    .oil-card-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;
+      font-size: 0.85rem; border-top: 1px dashed var(--border); padding-top: 0.75rem;
+    }
+    @media (max-width: 650px) { .oil-card-grid { grid-template-columns: 1fr; } }
+    .oil-best { color: #166534; font-weight: 600; display: flex; align-items: flex-start; gap: 0.4rem; }
+    .oil-avoid { color: #991B1B; font-weight: 600; display: flex; align-items: flex-start; gap: 0.4rem; }
+
+    /* ───── STEP CARDS GRID (PRESS & SEAL) ───── */
+    .step-cards-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.25rem;
+    }
+    @media (max-width: 850px) { .step-cards-grid { grid-template-columns: 1fr; } }
+    .step-card {
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg); padding: 1.75rem 1.5rem;
+      box-shadow: var(--shadow-sm); display: flex; flex-direction: column;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .step-card:hover { transform: translateY(-3px); border-color: #FDBA74; }
+    .step-top { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1rem; }
+    .step-number {
+      width: 40px; height: 40px; border-radius: 50%; background: var(--brand);
+      color: #fff; font-size: 1.1rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 2px 8px rgba(236,97,14,0.3); flex-shrink: 0;
+    }
+    .step-badge {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em;
+      text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 6px;
+    }
+    .step-title { font-size: 1.05rem; font-weight: 800; color: var(--text); margin-bottom: 0.5rem; }
+    .step-text {
+      font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;
+      margin-bottom: 1.25rem; flex-grow: 1;
+    }
+    .step-tip {
+      background: #F0FDF4; border: 1px solid #BBF7D0; border-radius: var(--radius);
+      padding: 0.75rem 0.9rem; font-size: 0.82rem; color: #166534; line-height: 1.5;
+    }
+    .step-tip strong {
+      display: block; font-size: 0.75rem; text-transform: uppercase;
+      letter-spacing: 0.04em; margin-bottom: 0.2rem;
+    }
+
     /* ───── INTERACTIVE DIAGNOSTIC BOX (TISSUE TEST) ───── */
     .diagnostic-box {
       background: #FFFFFF; border: 2px solid #FDBA74;
@@ -780,14 +844,54 @@
       </table>
     </div>
 
-    <!-- Visual Feature: Fatty Acid Breakdown -->
-    <div class="visual-feature-card reveal">
-      <img src="/assets/images/face-oils-fatty-acid-comparison-guide.webp"
-           alt="Visual guide comparing fatty acid profiles and comedogenic ratings of Marula, Rosehip, Jojoba, and Squalane oils"
-           loading="lazy" width="800" height="533">
-      <div class="visual-feature-caption">
-        <h4>Face Oils Decoded: Oleic vs. Linoleic Balance</h4>
-        <p>Understanding fatty acids explains why your skin drinks up one oil but breaks out from another. Marula provides rich winter barrier relief, while light linoleic oils like Rosehip or non-lipid Squalane suit acne-prone skin.</p>
+    <!-- Native Responsive Comparison Cards: Fatty Acid Breakdown -->
+    <div class="oil-compare-list reveal">
+      <div class="oil-compare-card" style="border-left-color: #EA580C;">
+        <div class="oil-card-header">
+          <div class="oil-card-title">Marula Oil (70–78% Oleic Acid)</div>
+          <span class="oil-badge" style="background: #FEE2E2; color: #991B1B;">Comedogenic: 3–4</span>
+        </div>
+        <p class="oil-card-desc">Thick moisture cushion. Seals parched barriers effectively, but its heavy Oleic acid feeds Malassezia yeast and can easily clog oily pores.</p>
+        <div class="oil-card-grid">
+          <div class="oil-best"><span>🟢</span> <strong>Best For:</strong> Flaky dry skin, aging barrier, cold winter</div>
+          <div class="oil-avoid"><span>🔴</span> <strong>Avoid If:</strong> Oily T-zone, active acne, fungal bumps</div>
+        </div>
+      </div>
+
+      <div class="oil-compare-card" style="border-left-color: #16A34A;">
+        <div class="oil-card-header">
+          <div class="oil-card-title">Rosehip Seed Oil (51% Linoleic Acid)</div>
+          <span class="oil-badge" style="background: #DCFCE7; color: #166534;">Comedogenic: 1</span>
+        </div>
+        <p class="oil-card-desc">Light dry oil. Replenishes missing linoleic lipids in oily skin to help fade acne marks without clogging follicles.</p>
+        <div class="oil-card-grid">
+          <div class="oil-best"><span>🟢</span> <strong>Best For:</strong> Oily skin, post-acne dark spots, summer</div>
+          <div class="oil-avoid"><span>🔴</span> <strong>Avoid If:</strong> Extremely parched, cracked eczema skin</div>
+        </div>
+      </div>
+
+      <div class="oil-compare-card" style="border-left-color: #D97706;">
+        <div class="oil-card-header">
+          <div class="oil-card-title">Jojoba Oil (Liquid Wax Esters)</div>
+          <span class="oil-badge" style="background: #FEF3C7; color: #92400E;">Comedogenic: 2</span>
+        </div>
+        <p class="oil-card-desc">Molecularly mimics natural human sebum. Balances oily zones while softly nourishing dry cheek areas.</p>
+        <div class="oil-card-grid">
+          <div class="oil-best"><span>🟢</span> <strong>Best For:</strong> Normal to combination skin, daily buffering</div>
+          <div class="oil-avoid"><span>🔴</span> <strong>Avoid If:</strong> Deep winter flaking needing heavy seal</div>
+        </div>
+      </div>
+
+      <div class="oil-compare-card" style="border-left-color: #0284C7;">
+        <div class="oil-card-header">
+          <div class="oil-card-title">Plant Squalane (100% Saturated Hydrocarbon)</div>
+          <span class="oil-badge" style="background: #E0F2FE; color: #0369A1;">Comedogenic: 0–1</span>
+        </div>
+        <p class="oil-card-desc">Zero free fatty acids for bacteria or yeast to feed on. Completely fungal-acne safe, weightless, and breathable.</p>
+        <div class="oil-card-grid">
+          <div class="oil-best"><span>🟢</span> <strong>Best For:</strong> Sensitive skin, fungal acne, humid weather</div>
+          <div class="oil-avoid"><span>🔴</span> <strong>Avoid If:</strong> You want a rich, dewy slugging glaze</div>
+        </div>
       </div>
     </div>
   </div>
@@ -891,14 +995,45 @@
       <p class="section-body">Applying face oil the wrong way leaves a greasy film on top of your face. Follow this method to ensure rapid, non-greasy absorption.</p>
     </div>
 
-    <!-- Visual Feature: Press & Seal Method -->
-    <div class="visual-feature-card reveal">
-      <img src="/assets/images/face-oil-application-press-method.webp"
-           alt="Step by step visual guide showing how to apply face oil using the press and seal method"
-           loading="lazy" width="800" height="453">
-      <div class="visual-feature-caption">
-        <h4>How to Apply Without Clogging Pores</h4>
-        <p>Never apply Marula oil to bone-dry skin. Hydrate with water or a light gel first, warm two drops in your palms, and gently press onto your face. Patting locks in moisture without rubbing oil deep into hair follicles.</p>
+    <!-- Native Responsive 3-Step Grid: Press & Seal Routine -->
+    <div class="step-cards-grid reveal">
+      <div class="step-card">
+        <div class="step-top">
+          <div class="step-number">1</div>
+          <span class="step-badge" style="background: #E0F2FE; color: #0369A1;">Prep &amp; Hydrate</span>
+        </div>
+        <h3 class="step-title">Damp Water Buffer</h3>
+        <p class="step-text">Never apply Marula oil to bone-dry skin. Mist with plain water or apply your hydrating hyaluronic or glycerin serum first while skin is damp.</p>
+        <div class="step-tip">
+          <strong>Why This Matters:</strong>
+          Oil traps whatever is underneath it. If skin is dry, oil traps dryness.
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-top">
+          <div class="step-number">2</div>
+          <span class="step-badge" style="background: #FEF3C7; color: #92400E;">Dose Control</span>
+        </div>
+        <h3 class="step-title">Strictly 2 Drops Max</h3>
+        <p class="step-text">Dispense just two drops into clean palms. Rub hands together for three seconds to warm and spread the oil into a sheer micro-film.</p>
+        <div class="step-tip">
+          <strong>Why This Matters:</strong>
+          More than two drops overwhelms your stratum corneum lipid balance.
+        </div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-top">
+          <div class="step-number">3</div>
+          <span class="step-badge" style="background: #DCFCE7; color: #166534;">Press Technique</span>
+        </div>
+        <h3 class="step-title">Press, Never Rub</h3>
+        <p class="step-text">Gently press warm palms onto cheeks, forehead, and neck. Avoid circular massaging motions that push heavy lipids deep into open pores.</p>
+        <div class="step-tip">
+          <strong>Why This Matters:</strong>
+          Patting creates a breathable topcoat that seals moisture cleanly.
+        </div>
       </div>
     </div>
   </div>
