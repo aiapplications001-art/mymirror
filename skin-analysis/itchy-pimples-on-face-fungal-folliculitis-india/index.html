@@ -159,20 +159,24 @@
     :root {
       --brand: #EC610E;
       --brand-dark: #C14800;
-      --brand-light: #FFE1CE;
+      --brand-light: #FFF3EB;
+      --brand-border: #FED7AA;
       --primary: #EC610E;
-      --bg: #FAFAF8;
-      --bg2: #F3F1EC;
+      --bg: #FFFFFF;
+      --bg-warm: #FFFDF9;
+      --bg-subtle: #F8FAFC;
       --surface: #FFFFFF;
-      --border: #E5E0D8;
-      --text: #1C1917;
-      --text-main: #1C1917;
-      --text-muted: #666057;
+      --border: #E2E8F0;
+      --border-warm: #FDE68A;
+      --text: #0F172A;
+      --text-main: #0F172A;
+      --text-muted: #475569;
       --radius-sm: 8px;
-      --radius: 12px;
+      --radius: 14px;
       --radius-lg: 20px;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
-      --shadow-card: 0 4px 16px rgba(0,0,0,0.08);
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+      --shadow-card: 0 6px 20px rgba(0,0,0,0.06);
+      --shadow-hover: 0 12px 28px rgba(236,97,14,0.12);
       --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
       --font-heading: 'Kantumruy Pro', Georgia, serif;
     }
@@ -181,7 +185,7 @@
     html { scroll-behavior: smooth; }
     body {
       font-family: var(--font-body);
-      background-color: var(--bg);
+      background-color: #FFFFFF;
       color: var(--text);
       line-height: 1.68;
       font-size: 1rem;
@@ -193,7 +197,8 @@
 
     /* HEADER */
     .cal-header {
-      background: var(--surface);
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--border);
       position: sticky; top: 0; z-index: 100;
     }
@@ -204,214 +209,266 @@
     }
     .cal-logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
     .cal-logo img { height: 32px; width: auto; }
-    .cal-nav { display: flex; align-items: center; gap: 1.25rem; }
+    .cal-nav { display: flex; align-items: center; gap: 1.5rem; }
     .cal-nav a { color: var(--text-muted); font-size: 0.9rem; font-weight: 500; }
     .cal-nav a:hover { color: var(--brand); text-decoration: none; }
     .btn-header-cta {
-      background: var(--brand); color: #fff !important;
-      padding: 0.55rem 1.2rem; border-radius: 99px;
-      font-weight: 600; font-size: 0.88rem; transition: background 0.2s;
+      background: linear-gradient(135deg, #EC610E 0%, #C14800 100%);
+      color: #fff !important;
+      padding: 0.6rem 1.25rem; border-radius: 99px;
+      font-weight: 700; font-size: 0.88rem;
+      box-shadow: 0 3px 10px rgba(236,97,14,0.25);
+      transition: all 0.2s;
     }
-    .btn-header-cta:hover { background: var(--brand-dark); text-decoration: none; }
+    .btn-header-cta:hover { transform: translateY(-1px); box-shadow: 0 5px 14px rgba(236,97,14,0.35); text-decoration: none; }
 
     /* TRUST BAR */
     .trust-bar {
-      background: var(--bg2); border-bottom: 1px solid var(--border);
-      padding: 0.55rem 1.5rem; font-size: 0.8rem; color: var(--text-muted);
+      background: #F8FAFC; border-bottom: 1px solid var(--border);
+      padding: 0.6rem 1.5rem; font-size: 0.82rem; color: var(--text-muted);
     }
     .trust-bar-inner {
       max-width: 1200px; margin: 0 auto;
       display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;
     }
-    .trust-badge { display: flex; align-items: center; gap: 0.35rem; }
-    .trust-badge span.dot { width: 8px; height: 8px; border-radius: 50%; background: #16A34A; display: inline-block; }
+    .trust-badge { display: flex; align-items: center; gap: 0.4rem; font-weight: 500; }
+    .trust-badge span.dot { width: 8px; height: 8px; border-radius: 50%; background: #16A34A; display: inline-block; box-shadow: 0 0 0 2px #DCFCE7; }
 
     /* LAYOUT CONTAINER */
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 1.5rem; }
 
-    /* HERO */
-    .hero { padding: 3rem 0 2rem; }
+    /* HERO SECTION WITH WARM GRADIENT */
+    .hero-section {
+      background: linear-gradient(180deg, #FFF7ED 0%, #FFFDF9 60%, #FFFFFF 100%);
+      padding: 3.5rem 0 2.75rem;
+      border-bottom: 1px solid var(--border);
+    }
     .hero-grid {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
-      gap: 2.5rem;
+      gap: 3rem;
       align-items: center;
     }
-    @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 2rem; } }
+    @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 2.25rem; } }
 
     .hero-badge {
-      display: inline-block; font-size: 0.78rem; font-weight: 700;
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-size: 0.78rem; font-weight: 800;
       text-transform: uppercase; letter-spacing: 0.08em;
       background: #FEF3C7; color: #92400E;
-      padding: 0.3rem 0.75rem; border-radius: 99px; margin-bottom: 1rem;
+      border: 1px solid #FDE68A;
+      padding: 0.35rem 0.85rem; border-radius: 99px; margin-bottom: 1rem;
     }
     .hero-title {
       font-family: var(--font-heading);
-      font-size: clamp(2rem, 3.8vw, 2.85rem);
-      font-weight: 700; line-height: 1.18;
-      color: #0F172A; margin-bottom: 1rem;
+      font-size: clamp(2.1rem, 4vw, 2.95rem);
+      font-weight: 800; line-height: 1.18;
+      color: #0F172A; margin-bottom: 1.1rem;
+    }
+    .hero-title em {
+      font-style: normal;
+      background: linear-gradient(135deg, #EC610E 0%, #B91C1C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     .hero-desc {
-      font-size: 1.05rem; color: #475569;
-      margin-bottom: 1.5rem; line-height: 1.7;
+      font-size: 1.08rem; color: #475569;
+      margin-bottom: 1.65rem; line-height: 1.7;
     }
 
+    /* ENHANCED QUICK TRIAGE */
     .hero-quick-triage {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 1.25rem;
-      margin-bottom: 1.75rem; box-shadow: var(--shadow-sm);
+      background: #FFFFFF;
+      border: 1.5px solid #FDBA74;
+      border-radius: var(--radius); padding: 1.35rem 1.5rem;
+      margin-bottom: 1.85rem;
+      box-shadow: 0 4px 14px rgba(234, 88, 12, 0.07);
     }
     .hero-quick-triage h3 {
-      font-size: 0.95rem; font-weight: 700; color: #0F172A; margin-bottom: 0.6rem;
-      display: flex; align-items: center; gap: 0.4rem;
+      font-size: 0.98rem; font-weight: 800; color: #9A3412; margin-bottom: 0.75rem;
+      display: flex; align-items: center; gap: 0.5rem;
     }
-    .hero-quick-triage ul { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.88rem; }
-    .hero-quick-triage li { display: flex; align-items: baseline; gap: 0.4rem; color: #334155; }
-    .hero-quick-triage li strong { color: #0F172A; min-width: 140px; }
+    .hero-quick-triage ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; }
+    .hero-quick-triage li { display: flex; align-items: baseline; gap: 0.5rem; color: #334155; }
+    .hero-quick-triage li span.icon { color: #EA580C; font-weight: 800; }
+    .hero-quick-triage li strong { color: #0F172A; }
 
     .btn-hero-cta {
       display: inline-flex; align-items: center; gap: 0.5rem;
-      background: var(--brand); color: #fff !important;
-      font-weight: 700; font-size: 1rem; padding: 0.85rem 1.75rem;
-      border-radius: 99px; box-shadow: 0 4px 14px rgba(236,97,14,0.3);
+      background: linear-gradient(135deg, #EC610E 0%, #C14800 100%);
+      color: #fff !important;
+      font-weight: 800; font-size: 1.05rem; padding: 0.95rem 1.95rem;
+      border-radius: 99px; box-shadow: 0 6px 18px rgba(236,97,14,0.35);
       transition: all 0.2s;
     }
     .btn-hero-cta:hover {
-      background: var(--brand-dark); transform: translateY(-1px);
-      box-shadow: 0 6px 18px rgba(236,97,14,0.4); text-decoration: none;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(236,97,14,0.45); text-decoration: none;
     }
 
     /* HERO VISUAL CARD */
     .hero-visual-card {
-      background: var(--surface); border: 1px solid var(--border);
+      background: #FFFFFF; border: 1.5px solid var(--border);
       border-radius: var(--radius-lg); overflow: hidden;
       box-shadow: var(--shadow-card);
     }
     .hero-visual-card img {
       width: 100%; height: auto; display: block; object-fit: cover;
     }
-    .hero-card-meta { padding: 1.25rem 1.5rem; }
+    .hero-card-meta { padding: 1.35rem 1.5rem; background: #FFFFFF; }
     .doc-credit {
-      display: flex; align-items: center; gap: 0.75rem;
-      margin-bottom: 0.9rem; padding-bottom: 0.9rem;
+      display: flex; align-items: center; gap: 0.85rem;
+      margin-bottom: 1rem; padding-bottom: 1rem;
       border-bottom: 1px solid var(--border);
     }
     .doc-avatar {
-      width: 44px; height: 44px; border-radius: 50%;
-      background: var(--brand-light); color: var(--brand-dark);
+      width: 46px; height: 46px; border-radius: 50%;
+      background: #FFEDD5; color: #9A3412;
       display: flex; align-items: center; justify-content: center;
-      font-weight: 700; font-size: 0.95rem;
+      font-weight: 800; font-size: 1rem;
+      border: 2px solid #FFFFFF; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    .doc-name { font-weight: 700; font-size: 0.92rem; color: #0F172A; line-height: 1.2; }
+    .doc-name { font-weight: 800; font-size: 0.96rem; color: #0F172A; line-height: 1.2; }
     .doc-title { font-size: 0.78rem; color: var(--text-muted); }
 
     .doctor-stats {
-      display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem;
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.85rem;
     }
     .stat-pill {
-      background: var(--bg2); border-radius: var(--radius-sm);
-      padding: 0.6rem 0.8rem; text-align: center;
+      background: #F8FAFC; border: 1px solid #E2E8F0;
+      border-radius: var(--radius-sm);
+      padding: 0.75rem 0.85rem; text-align: center;
     }
-    .stat-num { font-size: 1.15rem; font-weight: 800; color: #0F172A; line-height: 1.1; }
-    .stat-lbl { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 0.2rem; }
+    .stat-num { font-size: 1.25rem; font-weight: 800; color: #0F172A; line-height: 1.1; }
+    .stat-lbl { font-size: 0.74rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 0.25rem; font-weight: 600; }
 
-    /* CONTENT SECTIONS */
-    .section-wrap { padding: 2.75rem 0; border-top: 1px solid var(--border); }
+    /* SECTION CONTAINERS WITH ALTERNATING BACKGROUNDS */
+    .section-wrap { padding: 3.75rem 0; }
+    .section-alt { background: #F8FAFC; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .section-warm { background: #FFFBF7; border-top: 1px solid #FED7AA; border-bottom: 1px solid #FED7AA; }
+
     .sec-tag {
-      font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
-      letter-spacing: 0.08em; color: var(--brand); margin-bottom: 0.4rem;
+      display: inline-block;
+      background: var(--brand-light); color: var(--brand-dark);
+      font-size: 0.76rem; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 0.08em; padding: 0.3rem 0.85rem; border-radius: 50px;
+      margin-bottom: 0.75rem; border: 1px solid #FED7AA;
     }
     .sec-title {
       font-family: var(--font-heading);
-      font-size: clamp(1.5rem, 2.5vw, 2rem);
-      font-weight: 700; color: #0F172A; margin-bottom: 1rem;
+      font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+      font-weight: 800; color: #0F172A; margin-bottom: 0.85rem; line-height: 1.25;
     }
     .sec-subtitle {
-      font-size: 1.05rem; color: #475569; margin-bottom: 1.75rem; max-width: 820px;
+      font-size: 1.05rem; color: #475569; margin-bottom: 2rem; max-width: 820px; line-height: 1.65;
     }
 
     /* ITCH PATTERNS DIAGNOSTIC GRID */
     .itch-patterns-grid {
-      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 1.75rem;
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 1.5rem;
     }
     @media (max-width: 800px) { .itch-patterns-grid { grid-template-columns: 1fr; } }
+    
     .itch-card {
-      background: var(--surface); border: 1.5px solid var(--border);
-      border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow-sm);
+      background: #FFFFFF; border: 1.5px solid var(--border);
+      border-left: 5px solid; border-radius: var(--radius-lg);
+      padding: 1.65rem; box-shadow: var(--shadow-sm);
       display: flex; flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
+    .itch-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+    }
+    .itch-card.card-yeast { border-left-color: #DC2626; }
+    .itch-card.card-barrier { border-left-color: #D97706; }
+    .itch-card.card-mite { border-left-color: #7C3AED; }
+    .itch-card.card-cyst { border-left-color: #0284C7; }
+    .itch-card.card-allergy { border-left-color: #16A34A; }
+
     .itch-badge {
       font-size: 0.74rem; font-weight: 800; text-transform: uppercase;
-      letter-spacing: 0.05em; padding: 0.25rem 0.65rem; border-radius: 6px;
+      letter-spacing: 0.05em; padding: 0.28rem 0.7rem; border-radius: 6px;
       display: inline-block; margin-bottom: 0.75rem; align-self: flex-start;
     }
     .itch-badge-yeast { background: #FEE2E2; color: #991B1B; }
     .itch-badge-barrier { background: #FEF3C7; color: #92400E; }
     .itch-badge-mite { background: #EDE9FE; color: #5B21B6; }
     .itch-badge-cyst { background: #E0F2FE; color: #075985; }
-    .itch-badge-allergy { background: #F1F5F9; color: #334155; }
-    .itch-card h4 { font-size: 1.1rem; font-weight: 700; color: #0F172A; margin-bottom: 0.4rem; }
-    .itch-diagnosis { font-size: 0.88rem; font-weight: 600; color: var(--brand); margin-bottom: 0.6rem; }
-    .itch-details { font-size: 0.92rem; color: #475569; margin-bottom: 0.75rem; line-height: 1.6; }
+    .itch-badge-allergy { background: #DCFCE7; color: #166534; }
+    
+    .itch-card h4 { font-size: 1.15rem; font-weight: 800; color: #0F172A; margin-bottom: 0.35rem; }
+    .itch-diagnosis { font-size: 0.9rem; font-weight: 700; color: var(--brand-dark); margin-bottom: 0.65rem; }
+    .itch-details { font-size: 0.92rem; color: #475569; margin-bottom: 1rem; line-height: 1.6; }
+    
     .itch-action {
-      margin-top: auto; padding-top: 0.75rem; border-top: 1px dashed var(--border);
-      font-size: 0.88rem; color: #166534; font-weight: 600; display: flex; align-items: flex-start; gap: 0.35rem;
+      margin-top: auto; padding: 0.85rem 1rem;
+      border-radius: var(--radius-sm); font-size: 0.88rem;
+      line-height: 1.5; font-weight: 600;
     }
+    .itch-card.card-yeast .itch-action { background: #FEF2F2; color: #991B1B; }
+    .itch-card.card-barrier .itch-action { background: #FFFBEB; color: #92400E; }
+    .itch-card.card-mite .itch-action { background: #F5F3FF; color: #5B21B6; }
+    .itch-card.card-cyst .itch-action { background: #F0F9FF; color: #075985; }
+    .itch-card.card-allergy .itch-action { background: #F0FDF4; color: #166534; }
 
     /* 3-COLUMN CARD GRID */
     .card-grid-3 {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 1.75rem;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 1.5rem;
     }
     @media (max-width: 850px) { .card-grid-3 { grid-template-columns: 1fr; } }
     .info-card {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 1.5rem;
+      background: #FFFFFF; border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg); padding: 1.65rem;
       box-shadow: var(--shadow-sm);
+      transition: transform 0.2s, border-color 0.2s;
     }
+    .info-card:hover { transform: translateY(-3px); border-color: #FDBA74; }
     .info-card-icon {
-      width: 40px; height: 40px; border-radius: 10px;
+      width: 44px; height: 44px; border-radius: 12px;
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.25rem; margin-bottom: 1rem;
+      font-size: 1.35rem; margin-bottom: 1rem;
     }
     .icon-orange { background: #FFEDD5; color: #C2410C; }
     .icon-green { background: #DCFCE7; color: #15803D; }
     .icon-red { background: #FEE2E2; color: #B91C1C; }
     .icon-blue { background: #E0F2FE; color: #0369A1; }
     .icon-purple { background: #F3E8FF; color: #7E22CE; }
-    .info-card h4 { font-size: 1.05rem; font-weight: 700; color: #0F172A; margin-bottom: 0.5rem; }
+    .info-card h4 { font-size: 1.1rem; font-weight: 800; color: #0F172A; margin-bottom: 0.5rem; }
     .info-card p { font-size: 0.92rem; color: #475569; margin-bottom: 0; line-height: 1.6; }
 
     /* 2-COLUMN FEATURE BOX */
     .feature-split {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.75rem;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.75rem; margin-top: 1.5rem;
     }
     @media (max-width: 750px) { .feature-split { grid-template-columns: 1fr; } }
     .feature-box {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 1.5rem;
+      background: #FFFFFF; border: 1.5px solid var(--border);
+      border-left: 5px solid; border-radius: var(--radius); padding: 1.65rem;
+      box-shadow: var(--shadow-sm);
     }
-    .feature-box.warning-border { border-left: 4px solid #DC2626; }
-    .feature-box.success-border { border-left: 4px solid #16A34A; }
-    .feature-box h4 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
-    .feature-box p { font-size: 0.94rem; color: #334155; margin-bottom: 0.75rem; }
+    .feature-box.warning-border { border-left-color: #DC2626; }
+    .feature-box.success-border { border-left-color: #16A34A; }
+    .feature-box h4 { font-size: 1.12rem; font-weight: 800; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; color: #0F172A; }
+    .feature-box p { font-size: 0.94rem; color: #334155; margin-bottom: 0.75rem; line-height: 1.6; }
 
     /* BRAND SHOWCASE CARDS */
     .brand-showcase-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 1.75rem;
     }
     @media (max-width: 950px) { .brand-showcase-grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 650px) { .brand-showcase-grid { grid-template-columns: 1fr; } }
     .brand-card {
-      background: var(--surface); border: 1.5px solid var(--border);
-      border-radius: var(--radius-lg); padding: 1.5rem;
+      background: #FFFFFF; border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg); padding: 1.65rem;
       display: flex; flex-direction: column; box-shadow: var(--shadow-sm);
       transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
     }
-    .brand-card:hover { transform: translateY(-3px); border-color: #FDBA74; box-shadow: var(--shadow-card); }
+    .brand-card:hover { transform: translateY(-4px); border-color: #FDBA74; box-shadow: var(--shadow-hover); }
     .brand-tag {
       font-size: 0.72rem; font-weight: 800; text-transform: uppercase;
-      letter-spacing: 0.05em; padding: 0.25rem 0.6rem; border-radius: 6px;
-      display: inline-block; margin-bottom: 0.6rem; align-self: flex-start;
+      letter-spacing: 0.05em; padding: 0.28rem 0.65rem; border-radius: 6px;
+      display: inline-block; margin-bottom: 0.65rem; align-self: flex-start;
     }
     .brand-tag-gold { background: #FEF3C7; color: #92400E; }
     .brand-tag-dual { background: #DCFCE7; color: #166534; }
@@ -420,53 +477,57 @@
     .brand-tag-foam { background: #FFEDD5; color: #9A3412; }
 
     .brand-img-box {
-      background: #F8FAFC; border-radius: var(--radius);
-      padding: 1rem; margin-bottom: 1rem; text-align: center;
-      display: flex; align-items: center; justify-content: center; height: 170px;
+      background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+      border: 1px solid #EDF2F7;
+      border-radius: var(--radius);
+      padding: 1.25rem; margin-bottom: 1rem; text-align: center;
+      display: flex; align-items: center; justify-content: center; height: 180px;
     }
-    .brand-img-box img { max-height: 150px; max-width: 100%; object-fit: contain; }
-    .brand-card h4 { font-size: 1.15rem; font-weight: 700; color: #0F172A; margin-bottom: 0.2rem; }
-    .brand-spec { font-size: 0.84rem; color: #475569; margin-bottom: 0.75rem; }
+    .brand-img-box img { max-height: 155px; max-width: 100%; object-fit: contain; }
+    .brand-card h4 { font-size: 1.18rem; font-weight: 800; color: #0F172A; margin-bottom: 0.25rem; }
+    .brand-spec { font-size: 0.85rem; color: #475569; margin-bottom: 0.85rem; font-weight: 500; }
     .brand-price-badge {
-      background: #F1F5F9; border-radius: 6px; padding: 0.4rem 0.75rem;
-      font-size: 0.88rem; color: #0F172A; margin-bottom: 1rem; display: inline-block;
+      background: #F1F5F9; border-radius: 6px; padding: 0.45rem 0.8rem;
+      font-size: 0.88rem; color: #0F172A; margin-bottom: 1.15rem; display: inline-block;
     }
-    .brand-price-badge strong { color: var(--brand); font-size: 1.05rem; }
+    .brand-price-badge strong { color: var(--brand); font-size: 1.08rem; }
 
     .brand-pros-cons {
-      display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.86rem; margin-top: auto;
+      display: flex; flex-direction: column; gap: 0.55rem; font-size: 0.86rem; margin-top: auto;
     }
-    .brand-pro { color: #166534; display: flex; align-items: flex-start; gap: 0.4rem; }
+    .brand-pro { color: #166534; display: flex; align-items: flex-start; gap: 0.45rem; line-height: 1.5; }
     .brand-pro span { color: #16A34A; font-weight: 800; }
-    .brand-con { color: #991B1B; display: flex; align-items: flex-start; gap: 0.4rem; }
+    .brand-con { color: #991B1B; display: flex; align-items: flex-start; gap: 0.45rem; line-height: 1.5; }
     .brand-con span { color: #DC2626; font-weight: 800; }
 
     /* TABLE */
     .table-wrap {
-      overflow-x: auto; margin-top: 1.75rem; border-radius: var(--radius);
-      border: 1px solid var(--border); box-shadow: var(--shadow-sm);
+      overflow-x: auto; margin-top: 1.75rem; border-radius: var(--radius-lg);
+      border: 1.5px solid var(--border); box-shadow: var(--shadow-sm);
+      background: #FFFFFF;
     }
-    table { width: 100%; border-collapse: collapse; background: var(--surface); }
+    table { width: 100%; border-collapse: collapse; background: #FFFFFF; }
     th {
-      background: #F8FAFC; color: #0F172A; font-size: 0.82rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.04em;
-      padding: 0.85rem 1rem; text-align: left; border-bottom: 2px solid var(--border);
+      background: #F8FAFC; color: #0F172A; font-size: 0.82rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      padding: 1rem 1.15rem; text-align: left; border-bottom: 2px solid var(--border);
     }
     td {
-      padding: 0.85rem 1rem; font-size: 0.88rem; color: #334155;
+      padding: 0.95rem 1.15rem; font-size: 0.9rem; color: #334155;
       border-bottom: 1px solid var(--border); vertical-align: middle;
     }
     tr:last-child td { border-bottom: none; }
-    tr:hover td { background: #FAFAFA; }
+    tr:hover td { background: #FFFBF7; }
 
     /* VIDEO SECTION & TAKEAWAYS */
     .video-wrap {
-      margin-top: 2rem; background: var(--surface); border: 1px solid var(--border);
-      border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-card);
+      margin-top: 1.5rem; background: #FFFFFF; border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-card);
     }
     .video-container {
       position: relative; width: 100%; padding-bottom: 56.25%; height: 0;
       border-radius: var(--radius); overflow: hidden; background: #000;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
     }
     .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
     .video-caption {
@@ -475,20 +536,21 @@
     }
 
     .video-takeaways-box {
-      margin-top: 1.5rem; background: #FFFBEB; border: 1.5px solid #FDE68A;
-      border-radius: var(--radius); padding: 1.25rem 1.5rem;
+      margin-top: 1.65rem; background: #FFFBEB; border: 1.5px solid #FDE68A;
+      border-radius: var(--radius); padding: 1.35rem 1.65rem;
+      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.06);
     }
     .video-takeaways-box h4 {
-      font-size: 1.05rem; font-weight: 700; color: #92400E; margin-bottom: 0.75rem;
-      display: flex; align-items: center; gap: 0.4rem;
+      font-size: 1.1rem; font-weight: 800; color: #92400E; margin-bottom: 0.85rem;
+      display: flex; align-items: center; gap: 0.45rem;
     }
     .video-takeaways-list {
-      list-style: none; display: flex; flex-direction: column; gap: 0.6rem;
+      list-style: none; display: flex; flex-direction: column; gap: 0.65rem;
     }
     .video-takeaways-list li {
-      font-size: 0.92rem; color: #78350F; line-height: 1.55; display: flex; align-items: flex-start; gap: 0.5rem;
+      font-size: 0.93rem; color: #78350F; line-height: 1.6; display: flex; align-items: flex-start; gap: 0.5rem;
     }
-    .video-takeaways-list li span { font-weight: 800; color: #D97706; }
+    .video-takeaways-list li span { font-weight: 800; color: #B45309; }
 
     /* STEP CARDS */
     .step-cards-grid {
@@ -497,55 +559,61 @@
     @media (max-width: 900px) { .step-cards-grid { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 550px) { .step-cards-grid { grid-template-columns: 1fr; } }
     .step-card {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 1.25rem;
+      background: #FFFFFF; border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg); padding: 1.5rem 1.35rem;
+      box-shadow: var(--shadow-sm); transition: transform 0.2s, border-color 0.2s;
     }
+    .step-card:hover { transform: translateY(-3px); border-color: #FDBA74; box-shadow: 0 8px 20px rgba(0,0,0,0.06); }
     .step-num {
-      width: 28px; height: 28px; border-radius: 50%;
-      background: var(--brand); color: #fff;
+      width: 34px; height: 34px; border-radius: 50%;
+      background: linear-gradient(135deg, #EC610E 0%, #C14800 100%);
+      color: #fff;
       display: flex; align-items: center; justify-content: center;
-      font-weight: 700; font-size: 0.84rem; margin-bottom: 0.75rem;
+      font-weight: 800; font-size: 0.92rem; margin-bottom: 0.85rem;
+      box-shadow: 0 3px 8px rgba(236,97,14,0.3);
     }
-    .step-card h4 { font-size: 0.98rem; font-weight: 700; color: #0F172A; margin-bottom: 0.4rem; }
-    .step-card p { font-size: 0.88rem; color: #475569; margin: 0; }
+    .step-card h4 { font-size: 1.05rem; font-weight: 800; color: #0F172A; margin-bottom: 0.4rem; }
+    .step-card p { font-size: 0.88rem; color: #475569; margin: 0; line-height: 1.55; }
 
     /* FAQ ACCORDION */
-    .faq-list { display: flex; flex-direction: column; gap: 1rem; margin-top: 1.75rem; }
+    .faq-list { display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem; }
     .faq-item {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 1.25rem 1.5rem;
+      background: #FFFFFF; border: 1.5px solid var(--border);
+      border-radius: var(--radius); padding: 1.35rem 1.6rem;
+      box-shadow: var(--shadow-sm);
     }
     .faq-item summary {
-      font-weight: 700; font-size: 1.05rem; color: #0F172A;
+      font-weight: 800; font-size: 1.05rem; color: #0F172A;
       cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;
     }
     .faq-item summary::-webkit-details-marker { display: none; }
-    .faq-item summary::after { content: '+'; font-size: 1.4rem; color: var(--brand); font-weight: 400; }
+    .faq-item summary::after { content: '+'; font-size: 1.4rem; color: var(--brand); font-weight: 600; }
     .faq-item[open] summary::after { content: '−'; }
-    .faq-content { margin-top: 0.75rem; font-size: 0.94rem; color: #334155; line-height: 1.68; }
+    .faq-content { margin-top: 0.85rem; font-size: 0.94rem; color: #334155; line-height: 1.68; border-top: 1px dashed var(--border); padding-top: 0.75rem; }
 
     /* CTA BANNER */
     .cta-banner {
       background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
       color: #fff; border-radius: var(--radius-lg);
-      padding: 3rem 2rem; margin: 3.5rem 0; text-align: center;
+      padding: 3.5rem 2rem; margin: 4rem 0 2rem; text-align: center;
+      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.25);
     }
     .cta-banner h3 {
-      font-family: var(--font-heading); font-size: clamp(1.6rem, 2.8vw, 2.2rem);
-      margin-bottom: 0.75rem; color: #fff;
+      font-family: var(--font-heading); font-size: clamp(1.7rem, 3vw, 2.3rem);
+      margin-bottom: 0.85rem; color: #fff;
     }
-    .cta-banner p { color: #94A3B8; max-width: 650px; margin: 0 auto 1.75rem; font-size: 1rem; }
+    .cta-banner p { color: #94A3B8; max-width: 650px; margin: 0 auto 1.85rem; font-size: 1.05rem; }
 
     /* FOOTER */
     .cal-footer {
-      background: #0F172A; color: #94A3B8; padding: 3rem 0 2rem; font-size: 0.88rem;
+      background: #0F172A; color: #94A3B8; padding: 3.5rem 0 2rem; font-size: 0.88rem;
     }
     .footer-grid {
       display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem;
     }
     @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; } }
-    .footer-col h5 { color: #fff; font-size: 0.95rem; font-weight: 700; margin-bottom: 0.75rem; }
-    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+    .footer-col h5 { color: #fff; font-size: 0.95rem; font-weight: 800; margin-bottom: 0.85rem; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.45rem; }
     .footer-col a { color: #94A3B8; }
     .footer-col a:hover { color: #fff; text-decoration: none; }
     .footer-bottom {
@@ -557,7 +625,7 @@
     /* MOBILE STICKY */
     .mobile-sticky-cta {
       display: none; position: fixed; bottom: 0; left: 0; right: 0;
-      background: var(--surface); border-top: 1px solid var(--border);
+      background: #FFFFFF; border-top: 1px solid var(--border);
       padding: 0.75rem 1.25rem; z-index: 99; box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
     }
     @media (max-width: 768px) {
@@ -598,514 +666,532 @@
     </div>
   </div>
 
-  <main class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <div class="hero-badge">Doctor-Reviewed Diagnostic Guide</div>
-          <h1 class="hero-title">Itchy Pimples on Face: Fungal Folliculitis Causes, Types &amp; Treatment</h1>
-          <p class="hero-desc">
-            Normal acne pimples throb and hurt, but they rarely itch. If you have clusters of tiny, uniform bumps on your forehead, temples, or jawline that prickle and itch—especially after sweating or working out—you are likely dealing with fungal folliculitis (an overgrowth of <em>Malassezia</em> yeast), not regular bacterial acne.
-          </p>
+  <main>
+    <!-- HERO SECTION WITH WARM GRADIENT BACKGROUND -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">&#128737; Doctor-Reviewed Diagnostic Guide</div>
+            <h1 class="hero-title">Itchy Pimples on Face: <em>Fungal Folliculitis</em> Causes, Types &amp; Treatment</h1>
+            <p class="hero-desc">
+              Normal acne pimples throb and hurt, but they rarely itch. If you have clusters of tiny, uniform bumps on your forehead, temples, or jawline that prickle and itch—especially after sweating or working out—you are likely dealing with fungal folliculitis (an overgrowth of <em>Malassezia</em> yeast), not regular bacterial acne.
+            </p>
 
-          <div class="hero-quick-triage">
-            <h3>Quick Diagnostic Checklist</h3>
-            <ul>
-              <li><strong>Do the bumps itch after sweating?</strong> Typical sign of fungal yeast activity.</li>
-              <li><strong>Are all bumps the exact same size?</strong> Fungal bumps look uniform (1–2mm).</li>
-              <li><strong>Did regular acne creams fail?</strong> Antibiotics feed yeast by clearing bacteria.</li>
-              <li><strong>Do you oil your hair regularly?</strong> Coconut oil champi feeds Malassezia yeast.</li>
+            <div class="hero-quick-triage">
+              <h3>&#128269; Quick Diagnostic Checklist</h3>
+              <ul>
+                <li><span class="icon">&#10003;</span> <div><strong>Do the bumps itch after sweating?</strong> Typical sign of fungal yeast activity.</div></li>
+                <li><span class="icon">&#10003;</span> <div><strong>Are all bumps the exact same size?</strong> Fungal bumps look uniform (1–2mm).</div></li>
+                <li><span class="icon">&#10003;</span> <div><strong>Did regular acne creams fail?</strong> Antibiotics feed yeast by clearing bacteria.</div></li>
+                <li><span class="icon">&#10003;</span> <div><strong>Do you oil your hair regularly?</strong> Coconut oil champi feeds Malassezia yeast.</div></li>
+              </ul>
+            </div>
+
+            <a href="https://mymirror.fit/scan/" class="btn-hero-cta">
+              Check Your Face Bumps Free &rarr;
+            </a>
+          </div>
+
+          <div class="hero-visual-card">
+            <img src="/assets/images/itchy-pimples-fungal-folliculitis-hero.webp" alt="Indian woman with clear calm skin touching forehead" width="600" height="338" loading="eager">
+            <div class="hero-card-meta">
+              <div class="doc-credit">
+                <div class="doc-avatar">LM</div>
+                <div>
+                  <div class="doc-name">Dr. Lipy Mehta, MD</div>
+                  <div class="doc-title">Consultant Dermatologist &bull; Medical Reviewer</div>
+                </div>
+              </div>
+              <div class="doctor-stats">
+                <div class="stat-pill">
+                  <div class="stat-num">87%</div>
+                  <div class="stat-lbl">Clearance with 2% Ketoconazole</div>
+                </div>
+                <div class="stat-pill">
+                  <div class="stat-num">1-2mm</div>
+                  <div class="stat-lbl">Uniform fungal bump size</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: WHAT KIND OF ITCHES ARE POSSIBLE? (WHITE CANVAS) -->
+    <section class="section-wrap">
+      <div class="container">
+        <div class="sec-tag">Symptom Self-Check</div>
+        <h2 class="sec-title">What Kind of Itch Do You Have &amp; What Does It Indicate?</h2>
+        <p class="sec-subtitle">
+          Not all facial itches point to the same condition. How and when your skin itches reveals the underlying trigger and the exact step required to fix it.
+        </p>
+
+        <div class="itch-patterns-grid">
+          <!-- 1. Continuous Prickling Itch -->
+          <div class="itch-card card-yeast">
+            <div class="itch-badge itch-badge-yeast">Pattern 1: Continuous Prickle</div>
+            <h4>Intense Prickling Itch That Spikes With Sweat</h4>
+            <div class="itch-diagnosis">Indicates: Malassezia Folliculitis (Fungal Acne)</div>
+            <div class="itch-details">
+              A constant crawling or prickling sensation that flares during gym workouts, under bike helmets, in humid monsoons, or after hot showers. The yeast feasts on warm sweat and natural sebum, releasing acidic metabolites that irritate follicular nerve fibers.
+            </div>
+            <div class="itch-action">
+              <span>&#10148;</span> <strong>What To Do:</strong> Use a 2% Ketoconazole wash for 3 to 5 minutes three times weekly; stop all facial oils.
+            </div>
+          </div>
+
+          <!-- 2. Sudden Stinging / Burning Itch -->
+          <div class="itch-card card-barrier">
+            <div class="itch-badge itch-badge-barrier">Pattern 2: Stinging Flare</div>
+            <h4>Sudden Burning Itch Right After Washing or Moisturizing</h4>
+            <div class="itch-diagnosis">Indicates: Stripped Moisture Barrier &amp; Chemical Irritation</div>
+            <div class="itch-details">
+              Skin feels tight, shiny, and raw. Applying even basic lotions or splashing plain tap water stings like a sunburn. Occurs after overusing salicylic acid, tretinoin, harsh foaming face washes, or physical scrubs.
+            </div>
+            <div class="itch-action">
+              <span>&#10148;</span> <strong>What To Do:</strong> Stop all exfoliating acids and retinoids; apply a simple ceramide barrier cream or pure petroleum jelly.
+            </div>
+          </div>
+
+          <!-- 3. Intermittent Paced-Out Crawling -->
+          <div class="itch-card card-mite">
+            <div class="itch-badge itch-badge-mite">Pattern 3: Night Crawling</div>
+            <h4>Intermittent, Creeping Itch in Paced Intervals at Night</h4>
+            <div class="itch-diagnosis">Indicates: Demodex Folliculorum Overgrowth or Rosacea</div>
+            <div class="itch-details">
+              A light tickling sensation that comes and goes across the cheeks, eyebrows, and nose bridge, peaking when lying down in a warm bedroom. Microscopic skin mites migrate in dark, warm conditions, triggering localized neurogenic inflammation.
+            </div>
+            <div class="itch-action">
+              <span>&#10148;</span> <strong>What To Do:</strong> Consult a doctor for topical Ivermectin or Metronidazole; wash pillowcases weekly in hot water.
+            </div>
+          </div>
+
+          <!-- 4. Paced-Out Deep Throbbing Ache -->
+          <div class="itch-card card-cyst">
+            <div class="itch-badge itch-badge-cyst">Pattern 4: Throbbing Pressure</div>
+            <h4>Deep Tender Soreness With Occasional Sharp Focal Itch</h4>
+            <div class="itch-diagnosis">Indicates: Deep Bacterial Cystic Acne</div>
+            <div class="itch-details">
+              Presents as a large, painful swollen bump beneath the skin without a visible whitehead. The itch is localized and intermittent, caused by white blood cells stretching the surrounding dermis as they fight <em>C. acnes</em> bacteria.
+            </div>
+            <div class="itch-action">
+              <span>&#10148;</span> <strong>What To Do:</strong> Apply an ice cube wrapped in cloth for 5 minutes, then dab 2.5% Benzoyl Peroxide; never squeeze.
+            </div>
+          </div>
+
+          <!-- 5. Delayed Patchy Itch With Flakes -->
+          <div class="itch-card card-allergy" style="grid-column: span 2;">
+            <div class="itch-badge itch-badge-allergy">Pattern 5: Delayed Allergic Reaction</div>
+            <h4>Delayed Itchy Red Rash 24 to 48 Hours After a New Product</h4>
+            <div class="itch-diagnosis">Indicates: Allergic Contact Dermatitis</div>
+            <div class="itch-details">
+              Occurs a day or two after trying a new scented serum, botanical facial oil, sheet mask, or threading treatment. Tiny red dots itch intensely and develop dry flaky peeling over 48 hours.
+            </div>
+            <div class="itch-action">
+              <span>&#10148;</span> <strong>What To Do:</strong> Discontinue the new product immediately; apply cold compresses and plain aloe vera gel until calmed.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: THE 3 CLUES IT'S FUNGAL ACNE (COOL GREY TINTED CANVAS) -->
+    <section class="section-wrap section-alt">
+      <div class="container">
+        <div class="sec-tag">Clinical Clues</div>
+        <h2 class="sec-title">3 Clear Signs Your Breakout Is Fungal Folliculitis</h2>
+        <p class="sec-subtitle">
+          Doctors evaluate three distinct visual and symptomatic markers to differentiate yeast overgrowth from bacterial blemishes.
+        </p>
+
+        <div class="card-grid-3">
+          <div class="info-card">
+            <div class="info-card-icon icon-red">&#129658;</div>
+            <h4>1. The Pruritic (Itch) Factor</h4>
+            <p>
+              Bacterial pimples feel sore and bruised when pressed. Fungal bumps itch persistently, provoking an urge to scratch, especially along the hairline, forehead, and upper chest.
+            </p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon icon-orange">&#9638;</div>
+            <h4>2. The Monomorphic Uniform Army</h4>
+            <p>
+              Regular acne is polymorphic: you see a random mix of blackheads, deep cysts, and tiny whiteheads. Fungal breakouts look like carbon copies of each other—uniform 1 to 2 millimeter pinpoint bumps.
+            </p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon icon-purple">&#9888;</div>
+            <h4>3. Worsens on Antibiotics</h4>
+            <p>
+              If you applied Clindamycin gel or took oral Doxycycline and your forehead suddenly erupted in small itchy dots, antibiotics cleared resident bacteria and allowed yeast to multiply unchecked.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: INDIAN TRIGGERS (WARM PEACH TINTED CANVAS) -->
+    <section class="section-wrap section-warm">
+      <div class="container">
+        <div class="sec-tag">Environmental &amp; Cultural Triggers</div>
+        <h2 class="sec-title">What Feeds the Yeast? Common Triggers in India</h2>
+        <p class="sec-subtitle">
+          <em>Malassezia</em> is a normal resident of human skin, but it feeds greedily on specific lipid molecules. Everyday habits common in India often provide the ideal feast.
+        </p>
+
+        <div class="feature-split">
+          <div class="feature-box warning-border">
+            <h4>&#129381; Coconut Oil &amp; Overnight Champi</h4>
+            <p>
+              Malassezia yeast requires fatty acids with carbon chain lengths between C11 and C24 to grow. Coconut oil, mustard oil, castor oil, and almond oil are loaded with these exact lipids.
+            </p>
+            <p>
+              When hair oil drips onto your forehead while sleeping, it provides an all-you-can-eat buffet, causing explosive yeast colonies across the upper face.
+            </p>
+          </div>
+
+          <div class="feature-box warning-border">
+            <h4>&#127777; Helmet Sweat &amp; Coastal Humidity</h4>
+            <p>
+              Yeast thrives in warm, dark, damp microclimates. Wearing bike helmets, tight caps, or gym headbands traps sweat against the hairline, creating a humid greenhouse effect that triggers intense itchiness.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-split" style="margin-top: 1.5rem;">
+          <div class="feature-box warning-border">
+            <h4>&#128092; Heavy Shea Butter &amp; Plant Oils</h4>
+            <p>
+              Many popular natural moisturizers contain rich plant butters (shea, mango, cocoa) or facial oils (rosehip, argan). These nourish dry skin but feed Malassezia yeast immediately.
+            </p>
+          </div>
+
+          <div class="feature-box warning-border">
+            <h4>&#9762; The Steroid Cream Trap (Panderm / Betnovate)</h4>
+            <p>
+              Applying OTC steroid creams suppresses your skin's local immune defense. The redness temporarily fades for 2 days, followed by a massive, angry fungal explosion across the entire face.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: 5-PRODUCT SHOWDOWN (WHITE CANVAS) -->
+    <section class="section-wrap">
+      <div class="container">
+        <div class="sec-tag">Pharmacy Treatment Comparison</div>
+        <h2 class="sec-title">5 Antifungal Products in India: Pros, Cons &amp; Pricing</h2>
+        <p class="sec-subtitle">
+          Comparing proven pharmacy solutions for clearing fungal yeast, with normalized prices per 10ml or 10g.
+        </p>
+
+        <div class="brand-showcase-grid">
+          <!-- 1. Nizral 2% -->
+          <div class="brand-card">
+            <div class="brand-tag brand-tag-gold">Gold Standard Wash</div>
+            <div class="brand-img-box">
+              <img src="/assets/images/prod-nizral-2-percent-shampoo.webp" alt="Nizral 2% Ketoconazole Solution packshot" width="150" height="150" loading="lazy">
+            </div>
+            <h4>Nizral 2% Solution</h4>
+            <div class="brand-spec">Ketoconazole 2% Antifungal Solution</div>
+            <div class="brand-price-badge">Price: <strong>&#8377;31.00 / 10ml</strong> (&#8377;310 for 100ml)</div>
+            <div class="brand-pros-cons">
+              <div class="brand-pro"><span>&#10003;</span> Clinical gold standard for destroying Malassezia cell walls.</div>
+              <div class="brand-pro"><span>&#10003;</span> Fast 48-hour relief from burning itch.</div>
+              <div class="brand-con"><span>&#10007;</span> Can be drying if left on longer than 5 minutes.</div>
+            </div>
+          </div>
+
+          <!-- 2. Scalpe+ -->
+          <div class="brand-card">
+            <div class="brand-tag brand-tag-dual">Dual Active Cleanser</div>
+            <div class="brand-img-box">
+              <img src="/assets/images/prod-scalpe-plus-anti-dandruff.webp" alt="Scalpe Plus Ketoconazole &amp; ZPTO Shampoo packshot" width="150" height="150" loading="lazy">
+            </div>
+            <h4>Scalpe+ Shampoo</h4>
+            <div class="brand-spec">Ketoconazole 2% + Zinc Pyrithione (ZPTO)</div>
+            <div class="brand-price-badge">Price: <strong>&#8377;28.00 / 10ml</strong> (&#8377;280 for 100ml)</div>
+            <div class="brand-pros-cons">
+              <div class="brand-pro"><span>&#10003;</span> ZPTO adds antibacterial and sebum-balancing power.</div>
+              <div class="brand-pro"><span>&#10003;</span> Economical for both scalp dandruff and facial hairline.</div>
+              <div class="brand-con"><span>&#10007;</span> Contains mild fragrance; rinse thoroughly.</div>
+            </div>
+          </div>
+
+          <!-- 3. Sebamed Clear Face Care Gel -->
+          <div class="brand-card">
+            <div class="brand-tag brand-tag-safe">100% Yeast-Safe Gel</div>
+            <div class="brand-img-box">
+              <img src="/assets/images/prod-sebamed-clear-face-gel.webp" alt="Sebamed Clear Face Care Gel packshot" width="150" height="150" loading="lazy">
+            </div>
+            <h4>Sebamed Clear Face Gel</h4>
+            <div class="brand-spec">Hyaluronic Acid + Aloe Vera + Panthenol</div>
+            <div class="brand-price-badge">Price: <strong>&#8377;96.00 / 10ml</strong> (&#8377;480 for 50ml)</div>
+            <div class="brand-pros-cons">
+              <div class="brand-pro"><span>&#10003;</span> Zero fatty acids, zero oils, zero esters; 100% fungal safe.</div>
+              <div class="brand-pro"><span>&#10003;</span> pH 5.5 helps restore natural skin barrier balance.</div>
+              <div class="brand-con"><span>&#10007;</span> Very light hydration; very dry skin may need layering.</div>
+            </div>
+          </div>
+
+          <!-- 4. Candid Cream -->
+          <div class="brand-card">
+            <div class="brand-tag brand-tag-spot">Targeted Spot Relief</div>
+            <div class="brand-img-box">
+              <img src="/assets/images/prod-candid-clotrimazole-cream.webp" alt="Candid Clotrimazole 1% Cream packshot" width="150" height="150" loading="lazy">
+            </div>
+            <h4>Candid / Clocip Cream</h4>
+            <div class="brand-spec">Clotrimazole 1% Antifungal Cream</div>
+            <div class="brand-price-badge">Price: <strong>&#8377;45.00 / 10g</strong> (&#8377;90 for 20g)</div>
+            <div class="brand-pros-cons">
+              <div class="brand-pro"><span>&#10003;</span> Readily available in every pharmacy without prescription.</div>
+              <div class="brand-pro"><span>&#10003;</span> Great for localized spots around ears and nose folds.</div>
+              <div class="brand-con"><span>&#10007;</span> Cream base contains fatty alcohols; avoid full face.</div>
+            </div>
+          </div>
+
+          <!-- 5. Deconstruct Cleanser -->
+          <div class="brand-card">
+            <div class="brand-tag brand-tag-foam">Gentle Daily BHA</div>
+            <div class="brand-img-box">
+              <img src="/assets/images/prod-deconstruct-salicylic-cleanser.webp" alt="Deconstruct Salicylic Acid Cleanser packshot" width="150" height="150" loading="lazy">
+            </div>
+            <h4>Deconstruct Salicylic Cleanser</h4>
+            <div class="brand-spec">Salicylic Acid 0.5% + Niacinamide 2%</div>
+            <div class="brand-price-badge">Price: <strong>&#8377;27.50 / 10ml</strong> (&#8377;275 for 100ml)</div>
+            <div class="brand-pros-cons">
+              <div class="brand-pro"><span>&#10003;</span> Exfoliates dead skin cells trapped inside hair follicles.</div>
+              <div class="brand-pro"><span>&#10003;</span> Non-stripping foam safe for alternating with Nizral.</div>
+              <div class="brand-con"><span>&#10007;</span> Does not kill yeast on its own; acts as support.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: NORMALIZED SPEC TABLE (COOL GREY CANVAS) -->
+    <section class="section-wrap section-alt">
+      <div class="container">
+        <div class="sec-tag">Specification Matrix</div>
+        <h2 class="sec-title">Antifungal Products Comparison Table</h2>
+        <p class="sec-subtitle">
+          Review active compounds, normalized pricing, yeast-clearing efficacy, and usage format.
+        </p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Product / Brand</th>
+                <th>Key Actives</th>
+                <th>Normalized Price</th>
+                <th>Application Type</th>
+                <th>Yeast Efficacy</th>
+                <th>Moisture Safety</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Nizral 2% Solution</strong></td>
+                <td>Ketoconazole 2%</td>
+                <td><strong>&#8377;31.00 / 10ml</strong></td>
+                <td>3–5 min wash off</td>
+                <td>🟢 High (Destroys yeast)</td>
+                <td>🟡 Moderate drying</td>
+              </tr>
+              <tr>
+                <td><strong>Scalpe+ Medicated</strong></td>
+                <td>Ketoconazole 2% + ZPTO</td>
+                <td><strong>&#8377;28.00 / 10ml</strong></td>
+                <td>3–5 min wash off</td>
+                <td>🟢 High (Dual action)</td>
+                <td>🟡 Moderate drying</td>
+              </tr>
+              <tr>
+                <td><strong>Sebamed Clear Face Gel</strong></td>
+                <td>Hyaluronic + Aloe (pH 5.5)</td>
+                <td><strong>&#8377;96.00 / 10ml</strong></td>
+                <td>Leave-on gel</td>
+                <td>🟢 100% Yeast-safe</td>
+                <td>🟢 Gentle barrier hydration</td>
+              </tr>
+              <tr>
+                <td><strong>Candid 1% Cream</strong></td>
+                <td>Clotrimazole 1%</td>
+                <td><strong>&#8377;45.00 / 10g</strong></td>
+                <td>Spot leave-on</td>
+                <td>🟢 Moderate</td>
+                <td>🟡 Contains fatty alcohols</td>
+              </tr>
+              <tr>
+                <td><strong>Deconstruct Cleanser</strong></td>
+                <td>0.5% Salicylic + 2% Niacinamide</td>
+                <td><strong>&#8377;27.50 / 10ml</strong></td>
+                <td>Daily face wash</td>
+                <td>🟡 Pore maintenance</td>
+                <td>🟢 Low irritation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: DR DRAY VIDEO & KEY TAKEAWAYS (WHITE CANVAS) -->
+    <section class="section-wrap">
+      <div class="container">
+        <div class="sec-tag">Clinical Video Breakdown</div>
+        <h2 class="sec-title">Dermatologist Guide: Fungal Acne &amp; Yeast-Safe Skincare</h2>
+        <p class="sec-subtitle">
+          Dr. Andrea Suarez (Dr. Dray, Board-Certified Dermatologist) breaks down what fungal acne actually is, why traditional acne products fail, and how to structure a safe routine.
+        </p>
+
+        <div class="video-wrap">
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/uMz7fUEgmQA"
+              title="FUNGAL ACNE 'SAFE' SKINCARE EXPLAINED | Dr Dray"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="video-caption">
+            <span>Clinical Commentary: Dr. Dray on Malassezia folliculitis diagnosis, ingredient pitfalls, and antifungal therapy.</span>
+            <span>Source: YouTube Dermatology Review</span>
+          </div>
+
+          <!-- KEY TAKEAWAYS BOX -->
+          <div class="video-takeaways-box">
+            <h4>&#128221; Key Clinical Takeaways from Dr. Dray's Video</h4>
+            <ul class="video-takeaways-list">
+              <li>
+                <span>1. It Is Not Real Acne:</span> Fungal acne is an infection and inflammatory reaction inside hair follicles caused by an overgrowth of <em>Malassezia</em> yeast, not the <em>Cutibacterium acnes</em> bacteria that causes typical acne vulgaris.
+              </li>
+              <li>
+                <span>2. Why Antibiotics Make It Worse:</span> Applying or taking standard antibacterial acne medications (like clindamycin or doxycycline) wipes out beneficial bacteria that normally keep yeast in check, causing fungal bumps to flare dramatically.
+              </li>
+              <li>
+                <span>3. Short-Contact Therapy Protects Your Barrier:</span> You do not need leave-on antifungal medications on your face all day. Using an over-the-counter 2% ketoconazole or zinc pyrithione wash for 3 to 5 minutes before rinsing delivers the active medication while preventing severe flaking and barrier damage.
+              </li>
+              <li>
+                <span>4. Starve the Yeast:</span> Cut out skincare products containing plant oils, esters, polysorbates, and fatty acids with carbon chain lengths C11–C24, as they directly feed fungal yeast. Stick to simple oil-free hydrating gels.
+              </li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <a href="https://mymirror.fit/scan/" class="btn-hero-cta">
-            Check Your Face Bumps Free &rarr;
+    <!-- SECTION 7: 5-MINUTE SHORT-CONTACT PROTOCOL (WARM PEACH CANVAS) -->
+    <section class="section-wrap section-warm">
+      <div class="container">
+        <div class="sec-tag">How-To Protocol</div>
+        <h2 class="sec-title">How to Do the 5-Minute Antifungal Wash at Home</h2>
+        <p class="sec-subtitle">
+          Follow this simple 4-step short-contact protocol three times a week until itching and uniform bumps disappear.
+        </p>
+
+        <div class="step-cards-grid">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <h4>Splash Lukewarm Water</h4>
+            <p>
+              Dampen your face with plain lukewarm water. Avoid hot water, which flares itching and dilates facial capillaries.
+            </p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <h4>Lather in Hands</h4>
+            <p>
+              Take a coin-sized drop of Nizral 2% or Scalpe+ between wet palms and work into a gentle foam before touching your face.
+            </p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <h4>Wait 3 to 5 Minutes</h4>
+            <p>
+              Smooth foam over forehead, temples, and jawline. Let it rest for 3 to 5 minutes like a mini mask so ketoconazole binds to follicles.
+            </p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">4</div>
+            <h4>Rinse &amp; Hydrate</h4>
+            <p>
+              Rinse thoroughly with cool water. Pat dry with a clean towel and seal with an oil-free moisturizer like Sebamed Clear Face Gel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: FAQS (WHITE CANVAS) -->
+    <section class="section-wrap">
+      <div class="container">
+        <div class="sec-tag">Patient Inquiries</div>
+        <h2 class="sec-title">Frequently Asked Questions</h2>
+        <p class="sec-subtitle">
+          Doctor answers to common questions regarding itchy facial bumps and fungal folliculitis.
+        </p>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Why do regular pimples rarely itch, while fungal bumps itch intensely?</summary>
+            <div class="faq-content">
+              Common bacterial acne is caused by <em>Cutibacterium acnes</em> deep within blocked oil glands, producing soreness and throbbing pressure. Fungal folliculitis is an overgrowth of <em>Malassezia</em> yeast near the skin surface. The yeast digests fatty oils into irritating free fatty acids that stimulate cutaneous itch receptors, causing a prickling sensation that flares with sweat.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can you pop itchy fungal pimples?</summary>
+            <div class="faq-content">
+              Never squeeze or pick itchy fungal bumps. Unlike whiteheads with solid sebum plugs, fungal bumps contain yeast colonies and fluid. Popping ruptures follicular walls, spreading yeast to surrounding pores and inviting secondary bacterial infections that leave dark marks.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Why did my acne start itching after using Clindamycin or Doxycycline?</summary>
+            <div class="faq-content">
+              Antibiotics kill natural bacteria on your skin. When bacterial competitors disappear, <em>Malassezia</em> yeast experiences an ecological bloom, taking over empty hair follicles and causing a sudden, itchy flare-up.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is Nizral 2% shampoo safe to use on facial skin?</summary>
+            <div class="faq-content">
+              Yes, dermatologists routinely prescribe 2% ketoconazole shampoo as a short-contact facial wash. Applying it as a 3-to-5 minute mask two to three times a week clears yeast without over-drying facial skin.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Does hair champi with coconut oil worsen itchy face bumps?</summary>
+            <div class="faq-content">
+              Yes, coconut oil is rich in lauric and myristic fatty acids, which serve as direct food for <em>Malassezia</em> yeast. When hair oil trickles down onto the forehead during sleep, it sparks rapid fungal proliferation and itchy forehead rashes.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>How long does it take for itchy pimple bumps to clear?</summary>
+            <div class="faq-content">
+              With 2% ketoconazole short-contact washes and an oil-free routine, itching typically drops within 48 to 72 hours. Visible flattening of tiny uniform bumps usually occurs within 7 to 14 days.
+            </div>
+          </details>
+        </div>
+
+        <!-- CTA BANNER -->
+        <div class="cta-banner">
+          <h3>Not Sure If Your Bumps Are Fungal or Bacterial?</h3>
+          <p>
+            Take a 60-second AI dermatological scan to analyze whether your breakouts match closed comedones, fungal folliculitis, or barrier redness.
+          </p>
+          <a href="https://mymirror.fit/scan/" class="btn-hero-cta" style="background:#fff; color:#0F172A !important;">
+            Start Free Skin Analysis &rarr;
           </a>
         </div>
-
-        <div class="hero-visual-card">
-          <img src="/assets/images/itchy-pimples-fungal-folliculitis-hero.webp" alt="Indian woman with clear calm skin touching forehead" width="600" height="338" loading="eager">
-          <div class="hero-card-meta">
-            <div class="doc-credit">
-              <div class="doc-avatar">LM</div>
-              <div>
-                <div class="doc-name">Dr. Lipy Mehta, MD</div>
-                <div class="doc-title">Consultant Dermatologist &bull; Medical Reviewer</div>
-              </div>
-            </div>
-            <div class="doctor-stats">
-              <div class="stat-pill">
-                <div class="stat-num">87%</div>
-                <div class="stat-lbl">Clearance with 2% Ketoconazole</div>
-              </div>
-              <div class="stat-pill">
-                <div class="stat-num">1-2mm</div>
-                <div class="stat-lbl">Uniform fungal bump size</div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
-
-    <!-- SECTION 1: WHAT KIND OF ITCHES ARE POSSIBLE? (USER REQUESTED DEEP-DIVE) -->
-    <section class="section-wrap">
-      <div class="sec-tag">Symptom Self-Check</div>
-      <h2 class="sec-title">What Kind of Itch Do You Have &amp; What Does It Indicate?</h2>
-      <p class="sec-subtitle">
-        Not all facial itches point to the same condition. How and when your skin itches reveals the underlying trigger and the exact step required to fix it.
-      </p>
-
-      <div class="itch-patterns-grid">
-        <!-- 1. Continuous Prickling Itch -->
-        <div class="itch-card">
-          <div class="itch-badge itch-badge-yeast">Pattern 1: Continuous Prickle</div>
-          <h4>Intense Prickling Itch That Spikes With Sweat</h4>
-          <div class="itch-diagnosis">Indicates: Malassezia Folliculitis (Fungal Acne)</div>
-          <div class="itch-details">
-            A constant crawling or prickling sensation that flares during gym workouts, under bike helmets, in humid monsoons, or after hot showers. The yeast feasts on warm sweat and natural sebum, releasing acidic metabolites that irritate follicular nerve fibers.
-          </div>
-          <div class="itch-action">
-            <span>&#10148;</span> <strong>What To Do:</strong> Use a 2% Ketoconazole wash for 3 to 5 minutes three times weekly; stop all facial oils.
-          </div>
-        </div>
-
-        <!-- 2. Sudden Stinging / Burning Itch -->
-        <div class="itch-card">
-          <div class="itch-badge itch-badge-barrier">Pattern 2: Stinging Flare</div>
-          <h4>Sudden Burning Itch Right After Washing or Moisturizing</h4>
-          <div class="itch-diagnosis">Indicates: Stripped Moisture Barrier &amp; Chemical Irritation</div>
-          <div class="itch-details">
-            Skin feels tight, shiny, and raw. Applying even basic lotions or splashing plain tap water stings like a sunburn. Occurs after overusing salicylic acid, tretinoin, harsh foaming face washes, or physical scrubs.
-          </div>
-          <div class="itch-action">
-            <span>&#10148;</span> <strong>What To Do:</strong> Stop all exfoliating acids and retinoids; apply a simple ceramide barrier cream or pure petroleum jelly.
-          </div>
-        </div>
-
-        <!-- 3. Intermittent Paced-Out Crawling -->
-        <div class="itch-card">
-          <div class="itch-badge itch-badge-mite">Pattern 3: Night Crawling</div>
-          <h4>Intermittent, Creeping Itch in Paced Intervals at Night</h4>
-          <div class="itch-diagnosis">Indicates: Demodex Folliculorum Overgrowth or Rosacea</div>
-          <div class="itch-details">
-            A light tickling sensation that comes and goes across the cheeks, eyebrows, and nose bridge, peaking when lying down in a warm bedroom. Microscopic skin mites migrate in dark, warm conditions, triggering localized neurogenic inflammation.
-          </div>
-          <div class="itch-action">
-            <span>&#10148;</span> <strong>What To Do:</strong> Consult a doctor for topical Ivermectin or Metronidazole; wash pillowcases weekly in hot water.
-          </div>
-        </div>
-
-        <!-- 4. Paced-Out Deep Throbbing Ache -->
-        <div class="itch-card">
-          <div class="itch-badge itch-badge-cyst">Pattern 4: Throbbing Pressure</div>
-          <h4>Deep Tender Soreness With Occasional Sharp Focal Itch</h4>
-          <div class="itch-diagnosis">Indicates: Deep Bacterial Cystic Acne</div>
-          <div class="itch-details">
-            Presents as a large, painful swollen bump beneath the skin without a visible whitehead. The itch is localized and intermittent, caused by white blood cells stretching the surrounding dermis as they fight <em>C. acnes</em> bacteria.
-          </div>
-          <div class="itch-action">
-            <span>&#10148;</span> <strong>What To Do:</strong> Apply an ice cube wrapped in cloth for 5 minutes, then dab 2.5% Benzoyl Peroxide; never squeeze.
-          </div>
-        </div>
-
-        <!-- 5. Delayed Patchy Itch With Flakes -->
-        <div class="itch-card" style="grid-column: span 2;">
-          <div class="itch-badge itch-badge-allergy">Pattern 5: Delayed Allergic Reaction</div>
-          <h4>Delayed Itchy Red Rash 24 to 48 Hours After a New Product</h4>
-          <div class="itch-diagnosis">Indicates: Allergic Contact Dermatitis</div>
-          <div class="itch-details">
-            Occurs a day or two after trying a new scented serum, botanical facial oil, sheet mask, or threading treatment. Tiny red dots itch intensely and develop dry flaky peeling over 48 hours.
-          </div>
-          <div class="itch-action">
-            <span>&#10148;</span> <strong>What To Do:</strong> Discontinue the new product immediately; apply cold compresses and plain aloe vera gel until calmed.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 2: THE 3 CLUES IT'S FUNGAL ACNE -->
-    <section class="section-wrap">
-      <div class="sec-tag">Clinical Clues</div>
-      <h2 class="sec-title">3 Clear Signs Your Breakout Is Fungal Folliculitis</h2>
-      <p class="sec-subtitle">
-        Doctors evaluate three distinct visual and symptomatic markers to differentiate yeast overgrowth from bacterial blemishes.
-      </p>
-
-      <div class="card-grid-3">
-        <div class="info-card">
-          <div class="info-card-icon icon-red">&#129658;</div>
-          <h4>1. The Pruritic (Itch) Factor</h4>
-          <p>
-            Bacterial pimples feel sore and bruised when pressed. Fungal bumps itch persistently, provoking an urge to scratch, especially along the hairline, forehead, and upper chest.
-          </p>
-        </div>
-        <div class="info-card">
-          <div class="info-card-icon icon-orange">&#9638;</div>
-          <h4>2. The Monomorphic Uniform Army</h4>
-          <p>
-            Regular acne is polymorphic: you see a random mix of blackheads, deep cysts, and tiny whiteheads. Fungal breakouts look like carbon copies of each other—uniform 1 to 2 millimeter pinpoint bumps.
-          </p>
-        </div>
-        <div class="info-card">
-          <div class="info-card-icon icon-purple">&#9888;</div>
-          <h4>3. Worsens on Antibiotics</h4>
-          <p>
-            If you applied Clindamycin gel or took oral Doxycycline and your forehead suddenly erupted in small itchy dots, antibiotics cleared resident bacteria and allowed yeast to multiply unchecked.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 3: INDIAN TRIGGERS -->
-    <section class="section-wrap">
-      <div class="sec-tag">Environmental &amp; Cultural Triggers</div>
-      <h2 class="sec-title">What Feeds the Yeast? Common Triggers in India</h2>
-      <p class="sec-subtitle">
-        <em>Malassezia</em> is a normal resident of human skin, but it feeds greedily on specific lipid molecules. Everyday habits common in India often provide the ideal feast.
-      </p>
-
-      <div class="feature-split">
-        <div class="feature-box warning-border">
-          <h4>&#129381; Coconut Oil &amp; Overnight Champi</h4>
-          <p>
-            Malassezia yeast requires fatty acids with carbon chain lengths between C11 and C24 to grow. Coconut oil, mustard oil, castor oil, and almond oil are loaded with these exact lipids.
-          </p>
-          <p>
-            When hair oil drips onto your forehead while sleeping, it provides an all-you-can-eat buffet, causing explosive yeast colonies across the upper face.
-          </p>
-        </div>
-
-        <div class="feature-box warning-border">
-          <h4>&#127777; Helmet Sweat &amp; Coastal Humidity</h4>
-          <p>
-            Yeast thrives in warm, dark, damp microclimates. Wearing bike helmets, tight caps, or gym headbands traps sweat against the hairline, creating a humid greenhouse effect that triggers intense itchiness.
-          </p>
-        </div>
-      </div>
-
-      <div class="feature-split" style="margin-top: 1.5rem;">
-        <div class="feature-box warning-border">
-          <h4>&#128092; Heavy Shea Butter &amp; Plant Oils</h4>
-          <p>
-            Many popular natural moisturizers contain rich plant butters (shea, mango, cocoa) or facial oils (rosehip, argan). These nourish dry skin but feed Malassezia yeast immediately.
-          </p>
-        </div>
-
-        <div class="feature-box warning-border">
-          <h4>&#9762; The Steroid Cream Trap (Panderm / Betnovate)</h4>
-          <p>
-            Applying OTC steroid creams suppresses your skin's local immune defense. The redness temporarily fades for 2 days, followed by a massive, angry fungal explosion across the entire face.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 4: 5-PRODUCT SHOWDOWN -->
-    <section class="section-wrap">
-      <div class="sec-tag">Pharmacy Treatment Comparison</div>
-      <h2 class="sec-title">5 Antifungal Products in India: Pros, Cons &amp; Pricing</h2>
-      <p class="sec-subtitle">
-        Comparing proven pharmacy solutions for clearing fungal yeast, with normalized prices per 10ml or 10g.
-      </p>
-
-      <div class="brand-showcase-grid">
-        <!-- 1. Nizral 2% -->
-        <div class="brand-card">
-          <div class="brand-tag brand-tag-gold">Gold Standard Wash</div>
-          <div class="brand-img-box">
-            <img src="/assets/images/prod-nizral-2-percent-shampoo.webp" alt="Nizral 2% Ketoconazole Solution packshot" width="150" height="150" loading="lazy">
-          </div>
-          <h4>Nizral 2% Solution</h4>
-          <div class="brand-spec">Ketoconazole 2% Antifungal Solution</div>
-          <div class="brand-price-badge">Price: <strong>&#8377;31.00 / 10ml</strong> (&#8377;310 for 100ml)</div>
-          <div class="brand-pros-cons">
-            <div class="brand-pro"><span>&#10003;</span> Clinical gold standard for destroying Malassezia cell walls.</div>
-            <div class="brand-pro"><span>&#10003;</span> Fast 48-hour relief from burning itch.</div>
-            <div class="brand-con"><span>&#10007;</span> Can be drying if left on longer than 5 minutes.</div>
-          </div>
-        </div>
-
-        <!-- 2. Scalpe+ -->
-        <div class="brand-card">
-          <div class="brand-tag brand-tag-dual">Dual Active Cleanser</div>
-          <div class="brand-img-box">
-            <img src="/assets/images/prod-scalpe-plus-anti-dandruff.webp" alt="Scalpe Plus Ketoconazole &amp; ZPTO Shampoo packshot" width="150" height="150" loading="lazy">
-          </div>
-          <h4>Scalpe+ Shampoo</h4>
-          <div class="brand-spec">Ketoconazole 2% + Zinc Pyrithione (ZPTO)</div>
-          <div class="brand-price-badge">Price: <strong>&#8377;28.00 / 10ml</strong> (&#8377;280 for 100ml)</div>
-          <div class="brand-pros-cons">
-            <div class="brand-pro"><span>&#10003;</span> ZPTO adds antibacterial and sebum-balancing power.</div>
-            <div class="brand-pro"><span>&#10003;</span> Economical for both scalp dandruff and facial hairline.</div>
-            <div class="brand-con"><span>&#10007;</span> Contains mild fragrance; rinse thoroughly.</div>
-          </div>
-        </div>
-
-        <!-- 3. Sebamed Clear Face Care Gel -->
-        <div class="brand-card">
-          <div class="brand-tag brand-tag-safe">100% Yeast-Safe Gel</div>
-          <div class="brand-img-box">
-            <img src="/assets/images/prod-sebamed-clear-face-gel.webp" alt="Sebamed Clear Face Care Gel packshot" width="150" height="150" loading="lazy">
-          </div>
-          <h4>Sebamed Clear Face Gel</h4>
-          <div class="brand-spec">Hyaluronic Acid + Aloe Vera + Panthenol</div>
-          <div class="brand-price-badge">Price: <strong>&#8377;96.00 / 10ml</strong> (&#8377;480 for 50ml)</div>
-          <div class="brand-pros-cons">
-            <div class="brand-pro"><span>&#10003;</span> Zero fatty acids, zero oils, zero esters; 100% fungal safe.</div>
-            <div class="brand-pro"><span>&#10003;</span> pH 5.5 helps restore natural skin barrier balance.</div>
-            <div class="brand-con"><span>&#10007;</span> Very light hydration; very dry skin may need layering.</div>
-          </div>
-        </div>
-
-        <!-- 4. Candid Cream -->
-        <div class="brand-card">
-          <div class="brand-tag brand-tag-spot">Targeted Spot Relief</div>
-          <div class="brand-img-box">
-            <img src="/assets/images/prod-candid-clotrimazole-cream.webp" alt="Candid Clotrimazole 1% Cream packshot" width="150" height="150" loading="lazy">
-          </div>
-          <h4>Candid / Clocip Cream</h4>
-          <div class="brand-spec">Clotrimazole 1% Antifungal Cream</div>
-          <div class="brand-price-badge">Price: <strong>&#8377;45.00 / 10g</strong> (&#8377;90 for 20g)</div>
-          <div class="brand-pros-cons">
-            <div class="brand-pro"><span>&#10003;</span> Readily available in every pharmacy without prescription.</div>
-            <div class="brand-pro"><span>&#10003;</span> Great for localized spots around ears and nose folds.</div>
-            <div class="brand-con"><span>&#10007;</span> Cream base contains fatty alcohols; avoid full face.</div>
-          </div>
-        </div>
-
-        <!-- 5. Deconstruct Cleanser -->
-        <div class="brand-card">
-          <div class="brand-tag brand-tag-foam">Gentle Daily BHA</div>
-          <div class="brand-img-box">
-            <img src="/assets/images/prod-deconstruct-salicylic-cleanser.webp" alt="Deconstruct Salicylic Acid Cleanser packshot" width="150" height="150" loading="lazy">
-          </div>
-          <h4>Deconstruct Salicylic Cleanser</h4>
-          <div class="brand-spec">Salicylic Acid 0.5% + Niacinamide 2%</div>
-          <div class="brand-price-badge">Price: <strong>&#8377;27.50 / 10ml</strong> (&#8377;275 for 100ml)</div>
-          <div class="brand-pros-cons">
-            <div class="brand-pro"><span>&#10003;</span> Exfoliates dead skin cells trapped inside hair follicles.</div>
-            <div class="brand-pro"><span>&#10003;</span> Non-stripping foam safe for alternating with Nizral.</div>
-            <div class="brand-con"><span>&#10007;</span> Does not kill yeast on its own; acts as support.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 5: NORMALIZED SPEC TABLE -->
-    <section class="section-wrap">
-      <div class="sec-tag">Specification Matrix</div>
-      <h2 class="sec-title">Antifungal Products Comparison Table</h2>
-      <p class="sec-subtitle">
-        Review active compounds, normalized pricing, yeast-clearing efficacy, and usage format.
-      </p>
-
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Product / Brand</th>
-              <th>Key Actives</th>
-              <th>Normalized Price</th>
-              <th>Application Type</th>
-              <th>Yeast Efficacy</th>
-              <th>Moisture Safety</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Nizral 2% Solution</strong></td>
-              <td>Ketoconazole 2%</td>
-              <td><strong>&#8377;31.00 / 10ml</strong></td>
-              <td>3–5 min wash off</td>
-              <td>🟢 High (Destroys yeast)</td>
-              <td>🟡 Moderate drying</td>
-            </tr>
-            <tr>
-              <td><strong>Scalpe+ Medicated</strong></td>
-              <td>Ketoconazole 2% + ZPTO</td>
-              <td><strong>&#8377;28.00 / 10ml</strong></td>
-              <td>3–5 min wash off</td>
-              <td>🟢 High (Dual action)</td>
-              <td>🟡 Moderate drying</td>
-            </tr>
-            <tr>
-              <td><strong>Sebamed Clear Face Gel</strong></td>
-              <td>Hyaluronic + Aloe (pH 5.5)</td>
-              <td><strong>&#8377;96.00 / 10ml</strong></td>
-              <td>Leave-on gel</td>
-              <td>🟢 100% Yeast-safe</td>
-              <td>🟢 Gentle barrier hydration</td>
-            </tr>
-            <tr>
-              <td><strong>Candid 1% Cream</strong></td>
-              <td>Clotrimazole 1%</td>
-              <td><strong>&#8377;45.00 / 10g</strong></td>
-              <td>Spot leave-on</td>
-              <td>🟢 Moderate</td>
-              <td>🟡 Contains fatty alcohols</td>
-            </tr>
-            <tr>
-              <td><strong>Deconstruct Cleanser</strong></td>
-              <td>0.5% Salicylic + 2% Niacinamide</td>
-              <td><strong>&#8377;27.50 / 10ml</strong></td>
-              <td>Daily face wash</td>
-              <td>🟡 Pore maintenance</td>
-              <td>🟢 Low irritation</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- SECTION 6: DR DRAY VIDEO & KEY TAKEAWAYS (USER REQUESTED) -->
-    <section class="section-wrap">
-      <div class="sec-tag">Clinical Video Breakdown</div>
-      <h2 class="sec-title">Dermatologist Guide: Fungal Acne &amp; Yeast-Safe Skincare</h2>
-      <p class="sec-subtitle">
-        Dr. Andrea Suarez (Dr. Dray, Board-Certified Dermatologist) breaks down what fungal acne actually is, why traditional acne products fail, and how to structure a safe routine.
-      </p>
-
-      <div class="video-wrap">
-        <div class="video-container">
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/uMz7fUEgmQA"
-            title="FUNGAL ACNE 'SAFE' SKINCARE EXPLAINED | Dr Dray"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            loading="lazy">
-          </iframe>
-        </div>
-        <div class="video-caption">
-          <span>Clinical Commentary: Dr. Dray on Malassezia folliculitis diagnosis, ingredient pitfalls, and antifungal therapy.</span>
-          <span>Source: YouTube Dermatology Review</span>
-        </div>
-
-        <!-- KEY TAKEAWAYS BOX -->
-        <div class="video-takeaways-box">
-          <h4>&#128221; Key Clinical Takeaways from Dr. Dray's Video</h4>
-          <ul class="video-takeaways-list">
-            <li>
-              <span>1. It Is Not Real Acne:</span> Fungal acne is an infection and inflammatory reaction inside hair follicles caused by an overgrowth of <em>Malassezia</em> yeast, not the <em>Cutibacterium acnes</em> bacteria that causes typical acne vulgaris.
-            </li>
-            <li>
-              <span>2. Why Antibiotics Make It Worse:</span> Applying or taking standard antibacterial acne medications (like clindamycin or doxycycline) wipes out beneficial bacteria that normally keep yeast in check, causing fungal bumps to flare dramatically.
-            </li>
-            <li>
-              <span>3. Short-Contact Therapy Protects Your Barrier:</span> You do not need leave-on antifungal medications on your face all day. Using an over-the-counter 2% ketoconazole or zinc pyrithione wash for 3 to 5 minutes before rinsing delivers the active medication while preventing severe flaking and barrier damage.
-            </li>
-            <li>
-              <span>4. Starve the Yeast:</span> Cut out skincare products containing plant oils, esters, polysorbates, and fatty acids with carbon chain lengths C11–C24, as they directly feed fungal yeast. Stick to simple oil-free hydrating gels.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 7: 5-MINUTE SHORT-CONTACT PROTOCOL -->
-    <section class="section-wrap">
-      <div class="sec-tag">How-To Protocol</div>
-      <h2 class="sec-title">How to Do the 5-Minute Antifungal Wash at Home</h2>
-      <p class="sec-subtitle">
-        Follow this simple 4-step short-contact protocol three times a week until itching and uniform bumps disappear.
-      </p>
-
-      <div class="step-cards-grid">
-        <div class="step-card">
-          <div class="step-num">1</div>
-          <h4>Splash Lukewarm Water</h4>
-          <p>
-            Dampen your face with plain lukewarm water. Avoid hot water, which flares itching and dilates facial capillaries.
-          </p>
-        </div>
-        <div class="step-card">
-          <div class="step-num">2</div>
-          <h4>Lather in Hands</h4>
-          <p>
-            Take a coin-sized drop of Nizral 2% or Scalpe+ between wet palms and work into a gentle foam before touching your face.
-          </p>
-        </div>
-        <div class="step-card">
-          <div class="step-num">3</div>
-          <h4>Wait 3 to 5 Minutes</h4>
-          <p>
-            Smooth foam over forehead, temples, and jawline. Let it rest for 3 to 5 minutes like a mini mask so ketoconazole binds to follicles.
-          </p>
-        </div>
-        <div class="step-card">
-          <div class="step-num">4</div>
-          <h4>Rinse &amp; Hydrate</h4>
-          <p>
-            Rinse thoroughly with cool water. Pat dry with a clean towel and seal with an oil-free moisturizer like Sebamed Clear Face Gel.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 8: FAQS -->
-    <section class="section-wrap">
-      <div class="sec-tag">Patient Inquiries</div>
-      <h2 class="sec-title">Frequently Asked Questions</h2>
-      <p class="sec-subtitle">
-        Doctor answers to common questions regarding itchy facial bumps and fungal folliculitis.
-      </p>
-
-      <div class="faq-list">
-        <details class="faq-item" open>
-          <summary>Why do regular pimples rarely itch, while fungal bumps itch intensely?</summary>
-          <div class="faq-content">
-            Common bacterial acne is caused by <em>Cutibacterium acnes</em> deep within blocked oil glands, producing soreness and throbbing pressure. Fungal folliculitis is an overgrowth of <em>Malassezia</em> yeast near the skin surface. The yeast digests fatty oils into irritating free fatty acids that stimulate cutaneous itch receptors, causing a prickling sensation that flares with sweat.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>Can you pop itchy fungal pimples?</summary>
-          <div class="faq-content">
-            Never squeeze or pick itchy fungal bumps. Unlike whiteheads with solid sebum plugs, fungal bumps contain yeast colonies and fluid. Popping ruptures follicular walls, spreading yeast to surrounding pores and inviting secondary bacterial infections that leave dark marks.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>Why did my acne start itching after using Clindamycin or Doxycycline?</summary>
-          <div class="faq-content">
-            Antibiotics kill natural bacteria on your skin. When bacterial competitors disappear, <em>Malassezia</em> yeast experiences an ecological bloom, taking over empty hair follicles and causing a sudden, itchy flare-up.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>Is Nizral 2% shampoo safe to use on facial skin?</summary>
-          <div class="faq-content">
-            Yes, dermatologists routinely prescribe 2% ketoconazole shampoo as a short-contact facial wash. Applying it as a 3-to-5 minute mask two to three times a week clears yeast without over-drying facial skin.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>Does hair champi with coconut oil worsen itchy face bumps?</summary>
-          <div class="faq-content">
-            Yes, coconut oil is rich in lauric and myristic fatty acids, which serve as direct food for <em>Malassezia</em> yeast. When hair oil trickles down onto the forehead during sleep, it sparks rapid fungal proliferation and itchy forehead rashes.
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary>How long does it take for itchy pimple bumps to clear?</summary>
-          <div class="faq-content">
-            With 2% ketoconazole short-contact washes and an oil-free routine, itching typically drops within 48 to 72 hours. Visible flattening of tiny uniform bumps usually occurs within 7 to 14 days.
-          </div>
-        </details>
-      </div>
-    </section>
-
-    <!-- CTA BANNER -->
-    <div class="cta-banner">
-      <h3>Not Sure If Your Bumps Are Fungal or Bacterial?</h3>
-      <p>
-        Take a 60-second AI dermatological scan to analyze whether your breakouts match closed comedones, fungal folliculitis, or barrier redness.
-      </p>
-      <a href="https://mymirror.fit/scan/" class="btn-hero-cta" style="background:#fff; color:#0F172A !important;">
-        Start Free Skin Analysis &rarr;
-      </a>
-    </div>
   </main>
 
   <!-- FOOTER -->
