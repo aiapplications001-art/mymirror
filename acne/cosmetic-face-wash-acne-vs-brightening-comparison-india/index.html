@@ -689,6 +689,512 @@
     .footer-copyright {
       font-size: 12px; color: #8C8075; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
     }
+
+    /* Normalized Cost Grid Desktop */
+    .cost-comparison-box {
+      background: var(--bg-subtle);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.35rem 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .cost-comparison-box h4 {
+      font-size: 14.5px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+    .cost-comparison-box p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .cost-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      font-size: 12.5px;
+    }
+    .cost-item {
+      background: #FFF;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+    }
+
+    /* Pharmacy Alternatives Tier Boxes Desktop */
+    .tier-box {
+      background: #FFF;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.4rem;
+    }
+    .tier-box h4 {
+      font-size: 15px;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+    .tier-box p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+    .tier-1 { border-left: 4px solid var(--brand); }
+    .tier-2 { border-left: 4px solid var(--danger); }
+    .tier-3 { border-left: 4px solid var(--info); }
+
+    /* Mobile Table Scroll Helper */
+    .mobile-table-hint { display: none; }
+
+    /* ==========================================================================
+       MOBILE RESPONSIVENESS & READABILITY OPTIMIZATIONS (@media max-width: 768px & 480px)
+       Preserves 100% untouched desktop styling while dramatically boosting mobile readability
+       ========================================================================== */
+    @media (max-width: 768px) {
+      /* Trust Bar Compact */
+      .trust-bar {
+        padding: 0.5rem 1rem;
+        font-size: 0.76rem;
+      }
+      .trust-bar-inner {
+        justify-content: center;
+        text-align: center;
+        gap: 0.35rem;
+      }
+      .trust-bar-inner > div:not(.trust-badge) {
+        display: none;
+      }
+
+      /* Hero Banner */
+      .hero-section {
+        padding: 1.5rem 0 1.75rem;
+      }
+      .hero-container-wide {
+        padding: 0 1rem;
+      }
+      .hero-breadcrumb {
+        font-size: 0.74rem;
+        margin-bottom: 0.75rem;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+      }
+      .hero-badge {
+        font-size: 0.72rem;
+        padding: 0.3rem 0.7rem;
+        margin-bottom: 0.75rem;
+      }
+      .hero-title {
+        font-size: 1.62rem !important;
+        line-height: 1.22 !important;
+        margin-bottom: 0.85rem !important;
+        letter-spacing: -0.01em;
+      }
+      .hero-desc {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1.15rem;
+      }
+      .hero-actions {
+        width: 100%;
+        margin-bottom: 1.25rem;
+      }
+      .btn-hero-cta {
+        width: 100%;
+        justify-content: center;
+        padding: 0.85rem 1.25rem;
+        font-size: 0.96rem;
+        text-align: center;
+      }
+      .hero-subtext {
+        width: 100%;
+        text-align: center;
+        font-size: 0.75rem;
+      }
+
+      /* Quick Triage Summary Box */
+      .hero-quick-triage {
+        padding: 1rem 1.05rem;
+        border-radius: 12px;
+      }
+      .hero-quick-triage h3 {
+        font-size: 0.9rem;
+        margin-bottom: 0.55rem;
+      }
+      .hero-quick-triage ul {
+        gap: 0.65rem;
+        font-size: 0.84rem;
+      }
+      .hero-quick-triage li {
+        font-size: 0.84rem;
+        line-height: 1.5;
+        gap: 0.45rem;
+      }
+
+      /* Hero Visual Card (Ensures all 7 bottles are completely visible without side clipping!) */
+      .hero-visual-card {
+        border-radius: 14px;
+        margin-top: 0.5rem;
+      }
+      .hero-img-box {
+        height: auto !important;
+        aspect-ratio: 16 / 9;
+        background: #F1F5F9;
+      }
+      .hero-img-box img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: contain;
+      }
+      .hero-card-meta {
+        padding: 0.9rem 1rem;
+      }
+      .doc-credit {
+        gap: 0.65rem;
+        margin-bottom: 0.65rem;
+        padding-bottom: 0.65rem;
+      }
+      .doc-avatar {
+        width: 36px;
+        height: 36px;
+        font-size: 0.82rem;
+      }
+      .doc-name {
+        font-size: 0.85rem;
+      }
+      .doc-title {
+        font-size: 0.7rem;
+      }
+      .doctor-stats {
+        gap: 0.5rem;
+      }
+      .stat-pill {
+        padding: 0.45rem 0.5rem;
+      }
+      .stat-num {
+        font-size: 1.02rem;
+      }
+      .stat-lbl {
+        font-size: 0.66rem;
+      }
+
+      /* Page Layout & Container Real Estate */
+      .page-wrapper {
+        padding: 1.25rem 0.75rem 3rem !important;
+        gap: 20px !important;
+      }
+      .section-card {
+        padding: 1.25rem 1rem !important;
+        border-radius: 14px !important;
+        margin-bottom: 1.5rem !important;
+      }
+      .section-eyebrow {
+        font-size: 10px;
+        padding: 3px 10px;
+        margin-bottom: 0.65rem;
+      }
+      .section-card h2 {
+        font-size: 1.35rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 0.75rem !important;
+      }
+      p {
+        font-size: 14.5px;
+        line-height: 1.65;
+        margin-bottom: 1rem;
+      }
+
+      /* Visual Split & Pore Diagram */
+      .visual-split {
+        gap: 16px;
+        margin-bottom: 1.25rem;
+      }
+      .visual-img-card {
+        border-radius: 12px;
+      }
+      .visual-img {
+        height: auto;
+        max-height: 220px;
+        object-fit: contain;
+        background: #F8FAFC;
+      }
+      .visual-caption {
+        font-size: 11px;
+        padding: 6px 10px;
+      }
+
+      /* Cost Comparison Grid */
+      .cost-comparison-box {
+        padding: 1rem !important;
+        margin: 1.25rem 0 1.5rem !important;
+        border-radius: 12px !important;
+      }
+      .cost-comparison-box h4 {
+        font-size: 13px !important;
+        margin-bottom: 0.65rem !important;
+      }
+      .cost-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px !important;
+        font-size: 11.5px !important;
+      }
+      .cost-item {
+        padding: 8px 10px !important;
+        font-size: 11.5px !important;
+      }
+
+      /* Master Comparison Matrix Table (Horizontal Swipe & Sticky First Column) */
+      .mobile-table-hint {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        font-size: 11.5px;
+        font-weight: 700;
+        color: #C14800;
+        background: #FFF7ED;
+        border: 1px dashed #FDBA74;
+        border-radius: 8px;
+        padding: 6px 10px;
+        margin: 1rem 0 0.5rem;
+        text-align: center;
+      }
+      .table-responsive {
+        margin: 0.5rem 0 1.5rem;
+        border-radius: 10px;
+        -webkit-overflow-scrolling: touch;
+      }
+      .compare-table {
+        min-width: 660px;
+        font-size: 12px;
+      }
+      .compare-table th {
+        padding: 10px 10px;
+        font-size: 11.5px;
+      }
+      .compare-table td {
+        padding: 10px 10px;
+        font-size: 12px;
+        line-height: 1.45;
+      }
+      .compare-table th:first-child,
+      .compare-table td:first-child {
+        position: sticky;
+        left: 0;
+        background: #FFFFFF;
+        z-index: 2;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.08);
+        min-width: 105px;
+        max-width: 115px;
+      }
+      .compare-table th:first-child {
+        background: #F8FAFC;
+        z-index: 3;
+      }
+
+      /* Detailed Product Breakdown Cards */
+      .brand-cards-grid {
+        gap: 16px;
+        margin: 1.25rem 0;
+      }
+      .brand-card {
+        padding: 1.15rem 1rem !important;
+        border-radius: 14px !important;
+      }
+      .brand-card-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding-bottom: 0.75rem;
+        margin-bottom: 0.75rem;
+      }
+      .brand-card-header h3 {
+        font-size: 1.15rem;
+        line-height: 1.3;
+      }
+      .brand-meta-pills {
+        gap: 6px;
+      }
+      .meta-pill {
+        font-size: 10.5px;
+        padding: 2px 7px;
+      }
+      .brand-grid-two {
+        gap: 10px;
+        margin: 0.85rem 0;
+      }
+      .brand-spec-box {
+        padding: 0.8rem 0.85rem;
+        gap: 6px;
+        border-radius: 10px;
+      }
+      .spec-label {
+        font-size: 10px;
+      }
+      .spec-value {
+        font-size: 12.5px;
+        line-height: 1.5;
+      }
+      .verdict-box {
+        padding: 0.85rem 0.95rem;
+        border-radius: 10px;
+        margin-top: 0.85rem;
+      }
+      .verdict-title {
+        font-size: 12.5px;
+        line-height: 1.35;
+      }
+      .verdict-desc {
+        font-size: 12px;
+        line-height: 1.55;
+      }
+      .swap-recommendation {
+        font-size: 11.5px;
+        padding: 6px 10px;
+      }
+
+      /* Video Section */
+      .video-card {
+        padding: 1.25rem 1rem !important;
+        border-radius: 14px !important;
+        margin-bottom: 1.5rem !important;
+      }
+      .video-card h3 {
+        font-size: 1.2rem !important;
+      }
+      .video-wrapper {
+        margin: 1rem 0 !important;
+        border-radius: 10px !important;
+      }
+      .video-takeaways {
+        padding: 0.9rem 1rem !important;
+        border-radius: 10px !important;
+      }
+      .video-takeaways h4 {
+        font-size: 13px !important;
+      }
+      .takeaways-list li {
+        font-size: 12.5px !important;
+        line-height: 1.55 !important;
+      }
+
+      /* Upgrade Alternatives Tiers */
+      .tier-box {
+        padding: 1rem 1.05rem !important;
+        border-radius: 10px !important;
+      }
+      .tier-box h4 {
+        font-size: 13.5px !important;
+        line-height: 1.35 !important;
+      }
+      .tier-box p {
+        font-size: 12.5px !important;
+        line-height: 1.55 !important;
+      }
+
+      /* Interactive Face Wash Evaluator */
+      .evaluator-box {
+        padding: 1.25rem 1rem !important;
+        border-radius: 14px !important;
+        margin: 1.5rem 0 !important;
+      }
+      .evaluator-header h3 {
+        font-size: 1.2rem !important;
+      }
+      .eval-questions {
+        gap: 12px !important;
+        margin: 1rem 0 !important;
+      }
+      .eval-q-group label {
+        font-size: 13px !important;
+        margin-bottom: 6px !important;
+      }
+      .eval-select {
+        font-size: 16px !important; /* Prevents iOS auto-zoom on select */
+        padding: 10px 12px !important;
+        border-radius: 8px !important;
+      }
+      .eval-result-card {
+        padding: 1rem !important;
+        border-radius: 10px !important;
+      }
+
+      /* Doctor Reviewer Card */
+      .doctor-card {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 1.25rem 1rem !important;
+        border-radius: 14px !important;
+        margin: 1.5rem 0 !important;
+      }
+      .doctor-avatar {
+        width: 68px !important;
+        height: 68px !important;
+      }
+      .doctor-info h4 {
+        font-size: 1.05rem !important;
+      }
+      .doctor-title {
+        font-size: 11px !important;
+      }
+      .doctor-bio {
+        font-size: 12.5px !important;
+        line-height: 1.5 !important;
+      }
+
+      /* FAQ Items */
+      .faq-item {
+        padding: 0.95rem 0 !important;
+      }
+      .faq-question {
+        font-size: 14.5px !important;
+        line-height: 1.35 !important;
+      }
+      .faq-answer {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+      }
+
+      /* Sidebar & Footer */
+      .sidebar {
+        position: static !important;
+        margin-top: 1rem;
+      }
+      .sidebar-widget {
+        padding: 1.15rem 1rem !important;
+        border-radius: 12px !important;
+      }
+      .scan-sidebar-card {
+        padding: 1.25rem 1rem !important;
+        border-radius: 12px !important;
+      }
+      .site-footer {
+        padding: 2.25rem 1rem 2rem !important;
+        font-size: 12px !important;
+      }
+      .footer-copyright {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .cal-header-inner {
+        padding: 0.65rem 0.85rem;
+      }
+      .cal-logo img {
+        height: 26px;
+      }
+      .btn-header-cta {
+        padding: 0.45rem 0.85rem;
+        font-size: 0.78rem;
+      }
+      .hero-title {
+        font-size: 1.48rem !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -799,31 +1305,31 @@
           </div>
         </div>
         <!-- Unit Cost Analysis Box -->
-        <div style="background:var(--bg-subtle);border:1.5px solid var(--border);border-radius:var(--radius);padding:1.35rem 1.5rem;margin-top:1.5rem;">
-          <h4 style="font-size:14.5px;font-weight:800;color:var(--text-main);margin-bottom:8px;">💡 Normalized Cost Analysis (Price Per 100 ml):</h4>
-          <p style="font-size:13px;line-height:1.6;color:var(--text-muted);margin-bottom:10px;">
+        <div class="cost-comparison-box">
+          <h4>💡 Normalized Cost Analysis (Price Per 100 ml):</h4>
+          <p>
             Comparing face washes by bottle price is misleading because pack sizes range from 100g to 200ml. Here is the actual cost per 100 ml from lowest to highest:
           </p>
-          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:10px;font-size:12.5px;">
-            <div style="background:#FFF;border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px;">
+          <div class="cost-grid">
+            <div class="cost-item">
               <strong>Clean &amp; Clear:</strong> ₹150 / 100 ml
             </div>
-            <div style="background:#FFF;border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px;">
+            <div class="cost-item">
               <strong>POND'S:</strong> ₹185 / 100 ml
             </div>
-            <div style="background:#FFF;border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px;">
+            <div class="cost-item">
               <strong>Garnier:</strong> ₹199 / 100 ml
             </div>
-            <div style="background:#FFF;border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px;">
+            <div class="cost-item">
               <strong>Neutrogena:</strong> ₹220 / 100 ml
             </div>
-            <div style="background:#FFF;border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px;">
+            <div class="cost-item">
               <strong>Minimalist:</strong> ₹299 / 100 ml
             </div>
-            <div style="background:#FFF;border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px;">
+            <div class="cost-item">
               <strong>NIVEA:</strong> ₹299 / 100 ml
             </div>
-            <div style="background:#FFF;border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px;">
+            <div class="cost-item">
               <strong>WOW Science:</strong> ₹299 / 100 ml
             </div>
           </div>
@@ -836,6 +1342,9 @@
         <h2>7-Brand Master Comparison Matrix</h2>
         <p>Review the exact formula base, active components, verified acne rating, and estimated Indian retail price for each cleanser:</p>
 
+        <div class="mobile-table-hint">
+          <span>👈 Swipe sideways to compare all 7 cleansers, scores &amp; prices 👉</span>
+        </div>
         <div class="table-responsive">
           <table class="compare-table">
             <thead>
@@ -1284,23 +1793,23 @@
 
         <div style="display:flex;flex-direction:column;gap:16px;margin:1.5rem 0;">
           
-          <div style="background:#FFF;border:1.5px solid var(--border);border-left:4px solid var(--brand);border-radius:var(--radius);padding:1.25rem 1.4rem;">
-            <h4 style="font-size:15px;color:var(--text-main);margin-bottom:4px;">Tier 1: For Blackheads, Whiteheads &amp; Oily T-Zones (Salicylic Acid 2%)</h4>
-            <p style="font-size:13px;color:var(--text-muted);margin:0;">
+          <div class="tier-box tier-1">
+            <h4>Tier 1: For Blackheads, Whiteheads &amp; Oily T-Zones (Salicylic Acid 2%)</h4>
+            <p>
               <strong>Top Pick:</strong> <a href="https://mymirror.fit/acne/salicylic-acid-face-wash-for-acne-india/">Saslic DS Foaming Wash (Cipla)</a> or <strong>Minimalist 2% Salicylic Acid</strong>. Both deliver verified 2% active BHA at an optimal acidic pH to dissolve pore blockages without harsh soaps. Price: ₹299–₹395.
             </p>
           </div>
 
-          <div style="background:#FFF;border:1.5px solid var(--border);border-left:4px solid var(--danger);border-radius:var(--radius);padding:1.25rem 1.4rem;">
-            <h4 style="font-size:15px;color:var(--text-main);margin-bottom:4px;">Tier 2: For Red, Pus-Filled Inflammatory Pimples (Benzoyl Peroxide 2.5%–4%)</h4>
-            <p style="font-size:13px;color:var(--text-muted);margin:0;">
+          <div class="tier-box tier-2">
+            <h4>Tier 2: For Red, Pus-Filled Inflammatory Pimples (Benzoyl Peroxide 2.5%–4%)</h4>
+            <p>
               <strong>Top Pick:</strong> <strong>Benxop 4% Face Wash</strong> or <strong>Pernex AC 2.5% Wash</strong>. Benzoyl peroxide directly eliminates acne bacteria within 48 hours without causing bacterial resistance. Massage for 60 seconds, then rinse thoroughly. Price: ₹180–₹240.
             </p>
           </div>
 
-          <div style="background:#FFF;border:1.5px solid var(--border);border-left:4px solid var(--info);border-radius:var(--radius);padding:1.25rem 1.4rem;">
-            <h4 style="font-size:15px;color:var(--text-main);margin-bottom:4px;">Tier 3: For Irritated, Peeling, or Treatment-Sensitized Skin</h4>
-            <p style="font-size:13px;color:var(--text-muted);margin:0;">
+          <div class="tier-box tier-3">
+            <h4>Tier 3: For Irritated, Peeling, or Treatment-Sensitized Skin</h4>
+            <p>
               <strong>Top Pick:</strong> <strong>Cetaphil Gentle Skin Cleanser</strong> or <strong>CeraVe Hydrating Cleanser</strong>. Completely free of foaming sulfates, soap bases, and active acids, allowing your skin barrier to heal while using night-time acne gels. Price: ₹330–₹399.
             </p>
           </div>
