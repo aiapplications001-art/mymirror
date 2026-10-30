@@ -4179,6 +4179,11 @@
       "source": "/acne/nizral-bacne/",
       "destination": "/acne/nizral-for-back-acne/",
       "permanent": true
+    },
+    {
+      "source": "/acne/skin-discoloration-on-face-causes-treatment-india/",
+      "destination": "/pigmentation/skin-discoloration-on-face-causes-treatment-india/",
+      "permanent": true
     }
   ],
   "rewrites": [
