@@ -32,7 +32,7 @@
   <!-- Fonts: Kantumruy Pro & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Structured Data: MedicalWebPage, BreadcrumbList, FAQPage -->
   <script type="application/ld+json">
@@ -136,242 +136,243 @@
   </script>
 
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --brand: #EC610E;
       --brand-dark: #C14800;
-      --brand-light: #FFE1CE;
-      --brand-tint: #FFF6F0;
-      --bg-primary: #FFFFFF;
-      --bg-secondary: #F9F6F3;
-      --bg-tertiary: #F2EDE8;
-      --text-primary: #1A1410;
-      --text-secondary: #5C4A3A;
-      --text-muted: #9E8575;
-      --border: #E8DDD5;
-      --border-dark: #D9C8BC;
-      --success: #2D7A4F;
-      --success-bg: #E8F5E9;
-      --danger: #C0392B;
-      --danger-bg: #FDF2F2;
-      --info: #1A5F8A;
-      --info-bg: #EBF5FB;
-      --warning: #B7791F;
-      --warning-bg: #FEFCBF;
+      --brand-light: #FFF3EB;
+      --brand-border: #FED7AA;
+      --bg: #FFFFFF;
+      --bg-warm: #FFFDF9;
+      --bg-subtle: #F8FAFC;
+      --surface: #FFFFFF;
+      --border: #E2E8F0;
+      --border-warm: #FDE68A;
+      --text: #0F172A;
+      --text-main: #0F172A;
+      --text-muted: #475569;
+      --success: #16A34A;
+      --success-bg: #F0FDF4;
+      --danger: #DC2626;
+      --danger-bg: #FEF2F2;
+      --info: #0284C7;
+      --info-bg: #F0F9FF;
       --radius-sm: 8px;
-      --radius-md: 14px;
+      --radius: 14px;
       --radius-lg: 20px;
       --radius-xl: 24px;
       --radius-full: 9999px;
-      --shadow-sm: 0 4px 15px rgba(26, 20, 16, 0.04);
-      --shadow-md: 0 10px 30px rgba(26, 20, 16, 0.06);
-      --shadow-hover: 0 15px 40px rgba(26, 20, 16, 0.1);
-      --bouncy: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+      --shadow-card: 0 6px 20px rgba(0,0,0,0.06);
+      --shadow-hover: 0 12px 28px rgba(236,97,14,0.12);
+      --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --font-heading: 'Kantumruy Pro', Georgia, serif;
       --max-width: 1200px;
     }
 
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      font-size: 15px;
-      line-height: 1.7;
-      color: var(--text-primary);
-      background: #FAFAF9;
+      font-family: var(--font-body);
+      background-color: #FFFFFF;
+      color: var(--text);
+      line-height: 1.68;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
     }
 
-    h1, h2, h3, h4 {
-      font-family: 'Kantumruy Pro', Georgia, serif;
-      color: var(--text-primary);
-      line-height: 1.25;
-      letter-spacing: -0.02em;
-    }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { color: var(--brand-dark); text-decoration: underline; }
 
-    p {
-      color: var(--text-secondary);
-      font-size: 15px;
-      line-height: 1.75;
-      margin-bottom: 1.25rem;
-    }
-    p:last-child { margin-bottom: 0; }
-    strong { color: var(--text-primary); }
-
-    /* Sticky Navigation Header */
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255, 255, 255, 0.95);
+    /* HEADER */
+    .cal-header {
+      background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--border);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
-      height: 62px;
-      display: flex;
-      align-items: center;
+      position: sticky; top: 0; z-index: 100;
     }
-    .header-inner {
+    .cal-header-inner {
+      max-width: var(--max-width); margin: 0 auto;
+      padding: 0.85rem 1.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .cal-logo { display: flex; align-items: center; text-decoration: none; }
+    .cal-logo img { height: 32px; width: auto; display: block; }
+    .btn-header-cta {
+      background: linear-gradient(135deg, #EC610E 0%, #C14800 100%);
+      color: #fff !important;
+      padding: 0.6rem 1.25rem; border-radius: 99px;
+      font-weight: 700; font-size: 0.88rem;
+      box-shadow: 0 3px 10px rgba(236,97,14,0.25);
+      transition: all 0.2s;
+    }
+    .btn-header-cta:hover { transform: translateY(-1px); box-shadow: 0 5px 14px rgba(236,97,14,0.35); text-decoration: none; }
+
+    /* TRUST BAR */
+    .trust-bar {
+      background: #F8FAFC; border-bottom: 1px solid var(--border);
+      padding: 0.6rem 1.5rem; font-size: 0.82rem; color: var(--text-muted);
+    }
+    .trust-bar-inner {
+      max-width: var(--max-width); margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;
+    }
+    .trust-badge { display: flex; align-items: center; gap: 0.4rem; font-weight: 600; }
+    .trust-badge span.dot { width: 8px; height: 8px; border-radius: 50%; background: #16A34A; display: inline-block; box-shadow: 0 0 0 2px #DCFCE7; }
+
+    /* LATEST WARM HERO BANNER */
+    .hero-section {
+      background: linear-gradient(180deg, #FFF7ED 0%, #FFFDF9 60%, #FFFFFF 100%);
+      padding: 3.25rem 0 2.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-container-wide {
       max-width: var(--max-width);
-      width: 100%;
       margin: 0 auto;
       padding: 0 1.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
-    .logo-img { height: 32px; width: auto; display: block; }
-    .header-cta-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 8px 20px;
-      background: var(--brand);
-      color: #FFF;
-      font-size: 13px;
-      font-weight: 700;
-      text-decoration: none;
-      border-radius: var(--radius-full);
-      box-shadow: 0 4px 14px rgba(236, 97, 14, 0.25);
-      transition: all 0.3s var(--bouncy);
-    }
-    .header-cta-btn:hover {
-      background: var(--brand-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(236, 97, 14, 0.35);
-    }
-
-    /* Trust Bar */
-    .trust-bar {
-      background: var(--bg-secondary);
-      border-bottom: 1px solid var(--border);
-      padding: 12px 24px;
-      font-size: 12.5px;
-      color: var(--text-secondary);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      text-align: center;
-    }
-    .trust-badge-dot {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-weight: 600;
-    }
-    .trust-badge-green { color: var(--success); font-weight: 700; }
-    .trust-separator { color: var(--border-dark); opacity: 0.6; }
-
-    /* Dark Photo Hero */
-    .hero {
-      position: relative;
-      background: linear-gradient(135deg, #0d0a08 0%, #1c1510 50%, #2a1a0e 100%);
-      color: #FFF;
-      padding: 4.5rem 24px 4rem;
-      text-align: center;
-      overflow: hidden;
-    }
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at 50% 30%, rgba(236, 97, 14, 0.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .hero-container {
-      position: relative;
-      z-index: 2;
-      max-width: 860px;
-      margin: 0 auto;
-    }
-    .hero-eyebrow {
-      display: inline-block;
-      padding: 6px 18px;
-      background: rgba(236, 97, 14, 0.15);
-      border: 1px solid rgba(236, 97, 14, 0.4);
-      color: #FFA566;
-      font-size: 11.5px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      border-radius: var(--radius-full);
-      margin-bottom: 1.5rem;
-    }
-    .hero h1 {
-      font-size: clamp(2.1rem, 4.2vw, 3.2rem);
-      font-weight: 700;
-      color: #FFF;
-      line-height: 1.18;
-      letter-spacing: -0.03em;
+    .hero-breadcrumb {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 0.82rem; color: var(--text-muted);
       margin-bottom: 1.25rem;
     }
-    .hero p {
-      color: rgba(255, 255, 255, 0.88);
-      font-size: clamp(1rem, 1.8vw, 1.15rem);
-      line-height: 1.65;
-      max-width: 740px;
-      margin: 0 auto 2.25rem;
-    }
-    .hero-cta-group {
-      display: inline-flex;
-      flex-direction: column;
+    .hero-breadcrumb a { color: var(--text-muted); }
+    .hero-breadcrumb a:hover { color: var(--brand); text-decoration: none; }
+    .hero-breadcrumb span { color: var(--text); font-weight: 600; }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3rem;
       align-items: center;
-      gap: 10px;
     }
-    .hero-cta-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 15px 36px;
-      background: var(--brand);
-      color: #FFF;
-      font-size: 15px;
-      font-weight: 700;
-      text-decoration: none;
-      border-radius: var(--radius-full);
-      box-shadow: 0 10px 25px rgba(236, 97, 14, 0.35);
-      transition: all 0.4s var(--bouncy);
-    }
-    .hero-cta-btn:hover {
-      background: #FF7528;
-      transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 14px 30px rgba(236, 97, 14, 0.5);
-    }
-    .hero-subtext {
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.65);
+    @media (max-width: 960px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 2.25rem; }
     }
 
-    /* Main Layout Grid */
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-size: 0.78rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      background: #FEF3C7; color: #92400E;
+      border: 1px solid #FDE68A;
+      padding: 0.35rem 0.85rem; border-radius: 99px; margin-bottom: 1rem;
+    }
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.1rem, 3.8vw, 2.85rem);
+      font-weight: 800; line-height: 1.18;
+      color: #0F172A; margin-bottom: 1.1rem;
+    }
+    .hero-title em {
+      font-style: normal;
+      background: linear-gradient(135deg, #EC610E 0%, #B91C1C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-desc {
+      font-size: 1.05rem; color: #475569;
+      margin-bottom: 1.5rem; line-height: 1.7;
+    }
+
+    /* QUICK TRIAGE SUMMARY */
+    .hero-quick-triage {
+      background: #FFFFFF;
+      border: 1.5px solid #FDBA74;
+      border-radius: var(--radius); padding: 1.25rem 1.4rem;
+      margin-bottom: 1.65rem;
+      box-shadow: 0 4px 14px rgba(234, 88, 12, 0.07);
+    }
+    .hero-quick-triage h3 {
+      font-size: 0.95rem; font-weight: 800; color: #9A3412; margin-bottom: 0.65rem;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .hero-quick-triage ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; }
+    .hero-quick-triage li { display: flex; align-items: baseline; gap: 0.5rem; color: #334155; }
+    .hero-quick-triage li span.icon { color: #EA580C; font-weight: 800; }
+    .hero-quick-triage li strong { color: #0F172A; }
+
+    .hero-actions {
+      display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem;
+    }
+    .btn-hero-cta {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: linear-gradient(135deg, #EC610E 0%, #C14800 100%);
+      color: #fff !important;
+      font-weight: 800; font-size: 1.02rem; padding: 0.9rem 1.85rem;
+      border-radius: 99px; box-shadow: 0 6px 18px rgba(236,97,14,0.35);
+      transition: all 0.2s;
+    }
+    .btn-hero-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(236,97,14,0.45); text-decoration: none;
+    }
+    .hero-subtext {
+      font-size: 0.8rem; color: var(--text-muted);
+    }
+
+    /* HERO VISUAL CARD */
+    .hero-visual-card {
+      background: #FFFFFF; border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg); overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+    .hero-img-box {
+      width: 100%; height: 260px; overflow: hidden; background: #F8FAFC;
+    }
+    .hero-img-box img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+    }
+    .hero-card-meta { padding: 1.25rem 1.4rem; background: #FFFFFF; }
+    .doc-credit {
+      display: flex; align-items: center; gap: 0.85rem;
+      margin-bottom: 0.9rem; padding-bottom: 0.9rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .doc-avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: #FFEDD5; color: #9A3412;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 0.95rem;
+      border: 2px solid #FFFFFF; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+    .doc-name { font-weight: 800; font-size: 0.92rem; color: #0F172A; line-height: 1.2; }
+    .doc-title { font-size: 0.76rem; color: var(--text-muted); }
+
+    .doctor-stats {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem;
+    }
+    .stat-pill {
+      background: #F8FAFC; border: 1px solid #E2E8F0;
+      border-radius: var(--radius-sm);
+      padding: 0.65rem 0.75rem; text-align: center;
+    }
+    .stat-num { font-size: 1.15rem; font-weight: 800; color: #0F172A; line-height: 1.1; }
+    .stat-lbl { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 0.2rem; font-weight: 600; }
+
+    /* PAGE WRAPPER GRID */
     .page-wrapper {
-      max-width: 1200px;
+      max-width: var(--max-width);
       margin: 0 auto;
-      padding: 3rem 24px 5rem;
+      padding: 3rem 1.5rem 5rem;
       display: grid;
       grid-template-columns: 1fr 320px;
       gap: 32px;
       align-items: start;
-      box-sizing: border-box;
-      width: 100%;
     }
     @media (max-width: 1024px) {
       .page-wrapper {
         grid-template-columns: 1fr !important;
-        padding: 2.25rem 24px 4rem !important;
+        padding: 2.25rem 1.5rem 4rem !important;
         gap: 28px !important;
       }
     }
 
-    /* Content Area */
     .content-stream { min-width: 0; }
 
-    /* Section Styling */
+    /* SECTION CARD */
     .section-card {
       background: #FFF;
       border: 1px solid var(--border);
@@ -379,10 +380,6 @@
       padding: 2.5rem;
       margin-bottom: 2.5rem;
       box-shadow: var(--shadow-sm);
-      transition: box-shadow 0.3s ease;
-    }
-    .section-card:hover {
-      box-shadow: var(--shadow-md);
     }
     @media (max-width: 640px) {
       .section-card { padding: 1.5rem; border-radius: var(--radius-lg); }
@@ -393,23 +390,34 @@
       font-size: 11px;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.09em;
       color: var(--brand);
-      background: var(--brand-tint);
-      border: 1px solid var(--brand-light);
+      background: var(--brand-light);
+      border: 1px solid var(--brand-border);
       padding: 4px 12px;
       border-radius: var(--radius-full);
       margin-bottom: 0.75rem;
     }
 
     .section-card h2 {
-      font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+      font-family: var(--font-heading);
+      font-size: clamp(1.55rem, 2.4vw, 2.05rem);
       font-weight: 700;
-      margin-bottom: 1.25rem;
-      color: var(--text-primary);
+      margin-bottom: 1.15rem;
+      color: var(--text-main);
+      line-height: 1.25;
     }
 
-    /* Section Visual Split */
+    p {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.75;
+      margin-bottom: 1.25rem;
+    }
+    p:last-child { margin-bottom: 0; }
+    strong { color: var(--text-main); }
+
+    /* VISUAL SPLIT */
     .visual-split {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
@@ -420,35 +428,30 @@
     @media (max-width: 768px) {
       .visual-split { grid-template-columns: 1fr; }
     }
-
     .visual-img-card {
       position: relative;
       border-radius: var(--radius-lg);
       overflow: hidden;
       border: 1px solid var(--border);
-      background: var(--bg-tertiary);
+      background: var(--bg-subtle);
       box-shadow: var(--shadow-sm);
     }
     .visual-img {
       width: 100%;
-      height: 240px;
+      height: 230px;
       object-fit: cover;
       display: block;
-      transition: transform 0.5s var(--bouncy);
-    }
-    .visual-img-card:hover .visual-img {
-      transform: scale(1.03);
     }
     .visual-caption {
       padding: 8px 12px;
-      background: var(--bg-secondary);
+      background: var(--bg-subtle);
       font-size: 11.5px;
       color: var(--text-muted);
       border-top: 1px solid var(--border);
       text-align: center;
     }
 
-    /* Video Embed Box */
+    /* VIDEO EMBED */
     .video-card {
       background: #FFF;
       border: 1px solid var(--border);
@@ -462,164 +465,177 @@
       padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
-      border-radius: var(--radius-md);
+      border-radius: var(--radius);
       border: 1px solid var(--border);
       margin: 1.5rem 0 1.25rem;
       background: #000;
     }
     .video-wrapper iframe {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
+      top: 0; left: 0; width: 100%; height: 100%; border: 0;
     }
     .video-takeaways {
-      background: var(--bg-secondary);
+      background: var(--bg-subtle);
       border-left: 4px solid var(--brand);
-      border-radius: var(--radius-md);
+      border-radius: var(--radius);
       padding: 1.25rem 1.4rem;
       margin-top: 1.25rem;
     }
     .video-takeaways h4 {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 14px;
-      font-weight: 800;
-      color: var(--text-primary);
-      margin-bottom: 8px;
+      font-size: 14px; font-weight: 800; color: var(--text-main); margin-bottom: 8px;
     }
     .takeaways-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+      list-style: none; display: flex; flex-direction: column; gap: 8px;
     }
     .takeaways-list li {
-      font-size: 13.5px;
-      color: var(--text-secondary);
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
+      font-size: 13.5px; color: var(--text-muted); display: flex; align-items: flex-start; gap: 8px;
     }
     .takeaways-list li::before {
-      content: "•";
-      color: var(--brand);
-      font-size: 18px;
-      line-height: 1;
+      content: "•"; color: var(--brand); font-size: 18px; line-height: 1;
     }
 
-    /* Diagnostic Roadmap Strips */
+    /* DIAGNOSTIC ROADMAP STRIPS (REVAMPED WITH ICONS ABOVE TYPE AND HIGHLIGHTED PARAMETERS) */
     .roadmap-container {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
+      background: #FFFDF9;
+      border: 1px solid var(--border-warm);
       border-radius: var(--radius-xl);
       padding: 2.5rem;
       margin-bottom: 2.5rem;
     }
     .roadmap-header {
-      text-align: center;
-      max-width: 680px;
-      margin: 0 auto 2rem;
+      text-align: center; max-width: 680px; margin: 0 auto 2rem;
     }
     .roadmap-header h2 {
-      font-size: clamp(1.6rem, 2.5vw, 2rem);
+      font-family: var(--font-heading);
+      font-size: clamp(1.55rem, 2.4vw, 2rem);
       margin: 0.5rem 0 0.5rem;
     }
     .roadmap-header p {
-      font-size: 14px;
-      color: var(--text-secondary);
+      font-size: 14px; color: var(--text-muted);
     }
     .roadmap-strips {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+      display: flex; flex-direction: column; gap: 20px;
     }
     .strip-card {
       background: #FFFFFF;
-      border: 1px solid var(--border);
+      border: 1.5px solid var(--border);
       border-radius: var(--radius-lg);
-      padding: 1.4rem 1.6rem;
+      padding: 1.5rem 1.6rem;
       display: grid;
-      grid-template-columns: 320px 1fr;
+      grid-template-columns: 240px 1fr;
       gap: 24px;
-      align-items: center;
+      align-items: start;
       box-shadow: var(--shadow-sm);
-      transition: all 0.3s var(--bouncy);
+      transition: all 0.25s ease;
     }
     .strip-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--border-dark);
+      box-shadow: var(--shadow-card);
+      border-color: #FDBA74;
     }
     .strip-left {
       border-right: 1px solid var(--border);
       padding-right: 20px;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      align-items: flex-start;
+      gap: 8px;
     }
-    .strip-phase-row {
+    /* ICON ABOVE TYPE TAG */
+    .strip-icon-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--brand-light);
+      border: 1.5px solid var(--brand-border);
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      font-size: 24px;
+      line-height: 1;
       margin-bottom: 2px;
+      box-shadow: 0 2px 8px rgba(236,97,14,0.1);
     }
     .strip-phase-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 11px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
+      display: inline-flex; align-items: center;
+      font-size: 11px; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.06em;
       color: var(--brand);
-      background: var(--brand-tint);
-      border: 1px solid var(--brand-light);
+      background: var(--brand-light);
+      border: 1px solid var(--brand-border);
       padding: 3px 9px;
       border-radius: var(--radius-full);
     }
     .strip-left h3 {
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: var(--font-body);
       font-size: 1.12rem;
-      font-weight: 700;
-      color: var(--text-primary);
+      font-weight: 800;
+      color: var(--text-main);
       line-height: 1.35;
-      margin: 2px 0 4px;
+      margin: 2px 0 2px;
     }
     .strip-cause-tag {
-      background: #FFF8F3;
-      border: 1px solid var(--brand-light);
-      border-left: 3px solid var(--brand);
-      padding: 5px 9px;
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      padding: 4px 8px;
       border-radius: var(--radius-sm);
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 700;
-      color: var(--text-primary);
+      color: #64748B;
       line-height: 1.4;
     }
     .strip-right {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px 20px;
+      gap: 14px 20px;
     }
     .strip-item {
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
+      display: flex; flex-direction: column; gap: 4px;
     }
     .strip-item-title {
       font-size: 10.5px;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: var(--text-primary);
+      color: var(--text-muted);
+      margin-bottom: 2px;
     }
+    /* HIGHLIGHT PILLS */
+    .highlight-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: var(--radius-full);
+      width: fit-content;
+      margin-bottom: 3px;
+    }
+    .pill-yellow { background: #FEF3C7; color: #92400E; border: 1px solid #FDE68A; }
+    .pill-mild { background: #F0FDF4; color: #166534; border: 1px solid #BBF7D0; }
+    .pill-red { background: #FEF2F2; color: #991B1B; border: 1px solid #FECACA; }
+    .pill-danger { background: #FEE2E2; color: #B91C1C; border: 1px solid #FCA5A5; }
+    .pill-purple { background: #FAF5FF; color: #6B21A8; border: 1px solid #E9D5FF; }
+    .pill-gray { background: #F3F4F6; color: #374151; border: 1px solid #E5E7EB; }
+    .pill-time { background: #EFF6FF; color: #1E40AF; border: 1px solid #BFDBFE; }
+
     .strip-item-desc {
       font-size: 12.5px;
-      line-height: 1.5;
-      color: var(--text-secondary);
+      line-height: 1.55;
+      color: var(--text-muted);
     }
+    /* ACTION HIGHLIGHT BOX */
+    .action-highlight-box {
+      background: #FFFDF9;
+      border: 1px solid var(--border-warm);
+      border-left: 3px solid var(--brand);
+      border-radius: var(--radius-sm);
+      padding: 7px 10px;
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--text-main);
+    }
+
     @media (max-width: 900px) {
       .strip-card {
         grid-template-columns: 1fr;
@@ -634,503 +650,308 @@
       }
       .strip-right {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 12px;
       }
     }
 
-    /* Warning / Mistake Grid */
+    /* MISTAKES GRID */
     .mistakes-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin: 1.5rem 0;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 1.5rem 0;
     }
-    @media (max-width: 768px) {
-      .mistakes-grid { grid-template-columns: 1fr; }
-    }
+    @media (max-width: 768px) { .mistakes-grid { grid-template-columns: 1fr; } }
     .mistake-card {
       background: var(--danger-bg);
-      border: 1px solid #F5C6CB;
-      border-radius: var(--radius-md);
+      border: 1px solid #FECACA;
+      border-radius: var(--radius);
       padding: 1.25rem 1.4rem;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
+      display: flex; flex-direction: column; gap: 6px;
     }
     .mistake-title {
-      font-size: 13.5px;
-      font-weight: 800;
-      color: var(--danger);
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      font-size: 13.5px; font-weight: 800; color: var(--danger); display: flex; align-items: center; gap: 6px;
     }
     .mistake-desc {
-      font-size: 12.5px;
-      color: #6C1E16;
-      line-height: 1.55;
+      font-size: 12.5px; color: #7F1D1D; line-height: 1.55;
     }
 
-    /* Step-by-Step Care Cards */
-    .care-steps {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      margin: 1.5rem 0;
-    }
+    /* STEP BY STEP CARE */
+    .care-steps { display: flex; flex-direction: column; gap: 16px; margin: 1.5rem 0; }
     .care-step-card {
-      background: #FFF;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.3rem 1.6rem;
-      display: flex;
-      gap: 18px;
-      align-items: flex-start;
-      box-shadow: var(--shadow-sm);
+      background: #FFF; border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 1.3rem 1.6rem;
+      display: flex; gap: 18px; align-items: flex-start; box-shadow: var(--shadow-sm);
     }
     .care-step-num {
-      width: 38px;
-      height: 38px;
-      background: var(--brand-tint);
-      color: var(--brand);
-      border: 2px solid var(--brand-light);
-      border-radius: var(--radius-full);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 15px;
-      flex-shrink: 0;
+      width: 38px; height: 38px;
+      background: var(--brand-light); color: var(--brand);
+      border: 2px solid var(--brand-border);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 15px; flex-shrink: 0;
     }
     .care-step-content h3 {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 4px;
+      font-family: var(--font-body); font-size: 15px; font-weight: 700; color: var(--text-main); margin-bottom: 4px;
     }
-    .care-step-content p {
-      font-size: 13px;
-      line-height: 1.6;
-      margin-bottom: 0;
-    }
+    .care-step-content p { font-size: 13px; line-height: 1.6; margin-bottom: 0; }
 
-    /* Indian Pharmacy Price Table */
-    .price-table-wrapper {
-      overflow-x: auto;
-      margin: 1.5rem 0 2rem;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      background: #FFF;
-      box-shadow: var(--shadow-sm);
-    }
-    .price-table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-      font-size: 13px;
-    }
-    .price-table th {
-      background: var(--bg-secondary);
-      padding: 12px 16px;
-      font-weight: 700;
-      color: var(--text-primary);
-      border-bottom: 1px solid var(--border);
-      white-space: nowrap;
-    }
-    .price-table td {
-      padding: 14px 16px;
-      border-bottom: 1px solid var(--border);
-      color: var(--text-secondary);
-      vertical-align: top;
-    }
-    .price-table tr:last-child td { border-bottom: none; }
-    .price-badge {
-      font-weight: 700;
-      color: #1E5C38;
-      background: var(--success-bg);
-      border: 1px solid #C8E6C9;
-      padding: 3px 8px;
-      border-radius: var(--radius-full);
-      display: inline-block;
-      white-space: nowrap;
-    }
-
-    /* Product Showcase Grid */
+    /* PRODUCT SHOWCASE */
     .product-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 16px;
-      margin: 1.75rem 0;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 1.75rem 0;
     }
-    @media (max-width: 820px) {
-      .product-grid { grid-template-columns: 1fr; }
-    }
+    @media (max-width: 820px) { .product-grid { grid-template-columns: 1fr; } }
     .product-card {
-      background: #FFF;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s ease;
+      background: #FFF; border: 1px solid var(--border);
+      border-radius: var(--radius-lg); overflow: hidden;
+      display: flex; flex-direction: column; box-shadow: var(--shadow-sm);
     }
-    .product-card:hover {
-      box-shadow: var(--shadow-md);
-      transform: translateY(-2px);
-    }
+    .product-card:hover { box-shadow: var(--shadow-card); }
     .product-img-box {
-      width: 100%;
-      height: 180px;
-      background: var(--bg-tertiary);
-      overflow: hidden;
-      position: relative;
+      width: 100%; height: 180px; background: var(--bg-subtle); overflow: hidden;
     }
-    .product-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+    .product-img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .product-body {
-      padding: 1.15rem;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      gap: 6px;
+      padding: 1.15rem; display: flex; flex-direction: column; flex-grow: 1; gap: 6px;
     }
     .product-tag {
-      font-size: 10.5px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--brand);
+      font-size: 10.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--brand);
     }
     .product-title {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text-primary);
+      font-family: var(--font-body); font-size: 14px; font-weight: 700; color: var(--text-main);
     }
-    .product-desc {
-      font-size: 12px;
-      color: var(--text-secondary);
-      line-height: 1.5;
-    }
+    .product-desc { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
     .product-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: auto;
-      padding-top: 8px;
-      border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+      margin-top: auto; padding-top: 8px; border-top: 1px solid var(--border);
+    }
+    .price-badge {
+      font-weight: 700; color: #166534; background: #DCFCE7;
+      border: 1px solid #BBF7D0; padding: 3px 8px; border-radius: var(--radius-full);
+      display: inline-block; white-space: nowrap; font-size: 12px;
     }
 
-    /* Interactive Symptom Evaluator */
+    /* TOP MEDICATIONS / PHARMACY TABLE WITH KEY HIGHLIGHTS */
+    .price-table-wrapper {
+      overflow-x: auto; margin: 1.5rem 0 2rem;
+      border: 1px solid var(--border); border-radius: var(--radius-lg);
+      background: #FFF; box-shadow: var(--shadow-sm);
+    }
+    .price-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; }
+    .price-table th {
+      background: var(--bg-subtle); padding: 12px 16px; font-weight: 700;
+      color: var(--text-main); border-bottom: 1px solid var(--border); white-space: nowrap;
+    }
+    .price-table td {
+      padding: 14px 16px; border-bottom: 1px solid var(--border);
+      color: var(--text-muted); vertical-align: top;
+    }
+    .price-table tr:last-child td { border-bottom: none; }
+    .med-tag {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 11px; font-weight: 800; padding: 2px 7px; border-radius: var(--radius-full);
+      margin-bottom: 4px;
+    }
+    .med-gold { background: #FEF3C7; color: #92400E; border: 1px solid #FDE68A; }
+    .med-blue { background: #EFF6FF; color: #1E40AF; border: 1px solid #BFDBFE; }
+    .med-alert { background: #FEF2F2; color: #991B1B; border: 1px solid #FECACA; }
+    .med-green { background: #F0FDF4; color: #166534; border: 1px solid #BBF7D0; }
+    .med-danger { background: #FEE2E2; color: #B91C1C; border: 1px solid #FCA5A5; }
+
+    /* EVALUATOR */
     .evaluator-box {
-      background: var(--brand-tint);
-      border: 1px solid var(--brand-light);
-      border-radius: var(--radius-xl);
-      padding: 2.25rem;
-      margin: 2.5rem 0;
+      background: var(--brand-light); border: 1px solid var(--brand-border);
+      border-radius: var(--radius-xl); padding: 2.25rem; margin: 2.5rem 0;
     }
-    .evaluator-header h3 {
-      font-size: 1.35rem;
-      margin-bottom: 6px;
-    }
-    .eval-questions {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      margin: 1.5rem 0;
-    }
+    .evaluator-header h3 { font-family: var(--font-heading); font-size: 1.35rem; margin-bottom: 6px; }
+    .eval-questions { display: flex; flex-direction: column; gap: 16px; margin: 1.5rem 0; }
     .eval-q-group label {
-      display: block;
-      font-size: 13.5px;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: 8px;
+      display: block; font-size: 13.5px; font-weight: 700; color: var(--text-main); margin-bottom: 8px;
     }
-    .eval-options {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-    @media (max-width: 640px) {
-      .eval-options { grid-template-columns: 1fr; }
-    }
+    .eval-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    @media (max-width: 640px) { .eval-options { grid-template-columns: 1fr; } }
     .eval-btn {
-      background: #FFF;
-      border: 1px solid var(--border);
-      padding: 10px 14px;
-      border-radius: var(--radius-md);
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--text-secondary);
-      cursor: pointer;
-      text-align: left;
-      transition: all 0.2s ease;
+      background: #FFF; border: 1px solid var(--border);
+      padding: 10px 14px; border-radius: var(--radius);
+      font-size: 13px; font-weight: 600; color: var(--text-muted);
+      cursor: pointer; text-align: left; transition: all 0.2s ease;
     }
     .eval-btn:hover, .eval-btn.active {
-      border-color: var(--brand);
-      background: #FFF8F3;
-      color: var(--brand-dark);
+      border-color: var(--brand); background: #FFF8F3; color: var(--brand-dark);
     }
     .eval-result-card {
-      display: none;
-      background: #FFF;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 1.25rem;
-      margin-top: 1.25rem;
+      display: none; background: #FFF; border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.25rem; margin-top: 1.25rem;
       border-left: 4px solid var(--brand);
     }
     .eval-result-card.active { display: block; }
 
-    /* FAQ Section */
+    /* FAQ */
     .faq-container { margin-top: 1.5rem; }
-    .faq-item {
-      border-bottom: 1px solid var(--border);
-      padding: 1.25rem 0;
-    }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 1.25rem 0; }
     .faq-item:last-child { border-bottom: none; }
     .faq-question {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 15.5px;
-      font-weight: 700;
-      color: var(--text-primary);
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
+      font-size: 15.5px; font-weight: 700; color: var(--text-main);
+      cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px;
     }
-    .faq-question::after {
-      content: "+";
-      font-size: 20px;
-      font-weight: 400;
-      color: var(--brand);
-      transition: transform 0.2s ease;
-    }
-    .faq-item.open .faq-question::after {
-      content: "−";
-    }
-    .faq-answer {
-      display: none;
-      padding-top: 10px;
-      font-size: 14px;
-      line-height: 1.7;
-      color: var(--text-secondary);
-    }
+    .faq-question::after { content: "+"; font-size: 20px; font-weight: 400; color: var(--brand); }
+    .faq-item.open .faq-question::after { content: "−"; }
+    .faq-answer { display: none; padding-top: 10px; font-size: 14px; line-height: 1.7; color: var(--text-muted); }
     .faq-item.open .faq-answer { display: block; }
 
-    /* Doctor Reviewer Card */
+    /* DOCTOR REVIEWER */
     .doctor-card {
-      background: #FFF;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-xl);
-      padding: 2rem;
-      margin: 2.5rem 0;
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      box-shadow: var(--shadow-sm);
+      background: #FFF; border: 1px solid var(--border);
+      border-radius: var(--radius-xl); padding: 2rem; margin: 2.5rem 0;
+      display: flex; gap: 20px; align-items: center; box-shadow: var(--shadow-sm);
     }
-    @media (max-width: 640px) {
-      .doctor-card {
-        flex-direction: column;
-        text-align: center;
-        padding: 1.5rem;
-      }
-    }
+    @media (max-width: 640px) { .doctor-card { flex-direction: column; text-align: center; padding: 1.5rem; } }
     .doctor-avatar {
-      width: 80px;
-      height: 80px;
-      border-radius: var(--radius-full);
-      object-fit: cover;
-      border: 2px solid var(--brand-light);
-      flex-shrink: 0;
+      width: 80px; height: 80px; border-radius: 50%;
+      object-fit: cover; border: 2px solid var(--brand-border); flex-shrink: 0;
     }
-    .doctor-info h4 {
-      font-size: 1.15rem;
-      margin-bottom: 2px;
-    }
+    .doctor-info h4 { font-size: 1.15rem; margin-bottom: 2px; }
     .doctor-title {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--brand);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 6px;
+      font-size: 12px; font-weight: 700; color: var(--brand);
+      text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;
     }
-    .doctor-bio {
-      font-size: 13px;
-      color: var(--text-secondary);
-      line-height: 1.55;
-    }
+    .doctor-bio { font-size: 13px; color: var(--text-muted); line-height: 1.55; }
 
-    /* Sticky Right Sidebar */
+    /* STICKY SIDEBAR */
     .sidebar {
-      position: sticky;
-      top: 80px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+      position: sticky; top: 80px; display: flex; flex-direction: column; gap: 20px;
     }
     .sidebar-widget {
-      background: #FFF;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1.4rem;
-      box-shadow: var(--shadow-sm);
+      background: #FFF; border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 1.4rem; box-shadow: var(--shadow-sm);
     }
     .sidebar-title {
-      font-size: 11px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--brand);
-      margin-bottom: 12px;
+      font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--brand); margin-bottom: 12px;
     }
-    .toc-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 9px;
-    }
+    .toc-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
     .toc-link {
-      font-size: 13px;
-      color: var(--text-secondary);
-      text-decoration: none;
-      display: block;
-      transition: color 0.2s ease;
-      line-height: 1.4;
+      font-size: 13px; color: var(--text-muted); text-decoration: none; display: block; line-height: 1.4;
     }
-    .toc-link:hover {
-      color: var(--brand);
-      font-weight: 600;
-    }
-
-    /* Sidebar Red Flag Alert */
+    .toc-link:hover { color: var(--brand); font-weight: 600; text-decoration: none; }
     .alert-card {
-      background: var(--danger-bg);
-      border: 1px solid #F5C6CB;
-      border-radius: var(--radius-lg);
-      padding: 1.25rem;
+      background: var(--danger-bg); border: 1px solid #FECACA;
+      border-radius: var(--radius-lg); padding: 1.25rem;
     }
     .alert-header {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      font-weight: 800;
-      text-transform: uppercase;
-      color: var(--danger);
-      margin-bottom: 8px;
+      display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 800;
+      text-transform: uppercase; color: var(--danger); margin-bottom: 8px;
     }
-    .alert-text {
-      font-size: 12px;
-      color: #721C24;
-      line-height: 1.5;
-    }
+    .alert-text { font-size: 12px; color: #7F1D1D; line-height: 1.5; }
 
-    /* Sidebar AI Scan CTA Card */
     .scan-sidebar-card {
       background: linear-gradient(135deg, #1C1510 0%, #2E1B10 100%);
-      color: #FFF;
-      border-radius: var(--radius-lg);
-      padding: 1.5rem;
-      text-align: center;
+      color: #FFF; border-radius: var(--radius-lg); padding: 1.5rem; text-align: center;
     }
-    .scan-sidebar-card h4 {
-      color: #FFF;
-      font-size: 1.15rem;
-      margin-bottom: 8px;
-    }
-    .scan-sidebar-card p {
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 12.5px;
-      line-height: 1.5;
-      margin-bottom: 1rem;
-    }
+    .scan-sidebar-card h4 { color: #FFF; font-size: 1.15rem; margin-bottom: 8px; }
+    .scan-sidebar-card p { color: rgba(255, 255, 255, 0.8); font-size: 12.5px; line-height: 1.5; margin-bottom: 1rem; }
     .scan-btn {
-      display: inline-block;
-      width: 100%;
-      padding: 10px 16px;
-      background: var(--brand);
-      color: #FFF;
-      font-size: 13px;
-      font-weight: 700;
-      text-decoration: none;
-      border-radius: var(--radius-full);
-      transition: background 0.2s ease;
+      display: inline-block; width: 100%; padding: 10px 16px; background: var(--brand);
+      color: #FFF; font-size: 13px; font-weight: 700; text-decoration: none; border-radius: var(--radius-full);
     }
-    .scan-btn:hover { background: var(--brand-dark); }
+    .scan-btn:hover { background: var(--brand-dark); text-decoration: none; }
 
-    /* Footer */
+    /* FOOTER */
     .site-footer {
-      background: #110E0C;
-      color: #A3968C;
-      padding: 3.5rem 24px 2.5rem;
-      font-size: 13px;
-      border-top: 1px solid #2B211A;
+      background: #110E0C; color: #A3968C; padding: 3.5rem 1.5rem 2.5rem; font-size: 13px; border-top: 1px solid #2B211A;
     }
     .footer-inner {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
+      max-width: var(--max-width); margin: 0 auto; display: flex; flex-direction: column; gap: 24px;
     }
     .footer-disclaimer {
-      font-size: 11.5px;
-      color: #7A6F66;
-      line-height: 1.6;
-      border-top: 1px solid #241B15;
-      padding-top: 20px;
+      font-size: 11.5px; color: #7A6F66; line-height: 1.6; border-top: 1px solid #241B15; padding-top: 20px;
     }
     .footer-copyright {
-      font-size: 12px;
-      color: #8C8075;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
+      font-size: 12px; color: #8C8075; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
     }
   </style>
 </head>
 <body>
 
   <!-- Site Header -->
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="https://mymirror.fit/" aria-label="MyMirror Home">
-        <img src="/assets/logo-v4.png" alt="MyMirror Logo" class="logo-img" width="128" height="32" />
+  <header class="cal-header">
+    <div class="cal-header-inner">
+      <a href="https://mymirror.fit/" class="cal-logo" aria-label="MyMirror Home">
+        <img src="/assets/logo-v4.png" alt="MyMirror Logo" width="128" height="32" />
       </a>
-      <a href="https://mymirror.fit/scan/" class="header-cta-btn">Free AI Face Scan</a>
+      <a href="https://mymirror.fit/scan/" class="btn-header-cta">Free AI Face Scan</a>
     </div>
   </header>
 
   <!-- Trust Bar -->
   <div class="trust-bar">
-    <span class="trust-badge-dot"><span class="trust-badge-green">✓</span> Medically Reviewed by Dr. Lipy Mehta, MD</span>
-    <span class="trust-separator">|</span>
-    <span>Updated October 2026</span>
-    <span class="trust-separator">|</span>
-    <span>Based on ENT & Dermatological Clinical Guidelines</span>
+    <div class="trust-bar-inner">
+      <div class="trust-badge">
+        <span class="dot"></span>
+        <span>Medically Reviewed by Dr. Lipy Mehta, MD (Dermatology)</span>
+      </div>
+      <div>Updated October 2026</div>
+      <div>Based on ENT &amp; Dermatological Clinical Protocols</div>
+    </div>
   </div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-container">
-      <span class="hero-eyebrow">Clinical Relief & Safety Guide</span>
-      <h1>Pimple Inside Ear & Nose: Safe Treatment, Causes & Danger Triangle</h1>
-      <p>Why do blemishes inside the nostrils and ear canal throb so painfully? Discover what causes them, why picking near the danger triangle carries real risks, and how to calm swelling safely using proven Indian pharmacy treatments.</p>
-      <div class="hero-cta-group">
-        <a href="https://mymirror.fit/scan/" class="hero-cta-btn">Scan Your Skin With Free AI Tool</a>
-        <span class="hero-subtext">Instant skin type and blemish evaluation • No app install required</span>
+  <!-- LATEST WARM HERO BANNER -->
+  <section class="hero-section">
+    <div class="hero-container-wide">
+      
+      <!-- Breadcrumb Trail -->
+      <nav class="hero-breadcrumb" aria-label="Breadcrumb">
+        <a href="https://mymirror.fit/">Home</a> &rsaquo;
+        <a href="https://mymirror.fit/acne/">Acne Knowledge Hub</a> &rsaquo;
+        <span>Pimple Inside Ear &amp; Nose</span>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="hero-content-col">
+          <span class="hero-badge">Clinical Safety &amp; Triage Guide</span>
+          <h1 class="hero-title">Pimple Inside Ear &amp; Nose: <em>Safe Relief</em>, Causes &amp; Danger Triangle</h1>
+          <p class="hero-desc">Why do spots inside the nostrils and outer ear canal throb so painfully? Discover what triggers these tender bumps, why picking near the facial danger triangle carries serious infection risks, and how to relieve swelling safely with proven Indian pharmacy remedies.</p>
+
+          <!-- Quick Triage Summary -->
+          <div class="hero-quick-triage">
+            <h3><span style="font-size:18px;">⚡</span> Immediate Relief Summary</h3>
+            <ul>
+              <li><span class="icon">✓</span> <strong>Why it hurts 10x worse:</strong> Skin is fused directly to stiff cartilage without fat cushioning, concentrating mechanical pressure on sensory nerves.</li>
+              <li><span class="icon">⚠️</span> <strong>The #1 golden rule:</strong> Never squeeze, pick, or insert bobby pins. Central facial veins drain backward toward deep cranial sinuses.</li>
+              <li><span class="icon">💊</span> <strong>First-line Indian pharmacy care:</strong> Warm saline compresses 3x daily plus a targeted dab of Mupirocin 2% (T-Bact) ointment.</li>
+            </ul>
+          </div>
+
+          <div class="hero-actions">
+            <a href="https://mymirror.fit/scan/" class="btn-hero-cta">Scan Your Skin With Free AI Tool →</a>
+            <span class="hero-subtext">Free blemish evaluation • No app install required • Instant results</span>
+          </div>
+        </div>
+
+        <!-- Hero Visual Card -->
+        <div class="hero-visual-card">
+          <div class="hero-img-box">
+            <img src="/assets/images/pimple-inside-ear-nose-hero.webp" alt="Dermatology examination profile of ear and nasal zone" width="480" height="260" loading="eager" />
+          </div>
+          <div class="hero-card-meta">
+            <div class="doc-credit">
+              <div class="doc-avatar">LM</div>
+              <div>
+                <div class="doc-name">Medically Reviewed by Dr. Lipy Mehta, MD</div>
+                <div class="doc-title">Consultant Dermatologist &amp; Aesthetic Physician</div>
+              </div>
+            </div>
+            <div class="doctor-stats">
+              <div class="stat-pill">
+                <div class="stat-num">0mm</div>
+                <div class="stat-lbl">Fat Cushion Over Cartilage</div>
+              </div>
+              <div class="stat-pill">
+                <div class="stat-num">T-Bact</div>
+                <div class="stat-lbl">First-Line Topical Antibiotic</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
   </section>
 
@@ -1140,7 +961,7 @@
 
       <!-- Section 1: Anatomy & Pain -->
       <article class="section-card" id="why-it-hurts">
-        <span class="section-eyebrow">Anatomy & Sensation</span>
+        <span class="section-eyebrow">Anatomy &amp; Sensation</span>
         <h2>Why Does a Pimple Inside Your Ear or Nose Hurt 10x More?</h2>
         
         <div class="visual-split">
@@ -1150,7 +971,7 @@
             <p>Inside the nostril entrance (the nasal vestibule) and outer third of the ear canal, there is <strong>zero subcutaneous fat</strong>. Skin is tightly tethered directly to the underlying stiff perichondrium and cartilage. Any inflammation immediately builds high mechanical pressure against dense sensory nerve branches, producing intense throbbing pain with every touch, chew, or nostril flare.</p>
           </div>
           <div class="visual-img-card">
-            <img src="/assets/images/pimple-inside-ear-nose-hero.webp" alt="Dermatology examination of ear and nose profile" class="visual-img" width="480" height="240" loading="eager" />
+            <img src="/assets/images/pimple-inside-ear-nose-hero.webp" alt="Dermatology examination of ear and nose profile" class="visual-img" width="480" height="230" loading="eager" />
             <div class="visual-caption">Tightly bound cartilage skin concentrates nerve pressure during swelling.</div>
           </div>
         </div>
@@ -1168,7 +989,7 @@
             <p>When you aggressively pop or squeeze a pimple inside your nose, you rupture the follicle wall inward. Bacteria (predominantly <em>Staphylococcus aureus</em>) can be pressed into these valveless facial veins. While rare thanks to modern antibiotics, untreated tracking can lead to cavernous sinus thrombosis or facial cellulitis.</p>
           </div>
           <div class="visual-img-card">
-            <img src="/assets/images/facial-danger-triangle-anatomy.webp" alt="Diagram showing the facial danger triangle from nose bridge to mouth" class="visual-img" width="400" height="240" loading="lazy" />
+            <img src="/assets/images/facial-danger-triangle-anatomy.webp" alt="Diagram showing the facial danger triangle from nose bridge to mouth" class="visual-img" width="400" height="230" loading="lazy" />
             <div class="visual-caption">Facial veins in the danger triangle connect toward deep venous sinuses.</div>
           </div>
         </div>
@@ -1176,7 +997,7 @@
         <!-- Video Embed Box -->
         <div class="video-card">
           <span class="section-eyebrow">Expert Video Breakdown</span>
-          <h3>Dr. Sandra Lee Explains the Danger Triangle</h3>
+          <h3 style="font-family:var(--font-heading);font-size:1.35rem;margin-bottom:6px;">Dr. Sandra Lee Explains the Danger Triangle</h3>
           <p>Watch board-certified dermatologist Dr. Sandra Lee (Dr. Pimple Popper) explain why popping blemishes in the central facial triangle requires extreme caution.</p>
           
           <div class="video-wrapper">
@@ -1200,11 +1021,11 @@
         </div>
       </article>
 
-      <!-- Section 3: 4-Type Diagnostic Roadmap -->
+      <!-- Section 3: 4-Type Diagnostic Roadmap (REVAMPED WITH ICONS ABOVE TYPE AND HIGHLIGHTED PARAMETERS) -->
       <section class="roadmap-container" id="diagnostic-roadmap">
         <div class="roadmap-header">
           <span class="section-eyebrow">Differential Diagnosis</span>
-          <h2>4 Common Types of Ear & Nose Bumps</h2>
+          <h2>4 Common Types of Ear &amp; Nose Bumps</h2>
           <p>Not every painful bump is a regular acne zit. Identify what you are dealing with before starting any topical care.</p>
         </div>
 
@@ -1213,29 +1034,32 @@
           <!-- Type 1 -->
           <div class="strip-card">
             <div class="strip-left">
-              <div class="strip-phase-row">
-                <span class="strip-phase-badge">Type 01</span>
-                <span style="font-size:20px;">🔬</span>
-              </div>
+              <div class="strip-icon-circle">🔬</div>
+              <span class="strip-phase-badge">Type 01</span>
               <h3>Superficial Folliculitis</h3>
               <div class="strip-cause-tag">Trigger: Ingrown Hair or Friction</div>
             </div>
             <div class="strip-right">
               <div class="strip-item">
                 <span class="strip-item-title">Visual Appearance</span>
-                <span class="strip-item-desc">Small red bump with tiny yellowish pustule at the base of a nose hair or outer ear hair.</span>
+                <span class="highlight-pill pill-yellow">Tiny Yellowish Pustule (1–2mm)</span>
+                <p class="strip-item-desc">Small red dot with a pinpoint yellow/white head sitting right at the follicle entrance of a nose hair or outer ear hair.</p>
               </div>
               <div class="strip-item">
                 <span class="strip-item-title">Typical Sensation</span>
-                <span class="strip-item-desc">Mild tenderness when touched or blown; no widespread swelling across the nose tip.</span>
+                <span class="highlight-pill pill-mild">Mild Tender (Hurts Only on Touch)</span>
+                <p class="strip-item-desc">Tender only when blowing your nose, wiping, or sleeping on that ear; zero throbbing pain at rest.</p>
               </div>
               <div class="strip-item">
                 <span class="strip-item-title">Standard Timeline</span>
-                <span class="strip-item-desc">Resolves within 3 to 5 days with warm compresses and gentle antibacterial ointment.</span>
+                <span class="highlight-pill pill-time">3 to 5 Days (Self-Resolving)</span>
+                <p class="strip-item-desc">Dries up and clears without scarring when kept clean and untouched.</p>
               </div>
               <div class="strip-item">
                 <span class="strip-item-title">Recommended Action</span>
-                <span class="strip-item-desc">Apply warm saline compress followed by a dab of Mupirocin 2% ointment twice daily.</span>
+                <div class="action-highlight-box">
+                  <strong>First-Line Protocol:</strong> Warm saline compress 3x daily. Dab a pinhead amount of Mupirocin 2% (T-Bact) ointment. Never squeeze.
+                </div>
               </div>
             </div>
           </div>
@@ -1243,29 +1067,32 @@
           <!-- Type 2 -->
           <div class="strip-card">
             <div class="strip-left">
-              <div class="strip-phase-row">
-                <span class="strip-phase-badge">Type 02</span>
-                <span style="font-size:20px;">🚨</span>
-              </div>
+              <div class="strip-icon-circle">🚨</div>
+              <span class="strip-phase-badge">Type 02</span>
               <h3>Nasal Vestibulitis / Furuncle</h3>
               <div class="strip-cause-tag">Trigger: Staph Aureus Colonization</div>
             </div>
             <div class="strip-right">
               <div class="strip-item">
                 <span class="strip-item-title">Visual Appearance</span>
-                <span class="strip-item-desc">Firm, red, swollen nodule inside nostril with crusting and visible redness spreading to nose tip.</span>
+                <span class="highlight-pill pill-red">Swollen Hard Red Nodule (5–10mm)</span>
+                <p class="strip-item-desc">Firm red nodule inside the nostril rim with honey-colored crusting; redness may extend to the external tip of the nose.</p>
               </div>
               <div class="strip-item">
                 <span class="strip-item-title">Typical Sensation</span>
-                <span class="strip-item-desc">Intense, constant throbbing pain; painful even without touching the nose.</span>
+                <span class="highlight-pill pill-danger">Severe Throbbing &amp; Constant Ache</span>
+                <p class="strip-item-desc">Intense, pulsating toothache-like pain that aches constantly even without touching the nose.</p>
               </div>
               <div class="strip-item">
                 <span class="strip-item-title">Standard Timeline</span>
-                <span class="strip-item-desc">Takes 7 to 10 days; often requires prescription topical or oral antibiotics to clear.</span>
+                <span class="highlight-pill pill-time">7 to 10+ Days (Requires Treatment)</span>
+                <p class="strip-item-desc">Will not clear quickly on its own without targeted antibacterial ointment or oral antibiotics.</p>
               </div>
               <div class="strip-item">
                 <span class="strip-item-title">Recommended Action</span>
-                <span class="strip-item-desc">Consult a doctor promptly if redness spreads; do not squeeze or pick at crusts.</span>
+                <div class="action-highlight-box">
+                  <strong>Clinical Step:</strong> Apply Mupirocin 2% ointment twice daily. If redness spreads over nose bridge or cheek, see a doctor for oral antibiotics.
+                </div>
               </div>
             </div>
           </div>
@@ -1273,29 +1100,32 @@
           <!-- Type 3 -->
           <div class="strip-card">
             <div class="strip-left">
-              <div class="strip-phase-row">
-                <span class="strip-phase-badge">Type 03</span>
-                <span style="font-size:20px;">🎧</span>
-              </div>
+              <div class="strip-icon-circle">🎧</div>
+              <span class="strip-phase-badge">Type 03</span>
               <h3>Ear Canal Furunculosis</h3>
               <div class="strip-cause-tag">Trigger: Earbuds, Water or Cotton Swabs</div>
             </div>
             <div class="strip-right">
               <div class="strip-item">
                 <span class="strip-item-title">Visual Appearance</span>
-                <span class="strip-item-desc">Swollen, narrowed outer ear canal; difficult to view without an ENT otoscope.</span>
+                <span class="highlight-pill pill-purple">Swollen, Narrowed Canal Opening</span>
+                <p class="strip-item-desc">Swelling in the outer third of the ear canal that can narrow the opening; difficult to see without an otoscope.</p>
               </div>
               <div class="strip-item">
                 <span class="strip-item-title">Typical Sensation</span>
-                <span class="strip-item-desc">Severe pain worsened by pulling your earlobe (the tragus sign) or chewing food.</span>
+                <span class="highlight-pill pill-danger">Positive Tragus Sign (Chewing Pain)</span>
+                <p class="strip-item-desc">Sharp spike of pain whenever you pull your earlobe, press the tragus flap, or chew food.</p>
               </div>
               <div class="strip-item">
                 <span class="strip-item-title">Standard Timeline</span>
-                <span class="strip-item-desc">5 to 7 days; pain subsides rapidly once the localized boil discharges naturally.</span>
+                <span class="highlight-pill pill-time">5 to 7 Days (Until Drainage)</span>
+                <p class="strip-item-desc">Severe pain subsides rapidly once the localized boil discharges naturally.</p>
               </div>
               <div class="strip-item">
                 <span class="strip-item-title">Recommended Action</span>
-                <span class="strip-item-desc">Keep ear dry. Avoid ear drops if eardrum status is unknown; see an ENT specialist.</span>
+                <div class="action-highlight-box">
+                  <strong>Strict Ear Rule:</strong> Keep ear strictly dry. Do NOT put ear drops unless eardrum integrity is confirmed by an ENT doctor.
+                </div>
               </div>
             </div>
           </div>
@@ -1303,29 +1133,32 @@
           <!-- Type 4 -->
           <div class="strip-card">
             <div class="strip-left">
-              <div class="strip-phase-row">
-                <span class="strip-phase-badge">Type 04</span>
-                <span style="font-size:20px;">⚪</span>
-              </div>
+              <div class="strip-icon-circle">⚪</div>
+              <span class="strip-phase-badge">Type 04</span>
               <h3>Sebaceous Cyst or Keloid</h3>
               <div class="strip-cause-tag">Trigger: Keratin Buildup or Piercing Trauma</div>
             </div>
             <div class="strip-right">
               <div class="strip-item">
                 <span class="strip-item-title">Visual Appearance</span>
-                <span class="strip-item-desc">Smooth, movable, painless dome under the earlobe skin or along the outer nostril fold.</span>
+                <span class="highlight-pill pill-gray">Smooth Movable Subcutaneous Dome</span>
+                <p class="strip-item-desc">Smooth, flesh-colored, pea-sized lump resting under the earlobe skin or along the outer nostril crease.</p>
               </div>
               <div class="strip-item">
                 <span class="strip-item-title">Typical Sensation</span>
-                <span class="strip-item-desc">Painless unless infected; feels like a soft pea under the skin for weeks or months.</span>
+                <span class="highlight-pill pill-mild">Zero Pain (Unless Secondarily Infected)</span>
+                <p class="strip-item-desc">Painless to touch; feels like a smooth BB pellet beneath the skin for weeks or months.</p>
               </div>
               <div class="strip-item">
                 <span class="strip-item-title">Standard Timeline</span>
-                <span class="strip-item-desc">Persistent; will not vanish with pimple creams because a sac wall encloses the sebum.</span>
+                <span class="highlight-pill pill-time">Months to Years (Permanent Sac)</span>
+                <p class="strip-item-desc">Does not respond to acne creams because keratin is sealed within an internal capsule wall.</p>
               </div>
               <div class="strip-item">
                 <span class="strip-item-title">Recommended Action</span>
-                <span class="strip-item-desc">Requires clean in-clinic minor excision by a dermatologist if cosmetic removal is desired.</span>
+                <div class="action-highlight-box">
+                  <strong>Safe Guidance:</strong> Leave untouched. If cosmetically bothersome, consult a dermatologist for sterile in-clinic excision.
+                </div>
               </div>
             </div>
           </div>
@@ -1336,7 +1169,7 @@
       <!-- Section 4: 5 Dangerous Mistakes -->
       <article class="section-card" id="mistakes-to-avoid">
         <span class="section-eyebrow">Prevent Complications</span>
-        <h2>5 Mistakes That Make Ear & Nose Blemishes Worse</h2>
+        <h2>5 Mistakes That Make Ear &amp; Nose Blemishes Worse</h2>
         <p>Because these spots hurt constantly, people often resort to desperate home remedies that introduce secondary bacterial infections. Avoid these common traps:</p>
 
         <div class="mistakes-grid">
@@ -1394,7 +1227,7 @@
           <div class="care-step-card">
             <div class="care-step-num">4</div>
             <div class="care-step-content">
-              <h3>Sanitize Earbuds, Glasses & Pillowcases</h3>
+              <h3>Sanitize Earbuds, Glasses &amp; Pillowcases</h3>
               <p>Wipe your daily in-ear buds, headphone cushions, and glasses temples with 70% isopropyl alcohol wipes every morning. Switch to a fresh cotton pillowcase tonight to stop bacterial re-seeding while you sleep.</p>
             </div>
           </div>
@@ -1452,11 +1285,11 @@
         </div>
       </article>
 
-      <!-- Section 6: Indian Pharmacy Guide & Pricing Table -->
+      <!-- Section 6: Indian Pharmacy Guide & Pricing Table (WITH HIGHLIGHTED ROLES & RULES) -->
       <article class="section-card" id="pharmacy-guide">
         <span class="section-eyebrow">Indian Pharmacy Directory</span>
-        <h2>Top Medications & Cost Guide in India (2026)</h2>
-        <p>These pharmaceutical options are standard across Indian chemists (Apollo Pharmacy, MedPlus, Netmeds, 1mg) for treating localized nasal and outer ear inflammation:</p>
+        <h2>Top Medications &amp; Cost Guide in India (2026)</h2>
+        <p>These pharmaceutical options are standard across Indian chemists (Apollo Pharmacy, MedPlus, Netmeds, 1mg). Review each medication's exact clinical role and precautions:</p>
 
         <div class="price-table-wrapper">
           <table class="price-table">
@@ -1464,7 +1297,7 @@
               <tr>
                 <th>Active Ingredient</th>
                 <th>Common Indian Brands</th>
-                <th>Primary Use Case</th>
+                <th>Primary Use &amp; Highlight</th>
                 <th>Price Range (INR)</th>
                 <th>Application Guidance</th>
               </tr>
@@ -1473,37 +1306,52 @@
               <tr>
                 <td><strong>Mupirocin 2% w/w</strong></td>
                 <td>T-Bact Ointment, Bactroban, Mupicip</td>
-                <td>Nasal vestibulitis, bacterial boils, staph pustules</td>
+                <td>
+                  <span class="med-tag med-gold">★ Gold Standard for Nostril Staph</span>
+                  <div>Nasal vestibulitis, bacterial boils, crusting pustules.</div>
+                </td>
                 <td><span class="price-badge">₹130 – ₹185 (15g)</span></td>
                 <td>Apply tiny dab with fresh cotton swab twice daily for 5 days.</td>
               </tr>
               <tr>
                 <td><strong>Clindamycin 1% Gel</strong></td>
                 <td>Clindac-A, Clindex, Acnesol</td>
-                <td>Outer ear pustules, concha bowl blackheads, acne zits</td>
+                <td>
+                  <span class="med-tag med-blue">Best for Outer Ear Pustules</span>
+                  <div>Outer ear comedones, concha bowl zits, earlobe spots.</div>
+                </td>
                 <td><span class="price-badge">₹120 – ₹190 (20g)</span></td>
                 <td>Apply thin layer on cleansed outer ear skin; avoid deep canal.</td>
               </tr>
               <tr>
                 <td><strong>Antibacterial Ear Drops</strong></td>
                 <td>Ciplox (Ciprofloxacin), Otogesic</td>
-                <td>Ear canal furuncle with swelling, acute otitis externa</td>
+                <td>
+                  <span class="med-tag med-alert">Doctor Prescribed Canal Drops</span>
+                  <div>Ear canal furuncle with swelling, acute otitis externa.</div>
+                </td>
                 <td><span class="price-badge">₹45 – ₹95 (10ml)</span></td>
-                <td>Use only under doctor advice to confirm eardrum integrity.</td>
+                <td><strong>Caution:</strong> Use only under doctor advice to confirm eardrum integrity.</td>
               </tr>
               <tr>
-                <td><strong>Salicylic Acid 2% Cleanser</strong></td>
+                <td><strong>Salicylic Acid 2% Wash</strong></td>
                 <td>Saslic DS, Cipla Saslic, Minimalist 2%</td>
-                <td>Prevention of outer ear and nose crease blackheads</td>
+                <td>
+                  <span class="med-tag med-green">Crease Prevention Only</span>
+                  <div>Preventing future blackheads along outer nose fold &amp; ear folds.</div>
+                </td>
                 <td><span class="price-badge">₹299 – ₹395 (100ml)</span></td>
-                <td>Wash ear creases and nose base twice weekly in the shower.</td>
+                <td>Wash ear creases and nose base twice weekly in the shower; not for open sores.</td>
               </tr>
               <tr>
-                <td><strong>Oral Amoxicillin-Clavulanate</strong></td>
+                <td><strong>Amoxicillin-Clavulanate</strong></td>
                 <td>Augmentin 625 Duo, Moxikind-CV</td>
-                <td>Spreading redness, facial fever, deep severe furunculosis</td>
+                <td>
+                  <span class="med-tag med-danger">Oral Rx for Spreading Redness</span>
+                  <div>Spreading facial cellulitis, high fever, deep severe furunculosis.</div>
+                </td>
                 <td><span class="price-badge">₹170 – ₹220 (10 tabs)</span></td>
-                <td>Strict prescription only; full course directed by physician.</td>
+                <td><strong>Strict Prescription Only:</strong> Complete full course directed by physician.</td>
               </tr>
             </tbody>
           </table>
@@ -1514,7 +1362,7 @@
       <section class="evaluator-box" id="symptom-checker">
         <div class="evaluator-header">
           <span class="section-eyebrow">Interactive Check</span>
-          <h3>Ear & Nose Blemish Symptom Checker</h3>
+          <h3>Ear &amp; Nose Blemish Symptom Checker</h3>
           <p>Answer two quick questions to see whether home care is safe or if you should seek medical evaluation:</p>
         </div>
 
@@ -1538,14 +1386,14 @@
 
         <div id="eval-result-mild" class="eval-result-card active">
           <h4 style="font-size:14.5px;color:var(--brand-dark);margin-bottom:6px;">✓ Home Care Protocol Recommended</h4>
-          <p style="font-size:13px;line-height:1.55;color:var(--text-secondary);margin:0;">
+          <p style="font-size:13px;line-height:1.55;color:var(--text-muted);margin:0;">
             Your symptoms indicate a localized superficial pore blockage or mild folliculitis. Apply warm saline compresses for 10 minutes, followed by a thin dab of Mupirocin 2% ointment (T-Bact) twice daily. Keep fingers away and do not attempt to pop it. It should resolve within 3 to 5 days.
           </p>
         </div>
 
         <div id="eval-result-severe" class="eval-result-card">
           <h4 style="font-size:14.5px;color:var(--danger);margin-bottom:6px;">⚠️ Doctor Evaluation Advised</h4>
-          <p style="font-size:13px;line-height:1.55;color:var(--text-secondary);margin:0;">
+          <p style="font-size:13px;line-height:1.55;color:var(--text-muted);margin:0;">
             Severe throbbing pain or spreading redness suggests a deeper bacterial furuncle (boil) or nasal vestibulitis. Because this area connects directly with central facial venous drainage, schedule an examination with an ENT specialist or dermatologist for safe prescription oral antibiotics.
           </p>
         </div>
@@ -1554,7 +1402,7 @@
       <!-- Section 8: FAQ Section -->
       <article class="section-card" id="faq">
         <span class="section-eyebrow">Frequently Asked Questions</span>
-        <h2>Common Questions About Ear & Nose Blemishes</h2>
+        <h2>Common Questions About Ear &amp; Nose Blemishes</h2>
 
         <div class="faq-container">
           
@@ -1608,10 +1456,10 @@
 
       <!-- Section 9: Doctor Reviewer Card -->
       <div class="doctor-card">
-        <img src="/assets/images/dr-lipy-mehta.jpg" alt="Dr. Lipy Mehta, MD" class="doctor-avatar" width="80" height="80" onerror="this.src='/assets/images/blood-tests-for-acne-india-og.jpg';" />
+        <img src="/assets/images/dr-lipy-mehta.jpg" alt="Dr. Lipy Mehta, MD" class="doctor-avatar" width="80" height="80" onerror="this.src='/assets/images/pimple-inside-ear-nose-hero.webp';" />
         <div class="doctor-info">
           <h4>Medically Reviewed by Dr. Lipy Mehta, MD</h4>
-          <div class="doctor-title">Consultant Dermatologist & Aesthetic Physician</div>
+          <div class="doctor-title">Consultant Dermatologist &amp; Aesthetic Physician</div>
           <p class="doctor-bio">Dr. Mehta has over 12 years of clinical dermatology experience treating inflammatory acne, folliculitis, and cutaneous infections across leading medical hospitals in India. This article follows standard ENT and dermatological protocols for central facial lesions.</p>
         </div>
       </div>
@@ -1630,7 +1478,7 @@
           <li><a href="#diagnostic-roadmap" class="toc-link">3. 4 Blemish Types</a></li>
           <li><a href="#mistakes-to-avoid" class="toc-link">4. Mistakes to Avoid</a></li>
           <li><a href="#safe-home-protocol" class="toc-link">5. 4-Step Home Protocol</a></li>
-          <li><a href="#pharmacy-guide" class="toc-link">6. Indian Medicines & Prices</a></li>
+          <li><a href="#pharmacy-guide" class="toc-link">6. Indian Medicines &amp; Prices</a></li>
           <li><a href="#symptom-checker" class="toc-link">7. Symptom Evaluator</a></li>
           <li><a href="#faq" class="toc-link">8. Frequently Asked Questions</a></li>
         </ul>
@@ -1651,7 +1499,7 @@
       </div>
 
       <!-- Quick Trust Badges -->
-      <div class="sidebar-widget" style="font-size:12px;color:var(--text-secondary);display:flex;flex-direction:column;gap:8px;">
+      <div class="sidebar-widget" style="font-size:12px;color:var(--text-muted);display:flex;flex-direction:column;gap:8px;">
         <div>🔒 <strong>100% Private:</strong> Photos never stored</div>
         <div>🩺 <strong>Clinical Accuracy:</strong> Evidence-backed</div>
         <div>🇮🇳 <strong>India Focused:</strong> Local OTC pricing</div>
@@ -1679,7 +1527,7 @@
       </div>
 
       <div class="footer-copyright">
-        <span>© 2026 MyMirror. All rights reserved.</span>
+        <span>&copy; 2026 MyMirror. All rights reserved.</span>
         <span>Clinically Reviewed Skin Health Intelligence</span>
       </div>
     </div>
