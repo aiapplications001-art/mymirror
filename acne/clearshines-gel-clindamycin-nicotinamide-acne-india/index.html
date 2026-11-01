@@ -938,6 +938,125 @@
       border-left: 3px solid var(--primary);
     }
 
+    /* PHARMACY PRODUCT CARDS SHOWCASE */
+    .pharmacy-card-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 991px) {
+      .pharmacy-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 580px) {
+      .pharmacy-card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .pharmacy-product-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.25s ease;
+    }
+
+    .pharmacy-product-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .pharmacy-thumb-wrapper {
+      background: #FDFBF9;
+      padding: 0.75rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .pharmacy-thumb-wrapper img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      margin: 0 auto;
+      background: #FFFFFF;
+    }
+
+    .pharmacy-card-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .pharmacy-badge-tag {
+      font-size: 0.725rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--primary-dark);
+      background: var(--primary-light);
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+      align-self: flex-start;
+    }
+
+    .pharmacy-badge-tag.warning-tag {
+      color: var(--warning-amber);
+      background: var(--warning-bg);
+      border: 1px solid #FDE68A;
+    }
+
+    .pharmacy-card-title {
+      font-size: 1.15rem;
+      margin-bottom: 0.35rem;
+      color: var(--text-heading);
+    }
+
+    .pharmacy-card-formula {
+      font-size: 0.8rem;
+      color: var(--primary-dark);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .pharmacy-card-desc {
+      font-size: 0.825rem;
+      color: #64748B;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+      line-height: 1.5;
+    }
+
+    .pharmacy-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--border-light);
+      font-size: 0.825rem;
+      font-weight: 700;
+    }
+
+    .pharmacy-table-thumb {
+      width: 44px;
+      height: 44px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid var(--border-light);
+      flex-shrink: 0;
+    }
+
     /* RESPONSIVE MATRIX TABLE */
     .table-container {
       width: 100%;
@@ -1634,13 +1753,85 @@
           <span class="section-eyebrow">Pharmacy Buyer's Guide</span>
           <h2>Indian Pharmacy Formulations: Clearshines vs Clinka N vs Faceclin</h2>
         </div>
-        <p>In Indian pharmacies, several licensed pharmaceutical companies manufacture the 1% Clindamycin + 4% Nicotinamide combination. The active molecules are identical, but the base vehicle and texture vary slightly.</p>
+        <p>In Indian pharmacies, several licensed pharmaceutical companies manufacture the 1% Clindamycin + 4% Nicotinamide combination. The active molecules are identical, but the base vehicle, absorption speed, and skin feel vary slightly.</p>
 
+        <!-- VISUAL PHARMACY PACKSHOT CARDS -->
+        <div class="pharmacy-card-grid">
+          <!-- CARD 1: CLEARSHINES -->
+          <div class="pharmacy-product-card">
+            <div class="pharmacy-thumb-wrapper">
+              <img src="/assets/images/clearshines-gel-packshot.webp" alt="Clearshines Gel Clindamycin Phosphate and Nicotinamide Gel tube" width="300" height="300" loading="lazy">
+            </div>
+            <div class="pharmacy-card-body">
+              <span class="pharmacy-badge-tag">Top Tested Choice</span>
+              <h3 class="pharmacy-card-title">Clearshines Gel</h3>
+              <div class="pharmacy-card-formula">Clindamycin 1% + Nicotinamide 4%</div>
+              <p class="pharmacy-card-desc">Clear, quick-absorbing aqueous gel. Sits invisibly under moisturizer without flaking or leaving white residue.</p>
+              <div class="pharmacy-card-footer">
+                <span style="color: var(--primary-dark);">₹140 - ₹170 (20g)</span>
+                <span>⭐ 9.5 / 10</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: CLINKA N -->
+          <div class="pharmacy-product-card">
+            <div class="pharmacy-thumb-wrapper">
+              <img src="/assets/images/clinka-n-packshot.webp" alt="Clinka N Gel Clindamycin and Nicotinamide tube by Intas Pharma" width="300" height="300" loading="lazy">
+            </div>
+            <div class="pharmacy-card-body">
+              <span class="pharmacy-badge-tag">Cooling Hydro-Gel</span>
+              <h3 class="pharmacy-card-title">Clinka N Gel</h3>
+              <div class="pharmacy-card-formula">Clindamycin 1% + Nicotinamide 4%</div>
+              <p class="pharmacy-card-desc">Manufactured by Intas Pharma. Features a cooling sensation upon contact, providing instant comfort to throbbing red pimples.</p>
+              <div class="pharmacy-card-footer">
+                <span style="color: var(--primary-dark);">₹160 - ₹190 (20g)</span>
+                <span>⭐ 9.6 / 10</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: FACECLIN -->
+          <div class="pharmacy-product-card">
+            <div class="pharmacy-thumb-wrapper">
+              <img src="/assets/images/faceclin-gel-packshot.webp" alt="Faceclin Gel Clindamycin and Nicotinamide tube by Abbott" width="300" height="300" loading="lazy">
+            </div>
+            <div class="pharmacy-card-body">
+              <span class="pharmacy-badge-tag">Ultra-Light Fluid</span>
+              <h3 class="pharmacy-card-title">Faceclin Gel</h3>
+              <div class="pharmacy-card-formula">Clindamycin 1% + Nicotinamide 4%</div>
+              <p class="pharmacy-card-desc">Formulated by Abbott India. Slightly lighter vehicle designed for very oily T-zones and humid monsoon weather.</p>
+              <div class="pharmacy-card-footer">
+                <span style="color: var(--primary-dark);">₹150 - ₹185 (20g)</span>
+                <span>⭐ 9.4 / 10</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4: CLINDAC A (MONOTHERAPY WARNING) -->
+          <div class="pharmacy-product-card">
+            <div class="pharmacy-thumb-wrapper">
+              <img src="/assets/images/prod-clindac-a-gel.webp" alt="Clindac A Gel plain clindamycin tube" width="300" height="300" loading="lazy">
+            </div>
+            <div class="pharmacy-card-body">
+              <span class="pharmacy-badge-tag warning-tag">Monotherapy Warning</span>
+              <h3 class="pharmacy-card-title">Clindac A Gel</h3>
+              <div class="pharmacy-card-formula" style="color: var(--warning-amber);">Clindamycin 1% (No Niacinamide)</div>
+              <p class="pharmacy-card-desc">Plain clindamycin antibiotic. Lacks nicotinamide protection, posing a substantially higher risk of bacterial resistance after 8 weeks.</p>
+              <div class="pharmacy-card-footer">
+                <span style="color: #64748B;">₹210 - ₹240 (20g)</span>
+                <span style="color: var(--warning-amber);">⚠️ 7.5 / 10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DETAILED SPECIFICATIONS COMPARISON TABLE -->
         <div class="table-container">
           <table class="matrix-table">
             <thead>
               <tr>
-                <th>Brand Name</th>
+                <th>Brand & Packshot</th>
                 <th>Composition</th>
                 <th>Gel Vehicle</th>
                 <th>Approx Price (INR)</th>
@@ -1649,39 +1840,79 @@
             </thead>
             <tbody>
               <tr>
-                <td data-label="Brand Name"><strong>Clearshines Gel</strong></td>
+                <td data-label="Brand & Packshot">
+                  <div style="display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/assets/images/clearshines-gel-packshot.webp" alt="Clearshines Gel thumbnail" class="pharmacy-table-thumb" width="44" height="44">
+                    <div>
+                      <strong>Clearshines Gel</strong>
+                      <span style="display: block; font-size: 0.75rem; color: #64748B;">Top tested spot gel</span>
+                    </div>
+                  </div>
+                </td>
                 <td data-label="Composition">Clindamycin 1% + Nicotinamide 4%</td>
                 <td data-label="Gel Vehicle">Fast-absorbing clear aqueous gel</td>
                 <td data-label="Approx Price (INR)">₹140 - ₹170 (20g)</td>
                 <td data-label="Derm Rating">⭐ 9.5 / 10</td>
               </tr>
               <tr>
-                <td data-label="Brand Name"><strong>Clinka N Gel</strong></td>
+                <td data-label="Brand & Packshot">
+                  <div style="display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/assets/images/clinka-n-packshot.webp" alt="Clinka N Gel thumbnail" class="pharmacy-table-thumb" width="44" height="44">
+                    <div>
+                      <strong>Clinka N Gel</strong>
+                      <span style="display: block; font-size: 0.75rem; color: #64748B;">Intas Pharmaceuticals</span>
+                    </div>
+                  </div>
+                </td>
                 <td data-label="Composition">Clindamycin 1% + Nicotinamide 4%</td>
                 <td data-label="Gel Vehicle">Lightweight cooling hydro-gel</td>
                 <td data-label="Approx Price (INR)">₹160 - ₹190 (20g)</td>
                 <td data-label="Derm Rating">⭐ 9.6 / 10</td>
               </tr>
               <tr>
-                <td data-label="Brand Name"><strong>Faceclin Gel</strong></td>
+                <td data-label="Brand & Packshot">
+                  <div style="display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/assets/images/faceclin-gel-packshot.webp" alt="Faceclin Gel thumbnail" class="pharmacy-table-thumb" width="44" height="44">
+                    <div>
+                      <strong>Faceclin Gel</strong>
+                      <span style="display: block; font-size: 0.75rem; color: #64748B;">Abbott India</span>
+                    </div>
+                  </div>
+                </td>
                 <td data-label="Composition">Clindamycin 1% + Nicotinamide 4%</td>
                 <td data-label="Gel Vehicle">Transparent non-sticky fluid gel</td>
                 <td data-label="Approx Price (INR)">₹150 - ₹185 (20g)</td>
                 <td data-label="Derm Rating">⭐ 9.4 / 10</td>
               </tr>
               <tr>
-                <td data-label="Brand Name"><strong>Nilac Gel</strong></td>
+                <td data-label="Brand & Packshot">
+                  <div style="display: flex; align-items: center; gap: 0.75rem;">
+                    <div style="width: 44px; height: 44px; background: var(--primary-light); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">🧴</div>
+                    <div>
+                      <strong>Nilac Gel</strong>
+                      <span style="display: block; font-size: 0.75rem; color: #64748B;">Budget friendly</span>
+                    </div>
+                  </div>
+                </td>
                 <td data-label="Composition">Clindamycin 1% + Nicotinamide 4%</td>
                 <td data-label="Gel Vehicle">Gentle hydrating gel base</td>
                 <td data-label="Approx Price (INR)">₹145 - ₹175 (20g)</td>
                 <td data-label="Derm Rating">⭐ 9.2 / 10</td>
               </tr>
               <tr>
-                <td data-label="Brand Name"><strong>Clindac A Gel</strong></td>
-                <td data-label="Composition">Clindamycin 1% (Monotherapy - No Niacinamide)</td>
+                <td data-label="Brand & Packshot">
+                  <div style="display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/assets/images/prod-clindac-a-gel.webp" alt="Clindac A Gel thumbnail" class="pharmacy-table-thumb" width="44" height="44">
+                    <div>
+                      <strong>Clindac A Gel</strong>
+                      <span style="display: block; font-size: 0.75rem; color: var(--warning-amber);">Monotherapy</span>
+                    </div>
+                  </div>
+                </td>
+                <td data-label="Composition">Clindamycin 1% (No Niacinamide)</td>
                 <td data-label="Gel Vehicle">Basic gel formulation</td>
                 <td data-label="Approx Price (INR)">₹210 - ₹240 (20g)</td>
-                <td data-label="Derm Rating">⚠️ 7.5 / 10 (Higher resistance risk)</td>
+                <td data-label="Derm Rating">⚠️ 7.5 / 10</td>
               </tr>
             </tbody>
           </table>
