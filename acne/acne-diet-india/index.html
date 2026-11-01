@@ -415,7 +415,23 @@
         .dark-callout h2 { color: #fff; margin-top: 0; }
         .dark-callout p { color: rgba(255,255,255,0.8); }
         .btn-primary { display: inline-block; padding: 14px 36px; border-radius: 9999px; background: var(--brand); color: #fff; font-weight: 700; text-decoration: none; margin-top: 1rem; }
-    </style>
+    
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
+  </style>
 <!-- JSON-LD Schema -->
 <noscript>
 <style>.reveal { opacity: 1; transform: none; }</style>

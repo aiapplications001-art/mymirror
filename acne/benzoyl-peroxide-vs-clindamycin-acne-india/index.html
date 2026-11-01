@@ -256,6 +256,22 @@
 
     .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s var(--bouncy); }
     .reveal.active { opacity: 1; transform: none; }
+  
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
   </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",

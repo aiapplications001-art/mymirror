@@ -275,7 +275,23 @@
             .container { grid-template-columns: 1fr !important; gap: 2rem !important; }
             .sidebar { position: static !important; order: -1; }
         }
-    </style>
+    
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
+  </style>
 
     <!-- Sticky Mobile CTA -->
     <div class="sticky-cta-mobile">

@@ -522,6 +522,22 @@
       .routine-grid { grid-template-columns: 1fr; }
       .mobile-scan-bar { display: flex; }
     }
+  
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
   </style>
 </head>
 <body>

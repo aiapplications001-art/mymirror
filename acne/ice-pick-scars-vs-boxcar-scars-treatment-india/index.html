@@ -799,6 +799,22 @@
       .nav-links a { width: 100%; padding: 10px 0; border-bottom: 1px solid var(--color-bg-tertiary); border-radius: 0; }
       .nav-links li:last-child a { border-bottom: none; }
     }
+  
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
   </style>
 
   <!-- JSON-LD Schemas -->

@@ -251,6 +251,22 @@
     .footer p { font-size: 0.84rem; color: #9E8575; max-width: 600px; margin: 0 auto 0.8rem; }
     .footer-copy { font-size: 0.78rem; color: #7A6A5A; }
       .reveal { opacity: 1 !important; transform: none !important; }
+  
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
   </style>
 </head>
 <body>

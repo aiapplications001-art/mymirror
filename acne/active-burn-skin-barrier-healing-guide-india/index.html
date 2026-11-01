@@ -154,6 +154,22 @@
     .footer-links a { color: #D5C4B5; text-decoration: none; font-size: 0.84rem; }
     .footer-links a:hover { color: var(--brand); }
     .footer-copy { font-size: 0.78rem; color: #7A6A5A; margin-top: 1.8rem; }
+  
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
   </style>
 </head>
 <body>

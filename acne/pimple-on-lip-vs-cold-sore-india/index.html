@@ -243,7 +243,23 @@
         .dark-callout h2 { color: #fff; margin-top: 0; }
         .dark-callout p { color: rgba(255,255,255,0.8); }
         .btn-primary { display: inline-block; padding: 14px 36px; border-radius: 9999px; background: var(--color-brand); color: #fff; font-weight: 700; text-decoration: none; margin-top: 1rem; }
-    </style>
+    
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
+  </style>
 <!-- AI & Search Engine Optimization (JSON-LD Schema Package) -->
 <script defer="" src="/assets/site-analytics.js"></script>
 <link as="image" href="/assets/images/pimple-on-lip-og.jpg" rel="preload"/>

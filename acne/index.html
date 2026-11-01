@@ -768,9 +768,9 @@
       .hero-badge { font-size: 11px; padding: 4px 10px; margin-bottom: 0.85rem; }
       .hero h1 { font-size: 1.85rem; line-height: 1.22; margin-bottom: 0.85rem; letter-spacing: -0.02em; }
       .hero p.lead { font-size: 0.98rem; line-height: 1.55; margin-bottom: 1.25rem; }
-      .hero-cta-box { width: 100%; align-items: stretch; }
-      .face-ai-btn { width: 100%; padding: 15px 20px; font-size: 1rem; text-align: center; }
-      .hero-cta-sub { font-size: 12px; text-align: center; }
+      .hero-cta-box { display: none !important; }
+      .sticky-cta-mobile { display: flex; }
+      body { padding-bottom: 70px; }
       .hero-banner-wrap { margin-top: 1.5rem; border-radius: 16px; }
 
       /* Section 1: Layers */
@@ -892,6 +892,22 @@
       }
       body { padding-bottom: 75px; }
     }
+  
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
   </style>
 
   <!-- Structured Data JSON-LD Graph -->
@@ -2046,5 +2062,14 @@
     // Initial render
     renderRoutine();
   </script>
+
+  <!-- Sticky Mobile Bottom CTA -->
+  <div class="sticky-cta-mobile">
+    <a href="/scan/" class="nav-cta">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8M8 12h8"/></svg>
+      Scan Your Skin with AI Free ➔
+    </a>
+  </div>
+
 </body>
 </html>

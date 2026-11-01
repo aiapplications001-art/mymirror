@@ -94,7 +94,23 @@
             .product-visual-card { flex-direction: column; text-align: center; }
             .prod-img { margin: 0 auto 1.5rem auto; }
         }
-    </style>
+    
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
+  </style>
   
                 
                 

@@ -343,7 +343,23 @@
 
   
     .reveal { opacity: 1 !important; transform: none !important; }
-</style>
+
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
+  </style>
 <!-- AI & Search Engine Optimization (JSON-LD) -->
 <script defer="" src="/assets/site-analytics.js"></script>
 </link><script type="application/ld+json">{

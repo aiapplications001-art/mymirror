@@ -145,6 +145,22 @@
 
     @media (max-width: 900px) { .page-body { grid-template-columns: 1fr; } .sidebar { display: none; } .sticky-cta-mobile { display: block; } body { padding-bottom: 52px; } }
     @media (max-width: 768px) { .page-body { padding: 2rem 1.5rem; } .trust-bar { flex-direction: column; gap: 5px; } .toc-inner { justify-content: flex-start; } }
+  
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
   </style>
 
   <script type="application/ld+json">

@@ -219,6 +219,22 @@
       .prod-img-wrap { width: 140px; margin: 0 auto; }
       .stat-grid, .feature-grid, .routine-step-grid, .footer-grid { grid-template-columns: 1fr; }
     }
+  
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
   </style>
   <script defer src="/assets/site-analytics.js"></script>
 </head>

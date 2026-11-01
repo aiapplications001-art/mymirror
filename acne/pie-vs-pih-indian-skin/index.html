@@ -119,6 +119,22 @@
     .toc-link:hover, .toc-link.active { color: #EC610E; }
 
     footer { background: #0F1316; color: #94A3B8; padding: 3rem 1.5rem; text-align: center; font-size: 0.875rem; border-top: 1px solid #1E293B; }
+  
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
   </style>
 <script defer="" src="/assets/site-analytics.js"></script>
 <script type="application/ld+json">{

@@ -543,7 +543,23 @@
     .faq-item.active-faq .faq-answer { max-height: 500px; padding: 0 2rem 2rem 2rem; }
     .faq-icon { font-size: 1.5rem; transition: transform 0.3s ease; color: var(--color-brand); }
     .faq-item.active-faq .faq-icon { transform: rotate(45deg); }
-</style>
+
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
+  </style>
 
   <script type="application/ld+json">
   {

@@ -85,7 +85,23 @@
             .intro-grid { grid-template-columns: 1fr; gap: 2rem; }
             .toc-panel { order: -1; }
         }
-    </style>
+    
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
+  </style>
     <meta name="twitter:title" content="Hormonal Acne & PCOS in India: 2026 Clinical Guide | MyMirror">
     <meta name="twitter:description" content="Struggling with chin or jawline acne? Expert 2026 guide on PCOS acne treatment in India, cycle-synced skincare, and internal triggers. See results in 60s.">
     <meta name="twitter:card" content="summary_large_image">

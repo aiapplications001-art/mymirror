@@ -1215,7 +1215,23 @@
 
 
     .reveal { opacity: 1 !important; transform: none !important; }
-</style>
+
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
+  </style>
 <link href="/assets/styles/forehead-acne.css" rel="stylesheet"/>
 <meta content="https://mymirror.fit/assets/images/crows-feet-usa-og.jpg" name="twitter:image"/><script type="application/ld+json">{
   "@context": "https://schema.org",

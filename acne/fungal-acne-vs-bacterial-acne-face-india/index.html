@@ -319,6 +319,22 @@ html_content = '''<!DOCTYPE html>
       .bento-grid { grid-template-columns: 1fr; }
       .nav-inner { padding: 1rem 1.5rem; }
     }
+  
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
   </style>
 
   <!-- Structured Data JSON-LD -->

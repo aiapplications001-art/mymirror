@@ -1216,7 +1216,23 @@
       .hero-image-wrapper img { height: 300px !important; }
     }
 
-</style>
+
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
+  </style>
 <!-- JSON-LD Structured Data: MedicalWebPage & FAQPage -->
 <link href="/assets/styles/forehead-acne.css" rel="stylesheet"/>
 <meta content="summary_large_image" name="twitter:card"/><meta content="Marionette Lines Treatment Options: Clinical Dermatology Guide USA" name="twitter:title"/><meta content="Clinical dermatology evaluation contrasting depressor anguli oris neuromodulation and hyaluronic acid fillers with topical retinoid neocollagenesis." name="twitter:description"/><meta content="https://mymirror.fit/assets/images/marionette-lines-usa-og.jpg" name="twitter:image"/><script type="application/ld+json">{

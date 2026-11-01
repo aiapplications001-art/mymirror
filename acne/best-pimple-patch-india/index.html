@@ -216,6 +216,22 @@
       p.face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px auto 0 auto !important; display: block !important; visibility: visible !important; }
     }
 
+  
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
   </style>
 <!-- AI & Search Engine Optimization (JSON-LD) -->
 <script defer="" src="/assets/site-analytics.js"></script>

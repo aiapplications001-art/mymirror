@@ -82,7 +82,23 @@
             .phase-card { flex-direction: column; text-align: center; }
             .phase-icon { margin: 0 auto 1.5rem auto; }
         }
-    </style>
+    
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
+  </style>
     <meta name="twitter:title" content="Cycle-Synced Skincare India Treatment Guide | MyMirror">
     <meta name="twitter:description" content="Stop reacting, start predicting. Expert 2026 guide to cycle-synced skincare in India. Learn the 4-week protocol to prevent period breakouts. See results in 60s.">
     <meta name="twitter:card" content="summary_large_image">

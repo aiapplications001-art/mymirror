@@ -206,6 +206,22 @@
 
     @media(max-width:900px){.page-body{grid-template-columns:1fr}.sidebar{display:none}.mechanism-grid{grid-template-columns:1fr}.product-grid{grid-template-columns:1fr}}
     @media(max-width:600px){.hero{padding:2.5rem 1.25rem 3rem}h2{font-size:1.45rem}.strength-pct{font-size:2.2rem}}
+  
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
   </style>
 <meta content="Azelaic Acid for Acne &amp; Dark Spots India: Aziderm Guide" name="twitter:title"/><meta content="Clinical dermatology guide to Azelaic Acid in India. Compare Aziderm 10%, 15%, 20% gel, tyrosinase inhibition, and PIH clearance across Fitzpatrick phototypes." name="twitter:description"/><script type="application/ld+json">{
   "@context": "https://schema.org",

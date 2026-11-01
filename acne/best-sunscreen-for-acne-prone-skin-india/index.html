@@ -54,7 +54,23 @@
             .intro-grid { grid-template-columns: 1fr; gap: 2rem; }
             .toc-panel { order: -1; position: static; }
         }
-    </style>
+    
+    /* MWeb Hero CTA Guardrail: Do not display CTA in hero banner on mobile web */
+    @media (max-width: 768px) {
+      .hero-cta-box,
+      .hero-cta-group,
+      .hero-cta-wrapper,
+      .face-ai-cta-wrapper,
+      .ai-cta-wrap,
+      .cta-button-rail,
+      .hero-actions,
+      .hero-cta-sub,
+      .hero-cta-subtext {
+        display: none !important;
+      }
+    }
+
+  </style>
     <meta property="og:title" content="Best Sunscreens for Acne Prone Skin in India | MyMirror">
     <meta property="og:description" content="Expert-backed 2026 guide to acne-safe sunscreens in India. Identify non-comedogenic, matte-finish formulas in 60s. Compare budget, clinical, and premium picks.">
     <meta name="twitter:title" content="Best Sunscreens for Acne Prone Skin in India | MyMirror">
