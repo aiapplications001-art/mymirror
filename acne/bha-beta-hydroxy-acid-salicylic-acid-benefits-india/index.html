@@ -88,7 +88,8 @@
           { "@type": "ListItem", "position": 2, "name": "Cipla Saslic DS Foaming Face Wash 2% (Best Daily Cleanser for Oily Acne Skin)" },
           { "@type": "ListItem", "position": 3, "name": "Paula's Choice 2% BHA Liquid Exfoliant (Gold-Standard Leave-On Liquid)" },
           { "@type": "ListItem", "position": 4, "name": "Sebogel Salicylic Acid 2% + Nicotinamide 6% (Best Pharmacy Spot Gel)" },
-          { "@type": "ListItem", "position": 5, "name": "COSRX BHA Blackhead Power Liquid (Best Ultra-Gentle Betaine Salicylate)" }
+          { "@type": "ListItem", "position": 5, "name": "COSRX BHA Blackhead Power Liquid (Best Ultra-Gentle Betaine Salicylate)" },
+          { "@type": "ListItem", "position": 6, "name": "Deconstruct Pore Control Cleanser (Best Gentle 0.5% Beginner Wash)" }
         ]
       },
       {
@@ -357,6 +358,95 @@
     .bha-table tr:last-child td { border-bottom: none; }
     .badge-top { display: inline-block; padding: 3px 9px; border-radius: 9999px; background: #E8F5E9; color: #2E7D32; font-size: 11px; font-weight: 700; }
     .badge-caution { display: inline-block; padding: 3px 9px; border-radius: 9999px; background: #FFF8E1; color: #B78103; font-size: 11px; font-weight: 700; }
+
+    /* Product Showcase Card Grid */
+    .bha-product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.25rem;
+      margin: 2rem 0;
+    }
+    .bha-product-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.25rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.3s var(--bouncy);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.03);
+    }
+    .bha-product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(236,97,14,0.12);
+      border-color: var(--brand);
+    }
+    .bha-product-thumb-wrap {
+      width: 140px;
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+      background: #FFFFFF;
+      border-radius: 12px;
+      padding: 8px;
+    }
+    .bha-product-thumb {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      transition: transform 0.25s ease;
+    }
+    .bha-product-card:hover .bha-product-thumb {
+      transform: scale(1.06);
+    }
+    .bha-card-badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+    .bha-product-card h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--text);
+      line-height: 1.35;
+    }
+    .bha-card-price {
+      color: var(--brand);
+      font-weight: 800;
+      font-size: 0.9rem;
+      margin: 4px 0 6px;
+    }
+    .bha-card-desc {
+      font-size: 0.825rem;
+      color: var(--text-3);
+      line-height: 1.45;
+      margin-bottom: 0;
+    }
+
+    /* Table Product Thumbnail */
+    .table-prod-cell {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .table-prod-thumb {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      padding: 2px;
+      flex-shrink: 0;
+    }
 
     /* Hinglish Card */
     .hinglish-box {
@@ -672,6 +762,69 @@
           We reviewed the most popular Salicylic Acid and BHA options in Indian pharmacies and cosmetic stores:
         </p>
 
+        <!-- Visual Product Cards Showcase -->
+        <div class="bha-product-grid">
+          <div class="bha-product-card">
+            <span class="bha-card-badge" style="background:#EBF5FF; color:#0066CC;">Top Budget Serum</span>
+            <div class="bha-product-thumb-wrap">
+              <img src="/assets/images/minimalist-2-salicylic-acid-serum.webp" alt="Minimalist Salicylic Acid 2% Serum" class="bha-product-thumb" width="140" height="140" loading="lazy">
+            </div>
+            <h4>Minimalist 2% Salicylic Acid</h4>
+            <div class="bha-card-price">₹549 (30ml)</div>
+            <p class="bha-card-desc">Leave-on serum with soothing Aloe base. Best for stubborn blackheads 2 nights/week.</p>
+          </div>
+
+          <div class="bha-product-card">
+            <span class="bha-card-badge" style="background:#EBF8F2; color:#0E7048;">Top Daily Cleanser</span>
+            <div class="bha-product-thumb-wrap">
+              <img src="/assets/images/saslic-ds-clean-cutout.webp" alt="Cipla Saslic DS Foaming Face Wash" class="bha-product-thumb" width="140" height="140" loading="lazy">
+            </div>
+            <h4>Cipla Saslic DS (2%)</h4>
+            <div class="bha-card-price">₹420 – ₹450 (60ml)</div>
+            <p class="bha-card-desc">Wash-off foaming cleanser. Clears excess sebum in 60 seconds with zero barrier burn.</p>
+          </div>
+
+          <div class="bha-product-card">
+            <span class="bha-card-badge" style="background:#FFF3E8; color:#D9531E;">Gold Standard Liquid</span>
+            <div class="bha-product-thumb-wrap">
+              <img src="/assets/images/paulas-choice-2-bha-liquid-cutout.webp" alt="Paula's Choice 2% BHA Liquid Exfoliant" class="bha-product-thumb" width="140" height="140" loading="lazy">
+            </div>
+            <h4>Paula's Choice 2% BHA</h4>
+            <div class="bha-card-price">₹1,200 (30ml)</div>
+            <p class="bha-card-desc">Cult-favorite toner fluid with Green Tea. Rapidly melts pore clogs and refines texture.</p>
+          </div>
+
+          <div class="bha-product-card">
+            <span class="bha-card-badge" style="background:#F3E8FF; color:#7E22CE;">Pharmacy Spot Gel</span>
+            <div class="bha-product-thumb-wrap">
+              <img src="/assets/images/prod-sebogel-acne-gel.webp" alt="Sebogel Salicylic Acid and Niacinamide Gel" class="bha-product-thumb" width="140" height="140" loading="lazy">
+            </div>
+            <h4>Sebogel (2% BHA + 6% Niacinamide)</h4>
+            <div class="bha-card-price">₹220 – ₹260 (30g)</div>
+            <p class="bha-card-desc">Targeted OTC gel for active red bumps and fading post-acne dark marks simultaneously.</p>
+          </div>
+
+          <div class="bha-product-card">
+            <span class="bha-card-badge" style="background:#FEF3C7; color:#92400E;">Sensitive Skin Pick</span>
+            <div class="bha-product-thumb-wrap">
+              <img src="/assets/images/cosrx-bha-blackhead-power-liquid-cutout.webp" alt="COSRX BHA Blackhead Power Liquid" class="bha-product-thumb" width="140" height="140" loading="lazy">
+            </div>
+            <h4>COSRX BHA Power Liquid</h4>
+            <div class="bha-card-price">₹1,350 – ₹1,590 (100ml)</div>
+            <p class="bha-card-desc">4% Betaine Salicylate + Willow Bark. Ultra-gentle Korean formula that will not sting delicate skin.</p>
+          </div>
+
+          <div class="bha-product-card">
+            <span class="bha-card-badge" style="background:#E0F2FE; color:#0369A1;">Gentle Beginner Wash</span>
+            <div class="bha-product-thumb-wrap">
+              <img src="/assets/images/prod-deconstruct-salicylic-cleanser.webp" alt="Deconstruct Pore Control Salicylic Acid Cleanser" class="bha-product-thumb" width="140" height="140" loading="lazy">
+            </div>
+            <h4>Deconstruct Pore Control Cleanser</h4>
+            <div class="bha-card-price">₹299 – ₹349 (100ml)</div>
+            <p class="bha-card-desc">0.5% Salicylic Acid + 1% Niacinamide. Mild foaming wash for sensitive skin starting daily pore care.</p>
+          </div>
+        </div>
+
         <div class="table-wrapper">
           <table class="bha-table">
             <thead>
@@ -685,46 +838,76 @@
             </thead>
             <tbody>
               <tr>
-                <td data-label="Product"><strong>Minimalist Salicylic Acid 2% Serum</strong></td>
+                <td data-label="Product">
+                  <div class="table-prod-cell">
+                    <img src="/assets/images/minimalist-2-salicylic-acid-serum.webp" alt="Minimalist Salicylic Acid 2% Serum" class="table-prod-thumb" width="44" height="44" loading="lazy">
+                    <span><strong>Minimalist Salicylic Acid 2% Serum</strong></span>
+                  </div>
+                </td>
                 <td data-label="Type & Strength">Leave-on Serum (2%)</td>
                 <td data-label="Texture & Additions">Lightweight fluid with Aloe vera base, alcohol-free</td>
                 <td data-label="Est. Price">₹549 (30ml)</td>
                 <td data-label="Best For"><span class="badge-top">Top Budget Serum</span> Blackheads &amp; congested pores (2 nights/week)</td>
               </tr>
               <tr>
-                <td data-label="Product"><strong>Cipla Saslic DS Foaming Wash</strong></td>
+                <td data-label="Product">
+                  <div class="table-prod-cell">
+                    <img src="/assets/images/saslic-ds-clean-cutout.webp" alt="Cipla Saslic DS Foaming Wash" class="table-prod-thumb" width="44" height="44" loading="lazy">
+                    <span><strong>Cipla Saslic DS Foaming Wash</strong></span>
+                  </div>
+                </td>
                 <td data-label="Type & Strength">Wash-Off Cleanser (2%)</td>
                 <td data-label="Texture & Additions">Ready-to-use foam pump, gentle surfactant base</td>
                 <td data-label="Est. Price">₹420 – ₹450 (60ml)</td>
                 <td data-label="Best For"><span class="badge-top">Daily Oily Skin</span> Daily T-zone sebum control without dryness</td>
               </tr>
               <tr>
-                <td data-label="Product"><strong>Paula's Choice 2% BHA Liquid Exfoliant</strong></td>
+                <td data-label="Product">
+                  <div class="table-prod-cell">
+                    <img src="/assets/images/paulas-choice-2-bha-liquid-cutout.webp" alt="Paula's Choice 2% BHA Liquid Exfoliant" class="table-prod-thumb" width="44" height="44" loading="lazy">
+                    <span><strong>Paula's Choice 2% BHA Liquid Exfoliant</strong></span>
+                  </div>
+                </td>
                 <td data-label="Type & Strength">Leave-on Liquid (2%)</td>
                 <td data-label="Texture & Additions">Watery toner-like fluid with Green Tea extract</td>
                 <td data-label="Est. Price">₹1,200 (30ml) / ₹2,700 (118ml)</td>
                 <td data-label="Best For">Gold-standard rapid blackhead &amp; whitehead clearance</td>
               </tr>
               <tr>
-                <td data-label="Product"><strong>Sebogel Gel</strong></td>
+                <td data-label="Product">
+                  <div class="table-prod-cell">
+                    <img src="/assets/images/prod-sebogel-acne-gel.webp" alt="Sebogel Gel" class="table-prod-thumb" width="44" height="44" loading="lazy">
+                    <span><strong>Sebogel Gel</strong></span>
+                  </div>
+                </td>
                 <td data-label="Type & Strength">Pharmacy Gel (2% BHA + 6% Niacinamide)</td>
                 <td data-label="Texture & Additions">Clear cooling gel, oil-free</td>
                 <td data-label="Est. Price">₹220 – ₹260 (30g)</td>
                 <td data-label="Best For">Spot application on active red pimples &amp; acne marks</td>
               </tr>
               <tr>
-                <td data-label="Product"><strong>COSRX BHA Blackhead Power Liquid</strong></td>
+                <td data-label="Product">
+                  <div class="table-prod-cell">
+                    <img src="/assets/images/cosrx-bha-blackhead-power-liquid-cutout.webp" alt="COSRX BHA Blackhead Power Liquid" class="table-prod-thumb" width="44" height="44" loading="lazy">
+                    <span><strong>COSRX BHA Blackhead Power Liquid</strong></span>
+                  </div>
+                </td>
                 <td data-label="Type & Strength">Leave-on Essence (4% Betaine Salicylate)</td>
                 <td data-label="Texture & Additions">Gentle Korean BHA + Willow Bark Water + Niacinamide</td>
                 <td data-label="Est. Price">₹1,350 – ₹1,590 (100ml)</td>
                 <td data-label="Best For"><span class="badge-caution">Sensitive Skin</span> Extremely sensitive or dry skin that stings from pure acid</td>
               </tr>
               <tr>
-                <td data-label="Product"><strong>The Derma Co 2% Salicylic Acid Serum</strong></td>
-                <td data-label="Type & Strength">Leave-on Serum (2%)</td>
-                <td data-label="Texture & Additions">Serum with Witch Hazel &amp; Willow Bark</td>
-                <td data-label="Est. Price">₹449 – ₹499 (30ml)</td>
-                <td data-label="Best For">Budget oily skin maintenance</td>
+                <td data-label="Product">
+                  <div class="table-prod-cell">
+                    <img src="/assets/images/prod-deconstruct-salicylic-cleanser.webp" alt="Deconstruct Pore Control Cleanser" class="table-prod-thumb" width="44" height="44" loading="lazy">
+                    <span><strong>Deconstruct Pore Control Cleanser</strong></span>
+                  </div>
+                </td>
+                <td data-label="Type & Strength">Wash-Off Cleanser (0.5% BHA + 1% Niacinamide)</td>
+                <td data-label="Texture & Additions">Mild foaming gel with soothing Chamomile and Niacinamide</td>
+                <td data-label="Est. Price">₹299 – ₹349 (100ml)</td>
+                <td data-label="Best For">Gentle daily wash for sensitive beginners to prevent clogged pores</td>
               </tr>
             </tbody>
           </table>
