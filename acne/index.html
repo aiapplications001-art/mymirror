@@ -13,412 +13,2275 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Acne Treatment & Skincare Routine Guides | MyMirror</title>
-  <meta name="description" content="Evidence-based dermatological guides for acne, dark spots, and barrier repair tailored for South Asian and Indian skin types. Reviewed by dermatologists.">
+  <title>The Complete Acne & Clear Skin Hub (2026 Guide) | MyMirror</title>
+  <meta name="description" content="Understand why breakouts happen, explore the 5 layers inside a pimple, decode the acne dichotomy, and discover dermatologist-tested clear skin routines for Indian skin.">
   <link rel="canonical" href="https://mymirror.fit/acne/" />
+
+  <!-- Open Graph & Twitter Meta Tags (Rule: unique og:image & twitter:image) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="The Complete Acne & Clear Skin Hub (2026 Guide) | MyMirror" />
+  <meta property="og:description" content="Understand why breakouts happen, explore the 5 layers inside a pimple, decode the acne dichotomy, and discover dermatologist-tested clear skin routines for Indian skin." />
+  <meta property="og:url" content="https://mymirror.fit/acne/" />
+  <meta property="og:site_name" content="MyMirror" />
+  <meta property="og:image" content="https://mymirror.fit/assets/images/acne-hub-og-india.jpg" />
+  <meta property="og:image:secure_url" content="https://mymirror.fit/assets/images/acne-hub-og-india.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+  <meta property="og:image:alt" content="MyMirror Acne Knowledge Hub and Clear Skin Guide for Indian Skin" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Complete Acne & Clear Skin Hub (2026 Guide) | MyMirror" />
+  <meta name="twitter:description" content="Understand why breakouts happen, explore the 5 layers inside a pimple, decode the acne dichotomy, and discover dermatologist-tested clear skin routines for Indian skin." />
+  <meta name="twitter:image" content="https://mymirror.fit/assets/images/acne-hub-og-india.jpg" />
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/assets/styles/forehead-acne.css">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --color-brand:        #EC610E;
-      --color-brand-dark:   #C14800;
-      --color-brand-light:  #FFE1CE;
-      --color-bg-primary:   #FFFFFF;
-      --color-bg-secondary: #F9F6F3;
-      --color-bg-tertiary:  #F2EDE8;
-      --color-text-primary:   #1A1410;
-      --color-text-secondary: #5C4A3A;
-      --color-text-tertiary:  #9E8575;
-      --color-border:          #E8DDD5;
-      --color-success: #059669;
-      --color-info:    #1A5F8A;
-      --font-brand:  'Kantumruy Pro', serif;
-      --font-ui:     'Plus Jakarta Sans', sans-serif;
-      --ease-bouncy: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      --transition-base: 0.4s var(--ease-bouncy);
+      --brand: #EC610E;
+      --brand-dark: #C14800;
+      --brand-light: #FFE1CE;
+      --brand-subtle: #FFF5EE;
+      --bg: #FFFFFF;
+      --bg-alt: #FAF7F4;
+      --bg-card: #FFFFFF;
+      --border: #E8DDD5;
+      --border-light: #F0E8E2;
+      --text: #1A1410;
+      --text-muted: #5C4A3A;
+      --text-subtle: #8A7363;
+      --success: #0E7048;
+      --success-bg: #EBF8F2;
+      --warning: #B45309;
+      --warning-bg: #FEF3C7;
+      --info: #0369A1;
+      --info-bg: #E0F2FE;
+      --font-display: 'Kantumruy Pro', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --shadow-sm: 0 2px 8px rgba(26,20,16,0.04);
+      --shadow-md: 0 8px 24px rgba(26,20,16,0.06);
+      --shadow-lg: 0 16px 40px rgba(26,20,16,0.08);
+      --bouncy: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #120E0B;
+        --bg-alt: #1A1512;
+        --bg-card: #201A16;
+        --border: #332822;
+        --border-light: #281F1A;
+        --text: #F5EFEB;
+        --text-muted: #C4B5A9;
+        --text-subtle: #99877A;
+        --brand-subtle: #24160F;
+        --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+        --shadow-md: 0 8px 24px rgba(0,0,0,0.4);
+        --shadow-lg: 0 16px 40px rgba(0,0,0,0.5);
+      }
     }
 
     html { scroll-behavior: smooth; }
-    body { font-family: var(--font-ui); background: var(--color-bg-primary); color: var(--color-text-primary); font-size: 15px; line-height: 1.6; overflow-x: hidden; }
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
 
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
 
-    /* ── HEADER ── */
-    .trust-bar { background: var(--color-bg-secondary); border-bottom: 1px solid var(--color-border); padding: 10px 2rem; display: flex; align-items: center; justify-content: center; gap: 1.5rem; font-size: 11px; color: var(--color-text-tertiary); text-align: center; }
-    nav { background: var(--color-bg-primary); border-bottom: 1px solid var(--color-border); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; height: 60px; display: flex; align-items: center; }
-    .nav-inner { max-width: 1100px; margin: 0 auto; width: 100%; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
-    .nav-logo img { height: 32px;  margin: 0; box-shadow: none; border-radius: 0; background: transparent; }
+    /* Trust Header Bar */
+    .trust-bar {
+      background: var(--bg-alt);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 1.5rem;
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      text-align: center;
+    }
+    .trust-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+    }
+    .trust-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--success);
+      display: inline-block;
+    }
 
-    /* ── HERO ── */
-    .hero { background: linear-gradient(135deg, #0a0a0c 0%, #1a1410 100%); color: #fff; text-align: center; padding: 3rem 2rem 4rem; margin-bottom: 0 !important; }
-    .hero h1 { font-family: var(--font-brand); font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 700; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.04em;  color: #ffffff !important;}
-    .hero p { color: rgba(255,255,255,0.8); font-size: 1.25rem; max-width: 700px; margin: 0 auto; }
+    /* Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      height: 64px;
+      display: flex;
+      align-items: center;
+    }
+    @media (prefers-color-scheme: dark) {
+      nav { background: rgba(18, 14, 11, 0.94); }
+    }
+    .nav-inner {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo img {
+      height: 32px;
+      width: auto;
+      display: block;
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .nav-scan-btn {
+      background: var(--brand);
+      color: #FFFFFF !important;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 8px 18px;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 14px rgba(236,97,14,0.25);
+    }
+    .nav-scan-btn:hover {
+      background: var(--brand-dark);
+      transform: translateY(-1px);
+    }
 
-    /* ── CATEGORY GRID ── */
-    .hub-grid { margin: -4rem auto 6rem; display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; position: relative; z-index: 10; }
-    
-    .category-card { 
-      background: #fff; 
-      border: 1px solid var(--color-border); 
-      border-radius: 32px; 
-      padding: 3rem; 
-      grid-column: span 6; 
-      transition: var(--transition-base);
-      box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(180deg, var(--bg-alt) 0%, var(--bg) 100%);
+      padding: 3.5rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--brand-subtle);
+      border: 1px solid var(--brand-light);
+      color: var(--brand);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4.8vw, 3.6rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.25rem;
+      color: var(--text);
+    }
+    .hero p.lead {
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      color: var(--text-muted);
+      max-width: 820px;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .hero-banner-wrap {
+      margin-top: 2rem;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+    }
+    .hero-banner-img {
+      width: 100%;
+      height: auto;
+      max-height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Face AI CTA inside hero */
+    .hero-cta-box {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .face-ai-btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 36px;
+      background: var(--brand);
+      color: #FFFFFF !important;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.05rem;
+      border-radius: 9999px;
+      box-shadow: 0 10px 25px rgba(236,97,14,0.3);
+      transition: all 0.3s var(--bouncy);
+    }
+    .face-ai-btn:hover {
+      background: var(--brand-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px rgba(236,97,14,0.4);
+    }
+    .hero-cta-sub {
+      font-size: 13px;
+      color: var(--text-subtle);
+    }
+
+    /* Section Styles */
+    section {
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .section-header {
+      margin-bottom: 2.5rem;
+    }
+    .section-eyebrow {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin-bottom: 6px;
+      display: inline-block;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+    .section-desc {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 760px;
+      line-height: 1.6;
+    }
+
+    /* Section 1: Layers of Acne (Cross-Section) */
+    .layers-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    @media (max-width: 900px) {
+      .layers-layout { grid-template-columns: 1fr; }
+    }
+    .layers-img-wrap {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-md);
+      background: #FFFFFF;
+    }
+    .layers-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .layers-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .layer-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.1rem 1.25rem;
+      transition: all 0.25s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .layer-card:hover {
+      border-color: var(--brand);
+      transform: translateX(4px);
+    }
+    .layer-card-num {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      margin-bottom: 6px;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+    }
+    .layer-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+    .layer-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Rupture Warning Callout */
+    .callout-rupture {
+      margin-top: 2rem;
+      background: linear-gradient(135deg, #FFF5F5 0%, #FED7D7 100%);
+      border: 2px solid #FEB2B2;
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 1.75rem;
+      color: #9B2C2C;
+    }
+    @media (prefers-color-scheme: dark) {
+      .callout-rupture { background: linear-gradient(135deg, #2D1515 0%, #3B1B1B 100%); border-color: #632323; color: #FED7D7; }
+    }
+    .callout-rupture h4 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .callout-rupture p {
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+
+    /* Section 2: Dichotomy of Acne */
+    .dichotomy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+    .dichotomy-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+    }
+    .dichotomy-card:hover {
+      border-color: var(--brand);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .dichotomy-tag {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+      align-self: flex-start;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+    .dichotomy-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+    .dichotomy-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      background: var(--bg-alt);
+      border-radius: var(--radius-md);
+      padding: 10px;
+      margin-bottom: 14px;
+    }
+    .dichotomy-side {
+      font-size: 0.8rem;
+    }
+    .dichotomy-side strong {
+      display: block;
+      font-size: 0.85rem;
+      margin-bottom: 2px;
+      color: var(--text);
+    }
+    .dichotomy-lesson {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-top: auto;
+    }
+    .dichotomy-lesson strong { color: var(--brand); }
+
+    /* Section 3: 4 Inside Stages */
+    .stages-track {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      position: relative;
+    }
+    .stage-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      position: relative;
+      box-shadow: var(--shadow-sm);
+    }
+    .stage-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--brand);
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .stage-item h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .stage-item p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Section 4: 6 Everyday Triggers */
+    .triggers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.25rem;
+    }
+    .trigger-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      transition: all 0.25s ease;
+      box-shadow: var(--shadow-sm);
       display: flex;
       flex-direction: column;
     }
-    .category-card:hover { transform: translateY(-10px); box-shadow: 0 30px 60px rgba(0,0,0,0.1); }
-    .category-card.full { grid-column: span 12; }
-    .category-card.third { grid-column: span 4; }
+    .trigger-card:hover {
+      border-color: var(--brand);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    .trigger-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .trigger-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .trigger-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+    .trigger-link {
+      margin-top: auto;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--brand);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .trigger-link:hover { text-decoration: underline; }
 
-    .category-tag { 
-      display: inline-block; 
-      padding: 6px 14px; 
-      border-radius: 99px; 
-      font-size: 11px; 
-      font-weight: 800; 
-      text-transform: uppercase; 
-      letter-spacing: 0.05em; 
-      margin-bottom: 1.5rem;
-      background: var(--color-brand-light);
-      color: var(--color-brand-dark);
+    /* Section 5: The 3 Imposters / Lookalikes */
+    .imposter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .imposter-card {
+      background: var(--bg-card);
+      border: 2px dashed var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .imposter-badge {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+      align-self: flex-start;
+      background: #FEE2E2;
+      color: #991B1B;
+    }
+    .imposter-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .imposter-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+    .imposter-clue {
+      background: var(--bg-alt);
+      border-radius: var(--radius-md);
+      padding: 10px 14px;
+      font-size: 12px;
+      color: var(--text);
+      margin-bottom: 14px;
     }
 
-    .category-card h2 { font-family: var(--font-brand); font-size: 2rem; margin-bottom: 1rem; color: var(--color-text-primary); }
-    .category-card p { color: var(--color-text-secondary); margin-bottom: 2rem; font-size: 1.05rem; }
+    /* Section 6: Visual Identification Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+    }
+    .gallery-card:hover {
+      border-color: var(--brand);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .gallery-card-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .gallery-badge {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      margin-bottom: 10px;
+      align-self: flex-start;
+    }
+    .gallery-card-body h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+    .gallery-card-body p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    .gallery-rx {
+      font-size: 12px;
+      background: var(--bg-alt);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      margin-top: auto;
+      border-left: 3px solid var(--brand);
+    }
 
-    .guide-list { list-style: none; display: grid; gap: 12px; }
-    .guide-link { 
-      display: flex; 
-      align-items: center; 
-      justify-content: space-between; 
-      padding: 1.2rem 1.5rem; 
-      background: var(--color-bg-secondary); 
-      border-radius: 16px; 
-      text-decoration: none; 
-      color: var(--color-text-primary); 
-      font-weight: 700; 
+    /* Section 7: Face Zones Navigator */
+    .zones-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.25rem;
+    }
+    .zone-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 1.25rem;
+      text-align: center;
+      transition: all 0.3s var(--bouncy);
+      box-shadow: var(--shadow-sm);
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .zone-card:hover {
+      border-color: var(--brand);
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(236,97,14,0.15);
+    }
+    .zone-icon {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .zone-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+    .zone-card span {
+      font-size: 12px;
+      color: var(--brand);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .zone-card p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin-bottom: 0;
+    }
+
+    /* Section 8: Active Ingredients Matcher */
+    .actives-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      background: var(--bg-card);
+      box-shadow: var(--shadow-sm);
+    }
+    .actives-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      text-align: left;
+    }
+    .actives-table th {
+      background: var(--bg-alt);
+      padding: 14px 18px;
+      font-weight: 800;
+      color: var(--text);
+      border-bottom: 1px solid var(--border);
+    }
+    .actives-table td {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border-light);
+      vertical-align: top;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .actives-table tr:last-child td { border-bottom: none; }
+    .actives-table tr:hover td { background: var(--brand-subtle); }
+
+    /* Section 9: Interactive Routine Finder */
+    .finder-widget {
+      background: var(--bg-alt);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-md);
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    @media (max-width: 768px) {
+      .finder-widget { padding: 1.5rem; }
+    }
+    .finder-step-title {
+      font-weight: 800;
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+    .finder-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px;
+      margin-bottom: 1.75rem;
+    }
+    .finder-btn {
+      background: var(--bg-card);
+      border: 2px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-align: center;
+    }
+    .finder-btn:hover {
+      border-color: var(--brand);
+      background: var(--brand-subtle);
+    }
+    .finder-btn.active {
+      border-color: var(--brand);
+      background: var(--brand);
+      color: #FFFFFF;
+    }
+    .finder-result {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+    .finder-result.show { display: block; }
+    .finder-result-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      background: var(--success-bg);
+      color: var(--success);
+      margin-bottom: 10px;
+    }
+    .finder-result h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+    .routine-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 14px 0;
+    }
+    @media (max-width: 600px) {
+      .routine-grid { grid-template-columns: 1fr; }
+    }
+    .routine-box {
+      background: var(--bg-alt);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      font-size: 13px;
+    }
+    .routine-box strong {
+      display: block;
+      color: var(--brand);
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    /* Section 10: YouTube Masterclass */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+    .video-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+    }
+    .video-frame-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      background: #000000;
+    }
+    .video-frame-wrap iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .video-info {
+      padding: 1.25rem;
+    }
+    .video-doctor {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--brand);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .video-info h3 {
       font-size: 0.95rem;
-      transition: 0.2s;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .video-info p {
+      font-size: 0.825rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 0;
+    }
+
+    /* Section 11: Intelligent Directory Hubs */
+    .directory-bento {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+    .bento-hub {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+    }
+    .bento-hub:hover {
+      border-color: var(--brand);
+      box-shadow: var(--shadow-md);
+    }
+    .bento-hub-header {
+      margin-bottom: 1.25rem;
+    }
+    .bento-tag {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    .bento-hub h3 {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .bento-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .bento-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: var(--bg-alt);
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 600;
       border: 1px solid transparent;
+      transition: all 0.2s ease;
     }
-    .guide-link:hover { background: #fff; border-color: var(--color-brand); color: var(--color-brand); transform: translateX(8px); }
-    .guide-link span { opacity: 0.3; font-size: 1.2rem; }
-
-    /* ── SECTIONS ── */
-    .hub-section { padding: 4rem 0; }
-    .section-title { font-family: var(--font-brand); font-size: 2.2rem; margin-bottom: 3rem; text-align: center; }
-
-    /* ── FEATURED STRIP ── */
-    .featured-strip { background: var(--color-bg-tertiary); padding: 5rem 0; border-radius: 60px; margin: 4rem 0; }
-
-    /* ── ANIMATIONS ── */
-    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s var(--ease-bouncy); }
-    .reveal.active { opacity: 1; transform: none; }
-
-    @media (max-width: 900px) {
-      .category-card, .category-card.third { grid-column: span 12; padding: 2rem; }
-      .hub-grid { margin-top: -2rem; padding: 0 1.5rem; }
+    .bento-link:hover {
+      background: #FFFFFF;
+      border-color: var(--brand);
+      color: var(--brand);
+      transform: translateX(4px);
     }
-  
-    /* Face AI CTA Styling - Premium Perimeter Rail Animation */
-    .face-ai-cta-wrapper { display: flex; flex-direction: column; align-items: center; gap: 8px; margin: 1.5rem auto 0; text-align: center; width: 100%; position: relative; z-index: 50; }
-    .face-ai-btn { 
-      position: relative; 
-      display: inline-flex; 
+    @media (prefers-color-scheme: dark) {
+      .bento-link:hover { background: #281F1A; }
+    }
+    .bento-link span { opacity: 0.4; }
+
+    /* Section 12: Hinglish Box */
+    .hinglish-box {
+      background: linear-gradient(145deg, #FFF9F3 0%, #FFF2E8 100%);
+      border: 2px solid var(--brand-light);
+      border-radius: var(--radius-xl);
+      padding: 2.25rem;
+      margin: 2rem 0;
+      box-shadow: var(--shadow-sm);
+    }
+    @media (prefers-color-scheme: dark) {
+      .hinglish-box { background: linear-gradient(145deg, #24160F 0%, #1A110B 100%); border-color: #4A2B18; }
+    }
+    .hinglish-tag {
+      display: inline-block;
+      background: var(--brand);
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 11px;
+      text-transform: uppercase;
+      padding: 3px 12px;
+      border-radius: 9999px;
+      margin-bottom: 12px;
+    }
+    .hinglish-box h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+    .hinglish-box p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .hinglish-list {
+      margin: 14px 0 0 1.25rem;
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .hinglish-list li { margin-bottom: 8px; }
+
+    /* Section 13: FAQ Accordion */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    .faq-question {
+      padding: 16px 20px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+    }
+    .faq-question::after {
+      content: '+';
+      font-size: 1.3rem;
+      color: var(--brand);
+      font-weight: 400;
+      transition: transform 0.25s ease;
+    }
+    .faq-item.active .faq-question::after {
+      content: '−';
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 20px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      transition: all 0.3s ease;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 400px;
+      padding: 0 20px 18px;
+    }
+
+    /* Medical Reviewer Box */
+    .reviewer-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      margin: 3rem auto 0;
+      max-width: 860px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      box-shadow: var(--shadow-sm);
+    }
+    @media (max-width: 600px) {
+      .reviewer-card { flex-direction: column; text-align: center; }
+    }
+    .reviewer-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--brand-light);
+      display: flex;
       align-items: center;
       justify-content: center;
-      padding: 18px 44px; 
-      background: #EC610E; 
-      color: #ffffff !important; 
-      text-decoration: none; 
-      font-weight: 800; 
-      font-size: 1.15rem; 
-      border-radius: 9999px; 
-      box-shadow: 0 10px 30px rgba(236,97,14,0.3); 
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-      z-index: 10;
-      overflow: visible;
+      font-size: 28px;
+      flex-shrink: 0;
     }
-    .face-ai-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(236,97,14,0.5); }
-    .face-ai-btn-text { position: relative; z-index: 12; }
-    p.face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px auto 0 auto !important; display: block !important; visibility: visible !important; }
-    
-    .face-ai-energy-rail { 
-      position: absolute; 
-      inset: -3px; 
-      border-radius: 9999px; 
-      pointer-events: none;
-      z-index: 5;
-      padding: 3px;
-      overflow: hidden;
-      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      mask-composite: exclude;
-      -webkit-mask-composite: xor;
+    .reviewer-info h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin-bottom: 2px;
+      color: var(--text);
     }
-    
-    .face-ai-energy-rail::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 400%; 
-      height: 400%;
-      background: conic-gradient(from 0deg, transparent 65%, #EC610E 80%, #FFE1CE 95%, #ffffff 100%);
-      animation: energy-loop 3.5s ease-in-out forwards;
+    .reviewer-info span {
+      font-size: 12px;
+      color: var(--brand);
+      font-weight: 700;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .reviewer-info p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 0;
     }
 
-    @keyframes energy-loop {
-      0% { transform: translate(-50%, -50%) rotate(0deg); opacity: 0; }
-      5% { opacity: 1; }
-      90% { opacity: 1; }
-      100% { transform: translate(-50%, -50%) rotate(765deg); opacity: 0.8; }
+    /* Footer */
+    footer {
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border);
+      padding: 4rem 0 3rem;
+      text-align: center;
+    }
+    .footer-logo img {
+      height: 32px;
+      width: auto;
+      margin-bottom: 1.5rem;
+      opacity: 0.8;
+    }
+    .footer-copy {
+      font-size: 13px;
+      color: var(--text-subtle);
+      line-height: 1.6;
     }
 
-    .face-ai-energy-rail::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: inherit;
-      filter: blur(8px);
-      opacity: 0.7;
+    /* Sticky Mobile CTA */
+    .sticky-mobile-cta {
+      display: none;
+      position: fixed;
+      bottom: 14px;
+      left: 14px;
+      right: 14px;
+      z-index: 999;
     }
-
+    .sticky-mobile-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background: var(--brand);
+      color: #FFFFFF !important;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 14px 20px;
+      border-radius: 9999px;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(236,97,14,0.4);
+    }
     @media (max-width: 768px) {
-      .face-ai-btn { padding: 16px 32px; font-size: 1rem; width: 100%; max-width: 340px; }
-      p.face-ai-subtext { color: rgba(255,255,255,0.85); font-size: 14px !important; font-style: italic; font-weight: 500 !important; max-width: 480px; line-height: 1.4; margin: 8px auto 0 auto !important; display: block !important; visibility: visible !important; }
+      .sticky-mobile-cta { display: block; }
+      body { padding-bottom: 70px; }
     }
-
   </style>
-  <script defer src="/assets/site-analytics.js"></script>
-    
-    <meta property="og:title" content="Acne Treatment & Skincare Routine Guides | MyMirror">
-    <meta property="og:description" content="Evidence-based dermatological guides for acne, dark spots, and barrier repair tailored for South Asian and Indian skin types. Reviewed by dermatologists.">
-    <meta property="og:image" content="https://mymirror.fit/assets/images/mymirror-og.jpg">
-    <meta name="twitter:title" content="Acne Treatment & Skincare Routine Guides | MyMirror">
-    <meta name="twitter:description" content="Evidence-based dermatological guides for acne, dark spots, and barrier repair tailored for South Asian and Indian skin types. Reviewed by dermatologists.">
-    <meta name="twitter:image" content="https://mymirror.fit/assets/images/mymirror-og.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-  
+
+  <!-- Structured Data JSON-LD Graph -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "CollectionPage",
-      "@id": "https://mymirror.fit/acne/#webpage",
-      "url": "https://mymirror.fit/acne/",
-      "name": "Acne Treatment & Skincare Routine Guides",
-      "description": "Evidence-based dermatological guides for acne, dark spots, and barrier repair tailored for South Asian and Indian skin types. Reviewed by dermatologists.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "MyMirror",
-        "url": "https://mymirror.fit"
-      },
-      "image": "https://mymirror.fit/assets/images/mymirror-og.jpg"
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://mymirror.fit/acne/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://mymirror.fit/"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://mymirror.fit/acne/#webpage",
+        "url": "https://mymirror.fit/acne/",
+        "name": "The Complete Acne & Clear Skin Hub (2026 Guide)",
+        "description": "Evidence-based acne education, pore cross-sections, dichotomy of acne, and personalized clear skin routines tailored for South Asian and Indian skin types.",
+        "inLanguage": "en",
+        "datePublished": "2024-04-10T08:00:00+05:30",
+        "dateModified": "2026-11-01T12:00:00+05:30",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://mymirror.fit/#website",
+          "url": "https://mymirror.fit",
+          "name": "MyMirror"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Acne Hub",
-          "item": "https://mymirror.fit/acne/"
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://mymirror.fit/#organization",
+          "name": "MyMirror",
+          "url": "https://mymirror.fit",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mymirror.fit/assets/logo-v4.png"
+          }
+        },
+        "reviewedBy": {
+          "@type": "Person",
+          "name": "Dr. Lipy Mehta",
+          "jobTitle": "Board-Certified Dermatologist (MD)",
+          "affiliation": "MyMirror Medical Advisory Board"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://mymirror.fit/assets/images/acne-hub-og-india.jpg"
         }
-      ]
-    }
-  ]
-}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://mymirror.fit/acne/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://mymirror.fit/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Acne Knowledge Hub",
+            "item": "https://mymirror.fit/acne/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://mymirror.fit/acne/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why do acne pimples happen even when I wash my face twice daily?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Acne is primarily driven by internal follicular dynamics rather than surface dirt. Hormonal signals trigger excess thick sebum inside the hair follicle, which binds with un-shed dead skin cells to create an airtight plug (microcomedone). Bacteria then feed on this trapped oil beneath the skin. Washing your face removes surface grime, but over-washing strips essential skin barrier ceramides, triggering rebound sebum production."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens under the skin when you squeeze or pop a pimple?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When you pinch a pimple, the lateral pressure pushes infected pus and bacteria downward and sideways, rupturing the thin follicular wall inside the dermis. This turns a superficial 3-day surface bump into an inflamed, deep cystic lesion that triggers severe melanin production (PIH) and causes permanent pitted scarring."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between non-inflammatory and inflammatory acne?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non-inflammatory acne consists of open comedones (blackheads) and closed comedones (whiteheads) with no bacterial infection or redness. Inflammatory acne consists of red tender papules, pus-filled pustules, nodules, and deep cysts caused by bacterial colonization and immune cell swelling."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does Indian skin get dark marks (PIH) so easily after acne?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Indian skin (Fitzpatrick skin types III to V) contains highly reactive melanocytes. Any inflammation, friction, or fingernail popping triggers these pigment cells to flood the injured area with excess melanin. This leads to post-inflammatory hyperpigmentation (PIH) that can linger for months without targeted tyrosinase inhibitors like Azelaic Acid, Tranexamic Acid, and strict SPF 50 sunscreen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I tell if my forehead bumps are fungal acne or regular acne?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Fungal acne (Malassezia folliculitis) presents as uniform, tiny, intensely itchy bumps clustered along the hairline and forehead that do not develop yellow pus heads. It worsens with sweat, humidity, and oily scalp oils, and does not respond to standard acne antibiotics. It clears rapidly with an antifungal 2% Ketoconazole wash."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://mymirror.fit/acne/#topguides",
+        "name": "Essential Dermatological Clear Skin Guides",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "BHA & Salicylic Acid Benefits Guide", "url": "https://mymirror.fit/acne/bha-beta-hydroxy-acid-salicylic-acid-benefits-india/" },
+          { "@type": "ListItem", "position": 2, "name": "Benzoyl Peroxide Short Contact Therapy Guide", "url": "https://mymirror.fit/acne/benzoyl-peroxide-short-contact-therapy-guide/" },
+          { "@type": "ListItem", "position": 3, "name": "Best Cica Moisturizers for Acne-Prone Skin", "url": "https://mymirror.fit/acne/best-cica-moisturizer-for-acne-prone-skin-india/" },
+          { "@type": "ListItem", "position": 4, "name": "Forehead Acne & Hair Oil Treatment Guide", "url": "https://mymirror.fit/acne/forehead-acne/" },
+          { "@type": "ListItem", "position": 5, "name": "Chin Acne Meaning & Hormonal PCOS Audit", "url": "https://mymirror.fit/acne/chin-acne/" },
+          { "@type": "ListItem", "position": 6, "name": "Back Acne & Bacne Body Wash Guide", "url": "https://mymirror.fit/acne/body-acne-india-bacne-chestne-guide/" }
+        ]
+      }
+    ]
+  }
   </script>
 </head>
 <body>
 
-<div class="trust-bar">
-    <span>Reviewed by Board-Certified Dermatologists</span> | 
-    <span>Updated April 2026</span>
-</div>
-
-<nav>
-  <div class="nav-inner">
-    <a class="nav-logo" href="/"><img fetchpriority="high" decoding="async" src="/acne/forehead-acne/logo-v4.png" alt="mymirror" /></a>
-    <div style="display:flex; gap:1.5rem;">
-      <a href="/acne/face-map/" style="font-weight:700; color:var(--color-brand); text-decoration:none; font-size:13px;">Skin Analysis →</a>
-    </div>
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <span class="trust-pill"><span class="trust-dot"></span> Reviewed by Dr. Lipy Mehta, MD (Dermatology)</span>
+    <span>•</span>
+    <span>Updated November 2026</span>
+    <span>•</span>
+    <span>Evidence-Based Clinical Protocol for Indian Skin</span>
   </div>
-</nav>
 
-<section class="hero">
-  <div class="container">
-    <h1 class="reveal">Acne Knowledge Hub</h1>
-    <p class="reveal" style="transition-delay: 0.1s;">The complete MyMirror collection of science-backed guides to identify, treat, and prevent breakouts.</p>
-  
-      <!-- Face AI Skin Analysis CTA -->
-      <div class="face-ai-cta-wrapper reveal" style="transition-delay: 0.5s; margin-top: 2.5rem;">
-        <a href="https://mymirror.fit/scan/" class="face-ai-btn">
-          <span class="face-ai-btn-text">Start your free skin analysis now</span>
-          <div class="face-ai-energy-rail"></div>
+  <!-- Main Navigation -->
+  <nav>
+    <div class="container nav-inner">
+      <a class="nav-logo" href="/" aria-label="MyMirror Home">
+        <img src="/assets/logo-v4.png" alt="MyMirror" width="148" height="32" fetchpriority="high">
+      </a>
+      <div class="nav-actions">
+        <a href="https://mymirror.fit/scan/" class="nav-scan-btn">
+          <span>Scan Face (Free)</span>
+          <span>→</span>
         </a>
-        <p class="face-ai-subtext">Scan your face to understand visible acne, oiliness, marks, texture, and skin signals in about 60 seconds.</p>
-      </div>
-</div>
-</section>
-
-<div class="container">
-  <div class="hub-grid">
-    <!-- CATEGORY: DIAGNOSTICS -->
-    <div class="category-card full reveal">
-      <span class="category-tag" style="background:#f0fdf4; color:#166534;">Clinical Basics</span>
-      <h2>Start Here: Identification</h2>
-      <p>Treatment fails when identification is wrong. Learn to read your skin before applying products.</p>
-      <div class="guide-list" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-        <a href="/acne/niacinamide-serums-india/" class="guide-link">The Ultimate Guide to Niacinamide Serums <span>→</span></a>
-        <a href="/acne/nose-pimple-treatments-home-remedies-clinical-cures/" class="guide-link">Nose Pimple Cures <span>→</span></a>
-        <a href="/acne/nose-acne-treatment/" class="guide-link">Nose Acne: Causes & Treatments <span>→</span></a>
-        <a href="/acne/cystic-chin-pimple/" class="guide-link">Treating Cystic Chin Pimples <span>→</span></a>
-        <a href="/acne/lower-face-treatment/" class="guide-link">Treating Lower-Face Acne <span>→</span></a>
-        <a href="/acne/chin-acne/" class="guide-link">Chin Acne: Causes & Treatments <span>→</span></a>
-        <a href="/acne/chin-acne-meaning/" class="guide-link">Chin Acne Meaning & Audit <span>→</span></a>
-        <a href="/acne/cystic-chin-pimple/" class="guide-link">Nodule vs. Cyst? Deep Breakouts <span>→</span></a>
-        <a href="/acne/pimple-zit/" class="guide-link">Pimple vs. Zit? Papules & Pustules <span>→</span></a>
-        <a href="/acne/types-of-acne/" class="guide-link">The Comprehensive Guide to Types of Acne <span>→</span></a>
-        <a href="/acne/blackheads-whiteheads/" class="guide-link">Clearing Blackheads & Whiteheads <span>→</span></a>
-        <a href="/acne/face-map/" class="guide-link">Interactive Face Mapping Tool <span>→</span></a>
       </div>
     </div>
+  </nav>
 
-    <!-- CATEGORY: CHEAT SHEETS -->
-    <div class="category-card full reveal">
-      <span class="category-tag" style="background:#fee2e2; color:#b91c1c;">Fast Action</span>
-      <h2>Diagnostic Cheat Sheets</h2>
-      <p>Save these visual battle plans to identify your triggers in seconds.</p>
-      <div class="guide-list" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-        <a href="/acne/forehead-acne/" class="guide-link">Forehead Acne Indian Cheat Sheet <span>→</span></a>
-        <a href="/acne/back-acne-treatment-body-wash-india/" class="guide-link">The Ultimate Bacne Cheat Sheet <span>→</span></a>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-badge">Medical Dermatology Hub</div>
+      <h1>The Complete Acne &amp; Clear Skin Guide for Indian Skin</h1>
+      <p class="lead">
+        Learn what is happening deep within your pores, decode why stubborn bumps form, and discover exact active routines that clear blemishes without scarring melanin-rich skin.
+      </p>
+
+      <!-- Face AI Scanner CTA -->
+      <div class="hero-cta-box">
+        <a href="https://mymirror.fit/scan/" class="face-ai-btn">
+          Start Your Free AI Skin Scan Now ✨
+        </a>
+        <span class="hero-cta-sub">Detect active pimple types, sebum levels, and skin barrier signals in 60 seconds.</span>
+      </div>
+
+      <!-- Hero Visual Banner -->
+      <div class="hero-banner-wrap">
+        <img 
+          src="/assets/images/acne-hub-hero-india.webp" 
+          alt="MyMirror Dermatology and Clear Skin Knowledge Hub for Indian Skin" 
+          class="hero-banner-img" 
+          width="1200" 
+          height="675" 
+          fetchpriority="high"
+        >
       </div>
     </div>
+  </header>
 
-    <!-- CATEGORY: FOREHEAD -->
-    <div class="category-card reveal">
-      <span class="category-tag"><a href="/acne/forehead-acne/" style="color: inherit; text-decoration: none;">Forehead Acne</a></span>
-      <h2>Forehead Mastery</h2>
-      <p>From <em>champi</em> runoff to monsoon bumps, master the forehead flare-zone.</p>
-      <div class="guide-list">
-        <a href="/acne/forehead-acne/" class="guide-link">Main Forehead Acne Guide <span>→</span></a>
-        <a href="/acne/forehead-acne/" class="guide-link">Fast Treatment Protocol <span>→</span></a>
-        <a href="/acne/forehead-acne/" class="guide-link">Safe Home Remedies <span>→</span></a>
-        <a href="/acne/forehead-acne/" class="guide-link">What Your Bumps Mean <span>→</span></a>
-        <a href="/acne/forehead-acne/" class="guide-link">Hinglish: Pimple ka Ilaj <span>→</span></a>
-        <a href="/acne/forehead-acne/" class="guide-link">The Dandruff Connection <span>→</span></a>
-      </div>
-    </div>
+  <main>
+    <!-- Section 1: Layers of Acne (Cross-Section) -->
+    <section id="layers-of-acne">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Pore Cross-Section</span>
+          <h2 class="section-title">1. The Layers of an Acne Bump: What's Underneath</h2>
+          <p class="section-desc">
+            A pimple is not simply surface oil or dirt. It is a biological structure with distinct architectural layers developing within the pilosebaceous follicle:
+          </p>
+        </div>
 
-    <!-- CATEGORY: BACK ACNE -->
-    <div class="category-card reveal">
-      <span class="category-tag" style="background:var(--color-brand-light); color:var(--color-brand-dark);"><a href="/acne/back-acne/" style="color: inherit; text-decoration: none;">Back Acne</a> (<a href="/acne/back-acne/" style="color: inherit; text-decoration: none;">Bacne</a>)</span>
-      <h2>Back & Body Care</h2>
-      <p>Clinical and natural solutions for the thickest skin on your body.</p>
-      <div class="guide-list">
-        <a href="/acne/back-acne-women/" class="guide-link">Back Acne for Women <span>→</span></a>
-        <a href="/acne/back-acne-women-30s/" class="guide-link">Bacne in your 30s & 40s <span>→</span></a>
-        <a href="/acne/back-acne-faq/" class="guide-link">Bacne FAQ: Every Answer <span>→</span></a>
-        <a href="/acne/back-acne-faq-hindi/" class="guide-link">Hinglish: Back Acne Sawal Jawab <span>→</span></a>
-        <a href="/acne/back-acne-natural-remedies/" class="guide-link">Natural Bacne Remedies <span>→</span></a>
-        <a href="/acne/back-acne/" class="guide-link">Complete Back Acne Manual <span>→</span></a>
-      </div>
-    </div>
+        <div class="layers-layout">
+          <div class="layers-img-wrap">
+            <img 
+              src="/assets/images/layers-of-acne-cross-section.webp" 
+              alt="Medical 3D Cross Section Diagram of Acne Pimple Layers Under Skin" 
+              class="layers-img" 
+              width="960" 
+              height="720" 
+              loading="lazy"
+            >
+          </div>
 
-    <!-- CATEGORY: DEMOGRAPHICS -->
-    <div class="category-card third reveal">
-      <span class="category-tag" style="background:#e0f2fe; color:#0369a1;">For Men</span>
-      <h3>Men's Acne</h3>
-      <div class="guide-list">
-        <a href="/acne/why-men-get-acne/" class="guide-link">Why Men Get Acne <span>→</span></a>
-        <a href="/acne/men-acne-faq/" class="guide-link">Men's 30 FAQs Answered <span>→</span></a>
-        <a href="/acne/forehead-acne/" class="guide-link">Small Bumps Guide <span>→</span></a>
-      </div>
-    </div>
+          <div class="layers-cards">
+            <div class="layer-card">
+              <span class="layer-card-num">Layer 1</span>
+              <h3>The Surface Epidermal Dome (The "Roof")</h3>
+              <p>A stretched, paper-thin layer of stratum corneum skin cells held taut over rising pressure. Fingernail popping tears this roof jaggedly, creating an open micro-wound that takes weeks to repair and often leaves a pitted scar.</p>
+            </div>
 
-    <div class="category-card third reveal">
-      <span class="category-tag" style="background:#fef2f2; color:#991b1b;">Life Stages</span>
-      <h3>Special Cases</h3>
-      <div class="guide-list">
-        <a href="/acne/teenage-acne-india-parents-guide/" class="guide-link">Teenage Acne Guide <span>→</span></a>
-        <a href="/acne/pregnancy-forehead-acne/" class="guide-link">Pregnancy Safe Skincare <span>→</span></a>
-        <a href="/acne/face-acne-lifestyle-triggers-india/" class="guide-link">Adult Acne Report 2026 <span>→</span></a>
-      </div>
-    </div>
+            <div class="layer-card">
+              <span class="layer-card-num">Layer 2</span>
+              <h3>The Keratin Plug (The "Cork")</h3>
+              <p>A dense, sticky stopper formed when dead skin cells fail to shed naturally and combine with thick squalene oil, sealing the pore entrance in complete darkness.</p>
+            </div>
 
-    <div class="category-card third reveal">
-      <span class="category-tag" style="background:#e0f2fe; color:#0369a1;">Product Guides</span>
-      <h3>Treatment Formulations</h3>
-      <div class="guide-list">
-        <a href="/acne/best-face-wash-for-oily-acne-prone-skin-india/" class="guide-link">Best Men's Face Wash <span>→</span></a>
-        <a href="/acne/best-benzoyl-peroxide-face-wash-india/" class="guide-link">Best Benzoyl Peroxide Face Wash <span>→</span></a>
-        <a href="/acne/salicylic-acid-face-wash-for-acne-india/" class="guide-link">Best Salicylic Acid Face Wash <span>→</span></a>
-        <a href="/acne/1-vs-2-percent-salicylic-acid/" class="guide-link">1% vs 2% Salicylic Acid <span>→</span></a>
-        <a href="/acne/mixing-salicylic-acid-with-retinol-adapalene/" class="guide-link">Mixing Salicylic Acid & Retinol <span>→</span></a>
-        <a href="/acne/salicylic-acid-for-beginners/" class="guide-link">Salicylic Acid Beginner's Guide <span>→</span></a>
-        <a href="/acne/salicylic-acid-face-wash-vs-serum/" class="guide-link">Salicylic Wash vs Serum <span>→</span></a>
-        <a href="/acne/best-salicylic-acid-products-india/" class="guide-link">Best Salicylic Acid Products <span>→</span></a>
-        <a href="/acne/best-pimple-patch-india/" class="guide-link">Best Pimple Patches (Cost Analysis) <span>→</span></a>
-        <a href="/acne/adapalene-clindamycin-phosphate-gel/" class="guide-link">Adapalene & Clindamycin Guide <span>→</span></a>
-        <a href="/acne/adapalene-benzoyl-peroxide-gel/" class="guide-link">Adapalene & BPO Gel Guide <span>→</span></a>
-        <a href="/acne/adapalene-before-after-results/" class="guide-link">Adapalene Before & After Results <span>→</span></a>
-        <a href="/acne/adapalene-differin-adaferin-gel-comparison-india/" class="guide-link">Adapalene Gels Comparison <span>→</span></a>
-        <a href="/acne/niacinamide-serums-india/" class="guide-link">Niacinamide Serums Guide <span>→</span></a>
-        <a href="/acne/best-non-comedogenic-moisturizer-india/" class="guide-link">Best Non-Comedogenic Moisturizers <span>→</span></a>
-      </div>
-    </div>
+            <div class="layer-card">
+              <span class="layer-card-num">Layer 3</span>
+              <h3>The Bacterial Biofilm (<em>C. acnes</em> Colony)</h3>
+              <p>Cut off from fresh air, anaerobic bacteria rapidly multiply, feasting on trapped triglycerides and secreting enzymes that degrade the follicular wall from within.</p>
+            </div>
 
-    <div class="category-card third reveal">
-      <span class="category-tag" style="background:#f0fdf4; color:#166534;">Diagnostics</span>
-      <h3>The Science</h3>
-      <div class="guide-list">
-        <a href="/acne/forehead-acne/" class="guide-link">Organ Connection Theory <span>→</span></a>
+            <div class="layer-card">
+              <span class="layer-card-num">Layer 4</span>
+              <h3>The White Blood Cell Battlefield (The "Pus")</h3>
+              <p>Pus is not dirt or bad blood. It is millions of your body’s own white blood cells (neutrophils) that migrated to the pore to neutralize the bacterial invasion.</p>
+            </div>
+
+            <div class="layer-card">
+              <span class="layer-card-num">Layer 5</span>
+              <h3>The Dermal Vascular Base &amp; Melanin Trigger</h3>
+              <p>Capillaries dilate to deliver immune defense (creating the red halo), while nearby melanocytes in Indian skin trigger extra melanin output, creating post-acne dark marks.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rupture Danger Box -->
+        <div class="callout-rupture">
+          <h4>⚠️ The Hydraulic Rupture Danger: Why Squeezing Causes Long-Term Damage</h4>
+          <p>
+            When you pinch a bump with fingernails, 50% of that hydraulic pressure pushes downward into the dermis. The fragile follicular wall ruptures sideways underneath the skin surface, spraying bacteria, pus, and cellular debris into healthy dermis tissue. This transforms a minor 3-day surface blemish into an agonizing 8-week deep cystic nodule and triggers intense post-inflammatory hyperpigmentation.
+          </p>
+        </div>
       </div>
+    </section>
+
+    <!-- Section 2: Dichotomy of Acne -->
+    <section id="dichotomy">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Diagnostic Framework</span>
+          <h2 class="section-title">2. The Dichotomy of Acne: 4 Fundamental Splits</h2>
+          <p class="section-desc">
+            Treatment fails when you treat the wrong side of the problem. Dermatologists classify breakouts along four core splits:
+          </p>
+        </div>
+
+        <div class="dichotomy-grid">
+          <div class="dichotomy-card">
+            <span class="dichotomy-tag">Split 1: Clinical</span>
+            <h3>Comedones vs Inflammatory</h3>
+            <div class="dichotomy-split">
+              <div class="dichotomy-side">
+                <strong>Non-Inflammatory:</strong>
+                Blackheads &amp; whiteheads. No pain or redness.
+              </div>
+              <div class="dichotomy-side">
+                <strong>Inflammatory:</strong>
+                Red papules, yellow pustules, swollen cysts.
+              </div>
+            </div>
+            <p class="dichotomy-lesson">
+              <strong>Rule:</strong> Comedones need <em>Salicylic Acid or Retinoids</em> to dissolve the plug. Inflammatory bumps need <em>Benzoyl Peroxide or Azelaic Acid</em> to stop bacteria.
+            </p>
+          </div>
+
+          <div class="dichotomy-card">
+            <span class="dichotomy-tag">Split 2: Depth</span>
+            <h3>Surface vs Deep Dermal</h3>
+            <div class="dichotomy-split">
+              <div class="dichotomy-side">
+                <strong>Surface Bumps:</strong>
+                Sit on the epidermis; clear in 2–3 weeks with topicals.
+              </div>
+              <div class="dichotomy-side">
+                <strong>Deep Nodules:</strong>
+                Feel like hard marbles under skin; high scar risk.
+              </div>
+            </div>
+            <p class="dichotomy-lesson">
+              <strong>Rule:</strong> Surface pimples heal with topical care. Deep hormonal cysts cannot be scrubbed away and require systemic or oral dermatologist care.
+            </p>
+          </div>
+
+          <div class="dichotomy-card">
+            <span class="dichotomy-tag">Split 3: Microbial</span>
+            <h3>Bacterial vs Fungal</h3>
+            <div class="dichotomy-split">
+              <div class="dichotomy-side">
+                <strong>Bacterial:</strong>
+                Varying sizes, oily T-zone, pus tops, driven by <em>C. acnes</em>.
+              </div>
+              <div class="dichotomy-side">
+                <strong>Fungal:</strong>
+                Uniform tiny bumps, intensely itchy, clustered along hairline.
+              </div>
+            </div>
+            <p class="dichotomy-lesson">
+              <strong>Rule:</strong> Acne antibiotics worsen fungal folliculitis. Fungal bumps require an antifungal wash like <em>Ketoconazole 2%</em>.
+            </p>
+          </div>
+
+          <div class="dichotomy-card">
+            <span class="dichotomy-tag">Split 4: Timeline</span>
+            <h3>Active Acne vs Post-Marks</h3>
+            <div class="dichotomy-split">
+              <div class="dichotomy-side">
+                <strong>Active Infection:</strong>
+                Raised, tender, actively inflamed bumps.
+              </div>
+              <div class="dichotomy-side">
+                <strong>Flat Marks:</strong>
+                Red vascular marks (PIE) or brown melanin spots (PIH).
+              </div>
+            </div>
+            <p class="dichotomy-lesson">
+              <strong>Rule:</strong> Never apply harsh acne acids to flat healed spots. Dark marks need <em>tyrosinase inhibitors (Tranexamic, Arbutin)</em> and daily sunscreen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: 4 Inside Stages -->
+    <section id="stages">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Biology of Formation</span>
+          <h2 class="section-title">3. How a Single Pimple Forms: 4 Biological Steps</h2>
+          <p class="section-desc">
+            Breakouts follow a predictable biological cascade that begins weeks before anything visible appears on your skin:
+          </p>
+        </div>
+
+        <div class="stages-track">
+          <div class="stage-item">
+            <div class="stage-num">1</div>
+            <h4>Sebum Hyper-Secretion</h4>
+            <p>Hormonal fluctuations (androgens) or high humidity stimulate sebaceous glands to produce excess sebum that is thicker and stickier than normal.</p>
+          </div>
+
+          <div class="stage-item">
+            <div class="stage-num">2</div>
+            <h4>Dead Cell Clumping</h4>
+            <p>Normally, dead skin cells shed away invisibly. In acne-prone pores, hyperkeratinization causes cells to stick together like wet leaves in a storm drain.</p>
+          </div>
+
+          <div class="stage-item">
+            <div class="stage-num">3</div>
+            <h4>The Airtight Plug</h4>
+            <p>The mixture of sticky oil and un-shed dead cells forms a microscopic plug (microcomedone) that seals the pore off from atmospheric oxygen.</p>
+          </div>
+
+          <div class="stage-item">
+            <div class="stage-num">4</div>
+            <h4>Bacterial Fire &amp; Swelling</h4>
+            <p><em>Cutibacterium acnes</em> bacteria flourish in the oxygen-depleted oil. The immune system dispatches white blood cells, causing visible redness, swelling, and tenderness.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: 6 Everyday Triggers -->
+    <section id="triggers">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Environmental Context</span>
+          <h2 class="section-title">4. Why Breakouts Flare: 6 Everyday Triggers in India</h2>
+          <p class="section-desc">
+            Breakouts are rarely random. In the Indian climate, these common everyday factors account for the majority of sudden flares:
+          </p>
+        </div>
+
+        <div class="triggers-grid">
+          <div class="trigger-card">
+            <span class="trigger-icon">🥥</span>
+            <h3>Hair Oil &amp; Scalp Runoff (Champi)</h3>
+            <p>Leaving heavy coconut, mustard, or castor oil on hair overnight causes oils to migrate down the forehead during sleep, blocking hairline pores.</p>
+            <a href="/acne/stop-forehead-acne-hair-products-india/" class="trigger-link">Read Forehead Hair Oil Guide →</a>
+          </div>
+
+          <div class="trigger-card">
+            <span class="trigger-icon">🚿</span>
+            <h3>Hard Water &amp; High-pH Barrier Damage</h3>
+            <p>Tap water in major metro cities contains high levels of calcium and magnesium that leave an insoluble mineral layer, disrupting the skin's acidic 5.5 pH mantle.</p>
+            <a href="/acne/hard-water-face-wash-dry-skin-barrier-damage-india/" class="trigger-link">Read Hard Water Skincare Guide →</a>
+          </div>
+
+          <div class="trigger-card">
+            <span class="trigger-icon">🥤</span>
+            <h3>High Glycemic Diet &amp; Whey Protein Spikes</h3>
+            <p>Frequent sugary chai, processed sweets, and rapid-digesting whey protein isolate spike insulin and IGF-1, enlarging oil glands and boosting sebum production.</p>
+            <a href="/acne/whey-protein-acne-gym-breakout-treatment-india/" class="trigger-link">Read Gym &amp; Diet Acne Guide →</a>
+          </div>
+
+          <div class="trigger-card">
+            <span class="trigger-icon">🛵</span>
+            <h3>Helmet Friction &amp; Trapped Sweat</h3>
+            <p>Daily two-wheeler riding traps heat and sweat under synthetic helmet straps (Acne Mechanica), forcing bacteria and friction against the jawline and forehead.</p>
+            <a href="/acne/helmet-acne-mechanica-forehead-prevention-india/" class="trigger-link">Read Helmet Acne Prevention Guide →</a>
+          </div>
+
+          <div class="trigger-card">
+            <span class="trigger-icon">🩸</span>
+            <h3>Hormonal Surges &amp; PCOS Signals</h3>
+            <p>Monthly progesterone drops and androgen surges before menstrual cycles cause deep, tender, jawline bumps that do not respond to ordinary scrubs.</p>
+            <a href="/acne/pcos-acne-treatment-india/" class="trigger-link">Read PCOS &amp; Hormonal Acne Guide →</a>
+          </div>
+
+          <div class="trigger-card">
+            <span class="trigger-icon">🧼</span>
+            <h3>The Over-Washing &amp; Stripping Trap</h3>
+            <p>Washing your face 4 times daily with harsh foaming scrubs removes essential barrier ceramides. In response, skin compensates by producing excess rebound oil.</p>
+            <a href="/acne/active-burn-skin-barrier-healing-guide-india/" class="trigger-link">Read Barrier Recovery Guide →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: The 3 Imposters / Lookalikes -->
+    <section id="lookalikes">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Differential Diagnosis</span>
+          <h2 class="section-title">5. Is It Truly Acne? 3 Lookalikes That Confuse People</h2>
+          <p class="section-desc">
+            Many conditions look identical to classic pimples but require completely different treatment approaches:
+          </p>
+        </div>
+
+        <div class="imposter-grid">
+          <div class="imposter-card">
+            <span class="imposter-badge">Lookalike A</span>
+            <h3>Fungal Acne (Malassezia Folliculitis)</h3>
+            <p>Clusters of identical tiny bumps on the forehead and hairline that itch in heat or sweat. This is an overgrowth of natural skin yeast, not bacteria.</p>
+            <div class="imposter-clue">
+              <strong>Diagnostic Clue:</strong> Responds to 2% Ketoconazole shampoo wash; gets worse if you use acne antibiotics.
+            </div>
+            <a href="/acne/fungal-acne-vs-regular-acne-india/" class="trigger-link">Fungal Acne Deep-Dive →</a>
+          </div>
+
+          <div class="imposter-card">
+            <span class="imposter-badge">Lookalike B</span>
+            <h3>Sebaceous Filaments (Nose Pinpoints)</h3>
+            <p>Uniform grayish or yellowish pinpoints dotting the nose and central chin. These are healthy channels directing oil to the skin surface, not true blackheads.</p>
+            <div class="imposter-clue">
+              <strong>Diagnostic Clue:</strong> Always refill within 48 hours of nose strips. Treat with 2% Salicylic Acid to keep pores clear.
+            </div>
+            <a href="/acne/sebaceous-filaments-vs-blackheads-nose-removal-india/" class="trigger-link">Filaments vs Blackheads Guide →</a>
+          </div>
+
+          <div class="imposter-card">
+            <span class="imposter-badge">Lookalike C</span>
+            <h3>Perioral Dermatitis</h3>
+            <p>Tiny red bumps, stinging, and pink scaling concentrated around the mouth, chin crease, and nose folds, with a clear boundary right around the lip edge.</p>
+            <div class="imposter-clue">
+              <strong>Diagnostic Clue:</strong> Triggered by steroid creams, heavy waxes, or SLS toothpaste. Avoid acne acids; use barrier repair.
+            </div>
+            <a href="/acne/chin-acne-vs-perioral-dermatitis-guide/" class="trigger-link">Perioral Dermatitis Guide →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Visual Identification Gallery -->
+    <section id="identification">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Visual Atlas</span>
+          <h2 class="section-title">6. What Kind of Bump Is on Your Face?</h2>
+          <p class="section-desc">
+            Identify your exact breakout type to determine the right ingredient match:
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <div class="gallery-card-body">
+              <span class="gallery-badge" style="background:#E0F2FE; color:#0369A1;">Non-Inflammatory</span>
+              <h3>Blackheads (Open Comedones)</h3>
+              <p>Pore plugs open to air. Oxygen oxidizes trapped sebum and melanin, turning the tip dark. Never squeeze; use oil-soluble acids.</p>
+              <div class="gallery-rx">
+                <strong>Best Solution:</strong> 2% Salicylic Acid (BHA) Leave-On Serum
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-body">
+              <span class="gallery-badge" style="background:#EBF8F2; color:#0E7048;">Non-Inflammatory</span>
+              <h3>Whiteheads (Closed Comedones)</h3>
+              <p>Trapped keratin plugs covered by a thin layer of skin. Appear as small, painless skin-colored pebbles under good lighting.</p>
+              <div class="gallery-rx">
+                <strong>Best Solution:</strong> Adapalene 0.1% or 2% BHA Wash
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-body">
+              <span class="gallery-badge" style="background:#FEF3C7; color:#B45309;">Inflammatory</span>
+              <h3>Papules (Tender Red Bumps)</h3>
+              <p>Small, swollen pink or red bumps with no visible pus head. The pore wall has begun leaking bacteria into surrounding tissue.</p>
+              <div class="gallery-rx">
+                <strong>Best Solution:</strong> Benzoyl Peroxide 2.5% Short Contact Therapy
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-body">
+              <span class="gallery-badge" style="background:#FEE2E2; color:#991B1B;">Inflammatory</span>
+              <h3>Pustules (Pus-Filled Heads)</h3>
+              <p>Classic pimples with a defined yellow or white center surrounded by a ring of inflammation. Do not pop with fingernails.</p>
+              <div class="gallery-rx">
+                <strong>Best Solution:</strong> Hydrocolloid Pimple Patch + BPO 2.5%
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-body">
+              <span class="gallery-badge" style="background:#F3E8FF; color:#7E22CE;">Severe Dermal</span>
+              <h3>Nodules &amp; Cysts</h3>
+              <p>Deep, painful lumps sitting beneath the surface without a head. High risk of pitted scarring; driven by internal hormones.</p>
+              <div class="gallery-rx">
+                <strong>Best Solution:</strong> Dermatologist Clinical Care / Prescription
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-body">
+              <span class="gallery-badge" style="background:#FFF3E8; color:#D9531E;">Post-Acne</span>
+              <h3>Dark Marks (PIH) &amp; Red Marks (PIE)</h3>
+              <p>Flat discolored marks left behind after inflammation. Indian skin produces brown melanin spots (PIH) from minor picking.</p>
+              <div class="gallery-rx">
+                <strong>Best Solution:</strong> Azelaic Acid + Tranexamic Acid + SPF 50
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Face Zones Navigator -->
+    <section id="zones">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Face &amp; Body Mapping</span>
+          <h2 class="section-title">7. Where Are You Breaking Out?</h2>
+          <p class="section-desc">
+            Breakout placement offers direct clues to external habits, clothing contact, and internal triggers:
+          </p>
+        </div>
+
+        <div class="zones-grid">
+          <a href="/acne/forehead-acne/" class="zone-card">
+            <div class="zone-icon">💆</div>
+            <h3>Forehead &amp; Hairline</h3>
+            <span>Hair Oils &amp; Sweat</span>
+            <p>Dandruff, overnight champi oils, helmet straps, and heavy waxes.</p>
+          </a>
+
+          <a href="/acne/sebaceous-filaments-vs-blackheads-nose-removal-india/" class="zone-card">
+            <div class="zone-icon">👃</div>
+            <h3>Nose &amp; T-Zone</h3>
+            <span>Sebum Concentration</span>
+            <p>Dense sebaceous glands, blackheads, and visible filaments.</p>
+          </a>
+
+          <a href="/acne/cheek-acne-meaning/" class="zone-card">
+            <div class="zone-icon">📱</div>
+            <h3>Cheeks</h3>
+            <span>Contact &amp; Pillowcases</span>
+            <p>Mobile screen bacteria, unwashed pillowcases, and dry barrier friction.</p>
+          </a>
+
+          <a href="/acne/chin-acne/" class="zone-card">
+            <div class="zone-icon">🔄</div>
+            <h3>Chin &amp; Jawline</h3>
+            <span>Hormonal Fluctuations</span>
+            <p>Menstrual cycles, PCOS androgen spikes, and stress cortisol.</p>
+          </a>
+
+          <a href="/acne/body-acne-india-bacne-chestne-guide/" class="zone-card">
+            <div class="zone-icon">👕</div>
+            <h3>Back &amp; Chest (Bacne)</h3>
+            <span>Occlusion &amp; Friction</span>
+            <p>Synthetic gym shirts, workout sweat, and hair conditioner residue.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Active Ingredients Matcher -->
+    <section id="ingredients">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Ingredient Science</span>
+          <h2 class="section-title">8. Which Active Ingredient Solves Your Problem?</h2>
+          <p class="section-desc">
+            Match your primary breakout symptom with the exact clinically proven active ingredient:
+          </p>
+        </div>
+
+        <div class="actives-table-wrap">
+          <table class="actives-table">
+            <thead>
+              <tr>
+                <th>Active Ingredient</th>
+                <th>How It Works</th>
+                <th>Best For</th>
+                <th>Usage Advice for Indian Skin</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Salicylic Acid (BHA 1%–2%)</strong></td>
+                <td>Oil-soluble acid that penetrates deep into sebum-filled pores to dissolve dead skin plugs.</td>
+                <td>Blackheads, whiteheads, oily T-zone congestion, sebaceous filaments.</td>
+                <td>Use leave-on serum 2–3 nights weekly on dry skin. Daily use causes barrier peeling.</td>
+              </tr>
+              <tr>
+                <td><strong>Benzoyl Peroxide (2.5%)</strong></td>
+                <td>Releases oxygen inside the follicle to destroy <em>C. acnes</em> bacteria without creating resistance.</td>
+                <td>Active red inflamed papules, pustules with pus heads.</td>
+                <td>Use <strong>Short Contact Therapy</strong> (apply for 5–10 mins, rinse off) to prevent dryness.</td>
+              </tr>
+              <tr>
+                <td><strong>Adapalene (0.1% Retinoid)</strong></td>
+                <td>Normalizes cellular turnover inside the follicle, stopping microcomedones before they form.</td>
+                <td>Chronic stubborn blackheads, recurring breakouts, rough texture.</td>
+                <td>Apply a pea-sized amount strictly over moisturizer (sandwich method) at night.</td>
+              </tr>
+              <tr>
+                <td><strong>Azelaic Acid (10%–15%)</strong></td>
+                <td>Dual-action anti-inflammatory and mild antibacterial that inhibits tyrosinase pigment.</td>
+                <td>Acne with redness, sensitive skin, fading dark post-acne marks (PIH).</td>
+                <td>Gentle on Indian skin; safe for daytime and nighttime use alongside sunscreen.</td>
+              </tr>
+              <tr>
+                <td><strong>Centella Asiatica (Cica)</strong></td>
+                <td>Botanical rich in madecassoside that calms vascular dilation and repairs lipid barriers.</td>
+                <td>Stinging, redness from over-exfoliation, post-inflammatory erythema (PIE).</td>
+                <td>Use as a lightweight gel-cream moisturizer twice daily when skin feels tight.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 9: Interactive Routine Finder -->
+    <section id="routine-finder">
+      <div class="container">
+        <div class="section-header" style="text-align: center;">
+          <span class="section-eyebrow">Interactive Selector</span>
+          <h2 class="section-title">9. Find Your Clear Skin Routine in 30 Seconds</h2>
+          <p class="section-desc" style="margin: 0 auto;">
+            Select your skin type and your main concern to see your exact step-by-step regimen:
+          </p>
+        </div>
+
+        <div class="finder-widget">
+          <div class="finder-step-title">Step 1: What is your primary skin type?</div>
+          <div class="finder-options" id="skin-type-options">
+            <button type="button" class="finder-btn active" data-skin="oily">Oily / Greasy</button>
+            <button type="button" class="finder-btn" data-skin="combo">Combination (Oily T-Zone)</button>
+            <button type="button" class="finder-btn" data-skin="dry">Dry / Easily Irritated</button>
+          </div>
+
+          <div class="finder-step-title">Step 2: What is your main concern right now?</div>
+          <div class="finder-options" id="concern-options">
+            <button type="button" class="finder-btn active" data-concern="blackheads">Blackheads &amp; Clogged Pores</button>
+            <button type="button" class="finder-btn" data-concern="redpustules">Active Red Pimples</button>
+            <button type="button" class="finder-btn" data-concern="hormonal">Hormonal Chin Bumps</button>
+            <button type="button" class="finder-btn" data-concern="darkmarks">Dark Spots After Pimples</button>
+          </div>
+
+          <div class="finder-result show" id="routine-output">
+            <!-- Dynamic JS Output Rendered Here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 10: YouTube Masterclass -->
+    <section id="masterclass">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Dermatologist Masterclass</span>
+          <h2 class="section-title">10. Video Guides from Board-Certified Experts</h2>
+          <p class="section-desc">
+            Watch concise visual guides on active ingredients and routine building for Indian skin:
+          </p>
+        </div>
+
+        <div class="video-grid">
+          <div class="video-card">
+            <div class="video-frame-wrap">
+              <iframe 
+                src="https://www.youtube.com/embed/RRgN6V-_lkY" 
+                title="Salicylic Acid Kaise Use Kare by Dr. Aanchal MD" 
+                loading="lazy" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-doctor">Dr. Aanchal Panth, MD</div>
+              <h3>Salicylic Acid: Kaise Use Kare &amp; Product Recommendations</h3>
+              <p>How to use BHA properly without causing barrier peeling or chemical burns on Indian skin.</p>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-frame-wrap">
+              <iframe 
+                src="https://www.youtube.com/embed/TjTLV3Lb-Pc" 
+                title="How to Treat PCOS & Hormonal Chin Acne by Dr. Noopur Jain" 
+                loading="lazy" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-doctor">Dr. Noopur Jain, Dermatologist</div>
+              <h3>How to Treat PCOS Acne &amp; Hormonal Chin Breakouts</h3>
+              <p>Clinical management of hormonal flare-ups along the lower face and jawline.</p>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="video-frame-wrap">
+              <iframe 
+                src="https://www.youtube.com/embed/2TZw7Yy0KmU" 
+                title="5 Biggest Acne Mistakes by Doctorly" 
+                loading="lazy" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-info">
+              <div class="video-doctor">Doctorly (Dermatologists)</div>
+              <h3>5 Biggest Acne Mistakes You Must Stop Making</h3>
+              <p>Why over-scrubbing, skipping moisturizer, and picking spots makes acne significantly worse.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 11: Intelligent Directory Hubs -->
+    <section id="directory">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Comprehensive Knowledge Hub</span>
+          <h2 class="section-title">11. Explore 480+ Dermatologist Guides</h2>
+          <p class="section-desc">
+            Browse through our organized collection of clinical deep-dives, product comparisons, and routine guides:
+          </p>
+        </div>
+
+        <div class="directory-bento">
+          <!-- Hub 1: Diagnostics -->
+          <div class="bento-hub">
+            <div class="bento-hub-header">
+              <span class="bento-tag" style="background:#EBF8F2; color:#0E7048;">Diagnostic Guides</span>
+              <h3>Identify Your Bumps</h3>
+            </div>
+            <ul class="bento-links">
+              <li><a href="/acne/types-of-acne/" class="bento-link">The Complete Guide to Acne Types <span>→</span></a></li>
+              <li><a href="/acne/fungal-acne-vs-regular-acne-india/" class="bento-link">Fungal Acne vs Bacterial Acne <span>→</span></a></li>
+              <li><a href="/acne/comedones-blackheads-whiteheads-explained/" class="bento-link">Comedones, Blackheads &amp; Whiteheads <span>→</span></a></li>
+              <li><a href="/acne/sebaceous-filaments-vs-blackheads-nose-removal-india/" class="bento-link">Sebaceous Filaments vs Blackheads <span>→</span></a></li>
+              <li><a href="/acne/acne-rosacea-vs-acne-vulgaris-india/" class="bento-link">Acne Rosacea vs Acne Vulgaris <span>→</span></a></li>
+            </ul>
+          </div>
+
+          <!-- Hub 2: Ingredients -->
+          <div class="bento-hub">
+            <div class="bento-hub-header">
+              <span class="bento-tag" style="background:#E0F2FE; color:#0369A1;">Active Formulations</span>
+              <h3>Top Ingredients Decoded</h3>
+            </div>
+            <ul class="bento-links">
+              <li><a href="/acne/bha-beta-hydroxy-acid-salicylic-acid-benefits-india/" class="bento-link">BHA &amp; Salicylic Acid Benefits Guide <span>→</span></a></li>
+              <li><a href="/acne/benzoyl-peroxide-short-contact-therapy-guide/" class="bento-link">Benzoyl Peroxide Short Contact Therapy <span>→</span></a></li>
+              <li><a href="/acne/adapalene-before-after-results/" class="bento-link">Adapalene Before &amp; After Clinical Guide <span>→</span></a></li>
+              <li><a href="/acne/azelaic-acid-for-acne-dark-spots-india/" class="bento-link">Azelaic Acid for Acne &amp; Dark Spots <span>→</span></a></li>
+              <li><a href="/acne/best-cica-moisturizer-for-acne-prone-skin-india/" class="bento-link">Best Cica Moisturizers for Acne Skin <span>→</span></a></li>
+            </ul>
+          </div>
+
+          <!-- Hub 3: Marks & Scars -->
+          <div class="bento-hub">
+            <div class="bento-hub-header">
+              <span class="bento-tag" style="background:#FFF3E8; color:#D9531E;">Post-Acne Marks</span>
+              <h3>Fading Dark Spots &amp; Red Marks</h3>
+            </div>
+            <ul class="bento-links">
+              <li><a href="/acne/pie-vs-pih-indian-skin/" class="bento-link">PIE (Red Marks) vs PIH (Dark Spots) <span>→</span></a></li>
+              <li><a href="/acne/post-pimple-mark-removal-the-indian-skin-guide-to-pih-pie/" class="bento-link">Post-Pimple Mark Removal Guide <span>→</span></a></li>
+              <li><a href="/acne/best-tranexamic-acid-serum-for-hyperpigmentation-india/" class="bento-link">Tranexamic Acid Hyperpigmentation Guide <span>→</span></a></li>
+              <li><a href="/acne/acne-scar-removal-cream-myth-india/" class="bento-link">Acne Scar Creams: Myths vs Facts <span>→</span></a></li>
+              <li><a href="/acne/pitted-acne-scars-treatment-india/" class="bento-link">Pitted Acne Scars Clinical Protocol <span>→</span></a></li>
+            </ul>
+          </div>
+
+          <!-- Hub 4: Zones -->
+          <div class="bento-hub">
+            <div class="bento-hub-header">
+              <span class="bento-tag" style="background:#F3E8FF; color:#7E22CE;">Specific Body Zones</span>
+              <h3>Targeted Placement Guides</h3>
+            </div>
+            <ul class="bento-links">
+              <li><a href="/acne/forehead-acne/" class="bento-link">Forehead Acne Indian Cheat Sheet <span>→</span></a></li>
+              <li><a href="/acne/chin-acne/" class="bento-link">Chin Acne Meaning &amp; Treatment <span>→</span></a></li>
+              <li><a href="/acne/cheek-acne-meaning/" class="bento-link">Cheek Acne Causes &amp; Mobile Habits <span>→</span></a></li>
+              <li><a href="/acne/jawline-acne-treatment-india/" class="bento-link">Jawline Acne &amp; Hormonal Balance <span>→</span></a></li>
+              <li><a href="/acne/body-acne-india-bacne-chestne-guide/" class="bento-link">Back, Chest &amp; Body Acne Protocol <span>→</span></a></li>
+            </ul>
+          </div>
+
+          <!-- Hub 5: Lifestyle & Triggers -->
+          <div class="bento-hub">
+            <div class="bento-hub-header">
+              <span class="bento-tag" style="background:#FEF3C7; color:#B45309;">Triggers &amp; Lifestyle</span>
+              <h3>Habits That Cause Flares</h3>
+            </div>
+            <ul class="bento-links">
+              <li><a href="/acne/stop-forehead-acne-hair-products-india/" class="bento-link">Stop Forehead Acne from Hair Oils <span>→</span></a></li>
+              <li><a href="/acne/hard-water-face-wash-dry-skin-barrier-damage-india/" class="bento-link">Hard Water &amp; Dry Skin Barrier Damage <span>→</span></a></li>
+              <li><a href="/acne/whey-protein-acne-gym-breakout-treatment-india/" class="bento-link">Whey Protein &amp; Post-Workout Breakouts <span>→</span></a></li>
+              <li><a href="/acne/pcos-acne-treatment-india/" class="bento-link">PCOS Acne Holistic Treatment Plan <span>→</span></a></li>
+              <li><a href="/acne/double-cleansing-oily-acne-skin-india/" class="bento-link">Double Cleansing for Oily Acne Skin <span>→</span></a></li>
+            </ul>
+          </div>
+
+          <!-- Hub 6: Budget Routines -->
+          <div class="bento-hub">
+            <div class="bento-hub-header">
+              <span class="bento-tag" style="background:#EBF8F2; color:#0E7048;">Affordable Pharmacy</span>
+              <h3>Routines Under ₹500</h3>
+            </div>
+            <ul class="bento-links">
+              <li><a href="/acne/acne-routine-under-500-india/" class="bento-link">Complete Acne Routine Under ₹500 <span>→</span></a></li>
+              <li><a href="/acne/best-face-wash-for-oily-acne-prone-skin-india/" class="bento-link">Best Oily Skin Face Washes in India <span>→</span></a></li>
+              <li><a href="/acne/best-ceramide-moisturizer-acne-prone-skin-india/" class="bento-link">Top Ceramide Moisturizers for Acne <span>→</span></a></li>
+              <li><a href="/acne/non-comedogenic-sunscreen-acne-prone-skin-india/" class="bento-link">Non-Comedogenic Sunscreens Guide <span>→</span></a></li>
+              <li><a href="/acne/tretinoin-without-peeling-routine-guide-india/" class="bento-link">Tretinoin Routine Without Barrier Peeling <span>→</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 12: Hinglish Quick Summary -->
+    <section id="hinglish-summary">
+      <div class="container">
+        <div class="hinglish-box">
+          <span class="hinglish-tag">Hinglish Summary</span>
+          <h3>Aam Bhasha Mein Pimple Ka Asli Ilaj</h3>
+          <p>
+            Agar aapko baar baar chehre par pimples ho rahe hain, toh sirf yeh 5 baatein yaad rakhein:
+          </p>
+          <ul class="hinglish-list">
+            <li><strong>Pimple ko kabhi mat dabayein:</strong> Jab aap pimple ko ungli se dabaate hain, toh andar ki follicle wall fat jaati hai aur pus dermis mein phelta hai — jisse gehra nishan (PIH) banta hai jo saalon tak nahi jaata.</li>
+            <li><strong>Hair oil chehre se door rakhein:</strong> Raat bhar sar par tel laga kar sona forehead pimples aur dandruff ka sabse bada kaaran hai. Tel lagayein toh 1 ghante baad dho lein.</li>
+            <li><strong>Din mein 2 baar se zyada face wash mat kijiye:</strong> Bar-bar muh dhone se skin ka natural moisture barrier chhil jata hai, aur skin ghabra kar aur zyada tel (rebound oil) banati hai.</li>
+            <li><strong>Blackheads ke liye Salicylic Acid, Lal Pimples ke liye Benzoyl Peroxide:</strong> Agar sirf naak par blackheads hain toh BHA serum lagayein. Agar laal dard wale dane hain toh 2.5% Benzoyl Peroxide short contact therapy (10 minute laga kar dho lena) karein.</li>
+            <li><strong>Har roz Sunscreen lagana zaroori hai:</strong> Dhup se nikalne wali UV rays pimple ke laal/brown daagh ko permanent bana deti hain. Oil-free gel sunscreen har subah lagayein.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 13: FAQ Accordion & Medical Review -->
+    <section id="faq-section">
+      <div class="container">
+        <div class="section-header" style="text-align: center;">
+          <span class="section-eyebrow">Frequently Asked Questions</span>
+          <h2 class="section-title">Common Clear Skin Questions Answered</h2>
+          <p class="section-desc" style="margin: 0 auto;">
+            Evidence-based answers to the most common questions about treating breakouts on Indian skin:
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item active">
+            <div class="faq-question">Why do acne pimples happen even when I wash my face twice daily?</div>
+            <div class="faq-answer">
+              Acne is driven by internal follicular dynamics rather than surface dirt. Hormonal signals trigger excess thick sebum inside the hair follicle, which binds with un-shed dead skin cells to create an airtight plug (microcomedone). Bacteria then feed on this trapped oil beneath the skin. Washing your face removes surface grime, but over-washing strips essential skin barrier ceramides, triggering rebound sebum production.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">What happens under the skin when you squeeze or pop a pimple?</div>
+            <div class="faq-answer">
+              When you pinch a pimple, the lateral pressure pushes infected pus and bacteria downward and sideways, rupturing the thin follicular wall inside the dermis. This turns a superficial 3-day surface bump into an inflamed, deep cystic lesion that triggers severe melanin production (PIH) and causes permanent pitted scarring.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">What is the difference between non-inflammatory and inflammatory acne?</div>
+            <div class="faq-answer">
+              Non-inflammatory acne consists of open comedones (blackheads) and closed comedones (whiteheads) with no bacterial infection or redness. Inflammatory acne consists of red tender papules, pus-filled pustules, nodules, and deep cysts caused by bacterial colonization and immune cell swelling.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Why does Indian skin get dark marks (PIH) so easily after acne?</div>
+            <div class="faq-answer">
+              Indian skin (Fitzpatrick skin types III to V) contains highly reactive melanocytes. Any inflammation, friction, or fingernail popping triggers these pigment cells to flood the injured area with excess melanin. This leads to post-inflammatory hyperpigmentation (PIH) that can linger for months without targeted tyrosinase inhibitors like Azelaic Acid, Tranexamic Acid, and strict SPF 50 sunscreen.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">How can I tell if my forehead bumps are fungal acne or regular acne?</div>
+            <div class="faq-answer">
+              Fungal acne (Malassezia folliculitis) presents as uniform, tiny, intensely itchy bumps clustered along the hairline and forehead that do not develop yellow pus heads. It worsens with sweat, humidity, and oily scalp oils, and does not respond to standard acne antibiotics. It clears rapidly with an antifungal 2% Ketoconazole wash.
+            </div>
+          </div>
+        </div>
+
+        <!-- Medical Reviewer Box -->
+        <div class="reviewer-card">
+          <div class="reviewer-avatar">🩺</div>
+          <div class="reviewer-info">
+            <h3>Medically Reviewed by Dr. Lipy Mehta</h3>
+            <span>Board-Certified Dermatologist (MD, Dermatology)</span>
+            <p>
+              Dr. Mehta specializes in clinical dermatology, pigmentary disorders, and acne management for South Asian Fitzpatrick skin types III-V. Content is updated against the latest Indian Journal of Dermatology guidelines.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <a href="/" aria-label="MyMirror Home">
+          <img src="/assets/logo-v4.png" alt="MyMirror" width="148" height="32" loading="lazy">
+        </a>
+      </div>
+      <p class="footer-copy">
+        © 2026 MyMirror. All clinical guides reviewed by board-certified dermatologists.<br>
+        This content is for educational purposes only and does not substitute for personalized medical diagnosis or in-clinic prescription.
+      </p>
     </div>
+  </footer>
+
+  <!-- Sticky Mobile CTA -->
+  <div class="sticky-mobile-cta">
+    <a href="https://mymirror.fit/scan/" class="sticky-mobile-btn">
+      Start Free AI Skin Scan ✨
+    </a>
   </div>
-</div>
 
-<section class="featured-strip reveal">
-  <div class="container" style="text-align:center;">
-    <h2 class="section-title">Can't find what you're looking for?</h2>
-    <p style="margin-bottom:2.5rem; color:var(--color-text-secondary);">Our AI skin analysis tool can identify your specific breakout type in under 60 seconds.</p>
-    <a href="/acne/face-map/" style="display:inline-block; padding:18px 42px; background:var(--color-brand); color:#fff; border-radius:9999px; text-decoration:none; font-weight:800; box-shadow: 0 10px 25px rgba(236,97,14,0.3);">Start Free Analysis →</a>
-  </div>
-</section>
+  <!-- Interactive JavaScript Logic -->
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        item.classList.toggle('active');
+      });
+    });
 
-<footer style="padding: 5rem 0; text-align: center; border-top: 1px solid var(--color-border);">
-  <div class="container">
-    <img fetchpriority="high" decoding="async" src="/acne/forehead-acne/logo-v4.png" alt="mymirror" style="height:32px; opacity:0.5; margin-bottom:2rem;; box-shadow: none; border-radius: 0;">
-    <p style="font-size:0.85rem; color:var(--color-text-tertiary);">© 2026 MyMirror. All guides reviewed by Dr. Lipy Mehta, Board-Certified Dermatologist.</p>
-  </div>
-</footer>
+    // Interactive Routine Finder Engine
+    const routineData = {
+      'oily_blackheads': {
+        badge: 'Top Oily Skin Pore Protocol',
+        title: 'Deep Sebum & Blackhead Clearing Regimen',
+        active: 'Salicylic Acid (BHA 2%)',
+        am: 'Gentle foaming cleanser + Oil-free niacinamide gel + Ultralight fluid sunscreen (SPF 50).',
+        pm: 'Double cleanse with micellar water + Salicylic Acid 2% serum (3 nights/week) + Cica gel moisturizer.',
+        guideUrl: '/acne/bha-beta-hydroxy-acid-salicylic-acid-benefits-india/',
+        guideTitle: 'Read Full BHA / Salicylic Acid Guide →'
+      },
+      'oily_redpustules': {
+        badge: 'Bacterial Inflammation Protocol',
+        title: 'Targeted Anti-Bacterial & Redness Protocol',
+        active: 'Benzoyl Peroxide 2.5% (SCT)',
+        am: 'Gentle foaming face wash + Soothing Centella (Cica) moisturizer + Broad-spectrum matte sunscreen.',
+        pm: 'Gentle cleanse + Benzoyl Peroxide 2.5% Short Contact Therapy (10 mins, rinse off) + Barrier repair gel.',
+        guideUrl: '/acne/benzoyl-peroxide-short-contact-therapy-guide/',
+        guideTitle: 'Read Short Contact Therapy Guide →'
+      },
+      'oily_hormonal': {
+        badge: 'Hormonal Sebum Regulation',
+        title: 'Lower-Face Sebum & Hormonal Protocol',
+        active: 'Adapalene 0.1% + Azelaic Acid',
+        am: 'Gentle salicylic cleanser + Azelaic Acid 10% cream + Non-comedogenic fluid sunscreen.',
+        pm: 'Gentle wash + Barrier moisturizer + Pea-sized Adapalene 0.1% (3 nights weekly) via sandwich method.',
+        guideUrl: '/acne/chin-acne/',
+        guideTitle: 'Read Chin & Hormonal Acne Guide →'
+      },
+      'oily_darkmarks': {
+        badge: 'Melanin Regulation Protocol',
+        title: 'Post-Acne Mark Clearing Regimen (PIH)',
+        active: 'Azelaic Acid 10% + Tranexamic Acid',
+        am: 'Gentle cleanser + Azelaic Acid 10% + High-protection zinc sunscreen (reapplied regularly).',
+        pm: 'Double cleanse + Tranexamic Acid 3% serum + Ceramide barrier gel moisturizer.',
+        guideUrl: '/acne/pie-vs-pih-indian-skin/',
+        guideTitle: 'Read PIE vs PIH Marks Guide →'
+      },
+      'combo_blackheads': {
+        badge: 'Balanced T-Zone Care',
+        title: 'Zone-Targeted Blackhead Routine',
+        active: 'Salicylic Acid 1%–2% Wash',
+        am: 'Salicylic foaming wash on T-zone only + Lightweight hydrating lotion + Dewy finish sunscreen.',
+        pm: 'Gentle milk cleanser + 2% BHA liquid on nose/chin twice weekly + Ceramide balance cream.',
+        guideUrl: '/acne/sebaceous-filaments-vs-blackheads-nose-removal-india/',
+        guideTitle: 'Read Sebaceous Filaments & Pore Guide →'
+      },
+      'combo_redpustules': {
+        badge: 'Calming Spot Treatment',
+        title: 'Combination Skin Spot Clearing Routine',
+        active: 'Benzoyl Peroxide 2.5% Spot Care',
+        am: 'Hydrating cleanser + Niacinamide 5% serum + Non-greasy SPF 50 sunscreen.',
+        pm: 'Gentle cleanser + BPO 2.5% spot application strictly over red blemishes + Cica moisturizer.',
+        guideUrl: '/acne/best-cica-moisturizer-for-acne-prone-skin-india/',
+        guideTitle: 'Read Cica Barrier Moisturizer Guide →'
+      },
+      'combo_hormonal': {
+        badge: 'Endocrine Cycle Support',
+        title: 'Jawline Focused Hormonal Routine',
+        active: 'Azelaic Acid 15% + Retinoid',
+        am: 'Gentle hydrating wash + Azelaic Acid on jawline + Lightweight sunscreen.',
+        pm: 'Gentle cleanse + Soothing moisturizer + Retinoid pea on jawline (alternate nights).',
+        guideUrl: '/acne/jawline-acne-treatment-india/',
+        guideTitle: 'Read Jawline Acne Treatment Guide →'
+      },
+      'combo_darkmarks': {
+        badge: 'Pigment Regulation Protocol',
+        title: 'Combination Skin Mark Fading Regimen',
+        active: 'Niacinamide + Tranexamic Acid',
+        am: 'Gentle face wash + Vitamin C / Niacinamide + Broad-spectrum matte sunscreen.',
+        pm: 'Gentle cleanse + Tranexamic Acid serum + Soothing barrier cream.',
+        guideUrl: '/acne/post-pimple-mark-removal-the-indian-skin-guide-to-pih-pie/',
+        guideTitle: 'Read Post-Pimple Mark Removal Guide →'
+      },
+      'dry_blackheads': {
+        badge: 'Gentle Keratolytic Care',
+        title: 'Gentle Sensitive Pore Regimen',
+        active: 'Betaine Salicylate (COSRX BHA) or 0.5% SA',
+        am: 'Water rinse or milk cleanser + Hyaluronic Acid + Rich ceramide barrier cream + Mineral SPF 50.',
+        pm: 'Gentle hydrating cleanser + Mild BHA liquid (once or twice weekly) + Squalane ceramide cream.',
+        guideUrl: '/acne/dry-skin-acne-treatment/',
+        guideTitle: 'Read Dry Skin Acne Guide →'
+      },
+      'dry_redpustules': {
+        badge: 'Barrier First Acne Care',
+        title: 'Sensitive Skin Barrier Healing Routine',
+        active: 'Azelaic Acid 10% + Centella',
+        am: 'Cream cleanser + Centella (Cica) barrier serum + Ceramide cream + Mineral physical sunscreen.',
+        pm: 'Cream cleanser + Azelaic Acid 10% cream (non-drying anti-inflammatory) + Rich barrier balm.',
+        guideUrl: '/acne/active-burn-skin-barrier-healing-guide-india/',
+        guideTitle: 'Read Barrier Healing Protocol →'
+      },
+      'dry_hormonal': {
+        badge: 'Sensitive Hormonal Protocol',
+        title: 'Dry Skin Hormonal Balance Protocol',
+        active: 'Azelaic Acid 10% + Ceramides',
+        am: 'Gentle non-foaming wash + Cica gel + Ceramide moisturizer + Mineral SPF 50.',
+        pm: 'Gentle wash + Heavy ceramide cream + Azelaic Acid 10% layered on top on jawline only.',
+        guideUrl: '/acne/pcos-acne-treatment-india/',
+        guideTitle: 'Read Hormonal Acne Guide →'
+      },
+      'dry_darkmarks': {
+        badge: 'Non-Stripping Brightening',
+        title: 'Sensitive Dry Skin Mark Clearing Routine',
+        active: 'Alpha Arbutin 2% + Azelaic Acid',
+        am: 'Gentle wash + Alpha Arbutin 2% serum + Ceramide barrier cream + High SPF 50 sunscreen.',
+        pm: 'Gentle cleanse + Azelaic Acid 10% + Rich squalane barrier moisturizer.',
+        guideUrl: '/acne/pie-vs-pih-indian-skin/',
+        guideTitle: 'Read PIH Dark Spots Guide →'
+      }
+    };
 
-<script>
-  const obs = new IntersectionObserver(e => e.forEach(x => x.isIntersecting && x.target.classList.add('active')), { threshold: 0.1 });
-  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-</script>
+    let selectedSkin = 'oily';
+    let selectedConcern = 'blackheads';
 
-    <div class="sticky-cta-mobile">
-       <a href="https://mymirror.fit/scan/" class="nav-cta" target="_blank" rel="noopener">Free AI Skin Analysis ✨</a>
-   </div>
+    function renderRoutine() {
+      const key = `${selectedSkin}_${selectedConcern}`;
+      const data = routineData[key] || routineData['oily_blackheads'];
+      const out = document.getElementById('routine-output');
+      out.innerHTML = `
+        <span class="finder-result-badge">${data.badge}</span>
+        <h3>${data.title}</h3>
+        <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:10px;">
+          <strong>Core Recommended Active:</strong> <span style="color:var(--brand); font-weight:700;">${data.active}</span>
+        </p>
+        <div class="routine-grid">
+          <div class="routine-box">
+            <strong>Morning (AM) Routine:</strong>
+            ${data.am}
+          </div>
+          <div class="routine-box">
+            <strong>Night (PM) Routine:</strong>
+            ${data.pm}
+          </div>
+        </div>
+        <div style="margin-top:14px;">
+          <a href="${data.guideUrl}" style="color:var(--brand); font-weight:700; font-size:14px; text-decoration:none;">
+            ${data.guideTitle}
+          </a>
+        </div>
+      `;
+    }
+
+    document.querySelectorAll('#skin-type-options .finder-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#skin-type-options .finder-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        selectedSkin = btn.dataset.skin;
+        renderRoutine();
+      });
+    });
+
+    document.querySelectorAll('#concern-options .finder-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#concern-options .finder-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        selectedConcern = btn.dataset.concern;
+        renderRoutine();
+      });
+    });
+
+    // Initial render
+    renderRoutine();
+  </script>
 </body>
 </html>
