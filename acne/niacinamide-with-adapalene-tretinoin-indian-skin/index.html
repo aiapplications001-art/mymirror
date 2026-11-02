@@ -481,6 +481,44 @@
     .footer-links a:hover { color: #fff; text-decoration: underline; }
     .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); margin-top: 3rem; padding-top: 2rem; text-align: center; font-size: 13px; color: rgba(255,255,255,0.5); }
 
+    /* Mobile Sticky CTA */
+    .mobile-sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border-warm);
+      padding: 10px 16px;
+      z-index: 9999;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .mobile-sticky-cta a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      background: var(--brand);
+      color: #FFFFFF !important;
+      font-weight: 800;
+      font-size: 14.5px;
+      padding: 12px 20px;
+      border-radius: 9999px;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(236, 97, 14, 0.35);
+      transition: background 0.2s ease;
+    }
+
+    .mobile-sticky-cta a:hover {
+      background: var(--brand-dark);
+    }
+
     /* Mobile Web Guardrails & Responsive */
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
@@ -498,6 +536,12 @@
       .hero-cta-box,
       .face-ai-cta-wrapper {
         display: none !important;
+      }
+      .mobile-sticky-cta {
+        display: block !important;
+      }
+      body {
+        padding-bottom: 74px !important;
       }
     }
   </style>
@@ -1308,6 +1352,14 @@
   // Initialize routine planner on load
   document.addEventListener('DOMContentLoaded', updateRoutine);
 </script>
+
+<!-- MOBILE STICKY CTA -->
+<div class="mobile-sticky-cta">
+  <a href="/scan/">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v8M8 12h8"/></svg>
+    Check Your Skin Barrier with AI →
+  </a>
+</div>
 
 </body>
 </html>
