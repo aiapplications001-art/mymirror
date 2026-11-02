@@ -343,7 +343,7 @@
     /* TOC Bar */
     .toc-bar { background: var(--bg); border-bottom: 1px solid var(--border); position: sticky; top: 64px; z-index: 900; overflow-x: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.03); scrollbar-width: none; }
     .toc-bar::-webkit-scrollbar { display: none; }
-    .toc-inner { max-width: 1140px; margin: 0 auto; display: flex; justify-content: flex-start; align-items: center; padding: 0 1rem; }
+    .toc-inner { max-width: 1140px; margin: 0 auto; display: flex; justify-content: center; align-items: center; padding: 0 1rem; }
     .toc-link { white-space: nowrap; font-size: 13px; font-weight: 700; color: var(--text-3); text-decoration: none; padding: 14px 14px; border-bottom: 3px solid transparent; display: flex; align-items: center; gap: 7px; transition: all 0.2s; }
     .toc-link:hover { color: var(--brand); border-bottom-color: var(--brand); }
     .toc-num { background: var(--brand); color: #fff; width: 19px; height: 19px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10.5px; font-weight: 800; }
@@ -520,6 +520,10 @@
     }
 
     /* Mobile Web Guardrails & Responsive */
+    @media (max-width: 1100px) {
+      .toc-inner { justify-content: flex-start; }
+    }
+
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
       .hero-chips, .hero-cta-group, .meta-row { justify-content: center; }
