@@ -519,6 +519,8 @@
       background: var(--brand-dark);
     }
 
+    .trust-text-mobile, .btn-text-mobile { display: none; }
+
     /* Mobile Web Guardrails & Responsive */
     @media (max-width: 1100px) {
       .toc-inner { justify-content: flex-start; }
@@ -536,6 +538,18 @@
     }
 
     @media (max-width: 768px) {
+      .trust-bar { padding: 6px 12px; font-size: 11.5px; }
+      .trust-text-desktop { display: none; }
+      .trust-text-mobile { display: inline; }
+      header { height: 54px; }
+      .nav-inner { padding: 0 1rem; height: 100%; }
+      .nav-logo img { height: 22px; width: auto; }
+      .nav-actions .nav-link { display: none !important; }
+      .btn-scanner { padding: 6px 14px; font-size: 12px; font-weight: 700; }
+      .btn-text-desktop { display: none; }
+      .btn-text-mobile { display: inline; }
+      .toc-bar { top: 54px; }
+      .toc-link { padding: 10px 12px; font-size: 12px; }
       .hero-cta-group,
       .hero-cta-box,
       .face-ai-cta-wrapper {
@@ -556,7 +570,8 @@
 <div class="trust-bar">
   <div class="trust-verified">
     <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-    <span>Clinically Reviewed by Dr. Lipy Mehta, Consultant Dermatologist (AIIMS Alumna) • Updated November 2026</span>
+    <span class="trust-text-desktop">Clinically Reviewed by Dr. Lipy Mehta, Consultant Dermatologist (AIIMS Alumna) • Updated November 2026</span>
+    <span class="trust-text-mobile">Reviewed by Dr. Lipy Mehta (AIIMS) • Nov 2026</span>
   </div>
 </div>
 
@@ -568,7 +583,10 @@
     </a>
     <div class="nav-actions">
       <a href="/acne/adapalene-0.1-percent-gel-acne-india/" class="nav-link">← Adapalene Master Guide</a>
-      <a href="/scan/" class="btn-scanner">Scan Acne vs Barrier</a>
+      <a href="/scan/" class="btn-scanner">
+        <span class="btn-text-desktop">Scan Acne vs Barrier</span>
+        <span class="btn-text-mobile">Scan Face →</span>
+      </a>
     </div>
   </div>
 </header>
