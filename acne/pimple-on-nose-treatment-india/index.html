@@ -470,40 +470,148 @@
       font-size: 14.5px; line-height: 1.7; color: var(--txt); margin-bottom: 0;
     }
 
-    /* Triage Showdown Box (Exterior vs Inside Nostril) */
-    .triage-showdown {
+    /* Redesigned Premium Diagnostic Showdown UI */
+    .showdown-wrapper {
       background: var(--bg2); border: 2px solid var(--border);
-      border-radius: var(--radius-xl); padding: 1.8rem; margin: 2rem 0;
+      border-radius: var(--radius-xl); padding: 2rem 1.8rem 1.6rem; margin: 2rem 0;
+      position: relative; box-shadow: 0 8px 30px rgba(0,0,0,0.03);
     }
-    .triage-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; margin-top: 1.2rem;
+    .showdown-topbar { margin-bottom: 1.5rem; text-align: left; }
+    .showdown-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--brand-dark); background: var(--brand-light);
+      padding: 4px 12px; border-radius: 9999px; margin-bottom: 0.6rem;
     }
-    .triage-col {
-      background: var(--bg); border: 1px solid var(--border);
-      border-radius: var(--radius-lg); padding: 1.4rem;
-      display: flex; flex-direction: column; justify-content: space-between;
+    .showdown-headline { font-size: 1.35rem; font-weight: 700; color: var(--txt); margin-bottom: 0.35rem; }
+    .showdown-sub { font-size: 13.5px; color: var(--txt2); margin-bottom: 0; line-height: 1.5; }
+
+    .showdown-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; position: relative;
     }
-    .triage-col.nostril {
-      border-color: #F8B4B4; background: #FFF8F8;
+    .showdown-vs-badge {
+      position: absolute; top: 180px; left: 50%; transform: translate(-50%, -50%);
+      width: 42px; height: 42px; border-radius: 50%;
+      background: var(--txt); color: var(--bg);
+      font-family: 'Kantumruy Pro', serif; font-size: 13px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      border: 3px solid var(--bg); box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      z-index: 10; letter-spacing: 0.05em;
+    }
+    @media (max-width: 768px) {
+      .showdown-vs-badge { display: none; }
+    }
+
+    .showdown-card {
+      background: var(--bg); border: 2px solid var(--border);
+      border-radius: var(--radius-lg); overflow: hidden;
+      display: flex; flex-direction: column;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.04);
+      transition: transform 0.25s var(--bouncy), box-shadow 0.25s ease;
+    }
+    .showdown-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+    }
+    .showdown-card.card-exterior { border-color: #A7F3D0; }
+    .showdown-card.card-internal { border-color: #FECACA; background: #FFFDFD; }
+    @media (prefers-color-scheme: dark) {
+      .showdown-card.card-exterior { border-color: #065F46; }
+      .showdown-card.card-internal { border-color: #991B1B; background: #1C1313; }
+    }
+
+    .card-image-wrap {
+      position: relative; width: 100%; height: 190px; overflow: hidden; background: #000;
+    }
+    .card-image-wrap img {
+      width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;
+      transition: transform 0.35s ease;
+    }
+    .showdown-card:hover .card-image-wrap img { transform: scale(1.04); }
+    .image-badge {
+      position: absolute; bottom: 12px; left: 12px;
+      font-size: 11px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 9999px; box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    }
+    .badge-green { background: #065F46; color: #ECFDF5; }
+    .badge-red { background: #991B1B; color: #FEF2F2; }
+
+    .card-body {
+      padding: 1.4rem; display: flex; flex-direction: column; flex-grow: 1;
+    }
+    .card-status-pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 6px;
+      margin-bottom: 0.75rem; align-self: flex-start;
+    }
+    .card-status-pill.green { background: #DEF7EC; color: #03543F; }
+    .card-status-pill.red { background: #FEE2E2; color: #991B1B; }
+
+    .card-body h4 { font-size: 1.18rem; margin-bottom: 0.4rem; line-height: 1.3; }
+    .card-summary { font-size: 13px; color: var(--txt2); line-height: 1.5; margin-bottom: 1.1rem; }
+
+    /* Structured Symptom Checklist Rows */
+    .symptom-rows {
+      display: flex; flex-direction: column; gap: 9px; margin-bottom: 1.4rem; flex-grow: 1;
+    }
+    .symptom-row {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 8px 10px; border-radius: 8px; background: var(--bg2);
+      border: 1px solid var(--border); font-size: 12.8px;
+    }
+    .row-icon { font-size: 15px; flex-shrink: 0; line-height: 1.3; }
+    .row-content { display: flex; flex-direction: column; gap: 2px; }
+    .row-content strong { color: var(--txt); font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .row-content span { color: var(--txt2); line-height: 1.45; }
+
+    .symptom-row.row-danger {
+      background: #FFF5F5; border-color: #F8B4B4;
     }
     @media (prefers-color-scheme: dark) {
-      .triage-col.nostril { background: #261313; border-color: #6B2121; }
+      .symptom-row.row-danger { background: #2D1515; border-color: #771D1D; }
     }
-    .triage-pill {
-      display: inline-block; font-size: 11px; font-weight: 800; text-transform: uppercase;
-      letter-spacing: 0.05em; padding: 4px 10px; border-radius: 9999px; margin-bottom: 0.6rem;
+    .symptom-row.row-danger .row-content strong { color: var(--danger); }
+
+    .symptom-row.row-action {
+      background: #F0FDF4; border-color: #BBF7D0;
     }
-    .triage-col h4 { font-size: 1.15rem; margin-bottom: 0.5rem; }
-    .triage-list { list-style: none; margin: 0.8rem 0; display: flex; flex-direction: column; gap: 8px; font-size: 13.5px; color: var(--txt2); }
-    .triage-list li { display: flex; align-items: start; gap: 8px; }
-    .triage-list li strong { color: var(--txt); }
-    .triage-redirect-btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 6px;
-      background: var(--danger); color: #fff !important; padding: 10px 18px;
-      border-radius: 9999px; font-weight: 800; font-size: 12.5px; text-decoration: none;
-      margin-top: 0.9rem; transition: all 0.2s;
+    @media (prefers-color-scheme: dark) {
+      .symptom-row.row-action { background: #13271A; border-color: #065F46; }
     }
-    .triage-redirect-btn:hover { background: #991B1B; text-decoration: none; }
+    .symptom-row.row-action .row-content strong { color: var(--success); }
+
+    .card-footer-action { margin-top: auto; padding-top: 0.5rem; }
+    .showdown-btn {
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+      width: 100%; padding: 12px 18px; border-radius: 9999px;
+      font-weight: 800; font-size: 13.5px; text-decoration: none;
+      transition: all 0.2s ease; text-align: center;
+    }
+    .showdown-btn.btn-green {
+      background: #059669; color: #fff !important;
+      box-shadow: 0 4px 14px rgba(5,150,105,0.25);
+    }
+    .showdown-btn.btn-green:hover {
+      background: #047857; transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(5,150,105,0.35); text-decoration: none;
+    }
+    .showdown-btn.btn-red {
+      background: var(--danger); color: #fff !important;
+      box-shadow: 0 4px 14px rgba(192,57,43,0.25);
+    }
+    .showdown-btn.btn-red:hover {
+      background: #991B1B; transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(192,57,43,0.35); text-decoration: none;
+    }
+
+    .showdown-bottom-note {
+      margin-top: 1.4rem; padding: 12px 16px; border-radius: 10px;
+      background: var(--bg); border: 1px solid var(--border);
+      display: flex; align-items: flex-start; gap: 10px; font-size: 13px; line-height: 1.5;
+    }
+    .note-icon { font-size: 16px; flex-shrink: 0; line-height: 1.4; }
+    .showdown-bottom-note p { margin: 0; color: var(--txt2); }
+    .showdown-bottom-note strong { color: var(--txt); }
 
     /* Feature Cards & Bento Layout */
     .cards-grid {
@@ -950,53 +1058,162 @@
           Before reaching for any treatment, locate exactly where your bump sits. Millions of people search for a "pimple in nose" when they actually have a surface pimple on their nasal tip. Others assume a painful bump inside their nostril is ordinary acne and mistakenly apply burning face washes. These two conditions have entirely different biological causes and require opposite treatments<a href="#ref-1" class="cite-ref">[1]</a>:
         </p>
 
-        <div class="triage-showdown">
-          <h3 style="font-size: 1.15rem; margin-bottom: 0.3rem;">Diagnostic Showdown: Match Your Symptoms</h3>
-          <p style="font-size: 13.5px; color: var(--txt2); margin-bottom: 0;">Check where your pain originates to pick the correct, safe medical protocol:</p>
+        <div class="showdown-wrapper triage-showdown">
+          <div class="showdown-topbar">
+            <span class="showdown-badge">⚡ 3-Second Mirror Check</span>
+            <h3 class="showdown-headline">Diagnostic Showdown: Match Your Exact Symptoms</h3>
+            <p class="showdown-sub">
+              Compare your bump below to pinpoint whether you are dealing with ordinary exterior pore acne or an internal bacterial nostril infection:
+            </p>
+          </div>
 
-          <div class="triage-grid">
-            <!-- Col 1: Exterior Nose Acne -->
-            <div class="triage-col">
-              <div>
-                <span class="triage-pill" style="background: #DEF7EC; color: #046C4E;">Exterior Skin</span>
-                <h4>Exterior Nose Pimple (Acne Vulgaris)</h4>
-                <ul class="triage-list">
-                  <li><strong>Location:</strong> Bridge, nasal tip, or outer nostril crease (alar rim).</li>
-                  <li><strong>Root Cause:</strong> Clogged sebaceous pore, trapped skin oil, dead keratin, and <em>C. acnes</em> bacteria.</li>
-                  <li><strong>What Triggers It:</strong> High humidity, heavy spectacle pads, excess oil production, comedogenic sunscreen.</li>
-                  <li><strong>How It Feels:</strong> Heavy throbbing ache when touched, especially against firm cartilage.</li>
-                  <li><strong>Correct Care:</strong> 90s cold ice wrap, 2.5% benzoyl peroxide micro-dot, hydrocolloid patch.</li>
-                </ul>
+          <div class="showdown-grid">
+            <!-- Exterior Nose Pimple Card -->
+            <div class="showdown-card card-exterior">
+              <div class="card-image-wrap">
+                <picture>
+                  <source srcset="/assets/images/card-nose-blind-bump.webp" type="image/webp">
+                  <img src="/assets/images/card-nose-blind-bump.jpg" alt="Exterior Nose Acne on Bridge and Tip" loading="lazy" width="600" height="335">
+                </picture>
+                <span class="image-badge badge-green">🟢 Exterior Facial Skin</span>
               </div>
-              <p style="font-size: 12.5px; color: var(--success); font-weight: 700; margin-top: 0.8rem; margin-bottom: 0;">
-                ✓ Continue reading this guide below for full step-by-step treatment.
-              </p>
-            </div>
-
-            <!-- Col 2: Inside Nostril Bump -->
-            <div class="triage-col nostril">
-              <div>
-                <span class="triage-pill" style="background: #FEE2E2; color: #991B1B;">Internal Mucosa</span>
-                <h4>Bump Inside Nostril (Nasal Vestibulitis)</h4>
-                <ul class="triage-list">
-                  <li><strong>Location:</strong> Just inside the nostril opening on the mucous membrane or nasal hair base.</li>
-                  <li><strong>Root Cause:</strong> Bacterial infection (usually <em>Staphylococcus aureus</em>) entering through micro-scratches.</li>
-                  <li><strong>What Triggers It:</strong> Plucking nose hairs with tweezers, aggressive nose picking, dry mucus crusting.</li>
-                  <li><strong>How It Feels:</strong> Sharp stinging pain when flaring nostrils, smiling, or blowing your nose.</li>
-                  <li><strong>Correct Care:</strong> Warm moist compress (5-10 mins) + over-the-counter 2% Mupirocin ointment.</li>
-                </ul>
-              </div>
-              <div>
-                <div class="callout danger" style="padding: 10px 12px; margin: 0.8rem 0 0.5rem; border-radius: 8px;">
-                  <p style="font-size: 12px; line-height: 1.4;">
-                    <strong>Warning:</strong> Never put salicylic acid, benzoyl peroxide, or face scrubs inside your nostril. They cause severe chemical burns to sensitive mucous membranes!
-                  </p>
+              <div class="card-body">
+                <div class="card-status-pill green">
+                  ✓ You Are On The Right Guide
                 </div>
-                <a href="/acne/pimple-inside-nose-causes-dangers-treatment-india/" class="triage-redirect-btn">
-                  Read Full Nasal Vestibulitis Guide →
-                </a>
+                <h4>Exterior Nose Pimple (Acne Vulgaris)</h4>
+                <p class="card-summary">
+                  Surface pustules, deep blind lumps, or clogged pores on the bridge, tip, or nasal wings.
+                </p>
+
+                <div class="symptom-rows">
+                  <div class="symptom-row">
+                    <span class="row-icon">📍</span>
+                    <div class="row-content">
+                      <strong>Exact Location</strong>
+                      <span>On the outer skin: nasal bridge, tip, or the crease where your nose meets your cheek.</span>
+                    </div>
+                  </div>
+
+                  <div class="symptom-row">
+                    <span class="row-icon">⚡</span>
+                    <div class="row-content">
+                      <strong>How It Feels</strong>
+                      <span>Dull, heavy, throbbing ache that pulses when touched or pressed against the hard cartilage underneath.</span>
+                    </div>
+                  </div>
+
+                  <div class="symptom-row">
+                    <span class="row-icon">🔬</span>
+                    <div class="row-content">
+                      <strong>Biological Cause</strong>
+                      <span>Sebaceous oil gland blocked by sticky keratin and <em>Cutibacterium acnes</em> bacteria.</span>
+                    </div>
+                  </div>
+
+                  <div class="symptom-row row-danger">
+                    <span class="row-icon">🛑</span>
+                    <div class="row-content">
+                      <strong>Fatal Mistake</strong>
+                      <span>Never squeeze against cartilage. It pushes bacteria backward into facial veins and leaves sunken pitted scars.</span>
+                    </div>
+                  </div>
+
+                  <div class="symptom-row row-action">
+                    <span class="row-icon">✅</span>
+                    <div class="row-content">
+                      <strong>Immediate Safe Fix</strong>
+                      <span>Wrap an ice cube for 90s to cut pain, micro-dab 2.5% benzoyl peroxide, and seal with a hydrocolloid patch.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-footer-action">
+                  <a href="#fast-relief" class="showdown-btn btn-green">
+                    Follow Exterior Treatment Below ↓
+                  </a>
+                </div>
               </div>
             </div>
+
+            <!-- Central VS Badge for Desktop -->
+            <div class="showdown-vs-badge" aria-hidden="true">VS</div>
+
+            <!-- Inside Nostril Bump Card -->
+            <div class="showdown-card card-internal">
+              <div class="card-image-wrap">
+                <picture>
+                  <source srcset="/assets/images/card-nose-vestibulitis.webp" type="image/webp">
+                  <img src="/assets/images/card-nose-vestibulitis.jpg" alt="Bacterial Pimple Inside Nostril Opening" loading="lazy" width="600" height="335">
+                </picture>
+                <span class="image-badge badge-red">🔴 Internal Nostril Opening</span>
+              </div>
+              <div class="card-body">
+                <div class="card-status-pill red">
+                  ⚠️ Requires Different Treatment (Not Acne)
+                </div>
+                <h4>Bump Inside Nostril (Nasal Vestibulitis)</h4>
+                <p class="card-summary">
+                  Painful, stinging bacterial boil or infected hair follicle tucked just inside the nostril rim.
+                </p>
+
+                <div class="symptom-rows">
+                  <div class="symptom-row">
+                    <span class="row-icon">📍</span>
+                    <div class="row-content">
+                      <strong>Exact Location</strong>
+                      <span>Tucked just inside the nostril rim on the moist mucous lining or around the root of a nasal hair.</span>
+                    </div>
+                  </div>
+
+                  <div class="symptom-row">
+                    <span class="row-icon">⚡</span>
+                    <div class="row-content">
+                      <strong>How It Feels</strong>
+                      <span>Sharp stinging or burning sensation every time you flare your nostrils, blow your nose, or smile.</span>
+                    </div>
+                  </div>
+
+                  <div class="symptom-row">
+                    <span class="row-icon">🔬</span>
+                    <div class="row-content">
+                      <strong>Biological Cause</strong>
+                      <span><em>Staphylococcus aureus</em> bacterial infection entering tiny scratches from nose-picking or hair plucking.</span>
+                    </div>
+                  </div>
+
+                  <div class="symptom-row row-danger">
+                    <span class="row-icon">🛑</span>
+                    <div class="row-content">
+                      <strong>Fatal Mistake</strong>
+                      <span>Never apply salicylic acid, benzoyl peroxide, or face scrubs inside your nose. They cause severe chemical burns to mucous tissue!</span>
+                    </div>
+                  </div>
+
+                  <div class="symptom-row row-action">
+                    <span class="row-icon">✅</span>
+                    <div class="row-content">
+                      <strong>Immediate Safe Fix</strong>
+                      <span>Hold a warm moist washcloth for 5–10 mins to soothe swelling, then apply OTC 2% mupirocin ointment with a clean swab.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-footer-action">
+                  <a href="/acne/pimple-inside-nose-causes-dangers-treatment-india/" class="showdown-btn btn-red">
+                    Read Dedicated Nostril Guide →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom quick rule-of-thumb strip -->
+          <div class="showdown-bottom-note">
+            <span class="note-icon">💡</span>
+            <p>
+              <strong>The 3-Second Mirror Rule:</strong> If you can see the bump in natural light without tilting your head back or opening your nostril, it is <strong>exterior acne</strong> (stay on this guide). If you must flare or tilt your nose to see it, and it stings when blowing your nose, it is <strong>nasal vestibulitis</strong> (<a href="/acne/pimple-inside-nose-causes-dangers-treatment-india/">switch to the nostril guide</a>).
+            </p>
           </div>
         </div>
       </section>
