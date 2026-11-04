@@ -1140,61 +1140,64 @@
       margin-bottom: 0;
     }
 
-    /* CLINICAL CITATION BADGES & REFERENCE LIST */
+    /* Clinical Citations (Non-distorting typographic superscripts) */
     .cite-ref {
-      font-size: 0.72rem;
+      display: inline;
+      font-size: 0.58em;
       font-weight: 700;
       color: var(--brand-dark);
       text-decoration: none;
       vertical-align: super;
-      margin-left: 2px;
-      padding: 1px 5px;
-      border-radius: 4px;
-      background: var(--brand-light);
-      border: 1px solid rgba(236, 97, 14, 0.2);
-      transition: all 0.2s ease;
-      line-height: 1;
-      display: inline-block;
+      line-height: 0;
+      margin: 0 1px 0 2px;
+      padding: 0;
+      background: transparent;
+      border: none;
+      transition: color 0.15s ease;
     }
     .cite-ref:hover {
-      background: var(--brand);
-      color: #FFFFFF !important;
-      border-color: var(--brand);
-      transform: translateY(-1px);
+      color: var(--brand);
+      text-decoration: underline;
+      background: transparent;
+      transform: none;
     }
     .reference-list {
       list-style: none;
       padding: 0;
-      margin: 1.5rem 0;
+      margin: 1.25rem 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
     }
     .reference-item {
       background: #FFFFFF;
       border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 1rem 1.25rem;
-      margin-bottom: 0.85rem;
-      font-size: 0.86rem;
-      line-height: 1.6;
+      border-radius: 8px;
+      padding: 0.65rem 0.95rem;
+      margin-bottom: 0;
+      font-size: 0.74rem;
+      line-height: 1.5;
       color: var(--text-muted);
-      box-shadow: var(--shadow-sm);
+      box-shadow: none;
     }
     .reference-num {
       display: inline-block;
       font-weight: 800;
       color: var(--brand-dark);
       background: var(--brand-light);
-      padding: 2px 7px;
-      border-radius: 6px;
-      margin-right: 8px;
-      font-size: 0.75rem;
+      padding: 1px 5px;
+      border-radius: 4px;
+      margin-right: 6px;
+      font-size: 0.7rem;
     }
     .reference-item strong {
       color: var(--text);
+      font-size: 0.76rem;
     }
     .reference-meta {
       display: block;
-      margin-top: 4px;
-      font-size: 0.82rem;
+      margin-top: 3px;
+      font-size: 0.72rem;
     }
     .reference-doi {
       display: inline-flex;
@@ -1202,7 +1205,12 @@
       gap: 4px;
       font-weight: 600;
       color: var(--brand);
-      margin-top: 5px;
+      margin-top: 3px;
+      font-size: 0.72rem;
+      text-decoration: underline;
+    }
+    .reference-doi:hover {
+      text-decoration: underline;
     }
 
     /* SIDEBAR STYLING */

@@ -1569,61 +1569,64 @@
       }
     }
 
-    /* Clinical Citations & Reference List */
+    /* Clinical Citations (Non-distorting typographic superscripts) */
     .cite-ref {
-      font-size: 0.72rem;
+      display: inline;
+      font-size: 0.58em;
       font-weight: 700;
       color: var(--brand-hover);
       text-decoration: none;
       vertical-align: super;
-      margin-left: 2px;
-      padding: 1px 5px;
-      border-radius: 4px;
-      background: var(--brand-light);
-      border: 1px solid rgba(236, 97, 14, 0.25);
-      transition: all 0.2s ease;
-      line-height: 1;
-      display: inline-block;
+      line-height: 0;
+      margin: 0 1px 0 2px;
+      padding: 0;
+      background: transparent;
+      border: none;
+      transition: color 0.15s ease;
     }
     .cite-ref:hover {
-      background: var(--brand);
-      color: #FFFFFF !important;
-      border-color: var(--brand);
-      transform: translateY(-1px);
+      color: var(--brand);
+      text-decoration: underline;
+      background: transparent;
+      transform: none;
     }
     .reference-list {
       list-style: none;
       padding: 0;
-      margin: 1.5rem 0;
+      margin: 1.25rem 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
     }
     .reference-item {
       background: #FFFFFF;
       border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.15rem 1.35rem;
-      margin-bottom: 0.95rem;
-      font-size: 0.88rem;
-      line-height: 1.6;
+      border-radius: 8px;
+      padding: 0.65rem 0.95rem;
+      margin-bottom: 0;
+      font-size: 0.74rem;
+      line-height: 1.5;
       color: var(--text-muted);
-      box-shadow: var(--shadow-sm);
+      box-shadow: none;
     }
     .reference-num {
       display: inline-block;
       font-weight: 800;
       color: var(--brand);
       background: var(--brand-light);
-      padding: 2px 7px;
-      border-radius: 6px;
-      margin-right: 8px;
-      font-size: 0.78rem;
+      padding: 1px 5px;
+      border-radius: 4px;
+      margin-right: 6px;
+      font-size: 0.7rem;
     }
     .reference-item strong {
       color: var(--text);
+      font-size: 0.76rem;
     }
     .reference-meta {
       display: block;
-      margin-top: 6px;
-      font-size: 0.82rem;
+      margin-top: 3px;
+      font-size: 0.72rem;
       color: var(--text-muted);
     }
     .reference-doi {
@@ -1632,9 +1635,9 @@
       gap: 4px;
       font-weight: 600;
       color: var(--brand);
-      margin-top: 6px;
-      font-size: 0.82rem;
-      text-decoration: none;
+      margin-top: 3px;
+      font-size: 0.72rem;
+      text-decoration: underline;
     }
     .reference-doi:hover {
       text-decoration: underline;
