@@ -235,7 +235,7 @@
       flex-wrap: wrap;
     }
 
-    /* Split Desktop Hero Fold */
+    /* Split Desktop Hero Fold (Clean text + takeaway card; NO image in hero) */
     .hero-section {
       background: linear-gradient(180deg, var(--bg-warm) 0%, #FFFFFF 100%);
       padding: 3.5rem 1.5rem 2.5rem;
@@ -245,9 +245,9 @@
       max-width: 1200px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-columns: 1.2fr 0.8fr;
       gap: 2.5rem;
-      align-items: flex-start;
+      align-items: center;
     }
     .hero-tag {
       display: inline-block;
@@ -294,32 +294,12 @@
       font-size: 0.75rem;
     }
 
-    /* Hero Right Visual Column */
-    .hero-visual-col {
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-    }
-    .hero-image-wrap {
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      border: 1px solid var(--border);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-      background: #FFFFFF;
-    }
-    .hero-main-img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover;
-    }
-
-    /* 10-Second Takeaway Card */
+    /* 10-Second Takeaway Card (Right column of Hero) */
     .takeaway-card {
       background: #FFFFFF;
       border: 2px solid var(--brand);
       border-radius: var(--radius-md);
-      padding: 1.5rem;
+      padding: 1.75rem;
       box-shadow: 0 10px 25px -5px rgba(236, 97, 14, 0.08);
       position: relative;
     }
@@ -340,14 +320,14 @@
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 0.75rem;
-      margin-top: 0.25rem;
+      gap: 0.85rem;
+      margin-top: 0.5rem;
     }
     .takeaway-list li {
       display: flex;
       align-items: flex-start;
       gap: 0.65rem;
-      font-size: 0.92rem;
+      font-size: 0.95rem;
       line-height: 1.5;
     }
     .takeaway-icon {
@@ -883,7 +863,7 @@
     <span>Updated August 2026</span>
   </div>
 
-  <!-- Split Desktop Hero Fold -->
+  <!-- Split Desktop Hero Fold (Clean text + takeaway card; NO image in hero banner) -->
   <section class="hero-section">
     <div class="hero-container">
       <div>
@@ -900,36 +880,27 @@
         </div>
       </div>
 
-      <!-- Hero Visual Right Column: Hero Image + 10-Second Takeaway Card -->
-      <div class="hero-visual-col">
-        <div class="hero-image-wrap">
-          <picture>
-            <source srcset="/assets/images/micellar-water-india-og.webp" type="image/webp">
-            <img src="/assets/images/micellar-water-india-og.jpg" alt="Clinical bottles of micellar cleansing water tested for acne-prone Indian skin" class="hero-main-img" width="600" height="340" fetchpriority="high">
-          </picture>
-        </div>
-
-        <div class="takeaway-card">
-          <span class="takeaway-badge">10-Second Takeaway</span>
-          <ul class="takeaway-list">
-            <li>
-              <span class="takeaway-icon">🧲</span>
-              <span><strong>The Magnet Mechanism:</strong> Micelles attract oil and sunscreen like a magnet, lifting grime without aggressive rubbing.</span>
-            </li>
-            <li>
-              <span class="takeaway-icon">🚿</span>
-              <span><strong>The Mandatory Rinse:</strong> Bottles claim "no rinse needed," but leaving dried cleansing agents on acne-prone skin disrupts barrier lipids. Always rinse.</span>
-            </li>
-            <li>
-              <span class="takeaway-icon">🚫</span>
-              <span><strong>Avoid Bi-Phase Oils:</strong> Two-phase yellow bottles contain heavy mineral oils that choke acne pores in Indian heat and humidity.</span>
-            </li>
-            <li>
-              <span class="takeaway-icon">🏆</span>
-              <span><strong>Top Dermatologist Pick:</strong> Bioderma Sébium H2O (Green Cap) for oily acne; Simple Kind to Skin for budget barrier care.</span>
-            </li>
-          </ul>
-        </div>
+      <!-- Hero Right: 10-Second Takeaway Card (No Image in Hero Banner) -->
+      <div class="takeaway-card">
+        <span class="takeaway-badge">10-Second Takeaway</span>
+        <ul class="takeaway-list">
+          <li>
+            <span class="takeaway-icon">🧲</span>
+            <span><strong>The Magnet Mechanism:</strong> Micelles attract oil and sunscreen like a magnet, lifting grime without aggressive rubbing.</span>
+          </li>
+          <li>
+            <span class="takeaway-icon">🚿</span>
+            <span><strong>The Mandatory Rinse:</strong> Bottles claim "no rinse needed," but leaving dried cleansing agents on acne-prone skin disrupts barrier lipids. Always rinse.</span>
+          </li>
+          <li>
+            <span class="takeaway-icon">🚫</span>
+            <span><strong>Avoid Bi-Phase Oils:</strong> Two-phase yellow bottles contain heavy mineral oils that choke acne pores in Indian heat and humidity.</span>
+          </li>
+          <li>
+            <span class="takeaway-icon">🏆</span>
+            <span><strong>Top Dermatologist Pick:</strong> Bioderma Sébium H2O (Green Cap) for oily acne; Simple Kind to Skin for budget barrier care.</span>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -1069,6 +1040,17 @@
         <p>
           We evaluated the most popular micellar waters available across Indian pharmacies, Nykaa, and Amazon India. Below is our clinical comparison based on surfactant safety, oil-control actives, fungal acne compatibility, and price.
         </p>
+
+        <!-- Figure 3: Clinical Bottles Lineup (Placed here in content, NOT in hero banner) -->
+        <figure class="media-block">
+          <picture>
+            <source srcset="/assets/images/micellar-water-india-og.webp" type="image/webp">
+            <img loading="lazy" decoding="async" src="/assets/images/micellar-water-india-og.jpg" alt="Clinical bottles of micellar cleansing water tested for acne-prone Indian skin" width="800" height="450">
+          </picture>
+          <figcaption class="media-caption">
+            <strong>Figure 3: Dermatologist Evaluation Lineup.</strong> The top pharmaceutical and retail micellar cleansing solutions tested for non-comedogenic surfactant safety on acne-prone Indian skin.
+          </figcaption>
+        </figure>
 
         <!-- Master Comparison Matrix -->
         <div class="table-responsive">
@@ -1294,25 +1276,25 @@
           </p>
         </div>
 
-        <!-- Figure 3: Comedogenicity Guide -->
+        <!-- Figure 4: Comedogenicity Guide -->
         <figure class="media-block">
           <picture>
             <source srcset="/assets/images/cleansing-balm-pore-clog-ingredients-guide.webp" type="image/webp">
             <img loading="lazy" decoding="async" src="/assets/images/cleansing-balm-pore-clog-ingredients-guide.jpg" alt="Guide to pore-clogging comedogenic ingredients in cleansers and oils" width="800" height="450">
           </picture>
           <figcaption class="media-caption">
-            <strong>Figure 3: Comedogenicity Guide.</strong> High-risk synthetic esters and heavy hydrocarbons found in floating bi-phase oils (comedogenic rating 4–5) trigger microcomedones and breakout clusters in humid Indian climates.
+            <strong>Figure 4: Comedogenicity Guide.</strong> High-risk synthetic esters and heavy hydrocarbons found in floating bi-phase oils (comedogenic rating 4–5) trigger microcomedones and breakout clusters in humid Indian climates.
           </figcaption>
         </figure>
 
-        <!-- Figure 4: Pore Anatomy Diagram -->
+        <!-- Figure 5: Pore Anatomy Diagram -->
         <figure class="media-block">
           <picture>
             <source srcset="/assets/images/non-comedogenic-pore-clogging-diagram.webp" type="image/webp">
             <img loading="lazy" decoding="async" src="/assets/images/non-comedogenic-pore-clogging-diagram.jpg" alt="Anatomy of a clogged pore vs clean follicular canal" width="800" height="450">
           </picture>
           <figcaption class="media-caption">
-            <strong>Figure 4: Pore Anatomy.</strong> Heavy occlusive oils trap bacteria and dead skin cells inside the hair follicle, whereas water-soluble non-comedogenic micellar solutions rinse away cleanly without follicular plugging.
+            <strong>Figure 5: Pore Anatomy.</strong> Heavy occlusive oils trap bacteria and dead skin cells inside the hair follicle, whereas water-soluble non-comedogenic micellar solutions rinse away cleanly without follicular plugging.
           </figcaption>
         </figure>
 
@@ -1334,14 +1316,14 @@
           Double cleansing is the gold standard evening routine. But instead of heavy, pore-clogging cleansing oils, acne-prone skin in India thrives on a <strong>Micellar-First, Gel-Second</strong> protocol:
         </p>
 
-        <!-- Figure 5: Double Cleansing Routine Hero Visual -->
+        <!-- Figure 6: Double Cleansing Routine Hero Visual -->
         <figure class="media-block">
           <picture>
             <source srcset="/assets/images/double-cleansing-hero.webp" type="image/webp">
             <img loading="lazy" decoding="async" src="/assets/images/double-cleansing-hero.jpg" alt="Double cleansing routine for acne-prone skin in India" width="800" height="450">
           </picture>
           <figcaption class="media-caption">
-            <strong>Figure 5: The 2-Step Indian Double Cleanse.</strong> Step 1 dissolves water-resistant SPF and city pollution using pure aqueous micellar water; Step 2 cleanses pore openings with a pH-balanced gentle foaming wash.
+            <strong>Figure 6: The 2-Step Indian Double Cleanse.</strong> Step 1 dissolves water-resistant SPF and city pollution using pure aqueous micellar water; Step 2 cleanses pore openings with a pH-balanced gentle foaming wash.
           </figcaption>
         </figure>
 
@@ -1375,14 +1357,14 @@
           Municipal and borewell tap water in Indian metros frequently carries high levels of dissolved calcium and magnesium (often exceeding 400 to 800 ppm TDS). When you wash your face with hard water, minerals react with facial fatty acids to form an insoluble soap scum that clogs pores and elevates skin pH. High-quality micellar waters contain chelating agents like <strong>Disodium EDTA</strong>. These molecules bind to calcium and magnesium minerals, neutralizing hard water deposits before they can irritate your acne-prone skin.
         </p>
 
-        <!-- Figure 6: Hard Water Skin Barrier Damage Visual -->
+        <!-- Figure 7: Hard Water Skin Barrier Damage Visual -->
         <figure class="media-block">
           <picture>
             <source srcset="/assets/images/hard-water-skin-barrier-damage-india.webp" type="image/webp">
             <img loading="lazy" decoding="async" src="/assets/images/hard-water-skin-barrier-damage-india.jpg" alt="Hard tap water damage and soap scum on Indian skin barrier" width="800" height="450">
           </picture>
           <figcaption class="media-caption">
-            <strong>Figure 6: The Indian Hard Water Threat.</strong> High mineral levels (calcium and magnesium) in municipal tap water react with cleansing lather to form insoluble soap scum. High-grade micellar waters use chelating agents like Disodium EDTA to neutralize these minerals.
+            <strong>Figure 7: The Indian Hard Water Threat.</strong> High mineral levels (calcium and magnesium) in municipal tap water react with cleansing lather to form insoluble soap scum. High-grade micellar waters use chelating agents like Disodium EDTA to neutralize these minerals.
           </figcaption>
         </figure>
 
