@@ -356,6 +356,58 @@
       .footer-grid{grid-template-columns:1fr}
       .video-points{grid-template-columns:1fr}
     }
+
+    /* Sources & Medical Editorial Standards */
+    .sources-box {
+      background: var(--bg-2);
+      border: 1.5px solid var(--border);
+      border-left: 5px solid var(--brand);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 2.5rem 0 1.5rem;
+    }
+    .sources-box h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.85rem;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sources {
+      font-size: 13px;
+      line-height: 1.65;
+      padding-left: 1.25rem;
+      color: var(--text-2);
+      margin-bottom: 0.85rem;
+    }
+    .sources li {
+      margin-bottom: 8px;
+    }
+    .sources li:last-child {
+      margin-bottom: 0;
+    }
+    .sources a {
+      color: var(--brand);
+      text-decoration: underline;
+      font-weight: 600;
+    }
+    .sources a:hover {
+      color: var(--brand-dark);
+    }
+    .sources-meta {
+      margin-top: 1.15rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--text-3);
+      line-height: 1.6;
+    }
+    .sources-meta a {
+      color: var(--brand);
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -877,11 +929,19 @@
       </div>
     </section>
 
-    <!-- Medical References & Peer-Reviewed Sources -->
-    <div class="info-box accent">
-      <p style="font-size:12.5px;margin:0;line-height:1.6;">
-        🏥 <strong>Medical Editorial Standards:</strong> This guide synthesizes peer-reviewed clinical research from the <em>Indian Journal of Dermatology, Venereology and Leprology (IJDVL)</em>, the <em>Journal of the American Academy of Dermatology (JAAD)</em>, and clinical laboratory medicine standards. Diagnostic blood tests provide objective data to support medical decision-making and do not replace personalized consultation with a qualified dermatologist or physician.
-      </p>
+        <!-- Medical References & Editorial Standards -->
+    <div class="sources-box" id="medical-sources">
+      <h3>🏥 Medical Sources &amp; Peer-Reviewed References</h3>
+      <ol class="sources">
+        <li><strong>National Institutes of Health (NCBI StatPearls):</strong> <a href="https://www.ncbi.nlm.nih.gov/books/NBK431057/" target="_blank" rel="noopener noreferrer">Acanthosis Nigricans: Pathophysiology and Clinical Evaluation</a> — Details on hyperinsulinemia, IGF-1 receptor stimulation, and velvety skin fold manifestations.</li>
+        <li><strong>Indian Journal of Dermatology (IJD):</strong> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4030356/" target="_blank" rel="noopener noreferrer">Cutaneous Manifestations Associated with Vitamin B12 Deficiency in Indian Adults</a> — Clinical analysis of dorsal knuckle hyperpigmentation, cellular glutathione depletion, and resolution with Methylcobalamin.</li>
+        <li><strong>Indian Dermatology Online Journal (IDOJ):</strong> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4756872/" target="_blank" rel="noopener noreferrer">Periorbital Hyperpigmentation: Etiopathogenesis and Evaluation</a> — Analysis of micro-capillary hypoxia, serum ferritin reserves, and dark under-eye circles.</li>
+        <li><strong>Cleveland Clinic:</strong> <a href="https://my.clevelandclinic.org/health/diseases/21454-melasma" target="_blank" rel="noopener noreferrer">Melasma — Causes, Hormonal Triggers, Diagnosis &amp; Management</a> — Overview of estrogen, progesterone, thyroid hormone interactions, and photoprotection requirements.</li>
+        <li><strong>Journal of Clinical &amp; Aesthetic Dermatology (JCAD):</strong> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4142815/" target="_blank" rel="noopener noreferrer">Hormonal Influences in Hyperpigmentation and Melasma</a> — Evaluation of cutaneous melanocortin receptor sensitivity and systemic endocrine triggers.</li>
+      </ol>
+      <div class="sources-meta">
+        <strong>Medical Editorial Standards:</strong> This clinical guide was developed in accordance with MyMirror's evidence-based medical content guidelines and reviewed for diagnostic accuracy by <strong>Dr. Lipy Mehta, Board-Certified Consultant Dermatologist</strong>. All laboratory targets reflect clinical dermatology practice and do not replace personalized consultation or treatment from a qualified healthcare provider. Have editorial feedback? Reach our medical board at <a href="mailto:editorial@mymirror.fit">editorial@mymirror.fit</a>.
+      </div>
     </div>
 
   </main>

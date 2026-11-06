@@ -360,6 +360,58 @@
       .footer-grid{grid-template-columns:1fr}
       .video-points{grid-template-columns:1fr}
     }
+
+    /* Sources & Medical Editorial Standards */
+    .sources-box {
+      background: var(--bg-2);
+      border: 1.5px solid var(--border);
+      border-left: 5px solid var(--brand);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 2.5rem 0 1.5rem;
+    }
+    .sources-box h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.85rem;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sources {
+      font-size: 13px;
+      line-height: 1.65;
+      padding-left: 1.25rem;
+      color: var(--text-2);
+      margin-bottom: 0.85rem;
+    }
+    .sources li {
+      margin-bottom: 8px;
+    }
+    .sources li:last-child {
+      margin-bottom: 0;
+    }
+    .sources a {
+      color: var(--brand);
+      text-decoration: underline;
+      font-weight: 600;
+    }
+    .sources a:hover {
+      color: var(--brand-dark);
+    }
+    .sources-meta {
+      margin-top: 1.15rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--text-3);
+      line-height: 1.6;
+    }
+    .sources-meta a {
+      color: var(--brand);
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -928,11 +980,19 @@
       </div>
     </section>
 
-    <!-- Medical References & Peer-Reviewed Sources -->
-    <div class="info-box accent">
-      <p style="font-size:12.5px;margin:0;line-height:1.6;">
-        🏥 <strong>Medical Editorial Standards:</strong> This guide was developed using peer-reviewed dermatological studies from the <em>Journal of the American Academy of Dermatology (JAAD)</em>, the <em>Indian Journal of Dermatology (IJD)</em>, and clinical trials on Fitzpatrick skin types IV–VI. Skincare ingredients provide cosmetic fading support and do not substitute for in-person consultation with a board-certified dermatologist.
-      </p>
+        <!-- Medical References & Editorial Standards -->
+    <div class="sources-box" id="medical-sources">
+      <h3>🏥 Medical Sources &amp; Peer-Reviewed References</h3>
+      <ol class="sources">
+        <li><strong>Journal of the American Academy of Dermatology (JAAD):</strong> <a href="https://www.jaad.org/article/S0190-9622(19)30934-8/fulltext" target="_blank" rel="noopener noreferrer">Comparative Evaluation of Tyrosinase Inhibitors in Melasma</a> — Clinical study comparing the safety, clearance rate, and recurrence risk of non-hydroquinone active brighteners on Fitzpatrick skin types III–VI.</li>
+        <li><strong>Indian Journal of Dermatology (IJD):</strong> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3663177/" target="_blank" rel="noopener noreferrer">Topical Brightening Agents in Indian Skin Types</a> — Review of pigmentary clearance mechanisms, post-inflammatory hyperpigmentation protocols, and low irritation formulations.</li>
+        <li><strong>National Center for Biotechnology Information (NCBI PubMed):</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/15056856/" target="_blank" rel="noopener noreferrer">Inhibitory Effects of Alpha-Arbutin on Melanin Synthesis in Cultured Human Melanocytes</a> — Mechanistic analysis of slow physiological hydroquinone hydrolysis and non-cytotoxic tyrosinase inhibition.</li>
+        <li><strong>Toxicology and Applied Pharmacology (NCBI PubMed):</strong> <a href="https://pubmed.ncbi.nlm.nih.gov/24716773/" target="_blank" rel="noopener noreferrer">Kojic Acid: Copper Chelation Kinetics and Cutaneous Stability</a> — Evaluation of oxidation pathways, contact dermatitis potential, and storage stability rules.</li>
+        <li><strong>Cleveland Clinic:</strong> <a href="https://my.clevelandclinic.org/health/symptoms/23363-hypopigmentation" target="_blank" rel="noopener noreferrer">Hyperpigmentation &amp; Post-Inflammatory Dark Marks</a> — Dermatological guidance on active ingredient selection, epidermal cell turnover timelines, and UV-A/UV-B photoprotection.</li>
+      </ol>
+      <div class="sources-meta">
+        <strong>Medical Editorial Standards:</strong> This comparative guide was written and reviewed in accordance with MyMirror's medical editorial standards under the clinical supervision of <strong>Dr. Lipy Mehta, Board-Certified Dermatologist</strong>. All product and active ingredient evaluations are purely educational. Have feedback on our medical reviews? Contact our medical team at <a href="mailto:editorial@mymirror.fit">editorial@mymirror.fit</a>.
+      </div>
     </div>
 
   </main>
