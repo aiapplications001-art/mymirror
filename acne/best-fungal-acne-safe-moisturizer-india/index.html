@@ -829,8 +829,183 @@
       line-height: 1.6;
     }
 
+    /* Hero CTA Button (Desktop & Mobile) */
+    .hero-cta-group {
+      margin: 1.25rem 0 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .hero-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--brand);
+      color: #FFFFFF !important;
+      font-size: 14.5px;
+      font-weight: 700;
+      padding: 12px 26px;
+      border-radius: 30px;
+      box-shadow: 0 4px 16px rgba(236,97,14,0.3);
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+    .hero-cta-btn:hover {
+      background: var(--brand-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(236,97,14,0.4);
+      text-decoration: none;
+    }
+    .hero-cta-sub {
+      font-size: 12px;
+      color: var(--text-3);
+      font-weight: 600;
+    }
+
+    /* Mobile Sticky Bottom CTA (mweb only) */
+    .mobile-sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-top: 1px solid var(--border);
+      padding: 10px 16px;
+      z-index: 2000;
+      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+      justify-content: center;
+    }
+    .mobile-sticky-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+      max-width: 440px;
+      background: var(--brand);
+      color: #FFFFFF !important;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 12px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(236, 97, 14, 0.25);
+    }
+    .mobile-sticky-btn:hover {
+      background: var(--brand-dark);
+      text-decoration: none;
+    }
+
+    /* Structured Differential Guide Component */
+    .diff-guide-card {
+      background: var(--bg-2);
+      border: 1.5px solid var(--border);
+      border-radius: 18px;
+      padding: 1.75rem;
+      margin: 2.25rem 0 1.5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    }
+    .diff-guide-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .diff-guide-header h3 {
+      font-family: 'Kantumruy Pro', Georgia, serif;
+      font-size: 1.35rem;
+      color: var(--text);
+      margin: 0.4rem 0 0.2rem;
+    }
+    .diff-guide-header p {
+      font-size: 13.5px;
+      color: var(--text-2);
+    }
+    .diff-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    .diff-col {
+      background: #FFFFFF;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .diff-col-header {
+      padding: 1rem 1.15rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .diff-col.diff-comedones .diff-col-header { background: #EFF6FF; }
+    .diff-col.diff-fungal .diff-col-header { background: #FFFBEB; }
+    .diff-col.diff-milia .diff-col-header { background: #FEF2F2; }
+
+    .diff-col-tag {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: inline-block;
+      margin-bottom: 4px;
+    }
+    .diff-col.diff-comedones .diff-col-tag { color: #2563EB; }
+    .diff-col.diff-fungal .diff-col-tag { color: #D97706; }
+    .diff-col.diff-milia .diff-col-tag { color: #DC2626; }
+
+    .diff-col-header h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .diff-rows {
+      padding: 1rem 1.15rem;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 12.5px;
+      flex-grow: 1;
+    }
+    .diff-row {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .diff-lbl {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-3);
+    }
+    .diff-val {
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .diff-row.highlight-good {
+      background: var(--success-light);
+      padding: 6px 8px;
+      border-radius: 6px;
+      border-left: 3px solid var(--success);
+    }
+    .diff-row.highlight-good .diff-lbl { color: var(--success); }
+    .diff-row.highlight-bad {
+      background: var(--danger-light);
+      padding: 6px 8px;
+      border-radius: 6px;
+      border-left: 3px solid var(--danger);
+    }
+    .diff-row.highlight-bad .diff-lbl { color: var(--danger); }
+
     /* Responsive */
     @media (max-width: 900px) {
+      .hero-cta-group { justify-content: center; text-align: center; }
+      .mobile-sticky-cta { display: flex; }
+      .diff-grid { grid-template-columns: 1fr; }
+      body { padding-bottom: 64px; }
       .hero-inner { grid-template-columns: 1fr; }
       .page-layout { grid-template-columns: 1fr; }
       .sidebar { display: none; }
@@ -883,6 +1058,12 @@
     <div class="hero-text">
       <h1>Best Fungal Acne Safe Moisturizer in India: <span>Dermatologist Review</span></h1>
       <p class="hero-lead">If regular moisturizers cause tiny, itchy, identical bumps on your forehead, temples, or chest, you are dealing with <strong>Malassezia folliculitis</strong> (fungal acne). Standard creams feed this yeast with lipids and oils. Here is how to keep your skin hydrated without triggering a single breakout.</p>
+
+      <!-- Hero Banner CTA (dweb & mweb) -->
+      <div class="hero-cta-group">
+        <a href="https://mymirror.fit/scan/" class="hero-cta-btn">Scan Your Skin for Fungal Acne ↗</a>
+        <span class="hero-cta-sub">✓ Instant AI bump analysis • 100% free • No app install required</span>
+      </div>
 
       <!-- Fast Takeaway Box (GEO AI Overviews) -->
       <div class="takeaway-card">
@@ -1123,8 +1304,117 @@
 
       </div>
 
-      <div style="margin: 1.5rem 0;">
-        <img src="/assets/images/small-bumps-differential-comedones-fungal-milia.webp" alt="Visual Guide to Small Facial Bumps: Closed Comedones vs Fungal Acne Folliculitis vs Milia" style="width:100%; border-radius:14px; border:1px solid var(--border);" loading="lazy" />
+      <!-- Structured Differential Guide (Text & Cards) -->
+      <div class="diff-guide-card" id="differential-guide">
+        <div class="diff-guide-header">
+          <span class="badge badge-orange">Clinical Differential Guide</span>
+          <h3>The 3 Types of Small Bumps on Face</h3>
+          <p>Why using standard acne spot creams on fungal folliculitis or milia fails</p>
+        </div>
+
+        <div class="diff-grid">
+          <!-- COL 1: CLOSED COMEDONES -->
+          <div class="diff-col diff-comedones">
+            <div class="diff-col-header">
+              <span class="diff-col-tag">Bacterial / Sebum</span>
+              <h4>Closed Comedones</h4>
+            </div>
+            <div class="diff-rows">
+              <div class="diff-row">
+                <span class="diff-lbl">Core Cause</span>
+                <span class="diff-val">Sebum &amp; dead skin cells plug the pore entrance beneath the surface</span>
+              </div>
+              <div class="diff-row">
+                <span class="diff-lbl">Sensation</span>
+                <span class="diff-val">Non-itchy; feels like rough sandpaper when washing face</span>
+              </div>
+              <div class="diff-row">
+                <span class="diff-lbl">Common Locations</span>
+                <span class="diff-val">Cheeks, chin, forehead, and sides of nose</span>
+              </div>
+              <div class="diff-row">
+                <span class="diff-lbl">Pore Contents</span>
+                <span class="diff-val">Firm, waxy string of oxidized keratin and sebum</span>
+              </div>
+              <div class="diff-row highlight-good">
+                <span class="diff-lbl">Target Active</span>
+                <span class="diff-val">2% Salicylic Acid (Sebogel) + 0.1% Adapalene at night</span>
+              </div>
+              <div class="diff-row highlight-bad">
+                <span class="diff-lbl">What to Avoid</span>
+                <span class="diff-val">Coarse physical walnut or apricot face scrubs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- COL 2: FUNGAL ACNE -->
+          <div class="diff-col diff-fungal">
+            <div class="diff-col-header">
+              <span class="diff-col-tag">Yeast Overgrowth</span>
+              <h4>Fungal Acne (Folliculitis)</h4>
+            </div>
+            <div class="diff-rows">
+              <div class="diff-row">
+                <span class="diff-lbl">Core Cause</span>
+                <span class="diff-val"><em>Malassezia</em> yeast proliferation inside hair follicles</span>
+              </div>
+              <div class="diff-row">
+                <span class="diff-lbl">Sensation</span>
+                <span class="diff-val">Intense prickly itch, especially during sweat or humidity</span>
+              </div>
+              <div class="diff-row">
+                <span class="diff-lbl">Common Locations</span>
+                <span class="diff-val">Forehead, hairline, temples, chest, and upper back</span>
+              </div>
+              <div class="diff-row">
+                <span class="diff-lbl">Pore Contents</span>
+                <span class="diff-val">Sterile inflammatory fluid or clear papule (no pop-able core)</span>
+              </div>
+              <div class="diff-row highlight-good">
+                <span class="diff-lbl">Target Active</span>
+                <span class="diff-val">Ketoconazole 2% wash (5-min mask) + 100% Water Gel</span>
+              </div>
+              <div class="diff-row highlight-bad">
+                <span class="diff-lbl">What to Avoid</span>
+                <span class="diff-val">Coconut oil, stearic acid, palmitic acid, polysorbates, rich creams</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- COL 3: MILIA CYSTS -->
+          <div class="diff-col diff-milia">
+            <div class="diff-col-header">
+              <span class="diff-col-tag">Trapped Keratin</span>
+              <h4>Milia Cysts</h4>
+            </div>
+            <div class="diff-rows">
+              <div class="diff-row">
+                <span class="diff-lbl">Core Cause</span>
+                <span class="diff-val">Tiny keratin seeds trapped under an intact, thin epidermis</span>
+              </div>
+              <div class="diff-row">
+                <span class="diff-lbl">Sensation</span>
+                <span class="diff-val">Zero pain, zero itching; purely a smooth cosmetic bump</span>
+              </div>
+              <div class="diff-row">
+                <span class="diff-lbl">Common Locations</span>
+                <span class="diff-val">Under eyes, eyelids, and upper cheekbones</span>
+              </div>
+              <div class="diff-row">
+                <span class="diff-lbl">Pore Contents</span>
+                <span class="diff-val">Rock-hard miniature keratin pearl</span>
+              </div>
+              <div class="diff-row highlight-good">
+                <span class="diff-lbl">Target Active</span>
+                <span class="diff-val">Gentle topical retinoids or in-clinic dermatological unroofing</span>
+              </div>
+              <div class="diff-row highlight-bad">
+                <span class="diff-lbl">What to Avoid</span>
+                <span class="diff-val">Squeezing, picking with sewing needles, harsh pinching</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1350,6 +1640,11 @@
     });
   });
 </script>
+
+<!-- Mobile Sticky Bottom CTA (mweb only) -->
+<div class="mobile-sticky-cta" role="complementary" aria-label="Mobile call to action">
+  <a href="https://mymirror.fit/scan/" class="mobile-sticky-btn">Free Face Scan: Check Bumps in 10s ↗</a>
+</div>
 
 </body>
 </html>
