@@ -667,34 +667,44 @@
     }
 
     /* Product Cards */
+    .product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+      margin: 1.75rem 0;
+    }
     .product-card {
       background: #FFFFFF;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
+      border: 1.5px solid var(--border);
+      border-radius: 18px;
+      padding: 1.75rem;
       display: grid;
-      grid-template-columns: 140px 1fr;
-      gap: 1.5rem;
+      grid-template-columns: 180px 1fr;
+      gap: 1.75rem;
       align-items: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+      margin-bottom: 1.5rem;
     }
     .product-img-box {
-      width: 140px;
-      height: 140px;
-      background: #F9F6F3;
-      border-radius: 10px;
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 0.75rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
-      border: 1px solid var(--border);
+      height: 180px;
+      width: 180px;
       flex-shrink: 0;
+      margin: 0 auto;
     }
     .product-img-box img {
-      max-width: 90%;
-      max-height: 90%;
+      max-height: 160px;
+      max-width: 100%;
+      width: auto;
+      height: auto;
       object-fit: contain;
+      display: block;
     }
     .product-content h3 {
       font-size: 1.25rem;
@@ -1119,6 +1129,9 @@
       .hero-cta-group { justify-content: center; text-align: center; }
       .mobile-sticky-cta { display: flex; }
       .diff-grid { grid-template-columns: 1fr; }
+      .product-card { grid-template-columns: 1fr; text-align: center; }
+      .product-img-box { margin: 0 auto 1.25rem; width: 100%; max-width: 220px; height: 180px; }
+      .product-meta-row { justify-content: center; }
       .takeaway-section { margin: 1.5rem auto 1.5rem; }
       .takeaway-points { grid-template-columns: 1fr 1fr; }
       body { padding-bottom: 64px; }
@@ -1130,7 +1143,7 @@
       .routine-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
       .product-card { grid-template-columns: 1fr; text-align: center; }
-      .product-img-box { margin: 0 auto; }
+      .product-img-box { margin: 0 auto 1.25rem; width: 100%; max-width: 220px; height: 180px; }
       .product-meta-row { justify-content: center; }
       .product-specs { text-align: left; }
     }
@@ -1186,7 +1199,7 @@
     </div>
 
     <div class="hero-img-wrap">
-      <img src="/assets/images/forehead_pimples_india.jpg" alt="Clinical presentation of forehead acne showing mixed comedones and hairline bumps on Indian skin" />
+      <img src="/assets/images/forehead_pimples_india.jpg" onerror="this.onerror=null; this.src='images/forehead_pimples_india.jpg';" alt="Clinical presentation of forehead acne showing mixed comedones and hairline bumps on Indian skin" />
       <div class="hero-img-badge">
         <strong>Clinical Mapping:</strong> Frontal T-zone sebaceous density and follicular pore occlusion.
       </div>
@@ -1230,7 +1243,7 @@
       <!-- Textual + Image Component for Section 1 -->
       <div class="product-card" style="margin: 1.75rem 0; background: var(--bg-2); border: 1.5px solid var(--border-accent);">
         <div class="product-img-box" style="height: auto; padding: 0; overflow: hidden; border-radius: 12px;">
-          <img src="/acne/forehead-acne/images/forehead_pimples_india.jpg" alt="Clinical Forehead Map: Hairline, Mid-Forehead, and Eyebrow Zones" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" loading="lazy" />
+          <img src="images/forehead_pimples_india.jpg" onerror="this.onerror=null; this.src='/assets/images/forehead_pimples_india.jpg';" alt="Clinical Forehead Map: Hairline, Mid-Forehead, and Eyebrow Zones" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px;" loading="lazy" />
         </div>
         <div class="product-content">
           <div class="product-meta-row">
@@ -1408,109 +1421,131 @@
 
       <p>You do not need expensive imported salon treatments. Indian pharmacies carry gold-standard, clinically proven solutions that clear forehead bumps without irritating melanin-rich skin or causing post-inflammatory hyperpigmentation (PIH):</p>
 
-      <!-- PRODUCT 1: SCALPE PLUS -->
-      <div class="product-card">
-        <div class="product-img-box">
-          <img src="/assets/images/prod-scalpe-plus-anti-dandruff.webp" alt="Scalpe Plus Anti-Dandruff Ketoconazole Shampoo Bottle" loading="lazy" />
-        </div>
-        <div class="product-content">
-          <div class="product-meta-row">
-            <span class="badge badge-blue">Best for Fungal Forehead Bumps</span>
-            <span class="badge badge-orange">Active: Ketoconazole 2% + ZPTO</span>
+      <div class="product-list">
+        <!-- PRODUCT 1: SCALPE PLUS -->
+        <div class="product-card">
+          <div class="product-img-box">
+            <img src="images/prod-scalpe-plus-anti-dandruff.jpg" 
+                 onerror="if(!this.dataset.retry){this.dataset.retry=1; this.src='/assets/images/prod-scalpe-plus-anti-dandruff.jpg';}else if(this.dataset.retry==1){this.dataset.retry=2; this.src='/assets/images/prod-scalpe-plus-anti-dandruff.webp';}" 
+                 alt="Scalpe Plus Anti-Dandruff Ketoconazole Shampoo Bottle" 
+                 width="160" 
+                 height="160" 
+                 loading="eager" />
           </div>
-          <h3>1. Scalpe+ Anti-Dandruff Wash (Ketoconazole 2%)</h3>
-          <p class="product-desc">
-            The first-line clinical weapon against Malassezia fungal breakouts. Rather than just using it on your scalp, work a coin-sized amount into a gentle lather over your forehead and hairline. Leave it on for <strong>3 to 5 minutes</strong> before rinsing thoroughly with cool water <a href="#ref-4" class="ref-cite" title="BJD: Contact Time in Topical Ketoconazole">[4]</a>. Use 3 nights per week.
-          </p>
-          <div class="product-specs">
-            <div class="spec-item">
-              <span class="spec-label">Why It Works</span>
-              <span class="spec-val">Eliminates fungal yeast cells directly in 7–10 days</span>
+          <div class="product-content">
+            <div class="product-meta-row">
+              <span class="badge badge-blue">Best for Fungal Forehead Bumps</span>
+              <span class="badge badge-orange">Active: Ketoconazole 2% + ZPTO</span>
             </div>
-            <div class="spec-item">
-              <span class="spec-label">Pharmacy Price</span>
-              <span class="spec-val">₹290 – ₹330 for 100ml</span>
+            <h3>1. Scalpe+ Anti-Dandruff Wash (Ketoconazole 2%)</h3>
+            <p class="product-desc">
+              The first-line clinical weapon against Malassezia fungal breakouts. Rather than just using it on your scalp, work a coin-sized amount into a gentle lather over your forehead and hairline. Leave it on for <strong>3 to 5 minutes</strong> before rinsing thoroughly with cool water <a href="#ref-4" class="ref-cite" title="BJD: Contact Time in Topical Ketoconazole">[4]</a>. Use 3 nights per week.
+            </p>
+            <div class="product-specs">
+              <div class="spec-item">
+                <span class="spec-label">Why It Works</span>
+                <span class="spec-val">Eliminates fungal yeast cells directly in 7–10 days</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Pharmacy Price</span>
+                <span class="spec-val">₹290 – ₹330 for 100ml</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- PRODUCT 2: BENZAC AC 2.5% -->
-      <div class="product-card">
-        <div class="product-img-box">
-          <img src="/assets/images/benzac-ac-25-gel.jpg" alt="Galderma Benzac AC 2.5% Gel Tube" loading="lazy" />
-        </div>
-        <div class="product-content">
-          <div class="product-meta-row">
-            <span class="badge badge-orange">Best for Red Inflammatory Pimples</span>
-            <span class="badge badge-blue">Active: Benzoyl Peroxide 2.5%</span>
+        <!-- PRODUCT 2: BENZAC AC 2.5% -->
+        <div class="product-card">
+          <div class="product-img-box">
+            <img src="images/benzac-ac-25-gel.jpg" 
+                 onerror="if(!this.dataset.retry){this.dataset.retry=1; this.src='/assets/images/benzac-ac-25-gel.jpg';}" 
+                 alt="Galderma Benzac AC 2.5% Gel Tube" 
+                 width="160" 
+                 height="160" 
+                 loading="eager" />
           </div>
-          <h3>2. Galderma Benzac AC 2.5% Gel</h3>
-          <p class="product-desc">
-            Water-based micronized Benzoyl Peroxide that penetrates deep into pores to kill <em>C. acnes</em> bacteria within 48 hours. Unlike topical antibiotic gels (such as clindamycin), bacteria cannot build resistance to Benzoyl Peroxide. The 2.5% strength is just as effective as 10% but causes far less peeling on Indian skin.
-          </p>
-          <div class="product-specs">
-            <div class="spec-item">
-              <span class="spec-label">Why It Works</span>
-              <span class="spec-val">Releases oxygen into the follicle to wipe out bacteria</span>
+          <div class="product-content">
+            <div class="product-meta-row">
+              <span class="badge badge-orange">Best for Red Inflammatory Pimples</span>
+              <span class="badge badge-blue">Active: Benzoyl Peroxide 2.5%</span>
             </div>
-            <div class="spec-item">
-              <span class="spec-label">Pharmacy Price</span>
-              <span class="spec-val">₹180 – ₹220 for 30g</span>
+            <h3>2. Galderma Benzac AC 2.5% Gel</h3>
+            <p class="product-desc">
+              Water-based micronized Benzoyl Peroxide that penetrates deep into pores to kill <em>C. acnes</em> bacteria within 48 hours. Unlike topical antibiotic gels (such as clindamycin), bacteria cannot build resistance to Benzoyl Peroxide. The 2.5% strength is just as effective as 10% but causes far less peeling on Indian skin.
+            </p>
+            <div class="product-specs">
+              <div class="spec-item">
+                <span class="spec-label">Why It Works</span>
+                <span class="spec-val">Releases oxygen into the follicle to wipe out bacteria</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Pharmacy Price</span>
+                <span class="spec-val">₹180 – ₹220 for 30g</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- PRODUCT 3: ADAFERIN GEL -->
-      <div class="product-card">
-        <div class="product-img-box">
-          <img src="/assets/images/adaferin-gel.jpg" alt="Galderma Adaferin 0.1% Adapalene Gel Tube" loading="lazy" />
-        </div>
-        <div class="product-content">
-          <div class="product-meta-row">
-            <span class="badge badge-green">Best for Closed Comedones &amp; Texture</span>
-            <span class="badge badge-blue">Active: Adapalene 0.1%</span>
+        <!-- PRODUCT 3: ADAFERIN GEL -->
+        <div class="product-card">
+          <div class="product-img-box">
+            <img src="images/adaferin-gel.jpg" 
+                 onerror="if(!this.dataset.retry){this.dataset.retry=1; this.src='/assets/images/adaferin-gel.jpg';}" 
+                 alt="Galderma Adaferin 0.1% Adapalene Gel Tube" 
+                 width="160" 
+                 height="160" 
+                 loading="eager" />
           </div>
-          <h3>3. Galderma Adaferin 0.1% Gel (Adapalene)</h3>
-          <p class="product-desc">
-            The gold-standard topical retinoid for ungluing closed forehead whiteheads and preventing new clogged pores. Adapalene speeds up cellular turnover, expelling microcomedones before they turn into red bumps. Apply a tiny pea-sized amount over your entire forehead at night after moisturizer.
-          </p>
-          <div class="product-specs">
-            <div class="spec-item">
-              <span class="spec-label">Why It Works</span>
-              <span class="spec-val">Regulates cell turnover and stops pores from blocking</span>
+          <div class="product-content">
+            <div class="product-meta-row">
+              <span class="badge badge-green">Best for Closed Comedones &amp; Texture</span>
+              <span class="badge badge-blue">Active: Adapalene 0.1%</span>
             </div>
-            <div class="spec-item">
-              <span class="spec-label">Pharmacy Price</span>
-              <span class="spec-val">₹280 – ₹340 for 15g</span>
+            <h3>3. Galderma Adaferin 0.1% Gel (Adapalene)</h3>
+            <p class="product-desc">
+              The gold-standard topical retinoid for ungluing closed forehead whiteheads and preventing new clogged pores. Adapalene speeds up cellular turnover, expelling microcomedones before they turn into red bumps. Apply a tiny pea-sized amount over your entire forehead at night after moisturizer.
+            </p>
+            <div class="product-specs">
+              <div class="spec-item">
+                <span class="spec-label">Why It Works</span>
+                <span class="spec-val">Regulates cell turnover and stops pores from blocking</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Pharmacy Price</span>
+                <span class="spec-val">₹280 – ₹340 for 15g</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- PRODUCT 4: SEBAMED CLEAR FACE GEL -->
-      <div class="product-card">
-        <div class="product-img-box">
-          <img src="/assets/images/prod-sebamed-clear-face-gel.webp" alt="Sebamed Clear Face Care Gel Tube" loading="lazy" />
-        </div>
-        <div class="product-content">
-          <div class="product-meta-row">
-            <span class="badge badge-green">100% Fungal Acne-Safe Hydration</span>
-            <span class="badge badge-blue">Active: Hyaluronic Acid + Aloe (pH 5.5)</span>
+        <!-- PRODUCT 4: SEBAMED CLEAR FACE GEL -->
+        <div class="product-card">
+          <div class="product-img-box">
+            <img src="images/prod-sebamed-clear-face-gel.jpg" 
+                 onerror="if(!this.dataset.retry){this.dataset.retry=1; this.src='/assets/images/prod-sebamed-clear-face-gel.jpg';}else if(this.dataset.retry==1){this.dataset.retry=2; this.src='/assets/images/prod-sebamed-clear-face-gel.webp';}" 
+                 alt="Sebamed Clear Face Care Gel Tube" 
+                 width="160" 
+                 height="160" 
+                 loading="eager" />
           </div>
-          <h3>4. Sebamed Clear Face Care Gel</h3>
-          <p class="product-desc">
-            Never skip moisturizer on an oily forehead—doing so triggers rebound sebum production. Sebamed Clear Face Care Gel is completely oil-free, fatty-acid-free, and ester-free. It provides lightweight hydration with Hyaluronic Acid, Aloe Vera, and Panthenol without feeding Malassezia yeast.
-          </p>
-          <div class="product-specs">
-            <div class="spec-item">
-              <span class="spec-label">Why It Works</span>
-              <span class="spec-val">100% lipid-free; restores barrier without feeding yeast</span>
+          <div class="product-content">
+            <div class="product-meta-row">
+              <span class="badge badge-green">100% Fungal Acne-Safe Hydration</span>
+              <span class="badge badge-blue">Active: Hyaluronic Acid + Aloe (pH 5.5)</span>
             </div>
-            <div class="spec-item">
-              <span class="spec-label">Pharmacy Price</span>
-              <span class="spec-val">₹460 – ₹490 for 50ml</span>
+            <h3>4. Sebamed Clear Face Care Gel</h3>
+            <p class="product-desc">
+              Never skip moisturizer on an oily forehead—doing so triggers rebound sebum production. Sebamed Clear Face Care Gel is completely oil-free, fatty-acid-free, and ester-free. It provides lightweight hydration with Hyaluronic Acid, Aloe Vera, and Panthenol without feeding Malassezia yeast.
+            </p>
+            <div class="product-specs">
+              <div class="spec-item">
+                <span class="spec-label">Why It Works</span>
+                <span class="spec-val">100% lipid-free; restores barrier without feeding yeast</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Pharmacy Price</span>
+                <span class="spec-val">₹460 – ₹490 for 50ml</span>
+              </div>
             </div>
           </div>
         </div>
