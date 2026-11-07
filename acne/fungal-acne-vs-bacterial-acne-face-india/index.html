@@ -355,13 +355,23 @@
       font-weight: 600;
     }
 
-    /* Fast Takeaway Card (GEO Optimization) */
+    /* Post-Hero Fast Takeaway Section (GEO) */
+    .takeaway-section {
+      max-width: 1180px;
+      margin: -2rem auto 2.5rem;
+      padding: 0 1.25rem;
+      position: relative;
+      z-index: 10;
+    }
+    .takeaway-inner {
+      width: 100%;
+    }
     .takeaway-card {
       background: var(--bg-2);
       border: 1.5px solid var(--border-accent);
-      border-radius: 16px;
-      padding: 1.25rem 1.5rem;
-      box-shadow: 0 4px 20px rgba(236,97,14,0.06);
+      border-radius: 18px;
+      padding: 1.6rem 1.85rem;
+      box-shadow: 0 8px 30px rgba(236,97,14,0.08);
     }
     .takeaway-badge {
       display: inline-flex;
@@ -378,32 +388,32 @@
       margin-bottom: 0.75rem;
     }
     .takeaway-card h3 {
-      font-size: 1.05rem;
+      font-size: 1.25rem;
       font-weight: 700;
       color: var(--text);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.6rem;
     }
     .takeaway-card p {
-      font-size: 13.5px;
+      font-size: 14.5px;
       color: var(--text-2);
-      line-height: 1.55;
-      margin-bottom: 0.85rem;
+      line-height: 1.65;
+      margin-bottom: 1rem;
     }
     .takeaway-points {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-      font-size: 12.5px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      font-size: 13px;
       color: var(--text);
       font-weight: 600;
     }
     .takeaway-pt {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
       background: #FFFFFF;
-      padding: 6px 10px;
-      border-radius: 8px;
+      padding: 10px 14px;
+      border-radius: 10px;
       border: 1px solid var(--border);
     }
 
@@ -972,6 +982,8 @@
       .hero-cta-group { justify-content: center; text-align: center; }
       .mobile-sticky-cta { display: flex; }
       .diff-grid { grid-template-columns: 1fr; }
+      .takeaway-section { margin: 1.5rem auto 1.5rem; }
+      .takeaway-points { grid-template-columns: 1fr 1fr; }
       body { padding-bottom: 64px; }
     }
     @media (max-width: 600px) {
@@ -1024,19 +1036,6 @@
         <a href="https://mymirror.fit/scan/" class="hero-cta-btn">Scan Your Skin: Check Bumps in 10s ↗</a>
         <span class="hero-cta-sub">✓ Instant AI bump analysis • 100% free • No app install required</span>
       </div>
-
-      <!-- Fast Takeaway Box (GEO AI Overviews) -->
-      <div class="takeaway-card">
-        <div class="takeaway-badge">⚡ 10-Second Dermatologist Takeaway</div>
-        <h3>The Fast Self-Check Rule</h3>
-        <p><strong>Look at the size and the itch.</strong> If your breakouts are <em>mixed</em> sizes (blackheads, whiteheads, deep sore red bumps), it is <strong>Bacterial Acne</strong>. If your breakouts are <em>identical</em> tiny bumps (1–2mm), intensely itchy, and flare after sweating or scalp oiling, it is <strong>Fungal Acne</strong>. Bacterial acne needs Benzoyl Peroxide and Adapalene; fungal acne needs Ketoconazole 2% and oil-free water gels.</p>
-        <div class="takeaway-points">
-          <div class="takeaway-pt">🍄 Fungal: Itchy, uniform, small</div>
-          <div class="takeaway-pt">🦠 Bacterial: Sore, mixed sizes, pus</div>
-          <div class="takeaway-pt">🚫 Antibiotics worsen fungal bumps</div>
-          <div class="takeaway-pt">🧴 Ketoconazole 2% clears yeast</div>
-        </div>
-      </div>
     </div>
 
     <div class="hero-img-wrap">
@@ -1044,6 +1043,23 @@
     </div>
   </div>
 </section>
+
+<!-- POST-HERO FAST TAKEAWAY (GEO) -->
+<div class="takeaway-section">
+  <div class="takeaway-inner">
+    <div class="takeaway-card">
+      <div class="takeaway-badge">⚡ 10-Second Dermatologist Takeaway</div>
+      <h3>The Fast Self-Check Rule</h3>
+      <p><strong>Look at the size and the itch.</strong> If your breakouts are <em>mixed</em> sizes (blackheads, whiteheads, deep sore red bumps), it is <strong>Bacterial Acne</strong>. If your breakouts are <em>identical</em> tiny bumps (1–2mm), intensely itchy, and flare after sweating or scalp oiling, it is <strong>Fungal Acne</strong>. Bacterial acne needs Benzoyl Peroxide and Adapalene; fungal acne needs Ketoconazole 2% and oil-free water gels.</p>
+      <div class="takeaway-points">
+        <div class="takeaway-pt">🍄 Fungal: Itchy, uniform, small</div>
+        <div class="takeaway-pt">🦠 Bacterial: Sore, mixed sizes, pus</div>
+        <div class="takeaway-pt">🚫 Antibiotics worsen fungal bumps</div>
+        <div class="takeaway-pt">🧴 Ketoconazole 2% clears yeast</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- MAIN CONTENT LAYOUT -->
 <div class="page-layout">
