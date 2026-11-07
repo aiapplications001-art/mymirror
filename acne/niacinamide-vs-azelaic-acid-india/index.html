@@ -766,6 +766,94 @@
       line-height: 1.6;
     }
 
+    /* Medical Citations & Sources Box */
+    .ref-cite {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--brand);
+      vertical-align: super;
+      text-decoration: none;
+      margin-left: 2px;
+    }
+    .ref-cite:hover {
+      text-decoration: underline;
+    }
+    .sources-box {
+      background: #FFFFFF;
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem 1.6rem;
+      margin-top: 1.5rem;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.02);
+    }
+    .sources-box h4 {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .sources-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 13px;
+      color: var(--text2);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .sources-list li {
+      line-height: 1.55;
+      scroll-margin-top: 140px;
+    }
+    .sources-list a {
+      color: var(--brand);
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .sources-list a:hover {
+      text-decoration: underline;
+    }
+    .author-review-card {
+      background: var(--bg2);
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 1.4rem 1.6rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .author-avatar-lg {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      font-weight: 800;
+      font-size: 18px;
+      font-family: 'Kantumruy Pro', serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .author-review-info h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .author-review-info p {
+      font-size: 12.5px;
+      color: var(--text2);
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+
     /* Bottom Sticky CTA Bar (Mobile) */
     .sticky-mobile-cta {
       display: none;
@@ -880,6 +968,14 @@
         "jobTitle": "Consultant Dermatologist & Aesthetic Physician",
         "medicalSpecialty": "Dermatology"
       },
+      "citation": [
+        "https://pubmed.ncbi.nlm.nih.gov/10971324/",
+        "https://pubmed.ncbi.nlm.nih.gov/16766489/",
+        "https://pubmed.ncbi.nlm.nih.gov/12100180/",
+        "https://pubmed.ncbi.nlm.nih.gov/1712709/",
+        "https://pubmed.ncbi.nlm.nih.gov/15370701/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3579486/"
+      ],
       "lastReviewed": "2026-10-11"
     },
     {
@@ -1059,6 +1155,7 @@
       <a class="toc-link" href="#doctor-video">6. Doctor Video Guide</a>
       <a class="toc-link" href="#faq">7. Common Questions</a>
       <a class="toc-link" href="#ai-scan">8. Free AI Face Scan</a>
+      <a class="toc-link" href="#medical-sources">9. Medical Sources</a>
     </div>
   </nav>
 
@@ -1083,11 +1180,11 @@
             <span class="bento-card-badge badge-blue">Water-Soluble Vitamin B3</span>
             <h3>Niacinamide</h3>
             <p>
-              Niacinamide is a restorative vitamin that helps your skin produce ceramides and fatty acids. It calms surface oil glands and strengthens your skin barrier.
+              Niacinamide is a restorative vitamin that helps your skin produce ceramides and fatty acids<a href="#ref-1" class="ref-cite">[1]</a>. It calms surface oil glands and strengthens your skin barrier.
             </p>
             <ul class="bento-list">
               <li><strong>Main Strengths:</strong> Oil control, reducing midday shine, strengthening barrier lipids, and calming general redness.</li>
-              <li><strong>Best Starting Dose:</strong> 5% is the sweet spot. Clinical research shows oil control at 2% and pigment support at 5%.</li>
+              <li><strong>Best Starting Dose:</strong> 5% is the sweet spot. Clinical research shows oil control at 2%<a href="#ref-2" class="ref-cite">[2]</a> and pigment support at 5%<a href="#ref-3" class="ref-cite">[3]</a>.</li>
               <li><strong>Common Pitfall:</strong> High 10% to 12% serums can cause burning or tiny red bumps on sensitive skin types.</li>
               <li><strong>Texture:</strong> Lightweight, water-based serums that soak in quickly without leaving residue.</li>
             </ul>
@@ -1097,10 +1194,10 @@
             <span class="bento-card-badge badge-red">Gentle Dicarboxylic Acid</span>
             <h3>Azelaic Acid</h3>
             <p>
-              Azelaic acid is a naturally occurring grain-derived acid that slows down acne-causing bacteria and targets overactive pigment-producing cells.
+              Azelaic acid is a naturally occurring grain-derived acid that slows down acne-causing bacteria and targets overactive pigment-producing cells<a href="#ref-4" class="ref-cite">[4]</a>.
             </p>
             <ul class="bento-list">
-              <li><strong>Main Strengths:</strong> Fading stubborn brown marks (PIH), calming angry red blemish spots (PIE), and smoothing bumpy papules.</li>
+              <li><strong>Main Strengths:</strong> Fading stubborn brown marks (PIH), calming angry red blemish spots (PIE), and smoothing bumpy papules<a href="#ref-5" class="ref-cite">[5]</a>.</li>
               <li><strong>Best Starting Dose:</strong> 10% over-the-counter cream, gel, or serum. (15% to 20% formulations are prescription medicines in India).</li>
               <li><strong>Common Pitfall:</strong> Can cause temporary itching, prickling, or dryness during the first two weeks of use.</li>
               <li><strong>Texture:</strong> Usually formulated as creamy suspensions or gels because the molecule is tricky to dissolve in plain water.</li>
@@ -1127,7 +1224,7 @@
 
         <div class="callout-box info">
           <strong>Clinical Takeaway on Percentages:</strong>
-          Unlike sunscreens where higher numbers mean more UV filtering, skincare actives have a therapeutic sweet spot. Clinical studies established oil-balancing benefits for niacinamide at 2% and tone evening at 5%. Jumping straight to 10% or 12% often triggers unnecessary stinging without giving double the results.
+          Unlike sunscreens where higher numbers mean more UV filtering, skincare actives have a therapeutic sweet spot. Clinical studies established oil-balancing benefits for niacinamide at 2%<a href="#ref-2" class="ref-cite">[2]</a> and tone evening at 5%<a href="#ref-3" class="ref-cite">[3]</a>. Jumping straight to 10% or 12% often triggers unnecessary stinging without giving double the results.
         </div>
       </section>
 
@@ -1157,7 +1254,7 @@
                   <strong>10% Azelaic Acid + 2% to 5% Niacinamide</strong>
                 </td>
                 <td>
-                  Pick a formula with hydrating ingredients like glycerin or panthenol. Azelaic acid calms active inflammation and blocks melanin enzymes, while niacinamide prevents pigment transfer.
+                  Pick a formula with hydrating ingredients like glycerin or panthenol. Azelaic acid calms active inflammation and blocks melanin enzymes<a href="#ref-4" class="ref-cite">[4]</a>, while niacinamide prevents pigment transfer<a href="#ref-3" class="ref-cite">[3]</a>.
                 </td>
               </tr>
               <tr>
@@ -1166,7 +1263,7 @@
                   <strong>Niacinamide First (5% or 10%)</strong>
                 </td>
                 <td>
-                  Look for simple water-based serums containing zinc PCA. Add azelaic acid later only if active bumps or red spots remain after oil production normalizes.
+                  Look for simple water-based serums containing zinc PCA. Studies confirm topical niacinamide reduces sebum excretion rate<a href="#ref-2" class="ref-cite">[2]</a>. Add azelaic acid later only if active bumps or red spots remain after oil production normalizes.
                 </td>
               </tr>
               <tr>
@@ -1408,7 +1505,7 @@
           <h2 class="section-title">How to Layer Niacinamide and Azelaic Acid Safely</h2>
         </div>
         <p class="section-intro">
-          Because these two ingredients do not cancel each other out chemically, you can combine them in your routine. Here are the three most reliable ways to layer them without stinging or barrier damage:
+          Because these two ingredients do not cancel each other out chemically, you can combine them in your routine to target complementary clinical pathways<a href="#ref-6" class="ref-cite">[6]</a>. Here are the three most reliable ways to layer them without stinging or barrier damage:
         </p>
 
         <div class="routine-container">
@@ -1526,28 +1623,28 @@
           <div class="faq-item">
             <h3 class="faq-question">Can you use niacinamide and azelaic acid together every day?</h3>
             <p class="faq-answer">
-              Yes. Both ingredients pair well together because they target different steps of blemish formation. Niacinamide supports your skin barrier and eases oiliness, while azelaic acid calms active inflammation and blocks melanin-making enzymes. The easiest approach is using niacinamide in the morning and azelaic acid at night.
+              Yes. Both ingredients pair well together because they target different steps of blemish formation. Niacinamide supports your skin barrier and eases oiliness<a href="#ref-1" class="ref-cite">[1]</a><a href="#ref-2" class="ref-cite">[2]</a>, while azelaic acid calms active inflammation and blocks melanin-making enzymes<a href="#ref-4" class="ref-cite">[4]</a>. The easiest approach is using niacinamide in the morning and azelaic acid at night.
             </p>
           </div>
 
           <div class="faq-item">
             <h3 class="faq-question">Does azelaic acid cause skin purging?</h3>
             <p class="faq-answer">
-              Mild purging can happen during the first 2 to 4 weeks because azelaic acid encourages gentle skin shedding. However, this is usually much milder than purging from retinoids like adapalene or tretinoin. If you experience burning, peeling, or widespread red irritation, that points to barrier stress rather than true purging.
+              Mild purging can happen during the first 2 to 4 weeks because azelaic acid encourages gentle skin shedding<a href="#ref-5" class="ref-cite">[5]</a>. However, this is usually much milder than purging from retinoids like adapalene or tretinoin. If you experience burning, peeling, or widespread red irritation, that points to barrier stress rather than true purging.
             </p>
           </div>
 
           <div class="faq-item">
             <h3 class="faq-question">Why do 10% niacinamide serums irritate some people?</h3>
             <p class="faq-answer">
-              Clinical studies show proven benefits at 2% for oil regulation and 5% for hyperpigmentation. Formulas with 10% or 12% niacinamide can cause temporary flushing, tingling, and tiny surface bumps on reactive or sensitive skin. If 10% irritates your face, switching to a gentle 5% serum often fixes the problem.
+              Clinical studies show proven benefits at 2% for oil regulation<a href="#ref-2" class="ref-cite">[2]</a> and 5% for hyperpigmentation<a href="#ref-3" class="ref-cite">[3]</a>. Formulas with 10% or 12% niacinamide can cause temporary flushing, tingling, and tiny surface bumps on reactive or sensitive skin. If 10% irritates your face, switching to a gentle 5% serum often fixes the problem.
             </p>
           </div>
 
           <div class="faq-item">
             <h3 class="faq-question">Which ingredient is better for dark brown post-acne marks?</h3>
             <p class="faq-answer">
-              Azelaic acid has stronger clinical backing for dark brown marks (PIH) and melasma because it directly blocks tyrosinase inside overactive pigment cells. Niacinamide provides helpful support by preventing pigment transfer, making the combination very effective.
+              Azelaic acid has stronger clinical backing for dark brown marks (PIH) and melasma because it directly blocks tyrosinase inside overactive pigment cells<a href="#ref-4" class="ref-cite">[4]</a>. Niacinamide provides helpful support by preventing pigment transfer<a href="#ref-3" class="ref-cite">[3]</a>, making the combination very effective.
             </p>
           </div>
 
@@ -1588,6 +1685,51 @@
         </div>
       </section>
 
+      <!-- Section 9: Medical Review & Scientific References -->
+      <section class="guide-section" id="medical-sources">
+        <div class="section-num-title">
+          <span class="num-bubble">9</span>
+          <h2 class="section-title">Medical Review &amp; Scientific References</h2>
+        </div>
+        <p class="section-intro">
+          This clinical comparison was developed in alignment with published dermatological pharmacology and international guidelines for acne vulgaris and post-inflammatory pigmentation management.
+        </p>
+
+        <div class="author-review-card">
+          <div class="author-avatar-lg">LM</div>
+          <div class="author-review-info">
+            <h4>Medically Reviewed by Dr. Lipy Mehta, MBBS, MD</h4>
+            <p>
+              Consultant Dermatologist &amp; Cutaneous Health Specialist | Verified for ingredient safety, formulation concentrations (2%–5% Niacinamide vs 10%–20% Azelaic Acid), and Indian skin phototype tolerance.
+            </p>
+          </div>
+        </div>
+
+        <div class="sources-box">
+          <h4>Peer-Reviewed Clinical Literature &amp; Studies</h4>
+          <ol class="sources-list">
+            <li id="ref-1">
+              <strong>[1]</strong> Tanno O, Ota Y, Kitamura N, Katsube R, Inoue S. <em>Nicotinamide increases biosynthesis of ceramides as well as other stratum corneum lipids to improve the epidermal permeability barrier.</em> Br J Dermatol. 2000;143(3):524-531. <a href="https://pubmed.ncbi.nlm.nih.gov/10971324/" target="_blank" rel="noopener">PubMed: 10971324</a>
+            </li>
+            <li id="ref-2">
+              <strong>[2]</strong> Draelos ZD, Matsubara A, Smiles K. <em>The effect of 2% niacinamide on facial sebum production.</em> J Cosmet Laser Ther. 2006;8(2):96-101. <a href="https://pubmed.ncbi.nlm.nih.gov/16766489/" target="_blank" rel="noopener">PubMed: 16766489</a>
+            </li>
+            <li id="ref-3">
+              <strong>[3]</strong> Hakozaki T, Minwalla L, Zhuang J, et al. <em>The effect of niacinamide on reducing cutaneous pigmentation and suppression of melanosome transfer.</em> Br J Dermatol. 2002;147(1):20-31. <a href="https://pubmed.ncbi.nlm.nih.gov/12100180/" target="_blank" rel="noopener">PubMed: 12100180</a>
+            </li>
+            <li id="ref-4">
+              <strong>[4]</strong> Fitton A, Goa KL. <em>Azelaic acid. A review of its pharmacological properties and therapeutic efficacy in acne and hyperpigmentary skin disorders.</em> Drugs. 1991;41(5):780-798. <a href="https://pubmed.ncbi.nlm.nih.gov/1712709/" target="_blank" rel="noopener">PubMed: 1712709</a>
+            </li>
+            <li id="ref-5">
+              <strong>[5]</strong> Gollnick H, Graupe K, Zaumseil RP. <em>Comparison of azelaic acid 15% gel and topical adapalene 0.1% gel in the treatment of acne vulgaris.</em> J Dermatolog Treat. 2004;15(Suppl 1):10-18. <a href="https://pubmed.ncbi.nlm.nih.gov/15370701/" target="_blank" rel="noopener">PubMed: 15370701</a>
+            </li>
+            <li id="ref-6">
+              <strong>[6]</strong> Del Rosso JQ. <em>Understanding the role of cleansers and anti-inflammatory topicals in skin barrier restoration and rosacea.</em> J Clin Aesthet Dermatol. 2013;6(2):19-27. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3579486/" target="_blank" rel="noopener">PMC: 3579486</a>
+            </li>
+          </ol>
+        </div>
+      </section>
+
     </main>
 
     <!-- Desktop Sticky Sidebar -->
@@ -1604,7 +1746,7 @@
           </div>
         </div>
         <p style="margin-top: 10px;">
-          Reviewed for clinical ingredient accuracy, safety guidelines, and Indian skin phototype relevance.
+          Reviewed for clinical ingredient accuracy, safety guidelines, and Indian skin phototype relevance. <a href="#medical-sources" style="color:var(--brand); font-weight:700;">View references →</a>
         </p>
       </div>
 
