@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "2.0.0",
+  "pageOpportunityId": "P-MANGO-ACNE-01",
+  "categorySlug": "acne",
+  "pageSlug": "does-eating-mango-cause-acne",
+  "canonicalUrl": "https://mymirror.fit/acne/does-eating-mango-cause-acne/",
+  "metadata": {
+    "title": "Does Eating Mango Cause Acne? Dermatologist Science & Safe Rules | MyMirror",
+    "description": "Do mangoes really cause pimples, or is 'garmi' a myth? A board-certified dermatologist explains the insulin-sebum link, mango shake traps, and the 4 safe eating rules.",
+    "ogTitle": "Does Eating Mango Cause Acne? The Medical Truth | MyMirror",
+    "ogDescription": "Discover why mangoes don't cause acne directly, how high glycemic spikes trigger excess sebum, and the 4-step protocol to enjoy summer mangoes breakout-free.",
+    "ogImage": "https://mymirror.fit/assets/images/does-eating-mango-cause-acne-og.jpg",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Can Mangoes Trigger Pimples? Dermatologist Verdict | MyMirror",
+    "twitterDescription": "Unraveling the mango 'garmi' myth. Why dairy shakes and urushiol sap trigger blemishes, plus the 1-hour soaking rule for clear skin.",
+    "twitterImage": "https://mymirror.fit/assets/images/does-eating-mango-cause-acne-twitter.jpg",
+    "datePublished": "2026-11-09",
+    "dateModified": "2026-11-09"
+  },
+  "keywords": {
+    "primary": "does eating mango cause acne",
+    "secondary": [
+      "can eating mango cause acne",
+      "mango causes acne",
+      "mango pimples garmi",
+      "does mango shake cause acne",
+      "mango urushiol lip rash",
+      "how to eat mango without getting pimples"
+    ]
+  },
+  "eAAT": {
+    "author": "MyMirror Clinical Editorial Team",
+    "reviewer": "Dr. Lipy Mehta",
+    "reviewerTitle": "Consultant Dermatologist, MD Dermatology, MBBS",
+    "reviewerExperience": "12+ years clinical experience"
+  },
+  "featuredProducts": [
+    {
+      "name": "Cipla Saslic DS Foaming Wash (2% Salicylic Acid)",
+      "price": 445,
+      "currency": "INR",
+      "availability": "https://schema.org/InStock",
+      "image": "https://mymirror.fit/acne/does-eating-mango-cause-acne/images/prod-cipla-saslic-ds.jpg"
+    },
+    {
+      "name": "Micro Labs Aziderm 10% Gel (Azelaic Acid)",
+      "price": 290,
+      "currency": "INR",
+      "availability": "https://schema.org/InStock",
+      "image": "https://mymirror.fit/acne/does-eating-mango-cause-acne/images/prod-aziderm-10-gel.jpg"
+    },
+    {
+      "name": "Sebamed Clear Face Care Gel",
+      "price": 475,
+      "currency": "INR",
+      "availability": "https://schema.org/InStock",
+      "image": "https://mymirror.fit/acne/does-eating-mango-cause-acne/images/prod-sebamed-clear-face-gel.jpg"
+    }
+  ],
+  "videoEmbed": {
+    "youtubeId": "gx1jddh8GGc",
+    "title": "Does Mango Cause Pimples? Dermatologist Explains Mango & Acne Truth",
+    "uploadDate": "2023-05-15T10:00:00+05:30"
+  }
+}
