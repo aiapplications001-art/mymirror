@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "2.0.0",
+  "pageOpportunityId": "P-BOROLINE-ACNE-01",
+  "categorySlug": "acne",
+  "pageSlug": "does-boroline-remove-acne",
+  "canonicalUrl": "https://mymirror.fit/acne/does-boroline-remove-acne/",
+  "metadata": {
+    "title": "Does Boroline Remove Acne? Dermatologist Science & Dangers | MyMirror",
+    "description": "Can Boroline cure pimples overnight? A board-certified dermatologist explains why its heavy wax base clogs pores, why it only helps picked scabs, and what to use instead.",
+    "ogTitle": "Does Boroline Remove Acne? The Dermatologist Truth | MyMirror",
+    "ogDescription": "Discover why slathering Boroline on active acne triggers severe closed comedones, the truth about zinc oxide in wound healing, and non-comedogenic alternatives.",
+    "ogImage": "https://mymirror.fit/assets/images/does-boroline-remove-acne-og.jpg",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Can Boroline Clear Pimples? Dermatologist Verdict | MyMirror",
+    "twitterDescription": "Unraveling the Boroline acne myth. Why petroleum waxes trap anaerobic bacteria, plus 3 proven pharmacy alternatives for Indian skin.",
+    "twitterImage": "https://mymirror.fit/assets/images/does-boroline-remove-acne-twitter.jpg",
+    "datePublished": "2026-11-09",
+    "dateModified": "2026-11-09"
+  },
+  "keywords": {
+    "primary": "does boroline remove acne",
+    "secondary": [
+      "can boroline remove acne",
+      "boroline on pimples",
+      "boroline for acne scars",
+      "boroline on face overnight for pimples",
+      "is boroline good for acne prone skin",
+      "boroline closed comedones"
+    ]
+  },
+  "eAAT": {
+    "author": "MyMirror Clinical Editorial Team",
+    "reviewer": "Dr. Lipy Mehta",
+    "reviewerTitle": "Consultant Dermatologist, MD Dermatology, MBBS",
+    "reviewerExperience": "12+ years clinical experience"
+  },
+  "featuredProducts": [
+    {
+      "name": "Cipla Saslic DS Foaming Wash (2% Salicylic Acid)",
+      "price": 445,
+      "currency": "INR",
+      "availability": "https://schema.org/InStock",
+      "image": "https://mymirror.fit/acne/does-boroline-remove-acne/images/prod-cipla-saslic-ds.jpg"
+    },
+    {
+      "name": "Micro Labs Aziderm 10% Gel (Azelaic Acid)",
+      "price": 290,
+      "currency": "INR",
+      "availability": "https://schema.org/InStock",
+      "image": "https://mymirror.fit/acne/does-boroline-remove-acne/images/prod-aziderm-10-gel.jpg"
+    },
+    {
+      "name": "Sebamed Clear Face Care Gel",
+      "price": 475,
+      "currency": "INR",
+      "availability": "https://schema.org/InStock",
+      "image": "https://mymirror.fit/acne/does-boroline-remove-acne/images/prod-sebamed-clear-face-gel.jpg"
+    }
+  ],
+  "videoEmbed": {
+    "youtubeId": "SUEDvR0FQNc",
+    "title": "The Truth About Boroline | Dermatologist Breaks It Down",
+    "uploadDate": "2023-11-20T10:00:00+05:30"
+  }
+}
