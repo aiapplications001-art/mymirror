@@ -6,7 +6,8 @@
 | `fungal-acne-malassezia-treatment-india-og.jpg` | Open Graph Social Share | 1.91:1 | 1200x630 | Editorial dermatology social card with split comparison of Malassezia bumps and soothing ketoconazole lather on warm neutral backdrop. |
 | `fungal-acne-malassezia-treatment-india-twitter.jpg` | Twitter Card Meta | 16:9 | 1200x675 | Warm editorial photograph of a young South Asian woman applying lightweight gel moisturizer in bright natural morning window light. |
 | `fungal-vs-bacterial-acne-comparison-guide.jpg` | Section 03 Diagnostic Infographic | 16:9 | 1200x675 | Clean editorial comparison infographic showing Fungal Acne (monomorphic 1-2mm bumps) vs Bacterial Acne (polymorphic lesions and comedones). |
-| `malassezia-lipid-feast-carbon-chains.jpg` | Section 04 Biochemical Infographic | 16:9 | 1200x675 | Illustrated spectrum guide detailing how carbon chain lengths C11 to C24 feed Malassezia yeast versus yeast-safe hydrators. |
+| `malassezia-lipid-feast-carbon-chains.jpg` | Section 04 Biochemical Infographic (Retina 2x) | 16:9 | 2400x1350 | Razor-sharp raster rendering of the biochemical spectrum guide detailing how carbon chain lengths C11 to C24 feed Malassezia yeast versus yeast-safe hydrators. |
+| `malassezia-lipid-feast-carbon-chains.svg` | Section 04 Biochemical Infographic (Vector) | 16:9 | 1200x675 | Native SVG vector graphic for infinite crispness and clear typography across all high-DPI displays. |
 | `prod-nizral-2-ketoconazole.jpg` | Product Card 1 | 1:1 | 800x800 | Studio packshot of Nizral 2% Ketoconazole Solution bottle on clean off-white podium with soft drop shadow. |
 | `prod-sebamed-clear-face-gel.jpg` | Product Card 2 | 1:1 | 800x800 | Studio packshot of Sebamed Clear Face Care Gel fungal-safe moisturizer tube on clean marble surface. |
 | `prod-cetaphil-gentle-cleanser.jpg` | Product Card 3 | 1:1 | 800x800 | Studio packshot of Cetaphil Gentle Skin Cleanser pump bottle on clean warm neutral surface. |
