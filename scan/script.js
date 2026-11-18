@@ -188,6 +188,55 @@ function getCameraPermissionResult(error) {
     return 'error';
 }
 
+function getOrCreateDeviceId() {
+    const STORAGE_KEY = 'mm_device_id';
+    try {
+        let deviceId = localStorage.getItem(STORAGE_KEY);
+        if (!deviceId) {
+            deviceId = (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function')
+                ? crypto.randomUUID()
+                : 'dev_' + Date.now() + '_' + Math.random().toString(36).slice(2, 11);
+            localStorage.setItem(STORAGE_KEY, deviceId);
+        }
+        return deviceId;
+    } catch (_) {
+        return readGaClientIdFromCookie() || 'dev_ephemeral';
+    }
+}
+
+function getStoredUserId() {
+    try {
+        return localStorage.getItem('mm_user_id') || null;
+    } catch (_) {
+        return null;
+    }
+}
+
+function setAnalyticsUserId(userId) {
+    if (!userId) return;
+    const cleanUserId = String(userId).trim().slice(0, 100);
+    try {
+        localStorage.setItem('mm_user_id', cleanUserId);
+    } catch (_) {}
+    if (typeof window.gtag === 'function') {
+        window.gtag('set', { user_id: cleanUserId });
+    }
+}
+window.setAnalyticsUserId = setAnalyticsUserId;
+
+function initAnalyticsIdentity() {
+    const deviceId = getOrCreateDeviceId();
+    const storedUserId = getStoredUserId();
+    if (typeof window.gtag === 'function') {
+        window.gtag('set', 'user_properties', {
+            device_id: deviceId
+        });
+        if (storedUserId) {
+            window.gtag('set', { user_id: storedUserId });
+        }
+    }
+}
+
 function cleanAnalyticsParams(params = {}) {
     const common = {
         app_area: 'face_scanner',
@@ -197,8 +246,13 @@ function cleanAnalyticsParams(params = {}) {
         device_category: getDeviceCategory(),
         viewport_bucket: getViewportBucket(),
         camera_supported: navigator.mediaDevices?.getUserMedia ? 'yes' : 'no',
-        engagement_time_msec: getAnalyticsEngagementMs()
+        engagement_time_msec: getAnalyticsEngagementMs(),
+        device_id: getOrCreateDeviceId()
     };
+    const storedUserId = getStoredUserId();
+    if (storedUserId) {
+        common.user_id = storedUserId;
+    }
     const cleaned = {};
     Object.entries({ ...common, ...params }).slice(0, 25).forEach(([key, value]) => {
         if (value === null || value === undefined || value === '') return;
@@ -261,6 +315,8 @@ async function getAnalyticsContextForBackend() {
     ]);
     const normalizedSessionId = String(sessionId || '').match(/^\d+$/) ? Number(sessionId) : null;
     return {
+        device_id: getOrCreateDeviceId(),
+        user_id: getStoredUserId(),
         client_id: String(clientId || readGaClientIdFromCookie() || '').slice(0, 100),
         session_id: normalizedSessionId,
         session_stage: analyticsSessionStage,
@@ -3930,13 +3986,51 @@ function showResults(data, vitals, submittedFaceImageBase64 = null, savedLogFile
     const actionPlan = getActionPlanViewModel(diagnosis);
     const overallScore = getDiagnosisOverall(diagnosis) || 0;
     const markerCount = getDiagnosisMarkerCount(diagnosis);
-    trackAnalyticsStage('results', 'results_viewed', {
+    const confidenceScore = Number(diagnosis.confidence) || 0;
+    const primaryConcern = actionPlan.sourcePillar ? sanitizeAnalyticsText(actionPlan.sourcePillar) : 'general';
+    const focusRegion = actionPlan.sourceRegion || 'overall';
+    const actionSeverity = actionPlan.severity || 'mild';
+    const deviceId = getOrCreateDeviceId();
+    const storedUserId = getStoredUserId();
+    const pillars = diagnosis?.pillars || {};
+
+    // 1. Update User Properties in GA4 (persists against user & device profile)
+    if (typeof window.gtag === 'function') {
+        window.gtag('set', 'user_properties', {
+            device_id: deviceId,
+            latest_skin_score: overallScore,
+            primary_skin_concern: primaryConcern
+        });
+    }
+
+    // 2. Fire dedicated scan_score_generated event
+    trackAnalyticsEvent('scan_score_generated', {
+        device_id: deviceId,
+        user_id: storedUserId || undefined,
         overall_score: overallScore,
         overall_score_bucket: getScoreBucket(overallScore),
-        confidence_score: Number(diagnosis.confidence) || 0,
+        confidence_score: confidenceScore,
+        confidence_bucket: getScoreBucket(confidenceScore),
+        primary_concern: primaryConcern,
+        focus_region: focusRegion,
+        marker_count: markerCount,
+        action_severity: actionSeverity,
+        score_oil_balance: Number(pillars.Oil_Balance?.score) || null,
+        score_breakouts: Number(pillars.Breakouts_Skin_Calmness?.score) || null,
+        score_evenness: Number(pillars.Evenness_Marks?.score) || null,
+        score_sensitivity: Number(pillars.Skin_Strength_Sensitivity?.score) || null,
+        score_smoothness: Number(pillars.Smoothness_Pore_Look?.score) || null,
+        score_lines: Number(pillars.Firmness_Fine_Lines?.score) || null
+    });
+
+    trackAnalyticsStage('results', 'results_viewed', {
+        device_id: deviceId,
+        overall_score: overallScore,
+        overall_score_bucket: getScoreBucket(overallScore),
+        confidence_score: confidenceScore,
         confidence_bucket: getScoreBucket(diagnosis.confidence),
-        top_focus_region: actionPlan.sourceRegion || 'none',
-        top_focus_pillar: actionPlan.sourcePillar ? sanitizeAnalyticsText(actionPlan.sourcePillar) : 'none',
+        top_focus_region: focusRegion,
+        top_focus_pillar: primaryConcern,
         marker_count: markerCount,
         marker_count_bucket: getCountBucket(markerCount)
     });
@@ -4124,6 +4218,7 @@ retryScanBtn.addEventListener('click', () => {
 // INIT ON LOAD
 window.addEventListener('DOMContentLoaded', () => {
     LOG.section('PAGE LOADED — DOMContentLoaded fired');
+    initAnalyticsIdentity();
     trackAnalyticsStage('home', 'scanner_home_view');
     installStartupVideoDiagnostics();
     installStartupErrorDiagnostics();
