@@ -1195,6 +1195,196 @@
       margin-bottom: 0;
     }
 
+    /* ── TEXT HIGHLIGHTS & ACCENTS ── */
+    mark.highlight {
+      background: var(--brand-light);
+      color: var(--txt);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    mark.highlight-blue {
+      background: #E0F2FE;
+      color: #0369A1;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    mark.highlight-green {
+      background: #DCFCE7;
+      color: #15803D;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    /* ── DIAGNOSTIC TRIAD BENTO CARDS ── */
+    .triad-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.1rem;
+      margin: 1.8rem 0;
+    }
+    .triad-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1rem;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .triad-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+      border-color: var(--border-emphasis);
+    }
+    .triad-icon {
+      font-size: 26px;
+      margin-bottom: 0.5rem;
+      display: inline-block;
+    }
+    .triad-title {
+      font-weight: 800;
+      font-size: 13.5px;
+      color: var(--txt);
+      margin-bottom: 0.35rem;
+    }
+    .triad-desc {
+      font-size: 12px;
+      color: var(--txt2);
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+
+    /* ── INFOGRAPHIC WORKFLOW BOX ── */
+    .flowchart-box {
+      background: var(--bg2);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      margin: 1.8rem 0;
+    }
+    .flowchart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.2rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+    }
+    .flowchart-title {
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--brand-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .flow-badge {
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      padding: 2px 8px;
+      border-radius: 9999px;
+    }
+    .flow-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .flow-step {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1rem 0.75rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .flow-step:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+    .flow-num {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      font-weight: 800;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+    .flow-step-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--txt);
+      margin-bottom: 0.25rem;
+    }
+    .flow-step-desc {
+      font-size: 11px;
+      color: var(--txt2);
+      line-height: 1.45;
+      margin-bottom: 0;
+    }
+
+    /* ── PROTOCOL STEP CARDS ── */
+    .protocol-steps-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 1.5rem 0;
+    }
+    .protocol-step-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.1rem 1.25rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .protocol-step-card:hover {
+      border-color: var(--brand);
+      transform: translateX(3px);
+      background: #FFFDFB;
+    }
+    .step-circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--brand);
+      color: #fff;
+      font-weight: 800;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .step-content-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--txt);
+      margin-bottom: 0.25rem;
+    }
+    .step-content-desc {
+      font-size: 13px;
+      color: var(--txt2);
+      line-height: 1.55;
+      margin-bottom: 0;
+    }
+
     /* ── LIGHT FOOTER ── */
     footer.site-footer {
       background: var(--bg2);
@@ -1224,12 +1414,15 @@
       .content-grid { grid-template-columns: 1fr; }
       .sidebar { display: none; }
       .product-grid { grid-template-columns: 1fr; }
+      .flow-steps { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .triad-grid { grid-template-columns: 1fr; gap: 10px; }
     }
     @media (max-width: 600px) {
       .nav-links { display: none; }
       .hero { padding: 1.8rem 1rem; }
       .article-container { padding: 1.5rem 1rem 3rem; }
       .cta-box { padding: 1.8rem 1.2rem; }
+      .flow-steps { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -1360,14 +1553,32 @@
           <span class="section-eyebrow">Section 01 • The Yeast Reality</span>
           <h2>What Exactly Is Malassezia Folliculitis (Fungal Acne)?</h2>
           <p>
-            When tiny bumps sprout in clusters along your forehead, your first reaction is probably to grab an anti-acne face wash. But if those bumps look identical, feel itchy, and refuse to budge with benzoyl peroxide or salicylic acid, you are likely dealing with an entirely different organism.
+            When tiny bumps sprout in clusters along your forehead, your first reaction is probably to grab an anti-acne face wash. But if those bumps <mark class="highlight">look identical, feel itchy, and refuse to budge</mark> with benzoyl peroxide or salicylic acid, you are likely dealing with an entirely different organism.
           </p>
           <p>
-            Fungal acne is not acne at all. Its clinical medical name is <strong>Malassezia folliculitis</strong> (also known historically as <em>Pityrosporum folliculitis</em>). It occurs when microscopic yeast organisms that naturally live on everyone's skin multiply inside hair follicles, setting off an inflammatory immune response.
+            Fungal acne is not acne at all. Its clinical medical name is <strong>Malassezia folliculitis</strong> (also known historically as <em>Pityrosporum folliculitis</em>). It occurs when <mark class="highlight-blue">microscopic yeast organisms that naturally live on everyone's skin multiply inside hair follicles</mark>, setting off an inflammatory immune response.
           </p>
           <p>
-            The culprit belongs to the <em>Malassezia</em> genus, primarily species like <em>Malassezia globosa</em> and <em>Malassezia restricta</em>. These yeasts love two things: moisture and natural skin oils (sebum). In the warm, humid climate common across most Indian cities, your skin produces excess sweat and oil, creating the ideal breeding ground for yeast colonies.
+            The culprit belongs to the <em>Malassezia</em> genus, primarily species like <em>Malassezia globosa</em> and <em>Malassezia restricta</em>. These yeasts love two things: <mark class="highlight">moisture and natural skin oils (sebum)</mark>. In the warm, humid climate common across most Indian cities, your skin produces excess sweat and oil, creating the ideal breeding ground for yeast colonies.
           </p>
+
+          <div class="triad-grid">
+            <div class="triad-card">
+              <span class="triad-icon">📏</span>
+              <div class="triad-title">1–2 mm Monomorphic</div>
+              <p class="triad-desc">Every single bump is the identical dome shape, with zero blackheads or varied cyst sizes.</p>
+            </div>
+            <div class="triad-card">
+              <span class="triad-icon">⚡</span>
+              <div class="triad-title">Prickling Itch</div>
+              <p class="triad-desc">Uncomfortable itching that spikes sharply after workouts, sweat buildup, or humid monsoon weather.</p>
+            </div>
+            <div class="triad-card">
+              <span class="triad-icon">📍</span>
+              <div class="triad-title">Hairline &amp; Chest</div>
+              <p class="triad-desc">Concentrated across high-sebum zones: forehead, temples, chest, and upper back.</p>
+            </div>
+          </div>
         </section>
 
         <!-- SECTION 2 -->
@@ -1389,8 +1600,37 @@
           </div>
 
           <p>
-            This biological imbalance is called <strong>microbial dysbiosis</strong>. If your breakouts started or intensified within two weeks of taking antibiotics, your hair follicles are experiencing a fungal yeast bloom, not a sudden wave of bacterial acne.
+            This biological imbalance is called <strong>microbial dysbiosis</strong>. If your breakouts started or intensified within two weeks of taking antibiotics, your hair follicles are experiencing a <mark class="highlight-blue">fungal yeast bloom, not a sudden wave of bacterial acne</mark>.
           </p>
+
+          <div class="flowchart-box">
+            <div class="flowchart-header">
+              <div class="flowchart-title">🔬 The Follicular Dysbiosis Cascade</div>
+              <span class="flow-badge">Why Antibiotics Fail Yeast</span>
+            </div>
+            <div class="flow-steps">
+              <div class="flow-step">
+                <span class="flow-num">1</span>
+                <div class="flow-step-title">Balanced Eco-System</div>
+                <p class="flow-step-desc">Friendly bacteria and yeast co-exist peacefully in hair follicles.</p>
+              </div>
+              <div class="flow-step">
+                <span class="flow-num">2</span>
+                <div class="flow-step-title">Antibiotic Course</div>
+                <p class="flow-step-desc">Broad-spectrum antibiotics eliminate competing surface bacteria.</p>
+              </div>
+              <div class="flow-step">
+                <span class="flow-num">3</span>
+                <div class="flow-step-title">Yeast Proliferation</div>
+                <p class="flow-step-desc">With zero competition, Malassezia multiplies exponentially.</p>
+              </div>
+              <div class="flow-step">
+                <span class="flow-num">4</span>
+                <div class="flow-step-title">Itchy Bumps Flare</div>
+                <p class="flow-step-desc">Inflammatory monomorphic papules spread rapidly on forehead &amp; chest.</p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- SECTION 3 -->
@@ -1413,12 +1653,12 @@
               <tbody>
                 <tr>
                   <td><strong>Appearance</strong></td>
-                  <td>Monomorphic (every bump is identical, 1–2 mm, dome-shaped).</td>
-                  <td>Polymorphic (varied sizes: blackheads, whiteheads, deep cystic bumps).</td>
+                  <td><span style="color:#C0392B;font-weight:700;">Monomorphic</span> (every bump is identical, 1–2 mm, dome-shaped).</td>
+                  <td><span style="color:#1A5F8A;font-weight:700;">Polymorphic</span> (varied sizes: blackheads, whiteheads, deep cystic bumps).</td>
                 </tr>
                 <tr>
                   <td><strong>Physical Sensation</strong></td>
-                  <td>Noticeably itchy, prickling sensation that intensifies with sweat and heat.</td>
+                  <td><mark class="highlight">Noticeably itchy</mark>, prickling sensation that intensifies with sweat and heat.</td>
                   <td>Tender, throbbing, or painful when pressed; rarely itchy.</td>
                 </tr>
                 <tr>
@@ -1428,8 +1668,8 @@
                 </tr>
                 <tr>
                   <td><strong>Comedones Present?</strong></td>
-                  <td>No blackheads or open comedones; purely follicular papules.</td>
-                  <td>Yes; blackheads and closed whiteheads are standard.</td>
+                  <td><strong>No blackheads</strong> or open comedones; purely follicular papules.</td>
+                  <td><strong>Yes</strong>; blackheads and closed whiteheads are standard.</td>
                 </tr>
                 <tr>
                   <td><strong>Response to Antibiotics</strong></td>
@@ -1443,6 +1683,12 @@
                 </tr>
               </tbody>
             </table>
+          </div>
+
+          <!-- Comparison Infographic Media Box -->
+          <div class="visual-media-box">
+            <img src="/acne/fungal-acne-malassezia-folliculitis-treatment-india/images/fungal-vs-bacterial-acne-comparison-guide.jpg" alt="Visual comparison guide between Fungal Acne (monomorphic itchy dome bumps) and Bacterial Acne (polymorphic comedones and cysts)" width="1200" height="675" loading="lazy">
+            <div class="media-caption">Visual diagnostic reference: Comparing uniform dome-shaped Malassezia fungal acne papules along the hairline with varied polymorphic bacterial comedones and cystic acne lesions.</div>
           </div>
 
           <div class="notice-box clinical">
@@ -1460,13 +1706,19 @@
             Here is a biological fact about Malassezia yeast: it cannot produce its own fatty acids. Unlike human cells, this fungus lacks the genetic enzymes required to build its own cell walls. It depends entirely on external lipids to survive.
           </p>
           <p>
-            However, the yeast is very specific about its food. It metabolizes fatty acids with carbon chain lengths between <strong>C11 and C24</strong>. If an ingredient contains carbon chains in this exact range, it acts like rocket fuel for fungal growth.
+            However, the yeast is very specific about its food. It metabolizes fatty acids with carbon chain lengths between <mark class="highlight"><strong>C11 and C24</strong></mark>. If an ingredient contains carbon chains in this exact range, it acts like rocket fuel for fungal growth.
           </p>
 
           <div class="notice-box warning">
             <div>
-              <strong>The Traditional Indian Oiling Trap (Champi):</strong> Scalp massage with warm coconut oil, almond oil, or mustard oil is deeply rooted in Indian haircare. Coconut oil consists of over 80% medium-chain fatty acids like lauric acid (C12) and myristic acid (C14). When this oil migrates down onto your forehead during sleep or sweat, it directly feeds Malassezia yeast colonies.
+              <strong>The Traditional Indian Oiling Trap (Champi):</strong> Scalp massage with warm coconut oil, almond oil, or mustard oil is deeply rooted in Indian haircare. Coconut oil consists of over 80% medium-chain fatty acids like <mark class="highlight">lauric acid (C12) and myristic acid (C14)</mark>. When this oil migrates down onto your forehead during sleep or sweat, it directly feeds Malassezia yeast colonies.
             </div>
+          </div>
+
+          <!-- Carbon Chain Infographic Media Box -->
+          <div class="visual-media-box">
+            <img src="/acne/fungal-acne-malassezia-folliculitis-treatment-india/images/malassezia-lipid-feast-carbon-chains.jpg" alt="The Lipid Feast infographic explaining how carbon chain lengths C11 to C24 feed Malassezia yeast versus yeast-safe hydrators" width="1200" height="675" loading="lazy">
+            <div class="media-caption">Molecular lipid guide: Fatty acids with carbon chain lengths between C11 and C24 feed Malassezia yeast cell membranes, while pure squalane and humectants remain completely yeast-safe.</div>
           </div>
 
           <p>
@@ -1485,23 +1737,23 @@
               <tbody>
                 <tr>
                   <td><strong>Natural Oils</strong></td>
-                  <td>Coconut oil, almond oil, olive oil, rosehip oil, jojoba oil.</td>
-                  <td>100% plant-derived Squalane oil (pure hydrocarbon).</td>
+                  <td><span style="color:#C0392B;font-weight:700;">❌ Avoid:</span> Coconut oil, almond oil, olive oil, rosehip oil, jojoba oil.</td>
+                  <td><span style="color:#059669;font-weight:700;">✅ Safe:</span> 100% plant-derived Squalane oil (pure hydrocarbon).</td>
                 </tr>
                 <tr>
                   <td><strong>Fatty Acids</strong></td>
-                  <td>Lauric acid, palmitic acid, stearic acid, oleic acid, linoleic acid.</td>
-                  <td>Hyaluronic acid (a sugar humectant, not a fatty acid).</td>
+                  <td><span style="color:#C0392B;font-weight:700;">❌ Avoid:</span> Lauric acid, palmitic acid, stearic acid, oleic acid, linoleic acid.</td>
+                  <td><span style="color:#059669;font-weight:700;">✅ Safe:</span> Hyaluronic acid (a sugar humectant, not a fatty acid).</td>
                 </tr>
                 <tr>
                   <td><strong>Esters (-ate suffix)</strong></td>
-                  <td>Isopropyl myristate, glyceryl stearate, cetyl ethylhexanoate.</td>
-                  <td>Pure Glycerin, Propylene Glycol, Butylene Glycol.</td>
+                  <td><span style="color:#C0392B;font-weight:700;">❌ Avoid:</span> Isopropyl myristate, glyceryl stearate, cetyl ethylhexanoate.</td>
+                  <td><span style="color:#059669;font-weight:700;">✅ Safe:</span> Pure Glycerin, Propylene Glycol, Butylene Glycol.</td>
                 </tr>
                 <tr>
                   <td><strong>Emulsifiers</strong></td>
-                  <td>Polysorbate 20, Polysorbate 40, Polysorbate 60, Polysorbate 80.</td>
-                  <td>Polyacrylate Crosspolymer, Carbomer, Hydroxyethylcellulose.</td>
+                  <td><span style="color:#C0392B;font-weight:700;">❌ Avoid:</span> Polysorbate 20, Polysorbate 40, Polysorbate 60, Polysorbate 80.</td>
+                  <td><span style="color:#059669;font-weight:700;">✅ Safe:</span> Polyacrylate Crosspolymer, Carbomer, Hydroxyethylcellulose.</td>
                 </tr>
               </tbody>
             </table>
@@ -1554,13 +1806,43 @@
           <p>
             Using an antifungal shampoo like Nizral 2% on your face sounds unusual, but it is one of the most widely recommended off-label protocols in clinical dermatology. Here is how to apply it correctly without drying out your skin barrier:
           </p>
-          <ol style="margin-left: 1.5rem; margin-bottom: 1.5rem; color: var(--txt2); line-height: 1.8;">
-            <li style="margin-bottom: 0.6rem;"><strong>Dampen Your Skin:</strong> Splash your forehead and chest with lukewarm water. Do not scrub with a sponge or brush.</li>
-            <li style="margin-bottom: 0.6rem;"><strong>Lather a Small Coin Amount:</strong> Pour a pea-sized droplet of 2% Ketoconazole solution into your palms and work it into a gentle lather.</li>
-            <li style="margin-bottom: 0.6rem;"><strong>Apply and Leave for 5 Minutes:</strong> Smooth the lather over affected areas. Let it sit undisturbed on the skin for three to five minutes. This short-contact time allows ketoconazole to disrupt yeast cell membranes without causing irritation.</li>
-            <li style="margin-bottom: 0.6rem;"><strong>Rinse Thoroughly:</strong> Wash off completely using cool or room-temperature water. Pat dry gently with a clean towel.</li>
-            <li style="margin-bottom: 0.6rem;"><strong>Hydrate Immediately:</strong> Apply a certified fungal-acne-safe water gel moisturizer to restore hydration while skin is still slightly damp.</li>
-          </ol>
+          <div class="protocol-steps-grid">
+            <div class="protocol-step-card">
+              <span class="step-circle">1</span>
+              <div>
+                <div class="step-content-title">Dampen Your Skin</div>
+                <p class="step-content-desc">Splash your forehead and chest with lukewarm water. Do not scrub with a sponge or brush.</p>
+              </div>
+            </div>
+            <div class="protocol-step-card">
+              <span class="step-circle">2</span>
+              <div>
+                <div class="step-content-title">Lather a Small Coin Amount</div>
+                <p class="step-content-desc">Pour a pea-sized droplet of 2% Ketoconazole solution into your palms and work it into a gentle lather.</p>
+              </div>
+            </div>
+            <div class="protocol-step-card">
+              <span class="step-circle">3</span>
+              <div>
+                <div class="step-content-title">Apply and Leave for 5 Minutes</div>
+                <p class="step-content-desc">Smooth the lather over affected areas. Let it sit undisturbed on the skin for three to five minutes. This short-contact time allows ketoconazole to disrupt yeast cell membranes without causing irritation.</p>
+              </div>
+            </div>
+            <div class="protocol-step-card">
+              <span class="step-circle">4</span>
+              <div>
+                <div class="step-content-title">Rinse Thoroughly</div>
+                <p class="step-content-desc">Wash off completely using cool or room-temperature water. Pat dry gently with a clean towel.</p>
+              </div>
+            </div>
+            <div class="protocol-step-card">
+              <span class="step-circle">5</span>
+              <div>
+                <div class="step-content-title">Hydrate Immediately</div>
+                <p class="step-content-desc">Apply a certified fungal-acne-safe water gel moisturizer to restore hydration while skin is still slightly damp.</p>
+              </div>
+            </div>
+          </div>
 
           <div class="notice-box success">
             <div>
