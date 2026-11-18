@@ -557,7 +557,7 @@
       font-size: 12.5px;
       color: var(--text-muted);
       margin-bottom: 12px;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .cal-slots {
@@ -578,6 +578,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 8px;
+      text-decoration: none;
       cursor: pointer;
       transition: all 0.2s;
     }
@@ -585,13 +587,14 @@
     .cal-slot:hover, .cal-slot.active {
       background: var(--brand-light);
       border-color: var(--brand);
-      color: var(--brand-hover);
+      color: var(--brand);
+      text-decoration: none;
     }
 
     .cal-book-btn {
       width: 100%;
-      background: #1C1917;
-      color: #FFFFFF;
+      background: var(--brand);
+      color: #FFFFFF !important;
       border: none;
       padding: 12px;
       border-radius: var(--radius-md);
@@ -602,12 +605,16 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      transition: background 0.2s;
+      transition: all 0.2s;
       text-decoration: none;
+      box-shadow: 0 4px 14px rgba(236, 97, 14, 0.28);
     }
 
     .cal-book-btn:hover {
-      background: #292524;
+      background: var(--brand-hover);
+      transform: translateY(-1px);
+      text-decoration: none;
+      color: #FFFFFF !important;
     }
 
     /* Container */
@@ -1422,7 +1429,7 @@
           </div>
         </div>
 
-        <!-- Cal.com Booking Widget Card -->
+        <!-- Clinical Guides Card -->
         <div class="cal-card">
           <div class="cal-header">
             <div class="cal-doctor">
@@ -1432,24 +1439,24 @@
                 <div class="cal-role">Clinical Dermatology Lead</div>
               </div>
             </div>
-            <span class="cal-badge">Slots Open Today</span>
+            <span class="cal-badge">Verified Guides</span>
           </div>
 
-          <div class="cal-subtext">Choose your skin consultation priority:</div>
+          <div class="cal-subtext">Explore targeted pigmentation guides:</div>
 
           <div class="cal-slots">
-            <div class="cal-slot active">
-              <span>05:15 PM • Dark Neck &amp; Velvety Folds</span>
-              <span style="color:var(--brand);font-weight:700;">Select →</span>
-            </div>
-            <div class="cal-slot">
-              <span>06:30 PM • Post-Acne Dark Marks &amp; Peels</span>
-              <span style="color:var(--text-light);">Select →</span>
-            </div>
-            <div class="cal-slot">
-              <span>07:45 PM • Elbow, Knee &amp; Body Pigmentation</span>
-              <span style="color:var(--text-light);">Select →</span>
-            </div>
+            <a href="/pigmentation/acanthosis-nigricans-dark-neck-face-treatment-india/" class="cal-slot">
+              <span>Dark Neck &amp; Velvety Folds (Acanthosis)</span>
+              <span style="color:var(--brand);font-weight:700;">Read Guide →</span>
+            </a>
+            <a href="/pigmentation/post-acne-dark-marks-pih-treatment-india/" class="cal-slot">
+              <span>Post-Acne Dark Marks &amp; Peels (PIH)</span>
+              <span style="color:var(--brand);font-weight:700;">Read Guide →</span>
+            </a>
+            <a href="/pigmentation/dark-knuckles-causes-treatment-indian-skin/" class="cal-slot">
+              <span>Dark Knuckles &amp; Body Pigmentation</span>
+              <span style="color:var(--brand);font-weight:700;">Read Guide →</span>
+            </a>
           </div>
 
           <a href="https://mymirror.fit/scan/" class="cal-book-btn">
